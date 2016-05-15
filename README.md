@@ -1,7 +1,7 @@
 
 ![logo] (https://github.com/NicolaSabino/SaferPlace/blob/master/logolungo.png)
 **Applicativo web per la gestione dell' evacuazione del personale da edifici di diversa entità**
->Progetto ideato e realizzato dal Prof.Cucchiarelli docente del corso di Tecnologie Web dell'Università Politecnico delle Marche
+>Progetto ideato dal Prof.Cucchiarelli docente del corso di Tecnologie Web dell'Università Politecnico delle Marche
 
 
 
