@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+    <!-- cambia il colore della navbar nei dispositivi mobili -->
+    <meta name="theme-color" content="#4caf50" />
+    <title>Safer Place</title>
+
+    <!-- SETUP -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+    <!-- CONFIGURAZIONE DI MATERIALIZE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon"
+          type="image/png"
+          href="image/logostilpiccolo.png">
+
+    <!-- script per attivare i popup con jquery -->
+    <script type="text/javascript" src="js/modaljs.js"></script>
+
+    <!--  Scripts-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.js"></script>
+        <script src="js/index.js"></script>
+
+        <script> $(document).ready(function() {
+            $('select').material_select();
+        }); </script>
+
+    <script>$(document).ready(function(){
+    $('ul.tabs').tabs();
+    });</script>
+
+    <script>$(document).ready(function(){
+        $('.collapsible').collapsible({
+            accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+        });
+    });</script>
+
+</head>
+
+<body>
+<!-- NAV BAR -->
+
+<!-- script per attivare i popup con jquery -->
+<script type="text/javascript" src="js/modaljs.js"></script>
+
+<div class="navbar-fixed">
+
+
+    <nav class="green  white-text">
+        <div class="nav-wrapper container">
+            <a href="index.html" class="brand-logo" id="containerLogo" style="margin-top: 12px"><img src="image/logolungo.png" height="41.1" ></a>
+            <a href="#!" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <div class="chip green darken-2 white-text">
+                        <img src="image/profili/NicolaSabino_94.jpg" alt="Contact Person">
+                        NicolaSabino_94
+                    </div>
+                </li>
+                <li><a class="" href="#login">Impostazioni</a></li>
+                <li><a class="" href="#info">Logout</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+</div>
+
+<div class="navbar-fixed">
+    <nav class ="white">
+
+    <!-- Tabs -->
+         <div class="row">
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s3 spinner-green"><a class="active green-text" href="#gestEdifici" style="margin-left: -40px"><i class="material-icons left" style="margin-top: -10px; margin-left: 40px"><img src="image/icone/gestioneedificiiconv.png" style="height: 24px; width: 24px"></i>Gestione edifici</a></li>
+                    <li class="tab col s3 "><a class="green-text" href="#gestPdf" style=" margin-left: -40px"><i class="material-icons left" style="margin-top: -10px; margin-left: 40px"><img src="image/icone/gestionepianifugaiconv.png" style="height: 24px; width: 24px"></i>Gestione Piani di Fuga</a></li>
+                    <li class="tab col s3 "><a class="green-text" href="#gestUtenti" style=" margin-left: -40px"><i class="material-icons left" style="margin-top: -10px; margin-left: 40px"><img src="image/icone/gestioneutentiiconv.png" style="height: 24px; width: 24px"></i>Gestione Utenti</a></li>
+                    <li class="tab col s3 "><a class="green-text" href="#gestFAQ" style=" margin-left: -40px"><i class="material-icons left" style="margin-top: -10px; margin-left: 40px"><img src="image/icone/gestioneFAQiconv.png" style="height: 24px; width: 24px"></i>Gestione FAQ</a></li>
+                </ul>
+            </div>
+
+    </nav>
+
+</div>
+
+
+
+
+<div class="container">
+
+
+    <!-- div contenitore principale -->
+    <div>
+        <!-- tab gestione edifici -->
+        <div id="gestEdifici">
+
+
+            <div class="row">
+
+                <!-- card ospedale di ancona -->
+                <div class="col s12 m6 l4">
+                    <div class="card large">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="image/edifici/ospedale-ancona.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Ospedale di torrette Ancona<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#" class="btn red white-text"><i class="material-icons right">create</i>Modifica</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title green-text ">Ospedale torrette di Ancona<i class="material-icons right">close</i></span>
+                            <p>Complesso ospedaliero situato nel quartiere Torrette di Ancona in Via Conca 71 - Torrette Ancona</p>
+                            <p>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8172.24256473598!2d13.451412951100282!3d43.599793684227066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132d81fe2a0c5211%3A0x2eed1477b2f755bf!2sAzienda+Ospedaliero+Universitaria+Ospedale+Riuniti!5e0!3m2!1sit!2sit!4v1463072374970" width="100%" height="300" frameborder="400" style="border:0" allowfullscreen></iframe>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Ufficio -->
+                <div class="col s12 m6 l4">
+                    <div class="card large">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="image/edifici/Edifici_PalazzoUffici_01.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Uffici Nexos<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#" class="btn red white-text"><i class="material-icons right">create</i>Modifica</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title green-text ">Uffici Nexos<i class="material-icons right">close</i></span>
+                            <p>Uffici della Nexos SPA situato in Via Delle Driadi 10 Francavilla al Mare</p>
+                            <p>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.038967387047!2d14.274167751274767!3d42.426905438767605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1331a805f00ffc71%3A0x1369cb0a965697df!2sVia+delle+Driadi%2C+66023+Francavilla+al+Mare+CH!5e0!3m2!1sit!2sit!4v1463073223703" width="100%" height="300" frameborder="400" style="border:0" allowfullscreen></iframe>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Ufficio 2 -->
+                <div class="col s12 m6 l4">
+                    <div class="card large">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="image/edifici/apertura-figura-1-foto-Iwan-Baan.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Uffici Lutor Corp<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#" class="btn red white-text"><i class="material-icons right">create</i>Modifica</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title green-text text-darken-4">Uffici Lutor Corp<i class="material-icons right">close</i></span>
+                            <p>Uffici oscorp situati in Via Rossi 55 Padova</p>
+                            <p>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2802.188880339341!2d11.864189351345498!3d45.38536054661869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477edba4a7ad3521%3A0x41a44226bca6eb88!2sVia+Ernesto+Rossi%2C+35125+Padova+PD!5e0!3m2!1sit!2sit!4v1463074048176" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <!-- Liceo -->
+                <div class="col s12 m6 l4">
+                    <div class="card large">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="image/edifici/classico.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Liceo Classico<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#" class="btn red white-text"><i class="material-icons right">create</i>Modifica</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Liceo classico situato in Via Venezia 41 Pescara </p>
+                            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.1687737856487!2d14.211603651275714!3d42.46669903625036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1331a669a3b21529%3A0x73db516cb2821a3e!2sLiceo+Classico+%22G.+D&#39;Annunzio%22!5e0!3m2!1sit!2sit!4v1463074142014" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ospedale di bologna -->
+                <div class="col s12 m6 l4">
+                    <div class="card large">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="image/edifici/Ospedale_Maggiore_Bologna.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Ospedale Bellaria<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#" class="btn red white-text"><i class="material-icons right">create</i>Modifica</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Ospedale Bellaria situato in Via altura 3 Bologna</p>
+                            <p>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2847.4966301969125!2d11.388259951322947!3d44.463992007538074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477e2afcef1c7fc9%3A0x6eaf26f6ec738282!2sOspedale+Bellaria+-+Azienda+USL+di+Bologna!5e0!3m2!1sit!2sit!4v1463074222303" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="gestPdf">
+
+            <div class="row">
+                <!-- pulsanti -->
+                <div class="col l8 s12" style="margin-top: 1%">
+                    <div class="input-field col s3">
+                        <select>
+                            <option value="" disabled selected>Seleziona palazzo</option>
+                            <option value="1">Ospedale Ancona</option>
+                            <option value="2">Uffici 1</option>
+                            <option value="3">Uffici 2</option>
+                            <option value="4">Museo</option>
+                            <option value="5">Acquapark</option>
+                        </select>
+                    </div>
+                    <div class="input-field col s3">
+                        <select>
+                            <option value="" disabled selected>Seleziona Piano</option>
+                            <option value="1">piano 1</option>
+                            <option value="2">piano 2</option>
+                            <option value="3">piano 3</option>
+                        </select>
+                    </div>
+
+
+                    <a class="green btn" style="margin-top: 17px">vai</a>
+                </div>
+            </div>
+
+
+
+
+            <!-- PIANTE DEI PIANI DI FUGA CHE APPAIONO DOPO IL VAI -->
+            <div class="row">
+
+                <h3 class="green-text text-darken-2 center-align"> Piano 1 uscita A </h3>
+                <div class="col l12 s12 m12 center">
+                    <img src="image/piante/piani%20di%20fuga/piano-1-uscite-sicurezzaA.jpg" style="height:80%; width: 80%">
+                </div>
+                <div class="col l12 s12 m12 center-align">
+                    <h5>informazioni sul piano</h5>
+                    <p><a href="#" class="btn red white-text"><i class="material-icons right">create</i>Modifica</a></p>
+                </div>
+
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <!-- immagine 2 -->
+            <div class="row">
+                <h3 class="green-text text-darken-2 center-align"> Piano 1 uscita B </h3>
+
+                <div class="col l12 s12 m12 center">
+                    <img src="image/piante/piani%20di%20fuga/piano-1-uscite-sicurezzaB.jpg" style="height:80%; width: 80%">
+                </div>
+                <div class="col l12 s12 m12 center-align">
+                    <h5>informazioni sul piano</h5>
+                    <p><a href="#" class="btn red white-text"><i class="material-icons right">create</i>Modifica</a></p>
+                </div>
+
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <!-- immagine 3-->
+            <div class="row">
+                <h3 class="green-text text-darken-2 center-align"> Piano 1 uscita standard </h3>
+
+                <div class="col l12 s12 m12 center">
+                    <img src="image/piante/piani%20di%20fuga/piano-1-uscite-sicurezzaStandard.jpg" style="height:80%; width: 80%">
+                </div>
+                <div class="col l12 s12 m12 center-align">
+                    <h5>informazioni sul piano</h5>
+                    <p><a href="#" class="btn red white-text"><i class="material-icons right">create</i>Modifica</a></p>
+                </div>
+
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <!-- immagine 4-->
+            <div class="row">
+                <h3 class="green-text text-darken-2 center-align"> Piano 2 uscita A </h3>
+
+                <div class="col l12 s12 m12 center">
+                    <img src="image/piante/piani%20di%20fuga/piano-2-uscite-sicurezzaA.jpg" style="height:80%; width: 80%">
+                </div>
+                <div class="col l12 s12 m12 center-align">
+                    <h5>informazioni sul piano</h5>
+                    <p><a href="#" class="btn red white-text"><i class="material-icons right">create</i>Modifica</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <div id="gestUtenti">
+            gestione utenti
+        </div>
+
+        <div id="gestFAQ">
+            <ul class="collapsible popout" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header">
+                        <div class=" col l10">
+                            <i class="material-icons green-text">live_help</i>Domanda 1
+                        </div>
+                    </div>
+
+
+                    <div class="collapsible-body">
+                        <p>Risposta 1</p>
+                        <p>
+                            <a href="edit" class="btn-floating btn-large green white-text"><i class="material-icons">edit</i></a>
+                        </p>
+                    </div>
+
+
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons green-text">live_help</i>Domanda 2</div>
+                    <div class="collapsible-body">
+                        <p>Risposta 2</p>
+                        <p>
+                            <a href="edit" class="btn-floating btn-large green white-text"><i class="material-icons">edit</i></a>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons green-text">live_help</i>Domanda 3</div>
+                    <div class="collapsible-body">
+                        <p>Risposta 3</p>
+                        <p>
+                            <a href="edit" class="btn-floating btn-large green white-text"><i class="material-icons">edit</i></a>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+</body>
