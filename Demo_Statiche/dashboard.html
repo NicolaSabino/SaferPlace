@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+    <!-- cambia il colore della navbar nei dispositivi mobili -->
+    <meta name="theme-color" content="#4caf50" />
+
+    <title>Safer Place</title>
+
+    <!-- SETUP -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+    <!-- CONFIGURAZIONE DI MATERIALIZE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon"
+          type="image/png"
+          href="image/logostilpiccolo.png">
+
+    <!-- script per attivare i popup con jquery -->
+    <script type="text/javascript" src="js/modaljs.js"></script>
+
+    <!--  Scripts-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/index.js"></script>
+
+
+</head>
+
+<body>
+<!-- NAV BAR -->
+
+<!-- script per attivare i popup con jquery -->
+<script type="text/javascript" src="js/modaljs.js"></script>
+
+<div class="navbar-fixed">
+
+
+    <nav class="green  white-text">
+        <div class="nav-wrapper container">
+            <a href="index.html" class="brand-logo" id="containerLogo" style="margin-top: 12px"><img src="image/logoM.png" width="33.5" height="41.1" ></a>
+            <a href="#!" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <div class="chip green darken-2 white-text">
+                        <img src="image/profili/GiuseppeR.jpg" alt="Contact Person">
+                        GiuseppeR
+                    </div>
+                </li>
+                <li><a class="" href="#setings">Impostazioni</a></li>
+                <li><a class="" href="index.html">Logout</a></li>
+
+            </ul>
+
+            <!-- BARRA DI NAVIGAZIONE LATERALE-->
+            <ul class="side-nav container"  id="mobile-demo">
+                <li >
+                    <div class="center-align ">
+                        <img src="image/profili/GiuseppeR.jpg" class="circle-clipper circle " style="margin-top:15px;">
+                    </div>
+                </li>
+                <li>
+                    <div class="grey-text center-align">
+                        <ul>
+                            <li>GiuseppeR</li>
+                            <li>gromani14@gmail.com</li>
+                        </ul>
+                    </div>
+                </li>
+                <li><div class="divider"></div></li>
+                <li><a  class="" href="#login">Impostazioni</a></li>
+                <li><a  class="" href="#info">Logout</a></li>
+
+            </ul>
+        </div>
+
+    </nav>
+</div>
+
+    <div class="container">
+        <div class="row">
+
+            <!-- barra laterale degli edifici -->
+            <div class="col s2" style="margin-top: 10%">
+                <h4 class="green-text text-darken-3"><i class="small material-icons">business</i>Edifici</h4>
+                <div class="fixed left-align">
+                    <ul class="collapsible">
+                        <li>
+                            <div class="collapsible-header green-text"><b>Ospedale di Torrette</b></div>
+                            <div class="collapsible-body">
+                                <ul class="collection">
+                                    <li class="collection-item grey-text">Piano 1</li>
+                                    <li class="collection-item grey-text">Piano 2</li>
+                                    <li class="collection-item grey-text">Piano 3</li>
+                                    <li class="collection-item grey-text">Piano 4</li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header green-text"><b>Uffici Nexos</b></div>
+                            <div class="collapsible-body">
+                                <ul class="collection">
+                                    <li class="collection-item grey-text">Piano 1</li>
+                                    <li class="collection-item grey-text">Piano 2</li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="collapsible-header green-text"><b>Uffici Lutor Corp</b></div>
+                            <div class="collapsible-body">
+                                <ul class="collection">
+                                    <li class="collection-item grey-text">Piano 1</li>
+                                    <li class="collection-item grey-text">Piano 2</li>
+                                    <li class="collection-item grey-text">Piano 3</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header green-text"><b>Liceo Classico</b></div>
+                            <div class="collapsible-body">
+                                <ul class="collection">
+                                    <li class="collection-item grey-text">Piano 1</li>
+                                    <li class="collection-item grey-text">Piano 2</li>
+
+                                </ul>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header green-text"><b>Ospedale Bellaria</b></div>
+                            <div class="collapsible-body">
+                                <ul class="collection">
+                                    <li class="collection-item grey-text">Piano 1</li>
+                                    <li class="collection-item grey-text">Piano 2</li>
+                                    <li class="collection-item grey-text">Piano 3</li>
+                                    <li class="collection-item grey-text">Piano 4</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="col s6" style="margin-top: 15%">
+                <img class="materialboxed responsive-img" src="image/piante/piano%201%20aree.jpg">
+            </div>
+
+            <!-- Sezione Notifiche -->
+            <div class="col s4" style="margin-top:10%;">
+                <h4 class="green-text text-darken-3">Notifiche<i class="small material-icons">sms_failed</i></h4>
+                <!-- sezione scrollabile -->
+
+                <div style="overflow-y: scroll; height: 500px;width:auto;" >
+                    <!-- card 1 -->
+                    <div class="card" style="width: 300px; margin-left: 12%">
+                        <div class="card-content ">
+                    <span class="card-title">
+                        <div class="chip green darken-1 white-text">FrancesoRossi44</div>
+                    </span>
+                            <ul>
+                                <li>
+                                    <i class="blue-text">Allagamento</i> in <b>Ospedale Torrette</b>
+                                </li>
+                                <li>
+                                    Piano:<b>1</b>
+                                </li>
+                                <li>
+                                    Zona:<b>A</b>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="card-action">
+                            <a href="#" class="green-text">Apri la mappa</a>
+                            <a href="#" class="red-text">Ignora</a>
+                        </div>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div class="card" style="width: 300px; margin-left: 12%">
+                        <div class="card-content ">
+                    <span class="card-title">
+                            <div class="chip green darken-1 white-text">
+                                <img src="image/profili/NicolaSabino_94.jpg" alt="Contact Person">
+                                NicolaSabino_94
+                            </div>
+                    </span>
+
+                            <ul>
+                                <li>
+                                    <i class="red-text">Incendio</i> in <b>Uffici Lutor Corp</b>
+                                </li>
+                                <li>
+                                    Piano:<b>2</b>
+                                </li>
+                                <li>
+                                    Zona:<b>C</b>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="card-action">
+                            <a href="#" class="green-text">Apri la mappa</a>
+                            <a href="#" class="red-text">Ignora</a>
+                        </div>
+                    </div>
+
+                    <!-- card 3 -->
+                    <div class="card " style="width: 300px; margin-left: 12%">
+                        <div class="card-content ">
+                    <span class="card-title">
+                        <div class="chip green darken-1 white-text">MarcoNeri_21</div>
+                    </span>
+                            <ul>
+                                <li>
+                                    <i class="purple-text">Fuga di Gas</i> in <b>Uffici Nexos</b>
+                                </li>
+                                <li>
+                                    Piano:<b>2</b>
+                                </li>
+                                <li>
+                                    Zona:<b>K</b>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="card-action">
+                            <a href="#" class="green-text">Apri la mappa</a>
+                            <a href="#" class="red-text">Ignora</a>
+                        </div>
+                    </div>
+
+                    <!-- card 4 -->
+                    <div class="card " style="width: 300px; margin-left: 12%;">
+                        <div class="card-content ">
+                    <span class="card-title">
+                            <div class="chip green darken-1 white-text">
+                                <img src="image/profili/Russ8.jpg" alt="Contact Person">
+                                Russ8
+                            </div>
+                    </span>
+
+                            <ul>
+                                <li>
+                                    <i class="brown-text">Crollo</i> in <b>Uffici Lutor Corp</b>
+                                </li>
+                                <li>
+                                    Piano:<b>2</b>
+                                </li>
+                                <li>
+                                    Zona:<b>A</b>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="card-action">
+                            <a href="#" class="green-text">Apri la mappa</a>
+                            <a href="#" class="red-text">Ignora</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

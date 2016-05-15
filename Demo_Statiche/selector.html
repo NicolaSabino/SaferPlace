@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+    <!-- cambia il colore della navbar nei dispositivi mobili -->
+    <meta name="theme-color" content="#4caf50" />
+
+    <title>Safer Place</title>
+
+    <!-- SETUP -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+    <!-- CONFIGURAZIONE DI MATERIALIZE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon"
+          type="image/png"
+          href="image/logostilpiccolo.png">
+
+    <!-- script per attivare i popup con jquery -->
+    <script type="text/javascript" src="js/modaljs.js"></script>
+
+    <!--  Scripts-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/index.js"></script>
+
+
+</head>
+
+<body>
+<!-- NAV BAR -->
+
+<!-- script per attivare i popup con jquery -->
+<script type="text/javascript" src="js/modaljs.js"></script>
+
+<div class="navbar-fixed">
+
+
+    <nav class="green  white-text">
+        <div class="nav-wrapper container">
+            <a href="index.html" class="brand-logo" id="containerLogo" style="margin-top: 12px"><img src="image/logolungo.png"  height="41.1" ></a>
+            <a href="#!" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <div class="chip green darken-2 white-text">
+                        <img src="image/profili/GiuseppeR.jpg" alt="Contact Person">
+                        GiuseppeR
+                    </div>
+                </li>
+                <li><a class="" href="#setings">Impostazioni</a></li>
+                <li><a class="" href="index.html">Logout</a></li>
+
+            </ul>
+
+            <!-- BARRA DI NAVIGAZIONE LATERALE-->
+            <ul class="side-nav container"  id="mobile-demo">
+                <li >
+                    <div class="center-align ">
+                        <img src="image/profili/GiuseppeR.jpg" class="circle-clipper circle " style="margin-top:15px;">
+                    </div>
+                </li>
+                <li>
+                    <div class="grey-text center-align">
+                        <ul>
+                            <li>GiuseppeR</li>
+                            <li>gromani14@gmail.com</li>
+                        </ul>
+                    </div>
+                </li>
+                <li><div class="divider"></div></li>
+                <li><a  class="" href="#login">Impostazioni</a></li>
+                <li><a  class="" href="#info">Logout</a></li>
+
+            </ul>
+        </div>
+
+    </nav>
+</div>
+
+<div class="container">
+    <h2 class="green-text">Uffici Nexos</h2>
+    <h5 class="grey-text">Via Delle Driadi 10 Francavilla al Mare</h5>
+
+    <br>
+
+
+    <!-- Collapsable dei piani e delle zone -->
+    <ul class="collapsible">
+        <li>
+            <div class="collapsible-header green-text"><b>Piano 1</b></div>
+            <div class="collapsible-body">
+                <ul class="collection">
+                    <li class="collection-item grey-text">Zona A</li>
+                    <li class="collection-item grey-text">Zona B</li>
+                    <li class="collection-item grey-text">Zona C</li>
+
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header green-text"><b>Piano 2</b></div>
+            <div class="collapsible-body">
+                <ul class="collection">
+                    <li class="collection-item grey-text">Zona A</li>
+                    <li class="collection-item grey-text">Zona B</li>
+                </ul>
+            </div>
+
+        </li>
+        <li>
+            <div class="collapsible-header green-text"><b>Piano 3</b></div>
+            <div class="collapsible-body">
+                <ul class="collection">
+                    <li class="collection-item grey-text">Zona A</li>
+                    <li class="collection-item grey-text">Zona B</li>
+                    <li class="collection-item grey-text">Zona C</li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+
+
+
+</div>
+</body>
+</html>

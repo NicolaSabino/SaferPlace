@@ -1,0 +1,131 @@
+<html>
+
+<head> <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <link rel="icon"
+          type="image/png"
+          href="image/logostilpiccolo.png");?>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- NAV BAR -->
+    <div class="navbar-fixed">
+
+
+        <nav class="green  white-text">
+            <div class="nav-wrapper container">
+                <a href="#!" class="brand-logo" id="containerLogo" style="margin-top: 12px"><img src="image/logoM.png") width="33.5" height="41.1" ></a>
+                <a href="#!" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+                <!-- Qualora ci trovassimo su dispositivi il controlli della navbar collassano -->
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="waves-effect waves-yellow" href="#login">Accedi</a></li>
+                    <li><a class="waves-effect waves-yellow" href="#info">Info</a></li>
+                </ul>
+
+                <!-- da rivedere -->
+                <ul class="side-nav container"  id="mobile-demo">
+                    <li >
+                        <object class="brand-logo" id="front-logo" type="image/png" data="image/logostil.png")>" width="60" height="40" style="margin-top: 12px"></object></a></li>
+                    </li>
+
+                    <li><a  class="waves-effect waves-yellow" href="#login">Accedi</a></li>
+
+                    <li><a  class="waves-effect waves-yellow" href="#info">Info</a></li>
+
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+
+
+    <script src="js/index.js"></script>
+    <style>
+        #dx{
+            padding-top: 20px;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        #sx{
+            padding-top: 100px;
+            padding-left: 10%;
+            padding-right: 17%;
+
+        }
+        #im{
+            padding-top:70px;
+            padding-bottom: 70px;
+
+        }
+    </style>
+
+</head>
+<body>
+<div class="row">
+    <!-- parte destra -->
+    <div id="dx" class="col s12 m4 left-align">
+        <div class="card grey lighten-2">
+            <div class="card grey ">
+                <div class="card-content white-text">
+                    <div class="card-image"><img src="image/stretta-di-mano.jpg" width="35%" height="35%"> </div>
+                    <span>Edificio</span>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur.</p>
+                    <hr>
+                    <table class="bordered">
+
+                        <tbody>
+                        <tr>
+                            <td>Piano:</td>
+                            <td>1</td>
+
+                        </tr>
+                        <tr>
+                            <td>Altro:</td>
+                            <td>valore</td>
+
+                        </tr>
+                        <tr>
+                            <td>Posizione:</td>
+                            <td>5</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="card-action">
+                    <a class="right"  href="#">mostra posizione</a>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- parte sinistra -->
+    <div id="sx" class="col s12 m8 l8">
+        <div class="green">
+            <div id="im" class="center "><img src="image/map.png" width="50%" height="50%">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--tasto menu -->
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red">
+        <i class="large material-icons">add_circle</i>
+    </a>
+    <ul>
+        <li><a class="btn-floating tooltipped" data-position="left" data-delay="50" data-tooltip="Riposizionati" ><i class="material-icons">place</i></a></li>
+        <li><a class="btn-floating yellow darken-1 tooltipped" data-position="left" data-delay="50" data-tooltip="Scappa" ><i class="material-icons">directions</i></a></li>
+        <li><a class="btn-floating green tooltipped" data-position="left" data-delay="50" data-tooltip="Segnala" "><i class="material-icons">add_alert</i></a></li>
+
+    </ul>
+</div>
+</body>
+</html>
