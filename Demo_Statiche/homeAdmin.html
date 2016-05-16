@@ -323,7 +323,136 @@
 
 
         <div id="gestUtenti">
-            gestione utenti
+            <div class="container">
+
+    <!-- Ricerca -->
+    <div class="row" style="margin-top:50px;">
+        <form>
+            <div class="input-field col s12 m5">
+            <input type="text">
+            <label >Ricerca</label>
+            </div>
+
+            <div class="input-field col s12 m5">
+                <select>
+                    <option value="" disabled selected>Seleziona criterio di ricerca</option>
+                    <option value="nome">Nome</option>
+                    <option value="cognome">Cognome</option>
+                    <option value="username">Username</option>
+                </select>
+                <label>Cerca per...</label>
+            </div>
+
+            <div class="input-field col s4 m2">
+                <input type="submit" class="btn green" action="search" value="Cerca">
+            </div>
+        </form>
+    </div>
+
+    <!-- creazione nuovo user -->
+    <div class="row center">
+        <div style="margin-top: 30px;">
+            <a href="#nuovo" class="modal-trigger waves-effect waves-light btn green">
+                <i class="material-icons left">add</i>Crea utente
+            </a>
+        </div>
+    </div>
+
+    <!-- modal per un nuovo utente -->
+    <div id="nuovo" class="modal">
+        <div class="modal-content s12 m6">
+            <h5 class="green-text">Crea nuovo utente</h5>
+            <form class="col s12 " action="actionph">
+                <div class="input-field"><input type="text"><label>Username</label></div>
+                <div class="row">
+                    <div class="input-field col s12 m6"><input type="text"><label>Password</label></div>
+                    <div class="input-field col s12 m6"><input type="text"><label>Conferma Password</label></div>
+                </div>
+                <div class="input-field"><input type="text"><label>Email</label></div>
+                <div class="row">
+                    <div class="input-field col s12 m6"><input type="text"><label>Nome</label></div>
+                    <div class="input-field col s12 m6"><input type="text"><label>Cognome</label></div>
+                </div>
+                <input style="margin-bottom: 20px;" type="submit" class="btn green right" value="Crea">
+            </form>
+        </div>
+    </div>
+
+
+    <!-- modal di modifica di un utente  -->
+    <div id="modifica" class="modal">
+        <div class="modal-content s12 m6">
+            <h5 class="green-text">Modifica utente</h5>
+            <form class="col s12 " action="mod">
+                <div class="input-field"><input type="text" value="Nicolanabbo"><label>Username</label></div>
+                <div class="input-field col s12 m6"><input type="text" value="123456"><label>Password</label></div>
+                <div class="input-field col s12 m6"><input type="text" value="nicola.sabino94@gmail.com"><label>Email</label></div>
+                <div class="input-field"><input type="text"><label>Email</label></div>
+                <div class="input-field col s12 m6"><input type="text" value="Nicola"><label>Nome</label></div>
+                <div class="input-field col s12 m6"><input type="text" value="Sabino"><label>Cognome</label></div>
+                <div class="input-field col s12 m6"><input type="text" value="3485216789"><label>Telefono</label></div>
+                <input style="margin-bottom: 20px;" type="submit" class="btn green right" value="Conferma">
+            </form>
+        </div>
+    </div>
+
+
+    <!-- tabella risultati -->
+    <table style="margin-top: 30px;" class="striped responsive-table">
+        <thead>
+        <tr>
+            <th data-field="username">Username</th>
+            <th data-field="nome">Nome</th>
+            <th data-field="cognome">Cognome</th>
+            <th data-field="email">Email</th>
+            <th data-field="password">Password</th>
+            <th data-field="operazione">Operazione</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>SuperAlvin</td>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>alvin.eclair@saferplace.it</td>
+            <td>123456</td>
+            <td>
+                <a class="btn-floating btn-small waves-effect waves-light green white-text modal-trigger" data-target="modifica">
+                    <i class="material-icons">edit</i></a>
+                </a>
+                <a class="btn-floating btn-small waves-effect waves-light green white-text" data-target="elimina">
+                    <i class="material-icons">delete</i></a>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>Nicolanabbo</td>
+            <td>Nicola</td>
+            <td>Sabino</td>
+            <td>nicolanaboo@nabbo.it</td>
+            <td>senzete</td>
+            <td><a class="btn-floating btn-small waves-effect waves-light green white-text modal-trigger" data-target="modifica">
+                <i class="material-icons">edit</i></a>
+                <a class="btn-floating btn-small waves-effect waves-light green white-text" data-target="elimina">
+                    <i class="material-icons">delete</i></a>
+            </td>
+        </tr>
+        <tr>
+            <td>Giuliatrab</td>
+            <td>Giulia</td>
+            <td>Traballoni</td>
+            <td>giulia0709@hotmail.com</td>
+            <td>julia</td>
+            <td><a class="btn-floating btn-small waves-effect waves-light green white-text modal-trigger" data-target="modifica">
+                <i class="material-icons">edit</i></a>
+                <a class="btn-floating btn-small waves-effect waves-light green white-text" data-target="elimina">
+                    <i class="material-icons">delete</i></a>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
         </div>
 
         <div id="gestFAQ">
