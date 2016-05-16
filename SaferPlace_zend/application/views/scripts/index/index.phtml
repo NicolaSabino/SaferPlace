@@ -1,6 +1,266 @@
 <html>
-<div id="view-content">
-    <p>View script for controller <b>Index</b> and script/action name <b>indexAction</b></p>
+<head>
+
+</head>
+<body>
+<!-- CONTAINER CON EFFETTO PARALLASSE     GET STARTED-->
+<div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <br><br>
+            <h1 class="header center teal-text white-text"> Safer Place</h1>
+            <div class="row center">
+                <h5 class="header col s12 light white-text"><b>Mettiti al sicuro!</b></h5>
+            </div>
+            <div class="row center">
+                <a href="#login" id="start" class="btn-large  yellow accent-3 modal-trigger" ><b>Get Started</b></a>
+            </div>
+            <br><br>
+        </div>
+    </div>
+    <div class="parallax"><img src="<?php echo $this->baseUrl('image/corridoi5.png');?>"  alt="uscita di sicurezza"></div>
 </div>
-?>
+
+
+<!-- Modal Accedi -->
+<div class="row">
+
+    <div id="login" class="modal s12 mm6 l6">
+        <div class="modal-content">
+            <div class="row">
+
+                <!-- blocco di login -->
+                <div class="col s12">
+                    <h5 class="green-text">Accedi</h5>
+                    <form method="post" class="">
+                        <div class="input-field">
+                            <input id="username" type="text" class="validate center-align">
+                            <label for="username" class="center-align center ">Username</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="pwd" type="password" class="validate center-align">
+                            <label for="pwd" class="center-align center">Password</label>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 m6">
+                                <div class="btn red white-text">Accedi</div>
+                            </div>
+                            <div class="col s12 m6">
+                                Non sei registrato?
+                                <a href="#registrati" class="modal-trigger">Registrati</a>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal registrati -->
+<div class="row">
+
+    <div id="registrati" class="modal s12 mm6 l6">
+        <div class="modal-content">
+            <div class="row">
+
+                <!-- blocco di registrazione -->
+                <h5 class="green-text">Registrati</h5>
+                <form method="post" >
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                        </div>
+
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="btn  waves-yellow green"> Registrati
+
+                        </div>
+                    </div>
+                </form>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+
+    <!-- POSIZIONATI   -->
+    <div class="section">
+        <div class="row">
+
+            <!-- immagine posizionati -->
+            <div class="col s12 m6">
+                <div class="center">
+                    <img class="circle center-align"  src="<?php echo $this->baseUrl('image/mappa.jpg'); ?>">
+                </div>
+
+            </div>
+
+            <!-- scritta posizionati-->
+            <div class="col s12 m6">
+                <div class="center">
+                    <div class="icon-block">
+                        <h2 class="center-align grey-text text-darken-3"><i class="material-icons medium light-green-text">room</i></h2>
+                        <h5 class="center-align grey-text text-darken-2">Posizionati</h5>
+
+                        <p class="grey-text grey-text text-darken-1 center-align">Accedi al servizio, seleziona l'immobile e comunicaci la tua posizione.<br>In Questo modo saremo in grado di tutelarti al meglio.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- SEGNALACI -->
+    <div class="section">
+        <div class="row">
+            <!-- scritta segnalaci -->
+            <div class="col s12 m6">
+                <div class="center">
+                    <div class="icon-block">
+                        <h2 class="center-align grey-text text-darken-3"><i class="material-icons medium light-green-text">report_problem</i></h2>
+                        <h5 class="center-align grey-text text-darken-2">Segnalaci un Emergenza</h5>
+
+                        <p class="grey-text text-darken-1 center-align">Potremo così tempestivamente avvertire tutto il personale nello stabile e fornirvi un piano di fuga adeguato.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- immagine segnalci -->
+            <div class="col s12 m6">
+                <div class="center">
+                    <img class="center-align" width="325" height="325" src="<?php echo $this->baseUrl('image/loghi.png'); ?>">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- METTITI AL SICURO -->
+    <div class="section">
+        <div class="row">
+            <!-- immagine mettiti al sicuro -->
+            <div class="col s12 m6">
+                <div class="center">
+                    <img class="center-align  circle" width="319" height="319" src="<?php echo $this->baseUrl('image/running%20away1.jpg?');?>">
+                </div>
+
+            </div>
+
+            <!-- scritta mettiti al sicuro -->
+            <div class="col s12 m6">
+                <div class="center">
+                    <div class="icon-block">
+                        <h2 class="center grey-text text-darken-3"><i class="material-icons medium light-green-text">trending_up</i></h2>
+                        <h5 class="center grey-text text-darken-2">Mettiti al sicuro</h5>
+
+                        <p class="grey-text text-darken-1">Richiedi la via di uscita più sicura evitando i punti sensibili dell'emergenza</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- FAQ -->
+    <div class="section">
+        <div class="row">
+
+            <!-- scritta FAQ -->
+            <div class="col s12 m6">
+                <div class="center">
+                    <div class="icon-block">
+                        <h2 class="center grey-text text-darken-3"><i class="material-icons medium light-green-text">thumb_up</i></h2>
+                        <h2><i class="mdi-content-send brown-text"></i></h2>
+                        <h4 class="grey-text text-darken-2">Sceglici</h4>
+                        <p class="center-align light grey-text text-darken-1"><b>Hai un azienda e vuoi offrire un piano di emergenza all'avanguardia?</b> <br> Siamo la soluzione al tuo problema, contattaci a
+                            <a href="mailto:webmaster@saferplace.com">webmaster@saferplace.com</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- immagine FAQ -->
+            <div class="col s12 m6">
+                <div class="center">
+                    <img class="circle" width="325" height="325" src="<?php echo $this->baseUrl('image/stretta-di-mano.jpg');?>">
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+
+    <!-- SCEGLICI -->
+    <div class="section">
+        <div class="row">
+
+            <!-- immagine sceglici -->
+            <div class="col s12 m6">
+                <div class="center">
+                    <img class="circle" width="325" height="325" src="<?php echo $this->baseUrl('image/FAQ.jpg');?>">
+                </div>
+
+            </div>
+
+            <!-- scritta sceglici -->
+            <div class="col s12 m6">
+                <div class="center">
+                    <div class="icon-block">
+                        <h2 class="center grey-text text-darken-3"><i class="material-icons medium light-green-text">live_help</i></h2>
+                        <h5 class="center grey-text text-darken-2">FAQ</h5>
+
+                        <p class="grey-text text-darken-1"><b>Hai delle domande?</b> <br> Consulta la nostra pagina delle <a href="#!">FAQ</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+</body>
 </html>

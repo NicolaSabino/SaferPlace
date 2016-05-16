@@ -1,6 +1,6 @@
 <?php
 
-class IndexController extends Zend_Controller_Action
+class CheckinController extends Zend_Controller_Action
 {
 
     public function init()
@@ -10,14 +10,16 @@ class IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
-
+        // action body
     }
 
-    
+    public function checkinbAction()
+    {
+        // action body
+    }
+
 
 }
-
-
 
 
 

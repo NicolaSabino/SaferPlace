@@ -1,6 +1,6 @@
 <?php
 
-class IndexController extends Zend_Controller_Action
+class ZeckController extends Zend_Controller_Action
 {
 
     public function init()
@@ -10,14 +10,9 @@ class IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
-
+        echo '<div class="container">Nicola nabbo</div>';
     }
 
-    
 
 }
-
-
-
-
 

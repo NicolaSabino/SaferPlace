@@ -15,6 +15,13 @@
         <controllerFile controllerName="Login">
           <actionMethod actionName="index"/>
         </controllerFile>
+        <controllerFile controllerName="Zeck">
+          <actionMethod actionName="index"/>
+        </controllerFile>
+        <controllerFile controllerName="Checkin">
+          <actionMethod actionName="index"/>
+          <actionMethod actionName="checkinb"/>
+        </controllerFile>
       </controllersDirectory>
       <formsDirectory enabled="false"/>
       <layoutsDirectory>
@@ -39,6 +46,15 @@
           <viewControllerScriptsDirectory forControllerName="Index"/>
           <viewControllerScriptsDirectory forControllerName="Login">
             <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Zeck">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Checkin">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Checkin">
+            <viewScriptFile forActionName="checkinb"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>

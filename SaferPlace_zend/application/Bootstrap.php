@@ -10,10 +10,5 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $view->doctype('XHTML1_STRICT');
         
     }
-    protected function _initSetupBaseUrl() {
-        $this->bootstrap('frontcontroller');
-        $controller = Zend_Controller_Front::getInstance();
-        $controller->setBaseUrl('/SaferPlace/SaferPlace_zend/public');
-    }
 }
 
