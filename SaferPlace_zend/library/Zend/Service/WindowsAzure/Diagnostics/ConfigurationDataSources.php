@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Service_WindowsAzure
  * @subpackage Diagnostics
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
@@ -49,7 +53,11 @@ require_once 'Zend/Service/WindowsAzure/Diagnostics/ConfigurationDirectories.php
  * @category   Zend
  * @package    Zend_Service_WindowsAzure
  * @subpackage Diagnostics
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  *
  * @property	int																				OverallQuotaInMB				Overall quota in MB
@@ -78,4 +86,8 @@ class Zend_Service_WindowsAzure_Diagnostics_ConfigurationDataSources
             'directories'             		=> new Zend_Service_WindowsAzure_Diagnostics_ConfigurationDirectories()
         );
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

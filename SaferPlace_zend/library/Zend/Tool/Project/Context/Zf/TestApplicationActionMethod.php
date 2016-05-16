@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Tool
  * @subpackage Framework
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id: ActionMethod.php 20096 2010-01-06 02:05:09Z bkarwin $
  */
@@ -38,7 +42,11 @@ require_once 'Zend/Reflection/File.php';
  *
  * @category   Zend
  * @package    Zend_Tool
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Tool_Project_Context_Zf_TestApplicationActionMethod implements Zend_Tool_Project_Context_Interface
@@ -226,4 +234,8 @@ EOS
     }
     */
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

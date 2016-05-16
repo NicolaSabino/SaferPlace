@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -8,11 +9,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 	<identity>
 		<version number="$Revision: 9280 $"/>
 		<generation date="$Date: 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013) $"/>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.61 $"/>
+		<generation date="$Date: 2009/05/05 23:06:35 $"/>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		<language type="en"/>
 		<territory type="HK"/>
 	</identity>
 	<dates>
 		<calendars>
+<<<<<<< HEAD
 			<calendar type="generic">
 				<dateFormats>
 					<dateFormatLength type="full">
@@ -86,20 +94,42 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<dateFormatLength type="full">
 						<dateFormat>
 							<pattern>EEEE, d MMMM, y</pattern>
+=======
+			<calendar type="japanese">
+				<eras>
+					<eraAbbr>
+						<era type="161">Bunchū</era>
+						<era type="165">Genchū</era>
+					</eraAbbr>
+				</eras>
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>EEEE, MMMM d, y G</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="long">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>d MMMM, y</pattern>
+=======
+							<pattern>MMMM d, y G</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="medium">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>d MMM, y</pattern>
+=======
+							<pattern>MMM d, y G</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>d/M/yy</pattern>
 						</dateFormat>
 					</dateFormatLength>
@@ -224,6 +254,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</short>
 			</metazone>
 		</timeZoneNames>
+=======
+							<pattern>G M/d/yy</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+			</calendar>
+		</calendars>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	</dates>
 	<numbers>
 		<currencies>

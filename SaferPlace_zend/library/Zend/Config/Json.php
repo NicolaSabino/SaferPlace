@@ -16,7 +16,11 @@
  * @package   Zend_Config
  * @copyright Copyright (c) 2005-2009 Zend Technologies USA Inc. (http://www.zend.com)
  * @license   http://framework.zend.com/license/new-bsd     New BSD License
+<<<<<<< HEAD
  * @version   $Id$
+=======
+ * @version   $Id: Json.php 24810 2012-05-17 21:20:12Z rob $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -128,9 +132,15 @@ class Zend_Config_Json extends Zend_Config
         }
 
         // Parse/decode
+<<<<<<< HEAD
         try {
             $config = Zend_Json::decode($json);
         } catch (Zend_Json_Exception $e) {
+=======
+        $config = Zend_Json::decode($json);
+
+        if (null === $config) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             // decode failed
             require_once 'Zend/Config/Exception.php';
             throw new Zend_Config_Exception("Error parsing JSON data");

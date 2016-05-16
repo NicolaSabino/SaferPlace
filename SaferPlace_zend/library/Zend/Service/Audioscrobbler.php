@@ -16,9 +16,15 @@
  * @category   Zend
  * @package    Zend_Service
  * @subpackage Audioscrobbler
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Audioscrobbler.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 
@@ -27,14 +33,21 @@
  */
 require_once 'Zend/Http/Client.php';
 
+<<<<<<< HEAD
 /** @see Zend_Xml_Security */
 require_once 'Zend/Xml/Security.php';
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
 /**
  * @category   Zend
  * @package    Zend_Service
  * @subpackage Audioscrobbler
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Service_Audioscrobbler
@@ -71,6 +84,7 @@ class Zend_Service_Audioscrobbler
     {
         $this->set('version', '1.0');
 
+<<<<<<< HEAD
         if (PHP_VERSION_ID < 50600) {
             iconv_set_encoding('output_encoding', 'UTF-8');
             iconv_set_encoding('input_encoding', 'UTF-8');
@@ -80,6 +94,11 @@ class Zend_Service_Audioscrobbler
             ini_set('input_encoding', 'UTF-8');
             ini_set('default_charset', 'UTF-8');
         }
+=======
+        iconv_set_encoding('output_encoding', 'UTF-8');
+        iconv_set_encoding('input_encoding', 'UTF-8');
+        iconv_set_encoding('internal_encoding', 'UTF-8');
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     }
 
     /**
@@ -190,7 +209,11 @@ class Zend_Service_Audioscrobbler
 
         set_error_handler(array($this, '_errorHandler'));
 
+<<<<<<< HEAD
         if (!$simpleXmlElementResponse = Zend_Xml_Security::scan($responseBody)) {
+=======
+        if (!$simpleXmlElementResponse = simplexml_load_string($responseBody)) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             restore_error_handler();
             /**
              * @see Zend_Service_Exception
@@ -648,7 +671,11 @@ class Zend_Service_Audioscrobbler
      * @param  array   $errcontext
      * @return void
      */
+<<<<<<< HEAD
     public function _errorHandler($errno, $errstr, $errfile, $errline, array $errcontext)
+=======
+    protected function _errorHandler($errno, $errstr, $errfile, $errline, array $errcontext)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     {
         $this->_error = array(
             'errno'      => $errno,

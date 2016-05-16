@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Service_Amazon
  * @subpackage SimpleDb
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -24,14 +28,21 @@
  */
 require_once 'Zend/Http/Response.php';
 
+<<<<<<< HEAD
 /** @see Zend_Xml_Security */
 require_once 'Zend/Xml/Security.php';
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 /**
  * @category   Zend
  * @package    Zend_Service_Amazon
  * @subpackage SimpleDb
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Service_Amazon_SimpleDb_Response
@@ -123,7 +134,12 @@ class Zend_Service_Amazon_SimpleDb_Response
             $body = false;
         }
 
+<<<<<<< HEAD
         return Zend_Xml_Security::scan($body);
+=======
+
+        return simplexml_load_string($body);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     }
 
     /**
@@ -155,7 +171,13 @@ class Zend_Service_Amazon_SimpleDb_Response
                 $errors = libxml_use_internal_errors();
 
                 $this->_document = new DOMDocument();
+<<<<<<< HEAD
                 $this->_document = Zend_Xml_Security::scan($body, $this->_document);
+=======
+                if (!$this->_document->loadXML($body)) {
+                    $this->_document = false;
+                }
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
                 // reset libxml error handling
                 libxml_clear_errors();

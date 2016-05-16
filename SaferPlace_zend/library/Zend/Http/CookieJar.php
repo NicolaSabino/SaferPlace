@@ -15,8 +15,13 @@
  * @category   Zend
  * @package    Zend_Http
  * @subpackage CookieJar
+<<<<<<< HEAD
  * @version    $Id$
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @version    $Id: CookieJar.php 24856 2012-06-01 01:10:47Z adamlundrigan $
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -54,7 +59,11 @@ require_once "Zend/Http/Response.php";
  * @category   Zend
  * @package    Zend_Http
  * @subpackage CookieJar
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Http_CookieJar implements Countable, IteratorAggregate

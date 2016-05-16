@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Ldap
  * @subpackage Schema
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Item.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -27,7 +33,11 @@
  * @category   Zend
  * @package    Zend_Ldap
  * @subpackage Schema
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 abstract class Zend_Ldap_Node_Schema_Item implements ArrayAccess, Countable
@@ -53,7 +63,11 @@ abstract class Zend_Ldap_Node_Schema_Item implements ArrayAccess, Countable
      * Sets the data
      *
      * @param  array $data
+<<<<<<< HEAD
      * @return Zend_Ldap_Node_Schema_Item Provides a fluent interface
+=======
+     * @return Zend_Ldap_Node_Schema_Item Provides a fluid interface
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setData(array $data)
     {
@@ -160,4 +174,8 @@ abstract class Zend_Ldap_Node_Schema_Item implements ArrayAccess, Countable
     {
         return count($this->_data);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

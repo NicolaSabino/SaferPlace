@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -8,6 +9,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 	<identity>
 		<version number="$Revision: 9061 $"/>
 		<generation date="$Date: 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013) $"/>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.12 $"/>
+		<generation date="$Date: 2009/06/15 03:46:25 $"/>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		<language type="ii"/>
 	</identity>
 	<localeDisplayNames>
@@ -66,7 +73,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 	</localeDisplayNames>
 	<characters>
 		<exemplarCharacters>[ꀀ-ꒌ]</exemplarCharacters>
+<<<<<<< HEAD
 		<exemplarCharacters type="index" draft="unconfirmed">[ꀀ ꀋ ꀗ ꀣ ꀯ ꀺ ꁆ ꁒ ꁞ ꁩ ꁵ ꂁ ꂍ ꂘ ꂤ ꂰ ꂼ ꃇ ꃓ ꃟ ꃫ ꃶ ꄂ ꄎ ꄚ ꄥ ꄱ ꄽ ꅉ ꅔ ꅠ ꅬ ꅸ ꆃ ꆏ ꆛ ꆧ ꆳ ꆾ ꇊ ꇖ ꇢ ꇭ ꇹ ꈅ ꈑ ꈜ ꈨ ꈴ ꉀ ꉋ ꉗ ꉣ ꉯ ꉺ ꊆ ꊒ ꊞ ꊩ ꊵ ꋁ ꋍ ꋘ ꋤ ꋰ ꋼ ꌇ ꌓ ꌟ ꌫ ꌷ ꍂ ꍎ ꍚ ꍦ ꍱ ꍽ ꎉ ꎕ ꎠ ꎬ ꎸ ꏄ ꏏ ꏛ ꏧ ꏳ ꏾ ꐊ ꐖ ꐢ ꐭ ꐹ ꑅ ꑑ ꑜ ꑨ ꑴ ꒀ ꒋ]</exemplarCharacters>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	</characters>
 	<dates>
 		<calendars>
@@ -74,6 +84,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<months>
 					<monthContext type="format">
 						<monthWidth type="abbreviated">
+<<<<<<< HEAD
 							<month type="1" draft="provisional">1</month>
 							<month type="2" draft="provisional">2</month>
 							<month type="3" draft="provisional">3</month>
@@ -86,6 +97,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="10" draft="provisional">10</month>
 							<month type="11" draft="provisional">11</month>
 							<month type="12" draft="provisional">12</month>
+=======
+							<month type="1">1</month>
+							<month type="2">2</month>
+							<month type="3">3</month>
+							<month type="4">4</month>
+							<month type="5">5</month>
+							<month type="6">6</month>
+							<month type="7">7</month>
+							<month type="8">8</month>
+							<month type="9">9</month>
+							<month type="10">10</month>
+							<month type="11">11</month>
+							<month type="12">12</month>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</monthWidth>
 						<monthWidth type="wide">
 							<month type="1">ꋍꆪ</month>
@@ -102,11 +127,34 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="12">ꊰꑋꆪ</month>
 						</monthWidth>
 					</monthContext>
+<<<<<<< HEAD
+=======
+					<monthContext type="stand-alone">
+						<monthWidth type="narrow">
+							<month type="1">1</month>
+							<month type="2">2</month>
+							<month type="3">3</month>
+							<month type="4">4</month>
+							<month type="5">5</month>
+							<month type="6">6</month>
+							<month type="7">7</month>
+							<month type="8">8</month>
+							<month type="9">9</month>
+							<month type="10">10</month>
+							<month type="11">11</month>
+							<month type="12">12</month>
+						</monthWidth>
+					</monthContext>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				</months>
 				<days>
 					<dayContext type="format">
 						<dayWidth type="abbreviated">
+<<<<<<< HEAD
 							<day type="sun">ꑭꆏ</day>
+=======
+							<day type="sun">ꆏꑍ</day>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 							<day type="mon">ꆏꋍ</day>
 							<day type="tue">ꆏꑍ</day>
 							<day type="wed">ꆏꌕ</day>
@@ -138,6 +186,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</days>
 				<quarters>
 					<quarterContext type="format">
+<<<<<<< HEAD
+=======
+						<quarterWidth type="abbreviated">
+							<quarter type="1">ꃅꑌ</quarter>
+							<quarter type="2">ꃅꎸ</quarter>
+							<quarter type="3">ꃅꍵ</quarter>
+							<quarter type="4">ꃅꋆ</quarter>
+						</quarterWidth>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<quarterWidth type="wide">
 							<quarter type="1">ꃅꑌ</quarter>
 							<quarter type="2">ꃅꎸ</quarter>
@@ -145,6 +202,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<quarter type="4">ꃅꋆ</quarter>
 						</quarterWidth>
 					</quarterContext>
+<<<<<<< HEAD
 				</quarters>
 				<dayPeriods>
 					<dayPeriodContext type="format">
@@ -154,12 +212,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</dayPeriodWidth>
 					</dayPeriodContext>
 				</dayPeriods>
+=======
+					<quarterContext type="stand-alone">
+						<quarterWidth type="narrow">
+							<quarter type="1">1</quarter>
+							<quarter type="2">2</quarter>
+							<quarter type="3">3</quarter>
+							<quarter type="4">4</quarter>
+						</quarterWidth>
+					</quarterContext>
+				</quarters>
+				<am>ꎸꄑ</am>
+				<pm>ꁯꋒ</pm>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<eras>
 					<eraAbbr>
 						<era type="0">ꃅꋊꂿ</era>
 						<era type="1">ꃅꋊꊂ</era>
 					</eraAbbr>
 				</eras>
+<<<<<<< HEAD
 			</calendar>
 		</calendars>
 		<fields>
@@ -202,6 +274,57 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>ꃅꄷꄮꈉ</displayName>
 			</field>
 		</fields>
+=======
+				<dateFormats>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>y MMMM d</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<fields>
+					<field type="era">
+						<displayName>ꃅꋊ</displayName>
+					</field>
+					<field type="year">
+						<displayName>ꈎ</displayName>
+					</field>
+					<field type="month">
+						<displayName>ꆪ</displayName>
+					</field>
+					<field type="week">
+						<displayName>ꑭꆏ</displayName>
+					</field>
+					<field type="day">
+						<displayName>ꑍ</displayName>
+						<relative type="-2">ꎴꂿꋍꑍ</relative>
+						<relative type="-1">ꀋꅔꉈ</relative>
+						<relative type="0">ꀃꑍ</relative>
+						<relative type="1">ꃆꏂꑍ</relative>
+						<relative type="2">ꌕꀿꑍ</relative>
+					</field>
+					<field type="weekday">
+						<displayName>ꆏꑍ</displayName>
+					</field>
+					<field type="dayperiod">
+						<displayName>ꎸꄑ/ꁯꋒ</displayName>
+					</field>
+					<field type="hour">
+						<displayName>ꄮꈉ</displayName>
+					</field>
+					<field type="minute">
+						<displayName>ꃏ</displayName>
+					</field>
+					<field type="second">
+						<displayName>ꇙ</displayName>
+					</field>
+					<field type="zone">
+						<displayName>ꃅꄷꄮꈉ</displayName>
+					</field>
+				</fields>
+			</calendar>
+		</calendars>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		<timeZoneNames>
 			<zone type="Etc/Unknown">
 				<exemplarCity>ꅉꀋꐚꌠ</exemplarCity>
@@ -209,14 +332,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</timeZoneNames>
 	</dates>
 	<numbers>
+<<<<<<< HEAD
 		<symbols numberSystem="latn">
+=======
+		<symbols>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<decimal>.</decimal>
 			<group>,</group>
 		</symbols>
 		<currencies>
+<<<<<<< HEAD
 			<currency type="CNY">
 				<symbol>¥</symbol>
 			</currency>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<currency type="XXX">
 				<displayName>ꅉꀋꐚꌠꌋꆀꎆꃀꀋꈁꀐꌠ</displayName>
 			</currency>
@@ -229,3 +359,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</messages>
 	</posix>
 </ldml>
+<<<<<<< HEAD
+=======
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

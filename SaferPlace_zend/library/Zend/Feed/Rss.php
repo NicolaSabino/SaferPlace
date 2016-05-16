@@ -15,9 +15,15 @@
  *
  * @category   Zend
  * @package    Zend_Feed
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Rss.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 
@@ -43,7 +49,11 @@ require_once 'Zend/Feed/Entry/Rss.php';
  *
  * @category   Zend
  * @package    Zend_Feed
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Feed_Rss extends Zend_Feed_Abstract
@@ -433,8 +443,12 @@ class Zend_Feed_Rss extends Zend_Feed_Abstract
 
             if (isset($dataentry->category)) {
                 foreach ($dataentry->category as $category) {
+<<<<<<< HEAD
                     $node = $this->_element->createElement('category');
                     $node->appendChild($this->_element->createCDATASection($category['term']));
+=======
+                    $node = $this->_element->createElement('category', $category['term']);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                     if (isset($category['scheme'])) {
                         $node->setAttribute('domain', $category['scheme']);
                     }

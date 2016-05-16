@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Loader
  * @subpackage PluginLoader
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: PluginLoader.php 24877 2012-06-04 14:04:53Z adamlundrigan $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /** Zend_Loader_PluginLoader_Interface */
@@ -32,7 +38,11 @@ require_once 'Zend/Loader.php';
  * @category   Zend
  * @package    Zend_Loader
  * @subpackage PluginLoader
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Loader_PluginLoader implements Zend_Loader_PluginLoader_Interface
@@ -44,12 +54,15 @@ class Zend_Loader_PluginLoader implements Zend_Loader_PluginLoader_Interface
     protected static $_includeFileCache;
 
     /**
+<<<<<<< HEAD
      * Class map cache file handler
      * @var resource
      */
     protected static $_includeFileCacheHandler;
 
     /**
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * Instance loaded plugin paths
      *
      * @var array
@@ -134,6 +147,7 @@ class Zend_Loader_PluginLoader implements Zend_Loader_PluginLoader_Interface
         }
 
         $nsSeparator = (false !== strpos($prefix, '\\'))?'\\':'_';
+<<<<<<< HEAD
         $prefix = rtrim($prefix, $nsSeparator) . $nsSeparator;
         //if $nsSeprator == "\" and the prefix ends in "_\" remove trailing \
         //https://github.com/zendframework/zf1/issues/152
@@ -141,6 +155,9 @@ class Zend_Loader_PluginLoader implements Zend_Loader_PluginLoader_Interface
             $prefix = substr($prefix, 0, -1);
         }
         return $prefix;
+=======
+        return rtrim($prefix, $nsSeparator) . $nsSeparator;
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     }
 
     /**
@@ -444,6 +461,7 @@ class Zend_Loader_PluginLoader implements Zend_Loader_PluginLoader_Interface
      */
     public static function setIncludeFileCache($file)
     {
+<<<<<<< HEAD
         if (!empty(self::$_includeFileCacheHandler)) {
             flock(self::$_includeFileCacheHandler, LOCK_UN);
             fclose(self::$_includeFileCacheHandler);
@@ -451,6 +469,8 @@ class Zend_Loader_PluginLoader implements Zend_Loader_PluginLoader_Interface
 
         self::$_includeFileCacheHandler = null;
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         if (null === $file) {
             self::$_includeFileCache = null;
             return;
@@ -490,6 +510,7 @@ class Zend_Loader_PluginLoader implements Zend_Loader_PluginLoader_Interface
      */
     protected static function _appendIncFile($incFile)
     {
+<<<<<<< HEAD
         if (!isset(self::$_includeFileCacheHandler)) {
             self::$_includeFileCacheHandler = fopen(self::$_includeFileCache, 'ab');
 
@@ -501,6 +522,16 @@ class Zend_Loader_PluginLoader implements Zend_Loader_PluginLoader_Interface
         if (false !== self::$_includeFileCacheHandler) {
             $line = "<?php include_once '$incFile'?>\n";
             fwrite(self::$_includeFileCacheHandler, $line, strlen($line));
+=======
+        if (!file_exists(self::$_includeFileCache)) {
+            $file = '<?php';
+        } else {
+            $file = file_get_contents(self::$_includeFileCache);
+        }
+        if (!strstr($file, $incFile)) {
+            $file .= "\ninclude_once '$incFile';";
+            file_put_contents(self::$_includeFileCache, $file);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         }
     }
 }

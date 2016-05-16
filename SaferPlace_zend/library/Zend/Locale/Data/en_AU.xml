@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -193,6 +194,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</intervalFormats>
 				</dateTimeFormats>
 			</calendar>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.57 $"/>
+		<generation date="$Date: 2009/06/15 03:46:24 $"/>
+		<language type="en"/>
+		<territory type="AU"/>
+	</identity>
+	<dates>
+		<calendars>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<calendar type="gregorian">
 				<dateFormats>
 					<dateFormatLength type="full">
@@ -207,11 +219,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</dateFormatLength>
 					<dateFormatLength type="medium">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>d MMM y</pattern>
+=======
+							<pattern>dd/MM/yyyy</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>d/MM/y</pattern>
 						</dateFormat>
 					</dateFormatLength>
@@ -242,6 +259,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<availableFormats>
 						<dateFormatItem id="yMd">d/M/y</dateFormatItem>
 						<dateFormatItem id="yMEd">E, d/M/y</dateFormatItem>
+=======
+							<pattern>d/MM/yy</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<availableFormats>
+						<dateFormatItem id="MMdd">dd/MM</dateFormatItem>
+						<dateFormatItem id="MMMMd">d MMMM</dateFormatItem>
+						<dateFormatItem id="yyyyMM">MM/yyyy</dateFormatItem>
+						<dateFormatItem id="yyyyMMMM">MMMM y</dateFormatItem>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</availableFormats>
 					<intervalFormats>
 						<intervalFormatFallback>{0} - {1}</intervalFormatFallback>
@@ -288,6 +317,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="d">E, d - E, d MMM</greatestDifference>
 							<greatestDifference id="M">E, d MMM - E, d MMM</greatestDifference>
 						</intervalFormatItem>
+<<<<<<< HEAD
 						<intervalFormatItem id="yM">
 							<greatestDifference id="M">MM/y - MM/y</greatestDifference>
 							<greatestDifference id="y">MM/y - MM/y</greatestDifference>
@@ -301,6 +331,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="d">E, d/MM/y - E, d/MM/y</greatestDifference>
 							<greatestDifference id="M">E, d/MM/y - E, d/MM/y</greatestDifference>
 							<greatestDifference id="y">E, d/MM/y - E, d/MM/y</greatestDifference>
+=======
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">y-y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">MM/yy - MM/yy</greatestDifference>
+							<greatestDifference id="y">MM/yy - MM/yy</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">d/MM/yy - d/MM/yy</greatestDifference>
+							<greatestDifference id="M">d/MM/yy - d/MM/yy</greatestDifference>
+							<greatestDifference id="y">d/MM/yy - d/MM/yy</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">E, d/MM/yy - E, d/MM/yy</greatestDifference>
+							<greatestDifference id="M">E, d/MM/yy - E, d/MM/yy</greatestDifference>
+							<greatestDifference id="y">E, d/MM/yy - E, d/MM/yy</greatestDifference>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MMM-MMM y</greatestDifference>
@@ -319,6 +367,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</intervalFormats>
 				</dateTimeFormats>
 			</calendar>
+<<<<<<< HEAD
 			<calendar type="islamic">
 				<dateFormats>
 					<dateFormatLength type="full">
@@ -462,13 +511,40 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<standard>NZST</standard>
 					<daylight>NZDT</daylight>
 				</short>
+=======
+		</calendars>
+		<timeZoneNames>
+			<metazone type="Atlantic">
+				<commonlyUsed>false</commonlyUsed>
+			</metazone>
+			<metazone type="Australia_Central">
+				<commonlyUsed>true</commonlyUsed>
+			</metazone>
+			<metazone type="Australia_CentralWestern">
+				<commonlyUsed>true</commonlyUsed>
+			</metazone>
+			<metazone type="Australia_Eastern">
+				<commonlyUsed>true</commonlyUsed>
+			</metazone>
+			<metazone type="Australia_Western">
+				<commonlyUsed>true</commonlyUsed>
+			</metazone>
+			<metazone type="New_Zealand">
+				<commonlyUsed>true</commonlyUsed>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</metazone>
 		</timeZoneNames>
 	</dates>
 	<numbers>
+<<<<<<< HEAD
 		<currencyFormats numberSystem="latn">
 			<currencyFormatLength>
 				<currencyFormat type="standard">
+=======
+		<currencyFormats>
+			<currencyFormatLength>
+				<currencyFormat>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					<pattern>¤#,##0.00</pattern>
 				</currencyFormat>
 			</currencyFormatLength>
@@ -477,11 +553,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="AUD">
 				<symbol>$</symbol>
 			</currency>
+<<<<<<< HEAD
 			<currency type="EUR">
 				<displayName>Euro</displayName>
 				<displayName count="one">euro</displayName>
 				<displayName count="other">euro</displayName>
 			</currency>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<currency type="USD">
 				<symbol>US$</symbol>
 			</currency>

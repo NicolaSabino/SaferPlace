@@ -14,9 +14,15 @@
  *
  * @category   Zend
  * @package    Zend_Soap
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Wsdl.php 25033 2012-08-17 19:50:08Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -29,9 +35,12 @@ require_once "Zend/Soap/Wsdl/Strategy/Interface.php";
  */
 require_once "Zend/Soap/Wsdl/Strategy/Abstract.php";
 
+<<<<<<< HEAD
 /** @see Zend_Xml_Security */
 require_once "Zend/Xml/Security.php";
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 /**
  * Zend_Soap_Wsdl
  *
@@ -99,12 +108,32 @@ class Zend_Soap_Wsdl
                     xmlns:xsd='http://www.w3.org/2001/XMLSchema'
                     xmlns:soap-enc='http://schemas.xmlsoap.org/soap/encoding/'
                     xmlns:wsdl='http://schemas.xmlsoap.org/wsdl/'></definitions>";
+<<<<<<< HEAD
         $this->_dom = new DOMDocument();
         if (!$this->_dom = Zend_Xml_Security::scan($wsdl, $this->_dom)) {
             require_once 'Zend/Server/Exception.php';
             throw new Zend_Server_Exception('Unable to create DomDocument');
         } 
         $this->_wsdl = $this->_dom->documentElement;
+=======
+        libxml_disable_entity_loader(true);
+        $this->_dom = new DOMDocument();
+        if (!$this->_dom->loadXML($wsdl)) {
+            require_once 'Zend/Server/Exception.php';
+            throw new Zend_Server_Exception('Unable to create DomDocument');
+        } else {
+            foreach ($this->_dom->childNodes as $child) {
+                if ($child->nodeType === XML_DOCUMENT_TYPE_NODE) {
+                    require_once 'Zend/Server/Exception.php';
+                    throw new Zend_Server_Exception(
+                        'Invalid XML: Detected use of illegal DOCTYPE'
+                    );
+                }
+            }
+            $this->_wsdl = $this->_dom->documentElement;
+        }
+        libxml_disable_entity_loader(false);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
         $this->setComplexTypeStrategy($strategy);
     }
@@ -127,8 +156,15 @@ class Zend_Soap_Wsdl
             // @todo: This is the worst hack ever, but its needed due to design and non BC issues of WSDL generation
             $xml = $this->_dom->saveXML();
             $xml = str_replace($oldUri, $uri, $xml);
+<<<<<<< HEAD
             $this->_dom = new DOMDocument();
             $this->_dom = Zend_Xml_Security::scan($xml, $this->_dom);
+=======
+            libxml_disable_entity_loader(true);
+            $this->_dom = new DOMDocument();
+            $this->_dom->loadXML($xml);
+            libxml_disable_entity_loader(false);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         }
 
         return $this;

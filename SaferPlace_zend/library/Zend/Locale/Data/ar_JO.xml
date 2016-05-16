@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -11,6 +12,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<language type="ar"/>
 		<territory type="JO"/>
 	</identity>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.48 $"/>
+		<generation date="$Date: 2009/05/05 23:06:34 $"/>
+		<language type="ar"/>
+		<territory type="JO"/>
+	</identity>
+	<localeDisplayNames>
+		<scripts>
+			<script type="Ital">اللأيطالية القديمة</script>
+		</scripts>
+	</localeDisplayNames>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	<dates>
 		<calendars>
 			<calendar type="gregorian">
@@ -30,6 +45,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">تشرين الثاني</month>
 							<month type="12">كانون الأول</month>
 						</monthWidth>
+<<<<<<< HEAD
 						<monthWidth type="narrow">
 							<month type="1">ك</month>
 							<month type="2">ش</month>
@@ -88,6 +104,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">ت</month>
 							<month type="12">ك</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<monthWidth type="wide">
 							<month type="1">كانون الثاني</month>
 							<month type="2">شباط</month>
@@ -104,8 +122,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</monthWidth>
 					</monthContext>
 				</months>
+<<<<<<< HEAD
+=======
+				<days>
+					<dayContext type="format">
+						<dayWidth type="abbreviated">
+							<day type="sun">الأحد</day>
+							<day type="mon">الاثنين</day>
+							<day type="tue">الثلاثاء</day>
+							<day type="wed">الأربعاء</day>
+							<day type="thu">الخميس</day>
+							<day type="fri">الجمعة</day>
+							<day type="sat">السبت</day>
+						</dayWidth>
+					</dayContext>
+				</days>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</calendar>
 		</calendars>
 	</dates>
 </ldml>
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

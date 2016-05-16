@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Service_WindowsAzure
  * @subpackage Management
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
@@ -39,15 +43,23 @@
  * @see Zend_Service_SqlAzure_Management_FirewallRuleInstance
  */
  require_once 'Zend/Service/SqlAzure/Management/FirewallRuleInstance.php';
+<<<<<<< HEAD
 
  /** @see Zend_Xml_Security */
  require_once 'Zend/Xml/Security.php';
 
+=======
+ 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 /**
  * @category   Zend
  * @package    Zend_Service_SqlAzure
  * @subpackage Management
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Service_SqlAzure_Management_Client
@@ -282,7 +294,11 @@ class Zend_Service_SqlAzure_Management_Client
 			throw new Zend_Service_SqlAzure_Exception('Response should not be null.');
 		}
 		
+<<<<<<< HEAD
         $xml = @Zend_Xml_Security::scan($response->getBody());
+=======
+        $xml = @simplexml_load_string($response->getBody());
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         
         if ($xml !== false) {
             // Fetch all namespaces 

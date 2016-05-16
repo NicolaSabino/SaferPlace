@@ -15,8 +15,13 @@
  * @category   Zend
  * @package    Zend_Controller
  * @subpackage Router
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @version    $Id: Chain.php 25249 2013-02-06 09:54:24Z frosch $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -28,11 +33,16 @@ require_once 'Zend/Controller/Router/Route/Abstract.php';
  *
  * @package    Zend_Controller
  * @subpackage Router
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Controller_Router_Route_Chain extends Zend_Controller_Router_Route_Abstract
 {
+<<<<<<< HEAD
 
     /**
      * Routes
@@ -46,6 +56,9 @@ class Zend_Controller_Router_Route_Chain extends Zend_Controller_Router_Route_Ab
      *
      * @var array
      */
+=======
+    protected $_routes = array();
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     protected $_separators = array();
 
     /**
@@ -57,7 +70,10 @@ class Zend_Controller_Router_Route_Chain extends Zend_Controller_Router_Route_Ab
     public static function getInstance(Zend_Config $config)
     {
         $defs = ($config->defaults instanceof Zend_Config) ? $config->defaults->toArray() : array();
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         return new self($config->route, $defs);
     }
 
@@ -74,6 +90,10 @@ class Zend_Controller_Router_Route_Chain extends Zend_Controller_Router_Route_Ab
         $this->_separators[] = $separator;
 
         return $this;
+<<<<<<< HEAD
+=======
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     }
 
     /**
@@ -86,10 +106,17 @@ class Zend_Controller_Router_Route_Chain extends Zend_Controller_Router_Route_Ab
      */
     public function match($request, $partial = null)
     {
+<<<<<<< HEAD
         $rawPath     = $request->getPathInfo();
         $path        = trim($request->getPathInfo(), self::URI_DELIMITER);
         $subPath     = $path;
         $values      = array();
+=======
+        $path        = trim($request->getPathInfo(), self::URI_DELIMITER);
+        $subPath     = $path;
+        $values      = array();
+        $numRoutes   = count($this->_routes);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         $matchedPath = null;
 
         foreach ($this->_routes as $key => $route) {
@@ -101,12 +128,19 @@ class Zend_Controller_Router_Route_Chain extends Zend_Controller_Router_Route_Ab
                 $separator = substr($subPath, 0, strlen($this->_separators[$key]));
 
                 if ($separator !== $this->_separators[$key]) {
+<<<<<<< HEAD
                     $request->setPathInfo($rawPath);
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                     return false;
                 }
 
                 $subPath = substr($subPath, strlen($separator));
             }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             // TODO: Should be an interface method. Hack for 1.0 BC
             if (!method_exists($route, 'getVersion') || $route->getVersion() == 1) {
                 $match = $subPath;
@@ -115,17 +149,27 @@ class Zend_Controller_Router_Route_Chain extends Zend_Controller_Router_Route_Ab
                 $match = $request;
             }
 
+<<<<<<< HEAD
             $res = $route->match($match, true);
 
             if ($res === false) {
                 $request->setPathInfo($rawPath);
+=======
+            $res = $route->match($match, true, ($key == $numRoutes - 1));
+            if ($res === false) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 return false;
             }
 
             $matchedPath = $route->getMatchedPath();
 
             if ($matchedPath !== null) {
+<<<<<<< HEAD
                 $subPath   = substr($subPath, strlen($matchedPath));
+=======
+                $subPath     = substr($subPath, strlen($matchedPath));
+                $separator   = substr($subPath, 0, strlen($this->_separators[$key]));
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             }
 
             $values = $res + $values;
@@ -188,7 +232,11 @@ class Zend_Controller_Router_Route_Chain extends Zend_Controller_Router_Route_Ab
             }
         }
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Return a single parameter of route's defaults
      *
@@ -226,4 +274,8 @@ class Zend_Controller_Router_Route_Chain extends Zend_Controller_Router_Route_Ab
 
         return $defaults;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Db
  * @subpackage Select
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Select.php 24833 2012-05-30 13:29:41Z adamlundrigan $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 
@@ -38,7 +44,11 @@ require_once 'Zend/Db/Expr.php';
  * @category   Zend
  * @package    Zend_Db
  * @subpackage Select
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Db_Select
@@ -81,8 +91,11 @@ class Zend_Db_Select
     const SQL_ASC        = 'ASC';
     const SQL_DESC       = 'DESC';
 
+<<<<<<< HEAD
     const REGEX_COLUMN_EXPR = '/^([\w]*\s*\(([^\(\)]|(?1))*\))$/';
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Bind variables for query
      *
@@ -511,7 +524,11 @@ class Zend_Db_Select
         }
 
         foreach ($spec as $val) {
+<<<<<<< HEAD
             if (preg_match(self::REGEX_COLUMN_EXPR, (string) $val)) {
+=======
+            if (preg_match('/\(.*\)/', (string) $val)) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 $val = new Zend_Db_Expr($val);
             }
             $this->_parts[self::GROUP][] = $val;
@@ -603,7 +620,11 @@ class Zend_Db_Select
                     $val = trim($matches[1]);
                     $direction = $matches[2];
                 }
+<<<<<<< HEAD
                 if (preg_match(self::REGEX_COLUMN_EXPR, (string) $val)) {
+=======
+                if (preg_match('/\(.*\)/', $val)) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                     $val = new Zend_Db_Expr($val);
                 }
                 $this->_parts[self::ORDER][] = array($val, $direction);
@@ -656,7 +677,11 @@ class Zend_Db_Select
     }
 
     /**
+<<<<<<< HEAD
      * Get part of the structured information for the current query.
+=======
+     * Get part of the structured information for the currect query.
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      *
      * @param string $part
      * @return mixed
@@ -720,7 +745,11 @@ class Zend_Db_Select
     {
         if ($part == null) {
             $this->_parts = self::$_partsInit;
+<<<<<<< HEAD
         } elseif (array_key_exists($part, self::$_partsInit)) {
+=======
+        } else if (array_key_exists($part, self::$_partsInit)) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             $this->_parts[$part] = self::$_partsInit[$part];
         }
         return $this;
@@ -770,7 +799,11 @@ class Zend_Db_Select
 
         if (empty($name)) {
             $correlationName = $tableName = '';
+<<<<<<< HEAD
         } elseif (is_array($name)) {
+=======
+        } else if (is_array($name)) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             // Must be array($correlationName => $tableName) or array($ident, ...)
             foreach ($name as $_correlationName => $_tableName) {
                 if (is_string($_correlationName)) {
@@ -784,10 +817,17 @@ class Zend_Db_Select
                 }
                 break;
             }
+<<<<<<< HEAD
         } elseif ($name instanceof Zend_Db_Expr|| $name instanceof Zend_Db_Select) {
             $tableName = $name;
             $correlationName = $this->_uniqueCorrelation('t');
         } elseif (preg_match('/^(.+)\s+AS\s+(.+)$/i', $name, $m)) {
+=======
+        } else if ($name instanceof Zend_Db_Expr|| $name instanceof Zend_Db_Select) {
+            $tableName = $name;
+            $correlationName = $this->_uniqueCorrelation('t');
+        } else if (preg_match('/^(.+)\s+AS\s+(.+)$/i', $name, $m)) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             $tableName = $m[1];
             $correlationName = $m[2];
         } else {
@@ -940,13 +980,20 @@ class Zend_Db_Select
             $currentCorrelationName = $correlationName;
             if (is_string($col)) {
                 // Check for a column matching "<column> AS <alias>" and extract the alias name
+<<<<<<< HEAD
                 $col = trim(str_replace("\n", ' ', $col));
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 if (preg_match('/^(.+)\s+' . self::SQL_AS . '\s+(.+)$/i', $col, $m)) {
                     $col = $m[1];
                     $alias = $m[2];
                 }
                 // Check for columns that look like functions and convert to Zend_Db_Expr
+<<<<<<< HEAD
                 if (preg_match(self::REGEX_COLUMN_EXPR, (string) $col)) {
+=======
+                if (preg_match('/\(.*\)/', $col)) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                     $col = new Zend_Db_Expr($col);
                 } elseif (preg_match('/(.+)\.(.+)/', $col, $m)) {
                     $currentCorrelationName = $m[1];
@@ -1099,7 +1146,11 @@ class Zend_Db_Select
             }
         }
 
+<<<<<<< HEAD
         return $sql . ' ' . implode(', ', $columns);
+=======
+        return $sql .= ' ' . implode(', ', $columns);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     }
 
     /**
@@ -1241,7 +1292,11 @@ class Zend_Db_Select
                     } else {
                         $order[] = $this->_adapter->quoteIdentifier($term[0], true) . ' ' . $term[1];
                     }
+<<<<<<< HEAD
                 } elseif (is_numeric($term) && strval(intval($term)) == $term) {
+=======
+                } else if (is_numeric($term) && strval(intval($term)) == $term) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                     $order[] = (int)trim($term);
                 } else {
                     $order[] = $this->_adapter->quoteIdentifier($term, true);

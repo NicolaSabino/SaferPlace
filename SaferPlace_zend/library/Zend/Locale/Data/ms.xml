@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -80,10 +81,41 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="es_419">Sepanyol Amerika Latin</language>
 			<language type="es_ES">Sepanyol Eropah</language>
 			<language type="es_MX">Sepanyol Mexico</language>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.69 $"/>
+		<generation date="$Date: 2009/06/15 03:46:25 $"/>
+		<language type="ms"/>
+	</identity>
+	<localeDisplayNames>
+		<languages>
+			<language type="af">Afrikaans</language>
+			<language type="am">Amharic</language>
+			<language type="ar">Arab</language>
+			<language type="as">Assam</language>
+			<language type="az">Azerbaijan</language>
+			<language type="be">Belarus</language>
+			<language type="bg">Bulgaria</language>
+			<language type="bh">Bihari</language>
+			<language type="bn">Benggala</language>
+			<language type="br">Brittany</language>
+			<language type="bs">Bosnia</language>
+			<language type="ca">Catalonia</language>
+			<language type="cs">Czech</language>
+			<language type="cy">Wales</language>
+			<language type="da">Denmark</language>
+			<language type="de">Jerman</language>
+			<language type="el">Greek</language>
+			<language type="en">Inggeris</language>
+			<language type="eo">Esperanto</language>
+			<language type="es">Sepanyol</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="et">Estonia</language>
 			<language type="eu">Basque</language>
 			<language type="fa">Parsi</language>
 			<language type="fi">Finland</language>
+<<<<<<< HEAD
 			<language type="fil">Filipina</language>
 			<language type="fj">Fiji</language>
 			<language type="fo">Faroe</language>
@@ -156,12 +188,47 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="mgh" draft="contributed">Makhuwa-Meetto</language>
 			<language type="mgo" draft="contributed">Meta'</language>
 			<language type="mi">Maori</language>
+=======
+			<language type="fil">Tagalog</language>
+			<language type="fo">Faroese</language>
+			<language type="fr">Perancis</language>
+			<language type="fy">Frisian</language>
+			<language type="ga">Ireland</language>
+			<language type="gd">Scots Gaelic</language>
+			<language type="gl">Galicia</language>
+			<language type="gn">Guarani</language>
+			<language type="gu">Gujerat</language>
+			<language type="he">Ibrani</language>
+			<language type="hi">Hindi</language>
+			<language type="hr">Croat</language>
+			<language type="hu">Hungary</language>
+			<language type="hy">Armenia</language>
+			<language type="ia">Interlingua</language>
+			<language type="id">Indonesia</language>
+			<language type="ie">Interlingue</language>
+			<language type="is">Iceland</language>
+			<language type="it">Itali</language>
+			<language type="ja">Jepun</language>
+			<language type="jv">Jawa</language>
+			<language type="ka">Georgia</language>
+			<language type="km">Khmer</language>
+			<language type="kn">Kannada</language>
+			<language type="ko">Korea</language>
+			<language type="ku">Kurdish</language>
+			<language type="ky">Kyrgyz</language>
+			<language type="la">Latin</language>
+			<language type="ln">Lingala</language>
+			<language type="lo">Laos</language>
+			<language type="lt">Lithuania</language>
+			<language type="lv">Latvia</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mk">Macedonia</language>
 			<language type="ml">Malayalam</language>
 			<language type="mn">Mongolia</language>
 			<language type="mr">Marathi</language>
 			<language type="ms">Bahasa Melayu</language>
 			<language type="mt">Malta</language>
+<<<<<<< HEAD
 			<language type="mua" draft="contributed">Mundang</language>
 			<language type="my">Burma</language>
 			<language type="mye" draft="contributed">Myene</language>
@@ -230,10 +297,41 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="teo" draft="contributed">Teso</language>
 			<language type="tet">Tetum</language>
 			<language type="tg">Tajik</language>
+=======
+			<language type="ne">Nepal</language>
+			<language type="nl">Belanda</language>
+			<language type="nn">Nynorsk Norway</language>
+			<language type="no">Norway</language>
+			<language type="oc">Occitan</language>
+			<language type="or">Oriya</language>
+			<language type="pa">Punjabi</language>
+			<language type="pl">Poland</language>
+			<language type="ps">Pashto</language>
+			<language type="pt">Portugis</language>
+			<language type="pt_PT">Portugis Iberia</language>
+			<language type="ro">Romania</language>
+			<language type="ru">Rusia</language>
+			<language type="sa">Sanskrit</language>
+			<language type="sd">Sindhi</language>
+			<language type="sh">SerboCroatia</language>
+			<language type="si">Sinhala</language>
+			<language type="sk">Slovak</language>
+			<language type="sl">Slovenia</language>
+			<language type="so">Somali</language>
+			<language type="sq">Albania</language>
+			<language type="sr">Serbia</language>
+			<language type="st">Sesoto</language>
+			<language type="su">Sunda</language>
+			<language type="sv">Sweden</language>
+			<language type="sw">Swahili</language>
+			<language type="ta">Tamil</language>
+			<language type="te">Telugu</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="th">Thai</language>
 			<language type="ti">Tigrinya</language>
 			<language type="tk">Turkmen</language>
 			<language type="tlh">Klingon</language>
+<<<<<<< HEAD
 			<language type="tn">Tswana</language>
 			<language type="to">Tonga</language>
 			<language type="tpi">Tok Pisin</language>
@@ -347,6 +445,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="155">Eropah Barat</territory>
 			<territory type="419">Amerika Latin</territory>
 			<territory type="AC">Pulau Ascension</territory>
+=======
+			<language type="tr">Turki</language>
+			<language type="tw">Twi</language>
+			<language type="ug">Uighur</language>
+			<language type="uk">Ukraine</language>
+			<language type="ur">Urdu</language>
+			<language type="uz">Uzbek</language>
+			<language type="vi">Vietnam</language>
+			<language type="xh">Xhosa</language>
+			<language type="yi">Yahudi</language>
+			<language type="zu">Zulu</language>
+		</languages>
+		<territories>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="AD">Andorra</territory>
 			<territory type="AE">Emiriah Arab Bersatu</territory>
 			<territory type="AF">Afghanistan</territory>
@@ -356,13 +468,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AM">Armenia</territory>
 			<territory type="AN">Netherlands Antilles</territory>
 			<territory type="AO">Angola</territory>
+<<<<<<< HEAD
 			<territory type="AQ">Antartika</territory>
+=======
+			<territory type="AQ">Antarctica</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="AR">Argentina</territory>
 			<territory type="AS">American Samoa</territory>
 			<territory type="AT">Austria</territory>
 			<territory type="AU">Australia</territory>
 			<territory type="AW">Aruba</territory>
+<<<<<<< HEAD
 			<territory type="AX">Kepulauan Aland</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="AZ">Azerbaijan</territory>
 			<territory type="BA">Bosnia dan Herzegovina</territory>
 			<territory type="BB">Barbados</territory>
@@ -373,6 +492,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="BH">Bahrain</territory>
 			<territory type="BI">Burundi</territory>
 			<territory type="BJ">Benin</territory>
+<<<<<<< HEAD
 			<territory type="BL">Saint Barthélemy</territory>
 			<territory type="BM">Bermuda</territory>
 			<territory type="BN">Brunei</territory>
@@ -382,10 +502,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="BS">Bahamas</territory>
 			<territory type="BT">Bhutan</territory>
 			<territory type="BV">Pulau Bouvet</territory>
+=======
+			<territory type="BM">Bermuda</territory>
+			<territory type="BN">Brunei</territory>
+			<territory type="BO">Bolivia</territory>
+			<territory type="BR">Brazil</territory>
+			<territory type="BS">Bahamas</territory>
+			<territory type="BT">Bhutan</territory>
+			<territory type="BV">Bouvet Island</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="BW">Botswana</territory>
 			<territory type="BY">Belarus</territory>
 			<territory type="BZ">Belize</territory>
 			<territory type="CA">Kanada</territory>
+<<<<<<< HEAD
 			<territory type="CC">Kepulauan Cocos (Keeling)</territory>
 			<territory type="CD">Congo - Kinshasa</territory>
 			<territory type="CD" alt="variant">Congo (DRC)</territory>
@@ -416,6 +546,32 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="DO">Republik Dominica</territory>
 			<territory type="DZ">Algeria</territory>
 			<territory type="EA">Ceuta dan Melilla</territory>
+=======
+			<territory type="CC">Cocos (Keeling) Islands</territory>
+			<territory type="CD">Democratic Republic of the Congo</territory>
+			<territory type="CF">Republik Afrika Tengah</territory>
+			<territory type="CG">Congo</territory>
+			<territory type="CH">Switzerland</territory>
+			<territory type="CI">Pantai Gading</territory>
+			<territory type="CK">Cook Islands</territory>
+			<territory type="CL">Cile</territory>
+			<territory type="CM">Kamerun</territory>
+			<territory type="CN">Cina</territory>
+			<territory type="CO">Colombia</territory>
+			<territory type="CR">Kosta Rika</territory>
+			<territory type="CS">Serbia dan Montenegro</territory>
+			<territory type="CU">Cuba</territory>
+			<territory type="CV">Cape Verde</territory>
+			<territory type="CX">Christmas Island</territory>
+			<territory type="CY">Kibris</territory>
+			<territory type="CZ">Republik Czech</territory>
+			<territory type="DE">Jerman</territory>
+			<territory type="DJ">Jibouti</territory>
+			<territory type="DK">Denmark</territory>
+			<territory type="DM">Dominica</territory>
+			<territory type="DO">Republik Dominican</territory>
+			<territory type="DZ">Aljazair</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="EC">Ecuador</territory>
 			<territory type="EE">Estonia</territory>
 			<territory type="EG">Mesir</territory>
@@ -423,6 +579,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="ER">Eritrea</territory>
 			<territory type="ES">Sepanyol</territory>
 			<territory type="ET">Ethiopia</territory>
+<<<<<<< HEAD
 			<territory type="EU">Kesatuan Eropah</territory>
 			<territory type="FI">Finland</territory>
 			<territory type="FJ">Fiji</territory>
@@ -438,19 +595,39 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GE">Georgia</territory>
 			<territory type="GF">Guiana Perancis</territory>
 			<territory type="GG">Guernsey</territory>
+=======
+			<territory type="FI">Finland</territory>
+			<territory type="FJ">Fiji</territory>
+			<territory type="FK">Falkland Islands</territory>
+			<territory type="FM">Micronesia</territory>
+			<territory type="FO">Faroe Islands</territory>
+			<territory type="FR">Perancis</territory>
+			<territory type="GA">Gabon</territory>
+			<territory type="GB">United Kingdom</territory>
+			<territory type="GD">Grenada</territory>
+			<territory type="GE">Georgia</territory>
+			<territory type="GF">French Guiana</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="GH">Ghana</territory>
 			<territory type="GI">Gibraltar</territory>
 			<territory type="GL">Greenland</territory>
 			<territory type="GM">Gambia</territory>
 			<territory type="GN">Guinea</territory>
 			<territory type="GP">Guadeloupe</territory>
+<<<<<<< HEAD
 			<territory type="GQ">Guinea Khatulistiwa</territory>
 			<territory type="GR">Yunani</territory>
 			<territory type="GS">Kepualaun Georgia Selatan dan Sandwich Selatan</territory>
+=======
+			<territory type="GQ">Equatorial Guinea</territory>
+			<territory type="GR">Yunani</territory>
+			<territory type="GS">South Georgia and the South Sandwich Islands</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="GT">Guatemala</territory>
 			<territory type="GU">Guam</territory>
 			<territory type="GW">Guinea Bissau</territory>
 			<territory type="GY">Guyana</territory>
+<<<<<<< HEAD
 			<territory type="HK">Hong Kong SAR China</territory>
 			<territory type="HK" alt="short">Hong Kong</territory>
 			<territory type="HM">Pulau Heard dan Kepulauan McDonald</territory>
@@ -465,12 +642,29 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="IM">Isle of Man</territory>
 			<territory type="IN">India</territory>
 			<territory type="IO">Wilayah Lautan Hindi British</territory>
+=======
+			<territory type="HK">Hong Kong S.A.R., China</territory>
+			<territory type="HM">Heard Island and McDonald Islands</territory>
+			<territory type="HN">Honduras</territory>
+			<territory type="HR">Croatia</territory>
+			<territory type="HT">Haiti</territory>
+			<territory type="HU">Hungari</territory>
+			<territory type="ID">Indonesia</territory>
+			<territory type="IE">Ireland</territory>
+			<territory type="IL">Israel</territory>
+			<territory type="IN">Hindia</territory>
+			<territory type="IO">British Indian Ocean Territory</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="IQ">Iraq</territory>
 			<territory type="IR">Iran</territory>
 			<territory type="IS">Iceland</territory>
 			<territory type="IT">Itali</territory>
+<<<<<<< HEAD
 			<territory type="JE">Jersey</territory>
 			<territory type="JM">Jamaica</territory>
+=======
+			<territory type="JM">Jamaika</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="JO">Jordan</territory>
 			<territory type="JP">Jepun</territory>
 			<territory type="KE">Kenya</territory>
@@ -479,10 +673,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="KI">Kiribati</territory>
 			<territory type="KM">Comoros</territory>
 			<territory type="KN">Saint Kitts dan Nevis</territory>
+<<<<<<< HEAD
 			<territory type="KP">Korea Utara</territory>
 			<territory type="KR">Korea Selatan</territory>
 			<territory type="KW">Kuwait</territory>
 			<territory type="KY">Kepulauan Cayman</territory>
+=======
+			<territory type="KP">Utara Korea</territory>
+			<territory type="KR">Selatan Korea</territory>
+			<territory type="KW">Kuwait</territory>
+			<territory type="KY">Cayman Islands</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="KZ">Kazakhstan</territory>
 			<territory type="LA">Laos</territory>
 			<territory type="LB">Lubnan</territory>
@@ -492,12 +693,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="LR">Liberia</territory>
 			<territory type="LS">Lesotho</territory>
 			<territory type="LT">Lithuania</territory>
+<<<<<<< HEAD
 			<territory type="LU">Luxembourg</territory>
+=======
+			<territory type="LU">Luksembourg</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="LV">Latvia</territory>
 			<territory type="LY">Libya</territory>
 			<territory type="MA">Maghribi</territory>
 			<territory type="MC">Monaco</territory>
 			<territory type="MD">Moldova</territory>
+<<<<<<< HEAD
 			<territory type="ME">Montenegro</territory>
 			<territory type="MF">Saint Martin</territory>
 			<territory type="MG">Madagaskar</territory>
@@ -510,14 +716,30 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MO">Macau SAR China</territory>
 			<territory type="MO" alt="short">Macau</territory>
 			<territory type="MP">Kepulauan Mariana Utara</territory>
+=======
+			<territory type="MG">Madagaskar</territory>
+			<territory type="MH">Kepulauan Marshall</territory>
+			<territory type="MK">Macedonia</territory>
+			<territory type="ML">Mali</territory>
+			<territory type="MM">Myanmar</territory>
+			<territory type="MN">Mongolia</territory>
+			<territory type="MO">Macao S.A.R., China</territory>
+			<territory type="MP">Northern Mariana Islands</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="MQ">Martinique</territory>
 			<territory type="MR">Mauritania</territory>
 			<territory type="MS">Montserrat</territory>
 			<territory type="MT">Malta</territory>
 			<territory type="MU">Mauritius</territory>
+<<<<<<< HEAD
 			<territory type="MV">Maldives</territory>
 			<territory type="MW">Malawi</territory>
 			<territory type="MX">Mexico</territory>
+=======
+			<territory type="MV">Maldiv</territory>
+			<territory type="MW">Malawi</territory>
+			<territory type="MX">Meksiko</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="MY">Malaysia</territory>
 			<territory type="MZ">Mozambik</territory>
 			<territory type="NA">Namibia</territory>
@@ -535,11 +757,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="OM">Oman</territory>
 			<territory type="PA">Panama</territory>
 			<territory type="PE">Peru</territory>
+<<<<<<< HEAD
 			<territory type="PF">Polinesia Perancis</territory>
+=======
+			<territory type="PF">French Polynesia</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="PG">Papua New Guinea</territory>
 			<territory type="PH">Filipina</territory>
 			<territory type="PK">Pakistan</territory>
 			<territory type="PL">Poland</territory>
+<<<<<<< HEAD
 			<territory type="PM">Saint Pierre dan Miquelon</territory>
 			<territory type="PN">Kepulauan Pitcairn</territory>
 			<territory type="PR">Puerto Rico</territory>
@@ -554,6 +781,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="RO">Romania</territory>
 			<territory type="RS">Serbia</territory>
 			<territory type="RU">Rusia</territory>
+=======
+			<territory type="PM">Saint Pierre and Miquelon</territory>
+			<territory type="PN">Pitcairn</territory>
+			<territory type="PR">Puerto Rico</territory>
+			<territory type="PS">Palestinian Territory</territory>
+			<territory type="PT">Feringgi</territory>
+			<territory type="PW">Palau</territory>
+			<territory type="PY">Paraguay</territory>
+			<territory type="QA">Qatar</territory>
+			<territory type="RE">Réunion</territory>
+			<territory type="RO">Romania</territory>
+			<territory type="RU">Russia</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="RW">Rwanda</territory>
 			<territory type="SA">Arab Saudi</territory>
 			<territory type="SB">Kepulauan Solomon</territory>
@@ -563,13 +803,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="SG">Singapura</territory>
 			<territory type="SH">Saint Helena</territory>
 			<territory type="SI">Slovenia</territory>
+<<<<<<< HEAD
 			<territory type="SJ">Svalbard dan Jan Mayen</territory>
 			<territory type="SK">Slovakia</territory>
 			<territory type="SL">Sierra Leone</territory>
+=======
+			<territory type="SJ">Svalbard and Jan Mayen</territory>
+			<territory type="SK">Slovakia</territory>
+			<territory type="SL">Siera Leon</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="SM">San Marino</territory>
 			<territory type="SN">Senegal</territory>
 			<territory type="SO">Somalia</territory>
 			<territory type="SR">Surinam</territory>
+<<<<<<< HEAD
 			<territory type="SS">Sudan Selatan</territory>
 			<territory type="ST">Sao Tome dan Principe</territory>
 			<territory type="SV">El Salvador</territory>
@@ -585,6 +832,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="TJ">Tajikistan</territory>
 			<territory type="TK">Tokelau</territory>
 			<territory type="TL">Timor Timur</territory>
+=======
+			<territory type="ST">Sao Tome dan Principe</territory>
+			<territory type="SV">El Salvador</territory>
+			<territory type="SY">Syria</territory>
+			<territory type="SZ">Swaziland</territory>
+			<territory type="TC">Turks and Caicos Islands</territory>
+			<territory type="TD">Cad</territory>
+			<territory type="TF">French Southern Territories</territory>
+			<territory type="TG">Togo</territory>
+			<territory type="TH">Thailand</territory>
+			<territory type="TJ">Tadjikistan</territory>
+			<territory type="TK">Tokelau</territory>
+			<territory type="TL">Timor-Leste</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="TM">Turkmenistan</territory>
 			<territory type="TN">Tunisia</territory>
 			<territory type="TO">Tonga</territory>
@@ -595,6 +856,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="TZ">Tanzania</territory>
 			<territory type="UA">Ukraine</territory>
 			<territory type="UG">Uganda</territory>
+<<<<<<< HEAD
 			<territory type="UM">Kepulauan Terpencil A.S.</territory>
 			<territory type="US">Amerika Syarikat</territory>
 			<territory type="US" alt="short">A.S</territory>
@@ -610,11 +872,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="WF">Wallis dan Futuna</territory>
 			<territory type="WS">Samoa</territory>
 			<territory type="XK">Kosovo</territory>
+=======
+			<territory type="UM">United States Minor Outlying Islands</territory>
+			<territory type="US">Amerika Syarikat</territory>
+			<territory type="UY">Uruguay</territory>
+			<territory type="UZ">Uzbekistan</territory>
+			<territory type="VA">Vatican</territory>
+			<territory type="VC">Saint Vincent dan Grenadines</territory>
+			<territory type="VE">Venezuela</territory>
+			<territory type="VG">British Virgin Islands</territory>
+			<territory type="VI">U.S. Virgin Islands</territory>
+			<territory type="VN">Vietnam</territory>
+			<territory type="VU">Vanuatu</territory>
+			<territory type="WF">Wallis and Futuna</territory>
+			<territory type="WS">Samoa</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="YE">Yaman</territory>
 			<territory type="YT">Mayotte</territory>
 			<territory type="ZA">Afrika Selatan</territory>
 			<territory type="ZM">Zambia</territory>
 			<territory type="ZW">Zimbabwe</territory>
+<<<<<<< HEAD
 			<territory type="ZZ">Wilayah Tidak Diketahui</territory>
 		</territories>
 		<keys>
@@ -1062,6 +1340,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</intervalFormats>
 				</dateTimeFormats>
 			</calendar>
+=======
+		</territories>
+	</localeDisplayNames>
+	<characters>
+		<exemplarCharacters>[a {ai} {au} b-d {dz} e-k {kh} l-n {ng} {ngg} {ny} o-s {sy} t {ts} u {ua} v-z]</exemplarCharacters>
+	</characters>
+	<delimiters>
+		<quotationStart>‘</quotationStart>
+		<quotationEnd>’</quotationEnd>
+		<alternateQuotationStart>“</alternateQuotationStart>
+		<alternateQuotationEnd>”</alternateQuotationEnd>
+	</delimiters>
+	<dates>
+		<calendars>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -1073,12 +1366,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="5">Mei</month>
 							<month type="6">Jun</month>
 							<month type="7">Jul</month>
+<<<<<<< HEAD
 							<month type="8">Ogo</month>
+=======
+							<month type="8">Ogos</month>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 							<month type="9">Sep</month>
 							<month type="10">Okt</month>
 							<month type="11">Nov</month>
 							<month type="12">Dis</month>
 						</monthWidth>
+<<<<<<< HEAD
 						<monthWidth type="narrow">
 							<month type="1">J</month>
 							<month type="2">F</month>
@@ -1093,6 +1391,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">N</month>
 							<month type="12">D</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<monthWidth type="wide">
 							<month type="1">Januari</month>
 							<month type="2">Februari</month>
@@ -1109,6 +1409,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</monthWidth>
 					</monthContext>
 					<monthContext type="stand-alone">
+<<<<<<< HEAD
 						<monthWidth type="abbreviated">
 							<month type="1">Jan</month>
 							<month type="2">Feb</month>
@@ -1150,6 +1451,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="10">Oktober</month>
 							<month type="11">November</month>
 							<month type="12">Disember</month>
+=======
+						<monthWidth type="narrow">
+							<month type="1">1</month>
+							<month type="2">2</month>
+							<month type="3">3</month>
+							<month type="4">4</month>
+							<month type="5">5</month>
+							<month type="6">6</month>
+							<month type="7">7</month>
+							<month type="8">8</month>
+							<month type="9">9</month>
+							<month type="10">10</month>
+							<month type="11">11</month>
+							<month type="12">12</month>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</monthWidth>
 					</monthContext>
 				</months>
@@ -1164,6 +1480,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">Jum</day>
 							<day type="sat">Sab</day>
 						</dayWidth>
+<<<<<<< HEAD
 						<dayWidth type="narrow">
 							<day type="sun">A</day>
 							<day type="mon">I</day>
@@ -1182,6 +1499,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">Ju</day>
 							<day type="sat">Sa</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<dayWidth type="wide">
 							<day type="sun">Ahad</day>
 							<day type="mon">Isnin</day>
@@ -1193,6 +1512,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</dayWidth>
 					</dayContext>
 					<dayContext type="stand-alone">
+<<<<<<< HEAD
 						<dayWidth type="abbreviated">
 							<day type="sun">Ahd</day>
 							<day type="mon">Isn</day>
@@ -1228,6 +1548,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="thu">Khamis</day>
 							<day type="fri">Jumaat</day>
 							<day type="sat">Sabtu</day>
+=======
+						<dayWidth type="narrow">
+							<day type="sun">1</day>
+							<day type="mon">2</day>
+							<day type="tue">3</day>
+							<day type="wed">4</day>
+							<day type="thu">5</day>
+							<day type="fri">6</day>
+							<day type="sat">7</day>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dayWidth>
 					</dayContext>
 				</days>
@@ -1239,6 +1569,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<quarter type="3">S3</quarter>
 							<quarter type="4">S4</quarter>
 						</quarterWidth>
+<<<<<<< HEAD
 						<quarterWidth type="narrow">
 							<quarter type="1">1</quarter>
 							<quarter type="2">2</quarter>
@@ -1289,27 +1620,59 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<eraAbbr>
 						<era type="0">S.M.</era>
 						<era type="1">TM</era>
+=======
+						<quarterWidth type="wide">
+							<quarter type="1">suku pertama</quarter>
+							<quarter type="2">suku kedua</quarter>
+							<quarter type="3">suku ketiga</quarter>
+							<quarter type="4">suku keempat</quarter>
+						</quarterWidth>
+					</quarterContext>
+				</quarters>
+				<am>AM</am>
+				<pm>PM</pm>
+				<eras>
+					<eraAbbr>
+						<era type="0">S.M.</era>
+						<era type="1">T.M.</era>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</eraAbbr>
 				</eras>
 				<dateFormats>
 					<dateFormatLength type="full">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>EEEE, d MMMM y</pattern>
+=======
+							<pattern>EEEE dd MMM y</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="long">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>d MMMM y</pattern>
+=======
+							<pattern>dd MMMM y</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="medium">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>d MMM y</pattern>
+=======
+							<pattern>dd MMM y</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>d/MM/yy</pattern>
+=======
+							<pattern>dd/MM/yyyy</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
@@ -1331,11 +1694,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</timeFormatLength>
 					<timeFormatLength type="short">
 						<timeFormat>
+<<<<<<< HEAD
 							<pattern>h:mm a</pattern>
+=======
+							<pattern>h:mm</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</timeFormat>
 					</timeFormatLength>
 				</timeFormats>
 				<dateTimeFormats>
+<<<<<<< HEAD
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
 							<pattern>{1} {0}</pattern>
@@ -3823,6 +4191,39 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<listPatternPart type="2">{0}, {1}</listPatternPart>
 		</listPattern>
 	</listPatterns>
+=======
+					<availableFormats>
+						<dateFormatItem id="Hmm">H:mm</dateFormatItem>
+						<dateFormatItem id="MMdd">dd/MM</dateFormatItem>
+						<dateFormatItem id="MMMMdd">dd MMMM</dateFormatItem>
+						<dateFormatItem id="yyQ">Q yy</dateFormatItem>
+						<dateFormatItem id="yyyyMM">MM/yyyy</dateFormatItem>
+						<dateFormatItem id="yyyyMMMM">MMMM y</dateFormatItem>
+					</availableFormats>
+				</dateTimeFormats>
+			</calendar>
+		</calendars>
+		<timeZoneNames>
+			<hourFormat>+HH:mm;-HH:mm</hourFormat>
+			<gmtFormat>GMT{0}</gmtFormat>
+			<regionFormat>{0}</regionFormat>
+		</timeZoneNames>
+	</dates>
+	<numbers>
+		<currencyFormats>
+			<currencyFormatLength>
+				<currencyFormat>
+					<pattern>¤#,##0.00;(¤#,##0.00)</pattern>
+				</currencyFormat>
+			</currencyFormatLength>
+		</currencyFormats>
+		<currencies>
+			<currency type="MYR">
+				<displayName>Ringgit Malaysia</displayName>
+			</currency>
+		</currencies>
+	</numbers>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	<posix>
 		<messages>
 			<yesstr>ya:y</yesstr>

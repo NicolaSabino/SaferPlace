@@ -15,6 +15,7 @@
  *
  * @category   Zend
  * @package    Zend_Feed
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
@@ -22,6 +23,13 @@
 
 /** @see Zend_Xml_Security */
 require_once 'Zend/Xml/Security.php';
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Feed.php 25160 2012-12-18 15:17:16Z matthew $
+ */
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
 /**
  * Feed utility class
@@ -31,7 +39,11 @@ require_once 'Zend/Xml/Security.php';
  *
  * @category   Zend
  * @package    Zend_Feed
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Feed
@@ -192,15 +204,30 @@ class Zend_Feed
      */
     public static function importString($string)
     {
+<<<<<<< HEAD
+=======
+        // Load the feed as an XML DOMDocument object
+        $libxml_errflag       = libxml_use_internal_errors(true);
+        $libxml_entity_loader = libxml_disable_entity_loader(true);
+        $doc = new DOMDocument;
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         if (trim($string) == '') {
             require_once 'Zend/Feed/Exception.php';
             throw new Zend_Feed_Exception('Document/string being imported'
             . ' is an Empty string or comes from an empty HTTP response');
         }
+<<<<<<< HEAD
         $doc = new DOMDocument;
         $doc = Zend_Xml_Security::scan($string, $doc);
 
         if (!$doc) {
+=======
+        $status = $doc->loadXML($string);
+        libxml_disable_entity_loader($libxml_entity_loader);
+        libxml_use_internal_errors($libxml_errflag);
+
+        if (!$status) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             // prevent the class to generate an undefined variable notice (ZF-2590)
             // Build error message
             $error = libxml_get_last_error();
@@ -317,7 +344,11 @@ class Zend_Feed
                 if (!mb_check_encoding($link, 'UTF-8')) {
                     $link = mb_convert_encoding($link, 'UTF-8');
                 }
+<<<<<<< HEAD
                 $xml = @Zend_Xml_Security::scan(rtrim($link, ' /') . ' />');
+=======
+                $xml = @simplexml_load_string(rtrim($link, ' /') . ' />');
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 if ($xml === false) {
                     continue;
                 }

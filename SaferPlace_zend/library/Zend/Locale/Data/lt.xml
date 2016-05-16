@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -16,26 +17,50 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<localeSeparator>{0}, {1}</localeSeparator>
 			<localeKeyTypePattern>{0}: {1}</localeKeyTypePattern>
 		</localeDisplayPattern>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.111 $"/>
+		<generation date="$Date: 2009/06/15 03:46:25 $"/>
+		<language type="lt"/>
+	</identity>
+	<localeDisplayNames>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		<languages>
 			<language type="aa">afarų</language>
 			<language type="ab">abchazų</language>
 			<language type="ace">ačinezų</language>
+<<<<<<< HEAD
 			<language type="ach">akolių</language>
+=======
+			<language type="ach">acoli</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ada">adangmų</language>
 			<language type="ady">adygėjų</language>
 			<language type="ae">avestų</language>
 			<language type="af">afrikanų</language>
+<<<<<<< HEAD
 			<language type="afh">afrihili</language>
 			<language type="agq">aghemų</language>
+=======
+			<language type="afa">afroazijos kalba</language>
+			<language type="afh">afrihili</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ain">ainų</language>
 			<language type="ak">akanų</language>
 			<language type="akk">akadianų</language>
 			<language type="ale">aleutų</language>
+<<<<<<< HEAD
 			<language type="alt">pietų Altajaus</language>
+=======
+			<language type="alg">algonkuanų kalba</language>
+			<language type="alt">pietų altajaus</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="am">amharų</language>
 			<language type="an">aragonesų</language>
 			<language type="ang">senoji anglų</language>
 			<language type="anp">angikų</language>
+<<<<<<< HEAD
 			<language type="ar">arabų</language>
 			<language type="ar_001">šiuolaikinė standartinė arabų</language>
 			<language type="arc">aramaikų</language>
@@ -45,10 +70,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="as">asamų</language>
 			<language type="asa">asu</language>
 			<language type="ast">asturianų</language>
+=======
+			<language type="apa">apačių kalba</language>
+			<language type="ar">arabų</language>
+			<language type="arc">aramaikų</language>
+			<language type="arn">araukanų</language>
+			<language type="arp">arapahų</language>
+			<language type="art">dirbtinė kalba</language>
+			<language type="arw">aravakų</language>
+			<language type="as">asamų</language>
+			<language type="ast">asturianų</language>
+			<language type="ath">athapaskanų kalba</language>
+			<language type="aus">australų kalba</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="av">avarikų</language>
 			<language type="awa">avadhi</language>
 			<language type="ay">aimarų</language>
 			<language type="az">azerbaidžaniečių</language>
+<<<<<<< HEAD
 			<language type="az" alt="short">azeri</language>
 			<language type="ba">baškirų</language>
 			<language type="bal">baluči</language>
@@ -62,10 +101,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="bez">benų</language>
 			<language type="bfd">bafutų</language>
 			<language type="bg">bulgarų</language>
+=======
+			<language type="ba">baškirų</language>
+			<language type="bad">bandų</language>
+			<language type="bai">bamilekų kalba</language>
+			<language type="bal">baluči</language>
+			<language type="ban">balinezų</language>
+			<language type="bas">basų</language>
+			<language type="bat">baltų kalba</language>
+			<language type="be">baltarusių</language>
+			<language type="bej">bėjų</language>
+			<language type="bem">bembų</language>
+			<language type="ber">berberų</language>
+			<language type="bg">bulgarų</language>
+			<language type="bh">biharų</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="bho">baučpuri</language>
 			<language type="bi">bislama</language>
 			<language type="bik">bikolų</language>
 			<language type="bin">bini</language>
+<<<<<<< HEAD
 			<language type="bkm">komų</language>
 			<language type="bla">siksika</language>
 			<language type="bm">bambarų</language>
@@ -89,6 +144,29 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ce">čečėnų</language>
 			<language type="ceb">cebuanų</language>
 			<language type="cgg">čigų</language>
+=======
+			<language type="bla">siksika</language>
+			<language type="bm">bambarų</language>
+			<language type="bn">bengalų</language>
+			<language type="bnt">bantų</language>
+			<language type="bo">tibetiečių</language>
+			<language type="br">bretonų</language>
+			<language type="bra">brajų</language>
+			<language type="bs">bosnių</language>
+			<language type="btk">batakų</language>
+			<language type="bua">buriatų</language>
+			<language type="bug">buginezų</language>
+			<language type="byn">blin</language>
+			<language type="ca">katalonų</language>
+			<language type="cad">kado</language>
+			<language type="cai">Centrinės Amerikos indėnų kalba</language>
+			<language type="car">karibų</language>
+			<language type="cau">kaukaziečių kalba</language>
+			<language type="cch">atsamų</language>
+			<language type="ce">čečėnų</language>
+			<language type="ceb">cebuanų</language>
+			<language type="cel">keltų kalba</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ch">čamorų</language>
 			<language type="chb">čibča</language>
 			<language type="chg">čagatų</language>
@@ -99,6 +177,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="chp">čipvėjų</language>
 			<language type="chr">čerokių</language>
 			<language type="chy">čajenų</language>
+<<<<<<< HEAD
 			<language type="ckb">soranių kurdų</language>
 			<language type="co">korsikiečių</language>
 			<language type="cop">koptų</language>
@@ -107,30 +186,62 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="cs">čekų</language>
 			<language type="csb">kašubų</language>
 			<language type="cu">bažnytinė slavų</language>
+=======
+			<language type="cmc">čamikų kalba</language>
+			<language type="co">korsikiečių</language>
+			<language type="cop">koptų</language>
+			<language type="cpe">kreolų ir pidžinų kalba pagal anglų</language>
+			<language type="cpf">kreolų ir pidžinų kalba pagal prancūzų</language>
+			<language type="cpp">kreolų ir pidžinų kalba pagal portugalų</language>
+			<language type="cr">kry</language>
+			<language type="crh">krymo turkų</language>
+			<language type="crp">kreolų ir pidžinų</language>
+			<language type="cs">čekų</language>
+			<language type="csb">kašubų</language>
+			<language type="cu">bažnytinė slavų</language>
+			<language type="cus">kušitik kalba</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="cv">čiuvašų</language>
 			<language type="cy">valų</language>
 			<language type="da">danų</language>
 			<language type="dak">dakotų</language>
 			<language type="dar">dargva</language>
+<<<<<<< HEAD
 			<language type="dav">taitų</language>
 			<language type="de">vokiečių</language>
 			<language type="de_AT">Austrijos vokiečių</language>
 			<language type="de_CH">Šveicarijos aukštutinė vokiečių</language>
+=======
+			<language type="day">bidayuh kalba</language>
+			<language type="de">vokiečių</language>
+			<language type="de_AT">Austrijos vokiečių</language>
+			<language type="de_CH">aukštoji Šveicarijos vokiečių</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="del">delavero</language>
 			<language type="den">slave</language>
 			<language type="dgr">dogribų</language>
 			<language type="din">dinkų</language>
+<<<<<<< HEAD
 			<language type="dje">zarmų</language>
 			<language type="doi">dogri</language>
+=======
+			<language type="doi">dogri</language>
+			<language type="dra">dravidų kalba</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="dsb">Žemutinės Serbijos</language>
 			<language type="dua">dualų</language>
 			<language type="dum">Vidurio Vokietijos</language>
 			<language type="dv">divehi</language>
+<<<<<<< HEAD
 			<language type="dyo">džiola-foni</language>
 			<language type="dyu">dyulų</language>
 			<language type="dz">svazilando</language>
 			<language type="dzg">dazagų</language>
 			<language type="ebu">ebu</language>
+=======
+			<language type="dyu">dyulų</language>
+			<language type="dz">svazilando</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ee">eve</language>
 			<language type="efi">efik</language>
 			<language type="egy">senovės egiptiečių</language>
@@ -138,17 +249,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="el">graikų</language>
 			<language type="elx">elamitų</language>
 			<language type="en">anglų</language>
+<<<<<<< HEAD
 			<language type="en_AU">Australijos anglų</language>
 			<language type="en_CA">Kanados anglų</language>
 			<language type="en_GB">Didžiosios Britanijos anglų</language>
 			<language type="en_GB" alt="short">anglų (JK)</language>
 			<language type="en_US">Jungtinių Valstijų anglų</language>
+=======
+			<language type="en_AU">anglų kalba (australija)</language>
+			<language type="en_CA">Kanados anglų</language>
+			<language type="en_GB">anglų (britų)</language>
+			<language type="en_US">anglų (amerikiečių)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="enm">Vidurio Anglijos</language>
 			<language type="eo">esperanto</language>
 			<language type="es">ispanų</language>
 			<language type="es_419">Lotynų Amerikos ispanų</language>
+<<<<<<< HEAD
 			<language type="es_ES">Europos ispanų</language>
 			<language type="es_MX">Meksikos ispanų</language>
+=======
+			<language type="es_ES">Iberijos ispanų</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="et">estų</language>
 			<language type="eu">baskų</language>
 			<language type="ewo">evondo</language>
@@ -157,9 +279,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="fat">fanti</language>
 			<language type="ff">fulahų</language>
 			<language type="fi">suomių</language>
+<<<<<<< HEAD
 			<language type="fil">filipiniečių</language>
 			<language type="fj">fidžių</language>
 			<language type="fo">farerų</language>
+=======
+			<language type="fil">tagalų</language>
+			<language type="fiu">finougrų kalba</language>
+			<language type="fj">fidžio</language>
+			<language type="fo">farerų kalba</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="fon">fon</language>
 			<language type="fr">prancūzų</language>
 			<language type="fr_CA">Kanados prancūzų</language>
@@ -175,10 +304,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="gay">gajo</language>
 			<language type="gba">gbaja</language>
 			<language type="gd">škotų (gėlų)</language>
+<<<<<<< HEAD
 			<language type="gez">gyz</language>
 			<language type="gil">kiribati</language>
 			<language type="gl">galisų</language>
 			<language type="gmh">Vidurio Aukštosios Vokietijos</language>
+=======
+			<language type="gem">germanų kalba</language>
+			<language type="gez">gyz</language>
+			<language type="gil">kiribati</language>
+			<language type="gl">galisų</language>
+			<language type="gmh">Vidurio aukštosios Vokietijos</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="gn">gvaranių</language>
 			<language type="goh">Senoji Aukštosios Vokietijos</language>
 			<language type="gon">gondi</language>
@@ -188,27 +325,43 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="grc">senovės graikų</language>
 			<language type="gsw">Šveicarijos vokiečių</language>
 			<language type="gu">gudžaratų</language>
+<<<<<<< HEAD
 			<language type="guz">gusi</language>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="gv">manks</language>
 			<language type="gwi">gvičino</language>
 			<language type="ha">hausų</language>
 			<language type="hai">haido</language>
+<<<<<<< HEAD
 			<language type="haw">havajiečių</language>
 			<language type="he">hebrajų</language>
 			<language type="hi">hindi</language>
 			<language type="hil">hiligainon</language>
+=======
+			<language type="haw">havajų</language>
+			<language type="he">hebrajų</language>
+			<language type="hi">hindi</language>
+			<language type="hil">hiligainon</language>
+			<language type="him">himačali</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="hit">hititų</language>
 			<language type="hmn">hmong</language>
 			<language type="ho">hiri motu</language>
 			<language type="hr">kroatų</language>
 			<language type="hsb">viršutinė sorbian</language>
+<<<<<<< HEAD
 			<language type="ht">Haičio</language>
+=======
+			<language type="ht">haičio</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="hu">vengrų</language>
 			<language type="hup">hupa</language>
 			<language type="hy">armėnų</language>
 			<language type="hz">herero</language>
 			<language type="ia">interlingva</language>
 			<language type="iba">iban</language>
+<<<<<<< HEAD
 			<language type="ibb">ibibio</language>
 			<language type="id">indoneziečių</language>
 			<language type="ie">interkalba</language>
@@ -218,12 +371,30 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ilo">iloko</language>
 			<language type="inh">ingušų</language>
 			<language type="io">ido</language>
+=======
+			<language type="id">indoneziečių</language>
+			<language type="ie">interkalba</language>
+			<language type="ig">igbo</language>
+			<language type="ii">sičuan ji</language>
+			<language type="ijo">ijo</language>
+			<language type="ik">inupiak</language>
+			<language type="ilo">iloko</language>
+			<language type="inc">indų kalba</language>
+			<language type="ine">indoeuropiečių kalba</language>
+			<language type="inh">ingušų</language>
+			<language type="io">ido</language>
+			<language type="ira">Iraniečių</language>
+			<language type="iro">irako kalba</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="is">islandų</language>
 			<language type="it">italų</language>
 			<language type="iu">inukitut</language>
 			<language type="ja">japonų</language>
 			<language type="jbo">loiban</language>
+<<<<<<< HEAD
 			<language type="jmc">machamų</language>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="jpr">judėjų persų</language>
 			<language type="jrb">judėjų arabų</language>
 			<language type="jv">javiečių</language>
@@ -233,6 +404,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="kac">kačin</language>
 			<language type="kaj">ju</language>
 			<language type="kam">kamba</language>
+<<<<<<< HEAD
 			<language type="kaw">kavi</language>
 			<language type="kbd">kabardinų</language>
 			<language type="kbl">kanembų</language>
@@ -250,6 +422,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="kkj">kako</language>
 			<language type="kl">kalalisut</language>
 			<language type="kln">kalenjinų</language>
+=======
+			<language type="kar">karenų</language>
+			<language type="kaw">kavi</language>
+			<language type="kbd">kabardinų</language>
+			<language type="kcg">tyap</language>
+			<language type="kfo">koro</language>
+			<language type="kg">kongo</language>
+			<language type="kha">kasi</language>
+			<language type="khi">koisan kalba</language>
+			<language type="kho">kotanezų</language>
+			<language type="ki">kikui</language>
+			<language type="kj">kuaniama</language>
+			<language type="kk">kazachų</language>
+			<language type="kl">kalalisut</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="km">khmerų</language>
 			<language type="kmb">kimbundu</language>
 			<language type="kn">kanadų</language>
@@ -260,6 +447,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="kr">kanuri</language>
 			<language type="krc">karačiajų balkarijos</language>
 			<language type="krl">karelų</language>
+<<<<<<< HEAD
 			<language type="kru">kuruk</language>
 			<language type="ks">kašmyrų</language>
 			<language type="ksb">sambalų</language>
@@ -267,13 +455,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ksh">kolognų</language>
 			<language type="ku">kurdų</language>
 			<language type="kum">kumikų</language>
+=======
+			<language type="kro">kru kalba</language>
+			<language type="kru">kuruk</language>
+			<language type="ks">kašmyro</language>
+			<language type="ku">kurdų</language>
+			<language type="kum">kumik</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="kut">kutenai</language>
 			<language type="kv">komi</language>
 			<language type="kw">kornų</language>
 			<language type="ky">kirgizų</language>
 			<language type="la">lotynų</language>
 			<language type="lad">ladino</language>
+<<<<<<< HEAD
 			<language type="lag">langi</language>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="lah">landa</language>
 			<language type="lam">lamba</language>
 			<language type="lb">liuksemburgiečių</language>
@@ -286,19 +484,29 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="loz">lozi</language>
 			<language type="lt">lietuvių</language>
 			<language type="lu">luba katanga</language>
+<<<<<<< HEAD
 			<language type="lua">luba lulua</language>
+=======
+			<language type="lua">luba lula</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="lui">luiseno</language>
 			<language type="lun">lunda</language>
 			<language type="luo">luo</language>
 			<language type="lus">lušai</language>
+<<<<<<< HEAD
 			<language type="luy">luyia</language>
 			<language type="lv">latvių</language>
 			<language type="mad">madurezų</language>
 			<language type="maf">mafų</language>
+=======
+			<language type="lv">latvių</language>
+			<language type="mad">madurezų</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mag">magahi</language>
 			<language type="mai">maithili</language>
 			<language type="mak">makasaro</language>
 			<language type="man">mandingo</language>
+<<<<<<< HEAD
 			<language type="mas">masajų</language>
 			<language type="mde">mabų</language>
 			<language type="mdf">mokša</language>
@@ -314,21 +522,48 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="mic">mikmak</language>
 			<language type="min">minankabu</language>
 			<language type="mk">makedonų</language>
+=======
+			<language type="map">austronezų</language>
+			<language type="mas">masajų</language>
+			<language type="mdf">mokša</language>
+			<language type="mdr">mandar</language>
+			<language type="men">mende</language>
+			<language type="mg">malagasijos</language>
+			<language type="mga">Vidurio Airijos</language>
+			<language type="mh">Maršalo salų</language>
+			<language type="mi">maorių</language>
+			<language type="mic">mikmak</language>
+			<language type="min">minankabu</language>
+			<language type="mis">įvairios kalbos</language>
+			<language type="mk">makedonų</language>
+			<language type="mkh">mon khmer kalba</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ml">malajalių</language>
 			<language type="mn">mongolų</language>
 			<language type="mnc">manču</language>
 			<language type="mni">manipuri</language>
+<<<<<<< HEAD
+=======
+			<language type="mno">manobo kalba</language>
+			<language type="mo">moldavų</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="moh">mohok</language>
 			<language type="mos">mosi</language>
 			<language type="mr">maratų</language>
 			<language type="ms">malajiečių</language>
 			<language type="mt">maltiečių</language>
+<<<<<<< HEAD
 			<language type="mua">mundangų</language>
 			<language type="mul">kelios kalbos</language>
+=======
+			<language type="mul">kelios kalbos</language>
+			<language type="mun">munda kalba</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mus">krykų</language>
 			<language type="mwl">mirandezų</language>
 			<language type="mwr">marvari</language>
 			<language type="my">birmiečių</language>
+<<<<<<< HEAD
 			<language type="mye">mjenų</language>
 			<language type="myv">erzyjų</language>
 			<language type="na">naurų</language>
@@ -347,13 +582,37 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="nmg">kvasių</language>
 			<language type="nn">naujoji norvegų</language>
 			<language type="nnh">ngiembūnų</language>
+=======
+			<language type="myn">majanų</language>
+			<language type="myv">erzyjų</language>
+			<language type="na">naurų</language>
+			<language type="nah">nahuatlų</language>
+			<language type="nai">Šiaurės Amerikos indėnų kalba</language>
+			<language type="nap">neapoliečių</language>
+			<language type="nb">Norvegijos bokmal</language>
+			<language type="nd">šiaurės ndebelų</language>
+			<language type="nds">Žemutinės Vokietijos</language>
+			<language type="ne">nepalų</language>
+			<language type="new">nevari</language>
+			<language type="ng">ndongų</language>
+			<language type="nia">nias</language>
+			<language type="nic">Nigerio kordofanų kalba</language>
+			<language type="niu">niuenų</language>
+			<language type="nl">olandų</language>
+			<language type="nl_BE">flamandų</language>
+			<language type="nn">naujoji norvegų</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="no">norvegų</language>
 			<language type="nog">nogų</language>
 			<language type="non">norsu</language>
 			<language type="nqo">enko</language>
 			<language type="nr">pietų ndebele</language>
 			<language type="nso">šiaurės sothų</language>
+<<<<<<< HEAD
 			<language type="nus">nuerų</language>
+=======
+			<language type="nub">nubijos kalba</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="nv">navajų</language>
 			<language type="nwc">klasikinė nevari</language>
 			<language type="ny">nianja</language>
@@ -361,43 +620,77 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="nyn">niankole</language>
 			<language type="nyo">nioro</language>
 			<language type="nzi">nzima</language>
+<<<<<<< HEAD
 			<language type="oc">očitarų</language>
 			<language type="oj">ojibva</language>
 			<language type="om">oromų</language>
+=======
+			<language type="oc">provansalų</language>
+			<language type="oj">ojibva</language>
+			<language type="om">oromo</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="or">orijų</language>
 			<language type="os">osetinų</language>
 			<language type="osa">osage</language>
 			<language type="ota">osmanų turkų</language>
+<<<<<<< HEAD
 			<language type="pa">pendžabų</language>
+=======
+			<language type="oto">otomanų kalba</language>
+			<language type="pa">pandžabų</language>
+			<language type="paa">papuasų kalba</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="pag">pangasinan</language>
 			<language type="pal">pahlavi</language>
 			<language type="pam">pampanga</language>
 			<language type="pap">papiemento</language>
 			<language type="pau">palau</language>
 			<language type="peo">senoji persų</language>
+<<<<<<< HEAD
+=======
+			<language type="phi">filipinų kalba</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="phn">finikiečių</language>
 			<language type="pi">pali</language>
 			<language type="pl">lenkų</language>
 			<language type="pon">ponapean</language>
+<<<<<<< HEAD
 			<language type="pro">senovės provansalų</language>
 			<language type="ps">puštūnų</language>
 			<language type="pt">portugalų</language>
 			<language type="pt_BR">Brazilijos portugalų</language>
 			<language type="pt_PT">Europos portugalų</language>
+=======
+			<language type="pra">prakrit kalba</language>
+			<language type="pro">senovės provansalų</language>
+			<language type="ps">puštūnų</language>
+			<language type="pt">portugalų</language>
+			<language type="pt_BR">portugalų (Brazilijos)</language>
+			<language type="pt_PT">Iberijos portugalų</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="qu">kečujų</language>
 			<language type="raj">radžastano</language>
 			<language type="rap">rapanui</language>
 			<language type="rar">rarotongan</language>
+<<<<<<< HEAD
 			<language type="rm">retoromanų</language>
 			<language type="rn">rundi</language>
 			<language type="ro">rumunų</language>
 			<language type="ro_MD">moldavų</language>
 			<language type="rof">rombo</language>
 			<language type="rom">romų</language>
+=======
+			<language type="rm">raeto romanų</language>
+			<language type="rn">rundi</language>
+			<language type="ro">rumunų</language>
+			<language type="roa">romanų kalba</language>
+			<language type="rom">romų kalba</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="root">rūt</language>
 			<language type="ru">rusų</language>
 			<language type="rup">aromanių</language>
 			<language type="rw">kinjarvanda</language>
+<<<<<<< HEAD
 			<language type="rwk">rwa</language>
 			<language type="sa">sanskritas</language>
 			<language type="sad">sandavi</language>
@@ -408,11 +701,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sat">santali</language>
 			<language type="sba">ngambajų</language>
 			<language type="sbp">sangų</language>
+=======
+			<language type="sa">sanskritas</language>
+			<language type="sad">sandavi</language>
+			<language type="sah">jakutų</language>
+			<language type="sai">Pietų Amerikos indėnų kalba</language>
+			<language type="sal">sališan kalba</language>
+			<language type="sam">samarėjų aramių</language>
+			<language type="sas">sasak</language>
+			<language type="sat">santali</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="sc">sardiniečių</language>
 			<language type="scn">siciliečių</language>
 			<language type="sco">škotų</language>
 			<language type="sd">sindų</language>
 			<language type="se">šiaurinių samių</language>
+<<<<<<< HEAD
 			<language type="see">senecų</language>
 			<language type="seh">senų</language>
 			<language type="sel">selkup</language>
@@ -429,25 +733,55 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sl">slovėnų</language>
 			<language type="sm">samoa</language>
 			<language type="sma">pietų sami</language>
+=======
+			<language type="sel">selkup</language>
+			<language type="sem">samitų kalba</language>
+			<language type="sg">sango</language>
+			<language type="sga">senoji airių</language>
+			<language type="sgn">ženklų kalba</language>
+			<language type="sh">serbų-kroatų</language>
+			<language type="shn">šan</language>
+			<language type="si">sinhalų</language>
+			<language type="sid">sidamo</language>
+			<language type="sio">siouan kalba</language>
+			<language type="sit">sino tibeto kalba</language>
+			<language type="sk">slovakų</language>
+			<language type="sl">slovėnų</language>
+			<language type="sla">slavų kalba</language>
+			<language type="sm">samoa</language>
+			<language type="sma">pietų sami</language>
+			<language type="smi">samių kalba</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="smj">lule sami</language>
 			<language type="smn">inari sami</language>
 			<language type="sms">skolt sami</language>
 			<language type="sn">šona</language>
 			<language type="snk">soninke</language>
+<<<<<<< HEAD
 			<language type="so">somaliečių</language>
 			<language type="sog">sogdien</language>
+=======
+			<language type="so">somalių</language>
+			<language type="sog">sogdien</language>
+			<language type="son">songhai</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="sq">albanų</language>
 			<language type="sr">serbų</language>
 			<language type="srn">sranan tongo</language>
 			<language type="srr">sererų</language>
 			<language type="ss">svati</language>
+<<<<<<< HEAD
 			<language type="ssy">saho</language>
+=======
+			<language type="ssa">Nilo Sacharos kalba</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="st">pietų sesuto</language>
 			<language type="su">sundų</language>
 			<language type="suk">sukuma</language>
 			<language type="sus">susu</language>
 			<language type="sux">šumerų</language>
 			<language type="sv">švedų</language>
+<<<<<<< HEAD
 			<language type="sw">suahilių</language>
 			<language type="swb">Comorian</language>
 			<language type="swc">Kongo svahili</language>
@@ -457,6 +791,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="te">telugų</language>
 			<language type="tem">timne</language>
 			<language type="teo">teso</language>
+=======
+			<language type="sw">svahili</language>
+			<language type="syc">klasikinė siriečių</language>
+			<language type="syr">sirų</language>
+			<language type="ta">tamilų</language>
+			<language type="tai">tajų kalba</language>
+			<language type="te">telugų</language>
+			<language type="tem">timne</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ter">tereno</language>
 			<language type="tet">tetum</language>
 			<language type="tg">tadžikų</language>
@@ -467,6 +810,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="tk">turkmėnų</language>
 			<language type="tkl">tokelau</language>
 			<language type="tl">tagalogų</language>
+<<<<<<< HEAD
 			<language type="tlh">klingonų</language>
 			<language type="tli">tlingit</language>
 			<language type="tmh">tamašek</language>
@@ -486,12 +830,36 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ty">taitiečių</language>
 			<language type="tyv">tuvių</language>
 			<language type="tzm">Centrinio Maroko tamazightų</language>
+=======
+			<language type="tlh">„žvaigždžių kelionių“</language>
+			<language type="tli">tlingit</language>
+			<language type="tmh">tamašek</language>
+			<language type="tn">tsvana</language>
+			<language type="to">tonga</language>
+			<language type="tog">niasa tongos</language>
+			<language type="tpi">tok pisin</language>
+			<language type="tr">turkų</language>
+			<language type="ts">tsonga</language>
+			<language type="tsi">tsimšian</language>
+			<language type="tt">totorių</language>
+			<language type="tum">tumbuka</language>
+			<language type="tup">tupi kalba</language>
+			<language type="tut">altaikų kalba</language>
+			<language type="tvl">tuvalu</language>
+			<language type="tw">tvi</language>
+			<language type="ty">taitiečių</language>
+			<language type="tyv">tuvių</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="udm">udmurtų</language>
 			<language type="ug">uigūrų</language>
 			<language type="uga">ugaritic</language>
 			<language type="uk">ukrainiečių</language>
 			<language type="umb">umbundu</language>
+<<<<<<< HEAD
 			<language type="und">nežinoma kalba</language>
+=======
+			<language type="und">nenustatyta kalba</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ur">urdų</language>
 			<language type="uz">uzbekų</language>
 			<language type="vai">vai</language>
@@ -499,6 +867,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="vi">vietnamiečių</language>
 			<language type="vo">volapiuk</language>
 			<language type="vot">votik</language>
+<<<<<<< HEAD
 			<language type="vun">vunjo</language>
 			<language type="wa">valonų</language>
 			<language type="wae">valserų</language>
@@ -527,14 +896,48 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="zu">zulų</language>
 			<language type="zun">zuni</language>
 			<language type="zxx">nėra kalbinio turinio</language>
+=======
+			<language type="wa">valonų</language>
+			<language type="wak">vakašan kalba</language>
+			<language type="wal">valamo</language>
+			<language type="war">varai</language>
+			<language type="was">vašo</language>
+			<language type="wen">sorbų kalba</language>
+			<language type="wo">volof</language>
+			<language type="xal">kalmukų</language>
+			<language type="xh">kosų</language>
+			<language type="yao">jao</language>
+			<language type="yap">japezų</language>
+			<language type="yi">jidiš</language>
+			<language type="yo">joruba</language>
+			<language type="ypk">jupik kalba</language>
+			<language type="za">chuang</language>
+			<language type="zap">zapotekų</language>
+			<language type="zbl">„Bliss“ simbolių kalba</language>
+			<language type="zen">zenaga</language>
+			<language type="zh">kinų</language>
+			<language type="zh_Hans">kinų supaprastinta</language>
+			<language type="zh_Hant">kinų tradicinė</language>
+			<language type="znd">zande</language>
+			<language type="zu">zulų</language>
+			<language type="zun">zuni</language>
+			<language type="zxx">Nėra kalbinio turinio</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="zza">zaza</language>
 		</languages>
 		<scripts>
 			<script type="Arab">arabų</script>
+<<<<<<< HEAD
 			<script type="Arab" alt="variant">persų-arabų</script>
 			<script type="Armi">imperinė aramaikų</script>
 			<script type="Armn">armėnų</script>
 			<script type="Avst">avestano</script>
+=======
+			<script type="Armi">imperinė aramaikų</script>
+			<script type="Armn">armėnų</script>
+			<script type="Avst">avestano</script>
+			<script type="Bali">Bali</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Batk">batak</script>
 			<script type="Beng">bengalų</script>
 			<script type="Blis">„Bliss“ simboliai</script>
@@ -564,11 +967,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Glag">glagolitik</script>
 			<script type="Goth">gotų</script>
 			<script type="Grek">graikų</script>
+<<<<<<< HEAD
 			<script type="Gujr">gudžaratų</script>
+=======
+			<script type="Gujr">gudžiarati</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Guru">gurmuki</script>
 			<script type="Hang">hangul</script>
 			<script type="Hani">han</script>
 			<script type="Hano">hanuno</script>
+<<<<<<< HEAD
 			<script type="Hans">supaprastinti</script>
 			<script type="Hans" alt="stand-alone">supaprastinti han</script>
 			<script type="Hant">tradiciniai</script>
@@ -577,6 +985,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Hira">hiragana</script>
 			<script type="Hmng">pahav hmong</script>
 			<script type="Hrkt">katakana / hiragana</script>
+=======
+			<script type="Hans">supaprastinta han</script>
+			<script type="Hant">tradicinė han</script>
+			<script type="Hebr">hebrajų</script>
+			<script type="Hira">hiragana</script>
+			<script type="Hmng">pahav hmong</script>
+			<script type="Hrkt">katakana/hiragana</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Hung">senasis vengrų</script>
 			<script type="Inds">indus</script>
 			<script type="Ital">senasis italų</script>
@@ -586,11 +1002,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Kana">katakana</script>
 			<script type="Khar">karošti</script>
 			<script type="Khmr">khmerų</script>
+<<<<<<< HEAD
 			<script type="Knda">kanadų</script>
 			<script type="Kore">korėjiečių</script>
 			<script type="Kthi">kaithi</script>
 			<script type="Lana">lana</script>
 			<script type="Laoo">laosiečių</script>
+=======
+			<script type="Knda">kanadiečių</script>
+			<script type="Kore">korejiečių</script>
+			<script type="Kthi">kaithi</script>
+			<script type="Lana">lana</script>
+			<script type="Laoo">lao</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Latf">fraktur lotynų</script>
 			<script type="Latg">gėlų lotynų</script>
 			<script type="Latn">lotynų</script>
@@ -604,16 +1028,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Mani">maničų</script>
 			<script type="Maya">malų hieroglifai</script>
 			<script type="Mero">meroitik</script>
+<<<<<<< HEAD
 			<script type="Mlym">malajalių</script>
 			<script type="Mong">mongolų</script>
 			<script type="Moon">mūn</script>
 			<script type="Mtei">meitei majek</script>
 			<script type="Mymr">birmiečių</script>
+=======
+			<script type="Mlym">malajalų</script>
+			<script type="Mong">mongolų</script>
+			<script type="Moon">mūn</script>
+			<script type="Mtei">meitei majek</script>
+			<script type="Mymr">mianmaro</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Nkoo">enko</script>
 			<script type="Ogam">ogham</script>
 			<script type="Olck">ol čiki</script>
 			<script type="Orkh">orkon</script>
+<<<<<<< HEAD
 			<script type="Orya">orijų</script>
+=======
+			<script type="Orya">orija</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Osma">osmanų</script>
 			<script type="Perm">senieji permės</script>
 			<script type="Phag">pagsa pa</script>
@@ -623,6 +1059,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Phnx">foenikų</script>
 			<script type="Plrd">polard fonetinė</script>
 			<script type="Prti">rašytiniai partų</script>
+<<<<<<< HEAD
+=======
+			<script type="Qaai">paveldėtas</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Rjng">rejang</script>
 			<script type="Roro">rongorongo</script>
 			<script type="Runr">runų</script>
@@ -631,7 +1071,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Saur">sauraštra</script>
 			<script type="Sgnw">ženklų raštas</script>
 			<script type="Shaw">šavių</script>
+<<<<<<< HEAD
 			<script type="Sinh">sinhalų</script>
+=======
+			<script type="Sinh">sinhala</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Sund">sundų</script>
 			<script type="Sylo">syloti nagri</script>
 			<script type="Syrc">sirų</script>
@@ -656,6 +1100,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Xpeo">senieji persų</script>
 			<script type="Xsux">Šumero Akado dantiraštis</script>
 			<script type="Yiii">ji</script>
+<<<<<<< HEAD
 			<script type="Zinh">paveldėtas</script>
 			<script type="Zmth">matematiniai simboliai</script>
 			<script type="Zsym">simbolių</script>
@@ -665,6 +1110,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</scripts>
 		<territories>
 			<territory type="001">pasaulis</territory>
+=======
+			<script type="Zmth">matematiniai simboliai</script>
+			<script type="Zsym">simbolių</script>
+			<script type="Zxxx">neparašyta</script>
+			<script type="Zyyy">bendras</script>
+			<script type="Zzzz">nežinomi arba neteisingi rašmenys</script>
+		</scripts>
+		<territories>
+			<territory type="001">Pasaulis</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="002">Afrika</territory>
 			<territory type="003">Šiaurės Amerika</territory>
 			<territory type="005">Pietų Amerika</territory>
@@ -674,7 +1129,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="014">Rytų Afrika</territory>
 			<territory type="015">Šiaurės Afrika</territory>
 			<territory type="017">Vidurio Afrika</territory>
+<<<<<<< HEAD
 			<territory type="018">Pietinė Afrika</territory>
+=======
+			<territory type="018">Pietų Afrika [018]</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="019">Amerika</territory>
 			<territory type="021">Šiaurinė Amerika</territory>
 			<territory type="029">Karibai</territory>
@@ -682,10 +1141,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="034">Pietų Azija</territory>
 			<territory type="035">Pietryčių Azija</territory>
 			<territory type="039">Pietų Europa</territory>
+<<<<<<< HEAD
 			<territory type="053">Australazija</territory>
 			<territory type="054">Melanezija</territory>
 			<territory type="057">Mikronezijos regionas</territory>
 			<territory type="061">Polinezija</territory>
+=======
+			<territory type="053">Australija ir Naujoji Zelandija</territory>
+			<territory type="054">Melanezija</territory>
+			<territory type="057">Mikronezijos regionas</territory>
+			<territory type="061">Polinezija</territory>
+			<territory type="062">Pietų vidurio Azija</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="142">Azija</territory>
 			<territory type="143">Centrinė Azija</territory>
 			<territory type="145">Vakarų Azija</territory>
@@ -693,8 +1160,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="151">Rytų Europa</territory>
 			<territory type="154">Šiaurės Europa</territory>
 			<territory type="155">Vakarų Europa</territory>
+<<<<<<< HEAD
 			<territory type="419">Lotynų Amerika</territory>
 			<territory type="AC">Dangun Žengimo sala</territory>
+=======
+			<territory type="172">Nepriklausomų Valstybių Sandrauga</territory>
+			<territory type="200">Čekoslovakija</territory>
+			<territory type="419">Lotynų Amerika ir Karibai</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="AD">Andora</territory>
 			<territory type="AE">Jungtiniai Arabų Emyratai</territory>
 			<territory type="AF">Afganistanas</territory>
@@ -704,13 +1177,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AM">Armėnija</territory>
 			<territory type="AN">Olandijos Antilai</territory>
 			<territory type="AO">Angola</territory>
+<<<<<<< HEAD
 			<territory type="AQ">Antarktida</territory>
+=======
+			<territory type="AQ">Antarktis</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="AR">Argentina</territory>
 			<territory type="AS">Amerikos Samoa</territory>
 			<territory type="AT">Austrija</territory>
 			<territory type="AU">Australija</territory>
 			<territory type="AW">Aruba</territory>
+<<<<<<< HEAD
 			<territory type="AX">Alandų Salos</territory>
+=======
+			<territory type="AX">Alandų salos</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="AZ">Azerbaidžanas</territory>
 			<territory type="BA">Bosnija ir Hercegovina</territory>
 			<territory type="BB">Barbadosas</territory>
@@ -721,6 +1202,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="BH">Bahreinas</territory>
 			<territory type="BI">Burundis</territory>
 			<territory type="BJ">Beninas</territory>
+<<<<<<< HEAD
 			<territory type="BL">Sen Bartelemi</territory>
 			<territory type="BM">Bermuda</territory>
 			<territory type="BN">Brunėjus</territory>
@@ -730,10 +1212,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="BS">Bahamos</territory>
 			<territory type="BT">Butanas</territory>
 			<territory type="BV">Buvė Sala</territory>
+=======
+			<territory type="BL">Švento Baltramiejaus sala</territory>
+			<territory type="BM">Bermuda</territory>
+			<territory type="BN">Brunėjus</territory>
+			<territory type="BO">Bolivija</territory>
+			<territory type="BR">Brazilija</territory>
+			<territory type="BS">Bahamos</territory>
+			<territory type="BT">Butanas</territory>
+			<territory type="BV">Bouvet sala</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="BW">Botsvana</territory>
 			<territory type="BY">Baltarusija</territory>
 			<territory type="BZ">Belizas</territory>
 			<territory type="CA">Kanada</territory>
+<<<<<<< HEAD
 			<territory type="CC">Kokosų (Kilingo) Salos</territory>
 			<territory type="CD">Kongas-Kinšasa</territory>
 			<territory type="CD" alt="variant">Kongo Demokratinė Respublika</territory>
@@ -743,10 +1236,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CH">Šveicarija</territory>
 			<territory type="CI">Dramblio Kaulo Krantas</territory>
 			<territory type="CK">Kuko Salos</territory>
+=======
+			<territory type="CC">Kokosų salos</territory>
+			<territory type="CD">Kongo Demokratinė Respublika</territory>
+			<territory type="CF">Centrinės Afrikos Respublika</territory>
+			<territory type="CG">Kongas</territory>
+			<territory type="CH">Šveicarija</territory>
+			<territory type="CI">Dramblio Kaulo Krantas</territory>
+			<territory type="CK">Kuko salos</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="CL">Čilė</territory>
 			<territory type="CM">Kamerūnas</territory>
 			<territory type="CN">Kinija</territory>
 			<territory type="CO">Kolumbija</territory>
+<<<<<<< HEAD
 			<territory type="CP">Klipertono sala</territory>
 			<territory type="CR">Kosta Rika</territory>
 			<territory type="CU">Kuba</territory>
@@ -757,12 +1260,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CZ">Čekija</territory>
 			<territory type="DE">Vokietija</territory>
 			<territory type="DG">Diego Garsija</territory>
+=======
+			<territory type="CR">Kosta Rika</territory>
+			<territory type="CS">Serbija ir Juodkalnija</territory>
+			<territory type="CU">Kuba</territory>
+			<territory type="CV">Žaliasis Kyšulys</territory>
+			<territory type="CX">Kalėdų sala</territory>
+			<territory type="CY">Kipras</territory>
+			<territory type="CZ">Čekija</territory>
+			<territory type="DE">Vokietija</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="DJ">Džibutis</territory>
 			<territory type="DK">Danija</territory>
 			<territory type="DM">Dominika</territory>
 			<territory type="DO">Dominikos Respublika</territory>
 			<territory type="DZ">Alžyras</territory>
+<<<<<<< HEAD
 			<territory type="EA">Seuta ir Melila</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="EC">Ekvadoras</territory>
 			<territory type="EE">Estija</territory>
 			<territory type="EG">Egiptas</territory>
@@ -770,6 +1286,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="ER">Eritrėja</territory>
 			<territory type="ES">Ispanija</territory>
 			<territory type="ET">Etiopija</territory>
+<<<<<<< HEAD
 			<territory type="EU">Europos Sąjunga</territory>
 			<territory type="FI">Suomija</territory>
 			<territory type="FJ">Fidžis</territory>
@@ -785,12 +1302,30 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GE">Gruzija</territory>
 			<territory type="GF">Prancūzijos Gviana</territory>
 			<territory type="GG">Gernsis</territory>
+=======
+			<territory type="FI">Suomija</territory>
+			<territory type="FJ">Fidžis</territory>
+			<territory type="FK">Falklando salos</territory>
+			<territory type="FM">Mikronezija</territory>
+			<territory type="FO">Farerų salos</territory>
+			<territory type="FR">Prancūzija</territory>
+			<territory type="GA">Gabonas</territory>
+			<territory type="GB">Didžioji Britanija</territory>
+			<territory type="GD">Grenada</territory>
+			<territory type="GE">Gruzija</territory>
+			<territory type="GF">Prancūzijos Gviana</territory>
+			<territory type="GG">Guernsis</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="GH">Gana</territory>
 			<territory type="GI">Gibraltaras</territory>
 			<territory type="GL">Grenlandija</territory>
 			<territory type="GM">Gambija</territory>
 			<territory type="GN">Gvinėja</territory>
+<<<<<<< HEAD
 			<territory type="GP">Gvadelupa</territory>
+=======
+			<territory type="GP">Gvadelupė</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="GQ">Pusiaujo Gvinėja</territory>
 			<territory type="GR">Graikija</territory>
 			<territory type="GS">Pietų Džordžija ir Pietų Sandvičo salos</territory>
@@ -798,13 +1333,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GU">Guamas</territory>
 			<territory type="GW">Bisau Gvinėja</territory>
 			<territory type="GY">Gajana</territory>
+<<<<<<< HEAD
 			<territory type="HK">Ypatingasis Administracinis Kinijos Regionas Honkongas</territory>
 			<territory type="HK" alt="short">Honkongas</territory>
 			<territory type="HM">Herdo ir Makdonaldo Salos</territory>
+=======
+			<territory type="HK">Kinijos S.A.R.Honkongas</territory>
+			<territory type="HM">Heardo ir McDonaldo Salų Sritis</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="HN">Hondūras</territory>
 			<territory type="HR">Kroatija</territory>
 			<territory type="HT">Haitis</territory>
 			<territory type="HU">Vengrija</territory>
+<<<<<<< HEAD
 			<territory type="IC">Kanarų salos</territory>
 			<territory type="ID">Indonezija</territory>
 			<territory type="IE">Airija</territory>
@@ -812,6 +1353,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="IM">Meno Sala</territory>
 			<territory type="IN">Indija</territory>
 			<territory type="IO">Indijos Vandenyno Britų Sritis</territory>
+=======
+			<territory type="ID">Indonezija</territory>
+			<territory type="IE">Airija</territory>
+			<territory type="IL">Izraelis</territory>
+			<territory type="IM">Meino sala</territory>
+			<territory type="IN">Indija</territory>
+			<territory type="IO">Indijos vandenyno britų sritis</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="IQ">Irakas</territory>
 			<territory type="IR">Iranas</territory>
 			<territory type="IS">Islandija</territory>
@@ -821,7 +1370,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="JO">Jordanija</territory>
 			<territory type="JP">Japonija</territory>
 			<territory type="KE">Kenija</territory>
+<<<<<<< HEAD
 			<territory type="KG">Kirgizija</territory>
+=======
+			<territory type="KG">Kirgiztanas</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="KH">Kambodža</territory>
 			<territory type="KI">Kiribatis</territory>
 			<territory type="KM">Komorai</territory>
@@ -829,7 +1382,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="KP">Šiaurės Korėja</territory>
 			<territory type="KR">Pietų Korėja</territory>
 			<territory type="KW">Kuveitas</territory>
+<<<<<<< HEAD
 			<territory type="KY">Kaimanų Salos</territory>
+=======
+			<territory type="KY">Kaimanų salos</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="KZ">Kazachstanas</territory>
 			<territory type="LA">Laosas</territory>
 			<territory type="LB">Libanas</territory>
@@ -846,11 +1403,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MC">Monakas</territory>
 			<territory type="MD">Moldova</territory>
 			<territory type="ME">Juodkalnija</territory>
+<<<<<<< HEAD
 			<territory type="MF">Sen Martenas</territory>
+=======
+			<territory type="MF">Saint-Martin</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="MG">Madagaskaras</territory>
 			<territory type="MH">Maršalo Salos</territory>
 			<territory type="MK">Makedonija</territory>
 			<territory type="ML">Malis</territory>
+<<<<<<< HEAD
 			<territory type="MM">Mianmaras (Birma)</territory>
 			<territory type="MN">Mongolija</territory>
 			<territory type="MO">Ypatingasis Administracinis Kinijos Regionas Makao</territory>
@@ -862,6 +1424,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MT">Malta</territory>
 			<territory type="MU">Mauricijus</territory>
 			<territory type="MV">Maldyvai</territory>
+=======
+			<territory type="MM">Mianmaras</territory>
+			<territory type="MN">Mongolija</territory>
+			<territory type="MO">Macao</territory>
+			<territory type="MP">Marianos šiaurinės salos</territory>
+			<territory type="MQ">Martinika</territory>
+			<territory type="MR">Mauritanija</territory>
+			<territory type="MS">Montserratas</territory>
+			<territory type="MT">Malta</territory>
+			<territory type="MU">Mauricijus</territory>
+			<territory type="MV">Maldivai</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="MW">Malavis</territory>
 			<territory type="MX">Meksika</territory>
 			<territory type="MY">Malaizija</territory>
@@ -876,7 +1450,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="NO">Norvegija</territory>
 			<territory type="NP">Nepalas</territory>
 			<territory type="NR">Nauru</territory>
+<<<<<<< HEAD
 			<territory type="NU">Niujė</territory>
+=======
+			<territory type="NU">Niue</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="NZ">Naujoji Zelandija</territory>
 			<territory type="OM">Omanas</territory>
 			<territory type="PA">Panama</territory>
@@ -890,11 +1468,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="PN">Pitkernas</territory>
 			<territory type="PR">Puerto Rikas</territory>
 			<territory type="PS">Palestinos teritorija</territory>
+<<<<<<< HEAD
 			<territory type="PS" alt="short">Palestina</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="PT">Portugalija</territory>
 			<territory type="PW">Palau</territory>
 			<territory type="PY">Paragvajus</territory>
 			<territory type="QA">Kataras</territory>
+<<<<<<< HEAD
 			<territory type="QO">Nuošali Okeanija</territory>
 			<territory type="RE">Reunjonas</territory>
 			<territory type="RO">Rumunija</territory>
@@ -903,19 +1485,36 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="RW">Ruanda</territory>
 			<territory type="SA">Saudo Arabija</territory>
 			<territory type="SB">Saliamono Salos</territory>
+=======
+			<territory type="QU">Europos Sąjunga</territory>
+			<territory type="RE">Reunionas</territory>
+			<territory type="RO">Rumunija</territory>
+			<territory type="RS">Serbija</territory>
+			<territory type="RU">Rusijos Federacija</territory>
+			<territory type="RW">Ruanda</territory>
+			<territory type="SA">Saudo Arabija</territory>
+			<territory type="SB">Saliamono salos</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="SC">Seišeliai</territory>
 			<territory type="SD">Sudanas</territory>
 			<territory type="SE">Švedija</territory>
 			<territory type="SG">Singapūras</territory>
+<<<<<<< HEAD
 			<territory type="SH">Šv. Elenos Sala</territory>
 			<territory type="SI">Slovėnija</territory>
 			<territory type="SJ">Svalbardas ir Janas Majenas</territory>
+=======
+			<territory type="SH">Šventoji Elena</territory>
+			<territory type="SI">Slovėnija</territory>
+			<territory type="SJ">Svalbardo ir Jan Majen salos</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="SK">Slovakija</territory>
 			<territory type="SL">Siera Leonė</territory>
 			<territory type="SM">San Marinas</territory>
 			<territory type="SN">Senegalas</territory>
 			<territory type="SO">Somalis</territory>
 			<territory type="SR">Surinamas</territory>
+<<<<<<< HEAD
 			<territory type="SS">Pietų Sudanas</territory>
 			<territory type="ST">San Tomė ir Prinsipė</territory>
 			<territory type="SV">Salvadoras</territory>
@@ -924,11 +1523,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="SZ">Svazilandas</territory>
 			<territory type="TA">Tristanas da Kunja</territory>
 			<territory type="TC">Terkso ir Kaikoso Salos</territory>
+=======
+			<territory type="ST">San Tomė ir Principė</territory>
+			<territory type="SV">Salvadoras</territory>
+			<territory type="SY">Sirija</territory>
+			<territory type="SZ">Svazilendas</territory>
+			<territory type="TC">Turkso ir Caicoso salos</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="TD">Čadas</territory>
 			<territory type="TF">Prancūzijos Pietų sritys</territory>
 			<territory type="TG">Togas</territory>
 			<territory type="TH">Tailandas</territory>
+<<<<<<< HEAD
 			<territory type="TJ">Tadžikija</territory>
+=======
+			<territory type="TJ">Tadžikistanas</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="TK">Tokelau</territory>
 			<territory type="TL">Rytų Timoras</territory>
 			<territory type="TM">Turkmėnistanas</territory>
@@ -941,6 +1551,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="TZ">Tanzanija</territory>
 			<territory type="UA">Ukraina</territory>
 			<territory type="UG">Uganda</territory>
+<<<<<<< HEAD
 			<territory type="UM">Jungtinių Valstijų Mažosios Tolimosios Salos</territory>
 			<territory type="US">Jungtinės Valstijos</territory>
 			<territory type="US" alt="short">JAV</territory>
@@ -1126,6 +1737,47 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<measurementSystemNames>
 			<measurementSystemName type="metric">metrinė</measurementSystemName>
 			<measurementSystemName type="UK">JK</measurementSystemName>
+=======
+			<territory type="UM">Jungtinių Valstijų mažosios aplinkinės salos</territory>
+			<territory type="US">Jungtinės Valstijos</territory>
+			<territory type="UY">Urugvajus</territory>
+			<territory type="UZ">Uzbekistanas</territory>
+			<territory type="VA">Vatikanas</territory>
+			<territory type="VC">Šventasis Vincentas ir Grenadinai</territory>
+			<territory type="VE">Venesuela</territory>
+			<territory type="VG">Didžiosios Britanijos Mergelių salos</territory>
+			<territory type="VI">Mergelių salos (JAV)</territory>
+			<territory type="VN">Vietnamas</territory>
+			<territory type="VU">Vanuatu</territory>
+			<territory type="WF">Wallisas ir Futuna</territory>
+			<territory type="WS">Samoa</territory>
+			<territory type="YE">Jemenas</territory>
+			<territory type="YT">Mayotte’as</territory>
+			<territory type="ZA">Pietų Afrika</territory>
+			<territory type="ZM">Zambija</territory>
+			<territory type="ZW">Zimbabvė</territory>
+			<territory type="ZZ">Nežinoma ar neteisinga sritis</territory>
+		</territories>
+		<variants>
+			<variant type="POSIX">Kompiuteris</variant>
+		</variants>
+		<keys>
+			<key type="calendar">kalendorius</key>
+			<key type="collation">lyginimas</key>
+			<key type="currency">valiuta</key>
+		</keys>
+		<types>
+			<type type="buddhist" key="calendar">Budistų kalendorius</type>
+			<type type="chinese" key="calendar">Kiniečių kalendorius</type>
+			<type type="gregorian" key="calendar">Grigaliaus kalendorius</type>
+			<type type="hebrew" key="calendar">Hebrajų kalendorius</type>
+			<type type="islamic" key="calendar">Islamo kalendorius</type>
+			<type type="japanese" key="calendar">Japonų kalendorius</type>
+			<type type="roc" key="calendar">Kinijos respublikos kalendorius</type>
+		</types>
+		<measurementSystemNames>
+			<measurementSystemName type="metric">Metrinė</measurementSystemName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<measurementSystemName type="US">JAV</measurementSystemName>
 		</measurementSystemNames>
 		<codePatterns>
@@ -1135,6 +1787,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
+<<<<<<< HEAD
 		<exemplarCharacters>[a ą b c č d e ę ė f g h i į y j k l m n o p r s š t u ų ū v z ž]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[á à ã {ą\u0301} {ą\u0303} {ch} {dz} {dž} é è ẽ {ę\u0301} {ę\u0303} {ė\u0301} {ė\u0303} {i\u0307\u0301}í {i\u0307\u0300}ì {i\u0307\u0303}ĩ {į\u0301}{į\u0307\u0301} {į\u0303}{į\u0307\u0303} {j\u0303}{j\u0307\u0303} {l\u0303} {m\u0303} ñ ó ò õ q {r\u0303} ú ù ũ {ų\u0301} {ų\u0303} {ū\u0301} {ū\u0303} w x]</exemplarCharacters>
 		<exemplarCharacters type="index">[A Ą B C Č D E Ę Ė F G H I Į Y J K L M N O P R S Š T U Ų Ū V Z Ž]</exemplarCharacters>
@@ -1146,6 +1799,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<ellipsis type="word-initial">… {0}</ellipsis>
 		<ellipsis type="word-medial">{0} … {1}</ellipsis>
 		<moreInformation>?</moreInformation>
+=======
+		<exemplarCharacters>[a ą b c č d e ę ė f-i į y j-p r s š t u ų ū v z ž]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[{į\u0307} {i\u0307} {i\u0307\u0301} {i\u0307\u0300} {i\u0307\u0303} {j\u0307} q w x]</exemplarCharacters>
+		<exemplarCharacters type="currencySymbol">[a ą b c č d e ę ė f-i į y j-p r s š t u ų ū v z ž]</exemplarCharacters>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	</characters>
 	<delimiters>
 		<quotationStart>„</quotationStart>
@@ -1154,6 +1812,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<alternateQuotationEnd>“</alternateQuotationEnd>
 	</delimiters>
 	<dates>
+<<<<<<< HEAD
 		<calendars>
 			<calendar type="buddhist">
 				<eras>
@@ -1464,11 +2123,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
+=======
+		<dateRangePattern>{0}−{1}</dateRangePattern>
+		<calendars>
+			<calendar type="buddhist">
+				<am>ryte</am>
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>y G, MMMM d, EEEE</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</calendar>
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
 						<monthWidth type="abbreviated">
+<<<<<<< HEAD
 							<month type="1">saus.</month>
 							<month type="2">vas.</month>
 							<month type="3">kov.</month>
@@ -1526,6 +2199,37 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">lapkr.</month>
 							<month type="12">gruod.</month>
 						</monthWidth>
+=======
+							<month type="1">Sau</month>
+							<month type="2">Vas</month>
+							<month type="3">Kov</month>
+							<month type="4">Bal</month>
+							<month type="5">Geg</month>
+							<month type="6">Bir</month>
+							<month type="7">Lie</month>
+							<month type="8">Rgp</month>
+							<month type="9">Rgs</month>
+							<month type="10">Spl</month>
+							<month type="11">Lap</month>
+							<month type="12">Grd</month>
+						</monthWidth>
+						<monthWidth type="wide">
+							<month type="1">sausio</month>
+							<month type="2">vasario</month>
+							<month type="3">kovo</month>
+							<month type="4">balandžio</month>
+							<month type="5">gegužės</month>
+							<month type="6">birželio</month>
+							<month type="7">liepos</month>
+							<month type="8">rugpjūčio</month>
+							<month type="9">rugsėjo</month>
+							<month type="10">spalio</month>
+							<month type="11">lapkričio</month>
+							<month type="12">gruodžio</month>
+						</monthWidth>
+					</monthContext>
+					<monthContext type="stand-alone">
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<monthWidth type="narrow">
 							<month type="1">S</month>
 							<month type="2">V</month>
@@ -1541,6 +2245,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="12">G</month>
 						</monthWidth>
 						<monthWidth type="wide">
+<<<<<<< HEAD
 							<month type="1">sausis</month>
 							<month type="2">vasaris</month>
 							<month type="3">kovas</month>
@@ -1553,12 +2258,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="10">spalis</month>
 							<month type="11">lapkritis</month>
 							<month type="12">gruodis</month>
+=======
+							<month type="1">Sausis</month>
+							<month type="2">Vasaris</month>
+							<month type="3">Kovas</month>
+							<month type="4">Balandis</month>
+							<month type="5">Gegužė</month>
+							<month type="6">Birželis</month>
+							<month type="7">Liepa</month>
+							<month type="8">Rugpjūtis</month>
+							<month type="9">Rugsėjis</month>
+							<month type="10">Spalis</month>
+							<month type="11">Lapkritis</month>
+							<month type="12">Gruodis</month>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</monthWidth>
 					</monthContext>
 				</months>
 				<days>
 					<dayContext type="format">
 						<dayWidth type="abbreviated">
+<<<<<<< HEAD
 							<day type="sun">sk</day>
 							<day type="mon">pr</day>
 							<day type="tue">an</day>
@@ -1577,6 +2297,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="sat">Š</day>
 						</dayWidth>
 						<dayWidth type="short">
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 							<day type="sun">Sk</day>
 							<day type="mon">Pr</day>
 							<day type="tue">An</day>
@@ -1596,6 +2318,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</dayWidth>
 					</dayContext>
 					<dayContext type="stand-alone">
+<<<<<<< HEAD
 						<dayWidth type="abbreviated">
 							<day type="sun">sk</day>
 							<day type="mon">pr</day>
@@ -1605,6 +2328,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">pn</day>
 							<day type="sat">št</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<dayWidth type="narrow">
 							<day type="sun">S</day>
 							<day type="mon">P</day>
@@ -1614,6 +2339,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">P</day>
 							<day type="sat">Š</day>
 						</dayWidth>
+<<<<<<< HEAD
 						<dayWidth type="short">
 							<day type="sun">Sk</day>
 							<day type="mon">Pr</day>
@@ -1632,11 +2358,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">penktadienis</day>
 							<day type="sat">šeštadienis</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</dayContext>
 				</days>
 				<quarters>
 					<quarterContext type="format">
 						<quarterWidth type="abbreviated">
+<<<<<<< HEAD
 							<quarter type="1">I k.</quarter>
 							<quarter type="2">II k.</quarter>
 							<quarter type="3">III k.</quarter>
@@ -1653,10 +2382,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<quarter type="2">II ketvirtis</quarter>
 							<quarter type="3">III ketvirtis</quarter>
 							<quarter type="4">IV ketvirtis</quarter>
+=======
+							<quarter type="1">K1</quarter>
+							<quarter type="2">K2</quarter>
+							<quarter type="3">K3</quarter>
+							<quarter type="4">K4</quarter>
+						</quarterWidth>
+						<quarterWidth type="wide">
+							<quarter type="1">pirmas ketvirtis</quarter>
+							<quarter type="2">antras ketvirtis</quarter>
+							<quarter type="3">trečias ketvirtis</quarter>
+							<quarter type="4">ketvirtas ketvirtis</quarter>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</quarterWidth>
 					</quarterContext>
 					<quarterContext type="stand-alone">
 						<quarterWidth type="abbreviated">
+<<<<<<< HEAD
 							<quarter type="1">I ketv.</quarter>
 							<quarter type="2">II ketv.</quarter>
 							<quarter type="3">III ketv.</quarter>
@@ -1707,11 +2449,35 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<era type="1">po Kr.</era>
 						<era type="1" alt="variant" draft="unconfirmed">pome</era>
 					</eraNarrow>
+=======
+							<quarter type="1">1K</quarter>
+							<quarter type="2">2K</quarter>
+							<quarter type="3">3K</quarter>
+							<quarter type="4">4K</quarter>
+						</quarterWidth>
+					</quarterContext>
+				</quarters>
+				<am>priešpiet</am>
+				<pm>popiet</pm>
+				<eras>
+					<eraNames>
+						<era type="0">prieš Kristų</era>
+						<era type="1">po Kristaus</era>
+					</eraNames>
+					<eraAbbr>
+						<era type="0">pr. Kr.</era>
+						<era type="1">po Kr.</era>
+					</eraAbbr>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				</eras>
 				<dateFormats>
 					<dateFormatLength type="full">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>y 'm'. MMMM d 'd'., EEEE</pattern>
+=======
+							<pattern>y 'm'. MMMM d 'd'.,EEEE</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="long">
@@ -1721,12 +2487,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</dateFormatLength>
 					<dateFormatLength type="medium">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>y MMM d</pattern>
+=======
+							<pattern>yyyy.MM.dd</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>y-MM-dd</pattern>
+=======
+							<pattern>yyyy-MM-dd</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
@@ -1753,6 +2527,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</timeFormatLength>
 				</timeFormats>
 				<dateTimeFormats>
+<<<<<<< HEAD
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
 							<pattern>{1} {0}</pattern>
@@ -2088,6 +2863,143 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="Etc/Unknown">
 				<exemplarCity>nežinomas miestas</exemplarCity>
+=======
+					<availableFormats>
+						<dateFormatItem id="hhmm">hh:mm a</dateFormatItem>
+						<dateFormatItem id="HHmm">HH:mm</dateFormatItem>
+						<dateFormatItem id="hhmmss">hh:mm:ss a</dateFormatItem>
+						<dateFormatItem id="HHmmss">HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="MMdd">MM.dd</dateFormatItem>
+						<dateFormatItem id="MMMdd">MMM-dd</dateFormatItem>
+						<dateFormatItem id="yyQ">Q yy</dateFormatItem>
+						<dateFormatItem id="yyyyMM">yyyy.MM</dateFormatItem>
+					</availableFormats>
+					<intervalFormats>
+						<intervalFormatFallback>{0} - {1}</intervalFormatFallback>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">d-d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="h">
+							<greatestDifference id="h">HH-HH</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="h">HH:mm-HH:mm</greatestDifference>
+							<greatestDifference id="m">HH:mm-HH:mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="h">HH:mm-HH:mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm-HH:mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="h">HH-HH v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">M-M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">MM-dd - MM-dd</greatestDifference>
+							<greatestDifference id="M">MM-dd - MM-dd</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">MM-ddE - MM-ddE</greatestDifference>
+							<greatestDifference id="M">MM-ddE - MM-ddE</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">MMM-MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d">MMM d 'd'.-d 'd'.</greatestDifference>
+							<greatestDifference id="M">MMM d 'd'. - MMM d 'd'.</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d">MMM d 'd'.E - d 'd'.E</greatestDifference>
+							<greatestDifference id="M">MMM d 'd'.E - MMM d 'd'.E</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">y-y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">yyyy-MM - yyyy-MM</greatestDifference>
+							<greatestDifference id="y">yyyy-MM - yyyy-MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">yyyy-MM-dd - yyyy-MM-dd</greatestDifference>
+							<greatestDifference id="M">yyyy-MM-dd - yyyy-MM-dd</greatestDifference>
+							<greatestDifference id="y">yyyy-MM-dd - yyyy-MM-dd</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">yyyy-MM-ddE - yyyy-MM-ddE</greatestDifference>
+							<greatestDifference id="M">yyyy-MM-ddE - yyyy-MM-ddE</greatestDifference>
+							<greatestDifference id="y">yyyy-MM-ddE - yyyy-MM-ddE</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">y 'm'. MMM-MMM</greatestDifference>
+							<greatestDifference id="y">y 'm'. MMM - y 'm'. MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d">y 'm'. MMM d 'd'.-d 'd'.</greatestDifference>
+							<greatestDifference id="M">y 'm'. MMM d 'd'. - MMM d 'd'.</greatestDifference>
+							<greatestDifference id="y">y 'm'. MMM d 'd'. - y 'm'. MMM d 'd'.</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d">y 'm'. MMM d 'd'.,E - d 'd'.,E</greatestDifference>
+							<greatestDifference id="M">y 'm'. MMM d 'd'.,E - MMM d 'd'.,E</greatestDifference>
+							<greatestDifference id="y">y 'm'. MMM d 'd'.,E - y 'm'. MMM d 'd'.,E</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+				<fields>
+					<field type="era">
+						<displayName>era</displayName>
+					</field>
+					<field type="year">
+						<displayName>metai</displayName>
+					</field>
+					<field type="month">
+						<displayName>mėnuo</displayName>
+					</field>
+					<field type="week">
+						<displayName>savaitė</displayName>
+					</field>
+					<field type="day">
+						<displayName>diena</displayName>
+						<relative type="-3">už užvakar</relative>
+						<relative type="-2">užvakar</relative>
+						<relative type="-1">vakar</relative>
+						<relative type="0">šiandien</relative>
+						<relative type="1">rytoj</relative>
+						<relative type="2">poryt</relative>
+						<relative type="3">užporyt</relative>
+					</field>
+					<field type="weekday">
+						<displayName>savaitės diena</displayName>
+					</field>
+					<field type="dayperiod">
+						<displayName>dienos metas</displayName>
+					</field>
+					<field type="hour">
+						<displayName>valanda</displayName>
+					</field>
+					<field type="minute">
+						<displayName>minutė</displayName>
+					</field>
+					<field type="second">
+						<displayName>sekundė</displayName>
+					</field>
+					<field type="zone">
+						<displayName>juosta</displayName>
+					</field>
+				</fields>
+			</calendar>
+		</calendars>
+		<timeZoneNames>
+			<hourFormat>+HH:mm;−HH:mm</hourFormat>
+			<gmtFormat>GMT{0}</gmtFormat>
+			<regionFormat>{0}</regionFormat>
+			<fallbackFormat>{0} ({1})</fallbackFormat>
+			<zone type="Etc/Unknown">
+				<exemplarCity>Nežinoma</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Andorra">
 				<exemplarCity>Andora</exemplarCity>
@@ -2098,18 +3010,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Kabul">
 				<exemplarCity>Kabulas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Antigua">
 				<exemplarCity>Antigva</exemplarCity>
 			</zone>
 			<zone type="America/Anguilla">
 				<exemplarCity>Angilija</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Europe/Tirane">
 				<exemplarCity>Tirana</exemplarCity>
 			</zone>
 			<zone type="Asia/Yerevan">
 				<exemplarCity>Jerevanas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Antarctica/Rothera">
 				<exemplarCity>Rotera</exemplarCity>
 			</zone>
@@ -2124,10 +3040,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Antarctica/Davis">
 				<exemplarCity>Deivisas</exemplarCity>
+=======
+			<zone type="Antarctica/Palmer">
+				<exemplarCity>Palmeris</exemplarCity>
+			</zone>
+			<zone type="Antarctica/South_Pole">
+				<exemplarCity>Pietų ašigalis</exemplarCity>
+			</zone>
+			<zone type="Antarctica/Syowa">
+				<exemplarCity>Syova</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Antarctica/Vostok">
 				<exemplarCity>Vostokas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Antarctica/Casey">
 				<exemplarCity>Keisis</exemplarCity>
 			</zone>
@@ -2136,6 +3063,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Antarctica/McMurdo">
 				<exemplarCity>Makmerdas</exemplarCity>
+=======
+			<zone type="Antarctica/DumontDUrville">
+				<exemplarCity>Dumont D'Urville</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Argentina/Rio_Gallegos">
 				<exemplarCity>Rio Galjegosas</exemplarCity>
@@ -2158,9 +3089,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Catamarca">
 				<exemplarCity>Katamarka</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Argentina/Salta">
 				<exemplarCity>Saltas</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Jujuy">
 				<exemplarCity>Chuchujus</exemplarCity>
 			</zone>
@@ -2173,45 +3107,58 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Buenos_Aires">
 				<exemplarCity>Buenos Airės</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Pacific/Pago_Pago">
 				<exemplarCity>Pago Pagas</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Europe/Vienna">
 				<exemplarCity>Viena</exemplarCity>
 			</zone>
 			<zone type="Australia/Perth">
 				<exemplarCity>Pertas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Australia/Eucla">
 				<exemplarCity>Jukla</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Australia/Darwin">
 				<exemplarCity>Darvinas</exemplarCity>
 			</zone>
 			<zone type="Australia/Adelaide">
 				<exemplarCity>Adelaidė</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Australia/Broken_Hill">
 				<exemplarCity>Broken Hilis</exemplarCity>
 			</zone>
 			<zone type="Australia/Currie">
 				<exemplarCity>Karis</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Australia/Melbourne">
 				<exemplarCity>Melburnas</exemplarCity>
 			</zone>
 			<zone type="Australia/Hobart">
 				<exemplarCity>Hobartas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Australia/Lindeman">
 				<exemplarCity>Lindemanas</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Australia/Sydney">
 				<exemplarCity>Sidnėjus</exemplarCity>
 			</zone>
 			<zone type="Australia/Brisbane">
 				<exemplarCity>Brisbanas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Antarctica/Macquarie">
 				<exemplarCity>Makvoris</exemplarCity>
 			</zone>
@@ -2224,6 +3171,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Europe/Sarajevo">
 				<exemplarCity>Sarajevas</exemplarCity>
 			</zone>
+=======
+			<zone type="Australia/Lord_Howe">
+				<exemplarCity>Lordo Hau sala</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Barbados">
 				<exemplarCity>Barbadosas</exemplarCity>
 			</zone>
@@ -2233,15 +3185,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Europe/Brussels">
 				<exemplarCity>Briuselis</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Africa/Ouagadougou">
 				<exemplarCity>Vagadugu</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Europe/Sofia">
 				<exemplarCity>Sofija</exemplarCity>
 			</zone>
 			<zone type="Asia/Bahrain">
 				<exemplarCity>Bahreinas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Africa/Bujumbura">
 				<exemplarCity>Bužumbūra</exemplarCity>
 			</zone>
@@ -2250,6 +3206,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/St_Barthelemy">
 				<exemplarCity>Sen Bartelemi</exemplarCity>
+=======
+			<zone type="Africa/Porto-Novo">
+				<exemplarCity>Porto Novas</exemplarCity>
+			</zone>
+			<zone type="Atlantic/Bermuda">
+				<exemplarCity>Bermudų salos</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Brunei">
 				<exemplarCity>Brunėjus</exemplarCity>
@@ -2257,6 +3220,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/La_Paz">
 				<exemplarCity>La Pasas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Kralendijk">
 				<exemplarCity>Kralendeikas</exemplarCity>
 			</zone>
@@ -2272,6 +3236,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Boa_Vista">
 				<exemplarCity>Bua Vista</exemplarCity>
 			</zone>
+=======
+			<zone type="America/Rio_Branco">
+				<exemplarCity>Rio Brankas</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Manaus">
 				<exemplarCity>Manausas</exemplarCity>
 			</zone>
@@ -2281,6 +3250,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Santarem">
 				<exemplarCity>Santarenas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Campo_Grande">
 				<exemplarCity>Kampo Grandė</exemplarCity>
 			</zone>
@@ -2289,10 +3259,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Araguaina">
 				<exemplarCity>Aragvajana</exemplarCity>
+=======
+			<zone type="America/Belem">
+				<exemplarCity>Belemas</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Sao_Paulo">
 				<exemplarCity>San Paulas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Bahia">
 				<exemplarCity>Baija</exemplarCity>
 			</zone>
@@ -2308,6 +3283,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Thimphu">
 				<exemplarCity>Timpu</exemplarCity>
 			</zone>
+=======
+			<zone type="America/Recife">
+				<exemplarCity>Resifė</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Africa/Gaborone">
 				<exemplarCity>Gaboronas</exemplarCity>
 			</zone>
@@ -2323,17 +3303,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Whitehorse">
 				<exemplarCity>Vaithorsas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Inuvik">
 				<exemplarCity>Inuvikas</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Vancouver">
 				<exemplarCity>Vankuveris</exemplarCity>
 			</zone>
 			<zone type="America/Dawson_Creek">
+<<<<<<< HEAD
 				<exemplarCity>Doson Krikas</exemplarCity>
 			</zone>
 			<zone type="America/Creston">
 				<exemplarCity>Krestonas</exemplarCity>
+=======
+				<exemplarCity>Dosono įlanka</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Yellowknife">
 				<exemplarCity>Jelounaifas</exemplarCity>
@@ -2341,11 +3328,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Edmonton">
 				<exemplarCity>Edmontonas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Swift_Current">
 				<exemplarCity>Svift Karentas</exemplarCity>
 			</zone>
 			<zone type="America/Cambridge_Bay">
 				<exemplarCity>Keimbridž Bėjus</exemplarCity>
+=======
+			<zone type="America/Cambridge_Bay">
+				<exemplarCity>Kembridžo įlanka</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Regina">
 				<exemplarCity>Redžina</exemplarCity>
@@ -2353,6 +3345,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Winnipeg">
 				<exemplarCity>Vinipegas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Resolute">
 				<exemplarCity>Resolutas</exemplarCity>
 			</zone>
@@ -2365,6 +3358,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Coral_Harbour">
 				<exemplarCity>Atikokanas</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Thunder_Bay">
 				<exemplarCity>Tander Bėjus</exemplarCity>
 			</zone>
@@ -2374,6 +3369,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Toronto">
 				<exemplarCity>Torontas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="America/Montreal">
+				<exemplarCity>Monrealis</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Iqaluit">
 				<exemplarCity>Ikaluitas</exemplarCity>
 			</zone>
@@ -2386,6 +3387,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Halifax">
 				<exemplarCity>Halifaksas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Goose_Bay">
 				<exemplarCity>Gus Bėjus</exemplarCity>
 			</zone>
@@ -2401,15 +3403,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Indian/Cocos">
 				<exemplarCity>Kokosų sala</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Africa/Kinshasa">
 				<exemplarCity>Kinšasa</exemplarCity>
 			</zone>
 			<zone type="Africa/Lubumbashi">
 				<exemplarCity>Lubumbašis</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Africa/Bangui">
 				<exemplarCity>Bangis</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Africa/Brazzaville">
 				<exemplarCity>Brazavilis</exemplarCity>
 			</zone>
@@ -2425,11 +3432,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Santiago">
 				<exemplarCity>Santjagas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Africa/Douala">
 				<exemplarCity>Duala</exemplarCity>
 			</zone>
 			<zone type="Asia/Kashgar">
 				<exemplarCity>Kašgaras</exemplarCity>
+=======
+			<zone type="Asia/Kashgar">
+				<exemplarCity>Kashi</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Urumqi">
 				<exemplarCity>Urumči</exemplarCity>
@@ -2437,15 +3449,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Chongqing">
 				<exemplarCity>Čongčingas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Shanghai">
 				<exemplarCity>Šanchajus</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Asia/Harbin">
 				<exemplarCity>Harbinas</exemplarCity>
 			</zone>
 			<zone type="America/Costa_Rica">
 				<exemplarCity>Kosta Rika</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Atlantic/Cape_Verde">
 				<exemplarCity>Žaliasis Kyšulys</exemplarCity>
 			</zone>
@@ -2454,16 +3470,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Indian/Christmas">
 				<exemplarCity>Kalėdų Sala</exemplarCity>
+=======
+			<zone type="Indian/Christmas">
+				<exemplarCity>Kalėdų sala</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Nicosia">
 				<exemplarCity>Nikosija</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Prague">
 				<exemplarCity>Praha</exemplarCity>
 			</zone>
 			<zone type="Europe/Busingen">
 				<exemplarCity>Biusingenas</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Europe/Berlin">
 				<exemplarCity>Berlynas</exemplarCity>
 			</zone>
@@ -2479,6 +3502,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Santo_Domingo">
 				<exemplarCity>Santo Domingas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Africa/Algiers">
 				<exemplarCity>Alžyras</exemplarCity>
 			</zone>
@@ -2488,15 +3512,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Guayaquil">
 				<exemplarCity>Gvajakilis</exemplarCity>
 			</zone>
+=======
+			<zone type="Pacific/Galapagos">
+				<exemplarCity>Galapagai</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Europe/Tallinn">
 				<exemplarCity>Talinas</exemplarCity>
 			</zone>
 			<zone type="Africa/Cairo">
 				<exemplarCity>Kairas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Africa/El_Aaiun">
 				<exemplarCity>al Ajūnas</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Africa/Asmera">
 				<exemplarCity>Asmara</exemplarCity>
 			</zone>
@@ -2510,7 +3542,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Madridas</exemplarCity>
 			</zone>
 			<zone type="Africa/Addis_Ababa">
+<<<<<<< HEAD
 				<exemplarCity>Adis Abeba</exemplarCity>
+=======
+				<exemplarCity>Addis Abeba</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Helsinki">
 				<exemplarCity>Helsinkis</exemplarCity>
@@ -2522,14 +3558,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Stenlis</exemplarCity>
 			</zone>
 			<zone type="Pacific/Truk">
+<<<<<<< HEAD
 				<exemplarCity>Čukas</exemplarCity>
+=======
+				<exemplarCity>Trukas</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Pacific/Ponape">
 				<exemplarCity>Ponapė</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Pacific/Kosrae">
 				<exemplarCity>Kosrajė</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Atlantic/Faeroe">
 				<exemplarCity>Farerai</exemplarCity>
 			</zone>
@@ -2540,9 +3583,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Librevilis</exemplarCity>
 			</zone>
 			<zone type="Europe/London">
+<<<<<<< HEAD
 				<long>
 					<daylight>Britanijos vasaros laikas</daylight>
 				</long>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<exemplarCity>Londonas</exemplarCity>
 			</zone>
 			<zone type="Asia/Tbilisi">
@@ -2551,16 +3597,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Cayenne">
 				<exemplarCity>Kajenas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Guernsey">
 				<exemplarCity>Gernsis</exemplarCity>
 			</zone>
 			<zone type="Africa/Accra">
 				<exemplarCity>Akra</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Europe/Gibraltar">
 				<exemplarCity>Gibraltaras</exemplarCity>
 			</zone>
 			<zone type="America/Thule">
+<<<<<<< HEAD
 				<exemplarCity>Kanakas</exemplarCity>
 			</zone>
 			<zone type="America/Godthab">
@@ -2574,37 +3624,59 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Africa/Banjul">
 				<exemplarCity>Bandžulis</exemplarCity>
+=======
+				<exemplarCity>Tūla</exemplarCity>
+			</zone>
+			<zone type="America/Godthab">
+				<exemplarCity>Godthabas</exemplarCity>
+			</zone>
+			<zone type="America/Danmarkshavn">
+				<exemplarCity>Danmarkshavn’as</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Conakry">
 				<exemplarCity>Konakris</exemplarCity>
 			</zone>
 			<zone type="America/Guadeloupe">
+<<<<<<< HEAD
 				<exemplarCity>Gvadalupė</exemplarCity>
 			</zone>
 			<zone type="Africa/Malabo">
 				<exemplarCity>Malabas</exemplarCity>
+=======
+				<exemplarCity>Gvadelupė</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Athens">
 				<exemplarCity>Atėnai</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Atlantic/South_Georgia">
 				<exemplarCity>Pietų Džordžija</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Guatemala">
 				<exemplarCity>Gvatemala</exemplarCity>
 			</zone>
 			<zone type="Pacific/Guam">
 				<exemplarCity>Guamas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Africa/Bissau">
 				<exemplarCity>Bisau</exemplarCity>
 			</zone>
 			<zone type="America/Guyana">
 				<exemplarCity>Gvajana</exemplarCity>
+=======
+			<zone type="America/Guyana">
+				<exemplarCity>Gajana</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Hong_Kong">
 				<exemplarCity>Honkongas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Tegucigalpa">
 				<exemplarCity>Tegusigalpa</exemplarCity>
 			</zone>
@@ -2614,6 +3686,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Port-au-Prince">
 				<exemplarCity>Port o Prensas</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Europe/Budapest">
 				<exemplarCity>Budapeštas</exemplarCity>
 			</zone>
@@ -2630,6 +3704,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Džajapura</exemplarCity>
 			</zone>
 			<zone type="Europe/Dublin">
+<<<<<<< HEAD
 				<long>
 					<daylight>Airijos vasaros laikas</daylight>
 				</long>
@@ -2647,6 +3722,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Indian/Chagos">
 				<exemplarCity>Čagosas</exemplarCity>
 			</zone>
+=======
+				<exemplarCity>Dublinas</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Asia/Baghdad">
 				<exemplarCity>Bagdadas</exemplarCity>
 			</zone>
@@ -2659,24 +3738,31 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Europe/Rome">
 				<exemplarCity>Roma</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Jersey">
 				<exemplarCity>Džersis</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Jamaica">
 				<exemplarCity>Jamaika</exemplarCity>
 			</zone>
 			<zone type="Asia/Amman">
 				<exemplarCity>Amanas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Tokyo">
 				<exemplarCity>Tokijas</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Africa/Nairobi">
 				<exemplarCity>Nairobis</exemplarCity>
 			</zone>
 			<zone type="Asia/Bishkek">
 				<exemplarCity>Biškekas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Phnom_Penh">
 				<exemplarCity>Pnompenis</exemplarCity>
 			</zone>
@@ -2686,6 +3772,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Pacific/Kiritimati">
 				<exemplarCity>Kiritimatis</exemplarCity>
 			</zone>
+=======
+			<zone type="Pacific/Enderbury">
+				<exemplarCity>Enderburis</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Pacific/Tarawa">
 				<exemplarCity>Tarava</exemplarCity>
 			</zone>
@@ -2693,10 +3784,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Komoras</exemplarCity>
 			</zone>
 			<zone type="America/St_Kitts">
+<<<<<<< HEAD
 				<exemplarCity>Sent Kitsas</exemplarCity>
 			</zone>
 			<zone type="Asia/Pyongyang">
 				<exemplarCity>Pchenjanas</exemplarCity>
+=======
+				<exemplarCity>St. Kitsas</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Seoul">
 				<exemplarCity>Seulas</exemplarCity>
@@ -2729,13 +3824,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Beirutas</exemplarCity>
 			</zone>
 			<zone type="America/St_Lucia">
+<<<<<<< HEAD
 				<exemplarCity>Sent Lusija</exemplarCity>
+=======
+				<exemplarCity>St. Lucia</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Vaduz">
 				<exemplarCity>Vaducas</exemplarCity>
 			</zone>
 			<zone type="Asia/Colombo">
+<<<<<<< HEAD
 				<exemplarCity>Kolombas</exemplarCity>
+=======
+				<exemplarCity>Kolombo</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Monrovia">
 				<exemplarCity>Monrovija</exemplarCity>
@@ -2755,6 +3858,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Europe/Monaco">
 				<exemplarCity>Monakas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Chisinau">
 				<exemplarCity>Kišiniovas</exemplarCity>
 			</zone>
@@ -2775,15 +3879,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Africa/Bamako">
 				<exemplarCity>Bamakas</exemplarCity>
+=======
+			<zone type="Indian/Antananarivo">
+				<exemplarCity>Antananarivas</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Rangoon">
 				<exemplarCity>Rangūnas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Hovd">
 				<exemplarCity>Hovdas</exemplarCity>
 			</zone>
 			<zone type="Asia/Ulaanbaatar">
 				<exemplarCity>Ulan Batoras</exemplarCity>
+=======
+			<zone type="Asia/Ulaanbaatar">
+				<exemplarCity>Ulan-Batoras</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Choibalsan">
 				<exemplarCity>Čoibalsanas</exemplarCity>
@@ -2797,9 +3910,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Martinique">
 				<exemplarCity>Martinika</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Africa/Nouakchott">
 				<exemplarCity>Nuakšotas</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Montserrat">
 				<exemplarCity>Montseratas</exemplarCity>
 			</zone>
@@ -2809,6 +3925,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Indian/Maldives">
 				<exemplarCity>Maldyvai</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Africa/Blantyre">
 				<exemplarCity>Blantairas</exemplarCity>
 			</zone>
@@ -2818,27 +3935,40 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>Santa Izabelė</exemplarCity>
 			</zone>
+=======
+			<zone type="America/Tijuana">
+				<exemplarCity>Tichuana</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Hermosillo">
 				<exemplarCity>Hermosiljas</exemplarCity>
 			</zone>
 			<zone type="America/Mazatlan">
+<<<<<<< HEAD
 				<exemplarCity>Masatlanas</exemplarCity>
+=======
+				<exemplarCity>Mazatlanas</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Chihuahua">
 				<exemplarCity>Čihuahua</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Bahia_Banderas">
 				<exemplarCity>Bahia Banderasas</exemplarCity>
 			</zone>
 			<zone type="America/Ojinaga">
 				<exemplarCity>Ochinaga</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Monterrey">
 				<exemplarCity>Monterėjus</exemplarCity>
 			</zone>
 			<zone type="America/Mexico_City">
 				<exemplarCity>Meksikas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Matamoros">
 				<exemplarCity>Matamorosas</exemplarCity>
 			</zone>
@@ -2847,10 +3977,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Asia/Kuala_Lumpur">
 				<exemplarCity>Kvala Lumpūras</exemplarCity>
+=======
+			<zone type="America/Cancun">
+				<exemplarCity>Kankunas</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Kuching">
 				<exemplarCity>Kučingas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Africa/Maputo">
 				<exemplarCity>Maputas</exemplarCity>
 			</zone>
@@ -2869,6 +4004,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Africa/Lagos">
 				<exemplarCity>Lagosas</exemplarCity>
 			</zone>
+=======
+			<zone type="Pacific/Norfolk">
+				<exemplarCity>Norfolkas</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Managua">
 				<exemplarCity>Managva</exemplarCity>
 			</zone>
@@ -2878,6 +4018,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Europe/Oslo">
 				<exemplarCity>Oslas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Katmandu">
 				<exemplarCity>Katmandu</exemplarCity>
 			</zone>
@@ -2890,6 +4031,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Pacific/Auckland">
 				<exemplarCity>Oklandas</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Asia/Muscat">
 				<exemplarCity>Maskatas</exemplarCity>
 			</zone>
@@ -2899,6 +4042,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Pacific/Marquesas">
 				<exemplarCity>Markizo salos</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Pacific/Gambier">
 				<exemplarCity>Gambyras</exemplarCity>
 			</zone>
@@ -2916,6 +4060,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Pacific/Pitcairn">
 				<exemplarCity>Pitkerno sala</exemplarCity>
+=======
+			<zone type="Europe/Warsaw">
+				<exemplarCity>Varšuva</exemplarCity>
+			</zone>
+			<zone type="Pacific/Pitcairn">
+				<exemplarCity>Pitcairno salos</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Puerto_Rico">
 				<exemplarCity>Puerto Rikas</exemplarCity>
@@ -2923,9 +4074,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Gaza">
 				<exemplarCity>Gazos ruožas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Hebron">
 				<exemplarCity>Hebronas</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Atlantic/Azores">
 				<exemplarCity>Azorai</exemplarCity>
 			</zone>
@@ -2939,14 +4093,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Kataras</exemplarCity>
 			</zone>
 			<zone type="Indian/Reunion">
+<<<<<<< HEAD
 				<exemplarCity>Reunjonas</exemplarCity>
+=======
+				<exemplarCity>Reunionas</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Bucharest">
 				<exemplarCity>Bukareštas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Belgrade">
 				<exemplarCity>Belgradas</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Europe/Kaliningrad">
 				<exemplarCity>Kaliningradas</exemplarCity>
 			</zone>
@@ -2965,9 +4126,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Novosibirsk">
 				<exemplarCity>Novosibirskas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Novokuznetsk">
 				<exemplarCity>Novokuzneckas</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Asia/Krasnoyarsk">
 				<exemplarCity>Krasnojarskas</exemplarCity>
 			</zone>
@@ -2980,6 +4144,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Vladivostok">
 				<exemplarCity>Vladivostokas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Khandyga">
 				<exemplarCity>Chandyga</exemplarCity>
 			</zone>
@@ -2989,6 +4154,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Ust-Nera">
 				<exemplarCity>Ust Nera</exemplarCity>
 			</zone>
+=======
+			<zone type="Asia/Sakhalin">
+				<exemplarCity>Sachalinas</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Asia/Magadan">
 				<exemplarCity>Magadanas</exemplarCity>
 			</zone>
@@ -2996,19 +4166,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Kamčiatka</exemplarCity>
 			</zone>
 			<zone type="Asia/Anadyr">
+<<<<<<< HEAD
 				<exemplarCity>Anadyris</exemplarCity>
 			</zone>
 			<zone type="Africa/Kigali">
 				<exemplarCity>Kigalis</exemplarCity>
+=======
+				<exemplarCity>Anadyrė</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Riyadh">
 				<exemplarCity>Rijadas</exemplarCity>
 			</zone>
 			<zone type="Pacific/Guadalcanal">
+<<<<<<< HEAD
 				<exemplarCity>Gvadalkanalis</exemplarCity>
 			</zone>
 			<zone type="Indian/Mahe">
 				<exemplarCity>Mahė</exemplarCity>
+=======
+				<exemplarCity>Gvadalkanalas</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Khartoum">
 				<exemplarCity>Chartumas</exemplarCity>
@@ -3020,6 +4198,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Singapūras</exemplarCity>
 			</zone>
 			<zone type="Atlantic/St_Helena">
+<<<<<<< HEAD
 				<exemplarCity>Sent Helena</exemplarCity>
 			</zone>
 			<zone type="Europe/Ljubljana">
@@ -3033,6 +4212,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Europe/San_Marino">
 				<exemplarCity>San Marinas</exemplarCity>
+=======
+				<exemplarCity>Šv. Helena</exemplarCity>
+			</zone>
+			<zone type="Africa/Freetown">
+				<exemplarCity>Frytaunas</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Dakar">
 				<exemplarCity>Dakaras</exemplarCity>
@@ -3040,18 +4225,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Africa/Mogadishu">
 				<exemplarCity>Mogadišas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Paramaribo">
 				<exemplarCity>Paramaribas</exemplarCity>
 			</zone>
 			<zone type="Africa/Juba">
 				<exemplarCity>Džuba</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Africa/Sao_Tome">
 				<exemplarCity>San Tomė</exemplarCity>
 			</zone>
 			<zone type="America/El_Salvador">
 				<exemplarCity>Salvadoras</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Lower_Princes">
 				<exemplarCity>Žemutinis Prinses Kvorteris</exemplarCity>
 			</zone>
@@ -3061,27 +4250,38 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Africa/Mbabane">
 				<exemplarCity>Mbabanė</exemplarCity>
 			</zone>
+=======
+			<zone type="Asia/Damascus">
+				<exemplarCity>Damaskas</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Grand_Turk">
 				<exemplarCity>Grand Terkas</exemplarCity>
 			</zone>
 			<zone type="Africa/Ndjamena">
 				<exemplarCity>Ndžamena</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Indian/Kerguelen">
 				<exemplarCity>Kergelenas</exemplarCity>
 			</zone>
 			<zone type="Africa/Lome">
 				<exemplarCity>Lomė</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Asia/Bangkok">
 				<exemplarCity>Bankokas</exemplarCity>
 			</zone>
 			<zone type="Asia/Dushanbe">
 				<exemplarCity>Dušanbė</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Pacific/Fakaofo">
 				<exemplarCity>Fakaofas</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Asia/Dili">
 				<exemplarCity>Dilis</exemplarCity>
 			</zone>
@@ -3097,6 +4297,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Port_of_Spain">
 				<exemplarCity>Port of Speinas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Pacific/Funafuti">
 				<exemplarCity>Funafutis</exemplarCity>
 			</zone>
@@ -3106,6 +4307,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Africa/Dar_es_Salaam">
 				<exemplarCity>Dar es Salamas</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Europe/Uzhgorod">
 				<exemplarCity>Užhorodas</exemplarCity>
 			</zone>
@@ -3119,12 +4322,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Zaporožė</exemplarCity>
 			</zone>
 			<zone type="Pacific/Midway">
+<<<<<<< HEAD
 				<exemplarCity>Midvėjus</exemplarCity>
+=======
+				<exemplarCity>Jungtinių Valstijų mažosios aplinkinės salos (Midway</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Pacific/Johnston">
 				<exemplarCity>Džonstonas</exemplarCity>
 			</zone>
 			<zone type="Pacific/Wake">
+<<<<<<< HEAD
 				<exemplarCity>Veiko sala</exemplarCity>
 			</zone>
 			<zone type="America/Adak">
@@ -3132,28 +4340,46 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Nome">
 				<exemplarCity>Nomas</exemplarCity>
+=======
+				<exemplarCity>Jungtinių Valstijų mažosios aplinkinės salos (Klivateris)</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Anchorage">
 				<exemplarCity>Ankoridžas</exemplarCity>
 			</zone>
 			<zone type="America/Yakutat">
+<<<<<<< HEAD
 				<exemplarCity>Jakutatas</exemplarCity>
 			</zone>
 			<zone type="America/Juneau">
 				<exemplarCity>Džunas</exemplarCity>
+=======
+				<exemplarCity>Jakutat</exemplarCity>
+			</zone>
+			<zone type="America/Juneau">
+				<exemplarCity>Džūnas</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Los_Angeles">
 				<exemplarCity>Los Andželas</exemplarCity>
 			</zone>
 			<zone type="America/Boise">
+<<<<<<< HEAD
 				<exemplarCity>Boisis</exemplarCity>
 			</zone>
 			<zone type="America/Phoenix">
 				<exemplarCity>Finiksas</exemplarCity>
+=======
+				<exemplarCity>Boisė</exemplarCity>
+			</zone>
+			<zone type="America/Phoenix">
+				<exemplarCity>Fyniksas</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Denver">
 				<exemplarCity>Denveris</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/North_Dakota/Beulah">
 				<exemplarCity>Bjula, Šiaurės Dakota</exemplarCity>
 			</zone>
@@ -3162,10 +4388,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/North_Dakota/Center">
 				<exemplarCity>Senteris, Šiaurės Dakota</exemplarCity>
+=======
+			<zone type="America/North_Dakota/New_Salem">
+				<exemplarCity>Naujasis Salemas, Šiaurės Dakota</exemplarCity>
+			</zone>
+			<zone type="America/North_Dakota/Center">
+				<exemplarCity>Jungtinės Valstijos (Centras, Šiaurės Dakota)</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Chicago">
 				<exemplarCity>Čikaga</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Menominee">
 				<exemplarCity>Menominis</exemplarCity>
 			</zone>
@@ -3177,6 +4411,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Indiana/Tell_City">
 				<exemplarCity>Tel Sitis, Indiana</exemplarCity>
+=======
+			<zone type="America/Indiana/Vincennes">
+				<exemplarCity>Vincenas, Indiana</exemplarCity>
+			</zone>
+			<zone type="America/Indiana/Petersburg">
+				<exemplarCity>Peterburgas</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Indiana/Knox">
 				<exemplarCity>Noksas, Indiana</exemplarCity>
@@ -3184,6 +4425,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Indiana/Winamac">
 				<exemplarCity>Vinamakas, Indiana</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Indiana/Marengo">
 				<exemplarCity>Marengas, Indiana</exemplarCity>
 			</zone>
@@ -3195,6 +4437,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Kentucky/Monticello">
 				<exemplarCity>Montiselas, Kentukis</exemplarCity>
+=======
+			<zone type="America/Louisville">
+				<exemplarCity>Luizvilis</exemplarCity>
+			</zone>
+			<zone type="America/Kentucky/Monticello">
+				<exemplarCity>Monticelas, Kentukis</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Detroit">
 				<exemplarCity>Detroitas</exemplarCity>
@@ -3203,7 +4452,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Niujorkas</exemplarCity>
 			</zone>
 			<zone type="America/Montevideo">
+<<<<<<< HEAD
 				<exemplarCity>Montevidėjas</exemplarCity>
+=======
+				<exemplarCity>Montevidëjas</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Samarkand">
 				<exemplarCity>Samarkandas</exemplarCity>
@@ -3211,16 +4464,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Tashkent">
 				<exemplarCity>Taškentas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Vatican">
 				<exemplarCity>Vatikanas</exemplarCity>
 			</zone>
 			<zone type="America/St_Vincent">
 				<exemplarCity>Sent Vincentas</exemplarCity>
+=======
+			<zone type="America/St_Vincent">
+				<exemplarCity>Sant Vincentė</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Caracas">
 				<exemplarCity>Karakasas</exemplarCity>
 			</zone>
 			<zone type="America/St_Thomas">
+<<<<<<< HEAD
 				<exemplarCity>Sent Tomasas</exemplarCity>
 			</zone>
 			<zone type="Asia/Saigon">
@@ -3231,6 +4490,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Pacific/Wallis">
 				<exemplarCity>Volisas</exemplarCity>
+=======
+				<exemplarCity>St. Thomas</exemplarCity>
+			</zone>
+			<zone type="Pacific/Efate">
+				<exemplarCity>Efatas</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Pacific/Apia">
 				<exemplarCity>Apija</exemplarCity>
@@ -3244,6 +4509,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Africa/Johannesburg">
 				<exemplarCity>Johanesburgas</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Africa/Harare">
 				<exemplarCity>Hararė</exemplarCity>
 			</zone>
@@ -3878,11 +5144,224 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<generic>Naujosios Zelandijos laikas</generic>
 					<standard>Naujosios Zelandijos žiemos laikas</standard>
 					<daylight>Naujosios Zelandijos vasaros laikas</daylight>
+=======
+			<metazone type="Africa_Central">
+				<long>
+					<standard>Centrinės Afrikos laikas</standard>
+				</long>
+			</metazone>
+			<metazone type="Africa_Eastern">
+				<long>
+					<standard>Rytų Afrikos laikas</standard>
+				</long>
+			</metazone>
+			<metazone type="Africa_Southern">
+				<long>
+					<generic>Pietų Afrikos laikas</generic>
+					<standard>Pietų Afrikos standartinis laikas</standard>
+				</long>
+			</metazone>
+			<metazone type="Africa_Western">
+				<long>
+					<standard>Vakarų Afrikos laikas</standard>
+					<daylight>Vakarų Afrikos vasaros laikas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Alaska">
+				<long>
+					<generic>Aliaskos laikas</generic>
+					<standard>Aliaskos standartinis laikas</standard>
+					<daylight>Aliaskos vasaros laikas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Alaska_Hawaii">
+				<long>
+					<generic>Aliaskos-Havajų laikas</generic>
+					<standard>Aliaskos-Havajų standartinis laikas</standard>
+					<daylight>Aliaskos-Havajų vasaros laikas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Amazon">
+				<long>
+					<standard>Amazonės laikas</standard>
+					<daylight>Amazonės vasaros laikas</daylight>
+				</long>
+			</metazone>
+			<metazone type="America_Central">
+				<long>
+					<generic>Centro laikas</generic>
+					<standard>Centro standartinis laikas</standard>
+					<daylight>Centro vasaros laikas</daylight>
+				</long>
+			</metazone>
+			<metazone type="America_Eastern">
+				<long>
+					<generic>Rytų laikas</generic>
+					<standard>Rytų standartinis laikas</standard>
+					<daylight>Rytų vasaros laikas</daylight>
+				</long>
+			</metazone>
+			<metazone type="America_Pacific">
+				<long>
+					<generic>Ramiojo vandenyno laikas</generic>
+					<standard>Ramiojo vandenyno standartinis laikas</standard>
+					<daylight>Ramiojo vandenyno vasaros laikas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Aqtau">
+				<short>
+					<standard>AQTT (Aktau)</standard>
+					<daylight>AQTST (Aktau)</daylight>
+				</short>
+			</metazone>
+			<metazone type="Aqtobe">
+				<short>
+					<standard>AQTT (Aktobė)</standard>
+					<daylight>AQTST (Aktobė)</daylight>
+				</short>
+			</metazone>
+			<metazone type="Argentina">
+				<long>
+					<standard>Argentinos laikas</standard>
+					<daylight>Argentinos vasaros laikas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Argentina_Western">
+				<long>
+					<standard>Vakarų Argentinos laikas</standard>
+				</long>
+			</metazone>
+			<metazone type="Atlantic">
+				<long>
+					<generic>Atlanto laikas</generic>
+					<standard>Atlanto standartinis laikas</standard>
+					<daylight>Atlanto vasaros laikas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Bering">
+				<long>
+					<generic>Beringo laikas</generic>
+					<standard>Beringo standartinis laikas</standard>
+					<daylight>Beringo vasaros laikas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Bolivia">
+				<long>
+					<standard>Bolivijos laikas</standard>
+				</long>
+			</metazone>
+			<metazone type="Brasilia">
+				<long>
+					<standard>Brazilijos laikas</standard>
+					<daylight>Brazilijos vasaros laikas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Chile">
+				<long>
+					<standard>Čilės laikas</standard>
+					<daylight>Čilės vasaros laikas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Colombia">
+				<long>
+					<standard>Kolumbijos laikas</standard>
+					<daylight>Kolumbijos vasaros laikas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Cuba">
+				<long>
+					<generic>Kubos laikas</generic>
+					<standard>Kubos standartinis laikas</standard>
+					<daylight>Kubos vasaros laikas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Dutch_Guiana">
+				<long>
+					<standard>Olandų Gajanos laikas</standard>
+				</long>
+			</metazone>
+			<metazone type="Ecuador">
+				<long>
+					<standard>Ekvadoro laikas</standard>
+				</long>
+			</metazone>
+			<metazone type="Europe_Central">
+				<long>
+					<standard>Vidurio Europos laikas</standard>
+					<daylight>Vidurio Europos vasaros laikas</daylight>
+				</long>
+				<short>
+					<standard>CET</standard>
+					<daylight>CEST</daylight>
+				</short>
+			</metazone>
+			<metazone type="Europe_Eastern">
+				<long>
+					<standard>Rytų Europos laikas</standard>
+					<daylight>Rytų Europos vasaros laikas</daylight>
+				</long>
+				<short>
+					<standard>EET</standard>
+					<daylight>EEST</daylight>
+				</short>
+			</metazone>
+			<metazone type="Europe_Western">
+				<short>
+					<standard>WET</standard>
+					<daylight>WEST</daylight>
+				</short>
+			</metazone>
+			<metazone type="French_Guiana">
+				<long>
+					<standard>Prancūzų Gajanos laikas</standard>
+				</long>
+			</metazone>
+			<metazone type="GMT">
+				<short>
+					<standard>GMT</standard>
+				</short>
+			</metazone>
+			<metazone type="Greenland_Central">
+				<long>
+					<standard>Grenlandijos centro laikas</standard>
+					<daylight>Grenlandijos centro vasaros laikas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Greenland_Eastern">
+				<long>
+					<standard>Grenlandijos rytų laikas</standard>
+					<daylight>Grenlandijos rytų vasaros laikas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Greenland_Western">
+				<long>
+					<standard>Grenlandijos vakarų laikas</standard>
+					<daylight>Grenlandijos vakarų vasaros laikas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Guyana">
+				<long>
+					<standard>Gajanos laikas</standard>
+				</long>
+			</metazone>
+			<metazone type="Kuybyshev">
+				<long>
+					<standard>Kuibyševo laikas</standard>
+					<daylight>Kuibyševo vasaros laikas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Moscow">
+				<long>
+					<generic>Maskvos laikas</generic>
+					<standard>Maskvos standartinis laikas</standard>
+					<daylight>Maskvos vasaros laikas</daylight>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				</long>
 			</metazone>
 			<metazone type="Newfoundland">
 				<long>
 					<generic>Niufaundlendo laikas</generic>
+<<<<<<< HEAD
 					<standard>Niufaundlendo žiemos laikas</standard>
 					<daylight>Niufaundlendo vasaros laikas</daylight>
 				</long>
@@ -3944,11 +5423,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<long>
 					<generic>Paragvajaus laikas</generic>
 					<standard>Paragvajaus žiemos laikas</standard>
+=======
+					<standard>Niufaundlendo standartinis laikas</standard>
+					<daylight>Niufaundlendo vasaros laikas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Paraguay">
+				<long>
+					<standard>Paragvajaus laikas</standard>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					<daylight>Paragvajaus vasaros laikas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Peru">
 				<long>
+<<<<<<< HEAD
 					<generic>Peru laikas</generic>
 					<standard>Peru žiemos laikas</standard>
 					<daylight>Peru vasaros laikas</daylight>
@@ -4095,10 +5584,33 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<metazone type="Tuvalu">
 				<long>
 					<standard>Tuvalu laikas</standard>
+=======
+					<standard>Peru laikas</standard>
+					<daylight>Peru vasaros laikas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Samara">
+				<long>
+					<standard>Samaros laikas</standard>
+					<daylight>Samaros vasaros laikas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Samarkand">
+				<short>
+					<standard>SAMT (Samarkandas)</standard>
+					<daylight>SAMST (Samarkandas)</daylight>
+				</short>
+			</metazone>
+			<metazone type="Turkey">
+				<long>
+					<standard>Turkijos laikas</standard>
+					<daylight>Turkijos vasaros laikas</daylight>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				</long>
 			</metazone>
 			<metazone type="Uruguay">
 				<long>
+<<<<<<< HEAD
 					<generic>Urugvajaus laikas</generic>
 					<standard>Urugvajaus žiemos laikas</standard>
 					<daylight>Urugvajaus vasaros laikas</daylight>
@@ -4118,11 +5630,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<daylight>Vanuatu vasaros laikas</daylight>
 				</long>
 			</metazone>
+=======
+					<standard>Urugvajaus laikas</standard>
+					<daylight>Urugvajaus vasaros laikas</daylight>
+				</long>
+			</metazone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<metazone type="Venezuela">
 				<long>
 					<standard>Venesuelos laikas</standard>
 				</long>
 			</metazone>
+<<<<<<< HEAD
 			<metazone type="Vladivostok">
 				<long>
 					<generic>Vladivostoko laikas</generic>
@@ -4184,11 +5703,38 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<nan>NaN</nan>
 		</symbols>
 		<decimalFormats numberSystem="latn">
+=======
+			<metazone type="Volgograd">
+				<long>
+					<standard>Volgogrado laikas</standard>
+					<daylight>Volgogrado vasaros laikas</daylight>
+				</long>
+			</metazone>
+		</timeZoneNames>
+	</dates>
+	<numbers>
+		<symbols>
+			<decimal>,</decimal>
+			<group>.</group>
+			<list>;</list>
+			<percentSign>%</percentSign>
+			<nativeZeroDigit>0</nativeZeroDigit>
+			<patternDigit>#</patternDigit>
+			<plusSign>+</plusSign>
+			<minusSign>−</minusSign>
+			<exponential>×10^</exponential>
+			<perMille>‰</perMille>
+			<infinity>∞</infinity>
+			<nan>¤¤¤</nan>
+		</symbols>
+		<decimalFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<decimalFormatLength>
 				<decimalFormat>
 					<pattern>#,##0.###</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
+<<<<<<< HEAD
 			<decimalFormatLength type="long">
 				<decimalFormat>
 					<pattern type="1000" count="one">0 tūkstantis</pattern>
@@ -4295,12 +5841,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</decimalFormatLength>
 		</decimalFormats>
 		<scientificFormats numberSystem="latn">
+=======
+		</decimalFormats>
+		<scientificFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<scientificFormatLength>
 				<scientificFormat>
 					<pattern>#E0</pattern>
 				</scientificFormat>
 			</scientificFormatLength>
 		</scientificFormats>
+<<<<<<< HEAD
 		<percentFormats numberSystem="latn">
 			<percentFormatLength>
 				<percentFormat>
@@ -4317,11 +5868,29 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<unitPattern count="one">{0} {1}</unitPattern>
 			<unitPattern count="few">{0} {1}</unitPattern>
 			<unitPattern count="many">{0} {1}</unitPattern>
+=======
+		<percentFormats>
+			<percentFormatLength>
+				<percentFormat>
+					<pattern>#,##0%</pattern>
+				</percentFormat>
+			</percentFormatLength>
+		</percentFormats>
+		<currencyFormats>
+			<currencyFormatLength>
+				<currencyFormat>
+					<pattern>#,##0.00 ¤</pattern>
+				</currencyFormat>
+			</currencyFormatLength>
+			<unitPattern count="few">{0} {1}</unitPattern>
+			<unitPattern count="one">{0} {1}</unitPattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<unitPattern count="other">{0} {1}</unitPattern>
 		</currencyFormats>
 		<currencies>
 			<currency type="ADP">
 				<displayName>Andoros peseta</displayName>
+<<<<<<< HEAD
 				<displayName count="one">Andoros peseta</displayName>
 				<displayName count="few">Andoros pesetos</displayName>
 				<displayName count="many">Andoros pesetos</displayName>
@@ -4431,10 +6000,72 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">Argentinos pesai (1983–1985)</displayName>
 				<displayName count="many">Argentinos pesai (1983–1985)</displayName>
 				<displayName count="other">Argentinos pesai (1983–1985)</displayName>
+=======
+				<displayName count="few">Andoros pesetos</displayName>
+				<displayName count="one">Andoros peseta</displayName>
+				<displayName count="other">Andoros pesetos</displayName>
+			</currency>
+			<currency type="AED">
+				<displayName>JAE dirhamas</displayName>
+			</currency>
+			<currency type="AFA">
+				<displayName>Afganis (1927-2002)</displayName>
+				<displayName count="few">Afganiai (1927-2002)</displayName>
+				<displayName count="one">Afganis (1927-2002)</displayName>
+				<displayName count="other">Afganiai (1927-2002)</displayName>
+			</currency>
+			<currency type="AFN">
+				<displayName>Afganis</displayName>
+				<displayName count="few">Afganiai</displayName>
+				<displayName count="one">Afganis</displayName>
+				<displayName count="other">Afganiai</displayName>
+			</currency>
+			<currency type="ALL">
+				<displayName>Albanijos lekas</displayName>
+				<displayName count="few">Albanijos lekai</displayName>
+				<displayName count="one">Albanijos lekas</displayName>
+				<displayName count="other">Albanijos lekai</displayName>
+			</currency>
+			<currency type="AMD">
+				<displayName>Armėnijos dramas</displayName>
+				<displayName count="few">Armėnijos dramai</displayName>
+				<displayName count="one">Armėnijos dramas</displayName>
+				<displayName count="other">Armėnijos dramai</displayName>
+			</currency>
+			<currency type="ANG">
+				<displayName>Nyderlandų Antilų guldenas</displayName>
+				<displayName count="few">Nyderlandų Antilų guldenas</displayName>
+				<displayName count="other">Nyderlandų Antilų guldenai</displayName>
+			</currency>
+			<currency type="AOA">
+				<displayName>Angolos kvanza</displayName>
+				<displayName count="few">Angolos kvanzos</displayName>
+				<displayName count="one">Angolos kvanza</displayName>
+				<displayName count="other">Angolos kvanzai</displayName>
+			</currency>
+			<currency type="AOK">
+				<displayName>Angolos kvanza (1977-1990)</displayName>
+				<displayName count="few">Angolos kvanzos (1977-1990)</displayName>
+				<displayName count="one">Angolos kvanza (1977-1990)</displayName>
+				<displayName count="other">Angolos kvanzai (1977-1990)</displayName>
+			</currency>
+			<currency type="AON">
+				<displayName>Angolos naujoji kvanza</displayName>
+				<displayName count="few">Angolos naujosios kvanzos</displayName>
+				<displayName count="one">Angolos naujoji kvanza</displayName>
+				<displayName count="other">Angolos naujosios kvanzos</displayName>
+			</currency>
+			<currency type="ARP">
+				<displayName>Argentinos pesas (1983-1985)</displayName>
+				<displayName count="few">Argentinos pesai (1983-1985)</displayName>
+				<displayName count="one">Argentinos pesas (1983-1985)</displayName>
+				<displayName count="other">Argentinos pesai (1983-1985)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ARS">
 				<displayName>Argentinos pesas</displayName>
 				<displayName count="one">Argentinos pesas</displayName>
+<<<<<<< HEAD
 				<displayName count="few">Argentinos pesai</displayName>
 				<displayName count="many">Argentinos peso</displayName>
 				<displayName count="other">Argentinos pesų</displayName>
@@ -4445,10 +6076,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">Austrijos šilingai</displayName>
 				<displayName count="many">Austrijos šilingo</displayName>
 				<displayName count="other">Austrijos šilingų</displayName>
+=======
+				<displayName count="other">Argentinos pesai</displayName>
+			</currency>
+			<currency type="ATS">
+				<displayName>Austrijos šilingas</displayName>
+				<displayName count="few">Austrijos šilingai</displayName>
+				<displayName count="one">Austrijos šilingas</displayName>
+				<displayName count="other">Austrijos šilingai</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="AUD">
 				<displayName>Australijos doleris</displayName>
 				<displayName count="one">Australijos doleris</displayName>
+<<<<<<< HEAD
 				<displayName count="few">Australijos doleriai</displayName>
 				<displayName count="many">Australijos dolerio</displayName>
 				<displayName count="other">Australijos dolerių</displayName>
@@ -4579,17 +6220,114 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">Bermudos doleriai</displayName>
 				<displayName count="many">Bermudos dolerio</displayName>
 				<displayName count="other">Bermudos dolerių</displayName>
+=======
+				<displayName count="other">Australijos doleriai</displayName>
+			</currency>
+			<currency type="AWG">
+				<displayName>Arubos guldenas</displayName>
+				<displayName count="few">Arubos guldenai</displayName>
+				<displayName count="one">Arubos guldenas</displayName>
+				<displayName count="other">Arubos guldenai</displayName>
+			</currency>
+			<currency type="AZM">
+				<displayName>Azerbaidžano manatas (1993-2006)</displayName>
+				<displayName count="few">Azerbaidžano manatai (1993-2006)</displayName>
+				<displayName count="one">Azerbaidžano manatas (1993-2006)</displayName>
+				<displayName count="other">Azerbaidžano manatai (1993-2006)</displayName>
+			</currency>
+			<currency type="AZN">
+				<displayName>Azerbaidžano manatas</displayName>
+				<displayName count="few">Azerbaidžano manatai</displayName>
+				<displayName count="one">Azerbaidžano manatas</displayName>
+				<displayName count="other">Azerbaidžano manatai</displayName>
+			</currency>
+			<currency type="BAD">
+				<displayName>Bosnijos ir Hercegovinos dinaras</displayName>
+				<displayName count="few">Bosnijos ir Hercegovinos dinarai</displayName>
+				<displayName count="one">Bosnijos ir Hercegovinos dinaras</displayName>
+				<displayName count="other">Bosnijos ir Hercegovinos dinarai</displayName>
+			</currency>
+			<currency type="BAM">
+				<displayName>Bosnijos ir Hercegovinos konvertuojamoji markė</displayName>
+				<displayName count="few">Bosnijos ir Hercegovinos konvertuojamosios markės</displayName>
+				<displayName count="one">Bosnijos ir Hercegovinos konvertuojamoji markė</displayName>
+				<displayName count="other">Bosnijos ir Hercegovinos konvertuojamosios markės</displayName>
+			</currency>
+			<currency type="BBD">
+				<displayName>Barbadoso doleris</displayName>
+				<displayName count="few">Barbadoso doleriai</displayName>
+				<displayName count="one">Barbadoso doleris</displayName>
+				<displayName count="other">Barbadoso doleriai</displayName>
+			</currency>
+			<currency type="BDT">
+				<displayName>Bangladešo taka</displayName>
+				<displayName count="few">Bangladešo takos</displayName>
+				<displayName count="one">Bangladešo taka</displayName>
+				<displayName count="other">Bangladešo takos</displayName>
+			</currency>
+			<currency type="BEC">
+				<displayName>Belgijos frankas (konvertuojamas)</displayName>
+				<displayName count="few">Belgijos frankai (konvertuojami)</displayName>
+				<displayName count="one">Belgijos frankas (konvertuojamas)</displayName>
+				<displayName count="other">Belgijos frankai (konvertuojami)</displayName>
+			</currency>
+			<currency type="BEF">
+				<displayName>Belgijos frankas</displayName>
+				<displayName count="few">Belgijos frankai</displayName>
+				<displayName count="one">Belgijos frankas</displayName>
+				<displayName count="other">Belgijos frankai</displayName>
+			</currency>
+			<currency type="BEL">
+				<displayName>Belgijos frankas (finansinis)</displayName>
+				<displayName count="few">Belgijos frankai (finansiniai)</displayName>
+				<displayName count="one">Belgijos frankas (finansinis)</displayName>
+				<displayName count="other">Belgijos frankai (finansiniai)</displayName>
+			</currency>
+			<currency type="BGL">
+				<displayName>Bulgarijos levas (1962-1999)</displayName>
+				<displayName count="few">Bulgarijos levai</displayName>
+				<displayName count="one">Bulgarijos levas (1962-1999)</displayName>
+				<displayName count="other">Bulgarijos levai</displayName>
+			</currency>
+			<currency type="BGN">
+				<displayName>Bulgarijos levas</displayName>
+				<displayName count="one">Bulgarijos naujasis levas</displayName>
+				<displayName count="other">Bulgarijos naujasis levai</displayName>
+			</currency>
+			<currency type="BHD">
+				<displayName>Bahreino dinaras</displayName>
+				<displayName count="few">Bahreino dinarai</displayName>
+				<displayName count="one">Bahreino dinaras</displayName>
+				<displayName count="other">Bahreino dinarai</displayName>
+			</currency>
+			<currency type="BIF">
+				<displayName>Burundžio frankas</displayName>
+				<displayName count="few">Burundžio frankai</displayName>
+				<displayName count="one">Burundžio frankas</displayName>
+				<displayName count="other">Burundžio frankai</displayName>
+			</currency>
+			<currency type="BMD">
+				<displayName>Bermudos doleris</displayName>
+				<displayName count="few">Bermudos doleriai</displayName>
+				<displayName count="one">Bermudos doleris</displayName>
+				<displayName count="other">Bermudos doleriai</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BND">
 				<displayName>Brunėjaus doleris</displayName>
 				<displayName count="one">Brunėjaus doleris</displayName>
+<<<<<<< HEAD
 				<displayName count="few">Brunėjaus doleriai</displayName>
 				<displayName count="many">Brunėjaus dolerio</displayName>
 				<displayName count="other">Brunėjaus dolerių</displayName>
+=======
+				<displayName count="other">Brunėjaus doleriai</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BOB">
 				<displayName>Bolivijos bolivijanas</displayName>
 				<displayName count="one">Bolivijos bolivijanas</displayName>
+<<<<<<< HEAD
 				<displayName count="few">Bolivijos bolivijanai</displayName>
 				<displayName count="many">Bolivijos bolivijano</displayName>
 				<displayName count="other">Bolivijos bolivijanų</displayName>
@@ -4607,23 +6345,41 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">Bolivijos pesai</displayName>
 				<displayName count="many">Bolivijos peso</displayName>
 				<displayName count="other">Bolivijos pesų</displayName>
+=======
+				<displayName count="other">Bolivijos bolivijanai</displayName>
+			</currency>
+			<currency type="BOP">
+				<displayName>Bolivijos pesas</displayName>
+				<displayName count="few">Bolivijos pesai</displayName>
+				<displayName count="one">Bolivijos pesas</displayName>
+				<displayName count="other">Bolivijos pesai</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BOV">
 				<displayName>Bolivijos mvdol</displayName>
 				<displayName count="one">Bolivijos mvdol</displayName>
+<<<<<<< HEAD
 				<displayName count="few">Boliviečių mvdols</displayName>
 				<displayName count="many">Bolivijos mvdol</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<displayName count="other">Bolivijos mvdol</displayName>
 			</currency>
 			<currency type="BRB">
 				<displayName>Brazilijos naujasis kruzeiras</displayName>
+<<<<<<< HEAD
 				<displayName count="one">Brazilijos naujasis kruzeiras</displayName>
 				<displayName count="few">Brazilijos naujieji kruzeirai</displayName>
 				<displayName count="many">Brazilijos naujieji kruzeirai</displayName>
+=======
+				<displayName count="few">Brazilijos naujieji kruzeirai</displayName>
+				<displayName count="one">Brazilijos naujasis kruzeiras</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<displayName count="other">Brazilijos naujieji kruzeirai</displayName>
 			</currency>
 			<currency type="BRC">
 				<displayName>Brazilijos kruzadas</displayName>
+<<<<<<< HEAD
 				<displayName count="one">Brazilijos kruzadas</displayName>
 				<displayName count="few">Brazilijos kruzadai</displayName>
 				<displayName count="many">Brazilijos kruzadai</displayName>
@@ -4635,10 +6391,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">Brazilijos kruzeirai (1990–1993)</displayName>
 				<displayName count="many">Brazilijos kruzeirai (1990–1993)</displayName>
 				<displayName count="other">Brazilijos kruzeirai (1990–1993)</displayName>
+=======
+				<displayName count="few">Brazilijos kruzadai</displayName>
+				<displayName count="one">Brazilijos kruzadas</displayName>
+				<displayName count="other">Brazilijos kruzadai</displayName>
+			</currency>
+			<currency type="BRE">
+				<displayName>Brazilijos kruzeiras (1990-1993)</displayName>
+				<displayName count="few">Brazilijos kruzeirai (1990-1993)</displayName>
+				<displayName count="one">Brazilijos kruzeiras (1990-1993)</displayName>
+				<displayName count="other">Brazilijos kruzeirai (1990-1993)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BRL">
 				<displayName>Brazilijos realas</displayName>
 				<displayName count="one">Brazilijos realas</displayName>
+<<<<<<< HEAD
 				<displayName count="few">Brazilijos realai</displayName>
 				<displayName count="many">Brazilijos realo</displayName>
 				<displayName count="other">Brazilijos realų</displayName>
@@ -4649,10 +6417,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="one">Brazilijos naujasis kruzadas</displayName>
 				<displayName count="few">Brazilijos naujieji kruzadai</displayName>
 				<displayName count="many">Brazilijos naujieji kruzadai</displayName>
+=======
+				<displayName count="other">Brazilijos realai</displayName>
+			</currency>
+			<currency type="BRN">
+				<displayName>Brazilijos naujasis kruzadas</displayName>
+				<displayName count="few">Brazilijos naujieji kruzadai</displayName>
+				<displayName count="one">Brazilijos naujasis kruzadas</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<displayName count="other">Brazilijos naujieji kruzadai</displayName>
 			</currency>
 			<currency type="BRR">
 				<displayName>Brazilijos kruzeiras</displayName>
+<<<<<<< HEAD
 				<displayName count="one">Brazilijos kruzeiras</displayName>
 				<displayName count="few">Brazilijos kruzeirai</displayName>
 				<displayName count="many">Brazilijos kruzeirai</displayName>
@@ -4699,32 +6476,73 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">Baltarusijos naujieji rubliai (1994–1999)</displayName>
 				<displayName count="many">Baltarusijos naujojo rublio (1994–1999)</displayName>
 				<displayName count="other">Baltarusijos naujųjų rublių</displayName>
+=======
+				<displayName count="few">Brazilijos kruzeirai</displayName>
+				<displayName count="one">Brazilijos kruzeiras</displayName>
+				<displayName count="other">Brazilijos kruzeirai</displayName>
+			</currency>
+			<currency type="BSD">
+				<displayName>Bahamų doleris</displayName>
+				<displayName count="few">Bahamų doleriai</displayName>
+				<displayName count="one">Bahamų doleris</displayName>
+				<displayName count="other">Bahamų doleriai</displayName>
+			</currency>
+			<currency type="BTN">
+				<displayName>Butano ngultrumas</displayName>
+				<displayName count="few">Butano ngultrumai</displayName>
+				<displayName count="one">Butano ngultrumas</displayName>
+				<displayName count="other">Butano ngultrumai</displayName>
+			</currency>
+			<currency type="BWP">
+				<displayName>Botsvanos pula</displayName>
+				<displayName count="few">Botsvanos pulos</displayName>
+				<displayName count="one">Botsvanos pula</displayName>
+				<displayName count="other">Botsvanos pulos</displayName>
+			</currency>
+			<currency type="BYB">
+				<displayName>Baltarusijos naujasis rublis</displayName>
+				<displayName count="one">Baltarusijos naujasis rublis</displayName>
+				<displayName count="other">Baltarusijos naujieji rubliai</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BYR">
 				<displayName>Baltarusijos rublis</displayName>
 				<displayName count="one">Baltarusijos rublis</displayName>
+<<<<<<< HEAD
 				<displayName count="few">Baltarusijos rubliai</displayName>
 				<displayName count="many">Baltarusijos rublio</displayName>
 				<displayName count="other">Baltarusijos rublių</displayName>
+=======
+				<displayName count="other">Baltarusijos rubliai</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BZD">
 				<displayName>Belizo doleris</displayName>
 				<displayName count="one">Belizo doleris</displayName>
+<<<<<<< HEAD
 				<displayName count="few">Belizo doleriai</displayName>
 				<displayName count="many">Belizo dolerio</displayName>
 				<displayName count="other">Belizo dolerių</displayName>
+=======
+				<displayName count="other">Belizo doleriai</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="CAD">
 				<displayName>Kanados doleris</displayName>
 				<displayName count="one">Kanados doleris</displayName>
+<<<<<<< HEAD
 				<displayName count="few">Kanados doleriai</displayName>
 				<displayName count="many">Kanados dolerio</displayName>
 				<displayName count="other">Kanados dolerių</displayName>
 				<symbol>CAD</symbol>
+=======
+				<displayName count="other">Kanados doleriai</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="CDF">
 				<displayName>Kongo frankas</displayName>
 				<displayName count="one">Kongo frankas</displayName>
+<<<<<<< HEAD
 				<displayName count="few">Kongo frankai</displayName>
 				<displayName count="many">Kongo franko</displayName>
 				<displayName count="other">Kongo frankų</displayName>
@@ -4763,10 +6581,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">Čiliečių unidades de fomentos</displayName>
 				<displayName count="many">Čiliečių unidades de fomentos</displayName>
 				<displayName count="other">Čiliečių unidades de fomentos</displayName>
+=======
+				<displayName count="other">Kongo frankai</displayName>
+			</currency>
+			<currency type="CHF">
+				<displayName>Šveicarijos frankas</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="CLP">
 				<displayName>Čilės pesas</displayName>
 				<displayName count="one">Čilės pesas</displayName>
+<<<<<<< HEAD
 				<displayName count="few">Čilės pesai</displayName>
 				<displayName count="many">Čilės peso</displayName>
 				<displayName count="other">Čilės pesų</displayName>
@@ -4785,10 +6610,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="many">Kinijos ženminbi juanio</displayName>
 				<displayName count="other">Kinijos ženminbi juanių</displayName>
 				<symbol>CNY</symbol>
+=======
+				<displayName count="other">Čilės pesai</displayName>
+			</currency>
+			<currency type="CNY">
+				<displayName>Ženminbi juanis</displayName>
+				<displayName count="one">Kinijos juanis</displayName>
+				<displayName count="other">Kinijos juaniai</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="COP">
 				<displayName>Kolumbijos pesas</displayName>
 				<displayName count="one">Kolumbijos pesas</displayName>
+<<<<<<< HEAD
 				<displayName count="few">Kolumbijos pesai</displayName>
 				<displayName count="many">Kolumbijos peso</displayName>
 				<displayName count="other">Kolumbijos pesų</displayName>
@@ -4799,10 +6633,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">unidad de valor realai</displayName>
 				<displayName count="many">unidad de valor realai</displayName>
 				<displayName count="other">unidad de valor realai</displayName>
+=======
+				<displayName count="other">Kolumbijos pesai</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="CRC">
 				<displayName>Kosta Rikos kolonas</displayName>
 				<displayName count="one">Kosta Rikos kolonas</displayName>
+<<<<<<< HEAD
 				<displayName count="few">Kosta Rikos kolonai</displayName>
 				<displayName count="many">Kosta Rikos kolono</displayName>
 				<displayName count="other">Kosta Rikos kolonų</displayName>
@@ -4890,10 +6728,41 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">Dominikos pesai</displayName>
 				<displayName count="many">Dominikos peso</displayName>
 				<displayName count="other">Dominikos pesų</displayName>
+=======
+				<displayName count="other">Kosta Rikos kolonai</displayName>
+			</currency>
+			<currency type="CSD">
+				<displayName>Senasis Serbijos dinaras</displayName>
+			</currency>
+			<currency type="CUP">
+				<displayName>Kubos pesas</displayName>
+			</currency>
+			<currency type="CYP">
+				<displayName>Kipro svaras</displayName>
+			</currency>
+			<currency type="CZK">
+				<displayName>Čekijos krona</displayName>
+			</currency>
+			<currency type="DDM">
+				<displayName>Rytų Vokietijos ostmarkė</displayName>
+			</currency>
+			<currency type="DEM">
+				<displayName>Vokietijos markė</displayName>
+			</currency>
+			<currency type="DJF">
+				<displayName>Džibučio frankas</displayName>
+			</currency>
+			<currency type="DKK">
+				<displayName>Danijos krona</displayName>
+			</currency>
+			<currency type="DOP">
+				<displayName>Dominikos pesas</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="DZD">
 				<displayName>Alžyro dinaras</displayName>
 				<displayName count="one">Alžyro dinaras</displayName>
+<<<<<<< HEAD
 				<displayName count="few">Alžyro dinarai</displayName>
 				<displayName count="many">Alžyro dinaro</displayName>
 				<displayName count="other">Alžyro dinarų</displayName>
@@ -5266,10 +7135,148 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">Kambodžos rieliai</displayName>
 				<displayName count="many">Kambodžos rielio</displayName>
 				<displayName count="other">Kambodžos rielių</displayName>
+=======
+				<displayName count="other">Alžyro dinarai</displayName>
+			</currency>
+			<currency type="ECS">
+				<displayName>Ekvadoro sukrė</displayName>
+			</currency>
+			<currency type="ECV">
+				<displayName>Ekvadoro constante (UVC)</displayName>
+			</currency>
+			<currency type="EEK">
+				<displayName>Estijos krona</displayName>
+			</currency>
+			<currency type="EGP">
+				<displayName>Egipto svaras</displayName>
+			</currency>
+			<currency type="ERN">
+				<displayName>Eritrėjos nakfa</displayName>
+			</currency>
+			<currency type="ESP">
+				<displayName>Ispanijos peseta</displayName>
+			</currency>
+			<currency type="ETB">
+				<displayName>Etiopijos biras</displayName>
+			</currency>
+			<currency type="EUR">
+				<displayName>Euras</displayName>
+			</currency>
+			<currency type="FIM">
+				<displayName>Suomijos markė</displayName>
+			</currency>
+			<currency type="FJD">
+				<displayName>Fidžio doleris</displayName>
+			</currency>
+			<currency type="FKP">
+				<displayName>Folklando salų svaras</displayName>
+			</currency>
+			<currency type="FRF">
+				<displayName>Prancūzijos frankas</displayName>
+			</currency>
+			<currency type="GBP">
+				<displayName>Svaras sterlingų</displayName>
+				<displayName count="one">Didžiosios Britanijos svaras sterlingų</displayName>
+				<displayName count="other">Didžiosios Britanijos svarai sterlingų</displayName>
+			</currency>
+			<currency type="GEL">
+				<displayName>Gruzijos laris</displayName>
+			</currency>
+			<currency type="GHC">
+				<displayName>Ganos sedis (1979-2007)</displayName>
+			</currency>
+			<currency type="GHS">
+				<displayName>Ganos sedis</displayName>
+			</currency>
+			<currency type="GIP">
+				<displayName>Gibraltaro svaras</displayName>
+			</currency>
+			<currency type="GMD">
+				<displayName>Gambijos dalasis</displayName>
+			</currency>
+			<currency type="GNF">
+				<displayName>Gvinėjos frankas</displayName>
+			</currency>
+			<currency type="GRD">
+				<displayName>Graikijos drachma</displayName>
+			</currency>
+			<currency type="GTQ">
+				<displayName>Gvatemalos kecalis</displayName>
+			</currency>
+			<currency type="GWE">
+				<displayName>Portugalų Gvinėjos eskudas</displayName>
+			</currency>
+			<currency type="GWP">
+				<displayName>Gvinėjos-Bisau pesas</displayName>
+			</currency>
+			<currency type="GYD">
+				<displayName>Gajanos doleris</displayName>
+			</currency>
+			<currency type="HKD">
+				<displayName>Honkongo doleris</displayName>
+			</currency>
+			<currency type="HNL">
+				<displayName>Hondūro lempira</displayName>
+			</currency>
+			<currency type="HRD">
+				<displayName>Kroatijos dinaras</displayName>
+			</currency>
+			<currency type="HRK">
+				<displayName>Kroatijos kuna</displayName>
+			</currency>
+			<currency type="HTG">
+				<displayName>Haičio gurdas</displayName>
+			</currency>
+			<currency type="HUF">
+				<displayName>Vengrijos forintas</displayName>
+			</currency>
+			<currency type="IDR">
+				<displayName>Indonezijos rupija</displayName>
+			</currency>
+			<currency type="IEP">
+				<displayName>Airijos svaras</displayName>
+			</currency>
+			<currency type="ILP">
+				<displayName>Izraelio svaras</displayName>
+			</currency>
+			<currency type="ILS">
+				<displayName>Izraelio šekelis</displayName>
+			</currency>
+			<currency type="INR">
+				<displayName>Indijos rupija</displayName>
+			</currency>
+			<currency type="IQD">
+				<displayName>Irako dinaras</displayName>
+			</currency>
+			<currency type="IRR">
+				<displayName>Irano rialas</displayName>
+			</currency>
+			<currency type="ISK">
+				<displayName>Islandijos krona</displayName>
+			</currency>
+			<currency type="ITL">
+				<displayName>Italijos lira</displayName>
+			</currency>
+			<currency type="JMD">
+				<displayName>Jamaikos doleris</displayName>
+			</currency>
+			<currency type="JOD">
+				<displayName>Jordanijos dinaras</displayName>
+			</currency>
+			<currency type="JPY">
+				<displayName>Jena</displayName>
+			</currency>
+			<currency type="KES">
+				<displayName>Kenijos šilingas</displayName>
+			</currency>
+			<currency type="KGS">
+				<displayName>Kirgizijos somas</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="KMF">
 				<displayName>Komoro frankas</displayName>
 				<displayName count="one">Komoro frankas</displayName>
+<<<<<<< HEAD
 				<displayName count="few">Komoro frankai</displayName>
 				<displayName count="many">Komoro franko</displayName>
 				<displayName count="other">Komoro frankų</displayName>
@@ -6156,10 +8163,356 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">Samoa talos</displayName>
 				<displayName count="many">Samoa talos</displayName>
 				<displayName count="other">Samoa talų</displayName>
+=======
+				<displayName count="other">Komoro frankai</displayName>
+			</currency>
+			<currency type="KPW">
+				<displayName>Šiaurės Korėjos vonas</displayName>
+			</currency>
+			<currency type="KRW">
+				<displayName>Pietų Korėjos vonas</displayName>
+			</currency>
+			<currency type="KWD">
+				<displayName>Kuveito dinaras</displayName>
+			</currency>
+			<currency type="KYD">
+				<displayName>Kaimanų salų doleris</displayName>
+			</currency>
+			<currency type="KZT">
+				<displayName>Kazachstano tengė</displayName>
+			</currency>
+			<currency type="LAK">
+				<displayName>Laoso kipas</displayName>
+			</currency>
+			<currency type="LBP">
+				<displayName>Libano svaras</displayName>
+			</currency>
+			<currency type="LKR">
+				<displayName>Šri Lankos rupija</displayName>
+			</currency>
+			<currency type="LRD">
+				<displayName>Liberijos doleris</displayName>
+			</currency>
+			<currency type="LSL">
+				<displayName>Lesoto lotis</displayName>
+			</currency>
+			<currency type="LTL">
+				<displayName>Litas</displayName>
+			</currency>
+			<currency type="LTT">
+				<displayName>Lietuvos talonas</displayName>
+			</currency>
+			<currency type="LUC">
+				<displayName>Liuksemburgo konvertuojamas frankas</displayName>
+			</currency>
+			<currency type="LUF">
+				<displayName>Liuksemburgo frankas</displayName>
+			</currency>
+			<currency type="LUL">
+				<displayName>Liuksemburgo finansinis frankas</displayName>
+			</currency>
+			<currency type="LVL">
+				<displayName>Latvijos latas</displayName>
+			</currency>
+			<currency type="LVR">
+				<displayName>Latvijos rublis</displayName>
+			</currency>
+			<currency type="LYD">
+				<displayName>Libijos dinaras</displayName>
+			</currency>
+			<currency type="MAD">
+				<displayName>Maroko dirhamas</displayName>
+			</currency>
+			<currency type="MAF">
+				<displayName>Maroko frankas</displayName>
+			</currency>
+			<currency type="MDL">
+				<displayName>Moldovos lėja</displayName>
+			</currency>
+			<currency type="MGA">
+				<displayName>Madagaskaro ariaris</displayName>
+			</currency>
+			<currency type="MGF">
+				<displayName>Madagaskaro frankas</displayName>
+			</currency>
+			<currency type="MKD">
+				<displayName>Makedonijos denaras</displayName>
+			</currency>
+			<currency type="MLF">
+				<displayName>Malio frankas</displayName>
+			</currency>
+			<currency type="MMK">
+				<displayName>Mianmaro kijatas</displayName>
+			</currency>
+			<currency type="MNT">
+				<displayName>Mongolijos tugrikas</displayName>
+			</currency>
+			<currency type="MOP">
+				<displayName>Makao pataka</displayName>
+			</currency>
+			<currency type="MRO">
+				<displayName>Mauritanijos ugija</displayName>
+			</currency>
+			<currency type="MTL">
+				<displayName>Maltos lira</displayName>
+			</currency>
+			<currency type="MTP">
+				<displayName>Maltos svaras</displayName>
+			</currency>
+			<currency type="MUR">
+				<displayName>Mauricijaus rupija</displayName>
+			</currency>
+			<currency type="MVR">
+				<displayName>Maldyvų salų rufija</displayName>
+			</currency>
+			<currency type="MWK">
+				<displayName>Malavio kvača</displayName>
+			</currency>
+			<currency type="MXN">
+				<displayName>Meksikos pesas</displayName>
+			</currency>
+			<currency type="MXP">
+				<displayName>Meksikos sidabrinis pesas (1861-1992)</displayName>
+			</currency>
+			<currency type="MXV">
+				<displayName>Meksikos United de Inversion (UDI)</displayName>
+			</currency>
+			<currency type="MYR">
+				<displayName>Malaizijos ringitas</displayName>
+			</currency>
+			<currency type="MZE">
+				<displayName>Mozambiko eskudas</displayName>
+			</currency>
+			<currency type="MZM">
+				<displayName>Senasis Mozambiko metikalis</displayName>
+			</currency>
+			<currency type="MZN">
+				<displayName>Mozambiko metikalis</displayName>
+			</currency>
+			<currency type="NAD">
+				<displayName>Namibijos doleris</displayName>
+			</currency>
+			<currency type="NGN">
+				<displayName>Nigerijos naira</displayName>
+			</currency>
+			<currency type="NIC">
+				<displayName>Nikaragvos kardoba</displayName>
+			</currency>
+			<currency type="NIO">
+				<displayName>Nikaragvos kardoba oras</displayName>
+			</currency>
+			<currency type="NLG">
+				<displayName>Nyderlandų guldenas</displayName>
+			</currency>
+			<currency type="NOK">
+				<displayName>Norvegijos krona</displayName>
+			</currency>
+			<currency type="NPR">
+				<displayName>Nepalo rupija</displayName>
+			</currency>
+			<currency type="NZD">
+				<displayName>Naujosios Zelandijos doleris</displayName>
+			</currency>
+			<currency type="OMR">
+				<displayName>Omano rialas</displayName>
+			</currency>
+			<currency type="PAB">
+				<displayName>Panamos balboja</displayName>
+			</currency>
+			<currency type="PEN">
+				<displayName>Peru naujasis solis</displayName>
+			</currency>
+			<currency type="PES">
+				<displayName>Peru solis</displayName>
+			</currency>
+			<currency type="PGK">
+				<displayName>Papua Naujosios Gvinėjos kina</displayName>
+			</currency>
+			<currency type="PHP">
+				<displayName>Filipinų pesas</displayName>
+			</currency>
+			<currency type="PKR">
+				<displayName>Pakistano rupija</displayName>
+			</currency>
+			<currency type="PLN">
+				<displayName>Lenkijos zlotas</displayName>
+			</currency>
+			<currency type="PLZ">
+				<displayName>Lenkijos zlotas (1950-1995)</displayName>
+			</currency>
+			<currency type="PTE">
+				<displayName>Portugalijos eskudas</displayName>
+			</currency>
+			<currency type="PYG">
+				<displayName>Paragvajaus guaranis</displayName>
+			</currency>
+			<currency type="QAR">
+				<displayName>Kataro rialas</displayName>
+			</currency>
+			<currency type="RHD">
+				<displayName>Rodezijos doleris</displayName>
+			</currency>
+			<currency type="ROL">
+				<displayName>Senoji Rumunijos lėja</displayName>
+			</currency>
+			<currency type="RON">
+				<displayName>Naujoji Rumunijos lėja</displayName>
+			</currency>
+			<currency type="RSD">
+				<displayName>Serbijos dinaras</displayName>
+			</currency>
+			<currency type="RUB">
+				<displayName>Rusijos rublis</displayName>
+			</currency>
+			<currency type="RUR">
+				<displayName>Rusijos rublis (1991-1998)</displayName>
+			</currency>
+			<currency type="RWF">
+				<displayName>Ruandos frankas</displayName>
+			</currency>
+			<currency type="SAR">
+				<displayName>Saudo Arabijos rialas</displayName>
+			</currency>
+			<currency type="SBD">
+				<displayName>Saliamono salų doleris</displayName>
+			</currency>
+			<currency type="SCR">
+				<displayName>Seišelių salų rupija</displayName>
+			</currency>
+			<currency type="SDD">
+				<displayName>Senasis Sudano dinaras</displayName>
+			</currency>
+			<currency type="SDG">
+				<displayName>Sudano svaras</displayName>
+			</currency>
+			<currency type="SDP">
+				<displayName>Senasis Sudano svaras</displayName>
+			</currency>
+			<currency type="SEK">
+				<displayName>Švedijos krona</displayName>
+			</currency>
+			<currency type="SGD">
+				<displayName>Singapūro doleris</displayName>
+			</currency>
+			<currency type="SHP">
+				<displayName>Šv. Elenos salų svaras</displayName>
+			</currency>
+			<currency type="SIT">
+				<displayName>Slovėnijos tolaras</displayName>
+			</currency>
+			<currency type="SKK">
+				<displayName>Slovakijos krona</displayName>
+			</currency>
+			<currency type="SLL">
+				<displayName>Siera Leonės leonė</displayName>
+			</currency>
+			<currency type="SOS">
+				<displayName>Somalio šilingas</displayName>
+			</currency>
+			<currency type="SRD">
+				<displayName>Surimano doleris</displayName>
+			</currency>
+			<currency type="SRG">
+				<displayName>Surimano guldenas</displayName>
+			</currency>
+			<currency type="STD">
+				<displayName>Sao Tomės ir Principės dobra</displayName>
+			</currency>
+			<currency type="SUR">
+				<displayName>Sovietų Sąjungos rublis</displayName>
+			</currency>
+			<currency type="SVC">
+				<displayName>Salvadoro kolonas</displayName>
+			</currency>
+			<currency type="SYP">
+				<displayName>Sirijos svaras</displayName>
+			</currency>
+			<currency type="SZL">
+				<displayName>Svazilendo lilangenis</displayName>
+			</currency>
+			<currency type="THB">
+				<displayName>Tailando batas</displayName>
+			</currency>
+			<currency type="TJR">
+				<displayName>Tadžikistano rublis</displayName>
+			</currency>
+			<currency type="TJS">
+				<displayName>Tadžikistano somonis</displayName>
+			</currency>
+			<currency type="TMM">
+				<displayName>Turkmėnistano manatas</displayName>
+			</currency>
+			<currency type="TND">
+				<displayName>Tuniso dinaras</displayName>
+			</currency>
+			<currency type="TOP">
+				<displayName>Tongo paanga</displayName>
+			</currency>
+			<currency type="TPE">
+				<displayName>Timoro eskudas</displayName>
+			</currency>
+			<currency type="TRL">
+				<displayName>Turkijos lira</displayName>
+			</currency>
+			<currency type="TRY">
+				<displayName>Naujoji Turkijos lira</displayName>
+			</currency>
+			<currency type="TTD">
+				<displayName>Trinidado ir Tobago doleris</displayName>
+			</currency>
+			<currency type="TWD">
+				<displayName>Naujasis Taivano doleris</displayName>
+			</currency>
+			<currency type="TZS">
+				<displayName>Tanzanijos šilingas</displayName>
+			</currency>
+			<currency type="UAH">
+				<displayName>Ukrainos grivina</displayName>
+			</currency>
+			<currency type="UAK">
+				<displayName>Ukrainos karbovanecas</displayName>
+			</currency>
+			<currency type="UGS">
+				<displayName>Ugandos šilingas (1966-1987)</displayName>
+			</currency>
+			<currency type="UGX">
+				<displayName>Ugandos šilingas</displayName>
+			</currency>
+			<currency type="USD">
+				<displayName>JAV doleris</displayName>
+			</currency>
+			<currency type="USN">
+				<displayName>JAV doleris (kitos dienos)</displayName>
+			</currency>
+			<currency type="USS">
+				<displayName>JAV doleris (šios dienos)</displayName>
+			</currency>
+			<currency type="UYP">
+				<displayName>Urugvajaus pesas (1975-1993)</displayName>
+			</currency>
+			<currency type="UYU">
+				<displayName>Urugvajaus pesas</displayName>
+			</currency>
+			<currency type="UZS">
+				<displayName>Uzbekistano sumas</displayName>
+			</currency>
+			<currency type="VEB">
+				<displayName>Venesuelos bolivaras</displayName>
+			</currency>
+			<currency type="VEF">
+				<displayName>Stiprusis Venesuelos bolivaras</displayName>
+			</currency>
+			<currency type="VND">
+				<displayName>Vietnamo dongas</displayName>
+			</currency>
+			<currency type="WST">
+				<displayName>Vakarų Samoa tala</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="XAF">
 				<displayName>CFA BEAC frankas</displayName>
 				<displayName count="one">CFA BEAC frankas</displayName>
+<<<<<<< HEAD
 				<displayName count="few">CFA BEAC frankai</displayName>
 				<displayName count="many">CFA BEAC franko</displayName>
 				<displayName count="other">CFA BEAC frankų</displayName>
@@ -6238,10 +8591,47 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">Prancūzijos UIC - frankai</displayName>
 				<displayName count="many">Prancūzijos UIC - franko</displayName>
 				<displayName count="other">Prancūzijos UIC - frankų</displayName>
+=======
+				<displayName count="other">CFA BEAC frankai</displayName>
+			</currency>
+			<currency type="XAG">
+				<displayName>Sidabras</displayName>
+			</currency>
+			<currency type="XAU">
+				<displayName>Auksas</displayName>
+			</currency>
+			<currency type="XBA">
+				<displayName>Europos suvestinės vienetas</displayName>
+			</currency>
+			<currency type="XBB">
+				<displayName>Europos piniginis vienetas</displayName>
+			</currency>
+			<currency type="XBC">
+				<displayName>Europos valiutos/apskaitos vienetas (XBC)</displayName>
+			</currency>
+			<currency type="XBD">
+				<displayName>Europos valiutos/apskaitos vienetas (XBD)</displayName>
+			</currency>
+			<currency type="XCD">
+				<displayName>Rytų Karibų doleris</displayName>
+			</currency>
+			<currency type="XDR">
+				<displayName>SDR Tarptautinis valiutos fondas</displayName>
+			</currency>
+			<currency type="XEU">
+				<displayName>Europos piniginis vienetas (1993-1999)</displayName>
+			</currency>
+			<currency type="XFO">
+				<displayName>Aukso frankas</displayName>
+			</currency>
+			<currency type="XFU">
+				<displayName>Uic -frankas</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="XOF">
 				<displayName>CFA BCEAO frankas</displayName>
 				<displayName count="one">CFA BCEAO frankas</displayName>
+<<<<<<< HEAD
 				<displayName count="few">CFA BCEAO frankai</displayName>
 				<displayName count="many">CFA BCEAO franko</displayName>
 				<displayName count="other">CFA BCEAO frankų</displayName>
@@ -6253,10 +8643,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">Paladis</displayName>
 				<displayName count="many">Paladis</displayName>
 				<displayName count="other">Paladis</displayName>
+=======
+				<displayName count="other">CFA BCEAO frankai</displayName>
+			</currency>
+			<currency type="XPD">
+				<displayName>Paladis</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="XPF">
 				<displayName>CFP frankas</displayName>
 				<displayName count="one">CFP frankas</displayName>
+<<<<<<< HEAD
 				<displayName count="few">CFP frankai</displayName>
 				<displayName count="many">CFP franko</displayName>
 				<displayName count="other">CFP frankų</displayName>
@@ -7281,6 +9678,91 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<listPatternPart type="2">{0} ir {1}</listPatternPart>
 		</listPattern>
 	</listPatterns>
+=======
+				<displayName count="other">CFP frankai</displayName>
+			</currency>
+			<currency type="XPT">
+				<displayName>Platina</displayName>
+			</currency>
+			<currency type="XRE">
+				<displayName>RINET fondai</displayName>
+			</currency>
+			<currency type="XTS">
+				<displayName>Tikrinamas valiutos kodas</displayName>
+			</currency>
+			<currency type="XXX">
+				<displayName>Nežinoma arba neteisinga valiuta</displayName>
+			</currency>
+			<currency type="YDD">
+				<displayName>Jemeno dinaras</displayName>
+			</currency>
+			<currency type="YER">
+				<displayName>Jemeno rialas</displayName>
+			</currency>
+			<currency type="YUM">
+				<displayName>Jugoslavijos naujasis dinaras</displayName>
+			</currency>
+			<currency type="YUN">
+				<displayName>Jugoslavijos konvertuojamas dinaras</displayName>
+			</currency>
+			<currency type="ZAL">
+				<displayName>Pietų Afrikos finansinis randas</displayName>
+			</currency>
+			<currency type="ZAR">
+				<displayName>Pietų Afrikos randas</displayName>
+			</currency>
+			<currency type="ZMK">
+				<displayName>Zambijos kvača</displayName>
+			</currency>
+			<currency type="ZRN">
+				<displayName>Zairo naujasis zairas</displayName>
+			</currency>
+			<currency type="ZRZ">
+				<displayName>Zairo zairas</displayName>
+			</currency>
+			<currency type="ZWD">
+				<displayName>Zimbabvės doleris</displayName>
+			</currency>
+		</currencies>
+	</numbers>
+	<units>
+		<unit type="day">
+			<unitPattern count="few">{0} dienos</unitPattern>
+			<unitPattern count="one">{0} diena</unitPattern>
+			<unitPattern count="other">{0} dienų</unitPattern>
+		</unit>
+		<unit type="hour">
+			<unitPattern count="few">{0} valandos</unitPattern>
+			<unitPattern count="one">{0} valanda</unitPattern>
+			<unitPattern count="other">{0} valandų</unitPattern>
+		</unit>
+		<unit type="minute">
+			<unitPattern count="few">{0} minutės</unitPattern>
+			<unitPattern count="one">{0} minutė</unitPattern>
+			<unitPattern count="other">{0} minučių</unitPattern>
+		</unit>
+		<unit type="month">
+			<unitPattern count="few">{0} mėnesiai</unitPattern>
+			<unitPattern count="one">{0} mėnuo</unitPattern>
+			<unitPattern count="other">{0} mėnesių</unitPattern>
+		</unit>
+		<unit type="second">
+			<unitPattern count="few">{0} sekundės</unitPattern>
+			<unitPattern count="one">{0} sekundė</unitPattern>
+			<unitPattern count="other">{0} sekundžių</unitPattern>
+		</unit>
+		<unit type="week">
+			<unitPattern count="few">{0} savaitės</unitPattern>
+			<unitPattern count="one">{0} savaitė</unitPattern>
+			<unitPattern count="other">{0} savaičių</unitPattern>
+		</unit>
+		<unit type="year">
+			<unitPattern count="few">{0} metai</unitPattern>
+			<unitPattern count="one">{0} metai</unitPattern>
+			<unitPattern count="other">{0} metų</unitPattern>
+		</unit>
+	</units>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	<posix>
 		<messages>
 			<yesstr>taip:t</yesstr>

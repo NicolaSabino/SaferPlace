@@ -14,7 +14,11 @@
  *
  * @category   Zend
  * @package    Zend_EventManager
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -27,7 +31,11 @@ require_once 'Zend/Stdlib/CallbackHandler.php';
  *
  * @category   Zend
  * @package    Zend_EventManager
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_EventManager_FilterChain implements Zend_EventManager_Filter
@@ -76,10 +84,16 @@ class Zend_EventManager_FilterChain implements Zend_EventManager_Filter
 
     /**
      * Connect a filter to the chain
+<<<<<<< HEAD
      *
      * @param  callback $callback PHP Callback
      * @param  int      $priority Priority in the queue at which to execute; defaults to 1 (higher numbers == higher priority)
      * @throws Zend_Stdlib_Exception_InvalidCallbackException
+=======
+     * 
+     * @param  callback $callback PHP Callback
+     * @param  int $priority Priority in the queue at which to execute; defaults to 1 (higher numbers == higher priority)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Stdlib_CallbackHandler (to allow later unsubscribe)
      */
     public function attach($callback, $priority = 1)

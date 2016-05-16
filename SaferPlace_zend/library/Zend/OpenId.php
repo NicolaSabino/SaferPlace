@@ -15,9 +15,15 @@
  *
  * @category   Zend
  * @package    Zend_OpenId
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: OpenId.php 24842 2012-05-31 18:31:28Z rob $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -25,9 +31,12 @@
  */
 require_once "Zend/Controller/Response/Abstract.php";
 
+<<<<<<< HEAD
 /** @see Zend_Crypt_Math */
 require_once 'Zend/Crypt/Math.php';
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 /**
  * Static class that contains common utility functions for
  * {@link Zend_OpenId_Consumer} and {@link Zend_OpenId_Provider}.
@@ -38,7 +47,11 @@ require_once 'Zend/Crypt/Math.php';
  *
  * @category   Zend
  * @package    Zend_OpenId
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_OpenId
@@ -477,7 +490,15 @@ class Zend_OpenId
      */
     static public function randomBytes($len)
     {
+<<<<<<< HEAD
         return (string) Zend_Crypt_Math::randBytes($len);
+=======
+        $key = '';
+        for($i=0; $i < $len; $i++) {
+            $key .= chr(mt_rand(0, 255));
+        }
+        return $key;
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     }
 
     /**
@@ -528,7 +549,11 @@ class Zend_OpenId
 //        require_once "Zend/Crypt/Hmac.php";
 //        return Zend_Crypt_Hmac::compute($secret, $macFunc, $data, Zend_Crypt_Hmac::BINARY);
         if (function_exists('hash_hmac')) {
+<<<<<<< HEAD
             return hash_hmac($macFunc, $data, $secret, true);
+=======
+            return hash_hmac($macFunc, $data, $secret, 1);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         } else {
             if (Zend_OpenId::strlen($secret) > 64) {
                 $secret = self::digest($macFunc, $secret);

@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Mobile
  * @subpackage Zend_Mobile_Push
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
@@ -38,7 +42,11 @@ require_once 'Zend/Mobile/Push/Response/Gcm.php';
  * @category   Zend
  * @package    Zend_Mobile
  * @subpackage Zend_Mobile_Push
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
@@ -53,7 +61,11 @@ class Zend_Mobile_Push_Gcm extends Zend_Mobile_Push_Abstract
     /**
      * Http Client
      *
+<<<<<<< HEAD
      * @var Zend_Http_Client
+=======
+     * @var Client
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     protected $_httpClient;
 
@@ -120,6 +132,7 @@ class Zend_Mobile_Push_Gcm extends Zend_Mobile_Push_Abstract
     /**
      * Send Message
      *
+<<<<<<< HEAD
      * @param  Zend_Mobile_Push_Message_Abstract $message
      * @throws Zend_Http_Client_Exception
      * @throws Zend_Mobile_Push_Exception
@@ -127,6 +140,11 @@ class Zend_Mobile_Push_Gcm extends Zend_Mobile_Push_Abstract
      * @throws Zend_Mobile_Push_Exception_InvalidPayload
      * @throws Zend_Mobile_Push_Exception_ServerUnavailable
      * @return Zend_Mobile_Push_Response_Gcm
+=======
+     * @param Zend_Mobile_Push_Message_Gcm $message
+     * @return Zend_Mobile_Push_Response_Gcm
+     * @throws Zend_Mobile_Push_Exception
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function send(Zend_Mobile_Push_Message_Abstract $message)
     {
@@ -140,6 +158,17 @@ class Zend_Mobile_Push_Gcm extends Zend_Mobile_Push_Abstract
         $client->setUri(self::SERVER_URI);
         $client->setHeaders('Authorization', 'key=' . $this->getApiKey());
 
+<<<<<<< HEAD
+=======
+        $json = array('registration_ids' => $message->getToken());
+        if ($data = $message->getData()) {
+            $json['data'] = $data;
+        }
+        if ($id = $message->getId()) {
+            $json['id'] = $id;
+        }
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         $response = $client->setRawData($message->toJson(), 'application/json')
                            ->request('POST');
         $this->close();

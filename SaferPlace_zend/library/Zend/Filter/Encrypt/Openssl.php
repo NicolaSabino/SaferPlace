@@ -14,9 +14,15 @@
  *
  * @category   Zend
  * @package    Zend_Filter
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Openssl.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -29,7 +35,11 @@ require_once 'Zend/Filter/Encrypt/Interface.php';
  *
  * @category   Zend
  * @package    Zend_Filter
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Filter_Encrypt_Openssl implements Zend_Filter_Encrypt_Interface
@@ -128,7 +138,11 @@ class Zend_Filter_Encrypt_Openssl implements Zend_Filter_Encrypt_Interface
         }
 
         foreach ($keys as $type => $key) {
+<<<<<<< HEAD
             if (ctype_print($key) && is_file(realpath($key)) && is_readable($key)) {
+=======
+            if (is_file($key) and is_readable($key)) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 $file = fopen($key, 'r');
                 $cert = fread($file, 8192);
                 fclose($file);

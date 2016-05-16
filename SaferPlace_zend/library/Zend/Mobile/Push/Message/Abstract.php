@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Mobile
  * @subpackage Zend_Mobile_Push
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
@@ -32,7 +36,11 @@ require_once 'Zend/Mobile/Push/Message/Exception.php';
  * @category   Zend
  * @package    Zend_Mobile
  * @subpackage Zend_Mobile_Push_Message
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
@@ -48,7 +56,11 @@ abstract class Zend_Mobile_Push_Message_Abstract implements Zend_Mobile_Push_Mes
     /**
      * Id
      *
+<<<<<<< HEAD
      * @var int|string|float|bool Scalar
+=======
+     * @var scalar
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     protected $_id;
 
@@ -66,7 +78,10 @@ abstract class Zend_Mobile_Push_Message_Abstract implements Zend_Mobile_Push_Mes
      * Set Token
      *
      * @param  string $token
+<<<<<<< HEAD
      * @throws Zend_Mobile_Push_Message_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Mobile_Push_Message_Abstract
      */
     public function setToken($token)
@@ -81,7 +96,11 @@ abstract class Zend_Mobile_Push_Message_Abstract implements Zend_Mobile_Push_Mes
     /**
      * Get Message ID
      * 
+<<<<<<< HEAD
      * @return int|string|float|bool Scalar
+=======
+     * @return scalar
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function getId()
     {
@@ -91,7 +110,11 @@ abstract class Zend_Mobile_Push_Message_Abstract implements Zend_Mobile_Push_Mes
     /**
      * Set Message ID
      *
+<<<<<<< HEAD
      * @param  int|string|float|bool $id Scalar
+=======
+     * @param scalar $id
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Mobile_Push_Message_Abstract
      * @throws Exception
      */

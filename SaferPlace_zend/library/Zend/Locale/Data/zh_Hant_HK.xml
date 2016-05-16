@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -8,12 +9,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 	<identity>
 		<version number="$Revision: 9287 $"/>
 		<generation date="$Date: 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013) $"/>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.78 $"/>
+		<generation date="$Date: 2009/06/15 03:46:23 $"/>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		<language type="zh"/>
 		<script type="Hant"/>
 		<territory type="HK"/>
 	</identity>
 	<localeDisplayNames>
 		<languages>
+<<<<<<< HEAD
 			<language type="az" alt="short" draft="contributed">阿澤里</language>
 			<language type="de_CH" draft="contributed">瑞士德語</language>
 			<language type="eo" draft="contributed">世界語</language>
@@ -175,10 +183,35 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<measurementSystemName type="metric" draft="contributed">十進制</measurementSystemName>
 			<measurementSystemName type="UK" draft="contributed">英國</measurementSystemName>
 			<measurementSystemName type="US" draft="contributed">美國</measurementSystemName>
+=======
+			<language type="it">意大利文</language>
+			<language type="lol">蒙古語</language>
+		</languages>
+		<scripts>
+			<script type="Hang">韓文字母</script>
+		</scripts>
+		<variants>
+			<variant type="1901">傳統德國拼字法</variant>
+			<variant type="1996">1996 德國拼字法</variant>
+			<variant type="BISKE">San Giorgio/Bila 方言</variant>
+			<variant type="NJIVA">Gniva/Njiva 方言</variant>
+			<variant type="OSOJS">Oseacco/Osojane 方言</variant>
+			<variant type="REVISED">已修訂拼字法</variant>
+			<variant type="SCOTLAND">蘇格蘭標準英語</variant>
+			<variant type="SOLBA">Stolvizza/Solbica 方言</variant>
+		</variants>
+		<types>
+			<type type="big5han" key="collation">繁體中文順序 - Big5</type>
+			<type type="gb2312han" key="collation">簡體中文順序 - GB2312</type>
+		</types>
+		<measurementSystemNames>
+			<measurementSystemName type="metric">十進制</measurementSystemName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</measurementSystemNames>
 	</localeDisplayNames>
 	<dates>
 		<calendars>
+<<<<<<< HEAD
 			<calendar type="buddhist">
 				<dateTimeFormats>
 					<availableFormats>
@@ -380,6 +413,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y" draft="contributed">G y 年 M 月 d 日 (E) 至 y 年 M 月 d 日 (E)</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
+=======
+			<calendar type="chinese">
+				<dateTimeFormats>
+					<availableFormats>
+						<dateFormatItem id="MMMMEd">M月d日E</dateFormatItem>
+						<dateFormatItem id="yMEd">y年M月d日，E</dateFormatItem>
+					</availableFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				</dateTimeFormats>
 			</calendar>
 			<calendar type="gregorian">
@@ -401,11 +442,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>d/M/yy</pattern>
+=======
+							<pattern>yy年M月d日</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
 				<timeFormats>
+<<<<<<< HEAD
 					<timeFormatLength type="full">
 						<timeFormat>
 							<pattern draft="contributed">ah:mm:ss [zzzz]</pattern>
@@ -424,10 +470,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<timeFormatLength type="short">
 						<timeFormat>
 							<pattern draft="contributed">ah:mm</pattern>
+=======
+					<timeFormatLength type="medium">
+						<timeFormat>
+							<pattern>ahh:mm:ss</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</timeFormat>
 					</timeFormatLength>
 				</timeFormats>
 				<dateTimeFormats>
+<<<<<<< HEAD
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
 							<pattern>{1} {0}</pattern>
@@ -438,6 +490,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<pattern>{1} {0}</pattern>
 						</dateTimeFormat>
 					</dateTimeFormatLength>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					<dateTimeFormatLength type="medium">
 						<dateTimeFormat>
 							<pattern>{1}{0}</pattern>
@@ -449,6 +503,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<availableFormats>
+<<<<<<< HEAD
 						<dateFormatItem id="Ed" draft="contributed">d E</dateFormatItem>
 						<dateFormatItem id="GyMMMEd" draft="contributed">G y 年 M 月 d 日 (E)</dateFormatItem>
 						<dateFormatItem id="Md" draft="contributed">d/M</dateFormatItem>
@@ -512,10 +567,49 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M" draft="contributed">y 年 M 月 至 M 月</greatestDifference>
 							<greatestDifference id="y" draft="contributed">y 年 M 月至 y 年 M 月</greatestDifference>
+=======
+						<dateFormatItem id="yyyyM">yyyy/M</dateFormatItem>
+					</availableFormats>
+					<intervalFormats>
+						<intervalFormatItem id="h">
+							<greatestDifference id="h">ah至h時</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="a">ah:mm至ah:mmv</greatestDifference>
+							<greatestDifference id="h">ah:mm至h:mmv</greatestDifference>
+							<greatestDifference id="m">ah:mm至h:mmv</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="a">ah時至ah時v</greatestDifference>
+							<greatestDifference id="h">ah至h時v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">M月d日至d日</greatestDifference>
+							<greatestDifference id="M">M月d日至M月d日</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">M月d日E至d日E</greatestDifference>
+							<greatestDifference id="M">M月d日E至M月d日E</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">yy年M月至M月</greatestDifference>
+							<greatestDifference id="y">yy年M月至yy年M月</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">yy年M月d日至d日</greatestDifference>
+							<greatestDifference id="M">yy年M月d日至M月d日</greatestDifference>
+							<greatestDifference id="y">yy年M月d日至yy年M月d日</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">yy年M月d日E至d日E</greatestDifference>
+							<greatestDifference id="M">yy年M月d日E至M月d日E</greatestDifference>
+							<greatestDifference id="y">yy年M月d日E至yy年M月d日E</greatestDifference>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
 			</calendar>
+<<<<<<< HEAD
 			<calendar type="roc">
 				<dateFormats>
 					<dateFormatLength type="full">
@@ -758,11 +852,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<pattern>¤#,##0.00</pattern>
 				</currencyFormat>
 				<currencyFormat type="accounting">
+=======
+		</calendars>
+	</dates>
+	<numbers>
+		<currencyFormats>
+			<currencyFormatLength>
+				<currencyFormat>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					<pattern>¤#,##0.00;(¤#,##0.00)</pattern>
 				</currencyFormat>
 			</currencyFormatLength>
 		</currencyFormats>
 		<currencies>
+<<<<<<< HEAD
 			<currency type="AED">
 				<displayName draft="contributed">阿拉伯聯合酋長國迪爾汗</displayName>
 				<displayName count="other" draft="contributed">阿拉伯聯合酋長國迪爾汗</displayName>
@@ -833,10 +936,43 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="TWD">
 				<displayName draft="contributed">新台幣</displayName>
+=======
+			<currency type="AUD">
+				<displayName>澳元</displayName>
+			</currency>
+			<currency type="BAD">
+				<displayName>波斯尼亞-黑塞哥維那第納爾</displayName>
+			</currency>
+			<currency type="BAM">
+				<displayName>波斯尼亞-黑塞哥維那可轉換馬克</displayName>
+			</currency>
+			<currency type="CAD">
+				<displayName>加元</displayName>
+			</currency>
+			<currency type="HKD">
+				<displayName>港元</displayName>
+				<symbol>$</symbol>
+			</currency>
+			<currency type="ITL">
+				<displayName>意大利里拉</displayName>
+			</currency>
+			<currency type="NZD">
+				<displayName>紐西蘭元</displayName>
+			</currency>
+			<currency type="RSD">
+				<displayName>塞爾維亞第納爾</displayName>
+			</currency>
+			<currency type="SGD">
+				<displayName>新加坡元</displayName>
+			</currency>
+			<currency type="TWD">
+				<displayName>新台幣</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="USD">
 				<symbol>US$</symbol>
 			</currency>
+<<<<<<< HEAD
 			<currency type="XAF">
 				<displayName draft="contributed">中非法郎</displayName>
 			</currency>
@@ -932,6 +1068,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<messages>
 			<yesstr draft="contributed">是</yesstr>
 			<nostr draft="contributed">否</nostr>
+=======
+		</currencies>
+	</numbers>
+	<units>
+		<unit type="hour">
+			<unitPattern count="other">{0}時</unitPattern>
+		</unit>
+		<unit type="week">
+			<unitPattern count="other">{0}星期</unitPattern>
+		</unit>
+	</units>
+	<posix>
+		<messages>
+			<yesstr>是</yesstr>
+			<nostr>否</nostr>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</messages>
 	</posix>
 </ldml>

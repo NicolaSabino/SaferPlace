@@ -15,6 +15,7 @@
  * @category   Zend
  * @package    Zend_Application
  * @subpackage Bootstrap
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
@@ -26,6 +27,14 @@
 require_once 'Zend/Application/Bootstrap/BootstrapAbstract.php';
 
 /**
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Bootstrap.php 25073 2012-11-06 19:31:53Z rob $
+ */
+
+/**
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * Concrete base class for bootstrap classes
  *
  * Registers and utilizes Zend_Controller_Front by default.
@@ -34,7 +43,11 @@ require_once 'Zend/Application/Bootstrap/BootstrapAbstract.php';
  * @category   Zend
  * @package    Zend_Application
  * @subpackage Bootstrap
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Application_Bootstrap_Bootstrap
@@ -58,12 +71,17 @@ class Zend_Application_Bootstrap_Bootstrap
      * Ensure FrontController resource is registered
      *
      * @param  Zend_Application|Zend_Application_Bootstrap_Bootstrapper $application
+<<<<<<< HEAD
+=======
+     * @return void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function __construct($application)
     {
         parent::__construct($application);
 
         if ($application->hasOption('resourceloader')) {
+<<<<<<< HEAD
             $this->setOptions(
                 array(
                     'resourceloader' => $application->getOption(
@@ -71,6 +89,11 @@ class Zend_Application_Bootstrap_Bootstrap
                     )
                 )
             );
+=======
+            $this->setOptions(array(
+                'resourceloader' => $application->getOption('resourceloader')
+            ));
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         }
         $this->getResourceLoader();
 
@@ -128,6 +151,7 @@ class Zend_Application_Bootstrap_Bootstrap
     public function getResourceLoader()
     {
         if ((null === $this->_resourceLoader)
+<<<<<<< HEAD
             && (false !== ($namespace = $this->getAppNamespace()))
         ) {
             $r    = new ReflectionClass($this);
@@ -140,6 +164,16 @@ class Zend_Application_Bootstrap_Bootstrap
                     )
                 )
             );
+=======
+            && (false != ($namespace = $this->getAppNamespace()))
+        ) {
+            $r    = new ReflectionClass($this);
+            $path = $r->getFileName();
+            $this->setResourceLoader(new Zend_Application_Module_Autoloader(array(
+                'namespace' => $namespace,
+                'basePath'  => dirname($path),
+            )));
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         }
         return $this->_resourceLoader;
     }

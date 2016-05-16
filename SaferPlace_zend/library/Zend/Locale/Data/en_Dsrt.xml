@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -8,6 +9,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 	<identity>
 		<version number="$Revision: 9061 $"/>
 		<generation date="$Date: 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013) $"/>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.13 $"/>
+		<generation date="$Date: 2009/06/15 03:46:24 $"/>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		<language type="en"/>
 		<script type="Dsrt"/>
 	</identity>
@@ -194,6 +201,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Phnx">𐐙𐐬𐑌𐐨𐑇𐐲𐑌</script>
 			<script type="Plrd">𐐑𐐱𐑊𐐲𐑉𐐼 𐐙𐐬𐑌𐐯𐐻𐐮𐐿</script>
 			<script type="Prti">𐐆𐑌𐑅𐐿𐑉𐐮𐐹𐑇𐐲𐑌𐐲𐑊 𐐑𐐱𐑉𐑃𐐨𐐲𐑌</script>
+<<<<<<< HEAD
+=======
+			<script type="Qaai">𐐆𐑌𐐸𐐯𐑉𐐮𐐻𐐲𐐼</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Rjng">𐐡𐐲𐐾𐐰𐑍</script>
 			<script type="Roro">𐐡𐐪𐑍𐑀𐐬𐑉𐐪𐑌𐑀𐐬</script>
 			<script type="Runr">𐐡𐐭𐑌𐐮𐐿</script>
@@ -227,7 +238,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Xpeo">𐐄𐑊𐐼 𐐑𐐲𐑉𐑈𐐲𐑌</script>
 			<script type="Xsux">𐐝𐐭𐑋𐐯𐑉𐐬-𐐊𐐿𐐩𐐼𐐨𐐲𐑌 𐐗𐐷𐐭𐑌𐐨𐐲𐑁𐐱𐑉𐑋</script>
 			<script type="Yiii">𐐏𐐨</script>
+<<<<<<< HEAD
 			<script type="Zinh">𐐆𐑌𐐸𐐯𐑉𐐮𐐻𐐲𐐼</script>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Zmth">𐐣𐐰𐑃𐐲𐑋𐐰𐐻𐐲𐐿𐐲𐑊 𐐤𐐬𐐻𐐩𐑇𐐲𐑌</script>
 			<script type="Zsym">𐐣𐐰𐑃𐐯𐑋𐐰𐐻𐐮𐐿𐐲𐑊 𐑌𐐬𐐻𐐩𐑇𐐲𐑌</script>
 			<script type="Zxxx">𐐊𐑌𐑉𐐮𐐻𐐲𐑌</script>
@@ -257,6 +271,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="054">𐐣𐐯𐑊𐐲𐑌𐐨𐑈𐐲</territory>
 			<territory type="057">𐐣𐐴𐐿𐑉𐐲𐑌𐐨𐑈𐐲𐑌 𐐡𐐨𐐾𐐲𐑌</territory>
 			<territory type="061">𐐑𐐪𐑊𐐲𐑌𐐨𐑈𐐲</territory>
+<<<<<<< HEAD
+=======
+			<territory type="062">𐐝𐐵𐑃-𐐝𐐯𐑌𐐻𐑉𐐲𐑊 𐐁𐑈𐐲</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="142">𐐁𐑈𐐲</territory>
 			<territory type="143">𐐝𐐯𐑌𐐻𐑉𐐲𐑊 𐐁𐑈𐐲</territory>
 			<territory type="145">𐐎𐐯𐑅𐐻𐐲𐑉𐑌 𐐁𐑈𐐲</territory>
@@ -264,7 +282,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="151">𐐀𐑅𐐻𐐲𐑉𐑌 𐐏𐐲𐑉𐐲𐐹</territory>
 			<territory type="154">𐐤𐐱𐑉𐑄𐐲𐑉𐑌 𐐏𐐲𐑉𐐲𐐹</territory>
 			<territory type="155">𐐎𐐯𐑅𐐻𐐲𐑉𐑌 𐐏𐐲𐑉𐐲𐐹</territory>
+<<<<<<< HEAD
 			<territory type="419">𐐢𐐰𐐻𐑌 𐐊𐑋𐐯𐑉𐐲𐐿𐐲 𐐰𐑌𐐼 𐑄 𐐗𐐯𐑉𐐲𐐺𐐨𐐲𐑌</territory>
+=======
+			<territory type="172">𐐗𐐪𐑋𐐲𐑌𐐶𐐯𐑊𐑃 𐐲𐑂 𐐆𐑌𐐼𐐲𐐹𐐯𐑌𐐼𐐲𐑌𐐻 𐐝𐐻𐐩𐐻𐑅</territory>
+			<territory type="200">𐐕𐐯𐐿𐐬𐑅𐑊𐐬𐑂𐐪𐐿𐐨𐐲</territory>
+			<territory type="419">𐐢𐐰𐐻𐑌 𐐊𐑋𐐯𐑉𐐲𐐿𐐲 𐐰𐑌𐐼 𐑄 𐐗𐐯𐑉𐐲𐐺𐐨𐐲𐑌</territory>
+			<territory type="830">𐐕𐐰𐑌𐐲𐑊 𐐌𐑊𐐲𐑌𐐼𐑆</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="AD">𐐈𐑌𐐼𐐱𐑉𐐲</territory>
 			<territory type="AE">𐐏𐐭𐑌𐐴𐐼𐐮𐐼 𐐇𐑉𐐲𐐺 𐐇𐑋𐐲𐑉𐐩𐐻𐑅</territory>
 			<territory type="AF">𐐈𐑁𐑀𐐰𐑌𐐲𐑅𐐻𐐰𐑌</territory>
@@ -295,6 +320,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="BM">𐐒𐐲𐑉𐑋𐐷𐐭𐐼𐐲</territory>
 			<territory type="BN">𐐒𐑉𐐭𐑌𐐴</territory>
 			<territory type="BO">𐐒𐐬𐑊𐐮𐑂𐐨𐐲</territory>
+<<<<<<< HEAD
+=======
+			<territory type="BQ">𐐒𐑉𐐮𐐼𐐮𐑇 𐐈𐑌𐐻𐐪𐑉𐐿𐐻𐐮𐐿 𐐓𐐯𐑉𐐲𐐻𐐱𐑉𐐨</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="BR">𐐒𐑉𐐲𐑆𐐮𐑊</territory>
 			<territory type="BS">𐐒𐐲𐐸𐐪𐑋𐐲𐑅</territory>
 			<territory type="BT">𐐒𐐭𐐻𐐪𐑌</territory>
@@ -315,11 +344,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CN">𐐕𐐴𐑌𐐲</territory>
 			<territory type="CO">𐐗𐐲𐑊𐐲𐑋𐐺𐐨𐐲</territory>
 			<territory type="CR">𐐗𐐱𐑅𐐻𐐲 𐐡𐐨𐐿𐐲</territory>
+<<<<<<< HEAD
+=======
+			<territory type="CS">𐐝𐐲𐑉𐐺𐐨𐐲 𐐰𐑌𐐼 𐐣𐐪𐑌𐐲𐑌𐐨𐑀𐑉𐐬</territory>
+			<territory type="CT">𐐗𐐰𐑌𐐻𐐪𐑌 𐐰𐑌𐐼 𐐇𐑌𐐼𐐲𐑉𐐺𐐯𐑉𐐨 𐐌𐑊𐐲𐑌𐐼𐑆</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="CU">𐐗𐐷𐐭𐐺𐐲</territory>
 			<territory type="CV">𐐗𐐩𐐹 𐐚𐐯𐑉𐐼𐐨</territory>
 			<territory type="CX">𐐗𐑉𐐮𐑅𐑋𐐲𐑅 𐐌𐑊𐐲𐑌𐐼</territory>
 			<territory type="CY">𐐝𐐴𐐹𐑉𐐲𐑅</territory>
 			<territory type="CZ">𐐕𐐯𐐿 𐐡𐐨𐐹𐐲𐐺𐑊𐐮𐐿</territory>
+<<<<<<< HEAD
+=======
+			<territory type="DD">𐐀𐑅𐐻 𐐖𐐲𐑉𐑋𐐲𐑌𐐨</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="DE">𐐖𐐲𐑉𐑋𐐲𐑌𐐨</territory>
 			<territory type="DJ">𐐖𐐲𐐺𐐭𐐼𐐨</territory>
 			<territory type="DK">𐐔𐐯𐑌𐑋𐐪𐑉𐐿</territory>
@@ -333,13 +371,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="ER">𐐇𐑉𐐮𐐻𐑉𐐨𐐲</territory>
 			<territory type="ES">𐐝𐐹𐐩𐑌</territory>
 			<territory type="ET">𐐀𐑃𐐨𐐬𐐹𐐨𐐲</territory>
+<<<<<<< HEAD
 			<territory type="EU">𐐏𐐲𐑉𐐲𐐹𐐨𐐲𐑌 𐐏𐐭𐑌𐐷𐐲𐑌</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="FI">𐐙𐐮𐑌𐑊𐐲𐑌𐐼</territory>
 			<territory type="FJ">𐐙𐐨𐐾𐐨</territory>
 			<territory type="FK">𐐙𐐪𐑊𐐿𐑊𐐲𐑌𐐼 𐐌𐑊𐐲𐑌𐐼𐑆</territory>
 			<territory type="FM">𐐣𐐴𐐿𐑉𐐲𐑌𐐨𐑈𐐲</territory>
 			<territory type="FO">𐐙𐐯𐑉𐐬 𐐌𐑊𐐲𐑌𐐼𐑆</territory>
+<<<<<<< HEAD
 			<territory type="FR">𐐙𐑉𐐰𐑌𐑅</territory>
+=======
+			<territory type="FQ">𐐙𐑉𐐯𐑌𐐽 𐐝𐐲𐑄𐐲𐑉𐑌 𐐰𐑌𐐼 𐐈𐑌𐐻𐐪𐑉𐐿𐐻𐐮𐐿 𐐓𐐯𐑉𐐲𐐻𐐱𐑉𐐨𐑆</territory>
+			<territory type="FR">𐐙𐑉𐐰𐑌𐑅</territory>
+			<territory type="FX">𐐣𐐯𐐻𐑉𐐲𐐹𐐪𐑊𐐲𐐻𐐲𐑌 𐐙𐑉𐐰𐑌𐑅</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="GA">𐐘𐐲𐐺𐐪𐑌</territory>
 			<territory type="GB">𐐏𐐭𐑌𐐴𐐻𐐲𐐼 𐐗𐐨𐑍𐐼𐐲𐑋</territory>
 			<territory type="GD">𐐘𐑉𐐲𐑌𐐩𐐼𐐲</territory>
@@ -360,7 +407,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GW">𐐘𐐮𐑌𐐨-𐐒𐐮𐑅𐐵</territory>
 			<territory type="GY">𐐘𐐴𐐰𐑌𐐲</territory>
 			<territory type="HK">𐐐𐐬𐑍 𐐗𐐬𐑍 𐐝𐐈𐐡 𐐕𐐴𐑌𐐲</territory>
+<<<<<<< HEAD
 			<territory type="HK" alt="short">𐐐𐐬𐑍 𐐗𐐬𐑍</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="HM">𐐐𐐲𐑉𐐼 𐐌𐑊𐐲𐑌𐐼 𐐰𐑌𐐼 𐐣𐐿𐐔𐐱𐑌𐐲𐑊𐐼 𐐌𐑊𐐲𐑌𐐼𐑆</territory>
 			<territory type="HN">𐐐𐐪𐑌𐐼𐐭𐑉𐐲𐑅</territory>
 			<territory type="HR">𐐗𐑉𐐬𐐩𐑇𐐲</territory>
@@ -380,6 +430,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="JM">𐐖𐐲𐑋𐐩𐐿𐐲</territory>
 			<territory type="JO">𐐖𐐱𐑉𐐼𐐲𐑌</territory>
 			<territory type="JP">𐐖𐐲𐐹𐐰𐑌</territory>
+<<<<<<< HEAD
+=======
+			<territory type="JT">𐐖𐐪𐑌𐑅𐐻𐐲𐑌 𐐌𐑊𐐲𐑌𐐼</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="KE">𐐗𐐯𐑌𐐷𐐲</territory>
 			<territory type="KG">𐐗𐐮𐑉𐑀𐐲𐑅𐐻𐐰𐑌</territory>
 			<territory type="KH">𐐗𐐰𐑋𐐺𐐬𐐼𐐨𐐲</territory>
@@ -408,12 +462,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MF">𐐝𐐩𐑌𐐻 𐐣𐐪𐑉𐐻𐑌</territory>
 			<territory type="MG">𐐣𐐰𐐼𐐲𐑀𐐰𐑅𐐿𐐲𐑉</territory>
 			<territory type="MH">𐐣𐐪𐑉𐑇𐐲𐑊 𐐌𐑊𐐲𐑌𐐼𐑆</territory>
+<<<<<<< HEAD
+=======
+			<territory type="MI">𐐣𐐮𐐼𐐶𐐩 𐐌𐑊𐐲𐑌𐐼𐑆</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="MK">𐐣𐐰𐑅𐐲𐐼𐐬𐑌𐐨𐐲</territory>
 			<territory type="ML">𐐣𐐪𐑊𐐨</territory>
 			<territory type="MM">𐐣𐐨𐐲𐑌𐑋𐐪𐑉</territory>
 			<territory type="MN">𐐣𐐪𐑍𐑀𐐬𐑊𐐨𐐲</territory>
 			<territory type="MO">𐐣𐐲𐐿𐐵 𐐝𐐈𐐡 𐐕𐐴𐑌𐐲</territory>
+<<<<<<< HEAD
 			<territory type="MO" alt="short">𐐣𐐲𐐿𐐵</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="MP">𐐤𐐱𐑉𐑄𐐲𐑉𐑌 𐐣𐐰𐑉𐐨𐐱𐑌𐐲 𐐌𐑊𐐲𐑌𐐼𐑆</territory>
 			<territory type="MQ">𐐣𐐪𐑉𐐻𐑌𐐨𐐿</territory>
 			<territory type="MR">𐐣𐐱𐑉𐐲𐐻𐐩𐑌𐐨𐐲</territory>
@@ -434,11 +495,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="NL">𐐤𐐯𐑄𐐲𐑉𐑊𐐲𐑌𐐼𐑆</territory>
 			<territory type="NO">𐐤𐐱𐑉𐐶𐐩</territory>
 			<territory type="NP">𐐤𐐩𐐹𐐪𐑊</territory>
+<<<<<<< HEAD
 			<territory type="NR">𐐤𐐪𐐭𐑉𐐭</territory>
+=======
+			<territory type="NQ">𐐔𐑉𐐱𐑌𐐮𐑍 𐐣𐐱𐐼 𐐢𐐰𐑌𐐼</territory>
+			<territory type="NR">𐐤𐐪𐐭𐑉𐐭</territory>
+			<territory type="NT">𐐤𐐭𐐻𐑉𐐲𐑊 𐐞𐐬𐑌</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="NU">𐐤𐐷𐐭𐐩</territory>
 			<territory type="NZ">𐐤𐐭 𐐞𐐨𐑊𐐲𐑌𐐼</territory>
 			<territory type="OM">𐐄𐑋𐐲𐑌</territory>
 			<territory type="PA">𐐑𐐰𐑌𐐲𐑋𐐪</territory>
+<<<<<<< HEAD
+=======
+			<territory type="PC">𐐑𐐲𐑅𐐮𐑁𐐮𐐿 𐐌𐑊𐐲𐑌𐐼𐑆 𐐓𐑉𐐲𐑅𐐻 𐐓𐐯𐑉𐐲𐐻𐐱𐑉𐐨</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="PE">𐐑𐐲𐑉𐐭</territory>
 			<territory type="PF">𐐙𐑉𐐯𐑌𐐽 𐐑𐐪𐑊𐐲𐑌𐐨𐑈𐐲</territory>
 			<territory type="PG">𐐑𐐰𐐹𐐷𐐳𐐲 𐐤𐐭 𐐘𐐮𐑌𐐨</territory>
@@ -450,10 +521,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="PR">𐐑𐐶𐐯𐑉𐐻𐐬 𐐡𐐨𐐿𐐬</territory>
 			<territory type="PS">𐐑𐐰𐑊𐐲𐑅𐐻𐐮𐑌𐐨𐐲𐑌 𐐓𐐯𐑉𐐲𐐻𐐱𐑉𐐨</territory>
 			<territory type="PT">𐐑𐐱𐑉𐐽𐐲𐑀𐐲𐑊</territory>
+<<<<<<< HEAD
 			<territory type="PW">𐐑𐐲𐑊𐐵</territory>
 			<territory type="PY">𐐑𐐯𐑉𐐲𐑀𐐶𐐴</territory>
 			<territory type="QA">𐐗𐐲𐐻𐐪𐑉</territory>
 			<territory type="QO">𐐍𐐻𐑊𐐴𐐮𐑍 𐐄𐑇𐐨𐐰𐑌𐐨𐐲</territory>
+=======
+			<territory type="PU">𐐏.𐐝. 𐐣𐐮𐑅𐐲𐑊𐐩𐑌𐐨𐐲𐑅 𐐑𐐲𐑅𐐮𐑁𐐮𐐿 𐐌𐑊𐐲𐑌𐐼𐑆</territory>
+			<territory type="PW">𐐑𐐲𐑊𐐵</territory>
+			<territory type="PY">𐐑𐐯𐑉𐐲𐑀𐐶𐐴</territory>
+			<territory type="PZ">𐐑𐐰𐑌𐐲𐑋𐐪 𐐗𐐲𐑌𐐰𐑊 𐐞𐐬𐑌</territory>
+			<territory type="QA">𐐗𐐲𐐻𐐪𐑉</territory>
+			<territory type="QO">𐐍𐐻𐑊𐐴𐐮𐑍 𐐄𐑇𐐨𐐰𐑌𐐨𐐲</territory>
+			<territory type="QU">𐐏𐐲𐑉𐐲𐐹𐐨𐐲𐑌 𐐏𐐭𐑌𐐷𐐲𐑌</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="RE">𐐡𐐨𐐷𐐭𐑌𐐷𐐲𐑌</territory>
 			<territory type="RO">𐐡𐐬𐑋𐐩𐑌𐐨𐐲</territory>
 			<territory type="RS">𐐝𐐲𐑉𐐺𐐨𐐲</territory>
@@ -475,6 +556,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="SO">𐐝𐐲𐑋𐐪𐑊𐐨𐐲</territory>
 			<territory type="SR">𐐝𐐭𐑉𐐲𐑌𐐪𐑋</territory>
 			<territory type="ST">𐐝𐐵 𐐓𐐬𐑋 𐐰𐑌𐐼 𐐑𐑉𐐮𐑌𐐽𐐮𐐹𐐩</territory>
+<<<<<<< HEAD
+=======
+			<territory type="SU">𐐏𐐭𐑌𐐷𐐲𐑌 𐐲𐑂 𐐝𐐬𐑂𐐨𐐯𐐻 𐐝𐐬𐑇𐐲𐑊𐐮𐑅𐐻 𐐡𐐨𐐹𐐲𐐺𐑊𐐮𐐿𐑅</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="SV">𐐇𐑊 𐐝𐐰𐑊𐑂𐐲𐐼𐐱𐑉</territory>
 			<territory type="SY">𐐝𐐮𐑉𐐨𐐲</territory>
 			<territory type="SZ">𐐝𐐶𐐪𐑆𐐨𐑊𐐰𐑌𐐼</territory>
@@ -500,12 +585,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="UZ">𐐅𐑆𐐺𐐯𐐿𐐲𐑅𐐻𐐰𐑌</territory>
 			<territory type="VA">𐐚𐐰𐐼𐐲𐐿𐐲𐑌</territory>
 			<territory type="VC">𐐝𐐩𐑌𐐻 𐐚𐐮𐑌𐑅𐐲𐑌𐐻 𐐰𐑌𐐼 𐑄 𐐘𐑉𐐯𐑌𐐲𐐼𐐨𐑌𐑆</territory>
+<<<<<<< HEAD
+=======
+			<territory type="VD">𐐤𐐱𐑉𐑃 𐐚𐐨𐐯𐐻𐑌𐐪𐑋</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="VG">𐐒𐑉𐐮𐐼𐐮𐑇 𐐚𐐲𐑉𐐾𐐲𐑌 𐐌𐑊𐐲𐑌𐐼𐑆</territory>
 			<territory type="VI">𐐏.𐐝. 𐐚𐐲𐑉𐐾𐐲𐑌 𐐌𐑊𐐲𐑌𐐼𐑆</territory>
 			<territory type="VN">𐐚𐐨𐐯𐐻𐑌𐐪𐑋</territory>
 			<territory type="VU">𐐚𐐪𐑌𐐳𐐪𐐼𐐭</territory>
 			<territory type="WF">𐐎𐐪𐑊𐐮𐑅 𐐰𐑌𐐼 𐐙𐐭𐐻𐐭𐑌𐐲</territory>
+<<<<<<< HEAD
 			<territory type="WS">𐐝𐐲𐑋𐐬𐐲</territory>
+=======
+			<territory type="WK">𐐎𐐩𐐿 𐐌𐑊𐐲𐑌𐐼</territory>
+			<territory type="WS">𐐝𐐲𐑋𐐬𐐲</territory>
+			<territory type="YD">𐐑𐐨𐐹𐐲𐑊𐑆 𐐔𐐯𐑋𐐲𐐿𐑉𐐰𐐼𐐮𐐿 𐐡𐐨𐐹𐐲𐐺𐑊𐐮𐐿 𐐲𐑂 𐐏𐐯𐑋𐐲𐑌</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="YE">𐐏𐐯𐑋𐐲𐑌</territory>
 			<territory type="YT">𐐣𐐪𐐷𐐱𐐻</territory>
 			<territory type="ZA">𐐝𐐵𐑃 𐐈𐑁𐑉𐐲𐐿𐐲</territory>
@@ -534,9 +629,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</measurementSystemNames>
 	</localeDisplayNames>
 	<characters>
+<<<<<<< HEAD
 		<exemplarCharacters>[𐐨 𐐩 𐐪 𐐫 𐐬 𐐭 𐐮 𐐯 𐐰 𐐱 𐐲 𐐳 𐐴 𐐵 𐐶 𐐷 𐐸 𐐹 𐐺 𐐻 𐐼 𐐽 𐐾 𐐿 𐑀 𐑁 𐑂 𐑃 𐑄 𐑅 𐑆 𐑇 𐑈 𐑉 𐑊 𐑋 𐑌 𐑍 𐑎 𐑏]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[]</exemplarCharacters>
 		<exemplarCharacters type="index" draft="unconfirmed">[𐐀 𐐁 𐐂 𐐃 𐐄 𐐅 𐐆 𐐇 𐐈 𐐉 𐐊 𐐋 𐐌 𐐍 𐐎 𐐏 𐐐 𐐑 𐐒 𐐓 𐐔 𐐕 𐐖 𐐗 𐐘 𐐙 𐐚 𐐛 𐐜 𐐝 𐐞 𐐟 𐐠 𐐡 𐐢 𐐣 𐐤 𐐥 𐐦 𐐧]</exemplarCharacters>
+=======
+		<exemplarCharacters>[𐐨-𐑏]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[a-z]</exemplarCharacters>
+		<exemplarCharacters type="currencySymbol">[a-z]</exemplarCharacters>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	</characters>
 	<dates>
 		<calendars>
@@ -589,7 +690,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<monthContext type="stand-alone">
 						<monthWidth type="abbreviated">
 							<month type="1">𐐖𐐰𐑌</month>
+<<<<<<< HEAD
 							<month type="2">𐐙𐐯𐐺</month>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 							<month type="3">𐐣𐐪𐑉</month>
 							<month type="4">𐐁𐐹𐑉</month>
 							<month type="5">𐐣𐐩</month>
@@ -617,7 +721,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</monthWidth>
 						<monthWidth type="wide">
 							<month type="1">𐐖𐐰𐑌𐐷𐐭𐐯𐑉𐐨</month>
+<<<<<<< HEAD
 							<month type="2">𐐙𐐯𐐺𐑉𐐭𐐯𐑉𐐨</month>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 							<month type="3">𐐣𐐪𐑉𐐽</month>
 							<month type="4">𐐁𐐹𐑉𐐮𐑊</month>
 							<month type="5">𐐣𐐩</month>
@@ -680,6 +787,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</quarterWidth>
 					</quarterContext>
 				</quarters>
+<<<<<<< HEAD
 				<dayPeriods>
 					<dayPeriodContext type="format">
 						<dayPeriodWidth type="wide">
@@ -690,6 +798,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</dayPeriodWidth>
 					</dayPeriodContext>
 				</dayPeriods>
+=======
+				<am>𐐈𐐣</am>
+				<pm>𐐑𐐣</pm>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<eras>
 					<eraNames>
 						<era type="0">𐐒𐐲𐑁𐐬𐑉 𐐗𐑉𐐴𐑅𐐻</era>
@@ -704,6 +816,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<era type="1">𐐈</era>
 					</eraNarrow>
 				</eras>
+<<<<<<< HEAD
 			</calendar>
 		</calendars>
 		<fields>
@@ -746,6 +859,52 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>𐐞𐐬𐑌</displayName>
 			</field>
 		</fields>
+=======
+				<fields>
+					<field type="era">
+						<displayName>𐐇𐑉𐐲</displayName>
+					</field>
+					<field type="year">
+						<displayName>𐐏𐐨𐑉</displayName>
+					</field>
+					<field type="month">
+						<displayName>𐐣𐐲𐑌𐑃</displayName>
+					</field>
+					<field type="week">
+						<displayName>𐐎𐐨𐐿</displayName>
+					</field>
+					<field type="day">
+						<displayName>𐐔𐐩</displayName>
+						<relative type="-3">𐐛𐑉𐐨 𐐼𐐩𐑆 𐐲𐑀𐐬</relative>
+						<relative type="-2">𐐜 𐐼𐐩 𐐺𐐲𐑁𐐬𐑉 𐐷𐐯𐑅𐐻𐐲𐑉𐐼𐐩</relative>
+						<relative type="-1">𐐏𐐯𐑅𐐻𐐲𐑉𐐼𐐩</relative>
+						<relative type="0">𐐓𐐲𐐼𐐩</relative>
+						<relative type="1">𐐓𐐲𐑋𐐱𐑉𐐬</relative>
+						<relative type="2">𐐜 𐐼𐐩 𐐰𐑁𐐻𐐲𐑉 𐐻𐐲𐑋𐐱𐑉𐐬</relative>
+						<relative type="3">𐐛𐑉𐐨 𐐼𐐩𐑆 𐑁𐑉𐐲𐑋 𐑌𐐵</relative>
+					</field>
+					<field type="weekday">
+						<displayName>𐐔𐐩 𐐲𐑂 𐑄 𐐎𐐨𐐿</displayName>
+					</field>
+					<field type="dayperiod">
+						<displayName>𐐈𐐣/𐐑𐐣</displayName>
+					</field>
+					<field type="hour">
+						<displayName>𐐍𐑉</displayName>
+					</field>
+					<field type="minute">
+						<displayName>𐐣𐐮𐑌𐐲𐐻</displayName>
+					</field>
+					<field type="second">
+						<displayName>𐐝𐐯𐐿𐐲𐑌𐐼</displayName>
+					</field>
+					<field type="zone">
+						<displayName>𐐞𐐬𐑌</displayName>
+					</field>
+				</fields>
+			</calendar>
+		</calendars>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		<timeZoneNames>
 			<gmtFormat>𐐘𐐣𐐓 {0}</gmtFormat>
 			<gmtZeroFormat>𐐘𐐣𐐓</gmtZeroFormat>
@@ -848,10 +1007,34 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<metazone type="Alaska">
 				<long>
+<<<<<<< HEAD
 					<generic>𐐊𐑊𐐰𐑅𐐿𐐲 𐐓𐐴𐑋</generic>
 					<standard>𐐊𐑊𐐰𐑅𐐿𐐲 𐐝𐐻𐐰𐑌𐐼𐐲𐑉𐐼 𐐓𐐴𐑋</standard>
 					<daylight>𐐊𐑊𐐰𐑅𐐿𐐲 𐐔𐐩𐑊𐐴𐐻 𐐓𐐴𐑋</daylight>
 				</long>
+=======
+					<generic>𐐊𐑊𐐰𐑅𐐿𐐲𐐓𐐴𐑋</generic>
+					<standard>𐐊𐑊𐐰𐑅𐐿𐐲 𐐝𐐻𐐰𐑌𐐼𐐲𐑉𐐼 𐐓𐐴𐑋</standard>
+					<daylight>𐐊𐑊𐐰𐑅𐐿𐐲𐐔𐐩𐑊𐐴𐐻 𐐓𐐴𐑋</daylight>
+				</long>
+				<short>
+					<generic>𐐊𐐗𐐓</generic>
+					<standard>𐐊𐐗𐐝𐐓</standard>
+					<daylight>𐐊𐐗𐐔𐐓</daylight>
+				</short>
+			</metazone>
+			<metazone type="Alaska_Hawaii">
+				<long>
+					<generic>𐐊𐑊𐐰𐑅𐐿𐐲-𐐐𐐲𐐶𐐴𐐨 𐐓𐐴𐑋</generic>
+					<standard>𐐊𐑊𐐰𐑅𐐿𐐲-𐐐𐐲𐐶𐐴𐐨 𐐝𐐻𐐰𐑌𐐼𐐲𐑉𐐼 𐐓𐐴𐑋</standard>
+					<daylight>𐐊𐑊𐐰𐑅𐐿𐐲-𐐐𐐲𐐶𐐴𐐨 𐐔𐐩𐑊𐐴𐐻 𐐓𐐴𐑋</daylight>
+				</long>
+				<short>
+					<generic>𐐊𐐐𐐓</generic>
+					<standard>𐐊𐐐𐐝𐐓</standard>
+					<daylight>𐐊𐐐𐐔𐐓</daylight>
+				</short>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</metazone>
 			<metazone type="America_Central">
 				<long>
@@ -859,6 +1042,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<standard>𐐝𐐯𐑌𐐻𐑉𐐲𐑊 𐐝𐐻𐐰𐑌𐐼𐐲𐑉𐐼 𐐓𐐴𐑋</standard>
 					<daylight>𐐝𐐯𐑌𐐻𐑉𐐲𐑊 𐐔𐐩𐑊𐐴𐐻 𐐓𐐴𐑋</daylight>
 				</long>
+<<<<<<< HEAD
+=======
+				<short>
+					<generic>𐐝𐐓</generic>
+					<standard>𐐝𐐝𐐓</standard>
+					<daylight>𐐝𐐔𐐓</daylight>
+				</short>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</metazone>
 			<metazone type="America_Eastern">
 				<long>
@@ -866,6 +1057,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<standard>𐐀𐑅𐐻𐐲𐑉𐑌 𐐝𐐻𐐰𐑌𐐼𐐲𐑉𐐼 𐐓𐐴𐑋</standard>
 					<daylight>𐐀𐑅𐐻𐐲𐑉𐑌 𐐔𐐩𐑊𐐴𐐻 𐐓𐐴𐑋</daylight>
 				</long>
+<<<<<<< HEAD
+=======
+				<short>
+					<generic>𐐀𐐓</generic>
+					<standard>𐐀𐐝𐐓</standard>
+					<daylight>𐐀𐐔𐐓</daylight>
+				</short>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</metazone>
 			<metazone type="America_Mountain">
 				<long>
@@ -873,6 +1072,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<standard>𐐣𐐵𐑌𐐻𐐲𐑌 𐐝𐐻𐐰𐑌𐐼𐐲𐑉𐐼 𐐓𐐴𐑋</standard>
 					<daylight>𐐣𐐵𐑌𐐻𐐲𐑌 𐐔𐐩𐑊𐐴𐐻 𐐓𐐴𐑋</daylight>
 				</long>
+<<<<<<< HEAD
+=======
+				<short>
+					<generic>𐐣𐐓</generic>
+					<standard>𐐣𐐝𐐓</standard>
+					<daylight>𐐣𐐔𐐓</daylight>
+				</short>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</metazone>
 			<metazone type="America_Pacific">
 				<long>
@@ -880,6 +1087,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<standard>𐐑𐐲𐑅𐐮𐑁𐐮𐐿 𐐝𐐻𐐰𐑌𐐼𐐲𐑉𐐼 𐐓𐐴𐑋</standard>
 					<daylight>𐐑𐐲𐑅𐐮𐑁𐐮𐐿 𐐔𐐩𐑊𐐴𐐻 𐐓𐐴𐑋</daylight>
 				</long>
+<<<<<<< HEAD
+=======
+				<short>
+					<generic>𐐑𐐓</generic>
+					<standard>𐐑𐐝𐐓</standard>
+					<daylight>𐐑𐐔𐐓</daylight>
+				</short>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</metazone>
 			<metazone type="Atlantic">
 				<long>
@@ -887,6 +1102,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<standard>𐐈𐐻𐑊𐐰𐑌𐐻𐐮𐐿 𐐝𐐻𐐰𐑌𐐼𐐲𐑉𐐼 𐐓𐐴𐑋</standard>
 					<daylight>𐐈𐐻𐑊𐐰𐑌𐐻𐐮𐐿 𐐔𐐩𐑊𐐴𐐻 𐐓𐐴𐑋</daylight>
 				</long>
+<<<<<<< HEAD
 			</metazone>
 			<metazone type="Hong_Kong">
 				<long>
@@ -894,6 +1110,35 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<standard>𐐐𐐱𐑍 𐐗𐐱𐑍 𐐝𐐻𐐰𐑌𐐼𐐲𐑉𐐼 𐐓𐐴𐑋</standard>
 					<daylight>𐐐𐐱𐑍 𐐗𐐱𐑍 𐐔𐐩𐑊𐐴𐐻 𐐓𐐴𐑋</daylight>
 				</long>
+=======
+				<short>
+					<generic>𐐈𐐓</generic>
+					<standard>𐐈𐐝𐐓</standard>
+					<daylight>𐐈𐐔𐐓</daylight>
+				</short>
+			</metazone>
+			<metazone type="Bering">
+				<long>
+					<generic>𐐒𐐯𐑉𐐮𐑍 𐐓𐐴𐑋</generic>
+					<standard>𐐒𐐯𐑉𐐮𐑍 𐐝𐐻𐐰𐑌𐐼𐐲𐑉𐐼 𐐓𐐴𐑋</standard>
+					<daylight>𐐒𐐯𐑉𐐮𐑍 𐐔𐐩𐑊𐐴𐐻 𐐓𐐴𐑋</daylight>
+				</long>
+				<short>
+					<generic>𐐒𐐓 (𐐒𐐯𐑉𐐮𐑍 )</generic>
+					<standard>𐐒𐐝𐐓 (𐐒𐐯𐑉𐐮𐑍 )</standard>
+					<daylight>𐐒𐐔𐐓 (𐐒𐐯𐑉𐐮𐑍 )</daylight>
+				</short>
+			</metazone>
+			<metazone type="Hong_Kong">
+				<long>
+					<standard>𐐐𐐱𐑍 𐐗𐐱𐑍 𐐓𐐴𐑋</standard>
+					<daylight>𐐐𐐱𐑍 𐐗𐐱𐑍 𐐝𐐲𐑋𐐲𐑉 𐐓𐐴𐑋</daylight>
+				</long>
+				<short>
+					<standard>𐐐𐐗𐐓</standard>
+					<daylight>𐐐𐐗𐐝𐐓</daylight>
+				</short>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</metazone>
 			<metazone type="Newfoundland">
 				<long>
@@ -901,6 +1146,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<standard>𐐤𐐭𐑁𐐲𐑌𐐼𐑊𐐲𐑌𐐼 𐐝𐐻𐐰𐑌𐐼𐐲𐑉𐐼 𐐓𐐴𐑋</standard>
 					<daylight>𐐤𐐭𐑁𐐲𐑌𐐼𐑊𐐲𐑌𐐼 𐐔𐐩𐑊𐐴𐐻 𐐓𐐴𐑋</daylight>
 				</long>
+<<<<<<< HEAD
 			</metazone>
 		</timeZoneNames>
 	</dates>
@@ -942,6 +1188,57 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} 𐐷𐐮𐑉𐑆</unitPattern>
 			</unit>
 		</unitLength>
+=======
+				<short>
+					<generic>𐐤𐐓</generic>
+					<standard>𐐤𐐝𐐓</standard>
+					<daylight>𐐤𐐔𐐓</daylight>
+				</short>
+			</metazone>
+			<metazone type="Yukon">
+				<long>
+					<generic>𐐏𐐭𐐿𐐪𐑌 𐐔𐐩𐑊𐐴𐐻 𐐓𐐴𐑋</generic>
+					<standard>𐐏𐐭𐐿𐐪𐑌 𐐝𐐻𐐰𐑌𐐼𐐲𐑉𐐼 𐐓𐐴𐑋</standard>
+					<daylight>𐐏𐐭𐐿𐐪𐑌 𐐔𐐩𐑊𐐴𐐻 𐐓𐐴𐑋</daylight>
+				</long>
+				<short>
+					<generic>𐐏𐐓</generic>
+					<standard>𐐏𐐝𐐓</standard>
+					<daylight>𐐏𐐔𐐓</daylight>
+				</short>
+			</metazone>
+		</timeZoneNames>
+	</dates>
+	<units>
+		<unit type="day">
+			<unitPattern count="one">{0} 𐐼𐐩</unitPattern>
+			<unitPattern count="other">{0} 𐐼𐐩𐑆</unitPattern>
+		</unit>
+		<unit type="hour">
+			<unitPattern count="one">{0} 𐐵𐑉</unitPattern>
+			<unitPattern count="other">{0} 𐐵𐑉𐑆</unitPattern>
+		</unit>
+		<unit type="minute">
+			<unitPattern count="one">{0} 𐑋𐐮𐑌𐐲𐐻</unitPattern>
+			<unitPattern count="other">{0} 𐑋𐐮𐑌𐐲𐐻𐑅</unitPattern>
+		</unit>
+		<unit type="month">
+			<unitPattern count="one">{0} 𐑋𐐲𐑌𐑃𐑅</unitPattern>
+			<unitPattern count="other">{0} 𐑋𐐲𐑌𐑃</unitPattern>
+		</unit>
+		<unit type="second">
+			<unitPattern count="one">{0} 𐑅𐐯𐐿𐐲𐑌𐐼</unitPattern>
+			<unitPattern count="other">{0} 𐑅𐐯𐐿𐐲𐑌𐐼𐑆</unitPattern>
+		</unit>
+		<unit type="week">
+			<unitPattern count="one">{0} 𐐶𐐨𐐿</unitPattern>
+			<unitPattern count="other">{0} 𐐶𐐨𐐿𐑅</unitPattern>
+		</unit>
+		<unit type="year">
+			<unitPattern count="one">{0} 𐐷𐐮𐑉</unitPattern>
+			<unitPattern count="other">{0} 𐐷𐐮𐑉𐑆</unitPattern>
+		</unit>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	</units>
 	<posix>
 		<messages>
@@ -950,3 +1247,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</messages>
 	</posix>
 </ldml>
+<<<<<<< HEAD
+=======
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

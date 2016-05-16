@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Http
  * @subpackage UserAgent
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -27,7 +31,11 @@ require_once 'Zend/Http/UserAgent/Device.php';
  * @category   Zend
  * @package    Zend_Http
  * @subpackage UserAgent
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 abstract class Zend_Http_UserAgent_AbstractDevice
@@ -509,9 +517,13 @@ abstract class Zend_Http_UserAgent_AbstractDevice
                 }
                 $result['browser_version'] = '??';
             }
+<<<<<<< HEAD
         } elseif ($product == 'mozilla' && isset($result['browser_version'])
                   && $result['browser_version'] < 5.0
         ) {
+=======
+        } elseif ($product == 'mozilla' && $result['browser_version'] < 5.0) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             // handles the real Mozilla (or old Netscape if version < 5.0)
             $result['browser_name'] = 'Netscape';
         }

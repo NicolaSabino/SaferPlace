@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -15,10 +16,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<localePattern>{0} ({1})</localePattern>
 			<localeSeparator>{0}, {1}</localeSeparator>
 			<localeKeyTypePattern>{0}:‏ {1}</localeKeyTypePattern>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.126 $"/>
+		<generation date="$Date: 2009/06/15 03:46:24 $"/>
+		<language type="he"/>
+	</identity>
+	<fallback>en</fallback>
+	<localeDisplayNames>
+		<localeDisplayPattern>
+			<localePattern>{0} ({1})</localePattern>
+			<localeSeparator>, </localeSeparator>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</localeDisplayPattern>
 		<languages>
 			<language type="aa">אפארית</language>
 			<language type="ab">אבחזית</language>
+<<<<<<< HEAD
 			<language type="ace" draft="contributed">אכינזית</language>
 			<language type="ach" draft="contributed">אקולי</language>
 			<language type="ada" draft="contributed">אדנמה</language>
@@ -135,19 +150,88 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="efi" draft="contributed">אפיק</language>
 			<language type="egy">מצרית עתיקה</language>
 			<language type="eka" draft="contributed">אקיוק</language>
+=======
+			<language type="ady">אדיגית</language>
+			<language type="ae">אבסטן</language>
+			<language type="af">אפריקאנס</language>
+			<language type="afa">שפה אפרו-אסייתית</language>
+			<language type="afh">אפריהילי</language>
+			<language type="ain">אינו</language>
+			<language type="ak">אקאן</language>
+			<language type="akk">אכדית</language>
+			<language type="am">אמהרית</language>
+			<language type="ang">אנגלית עתיקה</language>
+			<language type="apa">שפה אפאצ׳ית</language>
+			<language type="ar">ערבית</language>
+			<language type="arc">ארמית</language>
+			<language type="art">שפה מלאכותית אחרת</language>
+			<language type="as">אסאמית</language>
+			<language type="ast">אסטורית</language>
+			<language type="aus">שפה אוסטרלית</language>
+			<language type="awa">אוואדית</language>
+			<language type="ay">איימארית</language>
+			<language type="az">אזרית</language>
+			<language type="ba">בשקירית</language>
+			<language type="bal">באלוצ'י</language>
+			<language type="ban">בלינזית</language>
+			<language type="bat">שפות בלטיות</language>
+			<language type="be">בלארוסית</language>
+			<language type="bej">בז'ה</language>
+			<language type="ber">ברברית</language>
+			<language type="bg">בולגרית</language>
+			<language type="bh">ביהארי</language>
+			<language type="bi">ביסלמה</language>
+			<language type="bn">בנגלית</language>
+			<language type="bnt">בנטו</language>
+			<language type="bo">טיבטית</language>
+			<language type="br">ברטונית</language>
+			<language type="bs">בוסנית</language>
+			<language type="ca">קטלאנית</language>
+			<language type="cad">קאדו</language>
+			<language type="cai">אינדיאנית מרכז אמריקאית אחרת</language>
+			<language type="cau">שפה קווקזית</language>
+			<language type="ce">צ'צ'נית</language>
+			<language type="ceb">קבואנו</language>
+			<language type="cel">שפה קלטית</language>
+			<language type="chg">צ'אגאטאי</language>
+			<language type="chr">צ'רוקי</language>
+			<language type="co">קורסיקנית</language>
+			<language type="cop">קופטית</language>
+			<language type="crh">טטרית של קרים</language>
+			<language type="crp">שפה קראולית או פידג'אנית</language>
+			<language type="cs">צ׳כית</language>
+			<language type="cu">סלאבית כנסייתית עתיקה</language>
+			<language type="cy">וולשית</language>
+			<language type="da">דנית</language>
+			<language type="dak">דקוטה</language>
+			<language type="de">גרמנית</language>
+			<language type="de_AT">גרמנית אוסטרית</language>
+			<language type="del">דלאוור</language>
+			<language type="den">סלאבית</language>
+			<language type="doi">דוגרי</language>
+			<language type="dum">הולנדית תיכונה</language>
+			<language type="dv">דיבהי</language>
+			<language type="dz">דזונקה</language>
+			<language type="egy">מצרית עתיקה</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="el">יוונית</language>
 			<language type="elx">עילמית</language>
 			<language type="en">אנגלית</language>
 			<language type="en_AU">אנגלית אוסטרלית</language>
 			<language type="en_CA">אנגלית קנדית</language>
 			<language type="en_GB">אנגלית בריטית</language>
+<<<<<<< HEAD
 			<language type="en_GB" alt="short" draft="contributed">אנגלית (בריטניה)</language>
 			<language type="en_US">אנגלית אמריקנית</language>
 			<language type="en_US" alt="short" draft="contributed">אנגלית (ארה״ב)</language>
+=======
+			<language type="en_US">אנגלית אמריקנית</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="enm">אנגלית תיכונה</language>
 			<language type="eo">אספרנטו</language>
 			<language type="es">ספרדית</language>
 			<language type="es_419">ספרדית לטינו־אמריקאית</language>
+<<<<<<< HEAD
 			<language type="es_ES">ספרדית אירופאית</language>
 			<language type="es_MX" draft="contributed">ספרדית מקסיקנית</language>
 			<language type="et">אסטונית</language>
@@ -162,12 +246,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="fj">פיג׳ית</language>
 			<language type="fo">פארואזית</language>
 			<language type="fon" draft="contributed">פון</language>
+=======
+			<language type="es_ES">ספרדית איברית</language>
+			<language type="et">אסטונית</language>
+			<language type="eu">בסקית</language>
+			<language type="fa">פרסית</language>
+			<language type="fi">פינית</language>
+			<language type="fil">פיליפינית</language>
+			<language type="fj">פיג'ית</language>
+			<language type="fo">פארואזית</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="fr">צרפתית</language>
 			<language type="fr_CA">צרפתית קנדית</language>
 			<language type="fr_CH">צרפתית שוויצרית</language>
 			<language type="frm">צרפתית תיכונה</language>
 			<language type="fro">צרפתית עתיקה</language>
 			<language type="frr">פריזית צפונית</language>
+<<<<<<< HEAD
 			<language type="frs" draft="contributed">פריזיאן מזרחית</language>
 			<language type="fur" draft="contributed">פריולית</language>
 			<language type="fy">פריזית</language>
@@ -219,10 +314,45 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ilo" draft="contributed">אילוקו</language>
 			<language type="inh">אינגושית</language>
 			<language type="io">אידו</language>
+=======
+			<language type="fy">פריזית</language>
+			<language type="ga">אירית</language>
+			<language type="gd">גאלית סקוטית</language>
+			<language type="gem">גרמאנית אחרת</language>
+			<language type="gez">געז</language>
+			<language type="gl">גליציאנית</language>
+			<language type="gn">גוארני</language>
+			<language type="gon">גונדי</language>
+			<language type="got">גותית</language>
+			<language type="grc">יוונית עתיקה</language>
+			<language type="gsw">גרמנית שוויצרית</language>
+			<language type="gu">גוג'ראטית</language>
+			<language type="gv">מאנית</language>
+			<language type="ha">האוסה</language>
+			<language type="haw">הוואית</language>
+			<language type="he">עברית</language>
+			<language type="hi">הינדי</language>
+			<language type="hit">חיתית</language>
+			<language type="ho">הארי מוטו</language>
+			<language type="hr">קרואטית</language>
+			<language type="ht">האיטית</language>
+			<language type="hu">הונגרית</language>
+			<language type="hy">ארמנית</language>
+			<language type="ia">‏אינטרלינגואה</language>
+			<language type="id">אינדונזית</language>
+			<language type="ie">אינטרלינגה</language>
+			<language type="ig">איגבו</language>
+			<language type="ik">ik</language>
+			<language type="ine">אינדו-אירופית אחרת</language>
+			<language type="inh">אינגושית</language>
+			<language type="io">אידו</language>
+			<language type="ira">שפה איראנית</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="is">איסלנדית</language>
 			<language type="it">איטלקית</language>
 			<language type="iu">אינוקטיטוט</language>
 			<language type="ja">יפנית</language>
+<<<<<<< HEAD
 			<language type="jbo" draft="contributed">לויבאן</language>
 			<language type="jgo">נגומה</language>
 			<language type="jmc" draft="contributed">מצ׳אמה</language>
@@ -271,10 +401,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="kum" draft="contributed">קומיק</language>
 			<language type="kut" draft="contributed">קוטנאי</language>
 			<language type="kv" draft="contributed">קומי</language>
+=======
+			<language type="jpr">פרסית יהודית</language>
+			<language type="jrb">ערבית יהודית</language>
+			<language type="jv">יאוונית</language>
+			<language type="ka">גיאורגית</language>
+			<language type="kab">קבילה</language>
+			<language type="kk">קזחית</language>
+			<language type="kl">קאלאליסוטית</language>
+			<language type="km">קמרית</language>
+			<language type="kn">קנאדה</language>
+			<language type="ko">קוריאנית</language>
+			<language type="ks">קשמירית</language>
+			<language type="ku">כורדית</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="kw">קורנית</language>
 			<language type="ky">קירגיזית</language>
 			<language type="la">לטינית</language>
 			<language type="lad">לדינו</language>
+<<<<<<< HEAD
 			<language type="lag" draft="contributed">לאנגי</language>
 			<language type="lah" draft="contributed">לנדה</language>
 			<language type="lam" draft="contributed">למבה</language>
@@ -412,10 +557,74 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sat">סאנטלי</language>
 			<language type="sba" draft="contributed">נגמבאי</language>
 			<language type="sbp" draft="contributed">סאנגו</language>
+=======
+			<language type="lb">לוקסמבורגית</language>
+			<language type="ln">לינגלה</language>
+			<language type="lo">לאית</language>
+			<language type="lt">ליטאית</language>
+			<language type="lv">לטבית</language>
+			<language type="mag">מאגאהית</language>
+			<language type="mai">מאיטילית</language>
+			<language type="map">אוסטרונזית</language>
+			<language type="mas">מאסאית</language>
+			<language type="mg">מלגשית</language>
+			<language type="mga">אירית תיכונה</language>
+			<language type="mi">מאורית</language>
+			<language type="mis">שפה שונה</language>
+			<language type="mk">מקדונית</language>
+			<language type="ml">מלאיאלם</language>
+			<language type="mn">מונגולית</language>
+			<language type="mni">מניפורית</language>
+			<language type="mo">מולדבית</language>
+			<language type="mr">מרטהי</language>
+			<language type="ms">מלאית</language>
+			<language type="mt">מלטית</language>
+			<language type="mul">מספר שפות</language>
+			<language type="my">בורמזית</language>
+			<language type="myn">מאיה</language>
+			<language type="na">נאורית</language>
+			<language type="nah">נאהואטל</language>
+			<language type="nai">אינדיאנית צפון אמריקאית אחרת</language>
+			<language type="nap">נפוליטנית</language>
+			<language type="nb">‏נורבגית ספרותית</language>
+			<language type="nds">גרמנית תחתית</language>
+			<language type="ne">נפאלית</language>
+			<language type="nl">הולנדית</language>
+			<language type="nl_BE">פלמית</language>
+			<language type="nn">נורבגית חדשה - נינורשק</language>
+			<language type="no">נורווגית</language>
+			<language type="non">‏נורדית עתיקה</language>
+			<language type="nub">שפות נבטיות</language>
+			<language type="nv">נבחו</language>
+			<language type="nwc">נווארית קלאסית</language>
+			<language type="oc">אוקסיטנית</language>
+			<language type="or">אוריה</language>
+			<language type="ota">טורקית עותומנית</language>
+			<language type="pa">פנג'אבית</language>
+			<language type="peo">פרסית עתיקה</language>
+			<language type="phi">פיליפינית אחרת</language>
+			<language type="phn">פניקית</language>
+			<language type="pl">פולנית</language>
+			<language type="ps">פאשטו</language>
+			<language type="pt">פורטוגלית</language>
+			<language type="pt_BR">פורטוגזית ברזילאית</language>
+			<language type="raj">ראג'סטן</language>
+			<language type="rn">קירונדי</language>
+			<language type="ro">רומנית</language>
+			<language type="rom">רומאנית</language>
+			<language type="ru">רוסית</language>
+			<language type="rup">ארומנית</language>
+			<language type="rw">קינירואנדה</language>
+			<language type="sa">סנסקריט</language>
+			<language type="sai">שפה אינדיאנית דרום אמריקאית</language>
+			<language type="sam">ארמית שומרונית</language>
+			<language type="sat">סאנטלי</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="sc">סרדינית</language>
 			<language type="scn">סיציליאנית</language>
 			<language type="sco">סקוטית</language>
 			<language type="sd">סינדהית</language>
+<<<<<<< HEAD
 			<language type="se" draft="contributed">לאפית צפונית</language>
 			<language type="see" draft="contributed">סנקה</language>
 			<language type="seh" draft="contributed">סנה</language>
@@ -526,10 +735,66 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="zbl" draft="contributed">בליסימבולס</language>
 			<language type="zen" draft="contributed">זנאגה</language>
 			<language type="zgh" draft="contributed">תמזיע׳ת מרוקאית תקנית</language>
+=======
+			<language type="sem">שפה שמית</language>
+			<language type="sga">אירית עתיקה</language>
+			<language type="sgn">שפת סימנים</language>
+			<language type="sh">סרבו-קרואטית</language>
+			<language type="si">סינהלה</language>
+			<language type="sid">סידמו</language>
+			<language type="sit">שפה סינו־טיבטית</language>
+			<language type="sk">סלובקית</language>
+			<language type="sl">סלובנית</language>
+			<language type="sla">שפה סלאבית</language>
+			<language type="sm">סמואית</language>
+			<language type="smi">שפות סאמיות אחרות</language>
+			<language type="so">סומלית</language>
+			<language type="sq">אלבנית</language>
+			<language type="sr">סרבית</language>
+			<language type="ss">סיסוואטי</language>
+			<language type="st">ססות'ו</language>
+			<language type="su">סודנית</language>
+			<language type="sux">שומרית</language>
+			<language type="sv">שוודית</language>
+			<language type="sw">סווהילית</language>
+			<language type="syr">סורית</language>
+			<language type="ta">טמילית</language>
+			<language type="te">טלוגו</language>
+			<language type="tg">טג'יקית</language>
+			<language type="th">תאי</language>
+			<language type="ti">טיגרינאית</language>
+			<language type="tk">טורקמנית</language>
+			<language type="tl">טגלוג</language>
+			<language type="tlh">קלינגון</language>
+			<language type="tn">צוואנה</language>
+			<language type="to">טונגאית</language>
+			<language type="tr">טורקית</language>
+			<language type="ts">טסונגה</language>
+			<language type="tt">טטרית</language>
+			<language type="tw">טווי</language>
+			<language type="ty">טהיטית</language>
+			<language type="ug">אויגהור</language>
+			<language type="uga">אוגריתית</language>
+			<language type="uk">אוקראינית</language>
+			<language type="und">שפה לא ידועה או לא תקפה</language>
+			<language type="ur">אורדו</language>
+			<language type="uz">אוזבקית</language>
+			<language type="ve">וונדה</language>
+			<language type="vi">ויאטנמית</language>
+			<language type="vo">‏וולאפיק</language>
+			<language type="wo">ג'ולוף</language>
+			<language type="xh">קסוסה</language>
+			<language type="yap">יאפזית</language>
+			<language type="yi">יידיש</language>
+			<language type="yo">יורובה</language>
+			<language type="zap">זאפוטק</language>
+			<language type="zen">זנאגה</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="zh">סינית</language>
 			<language type="zh_Hans">סינית (מפושטת)</language>
 			<language type="zh_Hant">סינית מסורתית</language>
 			<language type="zu">זולו</language>
+<<<<<<< HEAD
 			<language type="zun" draft="contributed">זוני</language>
 			<language type="zxx">ללא תוכן לשוני</language>
 			<language type="zza" draft="contributed">זאזא</language>
@@ -543,6 +808,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Bopo" draft="contributed">בופומופו</script>
 			<script type="Brai">ברייל</script>
 			<script type="Cham" draft="contributed">צ׳אם</script>
+=======
+			<language type="zxx">ללא תוכן לשוני</language>
+		</languages>
+		<scripts>
+			<script type="Arab">ערבי</script>
+			<script type="Armn">ארמני</script>
+			<script type="Bali">באלינזי</script>
+			<script type="Beng">בנגלי</script>
+			<script type="Brai">ברייל</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Cher">צ׳ירוקי</script>
 			<script type="Copt">קופטי</script>
 			<script type="Cprt">קפריסאי</script>
@@ -554,6 +829,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Geor">גאורגי</script>
 			<script type="Goth">גותי</script>
 			<script type="Grek">יווני</script>
+<<<<<<< HEAD
 			<script type="Gujr" draft="contributed">גוג׳רטי</script>
 			<script type="Guru" draft="contributed">גורמוקי</script>
 			<script type="Hang">האנגול</script>
@@ -571,15 +847,31 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Jpan">יפני</script>
 			<script type="Kana" draft="contributed">קטקאנה</script>
 			<script type="Khmr" draft="contributed">קמרית</script>
+=======
+			<script type="Hang">האנגול</script>
+			<script type="Hani">האן</script>
+			<script type="Hans">האן מפושט</script>
+			<script type="Hant">האן מסורתי</script>
+			<script type="Hebr">עברי</script>
+			<script type="Hung">הונגרי עתיק</script>
+			<script type="Inds">אינדוס</script>
+			<script type="Ital">איטלקי עתיק</script>
+			<script type="Jpan">יפני</script>
+			<script type="Khmr">קמרית</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Knda">קאנדה</script>
 			<script type="Kore">קוריאני</script>
 			<script type="Laoo">לאית</script>
 			<script type="Latg">לטיני גאלי</script>
 			<script type="Latn">לטיני</script>
+<<<<<<< HEAD
 			<script type="Maya" draft="contributed">מאיה</script>
 			<script type="Mlym" draft="contributed">מליאלאם</script>
 			<script type="Mong">מונגולי</script>
 			<script type="Mymr" draft="contributed">מיאנמר</script>
+=======
+			<script type="Mong">מונגולי</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Orya">אורייה</script>
 			<script type="Phnx">פיניקי</script>
 			<script type="Runr">רוני</script>
@@ -590,17 +882,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Taml">טמיל</script>
 			<script type="Telu">טלוגו</script>
 			<script type="Tglg">טגלוג</script>
+<<<<<<< HEAD
 			<script type="Thaa" draft="contributed">כתב טאנה</script>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Thai">תאי</script>
 			<script type="Tibt">טיבטי</script>
 			<script type="Ugar">אוגריתי</script>
 			<script type="Xpeo">פרסי עתיק</script>
+<<<<<<< HEAD
 			<script type="Zinh" draft="contributed">מורש</script>
 			<script type="Zmth" draft="contributed">סימון מתמטי</script>
 			<script type="Zsym" draft="contributed">סמלים</script>
 			<script type="Zxxx">לא כתוב</script>
 			<script type="Zyyy" draft="contributed">רגיל</script>
 			<script type="Zzzz">כתב שאינו ידוע</script>
+=======
+			<script type="Zxxx">לא כתוב</script>
+			<script type="Zzzz">כתב לא ידוע או לא תקף</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</scripts>
 		<territories>
 			<territory type="001">העולם</territory>
@@ -621,10 +921,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="034">דרום אסיה</territory>
 			<territory type="035">דרום־מזרח אסיה</territory>
 			<territory type="039">דרום אירופה</territory>
+<<<<<<< HEAD
 			<territory type="053">אוסטרלאסיה</territory>
 			<territory type="054">מלנזיה</territory>
 			<territory type="057">אזור מיקרונזיה</territory>
 			<territory type="061">פולינזיה</territory>
+=======
+			<territory type="053">אוסטרליה וניו־זילנד</territory>
+			<territory type="054">מלנסיה</territory>
+			<territory type="057">אזור מיקרונזיה</territory>
+			<territory type="061">פולינזיה</territory>
+			<territory type="062">דרום־מרכז אסיה</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="142">אסיה</territory>
 			<territory type="143">מרכז אסיה</territory>
 			<territory type="145">מערב אסיה</territory>
@@ -632,8 +940,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="151">מזרח אירופה</territory>
 			<territory type="154">צפון אירופה</territory>
 			<territory type="155">מערב אירופה</territory>
+<<<<<<< HEAD
 			<territory type="419">אמריקה הלטינית</territory>
 			<territory type="AC" draft="contributed">האי אסנשן</territory>
+=======
+			<territory type="172">חבר המדינות העצמאיות</territory>
+			<territory type="419">אמריקה הלטינית והקריביים</territory>
+			<territory type="830">איי התעלה</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="AD">אנדורה</territory>
 			<territory type="AE">איחוד האמירויות הערביות</territory>
 			<territory type="AF">אפגניסטן</territory>
@@ -649,8 +963,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AT">אוסטריה</territory>
 			<territory type="AU">אוסטרליה</territory>
 			<territory type="AW">ארובה</territory>
+<<<<<<< HEAD
 			<territory type="AX">איי אולנד</territory>
 			<territory type="AZ">אזרבייג׳ן</territory>
+=======
+			<territory type="AX">איי אלנד</territory>
+			<territory type="AZ">אזרביג'ן</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="BA">בוסניה והרצגובינה</territory>
 			<territory type="BB">ברבדוס</territory>
 			<territory type="BD">בנגלדש</territory>
@@ -660,11 +979,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="BH">בחריין</territory>
 			<territory type="BI">בורונדי</territory>
 			<territory type="BJ">בנין</territory>
+<<<<<<< HEAD
 			<territory type="BL" draft="contributed">סנט ברתולומיאו</territory>
 			<territory type="BM">ברמודה</territory>
 			<territory type="BN">ברוניי</territory>
 			<territory type="BO">בוליביה</territory>
 			<territory type="BQ" draft="contributed">האיים הקריביים ההולנדיים</territory>
+=======
+			<territory type="BL">סנט ברתולומיאו</territory>
+			<territory type="BM">ברמודה</territory>
+			<territory type="BN">ברוניי</territory>
+			<territory type="BO">בוליביה</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="BR">ברזיל</territory>
 			<territory type="BS">איי בהאמה</territory>
 			<territory type="BT">בהוטן</territory>
@@ -673,12 +999,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="BY">בלארוס</territory>
 			<territory type="BZ">בליז</territory>
 			<territory type="CA">קנדה</territory>
+<<<<<<< HEAD
 			<territory type="CC">איי קוקס (קילינג)</territory>
 			<territory type="CD">קונגו - קינשאסה</territory>
 			<territory type="CD" alt="variant" draft="contributed">קונגו (הרפובליקה הדמוקרטית של קונגו)</territory>
 			<territory type="CF">הרפובליקה של מרכז אפריקה</territory>
 			<territory type="CG">קונגו - ברזאויל</territory>
 			<territory type="CG" alt="variant" draft="contributed">קונגו (רפובליקה)</territory>
+=======
+			<territory type="CC">איי קוקוס</territory>
+			<territory type="CD">קונגו - קינשאסה</territory>
+			<territory type="CF">הרפובליקה של מרכז אפריקה</territory>
+			<territory type="CG">קונגו - ברזאויל</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="CH">שווייץ</territory>
 			<territory type="CI">חוף השנהב</territory>
 			<territory type="CK">איי קוק</territory>
@@ -686,26 +1019,40 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CM">קמרון</territory>
 			<territory type="CN">סין</territory>
 			<territory type="CO">קולומביה</territory>
+<<<<<<< HEAD
 			<territory type="CP" draft="contributed">האי קליפרטון</territory>
 			<territory type="CR">קוסטה ריקה</territory>
 			<territory type="CU">קובה</territory>
 			<territory type="CV">כף ורדה</territory>
 			<territory type="CW" draft="contributed">קוראסאו</territory>
+=======
+			<territory type="CR">קוסטה ריקה</territory>
+			<territory type="CS">סרביה ומונטנגרו</territory>
+			<territory type="CU">קובה</territory>
+			<territory type="CV">כף ורדה</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="CX">איי כריסטמס</territory>
 			<territory type="CY">קפריסין</territory>
 			<territory type="CZ">צ׳כיה</territory>
 			<territory type="DE">גרמניה</territory>
+<<<<<<< HEAD
 			<territory type="DG" draft="contributed">דייגו גרסיה</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="DJ">ג׳יבוטי</territory>
 			<territory type="DK">דנמרק</territory>
 			<territory type="DM">דומיניקה</territory>
 			<territory type="DO">הרפובליקה הדומיניקנית</territory>
 			<territory type="DZ">אלג׳יריה</territory>
+<<<<<<< HEAD
 			<territory type="EA" draft="contributed">סאוטה ומלייה</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="EC">אקוודור</territory>
 			<territory type="EE">אסטוניה</territory>
 			<territory type="EG">מצרים</territory>
 			<territory type="EH">סהרה המערבית</territory>
+<<<<<<< HEAD
 			<territory type="ER">אריתריאה</territory>
 			<territory type="ES">ספרד</territory>
 			<territory type="ET">אתיופיה</territory>
@@ -714,12 +1061,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FJ">פיג׳י</territory>
 			<territory type="FK">איי פוקלנד</territory>
 			<territory type="FK" alt="variant" draft="contributed">איי פוקלנד (איי מלווינס)</territory>
+=======
+			<territory type="ER">אריתראה</territory>
+			<territory type="ES">ספרד</territory>
+			<territory type="ET">אתיופיה</territory>
+			<territory type="FI">פינלנד</territory>
+			<territory type="FJ">פיג׳י</territory>
+			<territory type="FK">איי פוקלנד</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="FM">מיקרונזיה</territory>
 			<territory type="FO">איי פארו</territory>
 			<territory type="FR">צרפת</territory>
 			<territory type="GA">גאבון</territory>
+<<<<<<< HEAD
 			<territory type="GB">הממלכה המאוחדת</territory>
 			<territory type="GB" alt="short" draft="contributed">בריטניה</territory>
+=======
+			<territory type="GB">בריטניה</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="GD">גרנדה</territory>
 			<territory type="GE">גאורגיה</territory>
 			<territory type="GF">גיאנה הצרפתית</territory>
@@ -737,14 +1096,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GU">גואם</territory>
 			<territory type="GW">גיניאה-ביסאו</territory>
 			<territory type="GY">גיאנה</territory>
+<<<<<<< HEAD
 			<territory type="HK">הונג קונג - מחוז מנהלי מיוחד של סין</territory>
 			<territory type="HK" alt="short">הונג קונג</territory>
 			<territory type="HM" draft="contributed">איי הרד ואיי מקדונלנד</territory>
+=======
+			<territory type="HK">הונג קונג (מחוז מנהלי מיוחד של סין)</territory>
+			<territory type="HM">איי הרד ואיי מקדונלנד</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="HN">הונדורס</territory>
 			<territory type="HR">קרואטיה</territory>
 			<territory type="HT">האיטי</territory>
 			<territory type="HU">הונגריה</territory>
+<<<<<<< HEAD
 			<territory type="IC" draft="contributed">האיים הקנריים</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="ID">אינדונזיה</territory>
 			<territory type="IE">אירלנד</territory>
 			<territory type="IL">ישראל</territory>
@@ -755,7 +1122,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="IR">איראן</territory>
 			<territory type="IS">איסלנד</territory>
 			<territory type="IT">איטליה</territory>
+<<<<<<< HEAD
 			<territory type="JE">ג׳רסי</territory>
+=======
+			<territory type="JE">ג'רסי</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="JM">ג׳מייקה</territory>
 			<territory type="JO">ירדן</territory>
 			<territory type="JP">יפן</territory>
@@ -765,8 +1136,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="KI">קיריבאטי</territory>
 			<territory type="KM">קומורוס</territory>
 			<territory type="KN">סנט קיטס ונוויס</territory>
+<<<<<<< HEAD
 			<territory type="KP">קוריאה הצפונית</territory>
 			<territory type="KR">קוריאה הדרומית</territory>
+=======
+			<territory type="KP">צפון קוריאה</territory>
+			<territory type="KR">דרום קוריאה</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="KW">כווית</territory>
 			<territory type="KY">איי קיימן</territory>
 			<territory type="KZ">קזחסטן</territory>
@@ -785,6 +1161,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MC">מונקו</territory>
 			<territory type="MD">מולדובה</territory>
 			<territory type="ME">מונטנגרו</territory>
+<<<<<<< HEAD
 			<territory type="MF" draft="contributed">סנט מרטין</territory>
 			<territory type="MG">מדגסקר</territory>
 			<territory type="MH">איי מרשל</territory>
@@ -795,13 +1172,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MN">מונגוליה</territory>
 			<territory type="MO">מקאו - מחוז מנהלי מיוחד של סין</territory>
 			<territory type="MO" alt="short">מקאו</territory>
+=======
+			<territory type="MF">סנט מרטין</territory>
+			<territory type="MG">מדגסקר</territory>
+			<territory type="MH">איי מרשל</territory>
+			<territory type="MK">מקדוניה</territory>
+			<territory type="ML">מאלי</territory>
+			<territory type="MM">מייאנמאר</territory>
+			<territory type="MN">מונגוליה</territory>
+			<territory type="MO">מקאו (מחוז מנהלי מיוחד של סין)</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="MP">איי מריאנה הצפוניים</territory>
 			<territory type="MQ">מרטיניק</territory>
 			<territory type="MR">מאוריטניה</territory>
 			<territory type="MS">מונסראט</territory>
 			<territory type="MT">מלטה</territory>
 			<territory type="MU">מאוריציוס</territory>
+<<<<<<< HEAD
 			<territory type="MV">האיים המלדיביים</territory>
+=======
+			<territory type="MV">מלדיבים</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="MW">מלאווי</territory>
 			<territory type="MX">מקסיקו</territory>
 			<territory type="MY">מלזיה</territory>
@@ -827,15 +1218,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="PK">פקיסטן</territory>
 			<territory type="PL">פולין</territory>
 			<territory type="PM">סנט פייר ומיקלון</territory>
+<<<<<<< HEAD
 			<territory type="PN">איי פיטקרן</territory>
 			<territory type="PR">פורטו ריקו</territory>
 			<territory type="PS">השטחים הפלסטיניים</territory>
 			<territory type="PS" alt="short">פלסטין</territory>
+=======
+			<territory type="PN">פיטקרן</territory>
+			<territory type="PR">פורטו ריקו</territory>
+			<territory type="PS">הרשות הפלסטינית</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="PT">פורטוגל</territory>
 			<territory type="PW">פאלאו</territory>
 			<territory type="PY">פרגוואי</territory>
 			<territory type="QA">קטאר</territory>
+<<<<<<< HEAD
 			<territory type="QO">אוקיאניה פרושה</territory>
+=======
+			<territory type="QU">האיחוד האירופי</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="RE">ראוניון</territory>
 			<territory type="RO">רומניה</territory>
 			<territory type="RS">סרביה</territory>
@@ -849,13 +1250,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="SG">סינגפור</territory>
 			<territory type="SH">סנט הלנה</territory>
 			<territory type="SI">סלובניה</territory>
+<<<<<<< HEAD
 			<territory type="SJ">סוולבארד ויאן מאיין</territory>
+=======
+			<territory type="SJ">סוולבארד וז׳אן מאיין</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="SK">סלובקיה</territory>
 			<territory type="SL">סיירה לאונה</territory>
 			<territory type="SM">סן מרינו</territory>
 			<territory type="SN">סנגל</territory>
 			<territory type="SO">סומליה</territory>
 			<territory type="SR">סורינם</territory>
+<<<<<<< HEAD
 			<territory type="SS">דרום סודן</territory>
 			<territory type="ST">סאו טומה ופרינסיפה</territory>
 			<territory type="SV">אל סלבדור</territory>
@@ -863,6 +1269,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="SY">סוריה</territory>
 			<territory type="SZ">סווזילנד</territory>
 			<territory type="TA" draft="contributed">טריסטן דה קונה</territory>
+=======
+			<territory type="ST">סאו טומה ופרינסיפה</territory>
+			<territory type="SV">אל סלבדור</territory>
+			<territory type="SY">סוריה</territory>
+			<territory type="SZ">סווזילנד</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="TC">איי טורקס וקאיקוס</territory>
 			<territory type="TD">צ׳אד</territory>
 			<territory type="TF">טריטוריות דרומיות של צרפת</territory>
@@ -870,8 +1282,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="TH">תאילנד</territory>
 			<territory type="TJ">טג׳יקיסטן</territory>
 			<territory type="TK">טוקלאו</territory>
+<<<<<<< HEAD
 			<territory type="TL">טימור לסטה</territory>
 			<territory type="TL" alt="variant" draft="contributed">מזרח טימור</territory>
+=======
+			<territory type="TL">מזרח טימור</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="TM">טורקמניסטן</territory>
 			<territory type="TN">תוניסיה</territory>
 			<territory type="TO">טונגה</territory>
@@ -882,9 +1298,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="TZ">טנזניה</territory>
 			<territory type="UA">אוקראינה</territory>
 			<territory type="UG">אוגנדה</territory>
+<<<<<<< HEAD
 			<territory type="UM">איים לחוף ארצות הברית</territory>
 			<territory type="US">ארצות הברית</territory>
 			<territory type="US" alt="short" draft="contributed">ארה״ב</territory>
+=======
+			<territory type="UM">איים קטנים שלחוף ארצות הברית</territory>
+			<territory type="US">ארצות הברית</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="UY">אורוגוואי</territory>
 			<territory type="UZ">אוזבקיסטן</territory>
 			<territory type="VA">הוותיקן</territory>
@@ -896,19 +1317,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="VU">ונואטו</territory>
 			<territory type="WF">איי ווליס ופוטונה</territory>
 			<territory type="WS">סמואה</territory>
+<<<<<<< HEAD
 			<territory type="XK" draft="contributed">קוסובו</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="YE">תימן</territory>
 			<territory type="YT">מאיוט</territory>
 			<territory type="ZA">דרום אפריקה</territory>
 			<territory type="ZM">זמביה</territory>
 			<territory type="ZW">זימבאבווה</territory>
+<<<<<<< HEAD
 			<territory type="ZZ">אזור לא ידוע</territory>
+=======
+			<territory type="ZZ">אזור לא ידוע או לא תקין</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</territories>
 		<variants>
 			<variant type="1901">כתיב גרמני מסורתי</variant>
 			<variant type="AREVELA">מזרח ארמנית</variant>
 			<variant type="AREVMDA">מערב ארמנית</variant>
 			<variant type="MONOTON">מונוטונית</variant>
+<<<<<<< HEAD
 			<variant type="PINYIN" draft="provisional">פיניין, שיטת כתב סיני בתעתיק לטיני</variant>
 			<variant type="POSIX">מחשב</variant>
 			<variant type="SCOTLAND" draft="contributed">אנגלית סקוטית סטנדרטית</variant>
@@ -1247,10 +1676,61 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</intervalFormats>
 				</dateTimeFormats>
 			</calendar>
+=======
+			<variant type="POSIX">מחשב</variant>
+		</variants>
+		<keys>
+			<key type="calendar">לוח שנה</key>
+			<key type="collation">מיון</key>
+			<key type="currency">מטבע</key>
+		</keys>
+		<types>
+			<type type="big5han" key="collation">מיון סינית מסורתית</type>
+			<type type="buddhist" key="calendar">לוח שנה בודהיסטי</type>
+			<type type="chinese" key="calendar">לוח שנה סיני</type>
+			<type type="direct" key="collation">מיון ישיר</type>
+			<type type="gb2312han" key="collation">מיון סינית מודרנית</type>
+			<type type="gregorian" key="calendar">לוח שנה גרגוריאני</type>
+			<type type="hebrew" key="calendar">לוח שנה עברי</type>
+			<type type="islamic" key="calendar">לוח שנה מוסלמי</type>
+			<type type="islamic-civil" key="calendar">לוח שנה מוסלמי-אזרחי</type>
+			<type type="japanese" key="calendar">לוח שנה יפני</type>
+			<type type="phonebook" key="collation">מיון ספר טלפונים</type>
+			<type type="pinyin" key="collation">מיון פיניין</type>
+			<type type="traditional" key="collation">מיון מסורתי</type>
+		</types>
+		<measurementSystemNames>
+			<measurementSystemName type="metric">מטרי</measurementSystemName>
+			<measurementSystemName type="US">ארה&quot;ב</measurementSystemName>
+		</measurementSystemNames>
+		<codePatterns>
+			<codePattern type="language">{0}</codePattern>
+			<codePattern type="script">{0}</codePattern>
+			<codePattern type="territory">{0}</codePattern>
+		</codePatterns>
+	</localeDisplayNames>
+	<layout>
+		<orientation characters="right-to-left"/>
+	</layout>
+	<characters>
+		<exemplarCharacters>[א-י כ ך ל מ ם נ ן ס ע פ ף צ ץ ק-ת]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[\u05BD \u05C4\u200E \u200F \u05B0-\u05B9 \u05BB \u05C2 \u05C1 \u05BC \u05BF ־ ׳ ״ a-z]</exemplarCharacters>
+		<exemplarCharacters type="currencySymbol">[a-z]</exemplarCharacters>
+	</characters>
+	<delimiters>
+		<quotationStart>“</quotationStart>
+		<quotationEnd>”</quotationEnd>
+		<alternateQuotationStart>&quot;</alternateQuotationStart>
+		<alternateQuotationEnd>&quot;</alternateQuotationEnd>
+	</delimiters>
+	<dates>
+		<calendars>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
 						<monthWidth type="abbreviated">
+<<<<<<< HEAD
 							<month type="1">ינו׳</month>
 							<month type="2">פבר׳</month>
 							<month type="3">מרץ</month>
@@ -1321,11 +1801,29 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="10" draft="contributed">10</month>
 							<month type="11" draft="contributed">11</month>
 							<month type="12" draft="contributed">12</month>
+=======
+							<month type="1">ינו</month>
+							<month type="2">פבר</month>
+							<month type="3">מרס</month>
+							<month type="4">אפר</month>
+							<month type="5">מאי</month>
+							<month type="6">יונ</month>
+							<month type="7">יול</month>
+							<month type="8">אוג</month>
+							<month type="9">ספט</month>
+							<month type="10">אוק</month>
+							<month type="11">נוב</month>
+							<month type="12">דצמ</month>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</monthWidth>
 						<monthWidth type="wide">
 							<month type="1">ינואר</month>
 							<month type="2">פברואר</month>
+<<<<<<< HEAD
 							<month type="3">מרץ</month>
+=======
+							<month type="3">מרס</month>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 							<month type="4">אפריל</month>
 							<month type="5">מאי</month>
 							<month type="6">יוני</month>
@@ -1341,6 +1839,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<days>
 					<dayContext type="format">
 						<dayWidth type="abbreviated">
+<<<<<<< HEAD
 							<day type="sun">יום א׳</day>
 							<day type="mon">יום ב׳</day>
 							<day type="tue">יום ג׳</day>
@@ -1367,6 +1866,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">ו׳</day>
 							<day type="sat">ש׳</day>
 						</dayWidth>
+=======
+							<day type="sun">יום א'</day>
+							<day type="mon">יום ב'</day>
+							<day type="tue">יום ג'</day>
+							<day type="wed">יום ד'</day>
+							<day type="thu">יום ה'</day>
+							<day type="fri">יום ו'</day>
+							<day type="sat">שבת</day>
+						</dayWidth>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<dayWidth type="wide">
 							<day type="sun">יום ראשון</day>
 							<day type="mon">יום שני</day>
@@ -1379,6 +1888,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</dayContext>
 					<dayContext type="stand-alone">
 						<dayWidth type="narrow">
+<<<<<<< HEAD
 							<day type="sun">א׳</day>
 							<day type="mon">ב׳</day>
 							<day type="tue">ג׳</day>
@@ -1404,6 +1914,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="thu">יום חמישי</day>
 							<day type="fri">יום שישי</day>
 							<day type="sat">יום שבת</day>
+=======
+							<day type="sun">א</day>
+							<day type="mon">ב</day>
+							<day type="tue">ג</day>
+							<day type="wed">ד</day>
+							<day type="thu">ה</day>
+							<day type="fri">ו</day>
+							<day type="sat">ש</day>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dayWidth>
 					</dayContext>
 				</days>
@@ -1415,12 +1934,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<quarter type="3">רבעון 3</quarter>
 							<quarter type="4">רבעון 4</quarter>
 						</quarterWidth>
+<<<<<<< HEAD
 						<quarterWidth type="narrow">
 							<quarter type="1">1</quarter>
 							<quarter type="2">2</quarter>
 							<quarter type="3">3</quarter>
 							<quarter type="4">4</quarter>
 						</quarterWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<quarterWidth type="wide">
 							<quarter type="1">רבעון 1</quarter>
 							<quarter type="2">רבעון 2</quarter>
@@ -1429,6 +1951,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</quarterWidth>
 					</quarterContext>
 					<quarterContext type="stand-alone">
+<<<<<<< HEAD
 						<quarterWidth type="abbreviated">
 							<quarter type="1">רבעון 1</quarter>
 							<quarter type="2">רבעון 2</quarter>
@@ -1457,6 +1980,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</dayPeriodWidth>
 					</dayPeriodContext>
 				</dayPeriods>
+=======
+						<quarterWidth type="narrow">
+							<quarter type="1">1</quarter>
+							<quarter type="2">2</quarter>
+							<quarter type="3">3</quarter>
+							<quarter type="4">4</quarter>
+						</quarterWidth>
+					</quarterContext>
+				</quarters>
+				<am>לפנה&quot;צ</am>
+				<pm>אחה&quot;צ</pm>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<eras>
 					<eraNames>
 						<era type="0">לפני הספירה</era>
@@ -1464,9 +1999,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</eraNames>
 					<eraAbbr>
 						<era type="0">לפנה״ס</era>
+<<<<<<< HEAD
 						<era type="0" alt="variant" draft="contributed">BCE</era>
 						<era type="1">לסה״נ</era>
 						<era type="1" alt="variant" draft="contributed">CE</era>
+=======
+						<era type="1">לסה״נ</era>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</eraAbbr>
 				</eras>
 				<dateFormats>
@@ -1482,7 +2021,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</dateFormatLength>
 					<dateFormatLength type="medium">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>d בMMM y</pattern>
+=======
+							<pattern>dd/MM/yyyy</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
@@ -1516,26 +2059,43 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<dateTimeFormats>
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
+<<<<<<< HEAD
 							<pattern draft="contributed">{1} בשעה {0}</pattern>
+=======
+							<pattern>{1} {0}</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<dateTimeFormatLength type="long">
 						<dateTimeFormat>
+<<<<<<< HEAD
 							<pattern draft="contributed">{1} בשעה {0}</pattern>
+=======
+							<pattern>{1} {0}</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<dateTimeFormatLength type="medium">
 						<dateTimeFormat>
+<<<<<<< HEAD
 							<pattern>{1}, {0}</pattern>
+=======
+							<pattern>{1} {0}</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<dateTimeFormatLength type="short">
 						<dateTimeFormat>
+<<<<<<< HEAD
 							<pattern>{1}, {0}</pattern>
+=======
+							<pattern>{1} {0}</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<availableFormats>
 						<dateFormatItem id="d">d</dateFormatItem>
+<<<<<<< HEAD
 						<dateFormatItem id="Ed">E ה-d</dateFormatItem>
 						<dateFormatItem id="Ehm" draft="contributed">E h:mm a</dateFormatItem>
 						<dateFormatItem id="EHm" draft="contributed">E H:mm</dateFormatItem>
@@ -1672,10 +2232,171 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
+=======
+						<dateFormatItem id="Ed">E d</dateFormatItem>
+						<dateFormatItem id="H">H</dateFormatItem>
+						<dateFormatItem id="HHmm">HH:mm</dateFormatItem>
+						<dateFormatItem id="HHmmss">HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="Hm">H:mm</dateFormatItem>
+						<dateFormatItem id="M">L</dateFormatItem>
+						<dateFormatItem id="Md">d/M</dateFormatItem>
+						<dateFormatItem id="MEd">E, M-d</dateFormatItem>
+						<dateFormatItem id="MMdd">dd/MM</dateFormatItem>
+						<dateFormatItem id="MMM">LLL</dateFormatItem>
+						<dateFormatItem id="MMMd">MMM d</dateFormatItem>
+						<dateFormatItem id="MMMEd">E d MMM</dateFormatItem>
+						<dateFormatItem id="MMMMd">d בMMMM</dateFormatItem>
+						<dateFormatItem id="MMMMEd">E MMMM d</dateFormatItem>
+						<dateFormatItem id="mmss">mm:ss</dateFormatItem>
+						<dateFormatItem id="ms">mm:ss</dateFormatItem>
+						<dateFormatItem id="y">y</dateFormatItem>
+						<dateFormatItem id="yM">M.yyyy</dateFormatItem>
+						<dateFormatItem id="yMEd">EEE, d.M.yyyy</dateFormatItem>
+						<dateFormatItem id="yMMM">y MMM</dateFormatItem>
+						<dateFormatItem id="yMMMEd">EEE, y MMM d</dateFormatItem>
+						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
+						<dateFormatItem id="yQ">yyyy Q</dateFormatItem>
+						<dateFormatItem id="yQQQ">y QQQ</dateFormatItem>
+						<dateFormatItem id="yyMM">MM/yy</dateFormatItem>
+						<dateFormatItem id="yyMMM">MMM yy</dateFormatItem>
+						<dateFormatItem id="yyQ">Q yy</dateFormatItem>
+						<dateFormatItem id="yyyy">y</dateFormatItem>
+						<dateFormatItem id="yyyyMM">MM/yyyy</dateFormatItem>
+						<dateFormatItem id="yyyyMMMM">MMMM y</dateFormatItem>
+					</availableFormats>
+					<intervalFormats>
+						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">d-d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="h">
+							<greatestDifference id="a">HH-HH</greatestDifference>
+							<greatestDifference id="h">HH–HH</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="a">HH:mm-HH:mm</greatestDifference>
+							<greatestDifference id="h">HH:mm–HH:mm</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="a">HH:mm-HH:mm v</greatestDifference>
+							<greatestDifference id="h">HH:mm–HH:mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="a">HH-HH v</greatestDifference>
+							<greatestDifference id="h">HH–HH v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">M-M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">dd/MM - dd/MM</greatestDifference>
+							<greatestDifference id="M">dd/MM - dd/MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">EEEE dd/MM - EEEE dd/MM</greatestDifference>
+							<greatestDifference id="M">EEEE dd/MM - EEEE dd/MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">MMM-MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d">d-d MMM</greatestDifference>
+							<greatestDifference id="M">d MMM - d MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d">EEEE d MMM - EEEE d MMM</greatestDifference>
+							<greatestDifference id="M">EEEE d MMM - EEEE d MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMM">
+							<greatestDifference id="M">LLLL-LLLL</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">y-y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">MM/yy - MM/yy</greatestDifference>
+							<greatestDifference id="y">MM/yy - MM/yy</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">dd/MM/yy - dd/MM/yy</greatestDifference>
+							<greatestDifference id="M">dd/MM/yy - dd/MM/yy</greatestDifference>
+							<greatestDifference id="y">dd/MM/yy - dd/MM/yy</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">EEEE dd/MM/yy - EEEE dd/MM/yy</greatestDifference>
+							<greatestDifference id="M">EEEE dd/MM/yy - EEEE dd/MM/yy</greatestDifference>
+							<greatestDifference id="y">EEEE dd/MM/yy - EEEE dd/MM/yy</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">MMM-MMM y</greatestDifference>
+							<greatestDifference id="y">MMM y - MMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d">d-d MMM y</greatestDifference>
+							<greatestDifference id="M">d MMM - d MMM y</greatestDifference>
+							<greatestDifference id="y">d MMM y - d MMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d">EEEE d MMM - EEEE d MMM y</greatestDifference>
+							<greatestDifference id="M">EEEE d MMM - EEEE d MMM y</greatestDifference>
+							<greatestDifference id="y">EEEE d MMM y - EEEE d MMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMM">
+							<greatestDifference id="M">yyyy-MM – MM</greatestDifference>
+							<greatestDifference id="y">yyyy-MM – yyyy-MM</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+				<fields>
+					<field type="era">
+						<displayName>תקופה</displayName>
+					</field>
+					<field type="year">
+						<displayName>שנה</displayName>
+					</field>
+					<field type="month">
+						<displayName>חודש</displayName>
+					</field>
+					<field type="week">
+						<displayName>שבוע</displayName>
+					</field>
+					<field type="day">
+						<displayName>יום</displayName>
+						<relative type="-3">לפני שלושה ימים</relative>
+						<relative type="-2">שלשום</relative>
+						<relative type="-1">אתמול</relative>
+						<relative type="0">היום</relative>
+						<relative type="1">מחר</relative>
+						<relative type="2">מחרתיים</relative>
+						<relative type="3">בעוד שלושה ימים</relative>
+					</field>
+					<field type="weekday">
+						<displayName>יום בשבוע</displayName>
+					</field>
+					<field type="dayperiod">
+						<displayName>Dayperiod</displayName>
+					</field>
+					<field type="hour">
+						<displayName>שעה</displayName>
+					</field>
+					<field type="minute">
+						<displayName>דקה</displayName>
+					</field>
+					<field type="second">
+						<displayName>שנייה</displayName>
+					</field>
+					<field type="zone">
+						<displayName>אזור</displayName>
+					</field>
+				</fields>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</calendar>
 			<calendar type="hebrew">
 				<months>
 					<monthContext type="format">
+<<<<<<< HEAD
 						<monthWidth type="abbreviated">
 							<month type="1">תשרי</month>
 							<month type="2">חשון</month>
@@ -1708,15 +2429,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="12" draft="contributed">אב</month>
 							<month type="13" draft="contributed">אל</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<monthWidth type="wide">
 							<month type="1">תשרי</month>
 							<month type="2">חשון</month>
 							<month type="3">כסלו</month>
 							<month type="4">טבת</month>
 							<month type="5">שבט</month>
+<<<<<<< HEAD
 							<month type="6">אדר א׳</month>
 							<month type="7">אדר</month>
 							<month type="7" yeartype="leap">אדר ב׳</month>
+=======
+							<month type="6">אדר א'</month>
+							<month type="7">אדר</month>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 							<month type="8">ניסן</month>
 							<month type="9">אייר</month>
 							<month type="10">סיון</month>
@@ -1726,6 +2454,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</monthWidth>
 					</monthContext>
 					<monthContext type="stand-alone">
+<<<<<<< HEAD
 						<monthWidth type="abbreviated">
 							<month type="1">תשרי</month>
 							<month type="2">חשוון</month>
@@ -1759,14 +2488,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="13" draft="contributed">אל</month>
 						</monthWidth>
 						<monthWidth type="wide">
+=======
+						<monthWidth type="narrow">
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 							<month type="1">תשרי</month>
 							<month type="2">חשון</month>
 							<month type="3">כסלו</month>
 							<month type="4">טבת</month>
 							<month type="5">שבט</month>
+<<<<<<< HEAD
 							<month type="6">אדר א׳</month>
 							<month type="7">אדר</month>
 							<month type="7" yeartype="leap">אדר ב׳</month>
+=======
+							<month type="6">אדר א'</month>
+							<month type="7">אדר</month>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 							<month type="8">ניסן</month>
 							<month type="9">אייר</month>
 							<month type="10">סיון</month>
@@ -1776,9 +2513,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</monthWidth>
 					</monthContext>
 				</months>
+<<<<<<< HEAD
 				<eras>
 					<eraAbbr>
 						<era type="0">לבה״ע</era>
+=======
+				<am>לפנה&quot;צ</am>
+				<pm>אחה&quot;צ</pm>
+				<eras>
+					<eraAbbr>
+						<era type="0">לבה&quot;ע</era>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</eraAbbr>
 				</eras>
 				<dateFormats>
@@ -1794,17 +2539,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</dateFormatLength>
 					<dateFormatLength type="medium">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern numbers="hebr">d בMMMM y</pattern>
+=======
+							<pattern numbers="hebr">dd/MM/yyyy</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern numbers="hebr">d בMMMM y</pattern>
+=======
+							<pattern numbers="hebr">dd/MM/yy</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
 				<dateTimeFormats>
 					<availableFormats>
+<<<<<<< HEAD
 						<dateFormatItem id="Ed" draft="provisional">E ה-d</dateFormatItem>
 						<dateFormatItem id="Gy">y G</dateFormatItem>
 						<dateFormatItem id="GyMMM">MMMM y G</dateFormatItem>
@@ -1903,11 +2657,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y" draft="provisional">MMMM y – MMMM y</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
+=======
+						<dateFormatItem id="MMMMEd">E, d בMMMM</dateFormatItem>
+					</availableFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				</dateTimeFormats>
 			</calendar>
 			<calendar type="islamic">
 				<months>
 					<monthContext type="format">
+<<<<<<< HEAD
 						<monthWidth type="abbreviated">
 							<month type="1" draft="contributed">מוחרם</month>
 							<month type="2" draft="contributed">צפר</month>
@@ -1951,6 +2710,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="10" draft="contributed">10</month>
 							<month type="11" draft="contributed">11</month>
 							<month type="12" draft="contributed">12</month>
+=======
+						<monthWidth type="wide">
+							<month type="1">מוחרם</month>
+							<month type="2">ספר</month>
+							<month type="3">רביע אל-אוואל</month>
+							<month type="4">רביע אל-תני</month>
+							<month type="5">ג׳ומדה אל-אוואל</month>
+							<month type="6">ג׳ומדה אל-תני</month>
+							<month type="7">רג׳אב</month>
+							<month type="8">שעבאן</month>
+							<month type="9">ראמדן</month>
+							<month type="10">שוואל</month>
+							<month type="11">זו אל-QI'DAH</month>
+							<month type="12">זו אל-חיג׳ה</month>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</monthWidth>
 					</monthContext>
 				</months>
@@ -1959,6 +2733,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<era type="0">שנת היג׳רה</era>
 					</eraAbbr>
 				</eras>
+<<<<<<< HEAD
 				<dateTimeFormats>
 					<availableFormats>
 						<dateFormatItem id="d">d</dateFormatItem>
@@ -1988,17 +2763,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<dateFormatItem id="yyyyQQQQ" draft="contributed">QQQQ y</dateFormatItem>
 					</availableFormats>
 				</dateTimeFormats>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</calendar>
 			<calendar type="japanese">
 				<eras>
 					<eraAbbr>
 						<era type="0">טאיקה</era>
+<<<<<<< HEAD
 						<era type="24">נינג׳ו</era>
+=======
+						<era type="24">נינג'ו</era>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<era type="73">שוטוקו</era>
 					</eraAbbr>
 				</eras>
 			</calendar>
 		</calendars>
+<<<<<<< HEAD
 		<fields>
 			<field type="era">
 				<displayName>תקופה</displayName>
@@ -2205,10 +2987,50 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Antarctica/Rothera">
 				<exemplarCity draft="contributed">רות׳רה</exemplarCity>
+=======
+		<timeZoneNames>
+			<hourFormat>+HH:mm;-HH:mm</hourFormat>
+			<gmtFormat>GMT{0}</gmtFormat>
+			<regionFormat>שעון {0}</regionFormat>
+			<fallbackFormat>{1} ({0})</fallbackFormat>
+			<zone type="Etc/Unknown">
+				<exemplarCity>לא ידוע</exemplarCity>
+			</zone>
+			<zone type="Europe/Andorra">
+				<exemplarCity>אנדורה</exemplarCity>
+			</zone>
+			<zone type="Asia/Dubai">
+				<exemplarCity>דובאי</exemplarCity>
+			</zone>
+			<zone type="Asia/Kabul">
+				<exemplarCity>קאבול</exemplarCity>
+			</zone>
+			<zone type="America/Antigua">
+				<exemplarCity>אנטיגואה</exemplarCity>
+			</zone>
+			<zone type="America/Anguilla">
+				<exemplarCity>אנגווילה</exemplarCity>
+			</zone>
+			<zone type="Europe/Tirane">
+				<exemplarCity>טירנה</exemplarCity>
+			</zone>
+			<zone type="Asia/Yerevan">
+				<exemplarCity>ירבאן</exemplarCity>
+			</zone>
+			<zone type="America/Curacao">
+				<exemplarCity>קורסאו</exemplarCity>
+			</zone>
+			<zone type="Africa/Luanda">
+				<exemplarCity>לואנדה</exemplarCity>
+			</zone>
+			<zone type="Antarctica/Rothera">
+				<exemplarCity>רות'רה</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Antarctica/Palmer">
 				<exemplarCity>אמריקה/פאלמר</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Antarctica/Syowa">
 				<exemplarCity draft="contributed">שויה</exemplarCity>
 			</zone>
@@ -2232,6 +3054,31 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Argentina/Rio_Gallegos">
 				<exemplarCity draft="contributed">ריו גאייגוס</exemplarCity>
+=======
+			<zone type="Antarctica/South_Pole">
+				<exemplarCity>הקוטב הדרומי</exemplarCity>
+			</zone>
+			<zone type="Antarctica/Syowa">
+				<exemplarCity>שויה</exemplarCity>
+			</zone>
+			<zone type="Antarctica/Mawson">
+				<exemplarCity>מאוסון</exemplarCity>
+			</zone>
+			<zone type="Antarctica/Davis">
+				<exemplarCity>דייויס</exemplarCity>
+			</zone>
+			<zone type="Antarctica/Vostok">
+				<exemplarCity>ווסטוק</exemplarCity>
+			</zone>
+			<zone type="Antarctica/Casey">
+				<exemplarCity>קאסיי</exemplarCity>
+			</zone>
+			<zone type="Antarctica/DumontDUrville">
+				<exemplarCity>דומון ד'אורווי</exemplarCity>
+			</zone>
+			<zone type="Antarctica/McMurdo">
+				<exemplarCity>מקמרדו</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Mendoza">
 				<exemplarCity>אמריקה/מנדוזה</exemplarCity>
@@ -2239,6 +3086,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Argentina/San_Juan">
 				<exemplarCity>אמריקה/ארגנטינה/סאן-חואן</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Argentina/Ushuaia">
 				<exemplarCity draft="contributed">אושוואיה</exemplarCity>
 			</zone>
@@ -2260,6 +3108,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Argentina/Tucuman">
 				<exemplarCity draft="contributed">טוקומן</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Cordoba">
 				<exemplarCity>אמריקה/קורדובה</exemplarCity>
 			</zone>
@@ -2267,6 +3117,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>בואנוס איירס</exemplarCity>
 			</zone>
 			<zone type="Pacific/Pago_Pago">
+<<<<<<< HEAD
 				<exemplarCity draft="contributed">פאגו פאגו</exemplarCity>
 			</zone>
 			<zone type="Europe/Vienna">
@@ -2277,6 +3128,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Australia/Eucla">
 				<exemplarCity draft="contributed">יוקלה</exemplarCity>
+=======
+				<exemplarCity>פאגו פאגו</exemplarCity>
+			</zone>
+			<zone type="Europe/Vienna">
+				<exemplarCity>וינה</exemplarCity>
+			</zone>
+			<zone type="Australia/Perth">
+				<exemplarCity>אוסטרליה/פרת'</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Australia/Darwin">
 				<exemplarCity>אוסטרליה/דרווין</exemplarCity>
@@ -2287,24 +3147,31 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Australia/Broken_Hill">
 				<exemplarCity>אוסטרליה/ברוקן-היל</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Australia/Currie">
 				<exemplarCity draft="contributed">קרי</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Australia/Melbourne">
 				<exemplarCity>אוסטרליה/מלבורן</exemplarCity>
 			</zone>
 			<zone type="Australia/Hobart">
 				<exemplarCity>אוסטרליה/הוברט</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Australia/Lindeman">
 				<exemplarCity draft="contributed">לינדמן</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Australia/Sydney">
 				<exemplarCity>אוסטרליה/סידני</exemplarCity>
 			</zone>
 			<zone type="Australia/Brisbane">
 				<exemplarCity>אוסטרליה/בריסבן</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Antarctica/Macquarie">
 				<exemplarCity draft="contributed">מקרי</exemplarCity>
 			</zone>
@@ -2391,6 +3258,70 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Araguaina">
 				<exemplarCity draft="contributed">אראגואינה</exemplarCity>
+=======
+			<zone type="America/Aruba">
+				<exemplarCity>ארובה</exemplarCity>
+			</zone>
+			<zone type="Asia/Baku">
+				<exemplarCity>באקו</exemplarCity>
+			</zone>
+			<zone type="America/Barbados">
+				<exemplarCity>ברבדוס</exemplarCity>
+			</zone>
+			<zone type="Asia/Dhaka">
+				<exemplarCity>דאקה</exemplarCity>
+			</zone>
+			<zone type="Europe/Brussels">
+				<exemplarCity>בריסל</exemplarCity>
+			</zone>
+			<zone type="Africa/Ouagadougou">
+				<exemplarCity>ואגאדוגו</exemplarCity>
+			</zone>
+			<zone type="Europe/Sofia">
+				<exemplarCity>סופיה</exemplarCity>
+			</zone>
+			<zone type="Asia/Bahrain">
+				<exemplarCity>בהרין</exemplarCity>
+			</zone>
+			<zone type="Africa/Bujumbura">
+				<exemplarCity>בוג'ומבורה</exemplarCity>
+			</zone>
+			<zone type="Africa/Porto-Novo">
+				<exemplarCity>פורטו-נובו</exemplarCity>
+			</zone>
+			<zone type="Atlantic/Bermuda">
+				<exemplarCity>ברמודה</exemplarCity>
+			</zone>
+			<zone type="Asia/Brunei">
+				<exemplarCity>ברוניי</exemplarCity>
+			</zone>
+			<zone type="America/La_Paz">
+				<exemplarCity>לה פאז</exemplarCity>
+			</zone>
+			<zone type="America/Rio_Branco">
+				<exemplarCity>ריאו ברנצ'ו</exemplarCity>
+			</zone>
+			<zone type="America/Porto_Velho">
+				<exemplarCity>פורטו וולהו</exemplarCity>
+			</zone>
+			<zone type="America/Boa_Vista">
+				<exemplarCity>בואה ויסטה</exemplarCity>
+			</zone>
+			<zone type="America/Manaus">
+				<exemplarCity>מנאוס</exemplarCity>
+			</zone>
+			<zone type="America/Cuiaba">
+				<exemplarCity>קויאבה</exemplarCity>
+			</zone>
+			<zone type="America/Campo_Grande">
+				<exemplarCity>קמפו גרנדה</exemplarCity>
+			</zone>
+			<zone type="America/Belem">
+				<exemplarCity>בלם</exemplarCity>
+			</zone>
+			<zone type="America/Araguaina">
+				<exemplarCity>אראגואינה</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Sao_Paulo">
 				<exemplarCity>אמריקה/סאן-פאולו</exemplarCity>
@@ -2399,6 +3330,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>אמריקה/בהיאה</exemplarCity>
 			</zone>
 			<zone type="America/Fortaleza">
+<<<<<<< HEAD
 				<exemplarCity draft="contributed">פורטאלזה</exemplarCity>
 			</zone>
 			<zone type="America/Maceio">
@@ -2433,6 +3365,33 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Inuvik">
 				<exemplarCity draft="contributed">אינוויק</exemplarCity>
+=======
+				<exemplarCity>פורטאלזה</exemplarCity>
+			</zone>
+			<zone type="America/Maceio">
+				<exemplarCity>מאסיו</exemplarCity>
+			</zone>
+			<zone type="America/Recife">
+				<exemplarCity>רסיפה</exemplarCity>
+			</zone>
+			<zone type="America/Noronha">
+				<exemplarCity>נורונהה</exemplarCity>
+			</zone>
+			<zone type="America/Nassau">
+				<exemplarCity>נסאו</exemplarCity>
+			</zone>
+			<zone type="Asia/Thimphu">
+				<exemplarCity>טימפו</exemplarCity>
+			</zone>
+			<zone type="Africa/Gaborone">
+				<exemplarCity>גאבורונה</exemplarCity>
+			</zone>
+			<zone type="Europe/Minsk">
+				<exemplarCity>מינסק</exemplarCity>
+			</zone>
+			<zone type="America/Belize">
+				<exemplarCity>בליז</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Vancouver">
 				<exemplarCity>אמריקה/ונקובר</exemplarCity>
@@ -2440,6 +3399,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Dawson_Creek">
 				<exemplarCity>אמריקה/דוסון-קריק</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Creston">
 				<exemplarCity draft="contributed">קרסטון</exemplarCity>
 			</zone>
@@ -2490,10 +3450,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Moncton">
 				<exemplarCity draft="contributed">מונקטון</exemplarCity>
+=======
+			<zone type="America/Edmonton">
+				<exemplarCity>אמריקה/אדמנטון</exemplarCity>
+			</zone>
+			<zone type="America/Winnipeg">
+				<exemplarCity>אמריקה/וויניפוג</exemplarCity>
+			</zone>
+			<zone type="America/Toronto">
+				<exemplarCity>אמריקה/טורנטו</exemplarCity>
+			</zone>
+			<zone type="America/Montreal">
+				<exemplarCity>אמריקה/מונטריאול</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Halifax">
 				<exemplarCity>אמריקה/הליפקס</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Goose_Bay">
 				<exemplarCity draft="contributed">גוס ביי</exemplarCity>
 			</zone>
@@ -2532,11 +3506,40 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Pacific/Easter">
 				<exemplarCity draft="contributed">איי הפסחא</exemplarCity>
+=======
+			<zone type="Indian/Cocos">
+				<exemplarCity>קוקוס</exemplarCity>
+			</zone>
+			<zone type="Africa/Kinshasa">
+				<exemplarCity>קינשסה</exemplarCity>
+			</zone>
+			<zone type="Africa/Lubumbashi">
+				<exemplarCity>לובומבאשי</exemplarCity>
+			</zone>
+			<zone type="Africa/Bangui">
+				<exemplarCity>בנגואי</exemplarCity>
+			</zone>
+			<zone type="Africa/Brazzaville">
+				<exemplarCity>בראזאווייל</exemplarCity>
+			</zone>
+			<zone type="Europe/Zurich">
+				<exemplarCity>ציריך</exemplarCity>
+			</zone>
+			<zone type="Africa/Abidjan">
+				<exemplarCity>אבידג'ן</exemplarCity>
+			</zone>
+			<zone type="Pacific/Rarotonga">
+				<exemplarCity>רארוטונגה</exemplarCity>
+			</zone>
+			<zone type="Pacific/Easter">
+				<exemplarCity>איי הפסחא</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Santiago">
 				<exemplarCity>אמריקה/סנטיאגו</exemplarCity>
 			</zone>
 			<zone type="Africa/Douala">
+<<<<<<< HEAD
 				<exemplarCity draft="contributed">דואלה</exemplarCity>
 			</zone>
 			<zone type="Asia/Kashgar">
@@ -2547,10 +3550,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Asia/Chongqing">
 				<exemplarCity draft="contributed">צ׳ונגקינג</exemplarCity>
+=======
+				<exemplarCity>דואלה</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Shanghai">
 				<exemplarCity>אסיה/שנחאי</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Harbin">
 				<exemplarCity draft="contributed">חרבין</exemplarCity>
 			</zone>
@@ -2598,11 +3605,49 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Africa/Algiers">
 				<exemplarCity draft="contributed">אלג׳יר</exemplarCity>
+=======
+			<zone type="America/Bogota">
+				<exemplarCity>בוגוטה</exemplarCity>
+			</zone>
+			<zone type="America/Costa_Rica">
+				<exemplarCity>קוסטה ריקה</exemplarCity>
+			</zone>
+			<zone type="America/Havana">
+				<exemplarCity>הוואנה</exemplarCity>
+			</zone>
+			<zone type="Atlantic/Cape_Verde">
+				<exemplarCity>קייפ ורדה</exemplarCity>
+			</zone>
+			<zone type="Indian/Christmas">
+				<exemplarCity>איי חג המולד</exemplarCity>
+			</zone>
+			<zone type="Asia/Nicosia">
+				<exemplarCity>ניקוסיה</exemplarCity>
+			</zone>
+			<zone type="Europe/Berlin">
+				<exemplarCity>ברלין</exemplarCity>
+			</zone>
+			<zone type="Africa/Djibouti">
+				<exemplarCity>ג'יבאוטי</exemplarCity>
+			</zone>
+			<zone type="Europe/Copenhagen">
+				<exemplarCity>קופנהגן</exemplarCity>
+			</zone>
+			<zone type="America/Dominica">
+				<exemplarCity>דומיניקה</exemplarCity>
+			</zone>
+			<zone type="America/Santo_Domingo">
+				<exemplarCity>סנטו דומינגו</exemplarCity>
+			</zone>
+			<zone type="Africa/Algiers">
+				<exemplarCity>אלג'יר</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Pacific/Galapagos">
 				<exemplarCity>פסיפי/גלאפגוס</exemplarCity>
 			</zone>
 			<zone type="America/Guayaquil">
+<<<<<<< HEAD
 				<exemplarCity draft="contributed">גואיאקיל</exemplarCity>
 			</zone>
 			<zone type="Europe/Tallinn">
@@ -2616,17 +3661,37 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Africa/Asmera">
 				<exemplarCity draft="contributed">אסמרה</exemplarCity>
+=======
+				<exemplarCity>גוויקיל</exemplarCity>
+			</zone>
+			<zone type="Europe/Tallinn">
+				<exemplarCity>טאלין</exemplarCity>
+			</zone>
+			<zone type="Africa/Cairo">
+				<exemplarCity>קהיר</exemplarCity>
+			</zone>
+			<zone type="Africa/El_Aaiun">
+				<exemplarCity>אל עיון</exemplarCity>
+			</zone>
+			<zone type="Africa/Asmera">
+				<exemplarCity>אסמרה</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Atlantic/Canary">
 				<exemplarCity>אטלנטי/קנרי</exemplarCity>
 			</zone>
 			<zone type="Africa/Ceuta">
+<<<<<<< HEAD
 				<exemplarCity draft="contributed">סאוטה</exemplarCity>
+=======
+				<exemplarCity>סאוטה</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Madrid">
 				<exemplarCity>אירופה/מדריד</exemplarCity>
 			</zone>
 			<zone type="Africa/Addis_Ababa">
+<<<<<<< HEAD
 				<exemplarCity draft="contributed">אדיס אבבה</exemplarCity>
 			</zone>
 			<zone type="Europe/Helsinki">
@@ -2643,11 +3708,30 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Pacific/Ponape">
 				<exemplarCity draft="contributed">פונפה</exemplarCity>
+=======
+				<exemplarCity>אדיס אבבה</exemplarCity>
+			</zone>
+			<zone type="Europe/Helsinki">
+				<exemplarCity>הלסינקי</exemplarCity>
+			</zone>
+			<zone type="Pacific/Fiji">
+				<exemplarCity>פיג'י</exemplarCity>
+			</zone>
+			<zone type="Atlantic/Stanley">
+				<exemplarCity>סטנלי</exemplarCity>
+			</zone>
+			<zone type="Pacific/Truk">
+				<exemplarCity>טרוק</exemplarCity>
+			</zone>
+			<zone type="Pacific/Ponape">
+				<exemplarCity>פונפה</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Pacific/Kosrae">
 				<exemplarCity>קוסרה</exemplarCity>
 			</zone>
 			<zone type="Atlantic/Faeroe">
+<<<<<<< HEAD
 				<exemplarCity draft="contributed">פארו</exemplarCity>
 			</zone>
 			<zone type="Europe/Paris">
@@ -2754,10 +3838,101 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<daylight draft="contributed">שעון קיץ אירי</daylight>
 				</long>
 				<exemplarCity draft="contributed">דבלין</exemplarCity>
+=======
+				<exemplarCity>פארו</exemplarCity>
+			</zone>
+			<zone type="Europe/Paris">
+				<exemplarCity>פריס</exemplarCity>
+			</zone>
+			<zone type="Africa/Libreville">
+				<exemplarCity>ליברווייל</exemplarCity>
+			</zone>
+			<zone type="Europe/London">
+				<exemplarCity>אירופה/לונדון</exemplarCity>
+			</zone>
+			<zone type="America/Grenada">
+				<exemplarCity>גרנדה</exemplarCity>
+			</zone>
+			<zone type="Asia/Tbilisi">
+				<exemplarCity>טביליסי</exemplarCity>
+			</zone>
+			<zone type="America/Cayenne">
+				<exemplarCity>קאיין</exemplarCity>
+			</zone>
+			<zone type="Africa/Accra">
+				<exemplarCity>אקרה</exemplarCity>
+			</zone>
+			<zone type="Europe/Gibraltar">
+				<exemplarCity>גיברלטר</exemplarCity>
+			</zone>
+			<zone type="America/Thule">
+				<exemplarCity>טולה</exemplarCity>
+			</zone>
+			<zone type="America/Godthab">
+				<exemplarCity>גודת'אב</exemplarCity>
+			</zone>
+			<zone type="America/Scoresbysund">
+				<exemplarCity>סקורסביסונד</exemplarCity>
+			</zone>
+			<zone type="America/Danmarkshavn">
+				<exemplarCity>דנמרקסהוון</exemplarCity>
+			</zone>
+			<zone type="Africa/Banjul">
+				<exemplarCity>באנג'ול</exemplarCity>
+			</zone>
+			<zone type="Africa/Conakry">
+				<exemplarCity>קונאקרי</exemplarCity>
+			</zone>
+			<zone type="America/Guadeloupe">
+				<exemplarCity>גוואדלופ</exemplarCity>
+			</zone>
+			<zone type="Africa/Malabo">
+				<exemplarCity>מאלאבו</exemplarCity>
+			</zone>
+			<zone type="Europe/Athens">
+				<exemplarCity>אתונה</exemplarCity>
+			</zone>
+			<zone type="Atlantic/South_Georgia">
+				<exemplarCity>איי ג'ורג'יה הדרומית</exemplarCity>
+			</zone>
+			<zone type="America/Guatemala">
+				<exemplarCity>גוואטמלה</exemplarCity>
+			</zone>
+			<zone type="Pacific/Guam">
+				<exemplarCity>גואם</exemplarCity>
+			</zone>
+			<zone type="Africa/Bissau">
+				<exemplarCity>ביסאו</exemplarCity>
+			</zone>
+			<zone type="America/Guyana">
+				<exemplarCity>גוינה</exemplarCity>
+			</zone>
+			<zone type="Asia/Hong_Kong">
+				<exemplarCity>הונג קונג</exemplarCity>
+			</zone>
+			<zone type="America/Port-au-Prince">
+				<exemplarCity>פורט או פרינס</exemplarCity>
+			</zone>
+			<zone type="Europe/Budapest">
+				<exemplarCity>בודפשט</exemplarCity>
+			</zone>
+			<zone type="Asia/Jakarta">
+				<exemplarCity>אסיה/ג'קרטה</exemplarCity>
+			</zone>
+			<zone type="Asia/Makassar">
+				<exemplarCity>מאקאסאר</exemplarCity>
+			</zone>
+			<zone type="Asia/Jayapura">
+				<exemplarCity>ג'איאפורה</exemplarCity>
+			</zone>
+			<zone type="Europe/Dublin">
+				<exemplarCity>דבלין</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Jerusalem">
 				<exemplarCity>ירושלים</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Isle_of_Man">
 				<exemplarCity draft="contributed">האי מאן</exemplarCity>
 			</zone>
@@ -2829,11 +4004,76 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Asia/Aqtau">
 				<exemplarCity draft="contributed">אקטאו</exemplarCity>
+=======
+			<zone type="Indian/Chagos">
+				<exemplarCity>איי צ'גוס</exemplarCity>
+			</zone>
+			<zone type="Asia/Baghdad">
+				<exemplarCity>בגדד</exemplarCity>
+			</zone>
+			<zone type="Asia/Tehran">
+				<exemplarCity>טהרן</exemplarCity>
+			</zone>
+			<zone type="Atlantic/Reykjavik">
+				<exemplarCity>רייקיאוויק</exemplarCity>
+			</zone>
+			<zone type="Europe/Rome">
+				<exemplarCity>רומא</exemplarCity>
+			</zone>
+			<zone type="America/Jamaica">
+				<exemplarCity>ג'מייקה</exemplarCity>
+			</zone>
+			<zone type="Asia/Amman">
+				<exemplarCity>רבת עמון</exemplarCity>
+			</zone>
+			<zone type="Asia/Tokyo">
+				<exemplarCity>טוקיו</exemplarCity>
+			</zone>
+			<zone type="Africa/Nairobi">
+				<exemplarCity>ניירובי</exemplarCity>
+			</zone>
+			<zone type="Asia/Bishkek">
+				<exemplarCity>בישקק</exemplarCity>
+			</zone>
+			<zone type="Asia/Phnom_Penh">
+				<exemplarCity>פנום פן</exemplarCity>
+			</zone>
+			<zone type="Pacific/Enderbury">
+				<exemplarCity>אנדרבורי</exemplarCity>
+			</zone>
+			<zone type="Pacific/Kiritimati">
+				<exemplarCity>קיריטימאטי</exemplarCity>
+			</zone>
+			<zone type="Pacific/Tarawa">
+				<exemplarCity>טאראווה</exemplarCity>
+			</zone>
+			<zone type="Indian/Comoro">
+				<exemplarCity>קומורו</exemplarCity>
+			</zone>
+			<zone type="America/St_Kitts">
+				<exemplarCity>סנט קיטס</exemplarCity>
+			</zone>
+			<zone type="Asia/Pyongyang">
+				<exemplarCity>צפון קוריאה</exemplarCity>
+			</zone>
+			<zone type="Asia/Seoul">
+				<exemplarCity>דרום קוריאה</exemplarCity>
+			</zone>
+			<zone type="Asia/Kuwait">
+				<exemplarCity>כווית</exemplarCity>
+			</zone>
+			<zone type="America/Cayman">
+				<exemplarCity>קיימן</exemplarCity>
+			</zone>
+			<zone type="Asia/Aqtau">
+				<exemplarCity>אקטאו</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Oral">
 				<exemplarCity>אסיה/אורל</exemplarCity>
 			</zone>
 			<zone type="Asia/Aqtobe">
+<<<<<<< HEAD
 				<exemplarCity draft="contributed">אקטובה</exemplarCity>
 			</zone>
 			<zone type="Asia/Qyzylorda">
@@ -2952,10 +4192,107 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Hermosillo">
 				<exemplarCity draft="contributed">ארמוסיו</exemplarCity>
+=======
+				<exemplarCity>אקטובה</exemplarCity>
+			</zone>
+			<zone type="Asia/Almaty">
+				<exemplarCity>אלמאטי</exemplarCity>
+			</zone>
+			<zone type="Asia/Vientiane">
+				<exemplarCity>וינטיאן</exemplarCity>
+			</zone>
+			<zone type="Asia/Beirut">
+				<exemplarCity>ביירות</exemplarCity>
+			</zone>
+			<zone type="America/St_Lucia">
+				<exemplarCity>סנט לוצ'יה</exemplarCity>
+			</zone>
+			<zone type="Europe/Vaduz">
+				<exemplarCity>ואדוז</exemplarCity>
+			</zone>
+			<zone type="Asia/Colombo">
+				<exemplarCity>קולומבו</exemplarCity>
+			</zone>
+			<zone type="Africa/Monrovia">
+				<exemplarCity>מונרוביה</exemplarCity>
+			</zone>
+			<zone type="Africa/Maseru">
+				<exemplarCity>מאסרו</exemplarCity>
+			</zone>
+			<zone type="Europe/Vilnius">
+				<exemplarCity>וילניאוס</exemplarCity>
+			</zone>
+			<zone type="Europe/Luxembourg">
+				<exemplarCity>לוקסמבורג</exemplarCity>
+			</zone>
+			<zone type="Europe/Riga">
+				<exemplarCity>ריגה</exemplarCity>
+			</zone>
+			<zone type="Africa/Tripoli">
+				<exemplarCity>טריפולי</exemplarCity>
+			</zone>
+			<zone type="Africa/Casablanca">
+				<exemplarCity>קזבלנקה</exemplarCity>
+			</zone>
+			<zone type="Europe/Monaco">
+				<exemplarCity>מונקו</exemplarCity>
+			</zone>
+			<zone type="Europe/Chisinau">
+				<exemplarCity>קישינב</exemplarCity>
+			</zone>
+			<zone type="Indian/Antananarivo">
+				<exemplarCity>אנטננרבינו</exemplarCity>
+			</zone>
+			<zone type="Pacific/Majuro">
+				<exemplarCity>מאג'ורו</exemplarCity>
+			</zone>
+			<zone type="Africa/Bamako">
+				<exemplarCity>באמאקו</exemplarCity>
+			</zone>
+			<zone type="Asia/Rangoon">
+				<exemplarCity>ראנגון</exemplarCity>
+			</zone>
+			<zone type="Asia/Hovd">
+				<exemplarCity>חובד</exemplarCity>
+			</zone>
+			<zone type="Asia/Ulaanbaatar">
+				<exemplarCity>אולאאנבטאר</exemplarCity>
+			</zone>
+			<zone type="Asia/Choibalsan">
+				<exemplarCity>צ'ואיבלסאן</exemplarCity>
+			</zone>
+			<zone type="Asia/Macau">
+				<exemplarCity>מקאו</exemplarCity>
+			</zone>
+			<zone type="Pacific/Saipan">
+				<exemplarCity>סאיפאן</exemplarCity>
+			</zone>
+			<zone type="America/Martinique">
+				<exemplarCity>מרטיניק</exemplarCity>
+			</zone>
+			<zone type="Africa/Nouakchott">
+				<exemplarCity>נוקשוט</exemplarCity>
+			</zone>
+			<zone type="America/Montserrat">
+				<exemplarCity>מונטסראט</exemplarCity>
+			</zone>
+			<zone type="Europe/Malta">
+				<exemplarCity>מאלטה</exemplarCity>
+			</zone>
+			<zone type="Indian/Mauritius">
+				<exemplarCity>מאוריטיוס</exemplarCity>
+			</zone>
+			<zone type="Indian/Maldives">
+				<exemplarCity>מולדוביה</exemplarCity>
+			</zone>
+			<zone type="Africa/Blantyre">
+				<exemplarCity>בלנטיר</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Mazatlan">
 				<exemplarCity>אמריקה/מזטלן</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Chihuahua">
 				<exemplarCity draft="contributed">צ׳יוואווה</exemplarCity>
 			</zone>
@@ -2965,24 +4302,30 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Ojinaga">
 				<exemplarCity draft="contributed">אוג׳ינאגה</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Monterrey">
 				<exemplarCity>אמריקה/מונטריי</exemplarCity>
 			</zone>
 			<zone type="America/Mexico_City">
 				<exemplarCity>אמריקה/מקסיקו סיטי</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Matamoros">
 				<exemplarCity draft="contributed">מטמורוס</exemplarCity>
 			</zone>
 			<zone type="America/Merida">
 				<exemplarCity draft="contributed">מרידה</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Cancun">
 				<exemplarCity>אמריקה/קנקון</exemplarCity>
 			</zone>
 			<zone type="Asia/Kuala_Lumpur">
 				<exemplarCity>קואלה לומפור</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Kuching">
 				<exemplarCity draft="contributed">קוצ׳ינג</exemplarCity>
 			</zone>
@@ -3024,11 +4367,49 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Pacific/Chatham">
 				<exemplarCity draft="contributed">צ׳אטהאם</exemplarCity>
+=======
+			<zone type="Africa/Maputo">
+				<exemplarCity>מאפוטו</exemplarCity>
+			</zone>
+			<zone type="Africa/Windhoek">
+				<exemplarCity>ווינדהוק</exemplarCity>
+			</zone>
+			<zone type="Pacific/Noumea">
+				<exemplarCity>נומאה</exemplarCity>
+			</zone>
+			<zone type="Africa/Niamey">
+				<exemplarCity>ניאמיי</exemplarCity>
+			</zone>
+			<zone type="Pacific/Norfolk">
+				<exemplarCity>איי נורפוק</exemplarCity>
+			</zone>
+			<zone type="Africa/Lagos">
+				<exemplarCity>לאגוס</exemplarCity>
+			</zone>
+			<zone type="America/Managua">
+				<exemplarCity>מנאגואה</exemplarCity>
+			</zone>
+			<zone type="Europe/Amsterdam">
+				<exemplarCity>אמסטרדם</exemplarCity>
+			</zone>
+			<zone type="Europe/Oslo">
+				<exemplarCity>אוסלו</exemplarCity>
+			</zone>
+			<zone type="Asia/Katmandu">
+				<exemplarCity>קטמנדו</exemplarCity>
+			</zone>
+			<zone type="Pacific/Nauru">
+				<exemplarCity>נאורו</exemplarCity>
+			</zone>
+			<zone type="Pacific/Niue">
+				<exemplarCity>ניווה</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Pacific/Auckland">
 				<exemplarCity>פסיפי/אוקלנד</exemplarCity>
 			</zone>
 			<zone type="Asia/Muscat">
+<<<<<<< HEAD
 				<exemplarCity draft="contributed">מוסקט</exemplarCity>
 			</zone>
 			<zone type="America/Panama">
@@ -3036,11 +4417,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Lima">
 				<exemplarCity draft="contributed">לימה</exemplarCity>
+=======
+				<exemplarCity>מוסקט</exemplarCity>
+			</zone>
+			<zone type="America/Panama">
+				<exemplarCity>פנמה</exemplarCity>
+			</zone>
+			<zone type="America/Lima">
+				<exemplarCity>לימה</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Pacific/Tahiti">
 				<exemplarCity>פסיפי/טהיטי</exemplarCity>
 			</zone>
 			<zone type="Pacific/Marquesas">
+<<<<<<< HEAD
 				<exemplarCity draft="contributed">איי מרקיז</exemplarCity>
 			</zone>
 			<zone type="Pacific/Gambier">
@@ -3078,11 +4469,45 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Atlantic/Madeira">
 				<exemplarCity draft="contributed">מדיירה</exemplarCity>
+=======
+				<exemplarCity>איי מרקיז</exemplarCity>
+			</zone>
+			<zone type="Pacific/Gambier">
+				<exemplarCity>איי גמביר</exemplarCity>
+			</zone>
+			<zone type="Pacific/Port_Moresby">
+				<exemplarCity>פורט מורנסבי</exemplarCity>
+			</zone>
+			<zone type="Asia/Manila">
+				<exemplarCity>מנילה</exemplarCity>
+			</zone>
+			<zone type="Asia/Karachi">
+				<exemplarCity>קאראצ'י</exemplarCity>
+			</zone>
+			<zone type="Europe/Warsaw">
+				<exemplarCity>ורשה</exemplarCity>
+			</zone>
+			<zone type="America/Miquelon">
+				<exemplarCity>מיקלון</exemplarCity>
+			</zone>
+			<zone type="Pacific/Pitcairn">
+				<exemplarCity>פיטקרן</exemplarCity>
+			</zone>
+			<zone type="America/Puerto_Rico">
+				<exemplarCity>פוארטו ריקו</exemplarCity>
+			</zone>
+			<zone type="Asia/Gaza">
+				<exemplarCity>עזה</exemplarCity>
+			</zone>
+			<zone type="Atlantic/Azores">
+				<exemplarCity>האיים האזורים</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Lisbon">
 				<exemplarCity>אירופה/ליסבון</exemplarCity>
 			</zone>
 			<zone type="Pacific/Palau">
+<<<<<<< HEAD
 				<exemplarCity draft="contributed">פלאו</exemplarCity>
 			</zone>
 			<zone type="America/Asuncion">
@@ -3102,10 +4527,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Europe/Kaliningrad">
 				<exemplarCity draft="contributed">קלינינגרד</exemplarCity>
+=======
+				<exemplarCity>פלאו</exemplarCity>
+			</zone>
+			<zone type="America/Asuncion">
+				<exemplarCity>אסונסיון</exemplarCity>
+			</zone>
+			<zone type="Asia/Qatar">
+				<exemplarCity>קתר</exemplarCity>
+			</zone>
+			<zone type="Indian/Reunion">
+				<exemplarCity>ריונין</exemplarCity>
+			</zone>
+			<zone type="Europe/Bucharest">
+				<exemplarCity>בוקרשט</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Moscow">
 				<exemplarCity>אירופה/מוסקבה</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Volgograd">
 				<exemplarCity draft="contributed">וולגוגרד</exemplarCity>
 			</zone>
@@ -3115,12 +4556,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Yekaterinburg">
 				<exemplarCity draft="contributed">יקטרינבורג</exemplarCity>
 			</zone>
+=======
+			<zone type="Europe/Samara">
+				<exemplarCity>אירופה/סמרה</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Asia/Omsk">
 				<exemplarCity>איה/אומסק</exemplarCity>
 			</zone>
 			<zone type="Asia/Novosibirsk">
 				<exemplarCity>אסיה/נובוסיבירסק</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Novokuznetsk">
 				<exemplarCity draft="contributed">נובוקוזנטסק</exemplarCity>
 			</zone>
@@ -3270,10 +4717,108 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Europe/Uzhgorod">
 				<exemplarCity draft="contributed">אוז׳הורוד</exemplarCity>
+=======
+			<zone type="Africa/Kigali">
+				<exemplarCity>קיגאלי</exemplarCity>
+			</zone>
+			<zone type="Asia/Riyadh">
+				<exemplarCity>ריאד</exemplarCity>
+			</zone>
+			<zone type="Pacific/Guadalcanal">
+				<exemplarCity>גואדלקנל</exemplarCity>
+			</zone>
+			<zone type="Indian/Mahe">
+				<exemplarCity>מאהה</exemplarCity>
+			</zone>
+			<zone type="Africa/Khartoum">
+				<exemplarCity>חרטום</exemplarCity>
+			</zone>
+			<zone type="Europe/Stockholm">
+				<exemplarCity>שטוקהולם</exemplarCity>
+			</zone>
+			<zone type="Asia/Singapore">
+				<exemplarCity>סינגפור</exemplarCity>
+			</zone>
+			<zone type="Atlantic/St_Helena">
+				<exemplarCity>סנט הלנה</exemplarCity>
+			</zone>
+			<zone type="Africa/Freetown">
+				<exemplarCity>פריטאון</exemplarCity>
+			</zone>
+			<zone type="Africa/Dakar">
+				<exemplarCity>דאקאר</exemplarCity>
+			</zone>
+			<zone type="Africa/Mogadishu">
+				<exemplarCity>מוגדישו</exemplarCity>
+			</zone>
+			<zone type="America/Paramaribo">
+				<exemplarCity>פרמאריבו</exemplarCity>
+			</zone>
+			<zone type="Africa/Sao_Tome">
+				<exemplarCity>סאו טומה</exemplarCity>
+			</zone>
+			<zone type="America/El_Salvador">
+				<exemplarCity>סלבדור</exemplarCity>
+			</zone>
+			<zone type="Asia/Damascus">
+				<exemplarCity>דמשק</exemplarCity>
+			</zone>
+			<zone type="Africa/Mbabane">
+				<exemplarCity>מבאבאנה</exemplarCity>
+			</zone>
+			<zone type="America/Grand_Turk">
+				<exemplarCity>גרנד טורק</exemplarCity>
+			</zone>
+			<zone type="Africa/Ndjamena">
+				<exemplarCity>נג'מנה</exemplarCity>
+			</zone>
+			<zone type="Indian/Kerguelen">
+				<exemplarCity>קרגואלן</exemplarCity>
+			</zone>
+			<zone type="Africa/Lome">
+				<exemplarCity>לומה</exemplarCity>
+			</zone>
+			<zone type="Asia/Bangkok">
+				<exemplarCity>בנקוק</exemplarCity>
+			</zone>
+			<zone type="Asia/Dushanbe">
+				<exemplarCity>דושנבה</exemplarCity>
+			</zone>
+			<zone type="Pacific/Fakaofo">
+				<exemplarCity>פאקאופו</exemplarCity>
+			</zone>
+			<zone type="Asia/Dili">
+				<exemplarCity>דילי</exemplarCity>
+			</zone>
+			<zone type="Asia/Ashgabat">
+				<exemplarCity>אשחבאד</exemplarCity>
+			</zone>
+			<zone type="Africa/Tunis">
+				<exemplarCity>תוניסיה</exemplarCity>
+			</zone>
+			<zone type="Pacific/Tongatapu">
+				<exemplarCity>טונגטאפו</exemplarCity>
+			</zone>
+			<zone type="Europe/Istanbul">
+				<exemplarCity>איסטנבול</exemplarCity>
+			</zone>
+			<zone type="America/Port_of_Spain">
+				<exemplarCity>נמל ספרד</exemplarCity>
+			</zone>
+			<zone type="Pacific/Funafuti">
+				<exemplarCity>פונאפוטי</exemplarCity>
+			</zone>
+			<zone type="Asia/Taipei">
+				<exemplarCity>טייפה</exemplarCity>
+			</zone>
+			<zone type="Africa/Dar_es_Salaam">
+				<exemplarCity>דאר א-סאלם</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Kiev">
 				<exemplarCity>אירופה/קייב</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Simferopol">
 				<exemplarCity draft="contributed">סימפרופול</exemplarCity>
 			</zone>
@@ -3297,11 +4842,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Nome">
 				<exemplarCity draft="contributed">נום</exemplarCity>
+=======
+			<zone type="Africa/Kampala">
+				<exemplarCity>קמפלה</exemplarCity>
+			</zone>
+			<zone type="Pacific/Midway">
+				<exemplarCity>מידוויי</exemplarCity>
+			</zone>
+			<zone type="Pacific/Johnston">
+				<exemplarCity>ג'ונסטון</exemplarCity>
+			</zone>
+			<zone type="Pacific/Wake">
+				<exemplarCity>וואק</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Pacific/Honolulu">
 				<exemplarCity>פסיפי/הונולולו</exemplarCity>
 			</zone>
 			<zone type="America/Anchorage">
+<<<<<<< HEAD
 				<exemplarCity>אנקורג׳</exemplarCity>
 			</zone>
 			<zone type="America/Yakutat">
@@ -3321,10 +4880,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Boise">
 				<exemplarCity draft="contributed">בויסי</exemplarCity>
+=======
+				<exemplarCity>זמן אלסקה</exemplarCity>
+			</zone>
+			<zone type="America/Los_Angeles">
+				<exemplarCity>אמריקה/לוס-אנג'לס</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Phoenix">
 				<exemplarCity>אמריקה/פיניקס</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Denver">
 				<exemplarCity>אמריקה/דנוור</exemplarCity>
 			</zone>
@@ -3334,12 +4900,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/North_Dakota/New_Salem">
 				<exemplarCity draft="contributed">ניו סיילם, צפון דקוטה</exemplarCity>
 			</zone>
+=======
+			<zone type="America/Shiprock">
+				<exemplarCity>אמריקה/שיפרוק</exemplarCity>
+			</zone>
+			<zone type="America/Denver">
+				<exemplarCity>אמריקה/דנוור</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/North_Dakota/Center">
 				<exemplarCity>אמריקה/צפון דקוטה/מרכז</exemplarCity>
 			</zone>
 			<zone type="America/Chicago">
 				<exemplarCity>אמריקה/שיקגו</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Menominee">
 				<exemplarCity draft="contributed">מנומיני</exemplarCity>
 			</zone>
@@ -3361,18 +4936,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Indiana/Marengo">
 				<exemplarCity draft="contributed">מרנגו, אינדיאנה</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Indianapolis">
 				<exemplarCity>אינדיאנפוליס</exemplarCity>
 			</zone>
 			<zone type="America/Louisville">
 				<exemplarCity>אמריקה/לואיסוויל</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Indiana/Vevay">
 				<exemplarCity draft="contributed">ויוואיי, אינדיאנה</exemplarCity>
 			</zone>
 			<zone type="America/Kentucky/Monticello">
 				<exemplarCity draft="contributed">מונטיצ׳לו, קנטאקי</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Detroit">
 				<exemplarCity>אמריקה/דטרויט</exemplarCity>
 			</zone>
@@ -3380,7 +4960,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>אמריקה/ניו-יורק</exemplarCity>
 			</zone>
 			<zone type="America/Montevideo">
+<<<<<<< HEAD
 				<exemplarCity draft="contributed">מונטווידאו</exemplarCity>
+=======
+				<exemplarCity>מונטווידאו</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Samarkand">
 				<exemplarCity>אסיה/סמרקנד</exemplarCity>
@@ -3388,6 +4972,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Tashkent">
 				<exemplarCity>אסיה/טשקנט</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Vatican">
 				<exemplarCity draft="contributed">ותיקן</exemplarCity>
 			</zone>
@@ -4305,34 +5890,104 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<standard draft="contributed">שעון רגיל יקטרינבורג</standard>
 					<daylight draft="contributed">שעון קיץ יקטרינבורג</daylight>
 				</long>
+=======
+			<zone type="America/St_Vincent">
+				<exemplarCity>סנט וינסנט</exemplarCity>
+			</zone>
+			<zone type="America/Caracas">
+				<exemplarCity>קאראקאס</exemplarCity>
+			</zone>
+			<zone type="America/Tortola">
+				<exemplarCity>טורטולה</exemplarCity>
+			</zone>
+			<zone type="America/St_Thomas">
+				<exemplarCity>סנט תומאס</exemplarCity>
+			</zone>
+			<zone type="Asia/Saigon">
+				<exemplarCity>סייגון</exemplarCity>
+			</zone>
+			<zone type="Pacific/Efate">
+				<exemplarCity>אפטה</exemplarCity>
+			</zone>
+			<zone type="Pacific/Wallis">
+				<exemplarCity>ואליס</exemplarCity>
+			</zone>
+			<zone type="Pacific/Apia">
+				<exemplarCity>אפיה</exemplarCity>
+			</zone>
+			<zone type="Asia/Aden">
+				<exemplarCity>עדן</exemplarCity>
+			</zone>
+			<zone type="Indian/Mayotte">
+				<exemplarCity>מאיוט</exemplarCity>
+			</zone>
+			<zone type="Africa/Johannesburg">
+				<exemplarCity>יוהנסבורג</exemplarCity>
+			</zone>
+			<zone type="Africa/Lusaka">
+				<exemplarCity>לוסאקה</exemplarCity>
+			</zone>
+			<zone type="Africa/Harare">
+				<exemplarCity>הררה</exemplarCity>
+			</zone>
+			<metazone type="India">
+				<short>
+					<standard>IST (הודו)</standard>
+				</short>
+			</metazone>
+			<metazone type="Israel">
+				<long>
+					<generic>שעון ישראל</generic>
+				</long>
+				<short>
+					<standard>IST</standard>
+				</short>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</metazone>
 		</timeZoneNames>
 	</dates>
 	<numbers>
+<<<<<<< HEAD
 		<defaultNumberingSystem>latn</defaultNumberingSystem>
 		<otherNumberingSystems>
 			<native>latn</native>
 			<traditional>hebr</traditional>
 		</otherNumberingSystems>
 		<symbols numberSystem="latn">
+=======
+		<symbols>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<decimal>.</decimal>
 			<group>,</group>
 			<list>;</list>
 			<percentSign>%</percentSign>
+<<<<<<< HEAD
 			<plusSign>‎+</plusSign> <!-- includes LRM before sign -->
 			<minusSign>‎-</minusSign> <!-- includes LRM before sign (002D) -->
 			<exponential>E</exponential>
 			<superscriptingExponent draft="contributed">×</superscriptingExponent>
+=======
+			<nativeZeroDigit>0</nativeZeroDigit>
+			<patternDigit>#</patternDigit>
+			<plusSign>+</plusSign>
+			<minusSign>-</minusSign>
+			<exponential>E</exponential>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<perMille>‰</perMille>
 			<infinity>∞</infinity>
 			<nan>NaN</nan>
 		</symbols>
+<<<<<<< HEAD
 		<decimalFormats numberSystem="latn">
+=======
+		<decimalFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<decimalFormatLength>
 				<decimalFormat>
 					<pattern>#,##0.###</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
+<<<<<<< HEAD
 			<decimalFormatLength type="long">
 				<decimalFormat>
 					<pattern type="1000" count="one">‏0 אלף</pattern>
@@ -4439,19 +6094,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</decimalFormatLength>
 		</decimalFormats>
 		<scientificFormats numberSystem="latn">
+=======
+		</decimalFormats>
+		<scientificFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<scientificFormatLength>
 				<scientificFormat>
 					<pattern>#E0</pattern>
 				</scientificFormat>
 			</scientificFormatLength>
 		</scientificFormats>
+<<<<<<< HEAD
 		<percentFormats numberSystem="latn">
+=======
+		<percentFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<percentFormatLength>
 				<percentFormat>
 					<pattern>#,##0%</pattern>
 				</percentFormat>
 			</percentFormatLength>
 		</percentFormats>
+<<<<<<< HEAD
 		<currencyFormats numberSystem="latn">
 			<currencyFormatLength>
 				<currencyFormat type="standard">
@@ -4462,6 +6126,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<unitPattern count="two" draft="contributed">{0} {1}</unitPattern>
 			<unitPattern count="many" draft="contributed">{0} {1}</unitPattern>
 			<unitPattern count="other" draft="contributed">{0} {1}</unitPattern>
+=======
+		<currencyFormats>
+			<currencyFormatLength>
+				<currencyFormat>
+					<pattern>#,##0.00 ¤</pattern>
+				</currencyFormat>
+			</currencyFormatLength>
+			<unitPattern count="one">{0} {1}</unitPattern>
+			<unitPattern count="other">{0} {1}</unitPattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</currencyFormats>
 		<currencies>
 			<currency type="ADP">
@@ -4486,6 +6160,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>קואנזה אנגולי</displayName>
 			</currency>
 			<currency type="AON">
+<<<<<<< HEAD
 				<displayName>קואנזה חדש אנגולי (1990–2000)</displayName>
 			</currency>
 			<currency type="AOR">
@@ -4493,6 +6168,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ARP">
 				<displayName>פזו ארגנטינאי (1983–1985)</displayName>
+=======
+				<displayName>קואנזה חדש אנגולי (1990-2000)</displayName>
+			</currency>
+			<currency type="AOR">
+				<displayName>קואנזה רג׳וסטדו אנגולי (1995-1999)</displayName>
+			</currency>
+			<currency type="ARP">
+				<displayName>פזו ארגנטינאי (1983-1985)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ARS">
 				<displayName>פזו ארגנטינאי</displayName>
@@ -4502,19 +6186,30 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="AUD">
 				<displayName>דולר אוסטרלי</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">A$</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="AWG">
 				<displayName>פלורין של ארובה</displayName>
 			</currency>
 			<currency type="AZM">
+<<<<<<< HEAD
 				<displayName>מנאט אזרביג׳אני (1993–2006)</displayName>
+=======
+				<displayName>מנאט אזרביג׳אני (1993-2006)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="AZN">
 				<displayName>מאנאט אזרביג׳ני</displayName>
 			</currency>
 			<currency type="BAD">
+<<<<<<< HEAD
 				<displayName draft="contributed">דינר של בוסניה־הרצגובינה</displayName>
+=======
+				<displayName>דינר של בוסניה־הרצגובינה</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BAM">
 				<displayName>מארק בר המרה של בוסניה־הרצגובינה</displayName>
@@ -4545,10 +6240,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BMD">
 				<displayName>דולר ברמודה</displayName>
+<<<<<<< HEAD
 				<displayName count="one">דולר ברמודה</displayName>
 				<displayName count="two">דולר ברמודה</displayName>
 				<displayName count="many">דולר ברמודה</displayName>
 				<displayName count="other">דולר ברמודה</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BND">
 				<displayName>דולר ברוניי</displayName>
@@ -4560,14 +6258,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>פזו בוליבי</displayName>
 			</currency>
 			<currency type="BRB">
+<<<<<<< HEAD
 				<displayName>קרוזיארו חדש ברזילאי (1967–1986)</displayName>
+=======
+				<displayName>קרוזיארו חדש ברזילאי (1967-1986)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BRC">
 				<displayName>קרוזדו ברזילאי</displayName>
 			</currency>
 			<currency type="BRL">
 				<displayName>ריאל ברזילאי</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">R$</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BSD">
 				<displayName>דולר בהאמי</displayName>
@@ -4578,6 +6283,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BWP">
 				<displayName>פולה בוצוואני</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="BYR">
 				<displayName draft="contributed">רובל בלרוסי</displayName>
 			</currency>
@@ -4595,6 +6301,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="many">דולר קנדי</displayName>
 				<displayName count="other">דולר קנדי</displayName>
 				<symbol draft="contributed">CA$</symbol>
+=======
+			<currency type="BZD">
+				<displayName>דולר בליזי</displayName>
+			</currency>
+			<currency type="CAD">
+				<displayName>דולר קנדי</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="CDF">
 				<displayName>פרנק קונגולזי</displayName>
@@ -4603,6 +6316,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>פרנק שוויצרי</displayName>
 			</currency>
 			<currency type="CLP">
+<<<<<<< HEAD
 				<displayName>פזו צ׳ילאני</displayName>
 			</currency>
 			<currency type="CNY">
@@ -4612,34 +6326,55 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="many">יואן רנמינבי סיני</displayName>
 				<displayName count="other">יואן רנמינבי סיני</displayName>
 				<symbol draft="contributed">CN¥</symbol>
+=======
+				<displayName>פזו צ'ילאני</displayName>
+			</currency>
+			<currency type="CNY">
+				<displayName>יואן רנמינבי סיני</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="COP">
 				<displayName>פזו קולומביאני</displayName>
 			</currency>
 			<currency type="CRC">
 				<displayName>קולון קוסטה־ריקני</displayName>
+<<<<<<< HEAD
 				<displayName count="one">קולון קוסטה־ריקני</displayName>
 				<displayName count="two">קולון קוסטה־ריקני</displayName>
 				<displayName count="many">קולון קוסטה־ריקני</displayName>
 				<displayName count="other">קולון קוסטה־ריקני</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="CSD">
 				<displayName>דינר סרבי ישן</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="CUC">
 				<displayName draft="contributed">פזו קובני להמרה</displayName>
+=======
+			<currency type="CSK">
+				<displayName>קורונה צ׳כית</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="CUP">
 				<displayName>פזו קובני</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="CVE">
 				<displayName draft="contributed">אסקודו כף ורדה</displayName>
 			</currency>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<currency type="CYP">
 				<displayName>לירה קפריסאית</displayName>
 			</currency>
 			<currency type="CZK">
+<<<<<<< HEAD
 				<displayName>קורונה צ׳כית</displayName>
+=======
+				<displayName>קורונה צ'כית</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="DDM">
 				<displayName>מרק מזרח גרמני</displayName>
@@ -4672,10 +6407,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>נאקפה אריתראי</displayName>
 			</currency>
 			<currency type="ESA">
+<<<<<<< HEAD
 				<displayName draft="provisional">פזטה [ESA]</displayName>
 			</currency>
 			<currency type="ESB">
 				<displayName draft="provisional">פזטה [ESB]</displayName>
+=======
+				<displayName>פזטה [ESA]</displayName>
+			</currency>
+			<currency type="ESB">
+				<displayName>פזטה [ESB]</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ESP">
 				<displayName>פסטה ספרדי</displayName>
@@ -4685,13 +6427,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="EUR">
 				<displayName>אירו</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">€</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="FIM">
 				<displayName>מרק פיני</displayName>
 			</currency>
 			<currency type="FJD">
+<<<<<<< HEAD
 				<displayName>דולר פיג׳י</displayName>
+=======
+				<displayName>דולר פיג'י</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="FKP">
 				<displayName>לירה של איי פוקלנד</displayName>
@@ -4701,14 +6450,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="GBP">
 				<displayName>לירה שטרלינג</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">£</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="GEL">
 				<displayName>לרי גאורגי</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="GHS">
 				<displayName draft="contributed">סדי גאני</displayName>
 			</currency>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<currency type="GIP">
 				<displayName>פאונד גיברלטר</displayName>
 			</currency>
@@ -4719,6 +6474,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>פרנק גינאי</displayName>
 			</currency>
 			<currency type="GRD">
+<<<<<<< HEAD
 				<displayName draft="contributed">דרכמה</displayName>
 			</currency>
 			<currency type="GTQ">
@@ -4727,6 +6483,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="two">קצל גואטמלי</displayName>
 				<displayName count="many">קצל גואטמלי</displayName>
 				<displayName count="other">קצל גואטמלי</displayName>
+=======
+				<displayName>דרכמה</displayName>
+			</currency>
+			<currency type="GTQ">
+				<displayName>קצל גואטמלי</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="GWP">
 				<displayName>פזו גינאי</displayName>
@@ -4736,6 +6498,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="HKD">
 				<displayName>דולר הונג קונגי</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">HK$</symbol>
 			</currency>
 			<currency type="HNL">
@@ -4744,6 +6507,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="two">למפירה הונדורי</displayName>
 				<displayName count="many">למפירה הונדורי</displayName>
 				<displayName count="other">למפירה הונדורי</displayName>
+=======
+			</currency>
+			<currency type="HNL">
+				<displayName>למפירה הונדורי</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="HRK">
 				<displayName>קונה קרואטי</displayName>
@@ -4756,10 +6524,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="IDR">
 				<displayName>רופיה אינדונזית</displayName>
+<<<<<<< HEAD
 				<displayName count="one">רופיה אינדונזית</displayName>
 				<displayName count="two">רופיה אינדונזית</displayName>
 				<displayName count="many">רופיה אינדונזית</displayName>
 				<displayName count="other">רופיה אינדונזית</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="IEP">
 				<displayName>לירה אירית</displayName>
@@ -4769,6 +6540,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<symbol>ל״י</symbol>
 			</currency>
 			<currency type="ILS">
+<<<<<<< HEAD
 				<displayName>ש״ח</displayName>
 				<displayName count="one">שקלים חדשים</displayName>
 				<displayName count="two">שקלים חדשים</displayName>
@@ -4783,6 +6555,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="many">רופי הודית</displayName>
 				<displayName count="other">רופי הודית</displayName>
 				<symbol draft="contributed">₹</symbol>
+=======
+				<displayName>ש&quot;ח</displayName>
+				<displayName count="other">שקלים חדשים</displayName>
+			</currency>
+			<currency type="INR">
+				<displayName>רופי הודית</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="IQD">
 				<displayName>דינר עירקי</displayName>
@@ -4797,14 +6576,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>לירה איטלקית</displayName>
 			</currency>
 			<currency type="JMD">
+<<<<<<< HEAD
 				<displayName>דולר ג׳מאיקני</displayName>
+=======
+				<displayName>דולר ג'מאיקני</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="JOD">
 				<displayName>דינר ירדני</displayName>
 			</currency>
 			<currency type="JPY">
 				<displayName>ין יפני</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">JP¥</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="KES">
 				<displayName>שילינג קנייאתי</displayName>
@@ -4823,7 +6609,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="KRW">
 				<displayName>וון דרום קוראני</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">₩</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="KWD">
 				<displayName>דינר כוויתי</displayName>
@@ -4850,7 +6639,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>לוטי לסותי</displayName>
 			</currency>
 			<currency type="LTL">
+<<<<<<< HEAD
 				<displayName draft="contributed">ליטא ליטאי</displayName>
+=======
+				<displayName>ליטא ליטאי</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="LUF">
 				<displayName>פרנק לוקסמבורגי</displayName>
@@ -4870,6 +6663,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="MDL">
 				<displayName>ליאו מולדובני</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="MGA">
 				<displayName draft="contributed">אריארי מלגשי</displayName>
 			</currency>
@@ -4879,10 +6673,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="MKD">
 				<displayName draft="contributed">דינר מקדוני</displayName>
 			</currency>
+=======
+			<currency type="MGF">
+				<displayName>פרנק מדגסקארי</displayName>
+			</currency>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<currency type="MMK">
 				<displayName>קיאט מיאנמרי</displayName>
 			</currency>
 			<currency type="MNT">
+<<<<<<< HEAD
 				<displayName draft="contributed">טוגריק מונגולי</displayName>
 			</currency>
 			<currency type="MOP">
@@ -4890,6 +6690,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="MRO">
 				<displayName draft="contributed">אוגוויה מאוריטני</displayName>
+=======
+				<displayName>טוגרוג</displayName>
+			</currency>
+			<currency type="MOP">
+				<displayName>פטקה</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="MTL">
 				<displayName>לירה מלטית</displayName>
@@ -4905,6 +6711,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="MXN">
 				<displayName>פזו מקסיקני</displayName>
+<<<<<<< HEAD
 				<displayName count="one">פזו מקסיקני</displayName>
 				<displayName count="two">פזו מקסיקני</displayName>
 				<displayName count="many">פזו מקסיקני</displayName>
@@ -4913,10 +6720,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="MXP">
 				<displayName>פזו מקסיקני (1861 – 1992)</displayName>
+=======
+			</currency>
+			<currency type="MXP">
+				<displayName>פזו מקסיקני (1861 - 1992)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="MYR">
 				<displayName>רינגיט מלזי</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="MZE">
 				<displayName>אסקודו מוזמביקי</displayName>
 				<displayName count="one">אסקודו מוזמביקי</displayName>
@@ -4934,6 +6747,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="many" draft="contributed">מטיקל מוזמביני</displayName>
 				<displayName count="other" draft="contributed">מטיקל מוזמביני</displayName>
 			</currency>
+=======
+			<currency type="MZM">
+				<displayName>מטיקל</displayName>
+			</currency>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<currency type="NAD">
 				<displayName>דולר נמיבי</displayName>
 			</currency>
@@ -4942,10 +6760,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="NIO">
 				<displayName>קורדובה ניקראגי</displayName>
+<<<<<<< HEAD
 				<displayName count="one">קורדובה ניקראגי</displayName>
 				<displayName count="two">קורדובה ניקראגי</displayName>
 				<displayName count="many">קורדובה ניקראגי</displayName>
 				<displayName count="other">קורדובה ניקראגי</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="NLG">
 				<displayName>גילדן הולנדי</displayName>
@@ -4958,10 +6779,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="NZD">
 				<displayName>דולר ניו זילנדי</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">NZ$</symbol>
 			</currency>
 			<currency type="OMR">
 				<displayName draft="contributed">ריאל עומאני</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="PAB">
 				<displayName>בלבואה פנמי</displayName>
@@ -4982,7 +6806,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>זלוטי פולני</displayName>
 			</currency>
 			<currency type="PLZ">
+<<<<<<< HEAD
 				<displayName draft="provisional">זלוטי (1950 – 1995)</displayName>
+=======
+				<displayName>זלוטי (1950 - 1995)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="PTE">
 				<displayName>אסקודו פורטוגלי</displayName>
@@ -5000,13 +6828,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>לאו רומני חדש</displayName>
 			</currency>
 			<currency type="RSD">
+<<<<<<< HEAD
 				<displayName draft="contributed">דינר סרבי</displayName>
+=======
+				<displayName>דינר סרבי</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="RUB">
 				<displayName>רובל</displayName>
 			</currency>
 			<currency type="RUR">
+<<<<<<< HEAD
 				<displayName>רובל רוסי (1991 – 1998)</displayName>
+=======
+				<displayName>רובל רוסי (1991 - 1998)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="RWF">
 				<displayName>פרנק רואנדי</displayName>
@@ -5023,11 +6859,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="SDD">
 				<displayName>דינר סודני</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="SDG">
 				<displayName draft="contributed">לירה סודנית</displayName>
 			</currency>
 			<currency type="SDP">
 				<displayName>לירה סודנית (1957–1998)</displayName>
+=======
+			<currency type="SDP">
+				<displayName>לירה סודנית</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="SEK">
 				<displayName>כתר שוודי</displayName>
@@ -5056,6 +6897,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="SRG">
 				<displayName>גילדר סורינאמי</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="SSP">
 				<displayName draft="contributed">לירה דרום סודאנית</displayName>
 				<displayName count="one" draft="contributed">לירה דרום סודאנית</displayName>
@@ -5063,12 +6905,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="many" draft="contributed">לירה דרום סודאנית</displayName>
 				<displayName count="other" draft="contributed">לירה דרום סודאנית</displayName>
 			</currency>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<currency type="STD">
 				<displayName>דוברה של סן טומה ופרינסיפה</displayName>
 			</currency>
 			<currency type="SUR">
 				<displayName>רובל סובייטי</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="SVC">
 				<displayName>קולון סלבדורי</displayName>
 				<displayName count="one">קולון סלבדורי</displayName>
@@ -5076,6 +6921,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="many">קולון סלבדורי</displayName>
 				<displayName count="other">קולונים סלבדוריים</displayName>
 			</currency>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<currency type="SYP">
 				<displayName>לירה סורית</displayName>
 			</currency>
@@ -5084,17 +6931,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="THB">
 				<displayName>בהט תאילנדי</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">฿</symbol>
 			</currency>
 			<currency type="TJS">
 				<displayName>סומוני טג׳קיסטני</displayName>
+=======
+			</currency>
+			<currency type="TJS">
+				<displayName>סומוני טג'קיסטני</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="TMM">
 				<displayName>מנאט טורקמאני</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="TMT">
 				<displayName draft="contributed">מנאט טורקמני</displayName>
 			</currency>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<currency type="TND">
 				<displayName>דינר טוניסאי</displayName>
 			</currency>
@@ -5109,21 +6965,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="TRY">
 				<displayName>לירה טורקית חדשה</displayName>
+<<<<<<< HEAD
 				<displayName count="one">לירה טורקית חדשה</displayName>
 				<displayName count="two">לירה טורקית חדשה</displayName>
 				<displayName count="many">לירה טורקית חדשה</displayName>
 				<displayName count="other">לירה טורקית חדשה</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="TTD">
 				<displayName>דולר טרינידדי</displayName>
 			</currency>
 			<currency type="TWD">
+<<<<<<< HEAD
 				<displayName>דולר טייוואני חדש</displayName>
 				<displayName count="one">דולר טאייוני חדש</displayName>
 				<displayName count="two">דולר טאייוני חדש</displayName>
 				<displayName count="many">דולר טאייוני חדש</displayName>
 				<displayName count="other">דולר טאייוני חדש</displayName>
 				<symbol draft="contributed">NT$</symbol>
+=======
+				<displayName>דולר טאייוני חדש</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="TZS">
 				<displayName>שילינג טנזני</displayName>
@@ -5132,18 +6995,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>גריבנה אוקראיני</displayName>
 			</currency>
 			<currency type="UGS">
+<<<<<<< HEAD
 				<displayName>שילינג אוגנדי (1966 – 1987)</displayName>
+=======
+				<displayName>שילינג אוגנדי (1966 - 1987)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="UGX">
 				<displayName>שילינג אוגנדי</displayName>
 			</currency>
 			<currency type="USD">
 				<displayName>דולר אמריקאי</displayName>
+<<<<<<< HEAD
 				<displayName count="one">דולר אמריקאי</displayName>
 				<displayName count="two">דולר אמריקאי</displayName>
 				<displayName count="many">דולר אמריקאי</displayName>
 				<displayName count="other">דולר אמריקאי</displayName>
 				<symbol draft="contributed">US$</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="USN">
 				<displayName>דולר אמריקאי (היום הבא)</displayName>
@@ -5158,14 +7028,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>סום אוזבקי</displayName>
 			</currency>
 			<currency type="VEB">
+<<<<<<< HEAD
 				<displayName>בוליבר ונצואלי (1871–2008)</displayName>
 			</currency>
 			<currency type="VEF">
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<displayName>בוליבר ונצואלי</displayName>
 			</currency>
 			<currency type="VND">
 				<displayName>דונג וייטנאמי</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">₫</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="VUV">
 				<displayName>ואטו של ונואטו</displayName>
@@ -5174,18 +7050,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>טאלה סמואי</displayName>
 			</currency>
 			<currency type="XAF">
+<<<<<<< HEAD
 				<displayName>פרנק CFA BEAC</displayName>
 				<symbol draft="contributed">FCFA</symbol>
 			</currency>
 			<currency type="XAG">
 				<displayName draft="contributed">כסף</displayName>
+=======
+				<displayName>פרנק CFA</displayName>
+			</currency>
+			<currency type="XAG">
+				<displayName>כסף</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="XAU">
 				<displayName>זהב</displayName>
 			</currency>
 			<currency type="XCD">
 				<displayName>דולר מזרח קריבי</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">EC$</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="XDR">
 				<displayName>זכויות משיכה מיוחדות</displayName>
@@ -5193,6 +7079,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="XFO">
 				<displayName>פרנק זהב</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="XOF">
 				<displayName draft="contributed">פרנק CFA BCEAO</displayName>
 				<symbol draft="contributed">CFA</symbol>
@@ -5206,12 +7093,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="XPT">
 				<displayName draft="contributed">פלטינה</displayName>
+=======
+			<currency type="XPD">
+				<displayName>פלדיום</displayName>
+			</currency>
+			<currency type="XPT">
+				<displayName>פלטינה</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="XTS">
 				<displayName>סימון למטרות בדיקה</displayName>
 			</currency>
 			<currency type="XXX">
+<<<<<<< HEAD
 				<displayName>מטבע שאינו ידוע</displayName>
+=======
+				<displayName>סימון &quot;ללא מטבע&quot;</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="YDD">
 				<displayName>דינר תימני</displayName>
@@ -5220,10 +7118,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>ריאל תימני</displayName>
 			</currency>
 			<currency type="YUD">
+<<<<<<< HEAD
 				<displayName draft="provisional">דינר יגוסלבי חדש</displayName>
 			</currency>
 			<currency type="YUM">
 				<displayName draft="provisional">דינר יגוסלבי</displayName>
+=======
+				<displayName>דינר יגוסלבי חדש</displayName>
+			</currency>
+			<currency type="YUM">
+				<displayName>דינר יגוסלבי</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ZAL">
 				<displayName>ראנד דרום אפריקאי (כספי)</displayName>
@@ -5232,10 +7137,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>ראנד דרום אפריקאי</displayName>
 			</currency>
 			<currency type="ZMK">
+<<<<<<< HEAD
 				<displayName>קוואצ׳ה זמבית (1968–2012)</displayName>
 			</currency>
 			<currency type="ZMW">
 				<displayName>קוואצ׳ה זמבית</displayName>
+=======
+				<displayName>קוואצ'ה זמבית</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ZRN">
 				<displayName>זאיר חדש</displayName>
@@ -5244,6 +7153,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>דולר זימבבואי</displayName>
 			</currency>
 		</currencies>
+<<<<<<< HEAD
 		<miscPatterns numberSystem="latn">
 			<pattern type="atLeast" draft="contributed">⩾{0}+</pattern>
 			<pattern type="range" draft="contributed">{0}-{1}</pattern>
@@ -6111,6 +8021,39 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<listPatternPart type="2">{0} ו{1}</listPatternPart>
 		</listPattern>
 	</listPatterns>
+=======
+	</numbers>
+	<units>
+		<unit type="day">
+			<unitPattern count="one">{0} יום</unitPattern>
+			<unitPattern count="other">{0} ימים</unitPattern>
+		</unit>
+		<unit type="hour">
+			<unitPattern count="one">{0} שעה</unitPattern>
+			<unitPattern count="other">{0} שעות</unitPattern>
+		</unit>
+		<unit type="minute">
+			<unitPattern count="one">{0} דקה</unitPattern>
+			<unitPattern count="other">{0} דקות</unitPattern>
+		</unit>
+		<unit type="month">
+			<unitPattern count="one">{0} חודש</unitPattern>
+			<unitPattern count="other">{0} חודשים</unitPattern>
+		</unit>
+		<unit type="second">
+			<unitPattern count="one">{0} שניה</unitPattern>
+			<unitPattern count="other">{0} שניות</unitPattern>
+		</unit>
+		<unit type="week">
+			<unitPattern count="one">{0} שבוע</unitPattern>
+			<unitPattern count="other">{0} שבועות</unitPattern>
+		</unit>
+		<unit type="year">
+			<unitPattern count="one">{0} שנה</unitPattern>
+			<unitPattern count="other">{0} שנים</unitPattern>
+		</unit>
+	</units>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	<posix>
 		<messages>
 			<yesstr>כן:כ</yesstr>

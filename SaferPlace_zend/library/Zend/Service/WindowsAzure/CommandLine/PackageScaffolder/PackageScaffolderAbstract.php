@@ -14,7 +14,11 @@
  *
  * @category   Zend
  * @package    Zend_Service_WindowsAzure
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
@@ -22,7 +26,11 @@
 /**
  * @category   Zend
  * @package    Zend_Service_WindowsAzure_CommandLine
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */ 
 abstract class Zend_Service_WindowsAzure_CommandLine_PackageScaffolder_PackageScaffolderAbstract
@@ -119,13 +127,21 @@ abstract class Zend_Service_WindowsAzure_CommandLine_PackageScaffolder_PackageSc
         }
         
         if (is_dir($path) ) {
+<<<<<<< HEAD
             @chmod($path, '0775');
+=======
+            @chmod($path, '0777');
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             if (!self::deleteDirectory($path) ) {
                 throw new RuntimeException("Failed to delete \"{$path}\".");
             }
         }
             
+<<<<<<< HEAD
         if (!mkdir($path, '0775', $recursive) || !is_dir($path)) {
+=======
+        if (!mkdir($path, '0777', $recursive) || !is_dir($path)) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             throw new RuntimeException( "Failed to create directory \"{$path}\"." );
         }
 
@@ -142,9 +158,13 @@ abstract class Zend_Service_WindowsAzure_CommandLine_PackageScaffolder_PackageSc
      * 
      * @return boolean
      */
+<<<<<<< HEAD
     protected function copyDirectory($sourcePath, $destinationPath, $abortIfExists = true, $mode = '0775') {
         $mode = $mode & ~0002;
 
+=======
+    protected function copyDirectory($sourcePath, $destinationPath, $abortIfExists = true, $mode = '0777') {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         if (is_null($sourcePath) || !is_string($sourcePath) || empty($sourcePath)) {
             throw new InvalidArgumentException("Undefined \"sourcePath\"");
         }
@@ -219,7 +239,11 @@ abstract class Zend_Service_WindowsAzure_CommandLine_PackageScaffolder_PackageSc
         if (!$handleDir) {
             return false;
         }
+<<<<<<< HEAD
         @chmod($path, 0775);
+=======
+        @chmod($path, 0777);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         while ($file = readdir($handleDir)) {
             if ($file == '.' || $file == '..') {
                 continue;
@@ -242,7 +266,11 @@ abstract class Zend_Service_WindowsAzure_CommandLine_PackageScaffolder_PackageSc
             );
         }
         
+<<<<<<< HEAD
         @chmod($path, 0775);        
+=======
+        @chmod($path, 0777);        
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         closedir($handleDir);
         @rmdir($path);
                      

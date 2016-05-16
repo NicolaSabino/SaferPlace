@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -16,6 +17,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<localeSeparator>{0}, {1}</localeSeparator>
 			<localeKeyTypePattern>{0}: {1}</localeKeyTypePattern>
 		</localeDisplayPattern>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.83 $"/>
+		<generation date="$Date: 2009/06/15 03:46:25 $"/>
+		<language type="ta"/>
+	</identity>
+	<localeDisplayNames>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		<languages>
 			<language type="aa">அஃபார்</language>
 			<language type="ab">அப்காஜியான்</language>
@@ -25,16 +35,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ady">அதகே</language>
 			<language type="ae">அவெஸ்தான்</language>
 			<language type="af">ஆஃப்ரிகான்ஸ்</language>
+<<<<<<< HEAD
 			<language type="afh">அஃப்ரிஹிலி</language>
 			<language type="ain">ஐனு</language>
 			<language type="ak">ஆகான்</language>
 			<language type="akk">அக்கேதியன்</language>
 			<language type="ale">அலூட்</language>
+=======
+			<language type="afa">அஃப்ரோ-ஏசியாடிக் மொழி</language>
+			<language type="afh">அஃப்ரிஹிலி</language>
+			<language type="ain">ஐனு</language>
+			<language type="ak">அகான்</language>
+			<language type="akk">அக்கேதியன்</language>
+			<language type="ale">அலூட்</language>
+			<language type="alg">அல்கான்கியன் மொழி</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="alt">தெற்கு அல்தை</language>
 			<language type="am">அம்ஹாரிக்</language>
 			<language type="an">ஆர்கோனீஸ்</language>
 			<language type="ang">பழைய ஆங்கிலம்</language>
 			<language type="anp">அங்கிகா</language>
+<<<<<<< HEAD
 			<language type="ar">அரபு</language>
 			<language type="ar_001">மாடர்ன் ஸ்டாண்டர்ட் அரபிக்</language>
 			<language type="arc">அராமைக்</language>
@@ -43,10 +64,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="arw">அராவாக்</language>
 			<language type="as">அஸ்ஸாமி</language>
 			<language type="ast">அஸ்துரியன்</language>
+=======
+			<language type="apa">அபாச்சி மொழி</language>
+			<language type="ar">அரபு</language>
+			<language type="arc">அராமைக்</language>
+			<language type="arn">அரௌகேனியன்</language>
+			<language type="arp">அரபஹோ</language>
+			<language type="art">செயற்கையான மொழி</language>
+			<language type="arw">அராவாக்</language>
+			<language type="as">அஸ்ஸாமி</language>
+			<language type="ast">அஸ்துரியன்</language>
+			<language type="ath">அதாபஸ்கான் மொழி</language>
+			<language type="aus">ஆஸ்த்ரேலிய மொழி</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="av">அவேரிக்</language>
 			<language type="awa">அவதி</language>
 			<language type="ay">அய்மரா</language>
 			<language type="az">அசர்பாய்ஜானி</language>
+<<<<<<< HEAD
 			<language type="az" alt="short">அஸேரி</language>
 			<language type="ba">பாஷ்கிர்</language>
 			<language type="bal">பெலுசி</language>
@@ -56,6 +91,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="bej">பேஜா</language>
 			<language type="bem">பெம்பா</language>
 			<language type="bg">பல்கேரியன்</language>
+=======
+			<language type="ba">பாஷ்கிர்</language>
+			<language type="bad">பாண்டா</language>
+			<language type="bai">பமிலெகே மொழி</language>
+			<language type="bal">பெலுசி</language>
+			<language type="ban">பலினீஸ்</language>
+			<language type="bas">பாஸா</language>
+			<language type="bat">பால்டிக் மொழி</language>
+			<language type="be">பைலோருஷ்ன்</language>
+			<language type="bej">பேஜா</language>
+			<language type="bem">பெம்பா</language>
+			<language type="ber">பெர்பெர்</language>
+			<language type="bg">பல்கேரியன்</language>
+			<language type="bh">பிஹாரி</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="bho">போஜ்பூரி</language>
 			<language type="bi">பிஸ்லாமா</language>
 			<language type="bik">பிகோல்</language>
@@ -63,19 +113,38 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="bla">சிக்சிகா</language>
 			<language type="bm">பம்பாரா</language>
 			<language type="bn">வங்காளம்</language>
+<<<<<<< HEAD
 			<language type="bo">திபெத்து</language>
 			<language type="br">பிரெட்டன்</language>
 			<language type="bra">ப்ராஜ்</language>
 			<language type="bs">போஸ்னியன்</language>
+=======
+			<language type="bnt">பான்டு</language>
+			<language type="bo">திபெத்து</language>
+			<language type="br">பிரிடன்</language>
+			<language type="bra">ப்ராஜ்</language>
+			<language type="bs">போஸ்னியன்</language>
+			<language type="btk">பாடாக்</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="bua">புரியாத்</language>
 			<language type="bug">புகினீஸ்</language>
 			<language type="byn">ப்லின்</language>
 			<language type="ca">காடலான்</language>
 			<language type="cad">கேடோ</language>
+<<<<<<< HEAD
 			<language type="car">கரீப்</language>
 			<language type="cch">ஆட்சம்</language>
 			<language type="ce">செசென்</language>
 			<language type="ceb">செபுவானோ</language>
+=======
+			<language type="cai">மத்திய அமெரிக்கன் இன்டியன் மொழி</language>
+			<language type="car">கரீப்</language>
+			<language type="cau">காகேஷியன் மொழி</language>
+			<language type="cch">ஆட்சம்</language>
+			<language type="ce">செசென்</language>
+			<language type="ceb">செபுவானோ</language>
+			<language type="cel">கெல்டிக் மொழி</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ch">சாமோரோ</language>
 			<language type="chb">சிப்சா</language>
 			<language type="chg">ஷகதை</language>
@@ -84,6 +153,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="chn">சினூக் ஜார்கான்</language>
 			<language type="cho">சோக்தௌ</language>
 			<language type="chp">சிபெவ்யான்</language>
+<<<<<<< HEAD
 			<language type="chr">செரொகி</language>
 			<language type="chy">செயேனி</language>
 			<language type="ckb">சொரானி குர்திஷ்</language>
@@ -102,24 +172,57 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="de">ஜெர்மன்</language>
 			<language type="de_AT">ஆஸ்ட்ரியன் ஜெர்மன்</language>
 			<language type="de_CH">ஸ்விஸ் ஹை ஜெர்மன்</language>
+=======
+			<language type="chr">செரூக்கி</language>
+			<language type="chy">செயேனி</language>
+			<language type="cmc">சாமிக் மொழி</language>
+			<language type="co">கார்சியன்</language>
+			<language type="cop">காப்டிக்</language>
+			<language type="cpe">ஆங்கில அடைப்படையிலான கிரியோல் மற்றும் பிஜின்</language>
+			<language type="cpf">ஃப்ரென்ச் அடைப்படையிலான கிரியோல் மற்றும் பிஜின்</language>
+			<language type="cpp">போர்சுக்கீஸ் அடைப்படையிலான கிரியோல் மற்றும் பிஜின்</language>
+			<language type="cr">க்ரீ</language>
+			<language type="crh">கிரிமியன் துர்க்கி</language>
+			<language type="crp">கிரியோல் மற்றும் பிஜின்</language>
+			<language type="cs">செக்</language>
+			<language type="csb">கஷுபியன்</language>
+			<language type="cu">சர்ச் ஸ்லாவிக்</language>
+			<language type="cus">குஷிடிக் மொழி</language>
+			<language type="cv">சுவாஷ்</language>
+			<language type="cy">வெல்ஷ்</language>
+			<language type="da">டானிஷ்</language>
+			<language type="dak">தகோடா</language>
+			<language type="dar">தார்குவா</language>
+			<language type="day">தயாக்</language>
+			<language type="de">ஜெர்மன்</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="del">தெலாவேர்</language>
 			<language type="den">ஸ்லாவ்</language>
 			<language type="dgr">டோக்ரிப்</language>
 			<language type="din">டின்கா</language>
 			<language type="doi">டோக்ரி</language>
+<<<<<<< HEAD
+=======
+			<language type="dra">திராவிட மொழி</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="dsb">லோவர் சோர்பியன்</language>
 			<language type="dua">துவாலா</language>
 			<language type="dum">மத்திய டச்சு</language>
 			<language type="dv">திவேஹி</language>
 			<language type="dyu">ட்யூலா</language>
 			<language type="dz">பூடானி</language>
+<<<<<<< HEAD
 			<language type="ee">ஈவ்</language>
+=======
+			<language type="ee">ஈஓயே</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="efi">எஃபிக்</language>
 			<language type="egy">பண்டைய எகிப்தியன்</language>
 			<language type="eka">ஈகாஜுக்</language>
 			<language type="el">கிரேக்கம்</language>
 			<language type="elx">எலமைட்</language>
 			<language type="en">ஆங்கிலம்</language>
+<<<<<<< HEAD
 			<language type="en_AU">ஆஸ்ட்ரேலியன் ஆங்கிலம்</language>
 			<language type="en_CA">கனடியன் ஆங்கிலம்</language>
 			<language type="en_GB">ஆங்கிலம் (யூகே)</language>
@@ -132,6 +235,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="es_419">லத்தின் அமெரிக்கன் ஸ்பானிஷ்</language>
 			<language type="es_ES">ஐரோப்பிய ஸ்பானிஷ்</language>
 			<language type="es_MX">மெக்சிகன் ஸ்பானிஷ்</language>
+=======
+			<language type="enm">மத்திய ஆங்கிலம்</language>
+			<language type="eo">எஸ்பரேன்டோ</language>
+			<language type="es">ஸ்பேனிஷ்</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="et">எஸ்டோனியன்</language>
 			<language type="eu">பஸ்க்</language>
 			<language type="ewo">எவோன்டோ</language>
@@ -141,23 +249,38 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ff">ஃபுலா</language>
 			<language type="fi">பின்னிஷ்</language>
 			<language type="fil">ஃபிலிபினோ</language>
+<<<<<<< HEAD
+=======
+			<language type="fiu">ஃபினோ-உக்ரைன் மொழி</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="fj">ஃபிஜி</language>
 			<language type="fo">ஃபரிஸ்த்</language>
 			<language type="fon">ஃபான்</language>
 			<language type="fr">பிரெஞ்சு</language>
+<<<<<<< HEAD
 			<language type="fr_CA">கெனடியன் பிரன்சு</language>
 			<language type="fr_CH">ஸ்விஸ் பிரெஞ்ச்</language>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="frm">மத்திய ஃப்ரென்ச்</language>
 			<language type="fro">பழைய ஃப்ரென்ச்</language>
 			<language type="frr">வடக்கு ஃப்ரிஸியான்</language>
 			<language type="frs">கிழக்கு ஃப்ரிஸியான்</language>
 			<language type="fur">ஃப்ரியூலியன்</language>
+<<<<<<< HEAD
 			<language type="fy">மேற்கத்திய ஃப்ரிஷியன்</language>
+=======
+			<language type="fy">மேற்கத்திய பிரிஷிய</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ga">ஐரிஷ்</language>
 			<language type="gaa">கா</language>
 			<language type="gay">கயோ</language>
 			<language type="gba">பயா</language>
 			<language type="gd">ஸ்காட்ஸ் கேலிக்</language>
+<<<<<<< HEAD
+=======
+			<language type="gem">ஜெர்மானிய மொழி</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="gez">கீஜ்</language>
 			<language type="gil">கில்பெர்டீஸ்</language>
 			<language type="gl">காலிஸியன்</language>
@@ -179,26 +302,50 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="he">ஹுப்ரு</language>
 			<language type="hi">இந்தி</language>
 			<language type="hil">ஹிலிகாய்னான்</language>
+<<<<<<< HEAD
 			<language type="hit">ஹிட்டைட்</language>
 			<language type="hmn">மாங்க்</language>
 			<language type="ho">ஹிரி மோட்டு</language>
 			<language type="hr">குரோஷியன்</language>
+=======
+			<language type="him">ஹிமாச்சலி</language>
+			<language type="hit">ஹிட்டைட்</language>
+			<language type="hmn">மாங்க்</language>
+			<language type="ho">ஹிரி மோட்டு</language>
+			<language type="hr">கரோஷியன்</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="hsb">அப்பர் சோர்பியான்</language>
 			<language type="ht">ஹைத்தியன்</language>
 			<language type="hu">ஹங்கேரியன்</language>
 			<language type="hup">ஹுபா</language>
 			<language type="hy">ஆர்மேனியன்</language>
 			<language type="hz">ஹெரேரோ</language>
+<<<<<<< HEAD
 			<language type="ia">இண்டர்லிங்வா</language>
+=======
+			<language type="ia">இன்டர்லிங்குவா</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="iba">இபான்</language>
 			<language type="id">இந்தோனேஷியன்</language>
 			<language type="ie">இன்டர்லிங்</language>
 			<language type="ig">இக்போ</language>
 			<language type="ii">சிசுவான் ஈ</language>
+<<<<<<< HEAD
 			<language type="ik">இனுபியாக்</language>
 			<language type="ilo">இலோகோ</language>
 			<language type="inh">இங்குஷ்</language>
 			<language type="io">இடோ</language>
+=======
+			<language type="ijo">இஜோ</language>
+			<language type="ik">இனுபியாக்</language>
+			<language type="ilo">இலோகோ</language>
+			<language type="inc">இந்திய மொழி</language>
+			<language type="ine">இன்டோ-ஐரோப்பியன் மொழி</language>
+			<language type="inh">இங்குஷ்</language>
+			<language type="io">இடோ</language>
+			<language type="ira">இரானியன் மொழி</language>
+			<language type="iro">இரோகோயியன் மொழி</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="is">ஐஸ்லென்டிக்</language>
 			<language type="it">இத்தாலியன்</language>
 			<language type="iu">இனுகிடூட்</language>
@@ -213,12 +360,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="kac">காசின்</language>
 			<language type="kaj">ஜ்ஜூ</language>
 			<language type="kam">கம்பா</language>
+<<<<<<< HEAD
+=======
+			<language type="kar">கரேன்</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="kaw">காவி</language>
 			<language type="kbd">கபார்டியன்</language>
 			<language type="kcg">தையாப்</language>
 			<language type="kfo">கோரோ</language>
 			<language type="kg">காங்கோ</language>
 			<language type="kha">காஸி</language>
+<<<<<<< HEAD
+=======
+			<language type="khi">கொய்ஸன் மொழி</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="kho">கோதானீஸ்</language>
 			<language type="ki">கிகுயூ</language>
 			<language type="kj">குவான்யாமா</language>
@@ -234,6 +389,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="kr">கனுரி</language>
 			<language type="krc">கராசே-பல்கார்</language>
 			<language type="krl">கரேலியன்</language>
+<<<<<<< HEAD
+=======
+			<language type="kro">க்ரு</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="kru">குருக்</language>
 			<language type="ks">காஷ்மிரி</language>
 			<language type="ku">குர்திஷ்</language>
@@ -241,13 +400,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="kut">குடேனை</language>
 			<language type="kv">கோமி</language>
 			<language type="kw">கார்னிஷ்</language>
+<<<<<<< HEAD
 			<language type="ky">கிர்கிஸ்</language>
+=======
+			<language type="ky">கிர்கிஷ்</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="la">லத்தின்</language>
 			<language type="lad">லடினோ</language>
 			<language type="lah">லஹன்டா</language>
 			<language type="lam">லம்பா</language>
 			<language type="lb">லக்க்ஷெம்பர்கிஷ்</language>
 			<language type="lez">லெஜ்ஜியன்</language>
+<<<<<<< HEAD
 			<language type="lg">ஹான்டா</language>
 			<language type="li">லிம்பர்கிஷ்</language>
 			<language type="ln">லிங்காலா</language>
@@ -257,6 +421,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="lt">லிதுவேனியன்</language>
 			<language type="lu">லுபா-கடாங்கா</language>
 			<language type="lua">லுபா-லுலுலா</language>
+=======
+			<language type="lg">கான்டா</language>
+			<language type="li">லிம்பர்கிஷ்</language>
+			<language type="ln">லிங்காலா</language>
+			<language type="lo">லோத்தியன்</language>
+			<language type="lol">மோங்கோ</language>
+			<language type="loz">லோஜி</language>
+			<language type="lt">லிதுவேனியன்</language>
+			<language type="lu">லுபா-கடாங்கா</language>
+			<language type="lua">லுபா-லுலௌ</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="lui">லுய்சேனோ</language>
 			<language type="lun">லூன்டா</language>
 			<language type="luo">லுயோ</language>
@@ -267,34 +442,64 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="mai">மைதிலி</language>
 			<language type="mak">மகாசார்</language>
 			<language type="man">மான்டிங்கோ</language>
+<<<<<<< HEAD
+=======
+			<language type="map">ஆஸ்ட்ரோனேஷியன்</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mas">மாசாய்</language>
 			<language type="mdf">மோக்க்ஷா</language>
 			<language type="mdr">மான்டார்</language>
 			<language type="men">மென்டீ</language>
+<<<<<<< HEAD
 			<language type="mfe">மொரிசியன்</language>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mg">மலகாஸி</language>
 			<language type="mga">மத்திய ஐரிஷ்</language>
 			<language type="mh">மார்ஷெலிஷ்</language>
 			<language type="mi">மௌரி</language>
 			<language type="mic">மிக்மாக்</language>
 			<language type="min">மின்னாங்கபௌ</language>
+<<<<<<< HEAD
 			<language type="mk">மாஸிடோனியன்</language>
+=======
+			<language type="mis">பலதரப்பட்ட மொழிகள்</language>
+			<language type="mk">மாஸிடோனியன்</language>
+			<language type="mkh">மான்-க்மெர் மொழி</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ml">மலையாளம்</language>
 			<language type="mn">மங்கோலியன்</language>
 			<language type="mnc">மன்சு</language>
 			<language type="mni">மனிபூரி</language>
+<<<<<<< HEAD
+=======
+			<language type="mno">மனோபோ மொழி</language>
+			<language type="mo">மோல்டாவியன்</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="moh">மோஹாவ்க்</language>
 			<language type="mos">மோஸ்ஸி</language>
 			<language type="mr">மராத்தி</language>
 			<language type="ms">மலாய்</language>
 			<language type="mt">மால்டிஸ்</language>
 			<language type="mul">பல மொழிகள்</language>
+<<<<<<< HEAD
+=======
+			<language type="mun">முண்டா மொழி</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mus">க்ரீக்</language>
 			<language type="mwl">மிரான்டீஸ்</language>
 			<language type="mwr">மார்வாரி</language>
 			<language type="my">பர்மிஸ்</language>
+<<<<<<< HEAD
 			<language type="myv">ஏர்ஜியா</language>
 			<language type="na">நவ்ரூ</language>
+=======
+			<language type="myn">மாயான் மொழி</language>
+			<language type="myv">ஏர்ஜியா</language>
+			<language type="na">நவ்ரூ</language>
+			<language type="nah">நஹுவால்</language>
+			<language type="nai">வடக்கு அமெரிக்கன் இன்டியன் மொழி</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="nap">நியோபோலிடன்</language>
 			<language type="nb">நார்வே பொக்மால்</language>
 			<language type="nd">வடக்கு தெபெலே</language>
@@ -303,9 +508,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="new">நெவாரி</language>
 			<language type="ng">தோங்கா</language>
 			<language type="nia">நியாஸ்</language>
+<<<<<<< HEAD
 			<language type="niu">நியூவான்</language>
 			<language type="nl">டச்சு</language>
 			<language type="nl_BE">பிலெமிஷ்</language>
+=======
+			<language type="nic">நைஜர்-கோரடோஃபனியன் மொழி</language>
+			<language type="niu">நியூவான்</language>
+			<language type="nl">டச்சு</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="nn">நார்வேஜியன் நியூநார்ஸ்க்</language>
 			<language type="no">நார்வே</language>
 			<language type="nog">நோகை</language>
@@ -313,6 +524,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="nqo">என்'கோ</language>
 			<language type="nr">தெற்கு தெபெலே</language>
 			<language type="nso">வடக்கு சோதோ</language>
+<<<<<<< HEAD
+=======
+			<language type="nub">நியூபியன் மொழி</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="nv">நவாஜோ</language>
 			<language type="nwc">பாரம்பரிய நேவாரி</language>
 			<language type="ny">நயன்ஜா</language>
@@ -320,38 +535,68 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="nyn">நியான்கோலே</language>
 			<language type="nyo">நியோரோ</language>
 			<language type="nzi">நிஜ்மா</language>
+<<<<<<< HEAD
 			<language type="oc">ஒக்கிடன்</language>
+=======
+			<language type="oc">ஆகிடியன்</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="oj">ஓஜிபவா</language>
 			<language type="om">ஒரோமோ</language>
 			<language type="or">ஒரியா</language>
 			<language type="os">ஒசெட்டிக்</language>
 			<language type="osa">ஓசேஜ்</language>
 			<language type="ota">ஒட்டோமன் துர்க்கி</language>
+<<<<<<< HEAD
 			<language type="pa">பஞ்சாபி</language>
+=======
+			<language type="oto">ஒட்டோமன் மொழி</language>
+			<language type="pa">பஞ்சாபி</language>
+			<language type="paa">பபுவான் மொழி</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="pag">பன்காசினன்</language>
 			<language type="pal">பாஹ்லவி</language>
 			<language type="pam">பம்பாங்கா</language>
 			<language type="pap">பபியேமென்டோ</language>
 			<language type="pau">பலௌவ்ன்</language>
 			<language type="peo">பழைய பெர்ஷியன்</language>
+<<<<<<< HEAD
+=======
+			<language type="phi">பிலிபைன் மொழி</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="phn">ஃபொனிஷியன்</language>
 			<language type="pi">பாலி</language>
 			<language type="pl">போலிஷ்</language>
 			<language type="pon">ஃபோன்பெயென்</language>
+<<<<<<< HEAD
 			<language type="pro">பழைய ப்ரோவென்சால்</language>
 			<language type="ps">பாஷ்டோ</language>
 			<language type="ps" alt="variant">புஷ்டோ</language>
 			<language type="pt">போர்ச்சுக்கீஸ்</language>
 			<language type="pt_BR">போர்ச்சுகீஸ் (பிரேசில்)</language>
 			<language type="pt_PT">ஐரோப்பிய போர்த்துகீசியம்</language>
+=======
+			<language type="pra">பராக்ரித் மொழி</language>
+			<language type="pro">பழைய ப்ரோவென்சால்</language>
+			<language type="ps">பாஷ்டோ</language>
+			<language type="pt">போர்ச்சுக்கீஸ்</language>
+			<language type="pt_BR">பிரேசிலியன் போர்ச்சுகீசியம்</language>
+			<language type="pt_PT">ஐபேரியன் போர்ச்சுகீசியம்</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="qu">கிவேசுவா</language>
 			<language type="raj">ராஜஸ்தானி</language>
 			<language type="rap">ரபனுய்</language>
 			<language type="rar">ரரோடோங்கன்</language>
+<<<<<<< HEAD
 			<language type="rm">ரோமென்ஸ்</language>
 			<language type="rn">ருண்டி</language>
 			<language type="ro">ரோமேனியன்</language>
 			<language type="ro_MD">மோல்டாவியன்</language>
+=======
+			<language type="rm">ரைட்டோ-ரோமென்ஸ்</language>
+			<language type="rn">ருண்டி</language>
+			<language type="ro">ரோமேனியன்</language>
+			<language type="roa">ரோமன்ஸ் மொழி</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="rom">ரோமானி</language>
 			<language type="root">ரூட்</language>
 			<language type="ru">ரஷியன்</language>
@@ -360,6 +605,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sa">சமஸ்கிருதம்</language>
 			<language type="sad">சான்டாவே</language>
 			<language type="sah">யாகுட்</language>
+<<<<<<< HEAD
+=======
+			<language type="sai">தென் அமெரிக்க இன்டியன் மொழி</language>
+			<language type="sal">சாலிஷன் மொழி</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="sam">சமாரிடன் அராமைக்</language>
 			<language type="sas">சாசாக்</language>
 			<language type="sat">சான்டாலி</language>
@@ -369,16 +619,34 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sd">சிந்தி</language>
 			<language type="se">வடக்கு சாமி</language>
 			<language type="sel">செல்குப்</language>
+<<<<<<< HEAD
 			<language type="sg">சாங்கோ</language>
 			<language type="sga">பழைய ஐரிஷ்</language>
+=======
+			<language type="sem">செமிடிக் மொழி</language>
+			<language type="sg">சாங்கோ</language>
+			<language type="sga">பழைய ஐரிஷ்</language>
+			<language type="sgn">சங்கேத மொழி</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="sh">செர்போ-க்ரோஷியன்</language>
 			<language type="shn">ஷான்</language>
 			<language type="si">சிங்களம்</language>
 			<language type="sid">சிடாமோ</language>
+<<<<<<< HEAD
 			<language type="sk">ஸ்லோவாக்</language>
 			<language type="sl">ஸ்லோவேனியன்</language>
 			<language type="sm">ஸாமோவான்</language>
 			<language type="sma">தெற்கு சாமி</language>
+=======
+			<language type="sio">சியோயுவான் மொழி</language>
+			<language type="sit">சினோ-திபேத்தியன் மொழி</language>
+			<language type="sk">ஸ்லோவாக்</language>
+			<language type="sl">ஸ்லோவினேயின்</language>
+			<language type="sla">ஸ்லாவிக் மொழி</language>
+			<language type="sm">ஸாமோவான்</language>
+			<language type="sma">தெற்கு சாமி</language>
+			<language type="smi">சாமி மொழி</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="smj">லுலே சாமி</language>
 			<language type="smn">இனாரி சாமி</language>
 			<language type="sms">ஸ்கோல்ட் சாமி</language>
@@ -386,22 +654,41 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="snk">சோனின்கே</language>
 			<language type="so">சோமாலி</language>
 			<language type="sog">சோக்தியன்</language>
+<<<<<<< HEAD
 			<language type="sq">அல்பெனியன்</language>
 			<language type="sr">செர்பியன்</language>
 			<language type="srn">ஸ்ரானன் டோங்கோ</language>
 			<language type="srr">செரெர்</language>
 			<language type="ss">ஸ்வாடீ</language>
+=======
+			<language type="son">சோங்காய்</language>
+			<language type="sq">அல்பெனியன்</language>
+			<language type="sr">சர்பியன்</language>
+			<language type="srn">ஸ்ரானன் டோங்கோ</language>
+			<language type="srr">செரெர்</language>
+			<language type="ss">ஸ்வாடீ</language>
+			<language type="ssa">நிலோ-சஹாரன் மொழி</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="st">தெற்கு ஸோதோ</language>
 			<language type="su">சுடானீஸ்</language>
 			<language type="suk">சுகுமா</language>
 			<language type="sus">சுசு</language>
 			<language type="sux">சுமேரியன்</language>
+<<<<<<< HEAD
 			<language type="sv">ஸ்வீடிஷ்</language>
 			<language type="sw">சுவாஹிலி</language>
 			<language type="swb">கொமோரியன்</language>
 			<language type="syc">பாரம்பரிய சிரியாக்</language>
 			<language type="syr">சிரியாக்</language>
 			<language type="ta">தமிழ்</language>
+=======
+			<language type="sv">ஷீவிடிஸ்</language>
+			<language type="sw">சுவாஹிலி</language>
+			<language type="syc">பாரம்பரிய சிரியாக்</language>
+			<language type="syr">சிரியாக்</language>
+			<language type="ta">தமிழ்</language>
+			<language type="tai">தாய் மொழி</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="te">தெலுங்கு</language>
 			<language type="tem">டிம்னே</language>
 			<language type="ter">டெரெனோ</language>
@@ -414,29 +701,50 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="tk">டர்க்மென்</language>
 			<language type="tkl">டோகேலௌ</language>
 			<language type="tl">டாகாலோக்</language>
+<<<<<<< HEAD
 			<language type="tlh">க்ளிங்கோன்</language>
 			<language type="tli">டிலிங்கிட்</language>
 			<language type="tmh">டாமாஷேக்</language>
 			<language type="tn">ஸ்வானா</language>
 			<language type="to">டோங்கான்</language>
+=======
+			<language type="tlh">கிளிங்கன்</language>
+			<language type="tli">டிலிங்கிட்</language>
+			<language type="tmh">டாமாஷேக்</language>
+			<language type="tn">ஸ்வானா</language>
+			<language type="to">டோங்கா</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="tog">நயாசா டோங்கா</language>
 			<language type="tpi">டோக் பிஸின்</language>
 			<language type="tr">டர்கிஷ்</language>
 			<language type="ts">ஸோங்கா</language>
 			<language type="tsi">ட்ஸிம்ஷியன்</language>
 			<language type="tt">டாடர்</language>
+<<<<<<< HEAD
 			<language type="tum">தும்புகா</language>
+=======
+			<language type="tum">டும்புகா</language>
+			<language type="tup">துபி மொழி</language>
+			<language type="tut">அல்தேய்க் மொழி</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="tvl">டுவாலு</language>
 			<language type="tw">ட்வி</language>
 			<language type="ty">டஹிதியான்</language>
 			<language type="tyv">டுவினியன்</language>
 			<language type="udm">உட்முர்ட்</language>
 			<language type="ug">யுகுர்</language>
+<<<<<<< HEAD
 			<language type="ug" alt="variant">யூகுர்</language>
 			<language type="uga">உகாரிட்க்</language>
 			<language type="uk">உக்ரைனியன்</language>
 			<language type="umb">அம்பொண்டு</language>
 			<language type="und">அறியப்படாத மொழி</language>
+=======
+			<language type="uga">உகாரிட்க்</language>
+			<language type="uk">உக்ரேனியன்</language>
+			<language type="umb">அம்பொண்டு</language>
+			<language type="und">தெரியாத அல்லது செல்லாத பிரதேசம்</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ur">உருது</language>
 			<language type="uz">உஸ்பெக்</language>
 			<language type="vai">வை</language>
@@ -445,25 +753,46 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="vo">ஒலாபூக்</language>
 			<language type="vot">வோட்க்</language>
 			<language type="wa">ஒவாலூன்</language>
+<<<<<<< HEAD
 			<language type="wal">வாலாமோ</language>
 			<language type="war">வாரே</language>
 			<language type="was">வாஷோ</language>
+=======
+			<language type="wak">வகாஷான் மொழி</language>
+			<language type="wal">வாலாமோ</language>
+			<language type="war">வாரே</language>
+			<language type="was">வாஷோ</language>
+			<language type="wen">சொர்பியன் மொழி</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="wo">ஒலூஃப்</language>
 			<language type="xal">கல்மிக்</language>
 			<language type="xh">ஹோஷா</language>
 			<language type="yao">யாவ்</language>
 			<language type="yap">யாபேசி</language>
+<<<<<<< HEAD
 			<language type="yi">இத்திஷ்</language>
 			<language type="yo">யோருப்பா</language>
 			<language type="yue">காண்டோனீஸ்</language>
+=======
+			<language type="yi">ஈத்திஷ</language>
+			<language type="yo">யோருப்பா</language>
+			<language type="ypk">யுபிக் மொழி</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="za">ஜுவாங்</language>
 			<language type="zap">ஜாபோடெக்</language>
 			<language type="zbl">ப்லிஸ்ஸிம்பால்ஸ்</language>
 			<language type="zen">ஜெனகா</language>
+<<<<<<< HEAD
 			<language type="zgh">ஸ்டாண்டர்ட் மொராக்கன் தமாசைட்</language>
 			<language type="zh">சீனம்</language>
 			<language type="zh_Hans">எளிதாக்கப்பட்ட சீனம்</language>
 			<language type="zh_Hant">பாரம்பரிய சீனம்</language>
+=======
+			<language type="zh">சீனம்</language>
+			<language type="zh_Hans">எளிய சீனம்</language>
+			<language type="zh_Hant">மரபு சீனம்</language>
+			<language type="znd">ஜான்டே</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="zu">ஜூலூ</language>
 			<language type="zun">ஜூனி</language>
 			<language type="zxx">மொழிக்கிணங்க உள்ளடக்கம் இல்லை</language>
@@ -471,7 +800,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</languages>
 		<scripts>
 			<script type="Arab">அரபிக்</script>
+<<<<<<< HEAD
 			<script type="Arab" alt="variant">பெர்சோ அரபிக்</script>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Armi">இம்பேரியல் அரமெய்க்</script>
 			<script type="Armn">அர்மேனியன்</script>
 			<script type="Avst">அவெஸ்தான்</script>
@@ -510,10 +842,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Hang">ஹங்குல்</script>
 			<script type="Hani">ஹான்</script>
 			<script type="Hano">ஹனுனூ</script>
+<<<<<<< HEAD
 			<script type="Hans">எளிதாக்கப்பட்டது</script>
 			<script type="Hans" alt="stand-alone">எளிதாக்கப்பட்ட ஹான்</script>
 			<script type="Hant">பாரம்பரியம்</script>
 			<script type="Hant" alt="stand-alone">பாரம்பரிய ஹான்</script>
+=======
+			<script type="Hans">எளிய ஹான்</script>
+			<script type="Hant">கலாச்சார ஹான்</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Hebr">ஹிப்ரூ</script>
 			<script type="Hira">ஹிராகானா</script>
 			<script type="Hmng">பஹாவ் மாங்க்</script>
@@ -564,6 +901,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Phnx">ஃபோனேஷியன்</script>
 			<script type="Plrd">போலார்ட் ஃபொனெட்டிக்</script>
 			<script type="Prti">இன்ஸ்கிரிப்ஷனல் பார்த்தியன்</script>
+<<<<<<< HEAD
+=======
+			<script type="Qaai">பாரம்பரியமான</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Rjng">ரெஜெய்ன்</script>
 			<script type="Roro">ரொங்கோரொங்கோ</script>
 			<script type="Runr">ருனிக்</script>
@@ -597,12 +938,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Xpeo">பழைய பெர்ஷியன்</script>
 			<script type="Xsux">சுமெரோ-அக்கடியன் க்யூனிஃபார்ம்</script>
 			<script type="Yiii">யீ</script>
+<<<<<<< HEAD
 			<script type="Zinh">பாரம்பரியமான</script>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Zmth">கணிதக்குறியீடு</script>
 			<script type="Zsym">சின்னங்கள்</script>
 			<script type="Zxxx">எழுதப்படாதது</script>
 			<script type="Zyyy">சாதரண</script>
+<<<<<<< HEAD
 			<script type="Zzzz">அறியப்படாத எழுத்து</script>
+=======
+			<script type="Zzzz">தெரியாத அல்லது செல்லாத ஸ்கிரிப்ட்</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</scripts>
 		<territories>
 			<territory type="001">உலகம்</territory>
@@ -616,13 +964,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="015">வடக்கு ஆப்ரிக்கா</territory>
 			<territory type="017">மத்திய ஆப்ரிக்கா</territory>
 			<territory type="018">தென்னாப்ரிக்கா</territory>
+<<<<<<< HEAD
 			<territory type="019">அமெரிக்காஸ்</territory>
+=======
+			<territory type="019">அமெர்க்காஸ்</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="021">வடக்கு அமெரிக்கா</territory>
 			<territory type="029">கரீபியன்</territory>
 			<territory type="030">கிழக்கு ஆசியா</territory>
 			<territory type="034">தெற்கு ஆசியா</territory>
 			<territory type="035">தென்-கிழக்கு ஆசியா</territory>
 			<territory type="039">தெற்கு ஐரோப்பா</territory>
+<<<<<<< HEAD
 			<territory type="053">ஆஸ்திரலேசியா</territory>
 			<territory type="054">மெலனேஷியா</territory>
 			<territory type="057">மைக்ரோ நேஷியா பிரதேசம்</territory>
@@ -647,12 +1000,45 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AO">அங்கோலா</territory>
 			<territory type="AQ">அண்டார்டிகா</territory>
 			<territory type="AR">அர்ஜென்டினா</territory>
+=======
+			<territory type="053">ஆஸ்திரேலியா மற்றும் நியூசிலாந்து</territory>
+			<territory type="054">மெலனேஷியா</territory>
+			<territory type="057">மைக்ரோ நேஷியா பிரதேசம்</territory>
+			<territory type="061">பாலினேஷியா</territory>
+			<territory type="062">மத்திய-தெற்காசியா</territory>
+			<territory type="142">ஆசியா</territory>
+			<territory type="143">மத்திய ஆசியா</territory>
+			<territory type="145">மேற்கு ஆசியா</territory>
+			<territory type="150">ஈரோப்</territory>
+			<territory type="151">கிழக்கு ஐரோப்பா</territory>
+			<territory type="154">வடக்கு ஐரோப்பா</territory>
+			<territory type="155">மேற்கு ஐரோப்பா</territory>
+			<territory type="172">சுதந்திர மாநிலங்களின் காமன்வெல்த்</territory>
+			<territory type="200">செகோஸ்லோவாக்யா</territory>
+			<territory type="419">லத்தீன் அமெரிக்கா மற்றும் கரீபியன்</territory>
+			<territory type="830">சேனல் தீவுகள்</territory>
+			<territory type="AD">அன்டோரா</territory>
+			<territory type="AE">ஐக்கிய அரபு கூட்டாட்சி</territory>
+			<territory type="AF">ஆப்கானிஸ்தான்</territory>
+			<territory type="AG">ஆன்டிகுவா மற்றும் பார்புடா</territory>
+			<territory type="AI">அங்குய்லா</territory>
+			<territory type="AL">அல்பேனியா</territory>
+			<territory type="AM">ஆர்மேனியா</territory>
+			<territory type="AN">நெதெர்லேண்ட் ஆண்டிலிஸ்</territory>
+			<territory type="AO">அங்கோலா</territory>
+			<territory type="AQ">அன்டார்டிகா</territory>
+			<territory type="AR">அர்ஜெண்டினா</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="AS">அமெரிக்க சமோவா</territory>
 			<territory type="AT">ஆஸ்திரியா</territory>
 			<territory type="AU">ஆஸ்திரேலியா</territory>
 			<territory type="AW">அரூபா</territory>
 			<territory type="AX">ஆலந்து தீவுகள்</territory>
+<<<<<<< HEAD
 			<territory type="AZ">அசர்பைஜான்</territory>
+=======
+			<territory type="AZ">அஜர்பைஜான்</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="BA">போஸ்னியா மற்றும் ஹெர்ஸிகோவினா</territory>
 			<territory type="BB">பார்படோஸ்</territory>
 			<territory type="BD">பங்களாதேஷ்</territory>
@@ -666,9 +1052,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="BM">பெர்முடா</territory>
 			<territory type="BN">புரூனேய்</territory>
 			<territory type="BO">பொலிவியா</territory>
+<<<<<<< HEAD
 			<territory type="BQ">கரீபியன் நெதர்லாந்து</territory>
 			<territory type="BR">பிரேஸில்</territory>
 			<territory type="BS">பஹாமாஸ்</territory>
+=======
+			<territory type="BR">பிரேஸில்</territory>
+			<territory type="BS">பஹமாஸ்</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="BT">பூடான்</territory>
 			<territory type="BV">பொவேட் தீவுகள்</territory>
 			<territory type="BW">போட்ஸ்வானா</territory>
@@ -676,11 +1067,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="BZ">பெலிஸ்</territory>
 			<territory type="CA">கனடா</territory>
 			<territory type="CC">காகோஸ் தீவுகள்</territory>
+<<<<<<< HEAD
 			<territory type="CD">காங்கோ - கின்ஷாசா</territory>
 			<territory type="CD" alt="variant">காங்கோ (டிசிஆர்)</territory>
 			<territory type="CF">மத்திய ஆப்ரிக்கக் குடியரசு</territory>
 			<territory type="CG">காங்கோ - ப்ராஸாவில்லே</territory>
 			<territory type="CG" alt="variant">காங்கோ (குடியரசு)</territory>
+=======
+			<territory type="CD">காங்கோ - கின்சாசா</territory>
+			<territory type="CF">மத்திய ஆப்ரிக்கக் குடியரசு</territory>
+			<territory type="CG">காங்கோ - ப்ராஸாவில்லே</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="CH">ஸ்விட்சர்லாந்து</territory>
 			<territory type="CI">ஐவரி கோஸ்ட்</territory>
 			<territory type="CK">குக் தீவுகள்</territory>
@@ -688,22 +1085,36 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CM">கேமரூன்</territory>
 			<territory type="CN">சீனா</territory>
 			<territory type="CO">கொலம்பியா</territory>
+<<<<<<< HEAD
 			<territory type="CP">கிலிப்பர்டன் தீவு</territory>
 			<territory type="CR">கோஸ்டாரிகா</territory>
 			<territory type="CU">கியூபா</territory>
 			<territory type="CV">கேப் வெர்டே</territory>
 			<territory type="CW">குராகவ்</territory>
+=======
+			<territory type="CR">கோஸ்டாரிகா</territory>
+			<territory type="CS">செர்பியா மற்றும் மான்டேநெக்ரோ</territory>
+			<territory type="CU">கியூபா</territory>
+			<territory type="CV">கேப் வெர்டே</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="CX">கிறிஸ்துமஸ் தீவு</territory>
 			<territory type="CY">சைப்ரஸ்</territory>
 			<territory type="CZ">செக் குடியரசு</territory>
 			<territory type="DE">ஜெர்மன்</territory>
+<<<<<<< HEAD
 			<territory type="DG">டியகோ கார்ஷியா</territory>
 			<territory type="DJ">ஜிபௌட்டி</territory>
+=======
+			<territory type="DJ">ஜிபௌடி</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="DK">டென்மார்க்</territory>
 			<territory type="DM">டொமினிகா</territory>
 			<territory type="DO">டொமினிகன் குடியரசு</territory>
 			<territory type="DZ">அல்ஜீரியா</territory>
+<<<<<<< HEAD
 			<territory type="EA">சியூடா மற்றும் மெலில்லா</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="EC">ஈக்வடார்</territory>
 			<territory type="EE">எஸ்டோனியா</territory>
 			<territory type="EG">எகிப்து</territory>
@@ -711,54 +1122,88 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="ER">எரிட்ரியா</territory>
 			<territory type="ES">ஸ்பெயின்</territory>
 			<territory type="ET">எதியோப்பியா</territory>
+<<<<<<< HEAD
 			<territory type="EU">ஐரோப்பியன் யூனியன்</territory>
 			<territory type="FI">பின்லாந்து</territory>
 			<territory type="FJ">ஃபிஜி</territory>
 			<territory type="FK">ஃபாக்லாந்து தீவுகள்</territory>
 			<territory type="FK" alt="variant">ஃபாக்லாந்து தீவுகள் (இஸ்லாஸ் மால்வினஸ்)</territory>
+=======
+			<territory type="FI">பின்லாந்து</territory>
+			<territory type="FJ">ஃபிஜி</territory>
+			<territory type="FK">ஃபாக்லான்ட் தீவுகள்</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="FM">மைக்ரோனேஷியா</territory>
 			<territory type="FO">ஃபெரௌ தீவுகள்</territory>
 			<territory type="FR">பிரான்ஸ்</territory>
 			<territory type="GA">கேபான்</territory>
 			<territory type="GB">பிரிடிஷ் கூட்டரசு</territory>
+<<<<<<< HEAD
 			<territory type="GB" alt="short">GB</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="GD">கிரனெடா</territory>
 			<territory type="GE">ஜார்ஜியா</territory>
 			<territory type="GF">ஃப்ரென்ச் கயானா</territory>
 			<territory type="GG">கெர்ன்சி</territory>
 			<territory type="GH">கானா</territory>
 			<territory type="GI">ஜிப்ரால்டர்</territory>
+<<<<<<< HEAD
 			<territory type="GL">கிரீன்லாந்து</territory>
 			<territory type="GM">காம்பியா</territory>
 			<territory type="GN">கினியா</territory>
+=======
+			<territory type="GL">கிரீன்லாண்ட்</territory>
+			<territory type="GM">காம்பியா</territory>
+			<territory type="GN">கினி</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="GP">க்வாதேலோப்</territory>
 			<territory type="GQ">ஈக்குவாடோரியல் கினி</territory>
 			<territory type="GR">கிரீஸ்</territory>
 			<territory type="GS">தென் ஜியார்ஜியா மற்றும் தென் சான்ட்விச் தீவுகள்</territory>
+<<<<<<< HEAD
 			<territory type="GT">கவுதமாலா</territory>
 			<territory type="GU">குவாம்</territory>
 			<territory type="GW">கினி-பிஸ்ஸாவ்</territory>
 			<territory type="GY">கயானா</territory>
 			<territory type="HK">ஹாங்காங் சார் சீனா</territory>
 			<territory type="HK" alt="short">ஹாங்காங்</territory>
+=======
+			<territory type="GT">குவாத்தாமாலா</territory>
+			<territory type="GU">குவாம்</territory>
+			<territory type="GW">கினி-பிஸ்ஸாவ்</territory>
+			<territory type="GY">கயானா</territory>
+			<territory type="HK">ஹாங் காங் எஸ்.ஏ.ஆர் சைனா</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="HM">ஹேர்ட் மற்றும் மெக்டொனால்டு</territory>
 			<territory type="HN">ஹாண்டுராஸ்</territory>
 			<territory type="HR">குரோசியா</territory>
 			<territory type="HT">ஹெய்தி</territory>
 			<territory type="HU">ஹங்கேரி</territory>
+<<<<<<< HEAD
 			<territory type="IC">கேனரி தீவுகள்</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="ID">இந்தோனேஷியா</territory>
 			<territory type="IE">அயர்லாந்து</territory>
 			<territory type="IL">இஸ்ரேல்</territory>
 			<territory type="IM">ஐல் ஆஃப் மேன்</territory>
 			<territory type="IN">இந்தியா</territory>
+<<<<<<< HEAD
 			<territory type="IO">பிரிட்டிஷ் இந்தியப் பெருங்கடல் பகுதி</territory>
+=======
+			<territory type="IO">பிரிட்டிஷ் இந்தியப் பெருங்கடல் மாஹாணம்</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="IQ">இராக்</territory>
 			<territory type="IR">ஈரான்</territory>
 			<territory type="IS">ஐஸ்லாந்து</territory>
 			<territory type="IT">இத்தாலி</territory>
 			<territory type="JE">ஜெர்சி</territory>
+<<<<<<< HEAD
 			<territory type="JM">ஜமைகா</territory>
+=======
+			<territory type="JM">ஜமாய்க்கா</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="JO">ஜொர்டான்</territory>
 			<territory type="JP">ஜப்பான்</territory>
 			<territory type="KE">கென்யா</territory>
@@ -771,25 +1216,39 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="KR">தென் கொரியா</territory>
 			<territory type="KW">குவைத்து</territory>
 			<territory type="KY">கேமென் தீவுகள்</territory>
+<<<<<<< HEAD
 			<territory type="KZ">கஸகஸ்தான்</territory>
+=======
+			<territory type="KZ">கஜகஸ்தான்</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="LA">லாவோஸ்</territory>
 			<territory type="LB">லெபனான்</territory>
 			<territory type="LC">செயின்ட் லூசியா</territory>
 			<territory type="LI">லிச்செண்ஸ்டெய்ன்</territory>
 			<territory type="LK">இலங்கை</territory>
+<<<<<<< HEAD
 			<territory type="LR">லைபீரியா</territory>
+=======
+			<territory type="LR">லைபேரியா</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="LS">லெசோதோ</territory>
 			<territory type="LT">லிதுவேனியா</territory>
 			<territory type="LU">லக்ஸ்சம்பர்க்</territory>
 			<territory type="LV">லாட்வியா</territory>
+<<<<<<< HEAD
 			<territory type="LY">லிபியா</territory>
 			<territory type="MA">மொராக்கோ</territory>
+=======
+			<territory type="LY">லிப்யா</territory>
+			<territory type="MA">மொரோக்கோ</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="MC">மொனாக்கோ</territory>
 			<territory type="MD">மால்டோவா</territory>
 			<territory type="ME">மான்டேனெக்ரோ</territory>
 			<territory type="MF">செயின் மார்டீன்</territory>
 			<territory type="MG">மடகாஸ்கர்</territory>
 			<territory type="MH">மார்ஷல் தீவுகள்</territory>
+<<<<<<< HEAD
 			<territory type="MK">மாசிடோனியா</territory>
 			<territory type="MK" alt="variant">மாசிடோனியா (ஃபைரோம்)</territory>
 			<territory type="ML">மாலீ</territory>
@@ -797,6 +1256,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MN">மங்கோலியா</territory>
 			<territory type="MO">மகாவோ சார் சீனா</territory>
 			<territory type="MO" alt="short">மகாவோ</territory>
+=======
+			<territory type="MK">மசெடோணியா</territory>
+			<territory type="ML">மாலீ</territory>
+			<territory type="MM">மியான்மார்</territory>
+			<territory type="MN">மங்கோலியா</territory>
+			<territory type="MO">மெக்கௌ</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="MP">வடக்கு மரியானா தீவுகள்</territory>
 			<territory type="MQ">மார்டினிக்</territory>
 			<territory type="MR">மௌரிடானியா</territory>
@@ -804,23 +1270,39 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MT">மால்டா</territory>
 			<territory type="MU">மொரிசியஸ்</territory>
 			<territory type="MV">மாலத்தீவு</territory>
+<<<<<<< HEAD
 			<territory type="MW">மாலவி</territory>
+=======
+			<territory type="MW">மலாவீ</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="MX">மெக்சிகோ</territory>
 			<territory type="MY">மலேஷியா</territory>
 			<territory type="MZ">மொசாம்பிக்</territory>
 			<territory type="NA">நமீபியா</territory>
+<<<<<<< HEAD
 			<territory type="NC">நியூ கேலிடோனியா</territory>
 			<territory type="NE">நைஜர்</territory>
 			<territory type="NF">நார்ஃபாக் தீவுகள்</territory>
 			<territory type="NG">நைஜீரியா</territory>
 			<territory type="NI">நிகாரகுவா</territory>
+=======
+			<territory type="NC">புதிய கலிடோன்யா</territory>
+			<territory type="NE">நைஜர்</territory>
+			<territory type="NF">நார்ஃபாக் தீவுகள்</territory>
+			<territory type="NG">நைஜீரியா</territory>
+			<territory type="NI">நிகாராகுவா</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="NL">நெதர்லாந்து</territory>
 			<territory type="NO">நார்வே</territory>
 			<territory type="NP">நேபாளம்</territory>
 			<territory type="NR">நௌரு</territory>
 			<territory type="NU">நியூ</territory>
 			<territory type="NZ">நியூசிலாந்து</territory>
+<<<<<<< HEAD
 			<territory type="OM">ஓமன்</territory>
+=======
+			<territory type="OM">ஓமான்</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="PA">பனாமா</territory>
 			<territory type="PE">பெரு</territory>
 			<territory type="PF">ஃப்ரென்ச் பாலினேஷியா</territory>
@@ -829,6 +1311,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="PK">பாகிஸ்தான்</territory>
 			<territory type="PL">போலந்து</territory>
 			<territory type="PM">செயின்ட் பியர் மற்றும் மிக்வேலான்</territory>
+<<<<<<< HEAD
 			<territory type="PN">பிட்கெய்ர்ன்</territory>
 			<territory type="PR">பியூர்டோ ரிகோ</territory>
 			<territory type="PS">பாலஸ்தீனியன் மாஹாணங்கள்</territory>
@@ -838,6 +1321,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="PY">பாரகுவே</territory>
 			<territory type="QA">கதார்</territory>
 			<territory type="QO">ஔட்லையிங் ஓசானியா</territory>
+=======
+			<territory type="PN">பிட்கேன்</territory>
+			<territory type="PR">போர்த்த ரிக்கோ</territory>
+			<territory type="PS">பாலஸ்தீனியன் மாஹாணம்</territory>
+			<territory type="PT">போர்ச்சுக்கல்</territory>
+			<territory type="PW">பலவ்</territory>
+			<territory type="PY">பாரகுவே</territory>
+			<territory type="QA">காடார்</territory>
+			<territory type="QO">ஔட்லையிங் ஓசானியா</territory>
+			<territory type="QU">ஐரோப்பியன் யூனியன்</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="RE">ரீயூனியன்</territory>
 			<territory type="RO">ருமேனியா</territory>
 			<territory type="RS">செர்பியா</territory>
@@ -845,7 +1339,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="RW">ருவான்டா</territory>
 			<territory type="SA">சவூதி அரேபியா</territory>
 			<territory type="SB">சாலமன் தீவுகள்</territory>
+<<<<<<< HEAD
 			<territory type="SC">ஸேசேல்ஸ்</territory>
+=======
+			<territory type="SC">செஷெல்ஸ்</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="SD">சூடான்</territory>
 			<territory type="SE">ஸ்வீடன்</territory>
 			<territory type="SG">சிங்கப்பூர்</territory>
@@ -853,11 +1351,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="SI">ஸ்லோவேனியா</territory>
 			<territory type="SJ">ஸ்வல்பார்டு மற்றும் ஜான் மேயன்</territory>
 			<territory type="SK">ஸ்லோவாகியா</territory>
+<<<<<<< HEAD
 			<territory type="SL">சியர்ரா லியோன்</territory>
+=======
+			<territory type="SL">சியேரா லியோன்</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="SM">சான் மெரினோ</territory>
 			<territory type="SN">செனெகல்</territory>
 			<territory type="SO">சொமாலியா</territory>
 			<territory type="SR">சூரினாம்</territory>
+<<<<<<< HEAD
 			<territory type="SS">தெற்கு சூடான்</territory>
 			<territory type="ST">சாவ் தோம் மற்றும் ப்ரின்சிபி</territory>
 			<territory type="SV">எல் சால்வடார்</territory>
@@ -865,6 +1368,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="SY">சிரியா</territory>
 			<territory type="SZ">ஸ்வாஸிலாண்ட்</territory>
 			<territory type="TA">டிரிஸ்டன் டா குன்ஹா</territory>
+=======
+			<territory type="ST">சாவ் தோம் மற்றும் ப்ரின்சிபி</territory>
+			<territory type="SV">எல் சால்வடார்</territory>
+			<territory type="SY">சிரியா</territory>
+			<territory type="SZ">ஸ்வாஸிலாண்ட்</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="TC">டர்க்ஸ் மற்றும் கைகோஸ் தீவுகள்</territory>
 			<territory type="TD">சாட்</territory>
 			<territory type="TF">ஃப்ரென்ச் தெற்கு மாஹாணங்கள்</territory>
@@ -872,30 +1381,47 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="TH">தாய்லாந்து</territory>
 			<territory type="TJ">தாஜிகிஸ்தான்</territory>
 			<territory type="TK">டோகேலோ</territory>
+<<<<<<< HEAD
 			<territory type="TL">கிழக்கு தைமூர்</territory>
 			<territory type="TL" alt="variant">கிழக்கு தைமோர்</territory>
+=======
+			<territory type="TL">கிழக்கு திமோர்</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="TM">துர்க்மெனிஸ்தான்</territory>
 			<territory type="TN">டுனிசியா</territory>
 			<territory type="TO">டோங்கா</territory>
 			<territory type="TR">துருக்கி</territory>
+<<<<<<< HEAD
 			<territory type="TT">ட்ரினிடாட் மற்றும் டுபாகோ</territory>
+=======
+			<territory type="TT">திரினிடாட் மற்றும் தொபாகோ</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="TV">துவாலூ</territory>
 			<territory type="TW">தைவான்</territory>
 			<territory type="TZ">டான்சானியா</territory>
 			<territory type="UA">உக்ரைன்</territory>
 			<territory type="UG">உகாண்டா</territory>
+<<<<<<< HEAD
 			<territory type="UM">ஐக்கிய அமெரிக்காவை சுற்றியுள்ள தீவுகள்</territory>
 			<territory type="US">ஐக்கிய அமெரிக்க குடியரசு</territory>
 			<territory type="US" alt="short">யூஎஸ்</territory>
 			<territory type="UY">உருகுவே</territory>
 			<territory type="UZ">உஸ்பெகிஸ்தான்</territory>
 			<territory type="VA">வாடிகன் நகரம்</territory>
+=======
+			<territory type="UM">யுனைட்டட் ஸ்டேட்ஸும் சிறிய அவுட்லைன் தீவுகளும்</territory>
+			<territory type="US">ஐக்கிய அமெரிக்க குடியரசு</territory>
+			<territory type="UY">உருகுவே</territory>
+			<territory type="UZ">உஸ்பெகிஸ்தான்</territory>
+			<territory type="VA">வாடிகன்</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="VC">செயின் வின்சன்ட் மற்றும் கிரெனடைன்ஸ்</territory>
 			<territory type="VE">வெனஜுவேலா</territory>
 			<territory type="VG">பிரிட்டீஷ் கன்னித் தீவுகள்</territory>
 			<territory type="VI">யூ.எஸ் கன்னித் தீவுகள்</territory>
 			<territory type="VN">வியட்நாம்</territory>
 			<territory type="VU">வனுவாட்டு</territory>
+<<<<<<< HEAD
 			<territory type="WF">வாலிஸ் மற்றும் ஃபுடுனா தீவுகள்</territory>
 			<territory type="WS">சமோவா</territory>
 			<territory type="XK">கொசோவோ</territory>
@@ -1052,6 +1578,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<ellipsis type="word-initial">… {0}</ellipsis>
 		<ellipsis type="word-medial">{0} … {1}</ellipsis>
 		<moreInformation>?</moreInformation>
+=======
+			<territory type="WF">வாலிஸ் மற்றும் ஃப்யூசுனா</territory>
+			<territory type="WS">சமோவா</territory>
+			<territory type="YE">யேமன்</territory>
+			<territory type="YT">மயோத்</territory>
+			<territory type="ZA">தென் ஆப்ரிக்கா</territory>
+			<territory type="ZM">சாம்பியா</territory>
+			<territory type="ZW">ஜிம்பாப்வே</territory>
+			<territory type="ZZ">தெரியாத அல்லது செல்லாத பிரதேசம்</territory>
+		</territories>
+	</localeDisplayNames>
+	<characters>
+		<exemplarCharacters>[ஃ அ-ஊ எ-ஐ ஒ-க ங ச ஜ ஞ ட ண த ந-ப ம-வ ஷ-ஹ ா-ூ ெ-ை ொ-்]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[a g i m t]</exemplarCharacters>
+		<exemplarCharacters type="currencySymbol">[a-z]</exemplarCharacters>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	</characters>
 	<delimiters>
 		<quotationStart>“</quotationStart>
@@ -1061,6 +1603,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 	</delimiters>
 	<dates>
 		<calendars>
+<<<<<<< HEAD
 			<calendar type="chinese">
 				<months>
 					<monthContext type="format">
@@ -1351,6 +1894,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</intervalFormats>
 				</dateTimeFormats>
 			</calendar>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -1368,6 +1913,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">நவ.</month>
 							<month type="12">டிச.</month>
 						</monthWidth>
+<<<<<<< HEAD
 						<monthWidth type="narrow">
 							<month type="1">ஜ</month>
 							<month type="2">பி</month>
@@ -1382,6 +1928,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">ந</month>
 							<month type="12">டி</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<monthWidth type="wide">
 							<month type="1">ஜனவரி</month>
 							<month type="2">பிப்ரவரி</month>
@@ -1398,6 +1946,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</monthWidth>
 					</monthContext>
 					<monthContext type="stand-alone">
+<<<<<<< HEAD
 						<monthWidth type="abbreviated">
 							<month type="1">ஜன.</month>
 							<month type="2">பிப்.</month>
@@ -1412,6 +1961,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">நவ.</month>
 							<month type="12">டிச.</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<monthWidth type="narrow">
 							<month type="1">ஜ</month>
 							<month type="2">பி</month>
@@ -1426,6 +1977,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">ந</month>
 							<month type="12">டி</month>
 						</monthWidth>
+<<<<<<< HEAD
 						<monthWidth type="wide">
 							<month type="1">ஜனவரி</month>
 							<month type="2">பிப்ரவரி</month>
@@ -1440,6 +1992,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">நவம்பர்</month>
 							<month type="12">டிசம்பர்</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</monthContext>
 				</months>
 				<days>
@@ -1453,6 +2007,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">வெ</day>
 							<day type="sat">ச</day>
 						</dayWidth>
+<<<<<<< HEAD
 						<dayWidth type="narrow">
 							<day type="sun">ஞா</day>
 							<day type="mon">தி</day>
@@ -1471,6 +2026,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">வெ</day>
 							<day type="sat">ச</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<dayWidth type="wide">
 							<day type="sun">ஞாயிறு</day>
 							<day type="mon">திங்கள்</day>
@@ -1482,6 +2039,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</dayWidth>
 					</dayContext>
 					<dayContext type="stand-alone">
+<<<<<<< HEAD
 						<dayWidth type="abbreviated">
 							<day type="sun">ஞா</day>
 							<day type="mon">தி</day>
@@ -1491,6 +2049,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">வெ</day>
 							<day type="sat">ச</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<dayWidth type="narrow">
 							<day type="sun">ஞா</day>
 							<day type="mon">தி</day>
@@ -1500,6 +2060,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">வெ</day>
 							<day type="sat">ச</day>
 						</dayWidth>
+<<<<<<< HEAD
 						<dayWidth type="short">
 							<day type="sun">ஞா</day>
 							<day type="mon">தி</day>
@@ -1518,11 +2079,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">வெள்ளி</day>
 							<day type="sat">சனி</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</dayContext>
 				</days>
 				<quarters>
 					<quarterContext type="format">
 						<quarterWidth type="abbreviated">
+<<<<<<< HEAD
 							<quarter type="1">காலாண்டு1</quarter>
 							<quarter type="2">காலாண்டு2</quarter>
 							<quarter type="3">காலாண்டு3</quarter>
@@ -1578,14 +2142,36 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</dayPeriodWidth>
 					</dayPeriodContext>
 				</dayPeriods>
+=======
+							<quarter type="1">Q1</quarter>
+							<quarter type="2">Q2</quarter>
+							<quarter type="3">Q3</quarter>
+							<quarter type="4">Q4</quarter>
+						</quarterWidth>
+						<quarterWidth type="wide">
+							<quarter type="1">1ஆம் காலாண்டு</quarter>
+							<quarter type="2">2ஆம் காலாண்டு</quarter>
+							<quarter type="3">3ஆம் காலாண்டு</quarter>
+							<quarter type="4">4ஆம் காலாண்டு</quarter>
+						</quarterWidth>
+					</quarterContext>
+				</quarters>
+				<am>am</am>
+				<pm>pm</pm>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<eras>
 					<eraNames>
 						<era type="0">கிறிஸ்துவுக்கு முன்</era>
 						<era type="1">அனோ டோமினி</era>
 					</eraNames>
 					<eraAbbr>
+<<<<<<< HEAD
 						<era type="0">கி.மு.</era>
 						<era type="1">கி.பி.</era>
+=======
+						<era type="0">கிமு</era>
+						<era type="1">கிபி</era>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</eraAbbr>
 				</eras>
 				<dateFormats>
@@ -1633,6 +2219,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</timeFormatLength>
 				</timeFormats>
 				<dateTimeFormats>
+<<<<<<< HEAD
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
 							<pattern>{1} {0}</pattern>
@@ -4123,10 +4710,72 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<standard>யேகாடெரின்பர்க் நிலையான நேரம்</standard>
 					<daylight>யேகாடெரின்பர்க் கோடை நேரம்</daylight>
 				</long>
+=======
+					<availableFormats>
+						<dateFormatItem id="MMdd">dd-MM</dateFormatItem>
+						<dateFormatItem id="MMMMd">d MMMM</dateFormatItem>
+						<dateFormatItem id="yyQ">Q yy</dateFormatItem>
+						<dateFormatItem id="yyyyMM">MM-yyyy</dateFormatItem>
+						<dateFormatItem id="yyyyMMMM">MMMM y</dateFormatItem>
+					</availableFormats>
+				</dateTimeFormats>
+			</calendar>
+		</calendars>
+		<timeZoneNames>
+			<hourFormat>+HH:mm;-HH:mm</hourFormat>
+			<gmtFormat>GMT{0}</gmtFormat>
+			<regionFormat>{0} நேரம்</regionFormat>
+			<fallbackFormat>{1} ({0})</fallbackFormat>
+			<zone type="Australia/Brisbane">
+				<exemplarCity>பிரிஸ்பேன்</exemplarCity>
+			</zone>
+			<zone type="America/Campo_Grande">
+				<exemplarCity>கேம்போ கிராண்டே</exemplarCity>
+			</zone>
+			<zone type="America/Cambridge_Bay">
+				<exemplarCity>கேம்பிரிட்ஜ் பே</exemplarCity>
+			</zone>
+			<zone type="Pacific/Easter">
+				<exemplarCity>ஈஸ்டர்</exemplarCity>
+			</zone>
+			<zone type="Asia/Jakarta">
+				<exemplarCity>ஜகார்த்தா</exemplarCity>
+			</zone>
+			<zone type="Asia/Jayapura">
+				<exemplarCity>ஜெயபூரா</exemplarCity>
+			</zone>
+			<zone type="America/Los_Angeles">
+				<exemplarCity>லாஸ் ஏஞ்சல்ஸ்</exemplarCity>
+			</zone>
+			<zone type="America/Phoenix">
+				<exemplarCity>ஃபோனிக்ஸ்</exemplarCity>
+			</zone>
+			<zone type="America/Denver">
+				<exemplarCity>தேன்வர்</exemplarCity>
+			</zone>
+			<zone type="America/North_Dakota/Center">
+				<exemplarCity>மையம், வடக்கு டகோடா</exemplarCity>
+			</zone>
+			<zone type="America/Chicago">
+				<exemplarCity>சிகாகோ</exemplarCity>
+			</zone>
+			<zone type="America/Indianapolis">
+				<exemplarCity>இந்தியானாபோலிஸ்</exemplarCity>
+			</zone>
+			<zone type="America/New_York">
+				<exemplarCity>நியூயார்க்</exemplarCity>
+			</zone>
+			<metazone type="India">
+				<long>
+					<standard>இந்திய நேரப்படி</standard>
+				</long>
+				<commonlyUsed>true</commonlyUsed>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</metazone>
 		</timeZoneNames>
 	</dates>
 	<numbers>
+<<<<<<< HEAD
 		<defaultNumberingSystem>latn</defaultNumberingSystem>
 		<otherNumberingSystems>
 			<native>tamldec</native>
@@ -4146,11 +4795,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<nan>NaN</nan>
 		</symbols>
 		<decimalFormats numberSystem="latn">
+=======
+		<decimalFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<decimalFormatLength>
 				<decimalFormat>
 					<pattern>#,##,##0.###</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
+<<<<<<< HEAD
 			<decimalFormatLength type="long">
 				<decimalFormat>
 					<pattern type="1000" count="one">0 ஆயிரம்</pattern>
@@ -4216,12 +4869,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</scientificFormatLength>
 		</scientificFormats>
 		<percentFormats numberSystem="latn">
+=======
+		</decimalFormats>
+		<percentFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<percentFormatLength>
 				<percentFormat>
 					<pattern>#,##,##0%</pattern>
 				</percentFormat>
 			</percentFormatLength>
 		</percentFormats>
+<<<<<<< HEAD
 		<currencyFormats numberSystem="latn">
 			<currencyFormatLength>
 				<currencyFormat type="standard">
@@ -5425,6 +6083,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<listPatternPart type="2">{0} மற்றும் {1}</listPatternPart>
 		</listPattern>
 	</listPatterns>
+=======
+		<currencyFormats>
+			<currencyFormatLength>
+				<currencyFormat>
+					<pattern>¤ #,##,##0.00</pattern>
+				</currencyFormat>
+			</currencyFormatLength>
+		</currencyFormats>
+		<currencies>
+			<currency type="INR">
+				<symbol>ரூ</symbol>
+			</currency>
+		</currencies>
+	</numbers>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	<posix>
 		<messages>
 			<yesstr>ஆம்:ஆ</yesstr>

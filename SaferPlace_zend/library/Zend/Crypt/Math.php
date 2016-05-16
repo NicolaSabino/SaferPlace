@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Crypt
  * @subpackage Math
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Math.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -28,7 +34,11 @@ require_once 'Zend/Crypt/Math/BigInteger.php';
 /**
  * @category   Zend
  * @package    Zend_Crypt
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Crypt_Math extends Zend_Crypt_Math_BigInteger
@@ -57,14 +67,22 @@ class Zend_Crypt_Math extends Zend_Crypt_Math_BigInteger
         }
         $rand = '';
         $i2 = strlen($maximum) - 1;
+<<<<<<< HEAD
         for ($i = 1; $i < $i2; $i++) {
             $rand .= mt_rand(0, 9);
         }
         $rand .= mt_rand(0, 9);
+=======
+        for ($i = 1;$i < $i2;$i++) {
+            $rand .= mt_rand(0,9);
+        }
+        $rand .= mt_rand(0,9);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         return $rand;
     }
 
     /**
+<<<<<<< HEAD
      * Return a random strings of $length bytes
      *
      * @param  integer $length
@@ -152,14 +170,20 @@ class Zend_Crypt_Math extends Zend_Crypt_Math_BigInteger
     }
 
     /**
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * Get the big endian two's complement of a given big integer in
      * binary notation
      *
      * @param string $long
      * @return string
      */
+<<<<<<< HEAD
     public function btwoc($long)
     {
+=======
+    public function btwoc($long) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         if (ord($long[0]) > 127) {
             return "\x00" . $long;
         }
@@ -172,8 +196,12 @@ class Zend_Crypt_Math extends Zend_Crypt_Math_BigInteger
      * @param string $binary
      * @return string
      */
+<<<<<<< HEAD
     public function fromBinary($binary)
     {
+=======
+    public function fromBinary($binary) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         return $this->_math->binaryToInteger($binary);
     }
 
@@ -187,4 +215,8 @@ class Zend_Crypt_Math extends Zend_Crypt_Math_BigInteger
     {
         return $this->_math->integerToBinary($integer);
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 }

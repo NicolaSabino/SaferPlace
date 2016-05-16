@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Mobile
  * @subpackage Zend_Mobile_Push
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
@@ -29,7 +33,11 @@ require_once 'Zend/Mobile/Push/Message/Abstract.php';
  * @category   Zend
  * @package    Zend_Mobile
  * @subpackage Zend_Mobile_Push
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
@@ -83,12 +91,20 @@ class Zend_Mobile_Push_Message_Apns extends Zend_Mobile_Push_Message_Abstract
     /**
      * Set Alert
      *
+<<<<<<< HEAD
      * @param  string      $text
      * @param  string|null $actionLocKey
      * @param  string|null $locKey
      * @param  array|null  $locArgs
      * @param  string|null $launchImage
      * @throws Zend_Mobile_Push_Message_Exception
+=======
+     * @param string $text
+     * @param string $actionLocKey
+     * @param string $locKey
+     * @param array $locArgs
+     * @param string $launchImage
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Mobile_Push_Message_Apns
      */
     public function setAlert($text, $actionLocKey=null, $locKey=null, $locArgs=null, $launchImage=null)
@@ -244,9 +260,15 @@ class Zend_Mobile_Push_Message_Apns extends Zend_Mobile_Push_Message_Abstract
     /**
      * Set Custom Data
      *
+<<<<<<< HEAD
      * @param  array $array
      * @throws Zend_Mobile_Push_Message_Exception
      * @return Zend_Mobile_Push_Message_Apns
+=======
+     * @param array $data
+     * @return Zend_Mobile_Push_Message_Apns
+     * @throws Zend_Mobile_Push_Message_Exception
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setCustomData($array)
     {

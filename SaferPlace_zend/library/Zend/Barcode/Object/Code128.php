@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Barcode
  * @subpackage Object
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id: Code25.php 20096 2010-01-06 02:05:09Z bkarwin $
  */
@@ -35,7 +39,11 @@ require_once 'Zend/Validate/Barcode.php';
  *
  * @category   Zend
  * @package    Zend_Barcode
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Barcode_Object_Code128 extends Zend_Barcode_Object_ObjectAbstract
@@ -259,8 +267,11 @@ class Zend_Barcode_Object_Code128 extends Zend_Barcode_Object_ObjectAbstract
 
     /**
      * Convert string to barcode string
+<<<<<<< HEAD
      *
      * @param $string
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return array
      */
     protected function _convertToBarcodeChars($string)
@@ -382,10 +393,15 @@ class Zend_Barcode_Object_Code128 extends Zend_Barcode_Object_ObjectAbstract
 
     /**
      * Standard validation for most of barcode objects
+<<<<<<< HEAD
      *
      * @param string $value
      * @param array  $options
      * @return bool
+=======
+     * @param string $value
+     * @param array  $options
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     protected function _validateText($value, $options = array())
     {

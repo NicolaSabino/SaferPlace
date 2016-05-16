@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -8,12 +9,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 	<identity>
 		<version number="$Revision: 9061 $"/>
 		<generation date="$Date: 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013) $"/>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.22 $"/>
+		<generation date="$Date: 2009/06/15 03:46:26 $"/>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		<language type="sr"/>
 		<script type="Latn"/>
 		<territory type="ME"/>
 	</identity>
 	<dates>
 		<calendars>
+<<<<<<< HEAD
 			<calendar type="generic">
 				<dateFormats>
 					<dateFormatLength type="long">
@@ -44,17 +52,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</intervalFormats>
 				</dateTimeFormats>
 			</calendar>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<calendar type="gregorian">
 				<dateFormats>
 					<dateFormatLength type="long">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>d.MM.y.</pattern>
+=======
+							<pattern>d.MM.yyyy.</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
 				<dateTimeFormats>
 					<intervalFormats>
 						<intervalFormatItem id="MMMd">
+<<<<<<< HEAD
 							<greatestDifference id="d" draft="unconfirmed">d.MM - d.MM</greatestDifference>
 							<greatestDifference id="M" draft="unconfirmed">d.MM - d.MM</greatestDifference>
 						</intervalFormatItem>
@@ -70,10 +85,41 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="d" draft="unconfirmed">d.MM.y. - d.MM.y.</greatestDifference>
 							<greatestDifference id="M" draft="unconfirmed">d.MM.y. - d.MM.y.</greatestDifference>
 							<greatestDifference id="y" draft="unconfirmed">d.MM.y. - d.MM.y.</greatestDifference>
+=======
+							<greatestDifference id="d">d.MM - d.MM</greatestDifference>
+							<greatestDifference id="M">d.MM - d.MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d">E, d.MM - E, d.MM</greatestDifference>
+							<greatestDifference id="M">E, d.MM - E, d.MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">MM.yyyy - MM.yyyy</greatestDifference>
+							<greatestDifference id="y">MM.yyyy - MM.yyyy</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d">d.MM.yyyy. - d.MM.yyyy.</greatestDifference>
+							<greatestDifference id="M">d.MM.yyyy. - d.MM.yyyy.</greatestDifference>
+							<greatestDifference id="y">d.MM.yyyy. - d.MM.yyyy.</greatestDifference>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
 			</calendar>
 		</calendars>
 	</dates>
+<<<<<<< HEAD
 </ldml>
+=======
+	<numbers>
+		<currencyFormats>
+			<currencyFormatLength>
+				<currencyFormat>
+					<pattern>¤ #,##0.00</pattern>
+				</currencyFormat>
+			</currencyFormatLength>
+		</currencyFormats>
+	</numbers>
+</ldml>
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

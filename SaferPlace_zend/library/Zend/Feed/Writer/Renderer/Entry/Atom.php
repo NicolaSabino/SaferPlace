@@ -14,9 +14,15 @@
  *
  * @category   Zend
  * @package    Zend_Feed_Writer
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Atom.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -26,6 +32,7 @@ require_once 'Zend/Feed/Writer/Renderer/RendererAbstract.php';
 
 require_once 'Zend/Feed/Writer/Renderer/Feed/Atom/Source.php';
 
+<<<<<<< HEAD
 /** @see Zend_Xml_Security */
 require_once 'Zend/Xml/Security.php';
 
@@ -33,6 +40,12 @@ require_once 'Zend/Xml/Security.php';
  * @category   Zend
  * @package    Zend_Feed_Writer
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+/**
+ * @category   Zend
+ * @package    Zend_Feed_Writer
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Feed_Writer_Renderer_Entry_Atom
@@ -392,9 +405,14 @@ class Zend_Feed_Writer_Renderer_Entry_Atom
             "/(<[\/]?)([a-zA-Z]+)/"
         ), '$1xhtml:$2', $xhtml);
         $dom = new DOMDocument('1.0', $this->getEncoding());
+<<<<<<< HEAD
 
         $dom = Zend_Xml_Security::scan('<xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml">'
             . $xhtml . '</xhtml:div>', $dom);
+=======
+        $dom->loadXML('<xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml">'
+            . $xhtml . '</xhtml:div>');
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         return $dom->documentElement;
     }
 

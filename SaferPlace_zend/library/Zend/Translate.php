@@ -14,9 +14,15 @@
  *
  * @category   Zend
  * @package    Zend_Translate
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Translate.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -33,7 +39,11 @@ require_once 'Zend/Translate/Adapter.php';
 /**
  * @category   Zend
  * @package    Zend_Translate
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Translate {
@@ -63,9 +73,13 @@ class Zend_Translate {
     /**
      * Generates the standard translation object
      *
+<<<<<<< HEAD
      * @param  array|Zend_Config|Zend_Translate_Adapter $options Options to use
      * @param  string|array [$content] Path to content, or content itself
      * @param  string|Zend_Locale [$locale]
+=======
+     * @param  array|Zend_Config $options Options to use
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @throws Zend_Translate_Exception
      */
     public function __construct($options = array())
@@ -98,9 +112,13 @@ class Zend_Translate {
     /**
      * Sets a new adapter
      *
+<<<<<<< HEAD
      * @param  array|Zend_Config|Zend_Translate_Adapter $options Options to use
      * @param  string|array [$content] Path to content, or content itself
      * @param  string|Zend_Locale [$locale]
+=======
+     * @param  array|Zend_Config $options Options to use
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @throws Zend_Translate_Exception
      */
     public function setAdapter($options = array())

@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Serializer
  * @subpackage Adapter
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Json.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /** @see Zend_Serializer_Adapter_AdapterAbstract */
@@ -30,7 +36,11 @@ require_once 'Zend/Json.php';
  * @category   Zend
  * @package    Zend_Serializer
  * @subpackage Adapter
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Serializer_Adapter_Json extends Zend_Serializer_Adapter_AdapterAbstract
@@ -77,14 +87,26 @@ class Zend_Serializer_Adapter_Json extends Zend_Serializer_Adapter_AdapterAbstra
 
         try {
             $ret = Zend_Json::decode($json, $opts['objectDecodeType']);
+<<<<<<< HEAD
         } catch (Zend_Json_Exception $e) {
             require_once 'Zend/Serializer/Exception.php';
             throw new Zend_Serializer_Exception('Invalid json data');
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         } catch (Exception $e) {
             require_once 'Zend/Serializer/Exception.php';
             throw new Zend_Serializer_Exception('Unserialization failed by previous error', 0, $e);
         }
 
+<<<<<<< HEAD
+=======
+        // json_decode returns null for invalid JSON
+        if ($ret === null && $json !== 'null') {
+            require_once 'Zend/Serializer/Exception.php';
+            throw new Zend_Serializer_Exception('Invalid json data');
+        }
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         return $ret;
     }
 }

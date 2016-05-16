@@ -14,15 +14,25 @@
  *
  * @category   Zend
  * @package    Zend_Mail
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Storage.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
  * @category   Zend
  * @package    Zend_Mail
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Mail_Storage
@@ -31,7 +41,10 @@ class Zend_Mail_Storage
     // system flags and other flags
     const FLAG_PASSED   = 'Passed';
     const FLAG_SEEN     = '\Seen';
+<<<<<<< HEAD
     const FLAG_UNSEEN   = '\Unseen';
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     const FLAG_ANSWERED = '\Answered';
     const FLAG_FLAGGED  = '\Flagged';
     const FLAG_DELETED  = '\Deleted';

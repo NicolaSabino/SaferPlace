@@ -15,12 +15,31 @@
  * @category   Zend
  * @package    Zend_Test
  * @subpackage PHPUnit
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
 
 /**
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: SimpleTester.php 24593 2012-01-05 20:35:02Z matthew $
+ */
+
+/**
+ * @see PHPUnit_Extensions_Database_DefaultTester
+ */
+require_once "PHPUnit/Extensions/Database/DefaultTester.php";
+
+/**
+ * @see PHPUnit_Extensions_Database_DB_IDatabaseConnection
+ */
+require_once "PHPUnit/Extensions/Database/DB/IDatabaseConnection.php";
+
+/**
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @see Zend_Test_PHPUnit_Db_Operation_Truncate
  */
 require_once "Zend/Test/PHPUnit/Db/Operation/Truncate.php";
@@ -31,13 +50,30 @@ require_once "Zend/Test/PHPUnit/Db/Operation/Truncate.php";
 require_once "Zend/Test/PHPUnit/Db/Operation/Insert.php";
 
 /**
+<<<<<<< HEAD
+=======
+ * @see PHPUnit_Extensions_Database_Operation_Factory
+ */
+require_once "PHPUnit/Extensions/Database/Operation/Factory.php";
+
+/**
+ * @see PHPUnit_Extensions_Database_DataSet_IDataSet
+ */
+require_once "PHPUnit/Extensions/Database/DataSet/IDataSet.php";
+
+/**
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * Simple Tester for Database Tests when the Abstract Test Case cannot be used.
  *
  * @uses       PHPUnit_Extensions_Database_DefaultTester
  * @category   Zend
  * @package    Zend_Test
  * @subpackage PHPUnit
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Test_PHPUnit_Db_SimpleTester extends PHPUnit_Extensions_Database_DefaultTester
@@ -72,4 +108,8 @@ class Zend_Test_PHPUnit_Db_SimpleTester extends PHPUnit_Extensions_Database_Defa
         $this->setDataSet($dataSet);
         $this->onSetUp();
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

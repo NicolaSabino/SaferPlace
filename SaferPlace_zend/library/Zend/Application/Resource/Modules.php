@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Application
  * @subpackage Resource
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Modules.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -32,7 +38,11 @@ require_once 'Zend/Application/Resource/ResourceAbstract.php';
  * @category   Zend
  * @package    Zend_Application
  * @subpackage Resource
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Application_Resource_Modules extends Zend_Application_Resource_ResourceAbstract
@@ -46,6 +56,10 @@ class Zend_Application_Resource_Modules extends Zend_Application_Resource_Resour
      * Constructor
      *
      * @param  mixed $options
+<<<<<<< HEAD
+=======
+     * @return void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function __construct($options = null)
     {
@@ -72,27 +86,43 @@ class Zend_Application_Resource_Modules extends Zend_Application_Resource_Resour
         foreach ($modules as $module => $moduleDirectory) {
             $bootstrapClass = $this->_formatModuleName($module) . '_Bootstrap';
             if (!class_exists($bootstrapClass, false)) {
+<<<<<<< HEAD
                 $bootstrapPath = dirname($moduleDirectory) . '/Bootstrap.php';
+=======
+                $bootstrapPath  = dirname($moduleDirectory) . '/Bootstrap.php';
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 if (file_exists($bootstrapPath)) {
                     $eMsgTpl = 'Bootstrap file found for module "%s" but bootstrap class "%s" not found';
                     include_once $bootstrapPath;
                     if (($default != $module)
                         && !class_exists($bootstrapClass, false)
                     ) {
+<<<<<<< HEAD
                         throw new Zend_Application_Resource_Exception(
                             sprintf(
                                 $eMsgTpl, $module, $bootstrapClass
                             )
                         );
+=======
+                        throw new Zend_Application_Resource_Exception(sprintf(
+                            $eMsgTpl, $module, $bootstrapClass
+                        ));
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                     } elseif ($default == $module) {
                         if (!class_exists($bootstrapClass, false)) {
                             $bootstrapClass = 'Bootstrap';
                             if (!class_exists($bootstrapClass, false)) {
+<<<<<<< HEAD
                                 throw new Zend_Application_Resource_Exception(
                                     sprintf(
                                         $eMsgTpl, $module, $bootstrapClass
                                     )
                                 );
+=======
+                                throw new Zend_Application_Resource_Exception(sprintf(
+                                    $eMsgTpl, $module, $bootstrapClass
+                                ));
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                             }
                         }
                     }
@@ -120,9 +150,15 @@ class Zend_Application_Resource_Modules extends Zend_Application_Resource_Resour
     protected function bootstrapBootstraps($bootstraps)
     {
         $bootstrap = $this->getBootstrap();
+<<<<<<< HEAD
         $out       = new ArrayObject(array(), ArrayObject::ARRAY_AS_PROPS);
 
         foreach ($bootstraps as $module => $bootstrapClass) {
+=======
+        $out = new ArrayObject(array(), ArrayObject::ARRAY_AS_PROPS);
+
+        foreach($bootstraps as $module => $bootstrapClass) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             $moduleBootstrap = new $bootstrapClass($bootstrap);
             $moduleBootstrap->bootstrap();
             $out[$module] = $moduleBootstrap;

@@ -16,7 +16,11 @@
  * @package    Zend_Service_Console
  * @subpackage Exception
  * @version    $Id$
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -26,6 +30,7 @@
 require_once 'Zend/Service/Console/Command.php';
 
 /**
+<<<<<<< HEAD
  * @see Zend_Service_WindowsAzure_Management_Client
  */
 require_once 'Zend/Service/WindowsAzure/Management/Client.php';
@@ -38,15 +43,32 @@ require_once 'Zend/Service/WindowsAzure/Management/Client.php';
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  *
+=======
+ * Deployment commands
+ * 
+ * @category   Zend
+ * @package    Zend_Service_WindowsAzure_CommandLine
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @command-handler deployment
  * @command-handler-description Windows Azure Deployment commands
  * @command-handler-header Windows Azure SDK for PHP
  * @command-handler-header Copyright (c) 2009 - 2011, RealDolmen (http://www.realdolmen.com)
+<<<<<<< HEAD
  * @command-handler-footer Note: Parameters that are common across all commands can be stored
  * @command-handler-footer in two dedicated environment variables.
  * @command-handler-footer - SubscriptionId: The Windows Azure Subscription Id to operate on.
  * @command-handler-footer - Certificate The Windows Azure .cer Management Certificate.
  * @command-handler-footer
+=======
+ * @command-handler-footer Note: Parameters that are common across all commands can be stored 
+ * @command-handler-footer in two dedicated environment variables.
+ * @command-handler-footer - SubscriptionId: The Windows Azure Subscription Id to operate on.
+ * @command-handler-footer - Certificate The Windows Azure .cer Management Certificate.
+ * @command-handler-footer 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @command-handler-footer All commands support the --ConfigurationFile or -F parameter.
  * @command-handler-footer The parameter file is a simple INI file carrying one parameter
  * @command-handler-footer value per line. It accepts the same parameters as one can
@@ -54,10 +76,17 @@ require_once 'Zend/Service/WindowsAzure/Management/Client.php';
  */
 class Zend_Service_WindowsAzure_CommandLine_Deployment
 	extends Zend_Service_Console_Command
+<<<<<<< HEAD
 {
 	/**
 	 * Creates a deployment from a remote package file and service configuration.
 	 *
+=======
+{	
+	/**
+	 * Creates a deployment from a remote package file and service configuration.
+	 * 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	 * @command-name CreateFromStorage
 	 * @command-description Creates a deployment from a remote package file and service configuration.
 	 * @command-parameter-for $subscriptionId Zend_Service_Console_Command_ParameterSource_Argv|Zend_Service_Console_Command_ParameterSource_ConfigFile|Zend_Service_Console_Command_ParameterSource_Env --SubscriptionId|-sid Required. This is the Windows Azure Subscription Id to operate on.
@@ -97,10 +126,17 @@ class Zend_Service_WindowsAzure_CommandLine_Deployment
 		}
 		echo $client->getLastRequestId();
 	}
+<<<<<<< HEAD
 
 	/**
 	 * Creates a deployment from a local package file and service configuration.
 	 *
+=======
+	
+	/**
+	 * Creates a deployment from a local package file and service configuration.
+	 * 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	 * @command-name CreateFromLocal
 	 * @command-description Creates a deployment from a local package file and service configuration.
 	 * @command-parameter-for $subscriptionId Zend_Service_Console_Command_ParameterSource_Argv|Zend_Service_Console_Command_ParameterSource_ConfigFile|Zend_Service_Console_Command_ParameterSource_Env --SubscriptionId|-sid Required. This is the Windows Azure Subscription Id to operate on.
@@ -139,21 +175,36 @@ class Zend_Service_WindowsAzure_CommandLine_Deployment
 		$blobClient->createContainerIfNotExists('phpazuredeployments');
 		$blobClient->putBlob('phpazuredeployments', basename($packageLocation), $packageLocation);
 		$package = $blobClient->getBlobInstance('phpazuredeployments', basename($packageLocation));
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		$client->createDeployment($serviceName, $deploymentSlot, $deploymentName, $label, $package->Url, $serviceConfigurationLocation, $startImmediately, $warningsAsErrors);
 
 		$client->waitForOperation();
 		$blobClient->deleteBlob('phpazuredeployments', basename($packageLocation));
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		if ($waitForOperation) {
 			$client->waitForOperation();
 		}
 		echo $client->getLastRequestId();
 	}
+<<<<<<< HEAD
 
 	/**
 	 * Get deployment properties.
 	 *
+=======
+	
+	/**
+	 * Get deployment properties.
+	 * 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	 * @command-name GetProperties
 	 * @command-description Get deployment properties.
 	 * @command-parameter-for $subscriptionId Zend_Service_Console_Command_ParameterSource_Argv|Zend_Service_Console_Command_ParameterSource_ConfigFile|Zend_Service_Console_Command_ParameterSource_Env --SubscriptionId|-sid Required. This is the Windows Azure Subscription Id to operate on.
@@ -168,12 +219,21 @@ class Zend_Service_WindowsAzure_CommandLine_Deployment
 	public function getPropertiesCommand($subscriptionId, $certificate, $certificatePassphrase, $serviceName, $deploymentSlot, $deploymentName)
 	{
 		$client = new Zend_Service_WindowsAzure_Management_Client($subscriptionId, $certificate, $certificatePassphrase);
+<<<<<<< HEAD
 
 		$result = null;
 
 		if (!is_null($deploymentSlot) && $deploymentSlot != '') {
 			$deploymentSlot = strtolower($deploymentSlot);
 
+=======
+		
+		$result = null;
+		
+		if (!is_null($deploymentSlot) && $deploymentSlot != '') {
+			$deploymentSlot = strtolower($deploymentSlot);
+			
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			$result = $client->getDeploymentBySlot($serviceName, $deploymentSlot);
 		} else {
 			$result = $client->getDeploymentByDeploymentId($serviceName, $deploymentName);
@@ -181,10 +241,17 @@ class Zend_Service_WindowsAzure_CommandLine_Deployment
 
 		$this->_displayObjectInformation($result, array('Name', 'DeploymentSlot', 'Label', 'Url', 'Status'));
 	}
+<<<<<<< HEAD
 
 	/**
 	 * Get hosted service account property.
 	 *
+=======
+	
+	/**
+	 * Get hosted service account property.
+	 * 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	 * @command-name GetProperty
 	 * @command-description Get deployment property.
 	 * @command-parameter-for $subscriptionId Zend_Service_Console_Command_ParameterSource_Argv|Zend_Service_Console_Command_ParameterSource_ConfigFile|Zend_Service_Console_Command_ParameterSource_Env --SubscriptionId|-sid Required. This is the Windows Azure Subscription Id to operate on.
@@ -201,12 +268,21 @@ class Zend_Service_WindowsAzure_CommandLine_Deployment
 	public function getPropertyCommand($subscriptionId, $certificate, $certificatePassphrase, $serviceName, $deploymentSlot, $deploymentName, $property)
 	{
 		$client = new Zend_Service_WindowsAzure_Management_Client($subscriptionId, $certificate, $certificatePassphrase);
+<<<<<<< HEAD
 
 		$result = null;
 
 		if (!is_null($deploymentSlot) && $deploymentSlot != '') {
 			$deploymentSlot = strtolower($deploymentSlot);
 
+=======
+		
+		$result = null;
+		
+		if (!is_null($deploymentSlot) && $deploymentSlot != '') {
+			$deploymentSlot = strtolower($deploymentSlot);
+			
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			$result = $client->getDeploymentBySlot($serviceName, $deploymentSlot);
 		} else {
 			$result = $client->getDeploymentByDeploymentId($serviceName, $deploymentName);
@@ -214,10 +290,17 @@ class Zend_Service_WindowsAzure_CommandLine_Deployment
 
 		printf("%s\r\n", $result->$property);
 	}
+<<<<<<< HEAD
 
 	/**
 	 * Swap deployment slots (perform VIP swap).
 	 *
+=======
+	
+	/**
+	 * Swap deployment slots (perform VIP swap).
+	 * 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	 * @command-name Swap
 	 * @command-description Swap deployment slots (perform VIP swap).
 	 * @command-parameter-for $subscriptionId Zend_Service_Console_Command_ParameterSource_Argv|Zend_Service_Console_Command_ParameterSource_ConfigFile|Zend_Service_Console_Command_ParameterSource_Env --SubscriptionId|-sid Required. This is the Windows Azure Subscription Id to operate on.
@@ -231,6 +314,7 @@ class Zend_Service_WindowsAzure_CommandLine_Deployment
 	public function swapCommand($subscriptionId, $certificate, $certificatePassphrase, $serviceName, $waitForOperation = false)
 	{
 		$client = new Zend_Service_WindowsAzure_Management_Client($subscriptionId, $certificate, $certificatePassphrase);
+<<<<<<< HEAD
 
 		$productionDeploymentName = null;
 		try { $productionDeploymentName = $client->getDeploymentBySlot($serviceName, 'production')->Name; } catch (Exception $ex) {}
@@ -238,6 +322,15 @@ class Zend_Service_WindowsAzure_CommandLine_Deployment
 		$stagingDeploymentName = null;
 		try { $stagingDeploymentName = $client->getDeploymentBySlot($serviceName, 'staging')->Name; } catch (Exception $ex) {}
 
+=======
+		
+		$productionDeploymentName = null;
+		try { $productionDeploymentName = $client->getDeploymentBySlot($serviceName, 'production')->Name; } catch (Exception $ex) {}
+		
+		$stagingDeploymentName = null;
+		try { $stagingDeploymentName = $client->getDeploymentBySlot($serviceName, 'staging')->Name; } catch (Exception $ex) {}
+		
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		if (is_null($productionDeploymentName)) {
 			$productionDeploymentName = $stagingDeploymentName;
 		}
@@ -247,16 +340,27 @@ class Zend_Service_WindowsAzure_CommandLine_Deployment
 		}
 
 		$client->swapDeployment($serviceName, $productionDeploymentName, $stagingDeploymentName);
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		if ($waitForOperation) {
 			$client->waitForOperation();
 		}
 		echo $client->getLastRequestId();
 	}
+<<<<<<< HEAD
 
 	/**
 	 * Deletes a deployment.
 	 *
+=======
+	
+	/**
+	 * Deletes a deployment.
+	 * 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	 * @command-name Delete
 	 * @command-description Deletes a deployment.
 	 * @command-parameter-for $subscriptionId Zend_Service_Console_Command_ParameterSource_Argv|Zend_Service_Console_Command_ParameterSource_ConfigFile|Zend_Service_Console_Command_ParameterSource_Env --SubscriptionId|-sid Required. This is the Windows Azure Subscription Id to operate on.
@@ -275,21 +379,36 @@ class Zend_Service_WindowsAzure_CommandLine_Deployment
 
 		if (!is_null($deploymentSlot) && $deploymentSlot != '') {
 			$deploymentSlot = strtolower($deploymentSlot);
+<<<<<<< HEAD
 
+=======
+			
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			$client->deleteDeploymentBySlot($serviceName, $deploymentSlot);
 		} else {
 			$client->deleteDeploymentByDeploymentId($serviceName, $deploymentName);
 		}
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		if ($waitForOperation) {
 			$client->waitForOperation();
 		}
 		echo $client->getLastRequestId();
 	}
+<<<<<<< HEAD
 
 	/**
 	 * Updates a deployment's configuration.
 	 *
+=======
+	
+	/**
+	 * Updates a deployment's configuration.
+	 * 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	 * @command-name UpdateConfig
 	 * @command-description Updates a deployment's configuration.
 	 * @command-parameter-for $subscriptionId Zend_Service_Console_Command_ParameterSource_Argv|Zend_Service_Console_Command_ParameterSource_ConfigFile|Zend_Service_Console_Command_ParameterSource_Env --SubscriptionId|-sid Required. This is the Windows Azure Subscription Id to operate on.
@@ -311,21 +430,36 @@ class Zend_Service_WindowsAzure_CommandLine_Deployment
 
 		if (!is_null($deploymentSlot) && $deploymentSlot != '') {
 			$deploymentSlot = strtolower($deploymentSlot);
+<<<<<<< HEAD
 
+=======
+			
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			$client->configureDeploymentBySlot($serviceName, $deploymentSlot, $serviceConfigurationLocation);
 		} else {
 			$client->configureDeploymentByDeploymentId($serviceName, $deploymentName, $serviceConfigurationLocation);
 		}
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		if ($waitForOperation) {
 			$client->waitForOperation();
 		}
 		echo $client->getLastRequestId();
 	}
+<<<<<<< HEAD
 
 	/**
 	 * Updates a deployment's status.
 	 *
+=======
+	
+	/**
+	 * Updates a deployment's status.
+	 * 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	 * @command-name UpdateStatus
 	 * @command-description Updates a deployment's status.
 	 * @command-parameter-for $subscriptionId Zend_Service_Console_Command_ParameterSource_Argv|Zend_Service_Console_Command_ParameterSource_ConfigFile|Zend_Service_Console_Command_ParameterSource_Env --SubscriptionId|-sid Required. This is the Windows Azure Subscription Id to operate on.
@@ -347,21 +481,36 @@ class Zend_Service_WindowsAzure_CommandLine_Deployment
 
 		if (!is_null($deploymentSlot) && $deploymentSlot != '') {
 			$deploymentSlot = strtolower($deploymentSlot);
+<<<<<<< HEAD
 
+=======
+			
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			$client->updateDeploymentStatusBySlot($serviceName, $deploymentSlot, $newStatus);
 		} else {
 			$client->updateDeploymentStatusByDeploymentId($serviceName, $deploymentName, $newStatus);
 		}
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		if ($waitForOperation) {
 			$client->waitForOperation();
 		}
 		echo $client->getLastRequestId();
 	}
+<<<<<<< HEAD
 
 	/**
 	 * Updates the number of instances.
 	 *
+=======
+	
+	/**
+	 * Updates the number of instances.
+	 * 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	 * @command-name EditInstanceNumber
 	 * @command-description Updates the number of instances.
 	 * @command-parameter-for $subscriptionId Zend_Service_Console_Command_ParameterSource_Argv|Zend_Service_Console_Command_ParameterSource_ConfigFile|Zend_Service_Console_Command_ParameterSource_Env --SubscriptionId|-sid Required. This is the Windows Azure Subscription Id to operate on.
@@ -384,21 +533,36 @@ class Zend_Service_WindowsAzure_CommandLine_Deployment
 
 		if (!is_null($deploymentSlot) && $deploymentSlot != '') {
 			$deploymentSlot = strtolower($deploymentSlot);
+<<<<<<< HEAD
 
+=======
+			
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			$client->setInstanceCountBySlot($serviceName, $deploymentSlot, $roleName, $newInstanceNumber);
 		} else {
 			$client->setInstanceCountByDeploymentId($serviceName, $deploymentName, $roleName, $newInstanceNumber);
 		}
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		if ($waitForOperation) {
 			$client->waitForOperation();
 		}
 		echo $client->getLastRequestId();
 	}
+<<<<<<< HEAD
 
 	/**
 	 * Reboots a role instance.
 	 *
+=======
+	
+	/**
+	 * Reboots a role instance.
+	 * 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	 * @command-name RebootInstance
 	 * @command-description Reboots a role instance.
 	 * @command-parameter-for $subscriptionId Zend_Service_Console_Command_ParameterSource_Argv|Zend_Service_Console_Command_ParameterSource_ConfigFile|Zend_Service_Console_Command_ParameterSource_Env --SubscriptionId|-sid Required. This is the Windows Azure Subscription Id to operate on.
@@ -420,21 +584,36 @@ class Zend_Service_WindowsAzure_CommandLine_Deployment
 
 		if (!is_null($deploymentSlot) && $deploymentSlot != '') {
 			$deploymentSlot = strtolower($deploymentSlot);
+<<<<<<< HEAD
 
+=======
+			
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			$client->rebootRoleInstanceBySlot($serviceName, $deploymentSlot, $instanceName);
 		} else {
 			$client->rebootRoleInstanceByDeploymentId($serviceName, $deploymentName, $instanceName);
 		}
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		if ($waitForOperation) {
 			$client->waitForOperation();
 		}
 		echo $client->getLastRequestId();
 	}
+<<<<<<< HEAD
 
 	/**
 	 * Reimages a role instance.
 	 *
+=======
+	
+	/**
+	 * Reimages a role instance.
+	 * 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	 * @command-name ReimageInstance
 	 * @command-description Reimages a role instance.
 	 * @command-parameter-for $subscriptionId Zend_Service_Console_Command_ParameterSource_Argv|Zend_Service_Console_Command_ParameterSource_ConfigFile|Zend_Service_Console_Command_ParameterSource_Env --SubscriptionId|-sid Required. This is the Windows Azure Subscription Id to operate on.
@@ -456,21 +635,36 @@ class Zend_Service_WindowsAzure_CommandLine_Deployment
 
 		if (!is_null($deploymentSlot) && $deploymentSlot != '') {
 			$deploymentSlot = strtolower($deploymentSlot);
+<<<<<<< HEAD
 
+=======
+			
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			$client->reimageRoleInstanceBySlot($serviceName, $deploymentSlot, $instanceName);
 		} else {
 			$client->reimageRoleInstanceByDeploymentId($serviceName, $deploymentName, $instanceName);
 		}
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		if ($waitForOperation) {
 			$client->waitForOperation();
 		}
 		echo $client->getLastRequestId();
 	}
+<<<<<<< HEAD
 
 	/**
 	 * Upgrades a deployment from a remote package file and service configuration.
 	 *
+=======
+	
+	/**
+	 * Upgrades a deployment from a remote package file and service configuration.
+	 * 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	 * @command-name UpgradeFromStorage
 	 * @command-description Upgrades a deployment from a remote package file and service configuration.
 	 * @command-parameter-for $subscriptionId Zend_Service_Console_Command_ParameterSource_Argv|Zend_Service_Console_Command_ParameterSource_ConfigFile|Zend_Service_Console_Command_ParameterSource_Env --SubscriptionId|-sid Required. This is the Windows Azure Subscription Id to operate on.
@@ -487,26 +681,45 @@ class Zend_Service_WindowsAzure_CommandLine_Deployment
 	 * @command-parameter-for $waitForOperation Zend_Service_Console_Command_ParameterSource_Argv|Zend_Service_Console_Command_ParameterSource_ConfigFile --WaitFor|-w Optional. Wait for the operation to complete?
 	 */
 	public function upgradeFromStorageCommand($subscriptionId, $certificate, $certificatePassphrase, $serviceName, $deploymentSlot, $deploymentName, $label, $packageUrl, $serviceConfigurationLocation, $mode = 'auto', $roleName = null, $waitForOperation = false)
+<<<<<<< HEAD
 	{
+=======
+	{		
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		$client = new Zend_Service_WindowsAzure_Management_Client($subscriptionId, $certificate, $certificatePassphrase);
 
 		if (!is_null($deploymentSlot) && $deploymentSlot != '') {
 			$deploymentSlot = strtolower($deploymentSlot);
+<<<<<<< HEAD
 
+=======
+			
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			$client->upgradeDeploymentBySlot($serviceName, $deploymentSlot, $label, $packageUrl, $serviceConfigurationLocation, $mode, $roleName);
 		} else {
 			$client->upgradeDeploymentByDeploymentId($serviceName, $deploymentName, $label, $packageUrl, $serviceConfigurationLocation, $mode, $roleName);
 		}
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		if ($waitForOperation) {
 			$client->waitForOperation();
 		}
 		echo $client->getLastRequestId();
 	}
+<<<<<<< HEAD
 
 	/**
 	 * Upgrades a deployment from a local package file and service configuration.
 	 *
+=======
+	
+	/**
+	 * Upgrades a deployment from a local package file and service configuration.
+	 * 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	 * @command-name UpgradeFromLocal
 	 * @command-description Upgrades a deployment from a local package file and service configuration.
 	 * @command-parameter-for $subscriptionId Zend_Service_Console_Command_ParameterSource_Argv|Zend_Service_Console_Command_ParameterSource_ConfigFile|Zend_Service_Console_Command_ParameterSource_Env --SubscriptionId|-sid Required. This is the Windows Azure Subscription Id to operate on.
@@ -526,32 +739,57 @@ class Zend_Service_WindowsAzure_CommandLine_Deployment
 	public function upgradeFromLocalCommand($subscriptionId, $certificate, $certificatePassphrase, $serviceName, $deploymentSlot, $deploymentName, $label, $packageLocation, $serviceConfigurationLocation, $storageAccount, $mode = 'auto', $roleName = null, $waitForOperation = false)
 	{
 		$client = new Zend_Service_WindowsAzure_Management_Client($subscriptionId, $certificate, $certificatePassphrase);
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		$blobClient = $client->createBlobClientForService($storageAccount);
 		$blobClient->createContainerIfNotExists('phpazuredeployments');
 		$blobClient->putBlob('phpazuredeployments', basename($packageLocation), $packageLocation);
 		$package = $blobClient->getBlobInstance('phpazuredeployments', basename($packageLocation));
+<<<<<<< HEAD
 
 		if (!is_null($deploymentSlot) && $deploymentSlot != '') {
 			$deploymentSlot = strtolower($deploymentSlot);
 
+=======
+		
+		if (!is_null($deploymentSlot) && $deploymentSlot != '') {
+			$deploymentSlot = strtolower($deploymentSlot);
+			
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			$client->upgradeDeploymentBySlot($serviceName, $deploymentSlot, $label, $package->Url, $serviceConfigurationLocation, $mode, $roleName);
 		} else {
 			$client->upgradeDeploymentByDeploymentId($serviceName, $deploymentName, $label, $package->Url, $serviceConfigurationLocation, $mode, $roleName);
 		}
+<<<<<<< HEAD
 
 		$client->waitForOperation();
 		$blobClient->deleteBlob('phpazuredeployments', basename($packageLocation));
 
+=======
+		
+		$client->waitForOperation();
+		$blobClient->deleteBlob('phpazuredeployments', basename($packageLocation));
+		
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		if ($waitForOperation) {
 			$client->waitForOperation();
 		}
 		echo $client->getLastRequestId();
 	}
+<<<<<<< HEAD
 
 	/**
 	 * Walks upgrade domains.
 	 *
+=======
+	
+	/**
+	 * Walks upgrade domains.
+	 * 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	 * @command-name WalkUpgradeDomains
 	 * @command-description Walks upgrade domains.
 	 * @command-parameter-for $subscriptionId Zend_Service_Console_Command_ParameterSource_Argv|Zend_Service_Console_Command_ParameterSource_ConfigFile|Zend_Service_Console_Command_ParameterSource_Env --SubscriptionId|-sid Required. This is the Windows Azure Subscription Id to operate on.
@@ -566,15 +804,26 @@ class Zend_Service_WindowsAzure_CommandLine_Deployment
 	public function walkUpgradeDomainsCommand($subscriptionId, $certificate, $certificatePassphrase, $serviceName, $deploymentSlot, $deploymentName, $upgradeDomain, $waitForOperation = false)
 	{
 		$client = new Zend_Service_WindowsAzure_Management_Client($subscriptionId, $certificate, $certificatePassphrase);
+<<<<<<< HEAD
 
 		if (!is_null($deploymentSlot) && $deploymentSlot != '') {
 			$deploymentSlot = strtolower($deploymentSlot);
 
+=======
+		
+		if (!is_null($deploymentSlot) && $deploymentSlot != '') {
+			$deploymentSlot = strtolower($deploymentSlot);
+			
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			$client->walkUpgradeDomainBySlot($serviceName, $deploymentSlot, $upgradeDomain);
 		} else {
 			$client->walkUpgradeDomainByDeploymentId($serviceName, $deploymentName, $upgradeDomain);
 		}
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		if ($waitForOperation) {
 			$client->waitForOperation();
 		}
@@ -582,4 +831,8 @@ class Zend_Service_WindowsAzure_CommandLine_Deployment
 	}
 }
 
+<<<<<<< HEAD
 Zend_Service_Console_Command::bootstrap($_SERVER['argv']);
+=======
+Zend_Service_Console_Command::bootstrap($_SERVER['argv']);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Crypt
  * @subpackage DiffieHellman
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: DiffieHellman.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -27,7 +33,11 @@
  *
  * @category   Zend
  * @package    Zend_Crypt
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Crypt_DiffieHellman
@@ -102,6 +112,10 @@ class Zend_Crypt_DiffieHellman
      * @param string $generator
      * @param string $privateKey
      * @param string $privateKeyType
+<<<<<<< HEAD
+=======
+     * @return void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function __construct($prime, $generator, $privateKey = null, $privateKeyType = self::NUMBER)
     {
@@ -145,7 +159,10 @@ class Zend_Crypt_DiffieHellman
      *
      * @param string $number
      * @param string $type
+<<<<<<< HEAD
      * @throws Zend_Crypt_DiffieHellman_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Crypt_DiffieHellman
      */
     public function setPublicKey($number, $type = self::NUMBER)
@@ -166,7 +183,10 @@ class Zend_Crypt_DiffieHellman
      * transaction.
      *
      * @param string $type
+<<<<<<< HEAD
      * @throws Zend_Crypt_DiffieHellman_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return string
      */
     public function getPublicKey($type = self::NUMBER)
@@ -196,8 +216,11 @@ class Zend_Crypt_DiffieHellman
      *
      * @param string $publicKey
      * @param string $type
+<<<<<<< HEAD
      * @param string $output
      * @throws Zend_Crypt_DiffieHellman_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return mixed
      */
     public function computeSecretKey($publicKey, $type = self::NUMBER, $output = self::NUMBER)
@@ -221,7 +244,10 @@ class Zend_Crypt_DiffieHellman
      * Return the computed shared secret key from the DiffieHellman transaction
      *
      * @param string $type
+<<<<<<< HEAD
      * @throws Zend_Crypt_DiffieHellman_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return string
      */
     public function getSharedSecretKey($type = self::NUMBER)
@@ -242,7 +268,10 @@ class Zend_Crypt_DiffieHellman
      * Setter for the value of the prime number
      *
      * @param string $number
+<<<<<<< HEAD
      * @throws Zend_Crypt_DiffieHellman_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Crypt_DiffieHellman
      */
     public function setPrime($number)
@@ -258,7 +287,10 @@ class Zend_Crypt_DiffieHellman
     /**
      * Getter for the value of the prime number
      *
+<<<<<<< HEAD
      * @throws Zend_Crypt_DiffieHellman_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return string
      */
     public function getPrime()
@@ -270,11 +302,18 @@ class Zend_Crypt_DiffieHellman
         return $this->_prime;
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Setter for the value of the generator number
      *
      * @param string $number
+<<<<<<< HEAD
      * @throws Zend_Crypt_DiffieHellman_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Crypt_DiffieHellman
      */
     public function setGenerator($number)
@@ -290,7 +329,10 @@ class Zend_Crypt_DiffieHellman
     /**
      * Getter for the value of the generator number
      *
+<<<<<<< HEAD
      * @throws Zend_Crypt_DiffieHellman_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return string
      */
     public function getGenerator()
@@ -307,7 +349,10 @@ class Zend_Crypt_DiffieHellman
      *
      * @param string $number
      * @param string $type
+<<<<<<< HEAD
      * @throws Zend_Crypt_DiffieHellman_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Crypt_DiffieHellman
      */
     public function setPrivateKey($number, $type = self::NUMBER)

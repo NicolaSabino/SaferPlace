@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -14,6 +15,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<localeDisplayPattern>
 			<localeSeparator draft="unconfirmed">{0}, {1}</localeSeparator>
 		</localeDisplayPattern>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.91 $"/>
+		<generation date="$Date: 2009/06/15 03:46:25 $"/>
+		<language type="mt"/>
+	</identity>
+	<localeDisplayNames>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		<languages>
 			<language type="aa">Afar</language>
 			<language type="ab">Abkażjan</language>
@@ -23,15 +33,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ady">Adyghe</language>
 			<language type="ae">Avestan</language>
 			<language type="af">Afrikans</language>
+<<<<<<< HEAD
+=======
+			<language type="afa">Afro-Asjatiku (Oħra)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="afh">Afriħili</language>
 			<language type="ain">Ajnu</language>
 			<language type="ak">Akan</language>
 			<language type="akk">Akkadjen</language>
 			<language type="ale">Aleut</language>
+<<<<<<< HEAD
+=======
+			<language type="alg">Lingwi Algonqwinjani</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="am">Amħariku</language>
 			<language type="an">Aragonese</language>
 			<language type="ang">Ingliż, Antik</language>
 			<language type="anp">Angika</language>
+<<<<<<< HEAD
 			<language type="ar">Għarbi</language>
 			<language type="ar_001">Għarbi Standard Modern</language>
 			<language type="arc">Aramajk</language>
@@ -40,11 +59,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="arw">Arawak</language>
 			<language type="as">Assamese</language>
 			<language type="ast">Asturian</language>
+=======
+			<language type="apa">Lingwi Apaċi</language>
+			<language type="ar">Għarbi</language>
+			<language type="arc">Aramajk</language>
+			<language type="arn">Arawkanjan</language>
+			<language type="arp">Arapaħo</language>
+			<language type="art">Artifiċjali (Oħra)</language>
+			<language type="arw">Arawak</language>
+			<language type="as">Assamese</language>
+			<language type="ast">Asturian</language>
+			<language type="ath">Lingwi Atabaskani</language>
+			<language type="aus">Lingwi Awstraljani</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="av">Avarik</language>
 			<language type="awa">Awadħi</language>
 			<language type="ay">Ajmara</language>
 			<language type="az">Ażerbajġani</language>
 			<language type="ba">Baxkir</language>
+<<<<<<< HEAD
 			<language type="bal">Baluċi</language>
 			<language type="ban">Baliniż</language>
 			<language type="bas">Basa</language>
@@ -52,6 +85,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="bej">Beja</language>
 			<language type="bem">Bemba</language>
 			<language type="bg">Bulgaru</language>
+=======
+			<language type="bad">Banda</language>
+			<language type="bai">Lingwi Bamileke</language>
+			<language type="bal">Baluċi</language>
+			<language type="ban">Baliniż</language>
+			<language type="bas">Basa</language>
+			<language type="bat">Baltiku (Oħra)</language>
+			<language type="be">Belarussu</language>
+			<language type="bej">Beja</language>
+			<language type="bem">Bemba</language>
+			<language type="ber">Beber</language>
+			<language type="bg">Bulgaru</language>
+			<language type="bh">Biħari</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="bho">Bojpuri</language>
 			<language type="bi">Bislama</language>
 			<language type="bik">Bikol</language>
@@ -59,19 +106,37 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="bla">Siksika</language>
 			<language type="bm">Bambara</language>
 			<language type="bn">Bengali</language>
+<<<<<<< HEAD
+=======
+			<language type="bnt">Bantu</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="bo">Tibetjan</language>
 			<language type="br">Brenton</language>
 			<language type="bra">Braj</language>
 			<language type="bs">Bosnijan</language>
+<<<<<<< HEAD
+=======
+			<language type="btk">Batak</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="bua">Burjat</language>
 			<language type="bug">Buginiż</language>
 			<language type="byn">Blin</language>
 			<language type="ca">Katalan</language>
 			<language type="cad">Kaddo</language>
+<<<<<<< HEAD
 			<language type="car">Karib</language>
 			<language type="cch">Atsam</language>
 			<language type="ce">Ċeċen</language>
 			<language type="ceb">Sibwano</language>
+=======
+			<language type="cai">Amerika Ċentrali (Oħra)</language>
+			<language type="car">Karib</language>
+			<language type="cau">Kawkasu (Oħra)</language>
+			<language type="cch">Atsam</language>
+			<language type="ce">Ċeċen</language>
+			<language type="ceb">Sibwano</language>
+			<language type="cel">Keltiku (Oħra)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ch">Ċamorro</language>
 			<language type="chb">Ċibċa</language>
 			<language type="chg">Ċagataj</language>
@@ -82,6 +147,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="chp">Ċipewjan</language>
 			<language type="chr">Ċerokij</language>
 			<language type="chy">Xajenn</language>
+<<<<<<< HEAD
 			<language type="co">Korsiku</language>
 			<language type="cop">Koptiku</language>
 			<language type="cr">Krij</language>
@@ -89,17 +155,40 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="cs">Ċek</language>
 			<language type="csb">Kashubian</language>
 			<language type="cu">Slaviku tal-Knisja</language>
+=======
+			<language type="cmc">Lingwi Ċamiki</language>
+			<language type="co">Korsiku</language>
+			<language type="cop">Koptiku</language>
+			<language type="cpe">Kreoli u Piġini, Bbażat fuq l-Ingliż (Oħra)</language>
+			<language type="cpf">Kreoli u Piġini, Bbażat fuq il-Franċiż (Oħra)</language>
+			<language type="cpp">Kreoli u Piġini, Bbażat fuq il-Portugiż (Oħra)</language>
+			<language type="cr">Krij</language>
+			<language type="crh">Crimean Turkish; Crimean Tatar</language>
+			<language type="crp">Kreoli u Piġini (Oħra)</language>
+			<language type="cs">Ċek</language>
+			<language type="csb">Kashubian</language>
+			<language type="cu">Slaviku tal-Knisja</language>
+			<language type="cus">Kuxtiku (Oħra)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="cv">Ċuvax</language>
 			<language type="cy">Welx</language>
 			<language type="da">Daniż</language>
 			<language type="dak">Dakota</language>
 			<language type="dar">Dargwa</language>
+<<<<<<< HEAD
+=======
+			<language type="day">Dajak</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="de">Ġermaniż</language>
 			<language type="del">Delawerjan</language>
 			<language type="den">Slav</language>
 			<language type="dgr">Dogrib</language>
 			<language type="din">Dinka</language>
 			<language type="doi">Dogri</language>
+<<<<<<< HEAD
+=======
+			<language type="dra">Dravidjan (Oħra)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="dsb">Lower Sorbian</language>
 			<language type="dua">Dwala</language>
 			<language type="dum">Olandiż, Medjevali</language>
@@ -113,7 +202,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="el">Grieg</language>
 			<language type="elx">Elamit</language>
 			<language type="en">Ingliż</language>
+<<<<<<< HEAD
 			<language type="enm">Ingliż, Medjevali</language>
+=======
+			<language type="enm">Ingliż, Medjevali (1100-1500)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="eo">Esperanto</language>
 			<language type="es">Spanjol</language>
 			<language type="et">Estonjan</language>
@@ -125,6 +218,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ff">Fulaħ</language>
 			<language type="fi">Finlandiż</language>
 			<language type="fil">Filippino</language>
+<<<<<<< HEAD
+=======
+			<language type="fiu">Finno - Ugrijan</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="fj">Fiġi</language>
 			<language type="fo">Fawriż</language>
 			<language type="fon">Fon</language>
@@ -138,6 +235,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="gay">Gajo</language>
 			<language type="gba">Gbaja</language>
 			<language type="gd">Galliku Skoċċiż</language>
+<<<<<<< HEAD
+=======
+			<language type="gem">Ġermaniku (Oħra)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="gez">Geez</language>
 			<language type="gil">Gilbertjan</language>
 			<language type="gl">Gallegjan</language>
@@ -148,7 +249,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="gor">Gorontalo</language>
 			<language type="got">Gotiku</language>
 			<language type="grb">Ġerbo</language>
+<<<<<<< HEAD
 			<language type="grc">Grieg, Antik</language>
+=======
+			<language type="grc">Grieg, Antik (to 1453)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="gu">Guġarati</language>
 			<language type="gv">Manks</language>
 			<language type="gwi">Gwiċin</language>
@@ -158,6 +263,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="he">Ebrajk</language>
 			<language type="hi">Ħindi</language>
 			<language type="hil">Hiligaynon</language>
+<<<<<<< HEAD
+=======
+			<language type="him">Ħimaċali</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="hit">Ħittit</language>
 			<language type="hmn">Ħmong</language>
 			<language type="ho">Ħiri Motu</language>
@@ -174,10 +283,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ie">Interlingue</language>
 			<language type="ig">Igbo</language>
 			<language type="ii">Sichuan Yi</language>
+<<<<<<< HEAD
 			<language type="ik">Inupjak</language>
 			<language type="ilo">Iloko</language>
 			<language type="inh">Ingush</language>
 			<language type="io">Ido</language>
+=======
+			<language type="ijo">Iġo</language>
+			<language type="ik">Inupjak</language>
+			<language type="ilo">Iloko</language>
+			<language type="inc">Indjan (Oħra)</language>
+			<language type="ine">Indo-Ewropew</language>
+			<language type="inh">Ingush</language>
+			<language type="io">Ido</language>
+			<language type="ira">Iranjan</language>
+			<language type="iro">Lingwi Irogwjani</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="is">Iżlandiż</language>
 			<language type="it">Taljan</language>
 			<language type="iu">Inukitut</language>
@@ -191,10 +312,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="kab">Kabuljan</language>
 			<language type="kac">Kaċin</language>
 			<language type="kam">Kamba</language>
+<<<<<<< HEAD
+=======
+			<language type="kar">Karen</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="kaw">Kawi</language>
 			<language type="kbd">Kabardian</language>
 			<language type="kg">Kongo</language>
 			<language type="kha">Kasi</language>
+<<<<<<< HEAD
+=======
+			<language type="khi">Kojsan</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="kho">Kotaniż</language>
 			<language type="ki">Kikuju</language>
 			<language type="kj">Kuanyama</language>
@@ -209,6 +338,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="kpe">Kpelle</language>
 			<language type="kr">Kanuri</language>
 			<language type="krc">Karachay-Balkar</language>
+<<<<<<< HEAD
+=======
+			<language type="kro">Kru</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="kru">Kurusk</language>
 			<language type="ks">Kaxmiri</language>
 			<language type="ku">Kurdiż</language>
@@ -236,39 +369,74 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="lun">Lunda</language>
 			<language type="luo">Luwa</language>
 			<language type="lus">Luxaj</language>
+<<<<<<< HEAD
 			<language type="lv">Latvjan</language>
+=======
+			<language type="lv">Latvjan (Lettix)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mad">Maduriż</language>
 			<language type="mag">Magaħi</language>
 			<language type="mai">Majtili</language>
 			<language type="mak">Makasar</language>
 			<language type="man">Mandingwan</language>
+<<<<<<< HEAD
+=======
+			<language type="map">Awstronesjan</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mas">Masaj</language>
 			<language type="mdf">Moksha</language>
 			<language type="mdr">Mandar</language>
 			<language type="men">Mende</language>
 			<language type="mg">Malagażi</language>
+<<<<<<< HEAD
 			<language type="mga">Irlandiż, Medjevali</language>
+=======
+			<language type="mga">Irlandiż, Medjevali (900-1200)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mh">Marxall</language>
 			<language type="mi">Maori</language>
 			<language type="mic">Mikmek</language>
 			<language type="min">Minangkabaw</language>
+<<<<<<< HEAD
 			<language type="mk">Maċedonjan</language>
+=======
+			<language type="mis">Lingwi Oħra</language>
+			<language type="mk">Maċedonjan</language>
+			<language type="mkh">Mon-Kmer (Oħra)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ml">Malajalam</language>
 			<language type="mn">Mongoljan</language>
 			<language type="mnc">Manċurjan</language>
 			<language type="mni">Manipuri</language>
+<<<<<<< HEAD
+=======
+			<language type="mno">Lingwi Manobo</language>
+			<language type="mo">Moldavjan</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="moh">Moħak</language>
 			<language type="mos">Mossi</language>
 			<language type="mr">Marati</language>
 			<language type="ms">Malajan</language>
 			<language type="mt">Malti</language>
 			<language type="mul">Lingwi Diversi</language>
+<<<<<<< HEAD
+=======
+			<language type="mun">Lingwi tal-Munda</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mus">Kriek</language>
 			<language type="mwl">Mirandiż</language>
 			<language type="mwr">Marwari</language>
 			<language type="my">Burmiż</language>
+<<<<<<< HEAD
 			<language type="myv">Erzya</language>
 			<language type="na">Nawuru</language>
+=======
+			<language type="myn">Majan</language>
+			<language type="myv">Erzya</language>
+			<language type="na">Nawuru</language>
+			<language type="nah">Naħwatil</language>
+			<language type="nai">Indjan tal-Amerika ta’ Fuq (Oħra)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="nap">Neapolitan</language>
 			<language type="nb">Bokmahal Norveġiż</language>
 			<language type="nd">Ndebele, ta’ Fuq</language>
@@ -277,6 +445,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="new">Newari</language>
 			<language type="ng">Ndonga</language>
 			<language type="nia">Nijas</language>
+<<<<<<< HEAD
+=======
+			<language type="nic">Niġerjan - Kordofanjan</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="niu">Nijuwejan</language>
 			<language type="nl">Olandiż</language>
 			<language type="nn">Ninorsk Norveġiż</language>
@@ -285,6 +457,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="non">Skandinav, Antik</language>
 			<language type="nr">Ndebele, t’Isfel</language>
 			<language type="nso">Soto, ta’ Fuq</language>
+<<<<<<< HEAD
+=======
+			<language type="nub">Lingwi Nubjani</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="nv">Navaħo</language>
 			<language type="nwc">Classical Newari</language>
 			<language type="ny">Ċiċewa; Njanġa</language>
@@ -299,18 +475,33 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="os">Ossettiku</language>
 			<language type="osa">Osaġjan</language>
 			<language type="ota">Tork (Imperu Ottoman)</language>
+<<<<<<< HEAD
 			<language type="pa">Punġabi</language>
+=======
+			<language type="oto">Lingwi Otomjani</language>
+			<language type="pa">Punġabi</language>
+			<language type="paa">Papwan (Oħra)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="pag">Pangasinjan</language>
 			<language type="pal">Paħlavi</language>
 			<language type="pam">Pampamga</language>
 			<language type="pap">Papjamento</language>
 			<language type="pau">Palawjan</language>
 			<language type="peo">Persjan Antik</language>
+<<<<<<< HEAD
+=======
+			<language type="phi">Filippin (Oħra)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="phn">Feniċju</language>
 			<language type="pi">Pali</language>
 			<language type="pl">Pollakk</language>
 			<language type="pon">Ponpejan</language>
+<<<<<<< HEAD
 			<language type="pro">Provenzal, Antik</language>
+=======
+			<language type="pra">Lingwi Prakriti</language>
+			<language type="pro">Provenzal, Antik (sa l-1500)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ps">Paxtun</language>
 			<language type="pt">Portugiż</language>
 			<language type="qu">Keċwa</language>
@@ -320,7 +511,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="rm">Reto-Romanz</language>
 			<language type="rn">Rundi</language>
 			<language type="ro">Rumen</language>
+<<<<<<< HEAD
 			<language type="ro_MD">Moldavjan</language>
+=======
+			<language type="roa">Romanz (Oħra)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="rom">Żingaru</language>
 			<language type="root">Għerq</language>
 			<language type="ru">Russu</language>
@@ -329,6 +524,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sa">Sanskrit</language>
 			<language type="sad">Sandawe</language>
 			<language type="sah">Jakut</language>
+<<<<<<< HEAD
+=======
+			<language type="sai">Indjan tal-Amerika t’Isfel (Oħra)</language>
+			<language type="sal">Salixan</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="sam">Samritan</language>
 			<language type="sas">Saska</language>
 			<language type="sat">Santali</language>
@@ -337,16 +537,34 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sd">Sindi</language>
 			<language type="se">Sami ta’ Fuq</language>
 			<language type="sel">Selkup</language>
+<<<<<<< HEAD
 			<language type="sg">Sango</language>
 			<language type="sga">Irlandiż, Antik</language>
+=======
+			<language type="sem">Semitiku</language>
+			<language type="sg">Sango</language>
+			<language type="sga">Irlandiż, Antik (sa l-900)</language>
+			<language type="sgn">Lingwa tas-Sinjali</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="sh">Serbo-Kroat</language>
 			<language type="shn">Xan</language>
 			<language type="si">Sinħaliż</language>
 			<language type="sid">Sidamo</language>
+<<<<<<< HEAD
 			<language type="sk">Slovakk</language>
 			<language type="sl">Sloven</language>
 			<language type="sm">Samojan</language>
 			<language type="sma">Southern Sami</language>
+=======
+			<language type="sio">Lingwi Suwjani</language>
+			<language type="sit">Sino-Tibetjani (Oħra)</language>
+			<language type="sk">Slovakk</language>
+			<language type="sl">Sloven</language>
+			<language type="sla">Slavic (Other)</language>
+			<language type="sm">Samojan</language>
+			<language type="sma">Southern Sami</language>
+			<language type="smi">Sami languages (Other)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="smj">Lule Sami</language>
 			<language type="smn">Inari Sami</language>
 			<language type="sms">Skolt Sami</language>
@@ -354,10 +572,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="snk">Soninke</language>
 			<language type="so">Somali</language>
 			<language type="sog">Sogdien</language>
+<<<<<<< HEAD
+=======
+			<language type="son">Songaj</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="sq">Albaniż</language>
 			<language type="sr">Serb</language>
 			<language type="srr">Serer</language>
 			<language type="ss">Swati</language>
+<<<<<<< HEAD
+=======
+			<language type="ssa">Nilo-Saħaram</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="st">Soto, t’Isfel</language>
 			<language type="su">Sundaniż</language>
 			<language type="suk">Sukuma</language>
@@ -367,6 +593,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sw">Swaħili</language>
 			<language type="syr">Sirjan</language>
 			<language type="ta">Tamil</language>
+<<<<<<< HEAD
+=======
+			<language type="tai">Tai (Oħra)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="te">Telugu</language>
 			<language type="tem">Timne</language>
 			<language type="ter">Tereno</language>
@@ -383,7 +613,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="tli">Tlingit</language>
 			<language type="tmh">Tamaxek</language>
 			<language type="tn">Zwana</language>
+<<<<<<< HEAD
 			<language type="to">Tongan</language>
+=======
+			<language type="to">Tongan (Gżejjer ta’ Tonga)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="tog">Tonga (Njasa)</language>
 			<language type="tpi">Tok Pisin</language>
 			<language type="tr">Tork</language>
@@ -391,6 +625,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="tsi">Zimxjan</language>
 			<language type="tt">Tatar</language>
 			<language type="tum">Tumbuka</language>
+<<<<<<< HEAD
+=======
+			<language type="tup">Tupi languages</language>
+			<language type="tut">Altajk (Oħra)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="tvl">Tuvalu</language>
 			<language type="tw">Twi</language>
 			<language type="ty">Taħitjan</language>
@@ -409,9 +648,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="vo">Volapuk</language>
 			<language type="vot">Votik</language>
 			<language type="wa">Walloon</language>
+<<<<<<< HEAD
 			<language type="wal">Walamo</language>
 			<language type="war">Waraj</language>
 			<language type="was">Waxo</language>
+=======
+			<language type="wak">Lingwi Wakaxani</language>
+			<language type="wal">Walamo</language>
+			<language type="war">Waraj</language>
+			<language type="was">Waxo</language>
+			<language type="wen">Lingwi Sorbjani</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="wo">Wolof</language>
 			<language type="xal">Kalmyk</language>
 			<language type="xh">Ħoża</language>
@@ -419,10 +666,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="yap">Japese</language>
 			<language type="yi">Jiddix</language>
 			<language type="yo">Joruba</language>
+<<<<<<< HEAD
+=======
+			<language type="ypk">Lingwi Jupiċi</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="za">Żwang</language>
 			<language type="zap">Żapotek</language>
 			<language type="zen">Żenaga</language>
 			<language type="zh">Ċiniż</language>
+<<<<<<< HEAD
 			<language type="zu">Żulu</language>
 			<language type="zun">Żuni</language>
 			<language type="zxx" draft="unconfirmed">Bla kontent lingwistiku</language>
@@ -436,16 +688,35 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Hans" alt="stand-alone">Ħan Sempliċi</script>
 			<script type="Hant">Tradizzjonali</script>
 			<script type="Hant" alt="stand-alone">Ħan Tradizzjonali</script>
+=======
+			<language type="znd">Żande</language>
+			<language type="zu">Żulu</language>
+			<language type="zun">Żuni</language>
+		</languages>
+		<scripts>
+			<script type="Arab">Għarbi</script>
+			<script type="Grek">Grieg</script>
+			<script type="Hans">Ħan Sempliċi</script>
+			<script type="Hant">Ħan Tradizzjonali</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Latn">Latin</script>
 			<script type="Xpeo">Persjan Antik</script>
 			<script type="Zxxx">Mhux Miktub</script>
 			<script type="Zyyy">Komuni</script>
+<<<<<<< HEAD
 			<script type="Zzzz">Skritt Mhux Magħruf</script>
+=======
+			<script type="Zzzz">Skritt Mhux Magħruf jew Mhux Validu</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</scripts>
 		<territories>
 			<territory type="001">Dinja</territory>
 			<territory type="002">Affrika</territory>
+<<<<<<< HEAD
 			<territory type="003" draft="unconfirmed">Amerika ta’ Fuq</territory>
+=======
+			<territory type="003">Amerika ta’ Fuq</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="005">Amerika t’Isfel</territory>
 			<territory type="009">Oċejanja</territory>
 			<territory type="011">Affrika tal-Punent</territory>
@@ -455,7 +726,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="017">Affrika Nofsani</territory>
 			<territory type="018">Affrika t’Isfel</territory>
 			<territory type="019">Amerika</territory>
+<<<<<<< HEAD
 			<territory type="021" draft="unconfirmed">Amerika Nòrdiku</territory>
+=======
+			<territory type="021">Amerika Nòrdiku</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="029">Karibew</territory>
 			<territory type="030">Asja tal-Lvant</territory>
 			<territory type="034">Asja t’Isfel Ċentrali</territory>
@@ -472,7 +747,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="151">Ewropa tal-Lvant</territory>
 			<territory type="154">Ewropa ta’ Fuq</territory>
 			<territory type="155">Ewropa tal-Punent</territory>
+<<<<<<< HEAD
 			<territory type="419">Amerika Latina</territory>
+=======
+			<territory type="172">Commonwealth tal-Istati Independenti</territory>
+			<territory type="419">Amerika Latina u l-Karibew</territory>
+			<territory type="830">Gżejjer tal-Kanal Ingliż</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="AD">Andorra</territory>
 			<territory type="AE">Emirati Għarab Maqgħuda</territory>
 			<territory type="AF">Afganistan</territory>
@@ -522,6 +803,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CN">Ċina</territory>
 			<territory type="CO">Kolumbja</territory>
 			<territory type="CR">Kosta Rika</territory>
+<<<<<<< HEAD
+=======
+			<territory type="CS">Serbja u Montenegro</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="CU">Kuba</territory>
 			<territory type="CV">Kape Verde</territory>
 			<territory type="CX">Christmas Island</territory>
@@ -540,7 +825,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="ER">Eritreja</territory>
 			<territory type="ES">Spanja</territory>
 			<territory type="ET">Etijopja</territory>
+<<<<<<< HEAD
 			<territory type="EU">Unjoni Ewropea</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="FI">Finlandja</territory>
 			<territory type="FJ">Fiġi</territory>
 			<territory type="FK">Falkland Islands</territory>
@@ -565,8 +853,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GU">Gwam</territory>
 			<territory type="GW">Ginea-Bissaw</territory>
 			<territory type="GY">Gujana</territory>
+<<<<<<< HEAD
 			<territory type="HK">Ħong Kong S.A.R. Ċina</territory>
 			<territory type="HK" alt="short" draft="unconfirmed">Ħong Kong</territory>
+=======
+			<territory type="HK">Ħong Kong S.A.R., Ċina</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="HM">Heard Island and McDonald Islands</territory>
 			<territory type="HN">Ħonduras</territory>
 			<territory type="HR">Kroazja</territory>
@@ -617,7 +909,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MM">Mjanmar</territory>
 			<territory type="MN">Mongolja</territory>
 			<territory type="MO">Macao S.A.R., China</territory>
+<<<<<<< HEAD
 			<territory type="MO" alt="short" draft="unconfirmed">Macao</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="MP">Gżejjer Marjana ta’ Fuq</territory>
 			<territory type="MQ">Martinik</territory>
 			<territory type="MR">Mawritanja</territory>
@@ -652,11 +947,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="PM">Saint Pierre and Miquelon</territory>
 			<territory type="PN">Pitcairn</territory>
 			<territory type="PR">Puerto Rico</territory>
+<<<<<<< HEAD
 			<territory type="PS">Territorju Palestinjan</territory>
+=======
+			<territory type="PS">Palestinian Territory</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="PT">Portugall</territory>
 			<territory type="PW">Palau</territory>
 			<territory type="PY">Paragwaj</territory>
 			<territory type="QA">Qatar</territory>
+<<<<<<< HEAD
+=======
+			<territory type="QU">Unjoni Ewropea</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="RE">Réunion</territory>
 			<territory type="RO">Rumanija</territory>
 			<territory type="RU">Russja</territory>
@@ -711,13 +1014,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="VU">Vanwatu</territory>
 			<territory type="WF">Wallis and Futuna</territory>
 			<territory type="WS">Samoa</territory>
+<<<<<<< HEAD
 			<territory type="XK" draft="unconfirmed">Kosovo</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="YE">Jemen</territory>
 			<territory type="YT">Majotte</territory>
 			<territory type="ZA">Afrika t’Isfel</territory>
 			<territory type="ZM">Żambja</territory>
 			<territory type="ZW">Żimbabwe</territory>
+<<<<<<< HEAD
 			<territory type="ZZ">Reġjun Mhux Magħruf</territory>
+=======
+			<territory type="ZZ">Reġjun Mhux Magħruf jew Mhux Validu</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</territories>
 		<variants>
 			<variant type="REVISED">Ortografija Irriveda</variant>
@@ -726,20 +1036,30 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<key type="calendar">Kalendarju</key>
 			<key type="collation">Kollazjoni</key>
 			<key type="currency">Munita</key>
+<<<<<<< HEAD
 			<key type="numbers" draft="unconfirmed">Numri</key>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</keys>
 		<types>
 			<type type="big5han" key="collation">Ordni Ċiniż Tradizzjonali (Big5)</type>
 			<type type="buddhist" key="calendar">Kalendarju Buddist</type>
 			<type type="chinese" key="calendar">Kalendarju Ċiniż</type>
+<<<<<<< HEAD
 			<type type="dictionary" key="collation" draft="unconfirmed">Ordni tad-Dizzjunarju</type>
+=======
+			<type type="direct" key="collation">Ordni Diretta</type>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<type type="gb2312han" key="collation">Ordni Ċiniż Sempliċi (GB2312)</type>
 			<type type="gregorian" key="calendar">Kalendarju Gregorjan</type>
 			<type type="hebrew" key="calendar">Kalendarju Ebrajk</type>
 			<type type="islamic" key="calendar">Kalendarju Islamiku</type>
 			<type type="islamic-civil" key="calendar">Kalendarju Islamiku-Ċivili</type>
 			<type type="japanese" key="calendar">Kalendarju Ġappuniż</type>
+<<<<<<< HEAD
 			<type type="latn" key="numbers" draft="unconfirmed">Numri Oċċidentali</type>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<type type="phonebook" key="collation">Ordni Telefonika</type>
 			<type type="pinyin" key="collation">Ordni tal-Pinjin</type>
 			<type type="stroke" key="collation">Ordni Maħżuża</type>
@@ -747,8 +1067,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</types>
 		<measurementSystemNames>
 			<measurementSystemName type="metric">Metriku</measurementSystemName>
+<<<<<<< HEAD
 			<measurementSystemName type="UK">UK</measurementSystemName>
 			<measurementSystemName type="US">US</measurementSystemName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</measurementSystemNames>
 		<codePatterns>
 			<codePattern type="language">Lingwa: {0}</codePattern>
@@ -757,6 +1080,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
+<<<<<<< HEAD
 		<exemplarCharacters>[a à b ċ d e è f ġ g {għ} h ħ i ì j k l m n o ò p q r s t u ù v w x ż z]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[c y]</exemplarCharacters>
 		<exemplarCharacters type="index" draft="contributed">[A B Ċ C D E F Ġ G {GĦ} H Ħ I {IE} J K L M N O P Q R S T U V W X Y Ż Z]</exemplarCharacters>
@@ -887,6 +1211,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</intervalFormats>
 				</dateTimeFormats>
 			</calendar>
+=======
+		<exemplarCharacters>[a à b ċ d e è f ġ g {għ} h ħ i ì j-o ò p-u ù v-x ż z]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[c y]</exemplarCharacters>
+	</characters>
+	<dates>
+		<calendars>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -934,6 +1265,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">N</month>
 							<month type="12">D</month>
 						</monthWidth>
+<<<<<<< HEAD
 						<monthWidth type="wide">
 							<month type="1">Jannar</month>
 							<month type="2">Frar</month>
@@ -948,6 +1280,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">Novembru</month>
 							<month type="12">Diċembru</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</monthContext>
 				</months>
 				<days>
@@ -961,6 +1295,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">Ġim</day>
 							<day type="sat">Sib</day>
 						</dayWidth>
+<<<<<<< HEAD
 						<dayWidth type="narrow">
 							<day type="sun">Ħ</day>
 							<day type="mon">T</day>
@@ -970,6 +1305,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">Ġ</day>
 							<day type="sat">S</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<dayWidth type="wide">
 							<day type="sun">Il-Ħadd</day>
 							<day type="mon">It-Tnejn</day>
@@ -1000,12 +1337,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<quarter type="3">K3</quarter>
 							<quarter type="4">K4</quarter>
 						</quarterWidth>
+<<<<<<< HEAD
 						<quarterWidth type="narrow">
 							<quarter type="1">1</quarter>
 							<quarter type="2">2</quarter>
 							<quarter type="3">3</quarter>
 							<quarter type="4">4</quarter>
 						</quarterWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<quarterWidth type="wide">
 							<quarter type="1">K1</quarter>
 							<quarter type="2">K2</quarter>
@@ -1013,6 +1353,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<quarter type="4">K4</quarter>
 						</quarterWidth>
 					</quarterContext>
+<<<<<<< HEAD
 					<quarterContext type="stand-alone">
 						<quarterWidth type="abbreviated">
 							<quarter type="1">K1</quarter>
@@ -1042,6 +1383,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</dayPeriodWidth>
 					</dayPeriodContext>
 				</dayPeriods>
+=======
+				</quarters>
+				<am>QN</am>
+				<pm>WN</pm>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<eras>
 					<eraNames>
 						<era type="0">Qabel Kristu</era>
@@ -1049,9 +1395,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</eraNames>
 					<eraAbbr>
 						<era type="0">QK</era>
+<<<<<<< HEAD
 						<era type="0" alt="variant">QEK</era>
 						<era type="1">WK</era>
 						<era type="1" alt="variant">EK</era>
+=======
+						<era type="1">WK</era>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</eraAbbr>
 				</eras>
 				<dateFormats>
@@ -1072,34 +1422,55 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>dd/MM/y</pattern>
+=======
+							<pattern>dd/MM/yyyy</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
 				<timeFormats>
 					<timeFormatLength type="full">
 						<timeFormat>
+<<<<<<< HEAD
 							<pattern draft="unconfirmed">HH:mm:ss zzzz</pattern>
+=======
+							<pattern>HH:mm:ss zzzz</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</timeFormat>
 					</timeFormatLength>
 					<timeFormatLength type="long">
 						<timeFormat>
+<<<<<<< HEAD
 							<pattern draft="unconfirmed">HH:mm:ss z</pattern>
+=======
+							<pattern>HH:mm:ss z</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</timeFormat>
 					</timeFormatLength>
 					<timeFormatLength type="medium">
 						<timeFormat>
+<<<<<<< HEAD
 							<pattern draft="unconfirmed">HH:mm:ss</pattern>
+=======
+							<pattern>HH:mm:ss</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</timeFormat>
 					</timeFormatLength>
 					<timeFormatLength type="short">
 						<timeFormat>
+<<<<<<< HEAD
 							<pattern draft="unconfirmed">HH:mm</pattern>
+=======
+							<pattern>HH:mm</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</timeFormat>
 					</timeFormatLength>
 				</timeFormats>
 				<dateTimeFormats>
 					<availableFormats>
+<<<<<<< HEAD
 						<dateFormatItem id="MMMMd" draft="unconfirmed">d 'ta'’ MMMM</dateFormatItem>
 						<dateFormatItem id="yMMMM" draft="unconfirmed">MMMM 'ta'’ y</dateFormatItem>
 					</availableFormats>
@@ -1255,12 +1626,135 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Żona</displayName>
 			</field>
 		</fields>
+=======
+						<dateFormatItem id="MMdd">dd/MM</dateFormatItem>
+						<dateFormatItem id="MMMMd">d 'ta'’ MMMM</dateFormatItem>
+						<dateFormatItem id="yyQ">Q yy</dateFormatItem>
+						<dateFormatItem id="yyyyMM">MM/yyyy</dateFormatItem>
+						<dateFormatItem id="yyyyMMM">MMM y</dateFormatItem>
+					</availableFormats>
+					<intervalFormats>
+						<intervalFormatFallback>{0} - {1}</intervalFormatFallback>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">d-d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="h">
+							<greatestDifference id="h">HH-HH</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="h">HH:mm-HH:mm</greatestDifference>
+							<greatestDifference id="m">HH:mm-HH:mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="h">HH:mm-HH:mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm-HH:mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="h">HH-HH v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">M-M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">dd/MM - dd/MM</greatestDifference>
+							<greatestDifference id="M">dd/MM - dd/MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">E, dd/MM - E, dd/MM</greatestDifference>
+							<greatestDifference id="M">E, dd/MM - E, dd/MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">MMM-MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d">d 'ta'’-d 'ta'’ MMM</greatestDifference>
+							<greatestDifference id="M">d 'ta'’ MMM - d 'ta'’ MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d">E, d 'ta'’ - E, d 'ta'’ MMM</greatestDifference>
+							<greatestDifference id="M">E, d 'ta'’ MMM - E, d 'ta'’ MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">y-y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">MM/yyyy - MM/yyyy</greatestDifference>
+							<greatestDifference id="y">MM/yyyy - MM/yyyy</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">dd/MM/yyyy - dd/MM/yyyy</greatestDifference>
+							<greatestDifference id="M">dd/MM/yyyy - dd/MM/yyyy</greatestDifference>
+							<greatestDifference id="y">dd/MM/yyyy - dd/MM/yyyy</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">E, dd/MM/yyyy - E, dd/MM/yyyy</greatestDifference>
+							<greatestDifference id="M">E, dd/MM/yyyy - E, dd/MM/yyyy</greatestDifference>
+							<greatestDifference id="y">E, dd/MM/yyyy - E, dd/MM/yyyy</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">MMM-MMM y</greatestDifference>
+							<greatestDifference id="y">MMM y - MMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d">d 'ta'’-d 'ta'’ MMM y</greatestDifference>
+							<greatestDifference id="M">d 'ta'’ MMM - d 'ta'’ MMM y</greatestDifference>
+							<greatestDifference id="y">d 'ta'’ MMM y - d 'ta'’ MMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d">E, d 'ta'’ - E, d 'ta'’ MMM y</greatestDifference>
+							<greatestDifference id="M">E, d 'ta'’ MMM - E, d 'ta'’ MMM y</greatestDifference>
+							<greatestDifference id="y">E, d 'ta'’ MMM y - E, d 'ta'’ MMM y</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+				<fields>
+					<field type="era">
+						<displayName>Epoka</displayName>
+					</field>
+					<field type="year">
+						<displayName>Sena</displayName>
+					</field>
+					<field type="month">
+						<displayName>Xahar</displayName>
+					</field>
+					<field type="week">
+						<displayName>Ġimgħa</displayName>
+					</field>
+					<field type="day">
+						<displayName>Jum</displayName>
+						<relative type="-1">Lbieraħ</relative>
+						<relative type="0">Illum</relative>
+						<relative type="1">Għada</relative>
+					</field>
+					<field type="weekday">
+						<displayName>Jum tal-Ġimgħa</displayName>
+					</field>
+					<field type="hour">
+						<displayName>Siegħa</displayName>
+					</field>
+					<field type="minute">
+						<displayName>Minuta</displayName>
+					</field>
+					<field type="second">
+						<displayName>Sekonda</displayName>
+					</field>
+					<field type="zone">
+						<displayName>Żona</displayName>
+					</field>
+				</fields>
+			</calendar>
+		</calendars>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		<timeZoneNames>
 			<hourFormat>+HH:mm;-HH:mm</hourFormat>
 			<gmtFormat>GMT{0}</gmtFormat>
 			<regionFormat>Ħin ta’ {0}</regionFormat>
 			<zone type="Etc/Unknown">
+<<<<<<< HEAD
 				<exemplarCity>Belt Mhux Magħruf</exemplarCity>
+=======
+				<exemplarCity>Mhux Magħruf</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/London">
 				<exemplarCity>Londra</exemplarCity>
@@ -1270,6 +1764,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<metazone type="Europe_Central">
 				<long>
+<<<<<<< HEAD
 					<generic>Ħin Ċentrali Ewropew</generic>
 					<standard>Ħin Ċentrali Ewropew Standard</standard>
 					<daylight>Ħin Ċentrali Ewropew tas-Sajf</daylight>
@@ -1298,10 +1793,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<short>
 					<standard>GMT</standard>
 				</short>
+=======
+					<standard>Ħin Ċentrali Ewropew</standard>
+					<daylight>Ħin Ċentrali Ewropew tas-Sajf</daylight>
+				</long>
+				<commonlyUsed>true</commonlyUsed>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</metazone>
 		</timeZoneNames>
 	</dates>
 	<numbers>
+<<<<<<< HEAD
 		<symbols numberSystem="latn">
 			<decimal>.</decimal>
 			<group>,</group>
@@ -1309,6 +1811,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<currencyFormats numberSystem="latn">
 			<currencyFormatLength>
 				<currencyFormat type="standard">
+=======
+		<symbols>
+			<decimal>.</decimal>
+			<group>,</group>
+		</symbols>
+		<currencyFormats>
+			<currencyFormatLength>
+				<currencyFormat>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					<pattern>¤#,##0.00</pattern>
 				</currencyFormat>
 			</currencyFormatLength>
@@ -1321,6 +1832,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Lira Maltija</displayName>
 			</currency>
 			<currency type="XXX">
+<<<<<<< HEAD
 				<displayName>Munita Mhux Magħrufa jew Mhux Valida</displayName>
 				<displayName count="one">Munita Mhux Magħruf jew Mhux Validu</displayName>
 				<displayName count="few">Munita Mhux Magħruf jew Mhux Validu</displayName>
@@ -1337,6 +1849,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<listPatternPart type="2" draft="unconfirmed">{0} u {1}</listPatternPart>
 		</listPattern>
 	</listPatterns>
+=======
+				<displayName>Munita Mhux Magħruf jew Mhux Validu</displayName>
+			</currency>
+		</currencies>
+	</numbers>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	<posix>
 		<messages>
 			<yesstr>iva:i</yesstr>

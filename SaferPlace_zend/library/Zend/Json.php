@@ -14,9 +14,15 @@
  *
  * @category   Zend
  * @package    Zend_Json
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Json.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -26,8 +32,11 @@
  */
 require_once 'Zend/Json/Expr.php';
 
+<<<<<<< HEAD
 /** @see Zend_Xml_Security */
 require_once 'Zend/Xml/Security.php';
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
 /**
  * Class for encoding to and decoding from JSON.
@@ -35,7 +44,11 @@ require_once 'Zend/Xml/Security.php';
  * @category   Zend
  * @package    Zend_Json
  * @uses       Zend_Json_Expr
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Json
@@ -79,9 +92,13 @@ class Zend_Json
 
             // php < 5.3
             if (!function_exists('json_last_error')) {
+<<<<<<< HEAD
                 if (strtolower($encodedValue) === 'null') {
                     return null;
                 } elseif ($decode === null) {
+=======
+                if ($decode === $encodedValue) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                     require_once 'Zend/Json/Exception.php';
                     throw new Zend_Json_Exception('Decoding failed');
                 }
@@ -345,7 +362,11 @@ class Zend_Json
     public static function fromXml($xmlStringContents, $ignoreXmlAttributes=true)
     {
         // Load the XML formatted string into a Simple XML Element object.
+<<<<<<< HEAD
         $simpleXmlElementObject = Zend_Xml_Security::scan($xmlStringContents);
+=======
+        $simpleXmlElementObject = simplexml_load_string($xmlStringContents);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
         // If it is not a valid XML content, throw an exception.
         if ($simpleXmlElementObject == null) {

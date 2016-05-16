@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Application
  * @subpackage Resource
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Frontcontroller.php 24798 2012-05-12 19:17:41Z adamlundrigan $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -32,7 +38,11 @@ require_once 'Zend/Application/Resource/ResourceAbstract.php';
  * @category   Zend
  * @package    Zend_Application
  * @subpackage Resource
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Application_Resource_Frontcontroller extends Zend_Application_Resource_ResourceAbstract
@@ -46,7 +56,10 @@ class Zend_Application_Resource_Frontcontroller extends Zend_Application_Resourc
      * Initialize Front Controller
      *
      * @return Zend_Controller_Front
+<<<<<<< HEAD
      * @throws Zend_Application_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function init()
     {
@@ -72,7 +85,11 @@ class Zend_Application_Resource_Frontcontroller extends Zend_Application_Resourc
                     if (is_string($value)) {
                         $front->addModuleDirectory($value);
                     } elseif (is_array($value)) {
+<<<<<<< HEAD
                         foreach ($value as $moduleDir) {
+=======
+                        foreach($value as $moduleDir) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                             $front->addModuleDirectory($moduleDir);
                         }
                     }
@@ -103,10 +120,18 @@ class Zend_Application_Resource_Frontcontroller extends Zend_Application_Resourc
                 case 'plugins':
                     foreach ((array) $value as $pluginClass) {
                         $stackIndex = null;
+<<<<<<< HEAD
                         if (is_array($pluginClass)) {
                             $pluginClass = array_change_key_case($pluginClass, CASE_LOWER);
                             if (isset($pluginClass['class'])) {
                                 if (isset($pluginClass['stackindex'])) {
+=======
+                        if(is_array($pluginClass)) {
+                            $pluginClass = array_change_key_case($pluginClass, CASE_LOWER);
+                            if(isset($pluginClass['class']))
+                            {
+                                if(isset($pluginClass['stackindex'])) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                                     $stackIndex = $pluginClass['stackindex'];
                                 }
 
@@ -136,7 +161,11 @@ class Zend_Application_Resource_Frontcontroller extends Zend_Application_Resourc
                     break;
 
                 case 'dispatcher':
+<<<<<<< HEAD
                     if (!isset($value['class'])) {
+=======
+                    if(!isset($value['class'])) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                         require_once 'Zend/Application/Exception.php';
                         throw new Zend_Application_Exception('You must specify both ');
                     }
@@ -145,7 +174,11 @@ class Zend_Application_Resource_Frontcontroller extends Zend_Application_Resourc
                     }
                     
                     $dispatchClass = $value['class'];
+<<<<<<< HEAD
                     if (!class_exists($dispatchClass)) {
+=======
+                    if(!class_exists($dispatchClass)) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                         require_once 'Zend/Application/Exception.php';
                         throw new Zend_Application_Exception('Dispatcher class not found!');
                     }

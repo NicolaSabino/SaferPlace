@@ -15,19 +15,42 @@
  * @category   Zend
  * @package    Zend_Test
  * @subpackage PHPUnit
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
 
 /**
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: QueryTable.php 24593 2012-01-05 20:35:02Z matthew $
+ */
+
+/**
+ * @see PHPUnit_Extensions_Database_DataSet_QueryTable
+ */
+require_once "PHPUnit/Extensions/Database/DataSet/QueryTable.php";
+
+/**
+ * @see PHPUnit_Extensions_Database_DB_IDatabaseConnection
+ */
+require_once "PHPUnit/Extensions/Database/DB/IDatabaseConnection.php";
+
+/**
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * Represent a PHPUnit Database Extension table with Queries using a Zend_Db adapter for assertion against other tables.
  *
  * @uses       PHPUnit_Extensions_Database_DataSet_QueryTable
  * @category   Zend
  * @package    Zend_Test
  * @subpackage PHPUnit
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Test_PHPUnit_Db_DataSet_QueryTable extends PHPUnit_Extensions_Database_DataSet_QueryTable
@@ -35,10 +58,16 @@ class Zend_Test_PHPUnit_Db_DataSet_QueryTable extends PHPUnit_Extensions_Databas
     /**
      * Creates a new database query table object.
      *
+<<<<<<< HEAD
      * @param string                                             $tableName
      * @param string                                             $query
      * @param PHPUnit_Extensions_Database_DB_IDatabaseConnection $databaseConnection
      * @throws Zend_Test_PHPUnit_Db_Exception
+=======
+     * @param string $table_name
+     * @param string $query
+     * @param PHPUnit_Extensions_Database_DB_IDatabaseConnection $databaseConnection
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function __construct($tableName, $query, PHPUnit_Extensions_Database_DB_IDatabaseConnection $databaseConnection)
     {
@@ -79,4 +108,8 @@ class Zend_Test_PHPUnit_Db_DataSet_QueryTable extends PHPUnit_Extensions_Databas
             );
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

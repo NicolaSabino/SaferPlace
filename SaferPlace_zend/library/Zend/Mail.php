@@ -14,9 +14,15 @@
  *
  * @category   Zend
  * @package    Zend_Mail
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Mail.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 
@@ -46,7 +52,11 @@ require_once 'Zend/Mime/Part.php';
  *
  * @category   Zend
  * @package    Zend_Mail
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Mail extends Zend_Mime_Message
@@ -209,6 +219,10 @@ class Zend_Mail extends Zend_Mime_Message
      * Public constructor
      *
      * @param  string $charset
+<<<<<<< HEAD
+=======
+     * @return void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function __construct($charset = null)
     {
@@ -328,10 +342,15 @@ class Zend_Mail extends Zend_Mime_Message
     /**
      * Set the encoding of mail headers
      *
+<<<<<<< HEAD
      * @param  string $encoding Zend_Mime::ENCODING_QUOTEDPRINTABLE or
      *                          Zend_Mime::ENCODING_BASE64
      * @return Zend_Mail Provides fluent interface
      * @throws Zend_Mail_Exception
+=======
+     * @param  string $encoding Zend_Mime::ENCODING_QUOTEDPRINTABLE or Zend_Mime::ENCODING_BASE64
+     * @return Zend_Mail Provides fluent interface
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setHeaderEncoding($encoding)
     {
@@ -379,8 +398,12 @@ class Zend_Mail extends Zend_Mime_Message
     /**
      * Return text body Zend_Mime_Part or string
      *
+<<<<<<< HEAD
      * @param  bool $textOnly Whether to return just the body text content or
      *                        the MIME part; defaults to false, the MIME part
+=======
+     * @param  bool textOnly Whether to return just the body text content or the MIME part; defaults to false, the MIME part
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return false|Zend_Mime_Part|string
      */
     public function getBodyText($textOnly = false)
@@ -564,8 +587,12 @@ class Zend_Mail extends Zend_Mime_Message
     }
 
     /**
+<<<<<<< HEAD
      * Adds To-header and recipient, $email can be an array, or a single string
      * address
+=======
+     * Adds To-header and recipient, $email can be an array, or a single string address
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      *
      * @param  string|array $email
      * @param  string $name
@@ -586,8 +613,12 @@ class Zend_Mail extends Zend_Mime_Message
     }
 
     /**
+<<<<<<< HEAD
      * Adds Cc-header and recipient, $email can be an array, or a single string
      * address
+=======
+     * Adds Cc-header and recipient, $email can be an array, or a single string address
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      *
      * @param  string|array    $email
      * @param  string    $name
@@ -767,8 +798,13 @@ class Zend_Mail extends Zend_Mime_Message
     /**
      * Sets Default From-email and name of the message
      *
+<<<<<<< HEAD
      * @param  string $email
      * @param  string $name optional
+=======
+     * @param  string               $email
+     * @param  string    Optional   $name
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return void
      */
     public static function setDefaultFrom($email, $name = null)
@@ -800,7 +836,10 @@ class Zend_Mail extends Zend_Mime_Message
      * Sets From-name and -email based on the defaults
      *
      * @return Zend_Mail Provides fluent interface
+<<<<<<< HEAD
      * @throws Zend_Mail_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setFromToDefaultFrom() {
         $from = self::getDefaultFrom();
@@ -818,8 +857,13 @@ class Zend_Mail extends Zend_Mime_Message
     /**
      * Sets Default ReplyTo-address and -name of the message
      *
+<<<<<<< HEAD
      * @param  string $email
      * @param  string $name optional
+=======
+     * @param  string               $email
+     * @param  string    Optional   $name
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return void
      */
     public static function setDefaultReplyTo($email, $name = null)
@@ -851,7 +895,10 @@ class Zend_Mail extends Zend_Mime_Message
      * Sets ReplyTo-name and -email based on the defaults
      *
      * @return Zend_Mail Provides fluent interface
+<<<<<<< HEAD
      * @throws Zend_Mail_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setReplyToFromDefault() {
         $replyTo = self::getDefaultReplyTo();
@@ -967,10 +1014,16 @@ class Zend_Mail extends Zend_Mime_Message
     /**
      * Sets Date-header
      *
+<<<<<<< HEAD
      * @param  int|string|Zend_Date $date
      * @return Zend_Mail Provides fluent interface
      * @throws Zend_Mail_Exception if called subsequent times or wrong date
      *                             format.
+=======
+     * @param  timestamp|string|Zend_Date $date
+     * @return Zend_Mail Provides fluent interface
+     * @throws Zend_Mail_Exception if called subsequent times or wrong date format.
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setDate($date = null)
     {
@@ -1160,7 +1213,11 @@ class Zend_Mail extends Zend_Mime_Message
     /**
      * Return mail headers
      *
+<<<<<<< HEAD
      * @return array
+=======
+     * @return void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function getHeaders()
     {
@@ -1271,7 +1328,11 @@ class Zend_Mail extends Zend_Mime_Message
             return $email;
         } else {
             $encodedName = $this->_encodeHeader($name);
+<<<<<<< HEAD
             if ($encodedName === $name  &&  strcspn($name, '()<>[]:;@\\,.') != strlen($name)) {
+=======
+            if ($encodedName === $name  &&  strcspn($name, '()<>[]:;@\\,') != strlen($name)) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 $format = '"%s" <%s>';
             } else {
                 $format = '%s <%s>';

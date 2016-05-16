@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Crypt
  * @subpackage Math
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: BigInteger.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -38,7 +44,11 @@
  *
  * @category   Zend
  * @package    Zend_Crypt
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Crypt_Math_BigInteger
@@ -71,10 +81,16 @@ class Zend_Crypt_Math_BigInteger
     /**
      * Redirect all public method calls to the wrapped extension object.
      *
+<<<<<<< HEAD
      * @param  string $methodName
      * @param  array  $args
      * @return mixed
      * @throws Zend_Crypt_Math_BigInteger_Exception
+=======
+     * @param   string $methodName
+     * @param   array $args
+     * @throws  Zend_Crypt_Math_BigInteger_Exception
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function __call($methodName, $args)
     {
@@ -115,4 +131,8 @@ class Zend_Crypt_Math_BigInteger
         }
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

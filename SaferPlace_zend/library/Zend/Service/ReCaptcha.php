@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Service
  * @subpackage ReCaptcha
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -34,9 +38,15 @@ require_once 'Zend/Service/ReCaptcha/Response.php';
  * @category   Zend
  * @package    Zend_Service
  * @subpackage ReCaptcha
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: ReCaptcha.php 25153 2012-11-28 11:56:23Z cogo $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 class Zend_Service_ReCaptcha extends Zend_Service_Abstract
 {
@@ -103,9 +113,14 @@ class Zend_Service_ReCaptcha extends Zend_Service_Abstract
      * @var array
      */
     protected $_options = array(
+<<<<<<< HEAD
         'theme'               => 'red',
         'lang'                => 'en',
         'custom_translations' => array(),
+=======
+        'theme' => 'red',
+        'lang' => 'en',
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     );
 
     /**

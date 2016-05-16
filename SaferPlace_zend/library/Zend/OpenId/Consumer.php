@@ -16,7 +16,11 @@
  * @category   Zend
  * @package    Zend_OpenId
  * @subpackage Zend_OpenId_Consumer
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id: Consumer.php 24593 2012-01-05 20:35:02Z matthew $
  */
@@ -47,18 +51,25 @@ require_once 'Zend/Http/Client.php';
  * @category   Zend
  * @package    Zend_OpenId
  * @subpackage Zend_OpenId_Consumer
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_OpenId_Consumer
 {
 
     /**
+<<<<<<< HEAD
      * Parameters required for signature
      */
     protected $_signParams = array('op_endpoint', 'return_to', 'response_nonce', 'assoc_handle');
 
     /**
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * Reference to an implementation of storage object
      *
      * @var Zend_OpenId_Consumer_Storage $_storage
@@ -264,6 +275,10 @@ class Zend_OpenId_Consumer
                 return false;
             }
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         if ($version >= 2.0) {
             if (empty($params['openid_response_nonce'])) {
                 $this->_setError("Missing openid.response_nonce");
@@ -279,6 +294,10 @@ class Zend_OpenId_Consumer
             }
         }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         if (!empty($params['openid_invalidate_handle'])) {
             if ($this->_storage->getAssociationByHandle(
                 $params['openid_invalidate_handle'],
@@ -296,6 +315,7 @@ class Zend_OpenId_Consumer
                 $macFunc,
                 $secret,
                 $expires)) {
+<<<<<<< HEAD
             // Security fix - check the association bewteen op_endpoint and assoc_handle
             if (isset($params['openid_op_endpoint']) && $url !== $params['openid_op_endpoint']) {
                 $this->_setError("The op_endpoint URI is not the same of URI associated with the assoc_handle");
@@ -315,6 +335,9 @@ class Zend_OpenId_Consumer
                 }
             }
             
+=======
+            $signed = explode(',', $params['openid_signed']);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             $data = '';
             foreach ($signed as $key) {
                 $data .= $key . ':' . $params['openid_' . strtr($key,'.','_')] . "\n";
@@ -751,10 +774,17 @@ class Zend_OpenId_Consumer
             return true;
         }
 
+<<<<<<< HEAD
+=======
+        /* TODO: OpenID 2.0 (7.3) XRI and Yadis discovery */
+
+        /* HTML-based discovery */
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         $response = $this->_httpRequest($id, 'GET', array(), $status);
         if ($status != 200 || !is_string($response)) {
             return false;
         }
+<<<<<<< HEAD
 
         /* OpenID 2.0 (7.3) XRI and Yadis discovery */
         if (preg_match(
@@ -779,6 +809,9 @@ class Zend_OpenId_Consumer
 
         /* HTML-based discovery */
         else if (preg_match(
+=======
+        if (preg_match(
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 '/<link[^>]*rel=(["\'])[ \t]*(?:[^ \t"\']+[ \t]+)*?openid2.provider[ \t]*[^"\']*\\1[^>]*href=(["\'])([^"\']+)\\2[^>]*\/?>/i',
                 $response,
                 $r)) {

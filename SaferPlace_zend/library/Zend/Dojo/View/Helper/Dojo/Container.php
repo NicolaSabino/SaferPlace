@@ -15,8 +15,13 @@
  * @category   Zend
  * @package    Zend_Dojo
  * @subpackage View
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @version    $Id: Container.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -29,7 +34,11 @@ require_once 'Zend/Dojo.php';
  *
  * @package    Zend_Dojo
  * @subpackage View
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Dojo_View_Helper_Dojo_Container
@@ -430,7 +439,11 @@ class Zend_Dojo_View_Helper_Dojo_Container
     public function setCdnVersion($version = null)
     {
         $this->enable();
+<<<<<<< HEAD
         if (preg_match('/^[1-9]\.[0-9]{1,2}(\.[0-9]{1,2})?$/', $version)) {
+=======
+        if (preg_match('/^[1-9]\.[0-9](\.[0-9])?$/', $version)) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             $this->_cdnVersion = $version;
         }
         return $this;
@@ -1026,7 +1039,11 @@ EOJ;
             return '';
         }
 
+<<<<<<< HEAD
         $stylesheets = array_reverse($stylesheets);
+=======
+        array_reverse($stylesheets);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         $style = '<style type="text/css">' . PHP_EOL
                . (($this->_isXhtml) ? '<!--' : '<!--') . PHP_EOL;
         foreach ($stylesheets as $stylesheet) {

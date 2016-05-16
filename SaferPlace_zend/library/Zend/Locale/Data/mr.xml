@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -16,6 +17,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<localeSeparator>{0}, {1}</localeSeparator>
 			<localeKeyTypePattern>{0}: {1}</localeKeyTypePattern>
 		</localeDisplayPattern>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.86 $"/>
+		<generation date="$Date: 2009/06/15 04:15:33 $"/>
+		<language type="mr"/>
+	</identity>
+	<localeDisplayNames>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		<languages>
 			<language type="aa">अफार</language>
 			<language type="ab">अबखेजियन</language>
@@ -25,16 +35,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ady">अडिघे</language>
 			<language type="ae">अवेस्तन</language>
 			<language type="af">अफ्रिकान्स</language>
+<<<<<<< HEAD
 			<language type="afh">अफ्रिहिली</language>
 			<language type="ain">ऐनू</language>
 			<language type="ak">अकान</language>
 			<language type="akk">अक्कादिआन</language>
 			<language type="ale">अलेउत</language>
+=======
+			<language type="afa">अफ्रो-अशियाई भाषा</language>
+			<language type="afh">अफ्रिहिली</language>
+			<language type="ain">ऐनू</language>
+			<language type="ak">अकन</language>
+			<language type="akk">अक्कादिआन</language>
+			<language type="ale">अलेउत</language>
+			<language type="alg">अ‍ॅल्गोक्वियन भाषा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="alt">दक्षिणात्य अल्ताई</language>
 			<language type="am">अम्हारिक</language>
 			<language type="an">अर्गोनीज</language>
 			<language type="ang">पुरातन इंग्रजी</language>
 			<language type="anp">अंगिका</language>
+<<<<<<< HEAD
 			<language type="ar">अरबी</language>
 			<language type="ar_001">आधुनिक प्रमाणित अरबी</language>
 			<language type="arc">अ‍ॅरेमाइक</language>
@@ -43,10 +64,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="arw">अरावक</language>
 			<language type="as">आसामी</language>
 			<language type="ast">अस्तुरियन</language>
+=======
+			<language type="apa">अपाचे भाषा</language>
+			<language type="ar">अरबी</language>
+			<language type="arc">अ‍ॅरेमाइक</language>
+			<language type="arn">अ‍ॅरॉकॅनियन</language>
+			<language type="arp">अराफाओ</language>
+			<language type="art">कृत्रिम भाषा</language>
+			<language type="arw">अरावक</language>
+			<language type="as">आसामी</language>
+			<language type="ast">अस्तुरियन</language>
+			<language type="ath">अ‍ॅथापास्कान भाषा</language>
+			<language type="aus">ऑस्ट्रेलियन भाषा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="av">अ‍ॅव्हेरिक</language>
 			<language type="awa">अवधी</language>
 			<language type="ay">ऐमरा</language>
 			<language type="az">अझरबैजानी</language>
+<<<<<<< HEAD
 			<language type="az" alt="short">अझेरी</language>
 			<language type="ba">बष्किर</language>
 			<language type="bal">बलुची</language>
@@ -56,6 +91,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="bej">बेजा</language>
 			<language type="bem">बेम्बा</language>
 			<language type="bg">बल्गेरियन</language>
+=======
+			<language type="ba">बष्किर</language>
+			<language type="bad">बांदा</language>
+			<language type="bai">बमिलेके भाषा</language>
+			<language type="bal">बलुची</language>
+			<language type="ban">बालिनीस</language>
+			<language type="bas">बसा</language>
+			<language type="bat">बाल्टिक भाषा</language>
+			<language type="be">बेलारुशियन</language>
+			<language type="bej">बेजा</language>
+			<language type="bem">बेम्बा</language>
+			<language type="ber">बर्बर</language>
+			<language type="bg">बल्गेरियन</language>
+			<language type="bh">बिहारी</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="bho">भोजपुरी</language>
 			<language type="bi">बिस्लामा</language>
 			<language type="bik">बिकोल</language>
@@ -63,19 +113,38 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="bla">सिक्सिका</language>
 			<language type="bm">बाम्बारा</language>
 			<language type="bn">बंगाली</language>
+<<<<<<< HEAD
 			<language type="bo">तिबेटी</language>
 			<language type="br">ब्रेतॉन</language>
 			<language type="bra">ब्रज</language>
 			<language type="bs">बोस्नियन</language>
+=======
+			<language type="bnt">बन्टु</language>
+			<language type="bo">तिबेटी</language>
+			<language type="br">ब्रेटन</language>
+			<language type="bra">ब्रज</language>
+			<language type="bs">बोस्नियन</language>
+			<language type="btk">बटाक</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="bua">बुरियात</language>
 			<language type="bug">बगिनीस</language>
 			<language type="byn">ब्लिन</language>
 			<language type="ca">कॅटलान</language>
 			<language type="cad">कॅड्डो</language>
+<<<<<<< HEAD
 			<language type="car">कॅरिब</language>
 			<language type="cch">अत्सम</language>
 			<language type="ce">चेचन</language>
 			<language type="ceb">सिबुआनो</language>
+=======
+			<language type="cai">मध्य अमेरिकी इंडियन भाषा</language>
+			<language type="car">कॅरिब</language>
+			<language type="cau">कॉकेशियन भाषा</language>
+			<language type="cch">अत्सम</language>
+			<language type="ce">चेचन</language>
+			<language type="ceb">सिबुआनो</language>
+			<language type="cel">केल्टिक भाषा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ch">कॅमोरो</language>
 			<language type="chb">चिब्चा</language>
 			<language type="chg">छगाताई</language>
@@ -84,6 +153,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="chn">चिनूक जारगॉन</language>
 			<language type="cho">चोक्तौ</language>
 			<language type="chp">शिपेव्यान</language>
+<<<<<<< HEAD
 			<language type="chr">चेरोकी</language>
 			<language type="chy">शेयेन्न</language>
 			<language type="ckb">सोरानी कुर्दिश</language>
@@ -94,11 +164,32 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="cs">झेक</language>
 			<language type="csb">काशुबियन</language>
 			<language type="cu">चर्च स्लाव्हिक</language>
+=======
+			<language type="chr">चेरूकी</language>
+			<language type="chy">शेयेन्न</language>
+			<language type="cmc">चामिक भाषा</language>
+			<language type="co">कोर्सिकन</language>
+			<language type="cop">कॉप्टिक</language>
+			<language type="cpe">इंग्रजी-आधारित क्रेओल वा पिजिन</language>
+			<language type="cpf">फ्रेंच-आधारित क्रेओल वा पिजिन</language>
+			<language type="cpp">पोर्तुगीज-आधारित क्रेओल या पिजिन</language>
+			<language type="cr">क्री</language>
+			<language type="crh">क्राइमीन तुर्की</language>
+			<language type="crp">क्रेओल वा पिजिन</language>
+			<language type="cs">झेक</language>
+			<language type="csb">काशुबियन</language>
+			<language type="cu">चर्च स्लाव्हिक</language>
+			<language type="cus">कुशितिक भाषा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="cv">चूवाश</language>
 			<language type="cy">वेल्श</language>
 			<language type="da">डॅनिश</language>
 			<language type="dak">दाकोता</language>
 			<language type="dar">दार्गवा</language>
+<<<<<<< HEAD
+=======
+			<language type="day">दायक</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="de">जर्मन</language>
 			<language type="de_AT">ऑस्ट्रियन जर्मन</language>
 			<language type="de_CH">स्विस हाय जर्मन</language>
@@ -107,13 +198,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="dgr">डोग्रिब</language>
 			<language type="din">दिन्का</language>
 			<language type="doi">डोगरी</language>
+<<<<<<< HEAD
+=======
+			<language type="dra">द्रविडी भाषा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="dsb">निम्न सोर्बियन</language>
 			<language type="dua">दुआला</language>
 			<language type="dum">मिडल डच</language>
 			<language type="dv">दिवेही</language>
 			<language type="dyu">ड्युला</language>
 			<language type="dz">झोंगखा</language>
+<<<<<<< HEAD
 			<language type="ee">यू</language>
+=======
+			<language type="ee">इवे</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="efi">एफिक</language>
 			<language type="egy">प्राचीन इजिप्शियन</language>
 			<language type="eka">एकाजुक</language>
@@ -121,17 +220,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="elx">एलामाइट</language>
 			<language type="en">इंग्रजी</language>
 			<language type="en_AU">ऑस्ट्रेलियन इंग्रजी</language>
+<<<<<<< HEAD
 			<language type="en_CA">कॅनडियन इंग्रजी</language>
 			<language type="en_GB">इंग्रजी (यूके)</language>
 			<language type="en_GB" alt="short">यू.के. इंग्रजी</language>
 			<language type="en_US">यू.एस. इंग्रजी</language>
 			<language type="en_US" alt="short">यू.एस. इंग्रजी</language>
+=======
+			<language type="en_CA">कॅनेडियन इंग्रजी</language>
+			<language type="en_GB">ब्रिटिश इंग्रजी</language>
+			<language type="en_US">यू. एस. इंग्रजी</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="enm">मिडल इंग्रजी</language>
 			<language type="eo">एस्परान्टो</language>
 			<language type="es">स्पॅनिश</language>
 			<language type="es_419">लॅटिन अमेरिकन स्पॅनिश</language>
+<<<<<<< HEAD
 			<language type="es_ES">युरोपियन स्पॅनिश</language>
 			<language type="es_MX">मेक्सिकन स्पॅनिश</language>
+=======
+			<language type="es_ES">इबेरियन स्पॅनिश</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="et">इस्टोनियन</language>
 			<language type="eu">बास्क</language>
 			<language type="ewo">इवोन्डो</language>
@@ -141,23 +250,42 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ff">फुलाह</language>
 			<language type="fi">फिन्निश</language>
 			<language type="fil">फिलिपिनो</language>
+<<<<<<< HEAD
 			<language type="fj">फिजियन</language>
 			<language type="fo">फरोइज</language>
 			<language type="fon">फॉन</language>
 			<language type="fr">फ्रेंच</language>
 			<language type="fr_CA">कॅनडियन फ्रेंच</language>
+=======
+			<language type="fiu">फिन्नो-उग्रीयन भाषा</language>
+			<language type="fj">फिजीयन</language>
+			<language type="fo">फरोइए</language>
+			<language type="fon">फॉन</language>
+			<language type="fr">फ्रेंच</language>
+			<language type="fr_CA">कॅनेडियन फ्रेंच</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="fr_CH">स्विस फ्रेंच</language>
 			<language type="frm">मिडल फ्रेंच</language>
 			<language type="fro">पुरातन फ्रेंच</language>
 			<language type="frr">उत्तरी फ्रिशियन</language>
 			<language type="frs">पौर्वात्य फ्रिशियन</language>
 			<language type="fur">फ्रियुलियान</language>
+<<<<<<< HEAD
 			<language type="fy">पश्चिमी फ्रिशियन</language>
 			<language type="ga">आयरिश</language>
 			<language type="gaa">Ga</language>
 			<language type="gay">गायो</language>
 			<language type="gba">बाया</language>
 			<language type="gd">स्कॉट्स गेलिक</language>
+=======
+			<language type="fy">पाश्चात्य फ्रिशियन</language>
+			<language type="ga">आयरिश</language>
+			<language type="gaa">गा</language>
+			<language type="gay">गायो</language>
+			<language type="gba">बाया</language>
+			<language type="gd">स्कॉट्स गेलिक</language>
+			<language type="gem">जर्मनिक भाषा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="gez">गीझ</language>
 			<language type="gil">जिल्बरटीज</language>
 			<language type="gl">गॅलिशियन</language>
@@ -179,6 +307,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="he">हिब्रू</language>
 			<language type="hi">हिंदी</language>
 			<language type="hil">हिलीगेनॉन</language>
+<<<<<<< HEAD
+=======
+			<language type="him">हिमाचली</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="hit">हिट्टिते</language>
 			<language type="hmn">माँग</language>
 			<language type="ho">हिरी मॉटू</language>
@@ -189,16 +321,32 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="hup">हूपा</language>
 			<language type="hy">आर्मेनियन</language>
 			<language type="hz">हरेरो</language>
+<<<<<<< HEAD
 			<language type="ia">इंटरलिंग्वा</language>
+=======
+			<language type="ia">इन्टरलिंग्वा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="iba">इबान</language>
 			<language type="id">इंडोनेशियन</language>
 			<language type="ie">इन्टरलिंग</language>
 			<language type="ig">ईग्बो</language>
 			<language type="ii">सिचुआन यी</language>
+<<<<<<< HEAD
 			<language type="ik">इनूपियाक</language>
 			<language type="ilo">इलोको</language>
 			<language type="inh">इंगुश</language>
 			<language type="io">इडौ</language>
+=======
+			<language type="ijo">इजो</language>
+			<language type="ik">इनूपियाक</language>
+			<language type="ilo">इलोको</language>
+			<language type="inc">भारतीय भाषा</language>
+			<language type="ine">इंडो-युरोपीयन भाषा</language>
+			<language type="inh">इंगुश</language>
+			<language type="io">इडौ</language>
+			<language type="ira">ईराणी भाषा</language>
+			<language type="iro">इरोक्वोइयन भाषा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="is">आईसलँडिक</language>
 			<language type="it">इटालियन</language>
 			<language type="iu">इनुकिटुट्</language>
@@ -213,12 +361,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="kac">काचिन</language>
 			<language type="kaj">ज्जु</language>
 			<language type="kam">कम्बा</language>
+<<<<<<< HEAD
+=======
+			<language type="kar">कारेन</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="kaw">कावी</language>
 			<language type="kbd">कबार्डियन</language>
 			<language type="kcg">त्याप</language>
 			<language type="kfo">कोरो</language>
 			<language type="kg">काँगो</language>
 			<language type="kha">खासी</language>
+<<<<<<< HEAD
+=======
+			<language type="khi">खोसियन भाषा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="kho">खोतानीस</language>
 			<language type="ki">किकुयू</language>
 			<language type="kj">क्वान्यामा</language>
@@ -234,6 +390,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="kr">कनुरी</language>
 			<language type="krc">कराचय-बाल्कर</language>
 			<language type="krl">करेलियन</language>
+<<<<<<< HEAD
+=======
+			<language type="kro">क्रू</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="kru">कुरूख</language>
 			<language type="ks">काश्मीरी</language>
 			<language type="ku">कुर्दिश</language>
@@ -253,10 +413,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ln">लिंगाला</language>
 			<language type="lo">लाओ</language>
 			<language type="lol">मोंगो</language>
+<<<<<<< HEAD
 			<language type="loz">लोझि</language>
 			<language type="lt">लिथुआनियन</language>
 			<language type="lu">ल्यूबा-कटांगा</language>
 			<language type="lua">लुबा-लुलुआ</language>
+=======
+			<language type="loz">लोझी</language>
+			<language type="lt">लिथुआनियन</language>
+			<language type="lu">ल्यूबा-कटांगा</language>
+			<language type="lua">लूबा-लुलुआ</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="lui">लुइसेनो</language>
 			<language type="lun">लुन्डा</language>
 			<language type="luo">ल्युओ</language>
@@ -267,34 +434,64 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="mai">मैथिली</language>
 			<language type="mak">मकस्सर</language>
 			<language type="man">मन्डिन्गो</language>
+<<<<<<< HEAD
+=======
+			<language type="map">ऑस्ट्रोनेशियन</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mas">मसाई</language>
 			<language type="mdf">मोक्ष</language>
 			<language type="mdr">मंडार</language>
 			<language type="men">मेन्डे</language>
+<<<<<<< HEAD
 			<language type="mfe">मोरिस्येन</language>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mg">मलागसी</language>
 			<language type="mga">मिडल आयरिश</language>
 			<language type="mh">मार्शलीज</language>
 			<language type="mi">माओरी</language>
 			<language type="mic">मिकमॅक</language>
 			<language type="min">मिनांग्काबाउ</language>
+<<<<<<< HEAD
 			<language type="mk">मॅसेडोनियन</language>
+=======
+			<language type="mis">विविध भाषा</language>
+			<language type="mk">मॅसेडोनियन</language>
+			<language type="mkh">मॉन-ख्मेर भाषा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ml">मल्याळम</language>
 			<language type="mn">मंगोलियन</language>
 			<language type="mnc">मान्चु</language>
 			<language type="mni">मणिपुरी</language>
+<<<<<<< HEAD
+=======
+			<language type="mno">मनोबो भाषा</language>
+			<language type="mo">मोल्डाव्हियन</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="moh">मोहॉक</language>
 			<language type="mos">मोस्सी</language>
 			<language type="mr">मराठी</language>
 			<language type="ms">मलय</language>
 			<language type="mt">माल्टिज्</language>
 			<language type="mul">एकविध भाषा</language>
+<<<<<<< HEAD
+=======
+			<language type="mun">मुन्डा भाषा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mus">क्रीक</language>
 			<language type="mwl">मिरांडिज्</language>
 			<language type="mwr">मारवाडी</language>
 			<language type="my">बर्मी</language>
+<<<<<<< HEAD
 			<language type="myv">एर्झ्या</language>
 			<language type="na">नउरू</language>
+=======
+			<language type="myn">माया भाषा</language>
+			<language type="myv">एर्झ्या</language>
+			<language type="na">नउरू</language>
+			<language type="nah">नहुआत्ल</language>
+			<language type="nai">उत्तरी अमेरीकी इंडियन भाषा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="nap">नेपोलिटान</language>
 			<language type="nb">नॉर्वेजियन बोकमाल</language>
 			<language type="nd">उत्तरी देबेली</language>
@@ -303,6 +500,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="new">नेवारी</language>
 			<language type="ng">डोंगा</language>
 			<language type="nia">नियास</language>
+<<<<<<< HEAD
+=======
+			<language type="nic">नाइजर-कॉर्डोफॅनियन भाषा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="niu">नियुआन</language>
 			<language type="nl">डच</language>
 			<language type="nl_BE">फ्लेमिश</language>
@@ -313,6 +514,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="nqo">एन्को</language>
 			<language type="nr">दक्षिणात्य देबेली</language>
 			<language type="nso">उत्तरी सोथो</language>
+<<<<<<< HEAD
+=======
+			<language type="nub">न्युबियान भाषा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="nv">नावाजो</language>
 			<language type="nwc">अभिजात नेवारी</language>
 			<language type="ny">न्यान्जा</language>
@@ -320,38 +525,68 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="nyn">न्यानकोल</language>
 			<language type="nyo">न्योरो</language>
 			<language type="nzi">न्झिमा</language>
+<<<<<<< HEAD
 			<language type="oc">ऑक्सितान</language>
+=======
+			<language type="oc">ऑक्सिटान</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="oj">ओजिब्वा</language>
 			<language type="om">ओरोमो</language>
 			<language type="or">उडिया</language>
 			<language type="os">ओस्सेटिक</language>
 			<language type="osa">ओसेज</language>
 			<language type="ota">ओटोमान तुर्किश</language>
+<<<<<<< HEAD
 			<language type="pa">पंजाबी</language>
+=======
+			<language type="oto">ओटोमियन भाषा</language>
+			<language type="pa">पंजाबी</language>
+			<language type="paa">पापुन भाषा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="pag">पंगासीनान</language>
 			<language type="pal">पहलवी</language>
 			<language type="pam">पाम्पान्गा</language>
 			<language type="pap">पापियामेन्टो</language>
 			<language type="pau">पालाउआन</language>
 			<language type="peo">पुरातन फारसी</language>
+<<<<<<< HEAD
+=======
+			<language type="phi">फिलिपीनी भाषा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="phn">फोनिशियन</language>
 			<language type="pi">पाली</language>
 			<language type="pl">पोलिश</language>
 			<language type="pon">पोह्नपियन</language>
+<<<<<<< HEAD
 			<language type="pro">पुरातन प्रोव्हेन्सल</language>
 			<language type="ps">पश्तो</language>
 			<language type="ps" alt="variant">पुश्तो</language>
 			<language type="pt">पोर्तुगीज</language>
 			<language type="pt_BR">ब्राझिलियन पोर्तुगीज</language>
 			<language type="pt_PT">युरोपियन पोर्तुगीज</language>
+=======
+			<language type="pra">प्राकृत भाषा</language>
+			<language type="pro">पुरातन प्रोव्हेन्सल</language>
+			<language type="ps">पश्तो</language>
+			<language type="pt">पोर्तुगीज</language>
+			<language type="pt_BR">ब्राझिलियन पोर्तुगीज</language>
+			<language type="pt_PT">इबेरियन पोर्तुगीज</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="qu">क्वेचुआ</language>
 			<language type="raj">राजस्थानी</language>
 			<language type="rap">रापानुई</language>
 			<language type="rar">रारोटोंगन</language>
+<<<<<<< HEAD
 			<language type="rm">रोमान्श</language>
 			<language type="rn">रुन्दी</language>
 			<language type="ro">रोमानियन</language>
 			<language type="ro_MD">मोल्डाव्हियन</language>
+=======
+			<language type="rm">र्‍हाएटो-रोमांस</language>
+			<language type="rn">रुन्दी</language>
+			<language type="ro">रोमानियन</language>
+			<language type="roa">रोमांस भाषा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="rom">रोमानी</language>
 			<language type="root">रूट</language>
 			<language type="ru">रशियन</language>
@@ -360,6 +595,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sa">संस्कृत</language>
 			<language type="sad">सँडवे</language>
 			<language type="sah">याकूत</language>
+<<<<<<< HEAD
+=======
+			<language type="sai">दक्षिण अमेरीकी इंडियन भाषा</language>
+			<language type="sal">सलीशन भाषा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="sam">सामरिटान अरॅमिक</language>
 			<language type="sas">सासाक</language>
 			<language type="sat">संताली</language>
@@ -369,6 +609,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sd">सिंधी</language>
 			<language type="se">नॉर्दन सामी</language>
 			<language type="sel">सेल्कप</language>
+<<<<<<< HEAD
 			<language type="sg">सांगो</language>
 			<language type="sga">पुरातन आयरिश</language>
 			<language type="sh">सर्बो-क्रोएशियन</language>
@@ -379,6 +620,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sl">स्लोव्हेनियन</language>
 			<language type="sm">सामोअन</language>
 			<language type="sma">दक्षिणात्य सामी</language>
+=======
+			<language type="sem">सेमिटिक भाषा</language>
+			<language type="sg">सांगो</language>
+			<language type="sga">पुरातन आयरिश</language>
+			<language type="sgn">सांकेतिक भाषा</language>
+			<language type="sh">सर्बो-क्रोएशियन</language>
+			<language type="shn">शॅन</language>
+			<language type="si">सिंहली</language>
+			<language type="sid">सिदामो</language>
+			<language type="sio">सिउआन भाषा</language>
+			<language type="sit">चीनी-तिबेटी भाषा</language>
+			<language type="sk">स्लोव्हाक</language>
+			<language type="sl">स्लोव्हेनियन</language>
+			<language type="sla">स्लाव्हिक भाषा</language>
+			<language type="sm">सामोअन</language>
+			<language type="sma">दक्षिणात्य सामी</language>
+			<language type="smi">सामी भाषा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="smj">ल्युल सामी</language>
 			<language type="smn">इनारी सामी</language>
 			<language type="sms">स्कोल्ट सामी</language>
@@ -386,11 +645,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="snk">सोनिन्के</language>
 			<language type="so">सोमाली</language>
 			<language type="sog">सोग्डिएन</language>
+<<<<<<< HEAD
+=======
+			<language type="son">सोन्घाई</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="sq">अल्बानियन</language>
 			<language type="sr">सर्बियन</language>
 			<language type="srn">स्रानान टॉन्गो</language>
 			<language type="srr">सेरेर</language>
 			<language type="ss">स्वाती</language>
+<<<<<<< HEAD
+=======
+			<language type="ssa">निलो-सहारन भाषा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="st">सेसोथो</language>
 			<language type="su">सुंदानीज</language>
 			<language type="suk">सुकुमा</language>
@@ -398,10 +665,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">सुमेरियन</language>
 			<language type="sv">स्वीडिश</language>
 			<language type="sw">स्वाहिली</language>
+<<<<<<< HEAD
 			<language type="swb">कोमोरियन</language>
 			<language type="syc">अभिजात सिरियाक</language>
 			<language type="syr">सिरियाक</language>
 			<language type="ta">तामिळ</language>
+=======
+			<language type="syc">अभिजात सिरियाक</language>
+			<language type="syr">सिरियाक</language>
+			<language type="ta">तमिळ</language>
+			<language type="tai">ताई भाषा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="te">तेलगू</language>
 			<language type="tem">टिम्ने</language>
 			<language type="ter">तेरेनो</language>
@@ -414,28 +688,50 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="tk">तुर्कमेन</language>
 			<language type="tkl">टोकेलाऊ</language>
 			<language type="tl">टागालोग</language>
+<<<<<<< HEAD
 			<language type="tlh">क्लिंगोन</language>
 			<language type="tli">लिंगित</language>
 			<language type="tmh">तामाशेक</language>
 			<language type="tn">त्स्वाना</language>
 			<language type="to">टोंगन</language>
+=======
+			<language type="tlh">क्लिंगॉन</language>
+			<language type="tli">लिंगित</language>
+			<language type="tmh">तामाशेक</language>
+			<language type="tn">त्स्वाना</language>
+			<language type="to">टोंगा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="tog">न्यासा टोन्गा</language>
 			<language type="tpi">टोक पिसिन</language>
 			<language type="tr">तुर्की</language>
 			<language type="ts">सोंगा</language>
 			<language type="tsi">सिम्शियन</language>
 			<language type="tt">ततार</language>
+<<<<<<< HEAD
 			<language type="tum">तुम्बुका</language>
+=======
+			<language type="tum">तम्बूका</language>
+			<language type="tup">ट्यूपी भाषा</language>
+			<language type="tut">अल्टॅइक भाषा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="tvl">टुवालु</language>
 			<language type="tw">ट्वी</language>
 			<language type="ty">ताहितीयन</language>
 			<language type="tyv">टुवीनियन</language>
 			<language type="udm">उदमुर्त</language>
+<<<<<<< HEAD
 			<language type="ug">उइगुर</language>
 			<language type="uga">युगॅरिटिक</language>
 			<language type="uk">युक्रेनियन</language>
 			<language type="umb">उम्बुन्डु</language>
 			<language type="und">अज्ञात भाषा</language>
+=======
+			<language type="ug">उईघुर</language>
+			<language type="uga">युगॅरिटिक</language>
+			<language type="uk">युक्रेनियन</language>
+			<language type="umb">उम्बुन्डु</language>
+			<language type="und">अज्ञात वा अवैध भाषा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ur">उर्दू</language>
 			<language type="uz">उझ्बेक</language>
 			<language type="vai">वाई</language>
@@ -444,9 +740,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="vo">ओलापुक</language>
 			<language type="vot">वॉटिक</language>
 			<language type="wa">वालून</language>
+<<<<<<< HEAD
 			<language type="wal">वलामो</language>
 			<language type="war">वारे</language>
 			<language type="was">वाशो</language>
+=======
+			<language type="wak">वाकाशन भाषा</language>
+			<language type="wal">वलामो</language>
+			<language type="war">वारे</language>
+			<language type="was">वाशो</language>
+			<language type="wen">सॉर्बियन भाषा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="wo">वोलोफ</language>
 			<language type="xal">काल्मिक</language>
 			<language type="xh">खोसा</language>
@@ -454,15 +758,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="yap">यापीस</language>
 			<language type="yi">यिद्दिश</language>
 			<language type="yo">योरुबा</language>
+<<<<<<< HEAD
 			<language type="yue">कँटोनीज</language>
+=======
+			<language type="ypk">यूपिक भाषा</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="za">झुआंग</language>
 			<language type="zap">झेपोटेक</language>
 			<language type="zbl">ब्लिसिम्बॉल्स</language>
 			<language type="zen">झेनान्गा</language>
+<<<<<<< HEAD
 			<language type="zgh">मानक मोरोक्कन तामाझाइट</language>
 			<language type="zh">चीनी</language>
 			<language type="zh_Hans">सरलीकृत चीनी</language>
 			<language type="zh_Hant">पारंपारिक चीनी</language>
+=======
+			<language type="zh">चीनी</language>
+			<language type="zh_Hans">सरलीकृत चीनी</language>
+			<language type="zh_Hant">पारंपारिक चीनी</language>
+			<language type="znd">झन्डे</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="zu">झुलू</language>
 			<language type="zun">झुनी</language>
 			<language type="zxx">भाषावैज्ञानिक सामग्री नाही</language>
@@ -470,7 +785,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</languages>
 		<scripts>
 			<script type="Arab">अरबी</script>
+<<<<<<< HEAD
 			<script type="Arab" alt="variant">फारसी-अरबी</script>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Armi">इम्पिरियल आर्मेनिक</script>
 			<script type="Armn">अर्मेनियन</script>
 			<script type="Avst">अवेस्तान</script>
@@ -509,10 +827,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Hang">हंगुल</script>
 			<script type="Hani">हान</script>
 			<script type="Hano">हनुनू</script>
+<<<<<<< HEAD
 			<script type="Hans">सरलीकृत</script>
 			<script type="Hans" alt="stand-alone">सरलीकृत हान</script>
 			<script type="Hant">पारंपारिक</script>
 			<script type="Hant" alt="stand-alone">पारंपारिक हान</script>
+=======
+			<script type="Hans">सरलीकृत हन</script>
+			<script type="Hant">पारंपारिक हन</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Hebr">हिब्रू</script>
 			<script type="Hira">हिरागाना</script>
 			<script type="Hmng">पहाउ मंग</script>
@@ -544,7 +867,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Mani">मानीचायीन</script>
 			<script type="Maya">मायान हाइरोग्लिफ्स</script>
 			<script type="Mero">मेरोइटिक</script>
+<<<<<<< HEAD
 			<script type="Mlym">मल्याळम</script>
+=======
+			<script type="Mlym">मल्याळी</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Mong">मंगोलियन</script>
 			<script type="Moon">मून</script>
 			<script type="Mtei">मेइतेइ मायेक</script>
@@ -563,6 +890,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Phnx">फोनिशियन</script>
 			<script type="Plrd">पोलार्ड फोनेटिक</script>
 			<script type="Prti">इन्स्क्रिप्शनल पर्थियन</script>
+<<<<<<< HEAD
+=======
+			<script type="Qaai">वंशपरंपरागत</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Rjng">रीजांग</script>
 			<script type="Roro">रोन्गोरोन्गो</script>
 			<script type="Runr">रूनिक</script>
@@ -571,7 +902,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Saur">सौराष्ट्र</script>
 			<script type="Sgnw">संकेत लिपी</script>
 			<script type="Shaw">शॅव्हियन</script>
+<<<<<<< HEAD
 			<script type="Sinh">सिंहला</script>
+=======
+			<script type="Sinh">सिंहली</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Sund">सूदानी</script>
 			<script type="Sylo">सिलोती नागरी</script>
 			<script type="Syrc">सिरीयाक</script>
@@ -581,7 +916,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Tagb">तगोआन्वा</script>
 			<script type="Tale">ताई ली</script>
 			<script type="Talu">नवीन ताई लू</script>
+<<<<<<< HEAD
 			<script type="Taml">तामिळ</script>
+=======
+			<script type="Taml">तमिळ</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Tavt">ताई विएत</script>
 			<script type="Telu">तेलगु</script>
 			<script type="Teng">तेन्गवार</script>
@@ -596,6 +935,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Xpeo">पुरातन फारसी</script>
 			<script type="Xsux">दृश्यमान भाषा</script>
 			<script type="Yiii">यी</script>
+<<<<<<< HEAD
 			<script type="Zinh">वंशपरंपरागत</script>
 			<script type="Zmth">गणिती संकेतलिपी</script>
 			<script type="Zsym">प्रतीक</script>
@@ -616,16 +956,45 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="017">मध्य आफ्रिका</territory>
 			<territory type="018">दक्षिणी आफ्रिका</territory>
 			<territory type="019">अमेरिका</territory>
+=======
+			<script type="Zmth">गणिती संकेतलिपी</script>
+			<script type="Zsym">प्रतीक लिपी</script>
+			<script type="Zxxx">अलिखित</script>
+			<script type="Zyyy">सामान्य</script>
+			<script type="Zzzz">अज्ञात वा अवैध लिपी</script>
+		</scripts>
+		<territories>
+			<territory type="001">विश्व</territory>
+			<territory type="002">अफ्रिका</territory>
+			<territory type="003">उत्तर अमेरिका</territory>
+			<territory type="005">दक्षिण अमेरिका</territory>
+			<territory type="009">ओशनिया</territory>
+			<territory type="011">पश्चिम अफ्रिका</territory>
+			<territory type="013">मध्य अमेरीका</territory>
+			<territory type="014">पूर्व अफ्रिका</territory>
+			<territory type="015">उत्तर अफ्रिका</territory>
+			<territory type="017">मध्य अफ्रिका</territory>
+			<territory type="018">दक्षिणी अफ्रिका</territory>
+			<territory type="019">अमेरिकास</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="021">उत्तरी अमेरिका</territory>
 			<territory type="029">कॅरीबियन</territory>
 			<territory type="030">पूर्व अशिया</territory>
 			<territory type="034">दक्षिण अशिया</territory>
 			<territory type="035">दक्षिण पूर्व अशिया</territory>
 			<territory type="039">दक्षिण युरोप</territory>
+<<<<<<< HEAD
 			<territory type="053">ऑस्‍ट्रेलेशिया</territory>
 			<territory type="054">मेलानेशिया</territory>
 			<territory type="057">मायक्रोनेशियन प्रदेश</territory>
 			<territory type="061">पॉलिनेशिया</territory>
+=======
+			<territory type="053">ऑस्ट्रेलिया आणि न्यूझीलंड</territory>
+			<territory type="054">मेलानेशिया</territory>
+			<territory type="057">मायक्रोनेशियन रीजन</territory>
+			<territory type="061">पॉलिनेशिया</territory>
+			<territory type="062">दक्षिण-मध्य अशिया</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="142">अशिया</territory>
 			<territory type="143">मध्य अशिया</territory>
 			<territory type="145">पश्चिम अशिया</territory>
@@ -633,18 +1002,32 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="151">पूर्व युरोप</territory>
 			<territory type="154">उत्तर युरोप</territory>
 			<territory type="155">पश्चिम युरोप</territory>
+<<<<<<< HEAD
 			<territory type="419">लॅटिन अमेरिका</territory>
 			<territory type="AC">अ‍ॅसेन्शियन बेट</territory>
+=======
+			<territory type="172">स्वतंत्र राष्ट्रांचे कॉमनवेल्थ</territory>
+			<territory type="200">झेकोस्लवाकिया</territory>
+			<territory type="419">लॅटिन अमेरिका आणि कॅरीबियन</territory>
+			<territory type="830">चॅनल बेटे</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="AD">अँडोरा</territory>
 			<territory type="AE">संयुक्त अरब अमीरात</territory>
 			<territory type="AF">अफगाणिस्तान</territory>
 			<territory type="AG">अँटिग्वा आणि बर्बुडा</territory>
 			<territory type="AI">अँग्विला</territory>
 			<territory type="AL">अल्बानिया</territory>
+<<<<<<< HEAD
 			<territory type="AM">अर्मेनिया</territory>
 			<territory type="AN">नेदरलँड्‍स अँ‍टिल्स</territory>
 			<territory type="AO">अंगोला</territory>
 			<territory type="AQ">अंटार्क्टिका</territory>
+=======
+			<territory type="AM">आर्मेनिया</territory>
+			<territory type="AN">नेदरलँड्स अँटिल्स</territory>
+			<territory type="AO">अंगोला</territory>
+			<territory type="AQ">अंटार्क्टिक</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="AR">अर्जेंटिना</territory>
 			<territory type="AS">अमेरिकन सामोआ</territory>
 			<territory type="AT">ऑस्ट्रिया</territory>
@@ -665,7 +1048,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="BM">बर्मुडा</territory>
 			<territory type="BN">ब्रुनेई</territory>
 			<territory type="BO">बोलिव्हिया</territory>
+<<<<<<< HEAD
 			<territory type="BQ">कॅरिबियन नेदरलँड्स</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="BR">ब्राझिल</territory>
 			<territory type="BS">बहामाज</territory>
 			<territory type="BT">भूतान</territory>
@@ -676,10 +1062,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CA">कॅनडा</territory>
 			<territory type="CC">कोकोस बेटे</territory>
 			<territory type="CD">काँगो - किंशासा</territory>
+<<<<<<< HEAD
 			<territory type="CD" alt="variant">काँगो (ङीआरसी)</territory>
 			<territory type="CF">केंद्रीय अफ्रिकी प्रजासत्ताक</territory>
 			<territory type="CG">काँगो - ब्राझाविले</territory>
 			<territory type="CG" alt="variant">काँगो (प्रजासत्ताक)</territory>
+=======
+			<territory type="CF">केंद्रीय अफ्रिकी प्रजासत्ताक</territory>
+			<territory type="CG">काँगो - ब्राजाविले</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="CH">स्वित्झर्लंड</territory>
 			<territory type="CI">आयव्हरी कोस्ट</territory>
 			<territory type="CK">कुक बेटे</territory>
@@ -687,21 +1078,32 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CM">कॅमेरून</territory>
 			<territory type="CN">चीन</territory>
 			<territory type="CO">कोलम्बिया</territory>
+<<<<<<< HEAD
 			<territory type="CP">क्लिपरटोन बेट</territory>
 			<territory type="CR">कोस्टारिका</territory>
 			<territory type="CU">क्यूबा</territory>
 			<territory type="CV">केप व्हर्डे</territory>
 			<territory type="CW">कुरॅको</territory>
+=======
+			<territory type="CR">कोस्टारिका</territory>
+			<territory type="CS">सर्बिया आणि माँटेनेग्रो</territory>
+			<territory type="CU">क्यूबा</territory>
+			<territory type="CV">केप व्हर्डे</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="CX">ख्रिसमस बेट</territory>
 			<territory type="CY">सायप्रस</territory>
 			<territory type="CZ">झेक प्रजासत्ताक</territory>
 			<territory type="DE">जर्मनी</territory>
+<<<<<<< HEAD
 			<territory type="DG">दिएगो गार्सिया</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="DJ">जिबौटी</territory>
 			<territory type="DK">डेन्मार्क</territory>
 			<territory type="DM">डोमिनिका</territory>
 			<territory type="DO">डोमिनिकन प्रजासत्ताक</territory>
 			<territory type="DZ">अल्जीरिया</territory>
+<<<<<<< HEAD
 			<territory type="EA">स्यूटा आणि मेलिला</territory>
 			<territory type="EC">इक्वाडोर</territory>
 			<territory type="EE">एस्टोनिया</territory>
@@ -715,19 +1117,39 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FJ">फिजी</territory>
 			<territory type="FK">फॉकलंड बेटे</territory>
 			<territory type="FK" alt="variant">फॉकलंड बेटे (इस्लास मालविनास)</territory>
+=======
+			<territory type="EC">इक्वेडोर</territory>
+			<territory type="EE">एस्टोनिया</territory>
+			<territory type="EG">इजिप्त</territory>
+			<territory type="EH">पश्चिम सहारा</territory>
+			<territory type="ER">इरिट्रिया</territory>
+			<territory type="ES">स्पेन</territory>
+			<territory type="ET">इथिओपिया</territory>
+			<territory type="FI">फिनलंड</territory>
+			<territory type="FJ">फिजी</territory>
+			<territory type="FK">फॉकलंड बेटे</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="FM">मायक्रोनेशिया</territory>
 			<territory type="FO">फरोए बेटे</territory>
 			<territory type="FR">फ्रान्स</territory>
 			<territory type="GA">गॅबॉन</territory>
+<<<<<<< HEAD
 			<territory type="GB">युनायटेड किंगडम</territory>
 			<territory type="GB" alt="short">यू.के.</territory>
+=======
+			<territory type="GB">ब्रिटन</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="GD">ग्रेनेडा</territory>
 			<territory type="GE">जॉर्जिया</territory>
 			<territory type="GF">फ्रेंच गयाना</territory>
 			<territory type="GG">ग्वेर्नसे</territory>
 			<territory type="GH">घाना</territory>
 			<territory type="GI">जिब्राल्टर</territory>
+<<<<<<< HEAD
 			<territory type="GL">ग्रीनलंड</territory>
+=======
+			<territory type="GL">ग्रीनलँड</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="GM">गाम्बिया</territory>
 			<territory type="GN">गिनी</territory>
 			<territory type="GP">ग्वाडेलोउपे</territory>
@@ -738,6 +1160,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GU">गुआम</territory>
 			<territory type="GW">गिनी-बिसाउ</territory>
 			<territory type="GY">गयाना</territory>
+<<<<<<< HEAD
 			<territory type="HK">हाँगकाँग एसएआर चीन</territory>
 			<territory type="HK" alt="short">हाँगकाँग</territory>
 			<territory type="HM">हर्ड आणि मॅक्डोनाल्ड बेटे</territory>
@@ -746,12 +1169,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="HT">हैती</territory>
 			<territory type="HU">हंगेरी</territory>
 			<territory type="IC">कॅनरी बेटे</territory>
+=======
+			<territory type="HK">हाँगकाँग विशेष प्रशासनिक क्षेत्र चीन</territory>
+			<territory type="HM">हर्ड बेट आणि मैकडोनाल्ड बेट</territory>
+			<territory type="HN">होंडुराज्</territory>
+			<territory type="HR">क्रोएशिया</territory>
+			<territory type="HT">हैती</territory>
+			<territory type="HU">हंगेरी</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="ID">इंडोनेशिया</territory>
 			<territory type="IE">आयर्लंड</territory>
 			<territory type="IL">इस्त्राइल</territory>
 			<territory type="IM">इस्ले ऑफ मॅन</territory>
 			<territory type="IN">भारत</territory>
+<<<<<<< HEAD
 			<territory type="IO">ब्रिटिश इंडियन ओशन प्रदेश</territory>
+=======
+			<territory type="IO">ब्रिटिश हिंद महासागरीय क्षेत्र</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="IQ">इराक</territory>
 			<territory type="IR">ईराण</territory>
 			<territory type="IS">आइसलँड</territory>
@@ -761,7 +1196,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="JO">जॉर्डन</territory>
 			<territory type="JP">जपान</territory>
 			<territory type="KE">केनिया</territory>
+<<<<<<< HEAD
 			<territory type="KG">किरगिझस्तान</territory>
+=======
+			<territory type="KG">किरगीझस्तान</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="KH">कंबोडिया</territory>
 			<territory type="KI">किरीबाटी</territory>
 			<territory type="KM">कोमोरोज</territory>
@@ -772,7 +1211,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="KY">केमन बेटे</territory>
 			<territory type="KZ">कझाकस्तान</territory>
 			<territory type="LA">लाओस</territory>
+<<<<<<< HEAD
 			<territory type="LB">लेबनॉन</territory>
+=======
+			<territory type="LB">लेबानन</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="LC">सेंट ल्यूसिया</territory>
 			<territory type="LI">लिंचेनस्टाइन</territory>
 			<territory type="LK">श्रीलंका</territory>
@@ -790,24 +1233,39 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MG">मादागास्कर</territory>
 			<territory type="MH">मार्शल बेटे</territory>
 			<territory type="MK">मॅसेडोनिया</territory>
+<<<<<<< HEAD
 			<territory type="MK" alt="variant">मॅसेडोनिया (FYROM)</territory>
 			<territory type="ML">माली</territory>
 			<territory type="MM">म्यानमार (बर्मा)</territory>
 			<territory type="MN">मंगोलिया</territory>
 			<territory type="MO">मकाओ एसएआर चीन</territory>
 			<territory type="MO" alt="short">मकाऊ</territory>
+=======
+			<territory type="ML">माली</territory>
+			<territory type="MM">म्यानमार</territory>
+			<territory type="MN">मंगोलिया</territory>
+			<territory type="MO">मकाऊ SAR चीन</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="MP">उत्तरी मारियाना बेटे</territory>
 			<territory type="MQ">मार्टिनिक</territory>
 			<territory type="MR">मॉरिटानिया</territory>
 			<territory type="MS">मॉन्ट्सेराट</territory>
 			<territory type="MT">माल्टा</territory>
 			<territory type="MU">मॉरिशस</territory>
+<<<<<<< HEAD
 			<territory type="MV">मालदीव</territory>
+=======
+			<territory type="MV">मालदीव्ज</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="MW">मलावी</territory>
 			<territory type="MX">मेक्सिको</territory>
 			<territory type="MY">मलेशिया</territory>
 			<territory type="MZ">मोझाम्बिक</territory>
+<<<<<<< HEAD
 			<territory type="NA">नामिबिया</territory>
+=======
+			<territory type="NA">नमीबिया</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="NC">न्यू कॅलेडोनिया</territory>
 			<territory type="NE">नाइजर</territory>
 			<territory type="NF">नॉरफॉक बेट</territory>
@@ -824,6 +1282,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="PE">पेरू</territory>
 			<territory type="PF">फ्रेंच पॉलिनेशिया</territory>
 			<territory type="PG">पापुआ न्यू गिनी</territory>
+<<<<<<< HEAD
 			<territory type="PH">फिलिपिन्स</territory>
 			<territory type="PK">पाकिस्तान</territory>
 			<territory type="PL">पोलंड</territory>
@@ -832,12 +1291,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="PR">पोर्टो रिको</territory>
 			<territory type="PS">पॅलेस्टिनियन प्रदेश</territory>
 			<territory type="PS" alt="short">पॅलेस्टाईन</territory>
+=======
+			<territory type="PH">फिलीपिन्स</territory>
+			<territory type="PK">पाकिस्तान</territory>
+			<territory type="PL">पोलंड</territory>
+			<territory type="PM">सेंट पियरे आणि मिक्वेलोन</territory>
+			<territory type="PN">पिटकॅर्न</territory>
+			<territory type="PR">पोर्टो रिको</territory>
+			<territory type="PS">पॅलेस्टिनी प्रदेश</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="PT">पोर्तुगाल</territory>
 			<territory type="PW">पलाऊ</territory>
 			<territory type="PY">पराग्वे</territory>
 			<territory type="QA">कतार</territory>
+<<<<<<< HEAD
 			<territory type="QO">आउटलाईंग ओशनिया</territory>
 			<territory type="RE">रियुनियन</territory>
+=======
+			<territory type="QO">आउटलायिंग ओशनिया</territory>
+			<territory type="QU">यूरोपीय संघ</territory>
+			<territory type="RE">रियूनियन</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="RO">रोमानिया</territory>
 			<territory type="RS">सर्बिया</territory>
 			<territory type="RU">रशिया</territory>
@@ -845,18 +1319,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="SA">सौदी अरब</territory>
 			<territory type="SB">सोलोमन बेटे</territory>
 			<territory type="SC">सेशेल्स</territory>
+<<<<<<< HEAD
 			<territory type="SD">सुदान</territory>
+=======
+			<territory type="SD">सूदान</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="SE">स्वीडन</territory>
 			<territory type="SG">सिंगापूर</territory>
 			<territory type="SH">सेंट हेलेना</territory>
 			<territory type="SI">स्लोव्हेनिया</territory>
 			<territory type="SJ">स्वालबर्ड आणि जान मायेन</territory>
 			<territory type="SK">स्लोव्हाकिया</territory>
+<<<<<<< HEAD
 			<territory type="SL">सिएरा लिओन</territory>
+=======
+			<territory type="SL">सिएरा लेओन</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="SM">सॅन मरीनो</territory>
 			<territory type="SN">सेनेगल</territory>
 			<territory type="SO">सोमालिया</territory>
 			<territory type="SR">सुरिनाम</territory>
+<<<<<<< HEAD
 			<territory type="SS">दक्षिण सुदान</territory>
 			<territory type="ST">साओ टोम आणि प्रिंसिपे</territory>
 			<territory type="SV">अल साल्वाडोर</territory>
@@ -864,6 +1347,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="SY">सीरिया</territory>
 			<territory type="SZ">स्वाझिलँड</territory>
 			<territory type="TA">ट्रिस्टन दा कन्हा</territory>
+=======
+			<territory type="ST">साओ टोम आणि प्रिंसिपे</territory>
+			<territory type="SV">अल साल्वाडोर</territory>
+			<territory type="SY">सीरिया</territory>
+			<territory type="SZ">स्वाझिलँड</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="TC">टर्क्स आणि कैकोस बेटे</territory>
 			<territory type="TD">चाड</territory>
 			<territory type="TF">फ्रेंच दाक्षिणात्य प्रदेश</territory>
@@ -880,6 +1369,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="TV">टुवालु</territory>
 			<territory type="TW">तैवान</territory>
 			<territory type="TZ">टांझानिया</territory>
+<<<<<<< HEAD
 			<territory type="UA">युक्रेन</territory>
 			<territory type="UG">युगांडा</territory>
 			<territory type="UM">यू.एस. आउटलाइंग बेटे</territory>
@@ -888,6 +1378,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="UY">उरुग्वे</territory>
 			<territory type="UZ">उझबेकिस्तान</territory>
 			<territory type="VA">व्हॅटिकन सिटी</territory>
+=======
+			<territory type="UA">यूक्रेन</territory>
+			<territory type="UG">युगांडा</territory>
+			<territory type="UM">युनाइटेड स्टेट्स माइनर आउटलाइंग बेटे</territory>
+			<territory type="US">संयुक्त राज्ये /अमेरिका</territory>
+			<territory type="UY">उरुग्वे</territory>
+			<territory type="UZ">उझबेकिस्तान</territory>
+			<territory type="VA">व्हॅटिकन</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="VC">सेंट व्हिन्सेंट आणि ग्रेनडाइन्स</territory>
 			<territory type="VE">व्हेनेझुएला</territory>
 			<territory type="VG">ब्रिटिश व्हर्जिन बेटे</territory>
@@ -896,6 +1395,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="VU">वानौटु</territory>
 			<territory type="WF">वालिस आणि फ्यूचूना</territory>
 			<territory type="WS">सामोआ</territory>
+<<<<<<< HEAD
 			<territory type="XK">कोसोव्हो</territory>
 			<territory type="YE">येमेन</territory>
 			<territory type="YT">मायोट्टे</territory>
@@ -1266,6 +1766,31 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">नो</month>
 							<month type="12">डि</month>
 						</monthWidth>
+=======
+			<territory type="YE">येमेन</territory>
+			<territory type="YT">मायोट्टे</territory>
+			<territory type="ZA">दक्षिण अफ्रिका</territory>
+			<territory type="ZM">झाम्बिया</territory>
+			<territory type="ZW">झिम्बाब्वे</territory>
+			<territory type="ZZ">अज्ञात वा अवैध प्रदेश</territory>
+		</territories>
+	</localeDisplayNames>
+	<characters>
+		<exemplarCharacters>[़ ँ-ः ०-९ ॐ अ-ऍ ए-ऑ ओ-न प-र ल ळ व-ह ऽ-ॅ े-ॉ ो-्]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[\u200C \u200D]</exemplarCharacters>
+	</characters>
+	<delimiters>
+		<quotationStart>'</quotationStart>
+		<quotationEnd>'</quotationEnd>
+		<alternateQuotationStart>&quot;</alternateQuotationStart>
+		<alternateQuotationEnd>&quot;</alternateQuotationEnd>
+	</delimiters>
+	<dates>
+		<calendars>
+			<calendar type="gregorian">
+				<months>
+					<monthContext type="format">
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<monthWidth type="wide">
 							<month type="1">जानेवारी</month>
 							<month type="2">फेब्रुवारी</month>
@@ -1282,6 +1807,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</monthWidth>
 					</monthContext>
 					<monthContext type="stand-alone">
+<<<<<<< HEAD
 						<monthWidth type="abbreviated">
 							<month type="1">जाने</month>
 							<month type="2">फेब्रु</month>
@@ -1296,6 +1822,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">नोव्हें</month>
 							<month type="12">डिसें</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<monthWidth type="narrow">
 							<month type="1">जा</month>
 							<month type="2">फे</month>
@@ -1310,6 +1838,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">नो</month>
 							<month type="12">डि</month>
 						</monthWidth>
+<<<<<<< HEAD
 						<monthWidth type="wide">
 							<month type="1">जानेवारी</month>
 							<month type="2">फेब्रुवारी</month>
@@ -1324,6 +1853,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">नोव्हेंबर</month>
 							<month type="12">डिसेंबर</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</monthContext>
 				</months>
 				<days>
@@ -1337,6 +1868,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">शुक्र</day>
 							<day type="sat">शनि</day>
 						</dayWidth>
+<<<<<<< HEAD
 						<dayWidth type="narrow">
 							<day type="sun">र</day>
 							<day type="mon">सो</day>
@@ -1355,6 +1887,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">शु</day>
 							<day type="sat">श</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<dayWidth type="wide">
 							<day type="sun">रविवार</day>
 							<day type="mon">सोमवार</day>
@@ -1366,6 +1900,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</dayWidth>
 					</dayContext>
 					<dayContext type="stand-alone">
+<<<<<<< HEAD
 						<dayWidth type="abbreviated">
 							<day type="sun">रवि</day>
 							<day type="mon">सोम</day>
@@ -1375,6 +1910,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">शुक्र</day>
 							<day type="sat">शनि</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<dayWidth type="narrow">
 							<day type="sun">र</day>
 							<day type="mon">सो</day>
@@ -1384,6 +1921,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">शु</day>
 							<day type="sat">श</day>
 						</dayWidth>
+<<<<<<< HEAD
 						<dayWidth type="short">
 							<day type="sun">र</day>
 							<day type="mon">सो</day>
@@ -1402,11 +1940,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">शुक्रवार</day>
 							<day type="sat">शनिवार</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</dayContext>
 				</days>
 				<quarters>
 					<quarterContext type="format">
 						<quarterWidth type="abbreviated">
+<<<<<<< HEAD
 							<quarter type="1">ति1</quarter>
 							<quarter type="2">ति2</quarter>
 							<quarter type="3">ति3</quarter>
@@ -1437,6 +1978,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<quarter type="2">2</quarter>
 							<quarter type="3">3</quarter>
 							<quarter type="4">4</quarter>
+=======
+							<quarter type="1">Q1</quarter>
+							<quarter type="2">Q2</quarter>
+							<quarter type="3">Q3</quarter>
+							<quarter type="4">Q4</quarter>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</quarterWidth>
 						<quarterWidth type="wide">
 							<quarter type="1">प्रथम तिमाही</quarter>
@@ -1446,6 +1993,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</quarterWidth>
 					</quarterContext>
 				</quarters>
+<<<<<<< HEAD
 				<dayPeriods>
 					<dayPeriodContext type="format">
 						<dayPeriodWidth type="abbreviated">
@@ -1462,63 +2010,105 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</dayPeriodWidth>
 					</dayPeriodContext>
 				</dayPeriods>
+=======
+				<am>am</am>
+				<pm>pm</pm>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<eras>
 					<eraNames>
 						<era type="0">ईसवीसनपूर्व</era>
 						<era type="1">ईसवीसन</era>
 					</eraNames>
 					<eraAbbr>
+<<<<<<< HEAD
 						<era type="0">ईसापूर्व</era>
 						<era type="0" alt="variant">ईसापूर्व युग</era>
 						<era type="1">सन</era>
 						<era type="1" alt="variant">ईसायुग</era>
+=======
+						<era type="0">ई.स.पू.</era>
+						<era type="1">ई.स.</era>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</eraAbbr>
 				</eras>
 				<dateFormats>
 					<dateFormatLength type="full">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>EEEE, d MMMM, y</pattern>
+=======
+							<pattern>EEEE d MMMM y</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="long">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>d MMMM, y</pattern>
+=======
+							<pattern>d MMMM y</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="medium">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>d MMM, y</pattern>
+=======
+							<pattern>d MMM y</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>d/M/yy</pattern>
+=======
+							<pattern>d-M-yy</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
 				<timeFormats>
 					<timeFormatLength type="full">
 						<timeFormat>
+<<<<<<< HEAD
 							<pattern>h:mm:ss a zzzz</pattern>
+=======
+							<pattern>h-mm-ss a zzzz</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</timeFormat>
 					</timeFormatLength>
 					<timeFormatLength type="long">
 						<timeFormat>
+<<<<<<< HEAD
 							<pattern>h:mm:ss a z</pattern>
+=======
+							<pattern>h-mm-ss a z</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</timeFormat>
 					</timeFormatLength>
 					<timeFormatLength type="medium">
 						<timeFormat>
+<<<<<<< HEAD
 							<pattern>h:mm:ss a</pattern>
+=======
+							<pattern>h-mm-ss a</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</timeFormat>
 					</timeFormatLength>
 					<timeFormatLength type="short">
 						<timeFormat>
+<<<<<<< HEAD
 							<pattern>h:mm a</pattern>
+=======
+							<pattern>h-mm a</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</timeFormat>
 					</timeFormatLength>
 				</timeFormats>
 				<dateTimeFormats>
+<<<<<<< HEAD
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
 							<pattern>{1} 'रोजी' {0}</pattern>
@@ -4007,11 +4597,74 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<standard>येकतरिनबर्ग प्रमाण वेळ</standard>
 					<daylight>येकतरिनबर्ग उन्हाळी वेळ</daylight>
 				</long>
+=======
+					<availableFormats>
+						<dateFormatItem id="Hm">H-mm</dateFormatItem>
+						<dateFormatItem id="Hms">H-mm-ss</dateFormatItem>
+						<dateFormatItem id="MMdd">dd-MM</dateFormatItem>
+						<dateFormatItem id="MMMMd">d MMMM</dateFormatItem>
+						<dateFormatItem id="yyQ">Q yy</dateFormatItem>
+						<dateFormatItem id="yyyyMM">MM-yyyy</dateFormatItem>
+						<dateFormatItem id="yyyyMMMM">MMMM y</dateFormatItem>
+					</availableFormats>
+				</dateTimeFormats>
+				<fields>
+					<field type="era">
+						<displayName>युग</displayName>
+					</field>
+					<field type="year">
+						<displayName>वर्ष</displayName>
+					</field>
+					<field type="month">
+						<displayName>महिना</displayName>
+					</field>
+					<field type="week">
+						<displayName>आठवडा</displayName>
+					</field>
+					<field type="day">
+						<displayName>दिवस</displayName>
+						<relative type="-3">तीन दिवसांपूर्वी</relative>
+						<relative type="-2">परवा</relative>
+						<relative type="-1">काल</relative>
+						<relative type="0">आज</relative>
+						<relative type="1">उद्या</relative>
+						<relative type="2">परवा</relative>
+						<relative type="3">आजपासून तीन दिवस</relative>
+					</field>
+					<field type="weekday">
+						<displayName>आठवड्याचा दिवस</displayName>
+					</field>
+					<field type="hour">
+						<displayName>तास</displayName>
+					</field>
+					<field type="minute">
+						<displayName>मिनिट</displayName>
+					</field>
+					<field type="second">
+						<displayName>सेकंद</displayName>
+					</field>
+					<field type="zone">
+						<displayName>झोन</displayName>
+					</field>
+				</fields>
+			</calendar>
+		</calendars>
+		<timeZoneNames>
+			<hourFormat>+HH:mm;-HH:mm</hourFormat>
+			<gmtFormat>GMT{0}</gmtFormat>
+			<regionFormat>{0}</regionFormat>
+			<metazone type="India">
+				<long>
+					<standard>भारतीय समय</standard>
+				</long>
+				<commonlyUsed>true</commonlyUsed>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</metazone>
 		</timeZoneNames>
 	</dates>
 	<numbers>
 		<defaultNumberingSystem>deva</defaultNumberingSystem>
+<<<<<<< HEAD
 		<otherNumberingSystems>
 			<native>deva</native>
 		</otherNumberingSystems>
@@ -5574,6 +6227,38 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<listPatternPart type="2">{0}, {1}</listPatternPart>
 		</listPattern>
 	</listPatterns>
+=======
+		<symbols>
+			<nativeZeroDigit>0</nativeZeroDigit>
+		</symbols>
+		<decimalFormats>
+			<decimalFormatLength>
+				<decimalFormat>
+					<pattern>#,##,##0.###</pattern>
+				</decimalFormat>
+			</decimalFormatLength>
+		</decimalFormats>
+		<percentFormats>
+			<percentFormatLength>
+				<percentFormat>
+					<pattern>#,##,##0%</pattern>
+				</percentFormat>
+			</percentFormatLength>
+		</percentFormats>
+		<currencyFormats>
+			<currencyFormatLength>
+				<currencyFormat>
+					<pattern>¤ #,##,##0.00</pattern>
+				</currencyFormat>
+			</currencyFormatLength>
+		</currencyFormats>
+		<currencies>
+			<currency type="INR">
+				<symbol>रु</symbol>
+			</currency>
+		</currencies>
+	</numbers>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	<posix>
 		<messages>
 			<yesstr>होयःहो</yesstr>

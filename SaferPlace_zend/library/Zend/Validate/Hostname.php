@@ -14,9 +14,15 @@
  *
  * @category   Zend
  * @package    Zend_Validate
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Hostname.php 25061 2012-11-02 21:24:09Z rob $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -41,7 +47,11 @@ require_once 'Zend/Validate/Ip.php';
  *
  * @category   Zend
  * @package    Zend_Validate
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Validate_Hostname extends Zend_Validate_Abstract
@@ -110,13 +120,18 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
     /**
      * Array of valid top-level-domains
      *
+<<<<<<< HEAD
      * Version 2015091800, Last Updated Fri Sep 18 07:07:01 2015 UTC
      *
      * @see http://data.iana.org/TLD/tlds-alpha-by-domain.txt  List of all TLDs by domain
+=======
+     * @see ftp://data.iana.org/TLD/tlds-alpha-by-domain.txt  List of all TLDs by domain
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @see http://www.iana.org/domains/root/db/ Official list of supported TLDs
      * @var array
      */
     protected $_validTlds = array(
+<<<<<<< HEAD
         'aaa',
         'abb',
         'abbott',
@@ -1297,6 +1312,27 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
         'فلسطين',
         'テスト',
         '政务',
+=======
+        'ac', 'ad', 'ae', 'aero', 'af', 'ag', 'ai', 'al', 'am', 'an', 'ao', 'aq', 'ar', 'arpa',
+        'as', 'asia', 'at', 'au', 'aw', 'ax', 'az', 'ba', 'bb', 'bd', 'be', 'bf', 'bg', 'bh', 'bi',
+        'biz', 'bj', 'bm', 'bn', 'bo', 'br', 'bs', 'bt', 'bv', 'bw', 'by', 'bz', 'ca', 'cat', 'cc',
+        'cd', 'cf', 'cg', 'ch', 'ci', 'ck', 'cl', 'cm', 'cn', 'co', 'com', 'coop', 'cr', 'cu',
+        'cv', 'cx', 'cy', 'cz', 'de', 'dj', 'dk', 'dm', 'do', 'dz', 'ec', 'edu', 'ee', 'eg', 'er',
+        'es', 'et', 'eu', 'fi', 'fj', 'fk', 'fm', 'fo', 'fr', 'ga', 'gb', 'gd', 'ge', 'gf', 'gg',
+        'gh', 'gi', 'gl', 'gm', 'gn', 'gov', 'gp', 'gq', 'gr', 'gs', 'gt', 'gu', 'gw', 'gy', 'hk',
+        'hm', 'hn', 'hr', 'ht', 'hu', 'id', 'ie', 'il', 'im', 'in', 'info', 'int', 'io', 'iq',
+        'ir', 'is', 'it', 'je', 'jm', 'jo', 'jobs', 'jp', 'ke', 'kg', 'kh', 'ki', 'km', 'kn', 'kp',
+        'kr', 'kw', 'ky', 'kz', 'la', 'lb', 'lc', 'li', 'lk', 'lr', 'ls', 'lt', 'lu', 'lv', 'ly',
+        'ma', 'mc', 'md', 'me', 'mg', 'mh', 'mil', 'mk', 'ml', 'mm', 'mn', 'mo', 'mobi', 'mp',
+        'mq', 'mr', 'ms', 'mt', 'mu', 'museum', 'mv', 'mw', 'mx', 'my', 'mz', 'na', 'name', 'nc',
+        'ne', 'net', 'nf', 'ng', 'ni', 'nl', 'no', 'np', 'nr', 'nu', 'nz', 'om', 'org', 'pa', 'pe',
+        'pf', 'pg', 'ph', 'pk', 'pl', 'pm', 'pn', 'pr', 'pro', 'ps', 'pt', 'pw', 'py', 'qa', 're',
+        'ro', 'rs', 'ru', 'rw', 'sa', 'sb', 'sc', 'sd', 'se', 'sg', 'sh', 'si', 'sj', 'sk', 'sl',
+        'sm', 'sn', 'so', 'sr', 'st', 'su', 'sv', 'sy', 'sz', 'tc', 'td', 'tel', 'tf', 'tg', 'th',
+        'tj', 'tk', 'tl', 'tm', 'tn', 'to', 'tp', 'tr', 'travel', 'tt', 'tv', 'tw', 'tz', 'ua',
+        'ug', 'uk', 'um', 'us', 'uy', 'uz', 'va', 'vc', 've', 'vg', 'vi', 'vn', 'vu', 'wf', 'ws',
+        'xxx', 'ye', 'yt', 'yu', 'za', 'zm', 'zw'
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     );
 
     /**
@@ -1314,7 +1350,10 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
      * (.BIZ) International http://www.iana.org/domains/idn-tables/
      * (.BR) Brazil http://registro.br/faq/faq6.html
      * (.BV) Bouvett Island http://www.norid.no/domeneregistrering/idn/idn_nyetegn.en.html
+<<<<<<< HEAD
      * (.CA) Canada http://www.iana.org/domains/idn-tables/tables/ca_fr_1.0.html
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * (.CAT) Catalan http://www.iana.org/domains/idn-tables/tables/cat_ca_1.0.html
      * (.CH) Switzerland https://nic.switch.ch/reg/ocView.action?res=EF6GW2JBPVTG67DLNIQXU234MN6SC33JNQQGI7L6#anhang1
      * (.CL) Chile http://www.iana.org/domains/idn-tables/tables/cl_latn_1.0.html
@@ -1343,7 +1382,10 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
      * (.PR) Puerto Rico http://www.nic.pr/idn_rules.asp
      * (.PT) Portugal https://online.dns.pt/dns_2008/do?com=DS;8216320233;111;+PAGE(4000058)+K-CAT-CODIGO(C.125)+RCNT(100);
      * (.RU) Russia http://www.iana.org/domains/idn-tables/tables/ru_ru-ru_1.0.html
+<<<<<<< HEAD
      * (.RS) Serbia http://www.iana.org/domains/idn-tables/tables/rs_sr-rs_1.0.pdf
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * (.SA) Saudi Arabia http://www.iana.org/domains/idn-tables/tables/sa_ar_1.0.html
      * (.SE) Sweden http://www.iis.se/english/IDN_campaignsite.shtml?lang=en
      * (.SH) Saint Helena http://www.nic.sh/SH-IDN-Policy.pdf
@@ -1351,7 +1393,10 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
      * (.TH) Thailand http://www.iana.org/domains/idn-tables/tables/th_th-th_1.0.html
      * (.TM) Turkmenistan http://www.nic.tm/TM-IDN-Policy.pdf
      * (.TR) Turkey https://www.nic.tr/index.php
+<<<<<<< HEAD
      * (.UA) Ukraine http://www.iana.org/domains/idn-tables/tables/ua_cyrl_1.2.html
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * (.VE) Venice http://www.iana.org/domains/idn-tables/tables/ve_es_1.0.html
      * (.VN) Vietnam http://www.vnnic.vn/english/5-6-300-2-2-04-20071115.htm#1.%20Introduction
      *
@@ -1365,13 +1410,21 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
         'BIZ' => 'Hostname/Biz.php',
         'BR'  => array(1 => '/^[\x{002d}0-9a-zà-ãçéíó-õúü]{1,63}$/iu'),
         'BV'  => array(1 => '/^[\x{002d}0-9a-zàáä-éêñ-ôöøüčđńŋšŧž]{1,63}$/iu'),
+<<<<<<< HEAD
         'CA'  => array(1 => '/^[\x{002d}0-9a-zàâæçéèêëîïôœùûüÿ\x{00E0}\x{00E2}\x{00E7}\x{00E8}\x{00E9}\x{00EA}\x{00EB}\x{00EE}\x{00EF}\x{00F4}\x{00F9}\x{00FB}\x{00FC}\x{00E6}\x{0153}\x{00FF}]{1,63}$/iu'),
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         'CAT' => array(1 => '/^[\x{002d}0-9a-z·àç-éíïòóúü]{1,63}$/iu'),
         'CH'  => array(1 => '/^[\x{002d}0-9a-zà-öø-ÿœ]{1,63}$/iu'),
         'CL'  => array(1 => '/^[\x{002d}0-9a-záéíñóúü]{1,63}$/iu'),
         'CN'  => 'Hostname/Cn.php',
+<<<<<<< HEAD
         'COM' => 'Hostname/Com.php',
         'DE'  => array(1 => '/^[\x{002d}0-9a-zà-öø-ÿăąāćĉčċďđĕěėęēğĝġģĥħĭĩįīıĵķĺľļłńňņŋŏőōœĸŕřŗśŝšşťßţŧŭůűũųūŵŷźžż]{1,63}$/iu'),
+=======
+        'COM' => 'Zend/Validate/Hostname/Com.php',
+        'DE'  => array(1 => '/^[\x{002d}0-9a-zà-öø-ÿăąāćĉčċďđĕěėęēğĝġģĥħĭĩįīıĵķĺľļłńňņŋŏőōœĸŕřŗśŝšşťţŧŭůűũųūŵŷźžż]{1,63}$/iu'),
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         'DK'  => array(1 => '/^[\x{002d}0-9a-zäéöüæøå]{1,63}$/iu'),
         'ES'  => array(1 => '/^[\x{002d}0-9a-zàáçèéíïñòóúü·]{1,63}$/iu'),
         'EU'  => array(1 => '/^[\x{002d}0-9a-zà-öø-ÿ]{1,63}$/iu',
@@ -1379,6 +1432,7 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
             3 => '/^[\x{002d}0-9a-zșț]{1,63}$/iu',
             4 => '/^[\x{002d}0-9a-zΐάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώ]{1,63}$/iu',
             5 => '/^[\x{002d}0-9a-zабвгдежзийклмнопрстуфхцчшщъыьэюя]{1,63}$/iu',
+<<<<<<< HEAD
             6 => '/^[\x{002d}0-9a-zἀ-ἇἐ-ἕἠ-ἧἰ-ἷὀ-ὅὐ-ὗὠ-ὧὰ-ὼώᾀ-ᾇᾐ-ᾗᾠ-ᾧᾰ-ᾴᾶᾷῂῃῄῆῇῐ-ῒΐῖῗῠ-ῧῲῳῴῶῷ]{1,63}$/iu'),
         'FI'  => array(1 => '/^[\x{002d}0-9a-zäåö]{1,63}$/iu'),
         'GR'  => array(1 => '/^[\x{002d}0-9a-zΆΈΉΊΌΎ-ΡΣ-ώἀ-ἕἘ-Ἕἠ-ὅὈ-Ὅὐ-ὗὙὛὝὟ-ώᾀ-ᾴᾶ-ᾼῂῃῄῆ-ῌῐ-ΐῖ-Ίῠ-Ῥῲῳῴῶ-ῼ]{1,63}$/iu'),
@@ -1386,6 +1440,13 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
         'HU'  => array(1 => '/^[\x{002d}0-9a-záéíóöúüőű]{1,63}$/iu'),
         'IL'  => array(1 => '/^[\x{002d}0-9\x{05D0}-\x{05EA}]{1,63}$/iu',
             2 => '/^[\x{002d}0-9a-z]{1,63}$/i'),
+=======
+            6 => '/^[\x{002d}0-9a-zἀ-ἇἐ-ἕἠ-ἧἰ-ἷὀ-ὅὐ-ὗὠ-ὧὰ-ώᾀ-ᾇᾐ-ᾗᾠ-ᾧᾰ-ᾴᾶᾷῂῃῄῆῇῐ-ΐῖῗῠ-ῧῲῳῴῶῷ]{1,63}$/iu'),
+        'FI'  => array(1 => '/^[\x{002d}0-9a-zäåö]{1,63}$/iu'),
+        'GR'  => array(1 => '/^[\x{002d}0-9a-zΆΈΉΊΌΎ-ΡΣ-ώἀ-ἕἘ-Ἕἠ-ὅὈ-Ὅὐ-ὗὙὛὝὟ-ώᾀ-ᾴᾶ-ᾼῂῃῄῆ-ῌῐ-ΐῖ-Ίῠ-Ῥῲῳῴῶ-ῼ]{1,63}$/iu'),
+        'HK'  => 'Zend/Validate/Hostname/Cn.php',
+        'HU'  => array(1 => '/^[\x{002d}0-9a-záéíóöúüőű]{1,63}$/iu'),
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         'INFO'=> array(1 => '/^[\x{002d}0-9a-zäåæéöøü]{1,63}$/iu',
             2 => '/^[\x{002d}0-9a-záéíóöúüőű]{1,63}$/iu',
             3 => '/^[\x{002d}0-9a-záæéíðóöúýþ]{1,63}$/iu',
@@ -1396,16 +1457,26 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
             8 => '/^[\x{002d}0-9a-záéíñóúü]{1,63}$/iu'),
         'IO'  => array(1 => '/^[\x{002d}0-9a-zà-öø-ÿăąāćĉčċďđĕěėęēğĝġģĥħĭĩįīıĵķĺľļłńňņŋŏőōœĸŕřŗśŝšşťţŧŭůűũųūŵŷźžż]{1,63}$/iu'),
         'IS'  => array(1 => '/^[\x{002d}0-9a-záéýúíóþæöð]{1,63}$/iu'),
+<<<<<<< HEAD
         'IT'  => array(1 => '/^[\x{002d}0-9a-zàâäèéêëìîïòôöùûüæœçÿß-]{1,63}$/iu'),
         'JP'  => 'Hostname/Jp.php',
+=======
+        'JP'  => 'Zend/Validate/Hostname/Jp.php',
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         'KR'  => array(1 => '/^[\x{AC00}-\x{D7A3}]{1,17}$/iu'),
         'LI'  => array(1 => '/^[\x{002d}0-9a-zà-öø-ÿœ]{1,63}$/iu'),
         'LT'  => array(1 => '/^[\x{002d}0-9ąčęėįšųūž]{1,63}$/iu'),
         'MD'  => array(1 => '/^[\x{002d}0-9ăâîşţ]{1,63}$/iu'),
         'MUSEUM' => array(1 => '/^[\x{002d}0-9a-zà-öø-ÿāăąćċčďđēėęěğġģħīįıķĺļľłńņňŋōőœŕŗřśşšţťŧūůűųŵŷźżžǎǐǒǔ\x{01E5}\x{01E7}\x{01E9}\x{01EF}ə\x{0292}ẁẃẅỳ]{1,63}$/iu'),
+<<<<<<< HEAD
         'NET' => 'Hostname/Com.php',
         'NO'  => array(1 => '/^[\x{002d}0-9a-zàáä-éêñ-ôöøüčđńŋšŧž]{1,63}$/iu'),
         'NU'  => 'Hostname/Com.php',
+=======
+        'NET' => 'Zend/Validate/Hostname/Com.php',
+        'NO'  => array(1 => '/^[\x{002d}0-9a-zàáä-éêñ-ôöøüčđńŋšŧž]{1,63}$/iu'),
+        'NU'  => 'Zend/Validate/Hostname/Com.php',
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         'ORG' => array(1 => '/^[\x{002d}0-9a-záéíñóúü]{1,63}$/iu',
             2 => '/^[\x{002d}0-9a-zóąćęłńśźż]{1,63}$/iu',
             3 => '/^[\x{002d}0-9a-záäåæéëíðóöøúüýþ]{1,63}$/iu',
@@ -1449,7 +1520,10 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
             33=> '/^[\x{002d}0-9א-ת]{1,63}$/iu'),
         'PR'  => array(1 => '/^[\x{002d}0-9a-záéíóúñäëïüöâêîôûàèùæçœãõ]{1,63}$/iu'),
         'PT'  => array(1 => '/^[\x{002d}0-9a-záàâãçéêíóôõú]{1,63}$/iu'),
+<<<<<<< HEAD
         'RS'  => array(1 => '/^[\x{002D}\x{0030}-\x{0039}\x{0061}-\x{007A}\x{0107}\x{010D}\x{0111}\x{0161}\x{017E}]{1,63}$/iu)'),
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         'RU'  => array(1 => '/^[\x{002d}0-9а-яё]{1,63}$/iu'),
         'SA'  => array(1 => '/^[\x{002d}.0-9\x{0621}-\x{063A}\x{0641}-\x{064A}\x{0660}-\x{0669}]{1,63}$/iu'),
         'SE'  => array(1 => '/^[\x{002d}0-9a-zäåéöü]{1,63}$/iu'),
@@ -1461,6 +1535,7 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
         'SJ'  => array(1 => '/^[\x{002d}0-9a-zàáä-éêñ-ôöøüčđńŋšŧž]{1,63}$/iu'),
         'TH'  => array(1 => '/^[\x{002d}0-9a-z\x{0E01}-\x{0E3A}\x{0E40}-\x{0E4D}\x{0E50}-\x{0E59}]{1,63}$/iu'),
         'TM'  => array(1 => '/^[\x{002d}0-9a-zà-öø-ÿāăąćĉċčďđēėęěĝġģĥħīįĵķĺļľŀłńņňŋőœŕŗřśŝşšţťŧūŭůűųŵŷźżž]{1,63}$/iu'),
+<<<<<<< HEAD
         'TW'  => 'Hostname/Cn.php',
         'TR'  => array(1 => '/^[\x{002d}0-9a-zğıüşöç]{1,63}$/iu'),
         'UA'  => array(1 => '/^[\x{002d}0-9a-zабвгдежзийклмнопрстуфхцчшщъыьэюяѐёђѓєѕіїјљњћќѝўџґӂʼ]{1,63}$/iu'),
@@ -1486,6 +1561,16 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
         'இலங்கை' => array(1 => '/^[\x{0b80}-\x{0bff}]{1,63}$/iu'),
         'فلسطين' => array(1 => '/^[\x{0621}-\x{0624}\x{0626}-\x{063A}\x{0641}\x{0642}\x{0644}-\x{0648}\x{067E}\x{0686}\x{0698}\x{06A9}\x{06AF}\x{06CC}\x{06F0}-\x{06F9}]{1,30}$/iu'),
         'شبكة'  => array(1 => '/^[\x{0621}-\x{0624}\x{0626}-\x{063A}\x{0641}\x{0642}\x{0644}-\x{0648}\x{067E}\x{0686}\x{0698}\x{06A9}\x{06AF}\x{06CC}\x{06F0}-\x{06F9}]{1,30}$/iu'),
+=======
+        'TW'  => 'Zend/Validate/Hostname/Cn.php',
+        'TR'  => array(1 => '/^[\x{002d}0-9a-zğıüşöç]{1,63}$/iu'),
+        'VE'  => array(1 => '/^[\x{002d}0-9a-záéíóúüñ]{1,63}$/iu'),
+        'VN'  => array(1 => '/^[ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚÝàáâãèéêìíòóôõùúýĂăĐđĨĩŨũƠơƯư\x{1EA0}-\x{1EF9}]{1,63}$/iu'),
+        'ایران' => array(1 => '/^[\x{0621}-\x{0624}\x{0626}-\x{063A}\x{0641}\x{0642}\x{0644}-\x{0648}\x{067E}\x{0686}\x{0698}\x{06A9}\x{06AF}\x{06CC}\x{06F0}-\x{06F9}]{1,30}$/iu'),
+        '中国' => 'Zend/Validate/Hostname/Cn.php',
+        '公司' => 'Zend/Validate/Hostname/Cn.php',
+        '网络' => 'Zend/Validate/Hostname/Cn.php'
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     );
 
     protected $_idnLength = array(
@@ -1514,8 +1599,17 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
     /**
      * Sets validator options
      *
+<<<<<<< HEAD
      * @see http://www.iana.org/cctld/specifications-policies-cctlds-01apr02.htm  Technical Specifications for ccTLDs
      * @param array $options Validator options
+=======
+     * @param integer          $allow       OPTIONAL Set what types of hostname to allow (default ALLOW_DNS)
+     * @param boolean          $validateIdn OPTIONAL Set whether IDN domains are validated (default true)
+     * @param boolean          $validateTld OPTIONAL Set whether the TLD element of a hostname is validated (default true)
+     * @param Zend_Validate_Ip $ipValidator OPTIONAL
+     * @return void
+     * @see http://www.iana.org/cctld/specifications-policies-cctlds-01apr02.htm  Technical Specifications for ccTLDs
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function __construct($options = array())
     {
@@ -1592,7 +1686,11 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
 
     /**
      * @param Zend_Validate_Ip $ipValidator OPTIONAL
+<<<<<<< HEAD
      * @return Zend_Validate_Hostname
+=======
+     * @return void;
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setIpValidator(Zend_Validate_Ip $ipValidator = null)
     {
@@ -1642,7 +1740,10 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
      * This only applies when DNS hostnames are validated
      *
      * @param boolean $allowed Set allowed to true to validate IDNs, and false to not validate them
+<<<<<<< HEAD
      * @return $this
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setValidateIdn ($allowed)
     {
@@ -1666,7 +1767,10 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
      * This only applies when DNS hostnames are validated
      *
      * @param boolean $allowed Set allowed to true to validate TLDs, and false to not validate them
+<<<<<<< HEAD
      * @return $this
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setValidateTld ($allowed)
     {
@@ -1703,6 +1807,7 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
         }
 
         // RFC3986 3.2.2 states:
+<<<<<<< HEAD
         //
         //     The rightmost domain label of a fully qualified domain name
         //     in DNS may be followed by a single "." and should be if it is
@@ -1711,6 +1816,16 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
         //
         // (see ZF-6363)
 
+=======
+        // 
+        //     The rightmost domain label of a fully qualified domain name
+        //     in DNS may be followed by a single "." and should be if it is 
+        //     necessary to distinguish between the complete domain name and
+        //     some local domain.
+        //     
+        // (see ZF-6363)
+        
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         // Local hostnames are allowed to be partitial (ending '.')
         if ($this->_options['allow'] & self::ALLOW_LOCAL) {
             if (substr($value, -1) === '.') {
@@ -1735,6 +1850,7 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
         if ((count($domainParts) > 1) && (strlen($value) >= 4) && (strlen($value) <= 254)) {
             $status = false;
 
+<<<<<<< HEAD
             $origenc = PHP_VERSION_ID < 50600
                         ? iconv_get_encoding('internal_encoding')
                         : ini_get('default_charset');
@@ -1748,6 +1864,17 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
                 $matches = array();
                 if (preg_match('/([^.]{2,63})$/iu', end($domainParts), $matches)
                     || (array_key_exists(end($domainParts), $this->_validIdns))) {
+=======
+            $origenc = iconv_get_encoding('internal_encoding');
+            iconv_set_encoding('internal_encoding', 'UTF-8');
+            do {
+                // First check TLD
+                $matches = array();
+                if (preg_match('/([^.]{2,10})$/i', end($domainParts), $matches) ||
+                    (end($domainParts) == 'ایران') || (end($domainParts) == '中国') ||
+                    (end($domainParts) == '公司') || (end($domainParts) == '网络')) {
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                     reset($domainParts);
 
                     // Hostname characters are: *(label dot)(label dot label); max 254 chars
@@ -1756,17 +1883,26 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
                     // ldh: alpha / digit / dash
 
                     // Match TLD against known list
+<<<<<<< HEAD
                     $this->_tld = $matches[1];
                     if ($this->_options['tld']) {
                         if (!in_array(strtolower($this->_tld), $this->_validTlds)
                             && !in_array($this->_tld, $this->_validTlds)) {
+=======
+                    $this->_tld = strtolower($matches[1]);
+                    if ($this->_options['tld']) {
+                        if (!in_array($this->_tld, $this->_validTlds)) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                             $this->_error(self::UNKNOWN_TLD);
                             $status = false;
                             break;
                         }
+<<<<<<< HEAD
                         // We have already validated that the TLD is fine. We don't want it to go through the below
                         // checks as new UTF-8 TLDs will incorrectly fail if there is no IDN regex for it.
                         array_pop($domainParts);
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                     }
 
                     /**
@@ -1786,12 +1922,15 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
                     // Check each hostname part
                     $check = 0;
                     foreach ($domainParts as $domainPart) {
+<<<<<<< HEAD
                         // If some domain part is empty (i.e. zend..com), it's invalid
                         if (empty($domainPart) && $domainPart !== '0') {
                             $this->_error(self::INVALID_HOSTNAME);
                             return false;
                         }
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                         // Decode Punycode domainnames to IDN
                         if (strpos($domainPart, 'xn--') === 0) {
                             $domainPart = $this->decodePunycode(substr($domainPart, 4));
@@ -1812,7 +1951,11 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
                         // Check each domain part
                         $checked = false;
                         foreach($regexChars as $regexKey => $regexChar) {
+<<<<<<< HEAD
                             $status = preg_match($regexChar, $domainPart);
+=======
+                            $status = @preg_match($regexChar, $domainPart);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                             if ($status > 0) {
                                 $length = 63;
                                 if (array_key_exists(strtoupper($this->_tld), $this->_idnLength)
@@ -1846,11 +1989,15 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
                 }
             } while (false);
 
+<<<<<<< HEAD
             if (PHP_VERSION_ID < 50600) {
                 iconv_set_encoding('internal_encoding', $origenc);
             } else {
                 ini_set('default_charset', $origenc);
             }
+=======
+            iconv_set_encoding('internal_encoding', $origenc);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             // If the input passes as an Internet domain name, and domain names are allowed, then the hostname
             // passes validation
             if ($status && ($this->_options['allow'] & self::ALLOW_DNS)) {
@@ -1902,19 +2049,34 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
      */
     protected function decodePunycode($encoded)
     {
+<<<<<<< HEAD
         if (!preg_match('/^[a-z0-9-]+$/i', $encoded)) {
             // no punycode encoded string
+=======
+        $found = preg_match('/([^a-z0-9\x2d]{1,10})$/i', $encoded);
+        if (empty($encoded) || ($found > 0)) {
+            // no punycode encoded string, return as is
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             $this->_error(self::CANNOT_DECODE_PUNYCODE);
             return false;
         }
 
+<<<<<<< HEAD
         $decoded = array();
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         $separator = strrpos($encoded, '-');
         if ($separator > 0) {
             for ($x = 0; $x < $separator; ++$x) {
                 // prepare decoding matrix
                 $decoded[] = ord($encoded[$x]);
             }
+<<<<<<< HEAD
+=======
+        } else {
+            $this->_error(self::CANNOT_DECODE_PUNYCODE);
+            return false;
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         }
 
         $lengthd = count($decoded);

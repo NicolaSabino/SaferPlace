@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Test
  * @subpackage PHPUnit
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: DbRowset.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -26,13 +32,25 @@
 require_once "Zend/Db/Table/Rowset/Abstract.php";
 
 /**
+<<<<<<< HEAD
+=======
+ * @see PHPUnit_Extensions_Database_DataSet_AbstractTable
+ */
+require_once "PHPUnit/Extensions/Database/DataSet/AbstractTable.php";
+
+/**
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * Use a Zend_Db Rowset as a datatable for assertions with other PHPUnit Database extension tables.
  *
  * @uses       PHPUnit_Extensions_Database_DataSet_AbstractTable
  * @category   Zend
  * @package    Zend_Test
  * @subpackage PHPUnit
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Test_PHPUnit_Db_DataSet_DbRowset extends PHPUnit_Extensions_Database_DataSet_AbstractTable
@@ -70,4 +88,8 @@ class Zend_Test_PHPUnit_Db_DataSet_DbRowset extends PHPUnit_Extensions_Database_
         $this->tableName = $tableName;
         $this->tableMetaData = new PHPUnit_Extensions_Database_DataSet_DefaultTableMetaData($this->tableName, $columns);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

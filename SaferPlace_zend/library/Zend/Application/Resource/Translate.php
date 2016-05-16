@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Application
  * @subpackage Resource
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Translate.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -33,7 +39,11 @@ require_once 'Zend/Application/Resource/ResourceAbstract.php';
  * @category   Zend
  * @package    Zend_Application
  * @subpackage Resource
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Application_Resource_Translate extends Zend_Application_Resource_ResourceAbstract
@@ -86,6 +96,7 @@ class Zend_Application_Resource_Translate extends Zend_Application_Resource_Reso
                 unset($options['data']);
             }
 
+<<<<<<< HEAD
             if (isset($options['log'])) {
                 if (is_array($options['log'])) {
                     $options['log'] = Zend_Log::factory($options['log']);
@@ -94,6 +105,10 @@ class Zend_Application_Resource_Translate extends Zend_Application_Resource_Reso
 
             if (isset($options['options'])) {
                 foreach ($options['options'] as $key => $value) {
+=======
+            if (isset($options['options'])) {
+                foreach($options['options'] as $key => $value) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                     $options[$key] = $value;
                 }
             }
@@ -118,6 +133,7 @@ class Zend_Application_Resource_Translate extends Zend_Application_Resource_Reso
                  : self::DEFAULT_REGISTRY_KEY;
             unset($options['registry_key']);
 
+<<<<<<< HEAD
             if (Zend_Registry::isRegistered($key)) {
                 $translate = Zend_Registry::get($key);
                 if (!$translate instanceof Zend_Translate) {
@@ -127,6 +143,15 @@ class Zend_Application_Resource_Translate extends Zend_Application_Resource_Reso
                         . ' already registered in registry but is '
                         . 'no instance of Zend_Translate'
                     );
+=======
+            if(Zend_Registry::isRegistered($key)) {
+                $translate = Zend_Registry::get($key);
+                if(!$translate instanceof Zend_Translate) {
+                    require_once 'Zend/Application/Resource/Exception.php';
+                    throw new Zend_Application_Resource_Exception($key
+                                   . ' already registered in registry but is '
+                                   . 'no instance of Zend_Translate');
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 }
 
                 $translate->addTranslation($options);

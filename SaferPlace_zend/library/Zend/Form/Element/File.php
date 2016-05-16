@@ -14,7 +14,11 @@
  *
  * @category   Zend
  * @package    Zend_Form
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -27,9 +31,15 @@ require_once 'Zend/Form/Element/Xhtml.php';
  * @category   Zend
  * @package    Zend_Form
  * @subpackage Element
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: File.php 25225 2013-01-17 15:59:16Z frosch $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 class Zend_Form_Element_File extends Zend_Form_Element_Xhtml
 {
@@ -79,6 +89,7 @@ class Zend_Form_Element_File extends Zend_Form_Element_Xhtml
             return $this;
         }
 
+<<<<<<< HEAD
         parent::loadDefaultDecorators();
 
         // This element needs the File decorator and not the ViewHelper decorator
@@ -92,6 +103,16 @@ class Zend_Form_Element_File extends Zend_Form_Element_Xhtml
             $this->setDecorators($decorators);
         }
 
+=======
+        $decorators = $this->getDecorators();
+        if (empty($decorators)) {
+            $this->addDecorator('File')
+                 ->addDecorator('Errors')
+                 ->addDecorator('Description', array('tag' => 'p', 'class' => 'description'))
+                 ->addDecorator('HtmlTag', array('tag' => 'dd'))
+                 ->addDecorator('Label', array('tag' => 'dt'));
+        }
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         return $this;
     }
 
@@ -173,7 +194,10 @@ class Zend_Form_Element_File extends Zend_Form_Element_Xhtml
      *
      * @param  string|Zend_File_Transfer_Adapter_Abstract $adapter
      * @return Zend_Form_Element_File
+<<<<<<< HEAD
      * @throws Zend_Form_Element_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setTransferAdapter($adapter)
     {
@@ -347,7 +371,11 @@ class Zend_Form_Element_File extends Zend_Form_Element_Xhtml
     /**
      * Sets a filter for the class, erasing all previous set; proxy to adapter
      *
+<<<<<<< HEAD
      * @param  array $filters Filters to set
+=======
+     * @param  string|array $filter Filter to set
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Form_Element_File
      */
     public function setFilters(array $filters)
@@ -862,7 +890,10 @@ class Zend_Form_Element_File extends Zend_Form_Element_Xhtml
      *
      * @param  Zend_View_Interface $view
      * @return string
+<<<<<<< HEAD
      * @throws Zend_Form_Element_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function render(Zend_View_Interface $view = null)
     {

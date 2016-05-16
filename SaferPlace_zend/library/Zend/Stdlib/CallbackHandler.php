@@ -14,7 +14,11 @@
  *
  * @category   Zend
  * @package    Zend_Stdlib
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -27,7 +31,11 @@
  *
  * @category   Zend
  * @package    Zend_Stdlib
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Stdlib_CallbackHandler
@@ -101,10 +109,14 @@ class Zend_Stdlib_CallbackHandler
         }
 
         // If pecl/weakref is not installed, simply store the callback and return
+<<<<<<< HEAD
         set_error_handler(array($this, 'errorHandler'), E_WARNING);
         $callable = class_exists('WeakRef');
         restore_error_handler();
         if (!$callable || $this->error) {
+=======
+        if (!class_exists('WeakRef')) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             $this->callback = $callback;
             return;
         }

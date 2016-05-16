@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Service
  * @subpackage Ebay
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id: Finding.php 22824 2010-08-09 18:59:54Z renanbr $
  */
@@ -25,14 +29,21 @@
  */
 require_once 'Zend/Service/Ebay/Abstract.php';
 
+<<<<<<< HEAD
 /** @see Zend_Xml_Security */
 require_once 'Zend/Xml/Security.php';
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 /**
  * @category   Zend
  * @package    Zend_Service
  * @subpackage Ebay
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @uses       Zend_Service_Ebay_Abstract
  */
@@ -370,7 +381,11 @@ class Zend_Service_Ebay_Finding extends Zend_Service_Ebay_Abstract
 
         // first trying, loading XML
         $dom = new DOMDocument();
+<<<<<<< HEAD
         if (!$dom = @Zend_Xml_Security::scan($response->getBody(), $dom)) {
+=======
+        if (!@$dom->loadXML($response->getBody())) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             $message = 'It was not possible to load XML returned.';
         }
 

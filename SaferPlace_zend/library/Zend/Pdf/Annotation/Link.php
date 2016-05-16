@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Pdf
  * @subpackage Annotation
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Link.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /** Internally used classes */
@@ -40,7 +46,11 @@ require_once 'Zend/Pdf/Annotation.php';
  *
  * @package    Zend_Pdf
  * @subpackage Annotation
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Pdf_Annotation_Link extends Zend_Pdf_Annotation
@@ -70,6 +80,7 @@ class Zend_Pdf_Annotation_Link extends Zend_Pdf_Annotation
     /**
      * Create link annotation object
      *
+<<<<<<< HEAD
      * @param float                  $x1
      * @param float                  $y1
      * @param float                  $x2
@@ -77,12 +88,24 @@ class Zend_Pdf_Annotation_Link extends Zend_Pdf_Annotation
      * @param Zend_Pdf_Target|string $target
      * @return Zend_Pdf_Annotation_Link
      * @throws Zend_Pdf_Exception
+=======
+     * @param float $x1
+     * @param float $y1
+     * @param float $x2
+     * @param float $y2
+     * @param Zend_Pdf_Target|string $target
+     * @return Zend_Pdf_Annotation_Link
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public static function create($x1, $y1, $x2, $y2, $target)
     {
         if (is_string($target)) {
             require_once 'Zend/Pdf/Destination/Named.php';
+<<<<<<< HEAD
             $target = Zend_Pdf_Destination_Named::create($target);
+=======
+            $destination = Zend_Pdf_Destination_Named::create($target);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         }
         if (!$target instanceof Zend_Pdf_Target) {
             require_once 'Zend/Pdf/Exception.php';

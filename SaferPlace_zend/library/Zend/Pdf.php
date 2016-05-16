@@ -14,9 +14,15 @@
  *
  * @category   Zend
  * @package    Zend_Pdf
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Pdf.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 
@@ -78,7 +84,11 @@ require_once 'Zend/Pdf/Element/String.php';
  *
  * @category   Zend
  * @package    Zend_Pdf
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Pdf
@@ -95,12 +105,16 @@ class Zend_Pdf
      */
     const PDF_HEADER  = "%PDF-1.4\n%\xE2\xE3\xCF\xD3\n";
 
+<<<<<<< HEAD
     /**
      * Form field options
      */
     const PDF_FORM_FIELD_READONLY = 1;
     const PDF_FORM_FIELD_REQUIRED = 2;
     const PDF_FORM_FIELD_NOEXPORT = 4;
+=======
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
     /**
      * Pages collection
@@ -206,6 +220,10 @@ class Zend_Pdf
      */
     protected $_parser;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * List of inheritable attributesfor pages tree
      *
@@ -214,6 +232,7 @@ class Zend_Pdf
     protected static $_inheritableAttributes = array('Resources', 'MediaBox', 'CropBox', 'Rotate');
 
     /**
+<<<<<<< HEAD
      * List of form fields
      *
      * @var array - Associative array, key: name of form field, value: Zend_Pdf_Element
@@ -221,6 +240,8 @@ class Zend_Pdf
     protected $_formFields = array();
 
     /**
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * True if the object is a newly created PDF document (affects save() method behavior)
      * False otherwise
      *
@@ -310,12 +331,19 @@ class Zend_Pdf
      *
      * If $source is a string and $load is true, then it loads document
      * from a file.
+<<<<<<< HEAD
+=======
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * $revision used to roll back document to specified version
      * (0 - current version, 1 - previous version, 2 - ...)
      *
      * @param string  $source - PDF file to load
      * @param integer $revision
+<<<<<<< HEAD
      * @param bool    $load
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @throws Zend_Pdf_Exception
      * @return Zend_Pdf
      */
@@ -341,8 +369,11 @@ class Zend_Pdf
 
             $this->_loadNamedDestinations($this->_trailer->Root, $this->_parser->getPDFVersion());
             $this->_loadOutlines($this->_trailer->Root);
+<<<<<<< HEAD
             $this->_loadJavaScript($this->_trailer->Root);
             $this->_loadFormFields($this->_trailer->Root);
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
             if ($this->_trailer->Info !== null) {
                 $this->properties = $this->_trailer->Info->toPhp();
@@ -455,12 +486,20 @@ class Zend_Pdf
         $this->_loadPages($this->_trailer->Root->Pages);
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Load pages recursively
      *
      * @param Zend_Pdf_Element_Reference $pages
+<<<<<<< HEAD
      * @param array|null                 $attributes
      * @throws Zend_Pdf_Exception
+=======
+     * @param array|null $attributes
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     protected function _loadPages(Zend_Pdf_Element_Reference $pages, $attributes = array())
     {
@@ -549,7 +588,10 @@ class Zend_Pdf
      * Load outlines recursively
      *
      * @param Zend_Pdf_Element_Reference $root Document catalog entry
+<<<<<<< HEAD
      * @throws Zend_Pdf_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     protected function _loadOutlines(Zend_Pdf_Element_Reference $root)
     {
@@ -590,6 +632,7 @@ class Zend_Pdf
     }
 
     /**
+<<<<<<< HEAD
      * Load JavaScript
      *
      * Populates the _javaScript string, for later use of getJavaScript method.
@@ -714,6 +757,8 @@ class Zend_Pdf
     }
 
     /**
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * Orginize pages to tha pages tree structure.
      *
      * @todo atomatically attach page to the document, if it's not done yet.
@@ -1054,9 +1099,14 @@ class Zend_Pdf
     /**
      * Set specified named destination
      *
+<<<<<<< HEAD
      * @param string                                             $name
      * @param Zend_Pdf_Destination_Explicit|Zend_Pdf_Action_GoTo $destination
      * @throws Zend_Pdf_Exception
+=======
+     * @param string $name
+     * @param Zend_Pdf_Destination_Explicit|Zend_Pdf_Action_GoTo $target
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setNamedDestination($name, $destination = null)
     {
@@ -1114,8 +1164,13 @@ class Zend_Pdf
      *
      * Returns Zend_Pdf_Page page object or null if destination is not found within PDF document.
      *
+<<<<<<< HEAD
      * @param Zend_Pdf_Destination $destination Destination to resolve
      * @param bool $refreshPageCollectionHashes Refresh page collection hashes before processing
+=======
+     * @param Zend_Pdf_Destination $destination  Destination to resolve
+     * @param boolean $refreshPagesHash  Refresh page collection hashes before processing
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Pdf_Page|null
      * @throws Zend_Pdf_Exception
      */
@@ -1173,7 +1228,11 @@ class Zend_Pdf
      * @todo Give appropriate name and make method public
      *
      * @param Zend_Pdf_Action $action
+<<<<<<< HEAD
      * @param bool $refreshPageCollectionHashes Refresh page collection hashes before processing
+=======
+     * @param boolean $refreshPagesHash  Refresh page collection hashes before processing
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Pdf_Action|null
      */
     protected function _cleanUpAction(Zend_Pdf_Action $action, $refreshPageCollectionHashes = true)
@@ -1268,7 +1327,10 @@ class Zend_Pdf
      *
      * $fontName should be specified in UTF-8 encoding
      *
+<<<<<<< HEAD
      * @param string $fontName
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Pdf_Resource_Font_Extracted|null
      * @throws Zend_Pdf_Exception
      */
@@ -1526,6 +1588,7 @@ class Zend_Pdf
         }
     }
 
+<<<<<<< HEAD
     /**
      * Sets the document-level JavaScript
      *
@@ -1605,6 +1668,20 @@ class Zend_Pdf
         }
     }
 
+=======
+
+    /**
+     * Set the document-level JavaScript
+     *
+     * @param string $javascript
+     */
+    public function setJavaScript($javascript)
+    {
+        $this->_javaScript = $javascript;
+    }
+
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Convert date to PDF format (it's close to ASN.1 (Abstract Syntax Notation
      * One) defined in ISO/IEC 8824).

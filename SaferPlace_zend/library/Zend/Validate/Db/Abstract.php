@@ -14,9 +14,15 @@
  *
  * @category   Zend
  * @package    Zend_Validate
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Abstract.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -30,7 +36,11 @@ require_once 'Zend/Validate/Abstract.php';
  * @category   Zend
  * @package    Zend_Validate
  * @uses       Zend_Validate_Abstract
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 abstract class Zend_Validate_Db_Abstract extends Zend_Validate_Abstract
@@ -97,7 +107,10 @@ abstract class Zend_Validate_Db_Abstract extends Zend_Validate_Abstract
      * 'adapter' => An optional database adapter to use
      *
      * @param array|Zend_Config $options Options to use for this validator
+<<<<<<< HEAD
      * @throws Zend_Validate_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function __construct($options)
     {
@@ -153,7 +166,10 @@ abstract class Zend_Validate_Db_Abstract extends Zend_Validate_Abstract
     /**
      * Returns the set adapter
      *
+<<<<<<< HEAD
      * @throws Zend_Validate_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Db_Adapter
      */
     public function getAdapter()
@@ -175,7 +191,10 @@ abstract class Zend_Validate_Db_Abstract extends Zend_Validate_Abstract
      * Sets a new database adapter
      *
      * @param  Zend_Db_Adapter_Abstract $adapter
+<<<<<<< HEAD
      * @throws Zend_Validate_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Validate_Db_Abstract
      */
     public function setAdapter($adapter)
@@ -281,7 +300,10 @@ abstract class Zend_Validate_Db_Abstract extends Zend_Validate_Abstract
      * Sets the select object to be used by the validator
      *
      * @param Zend_Db_Select $select
+<<<<<<< HEAD
      * @throws Zend_Validate_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Validate_Db_Abstract
      */
     public function setSelect($select)

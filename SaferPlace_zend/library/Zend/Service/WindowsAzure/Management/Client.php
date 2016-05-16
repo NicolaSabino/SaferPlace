@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Service_WindowsAzure
  * @subpackage Management
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
@@ -75,14 +79,21 @@ require_once 'Zend/Service/WindowsAzure/Management/OperatingSystemInstance.php';
  */
 require_once 'Zend/Service/WindowsAzure/Management/OperatingSystemFamilyInstance.php';
 
+<<<<<<< HEAD
 /** @see Zend_Xml_Security */
 require_once 'Zend/Xml/Security.php';
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 /**
  * @category   Zend
  * @package    Zend_Service_WindowsAzure
  * @subpackage Management
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Service_WindowsAzure_Management_Client
@@ -321,7 +332,11 @@ class Zend_Service_WindowsAzure_Management_Client
 			throw new Zend_Service_WindowsAzure_Exception('Response should not be null.');
 		}
 		
+<<<<<<< HEAD
         $xml = Zend_Xml_Security::scan($response->getBody());
+=======
+        $xml = @simplexml_load_string($response->getBody());
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         
         if ($xml !== false) {
             // Fetch all namespaces 
@@ -1431,7 +1446,11 @@ class Zend_Service_WindowsAzure_Management_Client
 		$configuration = preg_replace('/(<\?xml[^?]+?)utf-16/i', '$1utf-8', $configuration);
 		//$configuration = '<?xml version="1.0">' . substr($configuration, strpos($configuration, '>') + 2);
 
+<<<<<<< HEAD
 		$xml = Zend_Xml_Security::scan($configuration); 
+=======
+		$xml = simplexml_load_string($configuration); 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		
 		// http://www.php.net/manual/en/simplexmlelement.xpath.php#97818
 		$namespaces = $xml->getDocNamespaces();

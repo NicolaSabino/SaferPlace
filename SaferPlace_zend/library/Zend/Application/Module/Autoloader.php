@@ -15,8 +15,13 @@
  * @category   Zend
  * @package    Zend_Application
  * @subpackage Module
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @version    $Id: Autoloader.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -30,7 +35,11 @@ require_once 'Zend/Loader/Autoloader/Resource.php';
  * @category   Zend
  * @package    Zend_Application
  * @subpackage Module
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Application_Module_Autoloader extends Zend_Loader_Autoloader_Resource
@@ -39,6 +48,10 @@ class Zend_Application_Module_Autoloader extends Zend_Loader_Autoloader_Resource
      * Constructor
      *
      * @param  array|Zend_Config $options
+<<<<<<< HEAD
+=======
+     * @return void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function __construct($options)
     {
@@ -54,6 +67,7 @@ class Zend_Application_Module_Autoloader extends Zend_Loader_Autoloader_Resource
     public function initDefaultResourceTypes()
     {
         $basePath = $this->getBasePath();
+<<<<<<< HEAD
         $this->addResourceTypes(
             array(
                 'dbtable'    => array(
@@ -90,6 +104,42 @@ class Zend_Application_Module_Autoloader extends Zend_Loader_Autoloader_Resource
                 ),
             )
         );
+=======
+        $this->addResourceTypes(array(
+            'dbtable' => array(
+                'namespace' => 'Model_DbTable',
+                'path'      => 'models/DbTable',
+            ),
+            'mappers' => array(
+                'namespace' => 'Model_Mapper',
+                'path'      => 'models/mappers',
+            ),
+            'form'    => array(
+                'namespace' => 'Form',
+                'path'      => 'forms',
+            ),
+            'model'   => array(
+                'namespace' => 'Model',
+                'path'      => 'models',
+            ),
+            'plugin'  => array(
+                'namespace' => 'Plugin',
+                'path'      => 'plugins',
+            ),
+            'service' => array(
+                'namespace' => 'Service',
+                'path'      => 'services',
+            ),
+            'viewhelper' => array(
+                'namespace' => 'View_Helper',
+                'path'      => 'views/helpers',
+            ),
+            'viewfilter' => array(
+                'namespace' => 'View_Filter',
+                'path'      => 'views/filters',
+            ),
+        ));
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         $this->setDefaultResourceType('model');
     }
 }

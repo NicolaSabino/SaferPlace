@@ -14,9 +14,15 @@
  *
  * @category  Zend
  * @package   Zend_Validate
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license   http://framework.zend.com/license/new-bsd     New BSD License
  * @version   $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license   http://framework.zend.com/license/new-bsd     New BSD License
+ * @version   $Id: Md5.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -29,7 +35,11 @@ require_once 'Zend/Validate/File/Hash.php';
  *
  * @category  Zend
  * @package   Zend_Validate
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license   http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Validate_File_Md5 extends Zend_Validate_File_Hash
@@ -63,8 +73,12 @@ class Zend_Validate_File_Md5 extends Zend_Validate_File_Hash
      * $hash is the hash we accept for the file $file
      *
      * @param  string|array $options
+<<<<<<< HEAD
      * @throws Zend_Validate_Exception
      * @return Zend_Validate_File_Md5
+=======
+     * @return void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function __construct($options)
     {
@@ -94,6 +108,10 @@ class Zend_Validate_File_Md5 extends Zend_Validate_File_Hash
      * Sets the md5 hash for one or multiple files
      *
      * @param  string|array $options
+<<<<<<< HEAD
+=======
+     * @param  string       $algorithm (Deprecated) Algorithm to use, fixed to md5
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Validate_File_Hash Provides a fluent interface
      */
     public function setHash($options)
@@ -123,6 +141,10 @@ class Zend_Validate_File_Md5 extends Zend_Validate_File_Hash
      * Adds the md5 hash for one or multiple files
      *
      * @param  string|array $options
+<<<<<<< HEAD
+=======
+     * @param  string       $algorithm (Deprecated) Algorithm to use, fixed to md5
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Validate_File_Hash Provides a fluent interface
      */
     public function addHash($options)

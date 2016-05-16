@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -8,13 +9,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 	<identity>
 		<version number="$Revision: 9967 $"/>
 		<generation date="$Date: 2014-03-14 12:20:13 -0500 (Fri, 14 Mar 2014) $"/>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.97 $"/>
+		<generation date="$Date: 2009/06/15 04:15:33 $"/>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		<language type="lv"/>
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
 			<localePattern>{0} ({1})</localePattern>
+<<<<<<< HEAD
 			<localeSeparator>{0}, {1}</localeSeparator>
 			<localeKeyTypePattern>{0}: {1}</localeKeyTypePattern>
+=======
+			<localeSeparator>, </localeSeparator>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</localeDisplayPattern>
 		<languages>
 			<language type="aa">afāru</language>
@@ -25,17 +36,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ady">adigu</language>
 			<language type="ae">avesta</language>
 			<language type="af">afrikandu</language>
+<<<<<<< HEAD
 			<language type="afh">afrihili</language>
 			<language type="agq">aghemu</language>
+=======
+			<language type="afa">afroaziātu valodas</language>
+			<language type="afh">afrihili</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ain">ainu</language>
 			<language type="ak">akanu</language>
 			<language type="akk">akadiešu</language>
 			<language type="ale">aleutu</language>
+<<<<<<< HEAD
+=======
+			<language type="alg">algonkinu valodas</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="alt">dienvidaltajiešu</language>
 			<language type="am">amharu</language>
 			<language type="an">aragoniešu</language>
 			<language type="ang">senangļu</language>
 			<language type="anp">angika</language>
+<<<<<<< HEAD
 			<language type="ar">arābu</language>
 			<language type="ar_001">mūsdienu standarta arābu</language>
 			<language type="arc">aramiešu</language>
@@ -45,10 +66,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="as">asamiešu</language>
 			<language type="asa">asu</language>
 			<language type="ast">astūriešu</language>
+=======
+			<language type="apa">apaču valodas</language>
+			<language type="ar">arābu</language>
+			<language type="arc">aramiešu</language>
+			<language type="arn">araukāņu</language>
+			<language type="arp">arapahu</language>
+			<language type="art">mākslīgās valodas</language>
+			<language type="arw">aravaku</language>
+			<language type="as">asamiešu</language>
+			<language type="ast">astūriešu</language>
+			<language type="ath">atapasku valodas</language>
+			<language type="aus">austrāliešu valodas</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="av">avāru</language>
 			<language type="awa">avadhu</language>
 			<language type="ay">aimaru</language>
 			<language type="az">azerbaidžāņu</language>
+<<<<<<< HEAD
 			<language type="az" alt="short">azerbaidžāņu</language>
 			<language type="ba">baškīru</language>
 			<language type="bal">beludžu</language>
@@ -62,10 +97,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="bez">bena</language>
 			<language type="bfd">bafutu</language>
 			<language type="bg">bulgāru</language>
+=======
+			<language type="ba">baškīru</language>
+			<language type="bad">bandu</language>
+			<language type="bai">bamileku valoda</language>
+			<language type="bal">beludžu</language>
+			<language type="ban">baliešu</language>
+			<language type="bas">basu</language>
+			<language type="bat">baltu valodas</language>
+			<language type="be">baltkrievu</language>
+			<language type="bej">bedžu</language>
+			<language type="bem">bembu</language>
+			<language type="ber">berberu</language>
+			<language type="bg">bulgāru</language>
+			<language type="bh">biharu</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="bho">bhodžpūru</language>
 			<language type="bi">bišlamā</language>
 			<language type="bik">bikolu</language>
 			<language type="bin">binu</language>
+<<<<<<< HEAD
 			<language type="bkm">komu</language>
 			<language type="bla">siksiku</language>
 			<language type="bm">bambaru</language>
@@ -89,6 +140,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ce">čečenu</language>
 			<language type="ceb">sebuāņu</language>
 			<language type="cgg">kiga</language>
+=======
+			<language type="bla">siksiku</language>
+			<language type="bm">bambaru</language>
+			<language type="bn">bengāļu</language>
+			<language type="bnt">bantu</language>
+			<language type="bo">tibetiešu</language>
+			<language type="br">bretoņu</language>
+			<language type="bra">bradžiešu</language>
+			<language type="bs">bosniešu</language>
+			<language type="btk">bataku</language>
+			<language type="bua">burjatu</language>
+			<language type="bug">bugu</language>
+			<language type="byn">bilinu</language>
+			<language type="ca">katalāņu</language>
+			<language type="cad">kadu</language>
+			<language type="cai">Centrālamerikas indiāņu valodas</language>
+			<language type="car">karību</language>
+			<language type="cau">kaukāziešu valodas</language>
+			<language type="ce">čečenu</language>
+			<language type="ceb">sebuāņu</language>
+			<language type="cel">ķeltu valoda</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ch">čamorru</language>
 			<language type="chb">čibču</language>
 			<language type="chg">džagatajs</language>
@@ -97,6 +170,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="chn">činuku žargons</language>
 			<language type="cho">čoktavu</language>
 			<language type="chp">čipevaianu</language>
+<<<<<<< HEAD
 			<language type="chr">čiroku</language>
 			<language type="chy">šejenu</language>
 			<language type="ckb">kurdu (Sorani)</language>
@@ -107,12 +181,33 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="cs">čehu</language>
 			<language type="csb">kašubu</language>
 			<language type="cu">baznīcslāvu</language>
+=======
+			<language type="chr">irokēzu</language>
+			<language type="chy">šejenu</language>
+			<language type="cmc">čamiešu valodas</language>
+			<language type="co">korsikāņu</language>
+			<language type="cop">koptu</language>
+			<language type="cpe">angliskās kreoliskās valodas un pidžinvalodas</language>
+			<language type="cpf">franciskās kreoliskās valodas un pidžinvalodas</language>
+			<language type="cpp">portugāliskās kreoliskās valodas un pidžinvalodas</language>
+			<language type="cr">krī</language>
+			<language type="crh">Krimas tatāru</language>
+			<language type="crp">kreoliskās valodas un pidžinvalodas</language>
+			<language type="cs">čehu</language>
+			<language type="csb">kašubu</language>
+			<language type="cu">baznīcslāvu</language>
+			<language type="cus">kušītu valodas</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="cv">čuvašu</language>
 			<language type="cy">velsiešu</language>
 			<language type="da">dāņu</language>
 			<language type="dak">dakotu</language>
 			<language type="dar">dargu</language>
+<<<<<<< HEAD
 			<language type="dav">taitu</language>
+=======
+			<language type="day">dajaku</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="de">vācu</language>
 			<language type="de_AT">Austrijas vācu</language>
 			<language type="de_CH">Šveices augšvācu</language>
@@ -120,17 +215,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="den">sleivu</language>
 			<language type="dgr">dogribu</language>
 			<language type="din">dinku</language>
+<<<<<<< HEAD
 			<language type="dje">zarmu</language>
 			<language type="doi">dogru</language>
+=======
+			<language type="doi">dogru</language>
+			<language type="dra">dravīdu valodas</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="dsb">lejassorbu</language>
 			<language type="dua">dualu</language>
 			<language type="dum">vidusholandiešu</language>
 			<language type="dv">maldīviešu</language>
+<<<<<<< HEAD
 			<language type="dyo">diola-fonjī</language>
 			<language type="dyu">diūlu</language>
 			<language type="dz">dzongke</language>
 			<language type="dzg">dazu</language>
 			<language type="ebu">kjembu</language>
+=======
+			<language type="dyu">diūlu</language>
+			<language type="dz">dzongke</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ee">evu</language>
 			<language type="efi">efiku</language>
 			<language type="egy">ēģiptiešu</language>
@@ -140,6 +245,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="en">angļu</language>
 			<language type="en_AU">Austrālijas angļu</language>
 			<language type="en_CA">Kanādas angļu</language>
+<<<<<<< HEAD
 			<language type="en_GB">Lielbritānijas angļu</language>
 			<language type="en_US">ASV angļu</language>
 			<language type="en_US" alt="short">angļu (ASV)</language>
@@ -149,6 +255,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="es_419">Latīņamerikas spāņu</language>
 			<language type="es_ES">Eiropas spāņu</language>
 			<language type="es_MX">Meksikas spāņu</language>
+=======
+			<language type="en_US">angļu (ASV)</language>
+			<language type="enm">vidusangļu</language>
+			<language type="eo">esperanto</language>
+			<language type="es">spāņu</language>
+			<language type="es_419">spāņu (Latīņamerika)</language>
+			<language type="es_ES">ibēriešu spāņu</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="et">igauņu</language>
 			<language type="eu">basku</language>
 			<language type="ewo">evondu</language>
@@ -158,6 +272,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ff">fulu</language>
 			<language type="fi">somu</language>
 			<language type="fil">filipīniešu</language>
+<<<<<<< HEAD
+=======
+			<language type="fiu">somugru valodas</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="fj">fidžiešu</language>
 			<language type="fo">fēru</language>
 			<language type="fon">fonu</language>
@@ -175,6 +293,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="gay">gajo</language>
 			<language type="gba">gbaju</language>
 			<language type="gd">gēlu</language>
+<<<<<<< HEAD
+=======
+			<language type="gem">ģermāņu valodas</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="gez">gēzu</language>
 			<language type="gil">kiribatiešu</language>
 			<language type="gl">galisiešu</language>
@@ -188,7 +310,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="grc">sengrieķu</language>
 			<language type="gsw">Šveices vācu</language>
 			<language type="gu">gudžaratu</language>
+<<<<<<< HEAD
 			<language type="guz">gusii</language>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="gv">meniešu</language>
 			<language type="gwi">kučinu</language>
 			<language type="ha">hausu</language>
@@ -197,6 +322,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="he">ivrits</language>
 			<language type="hi">hindi</language>
 			<language type="hil">hiligainonu</language>
+<<<<<<< HEAD
+=======
+			<language type="him">himačali</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="hit">hetu</language>
 			<language type="hmn">hmongu</language>
 			<language type="ho">hirimotu</language>
@@ -209,11 +338,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="hz">hereru</language>
 			<language type="ia">interlingva</language>
 			<language type="iba">ibanu</language>
+<<<<<<< HEAD
 			<language type="ibb">ibibio</language>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="id">indonēziešu</language>
 			<language type="ie">interlingve</language>
 			<language type="ig">igbo</language>
 			<language type="ii">Sičuaņas ji</language>
+<<<<<<< HEAD
 			<language type="ik">inupiaku</language>
 			<language type="ilo">iloku</language>
 			<language type="inh">ingušu</language>
@@ -225,6 +358,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="jbo">ložbans</language>
 			<language type="jgo">jgo</language>
 			<language type="jmc">mačamu</language>
+=======
+			<language type="ijo">idžbu</language>
+			<language type="ik">inupiaku</language>
+			<language type="ilo">iloku</language>
+			<language type="inc">indoāriešu valodas</language>
+			<language type="ine">indoeiropiešu valodas</language>
+			<language type="inh">ingušu</language>
+			<language type="io">ido</language>
+			<language type="ira">irāņu valodas</language>
+			<language type="iro">irokēzu valodas</language>
+			<language type="is">īslandiešu</language>
+			<language type="it">itāliešu</language>
+			<language type="iu">inuītu</language>
+			<language type="ja">japāņu</language>
+			<language type="jbo">ložbans</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="jpr">jūdpersiešu</language>
 			<language type="jrb">jūdarābu</language>
 			<language type="jv">javiešu</language>
@@ -232,6 +381,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="kaa">karakalpaku</language>
 			<language type="kab">kabilu</language>
 			<language type="kac">kačinu</language>
+<<<<<<< HEAD
 			<language type="kaj">kadži</language>
 			<language type="kam">kambu</language>
 			<language type="kaw">kāvi</language>
@@ -251,6 +401,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="kkj">kako</language>
 			<language type="kl">grenlandiešu</language>
 			<language type="kln">kalendžīnu</language>
+=======
+			<language type="kam">kambu</language>
+			<language type="kar">karenu</language>
+			<language type="kaw">kāvi</language>
+			<language type="kbd">kabardiešu</language>
+			<language type="kfo">koru</language>
+			<language type="kg">kongu</language>
+			<language type="kha">khasu</language>
+			<language type="khi">hosjanu valodas</language>
+			<language type="kho">hotaniešu</language>
+			<language type="ki">kikuju</language>
+			<language type="kj">kvaņamu</language>
+			<language type="kk">kazahu</language>
+			<language type="kl">grenlandiešu</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="km">khmeru</language>
 			<language type="kmb">kimbundu</language>
 			<language type="kn">kannadu</language>
@@ -261,11 +426,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="kr">kanuru</language>
 			<language type="krc">karačaju un balkāru</language>
 			<language type="krl">karēļu</language>
+<<<<<<< HEAD
 			<language type="kru">kuruhu</language>
 			<language type="ks">kašmiriešu</language>
 			<language type="ksb">šambalu</language>
 			<language type="ksf">bafiju</language>
 			<language type="ksh">Ķelnes vācu</language>
+=======
+			<language type="kro">krū</language>
+			<language type="kru">kuruhu</language>
+			<language type="ks">kašmiriešu</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ku">kurdu</language>
 			<language type="kum">kumiku</language>
 			<language type="kut">kutenaju</language>
@@ -274,7 +445,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ky">kirgīzu</language>
 			<language type="la">latīņu</language>
 			<language type="lad">ladino</language>
+<<<<<<< HEAD
 			<language type="lag">langi</language>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="lah">landu</language>
 			<language type="lam">lambu</language>
 			<language type="lb">luksemburgiešu</language>
@@ -292,14 +466,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="lun">lundu</language>
 			<language type="luo">luo</language>
 			<language type="lus">lušeju</language>
+<<<<<<< HEAD
 			<language type="luy">luhju</language>
 			<language type="lv">latviešu</language>
 			<language type="mad">maduriešu</language>
 			<language type="maf">mafu</language>
+=======
+			<language type="lv">latviešu</language>
+			<language type="mad">maduriešu</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mag">magahiešu</language>
 			<language type="mai">maithili</language>
 			<language type="mak">makasaru</language>
 			<language type="man">mandingu</language>
+<<<<<<< HEAD
 			<language type="mas">masaju</language>
 			<language type="mde">mabu</language>
 			<language type="mdf">mokšu</language>
@@ -311,31 +491,65 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="mga">vidusīru</language>
 			<language type="mgh">makua-meetto</language>
 			<language type="mgo">mgo</language>
+=======
+			<language type="map">austronēziešu valoda</language>
+			<language type="mas">masaju</language>
+			<language type="mdf">mokšu</language>
+			<language type="mdr">mandaru</language>
+			<language type="men">mendu</language>
+			<language type="mg">malagasu</language>
+			<language type="mga">vidusīru</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mh">māršaliešu</language>
 			<language type="mi">maoru</language>
 			<language type="mic">mikmaku</language>
 			<language type="min">minangkabavu</language>
+<<<<<<< HEAD
 			<language type="mk">maķedoniešu</language>
+=======
+			<language type="mis">dažādas valodas</language>
+			<language type="mk">maķedoniešu</language>
+			<language type="mkh">monkhmeru valodas</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ml">malajalu</language>
 			<language type="mn">mongoļu</language>
 			<language type="mnc">mandžūru</language>
 			<language type="mni">manipūru</language>
+<<<<<<< HEAD
+=======
+			<language type="mno">manobu valodas</language>
+			<language type="mo">moldāvu</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="moh">mohauku</language>
 			<language type="mos">mosu</language>
 			<language type="mr">maratu</language>
 			<language type="ms">malajiešu</language>
 			<language type="mt">maltiešu</language>
+<<<<<<< HEAD
 			<language type="mua">mundangu</language>
 			<language type="mul">vairākas valodas</language>
+=======
+			<language type="mul">vairākas valodas</language>
+			<language type="mun">mundu valoda</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mus">krīku</language>
 			<language type="mwl">mirandiešu</language>
 			<language type="mwr">marvaru</language>
 			<language type="my">birmiešu</language>
+<<<<<<< HEAD
 			<language type="mye">mjenu</language>
 			<language type="myv">erzju</language>
 			<language type="na">nauruiešu</language>
 			<language type="nap">neapoliešu</language>
 			<language type="naq">nama</language>
+=======
+			<language type="myn">maiju valodas</language>
+			<language type="myv">erzju</language>
+			<language type="na">nauruiešu</language>
+			<language type="nah">navatlu</language>
+			<language type="nai">Ziemeļamerikas indiāņu valodas</language>
+			<language type="nap">neapoliešu</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="nb">norvēģu bukmols</language>
 			<language type="nd">ziemeļndebelu</language>
 			<language type="nds">lejasvācu</language>
@@ -343,6 +557,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="new">nevaru</language>
 			<language type="ng">ndongu</language>
 			<language type="nia">njasu</language>
+<<<<<<< HEAD
 			<language type="niu">niuāņu</language>
 			<language type="nl">holandiešu</language>
 			<language type="nl_BE">flāmu</language>
@@ -356,6 +571,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="nr">dienvidndebelu</language>
 			<language type="nso">ziemeļsotu</language>
 			<language type="nus">nueru</language>
+=======
+			<language type="nic">nigēriešu-kordofāņu valodas</language>
+			<language type="niu">niuāņu</language>
+			<language type="nl">holandiešu</language>
+			<language type="nl_BE">flāmu</language>
+			<language type="nn">jaunnorvēģu</language>
+			<language type="no">norvēģu</language>
+			<language type="nog">nogaju</language>
+			<language type="non">sennorvēģu</language>
+			<language type="nqo">n-ko</language>
+			<language type="nr">dienvidndebelu</language>
+			<language type="nso">ziemeļsotu</language>
+			<language type="nub">nūbiešu valodas</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="nv">navahu</language>
 			<language type="nwc">klasiskā nevaru</language>
 			<language type="ny">čičeva</language>
@@ -366,26 +595,48 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="oc">oksitāņu</language>
 			<language type="oj">odžibvu</language>
 			<language type="om">oromu</language>
+<<<<<<< HEAD
 			<language type="or">oriju</language>
 			<language type="os">osetīnu</language>
 			<language type="osa">važāžu</language>
 			<language type="ota">turku osmaņu</language>
 			<language type="pa">pandžabu</language>
+=======
+			<language type="or">orisiešu</language>
+			<language type="os">osetīnu</language>
+			<language type="osa">važāžu</language>
+			<language type="ota">turku osmaņu</language>
+			<language type="oto">otomu valoda</language>
+			<language type="pa">pandžabu</language>
+			<language type="paa">papuasu valoda</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="pag">pangasinanu</language>
 			<language type="pal">pehlevi</language>
 			<language type="pam">pampanganu</language>
 			<language type="pap">papjamento</language>
 			<language type="pau">palaviešu</language>
 			<language type="peo">senpersu</language>
+<<<<<<< HEAD
+=======
+			<language type="phi">filipīniešu valoda</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="phn">feniķiešu</language>
 			<language type="pi">pāli</language>
 			<language type="pl">poļu</language>
 			<language type="pon">ponapiešu</language>
+<<<<<<< HEAD
+=======
+			<language type="pra">prākrita valoda</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="pro">senprovansiešu</language>
 			<language type="ps">puštu</language>
 			<language type="pt">portugāļu</language>
 			<language type="pt_BR">Brazīlijas portugāļu</language>
+<<<<<<< HEAD
 			<language type="pt_PT">Eiropas portugāļu</language>
+=======
+			<language type="pt_PT">ibēriešu portugāļu</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="qu">kečvu</language>
 			<language type="raj">radžastāņu</language>
 			<language type="rap">rapanuju</language>
@@ -393,13 +644,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="rm">retoromāņu</language>
 			<language type="rn">rundu</language>
 			<language type="ro">rumāņu</language>
+<<<<<<< HEAD
 			<language type="ro_MD">moldāvu</language>
 			<language type="rof">rombo</language>
+=======
+			<language type="roa">romāņu valoda</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="rom">čigānu</language>
 			<language type="root">sakne</language>
 			<language type="ru">krievu</language>
 			<language type="rup">aromūnu</language>
 			<language type="rw">kiņaruanda</language>
+<<<<<<< HEAD
 			<language type="rwk">ruanda</language>
 			<language type="sa">sanskrits</language>
 			<language type="sad">sandavu</language>
@@ -410,11 +666,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sat">santalu</language>
 			<language type="sba">ngambeju</language>
 			<language type="sbp">sangu</language>
+=======
+			<language type="sa">sanskrits</language>
+			<language type="sad">sandavu</language>
+			<language type="sah">jakutu</language>
+			<language type="sai">Dienvidamerikas indiāņu</language>
+			<language type="sal">sališu valodas</language>
+			<language type="sam">Samārijas aramiešu</language>
+			<language type="sas">sasaku</language>
+			<language type="sat">santalu</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="sc">sardīniešu</language>
 			<language type="scn">sicīliešu</language>
 			<language type="sco">skotu</language>
 			<language type="sd">sindhu</language>
 			<language type="se">ziemeļsāmu</language>
+<<<<<<< HEAD
 			<language type="see">seneku</language>
 			<language type="seh">senu</language>
 			<language type="sel">selkupu</language>
@@ -433,24 +700,55 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sma">dienvidsāmu</language>
 			<language type="smj">luleo sāmu</language>
 			<language type="smn">inari sāmu</language>
+=======
+			<language type="sel">selkupu</language>
+			<language type="sem">semītu valodas</language>
+			<language type="sg">sangu</language>
+			<language type="sga">senīru</language>
+			<language type="sgn">zīmju valodas</language>
+			<language type="sh">serbu-horvātu</language>
+			<language type="shn">šanu</language>
+			<language type="si">singāļu</language>
+			<language type="sid">sidamu</language>
+			<language type="sio">siū valodas</language>
+			<language type="sit">sinotibetiešu valodas</language>
+			<language type="sk">slovāku</language>
+			<language type="sl">slovēņu</language>
+			<language type="sla">slāvu</language>
+			<language type="sm">samoāņu</language>
+			<language type="sma">dienvidsāmu</language>
+			<language type="smi">sāmu valoda</language>
+			<language type="smj">Luleo sāmu</language>
+			<language type="smn">Inari sāmu</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="sms">skoltsāmu</language>
 			<language type="sn">šonu</language>
 			<language type="snk">soninku</language>
 			<language type="so">somāļu</language>
 			<language type="sog">sogdiešu</language>
+<<<<<<< HEAD
+=======
+			<language type="son">songaju</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="sq">albāņu</language>
 			<language type="sr">serbu</language>
 			<language type="srn">sranantogo</language>
 			<language type="srr">serēru</language>
 			<language type="ss">svatu</language>
+<<<<<<< HEAD
 			<language type="ssy">saho</language>
 			<language type="st">dienvidsotu</language>
+=======
+			<language type="ssa">Nīlas-Sahāras valodas</language>
+			<language type="st">sesoto</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="su">sundaniešu</language>
 			<language type="suk">sukumu</language>
 			<language type="sus">susu</language>
 			<language type="sux">šumeru</language>
 			<language type="sv">zviedru</language>
 			<language type="sw">svahili</language>
+<<<<<<< HEAD
 			<language type="swb">komoru</language>
 			<language type="swc">Kongo svahili</language>
 			<language type="syc">klasiskā sīriešu</language>
@@ -459,6 +757,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="te">telugu</language>
 			<language type="tem">temnu</language>
 			<language type="teo">teso</language>
+=======
+			<language type="syc">klasiskā sīriešu</language>
+			<language type="syr">sīriešu</language>
+			<language type="ta">tamilu</language>
+			<language type="tai">taju valodas</language>
+			<language type="te">telugu</language>
+			<language type="tem">temnu</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ter">tereno</language>
 			<language type="tet">tetumu</language>
 			<language type="tg">tadžiku</language>
@@ -473,27 +779,47 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="tli">tlinkitu</language>
 			<language type="tmh">tuaregu</language>
 			<language type="tn">cvanu</language>
+<<<<<<< HEAD
 			<language type="to">tongiešu</language>
 			<language type="tog">njasas tongu</language>
 			<language type="tpi">tokpisins</language>
 			<language type="tr">turku</language>
 			<language type="trv">taroko</language>
+=======
+			<language type="to">tongu</language>
+			<language type="tog">Njasas tongu valoda</language>
+			<language type="tpi">tokpisins</language>
+			<language type="tr">turku</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ts">congu</language>
 			<language type="tsi">cimšiāņu</language>
 			<language type="tt">tatāru</language>
 			<language type="tum">tumbuku</language>
+<<<<<<< HEAD
 			<language type="tvl">tuvaliešu</language>
 			<language type="tw">tvī</language>
 			<language type="twq">tasavaku</language>
 			<language type="ty">taitiešu</language>
 			<language type="tyv">tuviešu</language>
 			<language type="tzm">Centrālmarokas tamazīts</language>
+=======
+			<language type="tup">tupu valodas</language>
+			<language type="tut">altajiešu valodas</language>
+			<language type="tvl">tuvaliešu</language>
+			<language type="tw">tvī</language>
+			<language type="ty">taitiešu</language>
+			<language type="tyv">tuviešu</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="udm">udmurtu</language>
 			<language type="ug">uiguru</language>
 			<language type="uga">ugaritiešu</language>
 			<language type="uk">ukraiņu</language>
 			<language type="umb">umbundu</language>
+<<<<<<< HEAD
 			<language type="und">nezināma valoda</language>
+=======
+			<language type="und">nezināma vai nederīga valoda</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ur">urdu</language>
 			<language type="uz">uzbeku</language>
 			<language type="vai">vaju</language>
@@ -501,6 +827,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="vi">vjetnamiešu</language>
 			<language type="vo">volapiks</language>
 			<language type="vot">votu</language>
+<<<<<<< HEAD
 			<language type="vun">vundžo</language>
 			<language type="wa">valoņu</language>
 			<language type="wae">Vallisas vācu</language>
@@ -534,6 +861,35 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<scripts>
 			<script type="Arab">arābu</script>
 			<script type="Arab" alt="variant">persiešu-arābu</script>
+=======
+			<language type="wa">valoņu</language>
+			<language type="wak">vakašu valodas</language>
+			<language type="wal">valamu</language>
+			<language type="war">varaju</language>
+			<language type="was">vašo</language>
+			<language type="wen">sorbu</language>
+			<language type="wo">volofu</language>
+			<language type="xal">kalmiku</language>
+			<language type="xh">khosu</language>
+			<language type="yao">jao</language>
+			<language type="yap">japiešu</language>
+			<language type="yi">jidišs</language>
+			<language type="yo">jorubu</language>
+			<language type="ypk">jopiku valodas</language>
+			<language type="za">džuanu</language>
+			<language type="zap">sapoteku</language>
+			<language type="zen">zenagu</language>
+			<language type="zh">ķīniešu</language>
+			<language type="zh_Hans">ķīniešu vienkāršotā</language>
+			<language type="zh_Hant">ķīniešu tradicionālā</language>
+			<language type="znd">zandē</language>
+			<language type="zu">zulu</language>
+			<language type="zun">zunju</language>
+			<language type="zxx">Bez lingvistiska satura</language>
+		</languages>
+		<scripts>
+			<script type="Arab">arābu</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Armi">aramiešu</script>
 			<script type="Armn">armēņu</script>
 			<script type="Bali">baliešu</script>
@@ -554,6 +910,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Goth">gotu</script>
 			<script type="Grek">grieķu</script>
 			<script type="Gujr">gudžaratu</script>
+<<<<<<< HEAD
 			<script type="Guru">pandžabu</script>
 			<script type="Hang">hangila</script>
 			<script type="Hani">ķīniešu</script>
@@ -561,6 +918,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Hans" alt="stand-alone">hanu vienkāršotā</script>
 			<script type="Hant">ķīniešu tradicionālā</script>
 			<script type="Hant" alt="stand-alone">hanu tradicionālā</script>
+=======
+			<script type="Hani">ķīniešu</script>
+			<script type="Hans">ķīniešu vienkāršotā</script>
+			<script type="Hant">ķīniešu tradicionālā</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Hebr">ivrits</script>
 			<script type="Hira">hiragana</script>
 			<script type="Hrkt">katakana vai hiragana</script>
@@ -572,7 +934,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Khmr">khmeru</script>
 			<script type="Knda">kannaru</script>
 			<script type="Kore">korejiešu</script>
+<<<<<<< HEAD
 			<script type="Laoo">laosiešu</script>
+=======
+			<script type="Laoo">lao</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Latn">latīņu</script>
 			<script type="Lina">lineārā A</script>
 			<script type="Linb">lineārā B</script>
@@ -586,10 +952,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Orya">oriju</script>
 			<script type="Osma">osmaņu turku</script>
 			<script type="Phnx">feniķiešu</script>
+<<<<<<< HEAD
 			<script type="Roro">rongorongo</script>
 			<script type="Runr">rūnu raksts</script>
 			<script type="Samr">samariešu</script>
 			<script type="Sinh">singāļu</script>
+=======
+			<script type="Qaai">mantotā</script>
+			<script type="Roro">rongorongo</script>
+			<script type="Runr">rūnu raksts</script>
+			<script type="Samr">samariešu</script>
+			<script type="Sinh">sinhalas</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Sund">zundu</script>
 			<script type="Syrc">sīriešu</script>
 			<script type="Syrj">rietumsīriešu</script>
@@ -600,6 +974,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Thaa">taana</script>
 			<script type="Thai">taju</script>
 			<script type="Tibt">tibetiešu</script>
+<<<<<<< HEAD
 			<script type="Xpeo">senperiešu</script>
 			<script type="Xsux">šumeru-akadiešu ķīļraksts</script>
 			<script type="Yiii">ji</script>
@@ -609,6 +984,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Zxxx">bez rakstības</script>
 			<script type="Zyyy">vispārējā</script>
 			<script type="Zzzz">nezināma rakstība</script>
+=======
+			<script type="Xpeo">vecpersiešu</script>
+			<script type="Xsux">šumeru-akadiešu ķīļraksts</script>
+			<script type="Yiii">ji</script>
+			<script type="Zmth">matemātiskais pieraksts</script>
+			<script type="Zxxx">bez rakstības</script>
+			<script type="Zzzz">nezināma vai nederīga rakstība</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</scripts>
 		<territories>
 			<territory type="001">pasaule</territory>
@@ -621,18 +1004,32 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="014">Austrumāfrika</territory>
 			<territory type="015">Ziemeļāfrika</territory>
 			<territory type="017">Vidusāfrika</territory>
+<<<<<<< HEAD
 			<territory type="018">Dienvidāfrika</territory>
 			<territory type="019">Amerika</territory>
 			<territory type="021">Amerikas ziemeļu daļa</territory>
+=======
+			<territory type="018">Āfrikas dienvidi</territory>
+			<territory type="019">Amerika</territory>
+			<territory type="021">Amerikas ziemeļi</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="029">Karību jūras reģions</territory>
 			<territory type="030">Austrumāzija</territory>
 			<territory type="034">Dienvidāzija</territory>
 			<territory type="035">Centrālaustrumāzija</territory>
 			<territory type="039">Dienvideiropa</territory>
+<<<<<<< HEAD
 			<territory type="053">Austrālāzija</territory>
 			<territory type="054">Melanēzija</territory>
 			<territory type="057">Mikronēzijas reģions</territory>
 			<territory type="061">Polinēzija</territory>
+=======
+			<territory type="053">Austrālija un Jaunzēlande</territory>
+			<territory type="054">Melanēzija</territory>
+			<territory type="057">Mikronēzijas reģions</territory>
+			<territory type="061">Polinēzija</territory>
+			<territory type="062">Centrāldienvidāzija</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="142">Āzija</territory>
 			<territory type="143">Centrālāzija</territory>
 			<territory type="145">Rietumāzija</territory>
@@ -640,8 +1037,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="151">Austrumeiropa</territory>
 			<territory type="154">Ziemeļeiropa</territory>
 			<territory type="155">Rietumeiropa</territory>
+<<<<<<< HEAD
 			<territory type="419">Latīņamerika</territory>
 			<territory type="AC">Debesbraukšanas sala</territory>
+=======
+			<territory type="172">Neatkarīgo Valstu Savienība</territory>
+			<territory type="419">Latīņamerika un Karību jūras reģions</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="AD">Andora</territory>
 			<territory type="AE">Apvienotie Arābu Emirāti</territory>
 			<territory type="AF">Afganistāna</territory>
@@ -672,9 +1074,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="BM">Bermudu salas</territory>
 			<territory type="BN">Bruneja</territory>
 			<territory type="BO">Bolīvija</territory>
+<<<<<<< HEAD
 			<territory type="BQ">Nīderlandes Karību salas</territory>
 			<territory type="BR">Brazīlija</territory>
 			<territory type="BS">Bahamu salas</territory>
+=======
+			<territory type="BR">Brazīlija</territory>
+			<territory type="BS">Bahamas</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="BT">Butāna</territory>
 			<territory type="BV">Buvē sala</territory>
 			<territory type="BW">Botsvāna</territory>
@@ -682,6 +1089,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="BZ">Beliza</territory>
 			<territory type="CA">Kanāda</territory>
 			<territory type="CC">Kokosu jeb Kīlinga salas</territory>
+<<<<<<< HEAD
 			<territory type="CD">Kongo-Kinšasa</territory>
 			<territory type="CD" alt="variant">Kongo Demokrātiskā Republika</territory>
 			<territory type="CF">Centrālāfrikas Republika</territory>
@@ -690,20 +1098,35 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CH">Šveice</territory>
 			<territory type="CI">Kotdivuāra</territory>
 			<territory type="CI" alt="variant">Ziloņkaula krasts</territory>
+=======
+			<territory type="CD">Kongo Demokrātiskā Republika</territory>
+			<territory type="CF">Centrālāfrikas Republika</territory>
+			<territory type="CG">Kongo</territory>
+			<territory type="CH">Šveice</territory>
+			<territory type="CI">Kotdivuāra</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="CK">Kuka salas</territory>
 			<territory type="CL">Čīle</territory>
 			<territory type="CM">Kamerūna</territory>
 			<territory type="CN">Ķīna</territory>
 			<territory type="CO">Kolumbija</territory>
+<<<<<<< HEAD
 			<territory type="CP">Klipertona sala</territory>
 			<territory type="CR">Kostarika</territory>
 			<territory type="CU">Kuba</territory>
 			<territory type="CV">Kaboverde</territory>
 			<territory type="CW">Kirasao</territory>
+=======
+			<territory type="CR">Kostarika</territory>
+			<territory type="CS">Serbija un Melnkalne</territory>
+			<territory type="CU">Kuba</territory>
+			<territory type="CV">Kaboverde</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="CX">Ziemsvētku sala</territory>
 			<territory type="CY">Kipra</territory>
 			<territory type="CZ">Čehija</territory>
 			<territory type="DE">Vācija</territory>
+<<<<<<< HEAD
 			<territory type="DG">Djego Garsijas atols</territory>
 			<territory type="DJ">Džibutija</territory>
 			<territory type="DK">Dānija</territory>
@@ -711,6 +1134,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="DO">Dominikāna</territory>
 			<territory type="DZ">Alžīrija</territory>
 			<territory type="EA">Seūta un Melilja</territory>
+=======
+			<territory type="DJ">Džibutija</territory>
+			<territory type="DK">Dānija</territory>
+			<territory type="DM">Dominika</territory>
+			<territory type="DO">Dominikānas Republika</territory>
+			<territory type="DZ">Alžīrija</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="EC">Ekvadora</territory>
 			<territory type="EE">Igaunija</territory>
 			<territory type="EG">Ēģipte</territory>
@@ -718,6 +1148,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="ER">Eritreja</territory>
 			<territory type="ES">Spānija</territory>
 			<territory type="ET">Etiopija</territory>
+<<<<<<< HEAD
 			<territory type="EU">Eiropas Savienība</territory>
 			<territory type="FI">Somija</territory>
 			<territory type="FJ">Fidži</territory>
@@ -729,6 +1160,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GA">Gabona</territory>
 			<territory type="GB">Lielbritānija</territory>
 			<territory type="GB" alt="short">Lielbritānija</territory>
+=======
+			<territory type="FI">Somija</territory>
+			<territory type="FJ">Fidži</territory>
+			<territory type="FK">Folklenda salas</territory>
+			<territory type="FM">Mikronēzijas Federatīvās Valstis</territory>
+			<territory type="FO">Farēru salas</territory>
+			<territory type="FR">Francija</territory>
+			<territory type="GA">Gabona</territory>
+			<territory type="GB">Lielbritānija</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="GD">Grenāda</territory>
 			<territory type="GE">Gruzija</territory>
 			<territory type="GF">Franču Gviāna</territory>
@@ -747,19 +1188,29 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GW">Gvineja-Bisava</territory>
 			<territory type="GY">Gajāna</territory>
 			<territory type="HK">Ķīnas īpašās pārvaldes apgabals Honkonga</territory>
+<<<<<<< HEAD
 			<territory type="HK" alt="short">Honkonga</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="HM">Hērda un Makdonalda salas</territory>
 			<territory type="HN">Hondurasa</territory>
 			<territory type="HR">Horvātija</territory>
 			<territory type="HT">Haiti</territory>
 			<territory type="HU">Ungārija</territory>
+<<<<<<< HEAD
 			<territory type="IC">Kanāriju salas</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="ID">Indonēzija</territory>
 			<territory type="IE">Īrija</territory>
 			<territory type="IL">Izraēla</territory>
 			<territory type="IM">Mena</territory>
 			<territory type="IN">Indija</territory>
+<<<<<<< HEAD
 			<territory type="IO">Indijas okeāna Britu teritorija</territory>
+=======
+			<territory type="IO">Britu Indijas okeāna teritorija</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="IQ">Irāka</territory>
 			<territory type="IR">Irāna</territory>
 			<territory type="IS">Īslande</territory>
@@ -769,7 +1220,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="JO">Jordānija</territory>
 			<territory type="JP">Japāna</territory>
 			<territory type="KE">Kenija</territory>
+<<<<<<< HEAD
 			<territory type="KG">Kirgizstāna</territory>
+=======
+			<territory type="KG">Kirgīzija</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="KH">Kambodža</territory>
 			<territory type="KI">Kiribati</territory>
 			<territory type="KM">Komoru salas</territory>
@@ -798,12 +1253,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MG">Madagaskara</territory>
 			<territory type="MH">Māršala salas</territory>
 			<territory type="MK">Maķedonija</territory>
+<<<<<<< HEAD
 			<territory type="MK" alt="variant">Maķedonija (BDRM)</territory>
 			<territory type="ML">Mali</territory>
 			<territory type="MM">Mjanma (Birma)</territory>
 			<territory type="MN">Mongolija</territory>
 			<territory type="MO">Ķīnas īpašās pārvaldes apgabals Makao</territory>
 			<territory type="MO" alt="short">Makao</territory>
+=======
+			<territory type="ML">Mali</territory>
+			<territory type="MM">Mjanma</territory>
+			<territory type="MN">Mongolija</territory>
+			<territory type="MO">Ķīnas īpašās pārvaldes apgabals Makao</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="MP">Ziemeļu Marianas salas</territory>
 			<territory type="MQ">Martinika</territory>
 			<territory type="MR">Mauritānija</territory>
@@ -838,13 +1300,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="PM">Senpjēra un Mikelona</territory>
 			<territory type="PN">Pitkērna</territory>
 			<territory type="PR">Puertoriko</territory>
+<<<<<<< HEAD
 			<territory type="PS">Palestīna</territory>
 			<territory type="PS" alt="short">Palestīna</territory>
+=======
+			<territory type="PS">Palestīniešu pašpārvaldes teritorija</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="PT">Portugāle</territory>
 			<territory type="PW">Palau</territory>
 			<territory type="PY">Paragvaja</territory>
 			<territory type="QA">Katara</territory>
+<<<<<<< HEAD
 			<territory type="QO">Okeānijas attālās salas</territory>
+=======
+			<territory type="QO">ASV Mazās Aizjūras salas</territory>
+			<territory type="QU">Eiropas Savienība</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="RE">Reinjona</territory>
 			<territory type="RO">Rumānija</territory>
 			<territory type="RS">Serbija</territory>
@@ -856,7 +1327,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="SD">Sudāna</territory>
 			<territory type="SE">Zviedrija</territory>
 			<territory type="SG">Singapūra</territory>
+<<<<<<< HEAD
 			<territory type="SH">Sv.Helēnas sala</territory>
+=======
+			<territory type="SH">Sv. Helēnas sala</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="SI">Slovēnija</territory>
 			<territory type="SJ">Svalbāra un Jana Majena sala</territory>
 			<territory type="SK">Slovākija</territory>
@@ -865,6 +1340,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="SN">Senegāla</territory>
 			<territory type="SO">Somālija</territory>
 			<territory type="SR">Surinama</territory>
+<<<<<<< HEAD
 			<territory type="SS">Dienvidsudāna</territory>
 			<territory type="ST">Santome un Prinsipi</territory>
 			<territory type="SV">Salvadora</territory>
@@ -875,6 +1351,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="TC">Tērksas un Kaikosas salas</territory>
 			<territory type="TD">Čada</territory>
 			<territory type="TF">Francijas Dienvidjūru Zemes</territory>
+=======
+			<territory type="ST">Santome un Prinsipi</territory>
+			<territory type="SV">Salvadora</territory>
+			<territory type="SY">Sīrija</territory>
+			<territory type="SZ">Svazilenda</territory>
+			<territory type="TC">Tērksas un Kaikosas salas</territory>
+			<territory type="TD">Čada</territory>
+			<territory type="TF">Franču dienvidu teritorijas</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="TG">Togo</territory>
 			<territory type="TH">Taizeme</territory>
 			<territory type="TJ">Tadžikistāna</territory>
@@ -890,20 +1375,31 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="TZ">Tanzānija</territory>
 			<territory type="UA">Ukraina</territory>
 			<territory type="UG">Uganda</territory>
+<<<<<<< HEAD
 			<territory type="UM">ASV Aizjūras salas</territory>
 			<territory type="US">Amerikas Savienotās Valstis</territory>
 			<territory type="US" alt="short">ASV</territory>
+=======
+			<territory type="UM">ASV mazās aizjūras teritorijas</territory>
+			<territory type="US">Amerikas Savienotās Valstis</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="UY">Urugvaja</territory>
 			<territory type="UZ">Uzbekistāna</territory>
 			<territory type="VA">Vatikāns</territory>
 			<territory type="VC">Sentvinsenta un Grenadīnas</territory>
 			<territory type="VE">Venecuēla</territory>
+<<<<<<< HEAD
 			<territory type="VG">Britu Virdžīnas</territory>
 			<territory type="VI">ASV Virdžīnas</territory>
+=======
+			<territory type="VG">Britu Virdžīnu salas</territory>
+			<territory type="VI">Amerikāņu Virdžīnu salas</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="VN">Vjetnama</territory>
 			<territory type="VU">Vanuatu</territory>
 			<territory type="WF">Volisa un Futuna</territory>
 			<territory type="WS">Samoa</territory>
+<<<<<<< HEAD
 			<territory type="XK">Kosova</territory>
 			<territory type="YE">Jemena</territory>
 			<territory type="YT">Majota</territory>
@@ -1059,6 +1555,41 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<measurementSystemName type="metric">metriskā</measurementSystemName>
 			<measurementSystemName type="UK">angļu</measurementSystemName>
 			<measurementSystemName type="US">amerikāņu</measurementSystemName>
+=======
+			<territory type="YE">Jemena</territory>
+			<territory type="YT">Majota</territory>
+			<territory type="ZA">Dienvidāfrika</territory>
+			<territory type="ZM">Zambija</territory>
+			<territory type="ZW">Zimbabve</territory>
+			<territory type="ZZ">nezināms vai nederīgs reģions</territory>
+		</territories>
+		<keys>
+			<key type="calendar">kalendārs</key>
+			<key type="collation">salīdzināšana</key>
+			<key type="currency">valūta</key>
+		</keys>
+		<types>
+			<type type="big5han" key="collation">tradicionālās ķīniešu valodas kārtošanas secība - Big5</type>
+			<type type="buddhist" key="calendar">budistu kalendārs</type>
+			<type type="chinese" key="calendar">ķīniešu kalendārs</type>
+			<type type="direct" key="collation">tiešā kārtošanas secība</type>
+			<type type="gb2312han" key="collation">vienkāršotās ķīniešu valodas kārtošanas secība - GB2312</type>
+			<type type="gregorian" key="calendar">Gregora kalendārs</type>
+			<type type="hebrew" key="calendar">ebreju kalendārs</type>
+			<type type="indian" key="calendar">Indijas nacionālais kalendārs</type>
+			<type type="islamic" key="calendar">islāma kalendārs</type>
+			<type type="islamic-civil" key="calendar">islāma pilsoņu kalendārs</type>
+			<type type="japanese" key="calendar">japāņu kalendārs</type>
+			<type type="phonebook" key="collation">tālruņu grāmatas kārtošanas secība</type>
+			<type type="pinyin" key="collation">Pinyin kārtošanas secība</type>
+			<type type="roc" key="calendar">Ķīnas Republikas kalendārs</type>
+			<type type="stroke" key="collation">Stroke kārtošanas secība</type>
+			<type type="traditional" key="collation">tradicionālā kārtošanas secība</type>
+		</types>
+		<measurementSystemNames>
+			<measurementSystemName type="metric">metriskā</measurementSystemName>
+			<measurementSystemName type="US">britu</measurementSystemName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</measurementSystemNames>
 		<codePatterns>
 			<codePattern type="language">Valoda: {0}</codePattern>
@@ -1068,6 +1599,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 	</localeDisplayNames>
 	<characters>
 		<exemplarCharacters>[a ā b c č d e ē f g ģ h i ī j k ķ l ļ m n ņ o p r s š t u ū v z ž]</exemplarCharacters>
+<<<<<<< HEAD
 		<exemplarCharacters type="auxiliary">[y ō q ŗ w x]</exemplarCharacters>
 		<exemplarCharacters type="index">[A Ā B C Č D E Ē F G Ģ H I Ī Y J K Ķ L Ļ M N Ņ O P Q R S Š T U Ū V W X Z Ž]</exemplarCharacters>
 		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ ’ ‚ &quot; “ ” „ ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
@@ -1078,6 +1610,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<ellipsis type="word-initial">…{0}</ellipsis>
 		<ellipsis type="word-medial">{0}…{1}</ellipsis>
 		<moreInformation>?</moreInformation>
+=======
+		<exemplarCharacters type="auxiliary">[y q w x]</exemplarCharacters>
+		<exemplarCharacters type="currencySymbol">[a-i y j-x z]</exemplarCharacters>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	</characters>
 	<delimiters>
 		<quotationStart>“</quotationStart>
@@ -1086,6 +1622,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<alternateQuotationEnd>’</alternateQuotationEnd>
 	</delimiters>
 	<dates>
+<<<<<<< HEAD
 		<calendars>
 			<calendar type="generic">
 				<dateFormats>
@@ -1262,6 +1799,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</intervalFormats>
 				</dateTimeFormats>
 			</calendar>
+=======
+		<dateRangePattern>{0} − {1}</dateRangePattern>
+		<calendars>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -1279,6 +1820,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">nov.</month>
 							<month type="12">dec.</month>
 						</monthWidth>
+<<<<<<< HEAD
 						<monthWidth type="narrow">
 							<month type="1">J</month>
 							<month type="2">F</month>
@@ -1293,6 +1835,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">N</month>
 							<month type="12">D</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<monthWidth type="wide">
 							<month type="1">janvāris</month>
 							<month type="2">februāris</month>
@@ -1309,6 +1853,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</monthWidth>
 					</monthContext>
 					<monthContext type="stand-alone">
+<<<<<<< HEAD
 						<monthWidth type="abbreviated">
 							<month type="1">Janv.</month>
 							<month type="2">Febr.</month>
@@ -1323,6 +1868,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">Nov.</month>
 							<month type="12">Dec.</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<monthWidth type="narrow">
 							<month type="1">J</month>
 							<month type="2">F</month>
@@ -1337,6 +1884,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">N</month>
 							<month type="12">D</month>
 						</monthWidth>
+<<<<<<< HEAD
 						<monthWidth type="wide">
 							<month type="1">Janvāris</month>
 							<month type="2">Februāris</month>
@@ -1351,6 +1899,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">Novembris</month>
 							<month type="12">Decembris</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</monthContext>
 				</months>
 				<days>
@@ -1364,6 +1914,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">Pk</day>
 							<day type="sat">Se</day>
 						</dayWidth>
+<<<<<<< HEAD
 						<dayWidth type="narrow">
 							<day type="sun">S</day>
 							<day type="mon">P</day>
@@ -1382,6 +1933,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">Pk</day>
 							<day type="sat">Se</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<dayWidth type="wide">
 							<day type="sun">svētdiena</day>
 							<day type="mon">pirmdiena</day>
@@ -1393,6 +1946,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</dayWidth>
 					</dayContext>
 					<dayContext type="stand-alone">
+<<<<<<< HEAD
 						<dayWidth type="abbreviated">
 							<day type="sun">Sv</day>
 							<day type="mon">Pr</day>
@@ -1402,6 +1956,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">Pk</day>
 							<day type="sat">Se</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<dayWidth type="narrow">
 							<day type="sun">S</day>
 							<day type="mon">P</day>
@@ -1411,6 +1967,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">P</day>
 							<day type="sat">S</day>
 						</dayWidth>
+<<<<<<< HEAD
 						<dayWidth type="short">
 							<day type="sun">Sv</day>
 							<day type="mon">Pr</day>
@@ -1429,6 +1986,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">Piektdiena</day>
 							<day type="sat">Sestdiena</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</dayContext>
 				</days>
 				<quarters>
@@ -1439,12 +1998,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<quarter type="3">C3</quarter>
 							<quarter type="4">C4</quarter>
 						</quarterWidth>
+<<<<<<< HEAD
 						<quarterWidth type="narrow">
 							<quarter type="1">1.</quarter>
 							<quarter type="2">2.</quarter>
 							<quarter type="3">3.</quarter>
 							<quarter type="4">4.</quarter>
 						</quarterWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<quarterWidth type="wide">
 							<quarter type="1">1. ceturksnis</quarter>
 							<quarter type="2">2. ceturksnis</quarter>
@@ -1453,6 +2015,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</quarterWidth>
 					</quarterContext>
 					<quarterContext type="stand-alone">
+<<<<<<< HEAD
 						<quarterWidth type="abbreviated">
 							<quarter type="1">C1</quarter>
 							<quarter type="2">C2</quarter>
@@ -1481,6 +2044,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</dayPeriodWidth>
 					</dayPeriodContext>
 				</dayPeriods>
+=======
+						<quarterWidth type="narrow">
+							<quarter type="1">1</quarter>
+							<quarter type="2">2</quarter>
+							<quarter type="3">3</quarter>
+							<quarter type="4">4</quarter>
+						</quarterWidth>
+					</quarterContext>
+				</quarters>
+				<am>AM</am>
+				<pm>PM</pm>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<eras>
 					<eraNames>
 						<era type="0">pirms mūsu ēras</era>
@@ -1492,9 +2067,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</eraAbbr>
 					<eraNarrow>
 						<era type="0">p.m.ē.</era>
+<<<<<<< HEAD
 						<era type="0" alt="variant" draft="unconfirmed">pmē</era>
 						<era type="1">m.ē.</era>
 						<era type="1" alt="variant" draft="unconfirmed">mē</era>
+=======
+						<era type="1">m.ē.</era>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</eraNarrow>
 				</eras>
 				<dateFormats>
@@ -1542,6 +2121,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</timeFormatLength>
 				</timeFormats>
 				<dateTimeFormats>
+<<<<<<< HEAD
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
 							<pattern>{1} {0}</pattern>
@@ -1581,6 +2161,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
 						<dateFormatItem id="M">L</dateFormatItem>
 						<dateFormatItem id="Md">dd.MM.</dateFormatItem>
+=======
+					<availableFormats>
+						<dateFormatItem id="d">d</dateFormatItem>
+						<dateFormatItem id="Ed">EEE, d.</dateFormatItem>
+						<dateFormatItem id="EEEd">EEE, d.</dateFormatItem>
+						<dateFormatItem id="H">H</dateFormatItem>
+						<dateFormatItem id="HHmm">HH:mm</dateFormatItem>
+						<dateFormatItem id="HHmmss">HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
+						<dateFormatItem id="M">L</dateFormatItem>
+						<dateFormatItem id="Md">dd.mm.</dateFormatItem>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<dateFormatItem id="MEd">E, dd.MM.</dateFormatItem>
 						<dateFormatItem id="MMM">LLL</dateFormatItem>
 						<dateFormatItem id="MMMd">d. MMM</dateFormatItem>
@@ -1590,6 +2182,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<dateFormatItem id="mmss">mm:ss</dateFormatItem>
 						<dateFormatItem id="ms">mm:ss</dateFormatItem>
 						<dateFormatItem id="y">y. 'g'.</dateFormatItem>
+<<<<<<< HEAD
 						<dateFormatItem id="yM">MM.y.</dateFormatItem>
 						<dateFormatItem id="yMd">d.M.y.</dateFormatItem>
 						<dateFormatItem id="yMEd">E, d.M.y.</dateFormatItem>
@@ -1603,12 +2196,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<appendItems>
 						<appendItem request="Timezone">{0} {1}</appendItem>
 					</appendItems>
+=======
+						<dateFormatItem id="yM">mm.yyyy.</dateFormatItem>
+						<dateFormatItem id="yMEd">EEE, dd.mm.yyyy.</dateFormatItem>
+						<dateFormatItem id="yMMM">yyyy. 'g'. MMM</dateFormatItem>
+						<dateFormatItem id="yMMMEd">EEE, yyyy. 'g'. dd. MMM</dateFormatItem>
+						<dateFormatItem id="yMMMM">y. 'g'. MMMM</dateFormatItem>
+						<dateFormatItem id="yQ">Q yyyy</dateFormatItem>
+						<dateFormatItem id="yQQQ">y QQQ</dateFormatItem>
+						<dateFormatItem id="yyQ">Q yy</dateFormatItem>
+						<dateFormatItem id="yyyy">y. 'g'.</dateFormatItem>
+					</availableFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					<intervalFormats>
 						<intervalFormatFallback>{0} - {1}</intervalFormatFallback>
 						<intervalFormatItem id="d">
 							<greatestDifference id="d">d.–d.</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="h">
+<<<<<<< HEAD
 							<greatestDifference id="a">h a – h a</greatestDifference>
 							<greatestDifference id="h">h–h a</greatestDifference>
 						</intervalFormatItem>
@@ -1661,11 +2267,55 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="MMMEd">
 							<greatestDifference id="d">E, d. MMM – E, d. MMM</greatestDifference>
 							<greatestDifference id="M">E, d. MMM – E, d. MMM</greatestDifference>
+=======
+							<greatestDifference id="a">HH–HH</greatestDifference>
+							<greatestDifference id="h">HH-HH</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="a">HH:mm–HH:mm</greatestDifference>
+							<greatestDifference id="h">HH:mm-HH:mm</greatestDifference>
+							<greatestDifference id="m">HH:mm-HH:mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="a">HH:mm–HH:mm v</greatestDifference>
+							<greatestDifference id="h">HH:mm-HH:mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm-HH:mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="a">HH–HH v</greatestDifference>
+							<greatestDifference id="h">HH-HH v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">mm.–mm.</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">dd.mm.–dd.mm.</greatestDifference>
+							<greatestDifference id="M">dd.mm–dd.mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">E, dd.MM – E, dd.MM</greatestDifference>
+							<greatestDifference id="M">E, dd.MM - E, dd.MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">MMM-MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d">d.-d. MMM</greatestDifference>
+							<greatestDifference id="M">d. MMM - d. MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d">E, d. MMM – E, d. MMM</greatestDifference>
+							<greatestDifference id="M">E, d. MMM - E, d. MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMM">
+							<greatestDifference id="M">LLLL–LLLL</greatestDifference>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y">y.–y.</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
+<<<<<<< HEAD
 							<greatestDifference id="M">MM.y.–MM.y.</greatestDifference>
 							<greatestDifference id="y">MM.y.–MM.y.</greatestDifference>
 						</intervalFormatItem>
@@ -1699,6 +2349,83 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
+=======
+							<greatestDifference id="M">mm.yyyy.–mm.yyyy.</greatestDifference>
+							<greatestDifference id="y">mm.yyyy.–mm.yyyy.</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">dd.mm.yyyy.–dd.mm.yyyy.</greatestDifference>
+							<greatestDifference id="M">dd.mm.yy.–dd.mm.yy.</greatestDifference>
+							<greatestDifference id="y">dd.mm.yy.–dd.mm.yy.</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">EEE, dd.mm.yy. – EEE, dd.mm.yy.</greatestDifference>
+							<greatestDifference id="M">EEE, dd.mm.yy. – EEE, dd.mm.yy.</greatestDifference>
+							<greatestDifference id="y">EEE, dd.mm.yy. – EEE, dd.mm.yy.</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">y. 'gada' MMM-MMM</greatestDifference>
+							<greatestDifference id="y">y. 'gada' MMM - y. 'gada' MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d">y. 'gada' d.-d. MMM</greatestDifference>
+							<greatestDifference id="M">y. 'gada' d. MMM - d. MMM</greatestDifference>
+							<greatestDifference id="y">y. 'gada' d. MMM - y. 'gada' d. MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d">E, y. 'gada' d. MMM - E, y. 'gada' d. MMM</greatestDifference>
+							<greatestDifference id="M">E, y. 'gada' d. MMM - E, y. 'gada' d. MMM</greatestDifference>
+							<greatestDifference id="y">E, y. 'gada' d. MMM - E, y. 'gada' d. MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMM">
+							<greatestDifference id="M">mm.yyyy.–mm.yyyy.</greatestDifference>
+							<greatestDifference id="y">mm.yyyy.–mm.yyyy.</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+				<fields>
+					<field type="era">
+						<displayName>ēra</displayName>
+					</field>
+					<field type="year">
+						<displayName>Gads</displayName>
+					</field>
+					<field type="month">
+						<displayName>Mēnesis</displayName>
+					</field>
+					<field type="week">
+						<displayName>Nedēļa</displayName>
+					</field>
+					<field type="day">
+						<displayName>diena</displayName>
+						<relative type="-3">aizaizvakar</relative>
+						<relative type="-2">aizvakar</relative>
+						<relative type="-1">vakar</relative>
+						<relative type="0">šodien</relative>
+						<relative type="1">rīt</relative>
+						<relative type="2">parīt</relative>
+						<relative type="3">aizparīt</relative>
+					</field>
+					<field type="weekday">
+						<displayName>Nedēļas diena</displayName>
+					</field>
+					<field type="dayperiod">
+						<displayName>Dayperiod</displayName>
+					</field>
+					<field type="hour">
+						<displayName>Stundas</displayName>
+					</field>
+					<field type="minute">
+						<displayName>Minūtes</displayName>
+					</field>
+					<field type="second">
+						<displayName>Sekundes</displayName>
+					</field>
+					<field type="zone">
+						<displayName>Josla</displayName>
+					</field>
+				</fields>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</calendar>
 			<calendar type="hebrew">
 				<months>
@@ -1709,9 +2436,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="3">kisļevs</month>
 							<month type="4">tevets</month>
 							<month type="5">ševats</month>
+<<<<<<< HEAD
 							<month type="6">1. adars</month>
 							<month type="7">adars</month>
 							<month type="7" yeartype="leap">2. adars</month>
+=======
+							<month type="7">adars</month>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 							<month type="8">nisans</month>
 							<month type="9">ijars</month>
 							<month type="10">sivans</month>
@@ -1743,6 +2474,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</months>
 			</calendar>
 		</calendars>
+<<<<<<< HEAD
 		<fields>
 			<field type="era">
 				<displayName>Ēra</displayName>
@@ -1908,6 +2640,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<fallbackFormat>{0} ({1})</fallbackFormat>
 			<zone type="Etc/Unknown">
 				<exemplarCity>nezināma pilsēta</exemplarCity>
+=======
+		<timeZoneNames>
+			<hourFormat>+HH:mm;−HH:mm</hourFormat>
+			<gmtFormat>GMT{0}</gmtFormat>
+			<regionFormat>{0}</regionFormat>
+			<fallbackFormat>{1} ({0})</fallbackFormat>
+			<zone type="Etc/Unknown">
+				<exemplarCity>Nezināma</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Andorra">
 				<exemplarCity>Andora</exemplarCity>
@@ -1930,12 +2671,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Yerevan">
 				<exemplarCity>Erevāna</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="America/Curacao">
+				<exemplarCity>Nīderlandes Antiļas</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Antarctica/Rothera">
 				<exemplarCity>Rotera</exemplarCity>
 			</zone>
 			<zone type="Antarctica/Palmer">
 				<exemplarCity>Palmera</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="Antarctica/South_Pole">
+				<exemplarCity>Dienvidpols</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Antarctica/Syowa">
 				<exemplarCity>Sjova</exemplarCity>
 			</zone>
@@ -1952,7 +2705,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Kesija</exemplarCity>
 			</zone>
 			<zone type="Antarctica/DumontDUrville">
+<<<<<<< HEAD
 				<exemplarCity>Dimondirvila</exemplarCity>
+=======
+				<exemplarCity>Dumont D'Urville</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Antarctica/McMurdo">
 				<exemplarCity>Makmerdo</exemplarCity>
@@ -2029,6 +2786,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Australia/Brisbane">
 				<exemplarCity>Brisbena</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Antarctica/Macquarie">
 				<exemplarCity>Makvori</exemplarCity>
 			</zone>
@@ -2041,6 +2799,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Europe/Sarajevo">
 				<exemplarCity>Sarajeva</exemplarCity>
 			</zone>
+=======
+			<zone type="Australia/Lord_Howe">
+				<exemplarCity>Lordhova</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Barbados">
 				<exemplarCity>Barbadosa</exemplarCity>
 			</zone>
@@ -2065,8 +2828,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Africa/Porto-Novo">
 				<exemplarCity>Portonovo</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/St_Barthelemy">
 				<exemplarCity>Senbartelmī</exemplarCity>
+=======
+			<zone type="Atlantic/Bermuda">
+				<exemplarCity>Bermudu salas</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Brunei">
 				<exemplarCity>Bruneja</exemplarCity>
@@ -2074,9 +2842,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/La_Paz">
 				<exemplarCity>Lapasa</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Kralendijk">
 				<exemplarCity>Krālendeika</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Eirunepe">
 				<exemplarCity>Eirenupe</exemplarCity>
 			</zone>
@@ -2111,7 +2882,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Sanpaulu</exemplarCity>
 			</zone>
 			<zone type="America/Bahia">
+<<<<<<< HEAD
 				<exemplarCity>Baija</exemplarCity>
+=======
+				<exemplarCity>Brazīlija (Salvadora)</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Fortaleza">
 				<exemplarCity>Fortalesa</exemplarCity>
@@ -2128,6 +2903,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Nassau">
 				<exemplarCity>Naso</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="Asia/Thimphu">
+				<exemplarCity>Timpu</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Europe/Minsk">
 				<exemplarCity>Minska</exemplarCity>
 			</zone>
@@ -2149,9 +2930,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Dawson_Creek">
 				<exemplarCity>Dousonkrīka</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Creston">
 				<exemplarCity>Krestona</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Yellowknife">
 				<exemplarCity>Jelounaifa</exemplarCity>
 			</zone>
@@ -2188,6 +2972,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Nipigon">
 				<exemplarCity>Nipigona</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="America/Montreal">
+				<exemplarCity>Monreāla</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Iqaluit">
 				<exemplarCity>Ikaluita</exemplarCity>
 			</zone>
@@ -2213,7 +3003,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Sentdžonsa</exemplarCity>
 			</zone>
 			<zone type="Indian/Cocos">
+<<<<<<< HEAD
 				<exemplarCity>Kokosa sala</exemplarCity>
+=======
+				<exemplarCity>Kokosa</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Kinshasa">
 				<exemplarCity>Kinšasa</exemplarCity>
@@ -2251,15 +3045,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Chongqing">
 				<exemplarCity>Čuncina</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Shanghai">
 				<exemplarCity>Šanhaja</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Asia/Harbin">
 				<exemplarCity>Harbina</exemplarCity>
 			</zone>
 			<zone type="America/Costa_Rica">
 				<exemplarCity>Kostarika</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Atlantic/Cape_Verde">
 				<exemplarCity>Kaboverde</exemplarCity>
 			</zone>
@@ -2277,6 +3075,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Europe/Busingen">
 				<exemplarCity>Bīzingene</exemplarCity>
+=======
+			<zone type="America/Havana">
+				<exemplarCity>Havanna</exemplarCity>
+			</zone>
+			<zone type="Atlantic/Cape_Verde">
+				<exemplarCity>Kaboverde</exemplarCity>
+			</zone>
+			<zone type="Indian/Christmas">
+				<exemplarCity>Ziemsvētku</exemplarCity>
+			</zone>
+			<zone type="Asia/Nicosia">
+				<exemplarCity>Nikosija</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Berlin">
 				<exemplarCity>Berlīne</exemplarCity>
@@ -2311,9 +3122,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Africa/El_Aaiun">
 				<exemplarCity>Ajūna</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Africa/Asmera">
 				<exemplarCity>Asmara</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Atlantic/Canary">
 				<exemplarCity>Kanāriju salas</exemplarCity>
 			</zone>
@@ -2330,7 +3144,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Fidži</exemplarCity>
 			</zone>
 			<zone type="Atlantic/Stanley">
+<<<<<<< HEAD
 				<exemplarCity>Stenli</exemplarCity>
+=======
+				<exemplarCity>Stenlija</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Pacific/Truk">
 				<exemplarCity>Trūka</exemplarCity>
@@ -2342,7 +3160,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Kosraja</exemplarCity>
 			</zone>
 			<zone type="Atlantic/Faeroe">
+<<<<<<< HEAD
 				<exemplarCity>Fēru salas</exemplarCity>
+=======
+				<exemplarCity>Farēru salas</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Paris">
 				<exemplarCity>Parīze</exemplarCity>
@@ -2351,9 +3173,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Librevila</exemplarCity>
 			</zone>
 			<zone type="Europe/London">
+<<<<<<< HEAD
 				<long>
 					<daylight>Lielbritānijas vasaras laiks</daylight>
 				</long>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<exemplarCity>Londona</exemplarCity>
 			</zone>
 			<zone type="America/Grenada">
@@ -2362,9 +3187,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Cayenne">
 				<exemplarCity>Kajenna</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Guernsey">
 				<exemplarCity>Gērnsija</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Africa/Accra">
 				<exemplarCity>Akra</exemplarCity>
 			</zone>
@@ -2413,12 +3241,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Hong_Kong">
 				<exemplarCity>Honkonga</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Tegucigalpa">
 				<exemplarCity>Tegusigalpa</exemplarCity>
 			</zone>
 			<zone type="Europe/Zagreb">
 				<exemplarCity>Zagreba</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Port-au-Prince">
 				<exemplarCity>Portoprensa</exemplarCity>
 			</zone>
@@ -2438,6 +3269,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Džajapūra</exemplarCity>
 			</zone>
 			<zone type="Europe/Dublin">
+<<<<<<< HEAD
 				<long>
 					<daylight>Īrijas vasaras laiks</daylight>
 				</long>
@@ -2452,6 +3284,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Calcutta">
 				<exemplarCity>Kolkata</exemplarCity>
 			</zone>
+=======
+				<exemplarCity>Dublina</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Indian/Chagos">
 				<exemplarCity>Čagosa</exemplarCity>
 			</zone>
@@ -2462,14 +3298,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Teherāna</exemplarCity>
 			</zone>
 			<zone type="Atlantic/Reykjavik">
+<<<<<<< HEAD
 				<exemplarCity>Reikjavika</exemplarCity>
+=======
+				<exemplarCity>Reikjavīka</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Rome">
 				<exemplarCity>Roma</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Jersey">
 				<exemplarCity>Džērsija</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Jamaica">
 				<exemplarCity>Jamaika</exemplarCity>
 			</zone>
@@ -2495,7 +3338,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Tarava</exemplarCity>
 			</zone>
 			<zone type="Indian/Comoro">
+<<<<<<< HEAD
 				<exemplarCity>Komoras</exemplarCity>
+=======
+				<exemplarCity>Komoru</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/St_Kitts">
 				<exemplarCity>Sentkitsa</exemplarCity>
@@ -2510,7 +3357,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Kuveita</exemplarCity>
 			</zone>
 			<zone type="America/Cayman">
+<<<<<<< HEAD
 				<exemplarCity>Kaimanu salas</exemplarCity>
+=======
+				<exemplarCity>Kaimanu Salas</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Aqtau">
 				<exemplarCity>Aktau</exemplarCity>
@@ -2528,7 +3379,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Almati</exemplarCity>
 			</zone>
 			<zone type="Asia/Vientiane">
+<<<<<<< HEAD
 				<exemplarCity>Vjenčana</exemplarCity>
+=======
+				<exemplarCity>Vjangčana</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Beirut">
 				<exemplarCity>Beirūta</exemplarCity>
@@ -2566,9 +3421,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Europe/Chisinau">
 				<exemplarCity>Kišiņeva</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Marigot">
 				<exemplarCity>Merigota</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Indian/Antananarivo">
 				<exemplarCity>Antananarivu</exemplarCity>
 			</zone>
@@ -2579,7 +3437,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Madžuro</exemplarCity>
 			</zone>
 			<zone type="Asia/Rangoon">
+<<<<<<< HEAD
 				<exemplarCity>Ranguna</exemplarCity>
+=======
+				<exemplarCity>Jangona</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Hovd">
 				<exemplarCity>Hovda</exemplarCity>
@@ -2609,7 +3471,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Maurīcija</exemplarCity>
 			</zone>
 			<zone type="Indian/Maldives">
+<<<<<<< HEAD
 				<exemplarCity>Maldīvu salas</exemplarCity>
+=======
+				<exemplarCity>Maldīvija</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Blantyre">
 				<exemplarCity>Blantaira</exemplarCity>
@@ -2617,9 +3483,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Tijuana">
 				<exemplarCity>Tihuāna</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>Santaizabela</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Hermosillo">
 				<exemplarCity>Ermosiljo</exemplarCity>
 			</zone>
@@ -2629,21 +3498,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Chihuahua">
 				<exemplarCity>Čihuahua</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Bahia_Banderas">
 				<exemplarCity>Bajabanderasa</exemplarCity>
 			</zone>
 			<zone type="America/Ojinaga">
 				<exemplarCity>Ohinaga</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Monterrey">
 				<exemplarCity>Montereja</exemplarCity>
 			</zone>
 			<zone type="America/Mexico_City">
 				<exemplarCity>Mehiko</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Matamoros">
 				<exemplarCity>Matamorosa</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Cancun">
 				<exemplarCity>Kankūna</exemplarCity>
 			</zone>
@@ -2674,9 +3549,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Europe/Amsterdam">
 				<exemplarCity>Amsterdama</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Katmandu">
 				<exemplarCity>Katmandu</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Pacific/Chatham">
 				<exemplarCity>Četema</exemplarCity>
 			</zone>
@@ -2684,7 +3562,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Oklenda</exemplarCity>
 			</zone>
 			<zone type="Asia/Muscat">
+<<<<<<< HEAD
 				<exemplarCity>Maskata</exemplarCity>
+=======
+				<exemplarCity>Muskata</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Pacific/Tahiti">
 				<exemplarCity>Taiti</exemplarCity>
@@ -2699,7 +3581,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Portmorsbi</exemplarCity>
 			</zone>
 			<zone type="Asia/Karachi">
+<<<<<<< HEAD
 				<exemplarCity>Karāči</exemplarCity>
+=======
+				<exemplarCity>Karači</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Warsaw">
 				<exemplarCity>Varšava</exemplarCity>
@@ -2713,9 +3599,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Puerto_Rico">
 				<exemplarCity>Puertoriko</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Hebron">
 				<exemplarCity>Hebrona</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Atlantic/Azores">
 				<exemplarCity>Azoru salas</exemplarCity>
 			</zone>
@@ -2734,9 +3623,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Europe/Bucharest">
 				<exemplarCity>Bukareste</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Belgrade">
 				<exemplarCity>Belgrada</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Europe/Kaliningrad">
 				<exemplarCity>Kaļiņingrada</exemplarCity>
 			</zone>
@@ -2755,9 +3647,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Novosibirsk">
 				<exemplarCity>Novosibirska</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Novokuznetsk">
 				<exemplarCity>Novokuzņecka</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Asia/Krasnoyarsk">
 				<exemplarCity>Krasnojarska</exemplarCity>
 			</zone>
@@ -2770,6 +3665,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Vladivostok">
 				<exemplarCity>Vladivostoka</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Khandyga">
 				<exemplarCity>Handiga</exemplarCity>
 			</zone>
@@ -2779,6 +3675,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Ust-Nera">
 				<exemplarCity>Ustjņera</exemplarCity>
 			</zone>
+=======
+			<zone type="Asia/Sakhalin">
+				<exemplarCity>Sahalīna</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Asia/Magadan">
 				<exemplarCity>Magadāna</exemplarCity>
 			</zone>
@@ -2792,7 +3693,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Rijāda</exemplarCity>
 			</zone>
 			<zone type="Pacific/Guadalcanal">
+<<<<<<< HEAD
 				<exemplarCity>Gvadalkanala</exemplarCity>
+=======
+				<exemplarCity>Gvadelkanāla</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Khartoum">
 				<exemplarCity>Hartūma</exemplarCity>
@@ -2804,6 +3709,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Singapūra</exemplarCity>
 			</zone>
 			<zone type="Atlantic/St_Helena">
+<<<<<<< HEAD
 				<exemplarCity>Sv.Helēnas sala</exemplarCity>
 			</zone>
 			<zone type="Europe/Ljubljana">
@@ -2811,42 +3717,64 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Arctic/Longyearbyen">
 				<exemplarCity>Longjērbīene</exemplarCity>
+=======
+				<exemplarCity>Sv. Helēna</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Freetown">
 				<exemplarCity>Frītauna</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/San_Marino">
 				<exemplarCity>Sanmarīno</exemplarCity>
 			</zone>
 			<zone type="Africa/Dakar">
 				<exemplarCity>Dakara</exemplarCity>
+=======
+			<zone type="Africa/Dakar">
+				<exemplarCity>Dakāra</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Mogadishu">
 				<exemplarCity>Mogadīšo</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Africa/Juba">
 				<exemplarCity>Džūba</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Africa/Sao_Tome">
 				<exemplarCity>Santome</exemplarCity>
 			</zone>
 			<zone type="America/El_Salvador">
 				<exemplarCity>Salvadora</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Lower_Princes">
 				<exemplarCity>Louerprinseskvotera</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Asia/Damascus">
 				<exemplarCity>Damaska</exemplarCity>
 			</zone>
 			<zone type="America/Grand_Turk">
+<<<<<<< HEAD
 				<exemplarCity>Grandtkērka</exemplarCity>
+=======
+				<exemplarCity>Grendturka</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Ndjamena">
 				<exemplarCity>Ndžamena</exemplarCity>
 			</zone>
 			<zone type="Indian/Kerguelen">
+<<<<<<< HEAD
 				<exemplarCity>Kergelēna</exemplarCity>
+=======
+				<exemplarCity>Kergvelena</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Bangkok">
 				<exemplarCity>Bangkoka</exemplarCity>
@@ -2861,13 +3789,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Tunisa</exemplarCity>
 			</zone>
 			<zone type="Europe/Istanbul">
+<<<<<<< HEAD
 				<exemplarCity>Stambula</exemplarCity>
+=======
+				<exemplarCity>Istanbula</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Port_of_Spain">
 				<exemplarCity>Portofspeina</exemplarCity>
 			</zone>
 			<zone type="Asia/Taipei">
+<<<<<<< HEAD
 				<exemplarCity>Taibei</exemplarCity>
+=======
+				<exemplarCity>Taipeja</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Dar_es_Salaam">
 				<exemplarCity>Dāresalāma</exemplarCity>
@@ -2911,6 +3847,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Los_Angeles">
 				<exemplarCity>Losandželosa</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Boise">
 				<exemplarCity>Boisisitija</exemplarCity>
 			</zone>
@@ -2928,6 +3865,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/North_Dakota/Center">
 				<exemplarCity>Centra, Ziemeļdakota</exemplarCity>
+=======
+			<zone type="America/Phoenix">
+				<exemplarCity>Fīniksa</exemplarCity>
+			</zone>
+			<zone type="America/Shiprock">
+				<exemplarCity>Šiproka</exemplarCity>
+			</zone>
+			<zone type="America/Denver">
+				<exemplarCity>Denvera</exemplarCity>
+			</zone>
+			<zone type="America/North_Dakota/New_Salem">
+				<exemplarCity>Ņūsalema</exemplarCity>
+			</zone>
+			<zone type="America/North_Dakota/Center">
+				<exemplarCity>Centra Ziemeļdakotā</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Chicago">
 				<exemplarCity>Čikāga</exemplarCity>
@@ -2936,6 +3889,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Menominī</exemplarCity>
 			</zone>
 			<zone type="America/Indiana/Vincennes">
+<<<<<<< HEAD
 				<exemplarCity>Vinsensa, Indiāna</exemplarCity>
 			</zone>
 			<zone type="America/Indiana/Petersburg">
@@ -2952,6 +3906,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Indiana/Marengo">
 				<exemplarCity>Marengo, Indiāna</exemplarCity>
+=======
+				<exemplarCity>Vinsensa</exemplarCity>
+			</zone>
+			<zone type="America/Indiana/Petersburg">
+				<exemplarCity>Pēterburga</exemplarCity>
+			</zone>
+			<zone type="America/Indiana/Tell_City">
+				<exemplarCity>Tellsitija</exemplarCity>
+			</zone>
+			<zone type="America/Indiana/Knox">
+				<exemplarCity>Noksa</exemplarCity>
+			</zone>
+			<zone type="America/Indiana/Winamac">
+				<exemplarCity>Vinimaka</exemplarCity>
+			</zone>
+			<zone type="America/Indiana/Marengo">
+				<exemplarCity>Marengo</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Indianapolis">
 				<exemplarCity>Indianapolisa</exemplarCity>
@@ -2960,10 +3932,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Luisvilla</exemplarCity>
 			</zone>
 			<zone type="America/Indiana/Vevay">
+<<<<<<< HEAD
 				<exemplarCity>Vīveja, Indiāna</exemplarCity>
 			</zone>
 			<zone type="America/Kentucky/Monticello">
 				<exemplarCity>Montiselo, Kentuki</exemplarCity>
+=======
+				<exemplarCity>Viveja</exemplarCity>
+			</zone>
+			<zone type="America/Kentucky/Monticello">
+				<exemplarCity>Montiselo</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Detroit">
 				<exemplarCity>Detroita</exemplarCity>
@@ -2977,9 +3956,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Tashkent">
 				<exemplarCity>Taškenta</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Vatican">
 				<exemplarCity>Vatikāns</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/St_Vincent">
 				<exemplarCity>Sentvinsenta</exemplarCity>
 			</zone>
@@ -2987,16 +3969,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Karakasa</exemplarCity>
 			</zone>
 			<zone type="America/St_Thomas">
+<<<<<<< HEAD
 				<exemplarCity>Senttomasa sala</exemplarCity>
+=======
+				<exemplarCity>Senttomasa</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Saigon">
 				<exemplarCity>Hošimina</exemplarCity>
 			</zone>
 			<zone type="Pacific/Wallis">
+<<<<<<< HEAD
 				<exemplarCity>Volisa</exemplarCity>
 			</zone>
 			<zone type="Pacific/Apia">
 				<exemplarCity>Apija</exemplarCity>
+=======
+				<exemplarCity>Vallisa</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Aden">
 				<exemplarCity>Adena</exemplarCity>
@@ -3007,6 +3997,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Africa/Johannesburg">
 				<exemplarCity>Johannesburga</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<metazone type="Afghanistan">
 				<long>
 					<standard>Afganistānas laiks</standard>
@@ -3889,30 +4880,98 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<generic>Jekaterinburgas laiks</generic>
 					<standard>Jekaterinburgas ziemas laiks</standard>
 					<daylight>Jekaterinburgas vasaras laiks</daylight>
+=======
+			<metazone type="Europe_Central">
+				<long>
+					<standard>Centrāleiropas laiks</standard>
+					<daylight>Centrāleiropas vasaras laiks</daylight>
+				</long>
+				<short>
+					<standard>CET</standard>
+					<daylight>CEST</daylight>
+				</short>
+			</metazone>
+			<metazone type="Europe_Eastern">
+				<long>
+					<standard>Austrumeiropas laiks</standard>
+					<daylight>Austrumeiropas vasaras laiks</daylight>
+				</long>
+				<short>
+					<standard>EET</standard>
+					<daylight>EEST</daylight>
+				</short>
+			</metazone>
+			<metazone type="Kuybyshev">
+				<long>
+					<standard>Kuibiševas laiks</standard>
+					<daylight>Kuibiševas vasaras laiks</daylight>
+				</long>
+			</metazone>
+			<metazone type="Moscow">
+				<long>
+					<generic>Maskavas laiks</generic>
+					<standard>Maskavas standarta laiks</standard>
+					<daylight>Maskavas vasaras laiks</daylight>
+				</long>
+			</metazone>
+			<metazone type="Samara">
+				<long>
+					<standard>Samaras laiks</standard>
+					<daylight>Samaras vasaras laiks</daylight>
+				</long>
+			</metazone>
+			<metazone type="Turkey">
+				<long>
+					<standard>Turcijas laiks</standard>
+					<daylight>Turcijas vasaras laiks</daylight>
+				</long>
+			</metazone>
+			<metazone type="Volgograd">
+				<long>
+					<standard>Volgogradas laiks</standard>
+					<daylight>Volgogradas vasaras laiks</daylight>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				</long>
 			</metazone>
 		</timeZoneNames>
 	</dates>
 	<numbers>
+<<<<<<< HEAD
 		<symbols numberSystem="latn">
+=======
+		<symbols>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<decimal>,</decimal>
 			<group> </group>
 			<list>;</list>
 			<percentSign>%</percentSign>
+<<<<<<< HEAD
 			<plusSign>+</plusSign>
 			<minusSign>-</minusSign>
 			<exponential>E</exponential>
 			<superscriptingExponent>·</superscriptingExponent>
+=======
+			<nativeZeroDigit>0</nativeZeroDigit>
+			<patternDigit>#</patternDigit>
+			<plusSign>+</plusSign>
+			<minusSign>−</minusSign>
+			<exponential>E</exponential>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<perMille>‰</perMille>
 			<infinity>∞</infinity>
 			<nan>nav skaitlis</nan>
 		</symbols>
+<<<<<<< HEAD
 		<decimalFormats numberSystem="latn">
+=======
+		<decimalFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<decimalFormatLength>
 				<decimalFormat>
 					<pattern>#,##0.###</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
+<<<<<<< HEAD
 			<decimalFormatLength type="long">
 				<decimalFormat>
 					<pattern type="1000" count="zero">0 tūkstoši</pattern>
@@ -3995,19 +5054,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</decimalFormatLength>
 		</decimalFormats>
 		<scientificFormats numberSystem="latn">
+=======
+		</decimalFormats>
+		<scientificFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<scientificFormatLength>
 				<scientificFormat>
 					<pattern>#E0</pattern>
 				</scientificFormat>
 			</scientificFormatLength>
 		</scientificFormats>
+<<<<<<< HEAD
 		<percentFormats numberSystem="latn">
+=======
+		<percentFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<percentFormatLength>
 				<percentFormat>
 					<pattern>#,##0%</pattern>
 				</percentFormat>
 			</percentFormatLength>
 		</percentFormats>
+<<<<<<< HEAD
 		<currencyFormats numberSystem="latn">
 			<currencyFormatLength>
 				<currencyFormat type="standard">
@@ -4020,10 +5088,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<unitPattern count="zero">{0} {1}</unitPattern>
 			<unitPattern count="one">{0} {1}</unitPattern>
 			<unitPattern count="other">{0} {1}</unitPattern>
+=======
+		<currencyFormats>
+			<currencyFormatLength>
+				<currencyFormat>
+					<pattern>#,##0.00 ¤</pattern>
+				</currencyFormat>
+			</currencyFormatLength>
+			<unitPattern count="one">{0} {1}</unitPattern>
+			<unitPattern count="other">{0} {1}</unitPattern>
+			<unitPattern count="zero">{0} {1}</unitPattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</currencyFormats>
 		<currencies>
 			<currency type="AED">
 				<displayName>Apvienoto Arābu Emirātu dirhēms</displayName>
+<<<<<<< HEAD
 				<displayName count="zero">Apvienoto Arābu Emirātu dirhēmi</displayName>
 				<displayName count="one">Apvienoto Arābu Emirātu dirhēms</displayName>
 				<displayName count="other">Apvienoto Arābu Emirātu dirhēmi</displayName>
@@ -4063,12 +5143,33 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="zero">Argentīnas peso</displayName>
 				<displayName count="one">Argentīnas peso</displayName>
 				<displayName count="other">Argentīnas peso</displayName>
+=======
+			</currency>
+			<currency type="AFN">
+				<displayName>Afganistānas afgāns</displayName>
+			</currency>
+			<currency type="ALL">
+				<displayName>Albānijas leks</displayName>
+			</currency>
+			<currency type="AMD">
+				<displayName>Armēnijas drams</displayName>
+			</currency>
+			<currency type="ANG">
+				<displayName>Nīderlandes Antiļu guldenis</displayName>
+			</currency>
+			<currency type="AOA">
+				<displayName>Angolas jaunā kvanza</displayName>
+			</currency>
+			<currency type="ARS">
+				<displayName>Argentīnas peso</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ATS">
 				<displayName>Austrijas šiliņš</displayName>
 			</currency>
 			<currency type="AUD">
 				<displayName>Austrālijas dolārs</displayName>
+<<<<<<< HEAD
 				<displayName count="zero">Austrālijas dolāri</displayName>
 				<displayName count="one">Austrālijas dolārs</displayName>
 				<displayName count="other">Austrālijas dolāri</displayName>
@@ -4226,12 +5327,84 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="zero">Kolumbijas peso</displayName>
 				<displayName count="one">Kolumbijas peso</displayName>
 				<displayName count="other">Kolumbijas peso</displayName>
+=======
+			</currency>
+			<currency type="AWG">
+				<displayName>Arubas guldenis</displayName>
+			</currency>
+			<currency type="AZN">
+				<displayName>Azerbaidžānas manats</displayName>
+			</currency>
+			<currency type="BAM">
+				<displayName>Bosnijas konvertējamā marka</displayName>
+			</currency>
+			<currency type="BBD">
+				<displayName>Barbadosas dolārs</displayName>
+			</currency>
+			<currency type="BDT">
+				<displayName>Bangladešas taka</displayName>
+			</currency>
+			<currency type="BEF">
+				<displayName>Beļģijas franks</displayName>
+			</currency>
+			<currency type="BGN">
+				<displayName>Bulgārijas leva</displayName>
+			</currency>
+			<currency type="BIF">
+				<displayName>Burundi franks</displayName>
+			</currency>
+			<currency type="BMD">
+				<displayName>Bermudu salu dolārs</displayName>
+			</currency>
+			<currency type="BND">
+				<displayName>Brunejas dolārs</displayName>
+			</currency>
+			<currency type="BOB">
+				<displayName>Bolīvijas boliviano</displayName>
+			</currency>
+			<currency type="BRL">
+				<displayName>Brazīlijas reāls</displayName>
+			</currency>
+			<currency type="BSD">
+				<displayName>Bahamu dolārs</displayName>
+			</currency>
+			<currency type="BTN">
+				<displayName>Butānas ngultrums</displayName>
+			</currency>
+			<currency type="BWP">
+				<displayName>Botsvānas pula</displayName>
+			</currency>
+			<currency type="BYR">
+				<displayName>Baltkrievijas rubelis</displayName>
+			</currency>
+			<currency type="BZD">
+				<displayName>Belizas dolārs</displayName>
+			</currency>
+			<currency type="CAD">
+				<displayName>Kanādas dolārs</displayName>
+			</currency>
+			<currency type="CDF">
+				<displayName>KDR franks</displayName>
+			</currency>
+			<currency type="CHF">
+				<displayName>Šveices franks</displayName>
+			</currency>
+			<currency type="CLP">
+				<displayName>Čīles peso</displayName>
+			</currency>
+			<currency type="CNY">
+				<displayName>Ķīnas juana</displayName>
+			</currency>
+			<currency type="COP">
+				<displayName>Kolumbijas peso</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="COU">
 				<displayName>Kolumbijas reāls</displayName>
 			</currency>
 			<currency type="CRC">
 				<displayName>Kostarikas kolons</displayName>
+<<<<<<< HEAD
 				<displayName count="zero">Kostarikas koloni</displayName>
 				<displayName count="one">Kostarikas kolons</displayName>
 				<displayName count="other">Kostarikas koloni</displayName>
@@ -4253,21 +5426,33 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="zero">Kaboverdes eskudo</displayName>
 				<displayName count="one">Kaboverdes eskudo</displayName>
 				<displayName count="other">Kaboverdes eskudo</displayName>
+=======
+			</currency>
+			<currency type="CUP">
+				<displayName>Kubas peso</displayName>
+			</currency>
+			<currency type="CVE">
+				<displayName>Kaboverdes eskudo</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="CYP">
 				<displayName>Kipras mārciņa</displayName>
 			</currency>
 			<currency type="CZK">
 				<displayName>Čehijas krona</displayName>
+<<<<<<< HEAD
 				<displayName count="zero">Čehijas kronas</displayName>
 				<displayName count="one">Čehijas krona</displayName>
 				<displayName count="other">Čehijas kronas</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="DEM">
 				<displayName>Vācijas marka</displayName>
 			</currency>
 			<currency type="DJF">
 				<displayName>Džibutijas franks</displayName>
+<<<<<<< HEAD
 				<displayName count="zero">Džibutijas franki</displayName>
 				<displayName count="one">Džibutijas franks</displayName>
 				<displayName count="other">Džibutijas franki</displayName>
@@ -4289,12 +5474,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="zero">Alžīrijas dināri</displayName>
 				<displayName count="one">Alžīrijas dinārs</displayName>
 				<displayName count="other">Alžīrijas dināri</displayName>
+=======
+			</currency>
+			<currency type="DKK">
+				<displayName>Dānijas krona</displayName>
+			</currency>
+			<currency type="DOP">
+				<displayName>Dominikānas peso</displayName>
+			</currency>
+			<currency type="DZD">
+				<displayName>Alžīrijas dinārs</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="EEK">
 				<displayName>Igaunijas krona</displayName>
 			</currency>
 			<currency type="EGP">
 				<displayName>Ēģiptes mārciņa</displayName>
+<<<<<<< HEAD
 				<displayName count="zero">Ēģiptes mārciņas</displayName>
 				<displayName count="one">Ēģiptes mārciņa</displayName>
 				<displayName count="other">Ēģiptes mārciņas</displayName>
@@ -4304,12 +5501,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="zero">Eritrejas nakfas</displayName>
 				<displayName count="one">Eritrejas nakfa</displayName>
 				<displayName count="other">Eritrejas nakfas</displayName>
+=======
+			</currency>
+			<currency type="ERN">
+				<displayName>Eritrejas nakfa</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ESP">
 				<displayName>Spānijas peseta</displayName>
 			</currency>
 			<currency type="ETB">
 				<displayName>Etiopijas birs</displayName>
+<<<<<<< HEAD
 				<displayName count="zero">Etiopijas biri</displayName>
 				<displayName count="one">Etiopijas birs</displayName>
 				<displayName count="other">Etiopijas biri</displayName>
@@ -4320,12 +5523,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="one">eiro</displayName>
 				<displayName count="other">eiro</displayName>
 				<symbol>€</symbol>
+=======
+			</currency>
+			<currency type="EUR">
+				<displayName>eiro</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="FIM">
 				<displayName>Somijas marka</displayName>
 			</currency>
 			<currency type="FJD">
 				<displayName>Fidži dolārs</displayName>
+<<<<<<< HEAD
 				<displayName count="zero">Fidži dolāri</displayName>
 				<displayName count="one">Fidži dolārs</displayName>
 				<displayName count="other">Fidži dolāri</displayName>
@@ -4335,12 +5544,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="zero">Folklenda salu mārciņas</displayName>
 				<displayName count="one">Folklenda salu mārciņa</displayName>
 				<displayName count="other">Folklenda salu mārciņas</displayName>
+=======
+			</currency>
+			<currency type="FKP">
+				<displayName>Folklenda salu mārciņa</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="FRF">
 				<displayName>Francijas franks</displayName>
 			</currency>
 			<currency type="GBP">
 				<displayName>Lielbritānijas sterliņu mārciņa</displayName>
+<<<<<<< HEAD
 				<displayName count="zero">Lielbritānijas sterliņu mārciņas</displayName>
 				<displayName count="one">Lielbritānijas sterliņu mārciņa</displayName>
 				<displayName count="other">Lielbritānijas sterliņu mārciņas</displayName>
@@ -4375,11 +5590,29 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="zero">Gvinejas franki</displayName>
 				<displayName count="one">Gvinejas franks</displayName>
 				<displayName count="other">Gvinejas franki</displayName>
+=======
+			</currency>
+			<currency type="GEL">
+				<displayName>Gruzijas lari</displayName>
+			</currency>
+			<currency type="GHS">
+				<displayName>Ganas sedi</displayName>
+			</currency>
+			<currency type="GIP">
+				<displayName>Gibraltāra mārciņa</displayName>
+			</currency>
+			<currency type="GMD">
+				<displayName>Gambijas dalasi</displayName>
+			</currency>
+			<currency type="GNF">
+				<displayName>Gvinejas franks</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="GRD">
 				<displayName>Grieķijas drahma</displayName>
 			</currency>
 			<currency type="GTQ">
+<<<<<<< HEAD
 				<displayName>Gvatemalas ketsals</displayName>
 				<displayName count="zero">Gvatemalas ketsali</displayName>
 				<displayName count="one">Gvatemalas ketsals</displayName>
@@ -4427,12 +5660,37 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="zero">Indonēzijas rūpijas</displayName>
 				<displayName count="one">Indonēzijas rūpija</displayName>
 				<displayName count="other">Indonēzijas rūpijas</displayName>
+=======
+				<displayName>(Gvatemalas) ketsals</displayName>
+			</currency>
+			<currency type="GYD">
+				<displayName>Gajānas dolārs</displayName>
+			</currency>
+			<currency type="HKD">
+				<displayName>Honkongas dolārs</displayName>
+			</currency>
+			<currency type="HNL">
+				<displayName>Hondurasas lempīra</displayName>
+			</currency>
+			<currency type="HRK">
+				<displayName>Horvātijas kuna</displayName>
+			</currency>
+			<currency type="HTG">
+				<displayName>Haiti gurds</displayName>
+			</currency>
+			<currency type="HUF">
+				<displayName>Ungārijas forints</displayName>
+			</currency>
+			<currency type="IDR">
+				<displayName>Indonēzijas rūpija</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="IEP">
 				<displayName>Īrijas mārciņa</displayName>
 			</currency>
 			<currency type="ILS">
 				<displayName>Izraēlas šekelis</displayName>
+<<<<<<< HEAD
 				<displayName count="zero">Izraēlas šekeļi</displayName>
 				<displayName count="one">Izraēlas šekelis</displayName>
 				<displayName count="other">Izraēlas šekeļi</displayName>
@@ -4462,12 +5720,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="zero">Īslandes kronas</displayName>
 				<displayName count="one">Īslandes krona</displayName>
 				<displayName count="other">Īslandes kronas</displayName>
+=======
+			</currency>
+			<currency type="INR">
+				<displayName>Indijas rūpija</displayName>
+			</currency>
+			<currency type="IQD">
+				<displayName>Irākas dinārs</displayName>
+			</currency>
+			<currency type="IRR">
+				<displayName>Irānas riāls</displayName>
+			</currency>
+			<currency type="ISK">
+				<displayName>Īslandes krona</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ITL">
 				<displayName>Itālijas lira</displayName>
 			</currency>
 			<currency type="JMD">
 				<displayName>Jamaikas dolārs</displayName>
+<<<<<<< HEAD
 				<displayName count="zero">Jamaikas dolāri</displayName>
 				<displayName count="one">Jamaikas dolārs</displayName>
 				<displayName count="other">Jamaikas dolāri</displayName>
@@ -4563,31 +5836,77 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="zero">Libērijas dolāri</displayName>
 				<displayName count="one">Libērijas dolārs</displayName>
 				<displayName count="other">Libērijas dolāri</displayName>
+=======
+			</currency>
+			<currency type="JOD">
+				<displayName>Jordānas dinārs</displayName>
+			</currency>
+			<currency type="JPY">
+				<displayName>Japānas jena</displayName>
+			</currency>
+			<currency type="KES">
+				<displayName>Kenijas šiliņš</displayName>
+			</currency>
+			<currency type="KGS">
+				<displayName>Kirgizstānas soms</displayName>
+			</currency>
+			<currency type="KPW">
+				<displayName>Ziemeļkorejas vona</displayName>
+			</currency>
+			<currency type="KRW">
+				<displayName>Dienvidkorejas vona</displayName>
+			</currency>
+			<currency type="KWD">
+				<displayName>Kuveitas dinārs</displayName>
+			</currency>
+			<currency type="KZT">
+				<displayName>Kazahstānas tenge</displayName>
+				<displayName count="zero">Kazahstānas tenge</displayName>
+			</currency>
+			<currency type="LAK">
+				<displayName>Laosas kips</displayName>
+			</currency>
+			<currency type="LBP">
+				<displayName>Libānas mārciņa</displayName>
+			</currency>
+			<currency type="LKR">
+				<displayName>Šrilankas rūpija</displayName>
+			</currency>
+			<currency type="LRD">
+				<displayName>Libērijas dolārs</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="LSL">
 				<displayName>Lesoto loti</displayName>
 			</currency>
 			<currency type="LTL">
 				<displayName>Lietuvas lits</displayName>
+<<<<<<< HEAD
 				<displayName count="zero">Lietuvas liti</displayName>
 				<displayName count="one">Lietuvas lits</displayName>
 				<displayName count="other">Lietuvas liti</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="LUF">
 				<displayName>Luksemburgas franks</displayName>
 			</currency>
 			<currency type="LVL">
 				<displayName>Latvijas lats</displayName>
+<<<<<<< HEAD
 				<displayName count="zero">Latvijas lati</displayName>
 				<displayName count="one">Latvijas lats</displayName>
 				<displayName count="other">Latvijas lati</displayName>
 				<symbol>Ls</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="LVR">
 				<displayName>Latvijas rublis</displayName>
 			</currency>
 			<currency type="LYD">
 				<displayName>Lībijas dinārs</displayName>
+<<<<<<< HEAD
 				<displayName count="zero">Lībijas dināri</displayName>
 				<displayName count="one">Lībijas dinārs</displayName>
 				<displayName count="other">Lībijas dināri</displayName>
@@ -4615,12 +5934,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="zero">Maķedonijas denāri</displayName>
 				<displayName count="one">Maķedonijas denārs</displayName>
 				<displayName count="other">Maķedonijas denāri</displayName>
+=======
+			</currency>
+			<currency type="MAD">
+				<displayName>Marokas dirhēms</displayName>
+			</currency>
+			<currency type="MDL">
+				<displayName>Moldovas leja</displayName>
+			</currency>
+			<currency type="MGA">
+				<displayName>ariari</displayName>
+			</currency>
+			<currency type="MKD">
+				<displayName>Maķedonijas denārs</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="MLF">
 				<displayName>CFA (Āfrikas) franks</displayName>
 			</currency>
 			<currency type="MMK">
 				<displayName>Mjanmas kjats</displayName>
+<<<<<<< HEAD
 				<displayName count="zero">Mjanmas kjati</displayName>
 				<displayName count="one">Mjanmas kjats</displayName>
 				<displayName count="other">Mjanmas kjati</displayName>
@@ -4642,6 +5976,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="zero">Mauritānijas ugijas</displayName>
 				<displayName count="one">Mauritānijas ugija</displayName>
 				<displayName count="other">Mauritānijas ugijas</displayName>
+=======
+			</currency>
+			<currency type="MNT">
+				<displayName>Mongolijas tugriks</displayName>
+			</currency>
+			<currency type="MOP">
+				<displayName>Makao pataka</displayName>
+			</currency>
+			<currency type="MRO">
+				<displayName>Mauritānijas ugija</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="MTL">
 				<displayName>Maltas lira</displayName>
@@ -4651,6 +5996,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="MUR">
 				<displayName>Maurīcijas rūpija</displayName>
+<<<<<<< HEAD
 				<displayName count="zero">Maurīcijas rūpijas</displayName>
 				<displayName count="one">Maurīcijas rūpija</displayName>
 				<displayName count="other">Maurīcijas rūpijas</displayName>
@@ -4679,10 +6025,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="zero">Malaizijas ringiti</displayName>
 				<displayName count="one">Malaizijas ringits</displayName>
 				<displayName count="other">Malaizijas ringiti</displayName>
+=======
+			</currency>
+			<currency type="MVR">
+				<displayName>Maldīvijas rūfija</displayName>
+			</currency>
+			<currency type="MWK">
+				<displayName>Malāvijas kvača</displayName>
+			</currency>
+			<currency type="MXN">
+				<displayName>Meksikas peso</displayName>
+			</currency>
+			<currency type="MYR">
+				<displayName>Malaizijas ringits</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="MZE">
 				<displayName>Mozambikas eskudo</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="MZM">
 				<displayName>Mozambikas vecais metikals</displayName>
 				<displayName count="zero">Mozambikas vecie metikali</displayName>
@@ -4712,12 +6073,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="zero">Nikaragvas kordobas</displayName>
 				<displayName count="one">Nikaragvas kordoba</displayName>
 				<displayName count="other">Nikaragvas kordobas</displayName>
+=======
+			<currency type="MZN">
+				<displayName>Mozambikas metikals</displayName>
+			</currency>
+			<currency type="NAD">
+				<displayName>Namībijas dolārs</displayName>
+			</currency>
+			<currency type="NGN">
+				<displayName>Nigērijas naira</displayName>
+			</currency>
+			<currency type="NIO">
+				<displayName>Kordovas oro</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="NLG">
 				<displayName>Nīderlandes guldenis</displayName>
 			</currency>
 			<currency type="NOK">
 				<displayName>Norvēģijas krona</displayName>
+<<<<<<< HEAD
 				<displayName count="zero">Norvēģijas kronas</displayName>
 				<displayName count="one">Norvēģijas krona</displayName>
 				<displayName count="other">Norvēģijas kronas</displayName>
@@ -4776,10 +6151,40 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="zero">Polijas zloti</displayName>
 				<displayName count="one">Polijas zlots</displayName>
 				<displayName count="other">Polijas zloti</displayName>
+=======
+			</currency>
+			<currency type="NPR">
+				<displayName>Nepālas rūpija</displayName>
+			</currency>
+			<currency type="NZD">
+				<displayName>Jaunzēlandes dolārs</displayName>
+			</currency>
+			<currency type="OMR">
+				<displayName>Omānas riāls</displayName>
+			</currency>
+			<currency type="PAB">
+				<displayName>Panamas balboa</displayName>
+			</currency>
+			<currency type="PEN">
+				<displayName>Peru jaunais sols</displayName>
+			</currency>
+			<currency type="PGK">
+				<displayName>Papua-Jaungvinejas kina</displayName>
+			</currency>
+			<currency type="PHP">
+				<displayName>Filipīnu peso</displayName>
+			</currency>
+			<currency type="PKR">
+				<displayName>Pakistānas rūpija</displayName>
+			</currency>
+			<currency type="PLN">
+				<displayName>Polijas zlots</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="PTE">
 				<displayName>Portugāles eskudo</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="PYG">
 				<displayName>Paragvajas guarani</displayName>
 				<displayName count="zero">Paragvajas guarani</displayName>
@@ -4863,6 +6268,43 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="zero">Sv.Helēnas salas mārciņas</displayName>
 				<displayName count="one">Sv.Helēnas salas mārciņa</displayName>
 				<displayName count="other">Sv.Helēnas salas mārciņas</displayName>
+=======
+			<currency type="QAR">
+				<displayName>Kataras riāls</displayName>
+			</currency>
+			<currency type="RON">
+				<displayName>Rumānijas leja</displayName>
+			</currency>
+			<currency type="RSD">
+				<displayName>Serbijas dinārs</displayName>
+			</currency>
+			<currency type="RUB">
+				<displayName>Krievijas rublis</displayName>
+			</currency>
+			<currency type="RWF">
+				<displayName>Ruandas franks</displayName>
+			</currency>
+			<currency type="SAR">
+				<displayName>Saūda riāls</displayName>
+			</currency>
+			<currency type="SBD">
+				<displayName>Zālamana salu dolārs</displayName>
+			</currency>
+			<currency type="SCR">
+				<displayName>Seišelu salu rūpija</displayName>
+			</currency>
+			<currency type="SDG">
+				<displayName>Sudānas mārciņa</displayName>
+			</currency>
+			<currency type="SEK">
+				<displayName>Zviedrijas krona</displayName>
+			</currency>
+			<currency type="SGD">
+				<displayName>Singapūras dolārs</displayName>
+			</currency>
+			<currency type="SHP">
+				<displayName>Sv.Helēnas salas mārciņa</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="SIT">
 				<displayName>Slovēnijas tolars</displayName>
@@ -4872,6 +6314,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="SLL">
 				<displayName>Sjerraleones leone</displayName>
+<<<<<<< HEAD
 				<displayName count="zero">Sjerraleones leones</displayName>
 				<displayName count="one">Sjerraleones leone</displayName>
 				<displayName count="other">Sjerraleones leones</displayName>
@@ -4887,10 +6330,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="zero">Surinamas dolāri</displayName>
 				<displayName count="one">Surinamas dolārs</displayName>
 				<displayName count="other">Surinamas dolāri</displayName>
+=======
+			</currency>
+			<currency type="SOS">
+				<displayName>Somālijas šiliņš</displayName>
+			</currency>
+			<currency type="SRD">
+				<displayName>Surinamas dolārs</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="SRG">
 				<displayName>Surinamas guldenis</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="SSP">
 				<displayName>Dienvidsudānas mārciņa</displayName>
 				<displayName count="zero">Dienvidsudānas mārciņas</displayName>
@@ -4902,10 +6354,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="zero">Santome un Prinsipi dobras</displayName>
 				<displayName count="one">Santome un Prinsipi dobra</displayName>
 				<displayName count="other">Santome un Prinsipi dobras</displayName>
+=======
+			<currency type="STD">
+				<displayName>Santome un Prinsipi dobra</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="SVC">
 				<displayName>Salvadoras kolons</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="SYP">
 				<displayName>Sīrijas mārciņa</displayName>
 				<displayName count="zero">Sīrijas mārciņas</displayName>
@@ -4951,11 +6408,31 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="zero">Tongas paangas</displayName>
 				<displayName count="one">Tongas paanga</displayName>
 				<displayName count="other">Tongas paangas</displayName>
+=======
+			<currency type="SZL">
+				<displayName>Svazilendas lilangeni</displayName>
+			</currency>
+			<currency type="THB">
+				<displayName>Taizemes bāts</displayName>
+			</currency>
+			<currency type="TJS">
+				<displayName>Tadžikistānas somons</displayName>
+			</currency>
+			<currency type="TMM">
+				<displayName>Turkmēnijas manats</displayName>
+			</currency>
+			<currency type="TND">
+				<displayName>Tunisijas dinārs</displayName>
+			</currency>
+			<currency type="TOP">
+				<displayName>Tongas paanga</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="TRL">
 				<displayName>Turcijas lira</displayName>
 			</currency>
 			<currency type="TRY">
+<<<<<<< HEAD
 				<displayName>Turcijas jaunā lira</displayName>
 				<displayName count="zero">Turcijas liras</displayName>
 				<displayName count="one">Turcijas jaunā lira</displayName>
@@ -5066,10 +6543,59 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="zero">Eiropas norēķinu vienības EURCO</displayName>
 				<displayName count="one">Eiropas norēķinu vienība EURCO</displayName>
 				<displayName count="other">Eiropas norēķinu vienības EURCO</displayName>
+=======
+				<displayName>jaunā Turcijas lira</displayName>
+			</currency>
+			<currency type="TTD">
+				<displayName>Trinidādas un Tobāgo dolārs</displayName>
+			</currency>
+			<currency type="TWD">
+				<displayName>jaunais Taivānas dolārs</displayName>
+			</currency>
+			<currency type="TZS">
+				<displayName>Tanzānijas šiliņš</displayName>
+			</currency>
+			<currency type="UAH">
+				<displayName>Ukrainas grivna</displayName>
+			</currency>
+			<currency type="UGX">
+				<displayName>Ugandas šiliņš</displayName>
+			</currency>
+			<currency type="USD">
+				<displayName>ASV dolārs</displayName>
+			</currency>
+			<currency type="UYU">
+				<displayName>Urugvajas peso</displayName>
+			</currency>
+			<currency type="UZS">
+				<displayName>Uzbekistānas sums</displayName>
+			</currency>
+			<currency type="VEB">
+				<displayName>Venecuēlas bolivārs</displayName>
+			</currency>
+			<currency type="VEF">
+				<displayName>Venecuēlas stiprais bolivārs</displayName>
+			</currency>
+			<currency type="VND">
+				<displayName>Vjetnamas dongi</displayName>
+			</currency>
+			<currency type="VUV">
+				<displayName>Vanuatu vatu</displayName>
+			</currency>
+			<currency type="WST">
+				<displayName>Samoa tala</displayName>
+			</currency>
+			<currency type="XAG">
+				<displayName>sudrabs</displayName>
+			</currency>
+			<currency type="XAU">
+				<displayName>zelts</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="XBB">
 				<displayName>Eiropas naudas vienība</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="XBC">
 				<displayName>Eiropas norēķinu vienība (XBC)</displayName>
 				<displayName count="zero">Eiropas norēķinu vienības (XBC)</displayName>
@@ -5088,6 +6614,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="one">Austrumkarību dolārs</displayName>
 				<displayName count="other">Austrumkarību dolāri</displayName>
 				<symbol>EC$</symbol>
+=======
+			<currency type="XCD">
+				<displayName>Austrumkarību dolārs</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="XDR">
 				<displayName>Speciālās aizņēmuma tiesības</displayName>
@@ -5101,6 +6631,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="XFU">
 				<displayName>Francijas UIC franks</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="XOF">
 				<displayName>Rietumāfrikas CFA franks</displayName>
 				<displayName count="zero">Rietumāfrikas CFA franki</displayName>
@@ -5162,10 +6693,30 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="zero">Zambijas kvačas</displayName>
 				<displayName count="one">Zambijas kvača</displayName>
 				<displayName count="other">Zambijas kvačas</displayName>
+=======
+			<currency type="XPD">
+				<displayName>pallādijs</displayName>
+			</currency>
+			<currency type="XPT">
+				<displayName>platīns</displayName>
+			</currency>
+			<currency type="XXX">
+				<displayName>nezināma vai nederīga valūta</displayName>
+			</currency>
+			<currency type="YER">
+				<displayName>Jemenas riāls</displayName>
+			</currency>
+			<currency type="ZAR">
+				<displayName>Dienvidāfrikas rands</displayName>
+			</currency>
+			<currency type="ZMK">
+				<displayName>Zambijas kvača</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ZWD">
 				<displayName>Zimbabves dolārs</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="ZWL">
 				<displayName>Zimbabves dolārs (2009)</displayName>
 				<displayName count="zero">Zimbabves dollāri (2009)</displayName>
@@ -5920,6 +7471,47 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<listPatternPart type="2">{0} un {1}</listPatternPart>
 		</listPattern>
 	</listPatterns>
+=======
+		</currencies>
+	</numbers>
+	<units>
+		<unit type="day">
+			<unitPattern count="one">{0} diena</unitPattern>
+			<unitPattern count="other">{0} dienas</unitPattern>
+			<unitPattern count="zero">{0} dienas</unitPattern>
+		</unit>
+		<unit type="hour">
+			<unitPattern count="one">{0} stunda</unitPattern>
+			<unitPattern count="other">{0} stundas</unitPattern>
+			<unitPattern count="zero">{0} stundas</unitPattern>
+		</unit>
+		<unit type="minute">
+			<unitPattern count="one">{0} minūte</unitPattern>
+			<unitPattern count="other">{0} minūtes</unitPattern>
+			<unitPattern count="zero">{0} minūtes</unitPattern>
+		</unit>
+		<unit type="month">
+			<unitPattern count="one">{0} mēnesis</unitPattern>
+			<unitPattern count="other">{0} mēneši</unitPattern>
+			<unitPattern count="zero">{0} mēneši</unitPattern>
+		</unit>
+		<unit type="second">
+			<unitPattern count="one">{0} sekunde</unitPattern>
+			<unitPattern count="other">{0} sekundes</unitPattern>
+			<unitPattern count="zero">{0} sekundes</unitPattern>
+		</unit>
+		<unit type="week">
+			<unitPattern count="one">{0} nedēļa</unitPattern>
+			<unitPattern count="other">{0} nedēļas</unitPattern>
+			<unitPattern count="zero">{0} nedēļas</unitPattern>
+		</unit>
+		<unit type="year">
+			<unitPattern count="one">{0} gads</unitPattern>
+			<unitPattern count="other">{0} gadi</unitPattern>
+			<unitPattern count="zero">{0} gadi</unitPattern>
+		</unit>
+	</units>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	<posix>
 		<messages>
 			<yesstr>jā:ja:j</yesstr>

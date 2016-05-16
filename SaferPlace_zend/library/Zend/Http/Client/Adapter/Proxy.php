@@ -16,8 +16,13 @@
  * @category   Zend
  * @package    Zend_Http
  * @subpackage Client_Adapter
+<<<<<<< HEAD
  * @version    $Id$
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @version    $Id: Proxy.php 25273 2013-03-06 08:02:21Z frosch $
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -46,7 +51,11 @@ require_once 'Zend/Http/Client/Adapter/Socket.php';
  * @category   Zend
  * @package    Zend_Http
  * @subpackage Client_Adapter
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Http_Client_Adapter_Proxy extends Zend_Http_Client_Adapter_Socket
@@ -244,7 +253,11 @@ class Zend_Http_Client_Adapter_Proxy extends Zend_Http_Client_Adapter_Socket
     )
     {
         $request = "CONNECT $host:$port HTTP/$http_ver\r\n" .
+<<<<<<< HEAD
                    "Host: " . $host . "\r\n";
+=======
+                   "Host: " . $this->config['proxy_host'] . "\r\n";
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
         // Process provided headers, including important ones to CONNECT request
         foreach ($headers as $k => $v) {

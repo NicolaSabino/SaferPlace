@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Http
  * @subpackage UserAgent
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -32,17 +36,29 @@ require_once 'Zend/Http/UserAgent/Features/Adapter.php';
  *
  * @package    Zend_Http
  * @subpackage UserAgent
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Http_UserAgent_Features_Adapter_Browscap
     implements Zend_Http_UserAgent_Features_Adapter
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ */
+class Zend_Http_UserAgent_Features_Adapter_Browscap implements Zend_Http_UserAgent_Features_Adapter
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 {
     /**
      * Constructor
      *
      * Validate that we have browscap support available.
+<<<<<<< HEAD
      *
+=======
+     * 
+     * @return void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @throws Zend_Http_UserAgent_Features_Exception
      */
     public function __construct()
@@ -61,13 +77,18 @@ class Zend_Http_UserAgent_Features_Adapter_Browscap
      * Get features from request
      *
      * @param  array $request $_SERVER variable
+<<<<<<< HEAD
      * @param  array $config  ignored; included only to satisfy parent class
+=======
+     * @param  array $config ignored; included only to satisfy parent class
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return array
      */
     public static function getFromRequest($request, array $config)
     {
         $browscap = get_browser($request['http_user_agent'], true);
         $features = array();
+<<<<<<< HEAD
 
         if (is_array($browscap)) {
             foreach ($browscap as $key => $value) {
@@ -92,6 +113,25 @@ class Zend_Http_UserAgent_Features_Adapter_Browscap
             }
         }
 
+=======
+        foreach ($browscap as $key => $value) {
+            // For a few keys, we need to munge a bit for the device object
+            switch ($key) {
+                case 'browser':
+                    $features['mobile_browser'] = $value;
+                    break;
+                case 'version':
+                    $features['mobile_browser_version'] = $value;
+                    break;
+                case 'platform':
+                    $features['device_os'] = $value;
+                    break;
+                default:
+                    $features[$key] = $value;
+                    break;
+            }
+        }
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         return $features;
     }
 }

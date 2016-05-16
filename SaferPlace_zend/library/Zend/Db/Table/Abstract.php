@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Db
  * @subpackage Table
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Abstract.php 24958 2012-06-15 13:44:04Z adamlundrigan $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -41,7 +47,11 @@ require_once 'Zend/Db.php';
  * @category   Zend
  * @package    Zend_Db
  * @subpackage Table
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 abstract class Zend_Db_Table_Abstract
@@ -1041,6 +1051,19 @@ abstract class Zend_Db_Table_Abstract
         $primary = (array) $this->_primary;
         $pkIdentity = $primary[(int)$this->_identity];
 
+<<<<<<< HEAD
+=======
+        /**
+         * If this table uses a database sequence object and the data does not
+         * specify a value, then get the next ID from the sequence and add it
+         * to the row.  We assume that only the first column in a compound
+         * primary key takes a value from a sequence.
+         */
+        if (is_string($this->_sequence) && !isset($data[$pkIdentity])) {
+            $data[$pkIdentity] = $this->_db->nextSequenceId($this->_sequence);
+            $pkSuppliedBySequence = true;
+        }
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
         /**
          * If the primary key can be generated automatically, and no value was
@@ -1050,7 +1073,11 @@ abstract class Zend_Db_Table_Abstract
          * position of the data.  The following values are considered empty:
          *   null, false, true, '', array()
          */
+<<<<<<< HEAD
         if (array_key_exists($pkIdentity, $data)) {
+=======
+        if (!isset($pkSuppliedBySequence) && array_key_exists($pkIdentity, $data)) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             if ($data[$pkIdentity] === null                                        // null
                 || $data[$pkIdentity] === ''                                       // empty string
                 || is_bool($data[$pkIdentity])                                     // boolean
@@ -1060,6 +1087,7 @@ abstract class Zend_Db_Table_Abstract
         }
 
         /**
+<<<<<<< HEAD
          * If this table uses a database sequence object and the data does not
          * specify a value, then get the next ID from the sequence and add it
          * to the row.  We assume that only the first column in a compound
@@ -1070,6 +1098,8 @@ abstract class Zend_Db_Table_Abstract
         }
 
         /**
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
          * INSERT the new row.
          */
         $tableSpec = ($this->_schema ? $this->_schema . '.' : '') . $this->_name;
@@ -1191,9 +1221,13 @@ abstract class Zend_Db_Table_Abstract
                      */
                     foreach ($depTables as $tableClass) {
                         $t = self::getTableFromString($tableClass, $this);
+<<<<<<< HEAD
                         $t->_cascadeDelete(
                             get_class($this), $row->getPrimaryKey()
                         );
+=======
+                        $t->_cascadeDelete($tableClass, $row->getPrimaryKey());
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                     }
                 }
             }
@@ -1214,12 +1248,17 @@ abstract class Zend_Db_Table_Abstract
     {
         // setup metadata
         $this->_setupMetadata();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         // get this class name
         $thisClass = get_class($this);
         if ($thisClass === 'Zend_Db_Table') {
             $thisClass = $this->_definitionConfigName;
         }
+<<<<<<< HEAD
 
         $rowsAffected = 0;
 
@@ -1228,6 +1267,16 @@ abstract class Zend_Db_Table_Abstract
 
                 $where = array();
 
+=======
+        
+        $rowsAffected = 0;
+        
+        foreach ($this->_getReferenceMapNormalized() as $map) {
+            if ($map[self::REF_TABLE_CLASS] == $parentTableClassname && isset($map[self::ON_DELETE])) {
+                
+                $where = array();
+                
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 // CASCADE or CASCADE_RECURSE
                 if (in_array($map[self::ON_DELETE], array(self::CASCADE, self::CASCADE_RECURSE))) {
                     for ($i = 0; $i < count($map[self::COLUMNS]); ++$i) {
@@ -1239,10 +1288,17 @@ abstract class Zend_Db_Table_Abstract
                             $primaryKey[$refCol], $type);
                     }
                 }
+<<<<<<< HEAD
 
                 // CASCADE_RECURSE
                 if ($map[self::ON_DELETE] == self::CASCADE_RECURSE) {
 
+=======
+                
+                // CASCADE_RECURSE
+                if ($map[self::ON_DELETE] == self::CASCADE_RECURSE) {
+                    
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                     /**
                      * Execute cascading deletes against dependent tables
                      */
@@ -1261,7 +1317,11 @@ abstract class Zend_Db_Table_Abstract
                 if (in_array($map[self::ON_DELETE], array(self::CASCADE, self::CASCADE_RECURSE))) {
                     $rowsAffected += $this->delete($where);
                 }
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             }
         }
         return $rowsAffected;
@@ -1579,6 +1639,7 @@ abstract class Zend_Db_Table_Abstract
         return $data;
     }
 
+<<<<<<< HEAD
     /**
      * Get table gateway object from string
      *
@@ -1587,6 +1648,8 @@ abstract class Zend_Db_Table_Abstract
      * @throws Zend_Db_Table_Row_Exception
      * @return Zend_Db_Table_Abstract
      */
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     public static function getTableFromString($tableName, Zend_Db_Table_Abstract $referenceTable = null)
     {
         if ($referenceTable instanceof Zend_Db_Table_Abstract) {
@@ -1620,5 +1683,9 @@ abstract class Zend_Db_Table_Abstract
 
         return new $tableName($options);
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 }

@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_CodeGenerator
  * @subpackage PHP
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Docblock.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -33,7 +39,11 @@ require_once 'Zend/CodeGenerator/Php/Docblock/Tag.php';
 /**
  * @category   Zend
  * @package    Zend_CodeGenerator
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_CodeGenerator_Php_Docblock extends Zend_CodeGenerator_Php_Abstract
@@ -206,11 +216,18 @@ class Zend_CodeGenerator_Php_Docblock extends Zend_CodeGenerator_Php_Abstract
      */
     protected function _docCommentize($content)
     {
+<<<<<<< HEAD
         $indent  = $this->getIndentation();
         $output  = $indent . '/**' . self::LINE_FEED;
         $content = wordwrap($content, 80, self::LINE_FEED);
         $lines   = explode(self::LINE_FEED, $content);
 
+=======
+        $indent = $this->getIndentation();
+        $output = $indent . '/**' . self::LINE_FEED;
+        $content = wordwrap($content, 80, self::LINE_FEED);
+        $lines = explode(self::LINE_FEED, $content);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         foreach ($lines as $line) {
             $output .= $indent . ' *';
             if ($line) {
@@ -218,10 +235,17 @@ class Zend_CodeGenerator_Php_Docblock extends Zend_CodeGenerator_Php_Abstract
             }
             $output .= self::LINE_FEED;
         }
+<<<<<<< HEAD
 
         $output = rtrim($output, ' *' . self::LINE_FEED) . self::LINE_FEED;
 
         $output .= $indent . ' */' . self::LINE_FEED;
         return $output;
     }
+=======
+        $output .= $indent . ' */' . self::LINE_FEED;
+        return $output;
+    }
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 }

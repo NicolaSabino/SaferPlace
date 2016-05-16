@@ -14,8 +14,13 @@
  *
  * @category   Zend
  * @package    Zend_Translate
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @version    $Id: Qt.php 24649 2012-02-26 03:37:54Z adamlundrigan $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -26,16 +31,23 @@ require_once 'Zend/Locale.php';
 /** Zend_Translate_Adapter */
 require_once 'Zend/Translate/Adapter.php';
 
+<<<<<<< HEAD
 /** @see Zend_Xml_Security */
 require_once 'Zend/Xml/Security.php';
 
 /** @See Zend_Xml_Exception */
 require_once 'Zend/Xml/Exception.php';
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
 /**
  * @category   Zend
  * @package    Zend_Translate
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Translate_Adapter_Qt extends Zend_Translate_Adapter {
@@ -77,6 +89,7 @@ class Zend_Translate_Adapter_Qt extends Zend_Translate_Adapter {
         xml_parser_set_option($this->_file, XML_OPTION_CASE_FOLDING, 0);
         xml_set_element_handler($this->_file, "_startElement", "_endElement");
         xml_set_character_data_handler($this->_file, "_contentElement");
+<<<<<<< HEAD
         
         try {
             Zend_Xml_Security::scanFile($filename);
@@ -86,6 +99,8 @@ class Zend_Translate_Adapter_Qt extends Zend_Translate_Adapter {
                 $e->getMessage()
             );
         }
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
         if (!xml_parse($this->_file, file_get_contents($filename))) {
             $ex = sprintf('XML error: %s at line %d of file %s',

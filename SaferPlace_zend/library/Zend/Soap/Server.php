@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Soap
  * @subpackage Server
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -24,12 +28,15 @@
  */
 require_once 'Zend/Server/Interface.php';
 
+<<<<<<< HEAD
 /** @see Zend_Xml_Security */
 require_once 'Zend/Xml/Security.php';
 
 /** @see Zend_Xml_Exception */
 require_once 'Zend/Xml/Exception.php';
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 /**
  * Zend_Soap_Server
  *
@@ -37,9 +44,15 @@ require_once 'Zend/Xml/Exception.php';
  * @package    Zend_Soap
  * @subpackage Server
  * @uses       Zend_Server_Interface
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Server.php 25177 2012-12-22 20:54:18Z rob $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 class Zend_Soap_Server implements Zend_Server_Interface
 {
@@ -735,6 +748,7 @@ class Zend_Soap_Server implements Zend_Server_Interface
                 $xml = $request;
             }
 
+<<<<<<< HEAD
             $dom = new DOMDocument();
             try {
                 if(strlen($xml) == 0 || (!$dom = Zend_Xml_Security::scan($xml, $dom))) {
@@ -747,6 +761,23 @@ class Zend_Soap_Server implements Zend_Server_Interface
                     $e->getMessage()
                 );
             }
+=======
+            libxml_disable_entity_loader(true);
+            $dom = new DOMDocument();
+            if(strlen($xml) == 0 || !$dom->loadXML($xml)) {
+                require_once 'Zend/Soap/Server/Exception.php';
+                throw new Zend_Soap_Server_Exception('Invalid XML');
+            }
+            foreach ($dom->childNodes as $child) {
+                if ($child->nodeType === XML_DOCUMENT_TYPE_NODE) {
+                    require_once 'Zend/Soap/Server/Exception.php';
+                    throw new Zend_Soap_Server_Exception(
+                        'Invalid XML: Detected use of illegal DOCTYPE'
+                    );
+                }
+            }
+            libxml_disable_entity_loader(false);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         }
         $this->_request = $xml;
         return $this;

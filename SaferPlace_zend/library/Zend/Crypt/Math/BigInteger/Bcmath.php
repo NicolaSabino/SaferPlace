@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Crypt
  * @subpackage Math
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Bcmath.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -33,7 +39,11 @@ require_once 'Zend/Crypt/Math/BigInteger/Interface.php';
  *
  * @category   Zend
  * @package    Zend_Crypt
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Crypt_Math_BigInteger_Bcmath implements Zend_Crypt_Math_BigInteger_Interface
@@ -42,7 +52,10 @@ class Zend_Crypt_Math_BigInteger_Bcmath implements Zend_Crypt_Math_BigInteger_In
     /**
      * Initialise a big integer into an extension specific type. This is not
      * applicable to BCMath.
+<<<<<<< HEAD
      *
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @param string $operand
      * @param int $base
      * @return string
@@ -65,8 +78,11 @@ class Zend_Crypt_Math_BigInteger_Bcmath implements Zend_Crypt_Math_BigInteger_In
     }
 
     /**
+<<<<<<< HEAD
      * Subtract one arbitrary precision number from another
      *
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @param string $left_operand
      * @param string $right_operand
      * @return string
@@ -80,7 +96,10 @@ class Zend_Crypt_Math_BigInteger_Bcmath implements Zend_Crypt_Math_BigInteger_In
      * Compare two big integers and returns result as an integer where 0 means
      * both are identical, 1 that left_operand is larger, or -1 that
      * right_operand is larger.
+<<<<<<< HEAD
      *
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @param string $left_operand
      * @param string $right_operand
      * @return int
@@ -93,7 +112,10 @@ class Zend_Crypt_Math_BigInteger_Bcmath implements Zend_Crypt_Math_BigInteger_In
     /**
      * Divide two big integers and return result or NULL if the denominator
      * is zero.
+<<<<<<< HEAD
      *
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @param string $left_operand
      * @param string $right_operand
      * @return string|null
@@ -104,10 +126,15 @@ class Zend_Crypt_Math_BigInteger_Bcmath implements Zend_Crypt_Math_BigInteger_In
     }
 
     /**
+<<<<<<< HEAD
      * Get modulus of an arbitrary precision number
      *
      * @param string $left_operand
      * @param string $modulus
+=======
+     * @param string $left_operand
+     * @param string $right_operand
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return string
      */
     public function modulus($left_operand, $modulus)
@@ -116,8 +143,11 @@ class Zend_Crypt_Math_BigInteger_Bcmath implements Zend_Crypt_Math_BigInteger_In
     }
 
     /**
+<<<<<<< HEAD
      * Multiply two arbitrary precision numbers
      *
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @param string $left_operand
      * @param string $right_operand
      * @return string
@@ -128,8 +158,11 @@ class Zend_Crypt_Math_BigInteger_Bcmath implements Zend_Crypt_Math_BigInteger_In
     }
 
     /**
+<<<<<<< HEAD
      * Raise an arbitrary precision number to another
      *
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @param string $left_operand
      * @param string $right_operand
      * @return string
@@ -140,12 +173,17 @@ class Zend_Crypt_Math_BigInteger_Bcmath implements Zend_Crypt_Math_BigInteger_In
     }
 
     /**
+<<<<<<< HEAD
      * Raise an arbitrary precision number to another, reduced by a specified
      * modulus
      *
      * @param string $left_operand
      * @param string $right_operand
      * @param string $modulus
+=======
+     * @param string $left_operand
+     * @param string $right_operand
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return string
      */
     public function powmod($left_operand, $right_operand, $modulus)
@@ -154,9 +192,14 @@ class Zend_Crypt_Math_BigInteger_Bcmath implements Zend_Crypt_Math_BigInteger_In
     }
 
     /**
+<<<<<<< HEAD
      * Get the square root of an arbitrary precision number
      *
      * @param string $operand
+=======
+     * @param string $left_operand
+     * @param string $right_operand
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return string
      */
     public function sqrt($operand)
@@ -164,10 +207,14 @@ class Zend_Crypt_Math_BigInteger_Bcmath implements Zend_Crypt_Math_BigInteger_In
         return bcsqrt($operand);
     }
 
+<<<<<<< HEAD
     /**
      * @param string $operand
      * @return string
      */
+=======
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     public function binaryToInteger($operand)
     {
         $result = '0';
@@ -179,10 +226,14 @@ class Zend_Crypt_Math_BigInteger_Bcmath implements Zend_Crypt_Math_BigInteger_In
         return $result;
     }
 
+<<<<<<< HEAD
     /**
      * @param string $operand
      * @return string
      */
+=======
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     public function integerToBinary($operand)
     {
         $cmp = bccomp($operand, 0);
@@ -210,10 +261,14 @@ class Zend_Crypt_Math_BigInteger_Bcmath implements Zend_Crypt_Math_BigInteger_In
         return $return;
     }**/ // Prior version for referenced offset
 
+<<<<<<< HEAD
     /**
      * @param string $operand
      * @return string
      */
+=======
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     public function hexToDecimal($operand)
     {
         $return = '0';
@@ -224,4 +279,9 @@ class Zend_Crypt_Math_BigInteger_Bcmath implements Zend_Crypt_Math_BigInteger_In
         }
         return $return;
     }
+<<<<<<< HEAD
 }
+=======
+
+}
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

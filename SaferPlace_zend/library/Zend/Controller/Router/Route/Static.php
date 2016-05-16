@@ -15,8 +15,13 @@
  * @category   Zend
  * @package    Zend_Controller
  * @subpackage Router
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @version    $Id: Static.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -30,12 +35,17 @@ require_once 'Zend/Controller/Router/Route/Abstract.php';
  *
  * @package    Zend_Controller
  * @subpackage Router
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Controller_Router_Route_Static extends Zend_Controller_Router_Route_Abstract
 {
 
+<<<<<<< HEAD
     /**
      * Route
      *
@@ -57,6 +67,12 @@ class Zend_Controller_Router_Route_Static extends Zend_Controller_Router_Route_A
      */
     public function getVersion()
     {
+=======
+    protected $_route = null;
+    protected $_defaults = array();
+
+    public function getVersion() {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         return 1;
     }
 
@@ -64,24 +80,39 @@ class Zend_Controller_Router_Route_Static extends Zend_Controller_Router_Route_A
      * Instantiates route based on passed Zend_Config structure
      *
      * @param Zend_Config $config Configuration object
+<<<<<<< HEAD
      * @return Zend_Controller_Router_Route_Static
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public static function getInstance(Zend_Config $config)
     {
         $defs = ($config->defaults instanceof Zend_Config) ? $config->defaults->toArray() : array();
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         return new self($config->route, $defs);
     }
 
     /**
      * Prepares the route for mapping.
      *
+<<<<<<< HEAD
      * @param string $route    Map used to match with later submitted URL path
      * @param array  $defaults Defaults for map variables with keys as variable names
      */
     public function __construct($route, $defaults = array())
     {
         $this->_route    = trim($route, self::URI_DELIMITER);
+=======
+     * @param string $route Map used to match with later submitted URL path
+     * @param array $defaults Defaults for map variables with keys as variable names
+     */
+    public function __construct($route, $defaults = array())
+    {
+        $this->_route = trim($route, self::URI_DELIMITER);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         $this->_defaults = (array) $defaults;
     }
 
@@ -99,7 +130,10 @@ class Zend_Controller_Router_Route_Static extends Zend_Controller_Router_Route_A
                 || (substr($path, 0, strlen($this->_route)) === $this->_route)
             ) {
                 $this->setMatchedPath($this->_route);
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 return $this->_defaults;
             }
         } else {
@@ -128,12 +162,19 @@ class Zend_Controller_Router_Route_Static extends Zend_Controller_Router_Route_A
      * @param string $name Array key of the parameter
      * @return string Previously set default
      */
+<<<<<<< HEAD
     public function getDefault($name)
     {
         if (isset($this->_defaults[$name])) {
             return $this->_defaults[$name];
         }
 
+=======
+    public function getDefault($name) {
+        if (isset($this->_defaults[$name])) {
+            return $this->_defaults[$name];
+        }
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         return null;
     }
 
@@ -142,8 +183,15 @@ class Zend_Controller_Router_Route_Static extends Zend_Controller_Router_Route_A
      *
      * @return array Route defaults
      */
+<<<<<<< HEAD
     public function getDefaults()
     {
         return $this->_defaults;
     }
+=======
+    public function getDefaults() {
+        return $this->_defaults;
+    }
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 }

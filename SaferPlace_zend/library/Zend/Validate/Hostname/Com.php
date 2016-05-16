@@ -14,9 +14,15 @@
  *
  * @category   Zend
  * @package    Zend_Validate
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Com.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -24,7 +30,11 @@
  *
  * @category   Zend
  * @package    Zend_Validate
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 return array(
@@ -184,6 +194,11 @@ return array(
     68 => '/^[\x{A000}-\x{A48F}]{1,63}$/iu',
     69 => '/^[\x{A490}-\x{A4CF}]{1,63}$/iu',
     70 => '/^[\x{AC00}-\x{D7AF}]{1,63}$/iu',
+<<<<<<< HEAD
+=======
+    71 => '/^[\x{D800}-\x{DB7F}]{1,63}$/iu',
+    72 => '/^[\x{DC00}-\x{DFFF}]{1,63}$/iu',
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     73 => '/^[\x{F900}-\x{FAFF}]{1,63}$/iu',
     74 => '/^[\x{FB00}-\x{FB4F}]{1,63}$/iu',
     75 => '/^[\x{FB50}-\x{FDFF}]{1,63}$/iu',
@@ -193,4 +208,8 @@ return array(
     79 => '/^[\x{20000}-\x{2A6DF}]{1,63}$/iu',
     80 => '/^[\x{2F800}-\x{2FA1F}]{1,63}$/iu'
 
+<<<<<<< HEAD
 );
+=======
+);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

@@ -14,9 +14,15 @@
  *
  * @category   Zend
  * @package    Zend_Validate
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: CreditCard.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -27,7 +33,11 @@ require_once 'Zend/Validate/Abstract.php';
 /**
  * @category   Zend
  * @package    Zend_Validate
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Validate_CreditCard extends Zend_Validate_Abstract
@@ -136,7 +146,11 @@ class Zend_Validate_CreditCard extends Zend_Validate_Abstract
     /**
      * Constructor
      *
+<<<<<<< HEAD
      * @param string|array|Zend_Config $options OPTIONAL Type of CCI to allow
+=======
+     * @param string|array $type OPTIONAL Type of CCI to allow
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function __construct($options = array())
     {
@@ -176,7 +190,11 @@ class Zend_Validate_CreditCard extends Zend_Validate_Abstract
      * Sets CCIs which are accepted by validation
      *
      * @param string|array $type Type to allow for validation
+<<<<<<< HEAD
      * @return Zend_Validate_CreditCard Provides a fluent interface
+=======
+     * @return Zend_Validate_CreditCard Provides a fluid interface
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setType($type)
     {
@@ -188,7 +206,11 @@ class Zend_Validate_CreditCard extends Zend_Validate_Abstract
      * Adds a CCI to be accepted by validation
      *
      * @param string|array $type Type to allow for validation
+<<<<<<< HEAD
      * @return Zend_Validate_CreditCard Provides a fluent interface
+=======
+     * @return Zend_Validate_CreditCard Provides a fluid interface
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function addType($type)
     {
@@ -222,9 +244,13 @@ class Zend_Validate_CreditCard extends Zend_Validate_Abstract
     /**
      * Sets a new callback for service validation
      *
+<<<<<<< HEAD
      * @param mixed $service
      * @throws Zend_Validate_Exception
      * @return $this
+=======
+     * @param unknown_type $service
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setService($service)
     {

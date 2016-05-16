@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -8,11 +9,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 	<identity>
 		<version number="$Revision: 9061 $"/>
 		<generation date="$Date: 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013) $"/>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.59 $"/>
+		<generation date="$Date: 2009/06/15 03:46:25 $"/>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		<language type="fr"/>
 		<territory type="BE"/>
 	</identity>
 	<dates>
 		<calendars>
+<<<<<<< HEAD
 			<calendar type="generic">
 				<dateFormats>
 					<dateFormatLength type="short">
@@ -103,6 +111,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</intervalFormats>
 				</dateTimeFormats>
 			</calendar>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<calendar type="gregorian">
 				<dateFormats>
 					<dateFormatLength type="short">
@@ -120,6 +130,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</timeFormats>
 				<dateTimeFormats>
 					<intervalFormats>
+<<<<<<< HEAD
 						<intervalFormatFallback draft="unconfirmed">du {0} au {1}</intervalFormatFallback>
 						<intervalFormatItem id="h">
 							<greatestDifference id="h" draft="unconfirmed">h-h a</greatestDifference>
@@ -196,6 +207,71 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="d" draft="unconfirmed">E d 'au' E d MMM y</greatestDifference>
 							<greatestDifference id="M" draft="unconfirmed">E d MMM 'au' E d MMM y</greatestDifference>
 							<greatestDifference id="y" draft="unconfirmed">E d MMM y 'au' E d MMM y</greatestDifference>
+=======
+						<intervalFormatFallback>du {0} au {1}</intervalFormatFallback>
+						<intervalFormatItem id="h">
+							<greatestDifference id="h">HH-HH</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="m">HH:mm-HH:mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="h">HH:mm-HH:mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm-HH:mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="h">HH-HH v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">M-M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">d/MM - d/MM</greatestDifference>
+							<greatestDifference id="M">d/MM - d/MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">E d/MM - E d/MM</greatestDifference>
+							<greatestDifference id="M">E d/MM - E d/MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">MMM-MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d">d-d MMM</greatestDifference>
+							<greatestDifference id="M">d MMM 'au' d MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d">E d 'au' E d MMM</greatestDifference>
+							<greatestDifference id="M">E d MMM 'au' E d MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">MM/yy - MM/yy</greatestDifference>
+							<greatestDifference id="y">MM/yy - MM/yy</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">d/MM/yy - d/MM/yy</greatestDifference>
+							<greatestDifference id="M">d/MM/yy - d/MM/yy</greatestDifference>
+							<greatestDifference id="y">d/MM/yy - d/MM/yy</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">E d/MM/yy - E d/MM/yy</greatestDifference>
+							<greatestDifference id="M">E d/MM/yy - E d/MM/yy</greatestDifference>
+							<greatestDifference id="y">E d/MM/yy - E d/MM/yy</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">MMM-MMM y</greatestDifference>
+							<greatestDifference id="y">MMM y 'a`' MMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d">d-d MMM y</greatestDifference>
+							<greatestDifference id="M">d MMM 'au' d MMM y</greatestDifference>
+							<greatestDifference id="y">d MMM y 'au' d MMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d">E d 'au' E d MMM y</greatestDifference>
+							<greatestDifference id="M">E d MMM 'au' E d MMM y</greatestDifference>
+							<greatestDifference id="y">E d MMM y 'au' E d MMM y</greatestDifference>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -203,8 +279,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</calendars>
 	</dates>
 	<numbers>
+<<<<<<< HEAD
 		<symbols numberSystem="latn">
+=======
+		<symbols>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<group>.</group>
 		</symbols>
 	</numbers>
 </ldml>
+<<<<<<< HEAD
+=======
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

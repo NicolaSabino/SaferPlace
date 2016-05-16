@@ -15,17 +15,26 @@
  * @category   Zend
  * @package    Zend_Search_Lucene
  * @subpackage Document
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: OpenXml.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 
 /** Zend_Search_Lucene_Document */
 require_once 'Zend/Search/Lucene/Document.php';
 
+<<<<<<< HEAD
 /** Zend_Xml_Security */
 require_once 'Zend/Xml/Security.php';
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
 /**
  * OpenXML document.
@@ -33,7 +42,11 @@ require_once 'Zend/Xml/Security.php';
  * @category   Zend
  * @package    Zend_Search_Lucene
  * @subpackage Document
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 abstract class Zend_Search_Lucene_Document_OpenXml extends Zend_Search_Lucene_Document
@@ -85,11 +98,19 @@ abstract class Zend_Search_Lucene_Document_OpenXml extends Zend_Search_Lucene_Do
         $coreProperties = array();
 
         // Read relations and search for core properties
+<<<<<<< HEAD
         $relations = Zend_Xml_Security::scan($package->getFromName("_rels/.rels"));
         foreach ($relations->Relationship as $rel) {
             if ($rel["Type"] == Zend_Search_Lucene_Document_OpenXml::SCHEMA_COREPROPERTIES) {
                 // Found core properties! Read in contents...
                 $contents = Zend_Xml_Security::scan(
+=======
+        $relations = simplexml_load_string($package->getFromName("_rels/.rels"));
+        foreach ($relations->Relationship as $rel) {
+            if ($rel["Type"] == Zend_Search_Lucene_Document_OpenXml::SCHEMA_COREPROPERTIES) {
+                // Found core properties! Read in contents...
+                $contents = simplexml_load_string(
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                     $package->getFromName(dirname($rel["Target"]) . "/" . basename($rel["Target"]))
                 );
 

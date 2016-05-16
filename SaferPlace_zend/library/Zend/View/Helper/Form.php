@@ -15,8 +15,13 @@
  * @category   Zend
  * @package    Zend_View
  * @subpackage Helper
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @version    $Id: Form.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -28,7 +33,11 @@ require_once 'Zend/View/Helper/FormElement.php';
  *
  * @package    Zend_View
  * @subpackage Helper
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_View_Helper_Form extends Zend_View_Helper_FormElement
@@ -62,10 +71,13 @@ class Zend_View_Helper_Form extends Zend_View_Helper_FormElement
             $name = '';
         }
         
+<<<<<<< HEAD
         if ($this->_isHtml5() && array_key_exists('action', $attribs) && !$attribs['action']) {
             unset($attribs['action']);
         }
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         if ( array_key_exists('name', $attribs) && empty($attribs['id'])) {
             unset($attribs['id']);
         }

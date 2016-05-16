@@ -15,9 +15,15 @@
  *
  * @category   Zend
  * @package    Zend_Feed
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Atom.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 
@@ -26,15 +32,22 @@
  */
 require_once 'Zend/Feed/Entry/Abstract.php';
 
+<<<<<<< HEAD
 /** @see Zend_Xml_Security */
 require_once 'Zend/Xml/Security.php';
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
 /**
  * Concrete class for working with Atom entries.
  *
  * @category   Zend
  * @package    Zend_Feed
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Feed_Entry_Atom extends Zend_Feed_Entry_Abstract
@@ -196,10 +209,17 @@ class Zend_Feed_Entry_Atom extends Zend_Feed_Entry_Abstract
         // Update internal properties using $client->responseBody;
         @ini_set('track_errors', 1);
         $newEntry = new DOMDocument;
+<<<<<<< HEAD
         $newEntry = @Zend_Xml_Security::scan($response->getBody(), $newEntry);
         @ini_restore('track_errors');
 
         if (!$newEntry) {
+=======
+        $status = @$newEntry->loadXML($response->getBody());
+        @ini_restore('track_errors');
+
+        if (!$status) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             // prevent the class to generate an undefined variable notice (ZF-2590)
             if (!isset($php_errormsg)) {
                 if (function_exists('xdebug_is_enabled')) {

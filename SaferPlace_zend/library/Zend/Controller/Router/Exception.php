@@ -15,6 +15,7 @@
  * @category   Zend
  * @package    Zend_Controller
  * @subpackage Router
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @version    $Id$
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
@@ -32,4 +33,24 @@ require_once 'Zend/Controller/Exception.php';
 class Zend_Controller_Router_Exception extends Zend_Controller_Exception
 {
 }
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @version    $Id: Exception.php 24593 2012-01-05 20:35:02Z matthew $
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ */
+
+
+/** Zend_Controller_Exception */
+require_once 'Zend/Controller/Exception.php';
+
+
+/**
+ * @package    Zend_Controller
+ * @subpackage Router
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ */
+class Zend_Controller_Router_Exception extends Zend_Controller_Exception
+{}
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 

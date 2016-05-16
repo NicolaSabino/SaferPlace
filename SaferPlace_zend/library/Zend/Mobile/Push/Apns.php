@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Mobile
  * @subpackage Zend_Mobile_Push
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
@@ -32,7 +36,11 @@ require_once 'Zend/Mobile/Push/Message/Apns.php';
  * @category   Zend
  * @package    Zend_Mobile
  * @subpackage Zend_Mobile_Push
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
@@ -209,10 +217,17 @@ class Zend_Mobile_Push_Apns extends Zend_Mobile_Push_Abstract
     /**
      * Connect to the Push Server
      *
+<<<<<<< HEAD
      * @param  int|string $env
      * @throws Zend_Mobile_Push_Exception
      * @throws Zend_Mobile_Push_Exception_ServerUnavailable
      * @return Zend_Mobile_Push_Abstract
+=======
+     * @param string $env
+     * @return Zend_Mobile_Push_Abstract
+     * @throws Zend_Mobile_Push_Exception
+     * @throws Zend_Mobile_Push_Exception_ServerUnavailable
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function connect($env = self::SERVER_PRODUCTION_URI)
     {
@@ -271,6 +286,7 @@ class Zend_Mobile_Push_Apns extends Zend_Mobile_Push_Abstract
     /**
      * Send Message
      *
+<<<<<<< HEAD
      * @param  Zend_Mobile_Push_Message_Abstract $message
      * @throws Zend_Mobile_Push_Exception
      * @throws Zend_Mobile_Push_Exception_InvalidPayload
@@ -278,6 +294,15 @@ class Zend_Mobile_Push_Apns extends Zend_Mobile_Push_Abstract
      * @throws Zend_Mobile_Push_Exception_InvalidTopic
      * @throws Zend_Mobile_Push_Exception_ServerUnavailable
      * @return bool
+=======
+     * @param Zend_Mobile_Push_Message_Apns $message
+     * @return boolean
+     * @throws Zend_Mobile_Push_Exception
+     * @throws Zend_Mobile_Push_Exception_ServerUnavailable
+     * @throws Zend_Mobile_Push_Exception_InvalidToken
+     * @throws Zend_Mobile_Push_Exception_InvalidTopic
+     * @throws Zend_Mobile_Push_Exception_InvalidPayload
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function send(Zend_Mobile_Push_Message_Abstract $message)
     {
@@ -305,20 +330,28 @@ class Zend_Mobile_Push_Apns extends Zend_Mobile_Push_Abstract
         if (!is_null($message->getBadge())) {
             $payload['aps']['badge'] = $message->getBadge();
         }
+<<<<<<< HEAD
         $sound = $message->getSound();
         if (!empty($sound)) {
             $payload['aps']['sound'] = $sound;
         }
+=======
+        $payload['aps']['sound'] = $message->getSound();
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
         foreach($message->getCustomData() as $k => $v) {
             $payload[$k] = $v;
         }
+<<<<<<< HEAD
         
         if (version_compare(PHP_VERSION, '5.4.0') >= 0) {
             $payload = json_encode($payload, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
         } else {
             $payload = json_encode($payload);
         }
+=======
+        $payload = json_encode($payload);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
         $expire = $message->getExpire();
         if ($expire > 0) {

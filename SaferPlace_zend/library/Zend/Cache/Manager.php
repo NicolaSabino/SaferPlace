@@ -14,9 +14,15 @@
  *
  * @category   Zend
  * @package    Zend_Cache
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Manager.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /** @see Zend_Cache_Exception */
@@ -28,7 +34,11 @@ require_once 'Zend/Cache.php';
 /**
  * @category   Zend
  * @package    Zend_Cache
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Cache_Manager
@@ -197,9 +207,14 @@ class Zend_Cache_Manager
      * be lazy loaded
      *
      * @param  string $name
+<<<<<<< HEAD
      * @param  array  $options
      * @return Zend_Cache_Manager
      * @throws Zend_Cache_Exception
+=======
+     * @param  array $options
+     * @return Zend_Cache_Manager
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setCacheTemplate($name, $options)
     {
@@ -285,11 +300,16 @@ class Zend_Cache_Manager
             $current['backend']['name'] = $options['backend']['name'];
         }
         if (isset($options['frontend']['options'])) {
+<<<<<<< HEAD
             foreach ($options['frontend']['options'] as $key => $value) {
+=======
+            foreach ($options['frontend']['options'] as $key=>$value) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 $current['frontend']['options'][$key] = $value;
             }
         }
         if (isset($options['backend']['options'])) {
+<<<<<<< HEAD
             foreach ($options['backend']['options'] as $key => $value) {
                 $current['backend']['options'][$key] = $value;
             }
@@ -303,6 +323,12 @@ class Zend_Cache_Manager
         if (isset($options['frontendBackendAutoload'])) {
             $current['frontendBackendAutoload'] = $options['frontendBackendAutoload'];
         }
+=======
+            foreach ($options['backend']['options'] as $key=>$value) {
+                $current['backend']['options'][$key] = $value;
+            }
+        }
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         return $current;
     }
 }

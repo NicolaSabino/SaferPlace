@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Service_Rackspace
  * @subpackage Files
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -29,59 +33,86 @@ class Zend_Service_Rackspace_Files_Object
      * @var Zend_Service_Rackspace_Files
      */
     protected $service;
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Name of the object
      *
      * @var string
      */
     protected $name;
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * MD5 value of the object's content
      *
      * @var string
      */
     protected $hash;
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Size in bytes of the object's content
      *
      * @var integer
      */
     protected $size;
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Content type of the object's content
      *
      * @var string
      */
     protected $contentType;
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Date of the last modified of the object
      *
      * @var string
      */
     protected $lastModified;
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Object content
      *
      * @var string
      */
     protected $content;
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Name of the container where the object is stored
      *
      * @var string
      */
     protected $container;
+<<<<<<< HEAD
 
     /**
      * Constructor
      *
+=======
+    /**
+     * Constructor
+     * 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * You must pass the Zend_Service_Rackspace_Files object of the caller and an associative
      * array with the keys "name", "container", "hash", "bytes", "content_type",
      * "last_modified", "file" where:
@@ -92,6 +123,7 @@ class Zend_Service_Rackspace_Files_Object
      * content_type= content type of the object's content
      * last_modified= date of the last modified of the object
      * content= content of the object
+<<<<<<< HEAD
      *
      * @param Zend_Service_Rackspace_Files $service
      * @param array                        $data
@@ -159,6 +191,53 @@ class Zend_Service_Rackspace_Files_Object
         $this->service   = $service;
     }
 
+=======
+     * 
+     * @param Zend_Service_Rackspace_Files $service
+     * @param array $data 
+     */
+    public function __construct($service,$data)
+    {
+        if (!($service instanceof Zend_Service_Rackspace_Files) || !is_array($data)) {
+            require_once 'Zend/Service/Rackspace/Files/Exception.php';
+            throw new Zend_Service_Rackspace_Files_Exception("You must pass a RackspaceFiles and an array");
+        }
+        if (!array_key_exists('name', $data)) {
+            require_once 'Zend/Service/Rackspace/Files/Exception.php';
+            throw new Zend_Service_Rackspace_Files_Exception("You must pass the name of the object in the array (name)");
+        }
+        if (!array_key_exists('container', $data)) {
+            require_once 'Zend/Service/Rackspace/Files/Exception.php';
+            throw new Zend_Service_Rackspace_Files_Exception("You must pass the container of the object in the array (container)");
+        }
+        if (!array_key_exists('hash', $data)) {
+            require_once 'Zend/Service/Rackspace/Files/Exception.php';
+            throw new Zend_Service_Rackspace_Files_Exception("You must pass the hash of the object in the array (hash)");
+        }
+        if (!array_key_exists('bytes', $data)) {
+            require_once 'Zend/Service/Rackspace/Files/Exception.php';
+            throw new Zend_Service_Rackspace_Files_Exception("You must pass the byte size of the object in the array (bytes)");
+        }
+        if (!array_key_exists('content_type', $data)) {
+            require_once 'Zend/Service/Rackspace/Files/Exception.php';
+            throw new Zend_Service_Rackspace_Files_Exception("You must pass the content type of the object in the array (content_type)");
+        }
+        if (!array_key_exists('last_modified', $data)) {
+            require_once 'Zend/Service/Rackspace/Files/Exception.php';
+            throw new Zend_Service_Rackspace_Files_Exception("You must pass the last modified data of the object in the array (last_modified)");
+        }
+        $this->name= $data['name'];
+        $this->container= $data['container'];
+        $this->hash= $data['hash'];
+        $this->size= $data['bytes'];
+        $this->contentType= $data['content_type'];
+        $this->lastModified= $data['last_modified'];
+        if (!empty($data['content'])) {
+            $this->content= $data['content'];
+        }
+        $this->service= $service;
+    }
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Get name
      *
@@ -168,7 +247,10 @@ class Zend_Service_Rackspace_Files_Object
     {
         return $this->name;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Get the name of the container
      *
@@ -178,7 +260,10 @@ class Zend_Service_Rackspace_Files_Object
     {
         return $this->container;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Get the MD5 of the object's content
      *
@@ -188,7 +273,10 @@ class Zend_Service_Rackspace_Files_Object
     {
         return $this->hash;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Get the size (in bytes) of the object's content
      *
@@ -198,7 +286,10 @@ class Zend_Service_Rackspace_Files_Object
     {
         return $this->size;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Get the content type of the object's content
      *
@@ -208,7 +299,10 @@ class Zend_Service_Rackspace_Files_Object
     {
         return $this->contentType;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Get the data of the last modified of the object
      *
@@ -218,7 +312,10 @@ class Zend_Service_Rackspace_Files_Object
     {
         return $this->lastModified;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Get the content of the object
      *
@@ -228,7 +325,10 @@ class Zend_Service_Rackspace_Files_Object
     {
         return $this->content;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Get the metadata of the object
      * If you don't pass the $key it returns the entire array of metadata value
@@ -249,7 +349,10 @@ class Zend_Service_Rackspace_Files_Object
         }
         return false;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Set the metadata value
      * The old metadata values are replaced with the new one
@@ -261,7 +364,10 @@ class Zend_Service_Rackspace_Files_Object
     {
         return $this->service->setMetadataObject($this->container,$this->name,$metadata);
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Copy the object to another container
      * You can add metadata information to the destination object, change the
@@ -277,7 +383,10 @@ class Zend_Service_Rackspace_Files_Object
     {
         return $this->service->copyObject($this->container,$this->name,$container_dest,$name_dest,$metadata,$content_type);
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Get the CDN URL of the object
      *
@@ -293,7 +402,10 @@ class Zend_Service_Rackspace_Files_Object
         }
         return false;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Get the CDN SSL URL of the object
      *

@@ -14,9 +14,15 @@
  *
  * @category   Zend
  * @package    Zend_Ldap
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Attribute.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -24,15 +30,22 @@
  */
 require_once 'Zend/Ldap/Converter.php';
 
+<<<<<<< HEAD
 /** @see Zend_Crypt_Math */
 require_once 'Zend/Crypt/Math.php';
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 /**
  * Zend_Ldap_Attribute is a collection of LDAP attribute related functions.
  *
  * @category   Zend
  * @package    Zend_Ldap
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Ldap_Attribute
@@ -314,7 +327,11 @@ class Zend_Ldap_Attribute
                 }
                 return $password;
             case self::PASSWORD_HASH_SSHA:
+<<<<<<< HEAD
                 $salt    = Zend_Crypt_Math::randBytes(4);
+=======
+                $salt    = substr(sha1(uniqid(mt_rand(), true), true), 0, 4);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 $rawHash = sha1($password . $salt, true) . $salt;
                 $method  = '{SSHA}';
                 break;
@@ -323,7 +340,11 @@ class Zend_Ldap_Attribute
                 $method  = '{SHA}';
                 break;
             case self::PASSWORD_HASH_SMD5:
+<<<<<<< HEAD
                 $salt    = Zend_Crypt_Math::randBytes(4);
+=======
+                $salt    = substr(sha1(uniqid(mt_rand(), true), true), 0, 4);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 $rawHash = md5($password . $salt, true) . $salt;
                 $method  = '{SMD5}';
                 break;
@@ -417,4 +438,8 @@ class Zend_Ldap_Attribute
             }
         } else return null;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

@@ -14,7 +14,11 @@
  *
  * @category   Zend
  * @package    Zend_Controller
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -28,12 +32,15 @@ require_once 'Zend/XmlRpc/Value.php';
  */
 require_once 'Zend/XmlRpc/Fault.php';
 
+<<<<<<< HEAD
 /** @see Zend_Xml_Security */
 require_once 'Zend/Xml/Security.php';
 
 /** @see Zend_Xml_Exception */
 require_once 'Zend/Xml/Exception.php';
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 /**
  * XmlRpc Request object
  *
@@ -47,9 +54,15 @@ require_once 'Zend/Xml/Exception.php';
  *
  * @category Zend
  * @package  Zend_XmlRpc
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version $Id: Request.php 25033 2012-08-17 19:50:08Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 class Zend_XmlRpc_Request
 {
@@ -309,12 +322,35 @@ class Zend_XmlRpc_Request
             return false;
         }
 
+<<<<<<< HEAD
         try {
             $xml = Zend_Xml_Security::scan($request);
         } catch (Zend_Xml_Exception $e) {
             // Not valid XML
             $this->_fault = new Zend_XmlRpc_Fault(631);
             $this->_fault->setEncoding($this->getEncoding());
+=======
+        // @see ZF-12293 - disable external entities for security purposes
+        $loadEntities = libxml_disable_entity_loader(true);
+        try {
+            $dom = new DOMDocument;
+            $dom->loadXML($request);
+            foreach ($dom->childNodes as $child) {
+                if ($child->nodeType === XML_DOCUMENT_TYPE_NODE) {
+                    require_once 'Zend/XmlRpc/Exception.php';
+                    throw new Zend_XmlRpc_Exception(
+                        'Invalid XML: Detected use of illegal DOCTYPE'
+                    );
+                }
+            }
+            $xml = simplexml_import_dom($dom);
+            libxml_disable_entity_loader($loadEntities);
+        } catch (Exception $e) {
+            // Not valid XML
+            $this->_fault = new Zend_XmlRpc_Fault(631);
+            $this->_fault->setEncoding($this->getEncoding());
+            libxml_disable_entity_loader($loadEntities);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             return false;
         }
 

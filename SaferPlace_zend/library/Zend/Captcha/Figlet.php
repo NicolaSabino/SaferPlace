@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Captcha
  * @subpackage Adapter
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -33,9 +37,15 @@ require_once 'Zend/Text/Figlet.php';
  * @category   Zend
  * @package    Zend_Captcha
  * @subpackage Adapter
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Figlet.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 class Zend_Captcha_Figlet extends Zend_Captcha_Word
 {
@@ -49,7 +59,12 @@ class Zend_Captcha_Figlet extends Zend_Captcha_Word
     /**
      * Constructor
      *
+<<<<<<< HEAD
      * @param null|string|array|Zend_Config $options
+=======
+     * @param  null|string|array|Zend_Config $options
+     * @return void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function __construct($options = null)
     {

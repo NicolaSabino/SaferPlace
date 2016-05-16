@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -8,13 +9,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 	<identity>
 		<version number="$Revision: 9967 $"/>
 		<generation date="$Date: 2014-03-14 12:20:13 -0500 (Fri, 14 Mar 2014) $"/>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.140 $"/>
+		<generation date="$Date: 2009/06/15 17:12:26 $"/>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		<language type="ko"/>
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
 			<localePattern>{0}({1})</localePattern>
+<<<<<<< HEAD
 			<localeSeparator>{0}, {1}</localeSeparator>
 			<localeKeyTypePattern>{0}: {1}</localeKeyTypePattern>
+=======
+			<localeSeparator>, </localeSeparator>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</localeDisplayPattern>
 		<languages>
 			<language type="aa">아파르어</language>
@@ -25,17 +36,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ady">아닥헤어</language>
 			<language type="ae">아베스타어</language>
 			<language type="af">남아공 공용어</language>
+<<<<<<< HEAD
 			<language type="afh">아프리히리어</language>
 			<language type="agq" draft="contributed">아그햄어</language>
+=======
+			<language type="afa">아시아-아프리카어 (기타)</language>
+			<language type="afh">아프리히리어</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ain">아이누어</language>
 			<language type="ak">아칸어</language>
 			<language type="akk">아카드어</language>
 			<language type="ale">알류트어</language>
+<<<<<<< HEAD
+=======
+			<language type="alg">알공킨어족</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="alt">남부 알타이어</language>
 			<language type="am">암하라어</language>
 			<language type="an">아라곤어</language>
 			<language type="ang">고대 영어</language>
 			<language type="anp">앙가어</language>
+<<<<<<< HEAD
 			<language type="ar">아랍어</language>
 			<language type="ar_001" draft="contributed">현대 표준 아랍어</language>
 			<language type="arc">아람어</language>
@@ -45,10 +66,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="as">아샘어</language>
 			<language type="asa" draft="contributed">아수어</language>
 			<language type="ast">아스투리아어</language>
+=======
+			<language type="apa">아파치어</language>
+			<language type="ar">아랍어</language>
+			<language type="arc">아람어</language>
+			<language type="arn">아라우칸어</language>
+			<language type="arp">아라파호어</language>
+			<language type="art">기계어 (기타)</language>
+			<language type="arw">아라와크어</language>
+			<language type="as">아샘어</language>
+			<language type="ast">아스투리아어</language>
+			<language type="ath">아타파스카어군</language>
+			<language type="aus">오스트레일리아어족</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="av">아바릭어</language>
 			<language type="awa">아와히어</language>
 			<language type="ay">아이마라어</language>
 			<language type="az">아제르바이잔어</language>
+<<<<<<< HEAD
 			<language type="az" alt="short" draft="contributed">아제리어</language>
 			<language type="ba">바슈키르어</language>
 			<language type="bal">발루치어</language>
@@ -62,10 +97,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="bez" draft="contributed">베나어</language>
 			<language type="bfd" draft="contributed">바푸트어</language>
 			<language type="bg">불가리아어</language>
+=======
+			<language type="ba">바슈키르어</language>
+			<language type="bad">반다어</language>
+			<language type="bai">바밀레케어족</language>
+			<language type="bal">발루치어</language>
+			<language type="ban">발리어</language>
+			<language type="bas">바사어</language>
+			<language type="bat">발트어 (기타)</language>
+			<language type="be">벨로루시어</language>
+			<language type="bej">베자어</language>
+			<language type="bem">벰바어</language>
+			<language type="ber">베르베르어</language>
+			<language type="bg">불가리아어</language>
+			<language type="bh">비하르어</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="bho">호즈푸리어</language>
 			<language type="bi">비슬라마어</language>
 			<language type="bik">비콜어</language>
 			<language type="bin">비니어</language>
+<<<<<<< HEAD
 			<language type="bkm" draft="contributed">콤어</language>
 			<language type="bla">식시카어</language>
 			<language type="bm">밤바라어</language>
@@ -89,6 +140,29 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ce">체첸어</language>
 			<language type="ceb">세부아노어</language>
 			<language type="cgg" draft="contributed">치가어</language>
+=======
+			<language type="bla">식시카어</language>
+			<language type="bm">밤바라어</language>
+			<language type="bn">벵골어</language>
+			<language type="bnt">반투어</language>
+			<language type="bo">티베트어</language>
+			<language type="br">브르타뉴어</language>
+			<language type="bra">브라지어</language>
+			<language type="bs">보스니아어</language>
+			<language type="btk">바타크어</language>
+			<language type="bua">부리아타</language>
+			<language type="bug">부기어</language>
+			<language type="byn">브린어</language>
+			<language type="ca">카탈로니아어</language>
+			<language type="cad">카도어</language>
+			<language type="cai">중앙 아메리카 인디안어 (기타)</language>
+			<language type="car">카리브어</language>
+			<language type="cau">카프카스어 (기타)</language>
+			<language type="cch">아삼어</language>
+			<language type="ce">체첸어</language>
+			<language type="ceb">세부아노어</language>
+			<language type="cel">켈트어 (기타)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ch">차모로어</language>
 			<language type="chb">치브차어</language>
 			<language type="chg">차가타이어</language>
@@ -99,6 +173,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="chp">치페우얀</language>
 			<language type="chr">체로키어</language>
 			<language type="chy">샤이엔어</language>
+<<<<<<< HEAD
 			<language type="ckb">소라니 쿠르드어</language>
 			<language type="co">코르시카어</language>
 			<language type="cop">콥트어</language>
@@ -107,29 +182,60 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="cs">체코어</language>
 			<language type="csb">카슈비아어</language>
 			<language type="cu">교회 슬라브어</language>
+=======
+			<language type="cmc">참어군</language>
+			<language type="co">코르시카어</language>
+			<language type="cop">콥트어</language>
+			<language type="cpe">크리올어 및 피진어 (영어를 기반으로 한 기타)</language>
+			<language type="cpf">크리올어 및 피진어 (프랑스어를 기반으로 한 기타)</language>
+			<language type="cpp">크리올어 및 피진어 (포르투갈어를 기반으로 한 기타)</language>
+			<language type="cr">크리어</language>
+			<language type="crh">크리민 터키어; 크리민 타타르어</language>
+			<language type="crp">크리올어 및 피진어 (기타)</language>
+			<language type="cs">체코어</language>
+			<language type="csb">카슈비아어</language>
+			<language type="cu">교회 슬라브어</language>
+			<language type="cus">쿠시어족</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="cv">추바시어</language>
 			<language type="cy">웨일스어</language>
 			<language type="da">덴마크어</language>
 			<language type="dak">다코타어</language>
 			<language type="dar">다르그와어</language>
+<<<<<<< HEAD
 			<language type="dav" draft="contributed">타이타어</language>
 			<language type="de">독일어</language>
+=======
+			<language type="day">다야크어</language>
+			<language type="de">독일어</language>
+			<language type="de_AT">독일어 (오스트리아)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="de_CH">고지 독일어 (스위스)</language>
 			<language type="del">델라웨어어</language>
 			<language type="den">슬라브어</language>
 			<language type="dgr">도그리브어</language>
 			<language type="din">딩카어</language>
+<<<<<<< HEAD
 			<language type="dje" draft="contributed">자르마어</language>
 			<language type="doi">도그리어</language>
+=======
+			<language type="doi">도그리어</language>
+			<language type="dra">드라비다어 (기타)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="dsb">저지 소르비아어</language>
 			<language type="dua">드와라어</language>
 			<language type="dum">중세 네덜란드어</language>
 			<language type="dv">디베히어</language>
+<<<<<<< HEAD
 			<language type="dyo" draft="contributed">졸라 포니어</language>
 			<language type="dyu">드율라어</language>
 			<language type="dz">종카어</language>
 			<language type="dzg" draft="contributed">다장가어</language>
 			<language type="ebu" draft="contributed">엠부어</language>
+=======
+			<language type="dyu">드율라어</language>
+			<language type="dz">종카어</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ee">에웨어</language>
 			<language type="efi">이픽어</language>
 			<language type="egy">이집트어 (고대)</language>
@@ -137,6 +243,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="el">그리스어</language>
 			<language type="elx">엘람어</language>
 			<language type="en">영어</language>
+<<<<<<< HEAD
 			<language type="en_AU">영어(호주)</language>
 			<language type="en_CA">영어 (캐나다)</language>
 			<language type="en_GB">영어 (영국식)</language>
@@ -146,6 +253,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="es">스페인어</language>
 			<language type="es_419">중남미 스페인어</language>
 			<language type="es_ES">유럽식 스페인어</language>
+=======
+			<language type="en_AU">영어 (호주)</language>
+			<language type="en_CA">영어 (캐나다)</language>
+			<language type="en_GB">영어 (영국식)</language>
+			<language type="en_US">영어 (미국식)</language>
+			<language type="enm">영어, 중세 (1100-1500)</language>
+			<language type="eo">에스페란토어</language>
+			<language type="es">스페인어</language>
+			<language type="es_419">중남미 스페인어</language>
+			<language type="es_ES">스페인어 (이베리아)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="et">에스토니아어</language>
 			<language type="eu">바스크어</language>
 			<language type="ewo">이원도어</language>
@@ -155,6 +273,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ff">풀라어</language>
 			<language type="fi">핀란드어</language>
 			<language type="fil">필리핀어</language>
+<<<<<<< HEAD
+=======
+			<language type="fiu">피노우그리아어 (기타)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="fj">피지어</language>
 			<language type="fo">페로어</language>
 			<language type="fon">폰어</language>
@@ -172,6 +294,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="gay">가요어</language>
 			<language type="gba">그바야어</language>
 			<language type="gd">스코틀랜드 게일어</language>
+<<<<<<< HEAD
+=======
+			<language type="gem">독일어 (기타)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="gez">게이즈어</language>
 			<language type="gil">키리바시어</language>
 			<language type="gl">갈리시아어</language>
@@ -182,10 +308,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="gor">고론탈로어</language>
 			<language type="got">고트어</language>
 			<language type="grb">게르보어</language>
+<<<<<<< HEAD
 			<language type="grc">그리스어, 고대</language>
 			<language type="gsw">독일어(스위스)</language>
 			<language type="gu">구자라트어</language>
 			<language type="guz" draft="contributed">구시어</language>
+=======
+			<language type="grc">그리스어, 고대 (1453년 까지)</language>
+			<language type="gsw">독일어 (스위스)</language>
+			<language type="gu">구자라트어</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="gv">맹크스어</language>
 			<language type="gwi">그위친어</language>
 			<language type="ha">하우사어</language>
@@ -194,6 +326,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="he">히브리어</language>
 			<language type="hi">힌디어</language>
 			<language type="hil">헤리가뇬어</language>
+<<<<<<< HEAD
+=======
+			<language type="him">히마차리어</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="hit">하타이트어</language>
 			<language type="hmn">히몸어</language>
 			<language type="ho">히리 모투어</language>
@@ -206,20 +342,36 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="hz">헤레로어</language>
 			<language type="ia">인테르링구아 (국제보조어협회)</language>
 			<language type="iba">이반어</language>
+<<<<<<< HEAD
 			<language type="ibb" draft="contributed">이비비오어</language>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="id">인도네시아어</language>
 			<language type="ie">인테르링구에</language>
 			<language type="ig">이그보어</language>
 			<language type="ii">쓰촨 이어</language>
+<<<<<<< HEAD
 			<language type="ik">이누피아크어</language>
 			<language type="ilo">이로코어</language>
 			<language type="inh">인귀시어</language>
 			<language type="io">이도어</language>
+=======
+			<language type="ijo">이조어</language>
+			<language type="ik">이누피아크어</language>
+			<language type="ilo">이로코어</language>
+			<language type="inc">인도어 (기타)</language>
+			<language type="ine">인도유럽어 (기타)</language>
+			<language type="inh">인귀시어</language>
+			<language type="io">이도어</language>
+			<language type="ira">이란어 [ira]</language>
+			<language type="iro">이러쿼이어</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="is">아이슬란드어</language>
 			<language type="it">이탈리아어</language>
 			<language type="iu">이눅티투트어</language>
 			<language type="ja">일본어</language>
 			<language type="jbo">로반어</language>
+<<<<<<< HEAD
 			<language type="jmc" draft="contributed">마차메어</language>
 			<language type="jpr">유대-페르시아어</language>
 			<language type="jrb">유대-아라비아어</language>
@@ -250,6 +402,31 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="km">캄보디아어</language>
 			<language type="kmb">킴분두어</language>
 			<language type="kn">칸나다어</language>
+=======
+			<language type="jpr">유대-페르시아어</language>
+			<language type="jrb">유대-아라비아어</language>
+			<language type="jv">자바어</language>
+			<language type="ka">그루지야어</language>
+			<language type="kaa">카라칼파크어</language>
+			<language type="kab">커바일어</language>
+			<language type="kac">카친어</language>
+			<language type="kam">캄바어</language>
+			<language type="kar">카렌어</language>
+			<language type="kaw">카위어</language>
+			<language type="kbd">카바르디어</language>
+			<language type="kfo">코로어</language>
+			<language type="kg">콩고어</language>
+			<language type="kha">카시어</language>
+			<language type="khi">코이산어 (기타)</language>
+			<language type="kho">호탄어</language>
+			<language type="ki">키쿠유어</language>
+			<language type="kj">쿠안야마어</language>
+			<language type="kk">카자흐어</language>
+			<language type="kl">그린란드어</language>
+			<language type="km">캄보디아어</language>
+			<language type="kmb">킴분두어</language>
+			<language type="kn">카나다어</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ko">한국어</language>
 			<language type="kok">코카니어</language>
 			<language type="kos">코스라이엔어</language>
@@ -257,11 +434,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="kr">칸누리어</language>
 			<language type="krc">카라챠이-발카르어</language>
 			<language type="krl">카렐리야어</language>
+<<<<<<< HEAD
 			<language type="kru">쿠르크어</language>
 			<language type="ks">카슈미르어</language>
 			<language type="ksb" draft="contributed">샴발라어</language>
 			<language type="ksf" draft="contributed">바피아어</language>
 			<language type="ksh" draft="contributed">콜로그니안어</language>
+=======
+			<language type="kro">크루어</language>
+			<language type="kru">쿠르크어</language>
+			<language type="ks">카슈미르어</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ku">쿠르드어</language>
 			<language type="kum">쿠믹어</language>
 			<language type="kut">쿠테네어</language>
@@ -270,7 +453,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ky">키르기스어</language>
 			<language type="la">라틴어</language>
 			<language type="lad">라디노어</language>
+<<<<<<< HEAD
 			<language type="lag" draft="contributed">랑기어</language>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="lah">라한다어</language>
 			<language type="lam">람바어</language>
 			<language type="lb">룩셈부르크어</language>
@@ -288,14 +474,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="lun">룬다어</language>
 			<language type="luo">루오어</language>
 			<language type="lus">루샤이어</language>
+<<<<<<< HEAD
 			<language type="luy" draft="contributed">루야어</language>
 			<language type="lv">라트비아어</language>
 			<language type="mad">마두라어</language>
 			<language type="maf" draft="contributed">마파어</language>
+=======
+			<language type="lv">라트비아어</language>
+			<language type="mad">마두라어</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mag">마가히</language>
 			<language type="mai">마이틸리</language>
 			<language type="mak">마카사어</language>
 			<language type="man">만딩고어</language>
+<<<<<<< HEAD
 			<language type="mas">마사이어</language>
 			<language type="mde" draft="contributed">마바어</language>
 			<language type="mdf">모크샤어</language>
@@ -306,26 +498,52 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="mg">말라가시어</language>
 			<language type="mga">아일랜드어, 중세</language>
 			<language type="mgh" draft="contributed">마크후와-메토어</language>
+=======
+			<language type="map">남도어</language>
+			<language type="mas">마사이어</language>
+			<language type="mdf">모크샤어</language>
+			<language type="mdr">만다르어</language>
+			<language type="men">멘데어</language>
+			<language type="mg">마다가스카르어</language>
+			<language type="mga">아일랜드어, 중세 (900-1200)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mh">마셜제도어</language>
 			<language type="mi">마오리어</language>
 			<language type="mic">미크맥어</language>
 			<language type="min">미낭카바우</language>
+<<<<<<< HEAD
 			<language type="mk">마케도니아어</language>
+=======
+			<language type="mis">기타 언어</language>
+			<language type="mk">마케도니아어</language>
+			<language type="mkh">몬크메르어 (기타)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ml">말라얄람어</language>
 			<language type="mn">몽고어</language>
 			<language type="mnc">만주어</language>
 			<language type="mni">마니푸리어</language>
+<<<<<<< HEAD
+=======
+			<language type="mno">마노보어</language>
+			<language type="mo">몰도바어</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="moh">모호크어</language>
 			<language type="mos">모시어</language>
 			<language type="mr">마라티어</language>
 			<language type="ms">말레이어</language>
 			<language type="mt">몰타어</language>
+<<<<<<< HEAD
 			<language type="mua" draft="contributed">문당어</language>
 			<language type="mul">다중 언어</language>
+=======
+			<language type="mul">다중 언어</language>
+			<language type="mun">문다어</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mus">크리크어</language>
 			<language type="mwl">미란데어</language>
 			<language type="mwr">마르와리어</language>
 			<language type="my">버마어</language>
+<<<<<<< HEAD
 			<language type="mye" draft="contributed">미예네어</language>
 			<language type="myv">엘즈야어</language>
 			<language type="na">나우루어</language>
@@ -333,24 +551,48 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="naq" draft="contributed">나마어</language>
 			<language type="nb">노르웨이어(보크말)</language>
 			<language type="nd">북부 은데벨레어</language>
+=======
+			<language type="myn">마야어</language>
+			<language type="myv">엘즈야어</language>
+			<language type="na">나우루어</language>
+			<language type="nah">나우아틀어</language>
+			<language type="nai">북아메리카 인디언어 (기타)</language>
+			<language type="nap">나폴리어</language>
+			<language type="nb">보크말 노르웨이어</language>
+			<language type="nd">은데벨레어(북부)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="nds">저지 독일어</language>
 			<language type="ne">네팔어</language>
 			<language type="new">네와르어</language>
 			<language type="ng">느동가어</language>
 			<language type="nia">니아스어</language>
+<<<<<<< HEAD
 			<language type="niu">니웨언어</language>
 			<language type="nl">네덜란드어</language>
 			<language type="nl_BE">플라망어</language>
 			<language type="nmg" draft="contributed">크와시오어</language>
 			<language type="nn">노르웨이어(니노르스크)</language>
 			<language type="nnh" draft="contributed">느기엠본어</language>
+=======
+			<language type="nic">니제르 - 코르도파니아어 (기타)</language>
+			<language type="niu">니웨언어</language>
+			<language type="nl">네덜란드어</language>
+			<language type="nl_BE">플라망어</language>
+			<language type="nn">노르웨이어(니노르스크)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="no">노르웨이어</language>
 			<language type="nog">노가이어</language>
 			<language type="non">노르웨이, 고대</language>
 			<language type="nqo">응코어</language>
+<<<<<<< HEAD
 			<language type="nr">남부 은데벨레어</language>
 			<language type="nso">소토어 (북부)</language>
 			<language type="nus" draft="contributed">누에르어</language>
+=======
+			<language type="nr">은데벨레어(남부)</language>
+			<language type="nso">소토어 (북부)</language>
+			<language type="nub">누비안어</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="nv">나바호어</language>
 			<language type="nwc">네와르어 (고전)</language>
 			<language type="ny">니안자어; 치츄어; 츄어</language>
@@ -360,27 +602,51 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="nzi">느지마어</language>
 			<language type="oc">오크어</language>
 			<language type="oj">오지브웨이어</language>
+<<<<<<< HEAD
 			<language type="om">오로모어</language>
 			<language type="or">오리야어</language>
 			<language type="os">오세트어</language>
 			<language type="osa">오세이지어</language>
 			<language type="ota">터키어, 오스만</language>
 			<language type="pa">펀잡어</language>
+=======
+			<language type="om">오로모어 (아판)</language>
+			<language type="or">오리야어</language>
+			<language type="os">오세트어</language>
+			<language type="osa">오세이지어</language>
+			<language type="ota">터키어, 오스만 (1500-1928)</language>
+			<language type="oto">오토미안어</language>
+			<language type="pa">펀잡어</language>
+			<language type="paa">파푸아어 (기타)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="pag">판가시난어</language>
 			<language type="pal">팔레비어</language>
 			<language type="pam">팜팡가어</language>
 			<language type="pap">파피아먼토어</language>
 			<language type="pau">파라우안어</language>
 			<language type="peo">고대 페르시아어</language>
+<<<<<<< HEAD
+=======
+			<language type="phi">필리핀어 (기타)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="phn">페니키아어</language>
 			<language type="pi">팔리어</language>
 			<language type="pl">폴란드어</language>
 			<language type="pon">폼페이어</language>
+<<<<<<< HEAD
 			<language type="pro">고대 프로방스어</language>
 			<language type="ps">파슈토어</language>
 			<language type="pt">포르투갈어</language>
 			<language type="pt_BR">포르투갈어 (브라질)</language>
 			<language type="pt_PT">유럽식 포르투갈어</language>
+=======
+			<language type="pra">프라크리트어</language>
+			<language type="pro">고대 프로방스어</language>
+			<language type="ps">파시토어 (푸시토)</language>
+			<language type="pt">포르투갈어</language>
+			<language type="pt_BR">포르투갈어 (브라질)</language>
+			<language type="pt_PT">포르투갈어 (이베리아)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="qu">케추아어</language>
 			<language type="raj">라자스탄어</language>
 			<language type="rap">라파뉴이</language>
@@ -388,13 +654,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="rm">레토로만어</language>
 			<language type="rn">룬디어</language>
 			<language type="ro">루마니아어</language>
+<<<<<<< HEAD
 			<language type="ro_MD">몰도바어</language>
 			<language type="rof" draft="contributed">롬보어</language>
+=======
+			<language type="roa">로망스어 (기타)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="rom">집시어</language>
 			<language type="root">어근</language>
 			<language type="ru">러시아어</language>
 			<language type="rup">아로마니아어</language>
 			<language type="rw">르완다어</language>
+<<<<<<< HEAD
 			<language type="rwk" draft="contributed">르와어</language>
 			<language type="sa">산스크리트어</language>
 			<language type="sad">산다웨어</language>
@@ -405,11 +676,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sat">산탈리어</language>
 			<language type="sba" draft="contributed">느감바이어</language>
 			<language type="sbp" draft="contributed">상구어</language>
+=======
+			<language type="sa">산스크리트어</language>
+			<language type="sad">산다웨어</language>
+			<language type="sah">야큐트어</language>
+			<language type="sai">남아메리카 인디언어 (기타)</language>
+			<language type="sal">샐리시어어</language>
+			<language type="sam">사마리아 아랍어</language>
+			<language type="sas">사사크어</language>
+			<language type="sat">산탈리어</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="sc">사르디니아어</language>
 			<language type="scn">시칠리아어</language>
 			<language type="sco">스코틀랜드어</language>
 			<language type="sd">신디어</language>
 			<language type="se">북부 사미어</language>
+<<<<<<< HEAD
 			<language type="see" draft="contributed">세네카어</language>
 			<language type="seh" draft="contributed">세나어</language>
 			<language type="sel">셀쿠프어</language>
@@ -426,6 +708,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sl">슬로베니아어</language>
 			<language type="sm">사모아어</language>
 			<language type="sma">남부 사미어</language>
+=======
+			<language type="sel">셀쿠프어</language>
+			<language type="sem">셈어 (기타)</language>
+			<language type="sg">산고어</language>
+			<language type="sga">아일랜드, 고대 (900년 까지)</language>
+			<language type="sgn">수화</language>
+			<language type="sh">세르비아-크로아티아어</language>
+			<language type="shn">샨어</language>
+			<language type="si">스리랑카어</language>
+			<language type="sid">시다모어</language>
+			<language type="sio">수족어</language>
+			<language type="sit">중국 티베트 어족</language>
+			<language type="sk">슬로바키아어</language>
+			<language type="sl">슬로베니아어</language>
+			<language type="sla">슬라브어 (기타)</language>
+			<language type="sm">사모아어</language>
+			<language type="sma">남부 사미어</language>
+			<language type="smi">사미어 (기타)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="smj">룰레 사미어</language>
 			<language type="smn">이나리 사미어</language>
 			<language type="sms">스콜트 사미어</language>
@@ -433,12 +734,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="snk">소닌케어</language>
 			<language type="so">소말리아어</language>
 			<language type="sog">소그디엔어</language>
+<<<<<<< HEAD
+=======
+			<language type="son">송가이족어</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="sq">알바니아어</language>
 			<language type="sr">세르비아어</language>
 			<language type="srn">스라난 통가어</language>
 			<language type="srr">세레르어</language>
 			<language type="ss">시스와티어</language>
+<<<<<<< HEAD
 			<language type="ssy" draft="contributed">사호어</language>
+=======
+			<language type="ssa">니로-사하람어 (기타)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="st">소토어 (남부)</language>
 			<language type="su">순다어</language>
 			<language type="suk">수쿠마족어</language>
@@ -446,6 +755,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">수메르어</language>
 			<language type="sv">스웨덴어</language>
 			<language type="sw">스와힐리어</language>
+<<<<<<< HEAD
 			<language type="swb" draft="contributed">코모로어</language>
 			<language type="swc" draft="contributed">콩고 스와힐리어</language>
 			<language type="syc">시리아어 (고전)</language>
@@ -454,6 +764,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="te">텔루구어</language>
 			<language type="tem">팀니어</language>
 			<language type="teo" draft="contributed">테조어</language>
+=======
+			<language type="syc">시리아어 (고전)</language>
+			<language type="syr">시리아어</language>
+			<language type="ta">타밀어</language>
+			<language type="tai">태국어 (기타)</language>
+			<language type="te">텔루구어</language>
+			<language type="tem">팀니어</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ter">테레노어</language>
 			<language type="tet">테툼어</language>
 			<language type="tg">타지키스탄어</language>
@@ -472,23 +790,39 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="tog">통가어 (니아살랜드)</language>
 			<language type="tpi">토크 피신어</language>
 			<language type="tr">터키어</language>
+<<<<<<< HEAD
 			<language type="trv" draft="contributed">타로코어</language>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ts">총가어</language>
 			<language type="tsi">트심시안어</language>
 			<language type="tt">타타르어</language>
 			<language type="tum">툼부카어</language>
+<<<<<<< HEAD
 			<language type="tvl">투발루어</language>
 			<language type="tw">트위어</language>
 			<language type="twq" draft="contributed">타사와크어</language>
 			<language type="ty">타히티어</language>
 			<language type="tyv">투비니안어</language>
 			<language type="tzm" draft="contributed">중앙모로코 타마지트어</language>
+=======
+			<language type="tup">투피어</language>
+			<language type="tut">알타이제어 (기타)</language>
+			<language type="tvl">투발루어</language>
+			<language type="tw">트위어</language>
+			<language type="ty">타히티어</language>
+			<language type="tyv">투비니안어</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="udm">우드말트어</language>
 			<language type="ug">위구르어</language>
 			<language type="uga">유가리틱어</language>
 			<language type="uk">우크라이나어</language>
 			<language type="umb">윤번두어</language>
+<<<<<<< HEAD
 			<language type="und">알 수 없는 언어</language>
+=======
+			<language type="und">결정되지않음</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ur">우르두어</language>
 			<language type="uz">우즈베크어</language>
 			<language type="vai">바이어</language>
@@ -496,6 +830,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="vi">베트남어</language>
 			<language type="vo">볼라퓌크어</language>
 			<language type="vot">보틱어</language>
+<<<<<<< HEAD
 			<language type="vun" draft="contributed">분조어</language>
 			<language type="wa">왈론어</language>
 			<language type="wae" draft="contributed">월저어</language>
@@ -513,10 +848,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="yi">이디시어</language>
 			<language type="yo">요루바어</language>
 			<language type="yue" draft="provisional">광둥어</language>
+=======
+			<language type="wa">왈론어</language>
+			<language type="wak">와카샨어</language>
+			<language type="wal">와라모어</language>
+			<language type="war">와라이어</language>
+			<language type="was">와쇼어</language>
+			<language type="wen">소르브어</language>
+			<language type="wo">올로프어</language>
+			<language type="xal">칼미크어</language>
+			<language type="xh">코사어</language>
+			<language type="yao">야오족어</language>
+			<language type="yap">얍페세어</language>
+			<language type="yi">이디시어</language>
+			<language type="yo">요루바어</language>
+			<language type="ypk">야픽어</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="za">주앙어</language>
 			<language type="zap">사포테크어</language>
 			<language type="zbl">블리스 심볼</language>
 			<language type="zen">제나가어</language>
+<<<<<<< HEAD
 			<language type="zgh" draft="contributed">표준 모로코 타마제크어</language>
 			<language type="zh">중국어</language>
 			<language type="zh_Hans">중국어(간체)</language>
@@ -536,6 +888,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Bali">발리 문자</script>
 			<script type="Bamu" draft="contributed">바뭄 문자</script>
 			<script type="Bass" draft="contributed">바사바흐 문자</script>
+=======
+			<language type="zh">중국어</language>
+			<language type="zh_Hans">중국어(간체)</language>
+			<language type="zh_Hant">중국어 (번체)</language>
+			<language type="znd">아잔데족어</language>
+			<language type="zu">줄루어</language>
+			<language type="zun">주니어</language>
+			<language type="zza">자자어</language>
+		</languages>
+		<scripts>
+			<script type="Arab">아랍 문자</script>
+			<script type="Armn">아르메니아 문자</script>
+			<script type="Bali">발리 문자</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Batk">바타크 문자</script>
 			<script type="Beng">벵골 문자</script>
 			<script type="Blis">블리스기호 문자</script>
@@ -544,7 +910,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Brai">브라유 점자</script>
 			<script type="Bugi">부기 문자</script>
 			<script type="Buhd">부히드 문자</script>
+<<<<<<< HEAD
 			<script type="Cakm" draft="contributed">차크마 문자</script>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Cans">통합 캐나다 토착어</script>
 			<script type="Cari">카리 문자</script>
 			<script type="Cham">칸 고어</script>
@@ -554,23 +923,35 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Cprt">키프로스 문자</script>
 			<script type="Cyrl">키릴 문자</script>
 			<script type="Cyrs">고대교회슬라브어 키릴문자</script>
+<<<<<<< HEAD
 			<script type="Deva">데바나가리 문자</script>
 			<script type="Dsrt">디저렛 문자</script>
 			<script type="Dupl" draft="contributed">듀플로이안 문자</script>
+=======
+			<script type="Deva">데바나가리</script>
+			<script type="Dsrt">디저렛 문자</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Egyd">고대 이집트 민중문자</script>
 			<script type="Egyh">고대 이집트 신관문자</script>
 			<script type="Egyp">고대 이집트 신성문자</script>
 			<script type="Ethi">에티오피아 문자</script>
+<<<<<<< HEAD
 			<script type="Geok" draft="contributed">그루지야 쿠츠리 문자</script>
 			<script type="Geor">그루지야 문자</script>
 			<script type="Glag">글라골 문자</script>
 			<script type="Goth">고트 문자</script>
 			<script type="Gran" draft="contributed">그란타 문자</script>
+=======
+			<script type="Geor">그루지야 문자</script>
+			<script type="Glag">글라골 문자</script>
+			<script type="Goth">고트 문자</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Grek">그리스 문자</script>
 			<script type="Gujr">구쟈라티 문자</script>
 			<script type="Guru">구르무키 문자</script>
 			<script type="Hang">한글</script>
 			<script type="Hani">한자</script>
+<<<<<<< HEAD
 			<script type="Hano">하누누 문자</script>
 			<script type="Hans">한자(간체)</script>
 			<script type="Hans" alt="stand-alone" draft="contributed">한자 간체</script>
@@ -686,6 +1067,85 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Zmth" draft="contributed">수학 기호</script>
 			<script type="Zsym" draft="contributed">기호</script>
 			<script type="Zxxx" draft="contributed">구전</script>
+=======
+			<script type="Hano">하누누어</script>
+			<script type="Hans">중국어 간체</script>
+			<script type="Hant">중국어 번체</script>
+			<script type="Hebr">히브리어</script>
+			<script type="Hira">히라카나</script>
+			<script type="Hmng">파하우 몽 문자</script>
+			<script type="Hrkt">가나</script>
+			<script type="Hung">고대 헝가리 문자</script>
+			<script type="Inds">인더스 문자</script>
+			<script type="Ital">고이탈리아어</script>
+			<script type="Java">자바 문자</script>
+			<script type="Jpan">일본 문자</script>
+			<script type="Kali">카야 리 문자</script>
+			<script type="Kana">가타카나</script>
+			<script type="Khar">카로슈티</script>
+			<script type="Khmr">크메르어</script>
+			<script type="Knda">칸나다</script>
+			<script type="Kore">한국어</script>
+			<script type="Lana">란나 문자</script>
+			<script type="Laoo">라오어</script>
+			<script type="Latf">독일식 로마자</script>
+			<script type="Latg">아일랜드식 로마자</script>
+			<script type="Latn">라틴어</script>
+			<script type="Lepc">렙차문자</script>
+			<script type="Limb">림부어</script>
+			<script type="Lina">선형 문자 A</script>
+			<script type="Linb">선형 문자 B</script>
+			<script type="Lyci">리키아어</script>
+			<script type="Lydi">리디아어</script>
+			<script type="Mand">만데아어</script>
+			<script type="Maya">마야 상형 문자</script>
+			<script type="Mero">메로에 문자</script>
+			<script type="Mlym">말라얄람어</script>
+			<script type="Mong">몽골어</script>
+			<script type="Mymr">미얀마어</script>
+			<script type="Nkoo">응코 문자</script>
+			<script type="Ogam">오검 문자</script>
+			<script type="Olck">올 치키 문자</script>
+			<script type="Orkh">오르혼어</script>
+			<script type="Orya">오리야어</script>
+			<script type="Osma">오스만야어</script>
+			<script type="Perm">고대 페름어</script>
+			<script type="Phag">파스파 문자</script>
+			<script type="Phnx">페니키아 문자</script>
+			<script type="Plrd">폴라드 표음 문자</script>
+			<script type="Rjng">레장 문자</script>
+			<script type="Roro">롱고롱고</script>
+			<script type="Runr">룬 문자</script>
+			<script type="Sara">사라티</script>
+			<script type="Saur">사우라슈트라 문자</script>
+			<script type="Sgnw">수화 문자</script>
+			<script type="Shaw">샤비안어</script>
+			<script type="Sinh">신할라어</script>
+			<script type="Sund">순다 문자</script>
+			<script type="Sylo">실헤티 나가리</script>
+			<script type="Syrc">시리아어</script>
+			<script type="Syre">에스트랑겔로식 시리아 문자</script>
+			<script type="Syrj">서부 시리아 문자</script>
+			<script type="Syrn">동부 시리아 문자</script>
+			<script type="Tagb">타반와어</script>
+			<script type="Tale">타이 레어</script>
+			<script type="Talu">신 타이 루에</script>
+			<script type="Taml">타밀어</script>
+			<script type="Telu">탤루그어</script>
+			<script type="Teng">텡과르</script>
+			<script type="Tfng">티피나그</script>
+			<script type="Tglg">타갈로그어</script>
+			<script type="Thaa">타나어</script>
+			<script type="Thai">태국어</script>
+			<script type="Tibt">티벳어</script>
+			<script type="Ugar">우가릿어</script>
+			<script type="Vaii">바이어</script>
+			<script type="Visp">시화법</script>
+			<script type="Xpeo">고대 페르시아 문자</script>
+			<script type="Xsux">수메르-아카드어 설형문자</script>
+			<script type="Yiii">이어</script>
+			<script type="Zxxx">구전</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Zyyy">일반 문자</script>
 			<script type="Zzzz">기록되지 않은 문자(구전)</script>
 		</scripts>
@@ -693,8 +1153,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="001">세계</territory>
 			<territory type="002">아프리카</territory>
 			<territory type="003">북아메리카</territory>
+<<<<<<< HEAD
 			<territory type="005">남아메리카(남미)</territory>
 			<territory type="009">오세아니아</territory>
+=======
+			<territory type="005">남아메리카[남미]</territory>
+			<territory type="009">오세아니아, 대양주</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="011">서아프리카</territory>
 			<territory type="013">중앙 아메리카</territory>
 			<territory type="014">동부 아프리카</territory>
@@ -708,10 +1173,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="034">남아시아</territory>
 			<territory type="035">동남 아시아</territory>
 			<territory type="039">남유럽</territory>
+<<<<<<< HEAD
 			<territory type="053">오스트랄라시아</territory>
 			<territory type="054">멜라네시아</territory>
 			<territory type="057">미크로네시아 지역</territory>
 			<territory type="061">폴리네시아</territory>
+=======
+			<territory type="053">오스트레일리아와 뉴질랜드</territory>
+			<territory type="054">멜라네시아</territory>
+			<territory type="057">미크로네시아 지역</territory>
+			<territory type="061">폴리네시아</territory>
+			<territory type="062">중남 아시아</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="142">아시아</territory>
 			<territory type="143">중앙 아시아</territory>
 			<territory type="145">서아시아</territory>
@@ -719,8 +1192,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="151">동유럽</territory>
 			<territory type="154">북유럽</territory>
 			<territory type="155">서유럽</territory>
+<<<<<<< HEAD
 			<territory type="419">라틴 아메리카</territory>
 			<territory type="AC" draft="contributed">어센션 섬</territory>
+=======
+			<territory type="172">독립 국가 연합</territory>
+			<territory type="419">라틴 아메리카 및 카리브 해 제도</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="AD">안도라</territory>
 			<territory type="AE">아랍에미리트 연합</territory>
 			<territory type="AF">아프가니스탄</territory>
@@ -751,7 +1229,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="BM">버뮤다</territory>
 			<territory type="BN">브루나이</territory>
 			<territory type="BO">볼리비아</territory>
+<<<<<<< HEAD
 			<territory type="BQ">네덜란드령 카리브</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="BR">브라질</territory>
 			<territory type="BS">바하마</territory>
 			<territory type="BT">부탄</territory>
@@ -761,11 +1242,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="BZ">벨리즈</territory>
 			<territory type="CA">캐나다</territory>
 			<territory type="CC">코코스제도</territory>
+<<<<<<< HEAD
 			<territory type="CD">콩고-킨샤사</territory>
 			<territory type="CD" alt="variant">콩고민주공화국</territory>
 			<territory type="CF">중앙 아프리카 공화국</territory>
 			<territory type="CG">콩고</territory>
 			<territory type="CG" alt="variant">콩고 공화국</territory>
+=======
+			<territory type="CD">콩고 민주공화국</territory>
+			<territory type="CF">중앙 아프리카 공화국</territory>
+			<territory type="CG">콩고</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="CH">스위스</territory>
 			<territory type="CI">코트디부아르</territory>
 			<territory type="CK">쿡제도</territory>
@@ -773,22 +1260,35 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CM">카메룬</territory>
 			<territory type="CN">중국</territory>
 			<territory type="CO">콜롬비아</territory>
+<<<<<<< HEAD
 			<territory type="CP">클립퍼튼 섬</territory>
 			<territory type="CR">코스타리카</territory>
 			<territory type="CU">쿠바</territory>
 			<territory type="CV">까뽀베르데</territory>
 			<territory type="CW">퀴라소</territory>
+=======
+			<territory type="CR">코스타리카</territory>
+			<territory type="CS">세르비아 및 몬테네그로</territory>
+			<territory type="CU">쿠바</territory>
+			<territory type="CV">까뽀베르데</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="CX">크리스마스섬</territory>
 			<territory type="CY">사이프러스</territory>
 			<territory type="CZ">체코</territory>
 			<territory type="DE">독일</territory>
+<<<<<<< HEAD
 			<territory type="DG" draft="contributed">디에고 가르시아</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="DJ">지부티</territory>
 			<territory type="DK">덴마크</territory>
 			<territory type="DM">도미니카</territory>
 			<territory type="DO">도미니카 공화국</territory>
 			<territory type="DZ">알제리</territory>
+<<<<<<< HEAD
 			<territory type="EA">세우타 및 멜리야</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="EC">에콰도르</territory>
 			<territory type="EE">에스토니아</territory>
 			<territory type="EG">이집트</territory>
@@ -796,19 +1296,30 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="ER">에리트리아</territory>
 			<territory type="ES">스페인</territory>
 			<territory type="ET">이디오피아</territory>
+<<<<<<< HEAD
 			<territory type="EU">유럽 연합</territory>
 			<territory type="FI">핀란드</territory>
 			<territory type="FJ">피지</territory>
 			<territory type="FK">포클랜드 제도</territory>
 			<territory type="FK" alt="variant">포클랜드 제도(말비나스 군도)</territory>
+=======
+			<territory type="FI">핀란드</territory>
+			<territory type="FJ">피지</territory>
+			<territory type="FK">포클랜드 군도</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="FM">미크로네시아</territory>
 			<territory type="FO">페로제도</territory>
 			<territory type="FR">프랑스</territory>
 			<territory type="GA">가봉</territory>
 			<territory type="GB">영국</territory>
+<<<<<<< HEAD
 			<territory type="GB" alt="short" draft="contributed">영국</territory>
 			<territory type="GD">그레나다</territory>
 			<territory type="GE">조지아</territory>
+=======
+			<territory type="GD">그레나다</territory>
+			<territory type="GE">그루지야</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="GF">프랑스령 기아나</territory>
 			<territory type="GG">건지</territory>
 			<territory type="GH">가나</territory>
@@ -816,22 +1327,35 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GL">그린란드</territory>
 			<territory type="GM">감비아</territory>
 			<territory type="GN">기니</territory>
+<<<<<<< HEAD
 			<territory type="GP">과들루프</territory>
 			<territory type="GQ">적도 기니</territory>
 			<territory type="GR">그리스</territory>
 			<territory type="GS">사우스조지아 사우스샌드위치 제도</territory>
+=======
+			<territory type="GP">과달로프</territory>
+			<territory type="GQ">적도 기니</territory>
+			<territory type="GR">그리스</territory>
+			<territory type="GS">사우스조지아-사우스샌드위치제도</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="GT">과테말라</territory>
 			<territory type="GU">괌</territory>
 			<territory type="GW">기네비쏘</territory>
 			<territory type="GY">가이아나</territory>
 			<territory type="HK">홍콩, 중국 특별행정구</territory>
+<<<<<<< HEAD
 			<territory type="HK" alt="short">홍콩</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="HM">허드섬-맥도널드제도</territory>
 			<territory type="HN">온두라스</territory>
 			<territory type="HR">크로아티아</territory>
 			<territory type="HT">아이티</territory>
 			<territory type="HU">헝가리</territory>
+<<<<<<< HEAD
 			<territory type="IC" draft="contributed">카나리아 제도</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="ID">인도네시아</territory>
 			<territory type="IE">아일랜드</territory>
 			<territory type="IL">이스라엘</territory>
@@ -876,12 +1400,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MG">마다가스카르</territory>
 			<territory type="MH">마샬 군도</territory>
 			<territory type="MK">마케도니아</territory>
+<<<<<<< HEAD
 			<territory type="MK" alt="variant">마케도니아(FYROM)</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="ML">말리</territory>
 			<territory type="MM">미얀마</territory>
 			<territory type="MN">몽골</territory>
 			<territory type="MO">마카오, 중국 특별행정구</territory>
+<<<<<<< HEAD
 			<territory type="MO" alt="short">마카오</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="MP">북마리아나제도</territory>
 			<territory type="MQ">말티니크</territory>
 			<territory type="MR">모리타니</territory>
@@ -917,12 +1447,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="PN">핏케언섬</territory>
 			<territory type="PR">푸에르토리코</territory>
 			<territory type="PS">팔레스타인 지구</territory>
+<<<<<<< HEAD
 			<territory type="PS" alt="short">팔레스타인</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="PT">포르투갈</territory>
 			<territory type="PW">팔라우</territory>
 			<territory type="PY">파라과이</territory>
 			<territory type="QA">카타르</territory>
 			<territory type="QO">오세아니아 외곽</territory>
+<<<<<<< HEAD
+=======
+			<territory type="QU">유럽 연합</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="RE">리유니온</territory>
 			<territory type="RO">루마니아</territory>
 			<territory type="RS">세르비아</territory>
@@ -943,6 +1480,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="SN">세네갈</territory>
 			<territory type="SO">소말리아</territory>
 			<territory type="SR">수리남</territory>
+<<<<<<< HEAD
 			<territory type="SS">남수단</territory>
 			<territory type="ST">상투메 프린시페</territory>
 			<territory type="SV">엘살바도르</territory>
@@ -950,6 +1488,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="SY">시리아</territory>
 			<territory type="SZ">스와질랜드</territory>
 			<territory type="TA">트리스탄다쿠나</territory>
+=======
+			<territory type="ST">상투메 프린시페</territory>
+			<territory type="SV">엘살바도르</territory>
+			<territory type="SY">시리아</territory>
+			<territory type="SZ">스와질랜드</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="TC">터크스케이커스제도</territory>
 			<territory type="TD">차드</territory>
 			<territory type="TF">프랑스 남부 지방</territory>
@@ -970,7 +1514,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="UG">우간다</territory>
 			<territory type="UM">미국령 해외 제도</territory>
 			<territory type="US">미국</territory>
+<<<<<<< HEAD
 			<territory type="US" alt="short" draft="contributed">미국</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="UY">우루과이</territory>
 			<territory type="UZ">우즈베키스탄</territory>
 			<territory type="VA">바티칸</territory>
@@ -982,7 +1529,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="VU">바누아투</territory>
 			<territory type="WF">왈리스-푸투나 제도</territory>
 			<territory type="WS">사모아</territory>
+<<<<<<< HEAD
 			<territory type="XK" draft="contributed">코소보</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="YE">예멘</territory>
 			<territory type="YT">마요티</territory>
 			<territory type="ZA">남아프리카</territory>
@@ -991,6 +1541,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="ZZ">알수없거나 유효하지 않은 지역</territory>
 		</territories>
 		<variants>
+<<<<<<< HEAD
 			<variant type="1901" draft="contributed">전통 독일어 표기법</variant>
 			<variant type="1994" draft="provisional">표준 레지아어 표기법</variant>
 			<variant type="1996" draft="provisional">독일어 표기법(1996년)</variant>
@@ -1096,10 +1647,40 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="hebr" key="numbers">히브리 숫자</type>
 			<type type="hebrew" key="calendar">히브리력</type>
 			<type type="identical" key="colStrength" draft="contributed">모두 정렬</type>
+=======
+			<variant type="1994">표준 레지아어 철자법</variant>
+			<variant type="1996">독일어 철자법 (1996년)</variant>
+			<variant type="1606NICT">후기 중세 프랑스어</variant>
+			<variant type="AREVELA">동아르메니아어</variant>
+			<variant type="BAKU1926">통합 투르크어 라틴 알파벳</variant>
+			<variant type="BISKE">산조르지오/빌라 방언</variant>
+			<variant type="BOONT">분틀링어</variant>
+			<variant type="NEDIS">나티소네 방언</variant>
+			<variant type="NJIVA">니바 방언</variant>
+			<variant type="REVISED">개정</variant>
+			<variant type="ROZAJ">레지아어</variant>
+			<variant type="SCOTLAND">스코틀랜드 표준 영어</variant>
+			<variant type="VALENCIA">발렌시아어</variant>
+		</variants>
+		<keys>
+			<key type="calendar">달력</key>
+			<key type="collation">정렬</key>
+			<key type="currency">통화</key>
+		</keys>
+		<types>
+			<type type="big5han" key="collation">중국어 번체 정렬 순서 - Big5</type>
+			<type type="buddhist" key="calendar">불교력</type>
+			<type type="chinese" key="calendar">중국력</type>
+			<type type="direct" key="collation">순서</type>
+			<type type="gb2312han" key="collation">중국어 간체 정렬 순서 - GB2312</type>
+			<type type="gregorian" key="calendar">태양력</type>
+			<type type="hebrew" key="calendar">히브리력</type>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<type type="indian" key="calendar">인도력</type>
 			<type type="islamic" key="calendar">이슬람력</type>
 			<type type="islamic-civil" key="calendar">이슬람 상용력</type>
 			<type type="japanese" key="calendar">일본력</type>
+<<<<<<< HEAD
 			<type type="java" key="numbers" draft="contributed">자바 숫자</type>
 			<type type="jpan" key="numbers">일본 숫자</type>
 			<type type="jpanfin" key="numbers">일본 재무 숫자</type>
@@ -1179,6 +1760,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<measurementSystemName type="metric">미터법</measurementSystemName>
 			<measurementSystemName type="UK">영국</measurementSystemName>
 			<measurementSystemName type="US">미국</measurementSystemName>
+=======
+			<type type="phonebook" key="collation">전화번호부순</type>
+			<type type="pinyin" key="collation">병음순</type>
+			<type type="roc" key="calendar">대만력</type>
+			<type type="stroke" key="collation">자획순</type>
+			<type type="traditional" key="collation">전통 역법</type>
+		</types>
+		<measurementSystemNames>
+			<measurementSystemName type="metric">미터법</measurementSystemName>
+			<measurementSystemName type="US">US</measurementSystemName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</measurementSystemNames>
 		<codePatterns>
 			<codePattern type="language">언어: {0}</codePattern>
@@ -1187,6 +1779,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
+<<<<<<< HEAD
 		<exemplarCharacters>[가-힣]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[ᄀ-ᄒ ᅡ-ᅵ ᆨ-ᇂ 丘 串 乃 久 乖 九 乞 乫 乾 亂 亘 交 京 仇 今 介 件 价 企 伋 伎 伽 佳 佶 侃 來 侊 供 係 俓 俱 個 倞 倦 倨 假 偈 健 傀 傑 傾 僅 僑 價 儆 儉 儺 光 克 兢 內 公 共 其 具 兼 冀 冠 凱 刊 刮 券 刻 剋 剛 劇 劍 劒 功 加 劤 劫 勁 勍 勘 勤 勸 勻 勾 匡 匣 區 南 卦 却 卵 卷 卿 厥 去 及 口 句 叩 叫 可 各 吉 君 告 呱 呵 咎 咬 哥 哭 啓 喀 喇 喝 喫 喬 嗜 嘉 嘔 器 囊 困 固 圈 國 圭 圻 均 坎 坑 坤 坰 坵 垢 基 埼 堀 堅 堈 堪 堺 塊 塏 境 墾 壙 壞 夔 奇 奈 奎 契 奸 妓 妗 姑 姜 姦 娘 娜 嫁 嬌 孔 季 孤 宏 官 客 宮 家 寄 寇 寡 寬 尻 局 居 屆 屈 岐 岡 岬 崎 崑 崗 嵌 嵐 嶇 嶠 工 巧 巨 己 巾 干 幹 幾 庚 庫 康 廊 廐 廓 廣 建 弓 强 彊 徑 忌 急 怪 怯 恐 恝 恪 恭 悸 愆 感 愧 愷 愾 慊 慣 慤 慨 慶 慷 憩 憬 憾 懃 懇 懦 懶 懼 戈 戒 戟 戡 扱 技 抉 拉 拏 拐 拒 拘 括 拮 拱 拳 拷 拿 捏 据 捲 捺 掘 掛 控 揀 揆 揭 擊 擎 擒 據 擧 攪 攷 改 攻 故 敎 救 敢 敬 敲 斛 斤 旗 旣 昆 昑 景 晷 暇 暖 暠 暻 曠 曲 更 曷 朗 朞 期 机 杆 杞 杰 枏 果 枯 架 枸 柑 柩 柬 柯 校 根 格 桀 桂 桔 桿 梏 梗 械 梱 棄 棋 棍 棘 棨 棺 楗 楠 極 槁 構 槐 槨 槪 槻 槿 樂 橄 橋 橘 機 檄 檎 檢 櫃 欄 權 欺 款 歌 歐 歸 殼 毆 毬 氣 求 江 汨 汲 決 汽 沂 沽 洛 洸 浪 涇 淃 淇 減 渠 渴 湳 溝 溪 滑 滾 漑 潔 潰 澗 激 濫 灌 灸 炅 炚 炬 烙 烱 煖 爛 牽 犬 狂 狗 狡 狼 獗 玖 玘 珂 珏 珖 珙 珞 珪 球 琦 琨 琪 琯 琴 瑾 璂 璟 璣 璥 瓊 瓘 瓜 甄 甘 甲 男 畇 界 畸 畺 畿 疆 疥 疳 痂 痙 痼 癎 癩 癸 皆 皎 皐 盖 監 看 眷 睾 瞰 瞼 瞿 矜 矩 矯 硅 硬 碁 碣 磎 磬 磯 磵 祁 祇 祈 祛 祺 禁 禽 科 稈 稼 稽 稿 穀 究 穹 空 窘 窟 窮 窺 竅 竟 竭 競 竿 筋 筐 筠 箇 箕 箝 管 簡 粳 糠 系 糾 紀 納 紘 級 紺 絅 結 絞 給 絳 絹 絿 經 綱 綺 緊 繫 繭 繼 缺 罐 罫 羅 羈 羌 羔 群 羹 翹 考 耆 耉 耕 耭 耿 肌 肝 股 肩 肯 肱 胛 胱 脚 脛 腔 腱 膈 膏 膠 臘 臼 舅 舊 舡 艮 艱 芎 芥 芩 芹 苛 苟 苦 苽 茄 莖 菅 菊 菌 菓 菫 菰 落 葛 葵 蓋 蕎 蕨 薑 藁 藍 藿 蘭 蘿 虔 蚣 蛟 蝎 螺 蠟 蠱 街 衢 衲 衾 衿 袈 袞 袴 裙 裸 褐 襁 襟 襤 見 規 覡 覲 覺 觀 角 計 記 訣 訶 詭 誇 誡 誥 課 諫 諾 謙 講 謳 謹 譏 警 譴 谷 谿 豈 貢 貫 貴 賈 購 赳 起 跏 距 跨 踞 蹇 蹶 躬 軀 車 軌 軍 軻 較 輕 轎 轟 辜 近 迦 迲 适 逑 逕 逵 過 遣 遽 邏 那 邯 邱 郊 郎 郡 郭 酪 醵 金 鈐 鈞 鉀 鉅 鉗 鉤 銶 鋸 鋼 錡 錤 錦 錮 鍋 鍵 鎌 鎧 鏡 鑑 鑒 鑛 開 間 閘 閣 閨 闕 關 降 階 隔 隙 雇 難 鞏 鞠 鞨 鞫 頃 頸 顆 顧 飢 餃 館 饉 饋 饑 駒 駕 駱 騎 騏 騫 驅 驕 驚 驥 骨 高 鬼 魁 鮫 鯤 鯨 鱇 鳩 鵑 鵠 鷄 鷗 鸞 麒 麴 黔 鼓 龕 龜]</exemplarCharacters>
 		<exemplarCharacters type="index">[ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅅ ㅇ ㅈ ㅊ ㅋ ㅌ ㅍ ㅎ]</exemplarCharacters>
@@ -1204,15 +1797,32 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<quotationEnd>”</quotationEnd>
 		<alternateQuotationStart>‘</alternateQuotationStart>
 		<alternateQuotationEnd>’</alternateQuotationEnd>
+=======
+		<exemplarCharacters>[가 각 간 갇-갊 감-갗 같-객 갠 갤 갬 갭 갯-갱 갸 갹 갼 걀 걋 걍 걔 걘 걜 거 걱 건 걷 걸 걺 검 겁 것-겆 겉-게 겐 겔 겜 겝 겟-겡 겨-겪 견 겯 결 겸 겹 겻-경 곁 계 곈 곌 곕 곗 고 곡 곤 곧 골 곪 곬 곯-곱 곳 공 곶 과 곽 관 괄 괆 괌 괍 괏 광 괘 괜 괠 괩 괬 괭 괴 괵 괸 괼 굄 굅 굇 굉 교 굔 굘 굡 굣 구 국 군 굳-굶 굻-굽 굿 궁 궂 궈 궉 권 궐 궜 궝 궤 궷 귀 귁 귄 귈 귐 귑 귓 규 균 귤 그 극 근 귿-긁 금 급 긋 긍 긔 기 긱 긴 긷 길 긺 김 깁 깃 깅 깆 깊 까-깎 깐 깔 깖 깜 깝 깟-깡 깥 깨 깩 깬 깰 깸 깹 깻-깽 꺄 꺅 꺌 꺼-꺾 껀 껄 껌 껍 껏-껑 께 껙 껜 껨 껫 껭 껴 껸 껼 꼇 꼈 꼍 꼐 꼬 꼭 꼰 꼲 꼴 꼼 꼽 꼿 꽁-꽃 꽈 꽉 꽐 꽜 꽝 꽤 꽥 꽹 꾀 꾄 꾈 꾐 꾑 꾕 꾜 꾸 꾹 꾼 꿀 꿇-꿉 꿋 꿍 꿎 꿔 꿜 꿨 꿩 꿰 꿱 꿴 꿸 뀀 뀁 뀄 뀌 뀐 뀔 뀜 뀝 뀨 끄 끅 끈 끊 끌 끎 끓-끕 끗 끙 끝 끼 끽 낀 낄 낌 낍 낏 낑 나-낚 난 낟-낢 남 납 낫-낯 낱 낳-낵 낸 낼 냄 냅 냇-냉 냐 냑 냔 냘 냠 냥 너 넉 넋 넌 널 넒 넓 넘 넙 넛-넝 넣-넥 넨 넬 넴 넵 넷-넹 녀 녁 년 녈 념 녑 녔 녕 녘 녜 녠 노 녹 논 놀 놂 놈 놉 놋 농 높-놔 놘 놜 놨 뇌 뇐 뇔 뇜 뇝 뇟 뇨 뇩 뇬 뇰 뇹 뇻 뇽 누 눅 눈 눋 눌 눔 눕 눗 눙 눠 눴 눼 뉘 뉜 뉠 뉨 뉩 뉴 뉵 뉼 늄 늅 늉 느 늑 는 늘-늚 늠 늡 늣 능 늦 늪 늬 늰 늴 니 닉 닌 닐 닒 님 닙 닛 닝 닢 다-닦 단 닫-닯 닳-답 닷-닻 닿-댁 댄 댈 댐 댑 댓-댕 댜 더-덖 던 덛 덜 덞 덟 덤 덥 덧 덩 덫 덮 데 덱 덴 델 뎀 뎁 뎃-뎅 뎌 뎐 뎔 뎠 뎡 뎨 뎬 도 독 돈 돋 돌 돎 돐 돔 돕 돗 동 돛 돝 돠 돤 돨 돼 됐 되 된 될 됨 됩 됫 됴 두 둑 둔 둘 둠 둡 둣 둥 둬 뒀 뒈 뒝 뒤 뒨 뒬 뒵 뒷 뒹 듀 듄 듈 듐 듕 드 득 든 듣 들 듦 듬 듭 듯 등 듸 디 딕 딘 딛 딜 딤 딥 딧-딪 따 딱 딴 딸 땀 땁 땃-땅 땋-땍 땐 땔 땜 땝 땟-땡 떠 떡 떤 떨 떪 떫 떰 떱 떳-떵 떻-떽 뗀 뗄 뗌 뗍 뗏-뗑 뗘 뗬 또 똑 똔 똘 똥 똬 똴 뙈 뙤 뙨 뚜 뚝 뚠 뚤 뚫 뚬 뚱 뛔 뛰 뛴 뛸 뜀 뜁 뜅 뜨 뜩 뜬 뜯 뜰 뜸 뜹 뜻 띄 띈 띌 띔 띕 띠 띤 띨 띰 띱 띳 띵 라 락 란 랄 람 랍 랏-랒 랖-랙 랜 랠 램 랩 랫-랭 랴 략 랸 럇 량 러 럭 런 럴 럼 럽 럿-렁 렇-렉 렌 렐 렘 렙 렛 렝 려 력 련 렬 렴 렵 렷-령 례 롄 롑 롓 로 록 론 롤 롬 롭 롯 롱 롸 롼 뢍 뢨 뢰 뢴 뢸 룀 룁 룃 룅 료 룐 룔 룝 룟 룡 루 룩 룬 룰 룸 룹 룻 룽 뤄 뤘 뤠 뤼 뤽 륀 륄 륌 륏 륑 류 륙 륜 률 륨 륩 륫 륭 르 륵 른 를 름 릅 릇 릉 릊 릍 릎 리 릭 린 릴 림 립 릿 링 마 막 만 많-맒 맘 맙 맛 망 맞 맡 맣-맥 맨 맬 맴 맵 맷-맺 먀 먁 먈 먕 머 먹 먼 멀 멂 멈 멉 멋 멍 멎 멓-멕 멘 멜 멤 멥 멧-멩 며 멱 면 멸 몃-명 몇 몌 모 목 몫 몬 몰 몲 몸 몹 못 몽 뫄 뫈 뫘 뫙 뫼 묀 묄 묍 묏 묑 묘 묜 묠 묩 묫 무-묶 문 묻-묾 뭄 뭅 뭇 뭉 뭍 뭏 뭐 뭔 뭘 뭡 뭣 뭬 뮈 뮌 뮐 뮤 뮨 뮬 뮴 뮷 므 믄 믈 믐 믓 미 믹 민 믿 밀 밂 밈 밉 밋-밍 및 밑 바-반 받-밟 밤 밥 밧 방 밭 배 백 밴 밸 뱀 뱁 뱃-뱅 뱉 뱌 뱍 뱐 뱝 버 벅 번 벋 벌 벎 범 법 벗 벙 벚 베 벡 벤 벧 벨 벰 벱 벳-벵 벼 벽 변 별 볍 볏-병 볕 볘 볜 보-볶 본 볼 봄 봅 봇 봉 봐 봔 봤 봬 뵀 뵈 뵉 뵌 뵐 뵘 뵙 뵤 뵨 부 북 분 붇-붊 붐 붑 붓 붕 붙 붚 붜 붤 붰 붸 뷔 뷕 뷘 뷜 뷩 뷰 뷴 뷸 븀 븃 븅 브 븍 븐 블 븜 븝 븟 비 빅 빈 빌 빎 빔 빕 빗 빙-빛 빠 빡 빤 빨 빪 빰 빱 빳-빵 빻-빽 뺀 뺄 뺌 뺍 뺏-뺑 뺘 뺙 뺨 뻐 뻑 뻔 뻗 뻘 뻠 뻣-뻥 뻬 뼁 뼈 뼉 뼘 뼙 뼛-뼝 뽀 뽁 뽄 뽈 뽐 뽑 뽕 뾔 뾰 뿅 뿌 뿍 뿐 뿔 뿜 뿟 뿡 쀼 쁑 쁘 쁜 쁠 쁨 쁩 삐 삑 삔 삘 삠 삡 삣 삥 사 삭 삯 산 삳-삶 삼 삽 삿-상 샅 새 색 샌 샐 샘 샙 샛-생 샤 샥 샨 샬 샴 샵 샷 샹 섀 섄 섈 섐 섕 서-선 섣 설 섦 섧 섬 섭 섯-성 섶 세 섹 센 셀 셈 셉 셋-셍 셔 셕 션 셜 셤 셥 셧-셩 셰 셴 셸 솅 소-솎 손 솔 솖 솜 솝 솟 송 솥 솨 솩 솬 솰 솽 쇄 쇈 쇌 쇔 쇗 쇘 쇠 쇤 쇨 쇰 쇱 쇳 쇼 쇽 숀 숄 숌 숍 숏 숑 수 숙 순 숟 술 숨 숩 숫 숭 숯 숱 숲 숴 쉈 쉐 쉑 쉔 쉘 쉠 쉥 쉬 쉭 쉰 쉴 쉼 쉽 쉿 슁 슈 슉 슐 슘 슛 슝 스 슥 슨 슬 슭 슴 습 슷 승 시 식 신 싣 실 싫-십 싯 싱 싶 싸 싹 싻 싼 쌀 쌈 쌉 쌌 쌍 쌓-쌕 쌘 쌜 쌤 쌥 쌨 쌩 썅 써 썩 썬 썰 썲 썸 썹 썼 썽 쎄 쎈 쎌 쏀 쏘 쏙 쏜 쏟 쏠 쏢 쏨 쏩 쏭 쏴 쏵 쏸 쐈 쐐 쐤 쐬 쐰 쐴 쐼 쐽 쑈 쑤 쑥 쑨 쑬 쑴 쑵 쑹 쒀 쒔 쒜 쒸 쒼 쓩 쓰 쓱 쓴 쓸 쓺 쓿-씁 씌 씐 씔 씜 씨 씩 씬 씰 씸 씹 씻 씽 아 악 안-않 알-앎 앓-압 앗-앙 앝 앞 애 액 앤 앨 앰 앱 앳-앵 야 약 얀 얄 얇 얌 얍 얏 양 얕 얗 얘 얜 얠 얩 어 억 언 얹 얻-얾 엄-엊 엌 엎 에 엑 엔 엘 엠 엡 엣 엥 여-엮 연 열 엶 엷 염-영 옅-예 옌 옐 옘 옙 옛 옜 오 옥 온 올-옮 옰 옳-옵 옷 옹 옻 와 왁 완 왈 왐 왑 왓-왕 왜 왝 왠 왬 왯 왱 외 왹 왼 욀 욈 욉 욋 욍 요 욕 욘 욜 욤 욥 욧 용 우 욱 운 울-욺 움 웁 웃 웅 워 웍 원 월 웜 웝 웠 웡 웨 웩 웬 웰 웸 웹 웽 위 윅 윈 윌 윔 윕 윗 윙 유 육 윤 율 윰 윱 윳 융 윷 으 윽 은 을 읊 음 읍 읏 응-의 읜 읠 읨 읫 이 익 인 일-읾 잃-입 잇-잊 잎 자 작 잔 잖-잘 잚 잠 잡 잣-잦 재 잭 잰 잴 잼 잽 잿-쟁 쟈 쟉 쟌 쟎 쟐 쟘 쟝 쟤 쟨 쟬 저 적 전 절 젊 점 접 젓 정 젖 제 젝 젠 젤 젬 젭 젯 젱 져 젼 졀 졈 졉 졌 졍 졔 조 족 존 졸 졺 좀 좁 좃 종-좇 좋-좍 좔 좝 좟 좡 좨 좼 좽 죄 죈 죌 죔 죕 죗 죙 죠 죡 죤 죵 주 죽 준 줄-줆 줌 줍 줏 중 줘 줬 줴 쥐 쥑 쥔 쥘 쥠 쥡 쥣 쥬 쥰 쥴 쥼 즈 즉 즌 즐 즘 즙 즛 증 지 직 진 짇 질 짊 짐 집 짓 징 짖 짙 짚 짜 짝 짠 짢 짤 짧 짬 짭 짯-짱 째 짹 짼 쨀 쨈 쨉 쨋-쨍 쨔 쨘 쨩 쩌 쩍 쩐 쩔 쩜 쩝 쩟-쩡 쩨 쩽 쪄 쪘 쪼 쪽 쫀 쫄 쫌 쫍 쫏 쫑 쫓 쫘 쫙 쫠 쫬 쫴 쬈 쬐 쬔 쬘 쬠 쬡 쭁 쭈 쭉 쭌 쭐 쭘 쭙 쭝 쭤 쭸 쭹 쮜 쮸 쯔 쯤 쯧 쯩 찌 찍 찐 찔 찜 찝 찡 찢 찧-착 찬 찮 찰 참 찹 찻-찾 채 책 챈 챌 챔 챕 챗-챙 챠 챤 챦 챨 챰 챵 처 척 천 철 첨 첩 첫-청 체 첵 첸 첼 쳄 쳅 쳇 쳉 쳐 쳔 쳤 쳬 쳰 촁 초 촉 촌 촐 촘 촙 촛 총 촤 촨 촬 촹 최 쵠 쵤 쵬 쵭 쵯 쵱 쵸 춈 추 축 춘 출 춤 춥 춧 충 춰 췄 췌 췐 취 췬 췰 췸 췹 췻 췽 츄 츈 츌 츔 츙 츠 측 츤 츨 츰 츱 츳 층 치 칙 친 칟-칡 침 칩 칫 칭 카 칵 칸 칼 캄 캅 캇 캉 캐 캑 캔 캘 캠 캡 캣-캥 캬 캭 컁 커 컥 컨 컫 컬 컴 컵 컷-컹 케 켁 켄 켈 켐 켑 켓 켕 켜 켠 켤 켬 켭 켯-켱 켸 코 콕 콘 콜 콤 콥 콧 콩 콰 콱 콴 콸 쾀 쾅 쾌 쾡 쾨 쾰 쿄 쿠 쿡 쿤 쿨 쿰 쿱 쿳 쿵 쿼 퀀 퀄 퀑 퀘 퀭 퀴 퀵 퀸 퀼 큄 큅 큇 큉 큐 큔 큘 큠 크 큭 큰 클 큼 큽 킁 키 킥 킨 킬 킴 킵 킷 킹 타 탁 탄 탈 탉 탐 탑 탓-탕 태 택 탠 탤 탬 탭 탯-탱 탸 턍 터 턱 턴 털 턺 텀 텁 텃-텅 테 텍 텐 텔 템 텝 텟 텡 텨 텬 텼 톄 톈 토 톡 톤 톨 톰 톱 톳 통 톺 톼 퇀 퇘 퇴 퇸 툇 툉 툐 투 툭 툰 툴 툼 툽 툿 퉁 퉈 퉜 퉤 튀 튁 튄 튈 튐 튑 튕 튜 튠 튤 튬 튱 트 특 튼 튿 틀 틂 틈 틉 틋 틔 틘 틜 틤 틥 티 틱 틴 틸 팀 팁 팃 팅 파-팎 판 팔 팖 팜 팝 팟-팡 팥 패 팩 팬 팰 팸 팹 팻-팽 퍄 퍅 퍼 퍽 펀 펄 펌 펍 펏-펑 페 펙 펜 펠 펨 펩 펫 펭 펴 편 펼 폄 폅 폈 평 폐 폘 폡 폣 포 폭 폰 폴 폼 폽 폿 퐁 퐈 퐝 푀 푄 표 푠 푤 푭 푯 푸 푹 푼 푿 풀 풂 품 풉 풋 풍 풔 풩 퓌 퓐 퓔 퓜 퓟 퓨 퓬 퓰 퓸 퓻 퓽 프 픈 플 픔 픕 픗 피 픽 핀 필 핌 핍 핏 핑 하 학 한 할 핥 함 합 핫 항 해 핵 핸 핼 햄 햅 햇-행 햐 향 허 헉 헌 헐 헒 험 헙 헛 헝 헤 헥 헨 헬 헴 헵 헷 헹 혀 혁 현 혈 혐 협 혓-형 혜 혠 혤 혭 호 혹 혼 홀 홅 홈 홉 홋 홍 홑 화 확 환 활 홧 황 홰 홱 홴 횃 횅 회 획 횐 횔 횝 횟 횡 효 횬 횰 횹 횻 후 훅 훈 훌 훑 훔 훗 훙 훠 훤 훨 훰 훵 훼 훽 휀 휄 휑 휘 휙 휜 휠 휨 휩 휫 휭 휴 휵 휸 휼 흄 흇 흉 흐 흑 흔 흖-흙 흠 흡 흣 흥 흩 희 흰 흴 흼 흽 힁 히 힉 힌 힐 힘 힙 힛 힝]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[丘 串 乃 久 乖 九 乞 乫 乾 亂 亘 交 京 仇 今 介 件 价 企 伋 伎 伽 佳 佶 侃 來 侊 供 係 俓 俱 個 倞 倦 倨 假 偈 健 傀 傑 傾 僅 僑 價 儆 儉 儺 光 克 兢 內 公 共 其 具 兼 冀 冠 凱 刊 刮 券 刻 剋 剛 劇 劍 劒 功 加 劤 劫 勁 勍 勘 勤 勸 勻 勾 匡 匣 區 南 卦 却 卵 卷 卿 厥 去 及 口 句 叩 叫 可 各 吉 君 告 呱 呵 咎 咬 哥 哭 啓 喀 喇 喝 喫 喬 嗜 嘉 嘔 器 囊 困 固 圈 國 圭 圻 均 坎 坑 坤 坰 坵 垢 基 埼 堀 堅 堈 堪 堺 塊 塏 境 墾 壙 壞 夔 奇 奈 奎 契 奸 妓 妗 姑 姜 姦 娘 娜 嫁 嬌 孔 季 孤 宏 官 客 宮 家 寄 寇 寡 寬 尻 局 居 屆 屈 岐 岡 岬 崎 崑 崗 嵌 嵐 嶇 嶠 工 巧 巨 己 巾 干 幹 幾 庚 庫 康 廊 廐 廓 廣 建 弓 强 彊 徑 忌 急 怪 怯 恐 恝 恪 恭 悸 愆 感 愧 愷 愾 慊 慣 慤 慨 慶 慷 憩 憬 憾 懃 懇 懦 懶 懼 戈 戒 戟 戡 扱 技 抉 拉 拏 拐 拒 拘 括 拮 拱 拳 拷 拿 捏 据 捲 捺 掘 掛 控 揀 揆 揭 擊 擎 擒 據 擧 攪 攷 改 攻 故 敎 救 敢 敬 敲 斛 斤 旗 旣 昆 昑 景 晷 暇 暖 暠 暻 曠 曲 更 曷 朗 朞 期 机 杆 杞 杰 枏 果 枯 架 枸 柑 柩 柬 柯 校 根 格 桀 桂 桔 桿 梏 梗 械 梱 棄 棋 棍 棘 棨 棺 楗 楠 極 槁 構 槐 槨 槪 槻 槿 樂 橄 橋 橘 機 檄 檎 檢 櫃 欄 權 欺 款 歌 歐 歸 殼 毆 毬 氣 求 江 汨 汲 決 汽 沂 沽 洛 洸 浪 涇 淃 淇 減 渠 渴 湳 溝 溪 滑 滾 漑 潔 潰 澗 激 濫 灌 灸 炅 炚 炬 烙 烱 煖 爛 牽 犬 狂 狗 狡 狼 獗 玖 玘 珂 珏 珖 珙 珞 珪 球 琦 琨 琪 琯 琴 瑾 璂 璟 璣 璥 瓊 瓘 瓜 甄 甘 甲 男 畇 界 畸 畺 畿 疆 疥 疳 痂 痙 痼 癎 癩 癸 皆 皎 皐 盖 監 看 眷 睾 瞰 瞼 瞿 矜 矩 矯 硅 硬 碁 碣 磎 磬 磯 磵 祁 祇 祈 祛 祺 禁 禽 科 稈 稼 稽 稿 穀 究 穹 空 窘 窟 窮 窺 竅 竟 竭 競 竿 筋 筐 筠 箇 箕 箝 管 簡 粳 糠 系 糾 紀 納 紘 級 紺 絅 結 絞 給 絳 絹 絿 經 綱 綺 緊 繫 繭 繼 缺 罐 罫 羅 羈 羌 羔 群 羹 翹 考 耆 耉 耕 耭 耿 肌 肝 股 肩 肯 肱 胛 胱 脚 脛 腔 腱 膈 膏 膠 臘 臼 舅 舊 舡 艮 艱 芎 芥 芩 芹 苛 苟 苦 苽 茄 莖 菅 菊 菌 菓 菫 菰 落 葛 葵 蓋 蕎 蕨 薑 藁 藍 藿 蘭 蘿 虔 蚣 蛟 蝎 螺 蠟 蠱 街 衢 衲 衾 衿 袈 袞 袴 裙 裸 褐 襁 襟 襤 見 規 覡 覲 覺 觀 角 計 記 訣 訶 詭 誇 誡 誥 課 諫 諾 謙 講 謳 謹 譏 警 譴 谷 谿 豈 貢 貫 貴 賈 購 赳 起 跏 距 跨 踞 蹇 蹶 躬 軀 車 軌 軍 軻 較 輕 轎 轟 辜 近 迦 迲 适 逑 逕 逵 過 遣 遽 邏 那 邯 邱 郊 郎 郡 郭 酪 醵 金 鈐 鈞 鉀 鉅 鉗 鉤 銶 鋸 鋼 錡 錤 錦 錮 鍋 鍵 鎌 鎧 鏡 鑑 鑒 鑛 開 間 閘 閣 閨 闕 關 降 階 隔 隙 雇 難 鞏 鞠 鞨 鞫 頃 頸 顆 顧 飢 餃 館 饉 饋 饑 駒 駕 駱 騎 騏 騫 驅 驕 驚 驥 骨 高 鬼 魁 鮫 鯤 鯨 鱇 鳩 鵑 鵠 鷄 鷗 鸞 麒 麴 黔 鼓 龕 龜]</exemplarCharacters>
+		<exemplarCharacters type="currencySymbol">[a-z]</exemplarCharacters>
+	</characters>
+	<delimiters>
+		<quotationStart>‘</quotationStart>
+		<quotationEnd>’</quotationEnd>
+		<alternateQuotationStart>“</alternateQuotationStart>
+		<alternateQuotationEnd>”</alternateQuotationEnd>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	</delimiters>
 	<dates>
 		<calendars>
 			<calendar type="buddhist">
+<<<<<<< HEAD
+=======
+				<am>오전</am>
+				<pm>오후</pm>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<eras>
 					<eraAbbr>
 						<era type="0">불기</era>
 					</eraAbbr>
 				</eras>
+<<<<<<< HEAD
 			</calendar>
 			<calendar type="chinese">
 				<cyclicNameSets>
@@ -1287,10 +1897,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<dateFormatLength type="full">
 						<dateFormat>
 							<pattern>U년 M월 d일 EEEE</pattern>
+=======
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>G y년 MMMM d일 EEEE</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="long">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>U년 M월 d일</pattern>
 						</dateFormat>
 					</dateFormatLength>
@@ -1302,10 +1919,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<dateFormatLength type="short">
 						<dateFormat>
 							<pattern>y. M. d.</pattern>
+=======
+							<pattern>G y년 MMMM d일</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
 				<dateTimeFormats>
+<<<<<<< HEAD
 					<availableFormats>
 						<dateFormatItem id="d">d일</dateFormatItem>
 						<dateFormatItem id="Ed">d일 (E)</dateFormatItem>
@@ -1792,10 +2413,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
+=======
+					<default choice="medium"/>
+				</dateTimeFormats>
+			</calendar>
+			<calendar type="coptic">
+				<am>오전</am>
+				<pm>오후</pm>
+			</calendar>
+			<calendar type="ethiopic">
+				<am>오전</am>
+				<pm>오후</pm>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</calendar>
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
+<<<<<<< HEAD
 						<monthWidth type="abbreviated">
 							<month type="1">1월</month>
 							<month type="2">2월</month>
@@ -1824,6 +2458,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">11월</month>
 							<month type="12">12월</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<monthWidth type="wide">
 							<month type="1">1월</month>
 							<month type="2">2월</month>
@@ -1840,6 +2476,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</monthWidth>
 					</monthContext>
 					<monthContext type="stand-alone">
+<<<<<<< HEAD
 						<monthWidth type="abbreviated">
 							<month type="1">1월</month>
 							<month type="2">2월</month>
@@ -1854,6 +2491,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">11월</month>
 							<month type="12">12월</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<monthWidth type="narrow">
 							<month type="1">1월</month>
 							<month type="2">2월</month>
@@ -1881,6 +2520,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">금</day>
 							<day type="sat">토</day>
 						</dayWidth>
+<<<<<<< HEAD
 						<dayWidth type="short">
 							<day type="sun" draft="contributed">일</day>
 							<day type="mon" draft="contributed">월</day>
@@ -1890,6 +2530,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri" draft="contributed">금</day>
 							<day type="sat" draft="contributed">토</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<dayWidth type="wide">
 							<day type="sun">일요일</day>
 							<day type="mon">월요일</day>
@@ -1910,6 +2552,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">금</day>
 							<day type="sat">토</day>
 						</dayWidth>
+<<<<<<< HEAD
 						<dayWidth type="short">
 							<day type="sun" draft="contributed">일</day>
 							<day type="mon" draft="contributed">월</day>
@@ -1919,6 +2562,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri" draft="contributed">금</day>
 							<day type="sat" draft="contributed">토</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</dayContext>
 				</days>
 				<quarters>
@@ -1929,12 +2574,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<quarter type="3">3분기</quarter>
 							<quarter type="4">4분기</quarter>
 						</quarterWidth>
+<<<<<<< HEAD
 						<quarterWidth type="narrow">
 							<quarter type="1">1</quarter>
 							<quarter type="2">2</quarter>
 							<quarter type="3">3</quarter>
 							<quarter type="4">4</quarter>
 						</quarterWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<quarterWidth type="wide">
 							<quarter type="1">제 1/4분기</quarter>
 							<quarter type="2">제 2/4분기</quarter>
@@ -1943,6 +2591,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</quarterWidth>
 					</quarterContext>
 					<quarterContext type="stand-alone">
+<<<<<<< HEAD
 						<quarterWidth type="abbreviated">
 							<quarter type="1">1분기</quarter>
 							<quarter type="2">2분기</quarter>
@@ -1971,6 +2620,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</dayPeriodWidth>
 					</dayPeriodContext>
 				</dayPeriods>
+=======
+						<quarterWidth type="narrow">
+							<quarter type="1">1</quarter>
+							<quarter type="2">2</quarter>
+							<quarter type="3">3</quarter>
+							<quarter type="4">4</quarter>
+						</quarterWidth>
+					</quarterContext>
+				</quarters>
+				<am>오전</am>
+				<pm>오후</pm>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<eras>
 					<eraNames>
 						<era type="0">서력기원전</era>
@@ -1994,7 +2655,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</dateFormatLength>
 					<dateFormatLength type="medium">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>y. M. d.</pattern>
+=======
+							<pattern>yyyy. M. d.</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
@@ -2006,12 +2671,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<timeFormats>
 					<timeFormatLength type="full">
 						<timeFormat>
+<<<<<<< HEAD
 							<pattern>a h시 m분 s초 zzzz</pattern>
+=======
+							<pattern>a hh시 mm분 ss초 zzzz</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</timeFormat>
 					</timeFormatLength>
 					<timeFormatLength type="long">
 						<timeFormat>
+<<<<<<< HEAD
 							<pattern>a h시 m분 s초 z</pattern>
+=======
+							<pattern>a hh시 mm분 ss초 z</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</timeFormat>
 					</timeFormatLength>
 					<timeFormatLength type="medium">
@@ -2028,12 +2701,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<dateTimeFormats>
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
+<<<<<<< HEAD
 							<pattern>{1} {0}</pattern>
+=======
+							<pattern>{1}{0}</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<dateTimeFormatLength type="long">
 						<dateTimeFormat>
+<<<<<<< HEAD
 							<pattern>{1} {0}</pattern>
+=======
+							<pattern>{1}{0}</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<dateTimeFormatLength type="medium">
@@ -2047,6 +2728,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<availableFormats>
+<<<<<<< HEAD
 						<dateFormatItem id="d">d일</dateFormatItem>
 						<dateFormatItem id="Ed">d일 (E)</dateFormatItem>
 						<dateFormatItem id="EEEEd">d일 EEEE</dateFormatItem>
@@ -2094,30 +2776,75 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</appendItems>
 					<intervalFormats>
 						<intervalFormatFallback>{0} ~ {1}</intervalFormatFallback>
+=======
+						<dateFormatItem id="d">d</dateFormatItem>
+						<dateFormatItem id="Ed">d일 (E)</dateFormatItem>
+						<dateFormatItem id="EEEd">d일 EEE</dateFormatItem>
+						<dateFormatItem id="HHmm">HH:mm</dateFormatItem>
+						<dateFormatItem id="HHmmss">HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="Hm">H:mm</dateFormatItem>
+						<dateFormatItem id="Hms">H시 m분 s초</dateFormatItem>
+						<dateFormatItem id="M">L</dateFormatItem>
+						<dateFormatItem id="Md">M. d.</dateFormatItem>
+						<dateFormatItem id="MEd">M. d. (E)</dateFormatItem>
+						<dateFormatItem id="MMdd">MM. dd</dateFormatItem>
+						<dateFormatItem id="MMM">LLL</dateFormatItem>
+						<dateFormatItem id="MMMd">MMM d일</dateFormatItem>
+						<dateFormatItem id="MMMEd">MMM d일 (E)</dateFormatItem>
+						<dateFormatItem id="MMMMd">MMMM d일</dateFormatItem>
+						<dateFormatItem id="MMMMEd">MMMM d일 (E)</dateFormatItem>
+						<dateFormatItem id="mmss">mm:ss</dateFormatItem>
+						<dateFormatItem id="ms">mm:ss</dateFormatItem>
+						<dateFormatItem id="y">y</dateFormatItem>
+						<dateFormatItem id="yM">yyyy. M.</dateFormatItem>
+						<dateFormatItem id="yMEd">yyyy. M. d. EEE</dateFormatItem>
+						<dateFormatItem id="yMMM">y년 MMM</dateFormatItem>
+						<dateFormatItem id="yMMMd">y년 MMM d일</dateFormatItem>
+						<dateFormatItem id="yMMMEd">y년 MMM d일 EEE</dateFormatItem>
+						<dateFormatItem id="yMMMM">y년 MMMM</dateFormatItem>
+						<dateFormatItem id="yQ">y년 Q분기</dateFormatItem>
+						<dateFormatItem id="yQQQ">y년 QQQ</dateFormatItem>
+						<dateFormatItem id="yyMM">YY. M.</dateFormatItem>
+						<dateFormatItem id="yyMMM">yy년 MMM</dateFormatItem>
+						<dateFormatItem id="yyQ">yy년 Q분기</dateFormatItem>
+						<dateFormatItem id="yyyyMM">yyyy. MM</dateFormatItem>
+					</availableFormats>
+					<intervalFormats>
+						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<intervalFormatItem id="d">
 							<greatestDifference id="d">d일 ~ d일</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="h">
+<<<<<<< HEAD
 							<greatestDifference id="a">a h시 ~ a h시</greatestDifference>
 							<greatestDifference id="h">a h시 ~ h시</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="H">
 							<greatestDifference id="H">HH ~ HH시</greatestDifference>
+=======
+							<greatestDifference id="a">a h ~ a h</greatestDifference>
+							<greatestDifference id="h">a h~h</greatestDifference>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</intervalFormatItem>
 						<intervalFormatItem id="hm">
 							<greatestDifference id="a">a h:mm ~ a h:mm</greatestDifference>
 							<greatestDifference id="h">a h:mm~h:mm</greatestDifference>
 							<greatestDifference id="m">a h:mm~h:mm</greatestDifference>
 						</intervalFormatItem>
+<<<<<<< HEAD
 						<intervalFormatItem id="Hm">
 							<greatestDifference id="H">HH:mm ~ HH:mm</greatestDifference>
 							<greatestDifference id="m">HH:mm ~ HH:mm</greatestDifference>
 						</intervalFormatItem>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<intervalFormatItem id="hmv">
 							<greatestDifference id="a">a h:mm ~ a h:mm v</greatestDifference>
 							<greatestDifference id="h">a h:mm~h:mm v</greatestDifference>
 							<greatestDifference id="m">a h:mm~h:mm v</greatestDifference>
 						</intervalFormatItem>
+<<<<<<< HEAD
 						<intervalFormatItem id="Hmv">
 							<greatestDifference id="H">HH:mm ~ HH:mm v</greatestDifference>
 							<greatestDifference id="m">HH:mm ~ HH:mm v</greatestDifference>
@@ -2128,6 +2855,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="Hv">
 							<greatestDifference id="H">HH ~ HH시 v</greatestDifference>
+=======
+						<intervalFormatItem id="hv">
+							<greatestDifference id="a">a h ~ a h v</greatestDifference>
+							<greatestDifference id="h">a h~h v</greatestDifference>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</intervalFormatItem>
 						<intervalFormatItem id="M">
 							<greatestDifference id="M">M월 ~ M월</greatestDifference>
@@ -2137,8 +2869,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M">M. d ~ M. d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MEd">
+<<<<<<< HEAD
 							<greatestDifference id="d">M. d (E) ~ M. d (E)</greatestDifference>
 							<greatestDifference id="M">M. d (E) ~ M. d (E)</greatestDifference>
+=======
+							<greatestDifference id="d">M. d E ~ M. d E</greatestDifference>
+							<greatestDifference id="M">M. d E ~ M. d E</greatestDifference>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</intervalFormatItem>
 						<intervalFormatItem id="MMM">
 							<greatestDifference id="M">MMM ~ MMM</greatestDifference>
@@ -2148,8 +2885,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M">M월 d일 ~ M월 d일</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
+<<<<<<< HEAD
 							<greatestDifference id="d">M월 d일 (E) ~ d일 (E)</greatestDifference>
 							<greatestDifference id="M">M월 d일 (E) ~ M월 d일 (E)</greatestDifference>
+=======
+							<greatestDifference id="d">M월 d일 E ~ d일 E</greatestDifference>
+							<greatestDifference id="M">M월 d일 E ~ M월 d일 E</greatestDifference>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMM">
 							<greatestDifference id="M">LLLL-LLLL</greatestDifference>
@@ -2158,6 +2900,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">y년 ~ y년</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
+<<<<<<< HEAD
 							<greatestDifference id="M">y. M ~ y. M</greatestDifference>
 							<greatestDifference id="y">y. M ~ y. M</greatestDifference>
 						</intervalFormatItem>
@@ -2170,6 +2913,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="d">y. M. d. (E) ~ y. M. d. (E)</greatestDifference>
 							<greatestDifference id="M">y. M. d. (E) ~ y. M. d. (E)</greatestDifference>
 							<greatestDifference id="y">y. M. d. (E) ~ y. M. d. (E)</greatestDifference>
+=======
+							<greatestDifference id="M">yyyy. M ~ yyyy. M</greatestDifference>
+							<greatestDifference id="y">yyyy. M ~ yyyy. M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">yy. M. d. ~ yy. M. d.</greatestDifference>
+							<greatestDifference id="M">yy. M. d. ~ yy. M. d.</greatestDifference>
+							<greatestDifference id="y">yy. M. d. ~ yy. M. d.</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">yy. M. d. E ~ yy. M. d. E</greatestDifference>
+							<greatestDifference id="M">yy. M. d. E ~ yy. M. d. E</greatestDifference>
+							<greatestDifference id="y">yy. M. d. E ~ yy. M. d. E</greatestDifference>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">y년 M월~M월</greatestDifference>
@@ -2181,6 +2938,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">y년 M월 d일 ~ y년 M월 d일</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
+<<<<<<< HEAD
 							<greatestDifference id="d">y년 M월 d일 (E) ~ d일 (E)</greatestDifference>
 							<greatestDifference id="M">y년 M월 d일 (E) ~ M월 d일 (E)</greatestDifference>
 							<greatestDifference id="y">y년 M월 d일 (E) ~ y년 M월 d일 (E)</greatestDifference>
@@ -2189,6 +2947,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="d">y년 M월 d일 EEEE ~ d일 EEEE</greatestDifference>
 							<greatestDifference id="M">y년 M월 d일 EEEE ~ M월 d일 EEEE</greatestDifference>
 							<greatestDifference id="y">y년 M월 d일 EEEE ~ y년 M월 d일 EEEE</greatestDifference>
+=======
+							<greatestDifference id="d">y년 M월 d일 E ~ d일 E</greatestDifference>
+							<greatestDifference id="M">y년 M월 d일 E ~ M월 d일 E</greatestDifference>
+							<greatestDifference id="y">y년 M월 d일 E ~ y년 M월 d일 E</greatestDifference>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">y년 MM월 ~ MM월</greatestDifference>
@@ -2196,6 +2959,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
+<<<<<<< HEAD
 			</calendar>
 			<calendar type="hebrew">
 				<months>
@@ -2509,12 +3273,73 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</eras>
 			</calendar>
 			<calendar type="roc">
+=======
+				<fields>
+					<field type="era">
+						<displayName>연호</displayName>
+					</field>
+					<field type="year">
+						<displayName>년</displayName>
+					</field>
+					<field type="month">
+						<displayName>월</displayName>
+					</field>
+					<field type="week">
+						<displayName>주</displayName>
+					</field>
+					<field type="day">
+						<displayName>일</displayName>
+						<relative type="-3">그끄제</relative>
+						<relative type="-2">그저께</relative>
+						<relative type="-1">어제</relative>
+						<relative type="0">오늘</relative>
+						<relative type="1">내일</relative>
+						<relative type="2">모레</relative>
+						<relative type="3">3일후</relative>
+					</field>
+					<field type="weekday">
+						<displayName>요일</displayName>
+					</field>
+					<field type="dayperiod">
+						<displayName>오전/오후</displayName>
+					</field>
+					<field type="hour">
+						<displayName>시</displayName>
+					</field>
+					<field type="minute">
+						<displayName>분</displayName>
+					</field>
+					<field type="second">
+						<displayName>초</displayName>
+					</field>
+					<field type="zone">
+						<displayName>시간대</displayName>
+					</field>
+				</fields>
+			</calendar>
+			<calendar type="islamic">
+				<am>오전</am>
+				<pm>오후</pm>
+			</calendar>
+			<calendar type="japanese">
+				<am>오전</am>
+				<pm>오후</pm>
+			</calendar>
+			<calendar type="persian">
+				<am>오전</am>
+				<pm>오후</pm>
+			</calendar>
+			<calendar type="roc">
+				<am>오전</am>
+				<pm>오후</pm>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<eras>
 					<eraAbbr>
 						<era type="0">중화민국전</era>
 						<era type="1">중화민국</era>
 					</eraAbbr>
 				</eras>
+<<<<<<< HEAD
 			</calendar>
 		</calendars>
 		<fields>
@@ -2651,6 +3476,36 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<regionFormat>{0} 시간</regionFormat>
 			<regionFormat type="daylight" draft="contributed">{0} 일광 절약 시간</regionFormat>
 			<regionFormat type="standard" draft="contributed">{0} 표준시</regionFormat>
+=======
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>G y년 M월 d일</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>G y년 M월 d일</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>G y. M. d</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>G y. M. d</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+			</calendar>
+		</calendars>
+		<timeZoneNames>
+			<hourFormat>+HH:mm;-HH:mm</hourFormat>
+			<gmtFormat>GMT{0}</gmtFormat>
+			<regionFormat>{0} 시간</regionFormat>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="Etc/Unknown">
 				<exemplarCity>알 수 없는 장소</exemplarCity>
@@ -2676,6 +3531,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Yerevan">
 				<exemplarCity>예레반</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="America/Curacao">
+				<exemplarCity>쿠라사오</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Africa/Luanda">
 				<exemplarCity>루안다</exemplarCity>
 			</zone>
@@ -2685,6 +3546,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Antarctica/Palmer">
 				<exemplarCity>파머</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="Antarctica/South_Pole">
+				<exemplarCity>남극</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Antarctica/Syowa">
 				<exemplarCity>쇼와</exemplarCity>
 			</zone>
@@ -2781,15 +3648,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Australia/Brisbane">
 				<exemplarCity>브리스베인</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Antarctica/Macquarie">
 				<exemplarCity draft="contributed">맥쿼리</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Australia/Lord_Howe">
 				<exemplarCity>로드 하우</exemplarCity>
 			</zone>
 			<zone type="America/Aruba">
 				<exemplarCity>아루바</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Mariehamn">
 				<exemplarCity>마리에하먼</exemplarCity>
 			</zone>
@@ -2799,6 +3670,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Europe/Sarajevo">
 				<exemplarCity>사라예보</exemplarCity>
 			</zone>
+=======
+			<zone type="Asia/Baku">
+				<exemplarCity>바쿠</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Barbados">
 				<exemplarCity>바베이도스</exemplarCity>
 			</zone>
@@ -2823,9 +3699,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Africa/Porto-Novo">
 				<exemplarCity>포르토노보</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/St_Barthelemy">
 				<exemplarCity>생바르텔레미</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Atlantic/Bermuda">
 				<exemplarCity>버뮤다</exemplarCity>
 			</zone>
@@ -2835,9 +3714,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/La_Paz">
 				<exemplarCity>라파스</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Kralendijk">
 				<exemplarCity draft="contributed">크라렌디즈크</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Eirunepe">
 				<exemplarCity>아이루네페</exemplarCity>
 			</zone>
@@ -2893,7 +3775,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>팀부</exemplarCity>
 			</zone>
 			<zone type="Africa/Gaborone">
+<<<<<<< HEAD
 				<exemplarCity draft="contributed">가보로네</exemplarCity>
+=======
+				<exemplarCity>가보로네</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Minsk">
 				<exemplarCity>민스크</exemplarCity>
@@ -2916,9 +3802,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Dawson_Creek">
 				<exemplarCity>도슨크릭</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Creston">
 				<exemplarCity draft="contributed">크레스톤</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Yellowknife">
 				<exemplarCity>옐로나이프</exemplarCity>
 			</zone>
@@ -2958,6 +3847,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Toronto">
 				<exemplarCity>토론토</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="America/Montreal">
+				<exemplarCity>몬트리올</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Iqaluit">
 				<exemplarCity>이칼루이트</exemplarCity>
 			</zone>
@@ -2980,10 +3875,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>블랑 사블롱</exemplarCity>
 			</zone>
 			<zone type="America/St_Johns">
+<<<<<<< HEAD
 				<exemplarCity>세인트존스</exemplarCity>
 			</zone>
 			<zone type="Indian/Cocos">
 				<exemplarCity draft="contributed">코코스</exemplarCity>
+=======
+				<exemplarCity>세인트존</exemplarCity>
+			</zone>
+			<zone type="Indian/Cocos">
+				<exemplarCity>코코스</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Kinshasa">
 				<exemplarCity>킨샤사</exemplarCity>
@@ -3042,21 +3944,29 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Atlantic/Cape_Verde">
 				<exemplarCity>카보 베르데</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Curacao">
 				<exemplarCity>퀴라소</exemplarCity>
 			</zone>
 			<zone type="Indian/Christmas">
 				<exemplarCity draft="contributed">크리스마스</exemplarCity>
+=======
+			<zone type="Indian/Christmas">
+				<exemplarCity>크리스마스</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Nicosia">
 				<exemplarCity>니코시아</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Prague">
 				<exemplarCity>프라하</exemplarCity>
 			</zone>
 			<zone type="Europe/Busingen">
 				<exemplarCity draft="contributed">뷔지겐</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Europe/Berlin">
 				<exemplarCity>베를린</exemplarCity>
 			</zone>
@@ -3073,7 +3983,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>산토도밍고</exemplarCity>
 			</zone>
 			<zone type="Africa/Algiers">
+<<<<<<< HEAD
 				<exemplarCity draft="contributed">알제</exemplarCity>
+=======
+				<exemplarCity>알제</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Pacific/Galapagos">
 				<exemplarCity>갈라파고스</exemplarCity>
@@ -3124,7 +4038,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>코스레</exemplarCity>
 			</zone>
 			<zone type="Atlantic/Faeroe">
+<<<<<<< HEAD
 				<exemplarCity>페로 제도</exemplarCity>
+=======
+				<exemplarCity>페로</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Paris">
 				<exemplarCity>파리</exemplarCity>
@@ -3133,6 +4051,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>리브르빌</exemplarCity>
 			</zone>
 			<zone type="Europe/London">
+<<<<<<< HEAD
 				<long>
 					<daylight draft="contributed">영국 일광 절약 시간</daylight>
 				</long>
@@ -3140,21 +4059,35 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Grenada">
 				<exemplarCity>그레나다</exemplarCity>
+=======
+				<exemplarCity>런던</exemplarCity>
+			</zone>
+			<zone type="America/Grenada">
+				<exemplarCity>그라나다</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Tbilisi">
 				<exemplarCity>트빌리시</exemplarCity>
 			</zone>
 			<zone type="America/Cayenne">
+<<<<<<< HEAD
 				<exemplarCity>카옌</exemplarCity>
 			</zone>
 			<zone type="Europe/Guernsey">
 				<exemplarCity>건지</exemplarCity>
+=======
+				<exemplarCity>샤이엔</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Accra">
 				<exemplarCity>아크라</exemplarCity>
 			</zone>
 			<zone type="Europe/Gibraltar">
+<<<<<<< HEAD
 				<exemplarCity>지브롤터</exemplarCity>
+=======
+				<exemplarCity>지브랄타</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Thule">
 				<exemplarCity>툴레</exemplarCity>
@@ -3175,7 +4108,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>코나크리</exemplarCity>
 			</zone>
 			<zone type="America/Guadeloupe">
+<<<<<<< HEAD
 				<exemplarCity>과들루프</exemplarCity>
+=======
+				<exemplarCity>과델로프</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Malabo">
 				<exemplarCity>말라보</exemplarCity>
@@ -3184,7 +4121,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>아테네</exemplarCity>
 			</zone>
 			<zone type="Atlantic/South_Georgia">
+<<<<<<< HEAD
 				<exemplarCity>사우스조지아</exemplarCity>
+=======
+				<exemplarCity>남부 조지아</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Guatemala">
 				<exemplarCity>과테말라</exemplarCity>
@@ -3193,20 +4134,30 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>괌</exemplarCity>
 			</zone>
 			<zone type="Africa/Bissau">
+<<<<<<< HEAD
 				<exemplarCity draft="contributed">비사우</exemplarCity>
 			</zone>
 			<zone type="America/Guyana">
 				<exemplarCity draft="contributed">가이아나</exemplarCity>
+=======
+				<exemplarCity>비사우</exemplarCity>
+			</zone>
+			<zone type="America/Guyana">
+				<exemplarCity>가이아나</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Hong_Kong">
 				<exemplarCity>홍콩</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Tegucigalpa">
 				<exemplarCity>테구시갈파</exemplarCity>
 			</zone>
 			<zone type="Europe/Zagreb">
 				<exemplarCity>자그레브</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Port-au-Prince">
 				<exemplarCity>포르토프랭스</exemplarCity>
 			</zone>
@@ -3226,20 +4177,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>자야푸라</exemplarCity>
 			</zone>
 			<zone type="Europe/Dublin">
+<<<<<<< HEAD
 				<long>
 					<daylight draft="contributed">아일랜드 시간</daylight>
 				</long>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<exemplarCity>더블린</exemplarCity>
 			</zone>
 			<zone type="Asia/Jerusalem">
 				<exemplarCity>예루살렘</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Isle_of_Man">
 				<exemplarCity>맨섬</exemplarCity>
 			</zone>
 			<zone type="Asia/Calcutta">
 				<exemplarCity>콜카타</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Indian/Chagos">
 				<exemplarCity>차고스</exemplarCity>
 			</zone>
@@ -3255,9 +4212,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Europe/Rome">
 				<exemplarCity>로마</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Jersey">
 				<exemplarCity>저지</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Jamaica">
 				<exemplarCity>자메이카</exemplarCity>
 			</zone>
@@ -3301,7 +4261,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>쿠웨이트</exemplarCity>
 			</zone>
 			<zone type="America/Cayman">
+<<<<<<< HEAD
 				<exemplarCity>케이맨</exemplarCity>
+=======
+				<exemplarCity>카이만</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Aqtau">
 				<exemplarCity>아크타우</exemplarCity>
@@ -3360,12 +4324,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Europe/Chisinau">
 				<exemplarCity>키시나우</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Podgorica">
 				<exemplarCity>포드고리차</exemplarCity>
 			</zone>
 			<zone type="America/Marigot">
 				<exemplarCity>마리곳</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Indian/Antananarivo">
 				<exemplarCity>안타나나리보</exemplarCity>
 			</zone>
@@ -3375,9 +4342,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Pacific/Majuro">
 				<exemplarCity>마주로</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Skopje">
 				<exemplarCity>스코페</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Africa/Bamako">
 				<exemplarCity>바마코</exemplarCity>
 			</zone>
@@ -3406,7 +4376,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>누악쇼트</exemplarCity>
 			</zone>
 			<zone type="America/Montserrat">
+<<<<<<< HEAD
 				<exemplarCity>몬세라트</exemplarCity>
+=======
+				<exemplarCity>몬세라</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Malta">
 				<exemplarCity>몰타</exemplarCity>
@@ -3423,9 +4397,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Tijuana">
 				<exemplarCity>티후아나</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Santa_Isabel">
 				<exemplarCity draft="contributed">산타 이사벨</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Hermosillo">
 				<exemplarCity>에르모시요</exemplarCity>
 			</zone>
@@ -3435,21 +4412,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Chihuahua">
 				<exemplarCity>치와와</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Bahia_Banderas">
 				<exemplarCity draft="contributed">바이아 반데라스</exemplarCity>
 			</zone>
 			<zone type="America/Ojinaga">
 				<exemplarCity draft="contributed">오히나가</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Monterrey">
 				<exemplarCity>몬테레이</exemplarCity>
 			</zone>
 			<zone type="America/Mexico_City">
 				<exemplarCity>멕시코 시티</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Matamoros">
 				<exemplarCity draft="contributed">마타모로스</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Merida">
 				<exemplarCity>메리다</exemplarCity>
 			</zone>
@@ -3466,7 +4449,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>마푸토</exemplarCity>
 			</zone>
 			<zone type="Africa/Windhoek">
+<<<<<<< HEAD
 				<exemplarCity draft="contributed">빈트후크</exemplarCity>
+=======
+				<exemplarCity>빈트후크</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Pacific/Noumea">
 				<exemplarCity>누메아</exemplarCity>
@@ -3535,10 +4522,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>바르샤바</exemplarCity>
 			</zone>
 			<zone type="America/Miquelon">
+<<<<<<< HEAD
 				<exemplarCity>미클롱</exemplarCity>
 			</zone>
 			<zone type="Pacific/Pitcairn">
 				<exemplarCity>핏케언</exemplarCity>
+=======
+				<exemplarCity>미퀠론</exemplarCity>
+			</zone>
+			<zone type="Pacific/Pitcairn">
+				<exemplarCity>피트카이른</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Puerto_Rico">
 				<exemplarCity>푸에르토리코</exemplarCity>
@@ -3546,9 +4540,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Gaza">
 				<exemplarCity>가자</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Hebron">
 				<exemplarCity draft="contributed">헤브론</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Atlantic/Azores">
 				<exemplarCity>아조레스</exemplarCity>
 			</zone>
@@ -3568,14 +4565,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>카타르</exemplarCity>
 			</zone>
 			<zone type="Indian/Reunion">
+<<<<<<< HEAD
 				<exemplarCity>레위니옹</exemplarCity>
+=======
+				<exemplarCity>불령 리유니온</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Bucharest">
 				<exemplarCity>부쿠레슈티</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Belgrade">
 				<exemplarCity>베오그라드</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Europe/Kaliningrad">
 				<exemplarCity>칼리닌그라드</exemplarCity>
 			</zone>
@@ -3597,9 +4601,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Novosibirsk">
 				<exemplarCity>노보시비르스크</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Novokuznetsk">
 				<exemplarCity draft="contributed">노보쿠즈네츠크</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Asia/Krasnoyarsk">
 				<exemplarCity>크라스노야르스크</exemplarCity>
 			</zone>
@@ -3612,6 +4619,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Vladivostok">
 				<exemplarCity>블라디보스토크</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Khandyga">
 				<exemplarCity draft="contributed">한디가</exemplarCity>
 			</zone>
@@ -3621,6 +4629,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Ust-Nera">
 				<exemplarCity draft="contributed">우스티네라</exemplarCity>
 			</zone>
+=======
+			<zone type="Asia/Sakhalin">
+				<exemplarCity>사할린</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Asia/Magadan">
 				<exemplarCity>마가단</exemplarCity>
 			</zone>
@@ -3654,6 +4667,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Atlantic/St_Helena">
 				<exemplarCity>세인트 헬레나</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Ljubljana">
 				<exemplarCity>류블랴나</exemplarCity>
 			</zone>
@@ -3669,6 +4683,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Europe/San_Marino">
 				<exemplarCity>산마리노</exemplarCity>
 			</zone>
+=======
+			<zone type="Africa/Freetown">
+				<exemplarCity>프리타운</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Africa/Dakar">
 				<exemplarCity>다카르</exemplarCity>
 			</zone>
@@ -3678,18 +4697,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Paramaribo">
 				<exemplarCity>파라마리보</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Africa/Juba">
 				<exemplarCity draft="contributed">주바</exemplarCity>
 			</zone>
 			<zone type="Africa/Sao_Tome">
 				<exemplarCity>상투메</exemplarCity>
+=======
+			<zone type="Africa/Sao_Tome">
+				<exemplarCity>사오 투메</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/El_Salvador">
 				<exemplarCity>엘살바도르</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Lower_Princes">
 				<exemplarCity>로워 프린스 쿼터</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Asia/Damascus">
 				<exemplarCity>다마스쿠스</exemplarCity>
 			</zone>
@@ -3721,7 +4748,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>딜리</exemplarCity>
 			</zone>
 			<zone type="Asia/Ashgabat">
+<<<<<<< HEAD
 				<exemplarCity>아슈하바트</exemplarCity>
+=======
+				<exemplarCity>아쉬가바트</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Tunis">
 				<exemplarCity>튀니스</exemplarCity>
@@ -3783,6 +4814,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Yakutat">
 				<exemplarCity>야쿠타트</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Sitka">
 				<exemplarCity draft="contributed">싯카</exemplarCity>
 			</zone>
@@ -3792,6 +4824,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Metlakatla">
 				<exemplarCity draft="contributed">메틀라카틀라</exemplarCity>
 			</zone>
+=======
+			<zone type="America/Juneau">
+				<exemplarCity>주노</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Los_Angeles">
 				<exemplarCity>로스앤젤레스</exemplarCity>
 			</zone>
@@ -3801,12 +4838,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Phoenix">
 				<exemplarCity>피닉스</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Denver">
 				<exemplarCity>덴버</exemplarCity>
 			</zone>
 			<zone type="America/North_Dakota/Beulah">
 				<exemplarCity>노스다코타주, 베라</exemplarCity>
 			</zone>
+=======
+			<zone type="America/Shiprock">
+				<exemplarCity>십록</exemplarCity>
+			</zone>
+			<zone type="America/Denver">
+				<exemplarCity>덴버</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/North_Dakota/New_Salem">
 				<exemplarCity>노스 다코타주, 뉴살렘</exemplarCity>
 			</zone>
@@ -3844,7 +4890,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>루이빌</exemplarCity>
 			</zone>
 			<zone type="America/Indiana/Vevay">
+<<<<<<< HEAD
 				<exemplarCity>비비</exemplarCity>
+=======
+				<exemplarCity>자포로제</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Kentucky/Monticello">
 				<exemplarCity>켄터키주, 몬티첼로</exemplarCity>
@@ -3864,9 +4914,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Tashkent">
 				<exemplarCity>타슈켄트</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Vatican">
 				<exemplarCity>바티칸</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/St_Vincent">
 				<exemplarCity>세인트 빈센트</exemplarCity>
 			</zone>
@@ -3904,6 +4957,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>루사카</exemplarCity>
 			</zone>
 			<zone type="Africa/Harare">
+<<<<<<< HEAD
 				<exemplarCity>하라레</exemplarCity>
 			</zone>
 			<metazone type="Acre">
@@ -4705,10 +5759,418 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<metazone type="Solomon">
 				<long>
 					<standard>솔로몬 제도 시간</standard>
+=======
+				<exemplarCity>하라레</exemplarCity>
+			</zone>
+			<metazone type="Acre">
+				<long>
+					<standard>아크레 표준시</standard>
+					<daylight>아크레 하계 표준시</daylight>
+				</long>
+				<short>
+					<standard>ACT (아크레)</standard>
+					<daylight>ACST (아크레)</daylight>
+				</short>
+			</metazone>
+			<metazone type="Africa_Central">
+				<long>
+					<standard>중앙아프리카 시간</standard>
+				</long>
+			</metazone>
+			<metazone type="Africa_Eastern">
+				<long>
+					<standard>동아프리카 시간</standard>
+				</long>
+			</metazone>
+			<metazone type="Africa_Southern">
+				<long>
+					<generic>남아프리카 시간</generic>
+					<standard>남아프리카 표준시</standard>
+				</long>
+			</metazone>
+			<metazone type="Africa_Western">
+				<long>
+					<standard>서아프리카 시간</standard>
+					<daylight>서아프리카 하계 표준시</daylight>
+				</long>
+			</metazone>
+			<metazone type="Alaska">
+				<long>
+					<standard>알래스카 표준시</standard>
+					<daylight>알래스카 하계 표준시</daylight>
+				</long>
+			</metazone>
+			<metazone type="Amazon">
+				<long>
+					<standard>아마존 표준시</standard>
+					<daylight>아마존 하계 표준시</daylight>
+				</long>
+			</metazone>
+			<metazone type="America_Central">
+				<long>
+					<generic>중부 표준시</generic>
+					<standard>중부 표준시</standard>
+					<daylight>미 중부 하계 표준시</daylight>
+				</long>
+				<short>
+					<standard>CST</standard>
+					<daylight>CDT</daylight>
+				</short>
+			</metazone>
+			<metazone type="America_Eastern">
+				<long>
+					<generic>동부 표준시</generic>
+					<standard>동부 표준시</standard>
+					<daylight>미 동부 하계 표준시</daylight>
+				</long>
+				<short>
+					<standard>EST</standard>
+					<daylight>EDT</daylight>
+				</short>
+			</metazone>
+			<metazone type="America_Mountain">
+				<long>
+					<generic>산지 표준시</generic>
+					<standard>산악 표준시</standard>
+					<daylight>미 산지 하계 표준시</daylight>
+				</long>
+				<short>
+					<standard>MST</standard>
+					<daylight>MDT</daylight>
+				</short>
+			</metazone>
+			<metazone type="America_Pacific">
+				<long>
+					<generic>태평양 표준시</generic>
+					<standard>태평양 표준시</standard>
+					<daylight>미 태평양 하계 표준시</daylight>
+				</long>
+				<short>
+					<standard>PST</standard>
+					<daylight>PDT</daylight>
+				</short>
+			</metazone>
+			<metazone type="Aqtau">
+				<short>
+					<standard>AQTT (아크타우)</standard>
+					<daylight>AQTST (아크타우)</daylight>
+				</short>
+			</metazone>
+			<metazone type="Aqtobe">
+				<short>
+					<standard>AQTT (악퇴베)</standard>
+					<daylight>AQTST (악퇴베)</daylight>
+				</short>
+			</metazone>
+			<metazone type="Arabian">
+				<long>
+					<generic>아라비아 시간</generic>
+					<standard>아라비아 표준시</standard>
+					<daylight>아라비아 하계 표준시</daylight>
+				</long>
+				<short>
+					<generic>AT(아라비아)</generic>
+					<standard>AST(아라비아)</standard>
+					<daylight>ADT(아라비아)</daylight>
+				</short>
+			</metazone>
+			<metazone type="Atlantic">
+				<long>
+					<generic>대서양 표준시</generic>
+					<standard>대서양 표준시</standard>
+					<daylight>미 대서양 하계 표준시</daylight>
+				</long>
+				<short>
+					<standard>AST</standard>
+					<daylight>ADT</daylight>
+				</short>
+			</metazone>
+			<metazone type="Australia_Central">
+				<long>
+					<generic>중앙 오스트레일리아 시간</generic>
+					<standard>오스트레일리아 중부 표준시</standard>
+					<daylight>오스트레일리아 중부 하계 표준시</daylight>
+				</long>
+			</metazone>
+			<metazone type="Australia_CentralWestern">
+				<long>
+					<generic>오스트레일리아 중서부 시간</generic>
+					<standard>오스트레일리아 중서부 표준시</standard>
+					<daylight>오스트레일리아 중서부 하계 표준시</daylight>
+				</long>
+			</metazone>
+			<metazone type="Australia_Eastern">
+				<long>
+					<generic>동부 오스트레일리아 시간</generic>
+					<standard>오스트레일리아 동부 표준시</standard>
+					<daylight>오스트레일리아 동부 하계 표준시</daylight>
+				</long>
+			</metazone>
+			<metazone type="Australia_Western">
+				<long>
+					<generic>서부 오스트레일리아 시간</generic>
+					<standard>오스트레일리아 서부 표준시</standard>
+					<daylight>오스트레일리아 서부 하계 표준시</daylight>
+				</long>
+			</metazone>
+			<metazone type="Azores">
+				<long>
+					<standard>아조레스 표준시</standard>
+					<daylight>아조레스 하계 표준시</daylight>
+				</long>
+			</metazone>
+			<metazone type="Bering">
+				<short>
+					<standard>BST (베링)</standard>
+					<daylight>BDT (베링)</daylight>
+				</short>
+			</metazone>
+			<metazone type="Brasilia">
+				<long>
+					<standard>브라질리아 표준시</standard>
+					<daylight>브라질리아 하계 표준시</daylight>
+				</long>
+			</metazone>
+			<metazone type="Cape_Verde">
+				<long>
+					<standard>카보 베르데 표준시</standard>
+					<daylight>카보 베르데 하계 표준시</daylight>
+				</long>
+			</metazone>
+			<metazone type="Chamorro">
+				<long>
+					<generic>차모로 시간</generic>
+					<standard>차모로 표준시</standard>
+				</long>
+			</metazone>
+			<metazone type="Chatham">
+				<long>
+					<standard>채텀 표준시</standard>
+					<daylight>채텀 하계 표준시</daylight>
+				</long>
+			</metazone>
+			<metazone type="China">
+				<long>
+					<standard>중국 표준시</standard>
+					<daylight>중국 하계 표준시</daylight>
+				</long>
+				<short>
+					<standard>CST (중국)</standard>
+					<daylight>CDT (중국)</daylight>
+				</short>
+			</metazone>
+			<metazone type="Christmas">
+				<long>
+					<standard>크리스마스섬 표준시</standard>
+				</long>
+			</metazone>
+			<metazone type="Cocos">
+				<long>
+					<standard>코코스섬 표준시</standard>
+				</long>
+			</metazone>
+			<metazone type="Cook">
+				<long>
+					<standard>쿡제도 표준시</standard>
+					<daylight>쿡제도 하계 표준시</daylight>
+				</long>
+			</metazone>
+			<metazone type="Cuba">
+				<short>
+					<standard>CST (쿠바)</standard>
+					<daylight>CDT (쿠바)</daylight>
+				</short>
+			</metazone>
+			<metazone type="Davis">
+				<long>
+					<standard>데이비스 표준시</standard>
+				</long>
+			</metazone>
+			<metazone type="DumontDUrville">
+				<long>
+					<standard>뒤몽 뒤르빌 표준시</standard>
+				</long>
+			</metazone>
+			<metazone type="Easter">
+				<long>
+					<standard>이스터섬 표준시</standard>
+					<daylight>이스터섬 하계 표준시</daylight>
+				</long>
+			</metazone>
+			<metazone type="Europe_Central">
+				<long>
+					<standard>중부유럽 표준시</standard>
+					<daylight>중부유럽 하계 표준시</daylight>
+				</long>
+			</metazone>
+			<metazone type="Europe_Eastern">
+				<long>
+					<standard>동부유럽 표준시</standard>
+					<daylight>동부유럽 하계 표준시</daylight>
+				</long>
+			</metazone>
+			<metazone type="Europe_Western">
+				<long>
+					<standard>서부 유럽 시간</standard>
+					<daylight>서부 유럽 하계 표준시</daylight>
+				</long>
+			</metazone>
+			<metazone type="Falkland">
+				<long>
+					<standard>포클랜드 표준시</standard>
+					<daylight>포클랜드 하계 표준시</daylight>
+				</long>
+			</metazone>
+			<metazone type="Fiji">
+				<long>
+					<standard>피지 표준시</standard>
+					<daylight>피지 하계 표준시</daylight>
+				</long>
+			</metazone>
+			<metazone type="French_Southern">
+				<long>
+					<standard>프랑스령 남쪽식민지 표준시</standard>
+				</long>
+			</metazone>
+			<metazone type="Galapagos">
+				<long>
+					<standard>갈라파고스 표준시</standard>
+				</long>
+			</metazone>
+			<metazone type="GMT">
+				<long>
+					<standard>그리니치 표준시</standard>
+				</long>
+			</metazone>
+			<metazone type="Guam">
+				<short>
+					<standard>GST (괌)</standard>
+				</short>
+			</metazone>
+			<metazone type="Hong_Kong">
+				<long>
+					<standard>홍콩 시간</standard>
+					<daylight>홍콩 하계 표준시</daylight>
+				</long>
+			</metazone>
+			<metazone type="India">
+				<long>
+					<standard>인도 표준시</standard>
+				</long>
+			</metazone>
+			<metazone type="Indian_Ocean">
+				<long>
+					<standard>영국령 인도양 식민지 표준시</standard>
+				</long>
+			</metazone>
+			<metazone type="Indochina">
+				<long>
+					<standard>인도차이나 시간</standard>
+				</long>
+			</metazone>
+			<metazone type="Indonesia_Central">
+				<long>
+					<standard>중앙인도네시아 시간</standard>
+				</long>
+			</metazone>
+			<metazone type="Indonesia_Eastern">
+				<long>
+					<standard>동인도네시아 시간</standard>
+				</long>
+			</metazone>
+			<metazone type="Indonesia_Western">
+				<long>
+					<standard>서인도네시아 시간</standard>
+				</long>
+			</metazone>
+			<metazone type="Israel">
+				<long>
+					<standard>이스라엘 표준시</standard>
+					<daylight>이스라엘 하계 표준시</daylight>
+				</long>
+				<short>
+					<standard>IST (이스라엘)</standard>
+				</short>
+			</metazone>
+			<metazone type="Japan">
+				<long>
+					<standard>일본 표준시</standard>
+					<daylight>일본 하계 표준시</daylight>
+				</long>
+			</metazone>
+			<metazone type="Korea">
+				<long>
+					<standard>한국 표준시</standard>
+					<daylight>한국 하계 표준시</daylight>
+				</long>
+				<commonlyUsed>true</commonlyUsed>
+			</metazone>
+			<metazone type="Lord_Howe">
+				<long>
+					<generic>로드 하우 시간</generic>
+					<standard>로드 하우 표준시</standard>
+					<daylight>로드 하우 하계 표준시</daylight>
+				</long>
+			</metazone>
+			<metazone type="Maldives">
+				<long>
+					<standard>몰디브 표준시</standard>
+				</long>
+			</metazone>
+			<metazone type="Mauritius">
+				<long>
+					<standard>모리셔스 표준시</standard>
+				</long>
+			</metazone>
+			<metazone type="Mawson">
+				<long>
+					<standard>모슨 표준시</standard>
+				</long>
+			</metazone>
+			<metazone type="Moscow">
+				<long>
+					<standard>모스크바 표준시</standard>
+					<daylight>모스크바 하계 표준시</daylight>
+				</long>
+			</metazone>
+			<metazone type="New_Zealand">
+				<long>
+					<generic>뉴질랜드 시간</generic>
+					<standard>뉴질랜드 표준시</standard>
+					<daylight>뉴질랜드 하계 표준시</daylight>
+				</long>
+			</metazone>
+			<metazone type="Newfoundland">
+				<long>
+					<standard>뉴펀들랜드 표준시</standard>
+					<daylight>뉴펀들랜드 하계 표준시</daylight>
+				</long>
+			</metazone>
+			<metazone type="Reunion">
+				<long>
+					<standard>리유니온 표준시</standard>
+				</long>
+			</metazone>
+			<metazone type="Rothera">
+				<long>
+					<standard>로데라 표준시</standard>
+				</long>
+			</metazone>
+			<metazone type="Samarkand">
+				<short>
+					<standard>SAMT (사마르칸트)</standard>
+					<daylight>SAMST (사마르칸트)</daylight>
+				</short>
+			</metazone>
+			<metazone type="Seychelles">
+				<long>
+					<standard>세이셸 표준시</standard>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				</long>
 			</metazone>
 			<metazone type="South_Georgia">
 				<long>
+<<<<<<< HEAD
 					<standard>사우스 조지아 시간</standard>
 				</long>
 			</metazone>
@@ -4806,10 +6268,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<generic>볼고그라드 시간</generic>
 					<standard>볼고그라드 표준시</standard>
 					<daylight>볼고그라드 하계 표준시</daylight>
+=======
+					<standard>사우스 조지아 표준시</standard>
+				</long>
+				<short>
+					<standard>GST (사우스 조지아)</standard>
+				</short>
+			</metazone>
+			<metazone type="Syowa">
+				<long>
+					<standard>쇼와 표준시</standard>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				</long>
 			</metazone>
 			<metazone type="Vostok">
 				<long>
+<<<<<<< HEAD
 					<standard>보스톡 시간</standard>
 				</long>
 			</metazone>
@@ -4835,30 +6309,50 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<generic>예카테린부르크 시간</generic>
 					<standard>예카테린부르크 표준시</standard>
 					<daylight>예카테린부르크 하계 표준시</daylight>
+=======
+					<standard>보스토크 표준시</standard>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				</long>
 			</metazone>
 		</timeZoneNames>
 	</dates>
 	<numbers>
+<<<<<<< HEAD
 		<symbols numberSystem="latn">
+=======
+		<symbols>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<decimal>.</decimal>
 			<group>,</group>
 			<list>;</list>
 			<percentSign>%</percentSign>
+<<<<<<< HEAD
 			<plusSign>+</plusSign>
 			<minusSign>-</minusSign>
 			<exponential>E</exponential>
 			<superscriptingExponent draft="contributed">×</superscriptingExponent>
+=======
+			<nativeZeroDigit>0</nativeZeroDigit>
+			<patternDigit>#</patternDigit>
+			<plusSign>+</plusSign>
+			<minusSign>-</minusSign>
+			<exponential>E</exponential>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<perMille>‰</perMille>
 			<infinity>∞</infinity>
 			<nan>NaN</nan>
 		</symbols>
+<<<<<<< HEAD
 		<decimalFormats numberSystem="latn">
+=======
+		<decimalFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<decimalFormatLength>
 				<decimalFormat>
 					<pattern>#,##0.###</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
+<<<<<<< HEAD
 			<decimalFormatLength type="long">
 				<decimalFormat>
 					<pattern type="1000" count="other">0000</pattern>
@@ -4893,12 +6387,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</decimalFormatLength>
 		</decimalFormats>
 		<scientificFormats numberSystem="latn">
+=======
+		</decimalFormats>
+		<scientificFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<scientificFormatLength>
 				<scientificFormat>
 					<pattern>#E0</pattern>
 				</scientificFormat>
 			</scientificFormatLength>
 		</scientificFormats>
+<<<<<<< HEAD
 		<percentFormats numberSystem="latn">
 			<percentFormatLength>
 				<percentFormat>
@@ -4914,6 +6413,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<currencyFormat type="accounting">
 					<pattern draft="contributed">¤#,##0.00;(¤#,##0.00)</pattern>
 				</currencyFormat>
+=======
+		<percentFormats>
+			<percentFormatLength>
+				<percentFormat>
+					<pattern>#,##0%</pattern>
+				</percentFormat>
+			</percentFormatLength>
+		</percentFormats>
+		<currencyFormats>
+			<currencyFormatLength>
+				<currencyFormat>
+					<pattern>¤#,##0.00</pattern>
+				</currencyFormat>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currencyFormatLength>
 			<unitPattern count="other">{0} {1}</unitPattern>
 		</currencyFormats>
@@ -4925,10 +6438,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>아랍에미리트 디르함</displayName>
 			</currency>
 			<currency type="AFA">
+<<<<<<< HEAD
 				<displayName>아프가니 (1927–2002)</displayName>
 			</currency>
 			<currency type="AFN">
 				<displayName>아프가니스탄 아프가니</displayName>
+=======
+				<displayName>아프가니 (1927-2002)</displayName>
+			</currency>
+			<currency type="AFN">
+				<displayName>아프가니</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ALL">
 				<displayName>알바니아 레크</displayName>
@@ -4943,6 +6463,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>앙골라 콴자</displayName>
 			</currency>
 			<currency type="AOK">
+<<<<<<< HEAD
 				<displayName>앙골라 콴자 (1977–1990)</displayName>
 			</currency>
 			<currency type="AON">
@@ -4950,10 +6471,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="AOR">
 				<displayName draft="contributed">앙골라 재조정 콴자 (1995–1999)</displayName>
+=======
+				<displayName>앙골라 콴자 (1977-1990)</displayName>
+			</currency>
+			<currency type="AON">
+				<displayName>앙골라 신콴자 (1990-2000)</displayName>
+			</currency>
+			<currency type="AOR">
+				<displayName>앙골라 콴자 Reajustado (1995-1999)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ARA">
 				<displayName>아르헨티나 오스트랄</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="ARL">
 				<displayName draft="contributed">아르헨티나 페소 레이 (1970–1983)</displayName>
 			</currency>
@@ -4962,6 +6493,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ARP">
 				<displayName>아르헨티나 페소 (1983–1985)</displayName>
+=======
+			<currency type="ARP">
+				<displayName>아르헨티나 페소 (1983-1985)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ARS">
 				<displayName>아르헨티나 페소</displayName>
@@ -4971,6 +6506,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="AUD">
 				<displayName>호주 달러</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">AU$</symbol>
 			</currency>
 			<currency type="AWG">
@@ -4978,6 +6514,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="AZM">
 				<displayName>아제르바이젠 마나트(1993–2006)</displayName>
+=======
+			</currency>
+			<currency type="AWG">
+				<displayName>아루바 길더</displayName>
+			</currency>
+			<currency type="AZM">
+				<displayName>아제르바이젠 마나트(1993-2006)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="AZN">
 				<displayName>아제르바이잔 마나트</displayName>
@@ -4988,9 +6532,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BAM">
 				<displayName>보스니아-헤르체고비나 태환 마르크</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="BAN">
 				<displayName draft="contributed">보스니아-헤르체고비나 신디나르 (1994–1997)</displayName>
 			</currency>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<currency type="BBD">
 				<displayName>바베이도스 달러</displayName>
 			</currency>
@@ -5009,6 +6556,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BGL">
 				<displayName>불가리아 동전 렛</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="BGM">
 				<displayName draft="contributed">불가리아 사회주의자 렛</displayName>
 			</currency>
@@ -5018,6 +6566,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BGO">
 				<displayName draft="contributed">불가리아 렛 (1879–1952)</displayName>
+=======
+			<currency type="BGN">
+				<displayName>불가리아 신권 렛</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BHD">
 				<displayName>바레인 디나르</displayName>
@@ -5034,9 +6586,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BOB">
 				<displayName>볼리비아노</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="BOL">
 				<displayName draft="contributed">볼리비아 볼리비아노 (1863–1963)</displayName>
 			</currency>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<currency type="BOP">
 				<displayName>볼리비아노 페소</displayName>
 			</currency>
@@ -5044,17 +6599,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>볼리비아노 Mvdol(기금)</displayName>
 			</currency>
 			<currency type="BRB">
+<<<<<<< HEAD
 				<displayName>볼리비아노 크루제이루 노보 (1967–1986)</displayName>
+=======
+				<displayName>볼리비아노 크루제이루 노보 (1967-1986)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BRC">
 				<displayName>브라질 크루자두</displayName>
 			</currency>
 			<currency type="BRE">
+<<<<<<< HEAD
 				<displayName>브라질 크루제이루 (1990–1993)</displayName>
 			</currency>
 			<currency type="BRL">
 				<displayName>브라질 레알</displayName>
 				<symbol draft="contributed">R$</symbol>
+=======
+				<displayName>브라질 크루제이루 (1990-1993)</displayName>
+			</currency>
+			<currency type="BRL">
+				<displayName>브라질 레알</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BRN">
 				<displayName>브라질 크루자두 노보</displayName>
@@ -5062,15 +6628,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BRR">
 				<displayName>브라질 크루제이루</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="BRZ">
 				<displayName draft="contributed">브라질 크루제이루 (1942–1967)</displayName>
 			</currency>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<currency type="BSD">
 				<displayName>바하마 달러</displayName>
 			</currency>
 			<currency type="BTN">
 				<displayName>부탄 눌투눔</displayName>
+<<<<<<< HEAD
 				<displayName count="other">부탄 눌투눔</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BUK">
 				<displayName>버마 차트</displayName>
@@ -5079,7 +6651,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>보츠와나 폴라</displayName>
 			</currency>
 			<currency type="BYB">
+<<<<<<< HEAD
 				<displayName>벨라루스 신권 루블 (1994–1999)</displayName>
+=======
+				<displayName>벨라루스 신권 루블 (1994-1999)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BYR">
 				<displayName>벨라루스 루블</displayName>
@@ -5089,18 +6665,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="CAD">
 				<displayName>캐나다 달러</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">CA$</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="CDF">
 				<displayName>콩고 프랑 콩골라스</displayName>
 			</currency>
 			<currency type="CHE">
+<<<<<<< HEAD
 				<displayName>유로 (WIR)</displayName>
+=======
+				<displayName>WIR 유로</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="CHF">
 				<displayName>스위스 프랑</displayName>
 			</currency>
 			<currency type="CHW">
+<<<<<<< HEAD
 				<displayName>프랑 (WIR)</displayName>
 			</currency>
 			<currency type="CLE">
@@ -5108,20 +6692,34 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="CLF">
 				<displayName>칠레 (UF)</displayName>
+=======
+				<displayName>WIR 프랑</displayName>
+			</currency>
+			<currency type="CLF">
+				<displayName>칠레 UF (Unidades de Fomento)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="CLP">
 				<displayName>칠레 페소</displayName>
 			</currency>
 			<currency type="CNY">
+<<<<<<< HEAD
 				<displayName>중국 위안화</displayName>
 				<displayName count="other">중국 위안 인민폐</displayName>
 				<symbol draft="contributed">CN¥</symbol>
+=======
+				<displayName>중국 위안 인민폐</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="COP">
 				<displayName>콜롬비아 페소</displayName>
 			</currency>
 			<currency type="COU">
+<<<<<<< HEAD
 				<displayName draft="contributed">콜롬비아 실가 단위</displayName>
+=======
+				<displayName>UVR (Unidad de Valor Real)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="CRC">
 				<displayName>코스타리카 콜론</displayName>
@@ -5132,9 +6730,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="CSK">
 				<displayName>체코슬로바키아 동전 코루나</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="CUC">
 				<displayName>쿠바 태환 페소</displayName>
 			</currency>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<currency type="CUP">
 				<displayName>쿠바 페소</displayName>
 			</currency>
@@ -5169,7 +6770,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>에쿠아도르 수크레</displayName>
 			</currency>
 			<currency type="ECV">
+<<<<<<< HEAD
 				<displayName>에콰도르 (UVC)</displayName>
+=======
+				<displayName>에콰도르 UVC(Unidad de Valor Constante)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="EEK">
 				<displayName>에스토니아 크룬</displayName>
@@ -5194,7 +6799,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="EUR">
 				<displayName>유로화</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">€</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="FIM">
 				<displayName>핀란드 마르카</displayName>
@@ -5210,17 +6818,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="GBP">
 				<displayName>영국령 파운드 스털링</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">£</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="GEK">
 				<displayName>그루지야 지폐 라리트</displayName>
 			</currency>
 			<currency type="GEL">
+<<<<<<< HEAD
 				<displayName>조지아 라리</displayName>
 				<displayName count="other">조지아 라리</displayName>
 			</currency>
 			<currency type="GHC">
 				<displayName>가나 시디 (1979–2007)</displayName>
+=======
+				<displayName>그루지야 라리</displayName>
+			</currency>
+			<currency type="GHC">
+				<displayName>가나 시디 (1979-2007)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="GHS">
 				<displayName>가나 시디</displayName>
@@ -5257,7 +6875,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="HKD">
 				<displayName>홍콩 달러</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">HK$</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="HNL">
 				<displayName>온두라스 렘피라</displayName>
@@ -5285,11 +6906,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ILS">
 				<displayName>이스라엘 신권 세켈</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">₪</symbol>
 			</currency>
 			<currency type="INR">
 				<displayName>인도 루피</displayName>
 				<symbol draft="contributed">₹</symbol>
+=======
+			</currency>
+			<currency type="INR">
+				<displayName>인도 루피</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="IQD">
 				<displayName>이라크 디나르</displayName>
@@ -5311,7 +6938,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="JPY">
 				<displayName>일본 엔화</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">JP¥</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="KES">
 				<displayName>케냐 실링</displayName>
@@ -5328,12 +6958,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="KPW">
 				<displayName>조선 민주주의 인민 공화국 원</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="KRH">
 				<displayName draft="contributed">대한민국 환 (1953–1962)</displayName>
 			</currency>
 			<currency type="KRW">
 				<displayName>대한민국 원</displayName>
 				<symbol draft="contributed">₩</symbol>
+=======
+			<currency type="KRW">
+				<displayName>대한민국 원</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="KWD">
 				<displayName>쿠웨이트 디나르</displayName>
@@ -5389,12 +7024,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="MAF">
 				<displayName>모로코 프랑</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="MCF">
 				<displayName draft="contributed">모나코 프랑</displayName>
 			</currency>
 			<currency type="MDC">
 				<displayName draft="contributed">몰도바 쿠폰</displayName>
 			</currency>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<currency type="MDL">
 				<displayName>몰도바 레이</displayName>
 			</currency>
@@ -5439,6 +7077,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="MXN">
 				<displayName>멕시코 페소</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">MX$</symbol>
 			</currency>
 			<currency type="MXP">
@@ -5446,6 +7085,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="MXV">
 				<displayName>멕시코 (UDI)</displayName>
+=======
+			</currency>
+			<currency type="MXP">
+				<displayName>멕시코 실버 페소 (1861-1992)</displayName>
+			</currency>
+			<currency type="MXV">
+				<displayName>멕시코 UDI(Unidad de Inversion)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="MYR">
 				<displayName>말레이시아 링깃</displayName>
@@ -5482,7 +7129,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="NZD">
 				<displayName>뉴질랜드 달러</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">NZ$</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="OMR">
 				<displayName>오만 리얄</displayName>
@@ -5494,7 +7144,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>페루 인티</displayName>
 			</currency>
 			<currency type="PEN">
+<<<<<<< HEAD
 				<displayName>페루 누에보 솔</displayName>
+=======
+				<displayName>페루 솔 누에보</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="PES">
 				<displayName>페루 솔</displayName>
@@ -5512,7 +7166,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>폴란드 즐로티</displayName>
 			</currency>
 			<currency type="PLZ">
+<<<<<<< HEAD
 				<displayName>폴란드 즐로티 (1950–1995)</displayName>
+=======
+				<displayName>폴란드 즐로티 (1950-1995)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="PTE">
 				<displayName>포르투갈 에스쿠도</displayName>
@@ -5539,7 +7197,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>러시아 루블</displayName>
 			</currency>
 			<currency type="RUR">
+<<<<<<< HEAD
 				<displayName>러시아 루블 (1991–1998)</displayName>
+=======
+				<displayName>러시아 루블 (1991-1998)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="RWF">
 				<displayName>르완다 프랑</displayName>
@@ -5551,8 +7213,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>솔로몬 제도 달러</displayName>
 			</currency>
 			<currency type="SCR">
+<<<<<<< HEAD
 				<displayName>세이셸 루피</displayName>
 				<displayName count="other">세이셸 루피</displayName>
+=======
+				<displayName>세이쉴 루피</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="SDD">
 				<displayName>수단 디나르</displayName>
@@ -5590,9 +7256,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="SRG">
 				<displayName>수리남 길더</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="SSP">
 				<displayName>남수단 파운드</displayName>
 			</currency>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<currency type="STD">
 				<displayName>상투메 프린시페 도브라</displayName>
 			</currency>
@@ -5610,7 +7279,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="THB">
 				<displayName>태국 바트</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">฿</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="TJR">
 				<displayName>타지키스탄 루블</displayName>
@@ -5619,9 +7291,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>타지키스탄 소모니</displayName>
 			</currency>
 			<currency type="TMM">
+<<<<<<< HEAD
 				<displayName>투르크메니스탄 마나트 (1993–2009)</displayName>
 			</currency>
 			<currency type="TMT">
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<displayName>투르크메니스탄 마나트</displayName>
 			</currency>
 			<currency type="TND">
@@ -5638,15 +7313,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="TRY">
 				<displayName>신 터키 리라</displayName>
+<<<<<<< HEAD
 				<displayName count="other">신 터키 리라</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="TTD">
 				<displayName>트리니다드 토바고 달러</displayName>
 			</currency>
 			<currency type="TWD">
+<<<<<<< HEAD
 				<displayName>신 타이완 달러</displayName>
 				<displayName count="other">신 타이완 달러</displayName>
 				<symbol draft="contributed">NT$</symbol>
+=======
+				<displayName>대만 신권 달러</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="TZS">
 				<displayName>탄자니아 실링</displayName>
@@ -5658,14 +7340,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>우크라이나 카보바네츠</displayName>
 			</currency>
 			<currency type="UGS">
+<<<<<<< HEAD
 				<displayName>우간다 실링 (1966–1987)</displayName>
+=======
+				<displayName>우간다 실링 (1966-1987)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="UGX">
 				<displayName>우간다 실링</displayName>
 			</currency>
 			<currency type="USD">
 				<displayName>미국 달러</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">US$</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="USN">
 				<displayName>미국 달러(다음날)</displayName>
@@ -5674,10 +7363,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>미국 달러(당일)</displayName>
 			</currency>
 			<currency type="UYI">
+<<<<<<< HEAD
 				<displayName>우루과이 페소 (UI)</displayName>
 			</currency>
 			<currency type="UYP">
 				<displayName>우루과이 페소 (1975–1993)</displayName>
+=======
+				<displayName>우루과이 페소 UI (Unidades Indexadas)</displayName>
+			</currency>
+			<currency type="UYP">
+				<displayName>우루과이 페소 (1975-1993)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="UYU">
 				<displayName>우루과이 페소 우루과요</displayName>
@@ -5686,6 +7382,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>우즈베키스탄 숨</displayName>
 			</currency>
 			<currency type="VEB">
+<<<<<<< HEAD
 				<displayName>베네주엘라 볼리바르 (1871–2008)</displayName>
 			</currency>
 			<currency type="VEF">
@@ -5697,6 +7394,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="VNN">
 				<displayName draft="contributed">베트남 동 (1978–1985)</displayName>
+=======
+				<displayName>베네주엘라 볼리바르</displayName>
+			</currency>
+			<currency type="VEF">
+				<displayName>베네주엘라 볼리바르 푸에르떼</displayName>
+			</currency>
+			<currency type="VND">
+				<displayName>베트남 동</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="VUV">
 				<displayName>바누아투 바투</displayName>
@@ -5706,8 +7412,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="XAF">
 				<displayName>CFA 프랑 BEAC</displayName>
+<<<<<<< HEAD
 				<displayName count="other">CFA 프랑 BEAC</displayName>
 				<symbol draft="contributed">FCFA</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="XAG">
 				<displayName>은화</displayName>
@@ -5729,7 +7438,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="XCD">
 				<displayName>동카리브 달러</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">EC$</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="XDR">
 				<displayName>특별인출권</displayName>
@@ -5738,6 +7450,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>유럽 환율 단위</displayName>
 			</currency>
 			<currency type="XFO">
+<<<<<<< HEAD
 				<displayName>프랑스 프랑 (Gold)</displayName>
 			</currency>
 			<currency type="XFU">
@@ -5747,14 +7460,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>CFA 프랑 BCEAO</displayName>
 				<displayName count="other">CFA 프랑 BCEAO</displayName>
 				<symbol draft="contributed">CFA</symbol>
+=======
+				<displayName>프랑스 Gold 프랑</displayName>
+			</currency>
+			<currency type="XFU">
+				<displayName>프랑스 UIC-프랑</displayName>
+			</currency>
+			<currency type="XOF">
+				<displayName>CFA 프랑 BCEAO</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="XPD">
 				<displayName>팔라듐</displayName>
 			</currency>
 			<currency type="XPF">
 				<displayName>CFP 프랑</displayName>
+<<<<<<< HEAD
 				<displayName count="other">CFP 프랑</displayName>
 				<symbol draft="contributed">CFPF</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="XPT">
 				<displayName>백금</displayName>
@@ -5766,7 +7491,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>테스트 통화 코드</displayName>
 			</currency>
 			<currency type="XXX">
+<<<<<<< HEAD
 				<displayName>알 수 없는 통화단위</displayName>
+=======
+				<displayName>알수없거나 유효하지않은 통화단위</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="YDD">
 				<displayName>예멘 디나르</displayName>
@@ -5790,10 +7519,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>남아프리카 랜드</displayName>
 			</currency>
 			<currency type="ZMK">
+<<<<<<< HEAD
 				<displayName>쟘비아 콰쳐 (1968–2012)</displayName>
 			</currency>
 			<currency type="ZMW">
 				<displayName>잠비아 콰쳐</displayName>
+=======
+				<displayName>쟘비아 콰쳐</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ZRN">
 				<displayName>자이르 신권 자이르</displayName>
@@ -5804,6 +7537,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="ZWD">
 				<displayName>짐바브웨 달러</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="ZWL">
 				<displayName draft="contributed">짐바브웨 달러 (2009)</displayName>
 			</currency>
@@ -6276,6 +8010,33 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<listPatternPart type="2" draft="contributed">{0} {1}</listPatternPart>
 		</listPattern>
 	</listPatterns>
+=======
+		</currencies>
+	</numbers>
+	<units>
+		<unit type="day">
+			<unitPattern count="other">{0}일</unitPattern>
+		</unit>
+		<unit type="hour">
+			<unitPattern count="other">{0}시간</unitPattern>
+		</unit>
+		<unit type="minute">
+			<unitPattern count="other">{0}분</unitPattern>
+		</unit>
+		<unit type="month">
+			<unitPattern count="other">{0}개월</unitPattern>
+		</unit>
+		<unit type="second">
+			<unitPattern count="other">{0}초</unitPattern>
+		</unit>
+		<unit type="week">
+			<unitPattern count="other">{0}주</unitPattern>
+		</unit>
+		<unit type="year">
+			<unitPattern count="other">{0}년</unitPattern>
+		</unit>
+	</units>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	<posix>
 		<messages>
 			<yesstr>예</yesstr>

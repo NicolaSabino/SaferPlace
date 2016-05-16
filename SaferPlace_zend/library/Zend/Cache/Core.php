@@ -14,15 +14,25 @@
  *
  * @category   Zend
  * @package    Zend_Cache
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Core.php 24989 2012-06-21 07:24:13Z mabe $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 
 /**
  * @package    Zend_Cache
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Cache_Core
@@ -143,7 +153,11 @@ class Zend_Cache_Core
             Zend_Cache::throwException("Options passed were not an array"
             . " or Zend_Config instance.");
         }
+<<<<<<< HEAD
         foreach ($options as $name => $value) {
+=======
+        while (list($name, $value) = each($options)) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             $this->setOption($name, $value);
         }
         $this->_loggerSanity();
@@ -158,7 +172,11 @@ class Zend_Cache_Core
     public function setConfig(Zend_Config $config)
     {
         $options = $config->toArray();
+<<<<<<< HEAD
         foreach ($options as $name => $value) {
+=======
+        while (list($name, $value) = each($options)) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             $this->setOption($name, $value);
         }
         return $this;
@@ -300,7 +318,11 @@ class Zend_Cache_Core
         }
         $id = $this->_id($id); // cache id may need prefix
         $this->_lastId = $id;
+<<<<<<< HEAD
         $this->_validateIdOrTag($id);
+=======
+        self::_validateIdOrTag($id);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
         $this->_log("Zend_Cache_Core: load item '{$id}'", 7);
         $data = $this->_backend->load($id, $doNotTestCacheValidity);
@@ -327,7 +349,11 @@ class Zend_Cache_Core
             return false;
         }
         $id = $this->_id($id); // cache id may need prefix
+<<<<<<< HEAD
         $this->_validateIdOrTag($id);
+=======
+        self::_validateIdOrTag($id);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         $this->_lastId = $id;
 
         $this->_log("Zend_Cache_Core: test item '{$id}'", 7);
@@ -355,8 +381,13 @@ class Zend_Cache_Core
         } else {
             $id = $this->_id($id);
         }
+<<<<<<< HEAD
         $this->_validateIdOrTag($id);
         $this->_validateTagsArray($tags);
+=======
+        self::_validateIdOrTag($id);
+        self::_validateTagsArray($tags);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         if ($this->_options['automatic_serialization']) {
             // we need to serialize datas before storing them
             $data = serialize($data);
@@ -424,7 +455,11 @@ class Zend_Cache_Core
             return true;
         }
         $id = $this->_id($id); // cache id may need prefix
+<<<<<<< HEAD
         $this->_validateIdOrTag($id);
+=======
+        self::_validateIdOrTag($id);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
         $this->_log("Zend_Cache_Core: remove item '{$id}'", 7);
         return $this->_backend->remove($id);
@@ -460,7 +495,11 @@ class Zend_Cache_Core
                                    Zend_Cache::CLEANING_MODE_MATCHING_ANY_TAG))) {
             Zend_Cache::throwException('Invalid cleaning mode');
         }
+<<<<<<< HEAD
         $this->_validateTagsArray($tags);
+=======
+        self::_validateTagsArray($tags);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
         return $this->_backend->clean($mode, $tags);
     }
@@ -667,7 +706,11 @@ class Zend_Cache_Core
      * @throws Zend_Cache_Exception
      * @return void
      */
+<<<<<<< HEAD
     protected function _validateIdOrTag($string)
+=======
+    protected static function _validateIdOrTag($string)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     {
         if (!is_string($string)) {
             Zend_Cache::throwException('Invalid id or tag : must be a string');
@@ -689,13 +732,21 @@ class Zend_Cache_Core
      * @throws Zend_Cache_Exception
      * @return void
      */
+<<<<<<< HEAD
     protected function _validateTagsArray($tags)
+=======
+    protected static function _validateTagsArray($tags)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     {
         if (!is_array($tags)) {
             Zend_Cache::throwException('Invalid tags array : must be an array');
         }
         foreach($tags as $tag) {
+<<<<<<< HEAD
             $this->_validateIdOrTag($tag);
+=======
+            self::_validateIdOrTag($tag);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         }
         reset($tags);
     }

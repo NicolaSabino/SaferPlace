@@ -15,12 +15,31 @@
  * @category   Zend
  * @package    Zend_Test
  * @subpackage PHPUnit
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
 
 /**
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: QueryDataSet.php 24593 2012-01-05 20:35:02Z matthew $
+ */
+
+/**
+ * @see PHPUnit_Extensions_Database_DataSet_QueryDataSet
+ */
+require_once "PHPUnit/Extensions/Database/DataSet/QueryDataSet.php";
+
+/**
+ * @see PHPUnit_Extensions_Database_DB_IDatabaseConnection
+ */
+require_once "PHPUnit/Extensions/Database/DB/IDatabaseConnection.php";
+
+/**
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @see Zend_Test_PHPUnit_Db_DataSet_QueryTable
  */
 require_once "Zend/Test/PHPUnit/Db/DataSet/QueryTable.php";
@@ -37,7 +56,11 @@ require_once "Zend/Db/Select.php";
  * @category   Zend
  * @package    Zend_Test
  * @subpackage PHPUnit
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Test_PHPUnit_Db_DataSet_QueryDataSet extends PHPUnit_Extensions_Database_DataSet_QueryDataSet
@@ -77,4 +100,8 @@ class Zend_Test_PHPUnit_Db_DataSet_QueryDataSet extends PHPUnit_Extensions_Datab
 
         $this->tables[$tableName] = new Zend_Test_PHPUnit_Db_DataSet_QueryTable($tableName, $query, $this->databaseConnection);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

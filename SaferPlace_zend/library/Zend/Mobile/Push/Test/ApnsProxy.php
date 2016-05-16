@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Mobile
  * @subpackage Push
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id $
  */
@@ -51,6 +55,10 @@ class Zend_Mobile_Push_Test_ApnsProxy extends Zend_Mobile_Push_Apns
      * Set the Response
      *
      * @param string $str
+<<<<<<< HEAD
+=======
+     * @return Zend_Mobile_Push_ApnsProxy
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setReadResponse($str) {
         $this->_readResponse = $str;

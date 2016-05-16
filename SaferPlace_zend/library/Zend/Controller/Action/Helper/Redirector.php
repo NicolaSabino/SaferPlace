@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Controller
  * @subpackage Zend_Controller_Action_Helper
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Redirector.php 24843 2012-05-31 18:43:18Z rob $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -29,7 +35,11 @@ require_once 'Zend/Controller/Action/Helper/Abstract.php';
  * @category   Zend
  * @package    Zend_Controller
  * @subpackage Zend_Controller_Action_Helper
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Controller_Action_Helper_Redirector extends Zend_Controller_Action_Helper_Abstract
@@ -406,7 +416,11 @@ class Zend_Controller_Action_Helper_Redirector extends Zend_Controller_Action_He
     /**
      * Redirect to a route-based URL
      *
+<<<<<<< HEAD
      * Uses route's assemble method to build the URL; route is specified by $name;
+=======
+     * Uses route's assemble method tobuild the URL; route is specified by $name;
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * default route is used if none provided.
      *
      * @param  array   $urlOptions Array of key/value pairs used to assemble URL
@@ -427,7 +441,11 @@ class Zend_Controller_Action_Helper_Redirector extends Zend_Controller_Action_He
     /**
      * Redirect to a route-based URL, and immediately exit
      *
+<<<<<<< HEAD
      * Uses route's assemble method to build the URL; route is specified by $name;
+=======
+     * Uses route's assemble method tobuild the URL; route is specified by $name;
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * default route is used if none provided.
      *
      * @param  array   $urlOptions Array of key/value pairs used to assemble URL

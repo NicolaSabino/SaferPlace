@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Crypt
  * @subpackage Hmac
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Hmac.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -33,7 +39,11 @@ require_once 'Zend/Crypt.php';
  * @todo       Check if mhash() is a required alternative (will be PECL-only soon)
  * @category   Zend
  * @package    Zend_Crypt
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Crypt_Hmac extends Zend_Crypt
@@ -85,7 +95,11 @@ class Zend_Crypt_Hmac extends Zend_Crypt
      * @param string $hash
      * @param string $data
      * @param string $output
+<<<<<<< HEAD
      * @throws Zend_Crypt_Hmac_Exception
+=======
+     * @param boolean $internal
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return string
      */
     public static function compute($key, $hash, $data, $output = self::STRING)
@@ -108,7 +122,10 @@ class Zend_Crypt_Hmac extends Zend_Crypt
      * Setter for the hash method.
      *
      * @param string $hash
+<<<<<<< HEAD
      * @throws Zend_Crypt_Hmac_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Crypt_Hmac
      */
     protected static function _setHashAlgorithm($hash)
@@ -148,7 +165,11 @@ class Zend_Crypt_Hmac extends Zend_Crypt
     {
         if (function_exists('hash_hmac')) {
             if ($output == self::BINARY) {
+<<<<<<< HEAD
                 return hash_hmac(self::$_hashAlgorithm, $data, self::$_key, true);
+=======
+                return hash_hmac(self::$_hashAlgorithm, $data, self::$_key, 1);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             }
             return hash_hmac(self::$_hashAlgorithm, $data, self::$_key);
         }
@@ -179,4 +200,8 @@ class Zend_Crypt_Hmac extends Zend_Crypt
         return $types[strtoupper($hashAlgorithm)];
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

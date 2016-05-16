@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Feed_Pubsubhubbub
  * @subpackage Entity
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Subscription.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /** @see Zend_Feed_Pubsubhubbub_Model_ModelAbstract */
@@ -33,7 +39,11 @@ require_once 'Zend/Date.php';
  * @category   Zend
  * @package    Zend_Feed_Pubsubhubbub
  * @subpackage Entity
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Feed_Pubsubhubbub_Model_Subscription
@@ -44,9 +54,13 @@ class Zend_Feed_Pubsubhubbub_Model_Subscription
     /**
      * Save subscription to RDMBS
      *
+<<<<<<< HEAD
      * @param  array $data
      * @throws Zend_Db_Table_Exception
      * @throws Zend_Feed_Pubsubhubbub_Exception
+=======
+     * @param array $data
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return bool
      */
     public function setSubscription(array $data)
@@ -80,8 +94,11 @@ class Zend_Feed_Pubsubhubbub_Model_Subscription
      * Get subscription by ID/key
      *
      * @param  string $key
+<<<<<<< HEAD
      * @throws Zend_Db_Table_Exception
      * @throws Zend_Feed_Pubsubhubbub_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return array
      */
     public function getSubscription($key)
@@ -102,8 +119,11 @@ class Zend_Feed_Pubsubhubbub_Model_Subscription
      * Determine if a subscription matching the key exists
      *
      * @param  string $key
+<<<<<<< HEAD
      * @throws Zend_Db_Table_Exception
      * @throws Zend_Feed_Pubsubhubbub_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return bool
      */
     public function hasSubscription($key)
@@ -123,7 +143,11 @@ class Zend_Feed_Pubsubhubbub_Model_Subscription
     /**
      * Delete a subscription
      *
+<<<<<<< HEAD
      * @param  string $key
+=======
+     * @param string $key
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return bool
      */
     public function deleteSubscription($key)

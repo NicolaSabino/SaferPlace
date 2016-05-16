@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Cache
  * @subpackage Zend_Cache_Backend
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: File.php 24844 2012-05-31 19:01:36Z rob $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -34,7 +40,11 @@ require_once 'Zend/Cache/Backend.php';
 /**
  * @package    Zend_Cache
  * @subpackage Zend_Cache_Backend
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Cache_Backend_File extends Zend_Cache_Backend implements Zend_Cache_Backend_ExtendedInterface
@@ -120,6 +130,10 @@ class Zend_Cache_Backend_File extends Zend_Cache_Backend implements Zend_Cache_B
      *
      * @param  array $options associative array of options
      * @throws Zend_Cache_Exception
+<<<<<<< HEAD
+=======
+     * @return void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function __construct(array $options = array())
     {
@@ -233,10 +247,17 @@ class Zend_Cache_Backend_File extends Zend_Cache_Backend implements Zend_Cache_B
      * Note : $data is always "string" (serialization is done by the
      * core not by the backend)
      *
+<<<<<<< HEAD
      * @param  string      $data             Datas to cache
      * @param  string      $id               Cache id
      * @param  array       $tags             Array of strings, the cache record will be tagged by each string entry
      * @param  boolean|int $specificLifetime If != false, set a specific lifetime for this cache record (null => infinite lifetime)
+=======
+     * @param  string $data             Datas to cache
+     * @param  string $id               Cache id
+     * @param  array  $tags             Array of strings, the cache record will be tagged by each string entry
+     * @param  int    $specificLifetime If != false, set a specific lifetime for this cache record (null => infinite lifetime)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return boolean true if no problem
      */
     public function save($data, $id, $tags = array(), $specificLifetime = false)
@@ -302,7 +323,11 @@ class Zend_Cache_Backend_File extends Zend_Cache_Backend implements Zend_Cache_B
      *                                               ($tags can be an array of strings or a single string)
      *
      * @param string $mode clean mode
+<<<<<<< HEAD
      * @param array $tags array of tags
+=======
+     * @param tags array $tags array of tags
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return boolean true if no problem
      */
     public function clean($mode = Zend_Cache::CLEANING_MODE_ALL, $tags = array())
@@ -674,17 +699,27 @@ class Zend_Cache_Backend_File extends Zend_Cache_Backend implements Zend_Cache_B
             // On some systems it is impossible to distinguish between empty match and an error.
             return true;
         }
+<<<<<<< HEAD
         $metadataFiles = array();
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         foreach ($glob as $file)  {
             if (is_file($file)) {
                 $fileName = basename($file);
                 if ($this->_isMetadatasFile($fileName)) {
+<<<<<<< HEAD
                     // In CLEANING_MODE_ALL, we drop anything, even remainings old metadatas files.
                     // To do that, we need to save the list of the metadata files first.
                     if ($mode == Zend_Cache::CLEANING_MODE_ALL) {
                         $metadataFiles[] = $file;
                     }
                     continue;
+=======
+                    // in CLEANING_MODE_ALL, we drop anything, even remainings old metadatas files
+                    if ($mode != Zend_Cache::CLEANING_MODE_ALL) {
+                        continue;
+                    }
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 }
                 $id = $this->_fileNameToId($fileName);
                 $metadatas = $this->_getMetadatas($id);
@@ -693,7 +728,16 @@ class Zend_Cache_Backend_File extends Zend_Cache_Backend implements Zend_Cache_B
                 }
                 switch ($mode) {
                     case Zend_Cache::CLEANING_MODE_ALL:
+<<<<<<< HEAD
                         $result = $result && $this->remove($id);
+=======
+                        $res = $this->remove($id);
+                        if (!$res) {
+                            // in this case only, we accept a problem with the metadatas file drop
+                            $res = $this->_remove($file);
+                        }
+                        $result = $result && $res;
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                         break;
                     case Zend_Cache::CLEANING_MODE_OLD:
                         if (time() > $metadatas['expire']) {
@@ -750,6 +794,7 @@ class Zend_Cache_Backend_File extends Zend_Cache_Backend implements Zend_Cache_B
                 }
             }
         }
+<<<<<<< HEAD
 
         // cycle through metadataFiles and delete orphaned ones
         foreach ($metadataFiles as $file) {
@@ -758,6 +803,8 @@ class Zend_Cache_Backend_File extends Zend_Cache_Backend implements Zend_Cache_B
             }
         }
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         return $result;
     }
 
@@ -848,7 +895,10 @@ class Zend_Cache_Backend_File extends Zend_Cache_Backend implements Zend_Cache_B
     /**
      * Compute & return the expire time
      *
+<<<<<<< HEAD
      * @param  int $lifetime
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return int expire time (unix timestamp)
      */
     protected function _expireTime($lifetime)

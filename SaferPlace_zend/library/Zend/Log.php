@@ -14,14 +14,21 @@
  *
  * @category   Zend
  * @package    Zend_Log
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Log.php 25131 2012-11-16 15:29:18Z rob $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
  * @category   Zend
  * @package    Zend_Log
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
@@ -36,6 +43,11 @@
  * @method notice(string $message, $extras = null)
  * @method info(string $message, $extras = null)
  * @method debug(string $message, $extras = null)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Log.php 25131 2012-11-16 15:29:18Z rob $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 class Zend_Log
 {
@@ -115,6 +127,10 @@ class Zend_Log
      * Class constructor.  Create a new logger
      *
      * @param Zend_Log_Writer_Abstract|null  $writer  default writer
+<<<<<<< HEAD
+=======
+     * @return void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function __construct(Zend_Log_Writer_Abstract $writer = null)
     {
@@ -146,6 +162,7 @@ class Zend_Log
             throw new Zend_Log_Exception('Configuration must be an array or instance of Zend_Config');
         }
 
+<<<<<<< HEAD
         if (array_key_exists('className', $config)) {
             $class = $config['className'];
             unset($config['className']);
@@ -160,6 +177,9 @@ class Zend_Log
             require_once 'Zend/Log/Exception.php';
             throw new Zend_Log_Exception('Passed className does not belong to a descendant of Zend_Log');
         }
+=======
+        $log = new self;
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
         if (array_key_exists('timestampFormat', $config)) {
             if (null != $config['timestampFormat'] && '' != $config['timestampFormat']) {
@@ -183,7 +203,11 @@ class Zend_Log
     /**
      * Construct a writer object based on a configuration array
      *
+<<<<<<< HEAD
      * @param  array $config config array with writer spec
+=======
+     * @param  array $spec config array with writer spec
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Log_Writer_Abstract
      * @throws Zend_Log_Exception
      */
@@ -327,7 +351,11 @@ class Zend_Log
             return $namespace . $className;
         }
 
+<<<<<<< HEAD
         // empty namespace given?
+=======
+        // emtpy namespace given?
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         if (strlen($namespace) === 0) {
             return $className;
         }
@@ -361,7 +389,10 @@ class Zend_Log
      */
     public function __destruct()
     {
+<<<<<<< HEAD
         /** @var Zend_Log_Writer_Abstract $writer */
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         foreach($this->_writers as $writer) {
             $writer->shutdown();
         }
@@ -451,7 +482,10 @@ class Zend_Log
         }
 
         // abort if rejected by the global filters
+<<<<<<< HEAD
         /** @var Zend_Log_Filter_Interface $filter */
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         foreach ($this->_filters as $filter) {
             if (! $filter->accept($event)) {
                 return;
@@ -459,7 +493,10 @@ class Zend_Log
         }
 
         // send to each writer
+<<<<<<< HEAD
         /** @var Zend_Log_Writer_Abstract $writer */
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         foreach ($this->_writers as $writer) {
             $writer->write($event);
         }
@@ -468,9 +505,14 @@ class Zend_Log
     /**
      * Add a custom priority
      *
+<<<<<<< HEAD
      * @param  string  $name     Name of priority
      * @param  integer $priority Numeric priority
      * @return $this
+=======
+     * @param  string   $name      Name of priority
+     * @param  integer  $priority  Numeric priority
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @throws Zend_Log_Exception
      */
     public function addPriority($name, $priority)
@@ -495,7 +537,11 @@ class Zend_Log
      * must be accepted by all filters added with this method.
      *
      * @param  int|Zend_Config|array|Zend_Log_Filter_Interface $filter
+<<<<<<< HEAD
      * @return $this
+=======
+     * @return Zend_Log
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @throws Zend_Log_Exception
      */
     public function addFilter($filter)
@@ -524,7 +570,10 @@ class Zend_Log
      *
      * @param  mixed $writer Zend_Log_Writer_Abstract or Config array
      * @return Zend_Log
+<<<<<<< HEAD
      * @throws Zend_Log_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function addWriter($writer)
     {

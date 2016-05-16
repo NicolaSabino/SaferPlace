@@ -14,9 +14,15 @@
  *
  * @category   Zend
  * @package    Zend_Ldap
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Converter.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -24,7 +30,11 @@
  *
  * @category   Zend
  * @package    Zend_Ldap
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Ldap_Converter
@@ -69,12 +79,17 @@ class Zend_Ldap_Converter
      */
     public static function hex32ToAsc($string)
     {
+<<<<<<< HEAD
         // Using a callback, since PHP 5.5 has deprecated the /e modifier in preg_replace.
         $string = preg_replace_callback("/\\\([0-9A-Fa-f]{2})/", array('Zend_Ldap_Converter', '_charHex32ToAsc'), $string);
+=======
+        $string = preg_replace("/\\\([0-9A-Fa-f]{2})/e", "''.chr(hexdec('\\1')).''", $string);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         return $string;
     }
 
     /**
+<<<<<<< HEAD
      * Convert a single slash-prefixed character from Hex32 to ASCII.
      * Used as a callback in @see hex32ToAsc()
      * @param array $matches
@@ -87,6 +102,8 @@ class Zend_Ldap_Converter
     }
 
     /**
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * Convert any value to an LDAP-compatible value.
      *
      * By setting the <var>$type</var>-parameter the conversion of a certain
@@ -407,4 +424,8 @@ class Zend_Ldap_Converter
         }
         return $v;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

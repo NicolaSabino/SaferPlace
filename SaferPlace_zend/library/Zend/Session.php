@@ -15,9 +15,15 @@
  *
  * @category   Zend
  * @package    Zend_Session
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Session.php 25121 2012-11-13 21:51:23Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @since      Preview Release 0.2
  */
 
@@ -43,7 +49,11 @@ require_once 'Zend/Session/SaveHandler/Interface.php';
  *
  * @category   Zend
  * @package    Zend_Session
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Session extends Zend_Session_Abstract
@@ -259,7 +269,10 @@ class Zend_Session extends Zend_Session_Abstract
      * setSaveHandler() - Session Save Handler assignment
      *
      * @param Zend_Session_SaveHandler_Interface $interface
+<<<<<<< HEAD
      * @throws Zend_Session_Exception When the session_set_save_handler call fails
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return void
      */
     public static function setSaveHandler(Zend_Session_SaveHandler_Interface $saveHandler)
@@ -270,7 +283,11 @@ class Zend_Session extends Zend_Session_Abstract
             return;
         }
 
+<<<<<<< HEAD
         $result = session_set_save_handler(
+=======
+        session_set_save_handler(
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             array(&$saveHandler, 'open'),
             array(&$saveHandler, 'close'),
             array(&$saveHandler, 'read'),
@@ -278,10 +295,13 @@ class Zend_Session extends Zend_Session_Abstract
             array(&$saveHandler, 'destroy'),
             array(&$saveHandler, 'gc')
             );
+<<<<<<< HEAD
 
         if (!$result) {
             throw new Zend_Session_Exception('Unable to set session handler');
         }
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     }
 
 
@@ -811,9 +831,15 @@ class Zend_Session extends Zend_Session_Abstract
             }
             $validator = new $validator_name;
             if ($validator->validate() === false) {
+<<<<<<< HEAD
                 /** @see Zend_Session_Validator_Exception */
                 require_once 'Zend/Session/Validator/Exception.php';
                 throw new Zend_Session_Validator_Exception("This session is not valid according to {$validator_name}.");
+=======
+                /** @see Zend_Session_Exception */
+                require_once 'Zend/Session/Exception.php';
+                throw new Zend_Session_Exception("This session is not valid according to {$validator_name}.");
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             }
         }
     }

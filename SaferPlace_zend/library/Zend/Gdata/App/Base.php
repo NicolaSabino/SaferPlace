@@ -16,9 +16,15 @@
  * @category   Zend
  * @package    Zend_Gdata
  * @subpackage App
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Base.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -26,16 +32,23 @@
  */
 require_once 'Zend/Gdata/App/Util.php';
 
+<<<<<<< HEAD
 /** @see Zend_Xml_Security */
 require_once 'Zend/Xml/Security.php';
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 /**
  * Abstract class for all XML elements
  *
  * @category   Zend
  * @package    Zend_Gdata
  * @subpackage App
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 abstract class Zend_Gdata_App_Base
@@ -304,9 +317,15 @@ abstract class Zend_Gdata_App_Base
             // Load the feed as an XML DOMDocument object
             @ini_set('track_errors', 1);
             $doc = new DOMDocument();
+<<<<<<< HEAD
             $doc = @Zend_Xml_Security::scan($xml, $doc);
             @ini_restore('track_errors');
             if (!$doc) {
+=======
+            $success = @$doc->loadXML($xml);
+            @ini_restore('track_errors');
+            if (!$success) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 require_once 'Zend/Gdata/App/Exception.php';
                 throw new Zend_Gdata_App_Exception("DOMDocument cannot parse XML: $php_errormsg");
             }

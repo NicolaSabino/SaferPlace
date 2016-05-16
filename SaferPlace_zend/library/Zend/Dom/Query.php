@@ -14,9 +14,15 @@
  *
  * @category   Zend
  * @package    Zend_Dom
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Query.php 25033 2012-08-17 19:50:08Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -29,18 +35,25 @@ require_once 'Zend/Dom/Query/Css2Xpath.php';
  */
 require_once 'Zend/Dom/Query/Result.php';
 
+<<<<<<< HEAD
 /** @see Zend_Xml_Security */
 require_once 'Zend/Xml/Security.php';
 
 /** @see Zend_Xml_Exception */
 require_once 'Zend/Xml/Exception.php';
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 /**
  * Query DOM structures based on CSS selectors and/or XPath
  *
  * @package    Zend_Dom
  * @subpackage Query
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Dom_Query
@@ -48,14 +61,21 @@ class Zend_Dom_Query
     /**#@+
      * Document types
      */
+<<<<<<< HEAD
     const DOC_DOM   = 'docDom';
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     const DOC_XML   = 'docXml';
     const DOC_HTML  = 'docHtml';
     const DOC_XHTML = 'docXhtml';
     /**#@-*/
 
     /**
+<<<<<<< HEAD
      * @var string|DOMDocument
+=======
+     * @var string
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     protected $_document;
 
@@ -86,8 +106,13 @@ class Zend_Dom_Query
     /**
      * Constructor
      *
+<<<<<<< HEAD
      * @param null|string|DOMDocument $document
      * @param null|string $encoding
+=======
+     * @param  null|string $document
+     * @return void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function __construct($document = null, $encoding = null)
     {
@@ -120,15 +145,22 @@ class Zend_Dom_Query
     /**
      * Set document to query
      *
+<<<<<<< HEAD
      * @param  string|DOMDocument $document
+=======
+     * @param  string $document
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @param  null|string $encoding Document encoding
      * @return Zend_Dom_Query
      */
     public function setDocument($document, $encoding = null)
     {
+<<<<<<< HEAD
         if ($document instanceof DOMDocument) {
             return $this->setDocumentDom($document);
         }
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         if (0 === strlen($document)) {
             return $this;
         }
@@ -147,6 +179,7 @@ class Zend_Dom_Query
     }
 
     /**
+<<<<<<< HEAD
      * Set DOMDocument to query
      *
      * @param  DOMDocument $document
@@ -163,6 +196,8 @@ class Zend_Dom_Query
     }
 
     /**
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * Register HTML document
      *
      * @param  string $document
@@ -216,7 +251,11 @@ class Zend_Dom_Query
     /**
      * Retrieve current document
      *
+<<<<<<< HEAD
      * @return string|DOMDocument
+=======
+     * @return string
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function getDocument()
     {
@@ -259,8 +298,12 @@ class Zend_Dom_Query
      * Perform an XPath query
      *
      * @param  string|array $xpathQuery
+<<<<<<< HEAD
      * @param  string       $query CSS selector query
      * @throws Zend_Dom_Exception
+=======
+     * @param  string $query CSS selector query
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Dom_Query_Result
      */
     public function queryXpath($xpathQuery, $query = null)
@@ -272,6 +315,10 @@ class Zend_Dom_Query
 
         $encoding = $this->getEncoding();
         libxml_use_internal_errors(true);
+<<<<<<< HEAD
+=======
+        libxml_disable_entity_loader(true);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         if (null === $encoding) {
             $domDoc = new DOMDocument('1.0');
         } else {
@@ -279,6 +326,7 @@ class Zend_Dom_Query
         }
         $type   = $this->getDocumentType();
         switch ($type) {
+<<<<<<< HEAD
             case self::DOC_DOM:
                 $domDoc = $this->_document;
                 $success = true;
@@ -292,6 +340,17 @@ class Zend_Dom_Query
                     throw new Zend_Dom_Exception(
                         $e->getMessage()
                     );
+=======
+            case self::DOC_XML:
+                $success = $domDoc->loadXML($document);
+                foreach ($domDoc->childNodes as $child) {
+                    if ($child->nodeType === XML_DOCUMENT_TYPE_NODE) {
+                        require_once 'Zend/Dom/Exception.php';
+                        throw new Zend_Dom_Exception(
+                            'Invalid XML: Detected use of illegal DOCTYPE'
+                        );
+                    }
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 }
                 break;
             case self::DOC_HTML:
@@ -305,6 +364,10 @@ class Zend_Dom_Query
             $this->_documentErrors = $errors;
             libxml_clear_errors();
         }
+<<<<<<< HEAD
+=======
+        libxml_disable_entity_loader(false);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         libxml_use_internal_errors(false);
 
         if (!$success) {
@@ -312,14 +375,23 @@ class Zend_Dom_Query
             throw new Zend_Dom_Exception(sprintf('Error parsing document (type == %s)', $type));
         }
 
+<<<<<<< HEAD
         $nodeList = $this->_getNodeList($domDoc, $xpathQuery);
+=======
+        $nodeList   = $this->_getNodeList($domDoc, $xpathQuery);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         return new Zend_Dom_Query_Result($query, $xpathQuery, $domDoc, $nodeList);
     }
 
     /**
      * Register XPath namespaces
      *
+<<<<<<< HEAD
      * @param array $xpathNamespaces
+=======
+     * @param   array $xpathNamespaces
+     * @return  void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function registerXpathNamespaces($xpathNamespaces)
     {

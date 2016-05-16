@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Mobile
  * @subpackage Zend_Mobile_Push
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
@@ -35,7 +39,11 @@ require_once 'Zend/Mobile/Push/Message/Mpns.php';
  * @category   Zend
  * @package    Zend_Mobile
  * @subpackage Zend_Mobile_Push
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
@@ -44,7 +52,11 @@ class Zend_Mobile_Push_Mpns extends Zend_Mobile_Push_Abstract
     /**
      * Http Client
      *
+<<<<<<< HEAD
      * @var Zend_Http_Client
+=======
+     * @var Client
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     protected $_httpClient;
 
@@ -78,6 +90,7 @@ class Zend_Mobile_Push_Mpns extends Zend_Mobile_Push_Abstract
     /**
      * Send Message
      *
+<<<<<<< HEAD
      * @param  Zend_Mobile_Push_Message_Abstract $message
      * @throws Zend_Http_Client_Exception
      * @throws Zend_Mobile_Push_Exception
@@ -87,6 +100,11 @@ class Zend_Mobile_Push_Mpns extends Zend_Mobile_Push_Abstract
      * @throws Zend_Mobile_Push_Exception_QuotaExceeded
      * @throws Zend_Mobile_Push_Exception_ServerUnavailable
      * @return boolean
+=======
+     * @param Zend_Mobile_Push_Message_Mpns $message
+     * @return boolean
+     * @throws Zend_Mobile_Push_Exception
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function send(Zend_Mobile_Push_Message_Abstract $message)
     {

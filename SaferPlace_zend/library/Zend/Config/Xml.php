@@ -14,9 +14,15 @@
  *
  * @category  Zend
  * @package   Zend_Config
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license   http://framework.zend.com/license/new-bsd     New BSD License
  * @version   $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license   http://framework.zend.com/license/new-bsd     New BSD License
+ * @version   $Id: Xml.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -24,18 +30,25 @@
  */
 require_once 'Zend/Config.php';
 
+<<<<<<< HEAD
 /** @see Zend_Xml_Security */
 require_once 'Zend/Xml/Security.php';
 
 /** @see Zend_Xml_Exception */
 require_once 'Zend/Xml/Exception.php';
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 /**
  * XML Adapter for Zend_Config
  *
  * @category  Zend
  * @package   Zend_Config
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license   http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Config_Xml extends Zend_Config
@@ -102,6 +115,7 @@ class Zend_Config_Xml extends Zend_Config
 
         set_error_handler(array($this, '_loadFileErrorHandler')); // Warnings and errors are suppressed
         if (strstr($xml, '<?xml')) {
+<<<<<<< HEAD
             $config = Zend_Xml_Security::scan($xml);
         } else {
             try {
@@ -117,6 +131,11 @@ class Zend_Config_Xml extends Zend_Config
                     $e->getMessage()
                 );
             }
+=======
+            $config = simplexml_load_string($xml);
+        } else {
+            $config = simplexml_load_file($xml);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         }
 
         restore_error_handler();

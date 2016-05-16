@@ -14,9 +14,15 @@
  *
  * @category   Zend
  * @package    Zend_Validate
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Iban.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -29,7 +35,11 @@ require_once 'Zend/Validate/Abstract.php';
  *
  * @category   Zend
  * @package    Zend_Validate
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Validate_Iban extends Zend_Validate_Abstract
@@ -63,6 +73,7 @@ class Zend_Validate_Iban extends Zend_Validate_Abstract
      */
     protected $_ibanregex = array(
         'AD' => '/^AD[0-9]{2}[0-9]{8}[A-Z0-9]{12}$/',
+<<<<<<< HEAD
         'AE' => '/^AE[0-9]{2}[0-9]{3}[0-9]{16}$/',
         'AL' => '/^AL[0-9]{2}[0-9]{8}[A-Z0-9]{16}$/',
         'AT' => '/^AT[0-9]{2}[0-9]{5}[0-9]{11}$/',
@@ -74,11 +85,19 @@ class Zend_Validate_Iban extends Zend_Validate_Abstract
         'BR' => '/^BR[0-9]{2}[0-9]{8}[0-9]{5}[0-9]{10}[A-Z]{1}[A-Z0-9]{1}$/',
         'CH' => '/^CH[0-9]{2}[0-9]{5}[A-Z0-9]{12}$/',
         'CR' => '/^CR[0-9]{2}[0-9]{3}[0-9]{14}$/',
+=======
+        'AT' => '/^AT[0-9]{2}[0-9]{5}[0-9]{11}$/',
+        'BA' => '/^BA[0-9]{2}[0-9]{6}[0-9]{10}$/',
+        'BE' => '/^BE[0-9]{2}[0-9]{3}[0-9]{9}$/',
+        'BG' => '/^BG[0-9]{2}[A-Z]{4}[0-9]{4}[0-9]{2}[A-Z0-9]{8}$/',
+        'CH' => '/^CH[0-9]{2}[0-9]{5}[A-Z0-9]{12}$/',
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         'CS' => '/^CS[0-9]{2}[0-9]{3}[0-9]{15}$/',
         'CY' => '/^CY[0-9]{2}[0-9]{8}[A-Z0-9]{16}$/',
         'CZ' => '/^CZ[0-9]{2}[0-9]{4}[0-9]{16}$/',
         'DE' => '/^DE[0-9]{2}[0-9]{8}[0-9]{10}$/',
         'DK' => '/^DK[0-9]{2}[0-9]{4}[0-9]{10}$/',
+<<<<<<< HEAD
         'DO' => '/^DO[0-9]{2}[A-Z0-9]{4}[0-9]{20}$/',
         'EE' => '/^EE[0-9]{2}[0-9]{4}[0-9]{12}$/',
         'ES' => '/^ES[0-9]{2}[0-9]{8}[0-9]{12}$/',
@@ -100,10 +119,25 @@ class Zend_Validate_Iban extends Zend_Validate_Abstract
         'KW' => '/^KW[0-9]{2}[A-Z]{4}[0-9]{3}[0-9]{22}$/',
         'KZ' => '/^KZ[A-Z]{2}[0-9]{2}[0-9]{3}[A-Z0-9]{13}$/',
         'LB' => '/^LB[0-9]{2}[0-9]{4}[A-Z0-9]{20}$/',
+=======
+        'EE' => '/^EE[0-9]{2}[0-9]{4}[0-9]{12}$/',
+        'ES' => '/^ES[0-9]{2}[0-9]{8}[0-9]{12}$/',
+        'FR' => '/^FR[0-9]{2}[0-9]{10}[A-Z0-9]{13}$/',
+        'FI' => '/^FI[0-9]{2}[0-9]{6}[0-9]{8}$/',
+        'GB' => '/^GB[0-9]{2}[A-Z]{4}[0-9]{14}$/',
+        'GI' => '/^GI[0-9]{2}[A-Z]{4}[A-Z0-9]{15}$/',
+        'GR' => '/^GR[0-9]{2}[0-9]{7}[A-Z0-9]{16}$/',
+        'HR' => '/^HR[0-9]{2}[0-9]{7}[0-9]{10}$/',
+        'HU' => '/^HU[0-9]{2}[0-9]{7}[0-9]{1}[0-9]{15}[0-9]{1}$/',
+        'IE' => '/^IE[0-9]{2}[A-Z0-9]{4}[0-9]{6}[0-9]{8}$/',
+        'IS' => '/^IS[0-9]{2}[0-9]{4}[0-9]{18}$/',
+        'IT' => '/^IT[0-9]{2}[A-Z]{1}[0-9]{10}[A-Z0-9]{12}$/',
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         'LI' => '/^LI[0-9]{2}[0-9]{5}[A-Z0-9]{12}$/',
         'LU' => '/^LU[0-9]{2}[0-9]{3}[A-Z0-9]{13}$/',
         'LT' => '/^LT[0-9]{2}[0-9]{5}[0-9]{11}$/',
         'LV' => '/^LV[0-9]{2}[A-Z]{4}[A-Z0-9]{13}$/',
+<<<<<<< HEAD
         'MC' => '/^MC[0-9]{2}[0-9]{5}[0-9]{5}[A-Z0-9]{11}[0-9]{2}$/',
         'MD' => '/^MD[0-9]{2}[A-Z0-9]{20}$/',
         'ME' => '/^ME[0-9]{2}[0-9]{3}[0-9]{13}[0-9]{2}$/',
@@ -127,12 +161,31 @@ class Zend_Validate_Iban extends Zend_Validate_Abstract
         'TN' => '/^TN[0-9]{2}[0-9]{5}[0-9]{15}$/',
         'TR' => '/^TR[0-9]{2}[0-9]{5}[A-Z0-9]{17}$/',
         'VG' => '/^VG[0-9]{2}[A-Z]{4}[0-9]{16}$/'
+=======
+        'MK' => '/^MK[0-9]{2}[A-Z]{3}[A-Z0-9]{10}[0-9]{2}$/',
+        'MT' => '/^MT[0-9]{2}[A-Z]{4}[0-9]{5}[A-Z0-9]{18}$/',
+        'NL' => '/^NL[0-9]{2}[A-Z]{4}[0-9]{10}$/',
+        'NO' => '/^NO[0-9]{2}[0-9]{4}[0-9]{7}$/',
+        'PL' => '/^PL[0-9]{2}[0-9]{8}[0-9]{16}$/',
+        'PT' => '/^PT[0-9]{2}[0-9]{8}[0-9]{13}$/',
+        'RO' => '/^RO[0-9]{2}[A-Z]{4}[A-Z0-9]{16}$/',
+        'SE' => '/^SE[0-9]{2}[0-9]{3}[0-9]{17}$/',
+        'SI' => '/^SI[0-9]{2}[0-9]{5}[0-9]{8}[0-9]{2}$/',
+        'SK' => '/^SK[0-9]{2}[0-9]{4}[0-9]{16}$/',
+        'TN' => '/^TN[0-9]{2}[0-9]{5}[0-9]{15}$/',
+        'TR' => '/^TR[0-9]{2}[0-9]{5}[A-Z0-9]{17}$/'
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     );
 
     /**
      * Sets validator options
      *
+<<<<<<< HEAD
      * @param string|Zend_Config|Zend_Locale $locale OPTIONAL
+=======
+     * @param  string|Zend_Config|Zend_Locale $locale OPTIONAL
+     * @return void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function __construct($locale = null)
     {
@@ -174,8 +227,11 @@ class Zend_Validate_Iban extends Zend_Validate_Abstract
      * Sets the locale option
      *
      * @param  string|Zend_Locale $locale
+<<<<<<< HEAD
      * @throws Zend_Locale_Exception
      * @throws Zend_Validate_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Validate_Date provides a fluent interface
      */
     public function setLocale($locale = null)

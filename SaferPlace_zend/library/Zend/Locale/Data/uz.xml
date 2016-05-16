@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -709,10 +710,60 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</intervalFormats>
 				</dateTimeFormats>
 			</calendar>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.53 $"/>
+		<generation date="$Date: 2009/05/05 23:06:41 $"/>
+		<language type="uz"/>
+	</identity>
+	<localeDisplayNames>
+		<languages>
+			<language type="ar">Арабча</language>
+			<language type="de">Олмонча</language>
+			<language type="en">Инглизча</language>
+			<language type="es">Испанча</language>
+			<language type="fr">Французча</language>
+			<language type="hi">Ҳиндча</language>
+			<language type="it">Италянча</language>
+			<language type="ja">Японча</language>
+			<language type="pt">Португалча</language>
+			<language type="ru">Русча</language>
+			<language type="uz">Ўзбек</language>
+			<language type="zh">Хитойча</language>
+		</languages>
+		<scripts>
+			<script type="Arab">Араб</script>
+			<script type="Cyrl">Кирил</script>
+			<script type="Latn">Лотин</script>
+		</scripts>
+		<territories>
+			<territory type="AF">Афғонистон</territory>
+			<territory type="BR">Бразилия</territory>
+			<territory type="CN">Хитой</territory>
+			<territory type="DE">Олмония</territory>
+			<territory type="FR">Франция</territory>
+			<territory type="GB">Бирлашган Қироллик</territory>
+			<territory type="IN">Ҳиндистон</territory>
+			<territory type="IT">Италия</territory>
+			<territory type="JP">Япония</territory>
+			<territory type="RU">Россия</territory>
+			<territory type="US">Қўшма Штатлар</territory>
+			<territory type="UZ">Ўзбекистон</territory>
+		</territories>
+	</localeDisplayNames>
+	<characters>
+		<exemplarCharacters>[а-г ғ д е ё ж-к қ л-у ў ф х ҳ ч ш ъ э-я]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[ц щ ы ь]</exemplarCharacters>
+	</characters>
+	<dates>
+		<calendars>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
 						<monthWidth type="abbreviated">
+<<<<<<< HEAD
 							<month type="1">Yanv</month>
 							<month type="2">Fev</month>
 							<month type="3">Mar</month>
@@ -797,12 +848,57 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="10">Oktyabr</month>
 							<month type="11">Noyabr</month>
 							<month type="12">Dekabr</month>
+=======
+							<month type="1">Янв</month>
+							<month type="2">Фев</month>
+							<month type="3">Мар</month>
+							<month type="4">Апр</month>
+							<month type="5">Май</month>
+							<month type="6">Июн</month>
+							<month type="7">Июл</month>
+							<month type="8">Авг</month>
+							<month type="9">Сен</month>
+							<month type="10">Окт</month>
+							<month type="11">Ноя</month>
+							<month type="12">Дек</month>
+						</monthWidth>
+						<monthWidth type="wide">
+							<month type="1">Муҳаррам</month>
+							<month type="2">Сафар</month>
+							<month type="3">Рабиул-аввал</month>
+							<month type="4">Рабиул-охир</month>
+							<month type="5">Жумодиул-уло</month>
+							<month type="6">Жумодиул-ухро</month>
+							<month type="7">Ражаб</month>
+							<month type="8">Шаъбон</month>
+							<month type="9">Рамазон</month>
+							<month type="10">Шаввол</month>
+							<month type="11">Зил-қаъда</month>
+							<month type="12">Зил-ҳижжа</month>
+						</monthWidth>
+					</monthContext>
+					<monthContext type="stand-alone">
+						<monthWidth type="narrow">
+							<month type="1">Я</month>
+							<month type="2">Ф</month>
+							<month type="3">М</month>
+							<month type="4">А</month>
+							<month type="5">М</month>
+							<month type="6">И</month>
+							<month type="7">И</month>
+							<month type="8">А</month>
+							<month type="9">С</month>
+							<month type="10">О</month>
+							<month type="11">Н</month>
+							<month type="12">Д</month>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</monthWidth>
 					</monthContext>
 				</months>
 				<days>
 					<dayContext type="format">
 						<dayWidth type="abbreviated">
+<<<<<<< HEAD
 							<day type="sun">Yaksh</day>
 							<day type="mon">Dush</day>
 							<day type="tue">Sesh</day>
@@ -934,6 +1030,38 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<era type="1">E</era>
 					</eraAbbr>
 				</eras>
+=======
+							<day type="sun">Якш</day>
+							<day type="mon">Душ</day>
+							<day type="tue">Сеш</day>
+							<day type="wed">Чор</day>
+							<day type="thu">Пай</day>
+							<day type="fri">Жум</day>
+							<day type="sat">Шан</day>
+						</dayWidth>
+						<dayWidth type="wide">
+							<day type="sun">якшанба</day>
+							<day type="mon">душанба</day>
+							<day type="tue">сешанба</day>
+							<day type="wed">чоршанба</day>
+							<day type="thu">пайшанба</day>
+							<day type="fri">жума</day>
+							<day type="sat">шанба</day>
+						</dayWidth>
+					</dayContext>
+					<dayContext type="stand-alone">
+						<dayWidth type="narrow">
+							<day type="sun">Я</day>
+							<day type="mon">Д</day>
+							<day type="tue">С</day>
+							<day type="wed">Ч</day>
+							<day type="thu">П</day>
+							<day type="fri">Ж</day>
+							<day type="sat">Ш</day>
+						</dayWidth>
+					</dayContext>
+				</days>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<dateFormats>
 					<dateFormatLength type="full">
 						<dateFormat>
@@ -979,6 +1107,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</timeFormatLength>
 				</timeFormats>
 				<dateTimeFormats>
+<<<<<<< HEAD
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
 							<pattern>{1} {0}</pattern>
@@ -2253,11 +2382,32 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<generic>Yekaterinburg vaqti</generic>
 					<standard>Yekaterinburg standart vaqti</standard>
 					<daylight>Yekaterinburg yozgi vaqti</daylight>
+=======
+					<availableFormats>
+						<dateFormatItem id="yyQ">Q yy</dateFormatItem>
+						<dateFormatItem id="yyyyM">yyyy/M</dateFormatItem>
+						<dateFormatItem id="yyyyMMMM">MMMM y</dateFormatItem>
+					</availableFormats>
+				</dateTimeFormats>
+			</calendar>
+		</calendars>
+		<timeZoneNames>
+			<hourFormat>+HH:mm;-HH:mm</hourFormat>
+			<gmtFormat>GMT{0}</gmtFormat>
+			<regionFormat>{0}</regionFormat>
+			<zone type="Asia/Kabul">
+				<exemplarCity>کابل</exemplarCity>
+			</zone>
+			<metazone type="Afghanistan">
+				<long>
+					<standard>افغانستان وقتی</standard>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				</long>
 			</metazone>
 		</timeZoneNames>
 	</dates>
 	<numbers>
+<<<<<<< HEAD
 		<symbols numberSystem="arabext">
 			<decimal>٫</decimal>
 			<group>٬</group>
@@ -3343,3 +3493,41 @@ For terms of use, see http://www.unicode.org/copyright.html
 	</posix>
 </ldml>
 
+=======
+		<symbols>
+			<decimal>,</decimal>
+			<group> </group>
+		</symbols>
+		<currencies>
+			<currency type="BRL">
+				<displayName>Бразил реали</displayName>
+			</currency>
+			<currency type="CNY">
+				<displayName>Хитой юани</displayName>
+			</currency>
+			<currency type="EUR">
+				<displayName>Евро</displayName>
+			</currency>
+			<currency type="GBP">
+				<displayName>Инглиз фунт стерлинги</displayName>
+			</currency>
+			<currency type="INR">
+				<displayName>Ҳинд рупияси</displayName>
+			</currency>
+			<currency type="JPY">
+				<displayName>Япон йенаси</displayName>
+			</currency>
+			<currency type="RUB">
+				<displayName>Рус рубли</displayName>
+			</currency>
+			<currency type="USD">
+				<displayName>АҚШ доллари</displayName>
+			</currency>
+			<currency type="UZS">
+				<displayName>Ўзбекистон сўм</displayName>
+				<symbol>сўм</symbol>
+			</currency>
+		</currencies>
+	</numbers>
+</ldml>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -8,11 +9,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 	<identity>
 		<version number="$Revision: 9852 $"/>
 		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.122 $"/>
+		<generation date="$Date: 2009/06/15 20:34:50 $"/>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		<language type="bg"/>
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
 			<localePattern>{0} ({1})</localePattern>
+<<<<<<< HEAD
 			<localeSeparator>{0}, {1}</localeSeparator>
 			<localeKeyTypePattern>{0}: {1}</localeKeyTypePattern>
 		</localeDisplayPattern>
@@ -76,6 +84,84 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="cch">атсам</language>
 			<language type="ce">чеченски</language>
 			<language type="ceb">себуано</language>
+=======
+			<localeSeparator>, </localeSeparator>
+		</localeDisplayPattern>
+		<languages>
+			<language type="aa">афар</language>
+			<language type="ab">абхазски</language>
+			<language type="ace">ачински</language>
+			<language type="ach">аколи</language>
+			<language type="ada">адангме</language>
+			<language type="ady">адиге</language>
+			<language type="ae">авестски</language>
+			<language type="af">африканс</language>
+			<language type="afa">афро-азиатски</language>
+			<language type="afh">африхили</language>
+			<language type="ain">айну</language>
+			<language type="ak">акан</language>
+			<language type="akk">акадски</language>
+			<language type="ale">алеутски</language>
+			<language type="alg">алгонквин</language>
+			<language type="alt">южноалтайски</language>
+			<language type="am">амхарски</language>
+			<language type="an">арагонски</language>
+			<language type="ang">староанглийски</language>
+			<language type="anp">ангика</language>
+			<language type="apa">езици на апахите</language>
+			<language type="ar">арабски</language>
+			<language type="arc">арамейски</language>
+			<language type="arn">мапуче</language>
+			<language type="arp">арапахо</language>
+			<language type="art">изкуствен</language>
+			<language type="arw">аравак</language>
+			<language type="as">асамски</language>
+			<language type="ast">астурски</language>
+			<language type="ath">атабаски езици</language>
+			<language type="aus">австралийски езици</language>
+			<language type="av">аварски</language>
+			<language type="awa">авади</language>
+			<language type="ay">аймара</language>
+			<language type="az">азърбайджански</language>
+			<language type="ba">башкирски</language>
+			<language type="bad">банда</language>
+			<language type="bai">бамикеле</language>
+			<language type="bal">балучи</language>
+			<language type="ban">балинейски</language>
+			<language type="bas">баса</language>
+			<language type="bat">балтийски</language>
+			<language type="be">беларуски</language>
+			<language type="bej">бея</language>
+			<language type="bem">бемба</language>
+			<language type="ber">берберски</language>
+			<language type="bg">български</language>
+			<language type="bh">бихари</language>
+			<language type="bho">божпури</language>
+			<language type="bi">бислама</language>
+			<language type="bik">биколски</language>
+			<language type="bin">бини</language>
+			<language type="bla">сиксика</language>
+			<language type="bm">бамбара</language>
+			<language type="bn">бенгалски</language>
+			<language type="bnt">банту</language>
+			<language type="bo">тибетски</language>
+			<language type="br">бретонски</language>
+			<language type="bra">брадж</language>
+			<language type="bs">босненски</language>
+			<language type="btk">батак</language>
+			<language type="bua">бурятски</language>
+			<language type="bug">бугински</language>
+			<language type="byn">биленски</language>
+			<language type="ca">каталонски</language>
+			<language type="cad">каддо</language>
+			<language type="cai">централноамерикански индиански</language>
+			<language type="car">карибски</language>
+			<language type="cau">кавказски</language>
+			<language type="cch">атсам</language>
+			<language type="ce">чеченски</language>
+			<language type="ceb">себуано</language>
+			<language type="cel">келтски</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ch">чаморо</language>
 			<language type="chb">чибча</language>
 			<language type="chg">чагатай</language>
@@ -86,6 +172,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="chp">чиипувски</language>
 			<language type="chr">чероки</language>
 			<language type="chy">чейенски</language>
+<<<<<<< HEAD
 			<language type="ckb" draft="contributed">кюрдски (сорани)</language>
 			<language type="co">корсикански</language>
 			<language type="cop">коптски</language>
@@ -99,6 +186,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="da">датски</language>
 			<language type="dak" draft="contributed">дакотски</language>
 			<language type="dar">даргва</language>
+=======
+			<language type="cmc">чамски</language>
+			<language type="co">корсикански</language>
+			<language type="cop">коптски</language>
+			<language type="cpe">креолски или пиджин от английски</language>
+			<language type="cpf">креолски и пиджин от френски</language>
+			<language type="cpp">креолски или пиджин от португалски</language>
+			<language type="cr">крии</language>
+			<language type="crh">кримскотатарски</language>
+			<language type="crp">креолски или пиджини</language>
+			<language type="cs">чешки</language>
+			<language type="csb">кашубски</language>
+			<language type="cu">църковно славянски</language>
+			<language type="cus">кушитски езици</language>
+			<language type="cv">чувашки</language>
+			<language type="cy">уелски</language>
+			<language type="da">датски</language>
+			<language type="dak">дакотски</language>
+			<language type="dar">даргва</language>
+			<language type="day">даякски</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="de">немски</language>
 			<language type="de_AT">австрийски немски</language>
 			<language type="de_CH">швейцарски горногермански</language>
@@ -107,6 +215,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="dgr">догриб</language>
 			<language type="din">динка</language>
 			<language type="doi">догри</language>
+<<<<<<< HEAD
+=======
+			<language type="dra">дравидски езици</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="dsb">долносербски</language>
 			<language type="dua">дуала</language>
 			<language type="dum">средновековен холандски</language>
@@ -123,6 +235,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="en_AU">австралийски английски</language>
 			<language type="en_CA">канадски английски</language>
 			<language type="en_GB">британски английски</language>
+<<<<<<< HEAD
 			<language type="en_GB" alt="short">английски (GB)</language>
 			<language type="en_US">американски английски</language>
 			<language type="en_US" alt="short">английски (US)</language>
@@ -130,6 +243,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="eo">есперанто</language>
 			<language type="es">испански</language>
 			<language type="es_MX">мексикански испански</language>
+=======
+			<language type="en_US">американски английски</language>
+			<language type="enm">средновековен английски</language>
+			<language type="eo">есперанто</language>
+			<language type="es">испански</language>
+			<language type="es_419">латиноамерикански испански</language>
+			<language type="es_ES">иберийски испански</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="et">естонски</language>
 			<language type="eu">баски</language>
 			<language type="ewo">евондо</language>
@@ -139,6 +260,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ff">фула</language>
 			<language type="fi">фински</language>
 			<language type="fil">филипински</language>
+<<<<<<< HEAD
+=======
+			<language type="fiu">угрофински</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="fj">фиджийски</language>
 			<language type="fo">фарьорски</language>
 			<language type="fon">фон</language>
@@ -156,6 +281,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="gay">гайо</language>
 			<language type="gba">гбая</language>
 			<language type="gd">шотландски галски</language>
+<<<<<<< HEAD
+=======
+			<language type="gem">германски</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="gez">гииз</language>
 			<language type="gil">гилбертски</language>
 			<language type="gl">галисийски</language>
@@ -177,6 +306,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="he">иврит</language>
 			<language type="hi">хинди</language>
 			<language type="hil">хилигайнон</language>
+<<<<<<< HEAD
+=======
+			<language type="him">химачали</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="hit">хитски</language>
 			<language type="hmn">хмонг</language>
 			<language type="ho">хири моту</language>
@@ -193,10 +326,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ie">оксидентал</language>
 			<language type="ig">игбо</language>
 			<language type="ii">сечуански</language>
+<<<<<<< HEAD
 			<language type="ik">инупиак</language>
 			<language type="ilo">илоко</language>
 			<language type="inh">ингушетски</language>
 			<language type="io">идо</language>
+=======
+			<language type="ijo">иджо</language>
+			<language type="ik">инупиак</language>
+			<language type="ilo">илоко</language>
+			<language type="inc">индийска група</language>
+			<language type="ine">индо-европейски</language>
+			<language type="inh">ингушетски</language>
+			<language type="io">идо</language>
+			<language type="ira">ирански</language>
+			<language type="iro">ироквиански езици</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="is">исландски</language>
 			<language type="it">италиански</language>
 			<language type="iu">инуктитут</language>
@@ -211,12 +356,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="kac">качински</language>
 			<language type="kaj">жжи</language>
 			<language type="kam">камба</language>
+<<<<<<< HEAD
+=======
+			<language type="kar">каренски</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="kaw">кави</language>
 			<language type="kbd">кабардиан</language>
 			<language type="kcg">туап</language>
 			<language type="kfo">коро</language>
 			<language type="kg">конгоански</language>
 			<language type="kha">кхаси</language>
+<<<<<<< HEAD
+=======
+			<language type="khi">езици коисан</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="kho">котски</language>
 			<language type="ki">кикуйу</language>
 			<language type="kj">кваняма</language>
@@ -232,14 +385,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="kr">канури</language>
 			<language type="krc">карачай-балкарски</language>
 			<language type="krl">карелски</language>
+<<<<<<< HEAD
+=======
+			<language type="kro">кру</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="kru">курук</language>
 			<language type="ks">кашмирски</language>
 			<language type="ku">кюрдски</language>
 			<language type="kum">кумикски</language>
 			<language type="kut">кутенай</language>
 			<language type="kv">Коми</language>
+<<<<<<< HEAD
 			<language type="kw" draft="contributed">корнуолски келтски</language>
 			<language type="ky">киргизки</language>
+=======
+			<language type="kw">корнуолски келтски</language>
+			<language type="ky">киргизски</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="la">латински</language>
 			<language type="lad">ладино</language>
 			<language type="lah">лахнда</language>
@@ -265,52 +427,99 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="mai">майтхили</language>
 			<language type="mak">макасар</language>
 			<language type="man">мандинго</language>
+<<<<<<< HEAD
+=======
+			<language type="map">австронезийски</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mas">масайски</language>
 			<language type="mdf">мокша</language>
 			<language type="mdr">мандар</language>
 			<language type="men">менде</language>
+<<<<<<< HEAD
 			<language type="mfe" draft="contributed">морисиен</language>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mg">малгашки</language>
 			<language type="mga">средновековен ирландски</language>
 			<language type="mh">маршалезе</language>
 			<language type="mi">маорски</language>
 			<language type="mic">микмак</language>
 			<language type="min">минангбау</language>
+<<<<<<< HEAD
 			<language type="mk">македонски</language>
+=======
+			<language type="mis">други езици</language>
+			<language type="mk">македонски</language>
+			<language type="mkh">мон-кхмерски език</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ml">малаялам</language>
 			<language type="mn">монголски</language>
 			<language type="mnc">манчжурски</language>
 			<language type="mni">манипури</language>
+<<<<<<< HEAD
 			<language type="moh">мохавк</language>
 			<language type="mos">моси</language>
 			<language type="mr">марати</language>
 			<language type="ms">малайски</language>
 			<language type="mt">малтийски</language>
 			<language type="mul">многоезични</language>
+=======
+			<language type="mno">манобо</language>
+			<language type="mo">молдовски</language>
+			<language type="moh">мохавк</language>
+			<language type="mos">моси</language>
+			<language type="mr">маратхи</language>
+			<language type="ms">малайски</language>
+			<language type="mt">малтийски</language>
+			<language type="mul">многоезични</language>
+			<language type="mun">мунда</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mus">крик</language>
 			<language type="mwl">мирандийски</language>
 			<language type="mwr">марвари</language>
 			<language type="my">бирмански</language>
+<<<<<<< HEAD
 			<language type="myv">ерзиа</language>
 			<language type="na">науру</language>
 			<language type="nap">неаполитански</language>
 			<language type="nb">норвежки букмол</language>
+=======
+			<language type="myn">майя език</language>
+			<language type="myv">ерзиа</language>
+			<language type="na">науру</language>
+			<language type="nah">нахуатл</language>
+			<language type="nai">северноамерикански индиански</language>
+			<language type="nap">неаполитански</language>
+			<language type="nb">норвежки бокмал</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="nd">северен ндебеле</language>
 			<language type="nds">долносаксонски</language>
 			<language type="ne">непалски</language>
 			<language type="new">неварски</language>
 			<language type="ng">ндонга</language>
 			<language type="nia">ниас</language>
+<<<<<<< HEAD
 			<language type="niu">ниуеан</language>
 			<language type="nl">нидерландски</language>
 			<language type="nl_BE">фламандски</language>
 			<language type="nn">норвежки нюнорск</language>
+=======
+			<language type="nic">нигер-кордофански</language>
+			<language type="niu">ниуеан</language>
+			<language type="nl">холандски</language>
+			<language type="nl_BE">фламандски</language>
+			<language type="nn">съвременен норвежки</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="no">норвежки</language>
 			<language type="nog">ногаи</language>
 			<language type="non">старонорвежски</language>
 			<language type="nqo">н’ко</language>
 			<language type="nr">южен ндебеле</language>
 			<language type="nso">северен сото</language>
+<<<<<<< HEAD
+=======
+			<language type="nub">нубийски езици</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="nv">навахо</language>
 			<language type="nwc">класически невари</language>
 			<language type="ny">чинянджа</language>
@@ -325,20 +534,36 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="os">осетски</language>
 			<language type="osa">оседжи</language>
 			<language type="ota">отомански турски</language>
+<<<<<<< HEAD
 			<language type="pa">пенджабски</language>
+=======
+			<language type="oto">старотурски езици</language>
+			<language type="pa">пенджабски</language>
+			<language type="paa">папуаски</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="pag">пангасинан</language>
 			<language type="pal">пехлевийски</language>
 			<language type="pam">пампанга</language>
 			<language type="pap">папиаменту</language>
 			<language type="pau">палауан</language>
 			<language type="peo">староперсийски</language>
+<<<<<<< HEAD
+=======
+			<language type="phi">филипински (други)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="phn">финикийски</language>
 			<language type="pi">пали</language>
 			<language type="pl">полски</language>
 			<language type="pon">похнпеиан</language>
+<<<<<<< HEAD
 			<language type="pro" draft="contributed">провансалски</language>
 			<language type="ps">пущу</language>
 			<language type="ps" alt="variant">пущунски</language>
+=======
+			<language type="pra">пракритски език</language>
+			<language type="pro">провансалски</language>
+			<language type="ps">пущу</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="pt">португалски</language>
 			<language type="qu">кечуа</language>
 			<language type="raj">раджастански</language>
@@ -347,7 +572,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="rm">реторомански</language>
 			<language type="rn">рунди</language>
 			<language type="ro">румънски</language>
+<<<<<<< HEAD
 			<language type="ro_MD">молдовски</language>
+=======
+			<language type="roa">романски</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="rom">цигански език</language>
 			<language type="root">роот</language>
 			<language type="ru">руски</language>
@@ -356,6 +585,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sa">санкскритски</language>
 			<language type="sad">сандве</language>
 			<language type="sah">якутски</language>
+<<<<<<< HEAD
+=======
+			<language type="sai">южноамерикански индиански</language>
+			<language type="sal">салишански език</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="sam">самаритански арамейски</language>
 			<language type="sas">сасак</language>
 			<language type="sat">сантали</language>
@@ -365,16 +599,34 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sd">синдхи</language>
 			<language type="se">северен сами</language>
 			<language type="sel">селкуп</language>
+<<<<<<< HEAD
 			<language type="sg">санго</language>
 			<language type="sga">староирландски</language>
+=======
+			<language type="sem">семитски</language>
+			<language type="sg">санго</language>
+			<language type="sga">староирландски</language>
+			<language type="sgn">жестомимичен език</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="sh">сърбохърватски</language>
 			<language type="shn">шан</language>
 			<language type="si">синхалски</language>
 			<language type="sid">сидамо</language>
+<<<<<<< HEAD
 			<language type="sk">словашки</language>
 			<language type="sl">словенски</language>
 			<language type="sm">самоански</language>
 			<language type="sma">южносаамски</language>
+=======
+			<language type="sio">език сиу</language>
+			<language type="sit">синотибетски</language>
+			<language type="sk">словашки</language>
+			<language type="sl">словенски</language>
+			<language type="sla">славянски</language>
+			<language type="sm">самоански</language>
+			<language type="sma">южносаамски</language>
+			<language type="smi">саамски езици</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="smj">луле-саамски</language>
 			<language type="smn">инари-саамски</language>
 			<language type="sms">сколт-саамски</language>
@@ -382,11 +634,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="snk">сонинке</language>
 			<language type="so">сомалийски</language>
 			<language type="sog">согдийски</language>
+<<<<<<< HEAD
+=======
+			<language type="son">сонгхай</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="sq">албански</language>
 			<language type="sr">сръбски</language>
 			<language type="srn">сранан тонго</language>
 			<language type="srr">серер</language>
 			<language type="ss">суази</language>
+<<<<<<< HEAD
+=======
+			<language type="ssa">нило-сахарски език</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="st">сесуто</language>
 			<language type="su">сундански</language>
 			<language type="suk">сукума</language>
@@ -394,16 +654,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">шумерски</language>
 			<language type="sv">шведски</language>
 			<language type="sw">суахили</language>
+<<<<<<< HEAD
 			<language type="swb">коморски</language>
 			<language type="syc">класически сирийски</language>
 			<language type="syr">сирийски</language>
 			<language type="ta">тамилски</language>
+=======
+			<language type="syc">класически сирийски</language>
+			<language type="syr">сирийски</language>
+			<language type="ta">тамилски</language>
+			<language type="tai">тайландски</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="te">телугу</language>
 			<language type="tem">темне</language>
 			<language type="ter">терено</language>
 			<language type="tet">тетум</language>
 			<language type="tg">таджикски</language>
+<<<<<<< HEAD
 			<language type="th">тайски</language>
+=======
+			<language type="th">таи</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ti">тигриня</language>
 			<language type="tig">тигре</language>
 			<language type="tiv">тив</language>
@@ -422,6 +693,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="tsi">цимшиански</language>
 			<language type="tt">татарски</language>
 			<language type="tum">тумбука</language>
+<<<<<<< HEAD
+=======
+			<language type="tup">тупи</language>
+			<language type="tut">алтайски</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="tvl">тувалуански</language>
 			<language type="tw">туи</language>
 			<language type="ty">таитянски</language>
@@ -440,9 +716,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="vo">волапюк</language>
 			<language type="vot">вотик</language>
 			<language type="wa">валонски</language>
+<<<<<<< HEAD
 			<language type="wal">валамо</language>
 			<language type="war">варай</language>
 			<language type="was">уашо</language>
+=======
+			<language type="wak">вакашански език</language>
+			<language type="wal">валамо</language>
+			<language type="war">варай</language>
+			<language type="was">уашо</language>
+			<language type="wen">лужишки език</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="wo">волоф</language>
 			<language type="xal">калмик</language>
 			<language type="xh">ксоса</language>
@@ -450,21 +734,33 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="yap">япезе</language>
 			<language type="yi">идиш</language>
 			<language type="yo">йоруба</language>
+<<<<<<< HEAD
 			<language type="yue">кантонски</language>
+=======
+			<language type="ypk">юпик</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="za">зуанг</language>
 			<language type="zap">запотек</language>
 			<language type="zbl">блис символи</language>
 			<language type="zen">зенага</language>
+<<<<<<< HEAD
 			<language type="zgh">стандартен марокански тамазигт</language>
 			<language type="zh">китайски</language>
 			<language type="zh_Hans">опростен китайски</language>
 			<language type="zh_Hant">традиционен китайски</language>
+=======
+			<language type="zh">китайски</language>
+			<language type="zh_Hans">опростен китайски</language>
+			<language type="zh_Hant">традиционен китайски</language>
+			<language type="znd">занде</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="zu">зулуски</language>
 			<language type="zun">зуни</language>
 			<language type="zxx">без лингвистично съдържание</language>
 			<language type="zza">заза</language>
 		</languages>
 		<scripts>
+<<<<<<< HEAD
 			<script type="Arab">арабска</script>
 			<script type="Arab" alt="variant">персийско-арабски</script>
 			<script type="Armi">Арамейска</script>
@@ -475,6 +771,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Beng">бенгалска</script>
 			<script type="Blis">Блис символи</script>
 			<script type="Bopo">бопомофо</script>
+=======
+			<script type="Arab">Арабска</script>
+			<script type="Armi">Арамейска</script>
+			<script type="Armn">Арменска</script>
+			<script type="Avst">Авестанска</script>
+			<script type="Bali">Балийски</script>
+			<script type="Batk">Батакска</script>
+			<script type="Beng">Бенгалска</script>
+			<script type="Blis">Блис символи</script>
+			<script type="Bopo">Бопомофо</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Brah">Брахми</script>
 			<script type="Brai">Брайлова</script>
 			<script type="Bugi">Бугинска</script>
@@ -487,6 +794,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Cirt">Кирт</script>
 			<script type="Copt">Коптска</script>
 			<script type="Cprt">Кипърска</script>
+<<<<<<< HEAD
 			<script type="Cyrl">кирилица</script>
 			<script type="Cyrs" draft="provisional">Стар църковно-славянски вариант Кирилица</script>
 			<script type="Deva">деванагари</script>
@@ -511,12 +819,37 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Hant" alt="stand-alone">традиционен китайски</script>
 			<script type="Hebr">иврит</script>
 			<script type="Hira">хирагана</script>
+=======
+			<script type="Cyrl">Кирилица</script>
+			<script type="Cyrs">Кирилица (Стар църковно-славянски вариант)</script>
+			<script type="Deva">Деванагари</script>
+			<script type="Dsrt">Дезерет</script>
+			<script type="Egyd">Египетско демотично писмо</script>
+			<script type="Egyh">Египетско йератично писмо</script>
+			<script type="Egyp">Египетски йероглифи</script>
+			<script type="Ethi">Етиопска</script>
+			<script type="Geok">Грузинска хуцури</script>
+			<script type="Geor">Грузинска</script>
+			<script type="Glag">Глаголическа</script>
+			<script type="Goth">Готическа</script>
+			<script type="Grek">Гръцка</script>
+			<script type="Gujr">Гуджарати</script>
+			<script type="Guru">Гурмукхи</script>
+			<script type="Hang">Хангул</script>
+			<script type="Hani">Китайска</script>
+			<script type="Hano">Хануну</script>
+			<script type="Hans">Опростен китайски</script>
+			<script type="Hant">Традиционен китайски</script>
+			<script type="Hebr">Иврит</script>
+			<script type="Hira">Японски хирагана</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Hmng">Пахау хмонг</script>
 			<script type="Hrkt">Катакана или Хирагана</script>
 			<script type="Hung">Староунгарска</script>
 			<script type="Inds">Харапска</script>
 			<script type="Ital">Древно италийска</script>
 			<script type="Java">Яванска</script>
+<<<<<<< HEAD
 			<script type="Jpan">японска</script>
 			<script type="Kali">Кая Ли</script>
 			<script type="Kana">катакана</script>
@@ -530,6 +863,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Latf">Латинска фрактура</script>
 			<script type="Latg">Галска латинска</script>
 			<script type="Latn">латиница</script>
+=======
+			<script type="Jpan">Японска</script>
+			<script type="Kali">Кая Ли</script>
+			<script type="Kana">Японски катакана</script>
+			<script type="Khar">Кхароштхи</script>
+			<script type="Khmr">Кхмерска</script>
+			<script type="Knda">Каннада</script>
+			<script type="Kore">Корейска</script>
+			<script type="Kthi">Кайтхи</script>
+			<script type="Lana">Ланна</script>
+			<script type="Laoo">Лаоска</script>
+			<script type="Latf">Латинска фрактура</script>
+			<script type="Latg">Галска латинска</script>
+			<script type="Latn">Латинска</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Lepc">Лепча</script>
 			<script type="Limb">Лимбу</script>
 			<script type="Lina">Линейна А</script>
@@ -540,16 +888,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Mani">Манихейска</script>
 			<script type="Maya">Йероглифи на Маите</script>
 			<script type="Mero">Мероитска</script>
+<<<<<<< HEAD
 			<script type="Mlym">малаялам</script>
 			<script type="Mong">монголска</script>
 			<script type="Moon">Мун</script>
 			<script type="Mtei">Манипури</script>
 			<script type="Mymr">бирманска</script>
+=======
+			<script type="Mlym">Малаялам</script>
+			<script type="Mong">Монголска</script>
+			<script type="Moon">Мун</script>
+			<script type="Mtei">Манипури</script>
+			<script type="Mymr">Бирманска</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Nkoo">Н'Ко</script>
 			<script type="Ogam">Огамическа</script>
 			<script type="Olck">Ол Чики</script>
 			<script type="Orkh">Орхоно-енисейска</script>
+<<<<<<< HEAD
 			<script type="Orya">ория</script>
+=======
+			<script type="Orya">Ория</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Osma">Османска</script>
 			<script type="Perm">Древно пермска</script>
 			<script type="Phag">Фагс-па</script>
@@ -561,7 +921,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Samr">Самаританска</script>
 			<script type="Sara">Сарати</script>
 			<script type="Saur">Саураштра</script>
+<<<<<<< HEAD
 			<script type="Sinh">синхалска</script>
+=======
+			<script type="Sinh">Синхалска</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Sund">Сунданска</script>
 			<script type="Sylo">Силоти Нагри</script>
 			<script type="Syrc">Сирийска</script>
@@ -571,12 +935,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Tagb">Тагбанва</script>
 			<script type="Tale">Тай Ле</script>
 			<script type="Talu">Нова Тай Ле</script>
+<<<<<<< HEAD
 			<script type="Taml">тамилска</script>
 			<script type="Telu">телугу</script>
 			<script type="Tglg">Тагалог</script>
 			<script type="Thaa">таана</script>
 			<script type="Thai">тайска</script>
 			<script type="Tibt">тибетска</script>
+=======
+			<script type="Taml">Тамилска</script>
+			<script type="Telu">Телугу</script>
+			<script type="Tglg">Тагалог</script>
+			<script type="Thaa">Таана</script>
+			<script type="Thai">Таи</script>
+			<script type="Tibt">Тибетска</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Ugar">Угаритска</script>
 			<script type="Vaii">Вайска</script>
 			<script type="Visp">Видима реч</script>
@@ -584,10 +957,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Xsux">Шумеро-акадски клинопис</script>
 			<script type="Yiii">Йи</script>
 			<script type="Zmth">Математически символи</script>
+<<<<<<< HEAD
 			<script type="Zsym">символи</script>
 			<script type="Zxxx">без писменост</script>
 			<script type="Zyyy">обща</script>
 			<script type="Zzzz">непозната писменост</script>
+=======
+			<script type="Zsym">Символи</script>
+			<script type="Zxxx">Без писменост</script>
+			<script type="Zyyy">Обща</script>
+			<script type="Zzzz">Непозната или недействителна писменост</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</scripts>
 		<territories>
 			<territory type="001">Земята</territory>
@@ -603,15 +983,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="018">Южноафрикански регион</territory>
 			<territory type="019">Америка</territory>
 			<territory type="021">Северна Америка</territory>
+<<<<<<< HEAD
 			<territory type="029">Карибски регион</territory>
+=======
+			<territory type="029">Карибски о-ви</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="030">Източна Азия</territory>
 			<territory type="034">Южна Азия</territory>
 			<territory type="035">Югоизточна Азия</territory>
 			<territory type="039">Южна Европа</territory>
+<<<<<<< HEAD
 			<territory type="053">Австралазия</territory>
 			<territory type="054">Меланезия</territory>
 			<territory type="057">Микронезия</territory>
 			<territory type="061">Полинезия</territory>
+=======
+			<territory type="053">Австралия и Нова Зеландия</territory>
+			<territory type="054">Меланезия</territory>
+			<territory type="057">Микронезия</territory>
+			<territory type="061">Полинезия</territory>
+			<territory type="062">Южна Азия [062]</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="142">Азия</territory>
 			<territory type="143">Централна Азия</territory>
 			<territory type="145">Западна Азия</territory>
@@ -619,8 +1011,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="151">Източна Европа</territory>
 			<territory type="154">Северна Европа</territory>
 			<territory type="155">Западна Европа</territory>
+<<<<<<< HEAD
 			<territory type="419">Латинска Америка</territory>
 			<territory type="AC">остров Възнесение</territory>
+=======
+			<territory type="172">Общност на независимите държави</territory>
+			<territory type="419">Латинска Америка и Карибски басейн</territory>
+			<territory type="830">Нормандски о-ви</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="AD">Андора</territory>
 			<territory type="AE">Обединени арабски емирства</territory>
 			<territory type="AF">Афганистан</territory>
@@ -632,11 +1030,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AO">Ангола</territory>
 			<territory type="AQ">Антарктика</territory>
 			<territory type="AR">Аржентина</territory>
+<<<<<<< HEAD
 			<territory type="AS">Американска Самоа</territory>
 			<territory type="AT">Австрия</territory>
 			<territory type="AU">Австралия</territory>
 			<territory type="AW">Аруба</territory>
 			<territory type="AX">Оландски острови</territory>
+=======
+			<territory type="AS">Американско Самоа</territory>
+			<territory type="AT">Австрия</territory>
+			<territory type="AU">Австралия</territory>
+			<territory type="AW">Аруба</territory>
+			<territory type="AX">Аландски о-ви</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="AZ">Азербайджан</territory>
 			<territory type="BA">Босна и Херцеговина</territory>
 			<territory type="BB">Барбадос</territory>
@@ -647,6 +1053,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="BH">Бахрейн</territory>
 			<territory type="BI">Бурунди</territory>
 			<territory type="BJ">Бенин</territory>
+<<<<<<< HEAD
 			<territory type="BL">Сен Бартелеми</territory>
 			<territory type="BM">Бермуда</territory>
 			<territory type="BN">Бруней Дарусалам</territory>
@@ -669,10 +1076,32 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CH">Швейцария</territory>
 			<territory type="CI">Кот д'Ивоар</territory>
 			<territory type="CK">острови Кук</territory>
+=======
+			<territory type="BL">Сейнт Бартоломей</territory>
+			<territory type="BM">Бермуда</territory>
+			<territory type="BN">Бруней Дарусалам</territory>
+			<territory type="BO">Боливия</territory>
+			<territory type="BR">Бразилия</territory>
+			<territory type="BS">Бахами</territory>
+			<territory type="BT">Бутан</territory>
+			<territory type="BV">Остров Буве</territory>
+			<territory type="BW">Ботсуана</territory>
+			<territory type="BY">Беларус</territory>
+			<territory type="BZ">Белиз</territory>
+			<territory type="CA">Канада</territory>
+			<territory type="CC">Кокосови (Кийлинг) острови</territory>
+			<territory type="CD">Демократична република Конго</territory>
+			<territory type="CF">Централноафриканска Република</territory>
+			<territory type="CG">Конго</territory>
+			<territory type="CH">Швейцария</territory>
+			<territory type="CI">Бряг на слоновата кост</territory>
+			<territory type="CK">Острови Кук</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="CL">Чили</territory>
 			<territory type="CM">Камерун</territory>
 			<territory type="CN">Китай</territory>
 			<territory type="CO">Колумбия</territory>
+<<<<<<< HEAD
 			<territory type="CP">остров Клипертон</territory>
 			<territory type="CR">Коста Рика</territory>
 			<territory type="CU">Куба</territory>
@@ -683,12 +1112,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CZ">Чехия</territory>
 			<territory type="DE">Германия</territory>
 			<territory type="DG">Диего Гарсия</territory>
+=======
+			<territory type="CR">Коста Рика</territory>
+			<territory type="CS">Сърбия и Черна гора</territory>
+			<territory type="CU">Куба</territory>
+			<territory type="CV">Кабо Верде</territory>
+			<territory type="CX">Остров Кристмас</territory>
+			<territory type="CY">Кипър</territory>
+			<territory type="CZ">Чешка република</territory>
+			<territory type="DE">Германия</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="DJ">Джибути</territory>
 			<territory type="DK">Дания</territory>
 			<territory type="DM">Доминика</territory>
 			<territory type="DO">Доминиканска република</territory>
 			<territory type="DZ">Алжир</territory>
+<<<<<<< HEAD
 			<territory type="EA">Сеута и Мелия</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="EC">Еквадор</territory>
 			<territory type="EE">Естония</territory>
 			<territory type="EG">Египет</territory>
@@ -696,6 +1138,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="ER">Еритрея</territory>
 			<territory type="ES">Испания</territory>
 			<territory type="ET">Етиопия</territory>
+<<<<<<< HEAD
 			<territory type="EU">Европейски съюз</territory>
 			<territory type="FI">Финландия</territory>
 			<territory type="FJ">Фиджи</territory>
@@ -711,6 +1154,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GE">Грузия</territory>
 			<territory type="GF">Френска Гвиана</territory>
 			<territory type="GG">о. Гърнси</territory>
+=======
+			<territory type="FI">Финландия</territory>
+			<territory type="FJ">Фиджи</territory>
+			<territory type="FK">Фолклендски острови</territory>
+			<territory type="FM">Микронезия, Обединени Щати</territory>
+			<territory type="FO">Фарьорски острови</territory>
+			<territory type="FR">Франция</territory>
+			<territory type="GA">Габон</territory>
+			<territory type="GB">Обединено кралство</territory>
+			<territory type="GD">Гренада</territory>
+			<territory type="GE">Грузия</territory>
+			<territory type="GF">Френска Гвиана</territory>
+			<territory type="GG">о. Гърнзи</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="GH">Гана</territory>
 			<territory type="GI">Гибралтар</territory>
 			<territory type="GL">Гренландия</territory>
@@ -719,6 +1176,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP">Гваделупа</territory>
 			<territory type="GQ">Екваториална Гвинея</territory>
 			<territory type="GR">Гърция</territory>
+<<<<<<< HEAD
 			<territory type="GS">Южна Джорджия и Южни Сандвичеви острови</territory>
 			<territory type="GT">Гватемала</territory>
 			<territory type="GU">Гуам</territory>
@@ -743,6 +1201,30 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="IS">Исландия</territory>
 			<territory type="IT">Италия</territory>
 			<territory type="JE">Джърси</territory>
+=======
+			<territory type="GS">Южна Джорджия и Южни Сандвичеви Острови</territory>
+			<territory type="GT">Гватемала</territory>
+			<territory type="GU">Гуам</territory>
+			<territory type="GW">Гвинея-Бисау</territory>
+			<territory type="GY">Гвиана</territory>
+			<territory type="HK">Хонг-Конг О.А.Р. на Китай</territory>
+			<territory type="HM">Остров Хърд и Острови Макдоналд</territory>
+			<territory type="HN">Хондурас</territory>
+			<territory type="HR">Хърватска</territory>
+			<territory type="HT">Хаити</territory>
+			<territory type="HU">Унгария</territory>
+			<territory type="ID">Индонезия</territory>
+			<territory type="IE">Ирландия</territory>
+			<territory type="IL">Израел</territory>
+			<territory type="IM">Острови Ман</territory>
+			<territory type="IN">Индия</territory>
+			<territory type="IO">Британски територии в Индийския океан</territory>
+			<territory type="IQ">Ирак</territory>
+			<territory type="IR">Иран, Ислямска република</territory>
+			<territory type="IS">Исландия</territory>
+			<territory type="IT">Италия</territory>
+			<territory type="JE">о. Джързи</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="JM">Ямайка</territory>
 			<territory type="JO">Йордания</territory>
 			<territory type="JP">Япония</territory>
@@ -750,6 +1232,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="KG">Киргизстан</territory>
 			<territory type="KH">Камбоджа</territory>
 			<territory type="KI">Кирибати</territory>
+<<<<<<< HEAD
 			<territory type="KM">Коморски острови</territory>
 			<territory type="KN">Сейнт Китс и Невис</territory>
 			<territory type="KP">Северна Корея</territory>
@@ -758,6 +1241,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="KY">Кайманови острови</territory>
 			<territory type="KZ">Казахстан</territory>
 			<territory type="LA">Лаос</territory>
+=======
+			<territory type="KM">Комори</territory>
+			<territory type="KN">Сейнт Китс и Невис</territory>
+			<territory type="KP">Корея, Северна</territory>
+			<territory type="KR">Корея, Южна</territory>
+			<territory type="KW">Кувейт</territory>
+			<territory type="KY">Кайманови острови</territory>
+			<territory type="KZ">Казахстан</territory>
+			<territory type="LA">Народна демократична република Лаос</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="LB">Ливан</territory>
 			<territory type="LC">Сейнт Лусия</territory>
 			<territory type="LI">Лихтенщайн</territory>
@@ -767,6 +1260,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="LT">Литва</territory>
 			<territory type="LU">Люксембург</territory>
 			<territory type="LV">Латвия</territory>
+<<<<<<< HEAD
 			<territory type="LY">Либия</territory>
 			<territory type="MA">Мароко</territory>
 			<territory type="MC">Монако</territory>
@@ -783,6 +1277,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MO">Макао САР на Китай</territory>
 			<territory type="MO" alt="short">Макао</territory>
 			<territory type="MP">Северни Мариански острови</territory>
+=======
+			<territory type="LY">Либийска арабска джамахирия</territory>
+			<territory type="MA">Мароко</territory>
+			<territory type="MC">Монако</territory>
+			<territory type="MD">Молдова, Република</territory>
+			<territory type="ME">Черна гора</territory>
+			<territory type="MF">Сейнт Мартин</territory>
+			<territory type="MG">Мадагаскар</territory>
+			<territory type="MH">Маршалови острови</territory>
+			<territory type="MK">Македония, Република</territory>
+			<territory type="ML">Мали</territory>
+			<territory type="MM">Мианмар</territory>
+			<territory type="MN">Монголия</territory>
+			<territory type="MO">Макао О.А.Р. на Китай</territory>
+			<territory type="MP">Северни Мариански Острови</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="MQ">Мартиника</territory>
 			<territory type="MR">Мавритания</territory>
 			<territory type="MS">Монсерат</territory>
@@ -796,10 +1306,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="NA">Намибия</territory>
 			<territory type="NC">Нова Каледония</territory>
 			<territory type="NE">Нигер</territory>
+<<<<<<< HEAD
 			<territory type="NF">остров Норфолк</territory>
 			<territory type="NG">Нигерия</territory>
 			<territory type="NI">Никарагуа</territory>
 			<territory type="NL">Нидерландия</territory>
+=======
+			<territory type="NF">Остров Норфолк</territory>
+			<territory type="NG">Нигерия</territory>
+			<territory type="NI">Никарагуа</territory>
+			<territory type="NL">Холандия</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="NO">Норвегия</territory>
 			<territory type="NP">Непал</territory>
 			<territory type="NR">Науру</territory>
@@ -813,20 +1330,36 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="PH">Филипини</territory>
 			<territory type="PK">Пакистан</territory>
 			<territory type="PL">Полша</territory>
+<<<<<<< HEAD
 			<territory type="PM">Сен Пиер и Микелон</territory>
 			<territory type="PN">Острови Питкерн</territory>
 			<territory type="PR">Пуерто Рико</territory>
 			<territory type="PS">Палестински територии</territory>
 			<territory type="PS" alt="short">Палестина</territory>
+=======
+			<territory type="PM">Сен Пиер и Мигелон</territory>
+			<territory type="PN">Питкайрн</territory>
+			<territory type="PR">Пуерто Рико</territory>
+			<territory type="PS">Палестински територии</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="PT">Португалия</territory>
 			<territory type="PW">Палау</territory>
 			<territory type="PY">Парагвай</territory>
 			<territory type="QA">Катар</territory>
+<<<<<<< HEAD
 			<territory type="QO">отдалечени острови на Океания</territory>
 			<territory type="RE">Реюнион</territory>
 			<territory type="RO">Румъния</territory>
 			<territory type="RS">Сърбия</territory>
 			<territory type="RU">Русия</territory>
+=======
+			<territory type="QO">Океания [QO]</territory>
+			<territory type="QU">Европейски съюз</territory>
+			<territory type="RE">Реюниън</territory>
+			<territory type="RO">Румъния</territory>
+			<territory type="RS">Сърбия</territory>
+			<territory type="RU">Руска федерация</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="RW">Руанда</territory>
 			<territory type="SA">Саудитска Арабия</territory>
 			<territory type="SB">Соломонови острови</territory>
@@ -843,6 +1376,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="SN">Сенегал</territory>
 			<territory type="SO">Сомалия</territory>
 			<territory type="SR">Суринам</territory>
+<<<<<<< HEAD
 			<territory type="SS">Южен Судан</territory>
 			<territory type="ST">Сао Томе и Принсипи</territory>
 			<territory type="SV">Салвадор</territory>
@@ -851,6 +1385,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="SZ">Свазиленд</territory>
 			<territory type="TA">Тристан да Куня</territory>
 			<territory type="TC">Острови Търкс и Кайкос</territory>
+=======
+			<territory type="ST">Сао Томе и Принципе</territory>
+			<territory type="SV">Ел Салвадор</territory>
+			<territory type="SY">Сирийска арабска република</territory>
+			<territory type="SZ">Суазиленд</territory>
+			<territory type="TC">Острови Туркс и Кайкос</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="TD">Чад</territory>
 			<territory type="TF">Френски южни територии</territory>
 			<territory type="TG">Того</territory>
@@ -868,6 +1409,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="TZ">Танзания</territory>
 			<territory type="UA">Украйна</territory>
 			<territory type="UG">Уганда</territory>
+<<<<<<< HEAD
 			<territory type="UM">Отдалечени острови на САЩ</territory>
 			<territory type="US">САЩ</territory>
 			<territory type="US" alt="short">САЩ</territory>
@@ -878,10 +1420,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="VE">Венецуела</territory>
 			<territory type="VG">Британски Вирджински острови</territory>
 			<territory type="VI">Вирджински острови, САЩ</territory>
+=======
+			<territory type="UM">САЩ - външни острови</territory>
+			<territory type="US">САЩ</territory>
+			<territory type="UY">Уругвай</territory>
+			<territory type="UZ">Узбекистан</territory>
+			<territory type="VA">Свещено море (Ватиканска държава)</territory>
+			<territory type="VC">Сейнт Винсънт и Гренадини</territory>
+			<territory type="VE">Венецуела</territory>
+			<territory type="VG">Британски Вирджински острони</territory>
+			<territory type="VI">САЩ, Вирджински острови</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="VN">Виетнам</territory>
 			<territory type="VU">Вануату</territory>
 			<territory type="WF">Уолис и Футуна</territory>
 			<territory type="WS">Самоа</territory>
+<<<<<<< HEAD
 			<territory type="XK">Косово</territory>
 			<territory type="YE">Йемен</territory>
 			<territory type="YT">Майот</territory>
@@ -889,6 +1443,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="ZM">Замбия</territory>
 			<territory type="ZW">Зимбабве</territory>
 			<territory type="ZZ">непознат регион</territory>
+=======
+			<territory type="YE">Йемен</territory>
+			<territory type="YT">Мейот</territory>
+			<territory type="ZA">Южна Африка</territory>
+			<territory type="ZM">Замбия</territory>
+			<territory type="ZW">Зимбабве</territory>
+			<territory type="ZZ">Непозната или несъществуваща област</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</territories>
 		<variants>
 			<variant type="1901">Традиционен немски правопис</variant>
@@ -896,7 +1458,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="1996">Немски правопис от 1996</variant>
 			<variant type="1606NICT">Късен средновековен френски до 1606</variant>
 			<variant type="1694ACAD">Ранен съвременен френски</variant>
+<<<<<<< HEAD
 			<variant type="1959ACAD" draft="provisional">Академичен</variant>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<variant type="AREVELA">Източно арменски</variant>
 			<variant type="AREVMDA">Западно арменски</variant>
 			<variant type="BAKU1926">Унифицирана тюркска азбука</variant>
@@ -904,13 +1469,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="BOONT">Бунтлинг</variant>
 			<variant type="FONIPA">Международна фонетична азбука</variant>
 			<variant type="FONUPA">Уралска фонетична азбука</variant>
+<<<<<<< HEAD
 			<variant type="KKCOR" draft="provisional">Общ правопис</variant>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<variant type="LIPAW">Диалект Липовац</variant>
 			<variant type="MONOTON">Монотонично</variant>
 			<variant type="NEDIS">Диалект Натисоне</variant>
 			<variant type="NJIVA">Диалект Нджива</variant>
 			<variant type="OSOJS">Диалект Осеако/Осояне</variant>
+<<<<<<< HEAD
 			<variant type="PINYIN">Пинин романизация</variant>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<variant type="POLYTON">Политонично</variant>
 			<variant type="POSIX">Компютърен</variant>
 			<variant type="REVISED">Променен правопис</variant>
@@ -921,6 +1492,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="SOLBA">Диалект Столвиза</variant>
 			<variant type="TARASK">Тарашкевица</variant>
 			<variant type="VALENCIA">Валенсиански</variant>
+<<<<<<< HEAD
 			<variant type="WADEGILE">Уейд-Джайлс романизация</variant>
 		</variants>
 		<keys>
@@ -974,10 +1546,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="hebr" key="numbers">цифри в иврит</type>
 			<type type="hebrew" key="calendar">Еврейски календар</type>
 			<type type="identical" key="colStrength" draft="contributed">Сортиране на всички</type>
+=======
+		</variants>
+		<keys>
+			<key type="calendar">Календар</key>
+			<key type="collation">Сортиране</key>
+			<key type="currency">Валута</key>
+		</keys>
+		<types>
+			<type type="big5han" key="collation">Традиционен китайски (Big5)</type>
+			<type type="buddhist" key="calendar">Будистки календар</type>
+			<type type="chinese" key="calendar">Китайски календар</type>
+			<type type="direct" key="collation">Директно</type>
+			<type type="gb2312han" key="collation">Опростен китайски (GB2312)</type>
+			<type type="gregorian" key="calendar">Григориански календар</type>
+			<type type="hebrew" key="calendar">Еврейски календар</type>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<type type="indian" key="calendar">Индийски граждански календар</type>
 			<type type="islamic" key="calendar">Ислямски календар</type>
 			<type type="islamic-civil" key="calendar">Ислямски цивилен календар</type>
 			<type type="japanese" key="calendar">Японски календар</type>
+<<<<<<< HEAD
 			<type type="jpan" key="numbers">японски цифри</type>
 			<type type="jpanfin" key="numbers">японски финансови цифри</type>
 			<type type="khmr" key="numbers">кхмерски цифри</type>
@@ -1065,10 +1654,30 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<ellipsis type="word-initial">…{0}</ellipsis>
 		<ellipsis type="word-medial">{0}… {1}</ellipsis>
 		<moreInformation>?</moreInformation>
+=======
+			<type type="phonebook" key="collation">Азбучен ред</type>
+			<type type="pinyin" key="collation">Сортиране Пинин</type>
+			<type type="roc" key="calendar">Календар на Република Китай</type>
+			<type type="stroke" key="collation">Сортиране по щрих</type>
+			<type type="traditional" key="collation">Традиционно</type>
+		</types>
+		<measurementSystemNames>
+			<measurementSystemName type="metric">Метрична</measurementSystemName>
+			<measurementSystemName type="US">Американска</measurementSystemName>
+		</measurementSystemNames>
+	</localeDisplayNames>
+	<layout>
+		<inText type="languages">lowercase-words</inText>
+	</layout>
+	<characters>
+		<exemplarCharacters>[а-ъ ь ю я]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[i v x {а\u0300} ѐ ѝ {о\u0300} {у\u0300} {ъ\u0300} ѣ {ю\u0300} {я\u0300} ѫ]</exemplarCharacters>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	</characters>
 	<delimiters>
 		<quotationStart>„</quotationStart>
 		<quotationEnd>“</quotationEnd>
+<<<<<<< HEAD
 		<alternateQuotationStart>„</alternateQuotationStart>
 		<alternateQuotationEnd>“</alternateQuotationEnd>
 	</delimiters>
@@ -1276,6 +1885,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</intervalFormats>
 				</dateTimeFormats>
 			</calendar>
+=======
+		<alternateQuotationStart>‘</alternateQuotationStart>
+		<alternateQuotationEnd>’</alternateQuotationEnd>
+	</delimiters>
+	<dates>
+		<calendars>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -1293,6 +1909,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">ноем.</month>
 							<month type="12">дек.</month>
 						</monthWidth>
+<<<<<<< HEAD
 						<monthWidth type="narrow">
 							<month type="1">я</month>
 							<month type="2">ф</month>
@@ -1307,6 +1924,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">н</month>
 							<month type="12">д</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<monthWidth type="wide">
 							<month type="1">януари</month>
 							<month type="2">февруари</month>
@@ -1323,6 +1942,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</monthWidth>
 					</monthContext>
 					<monthContext type="stand-alone">
+<<<<<<< HEAD
 						<monthWidth type="abbreviated">
 							<month type="1">ян.</month>
 							<month type="2">февр.</month>
@@ -1337,6 +1957,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">ноем.</month>
 							<month type="12">дек.</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<monthWidth type="narrow">
 							<month type="1">я</month>
 							<month type="2">ф</month>
@@ -1351,6 +1973,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">н</month>
 							<month type="12">д</month>
 						</monthWidth>
+<<<<<<< HEAD
 						<monthWidth type="wide">
 							<month type="1">януари</month>
 							<month type="2">февруари</month>
@@ -1365,6 +1988,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">ноември</month>
 							<month type="12">декември</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</monthContext>
 				</months>
 				<days>
@@ -1378,6 +2003,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">пт</day>
 							<day type="sat">сб</day>
 						</dayWidth>
+<<<<<<< HEAD
 						<dayWidth type="narrow">
 							<day type="sun">н</day>
 							<day type="mon">п</day>
@@ -1396,6 +2022,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">пт</day>
 							<day type="sat">сб</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<dayWidth type="wide">
 							<day type="sun">неделя</day>
 							<day type="mon">понеделник</day>
@@ -1407,6 +2035,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</dayWidth>
 					</dayContext>
 					<dayContext type="stand-alone">
+<<<<<<< HEAD
 						<dayWidth type="abbreviated">
 							<day type="sun">нд</day>
 							<day type="mon">пн</day>
@@ -1416,6 +2045,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">пт</day>
 							<day type="sat">сб</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<dayWidth type="narrow">
 							<day type="sun">н</day>
 							<day type="mon">п</day>
@@ -1425,6 +2056,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">п</day>
 							<day type="sat">с</day>
 						</dayWidth>
+<<<<<<< HEAD
 						<dayWidth type="short">
 							<day type="sun">нд</day>
 							<day type="mon">пн</day>
@@ -1443,11 +2075,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">петък</day>
 							<day type="sat">събота</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</dayContext>
 				</days>
 				<quarters>
 					<quarterContext type="format">
 						<quarterWidth type="abbreviated">
+<<<<<<< HEAD
 							<quarter type="1">1 трим.</quarter>
 							<quarter type="2">2 трим.</quarter>
 							<quarter type="3">3 трим.</quarter>
@@ -1478,6 +2113,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<quarter type="2">2</quarter>
 							<quarter type="3">3</quarter>
 							<quarter type="4">4</quarter>
+=======
+							<quarter type="1">I трим.</quarter>
+							<quarter type="2">II трим.</quarter>
+							<quarter type="3">III трим.</quarter>
+							<quarter type="4">IV трим.</quarter>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</quarterWidth>
 						<quarterWidth type="wide">
 							<quarter type="1">1-во тримесечие</quarter>
@@ -1487,6 +2128,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</quarterWidth>
 					</quarterContext>
 				</quarters>
+<<<<<<< HEAD
 				<dayPeriods>
 					<dayPeriodContext type="format">
 						<dayPeriodWidth type="wide">
@@ -1508,53 +2150,101 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</eraAbbr>
 					<eraNarrow>
 						<era type="1" draft="contributed">сл.н.е.</era>
+=======
+				<am>пр. об.</am>
+				<pm>сл. об.</pm>
+				<eras>
+					<eraNames>
+						<era type="0">пр.Хр.</era>
+						<era type="1">сл.Хр.</era>
+					</eraNames>
+					<eraAbbr>
+						<era type="0">пр. н. е.</era>
+						<era type="1">от н. е.</era>
+					</eraAbbr>
+					<eraNarrow>
+						<era type="1">сл.н.е.</era>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</eraNarrow>
 				</eras>
 				<dateFormats>
 					<dateFormatLength type="full">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>EEEE, d MMMM y 'г'.</pattern>
+=======
+							<pattern>dd MMMM y, EEEE</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="long">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>d MMMM y 'г'.</pattern>
+=======
+							<pattern>dd MMMM y</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="medium">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>d.MM.y 'г'.</pattern>
+=======
+							<pattern>dd.MM.yyyy</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>d.MM.yy</pattern>
+=======
+							<pattern>dd.MM.yy</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
 				<timeFormats>
 					<timeFormatLength type="full">
 						<timeFormat>
+<<<<<<< HEAD
 							<pattern>H:mm:ss zzzz</pattern>
+=======
+							<pattern>HH:mm:ss zzzz</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</timeFormat>
 					</timeFormatLength>
 					<timeFormatLength type="long">
 						<timeFormat>
+<<<<<<< HEAD
 							<pattern>H:mm:ss z</pattern>
+=======
+							<pattern>HH:mm:ss z</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</timeFormat>
 					</timeFormatLength>
 					<timeFormatLength type="medium">
 						<timeFormat>
+<<<<<<< HEAD
 							<pattern>H:mm:ss</pattern>
+=======
+							<pattern>HH:mm:ss</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</timeFormat>
 					</timeFormatLength>
 					<timeFormatLength type="short">
 						<timeFormat>
+<<<<<<< HEAD
 							<pattern>H:mm</pattern>
+=======
+							<pattern>HH:mm</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</timeFormat>
 					</timeFormatLength>
 				</timeFormats>
 				<dateTimeFormats>
+<<<<<<< HEAD
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
 							<pattern>{1}, {0}</pattern>
@@ -1739,10 +2429,160 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
+=======
+					<availableFormats>
+						<dateFormatItem id="Ed">E d</dateFormatItem>
+						<dateFormatItem id="H">H</dateFormatItem>
+						<dateFormatItem id="HHmm">HH:mm</dateFormatItem>
+						<dateFormatItem id="HHmmss">HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="hmm">h:mm a</dateFormatItem>
+						<dateFormatItem id="hmmss">h:mm:ss a</dateFormatItem>
+						<dateFormatItem id="MMdd">dd.MM</dateFormatItem>
+						<dateFormatItem id="MMMEd">d MMM, E</dateFormatItem>
+						<dateFormatItem id="MMMMd">d MMMM</dateFormatItem>
+						<dateFormatItem id="MMMMdd">dd MMMM</dateFormatItem>
+						<dateFormatItem id="mmss">mm:ss</dateFormatItem>
+						<dateFormatItem id="yyMM">MM.yy</dateFormatItem>
+						<dateFormatItem id="yyQ">Q yy</dateFormatItem>
+						<dateFormatItem id="yyyy">y</dateFormatItem>
+						<dateFormatItem id="yyyyMM">MM.yyyy</dateFormatItem>
+						<dateFormatItem id="yyyyMMMM">MMMM y</dateFormatItem>
+						<dateFormatItem id="yyyyQQQQ">QQQQ y 'г'.</dateFormatItem>
+					</availableFormats>
+					<intervalFormats>
+						<intervalFormatFallback>{0} - {1}</intervalFormatFallback>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">d-d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="h">
+							<greatestDifference id="h">HH-HH</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="h">HH:mm-HH:mm</greatestDifference>
+							<greatestDifference id="m">HH:mm-HH:mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="h">HH:mm-HH:mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm-HH:mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="h">HH-HH v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">M-M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">dd.MM - dd.MM</greatestDifference>
+							<greatestDifference id="M">dd.MM - dd.MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">dd.MM, E - dd.MM, E</greatestDifference>
+							<greatestDifference id="M">dd.MM, E - dd.MM, E</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">MMM-MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d">dd-dd MMM</greatestDifference>
+							<greatestDifference id="M">dd MMM - dd MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d">d MMM, E - d MMM, E</greatestDifference>
+							<greatestDifference id="M">d MMM, E - d MMM, E</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">y-y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">MM.yy - MM.yy</greatestDifference>
+							<greatestDifference id="y">MM.yy - MM.yy</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">dd.MM.yy - dd.MM.yy</greatestDifference>
+							<greatestDifference id="M">dd.MM.yy - dd.MM.yy</greatestDifference>
+							<greatestDifference id="y">dd.MM.yy - dd.MM.yy</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">dd.MM.yy, E - dd.MM.yy, E</greatestDifference>
+							<greatestDifference id="M">dd.MM.yy, E - dd.MM.yy, E</greatestDifference>
+							<greatestDifference id="y">dd.MM.yy, E - dd.MM.yy, E</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">MMM-MMM y</greatestDifference>
+							<greatestDifference id="y">MMM y - MMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d">dd-dd MMM y</greatestDifference>
+							<greatestDifference id="M">dd MMM - dd MMM y</greatestDifference>
+							<greatestDifference id="y">dd MMM y - dd MMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d">d MMM y, E - d MMM y, E</greatestDifference>
+							<greatestDifference id="M">d MMM y, E - d MMM y, E</greatestDifference>
+							<greatestDifference id="y">d MMM y, E - d MMM y, E</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+				<fields>
+					<field type="era">
+						<displayName>ера</displayName>
+					</field>
+					<field type="year">
+						<displayName>година</displayName>
+					</field>
+					<field type="month">
+						<displayName>месец</displayName>
+					</field>
+					<field type="week">
+						<displayName>седмица</displayName>
+					</field>
+					<field type="day">
+						<displayName>Ден</displayName>
+						<relative type="-2">Онзи ден</relative>
+						<relative type="-1">Вчера</relative>
+						<relative type="0">Днес</relative>
+						<relative type="1">Утре</relative>
+						<relative type="2">Вдругиден</relative>
+					</field>
+					<field type="weekday">
+						<displayName>Ден от седмицата</displayName>
+					</field>
+					<field type="dayperiod">
+						<displayName>ден</displayName>
+					</field>
+					<field type="hour">
+						<displayName>час</displayName>
+					</field>
+					<field type="minute">
+						<displayName>минута</displayName>
+					</field>
+					<field type="second">
+						<displayName>секунда</displayName>
+					</field>
+					<field type="zone">
+						<displayName>зона</displayName>
+					</field>
+				</fields>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</calendar>
 			<calendar type="hebrew">
 				<months>
 					<monthContext type="format">
+<<<<<<< HEAD
+=======
+						<monthWidth type="abbreviated">
+							<month type="1">тишри</month>
+							<month type="2">хешван</month>
+							<month type="3">кислев</month>
+							<month type="4">тебет</month>
+							<month type="5">шебат</month>
+							<month type="6">адар I</month>
+							<month type="7">адар</month>
+							<month type="8">нисан</month>
+							<month type="9">иар</month>
+							<month type="10">сиван</month>
+							<month type="11">тамуз</month>
+						</monthWidth>
 						<monthWidth type="wide">
 							<month type="1">тишри</month>
 							<month type="2">хешван</month>
@@ -1751,13 +2591,35 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="5">шебат</month>
 							<month type="6">адар I</month>
 							<month type="7">адар</month>
-							<month type="7" yeartype="leap">адар II</month>
 							<month type="8">нисан</month>
 							<month type="9">иар</month>
 							<month type="10">сиван</month>
 							<month type="11">тамуз</month>
+						</monthWidth>
+					</monthContext>
+					<monthContext type="stand-alone">
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
+						<monthWidth type="wide">
+							<month type="1">тишри</month>
+							<month type="2">хешван</month>
+							<month type="3">кислев</month>
+							<month type="4">тебет</month>
+							<month type="5">шебат</month>
+							<month type="6">адар I</month>
+							<month type="7">адар</month>
+<<<<<<< HEAD
+							<month type="7" yeartype="leap">адар II</month>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
+							<month type="8">нисан</month>
+							<month type="9">иар</month>
+							<month type="10">сиван</month>
+							<month type="11">тамуз</month>
+<<<<<<< HEAD
 							<month type="12">ав</month>
 							<month type="13">елул</month>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</monthWidth>
 					</monthContext>
 				</months>
@@ -1765,6 +2627,38 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<calendar type="indian">
 				<months>
 					<monthContext type="format">
+<<<<<<< HEAD
+=======
+						<monthWidth type="abbreviated">
+							<month type="1">чайтра</month>
+							<month type="2">вайсакха</month>
+							<month type="3">джаинтха</month>
+							<month type="4">асадха</month>
+							<month type="5">сравана</month>
+							<month type="6">бхада</month>
+							<month type="7">азвина</month>
+							<month type="8">картика</month>
+							<month type="9">аграхайана</month>
+							<month type="10">пауза</month>
+							<month type="11">магха</month>
+							<month type="12">пхалгуна</month>
+						</monthWidth>
+						<monthWidth type="wide">
+							<month type="1">чайтра</month>
+							<month type="2">вайсакха</month>
+							<month type="3">джаинтха</month>
+							<month type="4">асадха</month>
+							<month type="5">сравана</month>
+							<month type="6">бхада</month>
+							<month type="7">азвина</month>
+							<month type="8">картика</month>
+							<month type="9">аграхайана</month>
+							<month type="10">пауза</month>
+							<month type="12">пхалгуна</month>
+						</monthWidth>
+					</monthContext>
+					<monthContext type="stand-alone">
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<monthWidth type="wide">
 							<month type="1">чайтра</month>
 							<month type="2">вайсакха</month>
@@ -1785,7 +2679,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<calendar type="islamic">
 				<months>
 					<monthContext type="format">
+<<<<<<< HEAD
 						<monthWidth type="wide">
+=======
+						<monthWidth type="abbreviated">
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 							<month type="1">мухарам</month>
 							<month type="2">сафар</month>
 							<month type="3">раби-1</month>
@@ -1799,6 +2697,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">Дхул-Каада</month>
 							<month type="12">Дхул-хиджа</month>
 						</monthWidth>
+<<<<<<< HEAD
 					</monthContext>
 				</months>
 			</calendar>
@@ -1955,6 +2854,60 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Etc/Unknown">
 				<exemplarCity>неизвестен</exemplarCity>
 			</zone>
+=======
+						<monthWidth type="wide">
+							<month type="1">мухарам</month>
+							<month type="2">сафар</month>
+							<month type="3">раби-1</month>
+							<month type="4">раби-2</month>
+							<month type="5">джумада-1</month>
+							<month type="6">джумада-2</month>
+							<month type="7">раджаб</month>
+							<month type="8">шабан</month>
+							<month type="9">рамазан</month>
+							<month type="10">Шавал</month>
+							<month type="11">Дхул-Каада</month>
+							<month type="12">Дхул-хиджа</month>
+						</monthWidth>
+					</monthContext>
+					<monthContext type="stand-alone">
+						<monthWidth type="abbreviated">
+							<month type="3">раби-1</month>
+							<month type="4">раби-2</month>
+							<month type="5">джумада-1</month>
+							<month type="6">джумада-2</month>
+							<month type="7">раджаб</month>
+							<month type="8">шабан</month>
+							<month type="9">рамазан</month>
+						</monthWidth>
+						<monthWidth type="wide">
+							<month type="1">мухарам</month>
+							<month type="2">сафар</month>
+							<month type="3">раби-1</month>
+							<month type="4">раби-2</month>
+							<month type="5">джумада-1</month>
+							<month type="6">джумада-2</month>
+							<month type="7">раджаб</month>
+							<month type="8">шабан</month>
+							<month type="9">Рамазан</month>
+							<month type="10">Шавал</month>
+							<month type="11">Дхул-Каада</month>
+							<month type="12">Дхул-хиджа</month>
+						</monthWidth>
+					</monthContext>
+				</months>
+			</calendar>
+		</calendars>
+		<timeZoneNames>
+			<hourFormat>+HHmm;-HHmm</hourFormat>
+			<gmtFormat>Гриинуич{0}</gmtFormat>
+			<gmtZeroFormat>Гриинуич</gmtZeroFormat>
+			<regionFormat>{0}</regionFormat>
+			<fallbackFormat>{1} ({0})</fallbackFormat>
+			<zone type="Etc/Unknown">
+				<exemplarCity>Неизвестен</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Europe/Andorra">
 				<exemplarCity>Андора</exemplarCity>
 			</zone>
@@ -1968,7 +2921,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Антигуа</exemplarCity>
 			</zone>
 			<zone type="America/Anguilla">
+<<<<<<< HEAD
 				<exemplarCity>Ангуила</exemplarCity>
+=======
+				<exemplarCity>Ангила</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Tirane">
 				<exemplarCity>Тирана</exemplarCity>
@@ -1976,6 +2933,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Yerevan">
 				<exemplarCity>Ереван</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="America/Curacao">
+				<exemplarCity>Кюрасао</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Africa/Luanda">
 				<exemplarCity>Луанда</exemplarCity>
 			</zone>
@@ -1985,14 +2948,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Antarctica/Palmer">
 				<exemplarCity>Палмър</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Antarctica/Syowa">
 				<exemplarCity>Шова</exemplarCity>
+=======
+			<zone type="Antarctica/South_Pole">
+				<exemplarCity>Южен полюс</exemplarCity>
+			</zone>
+			<zone type="Antarctica/Syowa">
+				<exemplarCity>Суова</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Antarctica/Mawson">
 				<exemplarCity>Моусън</exemplarCity>
 			</zone>
 			<zone type="Antarctica/Davis">
+<<<<<<< HEAD
 				<exemplarCity>Дейвис</exemplarCity>
+=======
+				<exemplarCity>База Дейвис</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Antarctica/Vostok">
 				<exemplarCity>Восток</exemplarCity>
@@ -2004,7 +2979,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Дюмон Дюрвил</exemplarCity>
 			</zone>
 			<zone type="Antarctica/McMurdo">
+<<<<<<< HEAD
 				<exemplarCity>Макмърдо</exemplarCity>
+=======
+				<exemplarCity>Мак Мърдоу</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Argentina/Rio_Gallegos">
 				<exemplarCity>Рио Галегос</exemplarCity>
@@ -2031,7 +3010,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Салта</exemplarCity>
 			</zone>
 			<zone type="America/Jujuy">
+<<<<<<< HEAD
 				<exemplarCity>Хухуй</exemplarCity>
+=======
+				<exemplarCity>Джуджую</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Argentina/Tucuman">
 				<exemplarCity>Тукуман</exemplarCity>
@@ -2070,7 +3053,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Мелбърн</exemplarCity>
 			</zone>
 			<zone type="Australia/Hobart">
+<<<<<<< HEAD
 				<exemplarCity>Хобарт</exemplarCity>
+=======
+				<exemplarCity>Хоубарт</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Australia/Lindeman">
 				<exemplarCity>Линдеман</exemplarCity>
@@ -2081,15 +3068,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Australia/Brisbane">
 				<exemplarCity>Бризбейн</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Antarctica/Macquarie">
 				<exemplarCity>Маккуори</exemplarCity>
 			</zone>
 			<zone type="Australia/Lord_Howe">
 				<exemplarCity>Лорд Хау</exemplarCity>
+=======
+			<zone type="Australia/Lord_Howe">
+				<exemplarCity>Лорд Хов</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Aruba">
 				<exemplarCity>Аруба</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Mariehamn">
 				<exemplarCity>Мариехамн</exemplarCity>
 			</zone>
@@ -2101,6 +3094,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Barbados">
 				<exemplarCity>Барбадос</exemplarCity>
+=======
+			<zone type="Asia/Baku">
+				<exemplarCity>Баку</exemplarCity>
+			</zone>
+			<zone type="America/Barbados">
+				<exemplarCity>Бриджтаун</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Dhaka">
 				<exemplarCity>Дака</exemplarCity>
@@ -2123,11 +3123,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Africa/Porto-Novo">
 				<exemplarCity>Порто Ново</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/St_Barthelemy">
 				<exemplarCity>Сен Бартелеми</exemplarCity>
 			</zone>
 			<zone type="Atlantic/Bermuda">
 				<exemplarCity>Бермудски острови</exemplarCity>
+=======
+			<zone type="Atlantic/Bermuda">
+				<exemplarCity>Бермудски О-ви</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Brunei">
 				<exemplarCity>Бруней</exemplarCity>
@@ -2135,9 +3140,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/La_Paz">
 				<exemplarCity>Ла Пас</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Kralendijk">
 				<exemplarCity>Кралендейк</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Eirunepe">
 				<exemplarCity>Ейрунепе</exemplarCity>
 			</zone>
@@ -2145,6 +3153,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Рио Бранко</exemplarCity>
 			</zone>
 			<zone type="America/Porto_Velho">
+<<<<<<< HEAD
 				<exemplarCity>Порто Вельо</exemplarCity>
 			</zone>
 			<zone type="America/Boa_Vista">
@@ -2152,6 +3161,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Manaus">
 				<exemplarCity>Манаус</exemplarCity>
+=======
+				<exemplarCity>Порту Вельо</exemplarCity>
+			</zone>
+			<zone type="America/Boa_Vista">
+				<exemplarCity>Буа Виста</exemplarCity>
+			</zone>
+			<zone type="America/Manaus">
+				<exemplarCity>Мануас</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Cuiaba">
 				<exemplarCity>Чуяба</exemplarCity>
@@ -2172,10 +3190,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Сао Пауло</exemplarCity>
 			</zone>
 			<zone type="America/Bahia">
+<<<<<<< HEAD
 				<exemplarCity>Бахия</exemplarCity>
 			</zone>
 			<zone type="America/Fortaleza">
 				<exemplarCity>Форталеза</exemplarCity>
+=======
+				<exemplarCity>Бахиа</exemplarCity>
+			</zone>
+			<zone type="America/Fortaleza">
+				<exemplarCity>Фортацела</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Maceio">
 				<exemplarCity>Масейо</exemplarCity>
@@ -2184,13 +3209,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Ресифе</exemplarCity>
 			</zone>
 			<zone type="America/Noronha">
+<<<<<<< HEAD
 				<exemplarCity>Нороня</exemplarCity>
+=======
+				<exemplarCity>Норонха</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Nassau">
 				<exemplarCity>Насау</exemplarCity>
 			</zone>
 			<zone type="Asia/Thimphu">
+<<<<<<< HEAD
 				<exemplarCity>Тхимпху</exemplarCity>
+=======
+				<exemplarCity>Тхимпу</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Gaborone">
 				<exemplarCity>Габороне</exemplarCity>
@@ -2199,7 +3232,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Минск</exemplarCity>
 			</zone>
 			<zone type="America/Belize">
+<<<<<<< HEAD
 				<exemplarCity>Белиз</exemplarCity>
+=======
+				<exemplarCity>Белмопан</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Dawson">
 				<exemplarCity>Доусън</exemplarCity>
@@ -2216,9 +3253,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Dawson_Creek">
 				<exemplarCity>Доусън Крийк</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Creston">
 				<exemplarCity>Крестън</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Yellowknife">
 				<exemplarCity>Йелоунайф</exemplarCity>
 			</zone>
@@ -2232,7 +3272,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Кеймбридж Бей</exemplarCity>
 			</zone>
 			<zone type="America/Regina">
+<<<<<<< HEAD
 				<exemplarCity>Риджайна</exemplarCity>
+=======
+				<exemplarCity>Регина</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Winnipeg">
 				<exemplarCity>Уинипег</exemplarCity>
@@ -2258,6 +3302,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Toronto">
 				<exemplarCity>Торонто</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="America/Montreal">
+				<exemplarCity>Монреал</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Iqaluit">
 				<exemplarCity>Иквалуит</exemplarCity>
 			</zone>
@@ -2283,7 +3333,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Сейнт Джоунс</exemplarCity>
 			</zone>
 			<zone type="Indian/Cocos">
+<<<<<<< HEAD
 				<exemplarCity>Кокосови острови</exemplarCity>
+=======
+				<exemplarCity>Кокос</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Kinshasa">
 				<exemplarCity>Киншаса</exemplarCity>
@@ -2292,7 +3346,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Лубумбаши</exemplarCity>
 			</zone>
 			<zone type="Africa/Bangui">
+<<<<<<< HEAD
 				<exemplarCity>Бангуи</exemplarCity>
+=======
+				<exemplarCity>Банги</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Brazzaville">
 				<exemplarCity>Бразавил</exemplarCity>
@@ -2307,10 +3365,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Раротонга</exemplarCity>
 			</zone>
 			<zone type="Pacific/Easter">
+<<<<<<< HEAD
 				<exemplarCity>Великденски о-в</exemplarCity>
 			</zone>
 			<zone type="America/Santiago">
 				<exemplarCity>Сантяго</exemplarCity>
+=======
+				<exemplarCity>Великденски о-ви</exemplarCity>
+			</zone>
+			<zone type="America/Santiago">
+				<exemplarCity>Сантиаго</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Douala">
 				<exemplarCity>Дуала</exemplarCity>
@@ -2334,7 +3399,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Богота</exemplarCity>
 			</zone>
 			<zone type="America/Costa_Rica">
+<<<<<<< HEAD
 				<exemplarCity>Коста Рика</exemplarCity>
+=======
+				<exemplarCity>Сан Хосе</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Havana">
 				<exemplarCity>Хавана</exemplarCity>
@@ -2342,21 +3411,29 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Atlantic/Cape_Verde">
 				<exemplarCity>Кабо Верде</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Curacao">
 				<exemplarCity>Кюрасао</exemplarCity>
 			</zone>
 			<zone type="Indian/Christmas">
 				<exemplarCity>Рождество</exemplarCity>
+=======
+			<zone type="Indian/Christmas">
+				<exemplarCity>Коледни о-ви</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Nicosia">
 				<exemplarCity>Никозия</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Prague">
 				<exemplarCity>Прага</exemplarCity>
 			</zone>
 			<zone type="Europe/Busingen">
 				<exemplarCity>Бюзинген</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Europe/Berlin">
 				<exemplarCity>Берлин</exemplarCity>
 			</zone>
@@ -2376,7 +3453,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Алжир</exemplarCity>
 			</zone>
 			<zone type="Pacific/Galapagos">
+<<<<<<< HEAD
 				<exemplarCity>Галапагоски о-ви</exemplarCity>
+=======
+				<exemplarCity>о-ви Галапагос</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Guayaquil">
 				<exemplarCity>Гуаякил</exemplarCity>
@@ -2391,7 +3472,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Ел Аюн</exemplarCity>
 			</zone>
 			<zone type="Africa/Asmera">
+<<<<<<< HEAD
 				<exemplarCity>Асмара</exemplarCity>
+=======
+				<exemplarCity>Асмера</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Atlantic/Canary">
 				<exemplarCity>Канарски о-ви</exemplarCity>
@@ -2415,6 +3500,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Стенли</exemplarCity>
 			</zone>
 			<zone type="Pacific/Truk">
+<<<<<<< HEAD
 				<exemplarCity>Чуюк</exemplarCity>
 			</zone>
 			<zone type="Pacific/Ponape">
@@ -2425,11 +3511,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Atlantic/Faeroe">
 				<exemplarCity>Фарьорски острови</exemplarCity>
+=======
+				<exemplarCity>о-ви Трук</exemplarCity>
+			</zone>
+			<zone type="Pacific/Ponape">
+				<exemplarCity>о. Понапе</exemplarCity>
+			</zone>
+			<zone type="Pacific/Kosrae">
+				<exemplarCity>о. Косрае</exemplarCity>
+			</zone>
+			<zone type="Atlantic/Faeroe">
+				<exemplarCity>Фарьорите</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Paris">
 				<exemplarCity>Париж</exemplarCity>
 			</zone>
 			<zone type="Africa/Libreville">
+<<<<<<< HEAD
 				<exemplarCity>Либревил</exemplarCity>
 			</zone>
 			<zone type="Europe/London">
@@ -2440,6 +3539,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Grenada">
 				<exemplarCity>Гренада</exemplarCity>
+=======
+				<exemplarCity>Либървил</exemplarCity>
+			</zone>
+			<zone type="Europe/London">
+				<exemplarCity>Лондон</exemplarCity>
+			</zone>
+			<zone type="America/Grenada">
+				<exemplarCity>Сент Джорджес</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Tbilisi">
 				<exemplarCity>Тбилиси</exemplarCity>
@@ -2447,9 +3555,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Cayenne">
 				<exemplarCity>Кайен</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Guernsey">
 				<exemplarCity>Гърнси</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Africa/Accra">
 				<exemplarCity>Акра</exemplarCity>
 			</zone>
@@ -2460,13 +3571,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Туле</exemplarCity>
 			</zone>
 			<zone type="America/Godthab">
+<<<<<<< HEAD
 				<exemplarCity>Нуук</exemplarCity>
+=======
+				<exemplarCity>Готхоб</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Scoresbysund">
 				<exemplarCity>Сгорсбисон</exemplarCity>
 			</zone>
 			<zone type="America/Danmarkshavn">
+<<<<<<< HEAD
 				<exemplarCity>Данмарксхавн</exemplarCity>
+=======
+				<exemplarCity>Данмаркшавн</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Banjul">
 				<exemplarCity>Банджул</exemplarCity>
@@ -2475,7 +3594,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Конакри</exemplarCity>
 			</zone>
 			<zone type="America/Guadeloupe">
+<<<<<<< HEAD
 				<exemplarCity>Гваделупа</exemplarCity>
+=======
+				<exemplarCity>Бас Тер</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Malabo">
 				<exemplarCity>Малабо</exemplarCity>
@@ -2496,6 +3619,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Бисау</exemplarCity>
 			</zone>
 			<zone type="America/Guyana">
+<<<<<<< HEAD
 				<exemplarCity>Гаяна</exemplarCity>
 			</zone>
 			<zone type="Asia/Hong_Kong">
@@ -2506,6 +3630,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Europe/Zagreb">
 				<exemplarCity>Загреб</exemplarCity>
+=======
+				<exemplarCity>Джорджтаун</exemplarCity>
+			</zone>
+			<zone type="Asia/Hong_Kong">
+				<exemplarCity>Хонг Конг</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Port-au-Prince">
 				<exemplarCity>Порт-о-Пренс</exemplarCity>
@@ -2520,26 +3650,36 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Понтианак</exemplarCity>
 			</zone>
 			<zone type="Asia/Makassar">
+<<<<<<< HEAD
 				<exemplarCity>Макасар</exemplarCity>
+=======
+				<exemplarCity>Макасарски проток</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Jayapura">
 				<exemplarCity>Джаяпура</exemplarCity>
 			</zone>
 			<zone type="Europe/Dublin">
+<<<<<<< HEAD
 				<long>
 					<daylight>Ирландско лятно часово време</daylight>
 				</long>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<exemplarCity>Дъблин</exemplarCity>
 			</zone>
 			<zone type="Asia/Jerusalem">
 				<exemplarCity>Йерусалим</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Isle_of_Man">
 				<exemplarCity>о-в Ман</exemplarCity>
 			</zone>
 			<zone type="Asia/Calcutta">
 				<exemplarCity>Колката</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Indian/Chagos">
 				<exemplarCity>Чагос</exemplarCity>
 			</zone>
@@ -2555,11 +3695,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Europe/Rome">
 				<exemplarCity>Рим</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Jersey">
 				<exemplarCity>Джърси</exemplarCity>
 			</zone>
 			<zone type="America/Jamaica">
 				<exemplarCity>Ямайка</exemplarCity>
+=======
+			<zone type="America/Jamaica">
+				<exemplarCity>Кингстън</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Amman">
 				<exemplarCity>Аман</exemplarCity>
@@ -2577,6 +3722,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Пном Пен</exemplarCity>
 			</zone>
 			<zone type="Pacific/Enderbury">
+<<<<<<< HEAD
 				<exemplarCity>Ендърбъри</exemplarCity>
 			</zone>
 			<zone type="Pacific/Kiritimati">
@@ -2587,6 +3733,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Indian/Comoro">
 				<exemplarCity>Коморски острови</exemplarCity>
+=======
+				<exemplarCity>о. Ендърбъри</exemplarCity>
+			</zone>
+			<zone type="Pacific/Kiritimati">
+				<exemplarCity>о. Рождество</exemplarCity>
+			</zone>
+			<zone type="Pacific/Tarawa">
+				<exemplarCity>о. Тарава</exemplarCity>
+			</zone>
+			<zone type="Indian/Comoro">
+				<exemplarCity>Коморски о-ви</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/St_Kitts">
 				<exemplarCity>Сейнт Китс</exemplarCity>
@@ -2601,7 +3759,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Кувейт</exemplarCity>
 			</zone>
 			<zone type="America/Cayman">
+<<<<<<< HEAD
 				<exemplarCity>Кайманови острови</exemplarCity>
+=======
+				<exemplarCity>Кайманите</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Aqtau">
 				<exemplarCity>Актау</exemplarCity>
@@ -2613,10 +3775,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Актобе</exemplarCity>
 			</zone>
 			<zone type="Asia/Qyzylorda">
+<<<<<<< HEAD
 				<exemplarCity>Къзълорда</exemplarCity>
 			</zone>
 			<zone type="Asia/Almaty">
 				<exemplarCity>Алмати</exemplarCity>
+=======
+				<exemplarCity>Язилорда</exemplarCity>
+			</zone>
+			<zone type="Asia/Almaty">
+				<exemplarCity>Алма Ата</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Vientiane">
 				<exemplarCity>Виентян</exemplarCity>
@@ -2625,7 +3794,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Бейрут</exemplarCity>
 			</zone>
 			<zone type="America/St_Lucia">
+<<<<<<< HEAD
 				<exemplarCity>Сейнт Лусия</exemplarCity>
+=======
+				<exemplarCity>Св. Лучия</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Vaduz">
 				<exemplarCity>Вадуц</exemplarCity>
@@ -2660,16 +3833,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Europe/Chisinau">
 				<exemplarCity>Кишинев</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Podgorica">
 				<exemplarCity>Подгорица</exemplarCity>
 			</zone>
 			<zone type="America/Marigot">
 				<exemplarCity>Мариго</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Indian/Antananarivo">
 				<exemplarCity>Антананариво</exemplarCity>
 			</zone>
 			<zone type="Pacific/Kwajalein">
+<<<<<<< HEAD
 				<exemplarCity>Куаджалин</exemplarCity>
 			</zone>
 			<zone type="Pacific/Majuro">
@@ -2677,6 +3854,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Europe/Skopje">
 				<exemplarCity>Скопие</exemplarCity>
+=======
+				<exemplarCity>Квайджален</exemplarCity>
+			</zone>
+			<zone type="Pacific/Majuro">
+				<exemplarCity>Мажуро</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Bamako">
 				<exemplarCity>Бамако</exemplarCity>
@@ -2685,44 +3868,74 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Рангун</exemplarCity>
 			</zone>
 			<zone type="Asia/Hovd">
+<<<<<<< HEAD
 				<exemplarCity>Ховд</exemplarCity>
 			</zone>
 			<zone type="Asia/Ulaanbaatar">
 				<exemplarCity>Улан Батор</exemplarCity>
+=======
+				<exemplarCity>Кобдо</exemplarCity>
+			</zone>
+			<zone type="Asia/Ulaanbaatar">
+				<exemplarCity>Уланбатор</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Choibalsan">
 				<exemplarCity>Чойбалсан</exemplarCity>
 			</zone>
 			<zone type="Asia/Macau">
+<<<<<<< HEAD
 				<exemplarCity>Макао</exemplarCity>
+=======
+				<exemplarCity>Макау</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Pacific/Saipan">
 				<exemplarCity>Сайпан</exemplarCity>
 			</zone>
 			<zone type="America/Martinique">
+<<<<<<< HEAD
 				<exemplarCity>Мартиника</exemplarCity>
+=======
+				<exemplarCity>Мартиник</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Nouakchott">
 				<exemplarCity>Нуакшот</exemplarCity>
 			</zone>
 			<zone type="America/Montserrat">
+<<<<<<< HEAD
 				<exemplarCity>Монтсерат</exemplarCity>
 			</zone>
 			<zone type="Europe/Malta">
 				<exemplarCity>Малта</exemplarCity>
+=======
+				<exemplarCity>Монсерат</exemplarCity>
+			</zone>
+			<zone type="Europe/Malta">
+				<exemplarCity>Ла Валета</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Indian/Mauritius">
 				<exemplarCity>Мавриций</exemplarCity>
 			</zone>
 			<zone type="Indian/Maldives">
+<<<<<<< HEAD
 				<exemplarCity>Малдиви</exemplarCity>
 			</zone>
 			<zone type="Africa/Blantyre">
 				<exemplarCity>Блантайър</exemplarCity>
+=======
+				<exemplarCity>Малдивски О-ви</exemplarCity>
+			</zone>
+			<zone type="Africa/Blantyre">
+				<exemplarCity>Блантайр</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Tijuana">
 				<exemplarCity>Тихуана</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>Санта Исабел</exemplarCity>
 			</zone>
@@ -2731,24 +3944,38 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Mazatlan">
 				<exemplarCity>Масатлан</exemplarCity>
+=======
+			<zone type="America/Hermosillo">
+				<exemplarCity>Хермосило</exemplarCity>
+			</zone>
+			<zone type="America/Mazatlan">
+				<exemplarCity>Мацатлан</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Chihuahua">
 				<exemplarCity>Чиуауа</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Bahia_Banderas">
 				<exemplarCity>Бахия де Бандерас</exemplarCity>
 			</zone>
 			<zone type="America/Ojinaga">
 				<exemplarCity>Охинага</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Monterrey">
 				<exemplarCity>Монтерей</exemplarCity>
 			</zone>
 			<zone type="America/Mexico_City">
+<<<<<<< HEAD
 				<exemplarCity>Мексико Сити</exemplarCity>
 			</zone>
 			<zone type="America/Matamoros">
 				<exemplarCity>Матаморос</exemplarCity>
+=======
+				<exemplarCity>Мексико</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Merida">
 				<exemplarCity>Мерида</exemplarCity>
@@ -2763,7 +3990,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Кучин</exemplarCity>
 			</zone>
 			<zone type="Africa/Maputo">
+<<<<<<< HEAD
 				<exemplarCity>Мапуто</exemplarCity>
+=======
+				<exemplarCity>Мапуту</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Windhoek">
 				<exemplarCity>Виндхук</exemplarCity>
@@ -2799,7 +4030,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Ниуе</exemplarCity>
 			</zone>
 			<zone type="Pacific/Chatham">
+<<<<<<< HEAD
 				<exemplarCity>Чатам</exemplarCity>
+=======
+				<exemplarCity>о-ви Чатам</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Pacific/Auckland">
 				<exemplarCity>Окланд</exemplarCity>
@@ -2820,7 +4055,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Маркизки о-ви</exemplarCity>
 			</zone>
 			<zone type="Pacific/Gambier">
+<<<<<<< HEAD
 				<exemplarCity>Гамбие</exemplarCity>
+=======
+				<exemplarCity>Гамбиер</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Pacific/Port_Moresby">
 				<exemplarCity>Порт Морсби</exemplarCity>
@@ -2846,9 +4085,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Gaza">
 				<exemplarCity>Газа</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Hebron">
 				<exemplarCity>Хеброн</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Atlantic/Azores">
 				<exemplarCity>Азорски о-ви</exemplarCity>
 			</zone>
@@ -2873,9 +4115,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Europe/Bucharest">
 				<exemplarCity>Букурещ</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Belgrade">
 				<exemplarCity>Белград</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Europe/Kaliningrad">
 				<exemplarCity>Калининград</exemplarCity>
 			</zone>
@@ -2897,9 +4142,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Novosibirsk">
 				<exemplarCity>Новосибирск</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Novokuznetsk">
 				<exemplarCity>Новокузнецк</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Asia/Krasnoyarsk">
 				<exemplarCity>Красноярск</exemplarCity>
 			</zone>
@@ -2912,6 +4160,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Vladivostok">
 				<exemplarCity>Владивосток</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Khandyga">
 				<exemplarCity>Хандига</exemplarCity>
 			</zone>
@@ -2921,11 +4170,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Ust-Nera">
 				<exemplarCity>Уст-Нера</exemplarCity>
 			</zone>
+=======
+			<zone type="Asia/Sakhalin">
+				<exemplarCity>Сахалин</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Asia/Magadan">
 				<exemplarCity>Магадан</exemplarCity>
 			</zone>
 			<zone type="Asia/Kamchatka">
+<<<<<<< HEAD
 				<exemplarCity>Камчатка</exemplarCity>
+=======
+				<exemplarCity>п-в Камчатка</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Anadyr">
 				<exemplarCity>Анадир</exemplarCity>
@@ -2940,7 +4198,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Гуадалканал</exemplarCity>
 			</zone>
 			<zone type="Indian/Mahe">
+<<<<<<< HEAD
 				<exemplarCity>Мае</exemplarCity>
+=======
+				<exemplarCity>Махе</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Khartoum">
 				<exemplarCity>Хартум</exemplarCity>
@@ -2952,14 +4214,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Сингапур</exemplarCity>
 			</zone>
 			<zone type="Atlantic/St_Helena">
+<<<<<<< HEAD
 				<exemplarCity>Света Елена</exemplarCity>
 			</zone>
 			<zone type="Europe/Ljubljana">
 				<exemplarCity>Любляна</exemplarCity>
+=======
+				<exemplarCity>Св. Елена</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Arctic/Longyearbyen">
 				<exemplarCity>Лонгирбюен</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Bratislava">
 				<exemplarCity>Братислава</exemplarCity>
 			</zone>
@@ -2969,26 +4236,42 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Europe/San_Marino">
 				<exemplarCity>Сан Марино</exemplarCity>
 			</zone>
+=======
+			<zone type="Africa/Freetown">
+				<exemplarCity>Фрийтаун</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Africa/Dakar">
 				<exemplarCity>Дакар</exemplarCity>
 			</zone>
 			<zone type="Africa/Mogadishu">
+<<<<<<< HEAD
 				<exemplarCity>Могадишу</exemplarCity>
+=======
+				<exemplarCity>Могадишо</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Paramaribo">
 				<exemplarCity>Парамарибо</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Africa/Juba">
 				<exemplarCity>Джуба</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Africa/Sao_Tome">
 				<exemplarCity>Сао Томе</exemplarCity>
 			</zone>
 			<zone type="America/El_Salvador">
+<<<<<<< HEAD
 				<exemplarCity>Салвадор</exemplarCity>
 			</zone>
 			<zone type="America/Lower_Princes">
 				<exemplarCity>Лоуър принсес куотър</exemplarCity>
+=======
+				<exemplarCity>Сан Салвадор</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Damascus">
 				<exemplarCity>Дамаск</exemplarCity>
@@ -2997,7 +4280,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Мбабане</exemplarCity>
 			</zone>
 			<zone type="America/Grand_Turk">
+<<<<<<< HEAD
 				<exemplarCity>Гранд Търк</exemplarCity>
+=======
+				<exemplarCity>Гранд Тюрк</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Ndjamena">
 				<exemplarCity>Нджамена</exemplarCity>
@@ -3009,7 +4296,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Ломе</exemplarCity>
 			</zone>
 			<zone type="Asia/Bangkok">
+<<<<<<< HEAD
 				<exemplarCity>Банкок</exemplarCity>
+=======
+				<exemplarCity>Бангкок</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Dushanbe">
 				<exemplarCity>Душанбе</exemplarCity>
@@ -3039,10 +4330,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Фунафути</exemplarCity>
 			</zone>
 			<zone type="Asia/Taipei">
+<<<<<<< HEAD
 				<exemplarCity>Тайпе</exemplarCity>
 			</zone>
 			<zone type="Africa/Dar_es_Salaam">
 				<exemplarCity>Дар ес Салам</exemplarCity>
+=======
+				<exemplarCity>Тайпей</exemplarCity>
+			</zone>
+			<zone type="Africa/Dar_es_Salaam">
+				<exemplarCity>Дар ес Салаам</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Uzhgorod">
 				<exemplarCity>Ужгород</exemplarCity>
@@ -3060,6 +4358,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Кампала</exemplarCity>
 			</zone>
 			<zone type="Pacific/Midway">
+<<<<<<< HEAD
 				<exemplarCity>Мидуей</exemplarCity>
 			</zone>
 			<zone type="Pacific/Johnston">
@@ -3067,6 +4366,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Pacific/Wake">
 				<exemplarCity>Уейк</exemplarCity>
+=======
+				<exemplarCity>о. Мидуей</exemplarCity>
+			</zone>
+			<zone type="Pacific/Johnston">
+				<exemplarCity>о. Джонсън</exemplarCity>
+			</zone>
+			<zone type="Pacific/Wake">
+				<exemplarCity>о. Уейк</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Adak">
 				<exemplarCity>Адак</exemplarCity>
@@ -3078,11 +4386,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Хонолулу</exemplarCity>
 			</zone>
 			<zone type="America/Anchorage">
+<<<<<<< HEAD
 				<exemplarCity>Анкъридж</exemplarCity>
+=======
+				<exemplarCity>Анкоридж</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Yakutat">
 				<exemplarCity>Якутат</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Sitka">
 				<exemplarCity>Ситка</exemplarCity>
 			</zone>
@@ -3097,10 +4410,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Boise">
 				<exemplarCity>Бойси</exemplarCity>
+=======
+			<zone type="America/Juneau">
+				<exemplarCity>Джуно</exemplarCity>
+			</zone>
+			<zone type="America/Los_Angeles">
+				<exemplarCity>Лос Анжелис</exemplarCity>
+			</zone>
+			<zone type="America/Boise">
+				<exemplarCity>Буаз</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Phoenix">
 				<exemplarCity>Финикс</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Denver">
 				<exemplarCity>Денвър</exemplarCity>
 			</zone>
@@ -3109,6 +4433,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/North_Dakota/New_Salem">
 				<exemplarCity>Ню Сейлъм</exemplarCity>
+=======
+			<zone type="America/Shiprock">
+				<exemplarCity>Шипрок</exemplarCity>
+			</zone>
+			<zone type="America/Denver">
+				<exemplarCity>Денвър</exemplarCity>
+			</zone>
+			<zone type="America/North_Dakota/New_Salem">
+				<exemplarCity>Ню Салем, Северна Дакота</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/North_Dakota/Center">
 				<exemplarCity>Сентър</exemplarCity>
@@ -3117,6 +4451,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Чикаго</exemplarCity>
 			</zone>
 			<zone type="America/Menominee">
+<<<<<<< HEAD
 				<exemplarCity>Меномини</exemplarCity>
 			</zone>
 			<zone type="America/Indiana/Vincennes">
@@ -3127,11 +4462,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Indiana/Tell_City">
 				<exemplarCity>Тел Сити</exemplarCity>
+=======
+				<exemplarCity>Меномнии</exemplarCity>
+			</zone>
+			<zone type="America/Indiana/Vincennes">
+				<exemplarCity>Винсенс, Индиана</exemplarCity>
+			</zone>
+			<zone type="America/Indiana/Petersburg">
+				<exemplarCity>Петерсбург, Индиана</exemplarCity>
+			</zone>
+			<zone type="America/Indiana/Tell_City">
+				<exemplarCity>Тел Сити, Индиана</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Indiana/Knox">
 				<exemplarCity>Нокс</exemplarCity>
 			</zone>
 			<zone type="America/Indiana/Winamac">
+<<<<<<< HEAD
 				<exemplarCity>Уинамак</exemplarCity>
 			</zone>
 			<zone type="America/Indiana/Marengo">
@@ -3799,10 +5147,194 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<generic>Новозеландско време</generic>
 					<standard>Новозеландско стандартно време</standard>
 					<daylight>Новозеландско лятно часово време</daylight>
+=======
+				<exemplarCity>Уинамак, Индиана</exemplarCity>
+			</zone>
+			<zone type="America/Indiana/Marengo">
+				<exemplarCity>Маренго</exemplarCity>
+			</zone>
+			<zone type="America/Indianapolis">
+				<exemplarCity>Индианополис</exemplarCity>
+			</zone>
+			<zone type="America/Louisville">
+				<exemplarCity>Луизвил</exemplarCity>
+			</zone>
+			<zone type="America/Indiana/Vevay">
+				<exemplarCity>Веве</exemplarCity>
+			</zone>
+			<zone type="America/Kentucky/Monticello">
+				<exemplarCity>Монтичело</exemplarCity>
+			</zone>
+			<zone type="America/Detroit">
+				<exemplarCity>Детройт</exemplarCity>
+			</zone>
+			<zone type="America/New_York">
+				<exemplarCity>Ню Йорк</exemplarCity>
+			</zone>
+			<zone type="America/Montevideo">
+				<exemplarCity>Монтевидео</exemplarCity>
+			</zone>
+			<zone type="Asia/Samarkand">
+				<exemplarCity>Самарканд</exemplarCity>
+			</zone>
+			<zone type="Asia/Tashkent">
+				<exemplarCity>Ташкент</exemplarCity>
+			</zone>
+			<zone type="America/St_Vincent">
+				<exemplarCity>Св. Винсент</exemplarCity>
+			</zone>
+			<zone type="America/Caracas">
+				<exemplarCity>Каракас</exemplarCity>
+			</zone>
+			<zone type="America/Tortola">
+				<exemplarCity>Тортола</exemplarCity>
+			</zone>
+			<zone type="America/St_Thomas">
+				<exemplarCity>Св. Томас</exemplarCity>
+			</zone>
+			<zone type="Asia/Saigon">
+				<exemplarCity>Сайгон</exemplarCity>
+			</zone>
+			<zone type="Pacific/Efate">
+				<exemplarCity>Ефате</exemplarCity>
+			</zone>
+			<zone type="Pacific/Wallis">
+				<exemplarCity>Уолис</exemplarCity>
+			</zone>
+			<zone type="Pacific/Apia">
+				<exemplarCity>Апиа</exemplarCity>
+			</zone>
+			<zone type="Asia/Aden">
+				<exemplarCity>Аден</exemplarCity>
+			</zone>
+			<zone type="Indian/Mayotte">
+				<exemplarCity>Майоте</exemplarCity>
+			</zone>
+			<zone type="Africa/Johannesburg">
+				<exemplarCity>Йоханесбург</exemplarCity>
+			</zone>
+			<zone type="Africa/Lusaka">
+				<exemplarCity>Лусака</exemplarCity>
+			</zone>
+			<zone type="Africa/Harare">
+				<exemplarCity>Хараре</exemplarCity>
+			</zone>
+			<metazone type="Alaska">
+				<long>
+					<standard>Часова зона Аляска</standard>
+					<daylight>Лятна часова зона Аляска</daylight>
+				</long>
+			</metazone>
+			<metazone type="America_Central">
+				<long>
+					<standard>Американска централна часова зона</standard>
+					<daylight>Американска централна лятна часова зона</daylight>
+				</long>
+			</metazone>
+			<metazone type="America_Eastern">
+				<long>
+					<standard>Американска източна часова зона</standard>
+					<daylight>Американска източна лятна часова зона</daylight>
+				</long>
+			</metazone>
+			<metazone type="America_Mountain">
+				<long>
+					<standard>Американска планинска часова зона</standard>
+					<daylight>Американска планинска лятна часова зона</daylight>
+				</long>
+			</metazone>
+			<metazone type="America_Pacific">
+				<long>
+					<standard>Тихоокеанска часова зона</standard>
+					<daylight>Тихоокеанска лятна часова зона</daylight>
+				</long>
+			</metazone>
+			<metazone type="Aqtau">
+				<short>
+					<standard>AQTT (Актау)</standard>
+					<daylight>AQTST (Актау)</daylight>
+				</short>
+			</metazone>
+			<metazone type="Aqtobe">
+				<short>
+					<standard>AQTT (Актобе)</standard>
+					<daylight>AQTST (Актобе)</daylight>
+				</short>
+			</metazone>
+			<metazone type="Arabian">
+				<short>
+					<standard>AST (Саудитска Арабия)</standard>
+					<daylight>ADT (Саудитска Арабия)</daylight>
+				</short>
+			</metazone>
+			<metazone type="Armenia">
+				<short>
+					<standard>AMT (Армения)</standard>
+					<daylight>AMST (Армения)</daylight>
+				</short>
+			</metazone>
+			<metazone type="Atlantic">
+				<long>
+					<standard>Атлантическа часова зона</standard>
+					<daylight>Атлантическа лятна часова зона</daylight>
+				</long>
+			</metazone>
+			<metazone type="China">
+				<long>
+					<standard>Китайска часова зона</standard>
+				</long>
+				<short>
+					<standard>CST (Китай)</standard>
+					<daylight>CDT (Китай)</daylight>
+				</short>
+			</metazone>
+			<metazone type="Cuba">
+				<short>
+					<standard>CST (Куба)</standard>
+					<daylight>CDT (Куба)</daylight>
+				</short>
+			</metazone>
+			<metazone type="Europe_Central">
+				<long>
+					<standard>Централноевропейска часова зона</standard>
+					<daylight>Централноевропейска лятна часова зона</daylight>
+				</long>
+			</metazone>
+			<metazone type="Europe_Eastern">
+				<long>
+					<standard>Източноевропейска часова зона</standard>
+					<daylight>Източноевропейска лятна часова зона</daylight>
+				</long>
+			</metazone>
+			<metazone type="GMT">
+				<long>
+					<standard>Часова зона Гринуич</standard>
+				</long>
+			</metazone>
+			<metazone type="Guam">
+				<short>
+					<standard>GST (Гуам)</standard>
+				</short>
+			</metazone>
+			<metazone type="Israel">
+				<long>
+					<standard>Часова зона Израел</standard>
+					<daylight>Лятна часова зона Израел</daylight>
+				</long>
+				<short>
+					<standard>IST (Израел)</standard>
+				</short>
+			</metazone>
+			<metazone type="Japan">
+				<long>
+					<standard>Японска часова зона</standard>
+					<daylight>Японска часова зона</daylight>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				</long>
 			</metazone>
 			<metazone type="Newfoundland">
 				<long>
+<<<<<<< HEAD
 					<generic>Нюфаундлендско време</generic>
 					<standard>Нюфаундлендско стандартно време</standard>
 					<daylight>Нюфаундлендско лятно часово време</daylight>
@@ -4074,15 +5606,36 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<standard>Екатеринбургско стандартно време</standard>
 					<daylight>Екатеринбургско лятно часово време</daylight>
 				</long>
+=======
+					<standard>Часова зона Нюфаундленд</standard>
+					<daylight>Лятна часова зона Нюфаундленд</daylight>
+				</long>
+			</metazone>
+			<metazone type="Samarkand">
+				<short>
+					<standard>SAMT (Самарканд)</standard>
+					<daylight>SAMST (Самарканд)</daylight>
+				</short>
+			</metazone>
+			<metazone type="South_Georgia">
+				<short>
+					<standard>GST (Южна Джорджия)</standard>
+				</short>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</metazone>
 		</timeZoneNames>
 	</dates>
 	<numbers>
+<<<<<<< HEAD
 		<symbols numberSystem="latn">
+=======
+		<symbols>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<decimal>,</decimal>
 			<group> </group>
 			<list>;</list>
 			<percentSign>%</percentSign>
+<<<<<<< HEAD
 			<plusSign>+</plusSign>
 			<minusSign>-</minusSign>
 			<exponential>E</exponential>
@@ -4092,11 +5645,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<nan>NaN</nan>
 		</symbols>
 		<decimalFormats numberSystem="latn">
+=======
+			<nativeZeroDigit>0</nativeZeroDigit>
+			<plusSign>+</plusSign>
+			<minusSign>-</minusSign>
+			<perMille>‰</perMille>
+			<infinity>∞</infinity>
+			<nan>Н/Ч</nan>
+		</symbols>
+		<decimalFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<decimalFormatLength>
 				<decimalFormat>
 					<pattern>#,##0.###</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
+<<<<<<< HEAD
 			<decimalFormatLength type="long">
 				<decimalFormat>
 					<pattern type="1000" count="one">0 хиляда</pattern>
@@ -4162,12 +5726,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</scientificFormatLength>
 		</scientificFormats>
 		<percentFormats numberSystem="latn">
+=======
+		</decimalFormats>
+		<percentFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<percentFormatLength>
 				<percentFormat>
 					<pattern>#,##0%</pattern>
 				</percentFormat>
 			</percentFormatLength>
 		</percentFormats>
+<<<<<<< HEAD
 		<currencyFormats numberSystem="latn">
 			<currencyFormatLength>
 				<currencyFormat type="standard">
@@ -4176,6 +5745,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currencyFormatLength>
 			<unitPattern count="one">{0} {1}</unitPattern>
 			<unitPattern count="other">{0} {1}</unitPattern>
+=======
+		<currencyFormats>
+			<currencyFormatLength>
+				<currencyFormat>
+					<pattern>#,##0.00 ¤</pattern>
+				</currencyFormat>
+			</currencyFormatLength>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</currencyFormats>
 		<currencies>
 			<currency type="ADP">
@@ -4184,6 +5761,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">андорски песети</displayName>
 			</currency>
 			<currency type="AED">
+<<<<<<< HEAD
 				<displayName>Дирхам на Обединените арабски емирства</displayName>
 				<displayName count="one">дирхам на Обединените арабски емирства</displayName>
 				<displayName count="other">дирхама на Обединените арабски емирства</displayName>
@@ -4192,6 +5770,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Афганистански афган (1927–2002)</displayName>
 				<displayName count="one">афганистански афган (1927–2002)</displayName>
 				<displayName count="other">афганистански афгана (1927–2002)</displayName>
+=======
+				<displayName>Обединени арабски емирства-дирхам</displayName>
+				<displayName count="one">Обединени арабски емирства-дирхам</displayName>
+				<displayName count="other">Обединени арабски емирства-дирхама</displayName>
+			</currency>
+			<currency type="AFA">
+				<displayName>Афганистански афган (1927-2002)</displayName>
+				<displayName count="one">афганистански афган (AFA)</displayName>
+				<displayName count="other">афганистански афгана (AFA)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="AFN">
 				<displayName>Афганистански афган</displayName>
@@ -4214,6 +5802,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">антилски гулдена</displayName>
 			</currency>
 			<currency type="AOA">
+<<<<<<< HEAD
 				<displayName>Анголска кванза</displayName>
 				<displayName count="one">анголска кванза</displayName>
 				<displayName count="other">анголски кванзи</displayName>
@@ -4232,6 +5821,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Анголска нова кванца (1995–1999)</displayName>
 				<displayName count="one">анголска нова кванца (1995–1999)</displayName>
 				<displayName count="other">анголски нови кванци (1995–1999)</displayName>
+=======
+				<displayName>Анголска кванца</displayName>
+				<displayName count="one">анголска кванца</displayName>
+				<displayName count="other">анголски кванци</displayName>
+			</currency>
+			<currency type="AOK">
+				<displayName>Анголска кванца (1977-1990)</displayName>
+				<displayName count="one">анголска кванца (AOK)</displayName>
+				<displayName count="other">анголски кванци (AOK)</displayName>
+			</currency>
+			<currency type="AON">
+				<displayName>Анголска нова кванца (1990-2000)</displayName>
+				<displayName count="one">анголска нова кванца (AON)</displayName>
+				<displayName count="other">анголски нови кванци (AON)</displayName>
+			</currency>
+			<currency type="AOR">
+				<displayName>Анголска нова кванца (1995-1999)</displayName>
+				<displayName count="one">анголска нова кванца (AOR)</displayName>
+				<displayName count="other">анголски нови кванци (AOR)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ARA">
 				<displayName>Аржентински австрал</displayName>
@@ -4239,9 +5848,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">аржентински австрала</displayName>
 			</currency>
 			<currency type="ARP">
+<<<<<<< HEAD
 				<displayName>Аржентинско песо (1983–1985)</displayName>
 				<displayName count="one">аржентинско песо (1983–1985)</displayName>
 				<displayName count="other">аржентински песо (1983–1985)</displayName>
+=======
+				<displayName>Аржентинско песо (1983-1985)</displayName>
+				<displayName count="one">аржентинско песо (ARP)</displayName>
+				<displayName count="other">аржентински песо (ARP)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ARS">
 				<displayName>Аржентинско песо</displayName>
@@ -4257,6 +5872,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Австралийски долар</displayName>
 				<displayName count="one">австралийски долар</displayName>
 				<displayName count="other">австралийски долара</displayName>
+<<<<<<< HEAD
 				<symbol>AUD</symbol>
 			</currency>
 			<currency type="AWG">
@@ -4268,11 +5884,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Азербайджански манат (1993–2006)</displayName>
 				<displayName count="one">азербайджански манат (1993–2006)</displayName>
 				<displayName count="other">азербайджански маната (1993–2006)</displayName>
+=======
+			</currency>
+			<currency type="AWG">
+				<displayName>Арубски гилдер - о. Аруба</displayName>
+				<displayName count="one">арубски гилдер</displayName>
+				<displayName count="other">арубски гилдера</displayName>
+			</currency>
+			<currency type="AZM">
+				<displayName>Азербайджански манат (1993-2006)</displayName>
+				<displayName count="one">азербайджански манат (AZM)</displayName>
+				<displayName count="other">азербайджански маната (AZM)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="AZN">
 				<displayName>Азербайджански манат</displayName>
 				<displayName count="one">азербайджански манат</displayName>
+<<<<<<< HEAD
 				<displayName count="other">азербайджански маната</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BAD">
 				<displayName>Босна и Херцеговина-динар</displayName>
@@ -4285,9 +5916,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">босненски конвертируеми марки</displayName>
 			</currency>
 			<currency type="BBD">
+<<<<<<< HEAD
 				<displayName>Барбадоски долар</displayName>
 				<displayName count="one">барбадоски долар</displayName>
 				<displayName count="other">барбадоски долара</displayName>
+=======
+				<displayName>Барбейдоски долар</displayName>
+				<displayName count="one">барбейдоски долар</displayName>
+				<displayName count="other">барбейдоски долара</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BDT">
 				<displayName>Бангладешка така</displayName>
@@ -4310,7 +5947,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">белгийски франка (финансови)</displayName>
 			</currency>
 			<currency type="BGL">
+<<<<<<< HEAD
 				<displayName>Български конвертируем лев (1962–1999)</displayName>
+=======
+				<displayName>Български конвертируем лев (1962-1999)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<displayName count="one">български конвертируем лев</displayName>
 				<displayName count="other">български конвертируеми лева</displayName>
 			</currency>
@@ -4352,6 +5993,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BOV">
 				<displayName>Боливийски мвдол</displayName>
+<<<<<<< HEAD
 				<displayName count="one">боливийски мвдол</displayName>
 				<displayName count="other">боливийски мвдол</displayName>
 			</currency>
@@ -4359,18 +6001,30 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Бразилско ново крузейро (1967–1986)</displayName>
 				<displayName count="one">бразилско ново крузейро (1967–1986)</displayName>
 				<displayName count="other">бразилско ново крузейро (1967–1986)</displayName>
+=======
+			</currency>
+			<currency type="BRB">
+				<displayName>Бразилско ново крузейро (1967-1986)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BRC">
 				<displayName>Бразилско крозадо</displayName>
 			</currency>
 			<currency type="BRE">
+<<<<<<< HEAD
 				<displayName>Бразилско крузейро (1990–1993)</displayName>
+=======
+				<displayName>Бразилско крузейро (1990-1993)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BRL">
 				<displayName>Бразилски реал</displayName>
 				<displayName count="one">бразилски реал</displayName>
 				<displayName count="other">бразилски реала</displayName>
+<<<<<<< HEAD
 				<symbol>BRL</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BRN">
 				<displayName>Бразилско ново крозадо</displayName>
@@ -4381,7 +6035,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BSD">
 				<displayName>Бахамски долар</displayName>
 				<displayName count="one">бахамски долар</displayName>
+<<<<<<< HEAD
 				<displayName count="other">бахамски долара</displayName>
+=======
+				<displayName count="other">бахамски дол»ара</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BTN">
 				<displayName>Бутански нгултрум</displayName>
@@ -4389,7 +6047,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">бутански нгултрума</displayName>
 			</currency>
 			<currency type="BUK">
+<<<<<<< HEAD
 				<displayName>Бирмански киат</displayName>
+=======
+				<displayName>Киат</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BWP">
 				<displayName>Ботсуанска пула</displayName>
@@ -4397,9 +6059,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">ботсуански пули</displayName>
 			</currency>
 			<currency type="BYB">
+<<<<<<< HEAD
 				<displayName>Беларуска нова рубла (1994–1999)</displayName>
 				<displayName count="one">беларуска нова рубла (1994–1999)</displayName>
 				<displayName count="other">беларуски нови рубли (1994–1999)</displayName>
+=======
+				<displayName>Беларуска нова рубла (1994-1999)</displayName>
+				<displayName count="one">беларуска нова рубла (BYB)</displayName>
+				<displayName count="other">беларуски нови рубли (BYB)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BYR">
 				<displayName>Беларуска рубла</displayName>
@@ -4415,7 +6083,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Канадски долар</displayName>
 				<displayName count="one">канадски долар</displayName>
 				<displayName count="other">канадски долара</displayName>
+<<<<<<< HEAD
 				<symbol>CAD</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="CDF">
 				<displayName>Конгоански франк</displayName>
@@ -4442,10 +6113,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">чилийски песо</displayName>
 			</currency>
 			<currency type="CNY">
+<<<<<<< HEAD
 				<displayName>Китайски юан</displayName>
 				<displayName count="one">китайски юан</displayName>
 				<displayName count="other">китайски юана</displayName>
 				<symbol>CNY</symbol>
+=======
+				<displayName>Китайски ренминби юан</displayName>
+				<displayName count="one">китайски ренминби юан</displayName>
+				<displayName count="other">китайски ренминби юана</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="COP">
 				<displayName>Колумбийско песо</displayName>
@@ -4468,20 +6145,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="one">чехословашка конвертируема крона</displayName>
 				<displayName count="other">чехословашки конвертируеми крони</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="CUC">
 				<displayName>Кубинско конвертируемо песо</displayName>
 				<displayName count="one">кубинско конвертируемо песо</displayName>
 				<displayName count="other">кубински конвертируеми песо</displayName>
 			</currency>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<currency type="CUP">
 				<displayName>Кубинско песо</displayName>
 				<displayName count="one">кубинско песо</displayName>
 				<displayName count="other">кубински песо</displayName>
 			</currency>
 			<currency type="CVE">
+<<<<<<< HEAD
 				<displayName>Ескудо на Кабо Верде</displayName>
 				<displayName count="one">ескудо на Кабо Верде</displayName>
 				<displayName count="other">ескудо на Кабо Верде</displayName>
+=======
+				<displayName>Кабо Верде ескудо</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="CYP">
 				<displayName>Кипърска лира</displayName>
@@ -4524,7 +6208,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="ECS">
 				<displayName>Еквадорско сукре</displayName>
 				<displayName count="one">еквадорско сукре</displayName>
+<<<<<<< HEAD
 				<displayName count="other">еквадорско сукре</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ECV">
 				<displayName>Еквадорска банкова единица</displayName>
@@ -4556,9 +6243,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="EUR">
 				<displayName>Евро</displayName>
+<<<<<<< HEAD
 				<displayName count="one">евро</displayName>
 				<displayName count="other">евро</displayName>
 				<symbol>€</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="FIM">
 				<displayName>Финландска марка</displayName>
@@ -4566,6 +6256,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">финландски марки</displayName>
 			</currency>
 			<currency type="FJD">
+<<<<<<< HEAD
 				<displayName>Фиджийски долар</displayName>
 				<displayName count="one">фиджийски долар</displayName>
 				<displayName count="other">фиджийски долара</displayName>
@@ -4574,6 +6265,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Фолклендска лира</displayName>
 				<displayName count="one">фолклендска лира</displayName>
 				<displayName count="other">фолклендски лири</displayName>
+=======
+				<displayName>Фиджи - долар</displayName>
+				<displayName count="one">Фиджи - долар</displayName>
+				<displayName count="other">Фиджи - долара</displayName>
+			</currency>
+			<currency type="FKP">
+				<displayName>Фолкландска лира</displayName>
+				<displayName count="one">фолкландска лира</displayName>
+				<displayName count="other">фолкландски лири</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="FRF">
 				<displayName>Френски франк</displayName>
@@ -4584,7 +6285,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Британска лира</displayName>
 				<displayName count="one">британска лира</displayName>
 				<displayName count="other">британски лири</displayName>
+<<<<<<< HEAD
 				<symbol>GBP</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="GEK">
 				<displayName>Грузински купон</displayName>
@@ -4595,6 +6299,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">грузински лари</displayName>
 			</currency>
 			<currency type="GHC">
+<<<<<<< HEAD
 				<displayName>Ганайско седи (1979–2007)</displayName>
 				<displayName count="one">ганайско седи (1979–2007)</displayName>
 				<displayName count="other">ганайски седи (1979–2007)</displayName>
@@ -4603,6 +6308,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Ганайско седи</displayName>
 				<displayName count="one">ганайско седи</displayName>
 				<displayName count="other">ганайски седи</displayName>
+=======
+				<displayName>Ганайско седи (1979-2007)</displayName>
+				<displayName count="one">ганайско седи (GHC)</displayName>
+				<displayName count="other">ганайски седи (GHC)</displayName>
+			</currency>
+			<currency type="GHS">
+				<displayName>Ганайско седи</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="GIP">
 				<displayName>Гибралтарска лира</displayName>
@@ -4610,8 +6323,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">гибралтарски лири</displayName>
 			</currency>
 			<currency type="GMD">
+<<<<<<< HEAD
 				<displayName>Гамбийско даласи</displayName>
 				<displayName count="one">гамбийско даласи</displayName>
+=======
+				<displayName>Гамбийски даласи</displayName>
+				<displayName count="one">гамбийски даласи</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<displayName count="other">гамбийски даласи</displayName>
 			</currency>
 			<currency type="GNF">
@@ -4631,9 +6349,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">гръцки драхми</displayName>
 			</currency>
 			<currency type="GTQ">
+<<<<<<< HEAD
 				<displayName>Гватемалски кетцал</displayName>
 				<displayName count="one">гватемалски кетцал</displayName>
 				<displayName count="other">гватемалски кетцала</displayName>
+=======
+				<displayName>Гватемалски кветзал</displayName>
+				<displayName count="one">гватемалски кветзал</displayName>
+				<displayName count="other">гватемалски кветзала</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="GWE">
 				<displayName>Ескудо от Португалска Гвинея</displayName>
@@ -4647,10 +6371,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">гаянски долара</displayName>
 			</currency>
 			<currency type="HKD">
+<<<<<<< HEAD
 				<displayName>Хонконгски долар</displayName>
 				<displayName count="one">хонконгски долар</displayName>
 				<displayName count="other">хонконгски долара</displayName>
 				<symbol>HKD</symbol>
+=======
+				<displayName>Хонгконгски долар</displayName>
+				<displayName count="one">хонгконгски долар</displayName>
+				<displayName count="other">хонгконгски долара</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="HNL">
 				<displayName>Хондураска лемпира</displayName>
@@ -4696,13 +6426,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Израелски нов шекел</displayName>
 				<displayName count="one">израелски нов шекел</displayName>
 				<displayName count="other">израелски нови шекела</displayName>
+<<<<<<< HEAD
 				<symbol>ILS</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="INR">
 				<displayName>Индийска рупия</displayName>
 				<displayName count="one">индийска рупия</displayName>
 				<displayName count="other">индийски рупии</displayName>
+<<<<<<< HEAD
 				<symbol>INR</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="IQD">
 				<displayName>Иракски динар</displayName>
@@ -4738,7 +6474,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Японска йена</displayName>
 				<displayName count="one">японска йена</displayName>
 				<displayName count="other">японски йени</displayName>
+<<<<<<< HEAD
 				<symbol>JPY</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="KES">
 				<displayName>Кенийски шилинг</displayName>
@@ -4746,9 +6485,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">кенийски шилинга</displayName>
 			</currency>
 			<currency type="KGS">
+<<<<<<< HEAD
 				<displayName>Киргизстански сом</displayName>
 				<displayName count="one">киргизстански сом</displayName>
 				<displayName count="other">киргизстански сома</displayName>
+=======
+				<displayName>Киргистански сом</displayName>
+				<displayName count="one">киргистански сом</displayName>
+				<displayName count="other">киргистански сома</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="KHR">
 				<displayName>Камбоджански риел</displayName>
@@ -4766,10 +6511,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">севернокорейски вона</displayName>
 			</currency>
 			<currency type="KRW">
+<<<<<<< HEAD
 				<displayName>Южнокорейски вон</displayName>
 				<displayName count="one">южнокорейски вон</displayName>
 				<displayName count="other">южнокорейски вона</displayName>
 				<symbol>KRW</symbol>
+=======
+				<displayName>КНДР вон</displayName>
+				<displayName count="other">КНДР вона</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="KWD">
 				<displayName>Кувейтски динар</displayName>
@@ -4777,9 +6527,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">кувейтски динара</displayName>
 			</currency>
 			<currency type="KYD">
+<<<<<<< HEAD
 				<displayName>Кайманов долар</displayName>
 				<displayName count="one">кайманов долар</displayName>
 				<displayName count="other">кайманови долара</displayName>
+=======
+				<displayName>Кайманови острови - долар</displayName>
+				<displayName count="other">Кайманови острови - долара</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="KZT">
 				<displayName>Казахстанско тенге</displayName>
@@ -4812,9 +6567,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">лесотски лоти</displayName>
 			</currency>
 			<currency type="LTL">
+<<<<<<< HEAD
 				<displayName>Литовски литас</displayName>
 				<displayName count="one">литовски литас</displayName>
 				<displayName count="other">литовски литаса</displayName>
+=======
+				<displayName>Литовски литаз</displayName>
+				<displayName count="one">литовски литаз</displayName>
+				<displayName count="other">литовски литаза</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="LTT">
 				<displayName>Литовски талон</displayName>
@@ -4855,9 +6616,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">молдовски леу</displayName>
 			</currency>
 			<currency type="MGA">
+<<<<<<< HEAD
 				<displayName>Малгашко ариари</displayName>
 				<displayName count="one">малгашко ариари</displayName>
 				<displayName count="other">малгашки ариари</displayName>
+=======
+				<displayName>Малагасийски ариари</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="MGF">
 				<displayName>Малгашки франк - Мадагаскар</displayName>
@@ -4873,9 +6638,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Малийски франк</displayName>
 			</currency>
 			<currency type="MMK">
+<<<<<<< HEAD
 				<displayName>Мианмарски кият</displayName>
 				<displayName count="one">мианмарски кият</displayName>
 				<displayName count="other">мианмарски кията</displayName>
+=======
+				<displayName>Миянмарски (Бирма) кият</displayName>
+				<displayName count="one">миянмарски кият</displayName>
+				<displayName count="other">миянмарски кията</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="MNT">
 				<displayName>Монголски тугрик</displayName>
@@ -4883,6 +6654,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">монголски тугрика</displayName>
 			</currency>
 			<currency type="MOP">
+<<<<<<< HEAD
 				<displayName>Патака на Макао</displayName>
 				<displayName count="one">патака на Макао</displayName>
 				<displayName count="other">патаки на Макао</displayName>
@@ -4891,6 +6663,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Мавританска угия</displayName>
 				<displayName count="one">мавританска угия</displayName>
 				<displayName count="other">мавритански угии</displayName>
+=======
+				<displayName>Макао - патака</displayName>
+			</currency>
+			<currency type="MRO">
+				<displayName>Мавританска огия</displayName>
+				<displayName count="one">мавританска огия</displayName>
+				<displayName count="other">мавритански огии</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="MTL">
 				<displayName>Малтийска лира</displayName>
@@ -4913,6 +6693,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">малавийски квачи</displayName>
 			</currency>
 			<currency type="MXN">
+<<<<<<< HEAD
 				<displayName>Мексиканско песо</displayName>
 				<displayName count="one">мексиканско песо</displayName>
 				<displayName count="other">мексикански песо</displayName>
@@ -4922,6 +6703,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Мексиканско сребърно песо (1861–1992)</displayName>
 				<displayName count="one">мексиканско сребърно песо (1861–1992)</displayName>
 				<displayName count="other">мексикански сребърни песо (1861–1992)</displayName>
+=======
+				<displayName>Мексиканско ново песо</displayName>
+				<displayName count="one">мексиканско ново песо</displayName>
+				<displayName count="other">мексикански нови песо</displayName>
+			</currency>
+			<currency type="MXP">
+				<displayName>Мексиканско сребърно песо (1861-1992)</displayName>
+				<displayName count="one">мексиканско сребърно песо (MXP)</displayName>
+				<displayName count="other">мексикански сребърни песо (MXP)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="MXV">
 				<displayName>Мексиканска конвертируема единица (UDI)</displayName>
@@ -4929,7 +6720,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="MYR">
 				<displayName>Малайзийски рингит</displayName>
 				<displayName count="one">малайзийски рингит</displayName>
+<<<<<<< HEAD
 				<displayName count="other">малайзийски рингита</displayName>
+=======
+				<displayName count="other">малайзийски рингити</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="MZE">
 				<displayName>Мозамбикско ескудо</displayName>
@@ -4937,15 +6732,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">мозамбикски ескудо</displayName>
 			</currency>
 			<currency type="MZM">
+<<<<<<< HEAD
 				<displayName>Мозамбикски метикал (1980–2006)</displayName>
 				<displayName count="one">мозамбикски метикал (1980–2006)</displayName>
 				<displayName count="other">мозамбикски метикала (1980–2006)</displayName>
 			</currency>
 			<currency type="MZN">
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<displayName>Мозамбикски метикал</displayName>
 				<displayName count="one">мозамбикски метикал</displayName>
 				<displayName count="other">мозамбикски метикала</displayName>
 			</currency>
+<<<<<<< HEAD
+=======
+			<currency type="MZN">
+				<displayName>Мозамбишки метикал</displayName>
+			</currency>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<currency type="NAD">
 				<displayName>Намибийски долар</displayName>
 				<displayName count="one">намибийски долар</displayName>
@@ -4957,15 +6761,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">нигерийски найри</displayName>
 			</currency>
 			<currency type="NIC">
+<<<<<<< HEAD
 				<displayName>Никарагуанска кордоба (1988–1991)</displayName>
 				<displayName count="one">никарагуанска кордоба (1988–1991)</displayName>
 				<displayName count="other">никарагуански кордоби (1988–1991)</displayName>
 			</currency>
 			<currency type="NIO">
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<displayName>Никарагуанска кордоба</displayName>
 				<displayName count="one">никарагуанска кордоба</displayName>
 				<displayName count="other">никарагуански кордоби</displayName>
 			</currency>
+<<<<<<< HEAD
+=======
+			<currency type="NIO">
+				<displayName>Никарагуанска златна кордоба</displayName>
+			</currency>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<currency type="NLG">
 				<displayName>Холандски гулден</displayName>
 				<displayName count="one">холандски гулден</displayName>
@@ -4985,7 +6798,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Новозеландски долар</displayName>
 				<displayName count="one">новозеландски долар</displayName>
 				<displayName count="other">новозеландски долара</displayName>
+<<<<<<< HEAD
 				<symbol>NZD</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="OMR">
 				<displayName>Омански риал</displayName>
@@ -4993,8 +6809,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">омански риала</displayName>
 			</currency>
 			<currency type="PAB">
+<<<<<<< HEAD
 				<displayName>Панамска балбоа</displayName>
 				<displayName count="one">панамска балбоа</displayName>
+=======
+				<displayName>Панамски балбоа</displayName>
+				<displayName count="one">панамски балбоа</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<displayName count="other">панамски балбоа</displayName>
 			</currency>
 			<currency type="PEI">
@@ -5003,6 +6824,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="PEN">
 				<displayName>Перуански нов сол</displayName>
 				<displayName count="one">перуански нов сол</displayName>
+<<<<<<< HEAD
 				<displayName count="other">перуански нови сола</displayName>
 			</currency>
 			<currency type="PES">
@@ -5014,6 +6836,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Папуа-новогвинейска кина</displayName>
 				<displayName count="one">папуа-новогвинейска кина</displayName>
 				<displayName count="other">папуа-новогвинейски кини</displayName>
+=======
+			</currency>
+			<currency type="PES">
+				<displayName>Перуански сол</displayName>
+				<displayName count="one">перуански сол</displayName>
+			</currency>
+			<currency type="PGK">
+				<displayName>Папуа-новогвинейска кина</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="PHP">
 				<displayName>Филипинско песо</displayName>
@@ -5031,9 +6862,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">полски злоти</displayName>
 			</currency>
 			<currency type="PLZ">
+<<<<<<< HEAD
 				<displayName>Полска злота (1950–1995)</displayName>
 				<displayName count="one">полска злота (1950–1995)</displayName>
 				<displayName count="other">полски злоти (1950–1995)</displayName>
+=======
+				<displayName>Полска злота (1950-1995)</displayName>
+				<displayName count="one">полска злота (PLZ)</displayName>
+				<displayName count="other">полски злоти (PLZ)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="PTE">
 				<displayName>Португалско ескудо</displayName>
@@ -5072,12 +6909,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Руска рубла</displayName>
 				<displayName count="one">руска рубла</displayName>
 				<displayName count="other">руски рубли</displayName>
+<<<<<<< HEAD
 				<symbol>руб.</symbol>
 			</currency>
 			<currency type="RUR">
 				<displayName>Руска рубла (1991–1998)</displayName>
 				<displayName count="one">руска рубла (1991–1998)</displayName>
 				<displayName count="other">руски рубли (1991–1998)</displayName>
+=======
+				<symbol>Руб.</symbol>
+			</currency>
+			<currency type="RUR">
+				<displayName>Руска рубла (1991-1998)</displayName>
+				<displayName count="one">руска рубла (RUR)</displayName>
+				<displayName count="other">руски рубли (RUR)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="RWF">
 				<displayName>Руандски франк</displayName>
@@ -5090,9 +6936,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">саудитскоарабски риала</displayName>
 			</currency>
 			<currency type="SBD">
+<<<<<<< HEAD
 				<displayName>Долар на Соломоновите острови</displayName>
 				<displayName count="one">долар на Соломоновите острови</displayName>
 				<displayName count="other">долара на Соломоновите острови</displayName>
+=======
+				<displayName>Соломонови острови - долар</displayName>
+				<displayName count="other">Соломонови острови - долара</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="SCR">
 				<displayName>Сейшелска рупия</displayName>
@@ -5120,9 +6971,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">сингапурски долара</displayName>
 			</currency>
 			<currency type="SHP">
+<<<<<<< HEAD
 				<displayName>Лира на Света Елена</displayName>
 				<displayName count="one">лира на Света Елена</displayName>
 				<displayName count="other">лири на Света Елена</displayName>
+=======
+				<displayName>Света Елена лира</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="SIT">
 				<displayName>Словенски толар</displayName>
@@ -5146,14 +7001,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="SRD">
 				<displayName>Суринамски долар</displayName>
+<<<<<<< HEAD
 				<displayName count="one">суринамски долар</displayName>
 				<displayName count="other">суринамски долара</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="SRG">
 				<displayName>Суринамски гилдер</displayName>
 				<displayName count="one">суринамски гилдер</displayName>
 				<displayName count="other">суринамски гилдера</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="SSP">
 				<displayName>Южносуданска лира</displayName>
 				<displayName count="one">южносуданска лира</displayName>
@@ -5163,6 +7022,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Добра на Сао Томе и Принсипи</displayName>
 				<displayName count="one">добра на Сао Томе и Принсипи</displayName>
 				<displayName count="other">добра на Сао Томе и Принсипи</displayName>
+=======
+			<currency type="STD">
+				<displayName>Сао Томе и Принсипи - добра</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="SUR">
 				<displayName>Съветска рубла</displayName>
@@ -5188,7 +7051,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Тайландски бат</displayName>
 				<displayName count="one">тайландски бат</displayName>
 				<displayName count="other">тайландски бата</displayName>
+<<<<<<< HEAD
 				<symbol>THB</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="TJR">
 				<displayName>Таджикистанска рубла</displayName>
@@ -5205,20 +7071,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="one">туркменистански манат</displayName>
 				<displayName count="other">туркменистански маната</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="TMT">
 				<displayName>Туркменски манат</displayName>
 				<displayName count="one">туркменски манат</displayName>
 				<displayName count="other">туркменски маната</displayName>
 			</currency>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<currency type="TND">
 				<displayName>Тунизийски динар</displayName>
 				<displayName count="one">тунизийски динар</displayName>
 				<displayName count="other">тунизийски динара</displayName>
 			</currency>
 			<currency type="TOP">
+<<<<<<< HEAD
 				<displayName>Тонганска паанга</displayName>
 				<displayName count="one">тонганска паанга</displayName>
 				<displayName count="other">тонгански паанги</displayName>
+=======
+				<displayName>Тонга - па анга</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="TPE">
 				<displayName>Тиморско ескудо</displayName>
@@ -5226,25 +7099,42 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">тиморски ескудо</displayName>
 			</currency>
 			<currency type="TRL">
+<<<<<<< HEAD
 				<displayName>Турска лира (1922–2005)</displayName>
 				<displayName count="one">турска лира (1922–2005)</displayName>
 				<displayName count="other">турски лири (1922–2005)</displayName>
 			</currency>
 			<currency type="TRY">
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<displayName>Турска лира</displayName>
 				<displayName count="one">турска лира</displayName>
 				<displayName count="other">турски лири</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="TTD">
 				<displayName>Долар на Тринидад и Тобаго</displayName>
 				<displayName count="one">долар на Тринидад и Тобаго</displayName>
 				<displayName count="other">долара на Тринидад и Тобаго</displayName>
+=======
+			<currency type="TRY">
+				<displayName>Нова турска лира</displayName>
+				<displayName count="one">нова турска лира</displayName>
+				<displayName count="other">нови турски лири</displayName>
+			</currency>
+			<currency type="TTD">
+				<displayName>Тринидат и Тобаго - долар</displayName>
+				<displayName count="other">Тринидат и Тобаго - долара</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="TWD">
 				<displayName>Тайвански долар</displayName>
 				<displayName count="one">тайвански долар</displayName>
 				<displayName count="other">тайвански долара</displayName>
+<<<<<<< HEAD
 				<symbol>TWD</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="TZS">
 				<displayName>Танзанийски шилинг</displayName>
@@ -5262,6 +7152,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">украински карбованеца</displayName>
 			</currency>
 			<currency type="UGS">
+<<<<<<< HEAD
 				<displayName>Угандийски шилинг (1966–1987)</displayName>
 				<displayName count="one">угандийски шилинг (1966–1987)</displayName>
 				<displayName count="other">угандийски шилинга (1966–1987)</displayName>
@@ -5276,14 +7167,34 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="one">щатски долар</displayName>
 				<displayName count="other">щатски долара</displayName>
 				<symbol>щ.д.</symbol>
+=======
+				<displayName>Угандийски шилинг (1966-1987)</displayName>
+				<displayName count="one">угандийски шилинг (UGS)</displayName>
+				<displayName count="other">угандийски шилинга (UGS)</displayName>
+			</currency>
+			<currency type="UGX">
+				<displayName>Угандийски нов шилинг</displayName>
+				<displayName count="one">угандийски нов шилинг</displayName>
+				<displayName count="other">угандийски нови шилинга</displayName>
+			</currency>
+			<currency type="USD">
+				<displayName>САЩ долар</displayName>
+				<displayName count="other">САЩ долара</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="UYI">
 				<displayName>Уругвайско песо (индекс на инфлацията)</displayName>
 			</currency>
 			<currency type="UYP">
+<<<<<<< HEAD
 				<displayName>Уругвайско песо (1975–1993)</displayName>
 				<displayName count="one">уругвайско песо (1975–1993)</displayName>
 				<displayName count="other">уругвайски песо (1975–1993)</displayName>
+=======
+				<displayName>Уругвайско песо (1975-1993)</displayName>
+				<displayName count="one">уругвайско песо (UYP)</displayName>
+				<displayName count="other">уругвайски песо (UYP)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="UYU">
 				<displayName>Уругвайско песо</displayName>
@@ -5291,6 +7202,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">уругвайски песо</displayName>
 			</currency>
 			<currency type="UZS">
+<<<<<<< HEAD
 				<displayName>Узбекски сум</displayName>
 				<displayName count="one">узбекски сум</displayName>
 				<displayName count="other">узбекски сума</displayName>
@@ -5301,14 +7213,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">венецуелски боливара (1871–2008)</displayName>
 			</currency>
 			<currency type="VEF">
+=======
+				<displayName>Узбекистански сум</displayName>
+				<displayName count="one">узбекистански сум</displayName>
+				<displayName count="other">узбекистански сума</displayName>
+			</currency>
+			<currency type="VEB">
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<displayName>Венецуелски боливар</displayName>
 				<displayName count="one">венецуелски боливар</displayName>
 				<displayName count="other">венецуелски боливара</displayName>
 			</currency>
+<<<<<<< HEAD
+=======
+			<currency type="VEF">
+				<displayName>Венецуелски боливар фуерте</displayName>
+			</currency>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<currency type="VND">
 				<displayName>Виетнамски донг</displayName>
 				<displayName count="one">виетнамски донг</displayName>
 				<displayName count="other">виетнамски донга</displayName>
+<<<<<<< HEAD
 				<symbol>VND</symbol>
 			</currency>
 			<currency type="VUV">
@@ -5329,10 +7255,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="XAG">
 				<displayName>Сребро</displayName>
+=======
+			</currency>
+			<currency type="VUV">
+				<displayName>Вануату - вату</displayName>
+			</currency>
+			<currency type="WST">
+				<displayName>Самоа - тала</displayName>
+			</currency>
+			<currency type="XAF">
+				<displayName>Буркина Фасо - CFA - франк</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="XAU">
 				<displayName>Злато</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="XBA">
 				<displayName>Европейска съставна единица</displayName>
 			</currency>
@@ -5353,6 +7291,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="XDR">
 				<displayName>Специални права на тираж</displayName>
+=======
+			<currency type="XCD">
+				<displayName>Източнокарибски долар - Антигуа</displayName>
+				<displayName count="one">източнокарибски долар</displayName>
+				<displayName count="other">източнокарибски долара</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="XEU">
 				<displayName>Еку на ЕИО</displayName>
@@ -5363,6 +7307,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">френски златна франка</displayName>
 			</currency>
 			<currency type="XOF">
+<<<<<<< HEAD
 				<displayName>Западноафрикански CFA франк</displayName>
 				<displayName count="one">западноафрикански CFA франк</displayName>
 				<displayName count="other">западноафрикански CFA франка</displayName>
@@ -5370,11 +7315,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="XPD">
 				<displayName>Паладий</displayName>
+=======
+				<displayName>Бенин - CFA франк</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="XPF">
 				<displayName>Френскополинезийски франк</displayName>
 				<displayName count="one">френскополинезийски франк</displayName>
 				<displayName count="other">френскополинезийски франка</displayName>
+<<<<<<< HEAD
 				<symbol>CFPF</symbol>
 			</currency>
 			<currency type="XPT">
@@ -5387,6 +7336,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Непозната или невалидна валута</displayName>
 				<displayName count="one">непозната или невалидна валута</displayName>
 				<displayName count="other">непозната или невалидна валута</displayName>
+=======
+			</currency>
+			<currency type="XXX">
+				<displayName>Непозната или невалидна валута</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="YDD">
 				<displayName>Йеменски динар</displayName>
@@ -5422,6 +7376,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">южноафрикански ранда</displayName>
 			</currency>
 			<currency type="ZMK">
+<<<<<<< HEAD
 				<displayName>Замбийска квача (1968–2012)</displayName>
 				<displayName count="one">замбийска квача (1968–2012)</displayName>
 				<displayName count="other">замбийски квачи (1968–2012)</displayName>
@@ -5430,6 +7385,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Замбийска куача</displayName>
 				<displayName count="one">замбийска куача</displayName>
 				<displayName count="other">замбийски куачи</displayName>
+=======
+				<displayName>Замбийска квача</displayName>
+				<displayName count="one">замбийска квача</displayName>
+				<displayName count="other">замбийски квачи</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ZRN">
 				<displayName>Заирско ново зайре</displayName>
@@ -5446,6 +7406,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="one">зимбабвийски долар</displayName>
 				<displayName count="other">зимбабвийски долара</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="ZWL">
 				<displayName>Зимбабвийски долар (2009)</displayName>
 				<displayName count="one">зимбабвийски долар (2009)</displayName>
@@ -6055,6 +8016,40 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<listPatternPart type="2">{0} и {1}</listPatternPart>
 		</listPattern>
 	</listPatterns>
+=======
+		</currencies>
+	</numbers>
+	<units>
+		<unit type="day">
+			<unitPattern count="one">{0} ден</unitPattern>
+			<unitPattern count="other">{0} дена</unitPattern>
+		</unit>
+		<unit type="hour">
+			<unitPattern count="one">{0} час</unitPattern>
+			<unitPattern count="other">{0} часа</unitPattern>
+		</unit>
+		<unit type="minute">
+			<unitPattern count="one">{0} минута</unitPattern>
+			<unitPattern count="other">{0} минути</unitPattern>
+		</unit>
+		<unit type="month">
+			<unitPattern count="one">{0} месец</unitPattern>
+			<unitPattern count="other">{0} месеца</unitPattern>
+		</unit>
+		<unit type="second">
+			<unitPattern count="one">{0} секунда</unitPattern>
+			<unitPattern count="other">{0} секунди</unitPattern>
+		</unit>
+		<unit type="week">
+			<unitPattern count="one">{0} седмица</unitPattern>
+			<unitPattern count="other">{0} седмици</unitPattern>
+		</unit>
+		<unit type="year">
+			<unitPattern count="one">{0} година</unitPattern>
+			<unitPattern count="other">{0} години</unitPattern>
+		</unit>
+	</units>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	<posix>
 		<messages>
 			<yesstr>да:д</yesstr>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -8,33 +9,57 @@ For terms of use, see http://www.unicode.org/copyright.html
 	<identity>
 		<version number="$Revision: 9852 $"/>
 		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.122 $"/>
+		<generation date="$Date: 2009/06/15 03:46:24 $"/>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		<language type="pl"/>
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
 			<localePattern>{0} ({1})</localePattern>
+<<<<<<< HEAD
 			<localeSeparator>{0}, {1}</localeSeparator>
 			<localeKeyTypePattern>{0}: {1}</localeKeyTypePattern>
+=======
+			<localeSeparator>, </localeSeparator>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</localeDisplayPattern>
 		<languages>
 			<language type="aa">afar</language>
 			<language type="ab">abchaski</language>
 			<language type="ace">aceh</language>
 			<language type="ach">aczoli</language>
+<<<<<<< HEAD
 			<language type="ada" draft="contributed">adangme</language>
 			<language type="ady">adygejski</language>
 			<language type="ae">awestyjski</language>
 			<language type="af">afrikaans</language>
 			<language type="afh" draft="contributed">afrihili</language>
 			<language type="agq" draft="contributed">aghem</language>
+=======
+			<language type="ada">adangme</language>
+			<language type="ady">adygejski</language>
+			<language type="ae">awestyjski</language>
+			<language type="af">afrikaans</language>
+			<language type="afa">afro-azjatycki</language>
+			<language type="afh">afrihili</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ain">ajnu</language>
 			<language type="ak">akan</language>
 			<language type="akk">akadyjski</language>
 			<language type="ale">aleucki</language>
+<<<<<<< HEAD
+=======
+			<language type="alg">języki algonkin</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="alt">południowoałtajski</language>
 			<language type="am">amharski</language>
 			<language type="an">aragoński</language>
 			<language type="ang">staroangielski</language>
+<<<<<<< HEAD
 			<language type="anp" draft="contributed">angika</language>
 			<language type="ar">arabski</language>
 			<language type="ar_001">współczesny arabski</language>
@@ -45,10 +70,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="as">asamski</language>
 			<language type="asa" draft="contributed">asu</language>
 			<language type="ast">asturyjski</language>
+=======
+			<language type="anp">angika</language>
+			<language type="apa">język Apaczów</language>
+			<language type="ar">arabski</language>
+			<language type="arc">aramejski</language>
+			<language type="arn">araukański</language>
+			<language type="arp">arapaho</language>
+			<language type="art">sztuczny</language>
+			<language type="arw">arawak</language>
+			<language type="as">asamski</language>
+			<language type="ast">asturyjski</language>
+			<language type="ath">język Atapasków</language>
+			<language type="aus">język australijski</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="av">awarski</language>
 			<language type="awa">awadhi</language>
 			<language type="ay">ajmara</language>
 			<language type="az">azerski</language>
+<<<<<<< HEAD
 			<language type="az" alt="short">azerski</language>
 			<language type="ba">baszkirski</language>
 			<language type="bal">beludżi</language>
@@ -89,6 +129,46 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ce">czeczeński</language>
 			<language type="ceb" draft="contributed">cebuano</language>
 			<language type="cgg" draft="contributed">chiga</language>
+=======
+			<language type="ba">baszkirski</language>
+			<language type="bad">język banda</language>
+			<language type="bai">język bamileke</language>
+			<language type="bal">beludżi</language>
+			<language type="ban">balijski</language>
+			<language type="bas">basa</language>
+			<language type="bat">bałtycki</language>
+			<language type="be">białoruski</language>
+			<language type="bej">bedża</language>
+			<language type="bem">bemba</language>
+			<language type="ber">berberski</language>
+			<language type="bg">bułgarski</language>
+			<language type="bh">biharski</language>
+			<language type="bho">bhodźpuri</language>
+			<language type="bi">Bislama</language>
+			<language type="bik">bikol</language>
+			<language type="bin">bini</language>
+			<language type="bla">siksika</language>
+			<language type="bm">bambara</language>
+			<language type="bn">bengalski</language>
+			<language type="bnt">bantu</language>
+			<language type="bo">tybetański</language>
+			<language type="br">bretoński</language>
+			<language type="bra">bradź</language>
+			<language type="bs">bośniacki</language>
+			<language type="btk">batak</language>
+			<language type="bua">buriacki</language>
+			<language type="bug">bugiński</language>
+			<language type="byn">blin</language>
+			<language type="ca">kataloński</language>
+			<language type="cad">kaddo</language>
+			<language type="cai">język Indian środkowoamerykańskich</language>
+			<language type="car">karibi</language>
+			<language type="cau">kaukaski</language>
+			<language type="cch">atsam</language>
+			<language type="ce">czeczeński</language>
+			<language type="ceb">cebuano</language>
+			<language type="cel">celtycki</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ch">chamorro</language>
 			<language type="chb">czibcza</language>
 			<language type="chg">czagatajski</language>
@@ -97,6 +177,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="chn">żargon Chinook</language>
 			<language type="cho">choctaw</language>
 			<language type="chp">chipewyan</language>
+<<<<<<< HEAD
 			<language type="chr">czirokeski</language>
 			<language type="chy">język Czejenów</language>
 			<language type="ckb" draft="contributed">sorani kurdyjski</language>
@@ -107,12 +188,33 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="cs">czeski</language>
 			<language type="csb">kaszubski</language>
 			<language type="cu">staro-cerkiewno-słowiański</language>
+=======
+			<language type="chr">czirokezki</language>
+			<language type="chy">język Czejenów</language>
+			<language type="cmc">czam</language>
+			<language type="co">korsykański</language>
+			<language type="cop">koptyjski</language>
+			<language type="cpe">angielski kreolski lub pidżin</language>
+			<language type="cpf">francuski kreolski lub pidżin</language>
+			<language type="cpp">portugalski kreolski lub pidżin</language>
+			<language type="cr">kri</language>
+			<language type="crh">krymski turecki</language>
+			<language type="crp">kreolski lub pidżin</language>
+			<language type="cs">czeski</language>
+			<language type="csb">kaszubski</language>
+			<language type="cu">staro-cerkiewno-słowiański</language>
+			<language type="cus">kuszycki</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="cv">czuwaski</language>
 			<language type="cy">walijski</language>
 			<language type="da">duński</language>
 			<language type="dak">dakota</language>
 			<language type="dar">dargwijski</language>
+<<<<<<< HEAD
 			<language type="dav" draft="contributed">taita</language>
+=======
+			<language type="day">dajak</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="de">niemiecki</language>
 			<language type="de_AT">austriacki niemiecki</language>
 			<language type="de_CH">wysokoniemiecki (Szwajcaria)</language>
@@ -120,17 +222,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="den">slave</language>
 			<language type="dgr">dogrib</language>
 			<language type="din">dinka</language>
+<<<<<<< HEAD
 			<language type="dje" draft="contributed">dżerma</language>
 			<language type="doi">dogri</language>
+=======
+			<language type="doi">dogri</language>
+			<language type="dra">drawidyjski</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="dsb">dolnołużycki</language>
 			<language type="dua">duala</language>
 			<language type="dum">średniowieczny niderlandzki</language>
 			<language type="dv">malediwski</language>
+<<<<<<< HEAD
 			<language type="dyo" draft="contributed">diola</language>
 			<language type="dyu">dyula</language>
 			<language type="dz">dzongkha</language>
 			<language type="dzg" draft="contributed">dazaga</language>
 			<language type="ebu" draft="contributed">embu</language>
+=======
+			<language type="dyu">dyula</language>
+			<language type="dz">dzongkha</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ee">ewe</language>
 			<language type="efi">efik</language>
 			<language type="egy">starożytny egipski</language>
@@ -138,6 +250,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="el">grecki</language>
 			<language type="elx">elamicki</language>
 			<language type="en">angielski</language>
+<<<<<<< HEAD
 			<language type="en_AU">australijski angielski</language>
 			<language type="en_CA">kanadyjski angielski</language>
 			<language type="en_GB">brytyjski angielski</language>
@@ -149,6 +262,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="es_419">amerykański hiszpański</language>
 			<language type="es_ES">europejski hiszpański</language>
 			<language type="es_MX">meksykański hiszpański</language>
+=======
+			<language type="en_CA">kanadyjski angielski</language>
+			<language type="en_GB">brytyjski angielski</language>
+			<language type="en_US">angielski (USA)</language>
+			<language type="enm">średnioangielski</language>
+			<language type="eo">esperanto</language>
+			<language type="es">hiszpański</language>
+			<language type="es_419">hiszpański (Ameryka Łacińska)</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="et">estoński</language>
 			<language type="eu">baskijski</language>
 			<language type="ewo">ewondo</language>
@@ -158,26 +280,44 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ff">fulani</language>
 			<language type="fi">fiński</language>
 			<language type="fil">filipino</language>
+<<<<<<< HEAD
+=======
+			<language type="fiu">ugrofiński</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="fj">fidżijski</language>
 			<language type="fo">farerski</language>
 			<language type="fon">fon</language>
 			<language type="fr">francuski</language>
 			<language type="fr_CA">kanadyjski francuski</language>
+<<<<<<< HEAD
 			<language type="fr_CH">szwajcarski francuski</language>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="frm">średniofrancuski</language>
 			<language type="fro">starofrancuski</language>
 			<language type="frr">północnofryzyjski</language>
 			<language type="frs">fryzyjski wschodni</language>
 			<language type="fur">friulijski</language>
+<<<<<<< HEAD
 			<language type="fy">zachodniofryzyjski</language>
+=======
+			<language type="fy">fryzyjski</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ga">irlandzki</language>
 			<language type="gaa">ga</language>
 			<language type="gay">gayo</language>
 			<language type="gba">gbaya</language>
 			<language type="gd">szkocki gaelicki</language>
+<<<<<<< HEAD
 			<language type="gez">gyyz</language>
 			<language type="gil">gilbertański</language>
 			<language type="gl">galicyjski</language>
+=======
+			<language type="gem">germański</language>
+			<language type="gez">gyyz</language>
+			<language type="gil">gilbertański</language>
+			<language type="gl">galisyjski</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="gmh">średnio-wysoko-niemiecki</language>
 			<language type="gn">guarani</language>
 			<language type="goh">staro-wysoko-niemiecki</language>
@@ -188,15 +328,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="grc">starogrecki</language>
 			<language type="gsw">szwajcarski niemiecki</language>
 			<language type="gu">gudźaracki</language>
+<<<<<<< HEAD
 			<language type="guz" draft="contributed">gusii</language>
 			<language type="gv">manx</language>
 			<language type="gwi">gwichʼin</language>
+=======
+			<language type="gv">manx</language>
+			<language type="gwi">Gwichʼin</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ha">hausa</language>
 			<language type="hai">haida</language>
 			<language type="haw">hawajski</language>
 			<language type="he">hebrajski</language>
 			<language type="hi">hindi</language>
 			<language type="hil">hiligajnon</language>
+<<<<<<< HEAD
+=======
+			<language type="him">himachali</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="hit">hetycki</language>
 			<language type="hmn">hmongijski</language>
 			<language type="ho">hiri motu</language>
@@ -209,22 +358,40 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="hz">herero</language>
 			<language type="ia">interlingua</language>
 			<language type="iba">ibanag</language>
+<<<<<<< HEAD
 			<language type="ibb" draft="contributed">ibibio</language>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="id">indonezyjski</language>
 			<language type="ie">interlingue</language>
 			<language type="ig">igbo</language>
 			<language type="ii">syczuański</language>
+<<<<<<< HEAD
 			<language type="ik">inupiak</language>
 			<language type="ilo">ilokano</language>
 			<language type="inh">inguski</language>
 			<language type="io">ido</language>
+=======
+			<language type="ijo">ijo</language>
+			<language type="ik">inupiak</language>
+			<language type="ilo">ilokano</language>
+			<language type="inc">indoaryjski</language>
+			<language type="ine">indoeuropejski</language>
+			<language type="inh">inguski</language>
+			<language type="io">ido</language>
+			<language type="ira">irański</language>
+			<language type="iro">irokeski</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="is">islandzki</language>
 			<language type="it">włoski</language>
 			<language type="iu">inuktitut</language>
 			<language type="ja">japoński</language>
 			<language type="jbo">lojban</language>
+<<<<<<< HEAD
 			<language type="jgo" draft="contributed">ngombe</language>
 			<language type="jmc" draft="contributed">machame</language>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="jpr">judeoperski</language>
 			<language type="jrb">judeoarabski</language>
 			<language type="jv">jawajski</language>
@@ -234,6 +401,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="kac">kaczin</language>
 			<language type="kaj">jju</language>
 			<language type="kam">kamba</language>
+<<<<<<< HEAD
 			<language type="kaw">kawi</language>
 			<language type="kbd">kabardyjski</language>
 			<language type="kbl" draft="contributed">kanembu</language>
@@ -251,6 +419,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="kkj" draft="contributed">kako</language>
 			<language type="kl">grenlandzki</language>
 			<language type="kln" draft="contributed">kalenjin</language>
+=======
+			<language type="kar">kareński</language>
+			<language type="kaw">kawi</language>
+			<language type="kbd">kabardyjski</language>
+			<language type="kcg">tyap</language>
+			<language type="kfo">koro</language>
+			<language type="kg">kongo</language>
+			<language type="kha">khasi</language>
+			<language type="khi">khoisan</language>
+			<language type="kho">chotański</language>
+			<language type="ki">kikuju</language>
+			<language type="kj">kwanyama</language>
+			<language type="kk">kazachski</language>
+			<language type="kl">grenlandzki</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="km">khmerski</language>
 			<language type="kmb">kimbundu</language>
 			<language type="kn">kannada</language>
@@ -261,11 +444,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="kr">kanuri</language>
 			<language type="krc">karaczajsko-bałkarski</language>
 			<language type="krl">karelski</language>
+<<<<<<< HEAD
 			<language type="kru">kurukh</language>
 			<language type="ks">kaszmirski</language>
 			<language type="ksb" draft="contributed">sambala</language>
 			<language type="ksf" draft="contributed">bafia</language>
 			<language type="ksh" draft="contributed">gwara kolońska</language>
+=======
+			<language type="kro">kru</language>
+			<language type="kru">kurukh</language>
+			<language type="ks">kaszmirski</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ku">kurdyjski</language>
 			<language type="kum">kumycki</language>
 			<language type="kut">kutenai</language>
@@ -274,9 +463,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ky">kirgiski</language>
 			<language type="la">łaciński</language>
 			<language type="lad">ladyński</language>
+<<<<<<< HEAD
 			<language type="lag" draft="contributed">langi</language>
 			<language type="lah">lahnda</language>
 			<language type="lam" draft="contributed">lamba</language>
+=======
+			<language type="lah">lahnda</language>
+			<language type="lam">lamba</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="lb">luksemburski</language>
 			<language type="lez">lezgijski</language>
 			<language type="lg">ganda</language>
@@ -292,14 +486,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="lun">lunda</language>
 			<language type="luo">luo</language>
 			<language type="lus">lushai</language>
+<<<<<<< HEAD
 			<language type="luy" draft="contributed">luhya</language>
 			<language type="lv">łotewski</language>
 			<language type="mad">madurajski</language>
 			<language type="maf" draft="contributed">mafa</language>
+=======
+			<language type="lv">łotewski</language>
+			<language type="mad">madurajski</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mag">magahi</language>
 			<language type="mai">maithili</language>
 			<language type="mak">makasar</language>
 			<language type="man">mandingo</language>
+<<<<<<< HEAD
 			<language type="mas">masajski</language>
 			<language type="mde" draft="contributed">maba</language>
 			<language type="mdf">moksha</language>
@@ -311,51 +511,98 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="mga">średnioirlandzki</language>
 			<language type="mgh" draft="contributed">makua</language>
 			<language type="mgo" draft="contributed">meta</language>
+=======
+			<language type="map">austronezyjski</language>
+			<language type="mas">masajski</language>
+			<language type="mdf">moksha</language>
+			<language type="mdr">mandar</language>
+			<language type="men">mende</language>
+			<language type="mg">malgaski</language>
+			<language type="mga">średnioirlandzki</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mh">marshall</language>
 			<language type="mi">maoryjski</language>
 			<language type="mic">micmac</language>
 			<language type="min">minangkabu</language>
+<<<<<<< HEAD
 			<language type="mk">macedoński</language>
+=======
+			<language type="mis">inny język</language>
+			<language type="mk">macedoński</language>
+			<language type="mkh">mon-khmer</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ml">malajalam</language>
 			<language type="mn">mongolski</language>
 			<language type="mnc">manchu</language>
 			<language type="mni">manipuryjski</language>
+<<<<<<< HEAD
+=======
+			<language type="mno">manobo</language>
+			<language type="mo">mołdawski</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="moh">mohawk</language>
 			<language type="mos">mossi</language>
 			<language type="mr">marathi</language>
 			<language type="ms">malajski</language>
 			<language type="mt">maltański</language>
+<<<<<<< HEAD
 			<language type="mua" draft="contributed">mundang</language>
 			<language type="mul">wiele języków</language>
+=======
+			<language type="mul">wiele języków</language>
+			<language type="mun">mundajski</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mus">creek</language>
 			<language type="mwl">mirandese</language>
 			<language type="mwr">marwari</language>
 			<language type="my">birmański</language>
+<<<<<<< HEAD
 			<language type="mye" draft="contributed">myene</language>
 			<language type="myv">erzya</language>
 			<language type="na">nauru</language>
 			<language type="nap">neapolitański</language>
 			<language type="naq" draft="contributed">nama</language>
 			<language type="nb">norweski (bokmål)</language>
+=======
+			<language type="myn">język Majów</language>
+			<language type="myv">erzya</language>
+			<language type="na">nauru</language>
+			<language type="nah">nahuatl</language>
+			<language type="nai">język Indian północnoamerykańskich</language>
+			<language type="nap">neapolitański</language>
+			<language type="nb">norweski Bokmål</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="nd">ndebele północny</language>
 			<language type="nds">dolnosaksoński</language>
 			<language type="ne">nepalski</language>
 			<language type="new">newarski</language>
 			<language type="ng">ndonga</language>
 			<language type="nia">nias</language>
+<<<<<<< HEAD
 			<language type="niu">niue</language>
 			<language type="nl">niderlandzki</language>
 			<language type="nl_BE">flamandzki (Belgia)</language>
 			<language type="nmg" draft="contributed">ngumba</language>
 			<language type="nn">norweski (nynorsk)</language>
 			<language type="nnh" draft="contributed">ngiemboon</language>
+=======
+			<language type="nic">nigrokordofański</language>
+			<language type="niu">niue</language>
+			<language type="nl">niderlandzki</language>
+			<language type="nl_BE">flamandzki (Belgia)</language>
+			<language type="nn">norweski Nynorsk</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="no">norweski</language>
 			<language type="nog">nogajski</language>
 			<language type="non">staronordyjski</language>
 			<language type="nqo">n’ko</language>
 			<language type="nr">ndebele południowy</language>
 			<language type="nso">sotho północny</language>
+<<<<<<< HEAD
 			<language type="nus" draft="contributed">nuer</language>
+=======
+			<language type="nub">nubijski</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="nv">nawaho</language>
 			<language type="nwc">newarski klasyczny</language>
 			<language type="ny">njandża</language>
@@ -368,25 +615,45 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="om">oromski</language>
 			<language type="or">orija</language>
 			<language type="os">osetyjski</language>
+<<<<<<< HEAD
 			<language type="osa" draft="contributed">osage</language>
 			<language type="ota">osmańsko-turecki</language>
 			<language type="pa">pendżabski</language>
+=======
+			<language type="osa">osage</language>
+			<language type="ota">osmańsko-turecki</language>
+			<language type="oto">otomi</language>
+			<language type="pa">pendżabski</language>
+			<language type="paa">papuaski</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="pag">pangasino</language>
 			<language type="pal">pahlavi</language>
 			<language type="pam">pampango</language>
 			<language type="pap">papiamento</language>
 			<language type="pau">palau</language>
 			<language type="peo">staroperski</language>
+<<<<<<< HEAD
+=======
+			<language type="phi">filipiński</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="phn">fenicki</language>
 			<language type="pi">palijski</language>
 			<language type="pl">polski</language>
 			<language type="pon">ponpejski</language>
+<<<<<<< HEAD
 			<language type="pro">staroprowansalski</language>
 			<language type="ps">paszto</language>
 			<language type="ps" alt="variant">pasztuński</language>
 			<language type="pt">portugalski</language>
 			<language type="pt_BR">brazylijski portugalski</language>
 			<language type="pt_PT">europejski portugalski</language>
+=======
+			<language type="pra">prakryty</language>
+			<language type="pro">staroprowansalski</language>
+			<language type="ps">paszto</language>
+			<language type="pt">portugalski</language>
+			<language type="pt_BR">brazylyjski portugalski</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="qu">keczua</language>
 			<language type="raj">radźasthani</language>
 			<language type="rap">rapanui</language>
@@ -394,13 +661,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="rm">retoromański</language>
 			<language type="rn">rundi</language>
 			<language type="ro">rumuński</language>
+<<<<<<< HEAD
 			<language type="ro_MD">mołdawski</language>
 			<language type="rof" draft="contributed">rombo</language>
+=======
+			<language type="roa">romański</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="rom">cygański</language>
 			<language type="root">język rdzenny</language>
 			<language type="ru">rosyjski</language>
 			<language type="rup">arumuński</language>
 			<language type="rw">kinya-ruanda</language>
+<<<<<<< HEAD
 			<language type="rwk" draft="contributed">rwa</language>
 			<language type="sa">sanskryt</language>
 			<language type="sad">sandawe</language>
@@ -411,11 +683,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sat">santali</language>
 			<language type="sba" draft="contributed">ngambay</language>
 			<language type="sbp" draft="contributed">sangu</language>
+=======
+			<language type="sa">sanskryt</language>
+			<language type="sad">sandawe</language>
+			<language type="sah">jakucki</language>
+			<language type="sai">język Indian południowoamerykańskich</language>
+			<language type="sal">salisz</language>
+			<language type="sam">samarytański aramejski</language>
+			<language type="sas">sasak</language>
+			<language type="sat">santali</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="sc">sardyński</language>
 			<language type="scn">sycylijski</language>
 			<language type="sco">szkocki</language>
 			<language type="sd">sindhi</language>
 			<language type="se">lapoński północny</language>
+<<<<<<< HEAD
 			<language type="see" draft="contributed">seneka</language>
 			<language type="seh" draft="contributed">sena</language>
 			<language type="sel">selkupski</language>
@@ -432,6 +715,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sl">słoweński</language>
 			<language type="sm">samoański</language>
 			<language type="sma">lapoński południowy</language>
+=======
+			<language type="sel">selkupski</language>
+			<language type="sem">semicki</language>
+			<language type="sg">sango</language>
+			<language type="sga">staroirlandzki</language>
+			<language type="sgn">migowy</language>
+			<language type="sh">serbsko-chorwacki</language>
+			<language type="shn">shan</language>
+			<language type="si">syngaleski</language>
+			<language type="sid">sidamo</language>
+			<language type="sio">siouański</language>
+			<language type="sit">chińsko-tybetański</language>
+			<language type="sk">słowacki</language>
+			<language type="sl">słoweński</language>
+			<language type="sla">słowiański</language>
+			<language type="sm">samoański</language>
+			<language type="sma">lapoński południowy</language>
+			<language type="smi">lapoński</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="smj">lapoński Lule</language>
 			<language type="smn">lapoński Inari</language>
 			<language type="sms">lapoński Skolt</language>
@@ -439,12 +741,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="snk">soninke</language>
 			<language type="so">somalijski</language>
 			<language type="sog">sogdyjski</language>
+<<<<<<< HEAD
+=======
+			<language type="son">songhaj</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="sq">albański</language>
 			<language type="sr">serbski</language>
 			<language type="srn">sranan tongo</language>
 			<language type="srr">serer</language>
 			<language type="ss">siswati</language>
+<<<<<<< HEAD
 			<language type="ssy" draft="contributed">saho</language>
+=======
+			<language type="ssa">nilosaharyjski</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="st">sotho południowy</language>
 			<language type="su">sundajski</language>
 			<language type="suk">sukuma</language>
@@ -452,6 +762,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">sumeryjski</language>
 			<language type="sv">szwedzki</language>
 			<language type="sw">suahili</language>
+<<<<<<< HEAD
 			<language type="swb">komoryjski</language>
 			<language type="swc" draft="contributed">kongijski suahili</language>
 			<language type="syc">syriacki</language>
@@ -460,6 +771,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="te">telugu</language>
 			<language type="tem">temne</language>
 			<language type="teo" draft="contributed">ateso</language>
+=======
+			<language type="syc">syriacki</language>
+			<language type="syr">syryjski</language>
+			<language type="ta">tamilski</language>
+			<language type="tai">tai</language>
+			<language type="te">telugu</language>
+			<language type="tem">temne</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ter">tereno</language>
 			<language type="tet">tetum</language>
 			<language type="tg">tadżycki</language>
@@ -478,23 +797,39 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="tog">tonga (Niasa)</language>
 			<language type="tpi">tok pisin</language>
 			<language type="tr">turecki</language>
+<<<<<<< HEAD
 			<language type="trv" draft="contributed">taroko</language>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ts">tsonga</language>
 			<language type="tsi">tsimshian</language>
 			<language type="tt">tatarski</language>
 			<language type="tum">tumbuka</language>
+<<<<<<< HEAD
 			<language type="tvl">tuvalu</language>
 			<language type="tw">twi</language>
 			<language type="twq" draft="contributed">tasawaq</language>
 			<language type="ty">tahitański</language>
 			<language type="tyv">tuwiński</language>
 			<language type="tzm" draft="contributed">centralnomarokański tamazight</language>
+=======
+			<language type="tup">tupi</language>
+			<language type="tut">ałtajski</language>
+			<language type="tvl">tuvalu</language>
+			<language type="tw">twi</language>
+			<language type="ty">tahitański</language>
+			<language type="tyv">tuwiński</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="udm">udmurcki</language>
 			<language type="ug">ujgurski</language>
 			<language type="uga">ugarycki</language>
 			<language type="uk">ukraiński</language>
 			<language type="umb">umbundu</language>
+<<<<<<< HEAD
 			<language type="und">nieznany język</language>
+=======
+			<language type="und">nieznany lub niepoprawny język</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ur">urdu</language>
 			<language type="uz">uzbecki</language>
 			<language type="vai">wai</language>
@@ -502,6 +837,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="vi">wietnamski</language>
 			<language type="vo">volapuk</language>
 			<language type="vot">wotiacki</language>
+<<<<<<< HEAD
 			<language type="vun" draft="contributed">vunjo</language>
 			<language type="wa">waloński</language>
 			<language type="wae" draft="contributed">walser</language>
@@ -519,10 +855,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="yi">jidysz</language>
 			<language type="yo">joruba</language>
 			<language type="yue">kantoński</language>
+=======
+			<language type="wa">waloński</language>
+			<language type="wak">wakasz</language>
+			<language type="wal">walamo</language>
+			<language type="war">waraj</language>
+			<language type="was">washo</language>
+			<language type="wen">łużycki</language>
+			<language type="wo">wolof</language>
+			<language type="xal">kałmucki</language>
+			<language type="xh">khosa</language>
+			<language type="yao">yao</language>
+			<language type="yap">japski</language>
+			<language type="yi">jidysz</language>
+			<language type="yo">joruba</language>
+			<language type="ypk">jupik</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="za">czuang</language>
 			<language type="zap">zapotecki</language>
 			<language type="zbl">bliss</language>
 			<language type="zen">zenaga</language>
+<<<<<<< HEAD
 			<language type="zgh" draft="contributed">zgh</language>
 			<language type="zh">chiński</language>
 			<language type="zh_Hans">chiński (uproszczony)</language>
@@ -536,12 +889,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Afak" draft="unconfirmed">afaka</script>
 			<script type="Arab">arabskie</script>
 			<script type="Arab" alt="variant">perso-arabskie</script>
+=======
+			<language type="zh">chiński</language>
+			<language type="zh_Hans">chiński (uproszczony)</language>
+			<language type="zh_Hant">chiński (tradycyjny)</language>
+			<language type="znd">azande</language>
+			<language type="zu">zulu</language>
+			<language type="zun">zuni</language>
+			<language type="zxx">brak treści o charakterze lingwistycznym</language>
+			<language type="zza">zazaki</language>
+		</languages>
+		<scripts>
+			<script type="Arab">arabskie</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Armi">armi</script>
 			<script type="Armn">ormiańskie</script>
 			<script type="Avst">awestyjskie</script>
 			<script type="Bali">balijskie</script>
+<<<<<<< HEAD
 			<script type="Bamu" draft="contributed">bamun</script>
 			<script type="Bass" draft="unconfirmed">bassa</script>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Batk">batak</script>
 			<script type="Beng">bengalskie</script>
 			<script type="Blis">symbole Blissa</script>
@@ -551,10 +920,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Bugi">bugińskie</script>
 			<script type="Buhd">buhid</script>
 			<script type="Cakm">chakma</script>
+<<<<<<< HEAD
 			<script type="Cans">zunifikowane symbole kanadyjskich autochtonów</script>
 			<script type="Cari">karyjskie</script>
 			<script type="Cham">czamskie</script>
 			<script type="Cher">czirokeski</script>
+=======
+			<script type="Cans">Zunifikowane symbole kanadyjskich autochtonów</script>
+			<script type="Cari">karyjskie</script>
+			<script type="Cham">czamskie</script>
+			<script type="Cher">Irokeski</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Cirt">cirth</script>
 			<script type="Copt">koptyjskie</script>
 			<script type="Cprt">cypryjskie</script>
@@ -562,7 +938,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Cyrs">cyrylica staro-cerkiewno-słowiańska</script>
 			<script type="Deva">devanagari</script>
 			<script type="Dsrt">deseret</script>
+<<<<<<< HEAD
 			<script type="Dupl" draft="unconfirmed">Duploye'a</script>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Egyd">egipskie demotyczne</script>
 			<script type="Egyh">egipskie hieratyczne</script>
 			<script type="Egyp">hieroglify egipskie</script>
@@ -571,13 +950,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Geor">gruzińskie</script>
 			<script type="Glag">głagolica</script>
 			<script type="Goth">gotyckie</script>
+<<<<<<< HEAD
 			<script type="Gran" draft="unconfirmed">grantha</script>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Grek">greckie</script>
 			<script type="Gujr">gudźarackie</script>
 			<script type="Guru">gurmukhi</script>
 			<script type="Hang">hangyl</script>
 			<script type="Hani">han</script>
 			<script type="Hano">hanunoo</script>
+<<<<<<< HEAD
 			<script type="Hans">uproszczone</script>
 			<script type="Hans" alt="stand-alone">uproszczone han</script>
 			<script type="Hant">tradycyjne</script>
@@ -585,6 +968,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Hebr">hebrajskie</script>
 			<script type="Hira">hiragana</script>
 			<script type="Hluw" draft="unconfirmed">hieroglify anatolijskie</script>
+=======
+			<script type="Hans">Uproszczony Han</script>
+			<script type="Hant">Tradycyjny Han</script>
+			<script type="Hebr">hebrajskie</script>
+			<script type="Hira">hiragana</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Hmng">pahawh hmong</script>
 			<script type="Hrkt">katakana lub hiragana</script>
 			<script type="Hung">starowęgierskie</script>
@@ -592,15 +981,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Ital">starowłoskie</script>
 			<script type="Java">jawajskie</script>
 			<script type="Jpan">japońskie</script>
+<<<<<<< HEAD
 			<script type="Jurc" draft="unconfirmed">jurchen</script>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Kali">kayah li</script>
 			<script type="Kana">katakana</script>
 			<script type="Khar">charosti</script>
 			<script type="Khmr">khmerskie</script>
+<<<<<<< HEAD
 			<script type="Khoj" draft="unconfirmed">khojki</script>
 			<script type="Knda">kannada</script>
 			<script type="Kore">koreańskie</script>
 			<script type="Kpel" draft="unconfirmed">kpelle</script>
+=======
+			<script type="Knda">kannada</script>
+			<script type="Kore">koreańskie</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Kthi">kaithi</script>
 			<script type="Lana">lanna</script>
 			<script type="Laoo">laotańskie</script>
@@ -611,13 +1008,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Limb">limbu</script>
 			<script type="Lina">linearne A</script>
 			<script type="Linb">linearne B</script>
+<<<<<<< HEAD
 			<script type="Lisu" draft="unconfirmed">alfabet Frasera</script>
 			<script type="Loma" draft="unconfirmed">loma</script>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Lyci">likijskie</script>
 			<script type="Lydi">lidyjskie</script>
 			<script type="Mand">mandejskie</script>
 			<script type="Mani">manichejskie</script>
 			<script type="Maya">hieroglify Majów</script>
+<<<<<<< HEAD
 			<script type="Mend" draft="unconfirmed">mende</script>
 			<script type="Merc" draft="unconfirmed">meroickie (kursywa)</script>
 			<script type="Mero">meroickie</script>
@@ -638,6 +1039,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Orya">orija</script>
 			<script type="Osma">osmanya</script>
 			<script type="Palm" draft="unconfirmed">palmirskie</script>
+=======
+			<script type="Mero">meroickie</script>
+			<script type="Mlym">malayalam</script>
+			<script type="Mong">mongolskie</script>
+			<script type="Moon">Moon'a</script>
+			<script type="Mtei">meitei mayek</script>
+			<script type="Mymr">birmańskie</script>
+			<script type="Nkoo">n'ko</script>
+			<script type="Ogam">Ogham</script>
+			<script type="Olck">ol chiki</script>
+			<script type="Orkh">orchońskie</script>
+			<script type="Orya">oriya</script>
+			<script type="Osma">osmanya</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Perm">staropermskie</script>
 			<script type="Phag">phags-pa</script>
 			<script type="Phli">inskrypcyjne pahlawi</script>
@@ -646,11 +1061,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Phnx">fenicki</script>
 			<script type="Plrd">fonetyczny Pollard'a</script>
 			<script type="Prti">partyjski inskrypcyjny</script>
+<<<<<<< HEAD
+=======
+			<script type="Qaai">dziedziczone</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Rjng">rejang</script>
 			<script type="Roro">rongorongo</script>
 			<script type="Runr">runiczne</script>
 			<script type="Samr">samarytański</script>
 			<script type="Sara">sarati</script>
+<<<<<<< HEAD
 			<script type="Sarb" draft="unconfirmed">staroarabskie południowe</script>
 			<script type="Saur">saurashtra</script>
 			<script type="Sgnw">pismo znakowe</script>
@@ -675,10 +1095,31 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Telu">telugu</script>
 			<script type="Teng">tengwar</script>
 			<script type="Tfng">tifinagh (berberski)</script>
+=======
+			<script type="Saur">saurashtra</script>
+			<script type="Sgnw">pismo znakowe</script>
+			<script type="Shaw">shawa</script>
+			<script type="Sinh">syngaleskie</script>
+			<script type="Sund">sundajskie</script>
+			<script type="Sylo">syloti nagri</script>
+			<script type="Syrc">Syryjski</script>
+			<script type="Syre">syriacki estrangelo</script>
+			<script type="Syrj">Syryjski (odmiana zachodnia)</script>
+			<script type="Syrn">Syryjski (odmiana wschodnia)</script>
+			<script type="Tagb">tagbanwa</script>
+			<script type="Tale">tai le</script>
+			<script type="Talu">nowy tai lue</script>
+			<script type="Taml">tamilskie</script>
+			<script type="Tavt">tai viet</script>
+			<script type="Telu">telugu</script>
+			<script type="Teng">tengwar</script>
+			<script type="Tfng">Tifinagh (berberski)</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Tglg">tagalog</script>
 			<script type="Thaa">thaana</script>
 			<script type="Thai">tajskie</script>
 			<script type="Tibt">tybetańskie</script>
+<<<<<<< HEAD
 			<script type="Tirh" draft="unconfirmed">tirhuta</script>
 			<script type="Ugar">ugaryckie</script>
 			<script type="Vaii">vai</script>
@@ -691,12 +1132,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Zinh">dziedziczone</script>
 			<script type="Zmth">notacja matematyczna</script>
 			<script type="Zsym">symbole</script>
+=======
+			<script type="Ugar">ugaryckie</script>
+			<script type="Vaii">vai</script>
+			<script type="Visp">Visible Speech</script>
+			<script type="Xpeo">staroperskie</script>
+			<script type="Xsux">klinowe sumero-akadyjskie</script>
+			<script type="Yiii">yi</script>
+			<script type="Zmth">notacja matematyczna</script>
+			<script type="Zsym">Symbols</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Zxxx">język bez systemu pisma</script>
 			<script type="Zyyy">wspólne</script>
 			<script type="Zzzz">nieznane lub niepoprawne</script>
 		</scripts>
 		<territories>
+<<<<<<< HEAD
 			<territory type="001">świat</territory>
+=======
+			<territory type="001">Świat</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="002">Afryka</territory>
 			<territory type="003">Ameryka Północna</territory>
 			<territory type="005">Ameryka Południowa</territory>
@@ -708,16 +1163,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="017">Afryka Środkowa</territory>
 			<territory type="018">Afryka Południowa</territory>
 			<territory type="019">Ameryka</territory>
+<<<<<<< HEAD
 			<territory type="021">Ameryka Północna (USA, Kanada)</territory>
+=======
+			<territory type="021">Ameryka Północna - Kanada, USA</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="029">Karaiby</territory>
 			<territory type="030">Azja Wschodnia</territory>
 			<territory type="034">Azja Południowa</territory>
 			<territory type="035">Azja Południowo-Wschodnia</territory>
 			<territory type="039">Europa Południowa</territory>
+<<<<<<< HEAD
 			<territory type="053">Australazja</territory>
 			<territory type="054">Melanezja</territory>
 			<territory type="057">Region Mikronezji</territory>
 			<territory type="061">Polinezja</territory>
+=======
+			<territory type="053">Australia i Nowa Zelandia</territory>
+			<territory type="054">Melanezja</territory>
+			<territory type="057">Mikronezja</territory>
+			<territory type="061">Polinezja</territory>
+			<territory type="062">Azja Południowo-Środkowa</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="142">Azja</territory>
 			<territory type="143">Azja Środkowa</territory>
 			<territory type="145">Azja Zachodnia</territory>
@@ -725,8 +1192,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="151">Europa Wschodnia</territory>
 			<territory type="154">Europa Północna</territory>
 			<territory type="155">Europa Zachodnia</territory>
+<<<<<<< HEAD
 			<territory type="419">Ameryka Łacińska</territory>
 			<territory type="AC">Wyspa Wniebowstąpienia</territory>
+=======
+			<territory type="172">Wspólnota Niezależnych Państw</territory>
+			<territory type="419">Ameryka Łacińska i Karaiby</territory>
+			<territory type="830">Wyspy Normandzkie</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="AD">Andora</territory>
 			<territory type="AE">Zjednoczone Emiraty Arabskie</territory>
 			<territory type="AF">Afganistan</territory>
@@ -753,11 +1226,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="BH">Bahrajn</territory>
 			<territory type="BI">Burundi</territory>
 			<territory type="BJ">Benin</territory>
+<<<<<<< HEAD
 			<territory type="BL">Saint-Barthélemy</territory>
 			<territory type="BM">Bermudy</territory>
 			<territory type="BN">Brunei Darussalam</territory>
 			<territory type="BO">Boliwia</territory>
 			<territory type="BQ">Niderlandy Karaibskie</territory>
+=======
+			<territory type="BL">Saint Barthélemy</territory>
+			<territory type="BM">Bermudy</territory>
+			<territory type="BN">Brunei Darussalam</territory>
+			<territory type="BO">Boliwia</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="BR">Brazylia</territory>
 			<territory type="BS">Bahamy</territory>
 			<territory type="BT">Bhutan</territory>
@@ -770,24 +1250,37 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CD">Demokratyczna Republika Konga</territory>
 			<territory type="CF">Republika Środkowoafrykańska</territory>
 			<territory type="CG">Kongo</territory>
+<<<<<<< HEAD
 			<territory type="CG" alt="variant">Republika Konga</territory>
 			<territory type="CH">Szwajcaria</territory>
 			<territory type="CI">Côte d’Ivoire</territory>
 			<territory type="CI" alt="variant">Wybrzeże Kości Słoniowej</territory>
+=======
+			<territory type="CH">Szwajcaria</territory>
+			<territory type="CI">Wybrzeże Kości Słoniowej</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="CK">Wyspy Cooka</territory>
 			<territory type="CL">Chile</territory>
 			<territory type="CM">Kamerun</territory>
 			<territory type="CN">Chiny</territory>
 			<territory type="CO">Kolumbia</territory>
+<<<<<<< HEAD
 			<territory type="CP">Clipperton</territory>
 			<territory type="CR">Kostaryka</territory>
 			<territory type="CU">Kuba</territory>
 			<territory type="CV">Republika Zielonego Przylądka</territory>
 			<territory type="CW">Curaçao</territory>
+=======
+			<territory type="CR">Kostaryka</territory>
+			<territory type="CS">Serbia i Czarnogóra</territory>
+			<territory type="CU">Kuba</territory>
+			<territory type="CV">Republika Zielonego Przylądka</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="CX">Wyspa Bożego Narodzenia</territory>
 			<territory type="CY">Cypr</territory>
 			<territory type="CZ">Czechy</territory>
 			<territory type="DE">Niemcy</territory>
+<<<<<<< HEAD
 			<territory type="DG">Diego Garcia</territory>
 			<territory type="DJ">Dżibuti</territory>
 			<territory type="DK">Dania</territory>
@@ -795,6 +1288,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="DO">Dominikana</territory>
 			<territory type="DZ">Algieria</territory>
 			<territory type="EA">Ceuta i Melilla</territory>
+=======
+			<territory type="DJ">Dżibuti</territory>
+			<territory type="DK">Dania</territory>
+			<territory type="DM">Dominika</territory>
+			<territory type="DO">Republika Dominikańska</territory>
+			<territory type="DZ">Algieria</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="EC">Ekwador</territory>
 			<territory type="EE">Estonia</territory>
 			<territory type="EG">Egipt</territory>
@@ -802,17 +1302,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="ER">Erytrea</territory>
 			<territory type="ES">Hiszpania</territory>
 			<territory type="ET">Etiopia</territory>
+<<<<<<< HEAD
 			<territory type="EU">Unia Europejska</territory>
 			<territory type="FI">Finlandia</territory>
 			<territory type="FJ">Fidżi</territory>
 			<territory type="FK">Falklandy</territory>
 			<territory type="FK" alt="variant">Falklandy (Malwiny)</territory>
 			<territory type="FM">Mikronezja</territory>
+=======
+			<territory type="FI">Finlandia</territory>
+			<territory type="FJ">Fidżi</territory>
+			<territory type="FK">Falklandy</territory>
+			<territory type="FM">Federalne Stany Mikronezji</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="FO">Wyspy Owcze</territory>
 			<territory type="FR">Francja</territory>
 			<territory type="GA">Gabon</territory>
 			<territory type="GB">Wielka Brytania</territory>
+<<<<<<< HEAD
 			<territory type="GB" alt="short">GB</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="GD">Grenada</territory>
 			<territory type="GE">Gruzja</territory>
 			<territory type="GF">Gujana Francuska</territory>
@@ -830,20 +1340,31 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GU">Guam</territory>
 			<territory type="GW">Gwinea Bissau</territory>
 			<territory type="GY">Gujana</territory>
+<<<<<<< HEAD
 			<territory type="HK">Hongkong SAR</territory>
 			<territory type="HK" alt="short">Hongkong</territory>
+=======
+			<territory type="HK">Hongkong, Specjalny Region Administracyjny Chin</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="HM">Wyspy Heard i McDonalda</territory>
 			<territory type="HN">Honduras</territory>
 			<territory type="HR">Chorwacja</territory>
 			<territory type="HT">Haiti</territory>
 			<territory type="HU">Węgry</territory>
+<<<<<<< HEAD
 			<territory type="IC">Wyspy Kanaryjskie</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="ID">Indonezja</territory>
 			<territory type="IE">Irlandia</territory>
 			<territory type="IL">Izrael</territory>
 			<territory type="IM">Wyspa Man</territory>
 			<territory type="IN">Indie</territory>
+<<<<<<< HEAD
 			<territory type="IO">Brytyjskie Terytorium Oceanu Indyjskiego</territory>
+=======
+			<territory type="IO">Terytorium Brytyjskie Oceanu Indyjskiego</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="IQ">Irak</territory>
 			<territory type="IR">Iran</territory>
 			<territory type="IS">Islandia</territory>
@@ -878,15 +1399,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MC">Monako</territory>
 			<territory type="MD">Mołdawia</territory>
 			<territory type="ME">Czarnogóra</territory>
+<<<<<<< HEAD
 			<territory type="MF">Saint-Martin</territory>
+=======
+			<territory type="MF">Sint Maarten</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="MG">Madagaskar</territory>
 			<territory type="MH">Wyspy Marshalla</territory>
 			<territory type="MK">Macedonia</territory>
 			<territory type="ML">Mali</territory>
+<<<<<<< HEAD
 			<territory type="MM">Mjanma (Birma)</territory>
 			<territory type="MN">Mongolia</territory>
 			<territory type="MO">Makau SAR</territory>
 			<territory type="MO" alt="short">Makau</territory>
+=======
+			<territory type="MM">Birma</territory>
+			<territory type="MN">Mongolia</territory>
+			<territory type="MO">Makau, Specjalny Region Administracyjny Chin</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="MP">Mariany Północne</territory>
 			<territory type="MQ">Martynika</territory>
 			<territory type="MR">Mauretania</territory>
@@ -914,7 +1445,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="PA">Panama</territory>
 			<territory type="PE">Peru</territory>
 			<territory type="PF">Polinezja Francuska</territory>
+<<<<<<< HEAD
 			<territory type="PG">Papua-Nowa Gwinea</territory>
+=======
+			<territory type="PG">Papua Nowa Gwinea</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="PH">Filipiny</territory>
 			<territory type="PK">Pakistan</territory>
 			<territory type="PL">Polska</territory>
@@ -922,12 +1457,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="PN">Pitcairn</territory>
 			<territory type="PR">Portoryko</territory>
 			<territory type="PS">Terytoria Palestyńskie</territory>
+<<<<<<< HEAD
 			<territory type="PS" alt="short">Palestyna</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="PT">Portugalia</territory>
 			<territory type="PW">Palau</territory>
 			<territory type="PY">Paragwaj</territory>
 			<territory type="QA">Katar</territory>
 			<territory type="QO">Oceania inne</territory>
+<<<<<<< HEAD
+=======
+			<territory type="QU">Unia Europejska</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="RE">Reunion</territory>
 			<territory type="RO">Rumunia</territory>
 			<territory type="RS">Serbia</territory>
@@ -948,6 +1490,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="SN">Senegal</territory>
 			<territory type="SO">Somalia</territory>
 			<territory type="SR">Surinam</territory>
+<<<<<<< HEAD
 			<territory type="SS">Sudan Południowy</territory>
 			<territory type="ST">Wyspy Świętego Tomasza i Książęca</territory>
 			<territory type="SV">Salwador</territory>
@@ -955,6 +1498,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="SY">Syria</territory>
 			<territory type="SZ">Suazi</territory>
 			<territory type="TA">Tristan da Cunha</territory>
+=======
+			<territory type="ST">Wyspy Świętego Tomasza i Książęca</territory>
+			<territory type="SV">Salwador</territory>
+			<territory type="SY">Syria</territory>
+			<territory type="SZ">Suazi</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="TC">Turks i Caicos</territory>
 			<territory type="TD">Czad</territory>
 			<territory type="TF">Francuskie Terytoria Południowe</territory>
@@ -975,7 +1524,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="UG">Uganda</territory>
 			<territory type="UM">Dalekie Wyspy Mniejsze Stanów Zjednoczonych</territory>
 			<territory type="US">Stany Zjednoczone</territory>
+<<<<<<< HEAD
 			<territory type="US" alt="short">USA</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="UY">Urugwaj</territory>
 			<territory type="UZ">Uzbekistan</territory>
 			<territory type="VA">Watykan</territory>
@@ -987,13 +1539,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="VU">Vanuatu</territory>
 			<territory type="WF">Wallis i Futuna</territory>
 			<territory type="WS">Samoa</territory>
+<<<<<<< HEAD
 			<territory type="XK">Kosowo</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="YE">Jemen</territory>
 			<territory type="YT">Majotta</territory>
 			<territory type="ZA">Republika Południowej Afryki</territory>
 			<territory type="ZM">Zambia</territory>
 			<territory type="ZW">Zimbabwe</territory>
+<<<<<<< HEAD
 			<territory type="ZZ">Nieznany region</territory>
+=======
+			<territory type="ZZ">Nieznany lub nieprawidłowy region</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</territories>
 		<variants>
 			<variant type="1901">tradycyjna ortografia niemiecka</variant>
@@ -1001,30 +1560,45 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="1996">ortografia niemiecka z 1996 r.</variant>
 			<variant type="1606NICT">szesnastowieczny francuski</variant>
 			<variant type="1694ACAD">siedemnastowieczny francuski</variant>
+<<<<<<< HEAD
 			<variant type="1959ACAD" draft="provisional">akademicki</variant>
 			<variant type="AREVELA">ormiański wchodni</variant>
 			<variant type="AREVMDA" draft="contributed">ormiański zachodni</variant>
+=======
+			<variant type="AREVELA">ormiański wchodni</variant>
+			<variant type="AREVMDA">ormiański zachodni</variant>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<variant type="BAKU1926">turecki zunifikowany alfabet łaciński</variant>
 			<variant type="BISKE">dialekt San Giorgio/Bila</variant>
 			<variant type="BOONT">dialekt Boontling</variant>
 			<variant type="FONIPA">fonetyczny międzynarodowy</variant>
 			<variant type="FONUPA">fonetyczny</variant>
+<<<<<<< HEAD
 			<variant type="KKCOR">ortografia wspólna</variant>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<variant type="LIPAW">dialekt Lipovaz w regionie Resia</variant>
 			<variant type="MONOTON">monotoniczny</variant>
 			<variant type="NEDIS">dialekt Natisone</variant>
 			<variant type="NJIVA">dialekt Gniva/Njiva</variant>
 			<variant type="OSOJS">dialekt Oseacco/Osojane</variant>
+<<<<<<< HEAD
 			<variant type="PINYIN" draft="provisional">pinyin</variant>
 			<variant type="POLYTON">politoniczny</variant>
 			<variant type="POSIX">komputerowy</variant>
 			<variant type="REVISED" draft="contributed">ortografia zreformowana</variant>
+=======
+			<variant type="POLYTON">politoniczny</variant>
+			<variant type="POSIX">komputerowy</variant>
+			<variant type="REVISED">ortografia zreformowana</variant>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<variant type="ROZAJ">dialekt regionu Resia</variant>
 			<variant type="SAAHO">dialekt Saho</variant>
 			<variant type="SCOTLAND">standardowy szkocki angielski</variant>
 			<variant type="SCOUSE">dialekt Scouse</variant>
 			<variant type="SOLBA">dialekt Stolvizza/Solbica</variant>
 			<variant type="TARASK">ortografia taraszkiewicka</variant>
+<<<<<<< HEAD
 			<variant type="UCCOR">ortografia ujednolicona</variant>
 			<variant type="UCRCOR">zreformowana ortografia ujednolicona</variant>
 			<variant type="VALENCIA">walencki</variant>
@@ -1156,6 +1730,35 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<measurementSystemNames>
 			<measurementSystemName type="metric">metryczny</measurementSystemName>
 			<measurementSystemName type="UK">brytyjski</measurementSystemName>
+=======
+			<variant type="VALENCIA">walencki</variant>
+		</variants>
+		<keys>
+			<key type="calendar">kalendarz</key>
+			<key type="collation">sortowanie</key>
+			<key type="currency">waluta</key>
+		</keys>
+		<types>
+			<type type="big5han" key="collation">chiński tradycyjny porządek sortowania - Big5</type>
+			<type type="buddhist" key="calendar">kalendarz buddyjski</type>
+			<type type="chinese" key="calendar">kalendarz chiński</type>
+			<type type="direct" key="collation">bezpośredni porządek sortowania</type>
+			<type type="gb2312han" key="collation">chiński uproszczony porządek sortowania - GB2312</type>
+			<type type="gregorian" key="calendar">kalendarz gregoriański</type>
+			<type type="hebrew" key="calendar">kalendarz hebrajski</type>
+			<type type="indian" key="calendar">narodowy kalendarz hinduski</type>
+			<type type="islamic" key="calendar">kalendarz islamski (metoda wzrokowa)</type>
+			<type type="islamic-civil" key="calendar">kalendarz islamski (metoda obliczeniowa)</type>
+			<type type="japanese" key="calendar">kalendarz japoński</type>
+			<type type="phonebook" key="collation">porządek sortowania książki telefonicznej</type>
+			<type type="pinyin" key="collation">porządek sortowania pinyin</type>
+			<type type="roc" key="calendar">kalendarz Republiki Chińskiej</type>
+			<type type="stroke" key="collation">porządek akcentów</type>
+			<type type="traditional" key="collation">tradycyjny porządek sortowania</type>
+		</types>
+		<measurementSystemNames>
+			<measurementSystemName type="metric">metryczny</measurementSystemName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<measurementSystemName type="US">anglosaski</measurementSystemName>
 		</measurementSystemNames>
 		<codePatterns>
@@ -1164,6 +1767,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<codePattern type="territory">Region: {0}</codePattern>
 		</codePatterns>
 	</localeDisplayNames>
+<<<<<<< HEAD
 	<contextTransforms>
 		<contextTransformUsage type="relative">
 			<contextTransform type="stand-alone">titlecase-firstword</contextTransform>
@@ -1188,10 +1792,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<quotationEnd>”</quotationEnd>
 		<alternateQuotationStart>«</alternateQuotationStart>
 		<alternateQuotationEnd>»</alternateQuotationEnd>
+=======
+	<characters>
+		<exemplarCharacters>[a ą b c ć d e ę f-l ł m n ń o ó p r s ś t u w y z ź ż]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[q v x]</exemplarCharacters>
+		<exemplarCharacters type="currencySymbol">[a-z]</exemplarCharacters>
+	</characters>
+	<delimiters>
+		<quotationStart>‘</quotationStart>
+		<quotationEnd>’</quotationEnd>
+		<alternateQuotationStart>„</alternateQuotationStart>
+		<alternateQuotationEnd>”</alternateQuotationEnd>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	</delimiters>
 	<dates>
 		<calendars>
 			<calendar type="buddhist">
+<<<<<<< HEAD
 				<eras>
 					<eraAbbr>
 						<era type="0">BE</era>
@@ -1425,25 +2042,40 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<dateFormatLength type="full">
 						<dateFormat>
 							<pattern>EEEE, d MMMM y G</pattern>
+=======
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>EEEE, d MMMM, y G</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="long">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>d MMMM y G</pattern>
+=======
+							<pattern>d MMMM, y G</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="medium">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>d MMM y G</pattern>
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
 							<pattern>dd.MM.y G</pattern>
+=======
+							<pattern>d MMM, y G</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
 				<dateTimeFormats>
+<<<<<<< HEAD
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
 							<pattern>{1}, {0}</pattern>
@@ -1594,6 +2226,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">LLLL y - LLLL y G</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
+=======
+					<availableFormats>
+						<dateFormatItem id="MMMd">d MMM</dateFormatItem>
+						<dateFormatItem id="MMMMEd">E d MMMM</dateFormatItem>
+					</availableFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				</dateTimeFormats>
 			</calendar>
 			<calendar type="gregorian">
@@ -1613,6 +2251,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">lis</month>
 							<month type="12">gru</month>
 						</monthWidth>
+<<<<<<< HEAD
 						<monthWidth type="narrow">
 							<month type="1">s</month>
 							<month type="2">l</month>
@@ -1627,6 +2266,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">l</month>
 							<month type="12">g</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<monthWidth type="wide">
 							<month type="1">stycznia</month>
 							<month type="2">lutego</month>
@@ -1643,6 +2284,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</monthWidth>
 					</monthContext>
 					<monthContext type="stand-alone">
+<<<<<<< HEAD
 						<monthWidth type="abbreviated">
 							<month type="1">sty</month>
 							<month type="2">lut</month>
@@ -1657,6 +2299,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">lis</month>
 							<month type="12">gru</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<monthWidth type="narrow">
 							<month type="1">s</month>
 							<month type="2">l</month>
@@ -1698,6 +2342,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">pt.</day>
 							<day type="sat">sob.</day>
 						</dayWidth>
+<<<<<<< HEAD
 						<dayWidth type="narrow">
 							<day type="sun">N</day>
 							<day type="mon">P</day>
@@ -1716,6 +2361,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">pt.</day>
 							<day type="sat">sob.</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<dayWidth type="wide">
 							<day type="sun">niedziela</day>
 							<day type="mon">poniedziałek</day>
@@ -1727,6 +2374,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</dayWidth>
 					</dayContext>
 					<dayContext type="stand-alone">
+<<<<<<< HEAD
 						<dayWidth type="abbreviated">
 							<day type="sun">niedz.</day>
 							<day type="mon">pon.</day>
@@ -1736,6 +2384,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">pt.</day>
 							<day type="sat">sob.</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<dayWidth type="narrow">
 							<day type="sun">N</day>
 							<day type="mon">P</day>
@@ -1745,6 +2395,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">P</day>
 							<day type="sat">S</day>
 						</dayWidth>
+<<<<<<< HEAD
 						<dayWidth type="short">
 							<day type="sun">niedz.</day>
 							<day type="mon">pon.</day>
@@ -1763,6 +2414,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">piątek</day>
 							<day type="sat">sobota</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</dayContext>
 				</days>
 				<quarters>
@@ -1773,12 +2426,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<quarter type="3">K3</quarter>
 							<quarter type="4">K4</quarter>
 						</quarterWidth>
+<<<<<<< HEAD
 						<quarterWidth type="narrow">
 							<quarter type="1">1</quarter>
 							<quarter type="2">2</quarter>
 							<quarter type="3">3</quarter>
 							<quarter type="4">4</quarter>
 						</quarterWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<quarterWidth type="wide">
 							<quarter type="1">I kwartał</quarter>
 							<quarter type="2">II kwartał</quarter>
@@ -1799,6 +2455,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<quarter type="3">3</quarter>
 							<quarter type="4">4</quarter>
 						</quarterWidth>
+<<<<<<< HEAD
 						<quarterWidth type="wide">
 							<quarter type="1">I kwartał</quarter>
 							<quarter type="2">II kwartał</quarter>
@@ -1826,6 +2483,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<eraNames>
 						<era type="0" draft="contributed">p.n.e.</era>
 						<era type="1" draft="contributed">n.e.</era>
+=======
+					</quarterContext>
+				</quarters>
+				<am>AM</am>
+				<pm>PM</pm>
+				<eras>
+					<eraNames>
+						<era type="0">p.n.e.</era>
+						<era type="1">n.e.</era>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</eraNames>
 					<eraAbbr>
 						<era type="0">p.n.e.</era>
@@ -1845,12 +2512,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</dateFormatLength>
 					<dateFormatLength type="medium">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>d MMM y</pattern>
+=======
+							<pattern>dd-MM-yyyy</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>dd.MM.y</pattern>
+=======
+							<pattern>dd-MM-yy</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
@@ -1877,6 +2552,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</timeFormatLength>
 				</timeFormats>
 				<dateTimeFormats>
+<<<<<<< HEAD
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
 							<pattern>{1} {0}</pattern>
@@ -2538,21 +3214,213 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<regionFormat>Czas: {0}</regionFormat>
 			<regionFormat type="daylight">{0} (czas letni)</regionFormat>
 			<regionFormat type="standard">{0} (czas standardowy)</regionFormat>
+=======
+					<availableFormats>
+						<dateFormatItem id="d">d</dateFormatItem>
+						<dateFormatItem id="hhmm">hh:mm a</dateFormatItem>
+						<dateFormatItem id="HHmm">HH:mm</dateFormatItem>
+						<dateFormatItem id="hhmmss">hh:mm:ss a</dateFormatItem>
+						<dateFormatItem id="HHmmss">HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="Hm">H:mm</dateFormatItem>
+						<dateFormatItem id="M">L</dateFormatItem>
+						<dateFormatItem id="Md">d.M</dateFormatItem>
+						<dateFormatItem id="MEd">E, M-d</dateFormatItem>
+						<dateFormatItem id="MMdd">MM-dd</dateFormatItem>
+						<dateFormatItem id="MMM">LLL</dateFormatItem>
+						<dateFormatItem id="MMMd">MMM d</dateFormatItem>
+						<dateFormatItem id="MMMEd">d MMM E</dateFormatItem>
+						<dateFormatItem id="MMMMd">d MMMM</dateFormatItem>
+						<dateFormatItem id="MMMMEd">d MMMM E</dateFormatItem>
+						<dateFormatItem id="mmss">mm:ss</dateFormatItem>
+						<dateFormatItem id="ms">mm:ss</dateFormatItem>
+						<dateFormatItem id="y">y</dateFormatItem>
+						<dateFormatItem id="yM">yyyy-M</dateFormatItem>
+						<dateFormatItem id="yMEd">EEE, d.M.yyyy</dateFormatItem>
+						<dateFormatItem id="yMMM">y MMM</dateFormatItem>
+						<dateFormatItem id="yMMMEd">EEE, d MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMM">LLLL y</dateFormatItem>
+						<dateFormatItem id="yQ">yyyy Q</dateFormatItem>
+						<dateFormatItem id="yQQQ">y QQQ</dateFormatItem>
+						<dateFormatItem id="yyMM">MM/yy</dateFormatItem>
+						<dateFormatItem id="yyMMM">MMM yy</dateFormatItem>
+						<dateFormatItem id="yyQ">Q yy</dateFormatItem>
+						<dateFormatItem id="yyyyMM">yyyy-MM</dateFormatItem>
+						<dateFormatItem id="yyyyMMMM">LLLL y</dateFormatItem>
+					</availableFormats>
+					<intervalFormats>
+						<intervalFormatFallback>{0} - {1}</intervalFormatFallback>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">d-d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="h">
+							<greatestDifference id="a">HH-HH</greatestDifference>
+							<greatestDifference id="h">HH-HH</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="a">HH:mm-HH:mm</greatestDifference>
+							<greatestDifference id="h">HH:mm-HH:mm</greatestDifference>
+							<greatestDifference id="m">HH:mm-HH:mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="a">HH:mm-HH:mm v</greatestDifference>
+							<greatestDifference id="h">HH:mm-HH:mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm-HH:mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="a">HH-HH v</greatestDifference>
+							<greatestDifference id="h">HH-HH v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">M-M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">dd.MM-dd.MM</greatestDifference>
+							<greatestDifference id="M">dd.MM-dd.MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">E, dd.MM - E, dd.MM</greatestDifference>
+							<greatestDifference id="M">E, dd.MM - E, dd.MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">LLL-LLL</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d">d-d MMM</greatestDifference>
+							<greatestDifference id="M">d MMM - d MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d">E, MM-d – E, MM-d</greatestDifference>
+							<greatestDifference id="M">E, d MMM - E, d MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMM">
+							<greatestDifference id="M">LLLL-LLLL</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">y-y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">MM.yy-MM.yy</greatestDifference>
+							<greatestDifference id="y">MM.yy-MM.yy</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">dd-dd.MM.yy</greatestDifference>
+							<greatestDifference id="M">dd.MM-dd.MM.yyyy</greatestDifference>
+							<greatestDifference id="y">dd.MM.yyyy-dd.MM.yyyy</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">E, dd.MM.yyyy - E, dd.MM.yyyy</greatestDifference>
+							<greatestDifference id="M">E, dd.MM.yyyy - E, dd.MM.yyyy</greatestDifference>
+							<greatestDifference id="y">E, dd-MM-yyyy-E, dd-MM-yyyy</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">LLL-LLL y</greatestDifference>
+							<greatestDifference id="y">LLL y - LLL y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d">d-d MMM y</greatestDifference>
+							<greatestDifference id="M">d MMM - d MMM y</greatestDifference>
+							<greatestDifference id="y">d MMM y - d MMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d">E, d - E, d MMM y</greatestDifference>
+							<greatestDifference id="M">E, d MMM - E, d MMM y</greatestDifference>
+							<greatestDifference id="y">E, d MMM y - E, d MMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMM">
+							<greatestDifference id="M">MM.yyyy - MM.yyyy</greatestDifference>
+							<greatestDifference id="y">MM.yyyy - MM.yyyy</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+				<fields>
+					<field type="era">
+						<displayName>Era</displayName>
+					</field>
+					<field type="year">
+						<displayName>Rok</displayName>
+					</field>
+					<field type="month">
+						<displayName>Miesiąc</displayName>
+					</field>
+					<field type="week">
+						<displayName>Tydzień</displayName>
+					</field>
+					<field type="day">
+						<displayName>Dzień</displayName>
+						<relative type="-3">Trzy dni temu</relative>
+						<relative type="-2">Przedwczoraj</relative>
+						<relative type="-1">Wczoraj</relative>
+						<relative type="0">Dzisiaj</relative>
+						<relative type="1">Jutro</relative>
+						<relative type="2">Pojutrze</relative>
+						<relative type="3">Za trzy dni</relative>
+					</field>
+					<field type="weekday">
+						<displayName>Dzień tygodnia</displayName>
+					</field>
+					<field type="dayperiod">
+						<displayName>Dayperiod</displayName>
+					</field>
+					<field type="hour">
+						<displayName>Godzina</displayName>
+					</field>
+					<field type="minute">
+						<displayName>Minuta</displayName>
+					</field>
+					<field type="second">
+						<displayName>Sekunda</displayName>
+					</field>
+					<field type="zone">
+						<displayName>Strefa</displayName>
+					</field>
+				</fields>
+			</calendar>
+		</calendars>
+		<timeZoneNames>
+			<hourFormat>+HH:mm;-HH:mm</hourFormat>
+			<gmtFormat>GMT{0}</gmtFormat>
+			<regionFormat>Czas: {0}</regionFormat>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="Etc/Unknown">
 				<exemplarCity>Nieznane</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="Etc/GMT-1">
+				<exemplarCity>GMT-01:0</exemplarCity>
+			</zone>
+			<zone type="Etc/GMT-2">
+				<exemplarCity>GMT-02:00</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Europe/Andorra">
 				<exemplarCity>Andora</exemplarCity>
 			</zone>
 			<zone type="Asia/Dubai">
 				<exemplarCity>Dubaj</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="Asia/Kabul">
+				<exemplarCity>Afganistan</exemplarCity>
+			</zone>
+			<zone type="America/Antigua">
+				<exemplarCity>Antigua i Barbuda</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Europe/Tirane">
 				<exemplarCity>Tirana</exemplarCity>
 			</zone>
 			<zone type="Asia/Yerevan">
+<<<<<<< HEAD
 				<exemplarCity>Erywań</exemplarCity>
+=======
+				<exemplarCity>Erewan</exemplarCity>
+			</zone>
+			<zone type="America/Curacao">
+				<exemplarCity>Curaçao</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Antarctica/Rothera">
 				<exemplarCity>Stacja Naukowa Rothera</exemplarCity>
@@ -2560,6 +3428,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Antarctica/Palmer">
 				<exemplarCity>Archipelag Palmera</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="Antarctica/South_Pole">
+				<exemplarCity>Biegun południowy</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Antarctica/Syowa">
 				<exemplarCity>Stacja Syowa</exemplarCity>
 			</zone>
@@ -2570,11 +3444,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Stacja Davis</exemplarCity>
 			</zone>
 			<zone type="Antarctica/Vostok">
+<<<<<<< HEAD
 				<exemplarCity>Stacja Wostok</exemplarCity>
+=======
+				<exemplarCity>Stacja Vostok</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Antarctica/Casey">
 				<exemplarCity>Stacja Casey</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Antarctica/DumontDUrville">
 				<exemplarCity>Dumont d’Urville</exemplarCity>
 			</zone>
@@ -2583,6 +3462,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Cordoba">
 				<exemplarCity>Kordoba</exemplarCity>
+=======
+			<zone type="Antarctica/McMurdo">
+				<exemplarCity>Mc Murdo</exemplarCity>
+			</zone>
+			<zone type="Pacific/Pago_Pago">
+				<exemplarCity>Samoa Amerykańskie</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Vienna">
 				<exemplarCity>Wiedeń</exemplarCity>
@@ -2596,6 +3482,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Europe/Mariehamn">
 				<exemplarCity>Maarianhamina</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="Asia/Baku">
+				<exemplarCity>Azerbejdżan</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Europe/Sarajevo">
 				<exemplarCity>Sarajewo</exemplarCity>
 			</zone>
@@ -2608,6 +3500,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Africa/Ouagadougou">
 				<exemplarCity>Wagadugu</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="Europe/Sofia">
+				<exemplarCity>Bułgaria</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Asia/Bahrain">
 				<exemplarCity>Bahrajn</exemplarCity>
 			</zone>
@@ -2617,24 +3515,43 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Africa/Porto-Novo">
 				<exemplarCity>Porto Novo</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/St_Barthelemy">
 				<exemplarCity>Saint-Barthélemy</exemplarCity>
 			</zone>
 			<zone type="Atlantic/Bermuda">
 				<exemplarCity>Bermudy</exemplarCity>
 			</zone>
+=======
+			<zone type="Atlantic/Bermuda">
+				<exemplarCity>Bermudy</exemplarCity>
+			</zone>
+			<zone type="America/La_Paz">
+				<exemplarCity>Boliwia</exemplarCity>
+			</zone>
+			<zone type="America/Porto_Velho">
+				<exemplarCity>Pôrto Velho</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Cuiaba">
 				<exemplarCity>Cuiabá</exemplarCity>
 			</zone>
 			<zone type="America/Belem">
 				<exemplarCity>Belém</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="America/Sao_Paulo">
+				<exemplarCity>Săo Paulo</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Bahia">
 				<exemplarCity>Salvador</exemplarCity>
 			</zone>
 			<zone type="America/Maceio">
 				<exemplarCity>Maceió</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Minsk">
 				<exemplarCity>Mińsk</exemplarCity>
 			</zone>
@@ -2643,6 +3560,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/St_Johns">
 				<exemplarCity>St. John’s</exemplarCity>
+=======
+			<zone type="America/Nassau">
+				<exemplarCity>Bahamy</exemplarCity>
+			</zone>
+			<zone type="Asia/Thimphu">
+				<exemplarCity>Bhutan</exemplarCity>
+			</zone>
+			<zone type="Europe/Minsk">
+				<exemplarCity>Mińsk</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Indian/Cocos">
 				<exemplarCity>Wyspy Kokosowe</exemplarCity>
@@ -2653,12 +3580,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Africa/Bangui">
 				<exemplarCity>Bangi</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="Africa/Brazzaville">
+				<exemplarCity>Kongo Brazzaville</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Europe/Zurich">
 				<exemplarCity>Zurych</exemplarCity>
 			</zone>
 			<zone type="Africa/Abidjan">
 				<exemplarCity>Abidżan</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="Pacific/Rarotonga">
+				<exemplarCity>Wyspy Cooka</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Pacific/Easter">
 				<exemplarCity>Wyspa Wielkanocna</exemplarCity>
 			</zone>
@@ -2677,6 +3616,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Shanghai">
 				<exemplarCity>Szanghaj</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="America/Bogota">
+				<exemplarCity>Kolumbia</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Costa_Rica">
 				<exemplarCity>Kostaryka</exemplarCity>
 			</zone>
@@ -2686,9 +3631,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Atlantic/Cape_Verde">
 				<exemplarCity>Zielony Przylądek</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Curacao">
 				<exemplarCity>Curaçao</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Indian/Christmas">
 				<exemplarCity>Wyspa Bożego Narodzenia</exemplarCity>
 			</zone>
@@ -2698,6 +3646,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Europe/Prague">
 				<exemplarCity>Praga</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="Europe/Berlin">
+				<exemplarCity>Niemcy</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Africa/Djibouti">
 				<exemplarCity>Dżibuti</exemplarCity>
 			</zone>
@@ -2707,9 +3661,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Dominica">
 				<exemplarCity>Dominika</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Africa/Algiers">
 				<exemplarCity>Algier</exemplarCity>
 			</zone>
+=======
+			<zone type="America/Santo_Domingo">
+				<exemplarCity>Republika Dominikańska</exemplarCity>
+			</zone>
+			<zone type="Africa/Algiers">
+				<exemplarCity>Algier</exemplarCity>
+			</zone>
+			<zone type="America/Guayaquil">
+				<exemplarCity>Ekwador</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Europe/Tallinn">
 				<exemplarCity>Tallin</exemplarCity>
 			</zone>
@@ -2731,6 +3697,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Africa/Addis_Ababa">
 				<exemplarCity>Addis Abeba</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Pacific/Fiji">
 				<exemplarCity>Fidżi</exemplarCity>
 			</zone>
@@ -2739,6 +3706,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Pacific/Ponape">
 				<exemplarCity>Pohnpei</exemplarCity>
+=======
+			<zone type="Europe/Helsinki">
+				<exemplarCity>Finlandia</exemplarCity>
+			</zone>
+			<zone type="Pacific/Fiji">
+				<exemplarCity>Fidżi</exemplarCity>
+			</zone>
+			<zone type="Atlantic/Stanley">
+				<exemplarCity>Falklandy (Malwiny)</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Atlantic/Faeroe">
 				<exemplarCity>Wyspy Owcze</exemplarCity>
@@ -2747,17 +3724,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Paryż</exemplarCity>
 			</zone>
 			<zone type="Europe/London">
+<<<<<<< HEAD
 				<long>
 					<daylight>Brytyjski czas letni</daylight>
 				</long>
 				<exemplarCity>Londyn</exemplarCity>
 			</zone>
+=======
+				<exemplarCity>Londyn</exemplarCity>
+			</zone>
+			<zone type="Asia/Tbilisi">
+				<exemplarCity>Gruzja</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Cayenne">
 				<exemplarCity>Kajenna</exemplarCity>
 			</zone>
 			<zone type="Africa/Accra">
 				<exemplarCity>Akra</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Thule">
 				<exemplarCity>Qaanaaq</exemplarCity>
 			</zone>
@@ -2766,6 +3752,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Scoresbysund">
 				<exemplarCity>Ittoqqortoormiit</exemplarCity>
+=======
+			<zone type="America/Godthab">
+				<exemplarCity>Grenlandia</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Africa/Banjul">
 				<exemplarCity>Bandżul</exemplarCity>
@@ -2791,9 +3781,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Hong_Kong">
 				<exemplarCity>Hongkong</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Zagreb">
 				<exemplarCity>Zagrzeb</exemplarCity>
 			</zone>
+=======
+			<zone type="America/Tegucigalpa">
+				<exemplarCity>Honduras</exemplarCity>
+			</zone>
+			<zone type="Europe/Zagreb">
+				<exemplarCity>Zagrzeb</exemplarCity>
+			</zone>
+			<zone type="America/Port-au-Prince">
+				<exemplarCity>Haiti</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Europe/Budapest">
 				<exemplarCity>Budapeszt</exemplarCity>
 			</zone>
@@ -2801,9 +3803,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Dżakarta</exemplarCity>
 			</zone>
 			<zone type="Europe/Dublin">
+<<<<<<< HEAD
 				<long>
 					<daylight draft="contributed">Irlandia (czas letni)</daylight>
 				</long>
+=======
+				<exemplarCity>Irlandia</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Jerusalem">
 				<exemplarCity>Jerozolima</exemplarCity>
@@ -2832,12 +3838,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/Jamaica">
 				<exemplarCity>Jamajka</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="Asia/Amman">
+				<exemplarCity>Jordania</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Asia/Tokyo">
 				<exemplarCity>Tokio</exemplarCity>
 			</zone>
 			<zone type="Asia/Bishkek">
 				<exemplarCity>Biszkek</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="Asia/Phnom_Penh">
+				<exemplarCity>Kambodża</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Indian/Comoro">
 				<exemplarCity>Komory</exemplarCity>
 			</zone>
@@ -2845,7 +3863,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Saint Kitts</exemplarCity>
 			</zone>
 			<zone type="Asia/Pyongyang">
+<<<<<<< HEAD
 				<exemplarCity>Pjongjang</exemplarCity>
+=======
+				<exemplarCity>Korea Północna</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Seoul">
 				<exemplarCity>Seul</exemplarCity>
@@ -2880,6 +3902,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="America/St_Lucia">
 				<exemplarCity>Saint Lucia</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="Europe/Vaduz">
+				<exemplarCity>Liechtenstein</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Asia/Colombo">
 				<exemplarCity>Kolombo</exemplarCity>
 			</zone>
@@ -2901,9 +3929,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Europe/Chisinau">
 				<exemplarCity>Kiszyniów</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Indian/Antananarivo">
 				<exemplarCity>Antananarywa</exemplarCity>
 			</zone>
+=======
+			<zone type="Europe/Podgorica">
+				<exemplarCity>Czarnogóra</exemplarCity>
+			</zone>
+			<zone type="Indian/Antananarivo">
+				<exemplarCity>Antananarywa</exemplarCity>
+			</zone>
+			<zone type="Europe/Skopje">
+				<exemplarCity>Macedonia</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Asia/Rangoon">
 				<exemplarCity>Rangun</exemplarCity>
 			</zone>
@@ -2919,6 +3959,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Macau">
 				<exemplarCity>Makau</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="Pacific/Saipan">
+				<exemplarCity>Mariany Północne</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="America/Martinique">
 				<exemplarCity>Martynika</exemplarCity>
 			</zone>
@@ -2929,10 +3975,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Malediwy</exemplarCity>
 			</zone>
 			<zone type="America/Mexico_City">
+<<<<<<< HEAD
 				<exemplarCity>Meksyk (miasto)</exemplarCity>
 			</zone>
 			<zone type="America/Cancun">
 				<exemplarCity>Cancún</exemplarCity>
+=======
+				<exemplarCity>Meksyk</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Kuching">
 				<exemplarCity>Kuczing</exemplarCity>
@@ -2946,27 +3996,71 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Africa/Niamey">
 				<exemplarCity>Niamej</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Katmandu">
 				<exemplarCity>Katmandu</exemplarCity>
+=======
+			<zone type="Pacific/Norfolk">
+				<exemplarCity>Wyspa Norfolk</exemplarCity>
+			</zone>
+			<zone type="America/Managua">
+				<exemplarCity>Nikaragua</exemplarCity>
+			</zone>
+			<zone type="Europe/Amsterdam">
+				<exemplarCity>Holandia</exemplarCity>
+			</zone>
+			<zone type="Europe/Oslo">
+				<exemplarCity>Norwegia</exemplarCity>
+			</zone>
+			<zone type="Asia/Katmandu">
+				<exemplarCity>Nepal</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Muscat">
 				<exemplarCity>Maskat</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Pacific/Marquesas">
 				<exemplarCity>Markizy</exemplarCity>
 			</zone>
+=======
+			<zone type="America/Lima">
+				<exemplarCity>Peru</exemplarCity>
+			</zone>
+			<zone type="Pacific/Marquesas">
+				<exemplarCity>Markizy</exemplarCity>
+			</zone>
+			<zone type="Pacific/Port_Moresby">
+				<exemplarCity>Papua Nowa Gwinea</exemplarCity>
+			</zone>
+			<zone type="Asia/Manila">
+				<exemplarCity>Filipiny</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Asia/Karachi">
 				<exemplarCity>Karaczi</exemplarCity>
 			</zone>
 			<zone type="Europe/Warsaw">
 				<exemplarCity>Warszawa</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="America/Miquelon">
+				<exemplarCity>Saint Pierre i Miquelon</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Pacific/Pitcairn">
 				<exemplarCity>Wyspy Pitcairn</exemplarCity>
 			</zone>
 			<zone type="America/Puerto_Rico">
 				<exemplarCity>Portoryko</exemplarCity>
 			</zone>
+<<<<<<< HEAD
+=======
+			<zone type="Asia/Gaza">
+				<exemplarCity>Terytoria Palestyńskie</exemplarCity>
+			</zone>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Atlantic/Azores">
 				<exemplarCity>Azory</exemplarCity>
 			</zone>
@@ -2982,14 +4076,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Qatar">
 				<exemplarCity>Katar</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Indian/Reunion">
 				<exemplarCity>Réunion</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Europe/Bucharest">
 				<exemplarCity>Bukareszt</exemplarCity>
 			</zone>
 			<zone type="Europe/Belgrade">
 				<exemplarCity>Belgrad</exemplarCity>
+<<<<<<< HEAD
 			</zone>
 			<zone type="Europe/Moscow">
 				<exemplarCity>Moskwa</exemplarCity>
@@ -4044,30 +5142,268 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<generic>Jekaterynburg</generic>
 					<standard>Jekaterynburg (czas standardowy)</standard>
 					<daylight>Jekaterynburg (czas letni)</daylight>
+=======
+			</zone>
+			<zone type="Europe/Moscow">
+				<exemplarCity>Moskwa</exemplarCity>
+			</zone>
+			<zone type="Europe/Volgograd">
+				<exemplarCity>Wołgograd</exemplarCity>
+			</zone>
+			<zone type="Asia/Yekaterinburg">
+				<exemplarCity>Jekaterynburg</exemplarCity>
+			</zone>
+			<zone type="Asia/Novosibirsk">
+				<exemplarCity>Nowosybirsk</exemplarCity>
+			</zone>
+			<zone type="Asia/Krasnoyarsk">
+				<exemplarCity>Krasnojarsk</exemplarCity>
+			</zone>
+			<zone type="Asia/Irkutsk">
+				<exemplarCity>Irkuck</exemplarCity>
+			</zone>
+			<zone type="Asia/Yakutsk">
+				<exemplarCity>Jakuck</exemplarCity>
+			</zone>
+			<zone type="Asia/Vladivostok">
+				<exemplarCity>Władywostok</exemplarCity>
+			</zone>
+			<zone type="Asia/Sakhalin">
+				<exemplarCity>Sachalin</exemplarCity>
+			</zone>
+			<zone type="Asia/Kamchatka">
+				<exemplarCity>Kamczatka</exemplarCity>
+			</zone>
+			<zone type="Asia/Riyadh">
+				<exemplarCity>Rijad</exemplarCity>
+			</zone>
+			<zone type="Pacific/Guadalcanal">
+				<exemplarCity>Wyspy Salomona</exemplarCity>
+			</zone>
+			<zone type="Indian/Mahe">
+				<exemplarCity>Mahé</exemplarCity>
+			</zone>
+			<zone type="Africa/Khartoum">
+				<exemplarCity>Chartum</exemplarCity>
+			</zone>
+			<zone type="Europe/Stockholm">
+				<exemplarCity>Sztokholm</exemplarCity>
+			</zone>
+			<zone type="Asia/Singapore">
+				<exemplarCity>Singapur</exemplarCity>
+			</zone>
+			<zone type="Atlantic/St_Helena">
+				<exemplarCity>Święta Helena</exemplarCity>
+			</zone>
+			<zone type="Europe/Ljubljana">
+				<exemplarCity>Lublana</exemplarCity>
+			</zone>
+			<zone type="Europe/Bratislava">
+				<exemplarCity>Bratysława</exemplarCity>
+			</zone>
+			<zone type="Africa/Mogadishu">
+				<exemplarCity>Mogadiszu</exemplarCity>
+			</zone>
+			<zone type="America/Paramaribo">
+				<exemplarCity>Surinam</exemplarCity>
+			</zone>
+			<zone type="Africa/Sao_Tome">
+				<exemplarCity>Săo Tomé</exemplarCity>
+			</zone>
+			<zone type="America/El_Salvador">
+				<exemplarCity>Salwador</exemplarCity>
+			</zone>
+			<zone type="Asia/Damascus">
+				<exemplarCity>Damaszek</exemplarCity>
+			</zone>
+			<zone type="America/Grand_Turk">
+				<exemplarCity>Turks i Caicos</exemplarCity>
+			</zone>
+			<zone type="Africa/Ndjamena">
+				<exemplarCity>Ndżamena</exemplarCity>
+			</zone>
+			<zone type="Indian/Kerguelen">
+				<exemplarCity>Wyspy Kerguelena</exemplarCity>
+			</zone>
+			<zone type="Africa/Lome">
+				<exemplarCity>Lomé</exemplarCity>
+			</zone>
+			<zone type="Asia/Bangkok">
+				<exemplarCity>Tajlandia</exemplarCity>
+			</zone>
+			<zone type="Asia/Dushanbe">
+				<exemplarCity>Duszanbe</exemplarCity>
+			</zone>
+			<zone type="Pacific/Fakaofo">
+				<exemplarCity>Tokelau</exemplarCity>
+			</zone>
+			<zone type="Asia/Dili">
+				<exemplarCity>Timor Wschodni</exemplarCity>
+			</zone>
+			<zone type="Asia/Ashgabat">
+				<exemplarCity>Aszchabad</exemplarCity>
+			</zone>
+			<zone type="Pacific/Tongatapu">
+				<exemplarCity>Tonga</exemplarCity>
+			</zone>
+			<zone type="Europe/Istanbul">
+				<exemplarCity>Stambuł</exemplarCity>
+			</zone>
+			<zone type="America/Port_of_Spain">
+				<exemplarCity>Port-of-Spain</exemplarCity>
+			</zone>
+			<zone type="Pacific/Funafuti">
+				<exemplarCity>Tuvalu</exemplarCity>
+			</zone>
+			<zone type="Asia/Taipei">
+				<exemplarCity>Tajpej</exemplarCity>
+			</zone>
+			<zone type="Africa/Dar_es_Salaam">
+				<exemplarCity>Dar es-Salaam</exemplarCity>
+			</zone>
+			<zone type="Europe/Uzhgorod">
+				<exemplarCity>Użgorod</exemplarCity>
+			</zone>
+			<zone type="Europe/Kiev">
+				<exemplarCity>Kijów</exemplarCity>
+			</zone>
+			<zone type="Europe/Simferopol">
+				<exemplarCity>Symferopol</exemplarCity>
+			</zone>
+			<zone type="Europe/Zaporozhye">
+				<exemplarCity>Zaporoże</exemplarCity>
+			</zone>
+			<zone type="America/North_Dakota/New_Salem">
+				<exemplarCity>New Salem</exemplarCity>
+			</zone>
+			<zone type="America/North_Dakota/Center">
+				<exemplarCity>Center</exemplarCity>
+			</zone>
+			<zone type="America/Indiana/Vincennes">
+				<exemplarCity>Vincennes</exemplarCity>
+			</zone>
+			<zone type="America/Indiana/Petersburg">
+				<exemplarCity>Petersburg</exemplarCity>
+			</zone>
+			<zone type="America/Indiana/Knox">
+				<exemplarCity>Knox</exemplarCity>
+			</zone>
+			<zone type="America/Indiana/Winamac">
+				<exemplarCity>Winamac</exemplarCity>
+			</zone>
+			<zone type="America/Indiana/Marengo">
+				<exemplarCity>Marengo</exemplarCity>
+			</zone>
+			<zone type="America/Indiana/Vevay">
+				<exemplarCity>Vevay</exemplarCity>
+			</zone>
+			<zone type="America/Kentucky/Monticello">
+				<exemplarCity>Monticello</exemplarCity>
+			</zone>
+			<zone type="America/New_York">
+				<exemplarCity>Nowy Jork</exemplarCity>
+			</zone>
+			<zone type="America/Montevideo">
+				<exemplarCity>Urugwaj</exemplarCity>
+			</zone>
+			<zone type="Asia/Samarkand">
+				<exemplarCity>Samarkanda</exemplarCity>
+			</zone>
+			<zone type="Asia/Tashkent">
+				<exemplarCity>Taszkient</exemplarCity>
+			</zone>
+			<zone type="Europe/Vatican">
+				<exemplarCity>Watykan</exemplarCity>
+			</zone>
+			<zone type="America/St_Vincent">
+				<exemplarCity>Saint Vincent</exemplarCity>
+			</zone>
+			<zone type="America/Caracas">
+				<exemplarCity>Wenezuela</exemplarCity>
+			</zone>
+			<zone type="America/Tortola">
+				<exemplarCity>Brytyjskie Wyspy Dziewicze</exemplarCity>
+			</zone>
+			<zone type="America/St_Thomas">
+				<exemplarCity>Saint Thomas</exemplarCity>
+			</zone>
+			<zone type="Asia/Saigon">
+				<exemplarCity>Sajgon</exemplarCity>
+			</zone>
+			<zone type="Pacific/Efate">
+				<exemplarCity>Vanuatu</exemplarCity>
+			</zone>
+			<zone type="Pacific/Wallis">
+				<exemplarCity>Wallis i Futuna</exemplarCity>
+			</zone>
+			<zone type="Pacific/Apia">
+				<exemplarCity>Samoa</exemplarCity>
+			</zone>
+			<zone type="Asia/Aden">
+				<exemplarCity>Jemen</exemplarCity>
+			</zone>
+			<zone type="Indian/Mayotte">
+				<exemplarCity>Majotta</exemplarCity>
+			</zone>
+			<metazone type="Europe_Central">
+				<long>
+					<standard>Czas środkowoeuropejski</standard>
+					<daylight>Czas środkowoeuropejski letni</daylight>
+				</long>
+				<commonlyUsed>true</commonlyUsed>
+			</metazone>
+			<metazone type="Europe_Eastern">
+				<long>
+					<standard>Czas wschodnioeuropejski</standard>
+					<daylight>Czas wschodnioeuropejski letni</daylight>
+				</long>
+			</metazone>
+			<metazone type="Europe_Western">
+				<long>
+					<standard>Czas zachodnioeuropejski</standard>
+					<daylight>Czas zachodnioeuropejski letni</daylight>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				</long>
 			</metazone>
 		</timeZoneNames>
 	</dates>
 	<numbers>
+<<<<<<< HEAD
 		<symbols numberSystem="latn">
+=======
+		<symbols>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<decimal>,</decimal>
 			<group> </group>
 			<list>;</list>
 			<percentSign>%</percentSign>
+<<<<<<< HEAD
 			<plusSign>+</plusSign>
 			<minusSign>-</minusSign>
 			<exponential>E</exponential>
 			<superscriptingExponent>×</superscriptingExponent>
+=======
+			<nativeZeroDigit>0</nativeZeroDigit>
+			<patternDigit>#</patternDigit>
+			<plusSign>+</plusSign>
+			<minusSign>-</minusSign>
+			<exponential>E</exponential>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<perMille>‰</perMille>
 			<infinity>∞</infinity>
 			<nan>NaN</nan>
 		</symbols>
+<<<<<<< HEAD
 		<decimalFormats numberSystem="latn">
+=======
+		<decimalFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<decimalFormatLength>
 				<decimalFormat>
 					<pattern>#,##0.###</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
+<<<<<<< HEAD
 			<decimalFormatLength type="long">
 				<decimalFormat>
 					<pattern type="1000" count="one">0 tysiąc</pattern>
@@ -4174,19 +5510,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</decimalFormatLength>
 		</decimalFormats>
 		<scientificFormats numberSystem="latn">
+=======
+		</decimalFormats>
+		<scientificFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<scientificFormatLength>
 				<scientificFormat>
 					<pattern>#E0</pattern>
 				</scientificFormat>
 			</scientificFormatLength>
 		</scientificFormats>
+<<<<<<< HEAD
 		<percentFormats numberSystem="latn">
+=======
+		<percentFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<percentFormatLength>
 				<percentFormat>
 					<pattern>#,##0%</pattern>
 				</percentFormat>
 			</percentFormatLength>
 		</percentFormats>
+<<<<<<< HEAD
 		<currencyFormats numberSystem="latn">
 			<currencyFormatLength>
 				<currencyFormat type="standard">
@@ -4200,10 +5545,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<unitPattern count="few">{0} {1}</unitPattern>
 			<unitPattern count="many">{0} {1}</unitPattern>
 			<unitPattern count="other">{0} {1}</unitPattern>
+=======
+		<currencyFormats>
+			<currencyFormatLength>
+				<currencyFormat>
+					<pattern>#,##0.00 ¤</pattern>
+				</currencyFormat>
+			</currencyFormatLength>
+			<unitPattern count="one">{0} {1}</unitPattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</currencyFormats>
 		<currencies>
 			<currency type="ADP">
 				<displayName>peseta andorska</displayName>
+<<<<<<< HEAD
 				<displayName count="one">peseta andorska</displayName>
 				<displayName count="few">pesety andorskie</displayName>
 				<displayName count="many">peset andorskich</displayName>
@@ -4228,10 +5583,29 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="one">afgani</displayName>
 				<displayName count="few">afgani</displayName>
 				<displayName count="many">afgani</displayName>
+=======
+				<displayName count="few">pesety andorskie</displayName>
+				<displayName count="other">peset andorskich</displayName>
+			</currency>
+			<currency type="AED">
+				<displayName>dirham arabski</displayName>
+				<displayName count="few">dirhamy arabskie</displayName>
+				<displayName count="other">dirhamów arabskich</displayName>
+			</currency>
+			<currency type="AFA">
+				<displayName>afgani (1927-2002)</displayName>
+				<displayName count="few">afgani (1927-2002)</displayName>
+				<displayName count="other">afgani (1927-2002)</displayName>
+			</currency>
+			<currency type="AFN">
+				<displayName>afgani</displayName>
+				<displayName count="few">afgani</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<displayName count="other">afgani</displayName>
 			</currency>
 			<currency type="ALL">
 				<displayName>lek albański</displayName>
+<<<<<<< HEAD
 				<displayName count="one">lek albański</displayName>
 				<displayName count="few">leki albańskie</displayName>
 				<displayName count="many">leków albańskich</displayName>
@@ -4278,11 +5652,46 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">kwanzy angolańskie Reajustado (1995–1999)</displayName>
 				<displayName count="many">kwanz angolańskich Reajustado (1995–1999)</displayName>
 				<displayName count="other">kwanza angolańska Reajustado (1995–1999)</displayName>
+=======
+				<displayName count="few">leki albańskie</displayName>
+				<displayName count="other">leków albańskich</displayName>
+			</currency>
+			<currency type="AMD">
+				<displayName>dram armeński</displayName>
+				<displayName count="few">dramy armeńskie</displayName>
+				<displayName count="other">dramów armeńskich</displayName>
+			</currency>
+			<currency type="ANG">
+				<displayName>gulden Antyle Holenderskie</displayName>
+				<displayName count="few">guldeny Antyle Holenderskie</displayName>
+				<displayName count="other">guldenów (Antyle Holenderskie)</displayName>
+			</currency>
+			<currency type="AOA">
+				<displayName>kwanza angolańska</displayName>
+				<displayName count="few">kwanzy angolańskie</displayName>
+				<displayName count="other">kwanz angolańskich</displayName>
+			</currency>
+			<currency type="AOK">
+				<displayName>kwanza angolańska (1977-1990)</displayName>
+				<displayName count="few">kwanzy angolańskie (1977-1990)</displayName>
+				<displayName count="other">kwanz angolańskich (1977-1990)</displayName>
+			</currency>
+			<currency type="AON">
+				<displayName>nowa kwanza angolańska (1990-2000)</displayName>
+				<displayName count="few">nowe kwanzy angolańskie (1990-2000)</displayName>
+				<displayName count="other">nowych kwanz angolańskich (1990-2000)</displayName>
+			</currency>
+			<currency type="AOR">
+				<displayName>kwanza angolańska Reajustado (1995-1999)</displayName>
+				<displayName count="few">kwanzy angolańskie Reajustado (1995-1999)</displayName>
+				<displayName count="other">kwanz angolańskich Reajustado (1995-1999)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ARA">
 				<displayName>austral argentyński</displayName>
 			</currency>
 			<currency type="ARP">
+<<<<<<< HEAD
 				<displayName>peso argentyńskie (1983–1985)</displayName>
 			</currency>
 			<currency type="ARS">
@@ -4323,11 +5732,39 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">manaty azerskie</displayName>
 				<displayName count="many">manatów azerskich</displayName>
 				<displayName count="other">manata azerskiego</displayName>
+=======
+				<displayName>peso argentyńskie (1983-1985)</displayName>
+			</currency>
+			<currency type="ARS">
+				<displayName>peso argentyńskie</displayName>
+			</currency>
+			<currency type="ATS">
+				<displayName>szyling austriacki </displayName>
+			</currency>
+			<currency type="AUD">
+				<displayName>dolar australijski</displayName>
+				<displayName count="few">dolary australijskie</displayName>
+				<displayName count="one">dolar australijski</displayName>
+				<displayName count="other">dolarów australijskich</displayName>
+			</currency>
+			<currency type="AWG">
+				<displayName>gulden arubski</displayName>
+			</currency>
+			<currency type="AZM">
+				<displayName>manat azerbejdżański</displayName>
+			</currency>
+			<currency type="AZN">
+				<displayName>manat azerski</displayName>
+				<displayName count="few">manaty azerskie</displayName>
+				<displayName count="one">manat azerski</displayName>
+				<displayName count="other">manatów azerskich</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BAD">
 				<displayName>dinar Bośni i Hercegowiny</displayName>
 			</currency>
 			<currency type="BAM">
+<<<<<<< HEAD
 				<displayName>marka zamienna Bośni i Hercegowiny</displayName>
 				<displayName count="one">marka zamienna Bośni i Hercegowiny</displayName>
 				<displayName count="few">marki zamienne Bośni i Hercegowiny</displayName>
@@ -4354,6 +5791,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">franki belgijskie (wymienialne)</displayName>
 				<displayName count="many">franków belgijskich (wymienialnych)</displayName>
 				<displayName count="other">frank belgijski (zamienny)</displayName>
+=======
+				<displayName>marka konwertybilna Bośni i Hercegowiny</displayName>
+				<displayName count="few">marki wymienne Bośni i Hercegowiny</displayName>
+				<displayName count="one">marka wymienna Bośni i Hercegowiny</displayName>
+				<displayName count="other">marek wymiennych Bośni i Hercegowiny</displayName>
+			</currency>
+			<currency type="BBD">
+				<displayName>dolar Barbadosu</displayName>
+			</currency>
+			<currency type="BDT">
+				<displayName>taka bengalska</displayName>
+			</currency>
+			<currency type="BEC">
+				<displayName>frank belgijski (zamienny)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BEF">
 				<displayName>frank belgijski</displayName>
@@ -4362,6 +5814,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>frank belgijski (finansowy)</displayName>
 			</currency>
 			<currency type="BGL">
+<<<<<<< HEAD
 				<displayName>lew bułgarski wymienny</displayName>
 				<displayName count="one" draft="contributed">lew bułgarski wymienny</displayName>
 				<displayName count="few" draft="contributed">lewa bułgarskie wymienne</displayName>
@@ -4423,6 +5876,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few" draft="contributed">boliviano</displayName>
 				<displayName count="many" draft="contributed">boliviano</displayName>
 				<displayName count="other" draft="contributed">boliviano</displayName>
+=======
+				<displayName>lew bułgarski</displayName>
+			</currency>
+			<currency type="BGN">
+				<displayName>nowy lew bułgarski</displayName>
+			</currency>
+			<currency type="BHD">
+				<displayName>dinar bahrański</displayName>
+			</currency>
+			<currency type="BIF">
+				<displayName>frank burundyjski</displayName>
+			</currency>
+			<currency type="BMD">
+				<displayName>dolar bermudzki</displayName>
+			</currency>
+			<currency type="BND">
+				<displayName>dolar brunejski</displayName>
+			</currency>
+			<currency type="BOB">
+				<displayName>boliviano</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BOP">
 				<displayName>peso boliwijskie</displayName>
@@ -4431,12 +5905,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>mvdol boliwijski</displayName>
 			</currency>
 			<currency type="BRB">
+<<<<<<< HEAD
 				<displayName>cruzeiro novo brazylijskie (1967–1986)</displayName>
+=======
+				<displayName>cruzeiro novo brazylijskie (1967-1986)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BRC">
 				<displayName>cruzado brazylijskie</displayName>
 			</currency>
 			<currency type="BRE">
+<<<<<<< HEAD
 				<displayName>cruzeiro brazylijskie (1990–1993)</displayName>
 			</currency>
 			<currency type="BRL">
@@ -4446,6 +5925,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="many">reali brazylijskich</displayName>
 				<displayName count="other">reala brazylijskiego</displayName>
 				<symbol>R$</symbol>
+=======
+				<displayName>cruzeiro brazylijskie (1990-1993)</displayName>
+			</currency>
+			<currency type="BRL">
+				<displayName>real brazylijski</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BRN">
 				<displayName>nowe cruzado brazylijskie</displayName>
@@ -4455,6 +5940,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BSD">
 				<displayName>dolar bahamski</displayName>
+<<<<<<< HEAD
 				<displayName count="one">dolar bahamski</displayName>
 				<displayName count="few">dolary bahamskie</displayName>
 				<displayName count="many">dolarów bahamskich</displayName>
@@ -4466,11 +5952,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">ngultrum bhutańskie</displayName>
 				<displayName count="many">ngultrum bhutańskich</displayName>
 				<displayName count="other">ngultrum bhutańskiego</displayName>
+=======
+			</currency>
+			<currency type="BTN">
+				<displayName>ngultrum Bhutanu</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BUK">
 				<displayName>kyat birmański</displayName>
 			</currency>
 			<currency type="BWP">
+<<<<<<< HEAD
 				<displayName>pula botswańska</displayName>
 				<displayName count="one">pula botswańska</displayName>
 				<displayName count="few">pule botswańskie</displayName>
@@ -4544,12 +6036,55 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">colony kostarykańskie</displayName>
 				<displayName count="many">colonów kostarykańskich</displayName>
 				<displayName count="other">colona kostarykańskiego</displayName>
+=======
+				<displayName>pula</displayName>
+			</currency>
+			<currency type="BYB">
+				<displayName>rubel białoruski (1994-1999)</displayName>
+			</currency>
+			<currency type="BYR">
+				<displayName>rubel białoruski</displayName>
+				<displayName count="few">ruble białoruskie</displayName>
+				<displayName count="one">rubel białoruski</displayName>
+				<displayName count="other">rubli białoruskich</displayName>
+			</currency>
+			<currency type="BZD">
+				<displayName>dolar belizeński</displayName>
+			</currency>
+			<currency type="CAD">
+				<displayName>dolar kanadyjski</displayName>
+				<displayName count="few">dolary kanadyjskie</displayName>
+				<displayName count="one">dolar kanadyjski</displayName>
+				<displayName count="other">dolarów kanadyjskich</displayName>
+			</currency>
+			<currency type="CDF">
+				<displayName>frank kongijski</displayName>
+			</currency>
+			<currency type="CHF">
+				<displayName>frank szwajcarski</displayName>
+				<displayName count="few">franki szwajcarskie</displayName>
+				<displayName count="one">frank szwajcarski</displayName>
+				<displayName count="other">franków szwajcarskich</displayName>
+			</currency>
+			<currency type="CLP">
+				<displayName>peso chilijskie</displayName>
+			</currency>
+			<currency type="CNY">
+				<displayName>juan renminbi</displayName>
+			</currency>
+			<currency type="COP">
+				<displayName>peso kolumbijskie</displayName>
+			</currency>
+			<currency type="CRC">
+				<displayName>colon kostarykański</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="CSD">
 				<displayName>stary dinar serbski</displayName>
 			</currency>
 			<currency type="CSK">
 				<displayName>korona czechosłowacka</displayName>
+<<<<<<< HEAD
 				<displayName count="one">korona czechosłowacka</displayName>
 				<displayName count="few">korony czechosłowackie</displayName>
 				<displayName count="many">koron czechosłowackich</displayName>
@@ -4575,22 +6110,40 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">escudo zielonoprzylądkowe</displayName>
 				<displayName count="many">escudo zielonoprzylądkowych</displayName>
 				<displayName count="other">escudo zielonoprzylądkowego</displayName>
+=======
+				<displayName count="few">korony czechosłowackie</displayName>
+				<displayName count="one">korona czechosłowacka</displayName>
+				<displayName count="other">koron czechosłowackich</displayName>
+			</currency>
+			<currency type="CUP">
+				<displayName>peso kubańskie</displayName>
+			</currency>
+			<currency type="CVE">
+				<displayName>escudo Zielonego Przylądka</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="CYP">
 				<displayName>funt cypryjski</displayName>
 			</currency>
 			<currency type="CZK">
 				<displayName>korona czeska</displayName>
+<<<<<<< HEAD
 				<displayName count="one">korona czeska</displayName>
 				<displayName count="few">korony czeskie</displayName>
 				<displayName count="many">koron czeskich</displayName>
 				<displayName count="other">korony czeskiej</displayName>
+=======
+				<displayName count="few">korony czeskie</displayName>
+				<displayName count="one">korona czeska</displayName>
+				<displayName count="other">koron czeskich</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="DDM">
 				<displayName>wschodnia marka wschodnioniemiecka</displayName>
 			</currency>
 			<currency type="DEM">
 				<displayName>marka niemiecka</displayName>
+<<<<<<< HEAD
 				<displayName count="one">marka niemiecka</displayName>
 				<displayName count="few">marki niemieckie</displayName>
 				<displayName count="many">marek niemieckich</displayName>
@@ -4623,12 +6176,33 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">dinary algierskie</displayName>
 				<displayName count="many">dinarów algierskich</displayName>
 				<displayName count="other">dinara algierskiego</displayName>
+=======
+				<displayName count="few">marki niemieckie</displayName>
+				<displayName count="one">marka niemiecka</displayName>
+				<displayName count="other">marek niemieckich</displayName>
+			</currency>
+			<currency type="DJF">
+				<displayName>frank Dżibuti</displayName>
+			</currency>
+			<currency type="DKK">
+				<displayName>korona duńska</displayName>
+				<displayName count="few">korony duńskie</displayName>
+				<displayName count="one">korona duńska</displayName>
+				<displayName count="other">koron duńskich</displayName>
+			</currency>
+			<currency type="DOP">
+				<displayName>peso dominikańskie</displayName>
+			</currency>
+			<currency type="DZD">
+				<displayName>dinar algierski</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ECS">
 				<displayName>sucre ekwadorski</displayName>
 			</currency>
 			<currency type="EEK">
 				<displayName>korona estońska</displayName>
+<<<<<<< HEAD
 				<displayName count="one">korona estońska</displayName>
 				<displayName count="few">korony estońskie</displayName>
 				<displayName count="many">koron estońskich</displayName>
@@ -4647,22 +6221,37 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">nakfy erytrejskie</displayName>
 				<displayName count="many">nakf erytrejskich</displayName>
 				<displayName count="other">nakfy erytrejskiej</displayName>
+=======
+				<displayName count="few">korony estońskie</displayName>
+				<displayName count="one">korona estońska</displayName>
+				<displayName count="other">koron estońskich</displayName>
+			</currency>
+			<currency type="EGP">
+				<displayName>funt egipski</displayName>
+			</currency>
+			<currency type="ERN">
+				<displayName>nakfa erytrejska</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ESA">
 				<displayName>peseta hiszpańska (Konto A)</displayName>
 			</currency>
 			<currency type="ESB">
 				<displayName>peseta hiszpańska (konto wymienne)</displayName>
+<<<<<<< HEAD
 				<displayName count="one">peseta hiszpańska (konto wymienialne)</displayName>
 				<displayName count="few">pesety hiszpańskie (konto wymienialne)</displayName>
 				<displayName count="many">peset hiszpańskich (konto wymienialne)</displayName>
 				<displayName count="other">peseta hiszpańska (konto wymienne)</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ESP">
 				<displayName>peseta hiszpańska</displayName>
 			</currency>
 			<currency type="ETB">
 				<displayName>birr etiopski</displayName>
+<<<<<<< HEAD
 				<displayName count="one">birr etiopski</displayName>
 				<displayName count="few">birra etiopskie</displayName>
 				<displayName count="many">birra etiopskich</displayName>
@@ -4673,6 +6262,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="one">euro</displayName>
 				<displayName count="few">euro</displayName>
 				<displayName count="many">euro</displayName>
+=======
+			</currency>
+			<currency type="EUR">
+				<displayName>euro</displayName>
+				<displayName count="few">euro</displayName>
+				<displayName count="one">euro</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<displayName count="other">euro</displayName>
 			</currency>
 			<currency type="FIM">
@@ -4680,6 +6276,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="FJD">
 				<displayName>dolar fidżi</displayName>
+<<<<<<< HEAD
 				<displayName count="one">dolar fidżyjski</displayName>
 				<displayName count="few">dolary fidżyjskie</displayName>
 				<displayName count="many">dolarów fidżyjskich</displayName>
@@ -4706,12 +6303,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="many">funtów szterlingów</displayName>
 				<displayName count="other">funta szterlinga</displayName>
 				<symbol>GBP</symbol>
+=======
+			</currency>
+			<currency type="FKP">
+				<displayName>funt Wysp Falklandzkich</displayName>
+			</currency>
+			<currency type="FRF">
+				<displayName>frank francuski </displayName>
+				<displayName count="few">franki francuskie</displayName>
+				<displayName count="one">frank francuski</displayName>
+				<displayName count="other">franków francuskich</displayName>
+			</currency>
+			<currency type="GBP">
+				<displayName>funt szterling</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="GEK">
 				<displayName>kupon gruziński larit</displayName>
 			</currency>
 			<currency type="GEL">
 				<displayName>lari gruzińskie</displayName>
+<<<<<<< HEAD
 				<displayName count="one">lari gruzińskie</displayName>
 				<displayName count="few">lari gruzińskie</displayName>
 				<displayName count="many">lari gruzińskich</displayName>
@@ -4747,6 +6359,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">franki gwinejskie</displayName>
 				<displayName count="many">franków gwinejskich</displayName>
 				<displayName count="other">franka gwinejskiego</displayName>
+=======
+			</currency>
+			<currency type="GHC">
+				<displayName>cedi ghańskie</displayName>
+			</currency>
+			<currency type="GHS">
+				<displayName>cedi Ghany</displayName>
+			</currency>
+			<currency type="GIP">
+				<displayName>funt gibraltarski</displayName>
+			</currency>
+			<currency type="GMD">
+				<displayName>dalasi gambijskie</displayName>
+			</currency>
+			<currency type="GNF">
+				<displayName>frank gwinejski</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="GNS">
 				<displayName>syli gwinejskie</displayName>
@@ -4759,10 +6388,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="GTQ">
 				<displayName>quetzal gwatemalski</displayName>
+<<<<<<< HEAD
 				<displayName count="one">quetzal gwatemalski</displayName>
 				<displayName count="few">quetzale gwatemalskie</displayName>
 				<displayName count="many">quetzali gwatemalskich</displayName>
 				<displayName count="other">quetzala gwatemalskiego</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="GWE">
 				<displayName>escudo Gwinea Portugalska</displayName>
@@ -4772,6 +6404,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="GYD">
 				<displayName>dolar gujański</displayName>
+<<<<<<< HEAD
 				<displayName count="one">dolar gujański</displayName>
 				<displayName count="few">dolary gujańskie</displayName>
 				<displayName count="many">dolarów gujańskich</displayName>
@@ -4791,12 +6424,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">lempiry honduraskie</displayName>
 				<displayName count="many">lempir honduraskich</displayName>
 				<displayName count="other">lempiry honduraskiej</displayName>
+=======
+			</currency>
+			<currency type="HKD">
+				<displayName>dolar hongkoński</displayName>
+			</currency>
+			<currency type="HNL">
+				<displayName>lempira Hondurasu</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="HRD">
 				<displayName>dinar chorwacki</displayName>
 			</currency>
 			<currency type="HRK">
 				<displayName>kuna chorwacka</displayName>
+<<<<<<< HEAD
 				<displayName count="one">kuna chorwacka</displayName>
 				<displayName count="few">kuny chorwackie</displayName>
 				<displayName count="many">kun chorwackich</displayName>
@@ -4822,6 +6464,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">rupie indonezyjskie</displayName>
 				<displayName count="many">rupii indonezyjskich</displayName>
 				<displayName count="other">rupii indonezyjskiej</displayName>
+=======
+			</currency>
+			<currency type="HTG">
+				<displayName>gourde haitańskie</displayName>
+			</currency>
+			<currency type="HUF">
+				<displayName>forint węgierski </displayName>
+				<displayName count="few">forinty węgierskie</displayName>
+				<displayName count="one">forint węgierski</displayName>
+				<displayName count="other">forintów węgierskich</displayName>
+			</currency>
+			<currency type="IDR">
+				<displayName>rupia indonezyjska</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="IEP">
 				<displayName>funt irlandzki</displayName>
@@ -4831,6 +6487,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ILS">
 				<displayName>nowy szekel izraelski</displayName>
+<<<<<<< HEAD
 				<displayName count="one">nowy szekel izraelski</displayName>
 				<displayName count="few">nowe szekle izraelskie</displayName>
 				<displayName count="many">nowych szekli izraelskich</displayName>
@@ -4865,12 +6522,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">korony islandzkie</displayName>
 				<displayName count="many">koron islandzkich</displayName>
 				<displayName count="other">korony islandzkiej</displayName>
+=======
+			</currency>
+			<currency type="INR">
+				<displayName>rupia indyjska</displayName>
+			</currency>
+			<currency type="IQD">
+				<displayName>dinar iracki</displayName>
+			</currency>
+			<currency type="IRR">
+				<displayName>rial irański</displayName>
+			</currency>
+			<currency type="ISK">
+				<displayName>korona islandzka</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ITL">
 				<displayName>lir włoski</displayName>
 			</currency>
 			<currency type="JMD">
 				<displayName>dolar jamajski</displayName>
+<<<<<<< HEAD
 				<displayName count="one">dolar jamajski</displayName>
 				<displayName count="few">dolary jamajskie</displayName>
 				<displayName count="many">dolarów jamajskich</displayName>
@@ -4982,16 +6654,69 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">dolary liberyjskie</displayName>
 				<displayName count="many">dolarów liberyjskich</displayName>
 				<displayName count="other">dolara liberyjskiego</displayName>
+=======
+			</currency>
+			<currency type="JOD">
+				<displayName>dinar jordański</displayName>
+			</currency>
+			<currency type="JPY">
+				<displayName>jen japoński</displayName>
+				<displayName count="few">jeny japońskie</displayName>
+				<displayName count="one">jen japoński</displayName>
+				<displayName count="other">jenów japońskich</displayName>
+			</currency>
+			<currency type="KES">
+				<displayName>szyling kenijski</displayName>
+			</currency>
+			<currency type="KGS">
+				<displayName>som kirgiski</displayName>
+			</currency>
+			<currency type="KHR">
+				<displayName>riel kambodżański</displayName>
+			</currency>
+			<currency type="KMF">
+				<displayName>frank komoryjski</displayName>
+			</currency>
+			<currency type="KPW">
+				<displayName>won północnokoreański</displayName>
+			</currency>
+			<currency type="KRW">
+				<displayName>won południowokoreański</displayName>
+			</currency>
+			<currency type="KWD">
+				<displayName>dinar kuwejcki</displayName>
+			</currency>
+			<currency type="KYD">
+				<displayName>dolar kajmański</displayName>
+			</currency>
+			<currency type="KZT">
+				<displayName>tenge kazachskie</displayName>
+			</currency>
+			<currency type="LAK">
+				<displayName>kip laotański</displayName>
+			</currency>
+			<currency type="LBP">
+				<displayName>funt libański</displayName>
+			</currency>
+			<currency type="LKR">
+				<displayName>rupia lankijska</displayName>
+			</currency>
+			<currency type="LRD">
+				<displayName>dolar liberyjski</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="LSL">
 				<displayName>loti Lesoto</displayName>
 			</currency>
 			<currency type="LTL">
 				<displayName>lit litewski</displayName>
+<<<<<<< HEAD
 				<displayName count="one">lit litewski</displayName>
 				<displayName count="few">lity litewskie</displayName>
 				<displayName count="many">litów litewskich</displayName>
 				<displayName count="other">lita litewskiego</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="LTT">
 				<displayName>talon litewski</displayName>
@@ -5001,16 +6726,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="LVL">
 				<displayName>łat łotewski</displayName>
+<<<<<<< HEAD
 				<displayName count="one">łat łotewski</displayName>
 				<displayName count="few">łaty łotewskie</displayName>
 				<displayName count="many">łatów łotewskich</displayName>
 				<displayName count="other">łata łotewskiego</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="LVR">
 				<displayName>rubel łotewski</displayName>
 			</currency>
 			<currency type="LYD">
 				<displayName>dinar libijski</displayName>
+<<<<<<< HEAD
 				<displayName count="one">dinar libijski</displayName>
 				<displayName count="few">dinary libijskie</displayName>
 				<displayName count="many">dinarów libijskich</displayName>
@@ -5043,21 +6772,42 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">ariary malgaskie</displayName>
 				<displayName count="many">ariary malgaskich</displayName>
 				<displayName count="other">ariary malgaskiego</displayName>
+=======
+			</currency>
+			<currency type="MAD">
+				<displayName>dirham marokański</displayName>
+			</currency>
+			<currency type="MAF">
+				<displayName>frank marokański</displayName>
+				<displayName count="few">franki marokańskie</displayName>
+				<displayName count="one">frank marokański</displayName>
+				<displayName count="other">franków marokańskich</displayName>
+			</currency>
+			<currency type="MDL">
+				<displayName>lej mołdawski</displayName>
+			</currency>
+			<currency type="MGA">
+				<displayName>ariar malgaski</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="MGF">
 				<displayName>frank malgaski</displayName>
 			</currency>
 			<currency type="MKD">
 				<displayName>denar macedoński</displayName>
+<<<<<<< HEAD
 				<displayName count="one">denar macedoński</displayName>
 				<displayName count="few">denary macedońskie</displayName>
 				<displayName count="many">denarów macedońskich</displayName>
 				<displayName count="other">denara macedońskiego</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="MLF">
 				<displayName>frank malijski</displayName>
 			</currency>
 			<currency type="MMK">
+<<<<<<< HEAD
 				<displayName>kiat birmański</displayName>
 				<displayName count="one">kiat birmański</displayName>
 				<displayName count="few">kiaty birmańskie</displayName>
@@ -5084,6 +6834,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">ouguiya mauretańskie</displayName>
 				<displayName count="many">ouguiya mauretańskich</displayName>
 				<displayName count="other">ouguiya mauretańskiej</displayName>
+=======
+				<displayName>kyat Myanmar</displayName>
+			</currency>
+			<currency type="MNT">
+				<displayName>tugrik mongolski</displayName>
+			</currency>
+			<currency type="MOP">
+				<displayName>pataka Macao</displayName>
+			</currency>
+			<currency type="MRO">
+				<displayName>ouguiya mauterańska</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="MTL">
 				<displayName>lira maltańska</displayName>
@@ -5092,6 +6854,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>funt maltański</displayName>
 			</currency>
 			<currency type="MUR">
+<<<<<<< HEAD
 				<displayName>rupia maurytyjska</displayName>
 				<displayName count="one">rupia maurytyjska</displayName>
 				<displayName count="few">rupie maurytyjskie</displayName>
@@ -5129,6 +6892,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">ringgity malezyjskie</displayName>
 				<displayName count="many">ringgitów malezyjskich</displayName>
 				<displayName count="other">ringgita malezyjskiego</displayName>
+=======
+				<displayName>rupia Mauritius</displayName>
+			</currency>
+			<currency type="MVR">
+				<displayName>rufiyaa malediwska</displayName>
+			</currency>
+			<currency type="MWK">
+				<displayName>kwacha malawska</displayName>
+			</currency>
+			<currency type="MXN">
+				<displayName>peso meksykańskie</displayName>
+			</currency>
+			<currency type="MXP">
+				<displayName>peso srebrne meksykańskie (1861-1992)</displayName>
+			</currency>
+			<currency type="MYR">
+				<displayName>ringgit malezyjski</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="MZE">
 				<displayName>escudo mozambickie</displayName>
@@ -5137,6 +6918,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>metical Mozambik</displayName>
 			</currency>
 			<currency type="MZN">
+<<<<<<< HEAD
 				<displayName>metical mozambicki</displayName>
 				<displayName count="one" draft="contributed">metical mozambijski</displayName>
 				<displayName count="few" draft="contributed">meticale mozambijskie</displayName>
@@ -5209,22 +6991,65 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">balboa panamskie</displayName>
 				<displayName count="many">balboa panamskich</displayName>
 				<displayName count="other">balboa panamskiego</displayName>
+=======
+				<displayName>metical Mozambiku</displayName>
+			</currency>
+			<currency type="NAD">
+				<displayName>dolar namibijski</displayName>
+			</currency>
+			<currency type="NGN">
+				<displayName>naira nigeryjska</displayName>
+			</currency>
+			<currency type="NIC">
+				<displayName>cordoba nikaraguańska</displayName>
+			</currency>
+			<currency type="NIO">
+				<displayName>cordoba oro nikaraguańska</displayName>
+			</currency>
+			<currency type="NLG">
+				<displayName>gulden holenderski </displayName>
+			</currency>
+			<currency type="NOK">
+				<displayName>korona norweska</displayName>
+				<displayName count="few">korony norweskie</displayName>
+				<displayName count="one">korona norweska</displayName>
+				<displayName count="other">koron norweskich</displayName>
+			</currency>
+			<currency type="NPR">
+				<displayName>rupia nepalska</displayName>
+			</currency>
+			<currency type="NZD">
+				<displayName>dolar nowozelandzki</displayName>
+				<displayName count="few">dolary nowozelandzkie</displayName>
+				<displayName count="one">dolar nowozelandzki</displayName>
+				<displayName count="other">dolarów nowozelandzkich</displayName>
+			</currency>
+			<currency type="OMR">
+				<displayName>rial Omanu</displayName>
+			</currency>
+			<currency type="PAB">
+				<displayName>balboa panamski</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="PEI">
 				<displayName>inti peruwiański</displayName>
 			</currency>
 			<currency type="PEN">
 				<displayName>nowy sol peruwiański</displayName>
+<<<<<<< HEAD
 				<displayName count="one">nowy sol peruwiański</displayName>
 				<displayName count="few">nowe sole peruwiańskie</displayName>
 				<displayName count="many">nowych soli peruwiańskich</displayName>
 				<displayName count="other">nowego sola peruwiańskiego</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="PES">
 				<displayName>sol peruwiański</displayName>
 			</currency>
 			<currency type="PGK">
 				<displayName>kina Papua Nowa Gwinea</displayName>
+<<<<<<< HEAD
 				<displayName count="one" draft="contributed">kina papuaska</displayName>
 				<displayName count="few" draft="contributed">kina papuaskie</displayName>
 				<displayName count="many" draft="contributed">kina papuaskich</displayName>
@@ -5258,12 +7083,30 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">złote polskie (1950–1995)</displayName>
 				<displayName count="many">złotych polskich (1950–1995)</displayName>
 				<displayName count="other">złotego polskiego (1950–1995)</displayName>
+=======
+			</currency>
+			<currency type="PHP">
+				<displayName>peso filipińskie</displayName>
+			</currency>
+			<currency type="PKR">
+				<displayName>rupia pakistańska</displayName>
+			</currency>
+			<currency type="PLN">
+				<displayName>złoty polski</displayName>
+				<displayName count="few">złote polskie</displayName>
+				<displayName count="one">złoty polski</displayName>
+				<displayName count="other">złotych polskich</displayName>
+			</currency>
+			<currency type="PLZ">
+				<displayName>złoty polski (1950-1995)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="PTE">
 				<displayName>escudo portugalskie</displayName>
 			</currency>
 			<currency type="PYG">
 				<displayName>guarani paragwajskie</displayName>
+<<<<<<< HEAD
 				<displayName count="one">guarani paragwajskie</displayName>
 				<displayName count="few">guarani paragwajskie</displayName>
 				<displayName count="many">guarani paragwajskich</displayName>
@@ -5275,11 +7118,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">riale katarskie</displayName>
 				<displayName count="many">riali katarskich</displayName>
 				<displayName count="other">riala katarskiego</displayName>
+=======
+			</currency>
+			<currency type="QAR">
+				<displayName>rial katarski</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="RHD">
 				<displayName>dolar rodezyjski</displayName>
 			</currency>
 			<currency type="ROL">
+<<<<<<< HEAD
 				<displayName>lej rumuński (1952–2006)</displayName>
 				<displayName count="one" draft="contributed">lej rumuński (1952–2006)</displayName>
 				<displayName count="few" draft="contributed">lei rumuńskie (1952–2006)</displayName>
@@ -5341,12 +7190,43 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">rupie seszelskie</displayName>
 				<displayName count="many">rupii seszelskich</displayName>
 				<displayName count="other">rupii seszelskiej</displayName>
+=======
+				<displayName>lej rumuński</displayName>
+			</currency>
+			<currency type="RON">
+				<displayName>nowa leja rumuńska</displayName>
+			</currency>
+			<currency type="RSD">
+				<displayName>dinar serbski</displayName>
+			</currency>
+			<currency type="RUB">
+				<displayName>rubel rosyjski</displayName>
+				<displayName count="few">ruble rosyjskie</displayName>
+				<displayName count="one">rubel rosyjski</displayName>
+				<displayName count="other">rubli rosyjskich</displayName>
+			</currency>
+			<currency type="RUR">
+				<displayName>rubel rosyjski (1991-1998)</displayName>
+			</currency>
+			<currency type="RWF">
+				<displayName>frank ruandyjski</displayName>
+			</currency>
+			<currency type="SAR">
+				<displayName>rial saudyjski</displayName>
+			</currency>
+			<currency type="SBD">
+				<displayName>dolar Wysp Salomona</displayName>
+			</currency>
+			<currency type="SCR">
+				<displayName>rupia seszelska</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="SDD">
 				<displayName>dinar sudański</displayName>
 			</currency>
 			<currency type="SDG">
 				<displayName>funt sudański</displayName>
+<<<<<<< HEAD
 				<displayName count="one">funt sudański</displayName>
 				<displayName count="few">funty sudańskie</displayName>
 				<displayName count="many">funtów sudańskich</displayName>
@@ -5414,10 +7294,52 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">dolary surinamskie</displayName>
 				<displayName count="many">dolarów surinamskich</displayName>
 				<displayName count="other">dolara surinamskiego</displayName>
+=======
+			</currency>
+			<currency type="SDP">
+				<displayName>stary funt sudański</displayName>
+			</currency>
+			<currency type="SEK">
+				<displayName>korona szwedzka</displayName>
+				<displayName count="few">korony szwedzkie</displayName>
+				<displayName count="one">korona szwedzka</displayName>
+				<displayName count="other">koron szwedzkich</displayName>
+			</currency>
+			<currency type="SGD">
+				<displayName>dolar singapurski</displayName>
+			</currency>
+			<currency type="SHP">
+				<displayName>funt Wyspy Świętej Heleny</displayName>
+			</currency>
+			<currency type="SIT">
+				<displayName>tolar słoweński</displayName>
+				<displayName count="few">tolary słoweńskie</displayName>
+				<displayName count="one">tolar słoweński</displayName>
+				<displayName count="other">tolarów słoweńskich</displayName>
+			</currency>
+			<currency type="SKK">
+				<displayName>korona słowacka</displayName>
+				<displayName count="few">korony słowackie</displayName>
+				<displayName count="one">korona słowacka</displayName>
+				<displayName count="other">koron słowackich</displayName>
+			</currency>
+			<currency type="SLL">
+				<displayName>leone Sierra Leone</displayName>
+			</currency>
+			<currency type="SOS">
+				<displayName>szyling somalijski</displayName>
+			</currency>
+			<currency type="SRD">
+				<displayName>dolar surinamski</displayName>
+				<displayName count="few">dolary surinamskie</displayName>
+				<displayName count="one">dolar surinamski</displayName>
+				<displayName count="other">dolarów surinamskich</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="SRG">
 				<displayName>gulden surinamski</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="SSP">
 				<displayName>funt południowosudański</displayName>
 				<displayName count="one">funt południowosudański</displayName>
@@ -5438,12 +7360,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">ruble radzieckie</displayName>
 				<displayName count="many">rubli radzieckich</displayName>
 				<displayName count="other">rubel radziecki</displayName>
+=======
+			<currency type="STD">
+				<displayName>dobra Wysp Świętego Tomasza i Książęcej</displayName>
+			</currency>
+			<currency type="SUR">
+				<displayName>rubel radziecki</displayName>
+				<displayName count="few">ruble radzieckie</displayName>
+				<displayName count="one">rubel radziecki</displayName>
+				<displayName count="other">rubli radzieckich</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="SVC">
 				<displayName>colon salwadorski</displayName>
 			</currency>
 			<currency type="SYP">
 				<displayName>funt syryjski</displayName>
+<<<<<<< HEAD
 				<displayName count="one">funt syryjski</displayName>
 				<displayName count="few">funty syryjskie</displayName>
 				<displayName count="many">funtów syryjskich</displayName>
@@ -5463,12 +7396,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="many">bahtów tajskich</displayName>
 				<displayName count="other">bahta tajskiego</displayName>
 				<symbol>THB</symbol>
+=======
+			</currency>
+			<currency type="SZL">
+				<displayName>lilangeni Suazi</displayName>
+			</currency>
+			<currency type="THB">
+				<displayName>baht tajski</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="TJR">
 				<displayName>rubel tadżycki</displayName>
 			</currency>
 			<currency type="TJS">
 				<displayName>somoni tadżyckie</displayName>
+<<<<<<< HEAD
 				<displayName count="one">somoni tadżyckie</displayName>
 				<displayName count="few">somoni tadżyckie</displayName>
 				<displayName count="many">somoni tadżyckich</displayName>
@@ -5501,11 +7443,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">pa'anga tongijskie</displayName>
 				<displayName count="many">pa'anga tongijskich</displayName>
 				<displayName count="other">pa'anga tongijskiej</displayName>
+=======
+			</currency>
+			<currency type="TMM">
+				<displayName>manat turkmeński</displayName>
+			</currency>
+			<currency type="TND">
+				<displayName>dinar tunezyjski</displayName>
+			</currency>
+			<currency type="TOP">
+				<displayName>paʻanga Tonga</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="TPE">
 				<displayName>escudo timorskie</displayName>
 			</currency>
 			<currency type="TRL">
+<<<<<<< HEAD
 				<displayName>lira turecka (1922–2005)</displayName>
 				<displayName count="one">lira turecka (1922–2005)</displayName>
 				<displayName count="few">liry tureckie (1922–2005)</displayName>
@@ -5636,10 +7590,86 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="XAG">
 				<displayName draft="contributed">srebro</displayName>
+=======
+				<displayName>lir turecki</displayName>
+				<displayName count="few">liry tureckie</displayName>
+				<displayName count="one">lira turecka</displayName>
+				<displayName count="other">lir tureckich</displayName>
+			</currency>
+			<currency type="TRY">
+				<displayName>nowa lira turecka</displayName>
+				<displayName count="few">nowe liry tureckie</displayName>
+				<displayName count="one">nowa lira turecka</displayName>
+				<displayName count="other">nowych lir tureckich</displayName>
+			</currency>
+			<currency type="TTD">
+				<displayName>dolar Trynidadu i Tobago</displayName>
+			</currency>
+			<currency type="TWD">
+				<displayName>nowy dolar tajwański</displayName>
+			</currency>
+			<currency type="TZS">
+				<displayName>szyling tanzański</displayName>
+			</currency>
+			<currency type="UAH">
+				<displayName>hrywna ukraińska</displayName>
+				<displayName count="few">hrywny ukraińskie</displayName>
+				<displayName count="one">hrywna ukraińska</displayName>
+				<displayName count="other">hrywien ukraińskich</displayName>
+			</currency>
+			<currency type="UAK">
+				<displayName>karbowaniec ukraiński</displayName>
+				<displayName count="few">karbowańce ukraińskie</displayName>
+				<displayName count="one">karbowaniec ukraiński</displayName>
+				<displayName count="other">karbowańców ukraińskich</displayName>
+			</currency>
+			<currency type="UGS">
+				<displayName>szyling ugandyjski (1966-1987)</displayName>
+			</currency>
+			<currency type="UGX">
+				<displayName>szyling ugandyjski</displayName>
+			</currency>
+			<currency type="USD">
+				<displayName>dolar amerykański </displayName>
+				<displayName count="few">dolary amerykańskie</displayName>
+				<displayName count="one">dolar amerykański</displayName>
+				<displayName count="other">dolarów amerykańskich</displayName>
+			</currency>
+			<currency type="UYP">
+				<displayName>peso urugwajskie (1975-1993)</displayName>
+			</currency>
+			<currency type="UYU">
+				<displayName>peso urugwajskie</displayName>
+			</currency>
+			<currency type="UZS">
+				<displayName>som uzbecki</displayName>
+			</currency>
+			<currency type="VEB">
+				<displayName>boliwar wenezuelski</displayName>
+			</currency>
+			<currency type="VEF">
+				<displayName>boliwar fuerte</displayName>
+			</currency>
+			<currency type="VND">
+				<displayName>dong wietnamski</displayName>
+			</currency>
+			<currency type="VUV">
+				<displayName>vatu Vanuatu</displayName>
+			</currency>
+			<currency type="WST">
+				<displayName>tala samoańska</displayName>
+			</currency>
+			<currency type="XAF">
+				<displayName>frank CFA BEAC</displayName>
+			</currency>
+			<currency type="XAG">
+				<displayName>srebro</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="XAU">
 				<displayName>złoto</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="XBA">
 				<displayName draft="provisional">jednostka emisji euroobligacji</displayName>
 			</currency>
@@ -5659,6 +7689,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="many">dolarów wschodniokaraibskich</displayName>
 				<displayName count="other">dolara wschodniokaraibskiego</displayName>
 				<symbol>EC$</symbol>
+=======
+			<currency type="XCD">
+				<displayName>dolar wschodniokaraibski</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="XDR">
 				<displayName>specjalne prawa ciągnienia</displayName>
@@ -5674,17 +7708,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="XOF">
 				<displayName>frank CFA</displayName>
+<<<<<<< HEAD
 				<displayName count="one">frank CFA</displayName>
 				<displayName count="few">franki CFA</displayName>
 				<displayName count="many">franków CFA</displayName>
 				<displayName count="other">franka CFA</displayName>
 				<symbol>CFA</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="XPD">
 				<displayName>pallad</displayName>
 			</currency>
 			<currency type="XPF">
 				<displayName>frank CFP</displayName>
+<<<<<<< HEAD
 				<displayName count="one">frank CFP</displayName>
 				<displayName count="few">franki CFP</displayName>
 				<displayName count="many">franków CFP</displayName>
@@ -5703,16 +7741,30 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">nieznanej waluty</displayName>
 				<displayName count="many">nieznanej waluty</displayName>
 				<displayName count="other">nieznanej waluty</displayName>
+=======
+			</currency>
+			<currency type="XPT">
+				<displayName>platyna</displayName>
+			</currency>
+			<currency type="XXX">
+				<displayName>nieznana/nieprawidłowa waluta</displayName>
+				<displayName count="few">XXX</displayName>
+				<displayName count="one">nieznana/nieprawidłowa waluta</displayName>
+				<displayName count="other">XXX</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="YDD">
 				<displayName>dinar jemeński</displayName>
 			</currency>
 			<currency type="YER">
 				<displayName>rial jemeński</displayName>
+<<<<<<< HEAD
 				<displayName count="one">rial jemeński</displayName>
 				<displayName count="few">riale jemeńskie</displayName>
 				<displayName count="many">riali jemeńskich</displayName>
 				<displayName count="other">riala jemeńskiego</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="YUM">
 				<displayName>nowy dinar jugosławiański</displayName>
@@ -5725,6 +7777,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ZAR">
 				<displayName>rand południowoafrykański</displayName>
+<<<<<<< HEAD
 				<displayName count="one">rand południowoafrykański</displayName>
 				<displayName count="few">randy południowoafrykańskie</displayName>
 				<displayName count="many">randów południowoafrykańskich</displayName>
@@ -5743,6 +7796,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">kwacha zambijskie</displayName>
 				<displayName count="many">kwacha zambijskich</displayName>
 				<displayName count="other">kwacha zambijskiej</displayName>
+=======
+			</currency>
+			<currency type="ZMK">
+				<displayName>kwacha zambijska</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ZRN">
 				<displayName>nowy zair zairski</displayName>
@@ -5751,6 +7809,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>zair zairski</displayName>
 			</currency>
 			<currency type="ZWD">
+<<<<<<< HEAD
 				<displayName>dolar Zimbabwe (1980–2008)</displayName>
 			</currency>
 			<currency type="ZWL">
@@ -6645,6 +8704,49 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<listPatternPart type="2">{0} i {1}</listPatternPart>
 		</listPattern>
 	</listPatterns>
+=======
+				<displayName>dolar Zimbabwe</displayName>
+			</currency>
+		</currencies>
+	</numbers>
+	<units>
+		<unit type="day">
+			<unitPattern count="few">{0} dni</unitPattern>
+			<unitPattern count="one">{0} dzień</unitPattern>
+			<unitPattern count="other">{0} dni</unitPattern>
+		</unit>
+		<unit type="hour">
+			<unitPattern count="few">{0} godziny</unitPattern>
+			<unitPattern count="one">{0} godzina</unitPattern>
+			<unitPattern count="other">{0} godzin</unitPattern>
+		</unit>
+		<unit type="minute">
+			<unitPattern count="few">{0} minuty</unitPattern>
+			<unitPattern count="one">{0} minuta</unitPattern>
+			<unitPattern count="other">{0} minut</unitPattern>
+		</unit>
+		<unit type="month">
+			<unitPattern count="few">{0} miesiące</unitPattern>
+			<unitPattern count="one">{0} miesiąc</unitPattern>
+			<unitPattern count="other">{0} miesięcy</unitPattern>
+		</unit>
+		<unit type="second">
+			<unitPattern count="few">{0} sekundy</unitPattern>
+			<unitPattern count="one">{0} sekunda</unitPattern>
+			<unitPattern count="other">{0} sekund</unitPattern>
+		</unit>
+		<unit type="week">
+			<unitPattern count="few">{0} tygodnie</unitPattern>
+			<unitPattern count="one">{0} tydzień</unitPattern>
+			<unitPattern count="other">{0} tygodni</unitPattern>
+		</unit>
+		<unit type="year">
+			<unitPattern count="few">{0} lata</unitPattern>
+			<unitPattern count="one">{0} rok</unitPattern>
+			<unitPattern count="other">{0} lat</unitPattern>
+		</unit>
+	</units>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	<posix>
 		<messages>
 			<yesstr>tak:t</yesstr>

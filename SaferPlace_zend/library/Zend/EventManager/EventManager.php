@@ -14,7 +14,11 @@
  *
  * @category   Zend
  * @package    Zend_EventManager
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -34,7 +38,11 @@ require_once 'Zend/Stdlib/PriorityQueue.php';
  *
  * @category   Zend
  * @package    Zend_EventManager
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_EventManager_EventManager implements Zend_EventManager_EventCollection, Zend_EventManager_SharedEventCollectionAware
@@ -91,8 +99,13 @@ class Zend_EventManager_EventManager implements Zend_EventManager_EventCollectio
     /**
      * Set static collections container
      *
+<<<<<<< HEAD
      * @param  Zend_EventManager_SharedEventCollection $collections
      * @return $this
+=======
+     * @param  Zend_EventManager_StaticEventCollection $collections
+     * @return void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setSharedCollections(Zend_EventManager_SharedEventCollection $collections)
     {

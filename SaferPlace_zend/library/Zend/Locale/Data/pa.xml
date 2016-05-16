@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -571,6 +572,68 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<ellipsis type="word-initial">… {0}</ellipsis>
 		<ellipsis type="word-medial">{0} … {1}</ellipsis>
 		<moreInformation>?</moreInformation>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.76 $"/>
+		<generation date="$Date: 2009/06/15 04:15:33 $"/>
+		<language type="pa"/>
+	</identity>
+	<localeDisplayNames>
+		<languages>
+			<language type="ab">ਅਬਖਾਜ਼ੀਅਨ</language>
+			<language type="ace">ਅਚੀਨੀ</language>
+			<language type="ach">ਅਕੋਲੀ</language>
+			<language type="af">ਅਫ਼ਰੀਕੀ</language>
+			<language type="apa">ਅਪਾਚੇ ਭਾਸ਼ਾ</language>
+			<language type="ar">ਅਰਬੀ</language>
+			<language type="as">ਅਸਾਮੀ</language>
+			<language type="aus">ਆਸਟਰੇਲੀਅਨ ਭਾਸ਼ਾ</language>
+			<language type="az">ਅਜ਼ੇਰਬੈਜਨਿ</language>
+			<language type="bat">ਬੈਲਟਿਕ ਭਾਸ਼ਾ</language>
+			<language type="be">ਬੇਲਾਰੂਸੀਅਨ</language>
+			<language type="bn">ਬੰਗਾਲੀ</language>
+			<language type="da">ਡੈਨਿਸ਼</language>
+			<language type="de">ਜਰਮਨ</language>
+			<language type="en">ਅੰਗਰੇਜ਼ੀ</language>
+			<language type="eo">ਏਸਪਰੇਂਟੋ</language>
+			<language type="es">ਸਪੇਨਿਸ਼</language>
+			<language type="fi">ਫਿਨਿਸ਼</language>
+			<language type="fr">ਫਰੈਂਚ</language>
+			<language type="gu">ਗੁਜਰਾਤੀ</language>
+			<language type="hi">ਹਿੰਦੀ</language>
+			<language type="id">ਇੰਡੋਨੇਸ਼ੀਆਈ</language>
+			<language type="it">ਇਤਾਲਵੀ</language>
+			<language type="ja">ਜਾਪਾਨੀ</language>
+			<language type="mk">ਮੈਕੇਡੋਨੀਅਨ</language>
+			<language type="nl">ਡੱਚ</language>
+			<language type="no">ਨਾਰਵੇਜੀਅਨ</language>
+			<language type="pa">ਪੰਜਾਬੀ</language>
+			<language type="pt">ਪੋਰਤੂਗੂਈਸ</language>
+			<language type="sv">ਸਵੈਡਿਸ਼</language>
+			<language type="ta">ਤਾਮਿਲ</language>
+			<language type="te">ਤੇਲਗੂ</language>
+			<language type="th">ਥਾਈ</language>
+			<language type="tw">ਤ੍ਵਿ</language>
+			<language type="ug">ਉਇਘੁਰ</language>
+			<language type="und">und</language>
+		</languages>
+		<scripts>
+			<script type="Deva">ਦੇਵਨਾਗਰੀ</script>
+			<script type="Guru">ਗੁਰਮੁਖੀ</script>
+			<script type="Zxxx">Zxxx</script>
+			<script type="Zzzz">Zzzz</script>
+		</scripts>
+		<territories>
+			<territory type="IN">ਭਾਰਤ</territory>
+			<territory type="TO">TO</territory>
+			<territory type="ZZ">ਅਣਜਾਣ</territory>
+		</territories>
+	</localeDisplayNames>
+	<characters>
+		<exemplarCharacters>[਼ ੰ ੱ ੦-੯ ੴ ੳ ਉ ਊ ਓ ਅ ਆ ਐ ਔ ੲ ਇ ਈ ਏ ਸ {ਸ\u0A3C} ਹ ਕ ਖ {ਖ\u0A3C} ਗ {ਗ\u0A3C} ਘ-ਜ {ਜ\u0A3C} ਝ-ਨ ਪ ਫ {ਫ\u0A3C} ਬ-ਰ ਲ ਵ ੜ ਾ-ੂ ੇ ੈ ੋ-੍]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[\u200C \u200D \u0A01-\u0A03 {ਲ\u0A3C}]</exemplarCharacters>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	</characters>
 	<delimiters>
 		<quotationStart>'</quotationStart>
@@ -580,6 +643,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 	</delimiters>
 	<dates>
 		<calendars>
+<<<<<<< HEAD
 			<calendar type="generic">
 				<dateFormats>
 					<dateFormatLength type="full">
@@ -748,6 +812,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">ਨ</month>
 							<month type="12">ਦ</month>
 						</monthWidth>
+=======
+			<calendar type="gregorian">
+				<months>
+					<monthContext type="format">
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<monthWidth type="wide">
 							<month type="1">ਜਨਵਰੀ</month>
 							<month type="2">ਫ਼ਰਵਰੀ</month>
@@ -764,6 +833,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</monthWidth>
 					</monthContext>
 					<monthContext type="stand-alone">
+<<<<<<< HEAD
 						<monthWidth type="abbreviated">
 							<month type="1">ਜਨਵਰੀ</month>
 							<month type="2">ਫ਼ਰਵਰੀ</month>
@@ -781,6 +851,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<monthWidth type="narrow">
 							<month type="1">ਜ</month>
 							<month type="2">ਫ਼</month>
+=======
+						<monthWidth type="narrow">
+							<month type="1">ਜ</month>
+							<month type="2">ਫ</month>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 							<month type="3">ਮਾ</month>
 							<month type="4">ਅ</month>
 							<month type="5">ਮ</month>
@@ -792,6 +867,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">ਨ</month>
 							<month type="12">ਦ</month>
 						</monthWidth>
+<<<<<<< HEAD
 						<monthWidth type="wide">
 							<month type="1">ਜਨਵਰੀ</month>
 							<month type="2">ਫ਼ਰਵਰੀ</month>
@@ -806,6 +882,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">ਨਵੰਬਰ</month>
 							<month type="12">ਦਸੰਬਰ</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</monthContext>
 				</months>
 				<days>
@@ -816,6 +894,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="tue">ਮੰਗਲ.</day>
 							<day type="wed">ਬੁਧ.</day>
 							<day type="thu">ਵੀਰ.</day>
+<<<<<<< HEAD
 							<day type="fri">ਸ਼ੁੱਕਰ.</day>
 							<day type="sat">ਸ਼ਨੀ.</day>
 						</dayWidth>
@@ -835,6 +914,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="wed">ਬੁਧ.</day>
 							<day type="thu">ਵੀਰ.</day>
 							<day type="fri">ਸ਼ੁੱਕਰ.</day>
+=======
+							<day type="fri">ਸ਼ੁਕਰ.</day>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 							<day type="sat">ਸ਼ਨੀ.</day>
 						</dayWidth>
 						<dayWidth type="wide">
@@ -844,6 +926,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="wed">ਬੁਧਵਾਰ</day>
 							<day type="thu">ਵੀਰਵਾਰ</day>
 							<day type="fri">ਸ਼ੁੱਕਰਵਾਰ</day>
+<<<<<<< HEAD
 							<day type="sat">ਸ਼ਨੀਵਾਰ</day>
 						</dayWidth>
 					</dayContext>
@@ -857,6 +940,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">ਸ਼ੁੱਕਰ.</day>
 							<day type="sat">ਸ਼ਨੀ.</day>
 						</dayWidth>
+=======
+							<day type="sat">ਸ਼ਨੀਚਰਵਾਰ</day>
+						</dayWidth>
+					</dayContext>
+					<dayContext type="stand-alone">
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<dayWidth type="narrow">
 							<day type="sun">ਐ</day>
 							<day type="mon">ਸੋ</day>
@@ -866,6 +955,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">ਸ਼ੁੱ</day>
 							<day type="sat">ਸ਼</day>
 						</dayWidth>
+<<<<<<< HEAD
 						<dayWidth type="short">
 							<day type="sun">ਐਤ.</day>
 							<day type="mon">ਸੋਮ.</day>
@@ -884,11 +974,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">ਸ਼ੁੱਕਰਵਾਰ</day>
 							<day type="sat">ਸ਼ਨੀਵਾਰ</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</dayContext>
 				</days>
 				<quarters>
 					<quarterContext type="format">
 						<quarterWidth type="abbreviated">
+<<<<<<< HEAD
 							<quarter type="1">ਪਊਆ</quarter>
 							<quarter type="2">ਅੱਧਾ</quarter>
 							<quarter type="3">ਪੌਣਾ</quarter>
@@ -942,12 +1035,41 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<era type="0" alt="variant">ਈ. ਪੂ. ਯੁ.</era>
 						<era type="1">ਸੰਨ</era>
 						<era type="1" alt="variant">ਈ.ਯੁ.</era>
+=======
+							<quarter type="1">Q1</quarter>
+							<quarter type="2">Q2</quarter>
+							<quarter type="3">Q3</quarter>
+							<quarter type="4">Q4</quarter>
+						</quarterWidth>
+						<quarterWidth type="wide">
+							<quarter type="1">ਪਹਿਲਾਂ ਚੌਥਾਈ</quarter>
+							<quarter type="2">ਦੂਜਾ ਚੌਥਾਈ</quarter>
+							<quarter type="3">ਤੀਜਾ ਚੌਥਾਈ</quarter>
+							<quarter type="4">ਚੌਥਾ ਚੌਥਾਈ</quarter>
+						</quarterWidth>
+					</quarterContext>
+				</quarters>
+				<am>ਸਵੇਰੇ</am>
+				<pm>ਸ਼ਾਮ</pm>
+				<eras>
+					<eraNames>
+						<era type="0">ਈਸਾਪੂਰਵ</era>
+						<era type="1">ਸੰਨ</era>
+					</eraNames>
+					<eraAbbr>
+						<era type="0">BCE</era>
+						<era type="1">CE</era>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</eraAbbr>
 				</eras>
 				<dateFormats>
 					<dateFormatLength type="full">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>EEEE, d MMMM y</pattern>
+=======
+							<pattern>EEEE, dd MMMM y</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="long">
@@ -962,7 +1084,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>d/M/yy</pattern>
+=======
+							<pattern>dd/MM/yyyy</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
@@ -989,6 +1115,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</timeFormatLength>
 				</timeFormats>
 				<dateTimeFormats>
+<<<<<<< HEAD
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
 							<pattern>{1} {0}</pattern>
@@ -3437,11 +3564,68 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</decimalFormatLength>
 		</decimalFormats>
 		<decimalFormats numberSystem="latn">
+=======
+					<availableFormats>
+						<dateFormatItem id="HHmmss">HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="Md">d/M</dateFormatItem>
+						<dateFormatItem id="mmss">mm:ss</dateFormatItem>
+						<dateFormatItem id="yyMMM">MMM yy</dateFormatItem>
+						<dateFormatItem id="yyQ">Q yy</dateFormatItem>
+					</availableFormats>
+				</dateTimeFormats>
+				<fields>
+					<field type="year">
+						<displayName>ਸਾਲ</displayName>
+					</field>
+					<field type="month">
+						<displayName>ਮਹੀਨਾ</displayName>
+					</field>
+					<field type="week">
+						<displayName>ਹਫ਼ਤਾ</displayName>
+					</field>
+					<field type="day">
+						<displayName>ਦਿਨ</displayName>
+						<relative type="-3">ਤਿੰਨ ਦਿਨ ਪਹਿਲਾਂ</relative>
+						<relative type="-2">ਪਰਸੋਂ</relative>
+						<relative type="0">ਅੱਜ</relative>
+						<relative type="1">ਭਲਕ</relative>
+						<relative type="2">ਭਲਕ</relative>
+						<relative type="3">ਤਿੰਨ ਦਿਨ ਬਾਅਦ</relative>
+					</field>
+					<field type="weekday">
+						<displayName>ਹਫ਼ਤੇ ਦਾ ਦਿਨ</displayName>
+					</field>
+					<field type="hour">
+						<displayName>ਘੰਟਾ</displayName>
+					</field>
+					<field type="minute">
+						<displayName>ਮਿੰਟ</displayName>
+					</field>
+					<field type="zone">
+						<displayName>ਖੇਤਰ</displayName>
+					</field>
+				</fields>
+			</calendar>
+		</calendars>
+		<timeZoneNames>
+			<hourFormat>+HH:mm;-HH:mm</hourFormat>
+			<gmtFormat>GMT{0}</gmtFormat>
+			<regionFormat>{0}</regionFormat>
+		</timeZoneNames>
+	</dates>
+	<numbers>
+		<defaultNumberingSystem>guru</defaultNumberingSystem>
+		<symbols>
+			<nativeZeroDigit>0</nativeZeroDigit>
+		</symbols>
+		<decimalFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<decimalFormatLength>
 				<decimalFormat>
 					<pattern>#,##,##0.###</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
+<<<<<<< HEAD
 			<decimalFormatLength type="long">
 				<decimalFormat>
 					<pattern type="1000" count="one">0 ਹਜ਼ਾਰ</pattern>
@@ -3514,12 +3698,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</scientificFormatLength>
 		</scientificFormats>
 		<percentFormats numberSystem="arabext">
+=======
+		</decimalFormats>
+		<percentFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<percentFormatLength>
 				<percentFormat>
 					<pattern>#,##,##0%</pattern>
 				</percentFormat>
 			</percentFormatLength>
 		</percentFormats>
+<<<<<<< HEAD
 		<percentFormats numberSystem="latn">
 			<percentFormatLength>
 				<percentFormat>
@@ -4957,6 +5146,31 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<listPatternPart type="2">{0}, {1}</listPatternPart>
 		</listPattern>
 	</listPatterns>
+=======
+		<currencyFormats>
+			<currencyFormatLength>
+				<currencyFormat>
+					<pattern>¤ #,##,##0.00</pattern>
+				</currencyFormat>
+			</currencyFormatLength>
+		</currencyFormats>
+		<currencies>
+			<currency type="AFN">
+				<displayName>ਅਫ਼ਗਾਨੀ</displayName>
+			</currency>
+			<currency type="EUR">
+				<displayName>ਯੂਰੋ</displayName>
+			</currency>
+			<currency type="INR">
+				<displayName>ਰੁਪਿਯ</displayName>
+				<symbol>ਰੁ.</symbol>
+			</currency>
+			<currency type="XXX">
+				<displayName>ਅਣਜਾਣ</displayName>
+			</currency>
+		</currencies>
+	</numbers>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	<posix>
 		<messages>
 			<yesstr>ਹਾਂ</yesstr>

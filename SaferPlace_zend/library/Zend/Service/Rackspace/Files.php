@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Service
  * @subpackage Rackspace
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -25,6 +29,7 @@ require_once 'Zend/Service/Rackspace/Files/ObjectList.php';
 require_once 'Zend/Service/Rackspace/Files/Container.php';
 require_once 'Zend/Service/Rackspace/Files/Object.php';
 
+<<<<<<< HEAD
 /**
  * Zend_Service_Rackspace_Files
  *
@@ -34,6 +39,8 @@ require_once 'Zend/Service/Rackspace/Files/Object.php';
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
 {
     const ERROR_CONTAINER_NOT_EMPTY            = 'The container is not empty, I cannot delete it.';
@@ -79,7 +86,11 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
     /**
      * Return the total count of containers
      *
+<<<<<<< HEAD
      * @return int
+=======
+     * @return integer
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function getCountContainers()
     {
@@ -89,7 +100,11 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
     /**
      * Return the size in bytes of all the containers
      *
+<<<<<<< HEAD
      * @return int
+=======
+     * @return integer
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function getSizeContainers()
     {
@@ -99,7 +114,11 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
     /**
      * Return the count of objects contained in all the containers
      *
+<<<<<<< HEAD
      * @return int
+=======
+     * @return integer
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function getCountObjects()
     {
@@ -109,8 +128,13 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
     /**
      * Get all the containers
      *
+<<<<<<< HEAD
      * @param  array $options
      * @return Zend_Service_Rackspace_Files_ContainerList|bool
+=======
+     * @param array $options
+     * @return Zend_Service_Rackspace_Files_ContainerList|boolean
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function getContainers($options=array())
     {
@@ -124,7 +148,11 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
      * Get all the CDN containers
      *
      * @param array $options
+<<<<<<< HEAD
      * @return array|bool
+=======
+     * @return array|boolean
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function getCdnContainers($options=array())
     {
@@ -141,7 +169,11 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
      * - size in bytes of all the containers
      * - total objects in all the containers
      * 
+<<<<<<< HEAD
      * @return array|bool
+=======
+     * @return array|boolean
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function getInfoAccount()
     {
@@ -156,6 +188,7 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
         }
         return false;
     }
+<<<<<<< HEAD
 
     /**
      * Get all the objects of a container
@@ -166,6 +199,14 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
      * @param  array  $options
      * @return bool|Zend_Service_Rackspace_Files_ObjectList
      * @throws Zend_Service_Rackspace_Exception
+=======
+    /**
+     * Get all the objects of a container
+     *
+     * @param string $container
+     * @param array $options
+     * @return  Zend_Service_Rackspace_Files_ObjectList|boolean
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function getObjects($container,$options=array())
     {
@@ -179,6 +220,7 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
         }
         return false;
     }
+<<<<<<< HEAD
 
     /**
      * Create a container
@@ -187,6 +229,14 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
      * @param  array  $metadata
      * @return bool|Zend_Service_Rackspace_Files_Container
      * @throws Zend_Service_Rackspace_Exception
+=======
+    /**
+     * Create a container
+     *
+     * @param string $container
+     * @param array $metadata
+     * @return Zend_Service_Rackspace_Files_Container|boolean
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function createContainer($container,$metadata=array())
     {
@@ -218,6 +268,7 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
         $this->errorCode= $status;
         return false;
     }
+<<<<<<< HEAD
 
     /**
      * Delete a container (only if it's empty)
@@ -225,6 +276,13 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
      * @param  string $container
      * @return bool
      * @throws Zend_Service_Rackspace_Exception
+=======
+    /**
+     * Delete a container (only if it's empty)
+     *
+     * @param sting $container
+     * @return boolean
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function deleteContainer($container)
     {
@@ -250,6 +308,7 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
         $this->errorCode= $status;
         return false;
     }
+<<<<<<< HEAD
 
     /**
      * Get the metadata of a container
@@ -257,6 +316,13 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
      * @param  string $container
      * @return array|bool
      * @throws Zend_Service_Rackspace_Exception
+=======
+    /**
+     * Get the metadata of a container
+     *
+     * @param string $container
+     * @return array|boolean
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function getMetadataContainer($container)
     {
@@ -298,8 +364,13 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
     /**
      * Get a container
      * 
+<<<<<<< HEAD
      * @param  string $container
      * @return Zend_Service_Rackspace_Files_Container|bool
+=======
+     * @param string $container
+     * @return Container|boolean
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function getContainer($container) {
         $result= $this->getMetadataContainer($container);
@@ -308,6 +379,7 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
         }
         return false;
     }
+<<<<<<< HEAD
 
     /**
      * Get an object in a container
@@ -317,6 +389,15 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
      * @param  array  $headers
      * @return bool|Zend_Service_Rackspace_Files_Object
      * @throws Zend_Service_Rackspace_Exception
+=======
+    /**
+     * Get an object in a container
+     *
+     * @param string $container
+     * @param string $object
+     * @param array $headers
+     * @return Zend_Service_Rackspace_Files_Object|boolean
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function getObject($container,$object,$headers=array())
     {
@@ -352,6 +433,7 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
         $this->errorCode= $status;
         return false;
     }
+<<<<<<< HEAD
 
     /**
      * Store a file in a container
@@ -363,6 +445,18 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
      * @param  string $content_type
      * @return bool
      * @throws Zend_Service_Rackspace_Exception
+=======
+    /**
+     * Store a file in a container
+     *
+     * @param string $container
+     * @param string $object
+     * @param string $content
+     * @param array $metadata
+     * @param string $content_type
+     *
+     * @return boolean
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function storeObject($container,$object,$content,$metadata=array(),$content_type=null) {
         if (empty($container)) {
@@ -405,6 +499,7 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
         $this->errorCode= $status;
         return false;
     }
+<<<<<<< HEAD
 
     /**
      * Delete an object in a container
@@ -413,6 +508,14 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
      * @param  string $object
      * @return bool
      * @throws Zend_Service_Rackspace_Exception
+=======
+    /**
+     * Delete an object in a container
+     *
+     * @param string $container
+     * @param string $object
+     * @return boolean
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function deleteObject($container,$object) {
         if (empty($container)) {
@@ -438,6 +541,7 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
         $this->errorCode= $status;
         return false;
     }
+<<<<<<< HEAD
 
     /**
      * Copy an object from a container to another
@@ -450,6 +554,18 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
      * @param  string $content_type
      * @return bool
      * @throws Zend_Service_Rackspace_Exception
+=======
+    /**
+     * Copy an object from a container to another
+     *
+     * @param string $container_source
+     * @param string $obj_source
+     * @param string $container_dest
+     * @param string $obj_dest
+     * @param array $metadata
+     * @param string $content_type
+     * @return boolean
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function copyObject($container_source,$obj_source,$container_dest,$obj_dest,$metadata=array(),$content_type=null) {
         if (empty($container_source)) {
@@ -492,6 +608,7 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
         $this->errorCode= $status;
         return false;
     }
+<<<<<<< HEAD
 
     /**
      * Get the metadata of an object
@@ -500,6 +617,14 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
      * @param  string $object
      * @return array|bool
      * @throws Zend_Service_Rackspace_Exception
+=======
+    /**
+     * Get the metadata of an object
+     *
+     * @param string $container
+     * @param string $object
+     * @return array|boolean
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function getMetadataObject($container,$object) {
         if (empty($container)) {
@@ -544,6 +669,7 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
         $this->errorCode= $status;
         return false;
     }
+<<<<<<< HEAD
 
     /**
      * Set the metadata of a object in a container
@@ -554,6 +680,16 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
      * @param  array  $metadata
      * @return bool
      * @throws Zend_Service_Rackspace_Exception
+=======
+    /**
+     * Set the metadata of a object in a container
+     * The old metadata values are replaced with the new one
+     * 
+     * @param string $container
+     * @param string $object
+     * @param array $metadata
+     * @return boolean
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setMetadataObject($container,$object,$metadata)
     {
@@ -588,14 +724,22 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
         $this->errorCode= $status;
         return false;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Enable the CDN for a container
      *
      * @param  string $container
+<<<<<<< HEAD
      * @param  int    $ttl
      * @return array|bool
      * @throws Zend_Service_Rackspace_Exception
+=======
+     * @param  integer $ttl
+     * @return array|boolean
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function enableCdnContainer ($container,$ttl=self::CDN_TTL_MIN) {
         if (empty($container)) {
@@ -629,16 +773,26 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
         $this->errorCode= $status;
         return false;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Update the attribute of a CDN container
      *
      * @param  string $container
+<<<<<<< HEAD
      * @param  int    $ttl
      * @param  bool   $cdn_enabled
      * @param  bool   $log
      * @return bool
      * @throws Zend_Service_Rackspace_Exception
+=======
+     * @param  integer $ttl
+     * @param  boolean $cdn_enabled
+     * @param  boolean $log
+     * @return boolean
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function updateCdnContainer($container,$ttl=null,$cdn_enabled=null,$log=null)
     {
@@ -689,6 +843,7 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
         $this->errorCode= $status;
         return false;
     }
+<<<<<<< HEAD
 
     /**
      * Get the information of a Cdn container
@@ -696,6 +851,13 @@ class Zend_Service_Rackspace_Files extends Zend_Service_Rackspace_Abstract
      * @param  string $container
      * @return array|bool
      * @throws Zend_Service_Rackspace_Exception
+=======
+    /**
+     * Get the information of a Cdn container
+     *
+     * @param string $container
+     * @return array|boolean
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function getInfoCdnContainer($container) {
         if (empty($container)) {

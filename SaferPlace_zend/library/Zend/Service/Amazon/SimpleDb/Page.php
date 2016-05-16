@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Service_Amazon
  * @subpackage SimpleDb
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -30,11 +34,16 @@ require_once 'Zend/Service/Amazon/Exception.php';
  * @category   Zend
  * @package    Zend_Service_Amazon
  * @subpackage SimpleDb
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Service_Amazon_SimpleDb_Page
 {
+<<<<<<< HEAD
     /**
      * Page data
      *
@@ -47,11 +56,18 @@ class Zend_Service_Amazon_SimpleDb_Page
      *
      * @var string|null
      */
+=======
+    /** @var string Page data */
+    protected $_data;
+
+    /** @var string|null Token identifying page */
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     protected $_token;
 
     /**
      * Constructor
      *
+<<<<<<< HEAD
      * @param string      $data
      * @param string|null $token
      */
@@ -69,6 +85,16 @@ class Zend_Service_Amazon_SimpleDb_Page
     public function setData($data)
     {
         $this->_data = $data;
+=======
+     * @param  string $data
+     * @param  string|null $token
+     * @return void
+     */
+    public function __construct($data, $token = null)
+    {
+        $this->_data  = $data;
+        $this->_token = $token;
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     }
 
     /**
@@ -82,6 +108,7 @@ class Zend_Service_Amazon_SimpleDb_Page
     }
 
     /**
+<<<<<<< HEAD
      * Set token
      *
      * @param string|null $token
@@ -92,6 +119,8 @@ class Zend_Service_Amazon_SimpleDb_Page
     }
 
     /**
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * Retrieve token
      *
      * @return string|null
@@ -104,7 +133,11 @@ class Zend_Service_Amazon_SimpleDb_Page
     /**
      * Determine whether this is the last page of data
      *
+<<<<<<< HEAD
      * @return bool
+=======
+     * @return void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function isLast()
     {

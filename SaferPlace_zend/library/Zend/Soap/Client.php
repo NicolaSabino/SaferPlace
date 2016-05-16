@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Soap
  * @subpackage Client
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Client.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -41,7 +47,11 @@ require_once 'Zend/Soap/Client/Common.php';
  * @category   Zend
  * @package    Zend_Soap
  * @subpackage Client
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Soap_Client
@@ -89,7 +99,10 @@ class Zend_Soap_Client
     protected $_features            = null;
     protected $_cache_wsdl          = null;
     protected $_user_agent          = null;
+<<<<<<< HEAD
     protected $_exceptions          = null;
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
     /**
      * WSDL used to access server
@@ -269,9 +282,12 @@ class Zend_Soap_Client
                 case 'user_agent':
                     $this->setUserAgent($value);
                     break;
+<<<<<<< HEAD
                 case 'exceptions':
                     $this->setExceptions($value);
                     break;
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
                 // Not used now
                 // case 'connection_timeout':
@@ -319,14 +335,21 @@ class Zend_Soap_Client
         $options['cache_wsdl']     = $this->getWsdlCache();
         $options['features']       = $this->getSoapFeatures();
         $options['user_agent']     = $this->getUserAgent();
+<<<<<<< HEAD
         $options['exceptions']     = $this->getExceptions();
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
         foreach ($options as $key => $value) {
             /*
              * ugly hack as I don't know if checking for '=== null'
              * breaks some other option
              */
+<<<<<<< HEAD
             if (in_array($key, array('user_agent', 'cache_wsdl', 'compression', 'exceptions'))) {
+=======
+            if (in_array($key, array('user_agent', 'cache_wsdl', 'compression'))) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 if ($value === null) {
                     unset($options[$key]);
                 }
@@ -914,6 +937,7 @@ class Zend_Soap_Client
     }
 
     /**
+<<<<<<< HEAD
      * Set the exceptions option
      *
      * The exceptions option is a boolean value defining whether soap errors
@@ -947,6 +971,8 @@ class Zend_Soap_Client
     }
 
     /**
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * Retrieve request XML
      *
      * @return string

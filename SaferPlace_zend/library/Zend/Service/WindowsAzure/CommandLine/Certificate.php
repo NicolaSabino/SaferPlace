@@ -16,6 +16,7 @@
  * @package    Zend_Service_Console
  * @subpackage Exception
  * @version    $Id$
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
@@ -39,15 +40,38 @@ require_once 'Zend/Service/WindowsAzure/Management/Client.php';
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  *
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ */
+
+
+/**
+ * Certificate commands
+ * 
+ * @category   Zend
+ * @package    Zend_Service_WindowsAzure_CommandLine
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @command-handler certificate
  * @command-handler-description Windows Azure Certificate commands
  * @command-handler-header Windows Azure SDK for PHP
  * @command-handler-header Copyright (c) 2009 - 2011, RealDolmen (http://www.realdolmen.com)
+<<<<<<< HEAD
  * @command-handler-footer Note: Parameters that are common across all commands can be stored
  * @command-handler-footer in two dedicated environment variables.
  * @command-handler-footer - SubscriptionId: The Windows Azure Subscription Id to operate on.
  * @command-handler-footer - Certificate The Windows Azure .cer Management Certificate.
  * @command-handler-footer
+=======
+ * @command-handler-footer Note: Parameters that are common across all commands can be stored 
+ * @command-handler-footer in two dedicated environment variables.
+ * @command-handler-footer - SubscriptionId: The Windows Azure Subscription Id to operate on.
+ * @command-handler-footer - Certificate The Windows Azure .cer Management Certificate.
+ * @command-handler-footer 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @command-handler-footer All commands support the --ConfigurationFile or -F parameter.
  * @command-handler-footer The parameter file is a simple INI file carrying one parameter
  * @command-handler-footer value per line. It accepts the same parameters as one can
@@ -55,10 +79,17 @@ require_once 'Zend/Service/WindowsAzure/Management/Client.php';
  */
 class Zend_Service_WindowsAzure_CommandLine_Certificate
 	extends Zend_Service_Console_Command
+<<<<<<< HEAD
 {
 	/**
 	 * List certificates for a specified hosted service in a specified subscription.
 	 *
+=======
+{	
+	/**
+	 * List certificates for a specified hosted service in a specified subscription.
+	 * 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	 * @command-name List
 	 * @command-description List certificates for a specified hosted service in a specified subscription.
 	 * @command-parameter-for $subscriptionId Zend_Service_Console_Command_ParameterSource_Argv|Zend_Service_Console_Command_ParameterSource_ConfigFile|Zend_Service_Console_Command_ParameterSource_Env --SubscriptionId|-sid Required. This is the Windows Azure Subscription Id to operate on.
@@ -80,10 +111,17 @@ class Zend_Service_WindowsAzure_CommandLine_Certificate
 			$this->_displayObjectInformation($object, array('Thumbprint', 'CertificateUrl', 'ThumbprintAlgorithm'));
 		}
 	}
+<<<<<<< HEAD
 
 	/**
 	 * Add a certificate for a specified hosted service in a specified subscription.
 	 *
+=======
+	
+	/**
+	 * Add a certificate for a specified hosted service in a specified subscription.
+	 * 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	 * @command-name Add
 	 * @command-description Add a certificate for a specified hosted service in a specified subscription.
 	 * @command-parameter-for $subscriptionId Zend_Service_Console_Command_ParameterSource_Argv|Zend_Service_Console_Command_ParameterSource_ConfigFile|Zend_Service_Console_Command_ParameterSource_Env --SubscriptionId|-sid Required. This is the Windows Azure Subscription Id to operate on.
@@ -105,10 +143,17 @@ class Zend_Service_WindowsAzure_CommandLine_Certificate
 		}
 		echo $client->getLastRequestId();
 	}
+<<<<<<< HEAD
 
 	/**
 	 * Gets a certificate from a specified hosted service in a specified subscription.
 	 *
+=======
+	
+	/**
+	 * Gets a certificate from a specified hosted service in a specified subscription.
+	 * 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	 * @command-name Get
 	 * @command-description Gets a certificate from a specified hosted service in a specified subscription.
 	 * @command-parameter-for $subscriptionId Zend_Service_Console_Command_ParameterSource_Argv|Zend_Service_Console_Command_ParameterSource_ConfigFile|Zend_Service_Console_Command_ParameterSource_Env --SubscriptionId|-sid Required. This is the Windows Azure Subscription Id to operate on.
@@ -127,10 +172,17 @@ class Zend_Service_WindowsAzure_CommandLine_Certificate
 
 		$this->_displayObjectInformation($result, array('Thumbprint', 'CertificateUrl', 'ThumbprintAlgorithm'));
 	}
+<<<<<<< HEAD
 
 	/**
 	 * Gets a certificate property from a specified hosted service in a specified subscription.
 	 *
+=======
+	
+	/**
+	 * Gets a certificate property from a specified hosted service in a specified subscription.
+	 * 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	 * @command-name GetProperty
 	 * @command-description Gets a certificate property from a specified hosted service in a specified subscription.
 	 * @command-parameter-for $subscriptionId Zend_Service_Console_Command_ParameterSource_Argv|Zend_Service_Console_Command_ParameterSource_ConfigFile|Zend_Service_Console_Command_ParameterSource_Env --SubscriptionId|-sid Required. This is the Windows Azure Subscription Id to operate on.
@@ -150,10 +202,17 @@ class Zend_Service_WindowsAzure_CommandLine_Certificate
 
 		printf("%s\r\n", $result->$property);
 	}
+<<<<<<< HEAD
 
 	/**
 	 * Deletes a certificate from a specified hosted service in a specified subscription.
 	 *
+=======
+	
+	/**
+	 * Deletes a certificate from a specified hosted service in a specified subscription.
+	 * 
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	 * @command-name Delete
 	 * @command-description Deletes a certificate from a specified hosted service in a specified subscription.
 	 * @command-parameter-for $subscriptionId Zend_Service_Console_Command_ParameterSource_Argv|Zend_Service_Console_Command_ParameterSource_ConfigFile|Zend_Service_Console_Command_ParameterSource_Env --SubscriptionId|-sid Required. This is the Windows Azure Subscription Id to operate on.
@@ -177,4 +236,8 @@ class Zend_Service_WindowsAzure_CommandLine_Certificate
 	}
 }
 
+<<<<<<< HEAD
 Zend_Service_Console_Command::bootstrap($_SERVER['argv']);
+=======
+Zend_Service_Console_Command::bootstrap($_SERVER['argv']);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

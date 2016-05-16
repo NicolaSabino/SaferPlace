@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Barcode
  * @subpackage Renderer
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: RendererAbstract.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -25,7 +31,11 @@
  *
  * @category   Zend
  * @package    Zend_Barcode
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 abstract class Zend_Barcode_Renderer_RendererAbstract
@@ -91,9 +101,14 @@ abstract class Zend_Barcode_Renderer_RendererAbstract
 
     /**
      * Constructor
+<<<<<<< HEAD
      *
      * @param array|Zend_Config $options
      * @return Zend_Barcode_Renderer_RendererAbstract
+=======
+     * @param array|Zend_Config $options
+     * @return void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function __construct($options = null)
     {
@@ -170,7 +185,11 @@ abstract class Zend_Barcode_Renderer_RendererAbstract
      * Manually adjust top position
      * @param integer $value
      * @return Zend_Barcode_Renderer
+<<<<<<< HEAD
      * @throws Zend_Barcode_Renderer_Exception
+=======
+     * @throw Zend_Barcode_Renderer_Exception
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setTopOffset($value)
     {
@@ -197,7 +216,11 @@ abstract class Zend_Barcode_Renderer_RendererAbstract
      * Manually adjust left position
      * @param integer $value
      * @return Zend_Barcode_Renderer
+<<<<<<< HEAD
      * @throws Zend_Barcode_Renderer_Exception
+=======
+     * @throw Zend_Barcode_Renderer_Exception
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setLeftOffset($value)
     {
@@ -222,9 +245,13 @@ abstract class Zend_Barcode_Renderer_RendererAbstract
 
     /**
      * Activate/Deactivate the automatic rendering of exception
+<<<<<<< HEAD
      *
      * @param boolean $value
      * @return $this
+=======
+     * @param boolean $value
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setAutomaticRenderError($value)
     {
@@ -234,10 +261,16 @@ abstract class Zend_Barcode_Renderer_RendererAbstract
 
     /**
      * Horizontal position of the barcode in the rendering resource
+<<<<<<< HEAD
      *
      * @param string $value
      * @return Zend_Barcode_Renderer
      * @throws Zend_Barcode_Renderer_Exception
+=======
+     * @param string $value
+     * @return Zend_Barcode_Renderer
+     * @throw Zend_Barcode_Renderer_Exception
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setHorizontalPosition($value)
     {
@@ -262,10 +295,16 @@ abstract class Zend_Barcode_Renderer_RendererAbstract
 
     /**
      * Vertical position of the barcode in the rendering resource
+<<<<<<< HEAD
      *
      * @param string $value
      * @return self
      * @throws Zend_Barcode_Renderer_Exception
+=======
+     * @param string $value
+     * @return Zend_Barcode_Renderer
+     * @throw Zend_Barcode_Renderer_Exception
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setVerticalPosition($value)
     {
@@ -292,7 +331,11 @@ abstract class Zend_Barcode_Renderer_RendererAbstract
      * Set the size of a module
      * @param float $value
      * @return Zend_Barcode_Renderer
+<<<<<<< HEAD
      * @throws Zend_Barcode_Renderer_Exception
+=======
+     * @throw Zend_Barcode_Renderer_Exception
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setModuleSize($value)
     {
@@ -327,10 +370,15 @@ abstract class Zend_Barcode_Renderer_RendererAbstract
 
     /**
      * Set the barcode object
+<<<<<<< HEAD
      *
      * @param Zend_Barcode_Object $barcode
      * @return Zend_Barcode_Renderer
      * @throws Zend_Barcode_Renderer_Exception
+=======
+     * @param Zend_Barcode_Object $barcode
+     * @return Zend_Barcode_Renderer
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setBarcode($barcode)
     {
@@ -367,7 +415,11 @@ abstract class Zend_Barcode_Renderer_RendererAbstract
     /**
      * Check if a barcode object is correctly provided
      * @return void
+<<<<<<< HEAD
      * @throws Zend_Barcode_Renderer_Exception
+=======
+     * @throw Zend_Barcode_Renderer_Exception
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     protected function _checkBarcodeObject()
     {
@@ -428,10 +480,14 @@ abstract class Zend_Barcode_Renderer_RendererAbstract
 
     /**
      * Draw the barcode in the rendering resource
+<<<<<<< HEAD
      *
      * @return mixed
      * @throws Zend_Exception
      * @throws Zend_Barcode_Exception
+=======
+     * @return mixed
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function draw()
     {
@@ -496,7 +552,11 @@ abstract class Zend_Barcode_Renderer_RendererAbstract
                      */
                     require_once 'Zend/Barcode/Renderer/Exception.php';
                     throw new Zend_Barcode_Renderer_Exception(
+<<<<<<< HEAD
                         'Unknown drawing command'
+=======
+                        'Unkown drawing command'
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                     );
             }
         }
@@ -530,6 +590,7 @@ abstract class Zend_Barcode_Renderer_RendererAbstract
 
     /**
      * Draw a polygon in the rendering resource
+<<<<<<< HEAD
      *
      * @param string    $text
      * @param float     $size
@@ -538,6 +599,15 @@ abstract class Zend_Barcode_Renderer_RendererAbstract
      * @param integer   $color
      * @param string    $alignment
      * @param float|int $orientation
+=======
+     * @param string $text
+     * @param float $size
+     * @param array $position
+     * @param string $font
+     * @param integer $color
+     * @param string $alignment
+     * @param float $orientation
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     abstract protected function _drawText(
         $text,

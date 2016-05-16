@@ -14,11 +14,20 @@
  *
  * @category   Zend
  * @package    Zend_Mime
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
 
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Message.php 24593 2012-01-05 20:35:02Z matthew $
+ */
+
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 /**
  * Zend_Mime
  */
@@ -29,14 +38,23 @@ require_once 'Zend/Mime.php';
  */
 require_once 'Zend/Mime/Part.php';
 
+<<<<<<< HEAD
 /**
  * @category   Zend
  * @package    Zend_Mime
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+
+/**
+ * @category   Zend
+ * @package    Zend_Mime
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Mime_Message
 {
+<<<<<<< HEAD
     /**
      * The Zend_Mime_Parts of the message
      *
@@ -49,6 +67,10 @@ class Zend_Mime_Message
      *
      * @var Zend_Mime|null
      */
+=======
+
+    protected $_parts = array();
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     protected $_mime = null;
 
     /**
@@ -142,7 +164,11 @@ class Zend_Mime_Message
      */
     public function generateMessage($EOL = Zend_Mime::LINEEND)
     {
+<<<<<<< HEAD
         if (!$this->isMultiPart()) {
+=======
+        if (! $this->isMultiPart()) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             $body = array_shift($this->_parts);
             $body = $body->getContent($EOL);
         } else {
@@ -154,9 +180,15 @@ class Zend_Mime_Message
 
             foreach (array_keys($this->_parts) as $p) {
                 $body .= $boundaryLine
+<<<<<<< HEAD
                          . $this->getPartHeaders($p, $EOL)
                          . $EOL
                          . $this->getPartContent($p, $EOL);
+=======
+                       . $this->getPartHeaders($p, $EOL)
+                       . $EOL
+                       . $this->getPartContent($p, $EOL);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             }
 
             $body .= $mime->mimeEnd($EOL);
@@ -179,8 +211,12 @@ class Zend_Mime_Message
     /**
      * Get the headers of a given part as a string
      *
+<<<<<<< HEAD
      * @param  int    $partnum
      * @param  string $EOL
+=======
+     * @param int $partnum
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return string
      */
     public function getPartHeaders($partnum, $EOL = Zend_Mime::LINEEND)
@@ -191,8 +227,12 @@ class Zend_Mime_Message
     /**
      * Get the (encoded) content of a given part as a string
      *
+<<<<<<< HEAD
      * @param  int    $partnum
      * @param  string $EOL
+=======
+     * @param int $partnum
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return string
      */
     public function getPartContent($partnum, $EOL = Zend_Mime::LINEEND)
@@ -205,19 +245,32 @@ class Zend_Mime_Message
      *
      * Parts consist of the header and the body of each MIME part.
      *
+<<<<<<< HEAD
      * @param  string $body
      * @param  string $boundary
      * @throws Zend_Exception
+=======
+     * @param string $body
+     * @param string $boundary
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return array
      */
     protected static function _disassembleMime($body, $boundary)
     {
         $start = 0;
+<<<<<<< HEAD
         $res   = array();
         // find every mime part limiter and cut out the
         // string before it.
         // the part before the first boundary string is discarded:
         $p = strpos($body, '--' . $boundary . "\n", $start);
+=======
+        $res = array();
+        // find every mime part limiter and cut out the
+        // string before it.
+        // the part before the first boundary string is discarded:
+        $p = strpos($body, '--'.$boundary."\n", $start);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         if ($p === false) {
             // no parts found!
             return array();
@@ -226,21 +279,34 @@ class Zend_Mime_Message
         // position after first boundary line
         $start = $p + 3 + strlen($boundary);
 
+<<<<<<< HEAD
         while (($p = strpos($body, '--' . $boundary . "\n", $start))
                !== false) {
             $res[] = substr($body, $start, $p - $start);
+=======
+        while (($p = strpos($body, '--' . $boundary . "\n", $start)) !== false) {
+            $res[] = substr($body, $start, $p-$start);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             $start = $p + 3 + strlen($boundary);
         }
 
         // no more parts, find end boundary
         $p = strpos($body, '--' . $boundary . '--', $start);
+<<<<<<< HEAD
         if ($p === false) {
+=======
+        if ($p===false) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             throw new Zend_Exception('Not a valid Mime Message: End Missing');
         }
 
         // the remaining part also needs to be parsed:
+<<<<<<< HEAD
         $res[] = substr($body, $start, $p - $start);
 
+=======
+        $res[] = substr($body, $start, $p-$start);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         return $res;
     }
 
@@ -248,6 +314,7 @@ class Zend_Mime_Message
      * Decodes a MIME encoded string and returns a Zend_Mime_Message object with
      * all the MIME parts set according to the given string
      *
+<<<<<<< HEAD
      * @param  string $message
      * @param  string $boundary
      * @param  string $EOL EOL string; defaults to {@link Zend_Mime::LINEEND}
@@ -257,6 +324,14 @@ class Zend_Mime_Message
     public static function createFromMessage(
         $message, $boundary, $EOL = Zend_Mime::LINEEND
     )
+=======
+     * @param string $message
+     * @param string $boundary
+     * @param string $EOL EOL string; defaults to {@link Zend_Mime::LINEEND}
+     * @return Zend_Mime_Message
+     */
+    public static function createFromMessage($message, $boundary, $EOL = Zend_Mime::LINEEND)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     {
         require_once 'Zend/Mime/Decode.php';
         $parts = Zend_Mime_Decode::splitMessageStruct($message, $boundary, $EOL);
@@ -269,7 +344,11 @@ class Zend_Mime_Message
                 /**
                  * @todo check for characterset and filename
                  */
+<<<<<<< HEAD
                 switch (strtolower($key)) {
+=======
+                switch(strtolower($key)) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                     case 'content-type':
                         $newPart->type = $value;
                         break;
@@ -277,7 +356,11 @@ class Zend_Mime_Message
                         $newPart->encoding = $value;
                         break;
                     case 'content-id':
+<<<<<<< HEAD
                         $newPart->id = trim($value, '<>');
+=======
+                        $newPart->id = trim($value,'<>');
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                         break;
                     case 'content-disposition':
                         $newPart->disposition = $value;
@@ -292,14 +375,21 @@ class Zend_Mime_Message
                         $newPart->language = $value;
                         break;
                     default:
+<<<<<<< HEAD
                         throw new Zend_Exception(
                             'Unknown header ignored for MimePart:' . $key
                         );
+=======
+                        throw new Zend_Exception('Unknown header ignored for MimePart:' . $key);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 }
             }
             $res->addPart($newPart);
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         return $res;
     }
 }

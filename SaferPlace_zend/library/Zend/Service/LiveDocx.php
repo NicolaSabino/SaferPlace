@@ -15,16 +15,26 @@
  * @category   Zend
  * @package    Zend_Service
  * @subpackage LiveDocx
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: LiveDocx.php 25024 2012-07-30 15:08:15Z rob $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
  * @category   Zend
  * @package    Zend_Service
  * @subpackage LiveDocx
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @since      LiveDocx 1.0
  */
@@ -125,6 +135,10 @@ class Zend_Service_LiveDocx
      * {/code}
      *
      * @param  array|Zend_Config $options
+<<<<<<< HEAD
+=======
+     * @return void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @throws Zend_Service_LiveDocx_Exception
      * @since  LiveDocx 1.0
      */
@@ -220,6 +234,12 @@ class Zend_Service_LiveDocx
     /**
      * Log in to LiveDocx service
      *
+<<<<<<< HEAD
+=======
+     * @param string $username
+     * @param string $password
+     *
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @throws Zend_Service_LiveDocx_Exception
      * @return boolean
      * @since  LiveDocx 1.2
@@ -300,7 +320,10 @@ class Zend_Service_LiveDocx
     /**
      * Set username
      *
+<<<<<<< HEAD
      * @param string $username
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Service_LiveDocx
      * @since  LiveDocx 1.0
      */
@@ -313,7 +336,10 @@ class Zend_Service_LiveDocx
     /**
      * Set password
      *
+<<<<<<< HEAD
      * @param string $password
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Service_LiveDocx
      * @since  LiveDocx 1.0
      */
@@ -326,7 +352,10 @@ class Zend_Service_LiveDocx
     /**
      * Set WSDL of LiveDocx web service
      *
+<<<<<<< HEAD
      * @param string $wsdl
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Service_LiveDocx
      * @since  LiveDocx 1.0
      */
@@ -369,7 +398,11 @@ class Zend_Service_LiveDocx
     /**
      * Return WSDL of LiveDocx web service
      *
+<<<<<<< HEAD
      * @return string
+=======
+     * @return Zend_Service_LiveDocx
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @since  LiveDocx 1.0
      */
     public function getWsdl()

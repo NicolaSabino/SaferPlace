@@ -14,9 +14,15 @@
  *
  * @category  Zend
  * @package   Zend_File_Transfer
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license   http://framework.zend.com/license/new-bsd     New BSD License
  * @version   $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license   http://framework.zend.com/license/new-bsd     New BSD License
+ * @version   $Id: Abstract.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -24,7 +30,11 @@
  *
  * @category  Zend
  * @package   Zend_File_Transfer
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license   http://framework.zend.com/license/new-bsd     New BSD License
  */
 abstract class Zend_File_Transfer_Adapter_Abstract
@@ -555,7 +565,10 @@ abstract class Zend_File_Transfer_Adapter_Abstract
      *
      * @param array $options Options to set
      * @param array $files   (Optional) Files to set the options for
+<<<<<<< HEAD
      * @return Zend_File_Transfer_Adapter_Abstract
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setOptions($options = array(), $files = null) {
         $file = $this->_getFiles($files, false, true);
@@ -937,8 +950,13 @@ abstract class Zend_File_Transfer_Adapter_Abstract
     /**
      * Retrieves the filename of transferred files.
      *
+<<<<<<< HEAD
      * @param  string|null   $file
      * @param  boolean $path (Optional) Should the path also be returned ?
+=======
+     * @param  string  $fileelement (Optional) Element to return the filename for
+     * @param  boolean $path        (Optional) Should the path also be returned ?
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return string|array
      */
     public function getFileName($file = null, $path = true)
@@ -1033,6 +1051,7 @@ abstract class Zend_File_Transfer_Adapter_Abstract
         $destination = rtrim($destination, "/\\");
         if (!is_dir($destination)) {
             require_once 'Zend/File/Transfer/Exception.php';
+<<<<<<< HEAD
             throw new Zend_File_Transfer_Exception(
                 'The given destination is not a directory or does not exist'
             );
@@ -1043,6 +1062,14 @@ abstract class Zend_File_Transfer_Adapter_Abstract
             throw new Zend_File_Transfer_Exception(
                 'The given destination is not writable'
             );
+=======
+            throw new Zend_File_Transfer_Exception('The given destination is not a directory or does not exist');
+        }
+
+        if (!is_writable($destination)) {
+            require_once 'Zend/File/Transfer/Exception.php';
+            throw new Zend_File_Transfer_Exception('The given destination is not writeable');
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         }
 
         if ($files === null) {
@@ -1068,7 +1095,10 @@ abstract class Zend_File_Transfer_Adapter_Abstract
      *
      * @param  null|string|array $files
      * @return null|string|array
+<<<<<<< HEAD
      * @throws Zend_File_Transfer_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function getDestination($files = null)
     {
@@ -1108,7 +1138,10 @@ abstract class Zend_File_Transfer_Adapter_Abstract
      *
      * @param  Zend_Translate|null $translator
      * @return Zend_File_Transfer_Abstract
+<<<<<<< HEAD
      * @throws Zend_File_Transfer_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setTranslator($translator = null)
     {
@@ -1430,7 +1463,10 @@ abstract class Zend_File_Transfer_Adapter_Abstract
      * Tries to detect if we can read and write to the given path
      *
      * @param string $path
+<<<<<<< HEAD
      * @return bool
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     protected function _isPathWriteable($path)
     {

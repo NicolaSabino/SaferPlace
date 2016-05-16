@@ -15,12 +15,41 @@
  * @category   Zend
  * @package    Zend_Test
  * @subpackage PHPUnit
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
 
 /**
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: DeleteAll.php 24593 2012-01-05 20:35:02Z matthew $
+ */
+
+/**
+ * @see PHPUnit_Extensions_Database_Operation_IDatabaseOperation
+ */
+require_once "PHPUnit/Extensions/Database/Operation/IDatabaseOperation.php";
+
+/**
+ * @see PHPUnit_Extensions_Database_DB_IDatabaseConnection
+ */
+require_once "PHPUnit/Extensions/Database/DB/IDatabaseConnection.php";
+
+/**
+ * @see PHPUnit_Extensions_Database_DataSet_IDataSet
+ */
+require_once "PHPUnit/Extensions/Database/DataSet/IDataSet.php";
+
+/**
+ * @see PHPUnit_Extensions_Database_Operation_Exception
+ */
+require_once "PHPUnit/Extensions/Database/Operation/Exception.php";
+
+/**
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @see Zend_Test_PHPUnit_Db_Connection
  */
 require_once "Zend/Test/PHPUnit/Db/Connection.php";
@@ -32,7 +61,11 @@ require_once "Zend/Test/PHPUnit/Db/Connection.php";
  * @category   Zend
  * @package    Zend_Test
  * @subpackage PHPUnit
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Test_PHPUnit_Db_Operation_DeleteAll implements PHPUnit_Extensions_Database_Operation_IDatabaseOperation
@@ -53,8 +86,16 @@ class Zend_Test_PHPUnit_Db_Operation_DeleteAll implements PHPUnit_Extensions_Dat
                 $tableName = $table->getTableMetaData()->getTableName();
                 $connection->getConnection()->delete($tableName);
             } catch (Exception $e) {
+<<<<<<< HEAD
+=======
+                require_once "PHPUnit/Extensions/Database/Operation/Exception.php";
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 throw new PHPUnit_Extensions_Database_Operation_Exception('DELETEALL', 'DELETE FROM '.$tableName.'', array(), $table, $e->getMessage());
             }
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

@@ -14,9 +14,15 @@
  *
  * @category   Zend
  * @package    Zend_Mail
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Part.php 24759 2012-05-05 02:58:55Z adamlundrigan $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 
@@ -26,6 +32,7 @@
 require_once 'Zend/Mime/Decode.php';
 
 /**
+<<<<<<< HEAD
  * @see Zend_Mail_Header_HeaderName
  */
 require_once 'Zend/Mail/Header/HeaderName.php';
@@ -36,6 +43,8 @@ require_once 'Zend/Mail/Header/HeaderName.php';
 require_once 'Zend/Mail/Header/HeaderValue.php';
 
 /**
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @see Zend_Mail_Part_Interface
  */
 require_once 'Zend/Mail/Part/Interface.php';
@@ -44,7 +53,11 @@ require_once 'Zend/Mail/Part/Interface.php';
 /**
  * @category   Zend
  * @package    Zend_Mail
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Mail_Part implements RecursiveIterator, Zend_Mail_Part_Interface
@@ -144,6 +157,7 @@ class Zend_Mail_Part implements RecursiveIterator, Zend_Mail_Part_Interface
         }
 
         if (isset($params['raw'])) {
+<<<<<<< HEAD
             Zend_Mime_Decode::splitMessage($params['raw'], $this->_headers, $this->_content, "\r\n");
         } else if (isset($params['headers'])) {
             if (is_array($params['headers'])) {
@@ -157,6 +171,19 @@ class Zend_Mail_Part implements RecursiveIterator, Zend_Mail_Part_Interface
                 }
             }
 
+=======
+            Zend_Mime_Decode::splitMessage($params['raw'], $this->_headers, $this->_content);
+        } else if (isset($params['headers'])) {
+            if (is_array($params['headers'])) {
+                $this->_headers = $params['headers'];
+            } else {
+                if (!empty($params['noToplines'])) {
+                    Zend_Mime_Decode::splitMessage($params['headers'], $this->_headers, $null);
+                } else {
+                    Zend_Mime_Decode::splitMessage($params['headers'], $this->_headers, $this->_topLines);
+                }
+            }
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             if (isset($params['content'])) {
                 $this->_content = $params['content'];
             }
@@ -578,6 +605,7 @@ class Zend_Mail_Part implements RecursiveIterator, Zend_Mail_Part_Interface
         $this->countParts();
         $this->_iterationPos = 1;
     }
+<<<<<<< HEAD
 
     /**
      * Ensure headers do not contain invalid characters
@@ -600,4 +628,6 @@ class Zend_Mail_Part implements RecursiveIterator, Zend_Mail_Part_Interface
             Zend_Mail_Header_HeaderValue::assertValid($value);
         }
     }
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 }

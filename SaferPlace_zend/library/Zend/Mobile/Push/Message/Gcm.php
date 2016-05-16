@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Mobile
  * @subpackage Zend_Mobile_Push
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
@@ -29,7 +33,11 @@ require_once 'Zend/Mobile/Push/Message/Abstract.php';
  * @category   Zend
  * @package    Zend_Mobile
  * @subpackage Zend_Mobile_Push
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  * @method     array getToken()
@@ -63,7 +71,11 @@ class Zend_Mobile_Push_Message_Gcm extends Zend_Mobile_Push_Message_Abstract
      * 
      * @var int
      */
+<<<<<<< HEAD
     protected $_ttl = 2419200;
+=======
+    protected $_ttl = 0;
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
     /**
      * Add a Token
@@ -199,10 +211,18 @@ class Zend_Mobile_Push_Message_Gcm extends Zend_Mobile_Push_Message_Abstract
     }
 
     /**
+<<<<<<< HEAD
      * Set time to live.
      *
      * @param  int $secs
      * @throws Zend_Mobile_Push_Message_Exception
+=======
+     * Set time to live
+     * If $secs is set to 0 it will be handled as
+     * not being set.
+     *
+     * @param  int $secs
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Mobile_Push_Message_Gcm
      */
     public function setTtl($secs)
@@ -235,7 +255,11 @@ class Zend_Mobile_Push_Message_Gcm extends Zend_Mobile_Push_Message_Abstract
         if (!is_array($this->_token) || empty($this->_token)) {
             return false;
         }
+<<<<<<< HEAD
         if ($this->_ttl !== 2419200 &&
+=======
+        if ($this->_ttl > 0 &&
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             (!is_scalar($this->_id) ||
             strlen($this->_id) === 0)) {
             return false;
@@ -265,6 +289,7 @@ class Zend_Mobile_Push_Message_Gcm extends Zend_Mobile_Push_Message_Abstract
         if ($this->_delay) {
             $json['delay_while_idle'] = $this->_delay;
         }
+<<<<<<< HEAD
         if ($this->_ttl !== 2419200) {
             $json['time_to_live'] = $this->_ttl;
         }
@@ -273,5 +298,11 @@ class Zend_Mobile_Push_Message_Gcm extends Zend_Mobile_Push_Message_Abstract
         } else {
             return json_encode($json);
         }
+=======
+        if ($this->_ttl) {
+            $json['time_to_live'] = $this->_ttl;
+        }
+        return json_encode($json);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     }
 }

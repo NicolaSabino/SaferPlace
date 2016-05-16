@@ -14,9 +14,15 @@
  *
  * @category   Zend
  * @package    Zend_Validate
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Abstract.php 25105 2012-11-07 20:33:22Z rob $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -27,7 +33,11 @@ require_once 'Zend/Validate/Interface.php';
 /**
  * @category   Zend
  * @package    Zend_Validate
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 abstract class Zend_Validate_Abstract implements Zend_Validate_Interface
@@ -229,8 +239,11 @@ abstract class Zend_Validate_Abstract implements Zend_Validate_Interface
             } else {
                 $value = $value->__toString();
             }
+<<<<<<< HEAD
         } elseif (is_array($value)) {
             $value = $this->_implodeRecursive($value);
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         } else {
             $value = implode((array) $value);
         }
@@ -257,6 +270,7 @@ abstract class Zend_Validate_Abstract implements Zend_Validate_Interface
     }
 
     /**
+<<<<<<< HEAD
      * Joins elements of a multidimensional array
      *
      * @param array $pieces
@@ -277,6 +291,8 @@ abstract class Zend_Validate_Abstract implements Zend_Validate_Interface
     }
 
     /**
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @param  string $messageKey
      * @param  string $value      OPTIONAL
      * @return void
@@ -345,7 +361,10 @@ abstract class Zend_Validate_Abstract implements Zend_Validate_Interface
      * Set translation object
      *
      * @param  Zend_Translate|Zend_Translate_Adapter|null $translator
+<<<<<<< HEAD
      * @throws Zend_Validate_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Validate_Abstract
      */
     public function setTranslator($translator = null)
@@ -393,7 +412,11 @@ abstract class Zend_Validate_Abstract implements Zend_Validate_Interface
      * Set default translation object for all validate objects
      *
      * @param  Zend_Translate|Zend_Translate_Adapter|null $translator
+<<<<<<< HEAD
      * @throws Zend_Validate_Exception
+=======
+     * @return void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public static function setDefaultTranslator($translator = null)
     {

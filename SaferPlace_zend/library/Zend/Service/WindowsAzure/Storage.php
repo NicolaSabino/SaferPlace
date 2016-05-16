@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Service_WindowsAzure
  * @subpackage Storage
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Storage.php 24697 2012-03-23 13:11:04Z ezimuel $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -34,15 +40,22 @@ require_once 'Zend/Service/WindowsAzure/Credentials/SharedKey.php';
  * @see Zend_Service_WindowsAzure_RetryPolicy_RetryPolicyAbstract
  */
 require_once 'Zend/Service/WindowsAzure/RetryPolicy/RetryPolicyAbstract.php';
+<<<<<<< HEAD
 
 /** @see Zend_Xml_Security */
 require_once 'Zend/Xml/Security.php';
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 /**
  * @category   Zend
  * @package    Zend_Service_WindowsAzure
  * @subpackage Storage
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Service_WindowsAzure_Storage
@@ -414,7 +427,11 @@ class Zend_Service_WindowsAzure_Storage
 			throw new Zend_Service_WindowsAzure_Exception('Response should not be null.');
 		}
 		
+<<<<<<< HEAD
         $xml = Zend_Xml_Security::scan($response->getBody());
+=======
+        $xml = @simplexml_load_string($response->getBody());
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         
         if ($xml !== false) {
             // Fetch all namespaces 

@@ -14,15 +14,25 @@
  *
  * @category   Zend
  * @package    Zend_Application
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Application.php 25024 2012-07-30 15:08:15Z rob $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
  * @category   Zend
  * @package    Zend_Application
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Application
@@ -70,17 +80,27 @@ class Zend_Application
      *
      * @param  string                   $environment
      * @param  string|array|Zend_Config $options String path to configuration file, or array/Zend_Config of configuration options
+<<<<<<< HEAD
      * @param bool $suppressNotFoundWarnings Should warnings be suppressed when a file is not found during autoloading?
      * @throws Zend_Application_Exception When invalid options are provided
      * @return void
      */
     public function __construct($environment, $options = null, $suppressNotFoundWarnings = null)
+=======
+     * @throws Zend_Application_Exception When invalid options are provided
+     * @return void
+     */
+    public function __construct($environment, $options = null)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     {
         $this->_environment = (string) $environment;
 
         require_once 'Zend/Loader/Autoloader.php';
         $this->_autoloader = Zend_Loader_Autoloader::getInstance();
+<<<<<<< HEAD
         $this->_autoloader->suppressNotFoundWarnings($suppressNotFoundWarnings);
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
         if (null !== $options) {
             if (is_string($options)) {
@@ -88,10 +108,14 @@ class Zend_Application
             } elseif ($options instanceof Zend_Config) {
                 $options = $options->toArray();
             } elseif (!is_array($options)) {
+<<<<<<< HEAD
                 throw new Zend_Application_Exception(
                     'Invalid options provided; must be location of config file,'
                     . ' a config object, or an array'
                 );
+=======
+                throw new Zend_Application_Exception('Invalid options provided; must be location of config file, a config object, or an array');
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             }
 
             $this->setOptions($options);
@@ -132,6 +156,7 @@ class Zend_Application
             if (is_array($options['config'])) {
                 $_options = array();
                 foreach ($options['config'] as $tmp) {
+<<<<<<< HEAD
                     $_options = $this->mergeOptions(
                         $_options, $this->_loadConfig($tmp)
                     );
@@ -141,6 +166,13 @@ class Zend_Application
                 $options = $this->mergeOptions(
                     $this->_loadConfig($options['config']), $options
                 );
+=======
+                    $_options = $this->mergeOptions($_options, $this->_loadConfig($tmp));
+                }
+                $options = $this->mergeOptions($_options, $options);
+            } else {
+                $options = $this->mergeOptions($this->_loadConfig($options['config']), $options);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             }
         }
 
@@ -180,9 +212,13 @@ class Zend_Application
                 $this->setBootstrap($bootstrap);
             } elseif (is_array($bootstrap)) {
                 if (empty($bootstrap['path'])) {
+<<<<<<< HEAD
                     throw new Zend_Application_Exception(
                         'No bootstrap path provided'
                     );
+=======
+                    throw new Zend_Application_Exception('No bootstrap path provided');
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 }
 
                 $path  = $bootstrap['path'];
@@ -194,9 +230,13 @@ class Zend_Application
 
                 $this->setBootstrap($path, $class);
             } else {
+<<<<<<< HEAD
                 throw new Zend_Application_Exception(
                     'Invalid bootstrap information provided'
                 );
+=======
+                throw new Zend_Application_Exception('Invalid bootstrap information provided');
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             }
         }
 
@@ -332,18 +372,26 @@ class Zend_Application
         if (!class_exists($class, false)) {
             require_once $path;
             if (!class_exists($class, false)) {
+<<<<<<< HEAD
                 throw new Zend_Application_Exception(
                     'Bootstrap class not found'
                 );
+=======
+                throw new Zend_Application_Exception('Bootstrap class not found');
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             }
         }
         $this->_bootstrap = new $class($this);
 
         if (!$this->_bootstrap instanceof Zend_Application_Bootstrap_Bootstrapper) {
+<<<<<<< HEAD
             throw new Zend_Application_Exception(
                 'Bootstrap class does not implement'
                 . ' Zend_Application_Bootstrap_Bootstrapper'
             );
+=======
+            throw new Zend_Application_Exception('Bootstrap class does not implement Zend_Application_Bootstrap_Bootstrapper');
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         }
 
         return $this;
@@ -421,18 +469,26 @@ class Zend_Application
             case 'inc':
                 $config = include $file;
                 if (!is_array($config)) {
+<<<<<<< HEAD
                     throw new Zend_Application_Exception(
                         'Invalid configuration file provided; PHP file does not'
                         . ' return array value'
                     );
+=======
+                    throw new Zend_Application_Exception('Invalid configuration file provided; PHP file does not return array value');
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 }
                 return $config;
                 break;
 
             default:
+<<<<<<< HEAD
                 throw new Zend_Application_Exception(
                     'Invalid configuration file provided; unknown config type'
                 );
+=======
+                throw new Zend_Application_Exception('Invalid configuration file provided; unknown config type');
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         }
 
         return $config->toArray();

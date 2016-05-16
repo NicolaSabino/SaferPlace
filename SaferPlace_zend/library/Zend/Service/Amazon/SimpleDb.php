@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Service_Amazon
  * @subpackage SimpleDb
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -53,7 +57,11 @@ require_once 'Zend/Crypt/Hmac.php';
  * @category   Zend
  * @package    Zend_Service_Amazon
  * @subpackage SimpleDb
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Service_Amazon_SimpleDb extends Zend_Service_Amazon_Abstract
@@ -89,8 +97,15 @@ class Zend_Service_Amazon_SimpleDb extends Zend_Service_Amazon_Abstract
     /**
      * Create Amazon SimpleDB client.
      *
+<<<<<<< HEAD
      * @param string $accessKey       Override the default Access Key
      * @param string $secretKey       Override the default Secret Key
+=======
+     * @param  string $access_key       Override the default Access Key
+     * @param  string $secret_key       Override the default Secret Key
+     * @param  string $region           Sets the AWS Region
+     * @return void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function __construct($accessKey, $secretKey)
     {
@@ -102,8 +117,11 @@ class Zend_Service_Amazon_SimpleDb extends Zend_Service_Amazon_Abstract
      * Set SimpleDB endpoint to use
      *
      * @param string|Zend_Uri_Http $endpoint
+<<<<<<< HEAD
      * @throws Zend_Service_Amazon_SimpleDb_Exception
      * @throws Zend_Uri_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Service_Amazon_SimpleDb
      */
     public function setEndpoint($endpoint)
@@ -132,11 +150,16 @@ class Zend_Service_Amazon_SimpleDb extends Zend_Service_Amazon_Abstract
     /**
      * Get attributes API method
      *
+<<<<<<< HEAD
      * @param string      $domainName Domain name within database
      * @param string      $itemName
      * @param string|null $attributeName
      * @throws Zend_Service_Amazon_SimpleDb_Exception
      * @return array
+=======
+     * @param string $domainName Domain name within database
+     * @param string
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function getAttributes(
         $domainName, $itemName, $attributeName = null
@@ -183,7 +206,11 @@ class Zend_Service_Amazon_SimpleDb extends Zend_Service_Amazon_Abstract
      *
      * @param  string $domainName
      * @param  string $itemName
+<<<<<<< HEAD
      * @param  array|Traversable $attributes
+=======
+     * @param  array|Traverable $attributes
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @param  array $replace
      * @return void
      */
@@ -310,6 +337,10 @@ class Zend_Service_Amazon_SimpleDb extends Zend_Service_Amazon_Abstract
 
         $nextTokenNode = $response->getSimpleXMLDocument()->ListDomainsResult->NextToken;
         $nextToken     = (string)$nextTokenNode;
+<<<<<<< HEAD
+=======
+        $nextToken     = (trim($nextToken) === '') ? null : $nextToken;
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
         return new Zend_Service_Amazon_SimpleDb_Page($data, $nextToken);
     }
@@ -427,9 +458,13 @@ class Zend_Service_Amazon_SimpleDb extends Zend_Service_Amazon_Abstract
      * Quote SDB column or table name
      *
      * Wraps it in ``
+<<<<<<< HEAD
      *
      * @param  string $name
      * @throws Zend_Service_Amazon_SimpleDb_Exception
+=======
+     * @param string $name
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return string
      */
     public function quoteName($name)
@@ -529,20 +564,37 @@ class Zend_Service_Amazon_SimpleDb extends Zend_Service_Amazon_Abstract
      *    values before constructing this string. Do not use any separator
      *    characters when appending strings.
      *
+<<<<<<< HEAD
      * @param array $parameters the parameters for which to get the signature.
      * @return string the signed data.
      */
     protected function _signParameters(array $parameters)
+=======
+     * @param array  $parameters the parameters for which to get the signature.
+     * @param string $secretKey  the secret key to use to sign the parameters.
+     *
+     * @return string the signed data.
+     */
+    protected function _signParameters(array $paramaters)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     {
         $data  = "POST\n";
         $data .= $this->getEndpoint()->getHost() . "\n";
         $data .= "/\n";
 
+<<<<<<< HEAD
         uksort($parameters, 'strcmp');
         unset($parameters['Signature']);
 
         $arrData = array();
         foreach ($parameters as $key => $value) {
+=======
+        uksort($paramaters, 'strcmp');
+        unset($paramaters['Signature']);
+
+        $arrData = array();
+        foreach ($paramaters as $key => $value) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             $value = urlencode($value);
             $value = str_replace("%7E", "~", $value);
             $value = str_replace("+", "%20", $value);
@@ -562,6 +614,12 @@ class Zend_Service_Amazon_SimpleDb extends Zend_Service_Amazon_Abstract
      *
      * @param Zend_Service_Amazon_SimpleDb_Response $response the response object to
      *                                                   check.
+<<<<<<< HEAD
+=======
+     *
+     * @return void
+     *
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @throws Zend_Service_Amazon_SimpleDb_Exception if one or more errors are
      *         returned from Amazon.
      */

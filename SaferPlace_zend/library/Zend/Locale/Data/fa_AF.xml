@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -8,6 +9,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 	<identity>
 		<version number="$Revision: 9280 $"/>
 		<generation date="$Date: 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013) $"/>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.66 $"/>
+		<generation date="$Date: 2009/06/15 05:50:27 $"/>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		<language type="fa"/>
 		<territory type="AF"/>
 	</identity>
@@ -38,6 +45,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</scripts>
 		<territories>
 			<territory type="AD">اندورا</territory>
+<<<<<<< HEAD
+=======
+			<territory type="AE">امارات متحدهٔ عربی</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="AG">انتیگوا و باربودا</territory>
 			<territory type="AL">البانیا</territory>
 			<territory type="AO">انگولا</territory>
@@ -61,6 +72,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CR">کاستریکا</territory>
 			<territory type="CU">کیوبا</territory>
 			<territory type="DK">دنمارک</territory>
+<<<<<<< HEAD
+=======
+			<territory type="EC">اکوادور</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="EE">استونیا</territory>
 			<territory type="ER">اریتریا</territory>
 			<territory type="ES">هسپانیه</territory>
@@ -83,6 +98,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="KE">کینیا</territory>
 			<territory type="KG">قرغزستان</territory>
 			<territory type="KH">کمپوچیا</territory>
+<<<<<<< HEAD
+=======
+			<territory type="KM">کومور</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="KN">سنت کیتس و نیویس</territory>
 			<territory type="KP">کوریای شمالی</territory>
 			<territory type="KR">کوریای جنوبی</territory>
@@ -124,14 +143,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="SV">السلوادور</territory>
 			<territory type="TJ">تاجکستان</territory>
 			<territory type="UA">اکراین</territory>
+<<<<<<< HEAD
 			<territory type="UY">یوروگوای</territory>
 			<territory type="VC">سنت وینسنت و گرینادین</territory>
 			<territory type="VE">ونزویلا</territory>
+=======
+			<territory type="US">ایالات متحدهٔ امریکا</territory>
+			<territory type="UY">یوروگوای</territory>
+			<territory type="VC">سنت وینسنت و گرینادین</territory>
+			<territory type="VE">ونزویلا</territory>
+			<territory type="WS">ساموآ</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="ZW">زیمبابوی</territory>
 		</territories>
 	</localeDisplayNames>
 	<characters>
+<<<<<<< HEAD
 		<exemplarCharacters type="auxiliary">[\u200C \u200D \u0656 \u0670 ټ ځ څ ډ ړ ږ ښ ګ ڼ ي]</exemplarCharacters>
+=======
+		<exemplarCharacters type="auxiliary">[\u0656 \u0670 \u200C \u200D ټ ځ څ ډ ړ ږ ښ ګ ڼ ي]</exemplarCharacters>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	</characters>
 	<dates>
 		<calendars>
@@ -141,6 +172,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<monthWidth type="abbreviated">
 							<month type="1">جنو</month>
 							<month type="5">مـی</month>
+<<<<<<< HEAD
+=======
+							<month type="6">جون</month>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 							<month type="7">جول</month>
 							<month type="12">دسم</month>
 						</monthWidth>
@@ -203,16 +238,42 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="4">س</month>
 							<month type="5">ا</month>
 							<month type="6">س</month>
+<<<<<<< HEAD
 							<month type="7">م</month>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 							<month type="8">ع</month>
 							<month type="9">ق</month>
 							<month type="10">ج</month>
 							<month type="11">د</month>
 							<month type="12">ح</month>
 						</monthWidth>
+<<<<<<< HEAD
 					</monthContext>
 				</months>
 				<eras>
+=======
+						<monthWidth type="wide">
+							<month type="1">حمل</month>
+							<month type="2">ثور</month>
+							<month type="3">جوزا</month>
+							<month type="4">سرطان</month>
+							<month type="5">اسد</month>
+							<month type="6">سنبله</month>
+							<month type="7">میزان</month>
+							<month type="8">عقرب</month>
+							<month type="9">قوس</month>
+							<month type="10">جدی</month>
+							<month type="11">دلو</month>
+							<month type="12">حوت</month>
+						</monthWidth>
+					</monthContext>
+				</months>
+				<eras>
+					<eraNames>
+						<era type="0">هجری شمسی</era>
+					</eraNames>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					<eraAbbr>
 						<era type="0">ه‍. ش.</era>
 					</eraAbbr>
@@ -221,7 +282,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</calendars>
 	</dates>
 	<numbers>
+<<<<<<< HEAD
 		<percentFormats numberSystem="latn">
+=======
+		<symbols>
+			<decimal>,</decimal>
+			<group>.</group>
+			<percentSign>%</percentSign>
+			<nativeZeroDigit>0</nativeZeroDigit>
+			<minusSign>−</minusSign>
+		</symbols>
+		<percentFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<percentFormatLength>
 				<percentFormat>
 					<pattern>'‪'#,##0%'‬'</pattern>
@@ -229,6 +301,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</percentFormatLength>
 		</percentFormats>
 		<currencies>
+<<<<<<< HEAD
+=======
+			<currency type="AFN">
+				<symbol>؋</symbol>
+			</currency>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<currency type="AUD">
 				<displayName>دالر آسترالیا</displayName>
 			</currency>

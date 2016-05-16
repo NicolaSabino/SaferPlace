@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -20,17 +21,35 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="aa">afarčina</language>
 			<language type="ab">abcházština</language>
 			<language type="ace" draft="contributed">acehčina</language>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.101 $"/>
+		<generation date="$Date: 2009/06/15 20:34:50 $"/>
+		<language type="sk"/>
+	</identity>
+	<localeDisplayNames>
+		<languages>
+			<language type="aa">afarčina</language>
+			<language type="ab">abcházština</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ach">ačoli</language>
 			<language type="ada">adangme</language>
 			<language type="ady">adygčina</language>
 			<language type="ae">avestčina</language>
 			<language type="af">afrikánčina</language>
+<<<<<<< HEAD
 			<language type="afh">afrihili</language>
 			<language type="agq" draft="contributed">aghem</language>
+=======
+			<language type="afa">afroázijské jazyky</language>
+			<language type="afh">afrihili</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ain">ainčina</language>
 			<language type="ak">akančina</language>
 			<language type="akk">akkadčina</language>
 			<language type="ale">aleutčina</language>
+<<<<<<< HEAD
 			<language type="alt" draft="contributed">južná altajčina</language>
 			<language type="am">amharčina</language>
 			<language type="an">aragónčina</language>
@@ -45,10 +64,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="as">ásámčina</language>
 			<language type="asa" draft="contributed">asu</language>
 			<language type="ast">astúrčina</language>
+=======
+			<language type="alg">algonkinské jazyky</language>
+			<language type="am">amharčina</language>
+			<language type="an">aragónčina</language>
+			<language type="anp">angika</language>
+			<language type="apa">apačské jazyky</language>
+			<language type="ar">arabčina</language>
+			<language type="arn">araukánčina</language>
+			<language type="arp">arapaho</language>
+			<language type="art">umelý jazyk</language>
+			<language type="arw">arawačtina</language>
+			<language type="as">ásámčina</language>
+			<language type="ast">astúrčina</language>
+			<language type="ath">athabaské jazyky</language>
+			<language type="aus">austrálske jazyky</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="av">avarčina</language>
 			<language type="awa">avadhčina</language>
 			<language type="ay">aymarčina</language>
 			<language type="az">azerbajdžančina</language>
+<<<<<<< HEAD
 			<language type="az" alt="short" draft="contributed">azerčina</language>
 			<language type="ba">baskirčina</language>
 			<language type="bal">balúčtina</language>
@@ -62,10 +98,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="bez" draft="contributed">bena</language>
 			<language type="bfd" draft="contributed">bafut</language>
 			<language type="bg">bulharčina</language>
+=======
+			<language type="ba">baskirčina</language>
+			<language type="bai">bamileke</language>
+			<language type="bal">balúčtina</language>
+			<language type="ban">balijčina</language>
+			<language type="bas">basa</language>
+			<language type="bat">baltské jazyky</language>
+			<language type="be">bieloruština</language>
+			<language type="bej">bedža</language>
+			<language type="bem">bemba</language>
+			<language type="ber">berberské jazyky</language>
+			<language type="bg">bulharčina</language>
+			<language type="bh">bihárske jazyky</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="bho">bhódžpurčina</language>
 			<language type="bi">bislama</language>
 			<language type="bik">bikol</language>
 			<language type="bin">bini</language>
+<<<<<<< HEAD
 			<language type="bkm" draft="contributed">kom</language>
 			<language type="bla" draft="contributed">siksika</language>
 			<language type="bm">bambarčina</language>
@@ -94,11 +145,35 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="chg">čagatajčina</language>
 			<language type="chk" draft="contributed">truk</language>
 			<language type="chm" draft="contributed">marijčina</language>
+=======
+			<language type="bm">bambarčina</language>
+			<language type="bn">bengálčina</language>
+			<language type="bnt">bantuské jazyky</language>
+			<language type="bo">tibetčina</language>
+			<language type="br">bretónčina</language>
+			<language type="bra">bradžčina</language>
+			<language type="bs">bosniačtina</language>
+			<language type="btk">batacké jazyky</language>
+			<language type="bua">buriatčina</language>
+			<language type="bug">bugiština</language>
+			<language type="byn">blin</language>
+			<language type="ca">katalánčina</language>
+			<language type="cai">jazyk stredoamerických indiánov</language>
+			<language type="car">karibský</language>
+			<language type="cau">kaukazské jazyky</language>
+			<language type="ce">čečenčina</language>
+			<language type="ceb">cebuánčina</language>
+			<language type="cel">keltské jazyky</language>
+			<language type="ch">čamorčina</language>
+			<language type="chb">čibča</language>
+			<language type="chg">čagatajčina</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="chn">činucký žargón</language>
 			<language type="cho">čoktavčina</language>
 			<language type="chp">čipevajčina</language>
 			<language type="chr">čerokí</language>
 			<language type="chy">čejenčina</language>
+<<<<<<< HEAD
 			<language type="ckb">kurdčina (sorání)</language>
 			<language type="co">korzičtina</language>
 			<language type="cop" draft="contributed">koptčina</language>
@@ -106,20 +181,31 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="crh" draft="contributed">krymská turečtina</language>
 			<language type="cs">čeština</language>
 			<language type="csb" draft="contributed">kašubčina</language>
+=======
+			<language type="cmc">čamaské jazyky</language>
+			<language type="co">korzičtina</language>
+			<language type="cr">krí</language>
+			<language type="cs">čeština</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="cu">cirkevná slovančina</language>
 			<language type="cv">čuvaština</language>
 			<language type="cy">waleština</language>
 			<language type="da">dánčina</language>
 			<language type="dak">dakotčina</language>
 			<language type="dar">darginčina</language>
+<<<<<<< HEAD
 			<language type="dav" draft="contributed">taita</language>
 			<language type="de">nemčina</language>
 			<language type="de_AT">rakúska nemčina</language>
 			<language type="de_CH">švajčiarska spisovná nemčina</language>
+=======
+			<language type="de">nemčina</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="del">delawarčina</language>
 			<language type="den">slovančina</language>
 			<language type="dgr">dogribčina</language>
 			<language type="din">dinka</language>
+<<<<<<< HEAD
 			<language type="dje" draft="contributed">zarma</language>
 			<language type="doi">dógrí</language>
 			<language type="dsb" draft="contributed">dolnolužická srbčina</language>
@@ -134,11 +220,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ee">eweština</language>
 			<language type="efi">efik</language>
 			<language type="egy" draft="contributed">staroegyptský</language>
+=======
+			<language type="doi">dógrí</language>
+			<language type="dra">drávidské jazyky</language>
+			<language type="dua">duala</language>
+			<language type="dv">divehi</language>
+			<language type="dyu">ďula</language>
+			<language type="dz">dzongkä</language>
+			<language type="ee">eweština</language>
+			<language type="efi">efik</language>
+			<language type="egy">staroegyptský</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="eka">ekadžuk</language>
 			<language type="el">gréčtina</language>
 			<language type="elx">elamčina</language>
 			<language type="en">angličtina</language>
 			<language type="en_AU">austrálska angličtina</language>
+<<<<<<< HEAD
 			<language type="en_CA">kanadská angličtina</language>
 			<language type="en_GB">britská angličtina</language>
 			<language type="en_GB" alt="short" draft="contributed">angličtina (UK)</language>
@@ -150,6 +248,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="es_419">latinskoamerická španielčina</language>
 			<language type="es_ES">iberská španielčina</language>
 			<language type="es_MX" draft="contributed">mexická španielčina</language>
+=======
+			<language type="en_GB">britská angličtina</language>
+			<language type="en_US">americká angličtina</language>
+			<language type="eo">esperanto</language>
+			<language type="es">španielčina</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="et">estónčina</language>
 			<language type="eu">baskičtina</language>
 			<language type="ewo">ewondo</language>
@@ -159,15 +263,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ff">fulbčina</language>
 			<language type="fi">fínčina</language>
 			<language type="fil">filipínčina</language>
+<<<<<<< HEAD
+=======
+			<language type="fiu">ugrofínske jazyky</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="fj">fidžijčina</language>
 			<language type="fo">faerčina</language>
 			<language type="fon">fončina</language>
 			<language type="fr">francúzština</language>
+<<<<<<< HEAD
 			<language type="fr_CA">kanadská francúzština</language>
 			<language type="fr_CH">švajčiarska francúzština</language>
 			<language type="frm" draft="contributed">stredná francúzština</language>
 			<language type="fro" draft="contributed">stará francúzština</language>
 			<language type="frr" draft="contributed">severná frízština</language>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="frs">východná frízština</language>
 			<language type="fur">friulčina</language>
 			<language type="fy">západná frízština</language>
@@ -175,6 +286,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="gaa">ga</language>
 			<language type="gay">gayo</language>
 			<language type="gba">gbaja</language>
+<<<<<<< HEAD
 			<language type="gd">škótska gaelčina</language>
 			<language type="gez" draft="contributed">etiópčina</language>
 			<language type="gil" draft="contributed">kiribatčina</language>
@@ -270,10 +382,53 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ku">kurdčina</language>
 			<language type="kum" draft="contributed">kumyčtina</language>
 			<language type="kut" draft="contributed">kutenajčina</language>
+=======
+			<language type="gd">škótčina</language>
+			<language type="gem">germánske jazyky</language>
+			<language type="gl">galícijčina</language>
+			<language type="gn">guaraní</language>
+			<language type="got">gótčina</language>
+			<language type="grc">starogréčtina</language>
+			<language type="gsw">švajčiarska nemčina</language>
+			<language type="gu">gudžarátčina</language>
+			<language type="gv">mančina</language>
+			<language type="ha">hauština</language>
+			<language type="haw">havajčina</language>
+			<language type="he">hebrejčina</language>
+			<language type="hi">hindčina</language>
+			<language type="ho">hiri motu</language>
+			<language type="hr">chorvátčina</language>
+			<language type="ht">haitský</language>
+			<language type="hu">maďarčina</language>
+			<language type="hy">arménčina</language>
+			<language type="hz">herero</language>
+			<language type="ia">interlingua</language>
+			<language type="id">indonézština</language>
+			<language type="ie">interlingue</language>
+			<language type="ig">igboština</language>
+			<language type="ine">indoeurópske jazyky</language>
+			<language type="ira">iránske jazyky</language>
+			<language type="is">islandčina</language>
+			<language type="it">taliančina</language>
+			<language type="ja">japončina</language>
+			<language type="jv">jávčina</language>
+			<language type="ka">gruzínčina</language>
+			<language type="kg">konžština</language>
+			<language type="kj">kuaňama</language>
+			<language type="kk">kazaština</language>
+			<language type="kl">grónska eskimáčtina</language>
+			<language type="km">kambodžská khmérčina</language>
+			<language type="kn">kannadčina</language>
+			<language type="ko">kórejčina</language>
+			<language type="kr">kanurijčina</language>
+			<language type="ks">kašmírčina</language>
+			<language type="ku">kurdčina</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="kv">komijčina</language>
 			<language type="kw">kornčina</language>
 			<language type="ky">kirgizština</language>
 			<language type="la">latinčina</language>
+<<<<<<< HEAD
 			<language type="lad" draft="contributed">židovská španielčina</language>
 			<language type="lag" draft="contributed">langi</language>
 			<language type="lah" draft="contributed">lahandčina</language>
@@ -364,11 +519,46 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="nyn">ňankole</language>
 			<language type="nyo" draft="contributed">ňoro</language>
 			<language type="nzi" draft="contributed">nzima</language>
+=======
+			<language type="lb">luxemburčina</language>
+			<language type="lg">gandčina</language>
+			<language type="ln">lingalčina</language>
+			<language type="lo">laoština</language>
+			<language type="lol">mongo</language>
+			<language type="lt">litovčina</language>
+			<language type="lu">luba-katanga</language>
+			<language type="lv">lotyština</language>
+			<language type="map">austronézske jazyky</language>
+			<language type="mg">malgaština</language>
+			<language type="mh">kajin-majol</language>
+			<language type="mi">maorijčina</language>
+			<language type="mk">macedónčina</language>
+			<language type="ml">malajálamčina</language>
+			<language type="mn">mongolčina</language>
+			<language type="mo">moldavčina</language>
+			<language type="mr">maráthčina</language>
+			<language type="ms">malajčina</language>
+			<language type="mt">maltčina</language>
+			<language type="my">barmčina</language>
+			<language type="myn">mayské jazyky</language>
+			<language type="myv">erzjančina</language>
+			<language type="na">nauru</language>
+			<language type="nai">jazyk severoamerických indiánov</language>
+			<language type="nb">bokmål</language>
+			<language type="ne">nepálčina</language>
+			<language type="ng">ndonga</language>
+			<language type="nl">holandčina</language>
+			<language type="nn">nórsky nynorsk</language>
+			<language type="no">nórčina</language>
+			<language type="nv">navajo</language>
+			<language type="ny">čewa</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="oc">okcitánčina</language>
 			<language type="oj">odžibva</language>
 			<language type="om">oromčina</language>
 			<language type="or">uríjčina</language>
 			<language type="os">osetčina</language>
+<<<<<<< HEAD
 			<language type="osa" draft="contributed">osagčina</language>
 			<language type="ota" draft="contributed">osmanská turečtina</language>
 			<language type="pa">pandžábčina</language>
@@ -525,10 +715,80 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="zbl" draft="contributed">systém Bliss</language>
 			<language type="zen" draft="contributed">zenaga</language>
 			<language type="zgh" draft="contributed">štandardný marocký tamazight</language>
+=======
+			<language type="pa">pandžábčina</language>
+			<language type="paa">papuánsky</language>
+			<language type="pi">pálí</language>
+			<language type="pl">poľština</language>
+			<language type="ps">paštúnčina</language>
+			<language type="pt">portugalčina</language>
+			<language type="pt_BR">brazílska portugalčina</language>
+			<language type="qu">kečuánčina</language>
+			<language type="rm">rétorománčina</language>
+			<language type="rn">rundčina</language>
+			<language type="ro">rumunčina</language>
+			<language type="ru">ruština</language>
+			<language type="rw">rwandčina</language>
+			<language type="sa">sanskrit</language>
+			<language type="sai">jazyk juhoamerických indiánov</language>
+			<language type="sc">sardínčina</language>
+			<language type="scn">sicílčina</language>
+			<language type="sd">sindhčina</language>
+			<language type="sg">sango</language>
+			<language type="sgn">znaková reč</language>
+			<language type="sh">srbochorvátčina</language>
+			<language type="si">sinhalčina</language>
+			<language type="sk">slovenčina</language>
+			<language type="sl">slovinčina</language>
+			<language type="sla">slovenský jazyk</language>
+			<language type="sm">samojčina</language>
+			<language type="sn">šončina</language>
+			<language type="so">somálčina</language>
+			<language type="sq">albánčina</language>
+			<language type="sr">srbčina</language>
+			<language type="ss">svazijčina</language>
+			<language type="st">južná sothčina</language>
+			<language type="su">sundčina</language>
+			<language type="sux">sumerčina</language>
+			<language type="sv">švédčina</language>
+			<language type="sw">swahilčina</language>
+			<language type="syr">sýrčina</language>
+			<language type="ta">tamilčina</language>
+			<language type="te">telugčina</language>
+			<language type="tg">tadžičtina</language>
+			<language type="th">thajčina</language>
+			<language type="ti">tigrejčina</language>
+			<language type="tk">turkménčina</language>
+			<language type="tl">tagalčina</language>
+			<language type="tlh">klingónčina</language>
+			<language type="tn">tswančina</language>
+			<language type="to">tonžtina</language>
+			<language type="tr">turečtina</language>
+			<language type="ts">tsonga</language>
+			<language type="tt">tatárčina</language>
+			<language type="tut">altajské jazyky</language>
+			<language type="tw">twi</language>
+			<language type="ty">tahitčina</language>
+			<language type="ug">ujgurčina</language>
+			<language type="uk">ukrajinčina</language>
+			<language type="und">neznámy alebo neplatný jazyk</language>
+			<language type="ur">urdčina</language>
+			<language type="uz">uzbečtina</language>
+			<language type="ve">vendčina</language>
+			<language type="vi">vietnamčina</language>
+			<language type="vo">volapük</language>
+			<language type="wa">valónčina</language>
+			<language type="wo">wolof</language>
+			<language type="xh">xhosa</language>
+			<language type="yi">jidiš</language>
+			<language type="yo">jorubčina</language>
+			<language type="za">čuangčina</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="zh">čínština</language>
 			<language type="zh_Hans">zjednodušená čínština</language>
 			<language type="zh_Hant">tradičná čínština</language>
 			<language type="zu">zuluština</language>
+<<<<<<< HEAD
 			<language type="zun" draft="contributed">zuniština</language>
 			<language type="zxx" draft="contributed">bez jazykového obsahu</language>
 			<language type="zza" draft="contributed">zázá</language>
@@ -585,11 +845,44 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Zxxx">bez zápisu</script>
 			<script type="Zyyy">všeobecné</script>
 			<script type="Zzzz">neznáme písmo</script>
+=======
+			<language type="zxx">bez jazykového obsahu</language>
+		</languages>
+		<scripts>
+			<script type="Arab">Arabský</script>
+			<script type="Armn">Arménsky</script>
+			<script type="Bali">balijský</script>
+			<script type="Beng">bengálsky</script>
+			<script type="Brai">Braillovo písmo</script>
+			<script type="Cyrl">Cyrilika</script>
+			<script type="Egyp">egyptské hieroglyfy</script>
+			<script type="Ethi">etiópsky</script>
+			<script type="Glag">hlaholika</script>
+			<script type="Goth">gotický</script>
+			<script type="Grek">Grécky</script>
+			<script type="Hebr">hebrejský</script>
+			<script type="Jpan">japonský</script>
+			<script type="Khmr">kmérsky</script>
+			<script type="Kore">kórejský</script>
+			<script type="Latn">latinka</script>
+			<script type="Lina">lineárna A</script>
+			<script type="Linb">lineárna B</script>
+			<script type="Maya">mayské hieroglyfy</script>
+			<script type="Mong">mongolský</script>
+			<script type="Osma">osmanský</script>
+			<script type="Runr">Runové písmo</script>
+			<script type="Tibt">tibetský</script>
+			<script type="Zyyy">Obecný</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</scripts>
 		<territories>
 			<territory type="001">Svet</territory>
 			<territory type="002">Afrika</territory>
+<<<<<<< HEAD
 			<territory type="003">Severná Amerika</territory>
+=======
+			<territory type="003">Severná Amerika (003)</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="005">Južná Amerika</territory>
 			<territory type="009">Oceánia</territory>
 			<territory type="011">Západná Afrika</territory>
@@ -597,18 +890,32 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="014">Východná Afrika</territory>
 			<territory type="015">Severná Afrika</territory>
 			<territory type="017">Stredná Afrika</territory>
+<<<<<<< HEAD
 			<territory type="018">južné územia Afriky</territory>
 			<territory type="019">Americký kontinent</territory>
 			<territory type="021">severné územia Ameriky</territory>
+=======
+			<territory type="018">Južná Afrika [018]</territory>
+			<territory type="019">Americký kontinent</territory>
+			<territory type="021">Severná Amerika</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="029">Karibik</territory>
 			<territory type="030">Východná Ázia</territory>
 			<territory type="034">Južná Ázia</territory>
 			<territory type="035">Juhovýchodná Ázia</territory>
 			<territory type="039">Južná Európa</territory>
+<<<<<<< HEAD
 			<territory type="053">Australázia</territory>
 			<territory type="054">Melanézia</territory>
 			<territory type="057">Mikronézia – oblasť</territory>
 			<territory type="061">Polynézia</territory>
+=======
+			<territory type="053">Austrália a Nový Zéland</territory>
+			<territory type="054">Melanézia</territory>
+			<territory type="057">Mikronésia</territory>
+			<territory type="061">Polynézia</territory>
+			<territory type="062">Stredná a južná Ázia</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="142">Ázia</territory>
 			<territory type="143">Stredná Ázia</territory>
 			<territory type="145">Západná Ázia</territory>
@@ -616,18 +923,33 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="151">Východná Európa</territory>
 			<territory type="154">Severná Európa</territory>
 			<territory type="155">Západná Európa</territory>
+<<<<<<< HEAD
 			<territory type="419">Latinská Amerika</territory>
 			<territory type="AC">Ostrov Ascensión</territory>
 			<territory type="AD">Andorra</territory>
 			<territory type="AE">Spojené arabské emiráty</territory>
 			<territory type="AF">Afganistan</territory>
 			<territory type="AG">Antigua a Barbuda</territory>
+=======
+			<territory type="172">Spoločenstvo nezávislých štátov</territory>
+			<territory type="200">Československo</territory>
+			<territory type="419">Latinská Amerika a Karibik</territory>
+			<territory type="830">Kanál La Manche</territory>
+			<territory type="AD">Andorra</territory>
+			<territory type="AE">Spojené arabské emiráty</territory>
+			<territory type="AF">Afganistan</territory>
+			<territory type="AG">Antigua a Barbados</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="AI">Anguilla</territory>
 			<territory type="AL">Albánsko</territory>
 			<territory type="AM">Arménsko</territory>
 			<territory type="AN">Holandské Antily</territory>
 			<territory type="AO">Angola</territory>
+<<<<<<< HEAD
 			<territory type="AQ">Antarktída</territory>
+=======
+			<territory type="AQ">Antarctica</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="AR">Argentína</territory>
 			<territory type="AS">Americká Samoa</territory>
 			<territory type="AT">Rakúsko</territory>
@@ -648,21 +970,33 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="BM">Bermudy</territory>
 			<territory type="BN">Brunej</territory>
 			<territory type="BO">Bolívia</territory>
+<<<<<<< HEAD
 			<territory type="BQ">Karibské Holandsko</territory>
 			<territory type="BR">Brazília</territory>
 			<territory type="BS">Bahamy</territory>
 			<territory type="BT">Bhután</territory>
+=======
+			<territory type="BR">Brazília</territory>
+			<territory type="BS">Bahamy</territory>
+			<territory type="BT">Bután</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="BV">Bouvetov ostrov</territory>
 			<territory type="BW">Botswana</territory>
 			<territory type="BY">Bielorusko</territory>
 			<territory type="BZ">Belize</territory>
 			<territory type="CA">Kanada</territory>
 			<territory type="CC">Kokosové ostrovy</territory>
+<<<<<<< HEAD
 			<territory type="CD">Kongo - Kinshasa</territory>
 			<territory type="CD" alt="variant">Kongo (DRK)</territory>
 			<territory type="CF">Stredoafrická republika</territory>
 			<territory type="CG">Kongo - Brazzaville</territory>
 			<territory type="CG" alt="variant">Kongo (republika)</territory>
+=======
+			<territory type="CD">Konžská demokratická republika</territory>
+			<territory type="CF">Stredoafrická republika</territory>
+			<territory type="CG">Kongo</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="CH">Švajčiarsko</territory>
 			<territory type="CI">Pobrežie Slonoviny</territory>
 			<territory type="CK">Cookove ostrovy</territory>
@@ -670,22 +1004,36 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CM">Kamerun</territory>
 			<territory type="CN">Čína</territory>
 			<territory type="CO">Kolumbia</territory>
+<<<<<<< HEAD
 			<territory type="CP">Ostrov Clipperton</territory>
 			<territory type="CR">Kostarika</territory>
 			<territory type="CU">Kuba</territory>
 			<territory type="CV">Kapverdy</territory>
 			<territory type="CW">Curaçao</territory>
+=======
+			<territory type="CR">Kostarika</territory>
+			<territory type="CS">Srbsko a Čierna Hora</territory>
+			<territory type="CU">Kuba</territory>
+			<territory type="CV">Kapverdy</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="CX">Vianočný ostrov</territory>
 			<territory type="CY">Cyprus</territory>
 			<territory type="CZ">Česká republika</territory>
 			<territory type="DE">Nemecko</territory>
+<<<<<<< HEAD
 			<territory type="DG">Diego Garcia</territory>
 			<territory type="DJ">Džibutsko</territory>
+=======
+			<territory type="DJ">Džibuti</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="DK">Dánsko</territory>
 			<territory type="DM">Dominika</territory>
 			<territory type="DO">Dominikánska republika</territory>
 			<territory type="DZ">Alžírsko</territory>
+<<<<<<< HEAD
 			<territory type="EA">Ceuta a Melilla</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="EC">Ekvádor</territory>
 			<territory type="EE">Estónsko</territory>
 			<territory type="EG">Egypt</territory>
@@ -693,17 +1041,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="ER">Eritrea</territory>
 			<territory type="ES">Španielsko</territory>
 			<territory type="ET">Etiópia</territory>
+<<<<<<< HEAD
 			<territory type="EU">Európska únia</territory>
 			<territory type="FI">Fínsko</territory>
 			<territory type="FJ">Fidži</territory>
 			<territory type="FK">Falklandské ostrovy</territory>
 			<territory type="FK" alt="variant">Falklandy (Islas Malvinas)</territory>
+=======
+			<territory type="FI">Fínsko</territory>
+			<territory type="FJ">Fidži</territory>
+			<territory type="FK">Falklandské ostrovy</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="FM">Mikronézia</territory>
 			<territory type="FO">Faerské ostrovy</territory>
 			<territory type="FR">Francúzsko</territory>
 			<territory type="GA">Gabon</territory>
 			<territory type="GB">Spojené kráľovstvo</territory>
+<<<<<<< HEAD
 			<territory type="GB" alt="short" draft="contributed">UK</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="GD">Grenada</territory>
 			<territory type="GE">Gruzínsko</territory>
 			<territory type="GF">Francúzska Guayana</territory>
@@ -721,20 +1078,32 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GU">Guam</territory>
 			<territory type="GW">Guinea-Bissau</territory>
 			<territory type="GY">Guayana</territory>
+<<<<<<< HEAD
 			<territory type="HK">Hongkong OAO Číny</territory>
 			<territory type="HK" alt="short">Hongkong</territory>
 			<territory type="HM">Heardov ostrov a McDonaldove ostrovy</territory>
+=======
+			<territory type="HK">Hong Kong S.A.R. Číny</territory>
+			<territory type="HM">Heardove ostrovy a McDonaldove ostrovy</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="HN">Honduras</territory>
 			<territory type="HR">Chorvátsko</territory>
 			<territory type="HT">Haiti</territory>
 			<territory type="HU">Maďarsko</territory>
+<<<<<<< HEAD
 			<territory type="IC">Kanárske ostrovy</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="ID">Indonézia</territory>
 			<territory type="IE">Írsko</territory>
 			<territory type="IL">Izrael</territory>
 			<territory type="IM">Ostrov Man</territory>
 			<territory type="IN">India</territory>
+<<<<<<< HEAD
 			<territory type="IO">Britské indickooceánske územie</territory>
+=======
+			<territory type="IO">Britské územie v Indickom oceáne</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="IQ">Irak</territory>
 			<territory type="IR">Irán</territory>
 			<territory type="IS">Island</territory>
@@ -749,12 +1118,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="KI">Kiribati</territory>
 			<territory type="KM">Komory</territory>
 			<territory type="KN">Saint Kitts a Nevis</territory>
+<<<<<<< HEAD
 			<territory type="KP">Severná Kórea</territory>
 			<territory type="KR">Južná Kórea</territory>
 			<territory type="KW">Kuvajt</territory>
 			<territory type="KY">Kajmanie ostrovy</territory>
 			<territory type="KZ">Kazachstan</territory>
 			<territory type="LA">Laos</territory>
+=======
+			<territory type="KP">Kórejská ľudovodemokratická republika</territory>
+			<territory type="KR">Kórejská republika</territory>
+			<territory type="KW">Kuvajt</territory>
+			<territory type="KY">Kajmanské ostrovy</territory>
+			<territory type="KZ">Kazachstan</territory>
+			<territory type="LA">Laoská ľudovodemokratická republika</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="LB">Libanon</territory>
 			<territory type="LC">Svätá Lucia</territory>
 			<territory type="LI">Lichtenštajnsko</territory>
@@ -764,11 +1142,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="LT">Litva</territory>
 			<territory type="LU">Luxembursko</territory>
 			<territory type="LV">Lotyšsko</territory>
+<<<<<<< HEAD
 			<territory type="LY">Líbya</territory>
+=======
+			<territory type="LY">Lýbijská arabská džamahírija</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="MA">Maroko</territory>
 			<territory type="MC">Monako</territory>
 			<territory type="MD">Moldavsko</territory>
 			<territory type="ME">Čierna Hora</territory>
+<<<<<<< HEAD
 			<territory type="MF">Saint Martin</territory>
 			<territory type="MG">Madagaskar</territory>
 			<territory type="MH">Marshallove ostrovy</territory>
@@ -779,6 +1162,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MN">Mongolsko</territory>
 			<territory type="MO">Macao OAO Číny</territory>
 			<territory type="MO" alt="short">Macao</territory>
+=======
+			<territory type="MF">Svätý Martin</territory>
+			<territory type="MG">Madagaskar</territory>
+			<territory type="MH">Marshallove ostrovy</territory>
+			<territory type="MK">Macedónsko</territory>
+			<territory type="ML">Mali</territory>
+			<territory type="MM">Mjanmarsko</territory>
+			<territory type="MN">Mongolsko</territory>
+			<territory type="MO">Makao S.A.R. Číny</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="MP">Severné Mariány</territory>
 			<territory type="MQ">Martinik</territory>
 			<territory type="MR">Mauritánia</territory>
@@ -814,16 +1207,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="PN">Pitcairnove ostrovy</territory>
 			<territory type="PR">Portoriko</territory>
 			<territory type="PS">Palestínske územie</territory>
+<<<<<<< HEAD
 			<territory type="PS" alt="short">Palestína</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="PT">Portugalsko</territory>
 			<territory type="PW">Palau</territory>
 			<territory type="PY">Paraguaj</territory>
 			<territory type="QA">Katar</territory>
 			<territory type="QO">Tichomorie - ostatné</territory>
+<<<<<<< HEAD
 			<territory type="RE">Réunion</territory>
 			<territory type="RO">Rumunsko</territory>
 			<territory type="RS">Srbsko</territory>
 			<territory type="RU">Rusko</territory>
+=======
+			<territory type="QU">Európska únia</territory>
+			<territory type="RE">Reunion</territory>
+			<territory type="RO">Rumunsko</territory>
+			<territory type="RS">Srbsko</territory>
+			<territory type="RU">Ruská federácia</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="RW">Rwanda</territory>
 			<territory type="SA">Saudská Arábia</territory>
 			<territory type="SB">Šalamúnove ostrovy</territory>
@@ -834,12 +1238,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="SH">Svätá Helena</territory>
 			<territory type="SI">Slovinsko</territory>
 			<territory type="SJ">Špicbergy a Jan Mayen</territory>
+<<<<<<< HEAD
 			<territory type="SK">Slovensko</territory>
+=======
+			<territory type="SK">Slovenská republika</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="SL">Sierra Leone</territory>
 			<territory type="SM">San Maríno</territory>
 			<territory type="SN">Senegal</territory>
 			<territory type="SO">Somálsko</territory>
 			<territory type="SR">Surinam</territory>
+<<<<<<< HEAD
 			<territory type="SS">Južný Sudán</territory>
 			<territory type="ST">Svätý Tomáš a Princove ostrovy</territory>
 			<territory type="SV">Salvador</territory>
@@ -850,6 +1259,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="TC">Turks a Caicos</territory>
 			<territory type="TD">Čad</territory>
 			<territory type="TF">Francúzske južné a antarktické územia</territory>
+=======
+			<territory type="ST">Svätý Tomáš a Princove ostrovy</territory>
+			<territory type="SV">Salvador</territory>
+			<territory type="SY">Sýrska arabská republika</territory>
+			<territory type="SZ">Svazijsko</territory>
+			<territory type="TC">Turks a Caicos</territory>
+			<territory type="TD">Čad</territory>
+			<territory type="TF">Francúzske južné územia</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="TG">Togo</territory>
 			<territory type="TH">Thajsko</territory>
 			<territory type="TJ">Tadžikistan</territory>
@@ -861,13 +1279,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="TR">Turecko</territory>
 			<territory type="TT">Trinidad a Tobago</territory>
 			<territory type="TV">Tuvalu</territory>
+<<<<<<< HEAD
 			<territory type="TW">Taiwan</territory>
+=======
+			<territory type="TW">Tajwan</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="TZ">Tanzánia</territory>
 			<territory type="UA">Ukrajina</territory>
 			<territory type="UG">Uganda</territory>
 			<territory type="UM">Menšie odľahlé ostrovy USA</territory>
 			<territory type="US">Spojené štáty</territory>
+<<<<<<< HEAD
 			<territory type="US" alt="short" draft="contributed">USA</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="UY">Uruguaj</territory>
 			<territory type="UZ">Uzbekistan</territory>
 			<territory type="VA">Vatikán</territory>
@@ -879,12 +1304,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="VU">Vanuatu</territory>
 			<territory type="WF">Wallis a Futuna</territory>
 			<territory type="WS">Samoa</territory>
+<<<<<<< HEAD
 			<territory type="XK" draft="contributed">Kosovo</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="YE">Jemen</territory>
 			<territory type="YT">Mayotte</territory>
 			<territory type="ZA">Južná Afrika</territory>
 			<territory type="ZM">Zambia</territory>
 			<territory type="ZW">Zimbabwe</territory>
+<<<<<<< HEAD
 			<territory type="ZZ">Neznámy región</territory>
 		</territories>
 		<variants>
@@ -1242,6 +1671,58 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</intervalFormats>
 				</dateTimeFormats>
 			</calendar>
+=======
+			<territory type="ZZ">Neznámy alebo neplatný región</territory>
+		</territories>
+		<keys>
+			<key type="calendar">Kalendár</key>
+			<key type="collation">Triedenie</key>
+			<key type="currency">Mena</key>
+		</keys>
+		<types>
+			<type type="big5han" key="collation">Tradičný čínsky Big5</type>
+			<type type="buddhist" key="calendar">Buddhistický kalendár</type>
+			<type type="chinese" key="calendar">Čínsky kalendár</type>
+			<type type="direct" key="collation">Priame triedenie</type>
+			<type type="gb2312han" key="collation">Zjednodušený čínsky GB2312</type>
+			<type type="gregorian" key="calendar">Gregoriánsky kalendár</type>
+			<type type="hebrew" key="calendar">Židovský kalendár</type>
+			<type type="indian" key="calendar">Indický národný kalendár</type>
+			<type type="islamic" key="calendar">Islamský kalendár</type>
+			<type type="islamic-civil" key="calendar">Islamský občiansky kalendár</type>
+			<type type="japanese" key="calendar">Japonský kalendár</type>
+			<type type="phonebook" key="collation">Lexikografické triedenie</type>
+			<type type="pinyin" key="collation">Triedenie pinyin</type>
+			<type type="roc" key="calendar">Kalendár Čínskej republiky</type>
+			<type type="stroke" key="collation">Tiedenie podľa ťahov</type>
+			<type type="traditional" key="collation">Tradičné</type>
+		</types>
+		<measurementSystemNames>
+			<measurementSystemName type="metric">Metrický</measurementSystemName>
+			<measurementSystemName type="US">Americký</measurementSystemName>
+		</measurementSystemNames>
+		<codePatterns>
+			<codePattern type="language">Jazyk: {0}</codePattern>
+			<codePattern type="script">Skript: {0}</codePattern>
+			<codePattern type="territory">Región: {0}</codePattern>
+		</codePatterns>
+	</localeDisplayNames>
+	<layout>
+		<inList>titlecase-firstword</inList>
+	</layout>
+	<characters>
+		<exemplarCharacters>[a á ä b c č d ď e é f-h {ch} i í j-l ĺ ľ m n ň o ó ô p-r ŕ s š t ť u ú v-y ý z ž]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[à ă â å ā æ ç è ĕ ê ë ē ì ĭ î ï ī ñ ò ŏ ö ø ō œ ß ù ŭ û ü ū ÿ]</exemplarCharacters>
+	</characters>
+	<delimiters>
+		<quotationStart>‚</quotationStart>
+		<quotationEnd>‘</quotationEnd>
+		<alternateQuotationStart>„</alternateQuotationStart>
+		<alternateQuotationEnd>“</alternateQuotationEnd>
+	</delimiters>
+	<dates>
+		<calendars>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -1316,6 +1797,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">pi</day>
 							<day type="sat">so</day>
 						</dayWidth>
+<<<<<<< HEAD
 						<dayWidth type="narrow">
 							<day type="sun" draft="contributed">N</day>
 							<day type="mon" draft="contributed">P</day>
@@ -1334,6 +1816,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">Pi</day>
 							<day type="sat">So</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<dayWidth type="wide">
 							<day type="sun">nedeľa</day>
 							<day type="mon">pondelok</day>
@@ -1345,6 +1829,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</dayWidth>
 					</dayContext>
 					<dayContext type="stand-alone">
+<<<<<<< HEAD
 						<dayWidth type="abbreviated">
 							<day type="sun" draft="contributed">ne</day>
 							<day type="mon" draft="contributed">po</day>
@@ -1354,6 +1839,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri" draft="contributed">pi</day>
 							<day type="sat" draft="contributed">so</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<dayWidth type="narrow">
 							<day type="sun">N</day>
 							<day type="mon">P</day>
@@ -1363,6 +1850,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">P</day>
 							<day type="sat">S</day>
 						</dayWidth>
+<<<<<<< HEAD
 						<dayWidth type="short">
 							<day type="sun">Ne</day>
 							<day type="mon">Po</day>
@@ -1381,6 +1869,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri" draft="contributed">piatok</day>
 							<day type="sat" draft="contributed">sobota</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</dayContext>
 				</days>
 				<quarters>
@@ -1391,12 +1881,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<quarter type="3">Q3</quarter>
 							<quarter type="4">Q4</quarter>
 						</quarterWidth>
+<<<<<<< HEAD
 						<quarterWidth type="narrow">
 							<quarter type="1">1</quarter>
 							<quarter type="2">2</quarter>
 							<quarter type="3">3</quarter>
 							<quarter type="4">4</quarter>
 						</quarterWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<quarterWidth type="wide">
 							<quarter type="1">1. štvrťrok</quarter>
 							<quarter type="2">2. štvrťrok</quarter>
@@ -1404,6 +1897,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<quarter type="4">4. štvrťrok</quarter>
 						</quarterWidth>
 					</quarterContext>
+<<<<<<< HEAD
 					<quarterContext type="stand-alone">
 						<quarterWidth type="abbreviated">
 							<quarter type="1" draft="contributed">1Q</quarter>
@@ -1433,6 +1927,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</dayPeriodWidth>
 					</dayPeriodContext>
 				</dayPeriods>
+=======
+				</quarters>
+				<am>dopoludnia</am>
+				<pm>popoludní</pm>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<eras>
 					<eraAbbr>
 						<era type="0">pred n.l.</era>
@@ -1452,12 +1951,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</dateFormatLength>
 					<dateFormatLength type="medium">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>d.M.y</pattern>
+=======
+							<pattern>d.M.yyyy</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>d.M.y</pattern>
+=======
+							<pattern>d.M.yyyy</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
@@ -1484,6 +1991,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</timeFormatLength>
 				</timeFormats>
 				<dateTimeFormats>
+<<<<<<< HEAD
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
 							<pattern>{1} {0}</pattern>
@@ -1528,10 +2036,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<dateFormatItem id="MMM" draft="contributed">LLL</dateFormatItem>
 						<dateFormatItem id="MMMd">d. MMM.</dateFormatItem>
 						<dateFormatItem id="MMMEd">E, d. MMM.</dateFormatItem>
+=======
+					<availableFormats>
+						<dateFormatItem id="d">d.</dateFormatItem>
+						<dateFormatItem id="EEEd">EEE, d.</dateFormatItem>
+						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
+						<dateFormatItem id="Md">d.M.</dateFormatItem>
+						<dateFormatItem id="MEd">E, d.M.</dateFormatItem>
+						<dateFormatItem id="MMMd">d. MMM</dateFormatItem>
+						<dateFormatItem id="MMMEd">E, d. MMM</dateFormatItem>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<dateFormatItem id="MMMMd">d. MMMM</dateFormatItem>
 						<dateFormatItem id="MMMMEd">E, d. MMMM</dateFormatItem>
 						<dateFormatItem id="mmss">mm:ss</dateFormatItem>
 						<dateFormatItem id="ms">mm:ss</dateFormatItem>
+<<<<<<< HEAD
 						<dateFormatItem id="y">y</dateFormatItem>
 						<dateFormatItem id="yM">M.y</dateFormatItem>
 						<dateFormatItem id="yMd">d.M.y</dateFormatItem>
@@ -1586,6 +2105,44 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="M">
 							<greatestDifference id="M">M. – M.</greatestDifference>
+=======
+						<dateFormatItem id="yMEd">EEE, d.M.yyyy</dateFormatItem>
+						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMEd">EEE, d. MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
+						<dateFormatItem id="yQ">Q yyyy</dateFormatItem>
+						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
+						<dateFormatItem id="yyQ">Q yy</dateFormatItem>
+						<dateFormatItem id="yyQQQQ">QQQQ yy</dateFormatItem>
+						<dateFormatItem id="yyyyM">M.yyyy</dateFormatItem>
+						<dateFormatItem id="yyyyMMMM">MMMM y</dateFormatItem>
+					</availableFormats>
+					<intervalFormats>
+						<intervalFormatFallback>{0} - {1}</intervalFormatFallback>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">d. - d.</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="h">
+							<greatestDifference id="a">HH-HH</greatestDifference>
+							<greatestDifference id="h">H-H</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="a">HH:mm - HH:mm</greatestDifference>
+							<greatestDifference id="h">HH:mm - HH:mm</greatestDifference>
+							<greatestDifference id="m">HH:mm - HH:mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="a">HH:mm - HH:mm v</greatestDifference>
+							<greatestDifference id="h">HH:mm - HH:mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm - HH:mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="a">HH-HH v</greatestDifference>
+							<greatestDifference id="h">H-H v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">M.-M.</greatestDifference>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</intervalFormatItem>
 						<intervalFormatItem id="Md">
 							<greatestDifference id="d">d.M. - d.M.</greatestDifference>
@@ -1596,7 +2153,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M">E, d.M. - E, d.M.</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMM">
+<<<<<<< HEAD
 							<greatestDifference id="M">LLL – LLL</greatestDifference>
+=======
+							<greatestDifference id="M">MMM-MMM</greatestDifference>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMd">
 							<greatestDifference id="d">d. - d. MMM</greatestDifference>
@@ -1607,12 +2168,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M">E, d. MMM - E, d. MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMM">
+<<<<<<< HEAD
 							<greatestDifference id="M" draft="contributed">LLLL-LLLL</greatestDifference>
+=======
+							<greatestDifference id="M">LLLL-LLLL</greatestDifference>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y">y - y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
+<<<<<<< HEAD
 							<greatestDifference id="M">M.y - M.y</greatestDifference>
 							<greatestDifference id="y">M.y - M.y</greatestDifference>
 						</intervalFormatItem>
@@ -1629,6 +2195,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">LLL - LLL y</greatestDifference>
 							<greatestDifference id="y">LLL y - LLL y</greatestDifference>
+=======
+							<greatestDifference id="M">M.yyyy - M.yyyy</greatestDifference>
+							<greatestDifference id="y">M.yyyy - M.yyyy</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">d.M.yy - d.M.yy</greatestDifference>
+							<greatestDifference id="M">d.M.yy - d.M.yy</greatestDifference>
+							<greatestDifference id="y">d.M.yy - d.M.yy</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">E, d.M.yy - E, d.M.yy</greatestDifference>
+							<greatestDifference id="M">E, d.M.yy - E, d.M.yy</greatestDifference>
+							<greatestDifference id="y">E, d.M.yy - E, d.M.yy</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">MMM - MMM y</greatestDifference>
+							<greatestDifference id="y">MMM y - MMM y</greatestDifference>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d">d. - d. MMM y</greatestDifference>
@@ -1641,6 +2225,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">E, d. MMM y - E, d. MMM y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
+<<<<<<< HEAD
 							<greatestDifference id="M">LLLL - LLLL y</greatestDifference>
 							<greatestDifference id="y">LLLL y - LLLL y</greatestDifference>
 						</intervalFormatItem>
@@ -1875,11 +2460,80 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Pacific/Easter">
 				<exemplarCity draft="contributed">Veľkonočné ostrovy</exemplarCity>
+=======
+							<greatestDifference id="y">MM-yyyy – MM-yyyy</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+				<fields>
+					<field type="era">
+						<displayName>Éra</displayName>
+					</field>
+					<field type="year">
+						<displayName>Rok</displayName>
+					</field>
+					<field type="month">
+						<displayName>Mesiac</displayName>
+					</field>
+					<field type="week">
+						<displayName>Týždeň</displayName>
+					</field>
+					<field type="day">
+						<displayName>Deň</displayName>
+						<relative type="-3">Pred tromi dňami</relative>
+						<relative type="-2">Predvčerom</relative>
+						<relative type="-1">Včera</relative>
+						<relative type="0">Dnes</relative>
+						<relative type="1">Zajtra</relative>
+						<relative type="2">Pozajtra</relative>
+						<relative type="3">O tri dni</relative>
+					</field>
+					<field type="weekday">
+						<displayName>Deň v týždni</displayName>
+					</field>
+					<field type="dayperiod">
+						<displayName>Časť dňa</displayName>
+					</field>
+					<field type="hour">
+						<displayName>Hodina</displayName>
+					</field>
+					<field type="minute">
+						<displayName>Minúta</displayName>
+					</field>
+					<field type="second">
+						<displayName>Sekunda</displayName>
+					</field>
+					<field type="zone">
+						<displayName>Pásmo</displayName>
+					</field>
+				</fields>
+			</calendar>
+		</calendars>
+		<timeZoneNames>
+			<hourFormat>+HHmm;-HHmm</hourFormat>
+			<gmtFormat>GMT{0}</gmtFormat>
+			<regionFormat>{0}</regionFormat>
+			<zone type="Etc/Unknown">
+				<exemplarCity>Neznáme časové pásmo</exemplarCity>
+			</zone>
+			<zone type="Antarctica/South_Pole">
+				<exemplarCity>Južný pól</exemplarCity>
+			</zone>
+			<zone type="Antarctica/DumontDUrville">
+				<exemplarCity>Dumont D'Urville</exemplarCity>
+			</zone>
+			<zone type="Atlantic/Bermuda">
+				<exemplarCity>Bermudy</exemplarCity>
+			</zone>
+			<zone type="Pacific/Easter">
+				<exemplarCity>Veľkonočné ostrovy</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Shanghai">
 				<exemplarCity>Šanghaj</exemplarCity>
 			</zone>
 			<zone type="America/Costa_Rica">
+<<<<<<< HEAD
 				<exemplarCity draft="contributed">Kostarika</exemplarCity>
 			</zone>
 			<zone type="Atlantic/Cape_Verde">
@@ -1911,20 +2565,36 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Africa/Algiers">
 				<exemplarCity draft="contributed">Alžír</exemplarCity>
+=======
+				<exemplarCity>Kostarika</exemplarCity>
+			</zone>
+			<zone type="Atlantic/Cape_Verde">
+				<exemplarCity>Kapverdy</exemplarCity>
+			</zone>
+			<zone type="Africa/Djibouti">
+				<exemplarCity>Džibutsko</exemplarCity>
+			</zone>
+			<zone type="America/Dominica">
+				<exemplarCity>Dominika</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Pacific/Galapagos">
 				<exemplarCity>Galapágy</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Africa/Cairo">
 				<exemplarCity draft="contributed">Káhira</exemplarCity>
 			</zone>
 			<zone type="Africa/Asmera">
 				<exemplarCity draft="contributed">Asmara</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Atlantic/Canary">
 				<exemplarCity>Kanárske ostrovy</exemplarCity>
 			</zone>
 			<zone type="Pacific/Fiji">
+<<<<<<< HEAD
 				<exemplarCity draft="contributed">Fidži</exemplarCity>
 			</zone>
 			<zone type="Pacific/Truk">
@@ -2039,11 +2709,42 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Asia/Rangoon">
 				<exemplarCity draft="contributed">Rangún</exemplarCity>
+=======
+				<exemplarCity>Fidži</exemplarCity>
+			</zone>
+			<zone type="Europe/London">
+				<exemplarCity>Londýn</exemplarCity>
+			</zone>
+			<zone type="Europe/Gibraltar">
+				<exemplarCity>Gibraltár</exemplarCity>
+			</zone>
+			<zone type="Asia/Hong_Kong">
+				<exemplarCity>Hongkong</exemplarCity>
+			</zone>
+			<zone type="America/Jamaica">
+				<exemplarCity>Jamajka</exemplarCity>
+			</zone>
+			<zone type="America/St_Kitts">
+				<exemplarCity>St. Kitts</exemplarCity>
+			</zone>
+			<zone type="Asia/Kuwait">
+				<exemplarCity>Kuvajt</exemplarCity>
+			</zone>
+			<zone type="America/St_Lucia">
+				<exemplarCity>St. Lucia</exemplarCity>
+			</zone>
+			<zone type="Europe/Luxembourg">
+				<exemplarCity>Luxembursko</exemplarCity>
+			</zone>
+			<zone type="Europe/Monaco">
+				<exemplarCity>Monako</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Ulaanbaatar">
 				<exemplarCity>Ulanbátar</exemplarCity>
 			</zone>
 			<zone type="Asia/Macau">
+<<<<<<< HEAD
 				<exemplarCity draft="contributed">Macao</exemplarCity>
 			</zone>
 			<zone type="America/Martinique">
@@ -2069,6 +2770,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Puerto_Rico">
 				<exemplarCity draft="contributed">Portoriko</exemplarCity>
+=======
+				<exemplarCity>Macao</exemplarCity>
+			</zone>
+			<zone type="America/Martinique">
+				<exemplarCity>Martinik</exemplarCity>
+			</zone>
+			<zone type="Indian/Mauritius">
+				<exemplarCity>Maurícius</exemplarCity>
+			</zone>
+			<zone type="Indian/Maldives">
+				<exemplarCity>Maledivy</exemplarCity>
+			</zone>
+			<zone type="Pacific/Pitcairn">
+				<exemplarCity>Pitcairnove ostrovy</exemplarCity>
+			</zone>
+			<zone type="America/Puerto_Rico">
+				<exemplarCity>Portoriko</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Atlantic/Azores">
 				<exemplarCity>Azorské ostrovy</exemplarCity>
@@ -2076,6 +2795,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Europe/Lisbon">
 				<exemplarCity>Lisabon</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Asuncion">
 				<exemplarCity draft="contributed">Asunción</exemplarCity>
 			</zone>
@@ -2090,6 +2810,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Europe/Belgrade">
 				<exemplarCity draft="contributed">Belehrad</exemplarCity>
+=======
+			<zone type="Asia/Qatar">
+				<exemplarCity>Katar</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Moscow">
 				<exemplarCity>Moskva</exemplarCity>
@@ -2097,9 +2821,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Yekaterinburg">
 				<exemplarCity>Jekaterinburg</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Novokuznetsk">
 				<exemplarCity draft="contributed">Novokuzneck</exemplarCity>
 			</zone>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<zone type="Asia/Krasnoyarsk">
 				<exemplarCity>Krasnojarsko</exemplarCity>
 			</zone>
@@ -2112,6 +2839,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<zone type="Asia/Sakhalin">
 				<exemplarCity>Sachalin</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Asia/Ust-Nera">
 				<exemplarCity draft="contributed">Usť-Nera</exemplarCity>
 			</zone>
@@ -2159,6 +2887,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="Asia/Taipei">
 				<exemplarCity draft="contributed">Tchaj-pej</exemplarCity>
+=======
+			<zone type="Asia/Kamchatka">
+				<exemplarCity>Kamčatka</exemplarCity>
+			</zone>
+			<zone type="Asia/Singapore">
+				<exemplarCity>Singapur</exemplarCity>
+			</zone>
+			<zone type="America/El_Salvador">
+				<exemplarCity>Salvádor</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Europe/Uzhgorod">
 				<exemplarCity>Užhorod</exemplarCity>
@@ -2170,6 +2908,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity>Záporožie</exemplarCity>
 			</zone>
 			<zone type="America/Anchorage">
+<<<<<<< HEAD
 				<exemplarCity draft="contributed">Aljaška</exemplarCity>
 			</zone>
 			<zone type="America/North_Dakota/Beulah">
@@ -2204,10 +2943,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Kentucky/Monticello">
 				<exemplarCity draft="contributed">Monticello, Kentucky</exemplarCity>
+=======
+				<exemplarCity>Aljaška</exemplarCity>
+			</zone>
+			<zone type="America/North_Dakota/New_Salem">
+				<exemplarCity>New Salem, Severná Dakota</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="Asia/Tashkent">
 				<exemplarCity>Taškent</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="Europe/Vatican">
 				<exemplarCity draft="contributed">Vatikán</exemplarCity>
 			</zone>
@@ -3248,12 +3994,34 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<unitPattern count="few">{0} {1}</unitPattern>
 			<unitPattern count="many">{0} {1}</unitPattern>
 			<unitPattern count="other">{0} {1}</unitPattern>
+=======
+			<zone type="America/St_Vincent">
+				<exemplarCity>St. Vincent</exemplarCity>
+			</zone>
+			<zone type="America/St_Thomas">
+				<exemplarCity>St. Thomas</exemplarCity>
+			</zone>
+		</timeZoneNames>
+	</dates>
+	<numbers>
+		<symbols>
+			<decimal>,</decimal>
+			<group> </group>
+		</symbols>
+		<currencyFormats>
+			<currencyFormatLength>
+				<currencyFormat>
+					<pattern>#,##0.00 ¤</pattern>
+				</currencyFormat>
+			</currencyFormatLength>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		</currencyFormats>
 		<currencies>
 			<currency type="ADP">
 				<displayName>Andorská peseta</displayName>
 			</currency>
 			<currency type="AED">
+<<<<<<< HEAD
 				<displayName>SAE dirham</displayName>
 				<displayName count="one">SAE dirham</displayName>
 				<displayName count="few">SAE dirhamy</displayName>
@@ -3266,6 +4034,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">afganské afgání</displayName>
 				<displayName count="many">afganského afgání</displayName>
 				<displayName count="other">afganských afgání</displayName>
+=======
+				<displayName>UAE dirham</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ALL">
 				<displayName>Albánsky lek</displayName>
@@ -3274,16 +4045,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Armenský dram</displayName>
 			</currency>
 			<currency type="ANG">
+<<<<<<< HEAD
 				<displayName>Antilský gulden</displayName>
 				<displayName count="one">antilský gulden</displayName>
 				<displayName count="few">antilské guldeny</displayName>
 				<displayName count="many">antilského guldena</displayName>
 				<displayName count="other">antilských guldenov</displayName>
+=======
+				<displayName>Nizozemský Antilský guilder</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="AOA">
 				<displayName>Angolská kwanza</displayName>
 			</currency>
 			<currency type="AOK">
+<<<<<<< HEAD
 				<displayName>Angolská kwanza (1977–1990)</displayName>
 			</currency>
 			<currency type="AON">
@@ -3291,12 +4067,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="AOR">
 				<displayName>Angolská kwanza Reajustado (1995–1999)</displayName>
+=======
+				<displayName>Angolská kwanza (1977-1990)</displayName>
+			</currency>
+			<currency type="AON">
+				<displayName>Angolská nová kwanza (1990-2000)</displayName>
+			</currency>
+			<currency type="AOR">
+				<displayName>Angolská kwanza Reajustado (1995-1999)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ARA">
 				<displayName>Argentinský austral</displayName>
 			</currency>
 			<currency type="ARP">
+<<<<<<< HEAD
 				<displayName>Argentinské peso (1983–1985)</displayName>
+=======
+				<displayName>Argentinské peso (1983-1985)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ARS">
 				<displayName>Argentinské peso</displayName>
@@ -3306,16 +4095,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="AUD">
 				<displayName>Austrálsky dolár</displayName>
+<<<<<<< HEAD
 				<displayName count="one">austrálsky dolár</displayName>
 				<displayName count="few">austrálske doláre</displayName>
 				<displayName count="many">austrálskeho dolára</displayName>
 				<displayName count="other">austrálskych dolárov</displayName>
 				<symbol draft="contributed">AUD</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="AWG">
 				<displayName>Arubský guilder</displayName>
 			</currency>
 			<currency type="AZM">
+<<<<<<< HEAD
 				<displayName>Azerbajdžanský manat (1993–2006)</displayName>
 				<displayName count="one">azerbajdžanský manat (1993–2006)</displayName>
 				<displayName count="few">azerbajdžanské manaty (1993–2006)</displayName>
@@ -3328,11 +4121,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">azerbajdžanské manaty</displayName>
 				<displayName count="many">azerbajdžanského manatu</displayName>
 				<displayName count="other">azerbajdžanských manatov</displayName>
+=======
+				<displayName>Azerbaidžanský manat</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BAD">
 				<displayName>Bosnianský dinár</displayName>
 			</currency>
 			<currency type="BAM">
+<<<<<<< HEAD
 				<displayName>Bosnianska konvertibilná marka</displayName>
 				<displayName count="one">bosnianska konvertibilná marka</displayName>
 				<displayName count="few">bosnianske konvertibilné marky</displayName>
@@ -3345,6 +4142,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">barbadoské doláre</displayName>
 				<displayName count="many">barbadoského dolára</displayName>
 				<displayName count="other">barbadoských dolárov</displayName>
+=======
+				<displayName>Bosnianský konvertibilná marka</displayName>
+			</currency>
+			<currency type="BBD">
+				<displayName>Barbadoský dolár</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BDT">
 				<displayName>Bangladéšska taka</displayName>
@@ -3362,6 +4165,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Bulharský leva</displayName>
 			</currency>
 			<currency type="BGN">
+<<<<<<< HEAD
 				<displayName>Bulharský lev</displayName>
 				<displayName count="one">bulharský lev</displayName>
 				<displayName count="few">bulharské leva</displayName>
@@ -3374,6 +4178,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">bahrajnské dináre</displayName>
 				<displayName count="many">bahrajnského dinára</displayName>
 				<displayName count="other">bahrajnských dinárov</displayName>
+=======
+				<displayName>Bulharský leva nový</displayName>
+			</currency>
+			<currency type="BHD">
+				<displayName>Bahraiský dinár</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BIF">
 				<displayName>Burundský frank</displayName>
@@ -3382,6 +4192,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Bermudský dolár</displayName>
 			</currency>
 			<currency type="BND">
+<<<<<<< HEAD
 				<displayName>Brunejský dolár</displayName>
 				<displayName count="one">brunejský dolár</displayName>
 				<displayName count="few">brunejské doláre</displayName>
@@ -3394,6 +4205,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">bolívijské boliviany</displayName>
 				<displayName count="many">bolívijského boliviana</displayName>
 				<displayName count="other">bolívijských bolivianov</displayName>
+=======
+				<displayName>Bruneiský dolár</displayName>
+			</currency>
+			<currency type="BOB">
+				<displayName>Bolívijské Boliviano</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BOP">
 				<displayName>Bolivíjske peso</displayName>
@@ -3402,12 +4219,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Bolivíjske mvdol</displayName>
 			</currency>
 			<currency type="BRB">
+<<<<<<< HEAD
 				<displayName>Bolivíjske Cruzeiro Novo (1967–1986)</displayName>
+=======
+				<displayName>Bolivíjske Cruzeiro Novo (1967-1986)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BRC">
 				<displayName>Bolivíjske cruzado</displayName>
 			</currency>
 			<currency type="BRE">
+<<<<<<< HEAD
 				<displayName>Bolivíjske cruzeiro (1990–1993)</displayName>
 			</currency>
 			<currency type="BRL">
@@ -3417,6 +4239,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="many">brazílskeho realu</displayName>
 				<displayName count="other">brazílskych realov</displayName>
 				<symbol draft="contributed">BRL</symbol>
+=======
+				<displayName>Bolivíjske cruzeiro (1990-1993)</displayName>
+			</currency>
+			<currency type="BRL">
+				<displayName>Bolivíjsky real</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BRN">
 				<displayName>Brazílske Cruzado Novo</displayName>
@@ -3428,16 +4256,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Bahamský dolár</displayName>
 			</currency>
 			<currency type="BTN">
+<<<<<<< HEAD
 				<displayName>Bhutánsky ngultrum</displayName>
 				<displayName count="one">bhutánsky ngultrum</displayName>
 				<displayName count="few">bhutánske ngultrumy</displayName>
 				<displayName count="many">bhutánskeho ngultrumu</displayName>
 				<displayName count="other">bhutánskych ngultrumov</displayName>
+=======
+				<displayName>Bhutansky ngultrum</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BUK">
 				<displayName>Burmese Kyat</displayName>
 			</currency>
 			<currency type="BWP">
+<<<<<<< HEAD
 				<displayName>Botswanská pula</displayName>
 				<displayName count="one">botswanská pula</displayName>
 				<displayName count="few">botswanské puly</displayName>
@@ -3486,6 +4319,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">švajčiarske franky</displayName>
 				<displayName count="many">švajčiarskeho franku</displayName>
 				<displayName count="other">švajčiarskych frankov</displayName>
+=======
+				<displayName>Botswanan Pula</displayName>
+			</currency>
+			<currency type="BYB">
+				<displayName>Belarussian nový rubeľ (1994-1999)</displayName>
+			</currency>
+			<currency type="BYR">
+				<displayName>Belarussian rubeľ</displayName>
+			</currency>
+			<currency type="BZD">
+				<displayName>Belize dolár</displayName>
+			</currency>
+			<currency type="CAD">
+				<displayName>Kanadský dolár</displayName>
+			</currency>
+			<currency type="CDF">
+				<displayName>Konžský frank Congolais</displayName>
+			</currency>
+			<currency type="CHF">
+				<displayName>Švajčiarský frank</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="CLF">
 				<displayName>Čílske Unidades de Fomento</displayName>
@@ -3494,6 +4348,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Čílske peso</displayName>
 			</currency>
 			<currency type="CNY">
+<<<<<<< HEAD
 				<displayName>Čínsky jüan</displayName>
 				<displayName count="one">čínsky jüan</displayName>
 				<displayName count="few">čínske jüany</displayName>
@@ -3514,10 +4369,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">kostarické colóny</displayName>
 				<displayName count="many">kostarického colónu</displayName>
 				<displayName count="other">kostarických colónov</displayName>
+=======
+				<displayName>Čínsky Yuan Renminbi</displayName>
+			</currency>
+			<currency type="COP">
+				<displayName>Colombijské peso</displayName>
+			</currency>
+			<currency type="CRC">
+				<displayName>Kostarikský colon</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="CSK">
 				<displayName>Československá koruna</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="CUC">
 				<displayName>Kubánske konvertibilné peso</displayName>
 				<displayName count="one">kubánske konvertibilné peso</displayName>
@@ -3538,16 +4403,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">kapverdské escudá</displayName>
 				<displayName count="many">kapverdského escuda</displayName>
 				<displayName count="other">kapverdských escúd</displayName>
+=======
+			<currency type="CUP">
+				<displayName>Kubánske peso</displayName>
+			</currency>
+			<currency type="CVE">
+				<displayName>Cape Verde eskudo</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="CYP">
 				<displayName>Cypruská libra</displayName>
 			</currency>
 			<currency type="CZK">
 				<displayName>Česká koruna</displayName>
+<<<<<<< HEAD
 				<displayName count="one">česká koruna</displayName>
 				<displayName count="few">české koruny</displayName>
 				<displayName count="many">českej koruny</displayName>
 				<displayName count="other">českých korún</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="DDM">
 				<displayName>Východonemecká marka</displayName>
@@ -3559,11 +4434,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Džibutský frank</displayName>
 			</currency>
 			<currency type="DKK">
+<<<<<<< HEAD
 				<displayName>Dánska koruna</displayName>
 				<displayName count="one">dánska koruna</displayName>
 				<displayName count="few">dánske koruny</displayName>
 				<displayName count="many">dánskej koruny</displayName>
 				<displayName count="other">dánskych korún</displayName>
+=======
+				<displayName>Dánska krone</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="DOP">
 				<displayName>Dominikánske peso</displayName>
@@ -3579,10 +4458,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="EEK">
 				<displayName>Estónska kroon</displayName>
+<<<<<<< HEAD
 				<displayName count="one">estónska kroon</displayName>
 				<displayName count="few">estónske kroony</displayName>
 				<displayName count="many">estónskej kroony</displayName>
 				<displayName count="other">estónskych kroon</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="EGP">
 				<displayName>Egyptská libra</displayName>
@@ -3598,21 +4480,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="EUR">
 				<displayName>Euro</displayName>
+<<<<<<< HEAD
 				<displayName count="one">euro</displayName>
 				<displayName count="few">eurá</displayName>
 				<displayName count="many">eura</displayName>
 				<displayName count="other">eur</displayName>
 				<symbol draft="contributed">€</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="FIM">
 				<displayName>Finská marka</displayName>
 			</currency>
 			<currency type="FJD">
+<<<<<<< HEAD
 				<displayName>Fidžijský dolár</displayName>
 				<displayName count="one">fidžijský dolár</displayName>
 				<displayName count="few">fidžijské doláre</displayName>
 				<displayName count="many">fidžijského dolára</displayName>
 				<displayName count="other">fidžijských dolárov</displayName>
+=======
+				<displayName>Fiji dolár</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="FKP">
 				<displayName>Falklandská libra</displayName>
@@ -3622,11 +4511,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="GBP">
 				<displayName>Britská libra</displayName>
+<<<<<<< HEAD
 				<displayName count="one">britská libra</displayName>
 				<displayName count="few">britskej libry</displayName>
 				<displayName count="many">britskej libry</displayName>
 				<displayName count="other">britských libier</displayName>
 				<symbol draft="contributed">GBP</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="GEK">
 				<displayName>Gruzínsky Kupon Larit</displayName>
@@ -3635,6 +4527,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Gruzínsky lari</displayName>
 			</currency>
 			<currency type="GHC">
+<<<<<<< HEAD
 				<displayName>Ghanský cedi (1979–2007)</displayName>
 				<displayName count="one">ghanský cedi (1979–2007)</displayName>
 				<displayName count="few">ghanské cedi (1979–2007)</displayName>
@@ -3647,16 +4540,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">ghanské cedi</displayName>
 				<displayName count="many">ghanského cedi</displayName>
 				<displayName count="other">ghanských cedi</displayName>
+=======
+				<displayName>Ghanský cedi</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="GIP">
 				<displayName>Gibraltarská libra</displayName>
 			</currency>
 			<currency type="GMD">
+<<<<<<< HEAD
 				<displayName>Gambijský dalasi</displayName>
 				<displayName count="one">gambijský dalasi</displayName>
 				<displayName count="few">gambijské dalasi</displayName>
 				<displayName count="many">gambijského dalasi</displayName>
 				<displayName count="other">gambijských dalasi</displayName>
+=======
+				<displayName>Gambský dalasi</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="GNF">
 				<displayName>Guinejský frank</displayName>
@@ -3678,15 +4578,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="GWP">
 				<displayName>Guinea-Bissau peso</displayName>
+<<<<<<< HEAD
 				<displayName count="one">Guinea-Bissau peso</displayName>
 				<displayName count="few">Guinea-Bissau pesos</displayName>
 				<displayName count="many">Guinea-Bissau pesa</displayName>
 				<displayName count="other">Guinea-Bissau pesos</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="GYD">
 				<displayName>Guyanský dolár</displayName>
 			</currency>
 			<currency type="HKD">
+<<<<<<< HEAD
 				<displayName>Hongkonský dolár</displayName>
 				<displayName count="one">hongkonský dolár</displayName>
 				<displayName count="few">hongkonské doláre</displayName>
@@ -3700,6 +4604,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">honduraské lempiry</displayName>
 				<displayName count="many">honduraskej lempiry</displayName>
 				<displayName count="other">honduraských lempír</displayName>
+=======
+				<displayName>Hong Kongský dolár</displayName>
+			</currency>
+			<currency type="HNL">
+				<displayName>Hoduraská lempira</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="HRD">
 				<displayName>Chorvátsky dinár</displayName>
@@ -3712,6 +4622,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="HUF">
 				<displayName>Maďarský forint</displayName>
+<<<<<<< HEAD
 				<displayName count="one">maďarský forint</displayName>
 				<displayName count="few">maďarské forinty</displayName>
 				<displayName count="many">maďarského forinta</displayName>
@@ -3723,6 +4634,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">indonézske rupie</displayName>
 				<displayName count="many">indonézskej rupie</displayName>
 				<displayName count="other">indonézskych rupií</displayName>
+=======
+			</currency>
+			<currency type="IDR">
+				<displayName>Indonézska rupia</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="IEP">
 				<displayName>Írska libra</displayName>
@@ -3732,6 +4648,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ILS">
 				<displayName>Izraelský šekel</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">₪</symbol>
 			</currency>
 			<currency type="INR">
@@ -3741,6 +4658,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="many">indickej rupie</displayName>
 				<displayName count="other">indických rupií</displayName>
 				<symbol draft="contributed">INR</symbol>
+=======
+			</currency>
+			<currency type="INR">
+				<displayName>Indijská rupia</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="IQD">
 				<displayName>Iracký dinár</displayName>
@@ -3761,38 +4683,51 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Jordánsky dinár</displayName>
 			</currency>
 			<currency type="JPY">
+<<<<<<< HEAD
 				<displayName>Japonský jen</displayName>
 				<displayName count="one">japonský jen</displayName>
 				<displayName count="few">japonské jeny</displayName>
 				<displayName count="many">japonského jenu</displayName>
 				<displayName count="other">japonských jenov</displayName>
 				<symbol draft="contributed">JPY</symbol>
+=======
+				<displayName>Japonský yen</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="KES">
 				<displayName>Keňský šiling</displayName>
 			</currency>
 			<currency type="KGS">
+<<<<<<< HEAD
 				<displayName>Kirgizský som</displayName>
 				<displayName count="one">kirgizský som</displayName>
 				<displayName count="few">kirgizské somy</displayName>
 				<displayName count="many">kirgizského somu</displayName>
 				<displayName count="other">kirgizských somov</displayName>
+=======
+				<displayName>Kyrgyský som</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="KHR">
 				<displayName>Kambodžský riel</displayName>
 			</currency>
 			<currency type="KMF">
+<<<<<<< HEAD
 				<displayName>Komorský frank</displayName>
 				<displayName count="one">Comoro frank</displayName>
 				<displayName count="few">komorské franky</displayName>
 				<displayName count="many">komorského franku</displayName>
 				<displayName count="other">komorských frankov</displayName>
+=======
+				<displayName>Comoro frank</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="KPW">
 				<displayName>Severokórejský won</displayName>
 			</currency>
 			<currency type="KRW">
 				<displayName>Juhokórejský won</displayName>
+<<<<<<< HEAD
 				<displayName count="one">juhokórejský won</displayName>
 				<displayName count="few">juhokórejské wony</displayName>
 				<displayName count="many">juhokórejského wonu</displayName>
@@ -3805,16 +4740,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">kuvajtské dináre</displayName>
 				<displayName count="many">kuvajtského dinára</displayName>
 				<displayName count="other">kuvajtských dinárov</displayName>
+=======
+			</currency>
+			<currency type="KWD">
+				<displayName>Kuvaitský dinár</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="KYD">
 				<displayName>Kajmanský dolár</displayName>
 			</currency>
 			<currency type="KZT">
+<<<<<<< HEAD
 				<displayName>Kazašské tenge</displayName>
 				<displayName count="one">kazašské tenge</displayName>
 				<displayName count="few">kazašské tenge</displayName>
 				<displayName count="many">kazašského tenge</displayName>
 				<displayName count="other">kazašských tenge</displayName>
+=======
+				<displayName>Kazažský tenge</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="LAK">
 				<displayName>Laoský kip</displayName>
@@ -3823,11 +4767,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Libanonská libra</displayName>
 			</currency>
 			<currency type="LKR">
+<<<<<<< HEAD
 				<displayName>Srílanská rupia</displayName>
 				<displayName count="one">srílanská rupia</displayName>
 				<displayName count="few">srílanské rupie</displayName>
 				<displayName count="many">srílanskej rupie</displayName>
 				<displayName count="other">srílanských rupií</displayName>
+=======
+				<displayName>Šrilanská rupia</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="LRD">
 				<displayName>Libérský dolár</displayName>
@@ -3836,11 +4784,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Lesothský loti</displayName>
 			</currency>
 			<currency type="LTL">
+<<<<<<< HEAD
 				<displayName>Litovský litas</displayName>
 				<displayName count="one">litovský litas</displayName>
 				<displayName count="few">litovské litasy</displayName>
 				<displayName count="many">litovského litasa</displayName>
 				<displayName count="other">litovských litasov</displayName>
+=======
+				<displayName>Litevská lita</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="LTT">
 				<displayName>Litevský talonas</displayName>
@@ -3849,11 +4801,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Luxemburský frank</displayName>
 			</currency>
 			<currency type="LVL">
+<<<<<<< HEAD
 				<displayName>Lotyšský lat</displayName>
 				<displayName count="one">lotyšský lat</displayName>
 				<displayName count="few">lotyšské laty</displayName>
 				<displayName count="many">lotyšského latu</displayName>
 				<displayName count="other">lotyšských latov</displayName>
+=======
+				<displayName>Lotyšský lats</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="LVR">
 				<displayName>Lotyšský rubeľ</displayName>
@@ -3889,6 +4845,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Mongolský tugrik</displayName>
 			</currency>
 			<currency type="MOP">
+<<<<<<< HEAD
 				<displayName>Macajská pataca</displayName>
 				<displayName count="one">macajská pataca</displayName>
 				<displayName count="few">macajské patacy</displayName>
@@ -3901,6 +4858,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">mauritánske ukije</displayName>
 				<displayName count="many">mauritánskej ukije</displayName>
 				<displayName count="other">mauritánskych ukijí</displayName>
+=======
+				<displayName>Macao Pataca</displayName>
+			</currency>
+			<currency type="MRO">
+				<displayName>Mauritania Ouguiya</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="MTL">
 				<displayName>Maltská lira</displayName>
@@ -3909,16 +4872,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Maltská libra</displayName>
 			</currency>
 			<currency type="MUR">
+<<<<<<< HEAD
 				<displayName>Maurícijská rupia</displayName>
 				<displayName count="one">maurícijská rupia</displayName>
 				<displayName count="few">maurícijské rupie</displayName>
 				<displayName count="many">maurícijskej rupie</displayName>
 				<displayName count="other">maurícijských rupií</displayName>
+=======
+				<displayName>Mauritská rupia</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="MVR">
 				<displayName>Maldivská rufiyaa</displayName>
 			</currency>
 			<currency type="MWK">
+<<<<<<< HEAD
 				<displayName>Malawijská kwacha</displayName>
 				<displayName count="one">malawijská kwacha</displayName>
 				<displayName count="few">malawijské kwachy</displayName>
@@ -3935,12 +4903,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="MXP">
 				<displayName>Mexické striborné peso (1861–1992)</displayName>
+=======
+				<displayName>Malavská kwacha</displayName>
+			</currency>
+			<currency type="MXN">
+				<displayName>Mexické peso</displayName>
+			</currency>
+			<currency type="MXP">
+				<displayName>Mexické striborné peso (1861-1992)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="MXV">
 				<displayName>Mexické Unidad de Inversion (UDI)</displayName>
 			</currency>
 			<currency type="MYR">
 				<displayName>Malajský ringgit</displayName>
+<<<<<<< HEAD
 				<displayName count="one">malajský ringgit</displayName>
 				<displayName count="few">malajské ringgity</displayName>
 				<displayName count="many">malajského ringgitu</displayName>
@@ -3973,11 +4951,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">namíbijské doláre</displayName>
 				<displayName count="many">namíbijského dolára</displayName>
 				<displayName count="other">namíbijských dolárov</displayName>
+=======
+			</currency>
+			<currency type="MZE">
+				<displayName>Mozambijské eskudo</displayName>
+			</currency>
+			<currency type="MZM">
+				<displayName>Mozambijské metical</displayName>
+			</currency>
+			<currency type="NAD">
+				<displayName>Namibský dolár</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="NGN">
 				<displayName>Nigerská naira</displayName>
 			</currency>
 			<currency type="NIC">
+<<<<<<< HEAD
 				<displayName>Nikaragujská Cordoba (1988–1991)</displayName>
 				<displayName count="one">nikaragujská córdoba (1988–1991)</displayName>
 				<displayName count="few">nikaragujské córdoby (1988–1991)</displayName>
@@ -3990,23 +4980,36 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">nikaragujské córdoby</displayName>
 				<displayName count="many">nikaragujskej córdoby</displayName>
 				<displayName count="other">nikaragujských córdob</displayName>
+=======
+				<displayName>Nikaragujská cordoba</displayName>
+			</currency>
+			<currency type="NIO">
+				<displayName>Nikaragujská Cordoba Oro</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="NLG">
 				<displayName>Nizozemský guilder</displayName>
 			</currency>
 			<currency type="NOK">
+<<<<<<< HEAD
 				<displayName>Nórska koruna</displayName>
 				<displayName count="one">nórska koruna</displayName>
 				<displayName count="few">nórske koruny</displayName>
 				<displayName count="many">nórskej koruny</displayName>
 				<displayName count="other">nórskych korún</displayName>
+=======
+				<displayName>Nórksy krone</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="NPR">
 				<displayName>Nepálska rupia</displayName>
 			</currency>
 			<currency type="NZD">
 				<displayName>Novozélandský dolár</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">NZ$</symbol>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="OMR">
 				<displayName>Ománský rial</displayName>
@@ -4019,20 +5022,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="PEN">
 				<displayName>Peruvský sol Nuevo</displayName>
+<<<<<<< HEAD
 				<displayName count="one">peruánsky nový sol</displayName>
 				<displayName count="few">peruánske nové soly</displayName>
 				<displayName count="many">peruánskeho nového sola</displayName>
 				<displayName count="other">peruánskych nových solov</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="PES">
 				<displayName>Peruvský sol</displayName>
 			</currency>
 			<currency type="PGK">
+<<<<<<< HEAD
 				<displayName>Papuánska kina</displayName>
 				<displayName count="one">papuánska kina</displayName>
 				<displayName count="few">papuánske kiny</displayName>
 				<displayName count="many">papuánskej kiny</displayName>
 				<displayName count="other">papuánskych kín</displayName>
+=======
+				<displayName>Papua Nová Guinea kina</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="PHP">
 				<displayName>Filipínske peso</displayName>
@@ -4041,6 +5051,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Pakistanská rupia</displayName>
 			</currency>
 			<currency type="PLN">
+<<<<<<< HEAD
 				<displayName>Poľský zlotý</displayName>
 				<displayName count="one">poľský zlotý</displayName>
 				<displayName count="few">poľské zloté</displayName>
@@ -4054,12 +5065,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">poľské zloté (1950–1995)</displayName>
 				<displayName count="many">poľského zlotého (1950–1995)</displayName>
 				<displayName count="other">poľských zlotých (1950–1995)</displayName>
+=======
+				<displayName>Polský zloty</displayName>
+			</currency>
+			<currency type="PLZ">
+				<displayName>Polský zloty (1950-1995)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="PTE">
 				<displayName>Portugalské eskudo</displayName>
 			</currency>
 			<currency type="PYG">
 				<displayName>Paraguayské guarani</displayName>
+<<<<<<< HEAD
 				<displayName count="one">paraguajské guaraní</displayName>
 				<displayName count="few">paraguayské guarani</displayName>
 				<displayName count="many">paraguayského guarani</displayName>
@@ -4102,11 +5120,32 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="RUR">
 				<displayName>Ruský rubeľ (1991–1998)</displayName>
+=======
+			</currency>
+			<currency type="QAR">
+				<displayName>Qatarský rial</displayName>
+			</currency>
+			<currency type="ROL">
+				<displayName>Rumunský leu</displayName>
+			</currency>
+			<currency type="RON">
+				<displayName>Rumunský Lei</displayName>
+			</currency>
+			<currency type="RSD">
+				<displayName>Srbský dinár</displayName>
+			</currency>
+			<currency type="RUB">
+				<displayName>Ruský rubeľ</displayName>
+			</currency>
+			<currency type="RUR">
+				<displayName>Ruský rubeľ (1991-1998)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="RWF">
 				<displayName>Rwandský frank</displayName>
 			</currency>
 			<currency type="SAR">
+<<<<<<< HEAD
 				<displayName>Saudskoarabský rial</displayName>
 				<displayName count="one">saudskoarabský rial</displayName>
 				<displayName count="few">saudskoarabské rialy</displayName>
@@ -4126,10 +5165,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">seychelské rupie</displayName>
 				<displayName count="many">seychelskej rupie</displayName>
 				<displayName count="other">seychelských rupií</displayName>
+=======
+				<displayName>Saudský riyal</displayName>
+			</currency>
+			<currency type="SBD">
+				<displayName>Solomon Islands dolár</displayName>
+			</currency>
+			<currency type="SCR">
+				<displayName>Sejšelská rupia</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="SDD">
 				<displayName>Sudánsky dinár</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="SDG">
 				<displayName>Sudánska libra</displayName>
 				<displayName count="one">sudánska libra</displayName>
@@ -4150,16 +5199,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">švédske koruny</displayName>
 				<displayName count="many">švédskej koruny</displayName>
 				<displayName count="other">švédskych korún</displayName>
+=======
+			<currency type="SDP">
+				<displayName>Sudánska libra</displayName>
+			</currency>
+			<currency type="SEK">
+				<displayName>Švédska krona</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="SGD">
 				<displayName>Singapúrsky dolár</displayName>
 			</currency>
 			<currency type="SHP">
+<<<<<<< HEAD
 				<displayName>Svätohelenská libra</displayName>
 				<displayName count="one">svätohelenská libra</displayName>
 				<displayName count="few">svätohelenské libry</displayName>
 				<displayName count="many">svätohelenskej libry</displayName>
 				<displayName count="other">svätohelenských libier</displayName>
+=======
+				<displayName>Libra</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="SIT">
 				<displayName>Slovinský Tolar</displayName>
@@ -4168,15 +5228,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Slovenská koruna</displayName>
 			</currency>
 			<currency type="SLL">
+<<<<<<< HEAD
 				<displayName>Sierraleonský leone</displayName>
 				<displayName count="one">sierraleonský leone</displayName>
 				<displayName count="few">sierraleonské leone</displayName>
 				<displayName count="many">sierraleonského leone</displayName>
 				<displayName count="other">sierraleonských leone</displayName>
+=======
+				<displayName>Sierra Leone Leone</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="SOS">
 				<displayName>Somálsky šiling</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="SRD">
 				<displayName>Surinamský dolár</displayName>
 				<displayName count="one">surinamský dolár</displayName>
@@ -4210,11 +5275,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">salvádorské colóny</displayName>
 				<displayName count="many">salvádorského colóna</displayName>
 				<displayName count="other">salvádorských colónov</displayName>
+=======
+			<currency type="SRG">
+				<displayName>Surinamský guilder</displayName>
+			</currency>
+			<currency type="STD">
+				<displayName>Sao Tome a Principe dobra</displayName>
+			</currency>
+			<currency type="SUR">
+				<displayName>Sovietský rubeľ</displayName>
+			</currency>
+			<currency type="SVC">
+				<displayName>El Salvadorský colon</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="SYP">
 				<displayName>Syrská libra</displayName>
 			</currency>
 			<currency type="SZL">
+<<<<<<< HEAD
 				<displayName>Svazijské lilangeni</displayName>
 				<displayName count="one">svazijské lilangeni</displayName>
 				<displayName count="few">svazijské lilangeni</displayName>
@@ -4252,21 +5331,40 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">turkménske manaty</displayName>
 				<displayName count="many">turkménskeho manatu</displayName>
 				<displayName count="other">turkménskych manatov</displayName>
+=======
+				<displayName>Swaziland lilangeni</displayName>
+			</currency>
+			<currency type="THB">
+				<displayName>Thajský bát</displayName>
+			</currency>
+			<currency type="TJR">
+				<displayName>Tadžikistanský rubeľ</displayName>
+			</currency>
+			<currency type="TJS">
+				<displayName>Tadžikistanský somoni</displayName>
+			</currency>
+			<currency type="TMM">
+				<displayName>Turkménsky manat</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="TND">
 				<displayName>Tuniský dinár</displayName>
 			</currency>
 			<currency type="TOP">
 				<displayName>Tonga Paʻanga</displayName>
+<<<<<<< HEAD
 				<displayName count="one">tongská pa'anga</displayName>
 				<displayName count="few">tongské pa'anga</displayName>
 				<displayName count="many">tongského pa'anga</displayName>
 				<displayName count="other">tongských pa'anga</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="TPE">
 				<displayName>Timorské eskudo</displayName>
 			</currency>
 			<currency type="TRL">
+<<<<<<< HEAD
 				<displayName>Turecká lira (1922–2005)</displayName>
 				<displayName count="one">turecká líra (1922–2005)</displayName>
 				<displayName count="few">turecké líry (1922–2005)</displayName>
@@ -4294,33 +5392,56 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="many">nového taiwanského dolára</displayName>
 				<displayName count="other">nových taiwanských dolárov</displayName>
 				<symbol>TWD</symbol>
+=======
+				<displayName>Turecká lira</displayName>
+			</currency>
+			<currency type="TRY">
+				<displayName>Nová turecká líra</displayName>
+			</currency>
+			<currency type="TTD">
+				<displayName>Trinidad a Tobago dolár</displayName>
+			</currency>
+			<currency type="TWD">
+				<displayName>Taiwanský nový dolár</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="TZS">
 				<displayName>Tanzanský šiling</displayName>
 			</currency>
 			<currency type="UAH">
 				<displayName>Ukrainská hrivna</displayName>
+<<<<<<< HEAD
 				<displayName count="one">ukrajinská hrivna</displayName>
 				<displayName count="few">ukrajinské hrivny</displayName>
 				<displayName count="many">ukrajinskej hrivny</displayName>
 				<displayName count="other">ukrajinských hrivien</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="UAK">
 				<displayName>Ukrainský karbovanetz</displayName>
 			</currency>
 			<currency type="UGS">
+<<<<<<< HEAD
 				<displayName>Ugandan šiling (1966–1987)</displayName>
+=======
+				<displayName>Ugandan šiling (1966-1987)</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="UGX">
 				<displayName>Ugandský šiling</displayName>
 			</currency>
 			<currency type="USD">
+<<<<<<< HEAD
 				<displayName>Americký dolár</displayName>
 				<displayName count="one">americký dolár</displayName>
 				<displayName count="few">americké doláre</displayName>
 				<displayName count="many">amerického dolára</displayName>
 				<displayName count="other">amerických dolárov</displayName>
 				<symbol draft="contributed">USD</symbol>
+=======
+				<displayName>US dolár</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="USN">
 				<displayName>US dolár (Next day)</displayName>
@@ -4329,6 +5450,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>US dolár (Same day)</displayName>
 			</currency>
 			<currency type="UYP">
+<<<<<<< HEAD
 				<displayName>Uruguajské peso (1975–1993)</displayName>
 			</currency>
 			<currency type="UYU">
@@ -4372,17 +5494,45 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="XAF">
 				<displayName>CFA frank BEAC</displayName>
 				<symbol draft="contributed">FCFA</symbol>
+=======
+				<displayName>Uruguajské peso (1975-1993)</displayName>
+			</currency>
+			<currency type="UYU">
+				<displayName>Uruguajské peso Uruguayo</displayName>
+			</currency>
+			<currency type="UZS">
+				<displayName>Uzbekistanský sum</displayName>
+			</currency>
+			<currency type="VEB">
+				<displayName>Venezuelský bolivar</displayName>
+			</currency>
+			<currency type="VND">
+				<displayName>Vietnamský dong</displayName>
+			</currency>
+			<currency type="VUV">
+				<displayName>Vanuatu vatu</displayName>
+			</currency>
+			<currency type="WST">
+				<displayName>Západná Samoa tala</displayName>
+			</currency>
+			<currency type="XAF">
+				<displayName>CFA frank BEAC</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="XAU">
 				<displayName>Zlato</displayName>
 			</currency>
 			<currency type="XCD">
+<<<<<<< HEAD
 				<displayName>Východokaribský dolár</displayName>
 				<displayName count="one">východokaribský dolár</displayName>
 				<displayName count="few">východokaribské doláre</displayName>
 				<displayName count="many">východokaribského dolára</displayName>
 				<displayName count="other">východokaribských dolárov</displayName>
 				<symbol>EC$</symbol>
+=======
+				<displayName>East Caribbean dolár</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="XDR">
 				<displayName>Špeciálne práva čerpania</displayName>
@@ -4395,6 +5545,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="XOF">
 				<displayName>CFA frank BCEAO</displayName>
+<<<<<<< HEAD
 				<symbol draft="contributed">CFA</symbol>
 			</currency>
 			<currency type="XPF">
@@ -4407,6 +5558,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">Neznáma mena</displayName>
 				<displayName count="many">Neznáma mena</displayName>
 				<displayName count="other">Neznáma mena</displayName>
+=======
+			</currency>
+			<currency type="XPF">
+				<displayName>CFP frank</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="YDD">
 				<displayName>Jemenský dinár</displayName>
@@ -4428,6 +5584,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ZAR">
 				<displayName>Juhoafrický rand</displayName>
+<<<<<<< HEAD
 				<displayName count="one">juhoafrický rand</displayName>
 				<displayName count="few">juhoafrické randy</displayName>
 				<displayName count="many">juhoafrického randu</displayName>
@@ -4446,6 +5603,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few">zambijské kwachy</displayName>
 				<displayName count="many">zambijskej kwachy</displayName>
 				<displayName count="other">zambijských kwách</displayName>
+=======
+			</currency>
+			<currency type="ZMK">
+				<displayName>Zambská kwacha</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ZRN">
 				<displayName>Zairský nový zaire</displayName>
@@ -4454,6 +5616,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Zairský Zaire</displayName>
 			</currency>
 			<currency type="ZWD">
+<<<<<<< HEAD
 				<displayName>Zimbabwiansky dolár (1980–2008)</displayName>
 				<displayName count="one">zimbabwiansky dolár (1980–2008)</displayName>
 				<displayName count="few">zimbabwianske doláre (1980–2008)</displayName>
@@ -5357,6 +6520,52 @@ For terms of use, see http://www.unicode.org/copyright.html
 	<posix>
 		<messages>
 			<yesstr>áno:a</yesstr>
+=======
+				<displayName>Zimbabský dolár</displayName>
+			</currency>
+		</currencies>
+	</numbers>
+	<units>
+		<unit type="day">
+			<unitPattern count="few">{0} dni</unitPattern>
+			<unitPattern count="one">{0} deň</unitPattern>
+			<unitPattern count="other">{0} dní</unitPattern>
+		</unit>
+		<unit type="hour">
+			<unitPattern count="few">{0} hodiny</unitPattern>
+			<unitPattern count="one">{0} hodina</unitPattern>
+			<unitPattern count="other">{0} hodín</unitPattern>
+		</unit>
+		<unit type="minute">
+			<unitPattern count="few">{0} minúty</unitPattern>
+			<unitPattern count="one">{0} minúta</unitPattern>
+			<unitPattern count="other">{0} minút</unitPattern>
+		</unit>
+		<unit type="month">
+			<unitPattern count="few">{0} mesiace</unitPattern>
+			<unitPattern count="one">{0} mesiac</unitPattern>
+			<unitPattern count="other">{0} mesiacov</unitPattern>
+		</unit>
+		<unit type="second">
+			<unitPattern count="few">{0} sekundy</unitPattern>
+			<unitPattern count="one">{0} sekunda</unitPattern>
+			<unitPattern count="other">{0} sekúnd</unitPattern>
+		</unit>
+		<unit type="week">
+			<unitPattern count="few">{0} týždne</unitPattern>
+			<unitPattern count="one">{0} týždeň</unitPattern>
+			<unitPattern count="other">{0} týždňov</unitPattern>
+		</unit>
+		<unit type="year">
+			<unitPattern count="few">{0} roky</unitPattern>
+			<unitPattern count="one">{0} rok</unitPattern>
+			<unitPattern count="other">{0} rokov</unitPattern>
+		</unit>
+	</units>
+	<posix>
+		<messages>
+			<yesstr>ano:a</yesstr>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<nostr>nie:n</nostr>
 		</messages>
 	</posix>

@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_XmlRpc
  * @subpackage Value
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Value.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -31,7 +37,11 @@
  * from PHP variables, XML string or by specifing the exact XML-RPC natvie type
  *
  * @package    Zend_XmlRpc
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 abstract class Zend_XmlRpc_Value
@@ -500,6 +510,7 @@ abstract class Zend_XmlRpc_Value
             }
         }
 
+<<<<<<< HEAD
         //if there is a child element, try to parse type for it
         if (!$type && $value instanceof SimpleXMLElement) {
             self::_extractTypeAndValue($value->children(), $type, $value);
@@ -511,6 +522,11 @@ abstract class Zend_XmlRpc_Value
             if (preg_match('#^<value>.*</value>$#', $xml->asXML())) {
                 $value = str_replace(array('<value>', '</value>'), '', $xml->asXML());
             }
+=======
+        // If no type was specified, the default is string
+        if (!$type) {
+            $type = self::XMLRPC_TYPE_STRING;
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         }
     }
 

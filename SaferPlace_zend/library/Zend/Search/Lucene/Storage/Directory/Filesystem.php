@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Search_Lucene
  * @subpackage Storage
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Filesystem.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 
@@ -31,7 +37,11 @@ require_once 'Zend/Search/Lucene/Storage/Directory.php';
  * @category   Zend
  * @package    Zend_Search_Lucene
  * @subpackage Storage
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Search_Lucene_Storage_Directory_Filesystem extends Zend_Search_Lucene_Storage_Directory
@@ -90,10 +100,15 @@ class Zend_Search_Lucene_Storage_Directory_Filesystem extends Zend_Search_Lucene
      * @return boolean
      */
 
+<<<<<<< HEAD
     public static function mkdirs($dir, $mode = 0775, $recursive = true)
     {
         $mode = $mode & ~0002;
 
+=======
+    public static function mkdirs($dir, $mode = 0777, $recursive = true)
+    {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         if (($dir === null) || $dir === '') {
             return false;
         }
@@ -362,3 +377,7 @@ class Zend_Search_Lucene_Storage_Directory_Filesystem extends Zend_Search_Lucene
         return $this->_fileHandlers[$filename];
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

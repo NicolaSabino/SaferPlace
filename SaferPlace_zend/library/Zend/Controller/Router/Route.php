@@ -15,8 +15,13 @@
  * @category   Zend
  * @package    Zend_Controller
  * @subpackage Router
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @version    $Id: Route.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -28,13 +33,20 @@ require_once 'Zend/Controller/Router/Route/Abstract.php';
  *
  * @package    Zend_Controller
  * @subpackage Router
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @see        http://manuals.rubyonrails.com/read/chapter/65
  */
 class Zend_Controller_Router_Route extends Zend_Controller_Router_Route_Abstract
 {
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     /**
      * Default translator
      *
@@ -78,16 +90,24 @@ class Zend_Controller_Router_Route extends Zend_Controller_Router_Route_Abstract
     protected $_translatable = array();
 
     protected $_urlVariable = ':';
+<<<<<<< HEAD
 
     protected $_urlDelimiter = self::URI_DELIMITER;
 
     protected $_regexDelimiter = '#';
 
+=======
+    protected $_urlDelimiter = self::URI_DELIMITER;
+    protected $_regexDelimiter = '#';
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     protected $_defaultRegex = null;
 
     /**
      * Holds names of all route's pattern variable names. Array index holds a position in URL.
+<<<<<<< HEAD
      *
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @var array
      */
     protected $_variables = array();
@@ -96,14 +116,20 @@ class Zend_Controller_Router_Route extends Zend_Controller_Router_Route_Abstract
      * Holds Route patterns for all URL parts. In case of a variable it stores it's regex
      * requirement or null. In case of a static part, it holds only it's direct value.
      * In case of a wildcard, it stores an asterisk (*)
+<<<<<<< HEAD
      *
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @var array
      */
     protected $_parts = array();
 
     /**
      * Holds user submitted default values for route's variables. Name and value pairs.
+<<<<<<< HEAD
      *
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @var array
      */
     protected $_defaults = array();
@@ -111,7 +137,10 @@ class Zend_Controller_Router_Route extends Zend_Controller_Router_Route_Abstract
     /**
      * Holds user submitted regular expression patterns for route's variables' values.
      * Name and value pairs.
+<<<<<<< HEAD
      *
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @var array
      */
     protected $_requirements = array();
@@ -119,7 +148,10 @@ class Zend_Controller_Router_Route extends Zend_Controller_Router_Route_Abstract
     /**
      * Associative array filled on match() that holds matched path values
      * for given variable names.
+<<<<<<< HEAD
      *
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @var array
      */
     protected $_values = array();
@@ -127,7 +159,10 @@ class Zend_Controller_Router_Route extends Zend_Controller_Router_Route_Abstract
     /**
      * Associative array filled on match() that holds wildcard variable
      * names and values.
+<<<<<<< HEAD
      *
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @var array
      */
     protected $_wildcardData = array();
@@ -135,13 +170,20 @@ class Zend_Controller_Router_Route extends Zend_Controller_Router_Route_Abstract
     /**
      * Helper var that holds a count of route pattern's static parts
      * for validation
+<<<<<<< HEAD
      *
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @var int
      */
     protected $_staticCount = 0;
 
+<<<<<<< HEAD
     public function getVersion()
     {
+=======
+    public function getVersion() {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         return 1;
     }
 
@@ -149,13 +191,19 @@ class Zend_Controller_Router_Route extends Zend_Controller_Router_Route_Abstract
      * Instantiates route based on passed Zend_Config structure
      *
      * @param Zend_Config $config Configuration object
+<<<<<<< HEAD
      * @return Zend_Controller_Router_Route
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public static function getInstance(Zend_Config $config)
     {
         $reqs = ($config->reqs instanceof Zend_Config) ? $config->reqs->toArray() : array();
         $defs = ($config->defaults instanceof Zend_Config) ? $config->defaults->toArray() : array();
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         return new self($config->route, $defs, $reqs);
     }
 
@@ -164,6 +212,7 @@ class Zend_Controller_Router_Route extends Zend_Controller_Router_Route_Abstract
      * to a corresponding atomic parts. These parts are assigned
      * a position which is later used for matching and preparing values.
      *
+<<<<<<< HEAD
      * @param string         $route      Map used to match with later submitted URL path
      * @param array          $defaults   Defaults for map variables with keys as variable names
      * @param array          $reqs       Regular expression requirements for variables (keys as variable names)
@@ -177,6 +226,18 @@ class Zend_Controller_Router_Route extends Zend_Controller_Router_Route_Abstract
         $route               = trim($route, $this->_urlDelimiter);
         $this->_defaults     = (array)$defaults;
         $this->_requirements = (array)$reqs;
+=======
+     * @param string $route Map used to match with later submitted URL path
+     * @param array $defaults Defaults for map variables with keys as variable names
+     * @param array $reqs Regular expression requirements for variables (keys as variable names)
+     * @param Zend_Translate $translator Translator to use for this instance
+     */
+    public function __construct($route, $defaults = array(), $reqs = array(), Zend_Translate $translator = null, $locale = null)
+    {
+        $route               = trim($route, $this->_urlDelimiter);
+        $this->_defaults     = (array) $defaults;
+        $this->_requirements = (array) $reqs;
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         $this->_translator   = $translator;
         $this->_locale       = $locale;
 
@@ -216,9 +277,13 @@ class Zend_Controller_Router_Route extends Zend_Controller_Router_Route_Abstract
      * Matches a user submitted path with parts defined by a map. Assigns and
      * returns an array of variables on a successful match.
      *
+<<<<<<< HEAD
      * @param string  $path Path used to match against this routing map
      * @param boolean $partial
      * @throws Zend_Controller_Router_Exception
+=======
+     * @param string $path Path used to match against this routing map
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return array|false An array of assigned values or a false on a mismatch
      */
     public function match($path, $partial = false)
@@ -253,12 +318,19 @@ class Zend_Controller_Router_Route extends Zend_Controller_Router_Route_Abstract
                 // If it's a wildcard, get the rest of URL as wildcard data and stop matching
                 if ($this->_parts[$pos] == '*') {
                     $count = count($path);
+<<<<<<< HEAD
                     for ($i = $pos; $i < $count; $i += 2) {
                         $var = urldecode($path[$i]);
                         if (!isset($this->_wildcardData[$var]) && !isset($this->_defaults[$var])
                             && !isset($values[$var])
                         ) {
                             $this->_wildcardData[$var] = (isset($path[$i + 1])) ? urldecode($path[$i + 1]) : null;
+=======
+                    for($i = $pos; $i < $count; $i+=2) {
+                        $var = urldecode($path[$i]);
+                        if (!isset($this->_wildcardData[$var]) && !isset($this->_defaults[$var]) && !isset($values[$var])) {
+                            $this->_wildcardData[$var] = (isset($path[$i+1])) ? urldecode($path[$i+1]) : null;
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                         }
                     }
 
@@ -271,11 +343,15 @@ class Zend_Controller_Router_Route extends Zend_Controller_Router_Route_Abstract
 
                 // Translate value if required
                 $part = $this->_parts[$pos];
+<<<<<<< HEAD
                 if ($this->_isTranslated
                     && (substr($part, 0, 1) === '@' && substr($part, 1, 1) !== '@'
                         && $name === null)
                     || $name !== null && in_array($name, $this->_translatable)
                 ) {
+=======
+                if ($this->_isTranslated && (substr($part, 0, 1) === '@' && substr($part, 1, 1) !== '@' && $name === null) || $name !== null && in_array($name, $this->_translatable)) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                     if (substr($part, 0, 1) === '@') {
                         $part = substr($part, 1);
                     }
@@ -295,11 +371,15 @@ class Zend_Controller_Router_Route extends Zend_Controller_Router_Route_Abstract
                 }
 
                 // If it's a variable with requirement, match a regex. If not - everything matches
+<<<<<<< HEAD
                 if ($part !== null
                     && !preg_match(
                         $this->_regexDelimiter . '^' . $part . '$' . $this->_regexDelimiter . 'iu', $pathPart
                     )
                 ) {
+=======
+                if ($part !== null && !preg_match($this->_regexDelimiter . '^' . $part . '$' . $this->_regexDelimiter . 'iu', $pathPart)) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                     return false;
                 }
 
@@ -334,16 +414,25 @@ class Zend_Controller_Router_Route extends Zend_Controller_Router_Route_Abstract
         $this->_values = $values;
 
         return $return;
+<<<<<<< HEAD
+=======
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     }
 
     /**
      * Assembles user submitted parameters forming a URL path defined by this route
      *
+<<<<<<< HEAD
      * @param  array   $data  An array of variable and value pairs used as parameters
      * @param  boolean $reset Whether or not to set route defaults with those provided in $data
      * @param  boolean $encode
      * @param  boolean $partial
      * @throws Zend_Controller_Router_Exception
+=======
+     * @param  array $data An array of variable and value pairs used as parameters
+     * @param  boolean $reset Whether or not to set route defaults with those provided in $data
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return string Route path with user submitted parameters
      */
     public function assemble($data = array(), $reset = false, $encode = false, $partial = false)
@@ -405,15 +494,23 @@ class Zend_Controller_Router_Route extends Zend_Controller_Router_Route_Abstract
                     $url[$key] = $part;
                 }
             } else {
+<<<<<<< HEAD
                 if (!$reset) {
                     $data += $this->_wildcardData;
                 }
+=======
+                if (!$reset) $data += $this->_wildcardData;
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 $defaults = $this->getDefaults();
                 foreach ($data as $var => $value) {
                     if ($value !== null && (!isset($defaults[$var]) || $value != $defaults[$var])) {
                         $url[$key++] = $var;
                         $url[$key++] = $value;
+<<<<<<< HEAD
                         $flag        = true;
+=======
+                        $flag = true;
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                     }
                 }
             }
@@ -427,23 +524,37 @@ class Zend_Controller_Router_Route extends Zend_Controller_Router_Route_Abstract
             if (isset($this->_variables[$key])) {
                 $defaultValue = $this->getDefault($this->_variables[$key]);
 
+<<<<<<< HEAD
                 if ($this->_isTranslated && $defaultValue !== null
                     && isset($this->_translatable[$this->_variables[$key]])
                 ) {
+=======
+                if ($this->_isTranslated && $defaultValue !== null && isset($this->_translatable[$this->_variables[$key]])) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                     $defaultValue = $translator->translate($defaultValue, $locale);
                 }
             }
 
             if ($flag || $value !== $defaultValue || $partial) {
+<<<<<<< HEAD
                 if ($encode) {
                     $value = urlencode($value);
                 }
                 $return = $this->_urlDelimiter . $value . $return;
                 $flag   = true;
+=======
+                if ($encode) $value = urlencode($value);
+                $return = $this->_urlDelimiter . $value . $return;
+                $flag = true;
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             }
         }
 
         return trim($return, $this->_urlDelimiter);
+<<<<<<< HEAD
+=======
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     }
 
     /**
@@ -452,12 +563,19 @@ class Zend_Controller_Router_Route extends Zend_Controller_Router_Route_Abstract
      * @param string $name Array key of the parameter
      * @return string Previously set default
      */
+<<<<<<< HEAD
     public function getDefault($name)
     {
         if (isset($this->_defaults[$name])) {
             return $this->_defaults[$name];
         }
 
+=======
+    public function getDefault($name) {
+        if (isset($this->_defaults[$name])) {
+            return $this->_defaults[$name];
+        }
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         return null;
     }
 
@@ -466,8 +584,12 @@ class Zend_Controller_Router_Route extends Zend_Controller_Router_Route_Abstract
      *
      * @return array Route defaults
      */
+<<<<<<< HEAD
     public function getDefaults()
     {
+=======
+    public function getDefaults() {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         return $this->_defaults;
     }
 
@@ -523,6 +645,7 @@ class Zend_Controller_Router_Route extends Zend_Controller_Router_Route_Abstract
     {
         if ($this->_translator !== null) {
             return $this->_translator;
+<<<<<<< HEAD
         } else {
             if (($translator = self::getDefaultTranslator()) !== null) {
                 return $translator;
@@ -536,6 +659,19 @@ class Zend_Controller_Router_Route extends Zend_Controller_Router_Route_Abstract
                 if ($translator instanceof Zend_Translate) {
                     return $translator;
                 }
+=======
+        } else if (($translator = self::getDefaultTranslator()) !== null) {
+            return $translator;
+        } else {
+            try {
+                $translator = Zend_Registry::get('Zend_Translate');
+            } catch (Zend_Exception $e) {
+                $translator = null;
+            }
+
+            if ($translator instanceof Zend_Translate) {
+                return $translator;
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             }
         }
 
@@ -584,6 +720,7 @@ class Zend_Controller_Router_Route extends Zend_Controller_Router_Route_Abstract
     {
         if ($this->_locale !== null) {
             return $this->_locale;
+<<<<<<< HEAD
         } else {
             if (($locale = self::getDefaultLocale()) !== null) {
                 return $locale;
@@ -597,6 +734,19 @@ class Zend_Controller_Router_Route extends Zend_Controller_Router_Route_Abstract
                 if ($locale !== null) {
                     return $locale;
                 }
+=======
+        } else if (($locale = self::getDefaultLocale()) !== null) {
+            return $locale;
+        } else {
+            try {
+                $locale = Zend_Registry::get('Zend_Locale');
+            } catch (Zend_Exception $e) {
+                $locale = null;
+            }
+
+            if ($locale !== null) {
+                return $locale;
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             }
         }
 

@@ -16,8 +16,13 @@
  * @category   Zend
  * @package    Zend_Http
  * @subpackage Client_Adapter
+<<<<<<< HEAD
  * @version    $Id$
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @version    $Id: Curl.php 24593 2012-01-05 20:35:02Z matthew $
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -42,7 +47,11 @@ require_once 'Zend/Http/Client/Adapter/Stream.php';
  * @category   Zend
  * @package    Zend_Http
  * @subpackage Client_Adapter
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Http_Client_Adapter_Curl implements Zend_Http_Client_Adapter_Interface, Zend_Http_Client_Adapter_Stream
@@ -221,6 +230,7 @@ class Zend_Http_Client_Adapter_Curl implements Zend_Http_Client_Adapter_Interfac
             curl_setopt($this->_curl, CURLOPT_PORT, intval($port));
         }
 
+<<<<<<< HEAD
         // Set connection timeout
         $connectTimeout  = $this->_config['timeout'];
         $constant        = CURLOPT_CONNECTTIMEOUT;
@@ -240,6 +250,10 @@ class Zend_Http_Client_Adapter_Curl implements Zend_Http_Client_Adapter_Interfac
             }
             curl_setopt($this->_curl, $constant, $requestTimeout);
         }
+=======
+        // Set timeout
+        curl_setopt($this->_curl, CURLOPT_CONNECTTIMEOUT, $this->_config['timeout']);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
         // Set Max redirects
         curl_setopt($this->_curl, CURLOPT_MAXREDIRS, $this->_config['maxredirects']);
@@ -337,11 +351,14 @@ class Zend_Http_Client_Adapter_Curl implements Zend_Http_Client_Adapter_Interfac
                 }
                 break;
 
+<<<<<<< HEAD
             case Zend_Http_Client::PATCH:
                 $curlMethod = CURLOPT_CUSTOMREQUEST;
                 $curlValue = "PATCH";
                 break;
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             case Zend_Http_Client::DELETE:
                 $curlMethod = CURLOPT_CUSTOMREQUEST;
                 $curlValue = "DELETE";
@@ -377,7 +394,11 @@ class Zend_Http_Client_Adapter_Curl implements Zend_Http_Client_Adapter_Interfac
         $curlHttp = ($httpVersion == 1.1) ? CURL_HTTP_VERSION_1_1 : CURL_HTTP_VERSION_1_0;
 
         // mark as HTTP request and set HTTP method
+<<<<<<< HEAD
         curl_setopt($this->_curl, CURLOPT_HTTP_VERSION, $curlHttp);
+=======
+        curl_setopt($this->_curl, $curlHttp, true);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         curl_setopt($this->_curl, $curlMethod, $curlValue);
 
         if($this->out_stream) {
@@ -389,7 +410,10 @@ class Zend_Http_Client_Adapter_Curl implements Zend_Http_Client_Adapter_Interfac
         } else {
             // ensure headers are also returned
             curl_setopt($this->_curl, CURLOPT_HEADER, true);
+<<<<<<< HEAD
             curl_setopt($this->_curl, CURLINFO_HEADER_OUT, true);
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
             // ensure actual response is returned
             curl_setopt($this->_curl, CURLOPT_RETURNTRANSFER, true);
@@ -416,6 +440,7 @@ class Zend_Http_Client_Adapter_Curl implements Zend_Http_Client_Adapter_Interfac
         } elseif ($method == Zend_Http_Client::PUT) {
             // This is a PUT by a setRawData string, not by file-handle
             curl_setopt($this->_curl, CURLOPT_POSTFIELDS, $body);
+<<<<<<< HEAD
         } elseif ($method == Zend_Http_Client::PATCH) {
             // This is a PATCH by a setRawData string
             curl_setopt($this->_curl, CURLOPT_POSTFIELDS, $body);
@@ -425,6 +450,11 @@ class Zend_Http_Client_Adapter_Curl implements Zend_Http_Client_Adapter_Interfac
         } elseif ($method == Zend_Http_Client::OPTIONS) {
             // This is an OPTIONS by a setRawData string
             curl_setopt($this->_curl, CURLOPT_POSTFIELDS, $body);
+=======
+        } elseif ($method == Zend_Http_Client::DELETE) {
+            // This is a DELETE by a setRawData string
+            curl_setopt($this->_curl, CURLOPT_POSTFIELDS, $body);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         }
 
         // set additional curl options

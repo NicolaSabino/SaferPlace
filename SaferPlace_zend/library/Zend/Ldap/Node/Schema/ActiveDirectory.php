@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Ldap
  * @subpackage Schema
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: ActiveDirectory.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -40,7 +46,11 @@ require_once 'Zend/Ldap/Node/Schema/ObjectClass/ActiveDirectory.php';
  * @category   Zend
  * @package    Zend_Ldap
  * @subpackage Schema
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Ldap_Node_Schema_ActiveDirectory extends Zend_Ldap_Node_Schema
@@ -63,7 +73,11 @@ class Zend_Ldap_Node_Schema_ActiveDirectory extends Zend_Ldap_Node_Schema
      *
      * @param  Zend_Ldap_Dn $dn
      * @param  Zend_Ldap    $ldap
+<<<<<<< HEAD
      * @return Zend_Ldap_Node_Schema Provides a fluent interface
+=======
+     * @return Zend_Ldap_Node_Schema Provides a fluid interface
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     protected function _parseSchema(Zend_Ldap_Dn $dn, Zend_Ldap $ldap)
     {
@@ -100,4 +114,8 @@ class Zend_Ldap_Node_Schema_ActiveDirectory extends Zend_Ldap_Node_Schema
     {
         return $this->_objectClasses;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

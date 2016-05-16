@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -872,6 +873,139 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</intervalFormats>
 				</dateTimeFormats>
 			</calendar>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.31 $"/>
+		<generation date="$Date: 2009/05/05 23:06:41 $"/>
+		<language type="zu"/>
+	</identity>
+	<fallback>en_ZA</fallback>
+	<localeDisplayNames>
+		<languages>
+			<language type="af">isiBhunu</language>
+			<language type="am">Isi-Amaharikhi</language>
+			<language type="ar">isi-Alabhu</language>
+			<language type="as">Assamese</language>
+			<language type="az">Isi-Azebhayijani</language>
+			<language type="be">IsiBhelarashiyani</language>
+			<language type="bg">Isi-Bulgaria</language>
+			<language type="bh">IsiBhihari</language>
+			<language type="bn">IsiBhengali</language>
+			<language type="br">isihlobo sase Britain</language>
+			<language type="bs">IsiBhosiniyani</language>
+			<language type="ca">IsiKhathalani</language>
+			<language type="cs">Isi-Czech</language>
+			<language type="cy">IsiWelshi</language>
+			<language type="da">IsiDenishi</language>
+			<language type="de">isiJalimani</language>
+			<language type="el">IsiGreki</language>
+			<language type="en">isiNgisi</language>
+			<language type="eo">Isi-Esperanto</language>
+			<language type="es">isiSpeyini</language>
+			<language type="et">Isi-Esistoniya</language>
+			<language type="eu">Isi-Basque</language>
+			<language type="fa">IsiPheshiyani</language>
+			<language type="fi">isiFinnish</language>
+			<language type="fil">IsiThagalogi</language>
+			<language type="fo">Isifaro</language>
+			<language type="fr">isiFulentshi</language>
+			<language type="fy">IsiFriziyani</language>
+			<language type="ga">Isi-Irishi</language>
+			<language type="gd">I-Scots Gaelic</language>
+			<language type="gl">Isi-Galashiya</language>
+			<language type="gn">Gurani</language>
+			<language type="gu">IsiGujarati</language>
+			<language type="he">IsiHebheru</language>
+			<language type="hi">isiHindi</language>
+			<language type="hr">Isi-Croatia</language>
+			<language type="hu">IsiHangari</language>
+			<language type="hy">Armenian</language>
+			<language type="ia">Izilimi ezihlangene</language>
+			<language type="id">Isi-Indonesia</language>
+			<language type="ie">Izilimu</language>
+			<language type="is">Isi-Icelandic</language>
+			<language type="it">isItalian</language>
+			<language type="ja">IsiJaphani</language>
+			<language type="jv">IsiJavanisi</language>
+			<language type="ka">IsiJojiyani</language>
+			<language type="km">Cambodian</language>
+			<language type="kn">Ikhanada</language>
+			<language type="ko">IsiKoriya</language>
+			<language type="ku">ulimu lwama Kudishi</language>
+			<language type="ky">Kyrgyz</language>
+			<language type="la">IsiLathini</language>
+			<language type="ln">Lingala</language>
+			<language type="lo">Laothian</language>
+			<language type="lt">Isi-Lithuanian</language>
+			<language type="lv">Isi-Latvian</language>
+			<language type="mk">IsiMakhedoniya</language>
+			<language type="ml">IsiMalayami</language>
+			<language type="mn">Mongolian</language>
+			<language type="mr">IsiMarathi</language>
+			<language type="ms">IsiMalayi</language>
+			<language type="mt">IsiMalithize</language>
+			<language type="ne">IsiNepali</language>
+			<language type="nl">Isi-Dutch</language>
+			<language type="nn">IsiNowejiyani (Nynorsk)</language>
+			<language type="no">IsiNoweyi</language>
+			<language type="oc">Isi-Osithani</language>
+			<language type="or">Oriya</language>
+			<language type="pa">IsiPhunjabi</language>
+			<language type="pl">IsiPholisi</language>
+			<language type="ps">Pashto</language>
+			<language type="pt">IsiPotukezi</language>
+			<language type="pt_BR">Isiputukezi (Brazil)</language>
+			<language type="pt_PT">IsiPotukezi (Ephothugali)</language>
+			<language type="ro">IsiRomani</language>
+			<language type="ru">IsiRashiya</language>
+			<language type="sa">Sanskrit</language>
+			<language type="sd">Sindhi</language>
+			<language type="sh">Serbo-Croatian</language>
+			<language type="si">IsiSinhalese</language>
+			<language type="sk">IsiSlovaki</language>
+			<language type="sl">IsiSlovakiyani</language>
+			<language type="so">Somali</language>
+			<language type="sq">Isi-Albania</language>
+			<language type="sr">Isi-Sebhiya</language>
+			<language type="st">isiSuthu</language>
+			<language type="su">IsiSundanizi</language>
+			<language type="sv">IsiSwidishi</language>
+			<language type="sw">isiSwahili</language>
+			<language type="ta">IsiThamil</language>
+			<language type="te">IsiThelugu</language>
+			<language type="th">IsiThayi</language>
+			<language type="ti">IsiTigrinya</language>
+			<language type="tk">umuntu wase Turkmenistan.</language>
+			<language type="tlh">IsiKlingoni</language>
+			<language type="tr">IsiThekishi</language>
+			<language type="tw">Twi</language>
+			<language type="ug">Uighur</language>
+			<language type="uk">Isi-Ukrain</language>
+			<language type="ur">Isi-Udu</language>
+			<language type="uz">Isi-Uzibheki</language>
+			<language type="vi">IsiVietnamise</language>
+			<language type="xh">isiXhosa</language>
+			<language type="yi">ulimu olwi Yidish</language>
+			<language type="zu">isiZulu</language>
+		</languages>
+		<territories>
+			<territory type="ZA">iNingizimu Afrika</territory>
+		</territories>
+	</localeDisplayNames>
+	<characters>
+		<exemplarCharacters>[a b {bh} c {ch} d {dl} {dy} e-g {gc} {gq} {gx} h {hh} {hl} i-k {kh} {kl} {kp} l-n {nc} {ngc} {ngq} {ngx} {nhl} {nk} {nkc} {nkq} {nkx} {nq} {ntsh} {nx} {ny} o p {ph} q {qh} r {rh} s {sh} t {th} {tl} {ts} {tsh} u-x {xh} y z]</exemplarCharacters>
+		<exemplarCharacters type="currencySymbol">[a-z]</exemplarCharacters>
+	</characters>
+	<delimiters>
+		<quotationStart>‘</quotationStart>
+		<quotationEnd>’</quotationEnd>
+		<alternateQuotationStart>“</alternateQuotationStart>
+		<alternateQuotationEnd>”</alternateQuotationEnd>
+	</delimiters>
+	<dates>
+		<calendars>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -889,6 +1023,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">Nov</month>
 							<month type="12">Dis</month>
 						</monthWidth>
+<<<<<<< HEAD
 						<monthWidth type="narrow">
 							<month type="1">J</month>
 							<month type="2">F</month>
@@ -903,6 +1038,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">N</month>
 							<month type="12">D</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<monthWidth type="wide">
 							<month type="1">Januwari</month>
 							<month type="2">Februwari</month>
@@ -919,6 +1056,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</monthWidth>
 					</monthContext>
 					<monthContext type="stand-alone">
+<<<<<<< HEAD
 						<monthWidth type="abbreviated">
 							<month type="1">Jan</month>
 							<month type="2">Feb</month>
@@ -933,6 +1071,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">Nov</month>
 							<month type="12">Dis</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<monthWidth type="narrow">
 							<month type="1">J</month>
 							<month type="2">F</month>
@@ -974,6 +1114,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">Hla</day>
 							<day type="sat">Mgq</day>
 						</dayWidth>
+<<<<<<< HEAD
 						<dayWidth type="narrow">
 							<day type="sun">S</day>
 							<day type="mon">M</day>
@@ -992,17 +1133,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">Ulwesihlanu</day>
 							<day type="sat">Umgqibelo</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<dayWidth type="wide">
 							<day type="sun">Sonto</day>
 							<day type="mon">Msombuluko</day>
 							<day type="tue">Lwesibili</day>
 							<day type="wed">Lwesithathu</day>
+<<<<<<< HEAD
 							<day type="thu">Lwesine</day>
+=======
+							<day type="thu">uLwesine</day>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 							<day type="fri">Lwesihlanu</day>
 							<day type="sat">Mgqibelo</day>
 						</dayWidth>
 					</dayContext>
 					<dayContext type="stand-alone">
+<<<<<<< HEAD
 						<dayWidth type="abbreviated">
 							<day type="sun">Son</day>
 							<day type="mon">Mso</day>
@@ -1012,6 +1160,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">Hla</day>
 							<day type="sat">Mgq</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<dayWidth type="narrow">
 							<day type="sun">S</day>
 							<day type="mon">M</day>
@@ -1021,6 +1171,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">H</day>
 							<day type="sat">M</day>
 						</dayWidth>
+<<<<<<< HEAD
 						<dayWidth type="short">
 							<day type="sun">Isonto</day>
 							<day type="mon">Umsombuluko</day>
@@ -1105,6 +1256,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<era type="0" alt="variant">BCE</era>
 						<era type="1">AD</era>
 						<era type="1" alt="variant">CE</era>
+=======
+					</dayContext>
+				</days>
+				<eras>
+					<eraAbbr>
+						<era type="0">BC</era>
+						<era type="1">AD</era>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</eraAbbr>
 				</eras>
 				<dateFormats>
@@ -1125,7 +1284,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>y-MM-dd</pattern>
+=======
+							<pattern>yyyy-MM-dd</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
@@ -1151,6 +1314,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</timeFormat>
 					</timeFormatLength>
 				</timeFormats>
+<<<<<<< HEAD
 				<dateTimeFormats>
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
@@ -2360,11 +2524,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<nan>I-NaN</nan>
 		</symbols>
 		<decimalFormats numberSystem="latn">
+=======
+			</calendar>
+		</calendars>
+		<timeZoneNames>
+			<hourFormat>+HH:mm;-HH:mm</hourFormat>
+			<gmtFormat>GMT{0}</gmtFormat>
+			<regionFormat>{0}</regionFormat>
+		</timeZoneNames>
+	</dates>
+	<numbers>
+		<symbols>
+			<decimal>,</decimal>
+			<group> </group>
+		</symbols>
+		<decimalFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<decimalFormatLength>
 				<decimalFormat>
 					<pattern>#,##0.###</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
+<<<<<<< HEAD
 			<decimalFormatLength type="long">
 				<decimalFormat>
 					<pattern type="1000" count="one">0 inkulungwane</pattern>
@@ -2423,19 +2604,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</decimalFormatLength>
 		</decimalFormats>
 		<scientificFormats numberSystem="latn">
+=======
+		</decimalFormats>
+		<scientificFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<scientificFormatLength>
 				<scientificFormat>
 					<pattern>#E0</pattern>
 				</scientificFormat>
 			</scientificFormatLength>
 		</scientificFormats>
+<<<<<<< HEAD
 		<percentFormats numberSystem="latn">
+=======
+		<percentFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<percentFormatLength>
 				<percentFormat>
 					<pattern>#,##0%</pattern>
 				</percentFormat>
 			</percentFormatLength>
 		</percentFormats>
+<<<<<<< HEAD
 		<currencyFormats numberSystem="latn">
 			<currencyFormatLength>
 				<currencyFormat type="standard">
@@ -3219,6 +3409,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<listPatternPart type="2">I-{0} ne-{1}</listPatternPart>
 		</listPattern>
 	</listPatterns>
+=======
+		<currencyFormats>
+			<currencyFormatLength>
+				<currencyFormat>
+					<pattern>¤#,##0.00</pattern>
+				</currencyFormat>
+			</currencyFormatLength>
+		</currencyFormats>
+	</numbers>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	<posix>
 		<messages>
 			<yesstr>yebo:y</yesstr>

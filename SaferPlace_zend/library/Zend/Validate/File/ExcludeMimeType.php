@@ -14,9 +14,15 @@
  *
  * @category  Zend
  * @package   Zend_Validate
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license   http://framework.zend.com/license/new-bsd     New BSD License
  * @version   $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license   http://framework.zend.com/license/new-bsd     New BSD License
+ * @version   $Id: ExcludeMimeType.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -29,7 +35,11 @@ require_once 'Zend/Validate/File/MimeType.php';
  *
  * @category  Zend
  * @package   Zend_Validate
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license   http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Validate_File_ExcludeMimeType extends Zend_Validate_File_MimeType
@@ -39,6 +49,7 @@ class Zend_Validate_File_ExcludeMimeType extends Zend_Validate_File_MimeType
     const NOT_READABLE = 'fileExcludeMimeTypeNotReadable';
 
     /**
+<<<<<<< HEAD
      * @var array Error message templates
      */
     protected $_messageTemplates = array(
@@ -48,6 +59,8 @@ class Zend_Validate_File_ExcludeMimeType extends Zend_Validate_File_MimeType
     );
 
     /**
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * Defined by Zend_Validate_Interface
      *
      * Returns true if the mimetype of the file does not matche the given ones. Also parts
@@ -73,10 +86,34 @@ class Zend_Validate_File_ExcludeMimeType extends Zend_Validate_File_MimeType
             return $this->_throw($file, self::NOT_READABLE);
         }
 
+<<<<<<< HEAD
         $this->_type = $this->_detectMimeType($value);
 
         if (empty($this->_type) && $this->_headerCheck) {
             $this->_type = $file['type'];
+=======
+        $mimefile = $this->getMagicFile();
+        if (class_exists('finfo', false)) {
+            $const = defined('FILEINFO_MIME_TYPE') ? FILEINFO_MIME_TYPE : FILEINFO_MIME;
+            if (!empty($mimefile)) {
+                $mime = new finfo($const, $mimefile);
+            } else {
+                $mime = new finfo($const);
+            }
+
+            if (!empty($mime)) {
+                $this->_type = $mime->file($value);
+            }
+            unset($mime);
+        }
+
+        if (empty($this->_type)) {
+            if (function_exists('mime_content_type') && ini_get('mime_magic.magicfile')) {
+                $this->_type = mime_content_type($value);
+            } elseif ($this->_headerCheck) {
+                $this->_type = $file['type'];
+            }
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         }
 
         if (empty($this->_type)) {

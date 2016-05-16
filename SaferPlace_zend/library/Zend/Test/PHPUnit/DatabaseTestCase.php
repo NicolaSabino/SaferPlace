@@ -15,12 +15,26 @@
  * @category   Zend
  * @package    Zend_Test
  * @subpackage PHPUnit
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
 
 /**
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: DatabaseTestCase.php 25024 2012-07-30 15:08:15Z rob $
+ */
+
+/**
+ * @see PHPUnit_Extensions_Database_TestCase
+ */
+require_once "PHPUnit/Extensions/Database/TestCase.php";
+
+/**
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @see Zend_Test_PHPUnit_Db_Operation_Truncate
  */
 require_once "Zend/Test/PHPUnit/Db/Operation/Truncate.php";
@@ -52,7 +66,11 @@ require_once "Zend/Test/PHPUnit/Db/DataSet/DbRowset.php";
  * @category   Zend
  * @package    Zend_Test
  * @subpackage PHPUnit
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 abstract class Zend_Test_PHPUnit_DatabaseTestCase extends PHPUnit_Extensions_Database_TestCase
@@ -143,4 +161,8 @@ abstract class Zend_Test_PHPUnit_DatabaseTestCase extends PHPUnit_Extensions_Dat
     {
         return new Zend_Test_PHPUnit_Db_DataSet_DbRowset($rowset, $tableName);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

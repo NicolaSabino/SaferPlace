@@ -14,9 +14,15 @@
  *
  * @category   Zend
  * @package    Zend_Amf
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Server.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /** @see Zend_Server_Interface */
@@ -52,7 +58,11 @@ require_once 'Zend/Auth.php';
  * @todo       Make the reflection methods cache and autoload.
  * @package    Zend_Amf
  * @subpackage Server
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Amf_Server implements Zend_Server_Interface
@@ -767,9 +777,15 @@ class Zend_Amf_Server implements Zend_Server_Interface
             throw new Zend_Amf_Server_Exception('Invalid method or class; must be a classname or object');
         }
 
+<<<<<<< HEAD
         $args = null;
         if (2 < func_num_args()) {
             $args = array_slice(func_get_args(), 2);
+=======
+        $argv = null;
+        if (2 < func_num_args()) {
+            $argv = array_slice(func_get_args(), 2);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         }
 
         // Use the class name as the name space by default.
@@ -780,7 +796,11 @@ class Zend_Amf_Server implements Zend_Server_Interface
 
         $this->_classAllowed[is_object($class) ? get_class($class) : $class] = true;
 
+<<<<<<< HEAD
         $this->_methods[] = Zend_Server_Reflection::reflectClass($class, $args, $namespace);
+=======
+        $this->_methods[] = Zend_Server_Reflection::reflectClass($class, $argv, $namespace);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         $this->_buildDispatchTable();
 
         return $this;

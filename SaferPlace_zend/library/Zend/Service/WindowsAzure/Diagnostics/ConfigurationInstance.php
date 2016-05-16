@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Service_WindowsAzure
  * @subpackage Diagnostics
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
@@ -30,14 +34,21 @@ require_once 'Zend/Service/WindowsAzure/Diagnostics/ConfigurationObjectBaseAbstr
  */
 require_once 'Zend/Service/WindowsAzure/Diagnostics/ConfigurationDataSources.php';
 
+<<<<<<< HEAD
 /** Zend_Xml_Security */
 require_once 'Zend/Xml/Security.php';
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 /**
  * @category   Zend
  * @package    Zend_Service_WindowsAzure
  * @subpackage Diagnostics
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  *
  * @property Zend_Service_WindowsAzure_Diagnostics_ConfigurationDataSources	DataSources	Data sources
@@ -63,7 +74,11 @@ class Zend_Service_WindowsAzure_Diagnostics_ConfigurationInstance
 	public function loadXml($configurationXml)
 	{
 		// Convert to SimpleXMLElement
+<<<<<<< HEAD
 		$configurationXml = Zend_Xml_Security::scan($configurationXml);
+=======
+		$configurationXml = simplexml_load_string($configurationXml);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	
 		// Assign general settings
 		$this->DataSources->OverallQuotaInMB = (int)$configurationXml->DataSources->OverallQuotaInMB;
@@ -217,4 +232,8 @@ class Zend_Service_WindowsAzure_Diagnostics_ConfigurationInstance
 		// Return
 		return implode("\r\n", $returnValue);
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

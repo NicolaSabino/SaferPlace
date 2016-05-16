@@ -15,8 +15,13 @@
  * @category   Zend
  * @package    Zend_Controller
  * @subpackage Router
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @version    $Id: Hostname.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -28,13 +33,18 @@ require_once 'Zend/Controller/Router/Route/Abstract.php';
  *
  * @package    Zend_Controller
  * @subpackage Router
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @see        http://manuals.rubyonrails.com/read/chapter/65
  */
 class Zend_Controller_Router_Route_Hostname extends Zend_Controller_Router_Route_Abstract
 {
 
+<<<<<<< HEAD
     /**
      * Host variable
      *
@@ -59,6 +69,14 @@ class Zend_Controller_Router_Route_Hostname extends Zend_Controller_Router_Route
     /**
      * Holds names of all route's pattern variable names. Array index holds a position in host.
      *
+=======
+    protected $_hostVariable   = ':';
+    protected $_regexDelimiter = '#';
+    protected $_defaultRegex   = null;
+
+    /**
+     * Holds names of all route's pattern variable names. Array index holds a position in host.
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @var array
      */
     protected $_variables = array();
@@ -66,14 +84,20 @@ class Zend_Controller_Router_Route_Hostname extends Zend_Controller_Router_Route
     /**
      * Holds Route patterns for all host parts. In case of a variable it stores it's regex
      * requirement or null. In case of a static part, it holds only it's direct value.
+<<<<<<< HEAD
      *
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @var array
      */
     protected $_parts = array();
 
     /**
      * Holds user submitted default values for route's variables. Name and value pairs.
+<<<<<<< HEAD
      *
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @var array
      */
     protected $_defaults = array();
@@ -81,14 +105,20 @@ class Zend_Controller_Router_Route_Hostname extends Zend_Controller_Router_Route
     /**
      * Holds user submitted regular expression patterns for route's variables' values.
      * Name and value pairs.
+<<<<<<< HEAD
      *
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @var array
      */
     protected $_requirements = array();
 
     /**
      * Default scheme
+<<<<<<< HEAD
      *
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @var string
      */
     protected $_scheme = null;
@@ -96,7 +126,10 @@ class Zend_Controller_Router_Route_Hostname extends Zend_Controller_Router_Route
     /**
      * Associative array filled on match() that holds matched path values
      * for given variable names.
+<<<<<<< HEAD
      *
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @var array
      */
     protected $_values = array();
@@ -111,7 +144,10 @@ class Zend_Controller_Router_Route_Hostname extends Zend_Controller_Router_Route
     /**
      * Helper var that holds a count of route pattern's static parts
      * for validation
+<<<<<<< HEAD
      *
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @var int
      */
     private $_staticCount = 0;
@@ -120,6 +156,10 @@ class Zend_Controller_Router_Route_Hostname extends Zend_Controller_Router_Route
      * Set the request object
      *
      * @param  Zend_Controller_Request_Abstract|null $request
+<<<<<<< HEAD
+=======
+     * @return void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setRequest(Zend_Controller_Request_Abstract $request = null)
     {
@@ -145,14 +185,20 @@ class Zend_Controller_Router_Route_Hostname extends Zend_Controller_Router_Route
      * Instantiates route based on passed Zend_Config structure
      *
      * @param Zend_Config $config Configuration object
+<<<<<<< HEAD
      * @return Zend_Controller_Router_Route_Hostname
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public static function getInstance(Zend_Config $config)
     {
         $reqs   = ($config->reqs instanceof Zend_Config) ? $config->reqs->toArray() : array();
         $defs   = ($config->defaults instanceof Zend_Config) ? $config->defaults->toArray() : array();
         $scheme = (isset($config->scheme)) ? $config->scheme : null;
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         return new self($config->route, $defs, $reqs, $scheme);
     }
 
@@ -161,9 +207,15 @@ class Zend_Controller_Router_Route_Hostname extends Zend_Controller_Router_Route
      * to a corresponding atomic parts. These parts are assigned
      * a position which is later used for matching and preparing values.
      *
+<<<<<<< HEAD
      * @param string $route    Map used to match with later submitted hostname
      * @param array  $defaults Defaults for map variables with keys as variable names
      * @param array  $reqs     Regular expression requirements for variables (keys as variable names)
+=======
+     * @param string $route Map used to match with later submitted hostname
+     * @param array  $defaults Defaults for map variables with keys as variable names
+     * @param array  $reqs Regular expression requirements for variables (keys as variable names)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @param string $scheme
      */
     public function __construct($route, $defaults = array(), $reqs = array(), $scheme = null)
@@ -176,8 +228,13 @@ class Zend_Controller_Router_Route_Hostname extends Zend_Controller_Router_Route
         if ($route != '') {
             foreach (explode('.', $route) as $pos => $part) {
                 if (substr($part, 0, 1) == $this->_hostVariable) {
+<<<<<<< HEAD
                     $name                   = substr($part, 1);
                     $this->_parts[$pos]     = (isset($reqs[$name]) ? $reqs[$name] : $this->_defaultRegex);
+=======
+                    $name = substr($part, 1);
+                    $this->_parts[$pos] = (isset($reqs[$name]) ? $reqs[$name] : $this->_defaultRegex);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                     $this->_variables[$pos] = $name;
                 } else {
                     $this->_parts[$pos] = $part;
@@ -212,7 +269,11 @@ class Zend_Controller_Router_Route_Hostname extends Zend_Controller_Router_Route
         }
 
         $hostStaticCount = 0;
+<<<<<<< HEAD
         $values          = array();
+=======
+        $values = array();
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
         $host = trim($host, '.');
 
@@ -225,7 +286,11 @@ class Zend_Controller_Router_Route_Hostname extends Zend_Controller_Router_Route
                     return false;
                 }
 
+<<<<<<< HEAD
                 $name     = isset($this->_variables[$pos]) ? $this->_variables[$pos] : null;
+=======
+                $name = isset($this->_variables[$pos]) ? $this->_variables[$pos] : null;
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 $hostPart = urldecode($hostPart);
 
                 // If it's a static part, match directly
@@ -234,12 +299,16 @@ class Zend_Controller_Router_Route_Hostname extends Zend_Controller_Router_Route
                 }
 
                 // If it's a variable with requirement, match a regex. If not - everything matches
+<<<<<<< HEAD
                 if ($this->_parts[$pos] !== null
                     && !preg_match(
                         $this->_regexDelimiter . '^' . $this->_parts[$pos] . '$' . $this->_regexDelimiter . 'iu',
                         $hostPart
                     )
                 ) {
+=======
+                if ($this->_parts[$pos] !== null && !preg_match($this->_regexDelimiter . '^' . $this->_parts[$pos] . '$' . $this->_regexDelimiter . 'iu', $hostPart)) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                     return false;
                 }
 
@@ -269,16 +338,25 @@ class Zend_Controller_Router_Route_Hostname extends Zend_Controller_Router_Route
         $this->_values = $values;
 
         return $return;
+<<<<<<< HEAD
+=======
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     }
 
     /**
      * Assembles user submitted parameters forming a hostname defined by this route
      *
+<<<<<<< HEAD
      * @param  array   $data  An array of variable and value pairs used as parameters
      * @param  boolean $reset Whether or not to set route defaults with those provided in $data
      * @param  boolean $encode
      * @param  boolean $partial
      * @throws Zend_Controller_Router_Exception
+=======
+     * @param  array $data An array of variable and value pairs used as parameters
+     * @param  boolean $reset Whether or not to set route defaults with those provided in $data
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return string Route path with user submitted parameters
      */
     public function assemble($data = array(), $reset = false, $encode = false, $partial = false)
@@ -314,6 +392,7 @@ class Zend_Controller_Router_Route_Hostname extends Zend_Controller_Router_Route
         $return = '';
 
         foreach (array_reverse($host, true) as $key => $value) {
+<<<<<<< HEAD
             if ($flag || !isset($this->_variables[$key]) || $value !== $this->getDefault($this->_variables[$key])
                 || $partial
             ) {
@@ -322,6 +401,12 @@ class Zend_Controller_Router_Route_Hostname extends Zend_Controller_Router_Route
                 }
                 $return = '.' . $value . $return;
                 $flag   = true;
+=======
+            if ($flag || !isset($this->_variables[$key]) || $value !== $this->getDefault($this->_variables[$key]) || $partial) {
+                if ($encode) $value = urlencode($value);
+                $return = '.' . $value . $return;
+                $flag = true;
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             }
         }
 
@@ -338,7 +423,11 @@ class Zend_Controller_Router_Route_Hostname extends Zend_Controller_Router_Route
             }
         }
 
+<<<<<<< HEAD
         $url = $scheme . '://' . $url;
+=======
+        $url      = $scheme . '://' . $url;
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
         return $url;
     }
@@ -349,12 +438,19 @@ class Zend_Controller_Router_Route_Hostname extends Zend_Controller_Router_Route
      * @param string $name Array key of the parameter
      * @return string Previously set default
      */
+<<<<<<< HEAD
     public function getDefault($name)
     {
         if (isset($this->_defaults[$name])) {
             return $this->_defaults[$name];
         }
 
+=======
+    public function getDefault($name) {
+        if (isset($this->_defaults[$name])) {
+            return $this->_defaults[$name];
+        }
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         return null;
     }
 
@@ -363,8 +459,12 @@ class Zend_Controller_Router_Route_Hostname extends Zend_Controller_Router_Route
      *
      * @return array Route defaults
      */
+<<<<<<< HEAD
     public function getDefaults()
     {
+=======
+    public function getDefaults() {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         return $this->_defaults;
     }
 

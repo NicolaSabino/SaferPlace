@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Cloud
  * @subpackage QueueService
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -25,7 +29,11 @@ require_once 'Zend/Cloud/AbstractFactory.php';
  * @category   Zend
  * @package    Zend_Cloud
  * @subpackage QueueService
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Cloud_QueueService_Factory extends Zend_Cloud_AbstractFactory
@@ -39,6 +47,11 @@ class Zend_Cloud_QueueService_Factory extends Zend_Cloud_AbstractFactory
 
     /**
      * Constructor
+<<<<<<< HEAD
+=======
+     *
+     * @return void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     private function __construct()
     {
@@ -49,8 +62,12 @@ class Zend_Cloud_QueueService_Factory extends Zend_Cloud_AbstractFactory
      * Retrieve QueueService adapter
      *
      * @param  array $options
+<<<<<<< HEAD
      * @return null|Zend_Cloud_DocumentService_Adapter|Zend_Cloud_QueueService_Adapter|Zend_Cloud_StorageService_Adapter
      * @throws Zend_Cloud_QueueService_Exception
+=======
+     * @return void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public static function getAdapter($options = array())
     {

@@ -16,9 +16,15 @@
  * @category   Zend
  * @package    Zend_Service
  * @subpackage Amazon
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Amazon.php 24782 2012-05-09 12:04:50Z adamlundrigan $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -26,14 +32,21 @@
  */
 require_once 'Zend/Rest/Client.php';
 
+<<<<<<< HEAD
 /** @see Zend_Xml_Security */
 require_once 'Zend/Xml/Security.php';
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 /**
  * @category   Zend
  * @package    Zend_Service
  * @subpackage Amazon
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Service_Amazon
@@ -129,7 +142,11 @@ class Zend_Service_Amazon
         }
 
         $dom = new DOMDocument();
+<<<<<<< HEAD
         $dom = Zend_Xml_Security::scan($response->getBody(), $dom);
+=======
+        $dom->loadXML($response->getBody());
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         self::_checkErrors($dom);
 
         /**
@@ -171,7 +188,11 @@ class Zend_Service_Amazon
         }
 
         $dom = new DOMDocument();
+<<<<<<< HEAD
         $dom = Zend_Xml_Security::scan($response->getBody(), $dom);
+=======
+        $dom->loadXML($response->getBody());
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         self::_checkErrors($dom);
         $xpath = new DOMXPath($dom);
         $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/2011-08-01');

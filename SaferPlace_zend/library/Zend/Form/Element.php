@@ -14,7 +14,11 @@
  *
  * @category   Zend
  * @package    Zend_Form
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -36,9 +40,15 @@ require_once 'Zend/Validate/Abstract.php';
  * @category   Zend
  * @package    Zend_Form
  * @subpackage Element
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Element.php 25173 2012-12-22 20:05:32Z rob $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 class Zend_Form_Element implements Zend_Validate_Interface
 {
@@ -227,6 +237,7 @@ class Zend_Form_Element implements Zend_Validate_Interface
     protected $_isPartialRendering = false;
 
     /**
+<<<<<<< HEAD
      * Use one error message for array elements with concatenated values
      *
      * @var bool
@@ -234,6 +245,8 @@ class Zend_Form_Element implements Zend_Validate_Interface
     protected $_concatJustValuesInErrorMessage = false;
 
     /**
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * Constructor
      *
      * $spec may be:
@@ -922,6 +935,7 @@ class Zend_Form_Element implements Zend_Validate_Interface
     }
 
     /**
+<<<<<<< HEAD
      * Use one error message for array elements with concatenated values
      *
      * @param boolean $concatJustValuesInErrorMessage
@@ -944,6 +958,8 @@ class Zend_Form_Element implements Zend_Validate_Interface
     }
 
     /**
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * Overloading: retrieve object property
      *
      * Prevents access to properties beginning with '_'.
@@ -2277,12 +2293,16 @@ class Zend_Form_Element implements Zend_Validate_Interface
                     $aggregateMessages[] = str_replace('%value%', $val, $message);
                 }
                 if (count($aggregateMessages)) {
+<<<<<<< HEAD
                     if ($this->_concatJustValuesInErrorMessage) {
                         $values = implode($this->getErrorMessageSeparator(), $value);
                         $messages[$key] = str_replace('%value%', $values, $message);
                     } else {
                         $messages[$key] = implode($this->getErrorMessageSeparator(), $aggregateMessages);
                     }
+=======
+                    $messages[$key] = implode($this->getErrorMessageSeparator(), $aggregateMessages);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 }
             } else {
                 $messages[$key] = str_replace('%value%', $value, $message);

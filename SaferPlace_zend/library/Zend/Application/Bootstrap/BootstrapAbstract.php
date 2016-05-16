@@ -15,6 +15,7 @@
  * @category   Zend
  * @package    Zend_Application
  * @subpackage Bootstrap
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
@@ -31,6 +32,14 @@ require_once 'Zend/Application/Bootstrap/Bootstrapper.php';
 require_once 'Zend/Application/Bootstrap/ResourceBootstrapper.php';
 
 /**
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: BootstrapAbstract.php 24593 2012-01-05 20:35:02Z matthew $
+ */
+
+/**
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * Abstract base class for bootstrap classes
  *
  * @uses       Zend_Application_Bootstrap_Bootstrapper
@@ -38,7 +47,11 @@ require_once 'Zend/Application/Bootstrap/ResourceBootstrapper.php';
  * @category   Zend
  * @package    Zend_Application
  * @subpackage Bootstrap
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 abstract class Zend_Application_Bootstrap_BootstrapAbstract
@@ -104,6 +117,10 @@ abstract class Zend_Application_Bootstrap_BootstrapAbstract
      * initializer methods.
      *
      * @param  Zend_Application|Zend_Application_Bootstrap_Bootstrapper $application
+<<<<<<< HEAD
+=======
+     * @return void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @throws Zend_Application_Bootstrap_Exception When invalid application is provided
      */
     public function __construct($application)
@@ -326,9 +343,14 @@ abstract class Zend_Application_Bootstrap_BootstrapAbstract
     /**
      * Get a registered plugin resource
      *
+<<<<<<< HEAD
      * @param string $resource
      * @return Zend_Application_Resource_Resource
      * @throws Zend_Application_Bootstrap_Exception
+=======
+     * @param  string $resourceName
+     * @return Zend_Application_Resource_Resource
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function getPluginResource($resource)
     {
@@ -441,7 +463,10 @@ abstract class Zend_Application_Bootstrap_BootstrapAbstract
      *
      * @param  Zend_Application|Zend_Application_Bootstrap_Bootstrapper $application
      * @return Zend_Application_Bootstrap_BootstrapAbstract
+<<<<<<< HEAD
      * @throws Zend_Application_Bootstrap_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setApplication($application)
     {
@@ -492,7 +517,10 @@ abstract class Zend_Application_Bootstrap_BootstrapAbstract
      *
      * @param  object $container
      * @return Zend_Application_Bootstrap_BootstrapAbstract
+<<<<<<< HEAD
      * @throws Zend_Application_Bootstrap_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setContainer($container)
     {
@@ -556,7 +584,11 @@ abstract class Zend_Application_Bootstrap_BootstrapAbstract
     }
 
     /**
+<<<<<<< HEAD
      * Implement PHP's magic to retrieve a resource
+=======
+     * Implement PHP's magic to retrieve a ressource
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * in the bootstrap
      *
      * @param string $prop
@@ -569,7 +601,11 @@ abstract class Zend_Application_Bootstrap_BootstrapAbstract
 
     /**
      * Implement PHP's magic to ask for the
+<<<<<<< HEAD
      * existence of a resource in the bootstrap
+=======
+     * existence of a ressource in the bootstrap
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      *
      * @param string $prop
      * @return bool
@@ -604,7 +640,11 @@ abstract class Zend_Application_Bootstrap_BootstrapAbstract
      *
      * @param  string $method
      * @param  array  $args
+<<<<<<< HEAD
      * @return Zend_Application_Bootstrap_BootstrapAbstract
+=======
+     * @return void
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @throws Zend_Application_Bootstrap_Exception On invalid method name
      */
     public function __call($method, $args)

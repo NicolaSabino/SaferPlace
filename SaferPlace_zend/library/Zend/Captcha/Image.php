@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Captcha
  * @subpackage Adapter
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Image.php 24821 2012-05-29 14:54:50Z adamlundrigan $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /** @see Zend_Captcha_Word */
@@ -31,7 +37,11 @@ require_once 'Zend/Captcha/Word.php';
  * @category   Zend
  * @package    Zend_Captcha
  * @subpackage Adapter
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Captcha_Image extends Zend_Captcha_Word
@@ -240,36 +250,51 @@ class Zend_Captcha_Image extends Zend_Captcha_Word
     {
         return $this->_width;
     }
+<<<<<<< HEAD
 
     /**
      * Set start image
      *
      * @param string $startImage
      * @return Zend_Captcha_Image
+=======
+    /**
+     * @param string $startImage
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setStartImage ($startImage)
     {
         $this->_startImage = $startImage;
         return $this;
     }
+<<<<<<< HEAD
 
     /**
      * Set dot noise level
      *
      * @param int $dotNoiseLevel
      * @return Zend_Captcha_Image
+=======
+    /**
+     * @param int $dotNoiseLevel
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setDotNoiseLevel ($dotNoiseLevel)
     {
         $this->_dotNoiseLevel = $dotNoiseLevel;
         return $this;
     }
+<<<<<<< HEAD
 
     /**
      * Set line noise level
      *
      * @param int $lineNoiseLevel
      * @return Zend_Captcha_Image
+=======
+   /**
+     * @param int $lineNoiseLevel
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setLineNoiseLevel ($lineNoiseLevel)
     {
@@ -360,12 +385,17 @@ class Zend_Captcha_Image extends Zend_Captcha_Word
         $this->_imgUrl = rtrim($imgUrl, "/\\") . '/';
         return $this;
     }
+<<<<<<< HEAD
 
     /**
      * Set image alternative text
      *
      * @param string $imgAlt
      * @return Zend_Captcha_Image
+=======
+    /**
+     * @param string $imgAlt
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function setImgAlt ($imgAlt)
     {
@@ -456,9 +486,14 @@ class Zend_Captcha_Image extends Zend_Captcha_Word
      * Override this function if you want different image generator
      * Wave transform from http://www.captcha.ru/captchas/multiwave/
      *
+<<<<<<< HEAD
      * @param string $id   Captcha ID
      * @param string $word Captcha word
      * @throws Zend_Captcha_Exception
+=======
+     * @param string $id Captcha ID
+     * @param string $word Captcha word
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     protected function _generateImage($id, $word)
     {
@@ -584,6 +619,10 @@ class Zend_Captcha_Image extends Zend_Captcha_Word
 
     /**
      * Remove old files from image directory
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     protected function _gc()
     {

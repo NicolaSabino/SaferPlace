@@ -15,15 +15,25 @@
  * @category   Zend
  * @package    Zend_Controller
  * @subpackage Router
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Interface.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
  * @package    Zend_Controller
  * @subpackage Router
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 interface Zend_Controller_Router_Interface
@@ -54,9 +64,15 @@ interface Zend_Controller_Router_Interface
      * Encode tells to url encode resulting path parts.
      *
      * @param  array $userParams Options passed by a user used to override parameters
+<<<<<<< HEAD
      * @param  mixed $name       The name of a Route to use
      * @param  bool  $reset      Whether to reset to the route defaults ignoring URL params
      * @param  bool  $encode     Tells to encode URL parts on output
+=======
+     * @param  mixed $name The name of a Route to use
+     * @param  bool $reset Whether to reset to the route defaults ignoring URL params
+     * @param  bool $encode Tells to encode URL parts on output
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @throws Zend_Controller_Router_Exception
      * @return string Resulting URL path
      */
@@ -81,7 +97,11 @@ interface Zend_Controller_Router_Interface
      * Add or modify a parameter with which to instantiate any helper objects
      *
      * @param string $name
+<<<<<<< HEAD
      * @param mixed  $value
+=======
+     * @param mixed $param
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Controller_Router_Interface
      */
     public function setParam($name, $value);
@@ -120,4 +140,8 @@ interface Zend_Controller_Router_Interface
      * @return Zend_Controller_Router_Interface
      */
     public function clearParams($name = null);
+<<<<<<< HEAD
+=======
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 }

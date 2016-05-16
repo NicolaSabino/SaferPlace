@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -28,10 +29,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="bg">болгарияча</language>
 			<language type="bn">бангладешче</language>
 			<language type="bo">тибетче</language>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.45 $"/>
+		<generation date="$Date: 2009/05/05 23:06:38 $"/>
+		<language type="ky"/>
+	</identity>
+	<localeDisplayNames>
+		<languages>
+			<language type="af">африкаанча</language>
+			<language type="ar">арабча</language>
+			<language type="az">азербайжанча</language>
+			<language type="be">беларусча</language>
+			<language type="bg">болгарияча</language>
+			<language type="bh">бихариче</language>
+			<language type="bn">бангладешче</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="br">бретон</language>
 			<language type="bs">боснияча</language>
 			<language type="ca">каталанча</language>
 			<language type="cs">чех тили</language>
+<<<<<<< HEAD
 			<language type="cy">уелшче</language>
 			<language type="da">датча</language>
 			<language type="de">немисче</language>
@@ -76,11 +95,32 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="hy">армянча</language>
 			<language type="id">индонезияча</language>
 			<language type="ig">игбочо</language>
+=======
+			<language type="da">датча</language>
+			<language type="de">немисче</language>
+			<language type="el">грекче</language>
+			<language type="en">англисче</language>
+			<language type="es">испанча</language>
+			<language type="et">эстончо</language>
+			<language type="fa">фарзча</language>
+			<language type="fi">финче</language>
+			<language type="fil">тагалча</language>
+			<language type="fr">французча</language>
+			<language type="ga">ирландча</language>
+			<language type="gn">гуараш</language>
+			<language type="gu">гужаратча</language>
+			<language type="he">еврейче</language>
+			<language type="hi">индусча</language>
+			<language type="hr">хорватча</language>
+			<language type="hu">венгрияча</language>
+			<language type="id">индонезияча</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="is">исландча</language>
 			<language type="it">италиянча</language>
 			<language type="ja">япончо</language>
 			<language type="jv">жаванизче</language>
 			<language type="ka">грузинче</language>
+<<<<<<< HEAD
 			<language type="kk">казакча</language>
 			<language type="km">кмерче</language>
 			<language type="kn">каннадача</language>
@@ -95,16 +135,30 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="lv">латвияча</language>
 			<language type="mg">малагасча</language>
 			<language type="mi">маориче</language>
+=======
+			<language type="kn">каннадача</language>
+			<language type="ko">корейче</language>
+			<language type="ku">курт</language>
+			<language type="ky">Кыргыз</language>
+			<language type="la">латынча</language>
+			<language type="lt">литвача</language>
+			<language type="lv">латвияча</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="mk">македонияча</language>
 			<language type="ml">малайаламча</language>
 			<language type="mr">маратиче</language>
 			<language type="ms">малайча</language>
 			<language type="mt">малтизче</language>
+<<<<<<< HEAD
 			<language type="my">бурмача</language>
 			<language type="nb">норвежче букмалча</language>
 			<language type="ne">непалча</language>
 			<language type="nl">голландча</language>
 			<language type="nl_BE">фламандча</language>
+=======
+			<language type="ne">непалча</language>
+			<language type="nl">голландча</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="nn">норвегияча</language>
 			<language type="no">норвежче</language>
 			<language type="or">ория</language>
@@ -112,6 +166,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="pl">полякча</language>
 			<language type="ps">пашто</language>
 			<language type="pt">португалча</language>
+<<<<<<< HEAD
 			<language type="pt_BR">бразилиялык португалча</language>
 			<language type="pt_PT">европалык португалча</language>
 			<language type="qu">кечуача</language>
@@ -120,11 +175,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ru">орусча</language>
 			<language type="sa">санскритче</language>
 			<language type="sd">синдхиче</language>
+=======
+			<language type="ro">румынияча</language>
+			<language type="ru">орусча</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="sh">серб-хорват</language>
 			<language type="si">сингалача</language>
 			<language type="sk">словакча</language>
 			<language type="sl">словенче</language>
+<<<<<<< HEAD
 			<language type="so">сомаличе</language>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="sq">албанча</language>
 			<language type="sr">сербче</language>
 			<language type="st">сесото</language>
@@ -133,6 +195,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sw">суахиличе</language>
 			<language type="ta">тамилче</language>
 			<language type="te">телугуча</language>
+<<<<<<< HEAD
 			<language type="tg">тажикче</language>
 			<language type="th">тайча</language>
 			<language type="ti">тигриниача</language>
@@ -754,10 +817,35 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</intervalFormats>
 				</dateTimeFormats>
 			</calendar>
+=======
+			<language type="th">тайча</language>
+			<language type="tk">түркмөн</language>
+			<language type="tlh">клингончо</language>
+			<language type="tr">туркчо</language>
+			<language type="tw">тви</language>
+			<language type="uk">украинче</language>
+			<language type="ur">урдуча</language>
+			<language type="uz">озбекче</language>
+			<language type="vi">вьетнамча</language>
+			<language type="yi">еврей</language>
+			<language type="zh">кытайча</language>
+		</languages>
+		<territories>
+			<territory type="KG">Кыргызстан</territory>
+		</territories>
+	</localeDisplayNames>
+	<characters>
+		<exemplarCharacters>[а б г-е ё ж-н ӊ о ө п-у ү х ч ш ъ ы э-я]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[в ф ц щ ь]</exemplarCharacters>
+	</characters>
+	<dates>
+		<calendars>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
 						<monthWidth type="abbreviated">
+<<<<<<< HEAD
 							<month type="1">янв.</month>
 							<month type="2">фев.</month>
 							<month type="3">мар.</month>
@@ -842,12 +930,57 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="10">октябрь</month>
 							<month type="11">ноябрь</month>
 							<month type="12">декабрь</month>
+=======
+							<month type="1">1</month>
+							<month type="2">2</month>
+							<month type="3">3</month>
+							<month type="4">4</month>
+							<month type="5">5</month>
+							<month type="6">6</month>
+							<month type="7">7</month>
+							<month type="8">8</month>
+							<month type="9">9</month>
+							<month type="10">10</month>
+							<month type="11">11</month>
+							<month type="12">12</month>
+						</monthWidth>
+						<monthWidth type="wide">
+							<month type="1">1</month>
+							<month type="2">2</month>
+							<month type="3">3</month>
+							<month type="4">4</month>
+							<month type="5">5</month>
+							<month type="6">6</month>
+							<month type="7">7</month>
+							<month type="8">8</month>
+							<month type="9">9</month>
+							<month type="10">10</month>
+							<month type="11">11</month>
+							<month type="12">12</month>
+						</monthWidth>
+					</monthContext>
+					<monthContext type="stand-alone">
+						<monthWidth type="narrow">
+							<month type="1">1</month>
+							<month type="2">2</month>
+							<month type="3">3</month>
+							<month type="4">4</month>
+							<month type="5">5</month>
+							<month type="6">6</month>
+							<month type="7">7</month>
+							<month type="8">8</month>
+							<month type="9">9</month>
+							<month type="10">10</month>
+							<month type="11">11</month>
+							<month type="12">12</month>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</monthWidth>
 					</monthContext>
 				</months>
 				<days>
 					<dayContext type="format">
 						<dayWidth type="abbreviated">
+<<<<<<< HEAD
 							<day type="sun">Жк</day>
 							<day type="mon">Дш</day>
 							<day type="tue">Ше</day>
@@ -920,12 +1053,42 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="thu">Бейшемби</day>
 							<day type="fri">Жума</day>
 							<day type="sat">Ишемби</day>
+=======
+							<day type="sun">1</day>
+							<day type="mon">2</day>
+							<day type="tue">3</day>
+							<day type="wed">4</day>
+							<day type="thu">5</day>
+							<day type="fri">6</day>
+							<day type="sat">7</day>
+						</dayWidth>
+						<dayWidth type="wide">
+							<day type="sun">1</day>
+							<day type="mon">2</day>
+							<day type="tue">3</day>
+							<day type="wed">4</day>
+							<day type="thu">5</day>
+							<day type="fri">6</day>
+							<day type="sat">7</day>
+						</dayWidth>
+					</dayContext>
+					<dayContext type="stand-alone">
+						<dayWidth type="narrow">
+							<day type="sun">1</day>
+							<day type="mon">2</day>
+							<day type="tue">3</day>
+							<day type="wed">4</day>
+							<day type="thu">5</day>
+							<day type="fri">6</day>
+							<day type="sat">7</day>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dayWidth>
 					</dayContext>
 				</days>
 				<quarters>
 					<quarterContext type="format">
 						<quarterWidth type="abbreviated">
+<<<<<<< HEAD
 							<quarter type="1">1-чей.</quarter>
 							<quarter type="2">2-чей.</quarter>
 							<quarter type="3">3-чей.</quarter>
@@ -987,26 +1150,64 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<era type="0" draft="unconfirmed">б.з. ч.</era>
 						<era type="1" draft="unconfirmed">б.з.</era>
 					</eraNarrow>
+=======
+							<quarter type="1">Q1</quarter>
+							<quarter type="2">Q2</quarter>
+							<quarter type="3">Q3</quarter>
+							<quarter type="4">Q4</quarter>
+						</quarterWidth>
+						<quarterWidth type="wide">
+							<quarter type="1">Q1</quarter>
+							<quarter type="2">Q2</quarter>
+							<quarter type="3">Q3</quarter>
+							<quarter type="4">Q4</quarter>
+						</quarterWidth>
+					</quarterContext>
+				</quarters>
+				<am>AM</am>
+				<pm>PM</pm>
+				<eras>
+					<eraAbbr>
+						<era type="0">BCE</era>
+						<era type="1">CE</era>
+					</eraAbbr>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				</eras>
 				<dateFormats>
 					<dateFormatLength type="full">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>EEEE, d-MMMM, y-'ж'.</pattern>
+=======
+							<pattern>EEEE, y MMMM dd</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="long">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>d-MMMM, y-'ж'.</pattern>
+=======
+							<pattern>y MMMM d</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="medium">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>dd.MM.y</pattern>
+=======
+							<pattern>y MMM d</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>dd.MM.yy</pattern>
+=======
+							<pattern>yy/MM/dd</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
@@ -1033,6 +1234,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</timeFormatLength>
 				</timeFormats>
 				<dateTimeFormats>
+<<<<<<< HEAD
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
 							<pattern>{1} {0}</pattern>
@@ -4959,3 +5161,29 @@ For terms of use, see http://www.unicode.org/copyright.html
 	</posix>
 </ldml>
 
+=======
+					<availableFormats>
+						<dateFormatItem id="yyQ">Q yy</dateFormatItem>
+					</availableFormats>
+				</dateTimeFormats>
+			</calendar>
+		</calendars>
+		<timeZoneNames>
+			<hourFormat>+HH:mm;-HH:mm</hourFormat>
+			<gmtFormat>GMT{0}</gmtFormat>
+			<regionFormat>{0}</regionFormat>
+		</timeZoneNames>
+	</dates>
+	<numbers>
+		<symbols>
+			<decimal>,</decimal>
+			<group> </group>
+		</symbols>
+		<currencies>
+			<currency type="KGS">
+				<symbol>сом</symbol>
+			</currency>
+		</currencies>
+	</numbers>
+</ldml>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

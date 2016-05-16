@@ -15,9 +15,15 @@
  *
  * @category   Zend
  * @package    Zend_Console_Getopt
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Getopt.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -80,7 +86,11 @@
  *
  * @category   Zend
  * @package    Zend_Console_Getopt
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    Release: @package_version@
  * @since      Class available since Release 0.6.0
@@ -173,14 +183,22 @@ class Zend_Console_Getopt
     );
 
     /**
+<<<<<<< HEAD
      * Stores the command-line arguments for the calling application.
+=======
+     * Stores the command-line arguments for the calling applicaion.
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      *
      * @var array
      */
     protected $_argv = array();
 
     /**
+<<<<<<< HEAD
      * Stores the name of the calling application.
+=======
+     * Stores the name of the calling applicaion.
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      *
      * @var string
      */
@@ -550,7 +568,11 @@ class Zend_Console_Getopt
      * current application invocation.
      *
      * This function returns true, or the parameter value to the option, if any.
+<<<<<<< HEAD
      * If the option was not given, this function returns null.
+=======
+     * If the option was not given, this function returns false.
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      *
      * @param  string $flag
      * @return mixed
@@ -732,6 +754,7 @@ class Zend_Console_Getopt
     }
 
     /**
+<<<<<<< HEAD
      * @throws Zend_Console_Getopt_Exception
      */
     public function checkRequiredArguments()
@@ -754,6 +777,8 @@ class Zend_Console_Getopt
     }
 
     /**
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * Parse command-line arguments for a single long option.
      * A long option is preceded by a double '--' character.
      * Long options may not be clustered.
@@ -811,7 +836,11 @@ class Zend_Console_Getopt
         $realFlag = $this->_ruleMap[$flag];
         switch ($this->_rules[$realFlag]['param']) {
             case 'required':
+<<<<<<< HEAD
                 if (count($argv) > 0 && substr($argv[0], 0, 1) != '-') {
+=======
+                if (count($argv) > 0) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                     $param = array_shift($argv);
                     $this->_checkParameterType($realFlag, $param);
                 } else {

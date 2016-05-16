@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -8,10 +9,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 	<identity>
 		<version number="$Revision: 9862 $"/>
 		<generation date="$Date: 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014) $"/>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.41 $"/>
+		<generation date="$Date: 2009/06/15 04:15:33 $"/>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 		<language type="my"/>
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
+<<<<<<< HEAD
 			<localePattern>{0} ({1})</localePattern>
 			<localeSeparator>{0}၊{1}</localeSeparator>
 			<localeKeyTypePattern>{0} ၊ {1}</localeKeyTypePattern>
@@ -27,15 +35,36 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="az">အော်ဇောဘိုင်ဂျောနီ</language>
 			<language type="ban">ဘာလီ</language>
 			<language type="bas">ဘာဆာ</language>
+=======
+			<localeSeparator>၊</localeSeparator>
+		</localeDisplayPattern>
+		<languages>
+			<language type="ang">အင်္ဂလိပ်စာဟောင်း</language>
+			<language type="ar">အာရေဗီ</language>
+			<language type="art">အယောင်ဆောင် ဘာသာစကား</language>
+			<language type="ban">ဘာလီ</language>
+			<language type="bas">ဘာဆာ</language>
+			<language type="bat">ဘော်လတစ် ဘာသာစကား</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="be">ဘီလာရု</language>
 			<language type="bg">ဘူဂေးရီးယား</language>
 			<language type="bn">ဘင်္ဂါလီ</language>
 			<language type="bo">တိဘက်</language>
 			<language type="bs">ဘော့စ်နီးယား</language>
+<<<<<<< HEAD
 			<language type="ca">ကာတာလန်</language>
 			<language type="ce">ချေချင်း</language>
 			<language type="chr">ချာရိုကီ</language>
 			<language type="cr">ခရီး</language>
+=======
+			<language type="cai">အလယ်ပိုင်း အမေရိကန် အိန္ဒြိယ ဘာသာစကား</language>
+			<language type="cau">ကောက်ကေးရှပ် ဘာသာစကား</language>
+			<language type="ce">ချေချင်း</language>
+			<language type="chr">ချာရိုကီ</language>
+			<language type="cpp">ပေါ်တူဂီ အခြေခံ အနောက်အိန္ဒြိယ ကျွန်းစုသား သို့မဟုတ် ဗန်းစကား</language>
+			<language type="cr">ခရီး</language>
+			<language type="crp">အနောက်အိန္ဒြိယ ကျွန်းစုသား သို့မဟုတ် ဗန်းစကား</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="cs">ချက်</language>
 			<language type="cy">ဝေလ</language>
 			<language type="da">ဒိန်းမတ်</language>
@@ -52,6 +81,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="en_AU">ဩစတြေးလျှ အင်္ဂလိပ်</language>
 			<language type="en_CA">ကနေဒါ အင်္ဂလိပ်</language>
 			<language type="en_GB">ဗြိတိသျှ အင်္ဂလိပ်</language>
+<<<<<<< HEAD
 			<language type="en_GB" alt="short">အင်္ဂလိပ်(ယူကေ)</language>
 			<language type="en_US">အမေရိကန် အင်္ဂလိပ်</language>
 			<language type="en_US" alt="short">အင်္ဂလိပ်(ယူအက်စ်)</language>
@@ -62,11 +92,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="es_ES">စပိန်(ဥရောပ)</language>
 			<language type="et">အက်စ်တိုးနီးရန်း</language>
 			<language type="eu">ဘစ်က္ကီ</language>
+=======
+			<language type="en_US">အမေရိကန် အင်္ဂလိပ်</language>
+			<language type="enm">အလယ်ပိုင်း အင်္ဂလိပ်</language>
+			<language type="es">စပိန်</language>
+			<language type="es_419">လက်တင်အမေရိက စပိန်</language>
+			<language type="et">အက်စ်တိုးနီးရန်း</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="fa">ပါရှန်</language>
 			<language type="fi">ဖင်နစ်ရှ်</language>
 			<language type="fil">ဖိလစ်ပီနို</language>
 			<language type="fj">ဖီဂျီ</language>
+<<<<<<< HEAD
 			<language type="fo">ဖာရိုအိစ်</language>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="fr">ပြင်သစ်</language>
 			<language type="fr_CA">ကနေဒါ ပြင်သစ်</language>
 			<language type="fr_CH">ဆွစ် ပြင်သစ်</language>
@@ -76,6 +116,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="frs">အရှေ့ပိုင်း ဖရီစီရန်</language>
 			<language type="fy">အနောက်ပိုင်း ဖရီစီရန်</language>
 			<language type="ga">အိုင်းရစ်</language>
+<<<<<<< HEAD
 			<language type="gl">ဂါလာစီယံ</language>
 			<language type="gmh">အလယ်ပိုင်းအမြင့်ဂျာမန်</language>
 			<language type="gn">ဂူအာရာနီ</language>
@@ -83,10 +124,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="gsw">ဆွစ် ဂျာမန်</language>
 			<language type="gu">ဂူဂျာရသီ</language>
 			<language type="ha">ဟာဥစာ</language>
+=======
+			<language type="gem">ဂျာမန် အခြေခံဘာသာစကား</language>
+			<language type="gmh">အလယ်ပိုင်းအမြင့်ဂျာမန်</language>
+			<language type="grc">ရှေးဟောင်း ဂရိ</language>
+			<language type="gsw">ဆွစ် ဂျာမန်</language>
+			<language type="gu">ဂူဂျာရသီ</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="haw">ဟာဝေယံ</language>
 			<language type="he">ဟီးဘရူး</language>
 			<language type="hi">ဟိန္ဒီ</language>
 			<language type="hr">ခရိုအေရှန်</language>
+<<<<<<< HEAD
 			<language type="ht">ဟာအီတီအန်</language>
 			<language type="hu">ဟန်ဂေရီ</language>
 			<language type="hy">အာမေနီအန်</language>
@@ -94,6 +143,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="ig">အစ္ဂဘို</language>
 			<language type="ii">စီချွမ် ရီ</language>
 			<language type="is">အိုင်စ်လန္ဒီ</language>
+=======
+			<language type="hu">ဟန်ဂေရီ</language>
+			<language type="id">အင်ဒိုနီးရှား</language>
+			<language type="ii">စီချွမ် ရီ</language>
+			<language type="ine">အင်ဒို ဥရောပ ဘာသာစကား</language>
+			<language type="ira">အီရန် အခြေခံ ဘာသာစကား</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="it">အီတလီ</language>
 			<language type="ja">ဂျပန်</language>
 			<language type="jpr">ဂျူဒီယို-ပါရှန်</language>
@@ -101,6 +157,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="jv">ဂျာဗားနီးစ်</language>
 			<language type="ka">ဂျော်ဂျီယန်</language>
 			<language type="kac">ကချင်</language>
+<<<<<<< HEAD
 			<language type="kg">ကွန်ဂို</language>
 			<language type="kha">ခါစီ</language>
 			<language type="kk">ခါဇါခ်</language>
@@ -145,10 +202,46 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="pt_BR">ဘရာဇီး ပေါ်တူဂီ</language>
 			<language type="qu">ခက်ချ်ဝါ</language>
 			<language type="rm">ရောမ</language>
+=======
+			<language type="kar">ကရင်</language>
+			<language type="kg">ကွန်ဂို</language>
+			<language type="kha">ခါစီ</language>
+			<language type="km">ခမာ</language>
+			<language type="kn">ကန်နာဒါ</language>
+			<language type="ko">ကိုးရီးယား</language>
+			<language type="ku">ကဒ်</language>
+			<language type="la">လက်တင်</language>
+			<language type="lo">လာအို</language>
+			<language type="mga">အလယ်ပိုင်း အိုင်းရစ်</language>
+			<language type="mis">အမျိုးမျိုးသော ဘာသာစကား</language>
+			<language type="mkh">မွန်-ခမာ ဘာသာစကား</language>
+			<language type="ml">မလေးရာလမ်</language>
+			<language type="mn">မွန်ဂိုလီးယန်း</language>
+			<language type="mnc">မန်ချူး</language>
+			<language type="mni">မနိပူရီ</language>
+			<language type="mno">မနိုဘို ဘာသာစကား</language>
+			<language type="mr">မာရသီ</language>
+			<language type="ms">မလေး</language>
+			<language type="mul">အကြိမ်များစွာ ဘာသာစကားများ</language>
+			<language type="my">ဗမာ</language>
+			<language type="nds">အနိမ့် ဂျာမန်</language>
+			<language type="ne">နီပေါလ်</language>
+			<language type="nl">ဒတ်ချ်</language>
+			<language type="no">နော်ဝေး</language>
+			<language type="pa">ပန်ဂျာပီ</language>
+			<language type="paa">ပါပူရန် ဘာသာစကား</language>
+			<language type="peo">ပါရှန် အဟောင်း</language>
+			<language type="phi">ဖိလစ်ပိုင် ဘာသာစကား</language>
+			<language type="pi">ပါဠိ</language>
+			<language type="pl">ပိုလန်</language>
+			<language type="pt">ပေါ်တူဂီ</language>
+			<language type="pt_BR">ဘရာဇီး ပေါ်တူဂီ</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="ro">ရိုမေနီယား</language>
 			<language type="root">မူလရင်းမြစ်</language>
 			<language type="ru">ရုရှ</language>
 			<language type="sa">သင်္သကရိုက်</language>
+<<<<<<< HEAD
 			<language type="sco">စကော့</language>
 			<language type="sd">စင်ဒီ</language>
 			<language type="sga">အိုင်းရစ် ဟောင်း</language>
@@ -157,11 +250,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sk">စလိုဗက်</language>
 			<language type="sl">စလိုဗေးနီးယမ်း</language>
 			<language type="sma">တောင်ပိုင်း ဆာမိ</language>
+=======
+			<language type="sai">တောင် အမေရိကန် အိန္ဒြိယ ဘာသာစကား</language>
+			<language type="sco">စကော့</language>
+			<language type="sd">စင်ဒီ</language>
+			<language type="sga">အိုင်းရစ် ဟောင်း</language>
+			<language type="sgn">အချက်ပြ ဘာသာစကား</language>
+			<language type="shn">ရှမ်း</language>
+			<language type="si">ဆင်ဟာလ</language>
+			<language type="sit">တရုတ်-တိဘက် ဘာသာစကား</language>
+			<language type="sk">စလိုဗက်</language>
+			<language type="sl">စလိုဗေးနီးယမ်း</language>
+			<language type="sla">စလိုဗစ် ဘာသာစကား</language>
+			<language type="sma">တောင်ပိုင်း ဆာမိ</language>
+			<language type="smi">ဆာမိ ဘာသာစကား</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="so">ဆိုမာလီ</language>
 			<language type="sq">အယ်လ်ဘေးနီးယန်း</language>
 			<language type="sr">ဆားဗီးယန်း</language>
 			<language type="su">ဆူဒန်</language>
 			<language type="sv">ဆွီဒင်</language>
+<<<<<<< HEAD
 			<language type="sw">ဆြာဟီလီ</language>
 			<language type="ta">တမီးလ်</language>
 			<language type="te">တီလီဂု</language>
@@ -182,6 +291,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="xh">ဇိုစာ</language>
 			<language type="yo">ရိုရုဘာ</language>
 			<language type="zgh">မိုရိုကန် တွမ်မဇိုတ် စံ</language>
+=======
+			<language type="ta">တမီးလ်</language>
+			<language type="tai">တိုင် ဘာသာစကား</language>
+			<language type="th">ထိုင်း</language>
+			<language type="tup">တူပီ ဘာသာစကား</language>
+			<language type="uk">ယူကရိန်း</language>
+			<language type="und">မသိ သို့မဟုတ် မရှိ သော ဘာသာစကား</language>
+			<language type="vi">ဗီယက်နမ်</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="zh">တရုတ်</language>
 			<language type="zh_Hans">ရိုးရှင်းသော တရုတ်</language>
 			<language type="zh_Hant">ရှေးရိုးစဉ်လာ တရုတ်</language>
@@ -192,15 +310,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Arab">အာရေဗျ</script>
 			<script type="Armn">အာမေးနီးယား</script>
 			<script type="Beng">ဘင်္ဂါလီ</script>
+<<<<<<< HEAD
 			<script type="Bopo">ဘိုပို</script>
 			<script type="Brah">ဗြဟ္မမီ</script>
 			<script type="Brai">ဘရေ</script>
+=======
+			<script type="Brah">ဗြဟ္မမီ</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Cyrl">စစ်ရိလစ်</script>
 			<script type="Deva">ဒီဗနာဂရီ</script>
 			<script type="Ethi">အီသီယိုးပီးယား</script>
 			<script type="Geor">ဂျော်ဂျီယန်</script>
 			<script type="Grek">ဂရိ</script>
 			<script type="Gujr">ဂုဂျာရသီ</script>
+<<<<<<< HEAD
 			<script type="Guru">ဂူရူ</script>
 			<script type="Hang">ဟန်ဂူးလ်</script>
 			<script type="Hani">ဟန်</script>
@@ -208,6 +331,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Hans" alt="stand-alone">ရိုးရှင်းသော ဟန်</script>
 			<script type="Hant">ရှေးရိုးစဉ်လာ တရုတ်</script>
 			<script type="Hant" alt="stand-alone">ရှေးရိုးစဉ်လာဟန်</script>
+=======
+			<script type="Hang">ဟန်ဂူးလ်</script>
+			<script type="Hani">ဟန်</script>
+			<script type="Hans">ရိုးရှင်းသော တရုတ်</script>
+			<script type="Hant">ရှေးရိုးစဉ်လာ တရုတ်</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Hebr">ဟီဗရူး</script>
 			<script type="Hira">ဟိရဂဏ</script>
 			<script type="Hrkt">ခတခဏ သို့မဟုတ် ဟိရဂဏ</script>
@@ -216,6 +345,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Kali">ကယားလီ</script>
 			<script type="Kana">ခတခဏ</script>
 			<script type="Khmr">ခမာ</script>
+<<<<<<< HEAD
 			<script type="Knda">ခန္နာဒါ</script>
 			<script type="Kore">ကိုးရီးယား</script>
 			<script type="Laoo">လာအို</script>
@@ -224,21 +354,36 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Mong">မွန်ဂိုလီးယား</script>
 			<script type="Mymr">မြန်မာ</script>
 			<script type="Orya">အိုရာ</script>
+=======
+			<script type="Kore">ကိုးရီးယား</script>
+			<script type="Laoo">လာအို</script>
+			<script type="Latn">လက်တင်</script>
+			<script type="Mong">မွန်ဂိုလီးယား</script>
+			<script type="Mymr">မြန်မာ</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Sinh">ဆင်ဟာလ</script>
 			<script type="Sund">ဆူဒန်</script>
 			<script type="Tale">တိုင်လီ</script>
 			<script type="Taml">တမီးလ်</script>
+<<<<<<< HEAD
 			<script type="Telu">တီလု</script>
 			<script type="Tglg">တဂလော့ဂ်</script>
 			<script type="Thaa">သာအ်</script>
+=======
+			<script type="Tglg">တဂလော့ဂ်</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Thai">ထိုင်း</script>
 			<script type="Tibt">တိဘက်</script>
 			<script type="Visp">မြင်နိုင်သော စကား</script>
 			<script type="Xpeo">ပါရှန် အဟောင်း</script>
 			<script type="Yiii">ရီ</script>
+<<<<<<< HEAD
 			<script type="Zsym">သင်္ကေတ</script>
 			<script type="Zxxx">မရေးထားသော</script>
 			<script type="Zyyy">အများနှင့်သက်ဆိုင်သော</script>
+=======
+			<script type="Zxxx">မရေးထားသော</script>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<script type="Zzzz">မသိ သို့မဟုတ် မရှိသော စကားလုံး</script>
 		</scripts>
 		<territories>
@@ -258,12 +403,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="029">ကာရီဘီယံ</territory>
 			<territory type="030">အရှေ့ပိုင်း အာရှ</territory>
 			<territory type="034">တောင်ပိုင်း အာရှ</territory>
+<<<<<<< HEAD
 			<territory type="035">အရှေ့တောင်ပိုင်းအာရှ</territory>
 			<territory type="039">တောင်ပိုင်း ဥရောပ</territory>
 			<territory type="053">ဩစတြေးလျနှင့် နယူးဇီလန်</territory>
 			<territory type="054">မီလာနီးရှား</territory>
 			<territory type="057">မိုင်ခရိုနီရှားနယ်</territory>
 			<territory type="061">ပိုလီနီရှား</territory>
+=======
+			<territory type="035">အ‌ရှေ့တောင်ပိုင်း အာရှ</territory>
+			<territory type="039">တောင်ပိုင်း ဥရောပ</territory>
+			<territory type="053">ဩစတြေးလျှ နှင့် နယူးဇီလန်</territory>
+			<territory type="062">တောင်-အလယ် အာရှ</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="142">အာရှ</territory>
 			<territory type="143">အလယ် အာရှ</territory>
 			<territory type="145">အနောက် အာရှ</territory>
@@ -271,6 +423,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="151">အရှေ့ပိုင်း ဥရောပ</territory>
 			<territory type="154">မြောက်ပိုင်း ဥရောပ</territory>
 			<territory type="155">အနောက်ပိုင်း ဥရောပ</territory>
+<<<<<<< HEAD
 			<territory type="419">လက်တင်အမေရိက</territory>
 			<territory type="AC">အက်စ်စင်ရှီအွန်ကျွန်း</territory>
 			<territory type="AD">အန်ဒိုရာ</territory>
@@ -279,12 +432,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AG">အန်တီဂုအာနှင့်ဘာဘုဒါ</territory>
 			<territory type="AI">အန်ဂွီလာ</territory>
 			<territory type="AL">အဲလ်ဘာနီအာ</territory>
+=======
+			<territory type="172">လွတ်လပ်သော ပြည်ထောင်စုများ၏ ဓနသဟာယအဖွဲ့</territory>
+			<territory type="419">လက်တင် အမေရိက နှင့် ကာရီဘီယန်</territory>
+			<territory type="AE">ယူအေအီး</territory>
+			<territory type="AF">အာဖဂန်နစ္စတန်</territory>
+			<territory type="AI">အန်ကွီလာ</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="AM">အာမေနီးယား</territory>
 			<territory type="AO">အင်ဂိုလာ</territory>
 			<territory type="AQ">အန္တာတိက</territory>
 			<territory type="AR">အာဂျင်တီးနား</territory>
 			<territory type="AS">အမေရိကန် စမိုအ</territory>
 			<territory type="AT">ဩစတြီးယား</territory>
+<<<<<<< HEAD
 			<territory type="AU">ဩစတြေးလျ</territory>
 			<territory type="AW">အာရုဘာ</territory>
 			<territory type="AX">အာလန်ကျွန်း</territory>
@@ -307,16 +468,35 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="BS">ဘဟားမား</territory>
 			<territory type="BT">ဘူတန်</territory>
 			<territory type="BV">ဘူဗက်ကျွန်း</territory>
+=======
+			<territory type="AU">ဩစတြေးလျှား</territory>
+			<territory type="AZ">အဇာဘိုင်ဂျန်</territory>
+			<territory type="BA">ဘော့စနီးယား နှင့် ဟာဇီဂိုဘီးနား</territory>
+			<territory type="BD">ဘင်္ဂလားဒေ့ရှ်</territory>
+			<territory type="BE">ဘယ်လ်ဂျီယမ်</territory>
+			<territory type="BG">ဘူဂေးရီးယား</territory>
+			<territory type="BH">ဘာရိန်း</territory>
+			<territory type="BM">ဘာမူဒါ</territory>
+			<territory type="BN">ဘရူနိုင်း</territory>
+			<territory type="BO">ဘိုလီးဘီးယား</territory>
+			<territory type="BR">ဘရာဇီး</territory>
+			<territory type="BS">ဘဟားမား</territory>
+			<territory type="BT">ဘူတန်</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="BW">ဘော့စ်ဝါနာ</territory>
 			<territory type="BY">ဘီလာရုစ်</territory>
 			<territory type="BZ">ဘေလီဇ်</territory>
 			<territory type="CA">ကနေဒါ</territory>
 			<territory type="CC">ကိုကိုး ကျွန်းစု</territory>
+<<<<<<< HEAD
 			<territory type="CD">ကွန်ဂို-ကင်ရှာစ</territory>
 			<territory type="CD" alt="variant">ကွန်ဂို (DRC)</territory>
 			<territory type="CF">အလယ်ပိုင်း အာဖရိက ပြည်ထောင်စု</territory>
 			<territory type="CG">ကွန်ဂို-ဘရာဇာဗီလ်</territory>
 			<territory type="CG" alt="variant">ကွန်ဂို (Republic)</territory>
+=======
+			<territory type="CF">အလယ်ပိုင်း အာဖရိက ပြည်ထောင်စု</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="CH">ဆွစ်ဇလန်</territory>
 			<territory type="CI">အိုင်ဗရီကိုစ့်</territory>
 			<territory type="CK">ကွတ် ကျွန်းစု</territory>
@@ -324,26 +504,38 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CM">ကင်မရွန်း</territory>
 			<territory type="CN">တရုတ်</territory>
 			<territory type="CO">ကိုလံဘီယာ</territory>
+<<<<<<< HEAD
 			<territory type="CP">ကလစ်ပါတန်ကျွန်း</territory>
 			<territory type="CR">ကော့စ်တာရီကာ</territory>
 			<territory type="CU">ကျူးဘား</territory>
 			<territory type="CV">ခေ့ပ်ဗာဒူ</territory>
 			<territory type="CW">ခူရာကာအို</territory>
+=======
+			<territory type="CR">ကော့စ်တာရီကာ</territory>
+			<territory type="CU">ကျူးဘား</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="CX">ခရစ်စမတ် ကျွန်း</territory>
 			<territory type="CY">ဆိုက်ပရက်စ်</territory>
 			<territory type="CZ">ချက် ပြည်ထောင်စု</territory>
 			<territory type="DE">ဂျာမဏီ</territory>
+<<<<<<< HEAD
 			<territory type="DG">ဒီအေဂိုဂရာစီအာ</territory>
 			<territory type="DJ">ဂျီဘူတီ</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="DK">ဒိန်းမတ်</territory>
 			<territory type="DM">ဒိုမီနီကာ</territory>
 			<territory type="DO">ဒိုမီနီကန်</territory>
 			<territory type="DZ">အယ်လ်ဂျီးရီးယား</territory>
+<<<<<<< HEAD
 			<territory type="EA">ဆယ်ဥတာနှင့်မယ်လီလ်လာ</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="EC">အီကွေဒေါ</territory>
 			<territory type="EE">အက်စတိုးနီးယား</territory>
 			<territory type="EG">အီဂျစ်</territory>
 			<territory type="EH">အနောက်ပိုင်း ဆာဟာရ</territory>
+<<<<<<< HEAD
 			<territory type="ER">အီရီတရီအာ</territory>
 			<territory type="ES">စပိန်</territory>
 			<territory type="ET">အီသီယိုးပီးယား</territory>
@@ -362,31 +554,57 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GE">ဂျော်ဂျီယာ</territory>
 			<territory type="GF">ပြင်သစ် ဂီယာနာ</territory>
 			<territory type="GG">ဂွန်းဇီ</territory>
+=======
+			<territory type="ES">စပိန်</territory>
+			<territory type="ET">အီသီယိုးပီးယား</territory>
+			<territory type="FI">ဖင်လန်</territory>
+			<territory type="FJ">ဖီဂျီ</territory>
+			<territory type="FK">ဖောက်ကလန် ကျွန်းစု</territory>
+			<territory type="FO">ဖာရိုး ကျွန်းစုများ</territory>
+			<territory type="FR">ပြင်သစ်</territory>
+			<territory type="GB">ယူနိုက်တက်ကင်းဒမ်း</territory>
+			<territory type="GE">ဂျော်ဂျီယာ</territory>
+			<territory type="GF">ပြင်သစ် ဂီယာနာ</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="GH">ဂါနာ</territory>
 			<territory type="GI">ဂျီဘရော်လ်တာ</territory>
 			<territory type="GL">ဂရင်းလန်း</territory>
 			<territory type="GM">ဂန်ဘီရာ</territory>
+<<<<<<< HEAD
 			<territory type="GN">ဂီးနီ</territory>
 			<territory type="GP">ဂူအာဒီလုပ်</territory>
+=======
+			<territory type="GN">ဂီရာနာ</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="GQ">အီကွေတာ ဂီရာနာ</territory>
 			<territory type="GR">ဂရိ</territory>
 			<territory type="GS">တောင် ဂျော်ဂျီယာ နှင့် တောင် ဆင်းဒဝစ်ဂျ် ကျွန်းစုများ</territory>
 			<territory type="GT">ဂွာတီမာလာ</territory>
 			<territory type="GU">ဂူအမ်</territory>
+<<<<<<< HEAD
 			<territory type="GW">ဂီရာနာ-ဘီစ်စာဥ</territory>
 			<territory type="GY">ဂူရာနာ</territory>
 			<territory type="HK">တရုတ်၏ အထူးအုပ်ချုပ်ခွင့်ရ ဟောင်ကောင်</territory>
 			<territory type="HK" alt="short">ဟောင်ကောင်</territory>
 			<territory type="HM">ဟတ်ကျွန်းနှင့်မက်ဒေါနယ်ကျွန်းစု</territory>
+=======
+			<territory type="HK">တရုတ်၏ အထူးအုပ်ချုပ်ခွင့်ရ ဟောင်ကောင်</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="HN">ဟွန်ဒူးရပ်စ်</territory>
 			<territory type="HR">ခရိုအေးရှား</territory>
 			<territory type="HT">ဟေတီ</territory>
 			<territory type="HU">ဟန်ဂေရီ</territory>
+<<<<<<< HEAD
 			<territory type="IC">ကာနာရီကျွန်းစု</territory>
 			<territory type="ID">အင်ဒိုနီးရှား</territory>
 			<territory type="IE">အိုင်ယာလန်</territory>
 			<territory type="IL">အစ္စရေး</territory>
 			<territory type="IM">မန်ကျွန်း</territory>
+=======
+			<territory type="ID">အင်ဒိုနီးရှား</territory>
+			<territory type="IE">အိုင်ယာလန်</territory>
+			<territory type="IL">အစ္စရေး</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="IN">အိန္ဒိယ</territory>
 			<territory type="IO">ဗြိတိသျှ အိန္ဒြိယ သမုဒ္ဒရာ ပိုင်နက်</territory>
 			<territory type="IQ">အီရတ်</territory>
@@ -394,6 +612,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="IS">အိုက်စလန်</territory>
 			<territory type="IT">အီတလီ</territory>
 			<territory type="JE">ဂျာစီ</territory>
+<<<<<<< HEAD
 			<territory type="JM">ဂျမေကာ</territory>
 			<territory type="JO">ဂျော်ဒန်</territory>
 			<territory type="JP">ဂျပန်</territory>
@@ -403,6 +622,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="KI">ခီရီဘာတီ</territory>
 			<territory type="KM">ကိုမိုရိုစ်</territory>
 			<territory type="KN">စိန့်ကစ်နှင့်နီဗီစ်</territory>
+=======
+			<territory type="JM">ဂျမေနီကာ</territory>
+			<territory type="JO">ဂျော်ဒန်</territory>
+			<territory type="JP">ဂျပန်</territory>
+			<territory type="KE">ကင်ညာ</territory>
+			<territory type="KG">ခယ်ကစ်စတန်</territory>
+			<territory type="KH">ကမ္ဘောဒီးယား</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="KP">မြောက်ကိုရီးယား</territory>
 			<territory type="KR">တောင်ကိုရီးယား</territory>
 			<territory type="KW">ကူဝိတ်</territory>
@@ -410,6 +637,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="KZ">ကာဇက်စတန်</territory>
 			<territory type="LA">လာအို</territory>
 			<territory type="LB">လက်ဘနွန်</territory>
+<<<<<<< HEAD
 			<territory type="LC">စိန့်လူစီအာ</territory>
 			<territory type="LI">လစ်ခ်ထင်စတိုင်</territory>
 			<territory type="LK">သီရိလင်္ကာ</territory>
@@ -428,10 +656,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MH">မာရှယ် ကျွန်းစု</territory>
 			<territory type="MK">မာစီဒိုးနီးယား</territory>
 			<territory type="MK" alt="variant">မာစီဒိုနီအာ</territory>
+=======
+			<territory type="LK">သီရိလင်္ကာ</territory>
+			<territory type="LR">လိုင်ဘေးရီးယား</territory>
+			<territory type="LT">လစ်သူယေးနီးယား</territory>
+			<territory type="LU">လူဇင်ဘတ်</territory>
+			<territory type="LV">လတ်ဗီးယား</territory>
+			<territory type="MA">မော်ရိုကို</territory>
+			<territory type="MC">မိုနကို</territory>
+			<territory type="ME">မွန်တီနိဂရိုး</territory>
+			<territory type="MF">စိန့်မာတင်</territory>
+			<territory type="MG">မဒဂတ်စကာ</territory>
+			<territory type="MH">မာရှယ် ကျွန်းစု</territory>
+			<territory type="MK">မာစီဒိုးနီးယား</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="ML">မာလီ</territory>
 			<territory type="MM">မြန်မာ</territory>
 			<territory type="MN">မွန်ဂိုးလီးယား</territory>
 			<territory type="MO">တရုတ်၏ အထူးအုပ်ချုပ်ခွင့်ရ မကာအို</territory>
+<<<<<<< HEAD
 			<territory type="MO" alt="short">မကာအို</territory>
 			<territory type="MP">တောင်ပိုင်းမာရီအာနာကျွန်းစု</territory>
 			<territory type="MQ">မာတီနီကီ</territory>
@@ -440,6 +683,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MT">မောလ်တာ</territory>
 			<territory type="MU">မော်ရေရှားစ်</territory>
 			<territory type="MV">မော်လ်ဒိုက်</territory>
+=======
+			<territory type="MV">မော်လဒိုက်</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="MW">မာလာဝီ</territory>
 			<territory type="MX">မက္ကဆီကို</territory>
 			<territory type="MY">မလေးရှား</territory>
@@ -447,14 +693,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="NA">နမ်မီးဘီးယား</territory>
 			<territory type="NC">နယူး ကယ်လီဒိုနီးယား</territory>
 			<territory type="NE">နိုင်ဂျာ</territory>
+<<<<<<< HEAD
 			<territory type="NF">နောဖော့ခ်ကျွန်း</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="NG">နိုင်ဂျီးရီးယား</territory>
 			<territory type="NI">နီကာရာဂွာ</territory>
 			<territory type="NL">နယ်သာလန်</territory>
 			<territory type="NO">နော်ဝေ</territory>
 			<territory type="NP">နီပေါ</territory>
+<<<<<<< HEAD
 			<territory type="NR">နာဥူရူ</territory>
 			<territory type="NU">နီဥူအေ</territory>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="NZ">နယူးဇီလန်</territory>
 			<territory type="OM">အိုမန်</territory>
 			<territory type="PA">ပနားမား</territory>
@@ -464,6 +716,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="PH">ဖိလစ်ပိုင်</territory>
 			<territory type="PK">ပါကစ္စတန်</territory>
 			<territory type="PL">ပိုလန်</territory>
+<<<<<<< HEAD
 			<territory type="PM">စိန့်ပီအဲရီနှင့်မီကွီလွန်</territory>
 			<territory type="PN">ပစ်တ်ကိန်းကျွန်းစု</territory>
 			<territory type="PR">ပေါ်တူရီကို</territory>
@@ -475,12 +728,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="QA">ကာတာ</territory>
 			<territory type="QO">သမုဒ္ဒရာဒေသအပြင်ထွက်နေသောဒေသများ</territory>
 			<territory type="RE">ရဲအူနီရွန်</territory>
+=======
+			<territory type="PR">ပေါ်တူရီကို</territory>
+			<territory type="PS">ပါလက်စတိုင်း ပိုင်နက်</territory>
+			<territory type="PT">ပေါ်တူဂီ</territory>
+			<territory type="PY">ပါရာဂွေး</territory>
+			<territory type="QA">ကာတာ</territory>
+			<territory type="QU">ဥရောပသမဂ္ဂ</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="RO">ရိုမေးနီးယား</territory>
 			<territory type="RS">ဆားဘီးယား</territory>
 			<territory type="RU">ရုရှ</territory>
 			<territory type="RW">ရဝန်ဒါ</territory>
 			<territory type="SA">ဆော်ဒီအာရေးဗီးယား</territory>
 			<territory type="SB">ဆော်လမွန်ကျွန်းစု</territory>
+<<<<<<< HEAD
 			<territory type="SC">ဆေးရှလ်</territory>
 			<territory type="SD">ဆူဒန်</territory>
 			<territory type="SE">ဆွီဒင်</territory>
@@ -526,16 +788,48 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="UZ">ဥဘက်ကစ္စတန်</territory>
 			<territory type="VA">ဗာတီကန်စီတီး</territory>
 			<territory type="VC">စိန့်ဗင့်ဆင့်နှင့် သည်ဂရဲနာဒင်းစ်</territory>
+=======
+			<territory type="SD">ဆူဒန်</territory>
+			<territory type="SE">ဆွီဒင်</territory>
+			<territory type="SG">စင်္ကာပူ</territory>
+			<territory type="SI">စလိုဗေးနီးယား</territory>
+			<territory type="SK">စလိုဗေးကီးယား</territory>
+			<territory type="SN">ဆီနီဂေါ</territory>
+			<territory type="SO">ဆိုမာလီယာ</territory>
+			<territory type="SV">အယ်လ်ဆာဗေးဒိုး</territory>
+			<territory type="SY">ဆီးရီးယား</territory>
+			<territory type="TD">ချဒ်</territory>
+			<territory type="TF">ပြင်သစ် တောင်ပိုင်း ပိုင်နက်များ</territory>
+			<territory type="TH">ထိုင်း</territory>
+			<territory type="TJ">တာဂျီကစ္စတန်</territory>
+			<territory type="TL">အရှေ့တီမော</territory>
+			<territory type="TN">တူနီးရှား</territory>
+			<territory type="TO">တွန်ဂါ</territory>
+			<territory type="TR">တူရကီ</territory>
+			<territory type="TW">ထိုင်ဝမ်</territory>
+			<territory type="TZ">တန်ဇန်နီးယား</territory>
+			<territory type="UA">ယူကရိန်း</territory>
+			<territory type="UG">ယူဂန္ဒာ</territory>
+			<territory type="UM">ယူနိုက်တက်စတိတ် အပြင်ထွက် နေသည့် သေးငယ်သောကျွန်းများ</territory>
+			<territory type="US">ယူနိုက်တက်စတိတ်</territory>
+			<territory type="UY">ဥရုဂွေး</territory>
+			<territory type="UZ">ဥဘက်ကစ္စတန်</territory>
+			<territory type="VA">ဗာတီကန်</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="VE">ဗင်နီဇွဲလား</territory>
 			<territory type="VG">ဗြိတိသျှ ဗာဂျင်း ကျွန်းစု</territory>
 			<territory type="VI">ယူအက်စ် ဗာဂျင်း ကျွန်းစု</territory>
 			<territory type="VN">ဗီယက်နမ်</territory>
+<<<<<<< HEAD
 			<territory type="VU">ဗာနုအာတူ</territory>
 			<territory type="WF">ဝေါလစ်နှင့်ဖူထူးနား</territory>
 			<territory type="WS">ဆာမိုအာ</territory>
 			<territory type="XK">ကိုဆိုဗို</territory>
 			<territory type="YE">ယီမင်</territory>
 			<territory type="YT">မေအိုတီ</territory>
+=======
+			<territory type="YE">ယီမင်</territory>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<territory type="ZA">တောင်အာဖရိက</territory>
 			<territory type="ZM">ဇမ်ဘီယာ</territory>
 			<territory type="ZW">ဇင်ဘာဘွေ</territory>
@@ -558,6 +852,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<key type="calendar">ပြက္ခဒိန်</key>
 			<key type="collation">စနစ်တကျစီသော</key>
 			<key type="currency">ငွေကြေး</key>
+<<<<<<< HEAD
 			<key type="numbers">ဂဏန်းနံပါတ်</key>
 		</keys>
 		<types>
@@ -584,10 +879,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="hant" key="numbers">ရိုးရာတရုတ်ဂဏန်းခြေ</type>
 			<type type="hantfin" key="numbers">ရိုးရာတရုတ်ဘဏ္ဏာရေးသုံးဂဏန်းခြေ</type>
 			<type type="hebr" key="numbers">ဟေဗြဲဂဏန်းခြေ</type>
+=======
+		</keys>
+		<types>
+			<type type="buddhist" key="calendar">ဗုဒ္ဓ ပြက္ခဒိန်</type>
+			<type type="chinese" key="calendar">တရုတ် ပြက္ခဒိန်</type>
+			<type type="direct" key="collation">တိုက်ရိုက်အစဉ်</type>
+			<type type="gregorian" key="calendar">နိုင်ငံတကာသုံး ပြက္ခဒိန်</type>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<type type="hebrew" key="calendar">ဟီဗရူး ပြက္ခဒိန်</type>
 			<type type="indian" key="calendar">အိန္ဒြိယ အမျိုးသား ပြက္ခဒိန်</type>
 			<type type="islamic" key="calendar">အစ္စလာမ် ပြက္ခဒိန်</type>
 			<type type="japanese" key="calendar">ဂျပန် ပြက္ခဒိန်</type>
+<<<<<<< HEAD
 			<type type="jpan" key="numbers">ဂျပန်ဂဏန်းခြေ</type>
 			<type type="jpanfin" key="numbers">ဂျပန်ဘဏ္ဏာရေးသုံးဂဏန်းခြေ</type>
 			<type type="khmr" key="numbers">ခမာဂဏန်းခြေ</type>
@@ -612,6 +916,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<measurementSystemNames>
 			<measurementSystemName type="metric">မက်ထရစ်စနစ်</measurementSystemName>
 			<measurementSystemName type="UK">ဗြိတိန်စနစ်</measurementSystemName>
+=======
+			<type type="phonebook" key="collation">ဖုန်းစာအုပ် အစီအစဉ်</type>
+		</types>
+		<measurementSystemNames>
+			<measurementSystemName type="metric">မက်ထရစ်စနစ်</measurementSystemName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<measurementSystemName type="US">အမေရိကန်စနစ်</measurementSystemName>
 		</measurementSystemNames>
 		<codePatterns>
@@ -621,10 +931,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
+<<<<<<< HEAD
 		<exemplarCharacters>[\u1036 း \u1037 က ခ ဂ ဃ င စ ဆ ဇ ဈ ဉ ည ဋ ဌ ဍ ဎ ဏ တ ထ ဒ ဓ န ပ ဖ ဗ ဘ မ ယ ျ ရ ြ လ ဝ \u103D သ ဿ ဟ \u103E ဠ အ ဣ ဤ ဥ ဦ ဧ ဩ ဪ ာ ါ \u102D \u102E \u102F \u1030 ေ \u1032 \u1039 \u103A]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[ၐ ၑ ဢ ၒ ၓ ၔ ၕ ဨ ၖ ၗ \u1058 \u1059]</exemplarCharacters>
 		<exemplarCharacters type="index" draft="contributed">[က ခ ဂ ဃ င စ ဆ ဇ ဈ ဉ ည ဋ ဌ ဍ ဎ ဏ တ ထ ဒ ဓ န ပ ဖ ဗ ဘ မ ယ ရ လ ဝ သ ဟ ဠ အ]</exemplarCharacters>
 		<exemplarCharacters type="punctuation">[၊ ။ ‘ ’ “ ”]</exemplarCharacters>
+=======
+		<exemplarCharacters>[က-အ ဣ-ဧ ဩ ဪ]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[\u1036-း ျ-\u103E ာ ါ \u102D-\u1032 \u1039 \u103A]</exemplarCharacters>
+		<exemplarCharacters type="currencySymbol">[a-z]</exemplarCharacters>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	</characters>
 	<delimiters>
 		<quotationStart>“</quotationStart>
@@ -634,6 +950,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 	</delimiters>
 	<dates>
 		<calendars>
+<<<<<<< HEAD
 			<calendar type="generic">
 				<dateFormats>
 					<dateFormatLength type="full">
@@ -806,10 +1123,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</intervalFormats>
 				</dateTimeFormats>
 			</calendar>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
 						<monthWidth type="abbreviated">
+<<<<<<< HEAD
 							<month type="1">ဇန်နဝါရီ</month>
 							<month type="2">ဖေဖော်ဝါရီ</month>
 							<month type="3">မတ်</month>
@@ -822,6 +1142,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="10">အောက်တိုဘာ</month>
 							<month type="11">နိုဝင်ဘာ</month>
 							<month type="12">ဒီဇင်ဘာ</month>
+=======
+							<month type="1">ဇန်</month>
+							<month type="2">ဖေ</month>
+							<month type="3">မတ်</month>
+							<month type="4">ဧ</month>
+							<month type="5">မေ</month>
+							<month type="6">ဇွန်</month>
+							<month type="7">ဇူ</month>
+							<month type="8">ဩ</month>
+							<month type="9">စက်</month>
+							<month type="10">အောက်</month>
+							<month type="11">နို</month>
+							<month type="12">ဒီ</month>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</monthWidth>
 						<monthWidth type="wide">
 							<month type="1">ဇန်နဝါရီ</month>
@@ -839,6 +1173,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</monthWidth>
 					</monthContext>
 					<monthContext type="stand-alone">
+<<<<<<< HEAD
 						<monthWidth type="abbreviated">
 							<month type="1">ဇန်နဝါရီ</month>
 							<month type="2">ဖေဖော်ဝါရီ</month>
@@ -853,6 +1188,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">နိုဝင်ဘာ</month>
 							<month type="12">ဒီဇင်ဘာ</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<monthWidth type="narrow">
 							<month type="1">ဇ</month>
 							<month type="2">ဖ</month>
@@ -867,6 +1204,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">န</month>
 							<month type="12">ဒ</month>
 						</monthWidth>
+<<<<<<< HEAD
 						<monthWidth type="wide">
 							<month type="1">ဇန်နဝါရီ</month>
 							<month type="2">ဖေဖော်ဝါရီ</month>
@@ -881,11 +1219,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">နိုဝင်ဘာ</month>
 							<month type="12">ဒီဇင်ဘာ</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</monthContext>
 				</months>
 				<days>
 					<dayContext type="format">
 						<dayWidth type="abbreviated">
+<<<<<<< HEAD
 							<day type="sun">တနင်္ဂနွေ</day>
 							<day type="mon">တနင်္လာ</day>
 							<day type="tue">အင်္ဂါ</day>
@@ -902,6 +1243,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="thu">ကြာသပတေး</day>
 							<day type="fri">သောကြာ</day>
 							<day type="sat">စနေ</day>
+=======
+							<day type="sun">နွေ</day>
+							<day type="mon">လာ</day>
+							<day type="tue">ဂါ</day>
+							<day type="wed">ဟူး</day>
+							<day type="thu">တေး</day>
+							<day type="fri">ကြာ</day>
+							<day type="sat">နေ</day>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dayWidth>
 						<dayWidth type="wide">
 							<day type="sun">တနင်္ဂနွေ</day>
@@ -914,6 +1264,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</dayWidth>
 					</dayContext>
 					<dayContext type="stand-alone">
+<<<<<<< HEAD
 						<dayWidth type="abbreviated">
 							<day type="sun">တနင်္ဂနွေ</day>
 							<day type="mon">တနင်္လာ</day>
@@ -923,6 +1274,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">သောကြာ</day>
 							<day type="sat">စနေ</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<dayWidth type="narrow">
 							<day type="sun">တ</day>
 							<day type="mon">တ</day>
@@ -932,6 +1285,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">သ</day>
 							<day type="sat">စ</day>
 						</dayWidth>
+<<<<<<< HEAD
 						<dayWidth type="wide">
 							<day type="sun">တနင်္ဂနွေ</day>
 							<day type="mon">တနင်္လာ</day>
@@ -941,11 +1295,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="fri">သောကြာ</day>
 							<day type="sat">စနေ</day>
 						</dayWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</dayContext>
 				</days>
 				<quarters>
 					<quarterContext type="format">
 						<quarterWidth type="abbreviated">
+<<<<<<< HEAD
 							<quarter type="1">ပထမ သုံးလပတ်</quarter>
 							<quarter type="2">ဒုတိယ သုံးလပတ်</quarter>
 							<quarter type="3">တတိယ သုံးလပတ်</quarter>
@@ -956,6 +1313,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<quarter type="2">ဒု</quarter>
 							<quarter type="3">တ</quarter>
 							<quarter type="4">စ</quarter>
+=======
+							<quarter type="1">ပ-စိတ်</quarter>
+							<quarter type="2">ဒု-စိတ်</quarter>
+							<quarter type="3">တ-စိတ်</quarter>
+							<quarter type="4">စ-စိတ်</quarter>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</quarterWidth>
 						<quarterWidth type="wide">
 							<quarter type="1">ပထမ သုံးလပတ်</quarter>
@@ -966,10 +1329,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</quarterContext>
 					<quarterContext type="stand-alone">
 						<quarterWidth type="abbreviated">
+<<<<<<< HEAD
 							<quarter type="1">ပထမ သုံးလပတ်</quarter>
 							<quarter type="2">ဒုတိယ သုံးလပတ်</quarter>
 							<quarter type="3">တတိယ သုံးလပတ်</quarter>
 							<quarter type="4">စတုတ္ထ သုံးလပတ်</quarter>
+=======
+							<quarter type="1">ပ-စိတ်</quarter>
+							<quarter type="2">ဒု-စိတ်</quarter>
+							<quarter type="3">တ-စိတ်</quarter>
+							<quarter type="4">စ-စိတ်</quarter>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</quarterWidth>
 						<quarterWidth type="narrow">
 							<quarter type="1">ပ</quarter>
@@ -985,6 +1355,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</quarterWidth>
 					</quarterContext>
 				</quarters>
+<<<<<<< HEAD
 				<dayPeriods>
 					<dayPeriodContext type="format">
 						<dayPeriodWidth type="wide">
@@ -993,6 +1364,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</dayPeriodWidth>
 					</dayPeriodContext>
 				</dayPeriods>
+=======
+				<am>နံနက်</am>
+				<pm>ညနေ</pm>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				<eras>
 					<eraNames>
 						<era type="0">ခရစ်တော် မပေါ်မီကာလ</era>
@@ -1000,9 +1375,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</eraNames>
 					<eraAbbr>
 						<era type="0">ဘီစီ</era>
+<<<<<<< HEAD
 						<era type="0" alt="variant">ဘီစီအီး</era>
 						<era type="1">အေဒီ</era>
 						<era type="1" alt="variant">စီအီး</era>
+=======
+						<era type="1">အေဒီ</era>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</eraAbbr>
 				</eras>
 				<dateFormats>
@@ -1050,6 +1429,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</timeFormatLength>
 				</timeFormats>
 				<dateTimeFormats>
+<<<<<<< HEAD
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
 							<pattern>{1}မှာ {0}</pattern>
@@ -1110,12 +1490,37 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<appendItems>
 						<appendItem request="Timezone">{0} {1}</appendItem>
 					</appendItems>
+=======
+					<availableFormats>
+						<dateFormatItem id="d">d</dateFormatItem>
+						<dateFormatItem id="Hm">H:mm</dateFormatItem>
+						<dateFormatItem id="M">L</dateFormatItem>
+						<dateFormatItem id="Md">M-d</dateFormatItem>
+						<dateFormatItem id="MEd">E, M-d</dateFormatItem>
+						<dateFormatItem id="MMM">LLL</dateFormatItem>
+						<dateFormatItem id="MMMd">MMM d</dateFormatItem>
+						<dateFormatItem id="MMMEd">E MMM d</dateFormatItem>
+						<dateFormatItem id="MMMMd">MMMM d</dateFormatItem>
+						<dateFormatItem id="MMMMEd">E MMMM d</dateFormatItem>
+						<dateFormatItem id="ms">mm:ss</dateFormatItem>
+						<dateFormatItem id="y">y</dateFormatItem>
+						<dateFormatItem id="yM">yyyy-M</dateFormatItem>
+						<dateFormatItem id="yMEd">EEE, yyyy-M-d</dateFormatItem>
+						<dateFormatItem id="yMMM">y MMM</dateFormatItem>
+						<dateFormatItem id="yMMMEd">EEE, y MMM d</dateFormatItem>
+						<dateFormatItem id="yMMMM">y MMMM</dateFormatItem>
+						<dateFormatItem id="yQ">yyyy Q</dateFormatItem>
+						<dateFormatItem id="yQQQ">y QQQ</dateFormatItem>
+						<dateFormatItem id="yyQ">Q yy</dateFormatItem>
+					</availableFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					<intervalFormats>
 						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
 						<intervalFormatItem id="d">
 							<greatestDifference id="d">d-d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="h">
+<<<<<<< HEAD
 							<greatestDifference id="a">h a - h a</greatestDifference>
 							<greatestDifference id="h">h-h a</greatestDifference>
 						</intervalFormatItem>
@@ -1146,11 +1551,30 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="Hv">
 							<greatestDifference id="H">HH-HH v</greatestDifference>
+=======
+							<greatestDifference id="a">HH-HH</greatestDifference>
+							<greatestDifference id="h">HH-HH</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="a">HH:mm-HH:mm</greatestDifference>
+							<greatestDifference id="h">HH:mm-HH:mm</greatestDifference>
+							<greatestDifference id="m">HH:mm-HH:mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="a">HH:mm-HH:mm v</greatestDifference>
+							<greatestDifference id="h">HH:mm-HH:mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm-HH:mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="a">HH-HH v</greatestDifference>
+							<greatestDifference id="h">HH-HH v</greatestDifference>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</intervalFormatItem>
 						<intervalFormatItem id="M">
 							<greatestDifference id="M">M-M</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="Md">
+<<<<<<< HEAD
 							<greatestDifference id="d">M/d – M/d</greatestDifference>
 							<greatestDifference id="M">M/d – M/d</greatestDifference>
 						</intervalFormatItem>
@@ -1164,6 +1588,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="MMMd">
 							<greatestDifference id="d">MMM d – MMM d</greatestDifference>
 							<greatestDifference id="M">MMM d – MMM d</greatestDifference>
+=======
+							<greatestDifference id="d">d/M – d/M</greatestDifference>
+							<greatestDifference id="M">d/M – d/M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">EEEE၊ d/M – EEEE၊ d/M</greatestDifference>
+							<greatestDifference id="M">EEEE၊ d/M – EEEE၊ d/M</greatestDifference>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
 							<greatestDifference id="d">MMM d၊ EEEE – MMM d၊ EEEE</greatestDifference>
@@ -1172,6 +1604,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="y">
 							<greatestDifference id="y">y-y</greatestDifference>
 						</intervalFormatItem>
+<<<<<<< HEAD
 						<intervalFormatItem id="yM">
 							<greatestDifference id="M">y/M – y/M</greatestDifference>
 							<greatestDifference id="y">y/M – y/M</greatestDifference>
@@ -1192,6 +1625,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d">y MMM d–d</greatestDifference>
+=======
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">d/M/yy – d/M/yy</greatestDifference>
+							<greatestDifference id="M">d/M/yy – d/M/yy</greatestDifference>
+							<greatestDifference id="y">d/M/yy – d/M/yy</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">EEEE၊ d/M/yy – EEEE၊ d/M/yy</greatestDifference>
+							<greatestDifference id="M">EEEE၊ d/M/yy – EEEE၊ d/M/yy</greatestDifference>
+							<greatestDifference id="y">EEEE၊ d-M-yyyy – EEEE၊ d-M-yyyy</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 							<greatestDifference id="M">y၊ MMM d – MMM d</greatestDifference>
 							<greatestDifference id="y">y MMM d – y MMM d</greatestDifference>
 						</intervalFormatItem>
@@ -1200,6 +1646,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M">y၊ MMM d၊ EEEE – MMM d၊ EEEE</greatestDifference>
 							<greatestDifference id="y">y၊ MMM d၊ EEEE – y၊ MMM d၊ EEEE</greatestDifference>
 						</intervalFormatItem>
+<<<<<<< HEAD
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">y MMMM–MMMM</greatestDifference>
 							<greatestDifference id="y">y MMMM – y MMMM</greatestDifference>
@@ -1558,10 +2005,69 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Araguaina">
 				<exemplarCity>အာရာဂွာအီနာ</exemplarCity>
+=======
+					</intervalFormats>
+				</dateTimeFormats>
+				<fields>
+					<field type="era">
+						<displayName>ခေတ်</displayName>
+					</field>
+					<field type="year">
+						<displayName>နှစ်</displayName>
+					</field>
+					<field type="month">
+						<displayName>လ</displayName>
+					</field>
+					<field type="week">
+						<displayName>ပတ်</displayName>
+					</field>
+					<field type="day">
+						<displayName>ရက်</displayName>
+						<relative type="-2">တနေ့က</relative>
+						<relative type="-1">မနေ့က</relative>
+						<relative type="0">ယနေ့</relative>
+						<relative type="1">မနက်ဖြန်</relative>
+						<relative type="2">သဘက်ခါ</relative>
+					</field>
+					<field type="weekday">
+						<displayName>နေ့</displayName>
+					</field>
+					<field type="dayperiod">
+						<displayName>နံနက်/ညနေ</displayName>
+					</field>
+					<field type="hour">
+						<displayName>နာရီ</displayName>
+					</field>
+					<field type="minute">
+						<displayName>မိနစ်</displayName>
+					</field>
+					<field type="second">
+						<displayName>စက္ကန့်</displayName>
+					</field>
+					<field type="zone">
+						<displayName>ဇုန်</displayName>
+					</field>
+				</fields>
+			</calendar>
+		</calendars>
+		<timeZoneNames>
+			<hourFormat>+HH:mm;-HH:mm</hourFormat>
+			<gmtFormat>GMT{0}</gmtFormat>
+			<regionFormat>{0} အချိန်</regionFormat>
+			<zone type="Etc/Unknown">
+				<exemplarCity>မသိသော</exemplarCity>
+			</zone>
+			<zone type="America/Rio_Branco">
+				<exemplarCity>ရီယို ဗြန်ကို</exemplarCity>
+			</zone>
+			<zone type="America/Campo_Grande">
+				<exemplarCity>ကိမ်ပို ဂရန်ဒ</exemplarCity>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</zone>
 			<zone type="America/Sao_Paulo">
 				<exemplarCity>ဆာပိုလို</exemplarCity>
 			</zone>
+<<<<<<< HEAD
 			<zone type="America/Bahia">
 				<exemplarCity>ဘာဟီအာ</exemplarCity>
 			</zone>
@@ -3455,12 +3961,483 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<generic>ရယ်ခါးတီရင်ဘားခ်အချိန်</generic>
 					<standard>ရယ်ခါးတီရင်ဘားခ်စံတော်ချိန်</standard>
 					<daylight>ရယ်ခါးတီရင်ဘာခ်နွေရာသီအချိန်</daylight>
+=======
+			<zone type="Pacific/Honolulu">
+				<exemplarCity>ဟိုနိုလူလူ</exemplarCity>
+			</zone>
+			<zone type="America/Anchorage">
+				<exemplarCity>အန်ကာရေ့ဂျ်</exemplarCity>
+			</zone>
+			<zone type="America/Los_Angeles">
+				<exemplarCity>လော့စ်အိန်ဂျယ်လိစ်</exemplarCity>
+			</zone>
+			<zone type="America/Phoenix">
+				<exemplarCity>ဖီးနစ်</exemplarCity>
+			</zone>
+			<zone type="America/Denver">
+				<exemplarCity>ဒင်ဗာ</exemplarCity>
+			</zone>
+			<zone type="America/Chicago">
+				<exemplarCity>ချီကာကို</exemplarCity>
+			</zone>
+			<zone type="America/Indianapolis">
+				<exemplarCity>အင်ဒီယားနားပိုလစ်</exemplarCity>
+			</zone>
+			<zone type="America/New_York">
+				<exemplarCity>နယူးယောက်</exemplarCity>
+			</zone>
+			<metazone type="Afghanistan">
+				<long>
+					<standard>အာဖဂန်နစ္စတန် အချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Africa_Central">
+				<long>
+					<standard>အလယ်ပိုင်း အာဖရိက အချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Africa_Eastern">
+				<long>
+					<standard>အရှေ့ပိုင်း အာဖရိက အချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Africa_Southern">
+				<long>
+					<generic>တောင်အာဖရိက အချိန်</generic>
+					<standard>တောင်အာဖရိက စံတော်ချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Africa_Western">
+				<long>
+					<standard>အနောက်ပိုင်း အာဖရိက အချိန်</standard>
+					<daylight>အနောက်ပိုင်း အာဖရိက နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="America_Central">
+				<long>
+					<generic>အလယ်ပိုင်း အမေရိက အချိန်</generic>
+					<standard>အလယ်ပိုင်း အမေရိက စံတော်ချိန်</standard>
+					<daylight>အလယ်ပိုင်း အမေရိက နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="America_Eastern">
+				<long>
+					<generic>အရှေ့ပိုင်း အမေရိက အချိန်</generic>
+					<standard>အရှေ့ပိုင်း အမေရိက စံတော်ချိန်</standard>
+					<daylight>အရှေ့ပိုင်း အမေရိက အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="America_Mountain">
+				<long>
+					<generic>အမေရိက တောင် အချိန်</generic>
+					<standard>အမေရိက တောင် စံတော်ချိန်</standard>
+					<daylight>အမေရိက တောင် နေ့ပိုင်း အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="America_Pacific">
+				<long>
+					<generic>ပစိဖိတ် အချိန်</generic>
+					<standard>ပစိဖိတ် စံတော်ချိန်</standard>
+					<daylight>ပစိဖိတ် နေ့ပိုင်း အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Arabian">
+				<long>
+					<generic>အာရေဗျ အချိန်</generic>
+					<standard>အာရေဗျ စံတော်ချိန်</standard>
+					<daylight>အာရေဗျ နေ့ပိုင်း အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Argentina">
+				<long>
+					<standard>အာဂျင်တီးနား အချိန်</standard>
+					<daylight>အာဂျင်တီးနား နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Argentina_Western">
+				<long>
+					<standard>အနောက် အာဂျင်တီးနား အချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Armenia">
+				<long>
+					<standard>အာမေနီးယား အချိန်</standard>
+					<daylight>အာမေနီးယား နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Atlantic">
+				<long>
+					<generic>အတ္ထလန်တစ် အချိန်</generic>
+					<standard>အတ္ထလန်တစ် စံတော်ချိန်</standard>
+					<daylight>အတ္ထလန်တစ် နေ့ပိုင်း အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Australia_Central">
+				<long>
+					<generic>အလယ်ဩစတြေးလျှား အချိန်</generic>
+					<standard>အလယ်ပိုင်း ဩစတြေးလျှား စံတော်ချိန်</standard>
+					<daylight>အလယ်ပိုင်း ဩစတြေးလျှား နေ့ပိုင်း အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Australia_CentralWestern">
+				<long>
+					<generic>အလယ်အနောက်ပိုင်း ဩစတြေးလျှား အချိန်</generic>
+					<standard>အလယ်အနောက်ပိုင်း ဩစတြေးလျှား စံတော်ချိန်</standard>
+					<daylight>အလယ်အနောက်ပိုင်း ဩစတြေးလျှား နေ့ပိုင်း အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Australia_Eastern">
+				<long>
+					<generic>အရှေ့ဩစတြေးလျှား အချိန်</generic>
+					<standard>အရှေ့ပိုင်း ဩစတြေးလျှား စံတော်ချိန်</standard>
+					<daylight>အရှေ့ပိုင်း ဩစတြေးလျှား နေ့ပိုင်း အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Australia_Western">
+				<long>
+					<generic>အနောက် ဩစတြေးလျှား အချိန်</generic>
+					<standard>အနောက်ပိုင်း ဩစတြေးလျှား စံတော်ချိန်</standard>
+					<daylight>အနောက်ပိုင်း ဩစတြေးလျှား နေ့ပိုင်း အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Azerbaijan">
+				<long>
+					<standard>အဇာဘိုင်ဂျန် အချိန်</standard>
+					<daylight>အဇာဘိုင်ဂျန် နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Bangladesh">
+				<long>
+					<standard>ဘင်္ဂလားဒေ့ရှ် အချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Bhutan">
+				<long>
+					<standard>ဘူတန် အချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Bolivia">
+				<long>
+					<standard>ဘိုလီးဘီးယား အချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Brasilia">
+				<long>
+					<standard>ဘရာဇီး အချိန်</standard>
+					<daylight>ဘရာဇီး နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="British">
+				<long>
+					<generic>ဗြိတိသျှ အချိန်</generic>
+					<daylight>ဗြိတိသျှ နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Brunei">
+				<long>
+					<standard>ဘရူနိုင်း စံတော်ချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Chile">
+				<long>
+					<standard>ချီလီ အချိန်</standard>
+					<daylight>ချီလီ နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="China">
+				<long>
+					<generic>တရုတ် အချိန်</generic>
+					<standard>တရုတ် စံတော်ချိန်</standard>
+					<daylight>တရုတ် နေ့ပိုင်း အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Colombia">
+				<long>
+					<standard>ကိုလံဘီယာ အချိန်</standard>
+					<daylight>ကိုလံဘီယာ နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Cuba">
+				<long>
+					<generic>ကျူးဘား အချိန်</generic>
+					<standard>ကျူးဘား စံတော်ချိန်</standard>
+					<daylight>ကျူးဘား နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Dutch_Guiana">
+				<long>
+					<standard>ဒတ်ချ် ဂီယာနာ အချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="East_Timor">
+				<long>
+					<standard>အရှေ့တီမော အချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Ecuador">
+				<long>
+					<standard>အီကွေဒေါ အချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Europe_Central">
+				<long>
+					<generic>ပြင်သစ် အချိန်</generic>
+					<standard>ဥရောပ အလယ်ပိုင်း အချိန်</standard>
+					<daylight>ဥရောပ အလယ်ပိုင်း နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Europe_Eastern">
+				<long>
+					<generic>ရိုမေးနီးယား အချိန်</generic>
+					<standard>အရှေ့ဥရောပ အချိန်</standard>
+					<daylight>အရှေ့ဥရောပ နွေ±ရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Europe_Western">
+				<long>
+					<standard>အနောက်ပိုင်း ဥရောပ အချိန်</standard>
+					<daylight>အနောက်ပိုင်း ဥရောပ နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Falkland">
+				<long>
+					<standard>ဖောင်ကလန်ကျွန်းစု အချိန်</standard>
+					<daylight>ဖောင်ကလန်ကျွန်းစု နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="French_Guiana">
+				<long>
+					<standard>ပြင်သစ် ဂီယာနာ အချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Georgia">
+				<long>
+					<standard>ဂျော်ဂျီယာ အချိန်</standard>
+					<daylight>ဂျော်ဂျီယာ နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="GMT">
+				<long>
+					<standard>ဂရင်းနစ် စံတော်ချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Greenland_Central">
+				<long>
+					<standard>အလယ်ဂရင်းလန်း အချိန်</standard>
+					<daylight>အလယ်ဂရင်းလန်း နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Greenland_Eastern">
+				<long>
+					<standard>အရှေ့ဂရင်းလန်း အချိန်</standard>
+					<daylight>အရှေ့ဂရင်းလန်း နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Greenland_Western">
+				<long>
+					<standard>အနောက် ဂရင်းလန်း အချိန်</standard>
+					<daylight>အနောက် ဂရင်းလန်း နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Gulf">
+				<long>
+					<generic>ပင်လယ်ဂွေ့ အချိန်</generic>
+					<standard>ပင်လယ်ဂွေ့ စံတော်ချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Hong_Kong">
+				<long>
+					<standard>ဟောင်ကောင် အချိန်</standard>
+					<daylight>ဟောင်ကောင် နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="India">
+				<long>
+					<standard>အိန္ဒြိယ စံတော်ချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Indian_Ocean">
+				<long>
+					<standard>အိန္ဒြိယ သမုဒ္ဒရာ အချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Indochina">
+				<long>
+					<standard>အင်ဒိုချိုင်းနား အချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Indonesia_Central">
+				<long>
+					<standard>အလယ်ပိုင်း အင်ဒိုနီးရှား အချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Indonesia_Eastern">
+				<long>
+					<standard>အရှေ့ပိုင်း အင်ဒိုနီးရှား အချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Indonesia_Western">
+				<long>
+					<standard>အနောက်ပိုင်း အင်ဒိုနီးရှား အချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Iran">
+				<long>
+					<standard>အီရန် စံတော်ချိန်</standard>
+					<daylight>အီရန် နေ့ပိုင်း အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Irish">
+				<long>
+					<generic>အိုင်ယာလန် အချိန်</generic>
+				</long>
+			</metazone>
+			<metazone type="Israel">
+				<long>
+					<generic>အစ္စရေး အချိန်</generic>
+					<standard>အစ္စရေး စံတော်ချိန်</standard>
+					<daylight>အစ္စရေး နေ့ပိုင်း အချိန်</daylight>
+				</long>
+				<short>
+					<standard>IST (အစ္စရေး)</standard>
+				</short>
+			</metazone>
+			<metazone type="Japan">
+				<long>
+					<generic>ဂျပန် အချိန်</generic>
+					<standard>ဂျပန် စံတော်ချိန်</standard>
+					<daylight>ဂျပန် နေ့ပိုင်း အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Kazakhstan_Eastern">
+				<long>
+					<generic>အရှေ့ကာဇက်စတန် အချိန်</generic>
+					<standard>အရှေ့ကာဇက်စတန် စံတော်ချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Korea">
+				<long>
+					<generic>ကိုးရီးယား အချိန်</generic>
+					<standard>ကိုးရီးယား စံတော်ချိန်</standard>
+					<daylight>ကိုးရီးယား နေ့ပိုင်း အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Lanka">
+				<long>
+					<standard>သီရိလင်္ကာ အချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Macau">
+				<long>
+					<standard>မကာအို အချိန်</standard>
+					<daylight>မကာအို နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Malaysia">
+				<long>
+					<standard>မလေးရှား အချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Moscow">
+				<long>
+					<generic>မော်စကို အချိန်</generic>
+					<standard>မော်စကို စံတော်ချိန်</standard>
+					<daylight>မော်စကို နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Myanmar">
+				<long>
+					<standard>မြန်မာ အချိန်</standard>
+				</long>
+				<commonlyUsed>true</commonlyUsed>
+			</metazone>
+			<metazone type="Nepal">
+				<long>
+					<standard>နီပေါ အချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="New_Zealand">
+				<long>
+					<generic>နယူးဇီလန် အချိန်</generic>
+					<standard>နယူးဇီလန် စံတော်ချိန်</standard>
+					<daylight>နယူးဇီလန် နေ့ပိုင်း အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Newfoundland">
+				<long>
+					<generic>နယူးဖောင်လန် အချိန်</generic>
+					<standard>နယူးဖောင်လန် စံတော်ချိန်</standard>
+					<daylight>နယူးဖောင်လန် နေ့ပိုင်း အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Pakistan">
+				<long>
+					<standard>ပါကစ္စတန် အချိန်</standard>
+					<daylight>ပါကစ္စတန် နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Papua_New_Guinea">
+				<long>
+					<standard>ပါပူရာနယူးဂီနီ အချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Paraguay">
+				<long>
+					<standard>ပါရာဂွေး အချိန်</standard>
+					<daylight>ပါရာဂွေး နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Peru">
+				<long>
+					<standard>ပီရူး အချိန်</standard>
+					<daylight>ပီရူး နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Philippines">
+				<long>
+					<standard>ဖိလစ်ပိုင် အချိန်</standard>
+					<daylight>ဖိလစ်ပိုင် နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Singapore">
+				<long>
+					<standard>စင်္ကာပူ စံတော်ချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="South_Georgia">
+				<long>
+					<standard>တောင်ဂျော်ဂျီယာ အချိန်</standard>
+				</long>
+			</metazone>
+			<metazone type="Turkey">
+				<long>
+					<standard>တူရကီ စံတော်ချိန် အချိန်</standard>
+					<daylight>တူရကီ နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Uruguay">
+				<long>
+					<standard>ဥရုဂွေး အချိန်</standard>
+					<daylight>ဥရုဂွေး နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Uzbekistan">
+				<long>
+					<standard>ဥဘက်ကစ္စတန် အချိန်</standard>
+					<daylight>ဥဘက်ကစ္စတန် နွေရာသီ အချိန်</daylight>
+				</long>
+			</metazone>
+			<metazone type="Venezuela">
+				<long>
+					<standard>ဗင်နီဇွဲလား အချိန်</standard>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 				</long>
 			</metazone>
 		</timeZoneNames>
 	</dates>
 	<numbers>
 		<defaultNumberingSystem>mymr</defaultNumberingSystem>
+<<<<<<< HEAD
 		<otherNumberingSystems>
 			<native>mymr</native>
 		</otherNumberingSystems>
@@ -3481,11 +4458,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<list>၊</list>
 		</symbols>
 		<decimalFormats numberSystem="latn">
+=======
+		<symbols>
+			<decimal>.</decimal>
+			<group>,</group>
+			<list>;</list>
+			<nativeZeroDigit>0</nativeZeroDigit>
+		</symbols>
+		<decimalFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<decimalFormatLength>
 				<decimalFormat>
 					<pattern>#,##0.###</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
+<<<<<<< HEAD
 			<decimalFormatLength type="long">
 				<decimalFormat>
 					<pattern type="1000" count="other">0ထောင်</pattern>
@@ -3520,19 +4507,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</decimalFormatLength>
 		</decimalFormats>
 		<scientificFormats numberSystem="latn">
+=======
+		</decimalFormats>
+		<scientificFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<scientificFormatLength>
 				<scientificFormat>
 					<pattern>#E0</pattern>
 				</scientificFormat>
 			</scientificFormatLength>
 		</scientificFormats>
+<<<<<<< HEAD
 		<percentFormats numberSystem="latn">
+=======
+		<percentFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<percentFormatLength>
 				<percentFormat>
 					<pattern>#,##0%</pattern>
 				</percentFormat>
 			</percentFormatLength>
 		</percentFormats>
+<<<<<<< HEAD
 		<currencyFormats numberSystem="latn">
 			<currencyFormatLength>
 				<currencyFormat type="standard">
@@ -3580,10 +4576,32 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>ဩစတြေးလျ ဒေါ်လာ</displayName>
 				<displayName count="other">ဩစတြေးလျ ဒေါ်လာ</displayName>
 				<symbol>A$</symbol>
+=======
+		<currencyFormats>
+			<currencyFormatLength>
+				<currencyFormat>
+					<pattern>¤ #,##0.00</pattern>
+				</currencyFormat>
+			</currencyFormatLength>
+		</currencyFormats>
+		<currencies>
+			<currency type="ANG">
+				<displayName>နယ်သာလန် အန်တီလန် ဂင်းဒါး</displayName>
+			</currency>
+			<currency type="ARP">
+				<displayName>အာဂျင်တီးနား ပီဆို (၁၉၈၃-၁၉၈၅)</displayName>
+			</currency>
+			<currency type="ARS">
+				<displayName>အာဂျင်တီးနား ပီဆို</displayName>
+			</currency>
+			<currency type="AUD">
+				<displayName>ဩစတြေးလျှား ဒေါ်လာ</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="AWG">
 				<displayName>အရူဘန် ဂင်းဒါး</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="AZN">
 				<displayName>အဇာဘိုင်ဂျန်မာနတ်</displayName>
 				<displayName count="other">အဇာဘိုင်ဂျန်မာနတ်</displayName>
@@ -3599,10 +4617,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BDT">
 				<displayName>ဘင်္ဂလားဒေ့ရှ် တာကာ</displayName>
 				<displayName count="other">ဘင်္ဂလားဒေ့ရှ် တာကာ</displayName>
+=======
+			<currency type="BDT">
+				<displayName>ဘင်္ဂလားဒေ့ရှ် တာကာ</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BEF">
 				<displayName>ဘယ်လ်ဂျီယမ် ဖရန့်</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="BGN">
 				<displayName>ဘူဂေးရီးယားလက်ဖ်</displayName>
 				<displayName count="other">ဘူဂေးရီးယားလက်ဖ်</displayName>
@@ -3626,12 +4649,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BOB">
 				<displayName>ဘိုလီဘီယံ ဘိုလီဘီအားနို</displayName>
 				<displayName count="other">ဘိုလီဘီယံ ဘိုလီဘီအားနိုစ်</displayName>
+=======
+			<currency type="BIF">
+				<displayName>ဘူရွန်ဒီ ဖရန့်</displayName>
+			</currency>
+			<currency type="BMD">
+				<displayName>ဘာမူဒါ ဒေါ်လာ</displayName>
+			</currency>
+			<currency type="BND">
+				<displayName>ဘရူနိုင်း ဒေါ်လာ</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BOP">
 				<displayName>ဘိုလီးဘီးယား ပီဆို</displayName>
 			</currency>
 			<currency type="BRL">
 				<displayName>ဘရာဇီး ရီးယဲ</displayName>
+<<<<<<< HEAD
 				<displayName count="other">ဘရာဇီး ရီးယဲ</displayName>
 				<symbol>R$</symbol>
 			</currency>
@@ -3642,6 +4676,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BTN">
 				<displayName>ဘူတန်အံဂါလ်ထရန်</displayName>
 				<displayName count="other">ဘူတန်အံဂါလ်ထရန်</displayName>
+=======
+			</currency>
+			<currency type="BSD">
+				<displayName>ဘဟားမား ဒေါ်လာ</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="BUK">
 				<displayName>ဗမာ ကျပ်</displayName>
@@ -3650,6 +4689,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>ဘော့စ်ဝါနာ ပုလ</displayName>
 			</currency>
 			<currency type="BYB">
+<<<<<<< HEAD
 				<displayName>ဘီလာရုစ် ရူဘယ်အသစ် (၁၉၉၄–၁၉၉၉)</displayName>
 			</currency>
 			<currency type="BYR">
@@ -3693,10 +4733,35 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="CUC">
 				<displayName draft="contributed">နိုင်ငျံခားငွေလဲလှယ်နိုင်သော ကျူးဘားပီဆို ငွေ။</displayName>
 				<displayName count="other" draft="contributed">နိုင်ငျံခားငွေလဲလှယ်နိုင်သော ကျူးဘားပီဆို ငွေ။</displayName>
+=======
+				<displayName>ဘီလာရုစ် ရူဘယ်အသစ် (၁၉၉၄-၁၉၉၉)</displayName>
+			</currency>
+			<currency type="BYR">
+				<displayName>ဘီလာရုစ် ရူဘယ်</displayName>
+			</currency>
+			<currency type="BZD">
+				<displayName>ဘေလီဇ် ဒေါ်လာ</displayName>
+			</currency>
+			<currency type="CAD">
+				<displayName>ကနေဒါ ဒေါ်လာ</displayName>
+			</currency>
+			<currency type="CHF">
+				<displayName>ဆွစ် ဖရန့်</displayName>
+			</currency>
+			<currency type="CLP">
+				<displayName>ချီလီ ပီဆို</displayName>
+			</currency>
+			<currency type="CNY">
+				<displayName>တရုတ် ယွမ်</displayName>
+			</currency>
+			<currency type="COP">
+				<displayName>ကိုလံဘီယာ ပီဆို</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="CUP">
 				<displayName>ကျူးဘား ပီဆို</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="CVE">
 				<displayName>ခေ့ပ်ဗာဒူ အက်စ်ခူဒို</displayName>
 				<displayName count="other">ခေ့ပ်ဗာဒူ အက်စ်ခူဒို</displayName>
@@ -3718,10 +4783,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="DKK">
 				<displayName>ဒိန်းမတ်ခရိုဏာ</displayName>
 				<displayName count="other">ဒိန်းမတ် ခရိုဏာ</displayName>
+=======
+			<currency type="CYP">
+				<displayName>ဆိုက်ပရက်စ် ပေါင်</displayName>
+			</currency>
+			<currency type="DEM">
+				<displayName>ဂျာမဏီ မတ်</displayName>
+			</currency>
+			<currency type="DKK">
+				<displayName>ဒိန်းမတ် ခရိုဏာ</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="DOP">
 				<displayName>ဒိုမီနီကန် ပီဆို</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="DZD">
 				<displayName>အဲလ်ဂျီရီယန် ဒီနာ</displayName>
 				<displayName count="other">အဲလ်ဂျီရီယန် ဒီနာ</displayName>
@@ -3733,10 +4809,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="ERN">
 				<displayName>အီရီတရီအာနာ့ခ်ဖာ</displayName>
 				<displayName count="other">အီရီတရီအာနာ့ခ်ဖာ</displayName>
+=======
+			<currency type="EGP">
+				<displayName>အီဂျစ် ပေါင်</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ESP">
 				<displayName>စပိန် ပယ်စေးတာ</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="ETB">
 				<displayName>အီသီယိုးပီးယားဘီးယာ</displayName>
 				<displayName count="other">အီသီယိုးပီးယားဘီးယာ</displayName>
@@ -3753,12 +4834,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="FKP">
 				<displayName>ဖောက်ကလန် ကျွန်းစု ပေါင်</displayName>
 				<displayName count="other">ဖောက်ကလန် ကျွန်းစု ပေါင်</displayName>
+=======
+			<currency type="EUR">
+				<displayName>ယူရို</displayName>
+			</currency>
+			<currency type="FJD">
+				<displayName>ဖီဂျီ ဒေါ်လာ</displayName>
+			</currency>
+			<currency type="FKP">
+				<displayName>ဖောက်ကလန် ကျွန်းစု ပေါင်</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="FRF">
 				<displayName>ပြင်သစ် ဖရန့်</displayName>
 			</currency>
 			<currency type="GBP">
 				<displayName>ဗြိတိသျှ ပေါင်</displayName>
+<<<<<<< HEAD
 				<displayName count="other">ဗြိတိသျှ ပေါင်</displayName>
 				<symbol>£</symbol>
 			</currency>
@@ -3769,10 +4861,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="GHS">
 				<displayName>ဂါနာ ဆဲဒီ</displayName>
 				<displayName count="other">ဂါနာ ဆဲဒီ</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="GIP">
 				<displayName>ဂျီဘရော်လ်တာ ပေါင်</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="GMD">
 				<displayName>ဂန်ဘီယာ ဒါလာစီ</displayName>
 				<displayName count="other">ဂန်ဘီယာ ဒါလာစီ</displayName>
@@ -3812,10 +4907,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="IDR">
 				<displayName>အင်ဒိုနီးရှား ရူပီးယား</displayName>
 				<displayName count="other">အင်ဒိုနီးရှား ရူပီးယား</displayName>
+=======
+			<currency type="GNF">
+				<displayName>ဂီရာနာ ဖရန့်</displayName>
+			</currency>
+			<currency type="HKD">
+				<displayName>ဟောင်ကောင် ဒေါ်လာ</displayName>
+			</currency>
+			<currency type="IDR">
+				<displayName>အင်ဒိုနီးရှား ရူပီးယား</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ILP">
 				<displayName>အစ္စရေး ပေါင်</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="ILS">
 				<displayName>အစ္စရေးရှဲကလ်အသစ်</displayName>
 				<displayName count="other">အစ္စရေးရှဲကလ်အသစ်</displayName>
@@ -4017,12 +5123,69 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="PHP">
 				<displayName>ဖိလစ်ပိုင် ပီဆို</displayName>
 				<displayName count="other">ဖိလစ်ပိုင် ပီဆို</displayName>
+=======
+			<currency type="INR">
+				<displayName>အိန္ဒြိယ ရူပီး</displayName>
+			</currency>
+			<currency type="JMD">
+				<displayName>ဂျမေနီကာ ဒေါ်လာ</displayName>
+			</currency>
+			<currency type="JPY">
+				<displayName>ဂျပန်ယန်း</displayName>
+			</currency>
+			<currency type="KHR">
+				<displayName>ကမ္ဘောဒီးယား ရီးယဲ</displayName>
+			</currency>
+			<currency type="KPW">
+				<displayName>မြောက်ကိုးရီးယား ဝမ်</displayName>
+			</currency>
+			<currency type="KRW">
+				<displayName>တောင်ကိုးရီးယား ဝမ်</displayName>
+			</currency>
+			<currency type="KYD">
+				<displayName>ကေမန် ကျွန်းစု ဒေါ်လာ</displayName>
+			</currency>
+			<currency type="LBP">
+				<displayName>လက်ဘနွန် ပေါင်</displayName>
+			</currency>
+			<currency type="LKR">
+				<displayName>သီရိလင်္ကာ ရူပီး</displayName>
+			</currency>
+			<currency type="LRD">
+				<displayName>လိုင်ဘေးရီးယား ဒေါ်လာ</displayName>
+			</currency>
+			<currency type="MMK">
+				<displayName>မြန်မာ ကျပ်</displayName>
+				<symbol>K</symbol>
+			</currency>
+			<currency type="MXN">
+				<displayName>မက္ကဆီကို ပီဆို</displayName>
+			</currency>
+			<currency type="MYR">
+				<displayName>မလေးရှား ရင်းဂစ်</displayName>
+			</currency>
+			<currency type="NAD">
+				<displayName>နမ်မီးဘီးယား ဒေါ်လာ</displayName>
+			</currency>
+			<currency type="NOK">
+				<displayName>နော်ဝေ ခရိုဏာ</displayName>
+			</currency>
+			<currency type="NPR">
+				<displayName>နီပေါ ရူပီး</displayName>
+			</currency>
+			<currency type="NZD">
+				<displayName>နယူးဇီလန် ဒေါ်လာ</displayName>
+			</currency>
+			<currency type="PHP">
+				<displayName>ဖိလစ်ပိုင် ပီဆို</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="PKR">
 				<displayName>ပါကစ္စတန် ရူပီး</displayName>
 			</currency>
 			<currency type="PLN">
 				<displayName>ပိုလန် ဇ‌လော့တီ</displayName>
+<<<<<<< HEAD
 				<displayName count="other">ပိုလန် ဇ‌လော့တီ</displayName>
 			</currency>
 			<currency type="PYG">
@@ -4040,11 +5203,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="RSD">
 				<displayName>ဆားဘီးယားဒယ်နား</displayName>
 				<displayName count="other">ဆားဘီးယားဒယ်နား</displayName>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="RUB">
 				<displayName>ရုရှ ရူဘယ်</displayName>
 			</currency>
 			<currency type="RUR">
+<<<<<<< HEAD
 				<displayName>ရုရှ ရူဘယ် (၁၉၉၁–၁၉၉၈)</displayName>
 			</currency>
 			<currency type="RWF">
@@ -4066,12 +5232,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="SDG">
 				<displayName>ဆူဒန် ပေါင်</displayName>
 				<displayName count="other">ဆူဒန် ပေါင်</displayName>
+=======
+				<displayName>ရုရှ ရူဘယ် (၁၉၉၁-၁၉၉၈)</displayName>
+			</currency>
+			<currency type="RWF">
+				<displayName>ရဝန်ဒါ ဖရန့်</displayName>
+			</currency>
+			<currency type="SBD">
+				<displayName>ဆော်လမွန်ကျွန်းစု ဒေါ်လာ</displayName>
+			</currency>
+			<currency type="SDG">
+				<displayName>ဆူဒန် ပေါင်</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="SDP">
 				<displayName>ဆူဒန် ပေါင်အဟောင်း</displayName>
 			</currency>
 			<currency type="SEK">
 				<displayName>ဆွီဒင် ခရိုဏာ</displayName>
+<<<<<<< HEAD
 				<displayName count="other">ဆွီဒင် ခရိုဏာ</displayName>
 			</currency>
 			<currency type="SGD">
@@ -4101,10 +5280,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="STD">
 				<displayName>စိန့်တိုမီနှင့်ပရင်စီပ့် ဒိုဘရာ</displayName>
 				<displayName count="other">စိန့်တိုမီနှင့်ပရင်စီပ့် ဒိုဘရာ</displayName>
+=======
+			</currency>
+			<currency type="SGD">
+				<displayName>စင်္ကာပူ ဒေါ်လာ</displayName>
+			</currency>
+			<currency type="SRD">
+				<displayName>ဆူရိနမ် ဒေါ်လာ</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="SUR">
 				<displayName>ဆိုဗီယက် ရူဗယ်</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="SYP">
 				<displayName>ဆီးရီးယား ပေါင်</displayName>
 				<displayName count="other">ဆီးရီးယား ပေါင်</displayName>
@@ -4133,12 +5321,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="TOP">
 				<displayName>တွန်ဂါဗန်ဂါ</displayName>
 				<displayName count="other">တွန်ဂါဗန်ဂါ</displayName>
+=======
+			<currency type="THB">
+				<displayName>ထိုင်းဘတ်</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="TRL">
 				<displayName>ရှေးဟောင်းတူရကီ လိုင်ရာ</displayName>
 			</currency>
 			<currency type="TRY">
 				<displayName>တူရကီ လိုင်ရာ</displayName>
+<<<<<<< HEAD
 				<displayName count="other">တူရကီ လိုင်ရာ</displayName>
 			</currency>
 			<currency type="TTD">
@@ -4166,6 +5359,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>အမေရိကန် ဒေါ်လာ</displayName>
 				<displayName count="other">အမေရိကန် ဒေါ်လာ</displayName>
 				<symbol>US$</symbol>
+=======
+			</currency>
+			<currency type="TWD">
+				<displayName>ထိုင်ဝမ် ဒေါ်လာအသစ်</displayName>
+			</currency>
+			<currency type="USD">
+				<displayName>အမေရိကန် ဒေါ်လာ</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="USN">
 				<displayName>အမေရိကန် ဒေါ်လာ (နောက်နေ့)</displayName>
@@ -4173,6 +5374,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="USS">
 				<displayName>အမေရိကန် ဒေါ်လာ (တနေ့တည်း)</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="UYU">
 				<displayName>ဥရုဂွေးပီဆို</displayName>
 				<displayName count="other">ဥရုဂွေးပီဆို</displayName>
@@ -4202,6 +5404,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>ကင်မရွန်းဖရန့်</displayName>
 				<displayName count="other">ကင်မရွန်းဖရန့်</displayName>
 				<symbol>FCFA</symbol>
+=======
+			<currency type="VND">
+				<displayName>ဗီယက်နမ် ဒေါင်</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="XAG">
 				<displayName>ငွေ</displayName>
@@ -4212,15 +5418,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="XBB">
 				<displayName>ဥရောပငွေကြေးစံနစ်</displayName>
 			</currency>
+<<<<<<< HEAD
 			<currency type="XCD">
 				<displayName>အရှေ့ကာရီဘီယံဒေါ်လာ</displayName>
 				<displayName count="other">အရှေ့ကာရီဘီယံဒေါ်လာ</displayName>
 				<symbol>EC$</symbol>
 			</currency>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<currency type="XDR">
 				<displayName>အထူးထုတ်ယူခွင့်</displayName>
 			</currency>
 			<currency type="XOF">
+<<<<<<< HEAD
 				<displayName>အိုင်ဗရီးကိုးစ်ဖရန့်</displayName>
 				<displayName count="other">အိုင်ဗရီးကိုးစ်ဖရန့်</displayName>
 				<symbol>CFA</symbol>
@@ -4229,6 +5439,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>XPFဖရန့်</displayName>
 				<displayName count="other">XPFဖရန့်</displayName>
 				<symbol>CFPF</symbol>
+=======
+				<displayName>CFA ဖရန့် BCEAO</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="XPT">
 				<displayName>ပလက်တီနမ်</displayName>
@@ -4237,6 +5450,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>စမ်းသပ် ငွေကြေး ကုဒ်</displayName>
 			</currency>
 			<currency type="XXX">
+<<<<<<< HEAD
 				<displayName>မသိသို့မဟုတ်မရှိသောငွေကြေး</displayName>
 				<displayName count="other">မသိ သို့မဟုတ် မရှိသော ငွေကြေး</displayName>
 			</currency>
@@ -4251,11 +5465,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="ZMW">
 				<displayName>ဇင်ဘာဘွေခွါးချာ</displayName>
 				<displayName count="other">ဇင်ဘာဘွေခွါးချာ</displayName>
+=======
+				<displayName>မသိ သို့မဟုတ် မရှိသော ငွေကြေး</displayName>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			</currency>
 			<currency type="ZWD">
 				<displayName>ဇင်ဘာဘွေ ဒေါ်လာ</displayName>
 			</currency>
 		</currencies>
+<<<<<<< HEAD
 		<miscPatterns numberSystem="latn">
 			<pattern type="atLeast">⩾{0}</pattern>
 			<pattern type="range">{0}–{1}</pattern>
@@ -4727,6 +5945,32 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<listPatternPart type="2">{0}နှင့်{1}</listPatternPart>
 		</listPattern>
 	</listPatterns>
+=======
+	</numbers>
+	<units>
+		<unit type="day">
+			<unitPattern count="other">{0} ရက်</unitPattern>
+		</unit>
+		<unit type="hour">
+			<unitPattern count="other">{0} နာရီ</unitPattern>
+		</unit>
+		<unit type="minute">
+			<unitPattern count="other">{0} မိနစ်</unitPattern>
+		</unit>
+		<unit type="month">
+			<unitPattern count="other">{0} လ</unitPattern>
+		</unit>
+		<unit type="second">
+			<unitPattern count="other">{0} စက္ကန့်</unitPattern>
+		</unit>
+		<unit type="week">
+			<unitPattern count="other">{0} ပတ်</unitPattern>
+		</unit>
+		<unit type="year">
+			<unitPattern count="other">{0} နှစ်</unitPattern>
+		</unit>
+	</units>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	<posix>
 		<messages>
 			<yesstr>ဟုတ်တယ်</yesstr>

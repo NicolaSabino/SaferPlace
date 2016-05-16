@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Barcode
  * @subpackage Object
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Error.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /** @see Zend_Barcode_Object_ObjectAbstract */
@@ -28,7 +34,11 @@ require_once 'Zend/Barcode/Object/ObjectAbstract.php';
  *
  * @category   Zend
  * @package    Zend_Barcode
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Barcode_Object_Error extends Zend_Barcode_Object_ObjectAbstract
@@ -45,8 +55,11 @@ class Zend_Barcode_Object_Error extends Zend_Barcode_Object_ObjectAbstract
 
     /**
      * Height is forced
+<<<<<<< HEAD
      *
      * @param bool $recalculate
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return integer
      */
     public function getHeight($recalculate = false)
@@ -56,8 +69,11 @@ class Zend_Barcode_Object_Error extends Zend_Barcode_Object_ObjectAbstract
 
     /**
      * Width is forced
+<<<<<<< HEAD
      *
      * @param bool $recalculate
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return integer
      */
     public function getWidth($recalculate = false)

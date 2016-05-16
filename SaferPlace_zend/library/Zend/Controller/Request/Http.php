@@ -14,9 +14,15 @@
  *
  * @category   Zend
  * @package    Zend_Controller
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Http.php 24842 2012-05-31 18:31:28Z rob $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /** @see Zend_Controller_Request_Abstract */
@@ -918,6 +924,7 @@ class Zend_Controller_Request_Http extends Zend_Controller_Request_Abstract
     }
 
     /**
+<<<<<<< HEAD
      * Was the request made by PATCH?
      *
      * @return boolean
@@ -932,6 +939,8 @@ class Zend_Controller_Request_Http extends Zend_Controller_Request_Abstract
     }
 
     /**
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * Is the request a Javascript XMLHttpRequest?
      *
      * Should work with Prototype/Script.aculo.us, possibly others.
@@ -1000,6 +1009,7 @@ class Zend_Controller_Request_Http extends Zend_Controller_Request_Abstract
         }
 
         // Try to get it from the $_SERVER array first
+<<<<<<< HEAD
         $temp = strtoupper(str_replace('-', '_', $header));
         if (isset($_SERVER['HTTP_' . $temp])) {
             return $_SERVER['HTTP_' . $temp];
@@ -1012,6 +1022,10 @@ class Zend_Controller_Request_Http extends Zend_Controller_Request_Abstract
         if (isset($_SERVER[$temp])
             && in_array($temp, array('CONTENT_TYPE', 'CONTENT_LENGTH'))
         ) {
+=======
+        $temp = 'HTTP_' . strtoupper(str_replace('-', '_', $header));
+        if (isset($_SERVER[$temp])) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             return $_SERVER[$temp];
         }
 

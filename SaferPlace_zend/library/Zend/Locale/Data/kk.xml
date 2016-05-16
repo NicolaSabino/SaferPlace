@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -30,11 +31,31 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="bn">бенгал</language>
 			<language type="bo">тибет тілі</language>
 			<language type="br" draft="unconfirmed">брит</language>
+=======
+<ldml>
+	<identity>
+		<version number="$Revision: 1.67 $"/>
+		<generation date="$Date: 2009/06/15 03:46:23 $"/>
+		<language type="kk"/>
+	</identity>
+	<localeDisplayNames>
+		<languages>
+			<language type="af">бур</language>
+			<language type="am">амхар</language>
+			<language type="ar">арабша</language>
+			<language type="as">ассам</language>
+			<language type="be">беларус</language>
+			<language type="bg">болгар</language>
+			<language type="bh">бихари</language>
+			<language type="bn">бенгал</language>
+			<language type="br">брит</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="bs">босния</language>
 			<language type="ca">каталан</language>
 			<language type="cs">чех</language>
 			<language type="cy">валлий</language>
 			<language type="da">дат</language>
+<<<<<<< HEAD
 			<language type="de">неміс тілі</language>
 			<language type="de_AT">австриялық неміс тілі</language>
 			<language type="de_CH">швейцариялық ұлы неміс тілі</language>
@@ -54,10 +75,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="es_419">латын американдық испан тілі</language>
 			<language type="es_ES">ибериялық испан тілі</language>
 			<language type="es_MX">мексикалық испан тілі</language>
+=======
+			<language type="de">неміс</language>
+			<language type="el">грек</language>
+			<language type="en">ағылшын</language>
+			<language type="eo">эсперанто</language>
+			<language type="es">испан</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="et">эстон</language>
 			<language type="eu">баск</language>
 			<language type="fa">парсы</language>
 			<language type="fi">фин</language>
+<<<<<<< HEAD
 			<language type="fil">филиппин</language>
 			<language type="fj">фиджи</language>
 			<language type="fo">фарер</language>
@@ -140,18 +169,78 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="se" draft="unconfirmed">Солтүстік саам</language>
 			<language type="sg" draft="unconfirmed">санго</language>
 			<language type="sh" draft="unconfirmed">сербхорват</language>
+=======
+			<language type="fil">пилипино</language>
+			<language type="fo">фарер</language>
+			<language type="fr">француз</language>
+			<language type="fy">фрис</language>
+			<language type="ga">ирландша</language>
+			<language type="gd">Солтүстік Шотландия</language>
+			<language type="gl">галицияша</language>
+			<language type="gn">гуарани</language>
+			<language type="gu">гуджарати</language>
+			<language type="he">иврит</language>
+			<language type="hi">хинди</language>
+			<language type="hr">хорват</language>
+			<language type="hu">мадьяр</language>
+			<language type="hy">армян</language>
+			<language type="ia">интерлингва</language>
+			<language type="id">индонезия</language>
+			<language type="ie">интерлингве</language>
+			<language type="is">исланд</language>
+			<language type="it">италиян</language>
+			<language type="ja">жапон</language>
+			<language type="jv">ява</language>
+			<language type="ka">грузин</language>
+			<language type="kk">Қазақ</language>
+			<language type="km">камбоджия</language>
+			<language type="kn">каннада</language>
+			<language type="ko">кәріс</language>
+			<language type="ku">күрд</language>
+			<language type="ky">қырғыз</language>
+			<language type="la">латын</language>
+			<language type="ln">лингала</language>
+			<language type="lo">лаос</language>
+			<language type="lt">литва</language>
+			<language type="lv">латыш</language>
+			<language type="mk">македон</language>
+			<language type="ml">малайялам</language>
+			<language type="mn">монғол</language>
+			<language type="mr">маратхи</language>
+			<language type="ms">малай</language>
+			<language type="mt">мальта</language>
+			<language type="ne">непал</language>
+			<language type="nl">голланд</language>
+			<language type="no">норвег</language>
+			<language type="oc">окситан</language>
+			<language type="or">ория</language>
+			<language type="pa">панджаб</language>
+			<language type="pl">поляк</language>
+			<language type="ps">пашто</language>
+			<language type="pt">португал</language>
+			<language type="ro">румын</language>
+			<language type="ru">орыс</language>
+			<language type="sa">санскрит</language>
+			<language type="sd">синдхи</language>
+			<language type="sh">сербхорват</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="si">сингал</language>
 			<language type="sk">словак</language>
 			<language type="sl">словен</language>
 			<language type="so">сомали</language>
 			<language type="sq">албан</language>
 			<language type="sr">серб</language>
+<<<<<<< HEAD
 			<language type="st" draft="unconfirmed">сесото</language>
+=======
+			<language type="st">сесото</language>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<language type="su">судан</language>
 			<language type="sv">швед</language>
 			<language type="sw">суахили</language>
 			<language type="ta">тамил</language>
 			<language type="te">телугу</language>
+<<<<<<< HEAD
 			<language type="tg">тәжік</language>
 			<language type="th">тай</language>
 			<language type="ti">тигринья</language>
@@ -795,6 +884,34 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</intervalFormats>
 				</dateTimeFormats>
 			</calendar>
+=======
+			<language type="th">тай</language>
+			<language type="ti">тигринья</language>
+			<language type="tk">түркмен</language>
+			<language type="tlh">клингон</language>
+			<language type="tr">түрікше</language>
+			<language type="tw">тви</language>
+			<language type="ug">ұйғыр</language>
+			<language type="uk">украин</language>
+			<language type="ur">урду</language>
+			<language type="uz">өзбек</language>
+			<language type="vi">вьетнам</language>
+			<language type="xh">хоса</language>
+			<language type="yi">идиш</language>
+			<language type="zu">зулус</language>
+		</languages>
+		<territories>
+			<territory type="KZ">Қазақстан</territory>
+			<territory type="TO">Тонга</territory>
+		</territories>
+	</localeDisplayNames>
+	<characters>
+		<exemplarCharacters>[а ә б-е ё ж-й і к қ л-н ң о-у ұ ү ф-я]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[һ]</exemplarCharacters>
+	</characters>
+	<dates>
+		<calendars>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -812,6 +929,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">қар.</month>
 							<month type="12">желт.</month>
 						</monthWidth>
+<<<<<<< HEAD
 						<monthWidth type="narrow">
 							<month type="1">1</month>
 							<month type="2">2</month>
@@ -826,6 +944,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="11">11</month>
 							<month type="12">12</month>
 						</monthWidth>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						<monthWidth type="wide">
 							<month type="1">қаңтар</month>
 							<month type="2">ақпан</month>
@@ -867,6 +987,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="wed">ср.</day>
 							<day type="thu">бс.</day>
 							<day type="fri">жм.</day>
+<<<<<<< HEAD
 							<day type="sat">сб.</day>
 						</dayWidth>
 						<dayWidth type="narrow">
@@ -883,6 +1004,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="mon">дүйсенбі</day>
 							<day type="tue">сейсенбі</day>
 							<day type="wed">сәрсенбі</day>
+=======
+							<day type="sat">сһ.</day>
+						</dayWidth>
+						<dayWidth type="wide">
+							<day type="sun">жексені</day>
+							<day type="mon">дуйсенбі</day>
+							<day type="tue">сейсенбі</day>
+							<day type="wed">сәренбі</day>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 							<day type="thu">бейсенбі</day>
 							<day type="fri">жұма</day>
 							<day type="sat">сенбі</day>
@@ -890,6 +1020,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</dayContext>
 					<dayContext type="stand-alone">
 						<dayWidth type="narrow">
+<<<<<<< HEAD
 							<day type="sun">Ж</day>
 							<day type="mon">Д</day>
 							<day type="tue">С</day>
@@ -897,12 +1028,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<day type="thu">Б</day>
 							<day type="fri">Ж</day>
 							<day type="sat">С</day>
+=======
+							<day type="sun">1</day>
+							<day type="mon">2</day>
+							<day type="tue">3</day>
+							<day type="wed">4</day>
+							<day type="thu">5</day>
+							<day type="fri">6</day>
+							<day type="sat">7</day>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dayWidth>
 					</dayContext>
 				</days>
 				<quarters>
 					<quarterContext type="format">
 						<quarterWidth type="abbreviated">
+<<<<<<< HEAD
 							<quarter type="1">1-тоқсан</quarter>
 							<quarter type="2">2-тоқсан</quarter>
 							<quarter type="3">3-тоқсан</quarter>
@@ -954,6 +1095,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<eraAbbr>
 						<era type="0">б.з.д.</era>
 						<era type="1">б.з.</era>
+=======
+							<quarter type="1">Q1</quarter>
+							<quarter type="2">Q2</quarter>
+							<quarter type="3">Q3</quarter>
+							<quarter type="4">Q4</quarter>
+						</quarterWidth>
+						<quarterWidth type="wide">
+							<quarter type="1">Q1</quarter>
+							<quarter type="2">Q2</quarter>
+							<quarter type="3">Q3</quarter>
+							<quarter type="4">Q4</quarter>
+						</quarterWidth>
+					</quarterContext>
+				</quarters>
+				<am>AM</am>
+				<pm>PM</pm>
+				<eras>
+					<eraAbbr>
+						<era type="0">BCE</era>
+						<era type="1">CE</era>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</eraAbbr>
 				</eras>
 				<dateFormats>
@@ -969,12 +1131,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</dateFormatLength>
 					<dateFormatLength type="medium">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>dd.MM.y</pattern>
+=======
+							<pattern>dd.MM.yyyy</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
+<<<<<<< HEAD
 							<pattern>dd/MM/yy</pattern>
+=======
+							<pattern>dd.MM.yy</pattern>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
@@ -1001,6 +1171,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</timeFormatLength>
 				</timeFormats>
 				<dateTimeFormats>
+<<<<<<< HEAD
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
 							<pattern>{1} {0}</pattern>
@@ -1058,12 +1229,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<appendItems>
 						<appendItem request="Timezone">{0} {1}</appendItem>
 					</appendItems>
+=======
+					<availableFormats>
+						<dateFormatItem id="MMdd">dd.MM</dateFormatItem>
+						<dateFormatItem id="yyQ">Q yy</dateFormatItem>
+						<dateFormatItem id="yyyyMM">MM.yyyy</dateFormatItem>
+						<dateFormatItem id="yyyyMMMM">MMMM y 'ж'.</dateFormatItem>
+					</availableFormats>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					<intervalFormats>
 						<intervalFormatFallback>{0} - {1}</intervalFormatFallback>
 						<intervalFormatItem id="d">
 							<greatestDifference id="d">d-d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="h">
+<<<<<<< HEAD
 							<greatestDifference id="a">h a – h a</greatestDifference>
 							<greatestDifference id="h">h-h a</greatestDifference>
 						</intervalFormatItem>
@@ -1094,6 +1274,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="Hv">
 							<greatestDifference id="H">HH-HH v</greatestDifference>
+=======
+							<greatestDifference id="h">HH-HH</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="h">HH:mm-HH:mm</greatestDifference>
+							<greatestDifference id="m">HH:mm-HH:mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="h">HH:mm-HH:mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm-HH:mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="h">HH-HH v</greatestDifference>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</intervalFormatItem>
 						<intervalFormatItem id="M">
 							<greatestDifference id="M">M-M</greatestDifference>
@@ -1121,6 +1315,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">y-y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
+<<<<<<< HEAD
 							<greatestDifference id="M">MM.y - MM.y</greatestDifference>
 							<greatestDifference id="y">MM.y - MM.y</greatestDifference>
 						</intervalFormatItem>
@@ -1133,6 +1328,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="d">E, dd.MM.y - E, dd.MM.y</greatestDifference>
 							<greatestDifference id="M">E, dd.MM.y - E, dd.MM.y</greatestDifference>
 							<greatestDifference id="y">E, dd.MM.y - E, dd.MM.y</greatestDifference>
+=======
+							<greatestDifference id="M">MM.yy - MM.yy</greatestDifference>
+							<greatestDifference id="y">MM.yy - MM.yy</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">dd.MM.yy - dd.MM.yy</greatestDifference>
+							<greatestDifference id="M">dd.MM.yy - dd.MM.yy</greatestDifference>
+							<greatestDifference id="y">dd.MM.yy - dd.MM.yy</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">E, dd.MM.yy - E, dd.MM.yy</greatestDifference>
+							<greatestDifference id="M">E, dd.MM.yy - E, dd.MM.yy</greatestDifference>
+							<greatestDifference id="y">E, dd.MM.yy - E, dd.MM.yy</greatestDifference>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MMM-MMM y 'ж'.</greatestDifference>
@@ -1148,14 +1357,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M">E, d MMM - E, d MMM y 'ж'.</greatestDifference>
 							<greatestDifference id="y">E, d MMM y 'ж'. - E, d MMM y 'ж'.</greatestDifference>
 						</intervalFormatItem>
+<<<<<<< HEAD
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM - MMMM y</greatestDifference>
 							<greatestDifference id="y">MMMM y - MMMM y</greatestDifference>
 						</intervalFormatItem>
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 					</intervalFormats>
 				</dateTimeFormats>
 			</calendar>
 		</calendars>
+<<<<<<< HEAD
 		<fields>
 			<field type="era">
 				<displayName>ғасыр</displayName>
@@ -4865,6 +5078,32 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<listPatternPart type="2">{0}, {1}</listPatternPart>
 		</listPattern>
 	</listPatterns>
+=======
+		<timeZoneNames>
+			<hourFormat>+HH:mm;-HH:mm</hourFormat>
+			<gmtFormat>GMT{0}</gmtFormat>
+			<regionFormat>{0}</regionFormat>
+		</timeZoneNames>
+	</dates>
+	<numbers>
+		<symbols>
+			<decimal>,</decimal>
+			<group> </group>
+		</symbols>
+		<currencyFormats>
+			<currencyFormatLength>
+				<currencyFormat>
+					<pattern>#,##0.00 ¤</pattern>
+				</currencyFormat>
+			</currencyFormatLength>
+		</currencyFormats>
+		<currencies>
+			<currency type="KZT">
+				<symbol>тңг.</symbol>
+			</currency>
+		</currencies>
+	</numbers>
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 	<posix>
 		<messages>
 			<yesstr>иә:и</yesstr>

@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Feed_Pubsubhubbub
  * @subpackage Callback
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: CallbackAbstract.php 24842 2012-05-31 18:31:28Z rob $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -34,7 +40,11 @@ require_once 'Zend/Feed/Pubsubhubbub/HttpResponse.php';
  * @category   Zend
  * @package    Zend_Feed_Pubsubhubbub
  * @subpackage Callback
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 abstract class Zend_Feed_Pubsubhubbub_CallbackAbstract
@@ -70,7 +80,11 @@ abstract class Zend_Feed_Pubsubhubbub_CallbackAbstract
      * options for the Subscriber without calling all supported setter
      * methods in turn.
      *
+<<<<<<< HEAD
      * @param array|Zend_Config|null $config Options array or Zend_Config instance
+=======
+     * @param array|Zend_Config $options Options array or Zend_Config instance
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function __construct($config = null)
     {
@@ -82,8 +96,12 @@ abstract class Zend_Feed_Pubsubhubbub_CallbackAbstract
     /**
      * Process any injected configuration options
      *
+<<<<<<< HEAD
      * @param  array|Zend_Config $config Options array or Zend_Config instance
      * @throws Zend_Feed_Pubsubhubbub_Exception
+=======
+     * @param  array|Zend_Config $options Options array or Zend_Config instance
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Feed_Pubsubhubbub_CallbackAbstract
      */
     public function setConfig($config)
@@ -133,7 +151,10 @@ abstract class Zend_Feed_Pubsubhubbub_CallbackAbstract
      * to background save any verification tokens associated with a subscription
      * or other.
      *
+<<<<<<< HEAD
      * @throws Zend_Feed_Pubsubhubbub_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Feed_Pubsubhubbub_Model_SubscriptionInterface
      */
     public function getStorage()
@@ -152,7 +173,10 @@ abstract class Zend_Feed_Pubsubhubbub_CallbackAbstract
      * (i.e. not inherited from) Zend_Controller_Response_Http.
      *
      * @param  Zend_Feed_Pubsubhubbub_HttpResponse|Zend_Controller_Response_Http $httpResponse
+<<<<<<< HEAD
      * @throws Zend_Feed_Pubsubhubbub_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Feed_Pubsubhubbub_CallbackAbstract
      */
     public function setHttpResponse($httpResponse)
@@ -191,7 +215,10 @@ abstract class Zend_Feed_Pubsubhubbub_CallbackAbstract
      * Defaults to 1 if left unchanged.
      *
      * @param  string|int $count
+<<<<<<< HEAD
      * @throws Zend_Feed_Pubsubhubbub_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @return Zend_Feed_Pubsubhubbub_CallbackAbstract
      */
     public function setSubscriberCount($count)
@@ -274,8 +301,12 @@ abstract class Zend_Feed_Pubsubhubbub_CallbackAbstract
     /**
      * Retrieve a Header value from either $_SERVER or Apache
      *
+<<<<<<< HEAD
      * @param  string $header
      * @return bool
+=======
+     * @param string $header
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     protected function _getHeader($header)
     {

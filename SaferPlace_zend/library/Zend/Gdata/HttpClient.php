@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Gdata
  * @subpackage Gdata
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: HttpClient.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -25,9 +31,12 @@
  */
 require_once 'Zend/Http/Client.php';
 
+<<<<<<< HEAD
 /** @see Zend_Crypt_Math */
 require_once 'Zend/Crypt/Math.php';
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 /**
  * Gdata Http Client object.
  *
@@ -37,7 +46,11 @@ require_once 'Zend/Crypt/Math.php';
  * @category   Zend
  * @package    Zend_Gdata
  * @subpackage Gdata
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Gdata_HttpClient extends Zend_Http_Client
@@ -213,7 +226,11 @@ class Zend_Gdata_HttpClient extends Zend_Http_Client
             if ($this->getAuthSubPrivateKeyId() != null) {
                 // secure AuthSub
                 $time = time();
+<<<<<<< HEAD
                 $nonce = Zend_Crypt_Math::randInteger(0, 999999999);
+=======
+                $nonce = mt_rand(0, 999999999);
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 $dataToSign = $method . ' ' . $url . ' ' . $time . ' ' . $nonce;
 
                 // compute signature

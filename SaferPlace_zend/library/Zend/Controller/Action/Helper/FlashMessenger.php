@@ -15,7 +15,11 @@
  * @category   Zend
  * @package    Zend_Controller
  * @subpackage Zend_Controller_Action_Helper
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
@@ -36,9 +40,15 @@ require_once 'Zend/Controller/Action/Helper/Abstract.php';
  * @category   Zend
  * @package    Zend_Controller
  * @subpackage Zend_Controller_Action_Helper
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: FlashMessenger.php 24813 2012-05-22 16:49:24Z adamlundrigan $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 class Zend_Controller_Action_Helper_FlashMessenger extends Zend_Controller_Action_Helper_Abstract implements IteratorAggregate, Countable
 {
@@ -150,7 +160,11 @@ class Zend_Controller_Action_Helper_FlashMessenger extends Zend_Controller_Actio
             self::$_session->setExpirationHops(1, null, true);
         }
 
+<<<<<<< HEAD
         if (!is_array(self::$_session->{$namespace})) {
+=======
+        if (!is_array(self::$_session->{$this->_namespace})) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             self::$_session->{$namespace} = array();
         }
 
@@ -256,7 +270,11 @@ class Zend_Controller_Action_Helper_FlashMessenger extends Zend_Controller_Actio
             $namespace = $this->getNamespace();
         }
         
+<<<<<<< HEAD
         if ($this->hasCurrentMessages($namespace)) {
+=======
+        if ($this->hasCurrentMessages()) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             unset(self::$_session->{$namespace});
             return true;
         }

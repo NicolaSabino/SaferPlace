@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Application
  * @subpackage Resource
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Navigation.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -33,7 +39,11 @@ require_once 'Zend/Application/Resource/ResourceAbstract.php';
  * @category   Zend
  * @package    Zend_Application
  * @subpackage Resource
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @author     Dolf Schimmel
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
@@ -57,12 +67,19 @@ class Zend_Application_Resource_Navigation
         if (!$this->_container) {
             $options = $this->getOptions();
 
+<<<<<<< HEAD
             if (isset($options['defaultPageType'])) {
                 Zend_Navigation_Page::setDefaultPageType(
                     $options['defaultPageType']
                 );
             }
 
+=======
+            if(isset($options['defaultPageType'])) {
+                Zend_Navigation_Page::setDefaultPageType($options['defaultPageType']);
+            }
+            
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             $pages = isset($options['pages']) ? $options['pages'] : array();
             $this->_container = new Zend_Navigation($pages);
         }
@@ -95,16 +112,27 @@ class Zend_Application_Resource_Navigation
     protected function _storeRegistry()
     {
         $options = $this->getOptions();
+<<<<<<< HEAD
         // see ZF-7461
         if (isset($options['storage']['registry']['key'])
             && !is_numeric($options['storage']['registry']['key'])
         ) {
             $key = $options['storage']['registry']['key'];
+=======
+        if(isset($options['storage']['registry']['key']) &&
+           !is_numeric($options['storage']['registry']['key'])) // see ZF-7461
+        {
+           $key = $options['storage']['registry']['key'];
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         } else {
             $key = self::DEFAULT_REGISTRY_KEY;
         }
 
+<<<<<<< HEAD
         Zend_Registry::set($key, $this->getContainer());
+=======
+        Zend_Registry::set($key,$this->getContainer());
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     }
 
     /**

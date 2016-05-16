@@ -16,6 +16,7 @@
  * @category   Zend
  * @package    Zend_Service
  * @subpackage Flickr
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
@@ -23,12 +24,23 @@
 
 /** @see Zend_Xml_Security */
 require_once 'Zend/Xml/Security.php';
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Flickr.php 24593 2012-01-05 20:35:02Z matthew $
+ */
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
 /**
  * @category   Zend
  * @package    Zend_Service
  * @subpackage Flickr
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Service_Flickr
@@ -36,7 +48,11 @@ class Zend_Service_Flickr
     /**
      * Base URI for the REST client
      */
+<<<<<<< HEAD
     const URI_BASE = 'https://www.flickr.com';
+=======
+    const URI_BASE = 'http://www.flickr.com';
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
     /**
      * Your Flickr API key
@@ -116,7 +132,12 @@ class Zend_Service_Flickr
         }
 
         $dom = new DOMDocument();
+<<<<<<< HEAD
         $dom = Zend_Xml_Security::scan($response->getBody(), $dom);
+=======
+        $dom->loadXML($response->getBody());
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         self::_checkErrors($dom);
 
         /**
@@ -179,7 +200,12 @@ class Zend_Service_Flickr
         }
 
         $dom = new DOMDocument();
+<<<<<<< HEAD
         $dom = Zend_Xml_Security::scan($response->getBody(), $dom);
+=======
+        $dom->loadXML($response->getBody());
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         self::_checkErrors($dom);
 
         /**
@@ -233,7 +259,12 @@ class Zend_Service_Flickr
         }
 
         $dom = new DOMDocument();
+<<<<<<< HEAD
         $dom = Zend_Xml_Security::scan($response->getBody(), $dom);
+=======
+        $dom->loadXML($response->getBody());
+
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         self::_checkErrors($dom);
 
         /**
@@ -282,7 +313,11 @@ class Zend_Service_Flickr
         }
 
         $dom = new DOMDocument();
+<<<<<<< HEAD
         $dom = Zend_Xml_Security::scan($response->getBody(), $dom);
+=======
+        $dom->loadXML($response->getBody());
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         self::_checkErrors($dom);
         $xpath = new DOMXPath($dom);
         return (string) $xpath->query('//user')->item(0)->getAttribute('id');
@@ -326,7 +361,11 @@ class Zend_Service_Flickr
         }
 
         $dom = new DOMDocument();
+<<<<<<< HEAD
         $dom = Zend_Xml_Security::scan($response->getBody(), $dom);
+=======
+        $dom->loadXML($response->getBody());
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         self::_checkErrors($dom);
         $xpath = new DOMXPath($dom);
         return (string) $xpath->query('//user')->item(0)->getAttribute('id');
@@ -359,7 +398,11 @@ class Zend_Service_Flickr
         $response = $restClient->restGet('/services/rest/', $options);
 
         $dom = new DOMDocument();
+<<<<<<< HEAD
         $dom = Zend_Xml_Security::scan($response->getBody(), $dom);
+=======
+        $dom->loadXML($response->getBody());
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
         $xpath = new DOMXPath($dom);
         self::_checkErrors($dom);
         $retval = array();

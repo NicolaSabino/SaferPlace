@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Test
  * @subpackage PHPUnit
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Generic.php 24593 2012-01-05 20:35:02Z matthew $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -26,13 +32,25 @@
 require_once "Zend/Db/Adapter/Abstract.php";
 
 /**
+<<<<<<< HEAD
+=======
+ * @see PHPUnit_Extensions_Database_DB_IMetaData
+ */
+require_once "PHPUnit/Extensions/Database/DB/IMetaData.php";
+
+/**
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * Generic Metadata accessor for the Zend_Db adapters
  *
  * @uses       PHPUnit_Extensions_Database_DB_IMetaData
  * @category   Zend
  * @package    Zend_Test
  * @subpackage PHPUnit
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Test_PHPUnit_Db_Metadata_Generic implements PHPUnit_Extensions_Database_DB_IMetaData
@@ -62,7 +80,11 @@ class Zend_Test_PHPUnit_Db_Metadata_Generic implements PHPUnit_Extensions_Databa
      * Creates a new database meta data object using the given pdo connection
      * and schema name.
      *
+<<<<<<< HEAD
      * @param Zend_Db_Adapter_Abstract $db
+=======
+     * @param PDO $pdo
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      * @param string $schema
      */
     public final function __construct(Zend_Db_Adapter_Abstract $db, $schema)
@@ -159,6 +181,7 @@ class Zend_Test_PHPUnit_Db_Metadata_Generic implements PHPUnit_Extensions_Databa
     {
         return false;
     }
+<<<<<<< HEAD
 
     /**
      * Disables primary keys if rdbms does not allow setting them otherwise
@@ -180,3 +203,6 @@ class Zend_Test_PHPUnit_Db_Metadata_Generic implements PHPUnit_Extensions_Databa
         // Implemented only to match new DBUnit interface
     }
 }
+=======
+}
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f

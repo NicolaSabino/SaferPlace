@@ -15,9 +15,15 @@
  * @category   Zend
  * @package    Zend_Cache
  * @subpackage Zend_Cache_Backend
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Static.php 24989 2012-06-21 07:24:13Z mabe $
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  */
 
 /**
@@ -33,7 +39,11 @@ require_once 'Zend/Cache/Backend.php';
 /**
  * @package    Zend_Cache
  * @subpackage Zend_Cache_Backend
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Cache_Backend_Static
@@ -47,6 +57,7 @@ class Zend_Cache_Backend_Static
      * @var array
      */
     protected $_options = array(
+<<<<<<< HEAD
         'public_dir'           => null,
         'sub_dir'              => 'html',
         'file_extension'       => '.html',
@@ -57,6 +68,18 @@ class Zend_Cache_Backend_Static
         'debug_header'         => false,
         'tag_cache'            => null,
         'disable_caching'      => false
+=======
+        'public_dir'            => null,
+        'sub_dir'               => 'html',
+        'file_extension'        => '.html',
+        'index_filename'        => 'index',
+        'file_locking'          => true,
+        'cache_file_umask'      => 0600,
+        'cache_directory_umask' => 0700,
+        'debug_header'          => false,
+        'tag_cache'             => null,
+        'disable_caching'       => false
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
     );
 
     /**
@@ -85,6 +108,7 @@ class Zend_Cache_Backend_Static
         if ($name == 'tag_cache') {
             $this->setInnerCache($value);
         } else {
+<<<<<<< HEAD
             // See #ZF-12047 and #GH-91
             if ($name == 'cache_file_umask') {
                 trigger_error(
@@ -103,6 +127,8 @@ class Zend_Cache_Backend_Static
                 $name = 'cache_directory_perm';
             }
 
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
             parent::setOption($name, $value);
         }
         return $this;
@@ -251,7 +277,11 @@ class Zend_Cache_Backend_Static
         } else {
             $result = file_put_contents($file, $data);
         }
+<<<<<<< HEAD
         @chmod($file, $this->_octdec($this->_options['cache_file_perm']));
+=======
+        @chmod($file, $this->_octdec($this->_options['cache_file_umask']));
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
 
         if ($this->_tagged === null && $tagged = $this->getInnerCache()->load(self::INNER_CACHE_NAME)) {
             $this->_tagged = $tagged;
@@ -277,7 +307,11 @@ class Zend_Cache_Backend_Static
     {
         if (!is_dir($path)) {
             $oldUmask = umask(0);
+<<<<<<< HEAD
             if ( !@mkdir($path, $this->_octdec($this->_options['cache_directory_perm']), true)) {
+=======
+            if ( !@mkdir($path, $this->_octdec($this->_options['cache_directory_umask']), true)) {
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
                 $lastErr = error_get_last();
                 umask($oldUmask);
                 Zend_Cache::throwException("Can't create directory: {$lastErr['message']}");
@@ -393,7 +427,10 @@ class Zend_Cache_Backend_Static
      * @param  string $mode Clean mode
      * @param  array  $tags Array of tags
      * @return boolean true if no problem
+<<<<<<< HEAD
      * @throws Zend_Exception
+=======
+>>>>>>> b22d39626ae65c380360f646196dad1e164aa76f
      */
     public function clean($mode = Zend_Cache::CLEANING_MODE_ALL, $tags = array())
     {
