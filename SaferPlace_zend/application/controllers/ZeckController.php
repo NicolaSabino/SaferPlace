@@ -10,7 +10,7 @@ class ZeckController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        echo '<div class="container">Nicola nabbo</div>';
+        
     }
 
 
