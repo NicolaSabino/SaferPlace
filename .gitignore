@@ -16,3 +16,6 @@
  
  #librerie di zend
  SaferPlace_zend/library/
+
+# tutti i file di tipo xml
+*.xml
