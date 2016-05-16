@@ -1,0 +1,15 @@
+# Documenti da escludere nel versionamento
+
+# Documentazione
+ Documentazione/
+
+# Versione statica del sito
+ Demo_Statiche/
+
+# materiale per il README
+ logolungo.png
+ screen.png
+ README.md
+
+# Cartelle dell IDE PhpStorm
+ .idea/
