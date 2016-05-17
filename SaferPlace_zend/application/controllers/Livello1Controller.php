@@ -1,6 +1,6 @@
 <?php
 
-class CheckinController extends Zend_Controller_Action
+class Livello1Controller extends Zend_Controller_Action
 {
 
     public function init()
@@ -13,6 +13,11 @@ class CheckinController extends Zend_Controller_Action
         // action body
     }
 
+    public function checkinAction()
+    {
+        // action body
+    }
+
     public function checkinbAction()
     {
         // action body
@@ -20,6 +25,8 @@ class CheckinController extends Zend_Controller_Action
 
 
 }
+
+
 
 
 
