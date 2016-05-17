@@ -5,10 +5,23 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 
 
     protected function _initSetupBaseUrl() {
-    $this->bootstrap('frontcontroller');
-    $controller = Zend_Controller_Front::getInstance();
-    $controller->setBaseUrl('/SaferPlace/SaferPlace_zend/public');
-}
+            $this->bootstrap('frontcontroller');
+            $controller = Zend_Controller_Front::getInstance();
+            $controller->setBaseUrl('/SaferPlace/SaferPlace_zend/public');
+    }
+
+        //questo metodo serve a caricare le classi presenti dentro model
+    protected function _initAutoLoad(){
+        $modelLoader= new Zend_Application_Module_Autoloader(array(
+            'namespace' => '',
+            'basePath' => APPLICATION_PATH //È definito dentro public/index.php
+        ));
+
+        return $modelLoader;
+    }
+
+
+
 
     protected function _initRequest()
         // Aggiunge un'istanza di Zend_Controller_Request_Http nel Front_Controller
