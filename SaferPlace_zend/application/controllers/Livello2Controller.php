@@ -1,6 +1,6 @@
 <?php
 
-class ZeckController extends Zend_Controller_Action
+class Livello2Controller extends Zend_Controller_Action
 {
 
     public function init()
@@ -10,7 +10,7 @@ class ZeckController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        
+        // action body
     }
 
 

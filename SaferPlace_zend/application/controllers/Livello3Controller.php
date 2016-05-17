@@ -1,11 +1,11 @@
 <?php
 
-class IndexController extends Zend_Controller_Action
+class Livello3Controller extends Zend_Controller_Action
 {
 
     public function init()
     {
-        /* Initialize action controller here */
+        $this->_helper->layout->setLayout('layout3');
     }
 
     public function indexAction()

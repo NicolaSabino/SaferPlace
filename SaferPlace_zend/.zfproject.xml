@@ -9,18 +9,18 @@
       <controllersDirectory>
         <controllerFile controllerName="Index">
           <actionMethod actionName="index"/>
-          <actionMethod actionName="indexAction"/>
         </controllerFile>
         <controllerFile controllerName="Error"/>
-        <controllerFile controllerName="Login">
+        <controllerFile controllerName="Livello1">
           <actionMethod actionName="index"/>
-        </controllerFile>
-        <controllerFile controllerName="Zeck">
-          <actionMethod actionName="index"/>
-        </controllerFile>
-        <controllerFile controllerName="Checkin">
-          <actionMethod actionName="index"/>
+          <actionMethod actionName="checkin"/>
           <actionMethod actionName="checkinb"/>
+        </controllerFile>
+        <controllerFile controllerName="Livello2">
+          <actionMethod actionName="index"/>
+        </controllerFile>
+        <controllerFile controllerName="Livello3">
+          <actionMethod actionName="index"/>
         </controllerFile>
       </controllersDirectory>
       <formsDirectory enabled="false"/>
@@ -40,21 +40,20 @@
           <viewControllerScriptsDirectory forControllerName="Error">
             <viewScriptFile forActionName="error"/>
           </viewControllerScriptsDirectory>
-          <viewControllerScriptsDirectory forControllerName="Index">
-            <viewScriptFile forActionName="indexAction"/>
-          </viewControllerScriptsDirectory>
-          <viewControllerScriptsDirectory forControllerName="Index"/>
-          <viewControllerScriptsDirectory forControllerName="Login">
+          <viewControllerScriptsDirectory forControllerName="Livello1">
             <viewScriptFile forActionName="index"/>
           </viewControllerScriptsDirectory>
-          <viewControllerScriptsDirectory forControllerName="Zeck">
-            <viewScriptFile forActionName="index"/>
+          <viewControllerScriptsDirectory forControllerName="Livello1">
+            <viewScriptFile forActionName="checkin"/>
           </viewControllerScriptsDirectory>
-          <viewControllerScriptsDirectory forControllerName="Checkin">
-            <viewScriptFile forActionName="index"/>
-          </viewControllerScriptsDirectory>
-          <viewControllerScriptsDirectory forControllerName="Checkin">
+          <viewControllerScriptsDirectory forControllerName="Livello1">
             <viewScriptFile forActionName="checkinb"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello2">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello3">
+            <viewScriptFile forActionName="index"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>
