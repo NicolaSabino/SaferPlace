@@ -12,12 +12,14 @@ class notifica extends Zend_Db_Table_Abstract{
 
     public function getAllByEd($edificio)
     {
-       /*
-        $select = this->select()
-        //devo vedere come recuperare roba da un join
-                                ->where('edificio')
-        return $this->;
-       */
+        //recupero tutte le notifiche relative a un edificio
+        $select = this->select('s.*')
+                                ->from('segnalazione s JOIN posizione pos ON 
+                                        s.idPosizione=pos.id JOIN piano p
+                                         ON pos.idPiano=p.id')
+                                ->where('p.edificio=$edificio');
+        return $this->$select;
+
     }
 
     //cancella una notifica
