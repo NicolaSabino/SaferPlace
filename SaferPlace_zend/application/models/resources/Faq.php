@@ -1,6 +1,6 @@
 <?php
 
-class Application_Model_DbTable_Faq extends Zend_Db_Table_Abstract
+class Application_Resource_Faq extends Zend_Db_Table_Abstract
 {
 
     /*

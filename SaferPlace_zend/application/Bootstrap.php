@@ -22,7 +22,18 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $front->setRequest($request);
     }
     
+    //impostazioni db adapter
+    protected function _initDbAdapter(){
+        $dbAdapter = Zend_Db::factory('PDO_mysql', array(
+            'host'     => 'localhost',
+            'username' => 'root',
+            'password' => '',
+            'dbname'   => 'sp_db'
+        ));
+        Zend_Db_Table::setDefaultAdapter($dbAdapter);
 
+    }
+    
     //questo metodo serve a caricare le classi presenti dentro model
     protected function _initDefaultModuleAutoloader()
     {
