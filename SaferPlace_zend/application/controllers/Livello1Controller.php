@@ -21,7 +21,11 @@ class Livello1Controller extends Zend_Controller_Action
 
     public function checkinbAction()
     {
-        // action body
+        $edificio=0;
+        if($this->hasParam("edificio"))
+            $edificio=$this->getParam("edificio");
+        $pianimodel=new Application_Model_Piani();
+        $this->view->u = $pianimodel->getPianiByEdificio($edificio)->toArray();
     }
 
 

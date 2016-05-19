@@ -33,7 +33,9 @@
         <modelFile modelName="Edifici"/>
         <dbTableDirectory>
           <dbTableFile dbTableName="Edifici"/>
+          <dbTableFile dbTableName="Piani"/>
         </dbTableDirectory>
+        <modelFile modelName="Piani"/>
       </modelsDirectory>
       <modulesDirectory enabled="false"/>
       <servicesDirectory enabled="false"/>
