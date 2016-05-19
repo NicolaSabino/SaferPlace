@@ -1,5 +1,14 @@
 <html>
 <head>
+
+	<a  href="<?php if($this->u==0) {
+           echo  $this->url(
+                array(
+                    'controller' => 'livello1',
+                    'action' => 'checkin',
+                )
+            );
+        }?>"><?php echo $this->url ?></a>
 <style>
 	#dx{
 		padding-top: 20px;
