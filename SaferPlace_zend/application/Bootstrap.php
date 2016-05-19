@@ -34,7 +34,15 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $request = new Zend_Controller_Request_Http();
         $front->setRequest($request);
     }
-
+    protected function _initDbAdapter(){
+        $dbAdapter = Zend_Db::factory('PDO_mysql', array(
+            'host'     => 'localhost',
+            'username' => 'root',
+            'password' => '',
+            'dbname'   => 'sp_db'
+        ));
+        Zend_Db_Table::setDefaultAdapter($dbAdapter);
+    }
 
 
 }

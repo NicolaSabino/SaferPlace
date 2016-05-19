@@ -15,7 +15,8 @@ class Livello1Controller extends Zend_Controller_Action
 
     public function checkinAction()
     {
-        // action body
+        $edificimodel=new Application_Model_Edifici();
+        $this->view->u = $edificimodel->getEdifici()->toArray();
     }
 
     public function checkinbAction()
