@@ -1,0 +1,56 @@
+<br /><br />
+<div id="view-content">
+	<div class="container">
+		<div id="gestFAQ">
+			<ul class="collapsible popout" data-collapsible="accordion">
+
+				<!-- BLOCCHI DELLE FAQ GENERATI DINAMICAMENTE -->
+				<?php
+					foreach ($this->faqSet as $faq){
+						echo '<li>';
+						echo '<div class="collapsible-header">';
+						echo '<i class="material-icons green-text">live_help</i>Domanda'.$faqSet->
+					}
+
+				?>
+				<li>
+					<div class="collapsible-header">
+						<div class=" col l10">
+							<i class="material-icons green-text">live_help</i>Domanda 1
+						</div>
+					</div>
+
+
+					<div class="collapsible-body">
+						<p>Risposta 1</p>
+						<p>
+							<a href="edit" class="btn-floating btn-large green white-text"><i class="material-icons">edit</i></a>
+						</p>
+					</div>
+
+
+				</li>
+				<li>
+					<div class="collapsible-header"><i class="material-icons green-text">live_help</i>Domanda 2</div>
+					<div class="collapsible-body">
+						<p>Risposta 2</p>
+						<p>
+							<a href="edit" class="btn-floating btn-large green white-text"><i class="material-icons">edit</i></a>
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="collapsible-header"><i class="material-icons green-text">live_help</i>Domanda 3</div>
+					<div class="collapsible-body">
+						<p>Risposta 3</p>
+						<p>
+							<a href="edit" class="btn-floating btn-large green white-text"><i class="material-icons">edit</i></a>
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	
+</div>
