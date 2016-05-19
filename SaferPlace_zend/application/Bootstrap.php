@@ -20,9 +20,19 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         return $modelLoader;
     }
 
+    protected function _initDbAdapter(){
+        $dbAdapter = Zend_Db::factory('PDO_mysql', array(
+            'host'     => 'localhost',
+            'username' => 'root',
+            'password' => '',
+            'dbname'   => 'sp_db'
+        ));
+        Zend_Db_Table::setDefaultAdapter($dbAdapter);
+
+    }
 
 
-
+/*
     protected function _initRequest()
         // Aggiunge un'istanza di Zend_Controller_Request_Http nel Front_Controller
         // che permette di utilizzare l'helper baseUrl() nel Bootstrap.php
@@ -36,7 +46,15 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
     }
 
 
-
+*/
+  //loader di cucchia
+    protected function _initDefaultModuleAutoloader()
+    {
+        $loader = Zend_Loader_Autoloader::getInstance();
+        $loader->registerNamespace('App_');
+        $this->getResourceLoader()
+            ->addResourceType('modelResource','models/resources','Resource');
+    }
 }
 
 
