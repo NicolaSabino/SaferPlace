@@ -29,7 +29,14 @@
           <layoutScriptFile layoutName="layout"/>
         </layoutScriptsDirectory>
       </layoutsDirectory>
-      <modelsDirectory/>
+      <modelsDirectory>
+        <modelFile modelName="Segnalazione"/>
+        <dbTableDirectory>
+          <dbTableFile dbTableName="Segnalazione"/>
+          <dbTableFile dbTableName="Faq"/>
+        </dbTableDirectory>
+        <modelFile modelName="Faq"/>
+      </modelsDirectory>
       <modulesDirectory enabled="false"/>
       <servicesDirectory enabled="false"/>
       <viewsDirectory>
