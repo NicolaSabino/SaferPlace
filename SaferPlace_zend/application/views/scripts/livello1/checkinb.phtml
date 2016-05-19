@@ -23,7 +23,7 @@
 					<?php
 					foreach($this->u as $edificio):
 					?>
-					<option value="<?php echo $edificio['numeroPiano'];?>">piano <?php echo $edificio['numeroPiano'];?> </option>
+					<option  value="<?php echo $edificio['numeroPiano'];?>">piano <?php echo $edificio['numeroPiano'];?> </option>
 						<?php
 					endforeach;
 					?>
@@ -47,7 +47,7 @@
 	<div class="row">
 		<h3 class="green-text text-darken-2 center-align"> Piano <?php echo $edificio['numeroPiano'];?> </h3>
 
-		<div class="input-field col l3 m3 s3 center " >
+		<div class="input-field col l3 m3 s3 offset-l4 " >
 
 			<select >
 				<option value="" disabled selected >Seleziona posizione</option>
@@ -61,9 +61,9 @@
 				endwhile;
 				?>
 			</select>
-			<a class="green btn" style="margin-top: 17px">vai</a>
 
 		</div>
+		<a class="green btn center" style="margin-top: 17px">Posizionati</a>
 
 		<div class="col l12 s12 m12 center">
 			<img src="<?php echo $this->baseUrl($pianta); ?>" style="height:80%; width: 80%">
