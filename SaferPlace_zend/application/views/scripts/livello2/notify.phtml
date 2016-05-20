@@ -1,0 +1,10 @@
+    	<div>
+
+            <?php
+                print_r($this->notifiche);
+                foreach($this->notifiche as $key => $value)
+                {
+                    echo 'utente: '.$value->utente.'  tipo:'.$value->tipo;
+                }
+            ?>
+	    </div>

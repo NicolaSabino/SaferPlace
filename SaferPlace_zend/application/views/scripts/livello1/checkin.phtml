@@ -10,20 +10,28 @@
 	<!-- edifici -->
 
 	<div class="row">
-		<!-- card ospedale di ancona -->
+		<?php
+		foreach($this->u as $edificio):
+			$mappa="image/edifici/".$edificio['mappa'];
+		?>
+		<!-- card edificio -->
 		<div class="col s12 m6 l4">
 			<div class="card large">
 				<div class="card-image waves-effect waves-block waves-light">
-					<img class="activator" src="<?php echo $this->baseUrl('image/edifici/ospedale-ancona.jpg'); ?>" >
+					<img class="activator" src="<?php echo $this->baseUrl($mappa); ?>" >
 				</div>
 				<div class="card-content">
-					<span class="card-title activator grey-text text-darken-4">Ospedale di torrette Ancona<i class="material-icons right">more_vert</i></span>
-					<p><a class="btn red white-text" href="<?php echo $this->url(
-							array('controller' => 'livello1', 'action' => 'checkinb')
+					<span class="card-title activator grey-text text-darken-4"><?php echo $edificio['nome'];?><i class="material-icons right">more_vert</i></span>
+					<p><a class="btn red white-text "  href="<?php echo $this->url(
+							array(
+								'controller' => 'livello1',
+								'action' => 'checkinb',
+								'edificio'=>$edificio['nome']
+							     )
 						); ?>">Check-in</a></p>
 				</div>
 				<div class="card-reveal">
-					<span class="card-title green-text ">Ospedale torrette di Ancona<i class="material-icons right">close</i></span>
+					<span class="card-title green-text "><?php echo $edificio['nome'];?><i class="material-icons right">close</i></span>
 					<p>Complesso ospedaliero sitoato nel quartiere Torrette di Ancona in Via Conca 71 - Torrette Ancona</p>
 					<p>
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8172.24256473598!2d13.451412951100282!3d43.599793684227066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132d81fe2a0c5211%3A0x2eed1477b2f755bf!2sAzienda+Ospedaliero+Universitaria+Ospedale+Riuniti!5e0!3m2!1sit!2sit!4v1463072374970" width="100%" height="300" frameborder="400" style="border:0" allowfullscreen></iframe>
@@ -32,98 +40,13 @@
 			</div>
 
 		</div>
-
-		<!-- Ufficio -->
-		<div class="col s12 m6 l4">
-			<div class="card large">
-				<div class="card-image waves-effect waves-block waves-light">
-					<img class="activator" src="<?php echo $this->baseUrl('image/edifici/Edifici_PalazzoUffici_01.jpg'); ?>">
-				</div>
-				<div class="card-content">
-					<span class="card-title activator grey-text text-darken-4">Uffici Nexos<i class="material-icons right">more_vert</i></span>
-					<p><a href="<?php echo $this->url(
-							array('controller' => 'livello1', 'action' => 'checkinb')
-						); ?>" class="btn red white-text">Check-in</a></p>
-				</div>
-				<div class="card-reveal">
-					<span class="card-title green-text ">Uffici Nexos<i class="material-icons right">close</i></span>
-					<p>Uffici della Nexos SPA situato in Via Delle Driadi 10 Francavilla al Mare</p>
-					<p>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.038967387047!2d14.274167751274767!3d42.426905438767605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1331a805f00ffc71%3A0x1369cb0a965697df!2sVia+delle+Driadi%2C+66023+Francavilla+al+Mare+CH!5e0!3m2!1sit!2sit!4v1463073223703" width="100%" height="300" frameborder="400" style="border:0" allowfullscreen></iframe>
-					</p>
-				</div>
-			</div>
-
-		</div>
-
-		<!-- Ufficio 2 -->
-		<div class="col s12 m6 l4">
-			<div class="card large">
-				<div class="card-image waves-effect waves-block waves-light">
-					<img class="activator" src="<?php echo $this->baseUrl('image/edifici/apertura-figura-1-foto-Iwan-Baan.jpg'); ?>">
-				</div>
-				<div class="card-content">
-					<span class="card-title activator grey-text text-darken-4">Uffici Lutor Corp<i class="material-icons right">more_vert</i></span>
-					<p><a class="btn red white-text" href="<?php echo $this->url(
-							array('controller' => 'livello1', 'action' => 'checkinb')
-						); ?>">Check-in</a></p>
-				</div>
-				<div class="card-reveal">
-					<span class="card-title green-text text-darken-4">Uffici Lutor Corp<i class="material-icons right">close</i></span>
-					<p>Uffici oscorp situati in Via Rossi 55 Padova</p>
-					<p>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2802.188880339341!2d11.864189351345498!3d45.38536054661869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477edba4a7ad3521%3A0x41a44226bca6eb88!2sVia+Ernesto+Rossi%2C+35125+Padova+PD!5e0!3m2!1sit!2sit!4v1463074048176" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-					</p>
-				</div>
-			</div>
-		</div>
-
+			<?php
+		endforeach;
+		?>
 	</div>
 
-	<div class="row">
-		<!-- Liceo -->
-		<div class="col s12 m6 l4">
-			<div class="card large">
-				<div class="card-image waves-effect waves-block waves-light">
-					<img class="activator" src="<?php echo $this->baseUrl('image/edifici/classico.jpg'); ?>">
-				</div>
-				<div class="card-content">
-					<span class="card-title activator grey-text text-darken-4">Liceo Classico<i class="material-icons right">more_vert</i></span>
-					<p><a  class="btn red white-text" href="<?php echo $this->url(
-							array('controller' => 'livello1', 'action' => 'checkinb')
-						); ?>">Check-in</a></p>
-				</div>
-				<div class="card-reveal">
-					<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-					<p>Liceo classico situato in Via Venezia 41 Pescara </p>
-					<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.1687737856487!2d14.211603651275714!3d42.46669903625036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1331a669a3b21529%3A0x73db516cb2821a3e!2sLiceo+Classico+%22G.+D&#39;Annunzio%22!5e0!3m2!1sit!2sit!4v1463074142014" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></p>
-				</div>
-			</div>
-		</div>
-
-		<!-- Ospedale di bologna -->
-		<div class="col s12 m6 l4">
-			<div class="card large">
-				<div class="card-image waves-effect waves-block waves-light">
-					<img class="activator" src="<?php echo $this->baseUrl('image/edifici/Ospedale_Maggiore_Bologna.jpg'); ?>">
-				</div>
-				<div class="card-content">
-					<span class="card-title activator grey-text text-darken-4">Ospedale Bellaria<i class="material-icons right">more_vert</i></span>
-					<p><a href="<?php echo $this->url(
-							array('controller' => 'livello1', 'action' => 'checkinb')
-						); ?>" class="btn red white-text">Check-in</a></p>
-				</div>
-				<div class="card-reveal">
-					<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-					<p>Ospedale Bellaria situato in Via altura 3 Bologna</p>
-					<p>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2847.4966301969125!2d11.388259951322947!3d44.463992007538074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477e2afcef1c7fc9%3A0x6eaf26f6ec738282!2sOspedale+Bellaria+-+Azienda+USL+di+Bologna!5e0!3m2!1sit!2sit!4v1463074222303" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
 </div>
+
 
 </body>
 </html>
