@@ -1,1 +1,28 @@
-<br /><br /><div id="view-content">	<div class="container">		<div class="center-align">			<h4 class="green-text">Faq</h4>		</div>		<div id="gestFAQ">			<ul class="collapsible popout" data-collapsible="accordion">				<!-- BLOCCHI DELLE FAQ GENERATI DINAMICAMENTE -->				<?php					foreach ($this->faqSet as $faq){						echo '<li>';						echo '<div class="collapsible-header"><i class="material-icons green-text">live_help</i>'.$faq->domanda . '</div>';						echo '<div class="collapsible-body">'.							 	'<p>'.$faq->risposta.'</p>';						echo '</div>';					}				?>				</ul>			</div>		</div>	</div>	</div>
+<br /><br />
+<div id="view-content">
+	<div class="container">
+		<div class="center-align">
+			<h4 class="green-text">Faq</h4>
+		</div>
+		<div id="gestFAQ">
+			<ul class="collapsible popout" data-collapsible="accordion">
+
+				<!-- BLOCCHI DELLE FAQ GENERATI DINAMICAMENTE -->
+				<?php
+					foreach ($this->faqSet as $faq){
+						echo '<li>';
+						echo '<div class="collapsible-header">
+								<i class="material-icons green-text">live_help</i>'. $faq->domanda . 
+							  '</div>';
+						echo '<div class="collapsible-body">'.
+							 	'<p>'.$faq->risposta.'</p>';
+						echo '</div>';
+					}
+
+				?>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+</div>
