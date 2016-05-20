@@ -10,7 +10,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
             $controller->setBaseUrl('/SaferPlace/SaferPlace_zend/public');
     }
 */
-
+/*
         //questo metodo serve a caricare le classi presenti dentro model
     protected function _initAutoLoad(){
         $modelLoader= new Zend_Application_Module_Autoloader(array(
@@ -20,7 +20,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 
         return $modelLoader;
     }
-    
+    */
     // Aggiunge un'istanza di Zend_Controller_Request_Http nel Front_Controller
     // che permette di utilizzare l'helper baseUrl() nel Bootstrap.php
     // Necessario solo se la Document-root di Apache non è la cartella public/
@@ -46,7 +46,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
     }
     
 
-  //loader di cucchia
+  //loader di classi
     protected function _initDefaultModuleAutoloader()
     {
         $loader = Zend_Loader_Autoloader::getInstance();
