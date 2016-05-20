@@ -1,0 +1,7 @@
+<?php
+
+class Application_Resource_Piani_Item extends Zend_Db_Table_Row_Abstract
+{
+
+}
+

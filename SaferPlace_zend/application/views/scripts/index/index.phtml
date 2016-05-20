@@ -42,7 +42,9 @@
                         </div>
                         <div class="row">
                             <div class="col s12 m6">
-                                <div class="btn red white-text">Accedi</div>
+                                <div><a class="btn red white-text" href="<?php echo $this->url(
+                                        array('controller' => 'livello1', 'action' => 'checkin')
+                                    ); ?>">Accedi</a></div>
                             </div>
                             <div class="col s12 m6">
                                 Non sei registrato?

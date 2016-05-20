@@ -22,8 +22,8 @@
 					<option  disabled selected>Seleziona Piano</option>
 					<?php
 					foreach($this->u as $piano):
-					?>
-					<option  value="<?php echo $piano['numeroPiano'];?>">piano <?php echo $piano['numeroPiano'];?> </option>
+						?>
+						<option  value="<?php echo $piano['numeroPiano'];?>">piano <?php echo $piano['numeroPiano'];?> </option>
 						<?php
 					endforeach;
 					?>
@@ -42,48 +42,48 @@
 	<?php
 	foreach($this->u as $piano):
 		$pianta="image/piante/".$piano['pianta'];
-	?>
-	<!-- immagine 1 -->
-	<div class="row">
-		<h3 class="green-text text-darken-2 center-align"> Piano <?php echo $piano['numeroPiano'];?> </h3>
+		?>
+		<!-- immagine 1 -->
+		<div class="row">
+			<h3 class="green-text text-darken-2 center-align"> Piano <?php echo $piano['numeroPiano'];?> </h3>
 
-		<div class="input-field col l3 m3 s3 offset-l4 " >
+			<div class="input-field col l3 m3 s3 offset-l4 " >
 
-			<select >
-				<option value="" disabled selected >Seleziona posizione</option>
-				<?php
-				$cont=0;
-				while($cont<$piano['nstanze']):
-				$cont++;
-				?>
-				<option id="<?php echo $cont;?>" value="<?php echo $cont;?>" >stanza  <?php echo $cont;?></option>
-				<?php
-				endwhile;
-				?>
-			</select>
+				<select >
+					<option value="" disabled selected >Seleziona posizione</option>
+					<?php
+					$cont=0;
+					while($cont<$piano['nstanze']):
+						$cont++;
+						?>
+						<option id="<?php echo $cont;?>" value="<?php echo $cont;?>" >stanza  <?php echo $cont;?></option>
+						<?php
+					endwhile;
+					?>
+				</select>
+
+			</div>
+			<a class="green btn center" style="margin-top: 17px" href="<?php echo $this->url(
+				array(
+					'controller' => 'livello1',
+					'action' => 'index',
+					'zona'=>'a',
+					'stanza'=>'24',
+					'idPiano'=>'1')
+			); ?>">Posizionati  </a>
+
+			<div class="col l12 s12 m12 center">
+				<img src="<?php echo $this->baseUrl($pianta); ?>" style="height:80%; width: 80%">
+			</div>
+			<div class="col l12 s12 m12 center-align">
+				<h5>informazioni sul piano</h5>
+			</div>
 
 		</div>
-		<a class="green btn center" style="margin-top: 17px" href="<?php echo $this->url(
-			array(
-				'controller' => 'livello1',
-				'action' => 'index',
-				'zona'=>'a',
-			    'stanza'=>'24',
-				'idPiano'=>'1')
-		); ?>">Posizionati  </a>
 
-		<div class="col l12 s12 m12 center">
-			<img src="<?php echo $this->baseUrl($pianta); ?>" style="height:80%; width: 80%">
-		</div>
-		<div class="col l12 s12 m12 center-align">
-			<h5>informazioni sul piano</h5>
-		</div>
-
-	</div>
-
-	<br>
-	<br>
-	<br>
+		<br>
+		<br>
+		<br>
 		<?php
 	endforeach;
 	?>
