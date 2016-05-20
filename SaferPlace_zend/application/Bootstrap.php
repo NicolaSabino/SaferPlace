@@ -21,6 +21,8 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         return $modelLoader;
     }
     */
+    
+    
     // Aggiunge un'istanza di Zend_Controller_Request_Http nel Front_Controller
     // che permette di utilizzare l'helper baseUrl() nel Bootstrap.php
     // Necessario solo se la Document-root di Apache non è la cartella public/
