@@ -9,3 +9,11 @@
     });
   }); // end of document ready
 })(jQuery); // end of jQuery name space
+
+function idstanza() {
+  
+var e =document.getElementById('stanza');
+var numstanza=e.options[e.selectedIndex].value;
+
+return numstanza;
+}

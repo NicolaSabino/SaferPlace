@@ -42,12 +42,12 @@
 		?>
 		<!-- immagine 1 -->
 		<div class="row">
-			<h3 id="<?php echo $piano['numeroPiano'];?>" class="green-text text-darken-2 center-align"> Piano <?php echo $piano['numeroPiano'];?> </h3>
+			<h3 id="piano" class="green-text text-darken-2 center-align"> Piano <?php echo $piano['numeroPiano'];?> </h3>
 
 			<div class="input-field col l3 m3 s3 offset-l4 " >
 
-				<select >
-					<option value="" disabled selected >Seleziona posizione</option>
+				<select id="stanza" >
+					<option   disabled selected >Seleziona posizione</option>
 					<?php
 					$cont=0;
 					while($cont<$piano['nstanze']):
@@ -66,8 +66,9 @@
 					'action' => 'index',
 					'zona'=>'a',
 					'stanza'=>'1',
-					'idPiano'=>'2')
-			); ?>">Posizionati  </a>
+					'idPiano'=>'2',
+					)
+			);  ?>">Posizionati  </a>
 
 			<div class="col l12 s12 m12 center">
 				<img src="<?php echo $this->baseUrl($pianta); ?>" style="height:80%; width: 80%">
