@@ -28,9 +28,13 @@ class Livello1Controller extends Zend_Controller_Action
 
     public function checkinbAction()
     {
-        $edificio=$this->controllaEdificio();
+        $piano=$this->controllaEdificio();
         $pianimodel=new Application_Resource_Piani();
-        $this->view->u = $pianimodel->getPianiByEdificio($edificio)->toArray();
+        $this->view->u = $pianimodel->getPianiByEdificio($piano)->toArray();
+        
+        $edificio=$this->controllaEdificio();
+        $edificimodel=new Application_Resource_Edifici();
+        $this->view->v = $edificimodel->getEdifici($edificio)->toArray();
     }
 
 
