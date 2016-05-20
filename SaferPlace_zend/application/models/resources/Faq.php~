@@ -1,0 +1,20 @@
+<?php
+
+class Application_Model_DbTable_Faq extends Zend_Db_Table_Abstract
+{
+
+    /*
+     * Informazioni sulla tabella
+     */
+    protected $_name = 'faq';
+    protected $_primary ='id';
+
+    //seleziono tutte le tuple della tabella
+    public function getAll(){
+        $select = $this->select();
+        return $this->fetchAll($select);
+    }
+
+
+}
+
