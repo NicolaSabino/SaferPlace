@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 20, 2016 at 11:46 AM
+-- Generation Time: May 20, 2016 at 11:58 AM
 -- Server version: 10.1.10-MariaDB
 -- PHP Version: 5.5.33
 
@@ -61,7 +61,7 @@ CREATE TABLE `edificio` (
 --
 
 INSERT INTO `edificio` (`nome`, `mappa`, `informazioni`) VALUES
-('Univpm', 'classico.jpg', '');
+('Liceo Classico', 'classico.jpg', 'informazioni su Liceo classico');
 
 -- --------------------------------------------------------
 
@@ -126,8 +126,9 @@ CREATE TABLE `piano` (
 --
 
 INSERT INTO `piano` (`id`, `edificio`, `numeroPiano`, `pianta`, `nstanze`) VALUES
-(1, 'Univpm', 1, 'piano-1-stanze.jpg', 19),
-(2, 'Univpm', 2, 'piano-2-stanze.jpg', 24);
+(1, 'Liceo Classico', 1, 'piano-1-stanze.jpg', 19),
+(2, 'Liceo Classico', 2, 'piano-2-stanze.jpg', 24),
+(3, 'Liceo Classico', 3, '', 10);
 
 -- --------------------------------------------------------
 
@@ -304,7 +305,7 @@ ALTER TABLE `faq`
 -- AUTO_INCREMENT for table `piano`
 --
 ALTER TABLE `piano`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `pianodifuga`
 --
