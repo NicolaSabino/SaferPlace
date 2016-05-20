@@ -2,19 +2,30 @@
 
 class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 {
-
-
+    //non so se va definito comunque il baseurl
+/*
     protected function _initSetupBaseUrl() {
             $this->bootstrap('frontcontroller');
             $controller = Zend_Controller_Front::getInstance();
             $controller->setBaseUrl('/SaferPlace/SaferPlace_zend/public');
     }
+*/
 
+        //questo metodo serve a caricare le classi presenti dentro model
+    protected function _initAutoLoad(){
+        $modelLoader= new Zend_Application_Module_Autoloader(array(
+            'namespace' => '',
+            'basePath' => APPLICATION_PATH //È definito dentro public/index.php
+        ));
+
+        return $modelLoader;
+    }
+    
+    // Aggiunge un'istanza di Zend_Controller_Request_Http nel Front_Controller
+    // che permette di utilizzare l'helper baseUrl() nel Bootstrap.php
+    // Necessario solo se la Document-root di Apache non è la cartella public/
+    //necessaria per far girare più di un progetto su una macchina server
     protected function _initRequest()
-        // Aggiunge un'istanza di Zend_Controller_Request_Http nel Front_Controller
-        // che permette di utilizzare l'helper baseUrl() nel Bootstrap.php
-        // Necessario solo se la Document-root di Apache non è la cartella public/
-        //necessaria per far girare più di un progetto su una macchina server
     {
         $this->bootstrap('FrontController');
         $front = $this->getResource('FrontController');
@@ -34,7 +45,8 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 
     }
     
-    //questo metodo serve a caricare le classi presenti dentro model
+
+  //loader di cucchia
     protected function _initDefaultModuleAutoloader()
     {
         $loader = Zend_Loader_Autoloader::getInstance();
@@ -42,8 +54,6 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $this->getResourceLoader()
             ->addResourceType('modelResource','models/resources','Resource');
     }
-
-
 }
 
 
