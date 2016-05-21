@@ -21,5 +21,6 @@ return numstanza;
 //funzione che scrolla la pagina nel checkinb
 $(function () {
   $('#selectPiano').change(function () {
-    $('html,body').animate({ scrollTop: $("#" + $(this).val()).offset().top }, 'slow');  });
+    $('html,body').animate({ scrollTop: $("#" + $(this).val()).offset().top-200 }, 800);  });
 });
+
