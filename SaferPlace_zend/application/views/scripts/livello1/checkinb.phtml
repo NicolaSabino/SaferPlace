@@ -11,16 +11,16 @@
 
 <body>
 
-<div class="container">
+<div class="container" style="margin-bottom: 200px" >
 
     <!-- Titolo -->
-    <div class="row white pinned center-align navbar-fixed" style="width: 100%">
+    <div class="row center-align navbar-fixed white" style="position: fixed; width: 100%; height: auto;">
         <div class="col l4 s6 center-align white">
-            <h3 class="green-text text-darken-2 center-align"><?php echo $piano;?></h3>
-            <h6 class="black-text"><?php echo $info;?></h6>
+            <h3 class="green-text text-darken-2 center-align white"><?php echo $piano;?></h3>
+            <h6 class="black-text white" style="width: 100%"><?php echo $info;?></h6>
         </div>
         <!-- select piano -->
-        <div class="col l8 s12 white" style="margin-top: 1%">
+        <div class="col l8 s12 white" style="margin-top: 1%;">
             <div class="input-field col s3 white">
                 <select id="selectPiano" class="white">
                     <option  disabled selected>Seleziona Piano</option>
@@ -35,22 +35,21 @@
             </div>
         </div>
     </div>
+</div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
+<div class="container" >
 		<!-- PIANO # + immagine -->
 		<?php
 	//mostra tutti i piani dell'edificio selezionato
 	foreach($this->u as $piano):
 		$pianta="image/piante/".$piano['pianta'];
 		?>
-		<div class="row">
 
-			<h3 id="<?php echo $piano['numeroPiano'];?>" class="green-text text-darken-2 center-align">Piano <?php echo $piano['numeroPiano'];?></h3>
+        <br id="<?php echo $piano['numeroPiano'];?>">
+
+        <div class="row">
+
+			<h3 class="green-text text-darken-2 center-align">Piano <?php echo $piano['numeroPiano'];?></h3>
 
 
 			<div class="input-field col l3 m3 s3 offset-l4 " >
