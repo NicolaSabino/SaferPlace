@@ -14,15 +14,15 @@
 <div class="container">
 
     <!-- Titolo -->
-    <div class="row white pinned center-align relative" style="width: 100%">
+    <div class="row white pinned center-align navbar-fixed" style="width: 100%">
         <div class="col l4 s6 center-align white">
             <h3 class="green-text text-darken-2 center-align"><?php echo $piano;?></h3>
             <h6 class="black-text"><?php echo $info;?></h6>
         </div>
         <!-- select piano -->
-        <div class="col l8 s12" style="margin-top: 1%">
-            <div class="input-field col s3">
-                <select id="selectPiano">
+        <div class="col l8 s12 white" style="margin-top: 1%">
+            <div class="input-field col s3 white">
+                <select id="selectPiano" class="white">
                     <option  disabled selected>Seleziona Piano</option>
                     <?php
                     foreach($this->u as $piano):
@@ -36,9 +36,11 @@
         </div>
     </div>
 
-		<br>
-		<br>
-
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 		<!-- PIANO # + immagine -->
 		<?php
