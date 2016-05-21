@@ -9,7 +9,6 @@
 	</div>
 </head>
 <body>
-
 <div class="container">
 	<!-- Titolo -->
 	<div class="row">
@@ -17,32 +16,41 @@
 			<h3 class="green-text text-darken-2 left-align"><?php echo $piano;?></h3>
 			<h6 class="black-text"><?php echo $info;?></h6>
 		</div>
-		<!-- pulsanti
+		<!-- select piano -->
 		<div class="col l8 s12" style="margin-top: 1%">
 			<div class="input-field col s3 ">
-				<select >
+				<select id="selectPiano">
 					<option  disabled selected>Seleziona Piano</option>
 					<?php
 					foreach($this->u as $piano):
 						?>
-						<option  value="<?php echo $piano['numeroPiano'];?>" ><a href="#<?php echo $piano['numeroPiano'];?>">piano <?php echo $piano['numeroPiano'];?></a> </option>
+						<option value="<?php echo $piano['numeroPiano'];?>"><a href="#piano<?php echo $piano['numeroPiano'];?>">piano <?php echo $piano['numeroPiano'];?></a></option>
 						<?php
 					endforeach;
 					?>
 				</select>
-			</div>-->
+			</div>
 	</div>
 
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
 
 
-	<br>
-	<?php
+		<!-- PIANO # + immagine -->
+		<?php
+	//mostra tutti i piani dell'edificio selezionato
 	foreach($this->u as $piano):
 		$pianta="image/piante/".$piano['pianta'];
 		?>
-		<!-- immagine 1 -->
 		<div class="row">
-			<h3 id="piano" class="green-text text-darken-2 center-align"> Piano <?php echo $piano['numeroPiano'];?> </h3>
+
+			<h3 id="<?php echo $piano['numeroPiano'];?>" class="green-text text-darken-2 center-align">Piano <?php echo $piano['numeroPiano'];?></h3>
+
 
 			<div class="input-field col l3 m3 s3 offset-l4 " >
 
@@ -58,7 +66,6 @@
 					endwhile;
 					?>
 				</select>
-
 			</div>
 			<a class="green btn center" style="margin-top: 17px" href="<?php echo $this->url(
 				array(
@@ -67,13 +74,13 @@
 					'zona'=>'a',
 					'stanza'=>'1',
 					'idPiano'=>'2',
-					)
+				)
 			);  ?>">Posizionati  </a>
+
 
 			<div class="col l12 s12 m12 center">
 				<img src="<?php echo $this->baseUrl($pianta); ?>" style="height:80%; width: 80%">
 			</div>
-
 		</div>
 
 		<br>
@@ -82,8 +89,7 @@
 		<?php
 	endforeach;
 	?>
-
-</div>
+	</div>
 
 
 </body>
