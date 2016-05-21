@@ -2886,7 +2886,7 @@ video.responsive-video {
   position: relative;
 }
 
-.pinned {
+.relative {
   position: fixed !important;
 }
 

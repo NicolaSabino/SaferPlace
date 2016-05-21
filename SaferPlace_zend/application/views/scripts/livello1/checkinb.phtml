@@ -8,35 +8,34 @@
 		?>
 	</div>
 </head>
-<body>
-<div class="container">
-	<!-- Titolo -->
-	<div class="row">
-		<div class="col l4 s6">
-			<h3 class="green-text text-darken-2 left-align"><?php echo $piano;?></h3>
-			<h6 class="black-text"><?php echo $info;?></h6>
-		</div>
-		<!-- select piano -->
-		<div class="col l8 s12" style="margin-top: 1%">
-			<div class="input-field col s3 ">
-				<select id="selectPiano">
-					<option  disabled selected>Seleziona Piano</option>
-					<?php
-					foreach($this->u as $piano):
-						?>
-						<option value="<?php echo $piano['numeroPiano'];?>"><a href="#piano<?php echo $piano['numeroPiano'];?>">piano <?php echo $piano['numeroPiano'];?></a></option>
-						<?php
-					endforeach;
-					?>
-				</select>
-			</div>
-	</div>
 
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+<body>
+
+<div class="container">
+
+    <!-- Titolo -->
+    <div class="row white pinned center-align relative" style="width: 100%">
+        <div class="col l4 s6 center-align white">
+            <h3 class="green-text text-darken-2 center-align"><?php echo $piano;?></h3>
+            <h6 class="black-text"><?php echo $info;?></h6>
+        </div>
+        <!-- select piano -->
+        <div class="col l8 s12" style="margin-top: 1%">
+            <div class="input-field col s3">
+                <select id="selectPiano">
+                    <option  disabled selected>Seleziona Piano</option>
+                    <?php
+                    foreach($this->u as $piano):
+                        ?>
+                        <option value="<?php echo $piano['numeroPiano'];?>"><a href="#piano<?php echo $piano['numeroPiano'];?>">piano <?php echo $piano['numeroPiano'];?></a></option>
+                        <?php
+                    endforeach;
+                    ?>
+                </select>
+            </div>
+        </div>
+    </div>
+
 		<br>
 		<br>
 
@@ -54,8 +53,8 @@
 
 			<div class="input-field col l3 m3 s3 offset-l4 " >
 
-				<select id="stanza" >
-					<option   disabled selected >Seleziona posizione</option>
+				<select id="stanza">
+					<option disabled selected >Seleziona posizione</option>
 					<?php
 					$cont=0;
 					while($cont<$piano['nstanze']):
@@ -89,8 +88,8 @@
 		<?php
 	endforeach;
 	?>
+		</div>
+
 	</div>
-
-
 </body>
 </html>
