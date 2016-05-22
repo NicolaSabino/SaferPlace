@@ -1,4 +1,26 @@
 <br /><br />
+
+<?php
+
+//estraggo l'insieme degli edifici con i relativi piani  e li inserisco nella barra laterale
+/*foreach ($this->nomiEdifici as $item){
+
+	$nomeEdificio = $item->nome;
+	echo "$nomeEdificio: ";
+
+	$pianiEdificio = $this->edifici[$nomeEdificio];
+	
+	foreach ($pianiEdificio as $piani){
+		echo "$piani->nome ";
+	}
+	echo "\n";
+};*/
+
+print_r($this->nomiEdifici);
+echo "<br> <br>";
+print_r($this->edifici);
+?>
+
 <div id="view-content">
 	<div class="container">
 		<div class="row">
@@ -9,9 +31,13 @@
 				<div class="fixed left-align">
 					<ul class="collapsible">
 						
+
+						
 					</ul>
 
 			<!-- barra laterale degli edifici -->
+					
+					<!--
 			<div class="col s2" style="margin-top: 10%">
 				<h4 class="green-text text-darken-3"><i class="small material-icons">business</i>Edifici</h4>
 				<div class="fixed left-align">
@@ -74,126 +100,8 @@
 
 				</div>
 			</div>
-
-			<div class="col s6" style="margin-top: 15%">
-				<img class="materialboxed responsive-img" src="image/piante/piano%201%20aree.jpg">
-			</div>
-
-			<!-- Sezione Notifiche -->
-			<div class="col s4" style="margin-top:10%;">
-				<h4 class="green-text text-darken-3">Notifiche<i class="small material-icons">sms_failed</i></h4>
-				<!-- sezione scrollabile -->
-
-				<div style="overflow-y: scroll; height: 500px;width:auto;" >
-					<!-- card 1 -->
-					<div class="card" style="width: 300px; margin-left: 12%">
-						<div class="card-content ">
-                    <span class="card-title">
-                        <div class="chip green darken-1 white-text">FrancesoRossi44</div>
-                    </span>
-							<ul>
-								<li>
-									<i class="blue-text">Allagamento</i> in <b>Ospedale Torrette</b>
-								</li>
-								<li>
-									Piano:<b>1</b>
-								</li>
-								<li>
-									Zona:<b>A</b>
-								</li>
-							</ul>
-
-						</div>
-						<div class="card-action">
-							<a href="#" class="green-text">Apri la mappa</a>
-							<a href="#" class="red-text">Ignora</a>
-						</div>
-					</div>
-
-					<!-- card 2 -->
-					<div class="card" style="width: 300px; margin-left: 12%">
-						<div class="card-content ">
-                    <span class="card-title">
-                            <div class="chip green darken-1 white-text">
-								<img src="image/profili/NicolaSabino_94.jpg" alt="Contact Person">
-								NicolaSabino_94
-							</div>
-                    </span>
-
-							<ul>
-								<li>
-									<i class="red-text">Incendio</i> in <b>Uffici Lutor Corp</b>
-								</li>
-								<li>
-									Piano:<b>2</b>
-								</li>
-								<li>
-									Zona:<b>C</b>
-								</li>
-							</ul>
-
-						</div>
-						<div class="card-action">
-							<a href="#" class="green-text">Apri la mappa</a>
-							<a href="#" class="red-text">Ignora</a>
-						</div>
-					</div>
-
-					<!-- card 3 -->
-					<div class="card " style="width: 300px; margin-left: 12%">
-						<div class="card-content ">
-                    <span class="card-title">
-                        <div class="chip green darken-1 white-text">MarcoNeri_21</div>
-                    </span>
-							<ul>
-								<li>
-									<i class="purple-text">Fuga di Gas</i> in <b>Uffici Nexos</b>
-								</li>
-								<li>
-									Piano:<b>2</b>
-								</li>
-								<li>
-									Zona:<b>K</b>
-								</li>
-							</ul>
-
-						</div>
-						<div class="card-action">
-							<a href="#" class="green-text">Apri la mappa</a>
-							<a href="#" class="red-text">Ignora</a>
-						</div>
-					</div>
-
-					<!-- card 4 -->
-					<div class="card " style="width: 300px; margin-left: 12%;">
-						<div class="card-content ">
-                    <span class="card-title">
-                            <div class="chip green darken-1 white-text">
-								<img src="image/profili/Russ8.jpg" alt="Contact Person">
-								Russ8
-							</div>
-                    </span>
-
-							<ul>
-								<li>
-									<i class="brown-text">Crollo</i> in <b>Uffici Lutor Corp</b>
-								</li>
-								<li>
-									Piano:<b>2</b>
-								</li>
-								<li>
-									Zona:<b>A</b>
-								</li>
-							</ul>
-
-						</div>
-						<div class="card-action">
-							<a href="#" class="green-text">Apri la mappa</a>
-							<a href="#" class="red-text">Ignora</a>
-						</div>
-					</div>
-				</div>
-
+			-->
+				</div>	
 			</div>
 		</div>
 	</div>

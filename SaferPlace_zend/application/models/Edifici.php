@@ -3,7 +3,7 @@
 class Application_Model_Edifici extends  Zend_Db_Table_Abstract
 {
     protected  $_name='edificio';
-    protected $_rowClass='Application_Model_DbTable_Edifici';
+    //protected $_rowClass='Application_Model__Edifici';
 
     public function getEdifici(){
 

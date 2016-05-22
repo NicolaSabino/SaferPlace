@@ -6,9 +6,8 @@ class Application_Model_Piani extends  Zend_Db_Table_Abstract
 
     public function getPianiByEdificio($edificio){
 
-        $select=new Application_Model_DbTable_Edifici();
         $select=$this->select()
-            ->where('edificio= ?',$edificio);
+            ->where('edificio= ? ',$edificio);
         return $this->fetchAll($select);
 
     }
