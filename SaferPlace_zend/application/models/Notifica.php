@@ -1,26 +1,19 @@
 <?php
-class Model_Notifica extends Zend_Db_Table_Abstract{
+class Application_Model_Notifica extends App_Model_Abstract{
 
 
     protected $_name = 'segnalazione';
 
-
-    public function getAllByEd($edificio)
+    //@return array di array assiociativi contenente tutte le notifiche relative a un edificio
+    public function fetchAllByEd($edificio)
     {
-        //recupero tutte le notifiche relative a un edificio
-        $select = $this->select()
-                        ->from ('segnalazione','posizione','piano')
-                        ->where ("segnalazione.idPosizione=posizione.id AND piano.id=posizione.idPiano AND edificio='$edificio'")
-                        ->columns('segnalazione.utente','piano.edificio');
-
-
-        return $select;
-
+        return $this->getResource('Notifica')->getAllBEd($edificio);
     }
 
     //cancella una notifica
-    public function deleteOne() {
-
+    public function delete($id) {
+    
+        $this->getResource('Notifica')->deleteOne($id);
 
     }
     //cancella tutte le notifiche relative a un edificio
