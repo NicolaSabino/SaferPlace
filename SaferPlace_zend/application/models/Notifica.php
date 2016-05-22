@@ -1,3 +1,5 @@
+<!-- tutto questo codice andrà distribuito in un model riguardante lo staff, forse anche altri model, per ora lo lascio così
+perchè devo testare -->
 <?php
 class Application_Model_Notifica extends App_Model_Abstract{
 
@@ -7,7 +9,7 @@ class Application_Model_Notifica extends App_Model_Abstract{
     //@return array di array assiociativi contenente tutte le notifiche relative a un edificio
     public function fetchAllByEd($edificio)
     {
-        return $this->getResource('Notifica')->getAllBEd($edificio);
+        return $this->getResource('Notifica')->getAllByEd($edificio);
     }
 
     //cancella una notifica
@@ -17,13 +19,13 @@ class Application_Model_Notifica extends App_Model_Abstract{
 
     }
     //cancella tutte le notifiche relative a un edificio
-    public function deleteAllByEd($edificio)
+    public function delAllByEd($edificio)
     {
-
+        $this->getResource('Notifica')->deleteAllByEd($edificio);
     }
     //recupera edificio e piano di una notifica
-    public function getEdificioPiano($id){
-
+    public function getEdPi($id){
+        return $this->getResource('Notifica')->getEdificioPiano($id);
     }
 
 }

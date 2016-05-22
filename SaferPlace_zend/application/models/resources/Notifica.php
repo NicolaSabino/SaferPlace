@@ -6,52 +6,49 @@ class Application_Resource_Notifica extends Zend_Db_Table_Abstract {
 
     //recupera le notifiche riguardanti un edificio
 public function getAllByEd($edificio) {
-
-    //devo definire qui un adattatore db per usare il db intero
-    $dbAdapter = Zend_Db::factory('PDO_mysql', array(
-        'host'     => 'localhost',
-        'username' => 'root',
-        'password' => '',
-        'dbname'   => 'sp_db'
-    ));
-
-    // TODO finire a scrivere la query
     //notifiche è un oggetto Zend_Db_Select che rappresenta una query
-    $notifiche = $dbAdapter->select()
+    //this->getAdapter() è un metodo di Zend_Db_Adapter che ti fa recuperare l'adattatore standard per la connessione
+    //al db
+    $notifiche = $this->getAdapter()
+        ->select()
         ->from(array('s'=>'segnalazione'),array('id','utente','idPosizione','tipo'))
         ->join(array('pos'=> 'posizione'),
-            'pos.id = s.idPosizione', array());
-
+            'pos.id = s.idPosizione', array())
+        ->join(array('p'=>'piano'), 'pos.idPiano=p.id', array('numeroPiano','edificio'))
+        ->where('p.edificio = ?', $edificio);
     //eseguo la query notifiche e metto il risultato in una variabile
-    $stamp=$dbAdapter->query($notifiche);
-    
+    $stamp=$this->getAdapter()->query($notifiche);
+
     return $stamp->fetchAll();
     }
 
 
     //cancella una notifica passando l'id della stessa
     public function deleteOne($id) {
-
         $where = $this->getAdapter()->quoteInto('id = ?', $id);
         $this->delete($where);
-
-
     }
+    
     //cancella tutte le notifiche relative a un edificio
     public function deleteAllByEd($edificio)
     {
-        //adattatore
-        $dbAdapter = Zend_Db::factory('PDO_mysql', array(
-            'host'     => 'localhost',
-            'username' => 'root',
-            'password' => '',
-            'dbname'   => 'sp_db'
-        ));
-
-
+        $query = "delete s FROM segnalazione s JOIN posizione pos ON pos.id=s.idPosizione JOIN piano p 
+                  ON p.id=pos.idPiano WHERE p.edificio='$edificio'";
+        
+        $this->getAdapter()->query($query);
     }
+    
     //recupera edificio e piano di una notifica
     public function getEdificioPiano($id){
+        $pianoed = $this->getAdapter()
+            ->select()
+            ->from(array('s'=>'segnalazione'),array())
+            ->join(array('pos'=> 'posizione'),
+                'pos.id = s.idPosizione', array())
+            ->join(array('p'=>'piano'), 'pos.idPiano=p.id', array('edificio','numeroPiano'))
+            ->where('s.id = ?', $id);
+        $esegui = $this->getAdapter()->query($pianoed);
 
+        return $esegui->fetchAll();
     }
 }
