@@ -1,0 +1,14 @@
+<br /><br />
+<div id="view-content">
+	<?php
+		foreach ($this->edifici_e_piani as $x=>$y){
+			echo "$x: ";
+			$app = $y;
+			foreach ($app as $item){
+				echo "$item";
+			}
+			echo "<br>";
+		}
+		//print_r($this->edifici_e_piani);
+	?>
+</div>

@@ -18,6 +18,7 @@
         </controllerFile>
         <controllerFile controllerName="Livello2">
           <actionMethod actionName="index"/>
+          <actionMethod actionName="dashboard"/>
         </controllerFile>
         <controllerFile controllerName="Livello3">
           <actionMethod actionName="index"/>
@@ -79,6 +80,9 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Dashboard">
             <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello2">
+            <viewScriptFile forActionName="dashboard"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>
