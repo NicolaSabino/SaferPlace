@@ -55,4 +55,11 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
 
         return $notifArray;
     }
+
+    public function getPlanimetria($edificio,$numeropiano){
+
+        $pianta = new Application_Resource_Piani();
+
+        return $pianta->getPianta($edificio, $numeropiano);
+    }
 }
