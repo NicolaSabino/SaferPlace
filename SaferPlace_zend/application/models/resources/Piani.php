@@ -1,5 +1,5 @@
 <?php
-class Application_Model_Piani extends  Zend_Db_Table_Abstract
+class Application_Resource_Piani extends  Zend_Db_Table_Abstract
 {
     protected  $_name='piano';
     protected $_rowClass='Application_Model_DbTable_Piani';
@@ -12,5 +12,16 @@ class Application_Model_Piani extends  Zend_Db_Table_Abstract
 
     }
 
+    public function getPianta($edificio, $numeropiano){
+
+        $select = $this
+                ->select()
+                ->setIntegrityCheck(false)
+                ->from('piano', 'pianta' )
+                ->where('numeroPiano = ?', $numeropiano)
+                ->where('edificio = ?', $edificio);
+        return $this->fetchAll($select);
+
+    }
 }
 
