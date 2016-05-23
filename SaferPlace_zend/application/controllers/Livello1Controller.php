@@ -40,12 +40,14 @@ class Livello1Controller extends Zend_Controller_Action
     }
 
     public function checkinbAction()
-    {
+    {  
+        $form= new Application_Form_Selezionapiano();
         $pianimodel=new Application_Resource_Piani();
         $edificio=$this->controllaParam('edificio');
         $edificimodel=new Application_Resource_Edifici();
         $this->view->v = $edificimodel->getEdifici($edificio)->toArray();
         $this->view->u = $pianimodel->getPianiByEdificio($edificio)->toArray();
+        $this->view->form=$form;
     }
 
     public function controllaParam($param)

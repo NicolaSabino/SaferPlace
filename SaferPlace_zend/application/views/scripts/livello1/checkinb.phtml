@@ -23,24 +23,11 @@
 					<h3 class="green-text text-darken-2 center-align white"><?php echo $piano;?></h3>
 				</div>
 				<!-- select piano -->
-				<div class="col l8 s12 white" style="margin-top: 1%;">
-					<div class="input-field col s3 white">
-						<select id="selectPiano" class="white">
-							<option  disabled selected>Seleziona Piano</option>
-							<?php
-							foreach($this->u as $piano):
-								?>
-								<option value="<?php echo $piano['numeroPiano'];?>"><a href="#piano<?php echo $piano['numeroPiano'];?>">piano <?php echo $piano['numeroPiano'];?></a></option>
-								<?php
-							endforeach;
-							?>
-						</select>
+				<div class="col l8 s12 " style="margin-top: -1%;">
+					<div class="input-field col s3 ">
+						<?php echo $this->form; ?>
 					</div>
 				</div>
-
-				<!-- secondo me le informazioni in questa pagina possiamo toglierle-->
-				<h6 class="black-text white" style="width: 100%"><?php echo $info;?></h6>
-
 			</div>
 
 		</div>
