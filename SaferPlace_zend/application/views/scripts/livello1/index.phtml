@@ -14,7 +14,13 @@
 
 		}
 	</style>
-
+	<div>
+		<?php
+		$edificio=$this->u['edificio'];
+		$idPiano=$this->u['idPiano'];
+		$stanza=$this->u['stanza'];
+		?>
+	</div>
 </head>
 <body>
 <div class="row">
@@ -23,7 +29,7 @@
 		<div class="card grey lighten-2">
 			<div class="card grey ">
 				<div class="card-content white-text">
-					<div class="card-image"><img class="responsive-img" src="<?php echo $this->baseUrl('image/edifici/ospedale-ancona.jpg'); ?>"> </div>
+					<div class="card-image"><img class="responsive-img" src="<?php echo $this->baseUrl('image/edifici/'.$edificio.'.jpg'); ?>"> </div>
 					<span>Edificio</span>
 					<hr>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -35,17 +41,12 @@
 						<tbody>
 						<tr>
 							<td>Piano:</td>
-							<td>1</td>
+							<td><?php echo $idPiano;?></td>
 
 						</tr>
 						<tr>
-							<td>Altro:</td>
-							<td>valore</td>
-
-						</tr>
-						<tr>
-							<td>Posizione:</td>
-							<td>5</td>
+							<td>Stanza:</td>
+							<td><?php echo $stanza;?></td>
 						</tr>
 
 						</tbody>
@@ -62,7 +63,7 @@
 	<!-- parte destra -->
 	<div id="sx" class="col s12 m8 l8">
 		<div class="center">
-			<img class="responsive-img" src="<?php echo $this->baseUrl('image/piante/piano-1-stanze.jpg'); ?>" >
+			<img class="responsive-img" src="<?php echo $this->baseUrl('image/piante/'.$edificio.' Piano '.$idPiano.'.jpg'); ?>" >
 		</div>
 	</div>
 </div>
@@ -75,8 +76,7 @@
 	</a>
 	<ul>
 		<li><a class="btn-floating tooltipped" data-position="left" data-delay="50" data-tooltip="Riposizionati" href="<?php echo $this->url(
-				array('controller' => 'livello1', 'action' => 'checkin')
-			); ?>"><i class="material-icons">place</i></a></li>
+				array('controller' => 'livello1', 'action' => 'checkin'),null,true); ?>"><i class="material-icons">place</i></a></li>
 		<li><a class="btn-floating yellow darken-1 tooltipped" data-position="left" data-delay="50" data-tooltip="Scappa" ><i class="material-icons">directions</i></a></li>
 		<li><a class="btn-floating green tooltipped" data-position="left" data-delay="50" data-tooltip="Segnala" "><i class="material-icons">add_alert</i></a></li>
 
