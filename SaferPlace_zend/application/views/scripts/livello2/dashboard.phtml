@@ -1,14 +1,34 @@
 <br /><br />
 <div id="view-content">
-	<?php
-		foreach ($this->edifici_e_piani as $x=>$y){
-			echo "$x: ";
-			$app = $y;
-			foreach ($app as $item){
-				echo "$item";
-			}
-			echo "<br>";
-		}
-		//print_r($this->edifici_e_piani);
-	?>
+	<div class="container">
+		<div class="row">
+
+			<!-- barra laterale degli edifici -->
+			<div class="col l3">
+				<h4 class="green-text text-darken-3"><i class="small material-icons">business</i>Edifici</h4>
+				<div class="fixed left-align">
+					<ul class="collapsible">
+						<?php
+						foreach ($this->edifici_e_piani as $x=>$y){
+
+							echo "<li>";
+							echo 	"<div class=\"collapsible-header green-text\"><b>$x</b></div>";
+							echo 		"<div class=\"collapsible-body\">";
+							echo 			"<ul class=\"collection\">";
+
+							foreach ($y as $item){
+								echo "<li class=\"collection-item grey-text\">$item</li>";
+							}
+
+							echo "</ul></div></li>";
+						}
+						?>
+
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
 </div>
