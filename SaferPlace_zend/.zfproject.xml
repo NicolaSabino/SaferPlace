@@ -25,6 +25,7 @@
       </controllersDirectory>
       <formsDirectory>
         <formFile formName="Selezionapiano"/>
+        <formFile formName="Selezionastanza"/>
       </formsDirectory>
       <layoutsDirectory>
         <layoutScriptsDirectory>

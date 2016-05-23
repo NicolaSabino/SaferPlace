@@ -22,8 +22,6 @@ class Application_Form_Selezionapiano extends Zend_Form
             'disable'=>array(0),
             'class' => 'form-control'
 
-
-
         ));
         $this->setDecorators(array(
             'FormElements',

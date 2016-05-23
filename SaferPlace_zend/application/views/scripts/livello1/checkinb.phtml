@@ -25,7 +25,7 @@
 				<!-- select piano -->
 				<div class="col l8 s12 " style="margin-top: -1%;">
 					<div class="input-field col s3 ">
-						<?php echo $this->form; ?>
+						<?php echo $this->formpiano; ?>
 					</div>
 				</div>
 			</div>
@@ -52,10 +52,11 @@
 				<h3 class="green-text text-darken-2 center-align">Piano <?php echo $piano['numeroPiano'];?></h3>
 	
 	
-				<div class="input-field col l3 m3 s3 offset-l4 " >
-	
-					<select id="stanza">
-						<option disabled selected >Seleziona posizione</option>
+				<div class="input-field col l3 m3 s3 offset-l4 " style="margin-top: -1%" >
+
+					<?php echo $this->formstanza; ?>
+					<!--<select id="stanza">
+						 <option disabled selected >Seleziona posizione</option>
 						<?php
 						$cont=0;
 						while($cont<$piano['nstanze']):
@@ -65,7 +66,7 @@
 							<?php
 						endwhile;
 						?>
-					</select>
+					</select> -->
 				</div>
 				<a class="green btn center" style="margin-top: 17px" href="<?php echo $this->url(
 					array(
