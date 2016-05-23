@@ -21,10 +21,10 @@ class Livello2Controller extends Zend_Controller_Action
         //estraggo i risultati dell'esecuzione della query e li stampo
         $this->view->assign("notifiche", $utente->getNotificheEmergenze());
 
-        
+
         //$this->view->assign('notifiche',$notifiche->fetchAll());
 
-    }
+    }[]
 
     public function dashboardAction()
     {
