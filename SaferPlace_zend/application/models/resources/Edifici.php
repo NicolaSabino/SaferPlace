@@ -13,11 +13,11 @@ class Application_Resource_Edifici extends  Zend_Db_Table_Abstract
     }
 
     //genero un insieme di edifici che sono gestiti dalla medesima persona
-    public function getByUtente($nomeUtente){
+    public function getGestByUtente($nomeUtente){
 
-        $select = $this->getAdapter()->select()->from('gestione')->where('utente = ?', $nomeUtente);
-        $appoggio = $this->getAdapter()->query($select);
-        return $appoggio->fetchAll();
+        $select = $this->select()->setIntegrityCheck(false)->from('gestione')->where('utente = ?', $nomeUtente);
+
+        return $this->fetchAll($select);
 
     }
 }

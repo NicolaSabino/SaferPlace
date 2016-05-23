@@ -15,6 +15,7 @@ class FaqController extends Zend_Controller_Action
         $faqModel = new Application_Model_Faq();
         //assegno alla view di faq la variabile FAQSET attraverso il metodo assign
         $this->view->assign("faqSet",$faqModel->getFaqSet());
+        
     }
 
 
