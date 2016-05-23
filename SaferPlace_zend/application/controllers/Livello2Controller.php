@@ -27,7 +27,12 @@ class Livello2Controller extends Zend_Controller_Action
 
     public function dashboardAction()
     {
-        $edificiModel            = new Application_Model_Edifici;
+
+        /*
+         *  popolo gli edifici
+         */
+
+        $edificiModel            = new Application_Model_Edifici();
         $pianiModel              = new Application_Model_Piani();
         $eddifici_e_piani        = array();
 
@@ -60,9 +65,29 @@ class Livello2Controller extends Zend_Controller_Action
 
         }
 
-
-
         $this->view->assign("edifici_e_piani",$eddifici_e_piani);
+
+
+        /*
+         *  genero le notifiche
+         */
+
+        $edifici = new Application_Model_UtenteStaff();
+        //genero un array di edifici gestiti
+
+        $gestiti = array();
+
+        $array=$edifici->getEdificiGestiti('nicolanabbo');
+
+        foreach ($array as $x=>$y){
+            
+            array_push($gestiti,$y);
+        }
+
+        print_r($gestiti);
+
+
+
     }
 
 

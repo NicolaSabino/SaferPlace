@@ -7,8 +7,8 @@ class Application_Model_Edifici extends  Zend_Db_Table_Abstract
 
     public function getEdifici(){
 
-        //
-        $select=new Application_Model_Edifici();
+        
+        //$select=new Application_Model_Edifici();
         $select=$this->select();
         return $this->fetchAll($select);
 

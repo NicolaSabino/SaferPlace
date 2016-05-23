@@ -1,6 +1,6 @@
 <?php
 
-class Application_Model_Edifici extends  Zend_Db_Table_Abstract
+class Application_Resource_Edifici extends  Zend_Db_Table_Abstract
 {
     protected  $_name='edificio';
     //protected $_rowClass='Application_Resource_Edifici_Item';
@@ -12,4 +12,12 @@ class Application_Model_Edifici extends  Zend_Db_Table_Abstract
 
     }
 
+    //genero un insieme di edifici che sono gestiti dalla medesima persona
+    public function getByUtente($nomeUtente){
+
+        $select = $this->getAdapter()->select()->from('gestione')->where('utente = ?', $nomeUtente);
+        $appoggio = $this->getAdapter()->query($select);
+        return $appoggio->fetchAll();
+
+    }
 }
