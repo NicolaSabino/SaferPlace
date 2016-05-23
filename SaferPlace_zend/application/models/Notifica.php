@@ -23,6 +23,7 @@ class Application_Model_Notifica extends App_Model_Abstract{
     {
         $this->getResource('Notifica')->deleteAllByEd($edificio);
     }
+    
     //recupera edificio e piano di una notifica
     public function getEdPi($id){
         return $this->getResource('Notifica')->getEdificioPiano($id);
