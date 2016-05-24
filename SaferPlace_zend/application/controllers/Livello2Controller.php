@@ -24,7 +24,7 @@ class Livello2Controller extends Zend_Controller_Action
 
         //$this->view->assign('notifiche',$notifiche->fetchAll());
 
-    }[]
+    }
 
     public function dashboardAction()
     {
