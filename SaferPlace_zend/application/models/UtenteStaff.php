@@ -41,8 +41,7 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
         return $edifici_e_piani;
         
     }
-    
-    //recupera tutte le netofiche riguardanti gli edifici gestiti dal membro loggato
+
     public function getNotificheEmergenze(){
 
         $ed= new Application_Resource_Edifici();
@@ -56,10 +55,11 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
 
         return $notifArray;
     }
-    
-    public function getPlanimetria($edificio, $numeropiano){
-        
-        $piano= new Application_Resource_Piani;
-        return $piano->getPianta($edificio, $numeropiano);               
+
+    public function getPlanimetria($edificio,$numeropiano){
+
+        $pianta = new Application_Resource_Piani();
+
+        return $pianta->getPianta($edificio, $numeropiano);
     }
 }
