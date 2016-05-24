@@ -26,6 +26,7 @@
       <formsDirectory>
         <formFile formName="Selezionapiano"/>
         <formFile formName="Selezionastanza"/>
+        <formFile formName="Html"/>
       </formsDirectory>
       <layoutsDirectory>
         <layoutScriptsDirectory>

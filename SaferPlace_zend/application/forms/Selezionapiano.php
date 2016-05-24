@@ -15,14 +15,34 @@ class Application_Form_Selezionapiano extends Zend_Form
         foreach ($piano as $p) {
             $piani[] = 'Piano '.$p['numeroPiano'];
         }
-        $this->addElement('select', 'elencopiani', array(
+
+        $select = new Zend_Form_Element_Select('elencopiani', array(
             'required' => true,
+            'description' => '<a href="#piano'.$p['numeroPiano'].'"></a>',
             'value'=>0,
             'multiOptions' => $piani,
             'disable'=>array(0),
             'class' => 'form-control'
 
         ));
+
+        $select->getDecorator('Description')->setOption('escape', false);
+
+        $this->addElement($select);
+
+        /*
+        $this->addElement('select', 'elencopiani', array(
+            'required' => true,
+            'description' => '<a href="#\'piano \'.$p[\'numeroPiano\']"</a>',
+            'value'=>0,
+            'multiOptions' => $piani,
+            'disable'=>array(0),
+            'class' => 'form-control'
+
+        ));
+
+
+        */
         $this->setDecorators(array(
             'FormElements',
             array('HtmlTag', array('tag' => 'table', 'class' => 'zend_form')),
