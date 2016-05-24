@@ -15,7 +15,7 @@ public function getAllByEd($edificio) {
         ->from(array('s'=>'segnalazione'),array('id','utente','idPosizione','tipo'))
         ->join(array('pos'=> 'posizione'),
             'pos.id = s.idPosizione', array())
-        ->join(array('p'=>'piano'), 'pos.idPiano=p.id', array('numeroPiano','edificio'))
+        ->join(array('p'=>'piano'), 'pos.numPiano=p.id', array('numeroPiano','edificio'))
         ->where('p.edificio = ?', $edificio);
     //eseguo la query notifiche e metto il risultato in una variabile
     $stamp=$this->getAdapter()->query($notifiche);
@@ -34,7 +34,7 @@ public function getAllByEd($edificio) {
     public function deleteAllByEd($edificio)
     {
         $select = "delete s FROM segnalazione s JOIN posizione pos ON pos.id=s.idPosizione JOIN piano p 
-                  ON p.id=pos.idPiano WHERE p.edificio='$edificio'";
+                  ON p.id=pos.numPiano WHERE p.edificio='$edificio'";
         
         $this->getAdapter()->query($query);
     }
@@ -48,7 +48,7 @@ public function getAllByEd($edificio) {
             ->from(array('s'=>'segnalazione'),array())
             ->join(array('pos'=> 'posizione'),
                 'pos.id = s.idPosizione', array())
-            ->join(array('p'=>'piano'), 'pos.idPiano=p.id', array('edificio','numeroPiano'))
+            ->join(array('p'=>'piano'), 'pos.numPiano=p.id', array('edificio','numeroPiano'))
             ->where('s.id = ?', $id);
 
         return $this->fetchAll($select);
