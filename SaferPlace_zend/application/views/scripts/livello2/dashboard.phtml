@@ -12,17 +12,30 @@
 						<?php
 						foreach ($this->edifici_e_piani as $x=>$y){
 
-							echo "<li>";
-							echo 	"<div class=\"collapsible-header green-text\"><b>$x</b></div>";
-							echo 		"<div class=\"collapsible-body\">";
-							echo 			"<ul class=\"collection\">";
+						echo "<li>";
+						echo "<div class=\"collapsible-header green-text\"><b>$x</b></div>";
+						echo "<div class=\"collapsible-body\">";
+						echo "<ul class=\"collection\">";
 
-							foreach ($y as $item){
-								echo "<li class=\"collection-item grey-text\">$item</li>";
-							}
+						foreach ($y as $item){
+						?>
 
-							echo "</ul></div></li>";
-						}
+						<li class="collection-item grey-text
+						">
+						<a class="grey-text" href=
+						   <?
+						   echo '"' . $this->url(
+								   array(
+									   'controller' => 'livello2',
+									   'action' => 'dashboard',
+									   'edificio' => $x,
+									   'piano' => $item
+								   )
+							   ) . '">Piano ' . $item . '</a></li>';
+						   } ?>
+							</a>
+						   <? echo '</ul></div></li>';
+						   }
 						?>
 
 					</ul>
@@ -31,7 +44,15 @@
 			</div>
 
 			<div class="col l6">
-					
+				<?php $pianta = "image/piante/".$this->edificio." ".$this->piano; ?>
+
+					<div class="row">
+						<?php 
+						if (isset($this->piano)) {
+							echo '<img class="materialboxed" src="'.$this->baseUrl($pianta).'"></img>';
+						}
+						?>
+					</div >	
 			</div>
 			<div class="col l3">
 				<div class="row"><h4 class="green-text text-darken-3">Notifiche<i class="small material-icons">sms_failed</i></h4></div>

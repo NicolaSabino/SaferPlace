@@ -35,24 +35,6 @@ die;*/
         $this->view->assign("edifici_e_piani",$modelUtente->getEdificiGestiti('nicolanabbo'));
         $this->view->assign("notifiche", $modelUtente->getNotificheEmergenze());
 
-        /*
-         *  genero le notifiche
-         */
-
-
-
-        //genero un array di edifici gestiti
-
-       // $gestiti = array();
-
-        //$array=$edifici->getEdificiGestiti('nicolanabbo');
-
-       /* foreach ($array as $x=>$y){
-           foreach ($y as )
-            array_push($gestiti,$y);
-        }
-*/
-        //print_r($array);
 
 
 
