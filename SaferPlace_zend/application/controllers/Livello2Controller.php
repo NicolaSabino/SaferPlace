@@ -5,7 +5,7 @@ class Livello2Controller extends Zend_Controller_Action
 
     public function init()
     {
-        $this->_helper->layout->setLayout('layout3');
+        $this->_helper->layout->setLayout('layout1');
     }
 
     public function indexAction()
@@ -17,7 +17,8 @@ class Livello2Controller extends Zend_Controller_Action
     {
 
         $utente= new Application_Model_UtenteStaff();
-        $notifiche = $utente->getNotificheEmergenze();
+        $notifiche = new Application_Resource_Notifica();
+
         //estraggo i risultati dell'esecuzione della query e li stampo
         $this->view->assign("notifiche", $utente->getNotificheEmergenze());
 
@@ -29,10 +30,10 @@ class Livello2Controller extends Zend_Controller_Action
     public function dashboardAction()
     {
         $modelUtente = new Application_Model_UtenteStaff();
-     
-
+      /*  print_r($modelUtente->getNotificheEmergenze());
+die;*/
         $this->view->assign("edifici_e_piani",$modelUtente->getEdificiGestiti('nicolanabbo'));
-
+        $this->view->assign("notifiche", $modelUtente->getNotificheEmergenze());
 
         /*
          *  genero le notifiche

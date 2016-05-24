@@ -31,10 +31,81 @@
 			</div>
 
 			<div class="col l6">
-
+					
 			</div>
 			<div class="col l3">
+				<div class="row"><h4 class="green-text text-darken-3">Notifiche<i class="small material-icons">sms_failed</i></h4></div>
+				<div class="row" style="overflow-y: scroll; height: 500px;width:auto;" >
+				<?php
+				foreach ($this->notifiche as $item) {
+					echo '<div class="card">
+						<div class="card-content ">
+							<span class="card-title">
+								<div class="chip green darken-1 white-text">'.$item->utente.'</div>
+							</span>
+								<ul>
+									<li>';
+					switch ($item->tipo) {
+
+						case 'Allagamento':
+							echo '<i class="blue-text">'.$item->tipo.'</i>';
+							break;
+
+						case 'Incendio':
+							echo '<i class="red-text">'.$item->tipo.'</i>';
+							break;
+
+						case 'Fuga di gas':
+							echo '<i class="purple-text">'.$item->tipo.'</i>';
+							break;
+
+						case 'Crollo':
+							echo '<i class="brown-text">'.$item->tipo.'</i>';
+							break;
+
+					};
+					echo ' in <b>'.$item->edificio.'</b></li>';
+					echo '	<li>
+							Piano:<b>'.$item->numPiano.'</b>
+												</li>
+												<li>
+							Stanza:<b>'.$item->stanza.'</b>
+												</li>
+											</ul>
 				
+									</div>
+										<div class="card-action">
+											<a href="#" class="green-text">Apri la mappa</a>
+											<a href="#" class="red-text">Ignora</a>
+										</div>';
+				}
+
+				?>
+				</div>
+<!--
+					<div class="card">
+					<div class="card-content ">
+						<span class="card-title">
+							<div class="chip green darken-1 white-text"></div>
+						</span>
+							<ul>
+								<li>
+									<i class="blue-text">Allagamento</i> in <b>Ospedale Torrette</b>
+								</li>
+								<li>
+									Piano:<b>1</b>
+								</li>
+								<li>
+									Zona:<b>A</b>
+								</li>
+							</ul>
+
+					</div>
+						<div class="card-action">
+							<a href="#" class="green-text">Apri la mappa</a>
+							<a href="#" class="red-text">Ignora</a>
+						</div> -->
+				</>
 			</div>
 		</div>
 	</div>

@@ -6,7 +6,7 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
 
     // TODO dobbiamo definire come passargli il nome utente
     public function __construct(){
-        $this->_nomeUtente='zek';
+        $this->_nomeUtente='nicolanabbo';
     }
     
     //restituisce l'insieme degli edifici gestiti da un determinato utente
@@ -48,12 +48,16 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
         $edificigest = $ed->getGestByUtente($this->_nomeUtente);
         $notifica = new Application_Resource_Notifica();
 
-        foreach ($edificigest as $item) {
-            $notifArray[] = $notifica->getAllByEd($item->edificio);
-            print_r($notifica->getAllByEd($item->edificio));
-        }
 
-        return $notifArray;
+        foreach ($edificigest as $item) {
+            $queryArray[] = $notifica->getAllByEd($item->edificio);
+
+        }
+        // crea la query union per avere tutte le notifiche di tutti gli edifici gestiti in un unico rowset
+        $allnotif = $notifica->select()->union($queryArray);
+       /*     print_r($notifica->fetchAll($notifica->select()->union($queryArray)));
+        die;*/
+        return $notifica->fetchAll($allnotif);
     }
 
     public function getPlanimetria($edificio,$numeropiano){

@@ -9,18 +9,16 @@ public function getAllByEd($edificio) {
     //notifiche è un oggetto Zend_Db_Select che rappresenta una query
     //this->getAdapter() è un metodo di Zend_Db_Adapter che ti fa recuperare l'adattatore standard per la connessione
     //al db
-    $notifiche = $this
+    $select = $this
         ->select()
         ->setIntegrityCheck(false)
-        ->from(array('s'=>'segnalazione'),array('id','utente','idPosizione','tipo'))
+        ->from(array('s'=>'segnalazione'),array('id','utente','tipo'))
         ->join(array('pos'=> 'posizione'),
-            'pos.id = s.idPosizione', array())
-        ->join(array('p'=>'piano'), 'pos.numPiano=p.id', array('numeroPiano','edificio'))
-        ->where('p.edificio = ?', $edificio);
+            'pos.id = s.idPosizione', array('numPiano','edificio','stanza'))
+        ->where('pos.edificio = ?', $edificio);
     //eseguo la query notifiche e metto il risultato in una variabile
-    $stamp=$this->getAdapter()->query($notifiche);
-
-    return $stamp->fetchAll();
+//restituisco solo la query perchè mi serve in una funzione che recupera tutte le notifiche di un membro staff
+    return $select;
     }
 
 
