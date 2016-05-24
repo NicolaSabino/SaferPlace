@@ -10,7 +10,13 @@ class Livello3Controller extends Zend_Controller_Action
 
     public function indexAction()
     {
-        // action body
+        $edificiModel = new Application_Model_Edifici();
+        $this->view->arrayEdifici = $edificiModel->getEdificiSet();
+        
+        $utenzaModel = new Application_Model_Utenza();
+        $this->view->arrayUtenti = $utenzaModel->getUtenza();
+
+
     }
 
 
