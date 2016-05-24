@@ -37,6 +37,8 @@ class Application_Form_Selezionastanza extends Zend_Form
 
         $this->addElement("submit","Posizionati",array(
             "class" => "green btn center",
+            'required' => true,
+
         ));
 
         $this->setDecorators(array(

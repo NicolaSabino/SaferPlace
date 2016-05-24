@@ -21,17 +21,14 @@ class Livello1Controller extends Zend_Controller_Action
         $posizioni=$idposizione->getIdPosizioniBynumPianoStanza($numPiano, $stanza)->toArray();
         $collocazionemodel=new Application_Resource_Collocazioni();
         $collocazione=$collocazionemodel->getCollocazioniByUser($user)->toArray();
-        if(is_null($collocazione) )
-        {    
-
+        if($collocazione===array() )
+        {
             $collocazionemodel->insertCollocazione($user,$posizioni[0]['id'] );
         }
-        else  
+        else
         {
             $collocazionemodel->updateCollocazione($posizioni[0]['id'], $user);
         }
-
-       // print_r();
         $this->view->u=array('stanza'=>$stanza,'numPiano'=>$numPiano,'edificio'=>$edificio);
 
     }
