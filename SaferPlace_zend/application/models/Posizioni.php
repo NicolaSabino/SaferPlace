@@ -6,4 +6,8 @@ class Application_Model_Posizioni extends App_Model_Abstract
     {
         return $this->getResource('Posizioni')->getAll();
     }
+
+    public function getIdPosizioniByNumPianoStanzaSet($numPiano, $stanza){
+        return $this->getResource('Posizioni')->getIdPosizioniBynumPianoStanza($numPiano, $stanza);
+    }
 }
