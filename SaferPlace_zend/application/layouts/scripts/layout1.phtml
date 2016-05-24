@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="it">
+<html lang="it" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
@@ -22,7 +22,7 @@
 
     <!-- favicon -->
     <link rel="icon"
-          type="imag/png"
+          type="image/png"
           href="<?php echo $this->baseUrl('image/logostilpiccolo.png');?>">
 
     <!-- script per attivare i popup con jquery -->
@@ -42,12 +42,22 @@
 
     <nav class="green  white-text">
         <div class="nav-wrapper container">
-            <a href="index" class="brand-logo" id="containerLogo" style="margin-top: 12px"><img src="<?php echo $this->baseUrl('image/logoM.png');?>" height="41.1" ></a>
+            <a href="index" class="brand-logo" id="containerLogo" style="margin-top: 12px"><img src="<?php echo $this->baseUrl('image/logoM.png');?>" height="41.1"></a>
+
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <div class="chip green darken-2 white-text">
+                        <img src="<?php echo $this->baseUrl('image/profili/NicolaSabino_94.jpg');?>" alt="Contact Person">NicolaSabino_94
+                    </div>
+                </li>
+                <li><a class="" href="#login">Impostazioni</a></li>
+                <li><a class="" href="#info">Logout</a></li>
+
+            </ul>
         </div>
-
     </nav>
-</div>
 
+</div>
 
 <?php echo $this->layout()->content; ?>
 

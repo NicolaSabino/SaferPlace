@@ -3,93 +3,94 @@
 	<div>
 		<?php
 		$piano=$this->u[0]['edificio'];
+		$info=$this->v[0]['informazioni'];
 		$option=0;
 		?>
 	</div>
 </head>
 <body>
-<div class="container">
-	<!-- Titolo -->
-	<div class="row">
-		<div class="col l4 s6">
-			<h3 class="green-text text-darken-2 left-align"><?php echo $piano;?></h3>
-		</div>
 
-		<!-- pulsanti -->
-		<div class="col l8 s12" style="margin-top: 1%">
-			<div class="input-field col s3">
-				<select >
-					<option  disabled selected>Seleziona Piano</option>
-					<?php
-					foreach($this->u as $piano):
-					?>
-					<option  value="<?php echo $piano['numeroPiano'];?>">piano <?php echo $piano['numeroPiano'];?> </option>
-						<?php
-					endforeach;
-					?>
-				</select>
+
+	<!-- barra fissa con nome edificio e box per scorrere i piani-->
+	<div style="margin-bottom: 200px" >
+
+		<!-- Titolo -->
+		<div class="row navbar-fixed white center-align" style="position: fixed; width: 100%; height: auto;">
+
+			<div class="container">
+
+				<div class="col l4 s12 center-align white">
+					<h3 class="green-text text-darken-2 center-align white"><?php echo $piano;?></h3>
+				</div>
+				<!-- select piano -->
+				<div class="col l8 s12 " style="margin-top: -1%;">
+					<div class="input-field col s3 ">
+						<?php echo $this->formpiano; ?>
+					</div>
+				</div>
 			</div>
 
 		</div>
-	</div>
-
-	<!-- sottotitolo -->
-	<div class="row" style="margin-top: -1%">
-		<h6 class="black-text">Complesso ospedaliero situato nel quartiere Torrette di Ancona in Via Conca 71 - Torrette Ancona</h6>
-	</div>
-
-	<br>
-	<?php
-	foreach($this->u as $piano):
-		$pianta="image/piante/".$piano['pianta'];
-	?>
-	<!-- immagine 1 -->
-	<div class="row">
-		<h3 class="green-text text-darken-2 center-align"> Piano <?php echo $piano['numeroPiano'];?> </h3>
-
-		<div class="input-field col l3 m3 s3 offset-l4 " >
-
-			<select >
-				<option value="" disabled selected >Seleziona posizione</option>
-				<?php
-				$cont=0;
-				while($cont<$piano['nstanze']):
-				$cont++;
-				?>
-				<option id="<?php echo $cont;?>" value="<?php echo $cont;?>" >stanza  <?php echo $cont;?></option>
-				<?php
-				endwhile;
-				?>
-			</select>
-
-		</div>
-		<a class="green btn center" style="margin-top: 17px" href="<?php echo $this->url(
-			array(
-				'controller' => 'livello1',
-				'action' => 'index',
-				'zona'=>'a',
-			    'stanza'=>'24',
-				'idPiano'=>'1')
-		); ?>">Posizionati  </a>
-
-		<div class="col l12 s12 m12 center">
-			<img src="<?php echo $this->baseUrl($pianta); ?>" style="height:80%; width: 80%">
-		</div>
-		<div class="col l12 s12 m12 center-align">
-			<h5>informazioni sul piano</h5>
-		</div>
 
 	</div>
 
-	<br>
-	<br>
-	<br>
-		<?php
-	endforeach;
-	?>
+	<!--elenco dei piani con immagini-->
+	<div class="container" >
+			<!-- PIANO # + immagine -->
+			<?php
+		//mostra tutti i piani dell'edificio selezionato
+		foreach($this->u as $piano):
+			$pianta="image/piante/".$piano['pianta'];
+			?>
+	
+			<!-- imposto l'id per il riferimento al piano ad uno spazio prima di ogni piano-->
+			<br id="<?php echo $piano['numeroPiano'];?>">
+	
+			<!--inizia l'elenco dei piani-->
+			<div class="row">
+	
+				<h3 class="green-text text-darken-2 center-align">Piano <?php echo $piano['numeroPiano'];?></h3>
+	
+	
+				<div class="input-field col l3 m3 s3 offset-l4 " style="margin-top: -1%" >
 
-</div>
-
+					<?php echo $this->formstanza; ?>
+					<!--<select id="stanza">
+						 <option disabled selected >Seleziona posizione</option>
+						<?php
+						$cont=0;
+						while($cont<$piano['nstanze']):
+							$cont++;
+							?>
+							<option  value="<?php echo $cont;?>" >stanza  <?php echo $cont;?></option>
+							<?php
+						endwhile;
+						?>
+					</select> -->
+				</div>
+				<a class="green btn center" style="margin-top: 17px" href="<?php echo $this->url(
+					array(
+						'controller' => 'livello1',
+						'action' => 'index',
+						'zona'=>'a',
+						'stanza'=>'1',
+						'idPiano'=>'2',
+					)
+				);  ?>">Posizionati  </a>
+	
+	
+				<div class="col l12 s12 m12 center">
+					<img src="<?php echo $this->baseUrl($pianta); ?>" style="height:80%; width: 80%">
+				</div>
+			</div>
+	
+			<br>
+			<br>
+			<br>
+			<?php
+		endforeach;
+		?>
+	</div>
 
 </body>
 </html>
