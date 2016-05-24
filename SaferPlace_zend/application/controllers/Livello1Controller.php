@@ -5,50 +5,59 @@ class Livello1Controller extends Zend_Controller_Action
 
     public function init()
     {
-        /* Initialize action controller here */
+        $this->_helper->layout->setLayout('layout1');
     }
 
     public function indexAction()
     {
-        $edificio=$this->controllaEdificio();
-        echo  $edificio;
-        if ($this->hasParam("zona"))
-            $zona=$this->getParam("zona");
-        if ($this->hasParam("stanza"))
-            $stanza=$this->getParam("stanza");
-        if ($this->hasParam("idPiano"))
-        $idPiano=$this->getParam("idPiano");
-        $this->model->u=array("edificio"=>$edificio,"zona"=>$zona,"stanza"=>$stanza,"idPiano"=>$idPiano);
-        //if($edificio==0)
-            //$this->_redirect('/livello1/checkin');
-        //else{
-        //}
-
+        $user="Peppep94";
+        $zona=$this->controllaParam('zona');
+        $stanza=$this->controllaParam('stanza');
+        $idPiano=$this->controllaParam('idPiano');
+        $idposizione=new Application_Resource_Posizioni();
+        $posizioni=$idposizione->getIdPosizioniByidPianoStanza($idPiano, $stanza)->toArray();
+        $collocazionemodel=new Application_Resource_Collocazioni();
+        $collocazione=$collocazionemodel->getCollocazioniByUser($user)->toArray();
+        if($collocazione[0]['utente']==$user)
+        {    
+            $collocazionemodel->updateCollocazione($posizioni[0]['id'], $user);
+          
+        }
+        else
+        {
+            $collocazionemodel->insertCollocazione($user,$posizioni[0]['id'] );
+        }
 
     }
-
     public function checkinAction()
     {
-        $edificimodel=new Application_Model_Edifici();
+        $edificimodel=new Application_Resource_Edifici();
         $this->view->u = $edificimodel->getEdifici()->toArray();
     }
 
     public function checkinbAction()
     {
-        $edificio=$this->controllaEdificio();
-        $pianimodel=new Application_Model_Piani();
+        $pianimodel=new Application_Resource_Piani();
+        $edificio=$this->controllaParam('edificio');
+        $edificimodel=new Application_Resource_Edifici();
+        $this->view->v = $edificimodel->getEdifici($edificio)->toArray();
         $this->view->u = $pianimodel->getPianiByEdificio($edificio)->toArray();
     }
 
-    public function controllaEdificio(){
-        $edificio=0;
-        if($this->hasParam("edificio"))
-            $edificio=$this->getParam("edificio");
-        return $edificio;
+    public function controllaParam($param)
+    {
+        $parametro=0;
+        if($this->hasParam("$param"))
+            $parametro=$this->getParam("$param");
+        return $parametro;
     }
 
 
 }
+
+
+
+
 
 
 

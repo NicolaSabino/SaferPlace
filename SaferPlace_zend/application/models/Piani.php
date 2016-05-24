@@ -1,7 +1,8 @@
 <?php
-class Application_Model_Piani extends  Zend_Db_Table_Abstract
+class Application_Model_Piani extends  App_Model_Abstract
 {
     protected  $_name='piano';
+    //protected $_rowClass='Application_Model_DbTable_Piani';
 
     public function getPianiByEdificio($edificio){
         
@@ -10,6 +11,10 @@ class Application_Model_Piani extends  Zend_Db_Table_Abstract
         return $this->fetchAll($select);
 
     }
+        public  function getPianiSet()
+        {
+        return $this->getResource('Piani')->getAll();
+        }
 
 }
 
