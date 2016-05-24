@@ -33,12 +33,12 @@ class Application_Form_Selezionastanza extends Zend_Form
             'value'=>0,
             'multiOptions' => $stanze,
             'disable'=>array(0),
-            'class' => 'form-control'
-
         ));
+
         $this->addElement("submit","Posizionati",array(
             "class" => "green btn center",
         ));
+
         $this->setDecorators(array(
             'FormElements',
             array('HtmlTag', array('tag' => 'table', 'class' => 'zend_form')),
