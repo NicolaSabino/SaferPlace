@@ -2,21 +2,23 @@
 
 class Livello1Controller extends Zend_Controller_Action
 {
-
+    protected  $stanzaform;
     public function init()
     {
         $this->_helper->layout->setLayout('layout1');
+        
     }
 
     public function indexAction()
     {
+        
         $user="Peppep94";
         $zona=$this->controllaParam('zona');
-        $stanza=$this->controllaParam('stanza');
-        $idPiano=$this->controllaParam('idPiano');
+        $numPiano=$this->controllaParam('numPiano');
         $edificio=$this->controllaParam('edificio');
+        $stanza=$this->controllaParam('elencostanze');
         $idposizione=new Application_Resource_Posizioni();
-        $posizioni=$idposizione->getIdPosizioniByidPianoStanza($idPiano, $stanza)->toArray();
+        $posizioni=$idposizione->getIdPosizioniBynumPianoStanza($numPiano, $stanza)->toArray();
         $collocazionemodel=new Application_Resource_Collocazioni();
         $collocazione=$collocazionemodel->getCollocazioniByUser($user)->toArray();
         if($collocazione[0]['utente']==$user)
@@ -30,9 +32,10 @@ class Livello1Controller extends Zend_Controller_Action
         }
 
        // print_r();
-        $this->view->u=array('stanza'=>$stanza,'idPiano'=>$idPiano,'edificio'=>$edificio);
+        $this->view->u=array('stanza'=>$stanza,'numPiano'=>$numPiano,'edificio'=>$edificio);
 
     }
+
     public function checkinAction()
     {
         $edificimodel=new Application_Resource_Edifici();
@@ -40,16 +43,21 @@ class Livello1Controller extends Zend_Controller_Action
     }
 
     public function checkinbAction()
-    {  
-        $pianoform= new Application_Form_Selezionapiano();
-        $stanzaform = new Application_Form_Selezionastanza();
-        $pianimodel=new Application_Resource_Piani();
+    {
         $edificio=$this->controllaParam('edificio');
-        $edificimodel=new Application_Resource_Edifici();
-        $this->view->v = $edificimodel->getEdifici($edificio)->toArray();
-        $this->view->u = $pianimodel->getPianiByEdificio($edificio)->toArray();
-        $this->view->formstanza=$stanzaform;
-        $this->view->formpiano=$pianoform;
+        $numPiano=$this->controllaParam('numPiano');
+        $_stanzeModel=new Application_Resource_Piani();
+        $numStanze = $_stanzeModel->getNStanzeByPiano($edificio, $numPiano)->toArray();
+        $numStanze = $numStanze[0]['nstanze'];
+        $this->stanzaform= new Application_Form_Selezionastanza($numStanze);
+        $this->view->v = array('edificio'=>$edificio, 'numPiano'=>$numPiano);
+        $this->stanzaform->setAction($this->view->url(
+            array(
+                'controller' => 'livello1',
+                'action' => 'index',
+            )
+        ));
+        $this->view->formstanza=$this->stanzaform;
     }
 
     public function controllaParam($param)
@@ -60,8 +68,21 @@ class Livello1Controller extends Zend_Controller_Action
         return $parametro;
     }
 
+    public function checkinintAction()
+    {
+        //$pianoform= new Application_Form_Selezionapiano();
+        $pianimodel=new Application_Resource_Piani();
+        $edificio=$this->controllaParam('edificio');
+        $edificimodel=new Application_Resource_Edifici();
+        $this->view->v = $edificimodel->getEdifici($edificio)->toArray();
+        $this->view->u = $pianimodel->getPianiByEdificio($edificio)->toArray();
+        //$this->view->formpiano=$pianoform;
+    }
+
 
 }
+
+
 
 
 

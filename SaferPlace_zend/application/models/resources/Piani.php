@@ -22,5 +22,12 @@ class Application_Resource_Piani extends  Zend_Db_Table_Abstract
         return $this->fetchAll($select);
 
     }
+
+    public function getNStanzeByPiano($edificio, $numPiano){
+        $select=$this->select()
+            ->where('edificio= ? ',$edificio)
+            ->where('numeroPiano= ? ',$numPiano);
+        return $this->fetchAll($select);
+    }
 }
 

@@ -1,0 +1,89 @@
+<html>
+<head>
+	<div>
+		<?php
+		$piano=$this->u[0]['edificio'];
+		$info=$this->v[0]['informazioni'];
+		$option=0;
+		?>
+	</div>
+</head>
+<body>
+
+
+<!-- barra fissa con nome edificio e box per scorrere i piani-->
+<div style="margin-bottom: 200px" >
+
+	<!-- Titolo -->
+	<div class="row navbar-fixed white center-align" style="position: fixed; width: 100%; height: auto;">
+
+		<div class="container">
+
+			<div class="col l4 s12 center-align white">
+				<h3 class="green-text text-darken-2 center-align white"><?php echo $piano;?></h3>
+			</div>
+			<!-- select piano -->
+			<div class="col l8 s12" style="margin-top: 1%;">
+				<div class="input-field col s3">
+					<select id="selectPiano">
+						<option  disabled selected>Seleziona Piano</option>
+						<?php
+						foreach($this->u as $piano):
+							?>
+							<option value="<?php echo $piano['numeroPiano'];?>"><a href="#piano<?php echo $piano['numeroPiano'];?>">piano <?php echo $piano['numeroPiano'];?></a></option>
+							<?php
+						endforeach;
+						?>
+					</select>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+
+
+<!--elenco dei piani con immagini-->
+<div class="container" >
+	<!-- PIANO # + immagine -->
+	<?php
+	//mostra tutti i piani dell'edificio selezionato
+	foreach($this->u as $piano):
+		$pianta="image/piante/".$piano['pianta'];
+		?>
+
+		<!-- imposto l'id per il riferimento al piano ad uno spazio prima di ogni piano-->
+		<br id="<?php echo $piano['numeroPiano'];?>">
+
+		<!--inizia l'elenco dei piani-->
+		<div class="row">
+
+			<h3 class="green-text text-darken-2 center-align">Piano <?php echo $piano['numeroPiano'];?></h3>
+
+			<p class="center"><a class="green btn center" href="<?php echo $this->url(
+				array(
+					'controller' => 'livello1',
+					'action' => 'checkinb',
+					'numPiano'=> $piano['numeroPiano'],
+				)
+			);  ?>">Seleziona Piano</a></p>
+
+
+			<div class="col l12 s12 m12 center">
+				<img src="<?php echo $this->baseUrl($pianta); ?>" style="height:80%; width: 80%">
+			</div>
+		</div>
+
+		<br>
+		<br>
+		<br>
+		<?php
+	endforeach;
+	?>
+</div>
+
+</body>
+</html>

@@ -17,6 +17,8 @@ class Application_Model_Piani extends  App_Model_Abstract
         return $this->getResource('Piani')->getAll();
 
     }
+    
+    
 
 }
 

@@ -17,7 +17,7 @@
 	<div>
 		<?php
 		$edificio=$this->u['edificio'];
-		$idPiano=$this->u['idPiano'];
+		$numPiano=$this->u['numPiano'];
 		$stanza=$this->u['stanza'];
 		?>
 	</div>
@@ -41,7 +41,7 @@
 						<tbody>
 						<tr>
 							<td>Piano:</td>
-							<td><?php echo $idPiano;?></td>
+							<td><?php echo $numPiano;?></td>
 
 						</tr>
 						<tr>
@@ -63,7 +63,7 @@
 	<!-- parte destra -->
 	<div id="sx" class="col s12 m8 l8">
 		<div class="center">
-			<img class="responsive-img" src="<?php echo $this->baseUrl('image/piante/'.$edificio.' Piano '.$idPiano.'.jpg'); ?>" >
+			<img class="responsive-img" src="<?php echo $this->baseUrl('image/piante/'.$edificio.' Piano '.$numPiano.'.jpg'); ?>" >
 		</div>
 	</div>
 </div>

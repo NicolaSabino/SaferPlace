@@ -5,20 +5,20 @@ class Application_Resource_Posizioni extends  Zend_Db_Table_Abstract
     protected $_rowClass='Application_Resource_Piani_Item';
     protected $_sequence = true;
 
-    public function getIdPosizioniByidPianoStanza($idPiano,$stanza){
+    public function getIdPosizioniBynumPianoStanza($numPiano,$stanza){
 
         $select=new Application_Resource_Piani_Item();
         $select=$this->select('id')
-                     ->where('idPiano='.$idPiano.' and stanza='. $stanza);
+                     ->where('numPiano='.$numPiano.' and stanza='. $stanza);
         return  $this->fetchAll($select);
 
     }
-    public function insertPosizione($zona,$stanza,$idPiano)
+    public function insertPosizione($zona,$stanza,$numPiano)
     {
         $posizioni = array(
             'zona'      => $zona,
             'stanza' => $stanza,
-            'idPiano'      => $idPiano
+            'numPiano'      => $numPiano
         );
 
         $this->insert($posizioni);
