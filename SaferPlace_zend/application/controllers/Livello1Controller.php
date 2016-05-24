@@ -33,6 +33,7 @@ class Livello1Controller extends Zend_Controller_Action
         $this->view->u=array('stanza'=>$stanza,'idPiano'=>$idPiano,'edificio'=>$edificio);
 
     }
+
     public function checkinAction()
     {
         $edificimodel=new Application_Resource_Edifici();
@@ -40,7 +41,7 @@ class Livello1Controller extends Zend_Controller_Action
     }
 
     public function checkinbAction()
-    {  
+    {
         $pianoform= new Application_Form_Selezionapiano();
         $stanzaform = new Application_Form_Selezionastanza();
         $pianimodel=new Application_Resource_Piani();
@@ -60,8 +61,21 @@ class Livello1Controller extends Zend_Controller_Action
         return $parametro;
     }
 
+    public function checkinintAction()
+    {
+        $pianoform= new Application_Form_Selezionapiano();
+        $pianimodel=new Application_Resource_Piani();
+        $edificio=$this->controllaParam('edificio');
+        $edificimodel=new Application_Resource_Edifici();
+        $this->view->v = $edificimodel->getEdifici($edificio)->toArray();
+        $this->view->u = $pianimodel->getPianiByEdificio($edificio)->toArray();
+        $this->view->formpiano=$pianoform;
+    }
+
 
 }
+
+
 
 
 

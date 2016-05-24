@@ -22,12 +22,7 @@
 				<div class="col l4 s12 center-align white">
 					<h3 class="green-text text-darken-2 center-align white"><?php echo $piano;?></h3>
 				</div>
-				<!-- select piano -->
-				<div class="col l8 s12 " style="margin-top: -1%;">
-					<div class="input-field col s3 ">
-						<?php echo $this->formpiano; ?>
-					</div>
-				</div>
+
 			</div>
 
 		</div>
@@ -37,15 +32,11 @@
 	<!--elenco dei piani con immagini-->
 	<div class="container" >
 			<!-- PIANO # + immagine -->
-			<?php
-		//mostra tutti i piani dell'edificio selezionato
-		foreach($this->u as $piano):
-			$pianta="image/piante/".$piano['pianta'];
-			?>
+
+			<?php $pianta="image/piante/".$piano['pianta']; ?>
+
 	
 			<!-- imposto l'id per il riferimento al piano ad uno spazio prima di ogni piano-->
-			<br id="<?php echo $piano['numeroPiano'];?>">
-	
 			<!--inizia l'elenco dei piani-->
 			<div class="row">
 	
@@ -87,9 +78,6 @@
 			<br>
 			<br>
 			<br>
-			<?php
-		endforeach;
-		?>
 	</div>
 
 </body>
