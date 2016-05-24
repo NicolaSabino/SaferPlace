@@ -28,7 +28,7 @@ class Livello2Controller extends Zend_Controller_Action
 
     public function dashboardAction()
     {
-        $modelUtente             = new Application_Model_UtenteStaff();
+        $modelUtente = new Application_Model_UtenteStaff();
      
 
         $this->view->assign("edifici_e_piani",$modelUtente->getEdificiGestiti('nicolanabbo'));
