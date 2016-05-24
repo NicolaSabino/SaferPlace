@@ -2,15 +2,6 @@
 
 <html lang="it" xmlns="http://www.w3.org/1999/html">
 <head>
-
-    <div>
-        <?php
-        $piano=$this->u[0]['edificio'];
-        $info=$this->v[0]['informazioni'];
-        $option=0;
-        ?>
-    </div>
-
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
 
@@ -24,8 +15,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
 
     <!-- CONFIGURAZIONE DI MATERIALIZE -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="<?php echo $this->baseUrl('css/materialize.min.css'); ?>">
+    <script src="<?php echo $this->baseUrl('js/materialize.min.js'); ?>"></script>
     <script type="text/javascript" src="<?php echo $this->baseUrl('js/materialize.min.js');?>"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
