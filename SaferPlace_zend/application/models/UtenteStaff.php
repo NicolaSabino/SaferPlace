@@ -6,18 +6,18 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
 
     // TODO dobbiamo definire come passargli il nome utente
     public function __construct(){
-        $this->_nomeUtente='nicolanabbo';
+        $this->_nomeUtente='zek';
     }
     
     //restituisce l'insieme degli edifici gestiti da un determinato utente
-    public function getEdificiGestiti($nomeUtente){
+    public function getEdificiGestiti(){
         
        
-        $pianiModel              = new Application_Model_Piani();
+        $pianiModel             = new Application_Model_Piani();
         $edifici_e_piani        = array();
 
         //estraggo gli edifici
-        $arrayEdifici = $this->getResource('Edifici')->getGestByUtente($nomeUtente);
+        $arrayEdifici = $this->getResource('Edifici')->getGestByUtente($this->_nomeUtente);
 
 
         //creo un array di array associativi per contenere linsieme di edifici e i relativi piani

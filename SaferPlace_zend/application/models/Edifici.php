@@ -6,7 +6,6 @@ class Application_Model_Edifici extends App_Model_Abstract
     //protected $_rowClass='Application_Model__Edifici';
 
     public function getEdifici(){
-
         
         //$select=new Application_Model_Edifici();
         $select=$this->select();
