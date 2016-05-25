@@ -17,6 +17,7 @@
           <actionMethod actionName="checkin"/>
           <actionMethod actionName="checkinb"/>
           <actionMethod actionName="checkinint"/>
+          <actionMethod actionName="segnalazione"/>
         </controllerFile>
         <controllerFile controllerName="Livello2">
           <actionMethod actionName="index"/>
@@ -39,6 +40,8 @@
         <formFile formName="Selezionapiano"/>
         <formFile formName="Selezionastanza"/>
         <formFile formName="Html"/>
+        <formFile formName="Loginform"/>
+        <formFile formName="Registratiform"/>
       </formsDirectory>
       <layoutsDirectory>
         <layoutScriptsDirectory>
@@ -95,6 +98,9 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Livello1">
             <viewScriptFile forActionName="checkinint"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello1">
+            <viewScriptFile forActionName="segnalazione"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>

@@ -1,0 +1,43 @@
+<html>
+<head>
+	<div>
+		<?php
+			$edificio=$this->arrayInformazioni['edificio'];
+			$numPiano=$this->arrayInformazioni['numPiano'];
+		?>
+	</div>
+</head>
+	<body>
+		<div class="container">
+			<br>
+			<div class="row center">
+				<div class="col l12">
+					<div class="center">
+						<h1 class="green-text center-align">Seleziona Evento</h1>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<div class="row center">
+				<div class="col l12">
+						<div class="center">
+							<a href= "<?php echo $this->url(
+								array(
+									'controller' => 'livello1',
+									'action' => 'mappasegnalazione',
+									'edificio' => $edificio,
+									'numPiano'=> $numPiano,
+								)
+							);  ?>"
+							   class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="segnala incendio"><img class="center-align"  src="<?php echo $this->baseUrl('image/incendio.png'); ?>"></a>
+							<a href = "#" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="segnala allagamento"><img class="center-align"  src="<?php echo $this->baseUrl('image/allagamento.png'); ?>"></a>
+							<a href = "#" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="segnala crollo"><img class="center-align"  src="<?php echo $this->baseUrl('image/crollo.png'); ?>"></a>
+							<a href = "#" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="segnala fuga di gas"><img class="center-align"  src="<?php echo $this->baseUrl('image/gas.png'); ?>"></a>
+						</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

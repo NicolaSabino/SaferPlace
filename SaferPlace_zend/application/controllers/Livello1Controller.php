@@ -2,64 +2,138 @@
 
 class Livello1Controller extends Zend_Controller_Action
 {
-    protected  $stanzaform;
+
+    protected $stanzaform = null;
+
     public function init()
     {
         $this->_helper->layout->setLayout('layout1');
-        
     }
 
     public function indexAction()
     {
         
         $user="Peppep94";
-        $zona=$this->controllaParam('zona');
+        
         $numPiano=$this->controllaParam('numPiano');
         $edificio=$this->controllaParam('edificio');
         $stanza=$this->controllaParam('elencostanze');
-        $idposizione=new Application_Resource_Posizioni();
-        $posizioni=$idposizione->getIdPosizioniBynumPianoStanza($numPiano, $stanza)->toArray();
-        $collocazionemodel=new Application_Resource_Collocazioni();
-        $collocazione=$collocazionemodel->getCollocazioniByUser($user)->toArray();
-        if($collocazione[0]['utente']==$user)
-        {    
-            $collocazionemodel->updateCollocazione($posizioni[0]['id'], $user);
-          
+
+
+        
+        //controlla che la stanza sia stata scelta dalla select, se non viene scelta si ricarica la pagina
+        if($stanza==0) {
+            $action = 'checkinb';
+            $controller = 'livello1';
+            $params = array('edificio'=>$edificio,
+                             'numPiano'=>$numPiano,
+                              'errore'=>'errore'); //aggiunge all'url un parametro "errore" che permetterà di visualizzare un messaggio di errore
+
+            $this->getHelper('Redirector')->gotoSimple($action, $controller, $module = null, $params);
+        }
+
+
+
+        $idposizione=new Application_Model_Posizioni();
+        $posizioni=$idposizione->getIdPosizioniByNumPianoStanzaSet($numPiano, $stanza);
+        
+        $collocazionemodel=new Application_Model_Collocazioni();
+        $collocazione=$collocazionemodel->getCollocazioneByUserSet($user);
+        
+        if($collocazione===array() )
+        {
+            $collocazionemodel->insertCollocazioni($user,$posizioni[0]['id'] );
         }
         else
         {
-            $collocazionemodel->insertCollocazione($user,$posizioni[0]['id'] );
+            $collocazionemodel->updateCollocazioni($posizioni[0]['id'], $user);
         }
-
-       // print_r();
-        $this->view->u=array('stanza'=>$stanza,'numPiano'=>$numPiano,'edificio'=>$edificio);
+        $this->view->arrayInformazioni = array('stanza'=>$stanza,'numPiano'=>$numPiano,'edificio'=>$edificio);
 
     }
 
+    /**
+     * action che carica la view del checkin
+     */
     public function checkinAction()
     {
-        $edificimodel=new Application_Model_Edifici();
-        $this->view->u = $edificimodel->getEdifici()->toArray();
+        $edificimodel = new Application_Model_Edifici();
+        $edifici = $edificimodel->getEdificiSet();
+        $this->view->insiemeEdifici = $edifici;
     }
 
+    /**
+     * action che carica la view del checkin intermedio per la scelta del piano
+     */
+    public function checkinintAction()
+    {
+        $edificio=$this->controllaParam('edificio');
+
+
+        $edificimodel = new Application_Model_Edifici();
+        $edifici = $edificimodel->getEdificiSet();
+        $this->view->insiemeEdifici = $edifici;
+
+
+        $pianimodel=new Application_Model_Piani();
+        $piani = $pianimodel->getPianiByEdificio($edificio);
+        $this->view->insiemePiani = $piani;
+    }
+
+    /**
+     * action che carica la view del checkin B per la scelta della stanza
+     */
     public function checkinbAction()
     {
         $edificio=$this->controllaParam('edificio');
         $numPiano=$this->controllaParam('numPiano');
-        $_stanzeModel=new Application_Resource_Piani();
-        $numStanze = $_stanzeModel->getNStanzeByPiano($edificio, $numPiano)->toArray();
-        $numStanze = $numStanze[0]['nstanze'];
-        $this->stanzaform= new Application_Form_Selezionastanza($numStanze);
-        $this->view->v = array('edificio'=>$edificio, 'numPiano'=>$numPiano);
+        $errore=$this->controllaParam('errore'); //variabile usata per mostrare a video un messaggio di errore 
+ 
+        $this->view->insiemePiani = $numPiano;
+        $this->view->insiemeEdifici = $edificio;
+        $this->view->errore = $errore;
+
+
+
+
+        $_stanzeModel = new Application_Model_Piani();
+
+        $numStanze = $_stanzeModel->getNStanzeByPianoSet($edificio, $numPiano);
+
+
+        $app = 0 ; //variabile appoggio per il numero delle stanze di un piano
+        foreach ($numStanze as $nStanze){
+            $app = $nStanze->nstanze;
+        }
+
+
+        $this->stanzaform= new Application_Form_Selezionastanza($app);
+
         $this->stanzaform->setAction($this->view->url(
             array(
                 'controller' => 'livello1',
                 'action' => 'index',
             )
         ));
+
         $this->view->formstanza=$this->stanzaform;
     }
 
+
+    public function segnalazioneAction()
+    {
+        // action body
+    }
+
+
+
+    /**
+     * controlla se vengono passati dei parametri e restituisce il parametro
+     * passato per riferimento
+     * 
+     * @param $param
+     * @return int|mixed
+     */
     public function controllaParam($param)
     {
         $parametro=0;
@@ -68,19 +142,9 @@ class Livello1Controller extends Zend_Controller_Action
         return $parametro;
     }
 
-    public function checkinintAction()
-    {
-        //$pianoform= new Application_Form_Selezionapiano();
-        $pianimodel=new Application_Resource_Piani();
-        $edificio=$this->controllaParam('edificio');
-        $edificimodel=new Application_Resource_Edifici();
-        $this->view->v = $edificimodel->getEdifici($edificio)->toArray();
-        $this->view->u = $pianimodel->getPianiByEdificio($edificio)->toArray();
-        //$this->view->formpiano=$pianoform;
-    }
-
-
 }
+
+
 
 
 

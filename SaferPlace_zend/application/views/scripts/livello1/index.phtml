@@ -14,11 +14,12 @@
 
 		}
 	</style>
+	
 	<div>
 		<?php
-		$edificio=$this->u['edificio'];
-		$numPiano=$this->u['numPiano'];
-		$stanza=$this->u['stanza'];
+		$edificio=$this->arrayInformazioni['edificio'];
+		$numPiano=$this->arrayInformazioni['numPiano'];
+		$stanza=$this->arrayInformazioni['stanza'];
 		?>
 	</div>
 </head>
@@ -30,12 +31,6 @@
 			<div class="card grey ">
 				<div class="card-content white-text">
 					<div class="card-image"><img class="responsive-img" src="<?php echo $this->baseUrl('image/edifici/'.$edificio.'.jpg'); ?>"> </div>
-					<span>Edificio</span>
-					<hr>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-						dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-						ex ea commodo consequat.</p>
-					<hr>
 					<table class="bordered">
 
 						<tbody>
@@ -52,10 +47,6 @@
 						</tbody>
 					</table>
 
-				</div>
-				<div class="card-action">
-					<a class="right"  href="#">mostra posizione</a>
-					<br>
 				</div>
 			</div>
 		</div>
@@ -77,8 +68,11 @@
 	<ul>
 		<li><a class="btn-floating tooltipped" data-position="left" data-delay="50" data-tooltip="Riposizionati" href="<?php echo $this->url(
 				array('controller' => 'livello1', 'action' => 'checkin'),null,true); ?>"><i class="material-icons">place</i></a></li>
-		<li><a class="btn-floating yellow darken-1 tooltipped" data-position="left" data-delay="50" data-tooltip="Scappa" ><i class="material-icons">directions</i></a></li>
-		<li><a class="btn-floating green tooltipped" data-position="left" data-delay="50" data-tooltip="Segnala" "><i class="material-icons">add_alert</i></a></li>
+
+		<li><a class="btn-floating yellow darken-1 tooltipped" data-position="left" data-delay="50" data-tooltip="Scappa"  ><i class="material-icons">directions</i></a></li>
+
+		<li><a class="btn-floating green tooltipped" data-position="left" data-delay="50" data-tooltip="Segnala" href="<?php echo $this->url(
+		array('controller' => 'livello1', 'action' => 'segnalazione'),null,true); ?>"><i class="material-icons">add_alert</i></a></li>
 
 	</ul>
 </div>
