@@ -14,6 +14,7 @@
 
 		}
 	</style>
+	
 	<div>
 		<?php
 		$edificio=$this->arrayInformazioni['edificio'];
@@ -67,8 +68,11 @@
 	<ul>
 		<li><a class="btn-floating tooltipped" data-position="left" data-delay="50" data-tooltip="Riposizionati" href="<?php echo $this->url(
 				array('controller' => 'livello1', 'action' => 'checkin'),null,true); ?>"><i class="material-icons">place</i></a></li>
-		<li><a class="btn-floating yellow darken-1 tooltipped" data-position="left" data-delay="50" data-tooltip="Scappa" ><i class="material-icons">directions</i></a></li>
-		<li><a class="btn-floating green tooltipped" data-position="left" data-delay="50" data-tooltip="Segnala" "><i class="material-icons">add_alert</i></a></li>
+
+		<li><a class="btn-floating yellow darken-1 tooltipped" data-position="left" data-delay="50" data-tooltip="Scappa"  ><i class="material-icons">directions</i></a></li>
+
+		<li><a class="btn-floating green tooltipped" data-position="left" data-delay="50" data-tooltip="Segnala" href="<?php echo $this->url(
+		array('controller' => 'livello1', 'action' => 'segnalazione'),null,true); ?>"><i class="material-icons">add_alert</i></a></li>
 
 	</ul>
 </div>
