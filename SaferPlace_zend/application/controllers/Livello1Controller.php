@@ -15,7 +15,6 @@ class Livello1Controller extends Zend_Controller_Action
         
         $user="Peppep94";
         
-        $zona=$this->controllaParam('zona');
         $numPiano=$this->controllaParam('numPiano');
         $edificio=$this->controllaParam('edificio');
         $stanza=$this->controllaParam('elencostanze');
@@ -27,7 +26,8 @@ class Livello1Controller extends Zend_Controller_Action
             $action = 'checkinb';
             $controller = 'livello1';
             $params = array('edificio'=>$edificio,
-                             'numPiano'=>$numPiano);
+                             'numPiano'=>$numPiano,
+                              'errore'=>'errore'); //aggiunge all'url un parametro "errore" che permetterà di visualizzare un messaggio di errore
 
             $this->getHelper('Redirector')->gotoSimple($action, $controller, $module = null, $params);
         }
@@ -87,9 +87,11 @@ class Livello1Controller extends Zend_Controller_Action
     {
         $edificio=$this->controllaParam('edificio');
         $numPiano=$this->controllaParam('numPiano');
-
+        $errore=$this->controllaParam('errore'); //variabile usata per mostrare a video un messaggio di errore 
+ 
         $this->view->insiemePiani = $numPiano;
         $this->view->insiemeEdifici = $edificio;
+        $this->view->errore = $errore;
 
 
 
