@@ -44,8 +44,8 @@
 								<span class="card-title activator grey-text text-darken-4"><?php echo $edificio['nome'];?><i class="material-icons right">more_vert</i></span>
 								<p><a class="btn red white-text "  href="<?php echo $this->url(
 										array(
-											'controller' => 'livello1',
-											'action' => 'checkinint',
+											'controller' => 'livello3',
+											'action' => '',
 											'edificio'=>$edificio['nome']
 										)
 									); ?>">Gestisci</a></p>
@@ -141,7 +141,7 @@
 				</div>
 
 				<!-- modal per un nuovo utente -->
-				<!--<div id="nuovo" class="modal">
+				<div id="nuovo" class="modal">
 					<div class="modal-content s12 m6">
 						<h5 class="green-text">Crea nuovo utente</h5>
 						<form class="col s12 " action="actionph">
@@ -159,11 +159,11 @@
 						</form>
 					</div>
 				</div>
-				-->
+
 
 
 				<!-- modal di modifica di un utente  -->
-				<!--<div id="modifica" class="modal">
+				<div id="modifica" class="modal">
 					<div class="modal-content s12 m6">
 						<h5 class="green-text">Modifica utente</h5>
 						<form class="col s12 " action="mod">
@@ -178,7 +178,8 @@
 						</form>
 					</div>
 				</div>
-				-->
+
+
 
 
 				<!-- tabella risultati -->
@@ -195,7 +196,6 @@
 					</thead>
 
 					<tbody>
-					sdfghjklò
 
 					<?php
 					foreach ($this->arrayUtenti as $utente){
@@ -224,43 +224,33 @@
 		</div>
 
 		<div id="gestFAQ">
+
+
+			<div id="modifica_Faq" class="modal">
+				<div class="modal-content s12 m6">
+					<h5 class="green-text">Modifica FAQ</h5>
+					<?php echo $this->modificaFaq; ?>
+				</div>
+			</div>
+
 			<ul class="collapsible popout" data-collapsible="accordion">
-				<li>
-					<div class="collapsible-header">
-						<div class=" col l10">
-							<i class="material-icons green-text">live_help</i>Domanda 1
-						</div>
-					</div>
+				<?php
+					foreach ($this->faqSet as $faq){
+					echo '<li>';
+						echo '<div class="collapsible-header">
+							<i class="material-icons green-text">live_help</i>'. $faq->domanda .
+							'</div>';
+						echo '<div class="collapsible-body">'.
+							'<p>'.$faq->risposta.'</p>'.
+							'<p>
+									<a class="btn-floating btn-large green white-text modal-trigger" data-target="modifica_Faq"><i class="material-icons">edit</i></a>
+								</p>';
+							echo '</div>';
+						}
+				?>
 
-
-					<div class="collapsible-body">
-						<p>Risposta 1</p>
-						<p>
-							<a href="edit" class="btn-floating btn-large green white-text"><i class="material-icons">edit</i></a>
-						</p>
-					</div>
-
-
-				</li>
-				<li>
-					<div class="collapsible-header"><i class="material-icons green-text">live_help</i>Domanda 2</div>
-					<div class="collapsible-body">
-						<p>Risposta 2</p>
-						<p>
-							<a href="edit" class="btn-floating btn-large green white-text"><i class="material-icons">edit</i></a>
-						</p>
-					</div>
-				</li>
-				<li>
-					<div class="collapsible-header"><i class="material-icons green-text">live_help</i>Domanda 3</div>
-					<div class="collapsible-body">
-						<p>Risposta 3</p>
-						<p>
-							<a href="edit" class="btn-floating btn-large green white-text"><i class="material-icons">edit</i></a>
-						</p>
-					</div>
-				</li>
 			</ul>
+
 		</div>
 
 	</div>
