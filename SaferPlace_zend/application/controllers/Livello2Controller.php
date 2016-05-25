@@ -5,7 +5,7 @@ class Livello2Controller extends Zend_Controller_Action
 
     public function init()
     {
-        $this->_helper->layout->setLayout('layout1');
+        $this->_helper->layout->setLayout('layout3');
     }
 
     public function indexAction()
@@ -30,17 +30,27 @@ class Livello2Controller extends Zend_Controller_Action
     public function dashboardAction()
     {
         $modelUtente = new Application_Model_UtenteStaff();
-      /*  print_r($modelUtente->getNotificheEmergenze());
-die;*/
+
+        if (($edificio = $this->controllaParam('edificio')) && ($piano = $this->controllaParam('piano')))
+            $this->view->assign("pianta", $edificio . ' Piano ' . $piano . '.jpg');
+
         $this->view->assign("edifici_e_piani",$modelUtente->getEdificiGestiti('nicolanabbo'));
-        $this->view->assign("notifiche", $modelUtente->getNotificheEmergenze());
+        if ($notifiche = $modelUtente->getNotificheEmergenze())
+            $this->view->assign("notifiche", $notifiche);
 
-
+        /*  print_r($modelUtente->getNotificheEmergenze());
+       die;*/
 
 
     }
 
-    
+    public function controllaParam($param)
+    {
+        $parametro=0;
+        if($this->hasParam("$param"))
+            $parametro=$this->getParam("$param");
+        return $parametro;
+    }
 
 
 }

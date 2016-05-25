@@ -1,8 +1,9 @@
 <br /><br />
 <div id="view-content">
 	<div class="container">
+		<div class="row z-depth-1"><div class="col s9 push-s3"><h2 class="green-text">SaferPlace Dashboard</h2></div></div>
 		<div class="row">
-
+			<br>
 			
 			<!-- barra laterale degli edifici -->
 			<div class="col l3">
@@ -20,10 +21,10 @@
 						foreach ($y as $item){
 						?>
 
-						<li class="collection-item grey-text
-						">
+
 						<a class="grey-text" href=
-						   <?
+
+						      <?
 						   echo '"' . $this->url(
 								   array(
 									   'controller' => 'livello2',
@@ -31,11 +32,11 @@
 									   'edificio' => $x,
 									   'piano' => $item
 								   )
-							   ) . '">Piano ' . $item . '</a></li>';
+							   ) . '">'.'<li class="collection-item">'.'Piano ' . $item .'</li>';
 						   } ?>
-							</a>
+						</a>
 						   <? echo '</ul></div></li>';
-						   }
+					   }
 						?>
 
 					</ul>
@@ -43,90 +44,82 @@
 				</div>
 			</div>
 
-			<div class="col l6">
-				<?php $pianta = "image/piante/".$this->edificio." ".$this->piano; ?>
+			<!-- pianta del piano selezionato -->
+			<div class="col l5">
+				<?php $pianta = "image/piante/".$this->pianta; ?>
 
 					<div class="row">
-						<?php 
-						if (isset($this->piano)) {
-							echo '<img class="materialboxed" src="'.$this->baseUrl($pianta).'"></img>';
-						}
-						?>
-					</div >	
+
+								<?php
+
+								if (isset($this->pianta)) {
+									echo '<img class="materialboxed" src="'.$this->baseUrl($pianta).'" width="100%"></img>';
+								}
+								?>
+
+					</div >
 			</div>
-			<div class="col l3">
-				<div class="row"><h4 class="green-text text-darken-3">Notifiche<i class="small material-icons">sms_failed</i></h4></div>
-				<div class="row" style="overflow-y: scroll; height: 500px;width:auto;" >
-				<?php
-				foreach ($this->notifiche as $item) {
-					echo '<div class="card">
-						<div class="card-content ">
-							<span class="card-title">
-								<div class="chip green darken-1 white-text">'.$item->utente.'</div>
-							</span>
-								<ul>
-									<li>';
-					switch ($item->tipo) {
 
-						case 'Allagamento':
-							echo '<i class="blue-text">'.$item->tipo.'</i>';
-							break;
+			<!-- notifiche -->
+			<div class="col l4">
+				<h4 class="green-text text-darken-3">Notifiche<i class="small material-icons">sms_failed</i></h4>
+				<!-- sezione scrollabile -->
+				<div class="z-depth-1 " style="overflow-y: scroll; height: 575px;">
+					<div class="container">
+							<?php
+							if (isset($this->notifiche)){
+								foreach ($this->notifiche as $item) {
+									echo '<p>';
+									echo '	<div class="card-content ">';
+									echo '	<span class="card-title">
+											<div class="chip green darken-1 white-text">'.$item->utente.'</div>
+										</span>';
+									echo '<ul>
+										<li>';
 
-						case 'Incendio':
-							echo '<i class="red-text">'.$item->tipo.'</i>';
-							break;
+									switch ($item->tipo) {
 
-						case 'Fuga di gas':
-							echo '<i class="purple-text">'.$item->tipo.'</i>';
-							break;
+										case 'Allagamento':
+											echo '<i class="blue-text">'.$item->tipo.'</i>';
+											break;
 
-						case 'Crollo':
-							echo '<i class="brown-text">'.$item->tipo.'</i>';
-							break;
+										case 'Incendio':
+											echo '<i class="red-text">'.$item->tipo.'</i>';
+											break;
 
-					};
-					echo ' in <b>'.$item->edificio.'</b></li>';
-					echo '	<li>
-							Piano:<b>'.$item->numPiano.'</b>
-												</li>
-												<li>
-							Stanza:<b>'.$item->stanza.'</b>
-												</li>
-											</ul>
-				
-									</div>
-										<div class="card-action">
-											<a href="#" class="green-text">Apri la mappa</a>
-											<a href="#" class="red-text">Ignora</a>
-										</div>';
-				}
+										case 'Fuga di gas':
+											echo '<i class="purple-text">'.$item->tipo.'</i>';
+											break;
 
-				?>
-				</div>
-<!--
-					<div class="card">
-					<div class="card-content ">
-						<span class="card-title">
-							<div class="chip green darken-1 white-text"></div>
-						</span>
-							<ul>
-								<li>
-									<i class="blue-text">Allagamento</i> in <b>Ospedale Torrette</b>
-								</li>
-								<li>
-									Piano:<b>1</b>
-								</li>
-								<li>
-									Zona:<b>A</b>
-								</li>
-							</ul>
+										case 'Crollo':
+											echo '<i class="brown-text">'.$item->tipo.'</i>';
+											break;
 
+									};
+
+									echo ' in <b>'.$item->edificio.'</b>';
+									echo '</li>';
+									echo '	<li>
+													Piano:<b>'.$item->numPiano.'</b>
+																		</li>
+																		<li>
+													Stanza:<b>'.$item->stanza.'</b>
+																		</li>
+																	</ul>
+										
+															</div>
+																<div class="card-action">
+																	<a href="#" class="green-text">Apri la mappa</a>
+																	<a href="#" class="red-text">Ignora</a>
+																</div>';
+									echo '</li></p><div class="divider"></div> ';
+								}
+							}
+							else
+							echo '<p class="grey-text center"><b>Attualmente non ci sono notifiche</b></p>';
+							?>
 					</div>
-						<div class="card-action">
-							<a href="#" class="green-text">Apri la mappa</a>
-							<a href="#" class="red-text">Ignora</a>
-						</div> -->
-				</>
+				</div>
 			</div>
 		</div>
 	</div>
