@@ -49,7 +49,7 @@ class Livello1Controller extends Zend_Controller_Action
         $numPiano=$this->controllaParam('numPiano');
         $edificio=$this->controllaParam('edificio');
         $stanza=0;
-        $this->controllaParam('segnalastanza');
+
         $evento=$this->controllaParam('evento');
         if($evento===0) {
             $stanza = $this->controllaParam('elencostanze');
@@ -62,6 +62,8 @@ class Livello1Controller extends Zend_Controller_Action
             $posizionemodel=new Application_Model_Posizioni();
             $posizioni=$posizionemodel->getPosizioniByIdSet($collocazione->current()->idPosizione);
             $stanza=$posizioni->current()->stanza;
+            $stanzasegnalata=$this->controllaParam('segnalastanza');
+            
             
         }
         
