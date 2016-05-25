@@ -1,0 +1,62 @@
+<html>
+<head>
+	<div>
+		<?php
+		$edificio=$this->arrayInformazioni['edificio'];
+		$numPiano=$this->arrayInformazioni['numPiano'];
+		?>
+	</div>
+</head>
+<body>
+<div class="container">
+	<br>
+	<div class="row center">
+		<div class="col l12">
+			<div class="center">
+				<h1 class="green-text center-align">Seleziona Posizione</h1>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<div>
+		<!-- PIANO # + immagine -->
+		<?php
+		//mostra tutti i piani dell'edificio selezionato
+		foreach($this->insiemePiani as $piano):
+			$pianta="image/piante/".$piano['pianta'];
+			?>
+
+			<!-- imposto l'id per il riferimento al piano ad uno spazio prima di ogni piano-->
+			<br id="<?php echo $piano['numeroPiano'];?>">
+
+			<!--inizia l'elenco dei piani-->
+			<div class="row">
+
+				<h3 class="green-text text-darken-2 center-align">Piano <?php echo $piano['numeroPiano'];?></h3>
+
+				<p class="center"><a class="green btn center" href="<?php echo $this->url(
+						array(
+							'controller' => 'livello1',
+							'action' => 'checkinb',
+							'numPiano'=> $piano['numeroPiano'],
+						)
+					);  ?>">Seleziona Piano</a></p>
+
+
+				<div class="col l12 s12 m12 center">
+					<img src="<?php echo $this->baseUrl($pianta); ?>" style="height:80%; width: 80%">
+				</div>
+			</div>
+
+			<br>
+			<br>
+			<br>
+			<?php
+		endforeach;
+		?>
+	</div>
+</div>
+</body>
+</html>

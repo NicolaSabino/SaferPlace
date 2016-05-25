@@ -18,6 +18,7 @@
           <actionMethod actionName="checkinb"/>
           <actionMethod actionName="checkinint"/>
           <actionMethod actionName="segnalazione"/>
+          <actionMethod actionName="caricamappasegnalazione"/>
         </controllerFile>
         <controllerFile controllerName="Livello2">
           <actionMethod actionName="index"/>
@@ -101,6 +102,9 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Livello1">
             <viewScriptFile forActionName="segnalazione"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello1">
+            <viewScriptFile forActionName="caricamappasegnalazione"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>

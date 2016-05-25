@@ -119,13 +119,17 @@ class Livello1Controller extends Zend_Controller_Action
         $this->view->formstanza=$this->stanzaform;
     }
 
-
     public function segnalazioneAction()
     {
         // action body
     }
 
 
+    public function caricamappasegnalazioneAction()
+    {
+        // action body
+    }
+    
 
     /**
      * controlla se vengono passati dei parametri e restituisce il parametro
@@ -142,7 +146,11 @@ class Livello1Controller extends Zend_Controller_Action
         return $parametro;
     }
 
+
+
 }
+
+
 
 
 
