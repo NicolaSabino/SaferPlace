@@ -27,19 +27,34 @@ class Livello1Controller extends Zend_Controller_Action
 
 
         $idposizione=new Application_Model_Posizioni();
-        $posizioni=$idposizione->getIdPosizioniByNumPianoStanzaSet($numPiano, $stanza);
+        $posizioni=$idposizione->getIdPosizioniByNumPianoStanzaEdificioSet($numPiano, $stanza,$edificio);
 
         $collocazionemodel=new Application_Model_Collocazioni();
         $collocazione=$collocazionemodel->getCollocazioneByUserSet($user);
 
         if($collocazione===array() )
         {
-            $collocazionemodel->insertCollocazioni($user,$posizioni[0]['id'] );
+            $collocazionemodel->insertCollocazioni($user,$posizioni->current()->id );
         }
         else
         {
-            $collocazionemodel->updateCollocazioni($posizioni[0]['id'], $user);
+            $collocazionemodel->updateCollocazioni($posizioni->current()->id,$user);
         }
+    }
+
+    public function inseriscidatisegnalazioneAction($user, $numPiano, $edificio, $evento){
+
+        $collocazionemodel=new Application_Model_Collocazioni();
+        $collocazione=$collocazionemodel->getCollocazioneByUserSet($user);
+        $posizionemodel=new Application_Model_Posizioni();
+        $posizioni=$posizionemodel->getPosizioniByIdSet($collocazione->current()->idPosizione);
+        $stanza=$posizioni->current()->stanza;
+        $stanzasegnalata=$this->controllaParam('segnalastanza');
+
+        $idPosizione = $posizionemodel->getIdPosizioniByNumPianoStanzaEdificioSet($numPiano,$stanzasegnalata,$edificio);
+
+        $segnalazionemodel = new Application_Model_Segnalazioni();
+        $segnalazionemodel->insertSegnalazioni($user, $idPosizione->current()->id, $evento);
     }
 
     public function indexAction()
@@ -57,14 +72,7 @@ class Livello1Controller extends Zend_Controller_Action
         }
         else
         {
-            $collocazionemodel=new Application_Model_Collocazioni();
-            $collocazione=$collocazionemodel->getCollocazioneByUserSet($user);
-            $posizionemodel=new Application_Model_Posizioni();
-            $posizioni=$posizionemodel->getPosizioniByIdSet($collocazione->current()->idPosizione);
-            $stanza=$posizioni->current()->stanza;
-            $stanzasegnalata=$this->controllaParam('segnalastanza');
-            
-            
+            $this->inseriscidatisegnalazioneAction($user,$numPiano,$edificio,$evento);
         }
         
 

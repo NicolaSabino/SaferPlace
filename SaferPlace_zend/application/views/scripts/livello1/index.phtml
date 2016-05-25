@@ -2,15 +2,15 @@
 <head>
 
 	<style>
-		#dx{
-			padding-top: 20px;
+		#sx{
+			padding-top: 80px;
 			padding-left: 5%;
 			padding-right: 5%;
 		}
-		#sx{
-			padding-top: 100px;
-		<!-- padding-left: 10%; -->
-			padding-right: 17%;
+		#dx{
+			padding-top: 80px;
+			padding-left: 2%;
+			padding-right: 5%;
 
 		}
 	</style>
@@ -24,41 +24,42 @@
 	</div>
 </head>
 <body>
-<div class="row">
-	<!-- parte sinistra -->
-	<div id="dx" class="col s12 m4 left-align">
-		<div class="card grey lighten-2">
-			<div class="card grey ">
-				<div class="card-content white-text">
-					<div class="card-image"><img class="responsive-img" src="<?php echo $this->baseUrl('image/edifici/'.$edificio.'.jpg'); ?>"> </div>
-					<table class="bordered">
+		<div class="row">
+			<!-- parte sinistra -->
+			<div id="sx" class="col s12 m4 center">
+				<div class="card grey lighten-2">
+					<div class="card grey">
+						<div class="card-content white-text">
+							<h4><?php echo $edificio ?></h4>
 
-						<tbody>
-						<tr>
-							<td>Piano:</td>
-							<td><?php echo $numPiano;?></td>
+							<div class="card-image"><img class="responsive-img" src="<?php echo $this->baseUrl('image/edifici/'.$edificio.'.jpg'); ?>"> </div>
+							<table class="bordered">
 
-						</tr>
-						<tr>
-							<td>Stanza:</td>
-							<td><?php echo $stanza;?></td>
-						</tr>
+								<tbody>
+								<tr>
+									<td>Piano:</td>
+									<td><?php echo $numPiano;?></td>
 
-						</tbody>
-					</table>
+								</tr>
+								<tr>
+									<td>Stanza:</td>
+									<td><?php echo $stanza;?></td>
+								</tr>
 
+								</tbody>
+							</table>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- parte destra -->
+			<div id="dx" class="col s12 m8 l8">
+				<div class="center">
+					<img class="responsive-img" src="<?php echo $this->baseUrl('image/piante/'.$edificio.' Piano '.$numPiano.'.jpg'); ?>" >
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- parte destra -->
-	<div id="sx" class="col s12 m8 l8">
-		<div class="center">
-			<img class="responsive-img" src="<?php echo $this->baseUrl('image/piante/'.$edificio.' Piano '.$numPiano.'.jpg'); ?>" >
-		</div>
-	</div>
-</div>
-</div>
 
 <!--tasto menu -->
 <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">

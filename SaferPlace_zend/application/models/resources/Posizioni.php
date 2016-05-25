@@ -11,11 +11,11 @@ class Application_Resource_Posizioni extends  Zend_Db_Table_Abstract
      * @param $stanza
      * @return Zend_Db_Table_Rowset_Abstract
      */
-    public function getIdPosizioniBynumPianoStanza($numPiano,$stanza){
+    public function getIdPosizioniBynumPianoStanzaEdificio($numPiano,$stanza,$edificio){
 
         $select=new Application_Resource_Piani_Item();
         $select=$this->select('id')
-                     ->where('numPiano='.$numPiano.' and stanza='. $stanza);
+                     ->where('numPiano='.$numPiano.' and stanza='. $stanza.' and edificio= \''. $edificio.'\'');
         return  $this->fetchAll($select);
 
     }
