@@ -20,6 +20,15 @@ class Application_Resource_Posizioni extends  Zend_Db_Table_Abstract
 
     }
 
+    public function getPosizioniById($id){
+
+        $select=new Application_Resource_Piani_Item();
+        $select=$this->select()
+            ->where('id=?',$id);
+        return  $this->fetchAll($select);
+
+    }
+
     /**
      * inserisce nel db la posizione dell'utente
      * @param $zona
