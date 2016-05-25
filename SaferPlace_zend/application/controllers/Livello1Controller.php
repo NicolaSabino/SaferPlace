@@ -40,21 +40,26 @@ class Livello1Controller extends Zend_Controller_Action
         {
             $collocazionemodel->updateCollocazioni($posizioni->current()->id,$user);
         }
+        $this->view->arrayInformazioni = array('stanza'=>$stanza,'numPiano'=>$numPiano,'edificio'=>$edificio);
+
     }
 
-    public function inseriscidatisegnalazioneAction($user, $numPiano, $edificio, $evento){
+    public function inseriscidatisegnalazioneAction($user, $numPiano, $edificio, $evento, $stanza){
 
         $collocazionemodel=new Application_Model_Collocazioni();
         $collocazione=$collocazionemodel->getCollocazioneByUserSet($user);
         $posizionemodel=new Application_Model_Posizioni();
         $posizioni=$posizionemodel->getPosizioniByIdSet($collocazione->current()->idPosizione);
         $stanza=$posizioni->current()->stanza;
+
         $stanzasegnalata=$this->controllaParam('segnalastanza');
 
         $idPosizione = $posizionemodel->getIdPosizioniByNumPianoStanzaEdificioSet($numPiano,$stanzasegnalata,$edificio);
 
         $segnalazionemodel = new Application_Model_Segnalazioni();
         $segnalazionemodel->insertSegnalazioni($user, $idPosizione->current()->id, $evento);
+        $this->view->arrayInformazioni = array('stanza'=>$stanza,'numPiano'=>$numPiano,'edificio'=>$edificio);
+
     }
 
     public function indexAction()
@@ -72,13 +77,8 @@ class Livello1Controller extends Zend_Controller_Action
         }
         else
         {
-            $this->inseriscidatisegnalazioneAction($user,$numPiano,$edificio,$evento);
+            $this->inseriscidatisegnalazioneAction($user,$numPiano,$edificio,$evento,$stanza);
         }
-        
-
-
-        $this->view->arrayInformazioni = array('stanza'=>$stanza,'numPiano'=>$numPiano,'edificio'=>$edificio);
-
     }
 
     /**
