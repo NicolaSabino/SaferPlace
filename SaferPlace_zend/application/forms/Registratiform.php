@@ -1,6 +1,6 @@
 <?php
 
-class Application_Form_Registratiform extends Zend_Form
+class Application_Form_Registratiform extends App_Form_Abstract
 {
     public function init()
     {
@@ -9,14 +9,18 @@ class Application_Form_Registratiform extends Zend_Form
         $this->addElement('text', 'Nome', array(
             'filters'    => array('StringTrim'),
             'required'   => true,
-            'placeholder'=> 'Nome',
-            'class' =>'black-text'
+            'label'=> 'Nome',
+            'class' =>'black-text',
+            'decorators' => $this->elementDecorators,
+
         ));
         $this->addElement('text', 'Cognome', array(
             'filters'    => array('StringTrim'),
             'required'   => true,
-            'placeholder'=> 'Cognome',
-            'class' =>'black-text'
+            'label'=> 'Cognome',
+            'class' =>'black-text',
+            'decorators' => $this->elementDecorators,
+
         ));
 
         $this->addElement('text', 'username', array(
@@ -25,8 +29,10 @@ class Application_Form_Registratiform extends Zend_Form
                 array('StringLength', true, array(3, 64))
             ),
             'required'         => true,
-            'placeholder'      => 'Username',
-            'class' =>'black-text'
+            'label'      => 'Username',
+            'class' =>'black-text',
+            'decorators' => $this->elementDecorators,
+
         ));
 
         $this->addElement('password', 'password', array(
@@ -35,8 +41,10 @@ class Application_Form_Registratiform extends Zend_Form
                 array('StringLength', true, array(3, 64))
             ),
             'required'         => true,
-            'placeholder'      => 'Password',
-            'class' =>'black-text'
+            'label'      => 'Password',
+            'class' =>'black-text',
+            'decorators' => $this->elementDecorators,
+
         ));
 
 
@@ -46,12 +54,15 @@ class Application_Form_Registratiform extends Zend_Form
                 array('StringLength', true, array(3, 64))
             ),
             'required'         => true,
-            'placeholder'      => 'Email',
-            'class' =>'black-text'
+            'label'      => 'Email',
+            'class' =>'black-text',
+            'decorators' => $this->elementDecorators,
+
         ));
 
         $this->addElement('submit', 'Registrati', array(
-            'class' => 'btn waves-yellow green'
+            'class' => 'btn waves-yellow green',
+            'decorators' => $this->buttonDecorators,
         ));
 
         $this->setDecorators(array(

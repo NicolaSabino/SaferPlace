@@ -1,26 +1,41 @@
 <?php
 
-class Application_Form_Loginform extends Zend_Form
+class Application_Form_Loginform extends App_Form_Abstract
 {
     public function init()
     {
         $this->setMethod('post');
         $this->setName('loginform'); //setta name e id del form
+
+
+
         $this->addElement('text', 'username', array(
-            'filters'    => array('StringTrim'),
+            'filters'    => array('StringTrim', 'StringToLower'),
+            'validators' => array(
+                array('StringLength', true, array(3, 25))
+            ),
             'required'   => true,
-            'placeholder'=> 'Username',
+            'label'      => 'Username',
+            'decorators' => $this->elementDecorators,
         ));
+
+
+
         $this->addElement('password', 'password', array(
             'filters'    => array('StringTrim'),
             'validators' => array(
-                array('StringLength', true, array(3, 64))
+                array('StringLength', true, array(3, 25))
             ),
-            'required'         => true,
-            'placeholder'      => 'Password',
+            'required'   => true,
+            'label'      => 'Password',
+            'decorators' => $this->elementDecorators,
         ));
+
         $this->addElement('submit', 'Accedi', array(
-            'class' => 'btn red white-text'
+            'label'    => 'Login',
+            'class' => 'btn red white-text',
+
+            'decorators' => $this->buttonDecorators,
         ));
 
         $this->setDecorators(array(
