@@ -43,6 +43,7 @@
         <formFile formName="Html"/>
         <formFile formName="Loginform"/>
         <formFile formName="Registratiform"/>
+        <formFile formName="Segnalaform"/>
       </formsDirectory>
       <layoutsDirectory>
         <layoutScriptsDirectory>
