@@ -66,4 +66,11 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
 
         return $pianta->getPianta($edificio, $numeropiano);
     }
+    
+    public function deleteNotification($id){
+        
+        $notifica = new Application_Resource_Notifica();
+        
+        return $notifica->deleteOne($id);        
+    }
 }

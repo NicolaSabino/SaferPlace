@@ -52,8 +52,18 @@ class Livello2Controller extends Zend_Controller_Action
         return $parametro;
     }
 
+    public function delnotifAction()
+    {
+        $modelUtente= new Application_Model_UtenteStaff();
+
+        $modelUtente->deleteNotification($this->controllaParam('id'));
+        $this->_helper->redirect(dashboard);
+    }
+
 
 }
+
+
 
 
 

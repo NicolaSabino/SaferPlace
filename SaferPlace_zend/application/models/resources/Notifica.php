@@ -25,7 +25,9 @@ public function getAllByEd($edificio) {
     //cancella una notifica passando l'id della stessa
     public function deleteOne($id) {
         $where = $this->getAdapter()->quoteInto('id = ?', $id);
-        $this->delete($where);
+        $done = $this->delete($where);
+
+        return $done;
     }
     
     //cancella tutte le notifiche relative a un edificio
@@ -34,7 +36,9 @@ public function getAllByEd($edificio) {
         $select = "delete s FROM segnalazione s JOIN posizione pos ON pos.id=s.idPosizione JOIN piano p 
                   ON p.id=pos.numPiano WHERE p.edificio='$edificio'";
         
-        $this->getAdapter()->query($query);
+        $done = (bool) $this->getAdapter()->query($select);
+        
+        return $done;
     }
     
     //recupera edificio e piano di una notifica
