@@ -40,6 +40,8 @@
         <formFile formName="Selezionapiano"/>
         <formFile formName="Selezionastanza"/>
         <formFile formName="Html"/>
+        <formFile formName="Loginform"/>
+        <formFile formName="Registratiform"/>
       </formsDirectory>
       <layoutsDirectory>
         <layoutScriptsDirectory>
