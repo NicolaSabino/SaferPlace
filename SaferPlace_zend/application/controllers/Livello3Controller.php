@@ -8,7 +8,8 @@ class Livello3Controller extends Zend_Controller_Action
         $this->_helper->layout->setLayout('layout3');
     }
 
-    public function indexAction(){
+    public function indexAction()
+    {
         
         //inizializzo le form e le passo alla view
     
@@ -16,7 +17,7 @@ class Livello3Controller extends Zend_Controller_Action
 
         $this->modificaFaq->setAction($this->view->url(
             array(
-                'controller' => 'livello1',
+                'controller' => 'livello3',
                 'action' => 'checkin',
             )
         ));
@@ -41,8 +42,15 @@ class Livello3Controller extends Zend_Controller_Action
         // action body
     }
 
+    public function modificaFaqAction()
+    {
+        // action body
+    }
+
 
 }
+
+
 
 
 
