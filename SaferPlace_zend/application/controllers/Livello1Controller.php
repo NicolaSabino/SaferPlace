@@ -27,19 +27,39 @@ class Livello1Controller extends Zend_Controller_Action
 
 
         $idposizione=new Application_Model_Posizioni();
-        $posizioni=$idposizione->getIdPosizioniByNumPianoStanzaSet($numPiano, $stanza);
+        $posizioni=$idposizione->getIdPosizioniByNumPianoStanzaEdificioSet($numPiano, $stanza,$edificio);
 
         $collocazionemodel=new Application_Model_Collocazioni();
         $collocazione=$collocazionemodel->getCollocazioneByUserSet($user);
 
         if($collocazione===array() )
         {
-            $collocazionemodel->insertCollocazioni($user,$posizioni[0]['id'] );
+            $collocazionemodel->insertCollocazioni($user,$posizioni->current()->id );
         }
         else
         {
-            $collocazionemodel->updateCollocazioni($posizioni[0]['id'], $user);
+            $collocazionemodel->updateCollocazioni($posizioni->current()->id,$user);
         }
+        $this->view->arrayInformazioni = array('stanza'=>$stanza,'numPiano'=>$numPiano,'edificio'=>$edificio);
+
+    }
+
+    public function inseriscidatisegnalazioneAction($user, $numPiano, $edificio, $evento, $stanza){
+
+        $collocazionemodel=new Application_Model_Collocazioni();
+        $collocazione=$collocazionemodel->getCollocazioneByUserSet($user);
+        $posizionemodel=new Application_Model_Posizioni();
+        $posizioni=$posizionemodel->getPosizioniByIdSet($collocazione->current()->idPosizione);
+        $stanza=$posizioni->current()->stanza;
+
+        $stanzasegnalata=$this->controllaParam('segnalastanza');
+
+        $idPosizione = $posizionemodel->getIdPosizioniByNumPianoStanzaEdificioSet($numPiano,$stanzasegnalata,$edificio);
+
+        $segnalazionemodel = new Application_Model_Segnalazioni();
+        $segnalazionemodel->insertSegnalazioni($user, $idPosizione->current()->id, $evento);
+        $this->view->arrayInformazioni = array('stanza'=>$stanza,'numPiano'=>$numPiano,'edificio'=>$edificio);
+
     }
 
     public function indexAction()
@@ -49,7 +69,7 @@ class Livello1Controller extends Zend_Controller_Action
         $numPiano=$this->controllaParam('numPiano');
         $edificio=$this->controllaParam('edificio');
         $stanza=0;
-        $this->controllaParam('segnalastanza');
+
         $evento=$this->controllaParam('evento');
         if($evento===0) {
             $stanza = $this->controllaParam('elencostanze');
@@ -57,18 +77,8 @@ class Livello1Controller extends Zend_Controller_Action
         }
         else
         {
-            $collocazionemodel=new Application_Model_Collocazioni();
-            $collocazione=$collocazionemodel->getCollocazioneByUserSet($user);
-            $posizionemodel=new Application_Model_Posizioni();
-            $posizioni=$posizionemodel->getPosizioniByIdSet($collocazione->current()->idPosizione);
-            $stanza=$posizioni->current()->stanza;
-            
+            $this->inseriscidatisegnalazioneAction($user,$numPiano,$edificio,$evento,$stanza);
         }
-        
-
-
-        $this->view->arrayInformazioni = array('stanza'=>$stanza,'numPiano'=>$numPiano,'edificio'=>$edificio);
-
     }
 
     /**
