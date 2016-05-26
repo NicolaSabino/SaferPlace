@@ -37,7 +37,7 @@ class Application_Form_Registratiform extends App_Form_Abstract
         $this->addElement('text', 'eta', array(
             'filters'    => array('StringTrim'),
             'validators' => array(
-                array('StringLength', true, array(3, 64))
+                array('StringLength', true, array(0, 3))
             ),
             'required'         => true,
             'label'      => 'Età',

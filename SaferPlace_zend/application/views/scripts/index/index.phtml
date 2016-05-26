@@ -16,7 +16,7 @@
                 <a href="<?php echo $this->url(
                     array(
                         'controller' => 'index',
-                        'action' => 'registrautente',
+                        'action' => 'loginutente',
                     )
                 ); ?>" id="start" class="btn-large  yellow accent-3 modal-trigger" ><b>Effettua il Login</b></a>
             </div>
@@ -24,45 +24,6 @@
         </div>
     </div>
     <div class="parallax"><img src="<?php echo $this->baseUrl('image/corridoi5.png');?>"  alt="uscita di sicurezza"></div>
-</div>
-
-
-<!-- Modal Accedi -->
-<div class="row">
-
-    <div id="login" class="modal s12 mm6 l6">
-        <div class="modal-content">
-            <div class="row">
-
-                <!-- blocco di login -->
-                <div class="col s12">
-                    <h5 class="green-text center-align">Accedi</h5>
-                    <?php echo $this->loginform ; ?>
-                    <div class=" right-align" style="margin-top: -2%">
-                         Non sei registrato?
-                        <a href="#registrati" class="modal-trigger" >Registrati</a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal registrati -->
-<div class="row">
-
-    <div id="registrati" class="modal s12 mm6 l6">
-        <div class="modal-content">
-            <div class="row">
-
-                <!-- blocco di registrazione -->
-                <h5 class="green-text center-align">Registrati</h5>
-                <?php echo $this->registratiform ; ?>
-
-            </div>
-        </div>
-    </div>
 </div>
 
 

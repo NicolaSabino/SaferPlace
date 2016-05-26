@@ -1,11 +1,6 @@
 <html>
 <head>
-	<?php
-	$registra=$this->registra;
-	if($registra==='registra')$nascosto='hiddendiv';
-	else $nascosto='';
-	
-	?>
+
 </head>
 <body>
 
@@ -17,27 +12,8 @@
 		<br>
 			<!-- blocco di login -->
 			<div class="col s12 ">
-
-				<?php if($registra===0){
-					echo '<h5 class="green-text center-align">Accedi</h5>';
-					echo $this->loginform;
-				      }
-				 if ($registra==='registra'){
-					 echo '<h5 class="green-text center-align">Registrati</h5>';
-					 echo $this->registratiform;
-				 }
-
-				?>
-				<div class="<?php echo $nascosto ?> right-align" style="margin-top: -2%">
-					Non sei registrato?
-					<a href="<?php echo $this->url(
-						array(
-							"controller" => "index",
-							"action" => "registrautente",
-							"registra"=>"registra"
-						)
-					); ?>" class="modal-trigger" >Registrati</a>
-				</div>
+				<h5 class="green-text center-align">Registrati</h5>
+				<?php echo $this->registratiform; ?>
 			</div>
 	</div>
 
