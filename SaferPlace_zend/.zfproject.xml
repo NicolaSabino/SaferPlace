@@ -32,6 +32,7 @@
           <actionMethod actionName="gestionepianifuga"/>
           <actionMethod actionName="gestionefaq"/>
           <actionMethod actionName="gestioneutenti"/>
+          <actionMethod actionName="modificafaq"/>
         </controllerFile>
         <controllerFile controllerName="FaqController">
           <actionMethod actionName="index"/>
@@ -131,6 +132,9 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Livello3">
             <viewScriptFile forActionName="gestioneutenti"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello3">
+            <viewScriptFile forActionName="modificafaq"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>

@@ -3,6 +3,20 @@
 class Application_Form_ModificaFaq extends Zend_Form
 {
 
+    //attributi
+    protected $_domanda;
+    protected $_risposta;
+    protected $_id;
+
+
+    public function __construct($domanda,$risposta,$id)
+    {
+        $this->_domanda = $domanda;
+        $this->_risposta = $risposta;
+        $this->_id = $id;
+        $this->init();
+    }
+
     public function init()
     {
         $this->setMethod('post');

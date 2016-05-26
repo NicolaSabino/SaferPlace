@@ -3,11 +3,13 @@
 class Livello3Controller extends Zend_Controller_Action
 {
 
-    protected $_edificiModel;
+    protected $_edificiModel = null;
 
-    protected $_utenzaModel;
+    protected $_utenzaModel = null;
 
-    protected $_faqModel;
+    protected $_faqModel = null;
+
+    protected $_faqForm = null;
 
     public function init()
     {
@@ -50,8 +52,28 @@ class Livello3Controller extends Zend_Controller_Action
         // action body
     }
 
+    public function modificafaqAction()
+    {
+        //istanzio la form per modificare la faq
+        $this->_faqForm = new Application_Form_ModificaFaq();
+
+        //imposto la action della form TODO
+        $this->_faqForm->setAction($this->view->url(
+            array(
+                'controller' => 'livello1',
+                'action' => 'index',
+            )
+        ));
+
+        //assegno la form alla view
+        $this->view->faqForm=$this->_faqForm;
+
+    }
+
 
 }
+
+
 
 
 

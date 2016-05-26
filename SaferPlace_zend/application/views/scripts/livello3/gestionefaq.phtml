@@ -3,8 +3,6 @@
 	<div class="container">
 		<h3 class="green-text center">Gestione Faq</h3>
 
-		<!-- <?php echo $this->modificaFaq; ?> -->
-
 
 		<ul class="collapsible popout" data-collapsible="accordion">
 			<?php
@@ -16,7 +14,16 @@
 				echo '<div class="collapsible-body">'.
 					'<p>'.$faq->risposta.'</p>'.
 					'<p>
-						<a class="btn-floating btn-large green white-text" ><i class="material-icons">edit</i></a>
+						<a class="btn-floating btn-large green white-text" href="';
+						echo $this->url(
+								array(
+									'controller'=> 'livello3',
+									'action' 	=> 'modificafaq',
+									'domanda' 	=> $faq->domanda ,
+									'risposta' 	=> $faq->risposta,
+									'id' 		=> $faq->id
+								));
+				echo '"><i class="material-icons">edit</i></a>
 					</p>';
 				echo '</div>';
 			}
