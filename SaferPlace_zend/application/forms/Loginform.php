@@ -16,7 +16,6 @@ class Application_Form_Loginform extends App_Form_Abstract
             ),
             'required'   => true,
             'label'      => 'Username',
-            'decorators' => $this->elementDecorators,
         ));
 
 
@@ -28,14 +27,12 @@ class Application_Form_Loginform extends App_Form_Abstract
             ),
             'required'   => true,
             'label'      => 'Password',
-            'decorators' => $this->elementDecorators,
         ));
 
         $this->addElement('submit', 'Accedi', array(
             'label'    => 'Login',
             'class' => 'btn red white-text',
 
-            'decorators' => $this->buttonDecorators,
         ));
 
         $this->setDecorators(array(

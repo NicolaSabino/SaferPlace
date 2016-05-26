@@ -10,6 +10,7 @@
         <controllerFile controllerName="Index">
           <actionMethod actionName="index"/>
           <actionMethod actionName="checkinint"/>
+          <actionMethod actionName="registrautente"/>
         </controllerFile>
         <controllerFile controllerName="Error"/>
         <controllerFile controllerName="Livello1">
@@ -106,6 +107,9 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Livello1">
             <viewScriptFile forActionName="caricamappasegnalazione"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Index">
+            <viewScriptFile forActionName="registrautente"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>

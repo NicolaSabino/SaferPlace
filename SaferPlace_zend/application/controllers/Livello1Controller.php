@@ -93,6 +93,7 @@ class Livello1Controller extends Zend_Controller_Action
         $this->view->arrayInformazioni = array('stanza'=>$stanza,'numPiano'=>$numPiano,'edificio'=>$edificio);
 
     }
+
     /**
      * action che carica la view del checkin
      */
@@ -222,7 +223,7 @@ class Livello1Controller extends Zend_Controller_Action
         return $parametro;
     }
 
-
+    
 
 }
 

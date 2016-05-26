@@ -13,7 +13,12 @@
                 <h5 class="header col s12 light white-text"><b>Mettiti al sicuro!</b></h5>
             </div>
             <div class="row center">
-                <a href="#login" id="start" class="btn-large  yellow accent-3 modal-trigger" ><b>Effettua il Login</b></a>
+                <a href="<?php echo $this->url(
+                    array(
+                        'controller' => 'index',
+                        'action' => 'registrautente',
+                    )
+                ); ?>" id="start" class="btn-large  yellow accent-3 modal-trigger" ><b>Effettua il Login</b></a>
             </div>
             <br><br>
         </div>
