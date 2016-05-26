@@ -30,7 +30,7 @@ class Application_Resource_Faq extends Zend_Db_Table_Abstract
      * @param $id
      */
     public function setFaq($domanda,$risposta,$id){
-        
+
         
         $data = array(
             'domanda' => $domanda,
@@ -41,6 +41,17 @@ class Application_Resource_Faq extends Zend_Db_Table_Abstract
 
         $this->getAdapter()->update('faq',$data,$where);
        
+    }
+
+    public function insertFaq($domanda,$risposta){
+
+        $info = array(
+            'domanda' => $domanda,
+            'risposta' => $risposta
+        );
+
+        $this->insert($info);
+
     }
 
 

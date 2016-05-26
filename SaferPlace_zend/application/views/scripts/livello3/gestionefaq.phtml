@@ -3,33 +3,62 @@
 	<div class="container">
 		<h3 class="green-text center">Gestione Faq</h3>
 
-
-		<ul class="collapsible popout" data-collapsible="accordion">
-			<?php
-			foreach ($this->faqSet as $faq){
-				echo '<li>';
-				echo '<div class="collapsible-header">
+		<div>
+			<ul class="collapsible popout" data-collapsible="accordion">
+				<?php
+				foreach ($this->faqSet as $faq){
+					echo '<li>';
+					echo '<div class="collapsible-header">
 							<i class="material-icons green-text">live_help</i>'. $faq->domanda .
-					'</div>';
-				echo '<div class="collapsible-body">'.
-					'<p>'.$faq->risposta.'</p>'.
-					'<p>
-						<a class="btn-floating btn-large green white-text" href="';
-						echo $this->url(
-								array(
-									'controller'=> 'livello3',
-									'action' 	=> 'modificafaq',
-									'domanda' 	=> $faq->domanda ,
-									'risposta' 	=> $faq->risposta,
-									'id' 		=> $faq->id
-								));
-				echo '"><i class="material-icons">edit</i></a>
+						'</div>';
+					echo '<div class="collapsible-body">'.
+						'<p>'.$faq->risposta.'</p>'.
+						'<p>
+						<a class="btn-floating green white-text" href="';
+					echo $this->url(
+						array(
+							'controller'=> 'livello3',
+							'action' 	=> 'modificafaq',
+							'domanda' 	=> $faq->domanda ,
+							'risposta' 	=> $faq->risposta,
+							'id' 		=> $faq->id
+						));
+					echo '"><i class="material-icons">edit</i></a>';
+					//inserisco uno spazio tra i due bottoni  &nbsp
+					echo '&nbsp <a class="btn-floating red white-text" href="';
+					echo $this->url(
+						array(
+							'controller'=> 'livello3',
+							'action' 	=> 'modificafaq',
+							'domanda' 	=> $faq->domanda ,
+							'risposta' 	=> $faq->risposta,
+							'id' 		=> $faq->id
+						));
+					echo '"><i class="material-icons">delete</i></a>
 					</p>';
-				echo '</div>';
-			}
-			?>
+					echo '</div>';
+				}
+				?>
 
-		</ul>
+			</ul>
+		</div>
+		<div class="center-align">
+			<a class="btn-floating btn-large green z-depth-1" href="
+
+				<?php
+					echo $this->url(
+						array(
+							'controller'=> 'livello3',
+							'action' 	=> 'creafaq',
+						));
+				?>
+
+				"><i class="material-icons">add</i>
+			</a>
+		</div>
+
+
+
 
 	</div>
 	</div>

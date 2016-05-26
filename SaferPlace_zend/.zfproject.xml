@@ -33,6 +33,7 @@
           <actionMethod actionName="gestionefaq"/>
           <actionMethod actionName="gestioneutenti"/>
           <actionMethod actionName="modificafaq"/>
+          <actionMethod actionName="creafaq"/>
         </controllerFile>
         <controllerFile controllerName="FaqController">
           <actionMethod actionName="index"/>
@@ -135,6 +136,9 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Livello3">
             <viewScriptFile forActionName="modificafaq"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello3">
+            <viewScriptFile forActionName="creafaq"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>

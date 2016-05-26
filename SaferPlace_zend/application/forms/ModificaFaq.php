@@ -9,7 +9,7 @@ class Application_Form_ModificaFaq extends Zend_Form
     protected $_id;
 
 
-    public function __construct($domanda,$risposta,$id)
+    public function __construct($domanda = null ,$risposta=null,$id=null)
     {
         $this->_domanda = $domanda;
         $this->_risposta = $risposta;
@@ -45,7 +45,7 @@ class Application_Form_ModificaFaq extends Zend_Form
             'label'      => 'Risposta',
             'value'      => $this->_risposta
         ));
-        $this->addElement('submit', 'Modifica', array(
+        $this->addElement('submit', 'ok', array(
             'class' => 'btn green white-text'
         ));
 

@@ -63,7 +63,7 @@ class Livello3Controller extends Zend_Controller_Action
         //istanzio la form per modificare la faq
         $this->_faqForm = new Application_Form_ModificaFaq($domanda,$risposta,$id);
 
-        //imposto la action della form TODO
+        //imposto la action della form
         $this->_faqForm->setAction($this->view->url(
             array(
                 'controller'    => 'livello3',
@@ -75,8 +75,9 @@ class Livello3Controller extends Zend_Controller_Action
         $this->view->faqForm=$this->_faqForm;
 
     }
-    
-    public function updatefaqAction(){
+
+    public function updatefaqAction()
+    {
 
         $dom=$this->getParam('domanda');
         $risp=$this->getParam('risposta');
@@ -90,10 +91,43 @@ class Livello3Controller extends Zend_Controller_Action
         $this->getHelper('Redirector')->gotoSimple('gestionefaq','livello3',$module=null);
     }
 
+    public function creafaqAction()
+    {
+        //istanzio la form per modificare la faq
+        $this->_faqForm = new Application_Form_ModificaFaq();
+
+        //imposto la action della form
+        $this->_faqForm->setAction($this->view->url(
+            array(
+                'controller'    => 'livello3',
+                'action'        => 'insertfaq',
+            ),null,true
+        ));
+
+        //assegno la form alla view
+        $this->view->faqForm=$this->_faqForm;
+    }
+
+    /**
+     *  Inserisco una nuova faq nel db
+     */
+    public function insertfaqAction(){
+
+        $dom=$this->getParam('domanda');
+        $risp=$this->getParam('risposta');
+
+        $this->_faqModel = new Application_Model_Faq();
+        $this->_faqModel->newFaq($dom,$risp);
+
+        //reindirizzo a gestione faq
+        $this->getHelper('Redirector')->gotoSimple('gestionefaq','livello3',$module=null);
+        
+    }
 
 
-    
 }
+
+
 
 
 

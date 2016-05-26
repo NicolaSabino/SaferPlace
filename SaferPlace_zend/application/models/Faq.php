@@ -26,6 +26,10 @@ class Application_Model_Faq extends App_Model_Abstract
     public function setfaq($domanda,$risposta,$id){
         $this->getResource('Faq')->setFaq($domanda,$risposta,$id);
     }
+    
+    public function newFaq($domanda,$risposta){
+        $this->getResource('Faq')->insertFaq($domanda,$risposta);
+    }
 }
 
     
