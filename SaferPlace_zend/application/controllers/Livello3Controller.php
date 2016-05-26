@@ -58,6 +58,7 @@ class Livello3Controller extends Zend_Controller_Action
         $domanda=$this->getParam("domanda");
         $risposta=$this->getParam("risposta");
         $id=$this->getParam("id");
+
         
         //istanzio la form per modificare la faq
         $this->_faqForm = new Application_Form_ModificaFaq($domanda,$risposta,$id);
@@ -65,15 +66,31 @@ class Livello3Controller extends Zend_Controller_Action
         //imposto la action della form TODO
         $this->_faqForm->setAction($this->view->url(
             array(
-                'controller' => 'livello1',
-                'action' => 'index',
-            )
+                'controller'    => 'livello3',
+                'action'        => 'updatefaq',
+            ),null,true
         ));
 
         //assegno la form alla view
         $this->view->faqForm=$this->_faqForm;
 
     }
+    
+    public function updatefaqAction(){
+
+        $dom=$this->getParam('domanda');
+        $risp=$this->getParam('risposta');
+        $idFaq=$this->getParam("id");
+        
+
+        $this->_faqModel = new Application_Model_Faq();
+        $this->_faqModel->setFaq($dom,$risp,$idFaq);
+
+        //reindirizzo a gestione faq
+        $this->getHelper('Redirector')->gotoSimple('gestionefaq','livello3',$module=null);
+    }
+
+
 
     
 }

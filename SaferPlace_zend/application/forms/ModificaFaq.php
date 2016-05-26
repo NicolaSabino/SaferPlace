@@ -21,6 +21,11 @@ class Application_Form_ModificaFaq extends Zend_Form
     {
         $this->setMethod('post');
         $this->setName('modificaFaq'); //setta name e id del form
+        $this->addElement('text','id',array(
+            'class'     => 'hide',
+            'required'  => true,
+            'value'     => $this->_id
+        ));
         $this->addElement('text', 'domanda', array(
             'filters'    => array('StringTrim'),
             'validators' => array(
