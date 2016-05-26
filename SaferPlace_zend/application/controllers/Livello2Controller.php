@@ -35,11 +35,12 @@ class Livello2Controller extends Zend_Controller_Action
             $this->view->assign("pianta", $edificio . ' Piano ' . $piano . '.jpg');
 
         $this->view->assign("edifici_e_piani",$modelUtente->getEdificiGestiti('nicolanabbo'));
+
         if ($notifiche = $modelUtente->getNotificheEmergenze())
             $this->view->assign("notifiche", $notifiche);
 
-        /*  print_r($modelUtente->getNotificheEmergenze());
-       die;*/
+        if ($evacuazioni = $modelUtente->fetchEventi())
+            $this->view->assign("evacuazioni", $evacuazioni);
 
 
     }
@@ -56,8 +57,11 @@ class Livello2Controller extends Zend_Controller_Action
     {
         $modelUtente= new Application_Model_UtenteStaff();
 
+        if (($edificio = $this->controllaParam('edificio')) && ($piano = $this->controllaParam('piano')))
+            $this->view->assign("pianta", $edificio . ' Piano ' . $piano . '.jpg');
         $modelUtente->deleteNotification($this->controllaParam('id'));
-        $this->_helper->redirect(dashboard);
+        $this->getHelper('Redirector')->gotoRoute(array('controller'=>'livello2', 'action'=>'dashboard',
+                                                    'edificio'=> $edificio, 'piano'=>$piano));
     }
 
 

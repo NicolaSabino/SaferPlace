@@ -32,17 +32,44 @@
 									   'edificio' => $x,
 									   'piano' => $item
 								   )
-							   ) . '">'.'<li class="collection-item">'.'Piano ' . $item .'</li>';
+							   ) . '">'.'<li class="collection-item">'.'Piano ' . $item .'</a></li>';
 						   } ?>
-						</a>
+
 						   <? echo '</ul></div></li>';
 					   }
 						?>
 
 					</ul>
+				</div>
+
+				<!-- barra Emergenze -->
+
+
+						<h4 class="green-text text-darken-3"><i class="small material-icons">warning</i>Evacuazioni</h4>
+						<div class="fixed left-align">
+							<ul class="collapsible">
+								<?php
+								foreach ($this->evacuazioni as $item) {
+
+									echo "<li>";
+									echo "<div class=\"collapsible-header green-text\"><b>$item->nome</b></div>";
+									echo "<div class=\"collapsible-body\">";
+									echo "<ul class=\"collection\">";
+									echo	'<li class="collection-item grey-text">';
+									echo 	'Edificio: ' . $item->edificio . '<br>Piano: ' . $item->numeroPiano;
+									echo 	'</li></div>';
+								}
+
+								?>
+
+							</ul>
+
+						</div>
+
+
+
 
 				</div>
-			</div>
 
 			<!-- pianta del piano selezionato -->
 			<div class="col l5">
@@ -58,6 +85,8 @@
 								?>
 
 					</div >
+
+
 			</div>
 
 			<!-- notifiche -->
@@ -67,7 +96,8 @@
 				<div class="z-depth-1 " style="overflow-y: scroll; height: 575px;">
 					<div class="container">
 							<?php
-							if (isset($this->notifiche)){
+
+							if (count($this->notifiche)){
 								foreach ($this->notifiche as $item) {
 									echo '<p>';
 									echo '	<div class="card-content ">';
@@ -120,14 +150,14 @@
 																						).
 																'" class="green-text">Apri la mappa</a>';
 
-									echo							'<t></t><a href="'.$this->url(
+									echo							'<a href="'.$this->url(
 																						array(
 																							'controller' => 'livello2',
 																							'action' => 'delnotif',
 																							'id' => $item->id,
 																						)
-																						). '" class="red-text">Ignora</a>';
-									echo '</div>';
+																						). '" class="red-text"> &nbsp &nbsp Ignora</a>';
+									echo '<a class="orange-text"> &nbsp &nbsp Conferma</a></div>';
 									echo '</li></p><div class="divider"></div> ';
 
 						   		}

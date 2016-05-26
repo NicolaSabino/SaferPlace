@@ -73,4 +73,58 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
         
         return $notifica->deleteOne($id);        
     }
+    
+    public function fetchEventi() {
+        
+        $edificigest = $this->getResource('Edifici')->getGestByUtente($this->_nomeUtente);
+        $eventi = new Application_Resource_Eventi();
+
+
+        foreach ($edificigest as $item) {
+            $queryArray[] = $eventi->getAllByEd($item->edificio);
+
+        }
+        // crea la query union per avere tutte le notifiche di tutti gli edifici gestiti in un unico rowset
+        $allevents = $eventi->select()->union($queryArray);
+        /*     print_r($notifica->fetchAll($notifica->select()->union($queryArray)));
+         die;*/
+        return $eventi->fetchAll($allevents);
+    }
+
+    
+    public function addEvento($nome,$idSegnalazione, $idpiano){
+
+        $evento = new Application_Resource_Eventi();
+
+        return (bool) $evento->addEvento($nome,$idSegnalazione, $idpiano);
+    }
+
+    public function delEvento($id) {
+
+        $evento = new Application_Resource_Eventi();
+
+        return $evento->deleteOne($id);
+    }
+    
+    public function delAllEventi() {
+
+
+        $edificigest = $this->getResource('Edifici')->getGestByUtente($this->_nomeUtente);
+        $eventi = new Application_Resource_Eventi();
+
+
+        foreach ($edificigest as $item) {
+            $queryArray[] = $eventi->getAllByEd($item->edificio);
+
+        }
+        // crea la query union per avere tutti gli eventi di tutti gli edifici gestiti in un unico rowset
+        $eventsquery = $eventi->select()->union($queryArray);
+        $allevents = $eventi->fetchAll($eventsquery);
+        foreach ($allevents as $item)
+            $this->delEvento($item->id);
+        /*     print_r($notifica->fetchAll($notifica->select()->union($queryArray)));
+         die;*/
+        return;
+    }
+    
 }

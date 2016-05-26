@@ -3,9 +3,6 @@ perchè devo testare -->
 <?php
 class Application_Model_Notifica extends App_Model_Abstract{
 
-
-    protected $_name = 'segnalazione';
-
     //@return array di array assiociativi contenente tutte le notifiche relative a un edificio
     public function fetchAllByEd($edificio)
     {
