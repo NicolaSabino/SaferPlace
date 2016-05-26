@@ -71,7 +71,7 @@ class Livello1Controller extends Zend_Controller_Action
 
         $stanza=$posizioni->current()->stanza;
 
-        $this->reinderizzaErroreAction($stanza, $edificio, $numPiano, 'caricamappasegnalazione');
+        $this->reinderizzaErroreAction($stanzasegnalata, $edificio, $numPiano, 'caricamappasegnalazione');
 
         $idPosizione = $posizionemodel->getIdPosizioniByNumPianoStanzaEdificioSet($numPiano,$stanzasegnalata,$edificio);
 
@@ -93,7 +93,6 @@ class Livello1Controller extends Zend_Controller_Action
         $this->view->arrayInformazioni = array('stanza'=>$stanza,'numPiano'=>$numPiano,'edificio'=>$edificio);
 
     }
-
     /**
      * action che carica la view del checkin
      */
@@ -176,6 +175,8 @@ class Livello1Controller extends Zend_Controller_Action
         $numPianoEdificio=$numPianoEdificiomodel->getPosizioniByIdSet($idPosizione->current()->idPosizione);
 
         $this->view->numPianoEdificio=$numPianoEdificio;
+        $errore=$this->controllaParam('errore'); //variabile usata per mostrare a video un messaggio di errore 
+        $this->view->errore = $errore;
 
         $_stanzeModel = new Application_Model_Piani();
 
