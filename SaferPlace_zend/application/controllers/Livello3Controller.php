@@ -3,52 +3,63 @@
 class Livello3Controller extends Zend_Controller_Action
 {
 
+    protected $_edificiModel;
+
+    protected $_utenzaModel;
+
+    protected $_faqModel;
+
     public function init()
     {
         $this->_helper->layout->setLayout('layout3');
+
+
+        $this->_edificiModel = new Application_Model_Edifici();
+        $this->view->arrayEdifici = $this->_edificiModel->getEdificiSet();
+
+        $utenzaModell = new Application_Model_Utenza();
+        $this->view->arrayUtenti = $utenzaModell->getUtenza();
+
+
+        $this->_faqModel = new Application_Model_Faq();
+        $this->view->assign("faqSet",$this->_faqModel->getFaqSet());
     }
 
     public function indexAction()
     {
-        
-        //inizializzo le form e le passo alla view
-    
-        $this->modificaFaq= new Application_Form_ModificaFaq();
-
-        $this->modificaFaq->setAction($this->view->url(
-            array(
-                'controller' => 'livello3',
-                'action' => 'checkin',
-            )
-        ));
-        $this->view->modificaFaq=$this->modificaFaq;
-
-
-        $edificiModel = new Application_Model_Edifici();
-        $this->view->arrayEdifici = $edificiModel->getEdificiSet();
-        
-        $utenzaModel = new Application_Model_Utenza();
-        $this->view->arrayUtenti = $utenzaModel->getUtenza();
-
-        
-        $faqModel = new Application_Model_Faq();
-        $this->view->assign("faqSet",$faqModel->getFaqSet());
-
-
+        // action body
     }
 
-    public function gestisciEdificioAction()
+    public function gestioneedificiAction()
     {
         // action body
     }
 
-    public function modificaFaqAction()
+    public function gestionepianifugaAction()
+    {
+        // action body
+    }
+
+    public function gestionefaqAction()
+    {
+        // action body
+    }
+
+    public function gestioneutentiAction()
     {
         // action body
     }
 
 
 }
+
+
+
+
+
+
+
+
 
 
 

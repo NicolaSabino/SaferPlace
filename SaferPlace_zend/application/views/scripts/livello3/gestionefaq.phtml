@@ -1,0 +1,29 @@
+<br /><br />
+<div id="view-content">
+	<div class="container">
+		<h3 class="green-text center">Gestione Faq</h3>
+
+		<!-- <?php echo $this->modificaFaq; ?> -->
+
+
+		<ul class="collapsible popout" data-collapsible="accordion">
+			<?php
+			foreach ($this->faqSet as $faq){
+				echo '<li>';
+				echo '<div class="collapsible-header">
+							<i class="material-icons green-text">live_help</i>'. $faq->domanda .
+					'</div>';
+				echo '<div class="collapsible-body">'.
+					'<p>'.$faq->risposta.'</p>'.
+					'<p>
+						<a class="btn-floating btn-large green white-text" ><i class="material-icons">edit</i></a>
+					</p>';
+				echo '</div>';
+			}
+			?>
+
+		</ul>
+
+	</div>
+	</div>
+</div>

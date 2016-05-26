@@ -30,8 +30,12 @@ class IndexController extends Zend_Controller_Action
         $this->view->registratiform=$this->registratiform;
     }
 
+    
+
 
 }
+
+
 
 
 
