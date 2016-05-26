@@ -6,6 +6,8 @@ class Application_Form_Registratiform extends App_Form_Abstract
     {
         $this->setMethod('post');
         $this->setName('registratiform'); //setta name e id del form
+
+
         
         $this->addElement('text', 'Nome', array(
             'filters'    => array('StringTrim'),
@@ -49,7 +51,7 @@ class Application_Form_Registratiform extends App_Form_Abstract
         $this->addElement('text', 'telefono', array(
             'filters'    => array('StringTrim'),
             'validators' => array(
-                array('StringLength', true, array(3, 64))
+                array('StringLength', true, array(10, 10))
             ),
             'required'         => true,
             'label'      => 'Telefono',
@@ -62,19 +64,17 @@ class Application_Form_Registratiform extends App_Form_Abstract
         $this->addElement('text', 'username', array(
             'filters'    => array('StringTrim'),
             'validators' => array(
-                array('StringLength', true, array(3, 64))
+                array('StringLength', true, array(2, 64))
             ),
             'required'         => true,
             'label'      => 'Username',
             'class' =>'black-text',
-
-
         ));
 
         $this->addElement('password', 'password', array(
             'filters'    => array('StringTrim'),
             'validators' => array(
-                array('StringLength', true, array(3, 64))
+                array('StringLength', true, array(2, 64))
             ),
             'required'         => true,
             'label'      => 'Password',
@@ -83,17 +83,14 @@ class Application_Form_Registratiform extends App_Form_Abstract
 
         ));
 
-
         $this->addElement('text', 'email', array(
             'filters'    => array('StringTrim'),
-            'validators' => array(
-                array('StringLength', true, array(3, 64))
-            ),
             'required'         => true,
             'label'      => 'Email',
             'class' =>'black-text',
-
-
+            'validators' => array(
+                Zend_Validate_EmailAddress::INVALID => 'EmailAddress',
+            )
         ));
 
         $this->addElement('submit', 'Registrati', array(

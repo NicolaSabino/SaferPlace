@@ -52,20 +52,22 @@ class IndexController extends Zend_Controller_Action
         }
         else
         {
-            $nome=$this->controllaParam('Nome');
-            $cognome=$this->controllaParam('Cognome');
-            $telefono=$this->controllaParam('telefono');
-            $username=$this->controllaParam('username');
-            $password=$this->controllaParam('password');
-            $email=$this->controllaParam('email');
-            $eta=$this->controllaParam('eta');
-            $genere=$this->controllaParam('genere');
+            $datiform=$this->registratiform->getValues(); //datiform è un array
 
             $utentimodel=new Application_Model_Utenti();
-            $utentimodel->insertUtenti($nome,$cognome,$telefono, $email,$username,$password,$genere,$eta);
 
-            $this->getHelper('Redirector')->gotoSimple('checkin','livello1', $module = null);
+            $username=$this->controllaParam('username'); //prendo l'username inserito nella form
 
+            if($utentimodel->existUsername($username)) //controllo se l'username inserito esiste già nel db
+            {
+                echo 'ci sono';
+                $form->setDescription('Attenzione: l\'username che hai scelto non è disponibile.');
+                return $this->render('registrautente');
+            }
+            else{
+                $utentimodel->insertUtenti($datiform);
+                $this->getHelper('Redirector')->gotoSimple('checkin','livello1', $module = null);
+            }
         }
     }
 
