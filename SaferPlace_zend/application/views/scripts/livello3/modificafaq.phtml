@@ -14,19 +14,52 @@
 			</div>
 		</div>
 		<div class="row">
+
+
 			<div class="col s8 push-s2 center-align">
 
+				<p>
+					<a class=" btn-floating btn-large white-text red tooltipped modal-trigger" data-tooltip="Elimina Faq" data-position="top" href="#eliminafaq">
+						<i class="material-icons">delete</i>
+					</a>
+				</p>
+				<p>
 					<a class=" btn white-text red" href="
 					<?php
-						echo $this->url(
-								array(
-									'controller'=> 'livello3',
-									'action' 	=> 'gestionefaq',
-								));
+					echo $this->url(
+						array(
+							'controller'=> 'livello3',
+							'action' 	=> 'gestionefaq',
+						));
 					?>
-					">Annulla Modifiche</a>
+					">Annulla</a>
+				</p>
+
 
 			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Modal elimina faq -->
+	<div id="eliminafaq" class="modal">
+		<div class="modal-content">
+			<h4 class="green-text">Attenzione!</h4>
+			<p>Sei sicuro di voler eliminare questa Faq?</p>
+		</div>
+		<div class="modal-footer">
+			<a href="
+		<?php
+			echo $this->url(
+				array(
+					'controller'=> 'livello3',
+					'action' 	=> 'eliminafaq',
+					'id'		=> $this->id
+				));
+			?>
+		" class="modal-action modal-close waves-effect waves-green btn-flat green-text">Si</a>
+			<a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat red-text">No</a>
 		</div>
 	</div>
 </div>

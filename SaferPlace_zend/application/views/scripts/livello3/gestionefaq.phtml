@@ -1,4 +1,5 @@
 <br /><br />
+
 <div id="view-content">
 	<div class="container">
 		<h3 class="green-text center">Gestione Faq</h3>
@@ -23,19 +24,7 @@
 							'risposta' 	=> $faq->risposta,
 							'id' 		=> $faq->id
 						));
-					echo '"><i class="material-icons">edit</i></a>';
-					//inserisco uno spazio tra i due bottoni  &nbsp
-					echo '&nbsp <a class="btn-floating red white-text" href="';
-					echo $this->url(
-						array(
-							'controller'=> 'livello3',
-							'action' 	=> 'modificafaq',
-							'domanda' 	=> $faq->domanda ,
-							'risposta' 	=> $faq->risposta,
-							'id' 		=> $faq->id
-						));
-					echo '"><i class="material-icons">delete</i></a>
-					</p>';
+					echo '"><i class="material-icons">edit</i></a></p>';
 					echo '</div>';
 				}
 				?>

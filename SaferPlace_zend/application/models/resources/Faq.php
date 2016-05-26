@@ -54,6 +54,13 @@ class Application_Resource_Faq extends Zend_Db_Table_Abstract
 
     }
 
+    public function delFaq($id){
+
+        $where = $this->getAdapter()->quoteInto('id = ?',$id);
+
+        $this->delete($where);
+    }
+
 
 }
 

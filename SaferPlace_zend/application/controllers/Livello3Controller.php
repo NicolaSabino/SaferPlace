@@ -58,6 +58,7 @@ class Livello3Controller extends Zend_Controller_Action
         $domanda=$this->getParam("domanda");
         $risposta=$this->getParam("risposta");
         $id=$this->getParam("id");
+        $this->view->id = $id;
 
         
         //istanzio la form per modificare la faq
@@ -122,6 +123,17 @@ class Livello3Controller extends Zend_Controller_Action
         //reindirizzo a gestione faq
         $this->getHelper('Redirector')->gotoSimple('gestionefaq','livello3',$module=null);
         
+    }
+    
+    public function eliminafaqAction(){
+
+        $id=$this->getParam('id');
+
+        $this->_faqModel = new Application_Model_Faq();
+        $this->_faqModel->deleteFaq($id);
+
+        //reindirizzo a gestione faq
+        $this->getHelper('Redirector')->gotoSimple('gestionefaq','livello3',$module=null);
     }
 
 
