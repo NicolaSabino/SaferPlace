@@ -60,7 +60,6 @@ class IndexController extends Zend_Controller_Action
 
             if($utentimodel->existUsername($username)) //controllo se l'username inserito esiste già nel db
             {
-                echo 'ci sono';
                 $form->setDescription('Attenzione: l\'username che hai scelto non è disponibile.');
                 return $this->render('registrautente');
             }
@@ -73,18 +72,34 @@ class IndexController extends Zend_Controller_Action
 
     public function authenticateAction(){
         $request = $this->getRequest();
+
+        $utentimodel=new Application_Model_Utenti();
+
+        $username=$this->controllaParam('username');
+        $password=$this->controllaParam('password');
+        
         if (!$request->isPost()) {
             return $this->_helper->redirector('loginutente');
         }
+
         $form = $this->loginform;
         if (!$form->isValid($request->getPost())) {
             $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
-            return $this->render('loginutente');
+        }
+
+        else
+        {
+            if($utentimodel->isRightPassword($username,$password) === false){
+                $form->setDescription('Attenzione: l\'username e/o la password inseriti sono errati.');
+                return $this->render('loginutente');
+            }
+
+            else
+                $this->getHelper('Redirector')->gotoSimple('checkin','livello1', $module = null);
         }
     }
 
     public function getRegistratiForm(){
-        $this->_helper->layout->setLayout('layout1');
         $urlHelper = $this->_helper->getHelper('url');
         $this->registratiform=new Application_Form_Registratiform();
 
@@ -97,7 +112,6 @@ class IndexController extends Zend_Controller_Action
     }
 
     public function getLoginForm(){
-        $this->_helper->layout->setLayout('layout1');
         $urlHelper = $this->_helper->getHelper('url');
         $this->loginform=new Application_Form_Loginform();
 

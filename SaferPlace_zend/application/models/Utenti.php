@@ -10,4 +10,9 @@ class Application_Model_Utenti extends App_Model_Abstract
     public function existUsername($username){
         return $this->getResource('Utenti')->existsUsername($username);
     }
+
+    public function isRightPassword($username,$password){
+        return $this->getResource('Utenti')->isRightPassword($username,$password);
+    }
+    
 }

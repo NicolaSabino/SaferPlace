@@ -29,4 +29,26 @@ class Application_Resource_Utenti extends  Zend_Db_Table_Abstract
         return $controllo;
     }
 
+
+    /**
+     * controlla che all'username inserito è associata la password inserita
+     * se è giusta ritorna vero, altrimenti falso
+     * @param $username
+     * @param $password
+     * @return bool
+     */
+    public function isRightPassword($username,$password){
+        $select=new Application_Resource_Utenti_Item();
+        $select=$this->select()
+            ->where('username=?',$username)
+            ->where('password=?',$password);
+
+        $risultato = $this->getAdapter()->query($select);
+
+        if($risultato->rowCount()==0)
+            $controllo = false;
+        else $controllo = true;
+        return $controllo;
+    }
+
 }
