@@ -21,6 +21,7 @@
           <actionMethod actionName="checkinint"/>
           <actionMethod actionName="segnalazione"/>
           <actionMethod actionName="caricamappasegnalazione"/>
+          <actionMethod actionName="visualizzafuga"/>
         </controllerFile>
         <controllerFile controllerName="Livello2">
           <actionMethod actionName="index"/>
@@ -114,6 +115,9 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Index">
             <viewScriptFile forActionName="loginutente"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello1">
+            <viewScriptFile forActionName="visualizzafuga"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>

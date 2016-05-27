@@ -10,7 +10,7 @@ class Livello1Controller extends Zend_Controller_Action
         $this->_helper->layout->setLayout('layout1');
     }
 
-    public function reinderizzaErroreAction($stanza,$edificio,$numPiano,$azione)
+    public function reinderizzaErroreAction($stanza, $edificio, $numPiano, $azione)
     {
         //controlla che la stanza sia stata scelta dalla select, se non viene scelta si ricarica la pagina
         if($stanza==0) {
@@ -55,7 +55,8 @@ class Livello1Controller extends Zend_Controller_Action
 
     }
 
-    public function inseriscidatisegnalazioneAction(){
+    public function inseriscidatisegnalazioneAction()
+    {
 
         $user="Peppep94";
         $numPiano=$this->controllaParam('numPiano');
@@ -166,7 +167,6 @@ class Livello1Controller extends Zend_Controller_Action
         // action body
     }
 
-
     public function caricamappasegnalazioneAction()
     {
         $idPosizionemodel=new Application_Model_Collocazioni();
@@ -206,7 +206,6 @@ class Livello1Controller extends Zend_Controller_Action
 
 
     }
-    
 
     /**
      * controlla se vengono passati dei parametri e restituisce il parametro
@@ -223,9 +222,32 @@ class Livello1Controller extends Zend_Controller_Action
         return $parametro;
     }
 
-    
+    public function visualizzafugaAction()
+    {
+        $user="Peppep94";
+
+        $collocazionemodel=new Application_Model_Collocazioni();
+        $collocazione=$collocazionemodel->getCollocazioneByUserSet($user);
+
+        $posizionemodel=new Application_Model_Posizioni();
+        $posizioni=$posizionemodel->getPosizioniByIdSet($collocazione->current()->idPosizione);
+
+        $assegnazionemodel=new Application_Model_Assegnazione();
+        $assegnazione=$assegnazionemodel->getAssegnazioneByZonaSet($posizioni->current()->zona);
+
+        $pianoDiFugamodel=new Application_Resource_PianoDiFuga();
+        $pianoDiFuga=$pianoDiFugamodel->getPianiDiFugaByid($assegnazione->current()->idPianoFuga);
+
+        $this->view->pianta=$pianoDiFuga->current()->pianta;
+        
+
+
+    }
+
 
 }
+
+
 
 
 
