@@ -199,6 +199,7 @@ class Livello3Controller extends Zend_Controller_Action
             'email'     =>  $this->getParam('email')
         );
 
+
         //istanzio la form di registrazione di un nuovo utente
         $registrazioneform = new Application_Form_Registratiform($elementi);
 
@@ -207,13 +208,38 @@ class Livello3Controller extends Zend_Controller_Action
         $registrazioneform->setAction($this->view->url(
             array(
                 'controller'    => 'livello3',
-                'action'        => 'nuovoutente',
+                'action'        => 'updateutente',
+                'old'       =>  $elementi['username'],
+
             ),null,true
         ));
 
         //assegno la form alla view
         $this->view->registrazioneform = $registrazioneform;
 
+    }
+
+    public function updateutenteAction(){
+
+        $elementi = array(
+            
+            'old'   =>  $this->getParam('old'),
+            'nome'      =>  $this->getParam('Nome'), //errore
+            'cognome'   =>  $this->getParam('Cognome'), //errore
+            'genere'    =>  $this->getParam('genere'),
+            'eta'       =>  $this->getParam('eta'),
+            'telefono'  =>  $this->getParam('telefono'),
+            'username'  =>  $this->getParam('username'),
+            'password'  =>  $this->getParam('password'),
+            'email'     =>  $this->getParam('email')
+        );
+        
+
+        $utenza = new Application_Model_Utenza();
+        $utenza->modificaUtente($elementi);
+
+        //reindirizzo a gestione faq
+        $this->getHelper('Redirector')->gotoSimple('gestioneutenti','livello3',$module=null);
     }
 
 

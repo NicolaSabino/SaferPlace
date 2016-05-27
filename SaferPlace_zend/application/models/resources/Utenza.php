@@ -16,6 +16,48 @@ class Application_Resource_Utenza extends  Zend_Db_Table_Abstract
 
         $this->insert($param);
     }
-    
+
+    public function setUtente($elem){
+        
+
+        // se l'utente ha inserito una nuova password procedo ad aggiornare tutti i campi
+        if($elem['password']!=""){
+
+            $data = array(
+                'nome'      =>  $elem['nome'],
+                'cognome'   =>  $elem['cognome'],
+                'genere'    =>  $elem['genere'],
+                'eta'       =>  $elem['eta'],
+                'telefono'  =>  $elem['telefono'],
+                'username'  =>  $elem['username'],
+                'password'  =>  $elem['password'],
+                'email'     =>  $elem['email']
+            );
+
+        }else {
+
+            // altrimenti aggiorno tutti i campi ad eccezione della password*/
+            $data = array(
+                'nome' => $elem['nome'],
+                'cognome' => $elem['cognome'],
+                'genere' => $elem['genere'],
+                'eta' => $elem['eta'],
+                'telefono' => $elem['telefono'],
+                'username' => $elem['username'],
+                'password' => $elem['password'],
+                'email' => $elem['email']
+            );
+        }
+
+        // la chiave che ci permettere di aggiornare la tupla nel db è l'username dell'utente prelevato prima delle modifiche
+        $where = $this->getAdapter()->quoteInto('username = ?', $elem['old']);
+
+        //$where = 'username = ' . $elem['oldname'];
+
+        //$this->getAdapter()->update('utente',$data,$where);
+
+        $this->update($data, $where);
+
+    }
 
 }

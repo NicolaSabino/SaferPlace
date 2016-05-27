@@ -12,4 +12,10 @@ class Application_Model_Utenza extends App_Model_Abstract
         $this->getResource('Utenza')->insertUser($parametri);
     }
     
+    public function modificaUtente($elem){
+        
+
+        $this->getResource('Utenza')->setUtente($elem);
+    }
+    
 }
