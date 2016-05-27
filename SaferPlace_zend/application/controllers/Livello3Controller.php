@@ -110,6 +110,7 @@ class Livello3Controller extends Zend_Controller_Action
     /**
      *  Inserisco una nuova faq nel db
      *
+     *
      */
     public function insertfaqAction()
     {
@@ -147,7 +148,7 @@ class Livello3Controller extends Zend_Controller_Action
         $registrazioneform->setAction($this->view->url(
             array(
                 'controller'    => 'livello3',
-                'action'        => '',
+                'action'        => 'nuovoutente',
             ),null,true
         ));
 
@@ -156,8 +157,43 @@ class Livello3Controller extends Zend_Controller_Action
         
     }
 
+    public function nuovoutenteAction()
+    {
+
+        
+        $elementi = array(
+            'nome'      =>  $this->getParam('Nome'),
+            'cognome'   =>  $this->getParam('Cognome'),
+            'genere'    =>  $this->getParam('genere'),
+            'eta'       =>  $this->getParam('eta'),
+            'telefono'  =>  $this->getParam('telefono'),
+            'username'  =>  $this->getParam('username'),
+            'password'  =>  $this->getParam('password'),
+            'email'     =>  $this->getParam('email')
+        );
+        
+
+        //avvio la procedura di inserimento nel db tramite una chiamata ad un oggetto del model
+        $utenza = new Application_Model_Utenza();
+        
+        $utenza->nuovoUtente($elementi);
+        
+        
+        
+
+        //reindirizzo a gestione faq
+        $this->getHelper('Redirector')->gotoSimple('gestioneutenti','livello3',$module=null);
+    }
+
+    public function modificautenteAction()
+    {
+        //
+    }
+
 
 }
+
+
 
 
 

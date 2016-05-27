@@ -9,10 +9,10 @@
 				<?php
 				foreach ($this->faqSet as $faq){
 					echo '<li>';
-					echo '<div class="collapsible-header">
+					echo '<div class="collapsible-header grey lighten-5">
 							<i class="material-icons green-text">live_help</i>'. $faq->domanda .
 						'</div>';
-					echo '<div class="collapsible-body">'.
+					echo '<div class="collapsible-body grey lighten-5">'.
 						'<p>'.$faq->risposta.'</p>'.
 						'<p>
 						<a class="btn-floating btn-large green white-text" href="';

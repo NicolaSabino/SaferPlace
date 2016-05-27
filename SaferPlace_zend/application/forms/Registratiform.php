@@ -2,6 +2,44 @@
 
 class Application_Form_Registratiform extends Zend_Form
 {
+
+    //attributi
+        protected $_nome        = null;
+        protected $_congome     = null;
+        protected $_sesso       = null;
+        protected $_eta         = null;
+        protected $_telefono    = null;
+        protected $_username    = null;
+        protected $_password    = null;
+        protected $_email       = null;
+
+
+    /**
+     * Application_Form_Registratiform constructor.
+     *
+     * Popolo la form tramite questo array associativo
+     *
+     * Nel caso di una form vuota il valore di default dell'array è NULL
+     * 
+     * @param null $array
+     */
+    public function __construct($array = null
+    )
+    {
+        $this->_nome        =$array['nome'];
+        $this->_congome     =$array['cognome'];
+        $this->_sesso       =$array['sesso'];
+        $this->_eta         =$array['eta'];
+        $this->_telefono    =$array['telefono'];
+        $this->_username    =$array['username'];
+        $this->_password    =$array['password'];
+        $this->_email       =$array['email'];
+        
+        $this->init();
+        
+    }
+    
+    
     public function init()
     {
         $this->setMethod('post');
@@ -14,6 +52,7 @@ class Application_Form_Registratiform extends Zend_Form
             'required'   => true,
             'label'=> 'Nome',
             'class' =>'black-text',
+            'value'=> $this->_nome
 
 
         ));
@@ -22,6 +61,7 @@ class Application_Form_Registratiform extends Zend_Form
             'required'   => true,
             'label'=> 'Cognome',
             'class' =>'black-text',
+            'value' => $this->_congome
 
 
         ));
@@ -43,6 +83,7 @@ class Application_Form_Registratiform extends Zend_Form
             'required'         => true,
             'label'      => 'Età',
             'class' =>'black-text',
+            'value' =>$this->_eta
 
 
         ));
@@ -55,6 +96,7 @@ class Application_Form_Registratiform extends Zend_Form
             'required'         => true,
             'label'      => 'Telefono',
             'class' =>'black-text',
+            'value' => $this->_telefono
 
 
         ));
@@ -68,6 +110,7 @@ class Application_Form_Registratiform extends Zend_Form
             'required'         => true,
             'label'      => 'Username',
             'class' =>'black-text',
+            'value' => $this->_username
         ));
 
         $this->addElement('password', 'password', array(
@@ -78,6 +121,7 @@ class Application_Form_Registratiform extends Zend_Form
             'required'         => true,
             'label'      => 'Password',
             'class' =>'black-text',
+            'value' => $this->_password
             
 
 
@@ -90,7 +134,8 @@ class Application_Form_Registratiform extends Zend_Form
             'class' =>'black-text',
             'validators' => array(
                 Zend_Validate_EmailAddress::INVALID => 'EmailAddress',
-            )
+            ),
+            'value' => $this->_email
         ));
 
         $this->addElement('submit', 'ok', array(
