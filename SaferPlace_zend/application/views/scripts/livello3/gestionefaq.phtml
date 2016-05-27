@@ -1,0 +1,54 @@
+<br /><br />
+
+<div id="view-content">
+	<div class="container">
+		<h3 class="green-text center">Gestione Faq</h3>
+
+		<div>
+			<ul class="collapsible popout" data-collapsible="accordion">
+				<?php
+				foreach ($this->faqSet as $faq){
+					echo '<li>';
+					echo '<div class="collapsible-header grey lighten-5">
+							<i class="material-icons green-text">live_help</i>'. $faq->domanda .
+						'</div>';
+					echo '<div class="collapsible-body grey lighten-5">'.
+						'<p>'.$faq->risposta.'</p>'.
+						'<p>
+						<a class="btn-floating btn-large green white-text" href="';
+					echo $this->url(
+						array(
+							'controller'=> 'livello3',
+							'action' 	=> 'modificafaq',
+							'domanda' 	=> $faq->domanda ,
+							'risposta' 	=> $faq->risposta,
+							'id' 		=> $faq->id
+						));
+					echo '"><i class="material-icons">edit</i></a></p>';
+					echo '</div>';
+				}
+				?>
+
+			</ul>
+		</div>
+		<div class="center-align">
+			<a class="btn-floating btn-large green z-depth-1" href="
+
+				<?php
+					echo $this->url(
+						array(
+							'controller'=> 'livello3',
+							'action' 	=> 'creafaq',
+						));
+				?>
+
+				"><i class="material-icons">add</i>
+			</a>
+		</div>
+
+
+
+
+	</div>
+	</div>
+</div>

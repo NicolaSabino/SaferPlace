@@ -23,5 +23,44 @@ class Application_Resource_Faq extends Zend_Db_Table_Abstract
     }
 
 
+    /**
+     * Metodo per aggiornare una tupla di faq
+     * @param $domanda
+     * @param $risposta
+     * @param $id
+     */
+    public function setFaq($domanda,$risposta,$id){
+
+        
+        $data = array(
+            'domanda' => $domanda,
+            'risposta' => $risposta
+        );
+
+        $where = "id = $id";
+
+        $this->getAdapter()->update('faq',$data,$where);
+       
+    }
+
+    public function insertFaq($domanda,$risposta){
+
+        $info = array(
+            'domanda' => $domanda,
+            'risposta' => $risposta
+        );
+
+        $this->insert($info);
+
+    }
+
+    public function delFaq($id){
+
+        $where = $this->getAdapter()->quoteInto('id = ?',$id);
+
+        $this->delete($where);
+    }
+
+
 }
 

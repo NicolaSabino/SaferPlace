@@ -36,6 +36,7 @@ class Application_Form_Registratiform extends App_Form_Abstract
         $this->setMethod('post');
         $this->setName('registratiform'); //setta name e id del form
 
+
         
         $this->addElement('text', 'Nome', array(
             'filters'    => array('StringTrim'),

@@ -1,0 +1,29 @@
+
+<div id="view-content">
+
+	<div class="container">
+		<h3 class="green-text center">Nuovo Utente</h3>
+		<div class="card grey lighten-5">
+			<div class="card-content">
+				<div class="container">
+					<?php echo $this->registrazioneform; ?>
+				</div>
+
+			</div>
+		</div>
+		<div class="center">
+			<a class="btn-floating btn-large red white-text z-depth-1" href="
+				<?php
+				echo $this->url(
+				array(
+					'controller'=> 'livello3',
+					'action' 	=> 'gestioneutenti',
+				),null,true);
+			?>
+			"><i class="material-icons tooltipped" data-position="top" data-delay="50" data-tooltip="Torna Indietro">replay</i></a>
+		</div>
+		<br><br>
+	</div>
+
+
+</div>
