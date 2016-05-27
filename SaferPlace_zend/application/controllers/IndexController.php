@@ -6,12 +6,15 @@ class IndexController extends Zend_Controller_Action
     protected $registratiform ;
     protected $loginform;
     protected $authService;
-
-
+    
     public function init()
     {
         $this->view->loginform=$this->getLoginForm();
         $this->view->registratiform=$this->getRegistratiForm();
+        
+        
+        
+        
     }
 
     public function indexAction()

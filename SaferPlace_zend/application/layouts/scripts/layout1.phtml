@@ -42,7 +42,12 @@
 
     <nav class="green  white-text">
         <div class="nav-wrapper container">
-            <a href="index" class="brand-logo" id="containerLogo" style="margin-top: 12px"><img src="<?php echo $this->baseUrl('image/logoM.png');?>" height="41.1"></a>
+            <a href="<?php echo $this->url(
+                array(
+                    'controller' => 'livello1',
+                    'action'=>'index',
+                )
+            ); ?>" class="brand-logo" id="containerLogo" style="margin-top: 12px"><img src="<?php echo $this->baseUrl('image/logoM.png');?>" height="41.1"></a>
 
             <ul class="right hide-on-med-and-down">
                 <li>
@@ -50,9 +55,6 @@
                         <img src="<?php echo $this->baseUrl('image/profili/NicolaSabino_94.jpg');?>" alt="Contact Person">NicolaSabino_94
                     </div>
                 </li>
-                <li><a class="" href="#login">Impostazioni</a></li>
-                <li><a class="" href="#info">Logout</a></li>
-
             </ul>
         </div>
     </nav>

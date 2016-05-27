@@ -5,11 +5,40 @@ class Livello1Controller extends Zend_Controller_Action
 
     protected $stanzaform;
     protected $modificaform;
+    protected $_stanza;
+    protected $_numPiano;
+    protected $_edificio;
+    protected $user='Peppep94';
+
+    public function controlladatiAction(){
+
+        $collocazionemodel=new Application_Model_Collocazioni();
+        $collocazione=$collocazionemodel->getCollocazioneByUserSet($this->user);
+
+        if(!$collocazione->current()==null) {
+            
+            $posizionemodel = new Application_Model_Posizioni();
+            $posizioni = $posizionemodel->getPosizioniByIdSet($collocazione->current()->idPosizione);
+
+            $this->_stanza = $posizioni->current()->stanza;
+            $this->_numPiano = $posizioni->current()->numPiano;
+            $this->_edificio = $posizioni->current()->edificio;
+        }
+        else{
+
+            $this->getHelper('Redirector')->gotoSimple('checkin','livello1',$module=null);
+            }
+
+
+    }
 
     public function init()
     {
+
         $this->_helper->layout->setLayout('layout1');
         $this->view->modificaform=$this->getModificaform();
+
+
     }
 
     public function reinderizzaErroreAction($stanza, $edificio, $numPiano, $azione)
@@ -29,7 +58,6 @@ class Livello1Controller extends Zend_Controller_Action
     public function inseriscidatiposizioneAction()
     {
 
-        $user="Peppep94";
         $numPiano=$this->controllaParam('numPiano');
         $edificio=$this->controllaParam('edificio');
         $stanza=$this->controllaParam('elencostanze');
@@ -40,34 +68,32 @@ class Livello1Controller extends Zend_Controller_Action
         $posizioni=$idposizione->getIdPosizioniByNumPianoStanzaEdificioSet($numPiano, $stanza,$edificio);
 
         $collocazionemodel=new Application_Model_Collocazioni();
-        $collocazione=$collocazionemodel->getCollocazioneByUserSet($user);
+        $collocazione=$collocazionemodel->getCollocazioneByUserSet($this->user);
 
-        if($collocazione===array() )
+
+        if($collocazione->current()===null )
         {
-            $collocazionemodel->insertCollocazioni($user,$posizioni->current()->id );
+            $collocazionemodel->insertCollocazioni($this->user,$posizioni->current()->id );
         }
         else
         {
-            $collocazionemodel->updateCollocazioni($posizioni->current()->id,$user);
+            $collocazionemodel->updateCollocazioni($posizioni->current()->id,$this->user);
         }
 
-        $this->getHelper('Redirector')->gotoSimple('index','livello1', $module = null, array('edificio'=>$edificio,
-            'numPiano'=>$numPiano,
-            'stanza'=>$stanza));
+        $this->getHelper('Redirector')->gotoSimple('index','livello1', $module = null);
 
     }
 
     public function inseriscidatisegnalazioneAction()
     {
 
-        $user="Peppep94";
         $numPiano=$this->controllaParam('numPiano');
         $edificio=$this->controllaParam('edificio');
         $evento=$this->controllaParam('evento');
         $stanzasegnalata=$this->controllaParam('segnalastanza');
 
         $collocazionemodel=new Application_Model_Collocazioni();
-        $collocazione=$collocazionemodel->getCollocazioneByUserSet($user);
+        $collocazione=$collocazionemodel->getCollocazioneByUserSet($this->user);
 
         $posizionemodel=new Application_Model_Posizioni();
         $posizioni=$posizionemodel->getPosizioniByIdSet($collocazione->current()->idPosizione);
@@ -79,7 +105,7 @@ class Livello1Controller extends Zend_Controller_Action
         $idPosizione = $posizionemodel->getIdPosizioniByNumPianoStanzaEdificioSet($numPiano,$stanzasegnalata,$edificio);
 
         $segnalazionemodel = new Application_Model_Segnalazioni();
-        $segnalazionemodel->insertSegnalazioni($user, $idPosizione->current()->id, $evento);
+        $segnalazionemodel->insertSegnalazioni($this->user, $idPosizione->current()->id, $evento);
 
         $this->getHelper('Redirector')->gotoSimple('index','livello1', $module = null, array('edificio'=>$edificio,
             'numPiano'=>$numPiano,
@@ -89,11 +115,8 @@ class Livello1Controller extends Zend_Controller_Action
 
     public function indexAction()
     {
-        $numPiano=$this->controllaParam('numPiano');
-        $edificio=$this->controllaParam('edificio');
-        $stanza=$this->controllaParam('stanza');
-
-        $this->view->arrayInformazioni = array('stanza'=>$stanza,'numPiano'=>$numPiano,'edificio'=>$edificio);
+        $this->controlladatiAction();
+        $this->view->arrayInformazioni = array('stanza'=>$this->_stanza,'numPiano'=>$this->_numPiano,'edificio'=>$this->_edificio);
 
     }
 
@@ -172,7 +195,7 @@ class Livello1Controller extends Zend_Controller_Action
     public function caricamappasegnalazioneAction()
     {
         $idPosizionemodel=new Application_Model_Collocazioni();
-        $idPosizione=$idPosizionemodel->getCollocazioneByUserSet('Peppep94');
+        $idPosizione=$idPosizionemodel->getCollocazioneByUserSet($this->user);
 
         $numPianoEdificiomodel=new Application_Model_Posizioni();
         $numPianoEdificio=$numPianoEdificiomodel->getPosizioniByIdSet($idPosizione->current()->idPosizione);
@@ -226,10 +249,10 @@ class Livello1Controller extends Zend_Controller_Action
 
     public function visualizzafugaAction()
     {
-        $user="Peppep94";
+
 
         $collocazionemodel=new Application_Model_Collocazioni();
-        $collocazione=$collocazionemodel->getCollocazioneByUserSet($user);
+        $collocazione=$collocazionemodel->getCollocazioneByUserSet($this->user);
 
         $posizionemodel=new Application_Model_Posizioni();
         $posizioni=$posizionemodel->getPosizioniByIdSet($collocazione->current()->idPosizione);
@@ -268,10 +291,9 @@ class Livello1Controller extends Zend_Controller_Action
   public function getModificaform()
   {
       $urlHelper = $this->_helper->getHelper('url');
-      $user='Peppep94';
 
       $usermodel=new Application_Model_Utenti();
-      $dati=$usermodel->getDatiUtenteByUserSet($user);
+      $dati=$usermodel->getDatiUtenteByUserSet($this->user);
       $this->modificaform= new Application_Form_Registratiform($dati);
 
       $this->modificaform->setAction($urlHelper->url(array(
