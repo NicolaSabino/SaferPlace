@@ -260,31 +260,18 @@ class Livello1Controller extends Zend_Controller_Action
         $assegnazionemodel=new Application_Model_Assegnazione();
         $assegnazione=$assegnazionemodel->getAssegnazioneByZonaSet($posizioni->current()->zona);
 
-        $pianoDiFugamodel=new Application_Resource_PianoDiFuga();
-        $pianoDiFuga=$pianoDiFugamodel->getPianiDiFugaByid($assegnazione->current()->idPianoFuga);
+
+        $pianoDiFugamodel=new Application_Model_PianoDiFuga();
+        $pianoDiFuga=$pianoDiFugamodel->getPianoDiFugaByIdSet($assegnazione->current()->idPianoFuga);
 
         $this->view->pianta=$pianoDiFuga->current()->pianta;
         
-
 
     }
 
     public function modificadatiutenteAction()
     {
-        /*$user='Peppep94';
-
-        $usermodel=new Application_Model_Utenti();
-        $dati=$usermodel->getDatiUtenteByUserSet($user);
-        $this->modificaform= new Application_Form_Registratiform($dati);
-
-        $this->modificaform->setAction($this->view->url(
-            array(
-                'controller' => 'livello1',
-                'action' => '',
-            )
-        ));
-
-        $this->view->modificaform=$this->modificaform;*/
+        
     }
 
 

@@ -8,7 +8,7 @@ class Application_Resource_PianoDiFuga extends  Zend_Db_Table_Abstract
     public function getPianiDiFugaByid($id){
 
         $select=$this->select()
-            ->where('id= ? ',$id);
+            ->where('id=?',$id);
         return $this->fetchAll($select);
 
     }
