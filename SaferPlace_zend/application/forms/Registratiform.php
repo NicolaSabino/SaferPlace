@@ -6,63 +6,95 @@ class Application_Form_Registratiform extends App_Form_Abstract
     {
         $this->setMethod('post');
         $this->setName('registratiform'); //setta name e id del form
+
+
+        
         $this->addElement('text', 'Nome', array(
             'filters'    => array('StringTrim'),
             'required'   => true,
             'label'=> 'Nome',
             'class' =>'black-text',
-            'decorators' => $this->elementDecorators,
+
 
         ));
+
         $this->addElement('text', 'Cognome', array(
             'filters'    => array('StringTrim'),
             'required'   => true,
             'label'=> 'Cognome',
             'class' =>'black-text',
-            'decorators' => $this->elementDecorators,
+
 
         ));
+
+        $this->addElement('select', 'genere', array(
+            'label' => 'Genere',
+            'filters'    => array('StringTrim'),
+            'required'   => true,
+            'multiOptions' => array('m'=>'Uomo','f'=>'Donna'),
+            'class' =>'black-text',
+
+        ));
+
+        $this->addElement('text', 'eta', array(
+            'filters'    => array('StringTrim'),
+            'validators' => array(
+                array('StringLength', true, array(0, 3))
+            ),
+            'required'         => true,
+            'label'      => 'Età',
+            'class' =>'black-text',
+
+
+        ));
+
+        $this->addElement('text', 'telefono', array(
+            'filters'    => array('StringTrim'),
+            'validators' => array(
+                array('StringLength', true, array(10, 10))
+            ),
+            'required'         => true,
+            'label'      => 'Telefono',
+            'class' =>'black-text',
+
+
+        ));
+
 
         $this->addElement('text', 'username', array(
             'filters'    => array('StringTrim'),
             'validators' => array(
-                array('StringLength', true, array(3, 64))
+                array('StringLength', true, array(2, 64))
             ),
             'required'         => true,
             'label'      => 'Username',
             'class' =>'black-text',
-            'decorators' => $this->elementDecorators,
-
         ));
 
         $this->addElement('password', 'password', array(
             'filters'    => array('StringTrim'),
             'validators' => array(
-                array('StringLength', true, array(3, 64))
+                array('StringLength', true, array(2, 64))
             ),
             'required'         => true,
             'label'      => 'Password',
             'class' =>'black-text',
-            'decorators' => $this->elementDecorators,
+
 
         ));
 
-
         $this->addElement('text', 'email', array(
             'filters'    => array('StringTrim'),
-            'validators' => array(
-                array('StringLength', true, array(3, 64))
-            ),
             'required'         => true,
             'label'      => 'Email',
             'class' =>'black-text',
-            'decorators' => $this->elementDecorators,
-
+            'validators' => array(
+                Zend_Validate_EmailAddress::INVALID => 'EmailAddress',
+            )
         ));
 
         $this->addElement('submit', 'Registrati', array(
             'class' => 'btn waves-yellow green',
-            'decorators' => $this->buttonDecorators,
         ));
 
         $this->setDecorators(array(

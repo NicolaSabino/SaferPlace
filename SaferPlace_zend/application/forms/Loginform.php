@@ -12,11 +12,10 @@ class Application_Form_Loginform extends App_Form_Abstract
         $this->addElement('text', 'username', array(
             'filters'    => array('StringTrim', 'StringToLower'),
             'validators' => array(
-                array('StringLength', true, array(3, 25))
+                array('StringLength', true, array(2, 25))
             ),
             'required'   => true,
             'label'      => 'Username',
-            'decorators' => $this->elementDecorators,
         ));
 
 
@@ -24,18 +23,16 @@ class Application_Form_Loginform extends App_Form_Abstract
         $this->addElement('password', 'password', array(
             'filters'    => array('StringTrim'),
             'validators' => array(
-                array('StringLength', true, array(3, 25))
+                array('StringLength', true, array(2, 25))
             ),
             'required'   => true,
             'label'      => 'Password',
-            'decorators' => $this->elementDecorators,
         ));
 
         $this->addElement('submit', 'Accedi', array(
             'label'    => 'Login',
             'class' => 'btn red white-text',
 
-            'decorators' => $this->buttonDecorators,
         ));
 
         $this->setDecorators(array(

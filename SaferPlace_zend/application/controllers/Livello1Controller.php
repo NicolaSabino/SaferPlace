@@ -10,12 +10,11 @@ class Livello1Controller extends Zend_Controller_Action
         $this->_helper->layout->setLayout('layout1');
     }
 
-    public function inseriscidatiposizioneAction($stanza,$edificio,$numPiano,$user)
+    public function reinderizzaErroreAction($stanza,$edificio,$numPiano,$azione)
     {
-
         //controlla che la stanza sia stata scelta dalla select, se non viene scelta si ricarica la pagina
         if($stanza==0) {
-            $action = 'checkinb';
+            $action = $azione;
             $controller = 'livello1';
             $params = array('edificio'=>$edificio,
                 'numPiano'=>$numPiano,
@@ -23,8 +22,17 @@ class Livello1Controller extends Zend_Controller_Action
 
             $this->getHelper('Redirector')->gotoSimple($action, $controller, $module = null, $params);
         }
+    }
 
+    public function inseriscidatiposizioneAction()
+    {
 
+        $user="Peppep94";
+        $numPiano=$this->controllaParam('numPiano');
+        $edificio=$this->controllaParam('edificio');
+        $stanza=$this->controllaParam('elencostanze');
+
+        $this->reinderizzaErroreAction($stanza, $edificio, $numPiano,'checkinb');
 
         $idposizione=new Application_Model_Posizioni();
         $posizioni=$idposizione->getIdPosizioniByNumPianoStanzaEdificioSet($numPiano, $stanza,$edificio);
@@ -40,45 +48,50 @@ class Livello1Controller extends Zend_Controller_Action
         {
             $collocazionemodel->updateCollocazioni($posizioni->current()->id,$user);
         }
-        $this->view->arrayInformazioni = array('stanza'=>$stanza,'numPiano'=>$numPiano,'edificio'=>$edificio);
+
+        $this->getHelper('Redirector')->gotoSimple('index','livello1', $module = null, array('edificio'=>$edificio,
+            'numPiano'=>$numPiano,
+            'stanza'=>$stanza));
 
     }
 
-    public function inseriscidatisegnalazioneAction($user, $numPiano, $edificio, $evento, $stanza){
+    public function inseriscidatisegnalazioneAction(){
+
+        $user="Peppep94";
+        $numPiano=$this->controllaParam('numPiano');
+        $edificio=$this->controllaParam('edificio');
+        $evento=$this->controllaParam('evento');
+        $stanzasegnalata=$this->controllaParam('segnalastanza');
 
         $collocazionemodel=new Application_Model_Collocazioni();
         $collocazione=$collocazionemodel->getCollocazioneByUserSet($user);
+
         $posizionemodel=new Application_Model_Posizioni();
         $posizioni=$posizionemodel->getPosizioniByIdSet($collocazione->current()->idPosizione);
+
         $stanza=$posizioni->current()->stanza;
 
-        $stanzasegnalata=$this->controllaParam('segnalastanza');
+        $this->reinderizzaErroreAction($stanzasegnalata, $edificio, $numPiano, 'caricamappasegnalazione');
 
         $idPosizione = $posizionemodel->getIdPosizioniByNumPianoStanzaEdificioSet($numPiano,$stanzasegnalata,$edificio);
 
         $segnalazionemodel = new Application_Model_Segnalazioni();
         $segnalazionemodel->insertSegnalazioni($user, $idPosizione->current()->id, $evento);
-        $this->view->arrayInformazioni = array('stanza'=>$stanza,'numPiano'=>$numPiano,'edificio'=>$edificio);
+
+        $this->getHelper('Redirector')->gotoSimple('index','livello1', $module = null, array('edificio'=>$edificio,
+            'numPiano'=>$numPiano,
+            'stanza'=>$stanza));
 
     }
 
     public function indexAction()
     {
-
-        $user="Peppep94";
         $numPiano=$this->controllaParam('numPiano');
         $edificio=$this->controllaParam('edificio');
-        $stanza=0;
+        $stanza=$this->controllaParam('stanza');
 
-        $evento=$this->controllaParam('evento');
-        if($evento===0) {
-            $stanza = $this->controllaParam('elencostanze');
-            $this->inseriscidatiposizioneAction($stanza, $edificio, $numPiano, $user);
-        }
-        else
-        {
-            $this->inseriscidatisegnalazioneAction($user,$numPiano,$edificio,$evento,$stanza);
-        }
+        $this->view->arrayInformazioni = array('stanza'=>$stanza,'numPiano'=>$numPiano,'edificio'=>$edificio);
+
     }
 
     /**
@@ -141,7 +154,7 @@ class Livello1Controller extends Zend_Controller_Action
         $this->stanzaform->setAction($this->view->url(
             array(
                 'controller' => 'livello1',
-                'action' => 'index',
+                'action' => 'inseriscidatiposizione',
             )
         ));
 
@@ -163,6 +176,8 @@ class Livello1Controller extends Zend_Controller_Action
         $numPianoEdificio=$numPianoEdificiomodel->getPosizioniByIdSet($idPosizione->current()->idPosizione);
 
         $this->view->numPianoEdificio=$numPianoEdificio;
+        $errore=$this->controllaParam('errore'); //variabile usata per mostrare a video un messaggio di errore 
+        $this->view->errore = $errore;
 
         $_stanzeModel = new Application_Model_Piani();
 
@@ -181,7 +196,7 @@ class Livello1Controller extends Zend_Controller_Action
         $this->segnalaform->setAction($this->view->url(
             array(
                 'controller' => 'livello1',
-                'action' => 'index',
+                'action' => 'inseriscidatisegnalazione',
                 'edificio'=>$numPianoEdificio->current()->edificio,
                 'numPiano'=>$numPianoEdificio->current()->numPiano
             )
@@ -208,7 +223,7 @@ class Livello1Controller extends Zend_Controller_Action
         return $parametro;
     }
 
-
+    
 
 }
 
