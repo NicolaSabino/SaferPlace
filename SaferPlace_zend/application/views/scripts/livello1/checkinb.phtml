@@ -2,8 +2,9 @@
 <head>
 	<div>
 		<?php
-		$edificio=$this->v['edificio'];
-		$piano=$this->v['numPiano'];
+		$edificio=$this->insiemeEdifici;
+		$piano=$this->insiemePiani;
+		$errore=$this->errore;
 		$option=0;
 		?>
 	</div>
@@ -21,6 +22,10 @@
 
 				<div class="col l12 s12 center-align white">
 					<h3 class="green-text text-darken-2 center-align white"><?php echo $edificio.' Piano '. $piano;?></h3>
+					<?php
+					if($errore==='errore')
+					echo '<h5 class="red-text text-darken-2 center-align white">Devi selezionare una stanza</h5>'
+					?>
 				</div>
 
 			</div>
@@ -42,9 +47,9 @@
 	
 				<div class="input-field col l3 m3 s3 offset-l4 " style="margin-top: -1%" >
 
-					<?php echo $this->formstanza;
 
-					?>
+					<?php echo $this->formstanza; ?>
+					
 				</div>
 				<div class="col l12 s12 m12 center">
 					<img src="<?php echo $this->baseUrl($pianta); ?>" style="height:80%; width: 80%">

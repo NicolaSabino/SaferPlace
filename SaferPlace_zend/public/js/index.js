@@ -23,4 +23,3 @@ $(function () {
   $('#selectPiano').change(function () {
     $('html,body').animate({ scrollTop: $("#" + $(this).val()).offset().top-200 }, 800);  });
 });
-

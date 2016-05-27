@@ -10,6 +10,8 @@
         <controllerFile controllerName="Index">
           <actionMethod actionName="index"/>
           <actionMethod actionName="checkinint"/>
+          <actionMethod actionName="registrautente"/>
+          <actionMethod actionName="loginutente"/>
         </controllerFile>
         <controllerFile controllerName="Error"/>
         <controllerFile controllerName="Livello1">
@@ -17,6 +19,8 @@
           <actionMethod actionName="checkin"/>
           <actionMethod actionName="checkinb"/>
           <actionMethod actionName="checkinint"/>
+          <actionMethod actionName="segnalazione"/>
+          <actionMethod actionName="caricamappasegnalazione"/>
         </controllerFile>
         <controllerFile controllerName="Livello2">
           <actionMethod actionName="index"/>
@@ -24,6 +28,15 @@
         </controllerFile>
         <controllerFile controllerName="Livello3">
           <actionMethod actionName="index"/>
+          <actionMethod actionName="modificaFaq"/>
+          <actionMethod actionName="gestioneedifici"/>
+          <actionMethod actionName="gestionepianifuga"/>
+          <actionMethod actionName="gestionefaq"/>
+          <actionMethod actionName="gestioneutenti"/>
+          <actionMethod actionName="modificafaq"/>
+          <actionMethod actionName="creafaq"/>
+          <actionMethod actionName="creautente"/>
+          <actionMethod actionName="modificautente"/>
         </controllerFile>
         <controllerFile controllerName="FaqController">
           <actionMethod actionName="index"/>
@@ -39,6 +52,10 @@
         <formFile formName="Selezionapiano"/>
         <formFile formName="Selezionastanza"/>
         <formFile formName="Html"/>
+        <formFile formName="Loginform"/>
+        <formFile formName="Registratiform"/>
+        <formFile formName="Segnalaform"/>
+        <formFile formName="ModificaFaq"/>
       </formsDirectory>
       <layoutsDirectory>
         <layoutScriptsDirectory>
@@ -95,6 +112,39 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Livello1">
             <viewScriptFile forActionName="checkinint"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello1">
+            <viewScriptFile forActionName="segnalazione"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello1">
+            <viewScriptFile forActionName="caricamappasegnalazione"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello3">
+            <viewScriptFile forActionName="modificaFaq"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Index">
+            <viewScriptFile forActionName="gestioneedifici"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello3">
+            <viewScriptFile forActionName="gestioneedifici"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello3">
+            <viewScriptFile forActionName="gestionepianifuga"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello3">
+            <viewScriptFile forActionName="gestionefaq"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello3">
+            <viewScriptFile forActionName="gestioneutenti"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello3">
+            <viewScriptFile forActionName="modificafaq"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello3">
+            <viewScriptFile forActionName="creafaq"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello3">
+            <viewScriptFile forActionName="modificautente"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>

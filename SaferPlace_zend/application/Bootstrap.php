@@ -42,7 +42,8 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
             'host'     => 'localhost',
             'username' => 'root',
             'password' => '',
-            'dbname'   => 'sp_db'
+            'dbname'   => 'sp_db',
+            'charset'  => 'utf8'
         ));
         Zend_Db_Table::setDefaultAdapter($dbAdapter);
 

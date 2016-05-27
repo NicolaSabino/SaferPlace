@@ -12,6 +12,7 @@ class Application_Resource_Collocazioni extends  Zend_Db_Table_Abstract
         return $this->fetchAll($select);
 
     }
+    
     public function insertCollocazione($user,$posizione)
     {
         $collocazioni = array(

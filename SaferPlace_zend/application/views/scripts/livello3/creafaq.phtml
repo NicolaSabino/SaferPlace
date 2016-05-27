@@ -1,0 +1,32 @@
+<br /><br />
+<div id="view-content">
+	<div class="container">
+
+		<h3 class="center green-text">Nuova Faq</h3>
+
+		<div class="row">
+			<div class="col s8 push-s2">
+				<div class="card grey lighten-5">
+					<div class="card-content container">
+						<?php echo $this->faqForm; ?>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s8 push-s2 center-align">
+
+				<a class=" btn-floating btn-large white-text red" href="
+					<?php
+				echo $this->url(
+					array(
+						'controller'=> 'livello3',
+						'action' 	=> 'gestionefaq',
+					));
+				?>
+					"><i class="material-icons tooltipped" data-position="bottom" data-delay="50" data-tooltip="Torna Indietro">replay</i></a>
+
+			</div>
+		</div>
+	</div>
+</div>
