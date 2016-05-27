@@ -52,7 +52,9 @@ class Application_Resource_Utenti extends  Zend_Db_Table_Abstract
     }
 
     /**
-     * @return string
+     * seleziona i dati dell'utente passato per parametro
+     * @param $user
+     * @return mixed
      */
     public function getDatiUtenteByUser($user)
     {
@@ -65,22 +67,24 @@ class Application_Resource_Utenti extends  Zend_Db_Table_Abstract
 
     }
 
+
     /**
-     * @return string
+     * effettua l'update di un utente
+     * @param $dati
      */
     public function updateUtenti($dati)
     {
         $data = array(
-            'username'      => $dati->current()->username,
-            'nome'      => $dati->current()->nome,
-            'cognome'      => $dati->current()->cognome,
-            'password'      => $dati->current()->password,
-            'genere'      => $dati->current()->genere,
-            'eta'      => $dati->current()->eta,
-            'email'      => $dati->current()->email,
-            'telefono'      => $dati->current()->telefono,
+            'username'      => $dati['username'],
+            'nome'      => $dati['Nome'],
+            'cognome'      => $dati['Cognome'],
+            'password'      => $dati['password'],
+            'genere'      => $dati['genere'],
+            'eta'      => $dati['eta'],
+            'email'      => $dati['email'],
+            'telefono'      => $dati['telefono'],
         );
-        $where = $this->getAdapter()->quoteInto('utente = ?', $dati->current()->username);
+        $where = $this->getAdapter()->quoteInto('username = ?', $dati['username']);
 
         $this->update($data, $where);
     }

@@ -248,7 +248,7 @@ class Livello1Controller extends Zend_Controller_Action
 
     public function modificadatiutenteAction()
     {
-        $user='Peppep94';
+        /*$user='Peppep94';
 
         $usermodel=new Application_Model_Utenti();
         $dati=$usermodel->getDatiUtenteByUserSet($user);
@@ -261,24 +261,28 @@ class Livello1Controller extends Zend_Controller_Action
             )
         ));
 
-        $this->view->modificaform=$this->modificaform;
+        $this->view->modificaform=$this->modificaform;*/
     }
 
 
   public function getModificaform()
   {
       $urlHelper = $this->_helper->getHelper('url');
-      $this->modificaform=new Application_Form_Loginform();
+      $user='Peppep94';
+
+      $usermodel=new Application_Model_Utenti();
+      $dati=$usermodel->getDatiUtenteByUserSet($user);
+      $this->modificaform= new Application_Form_Registratiform($dati);
 
       $this->modificaform->setAction($urlHelper->url(array(
-          'controller' => 'index',
-          'action' => 'verificaModifica'),
+          'controller' => 'livello1',
+          'action' => 'verificamodifica'),
           'default'
       ));
       return $this->modificaform;
   }
 
-    public function verificaModificaAction()
+    public function verificamodificaAction()
     {
         $request = $this->getRequest();
         if (!$request->isPost()) {
@@ -295,17 +299,9 @@ class Livello1Controller extends Zend_Controller_Action
 
             $utentimodel=new Application_Model_Utenti();
 
-            $username=$this->controllaParam('username'); //prendo l'username inserito nella form
+            $utentimodel->updateUtentiSet($datiform);
+            $this->getHelper('Redirector')->gotoSimple('index','livello1', $module = null);
 
-            if($utentimodel->existUsername($username)) //controllo se l'username inserito esiste già nel db
-            {
-                $form->setDescription('Attenzione: l\'username che hai scelto non è disponibile.');
-                return $this->render('modificadatiutente');
-            }
-            else{
-                $utentimodel->updateUtentiSet($datiform);
-                $this->getHelper('Redirector')->gotoSimple('index','livello1', $module = null);
-            }
         }
     }
 
