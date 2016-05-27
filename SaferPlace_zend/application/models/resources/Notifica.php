@@ -49,7 +49,7 @@ public function getAllByEd($edificio) {
             ->from(array('s'=>'segnalazione'),array())
             ->join(array('pos'=> 'posizione'),
                 'pos.id = s.idPosizione', array())
-            ->join(array('p'=>'piano'), 'pos.numPiano=p.id', array('edificio','numeroPiano'))
+            ->join(array('p'=>'piano'), 'pos.numPiano=p.numeroPiano AND pos.edificio=p.edificio', array('edificio','numeroPiano'))
             ->where('s.id = ?', $id);
 
         return $this->fetchAll($select);

@@ -126,5 +126,19 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
          die;*/
         return;
     }
+
+    public function getPersEdificio($edificio) {
+
+        $collocazioni = new Application_Resource_Collocazioni();
+        $query= $collocazioni->getNumCollocazioniByEdificio($edificio);
+        
+        return $collocazioni->fetchAll($query)->current();
+    }
     
+    public function getPersPiano($edificio, $piano)
+    {
+        $collocazioni = new Application_Resource_Collocazioni();
+        
+        return $collocazioni->getNumByPiano($edificio,$piano);
+    }
 }
