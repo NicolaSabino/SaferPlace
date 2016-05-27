@@ -1,6 +1,6 @@
 <?php
 
-class Application_Form_Registratiform extends App_Form_Abstract
+class Application_Form_Registratiform extends Zend_Form
 {
     public function init()
     {
@@ -17,7 +17,6 @@ class Application_Form_Registratiform extends App_Form_Abstract
 
 
         ));
-
         $this->addElement('text', 'Cognome', array(
             'filters'    => array('StringTrim'),
             'required'   => true,
@@ -79,6 +78,7 @@ class Application_Form_Registratiform extends App_Form_Abstract
             'required'         => true,
             'label'      => 'Password',
             'class' =>'black-text',
+            
 
 
         ));
@@ -93,7 +93,7 @@ class Application_Form_Registratiform extends App_Form_Abstract
             )
         ));
 
-        $this->addElement('submit', 'Registrati', array(
+        $this->addElement('submit', 'ok', array(
             'class' => 'btn waves-yellow green',
         ));
 

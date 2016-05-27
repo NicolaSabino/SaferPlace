@@ -9,8 +9,6 @@ class Livello3Controller extends Zend_Controller_Action
 
     protected $_faqModel = null;
 
-    protected $_faqForm = null;
-
     public function init()
     {
         $this->_helper->layout->setLayout('layout3');
@@ -95,10 +93,10 @@ class Livello3Controller extends Zend_Controller_Action
     public function creafaqAction()
     {
         //istanzio la form per modificare la faq
-        $this->_faqForm = new Application_Form_ModificaFaq();
+        $faqForm = new Application_Form_ModificaFaq();
 
         //imposto la action della form
-        $this->_faqForm->setAction($this->view->url(
+        $faqForm->setAction($this->view->url(
             array(
                 'controller'    => 'livello3',
                 'action'        => 'insertfaq',
@@ -106,13 +104,15 @@ class Livello3Controller extends Zend_Controller_Action
         ));
 
         //assegno la form alla view
-        $this->view->faqForm=$this->_faqForm;
+        $this->view->faqForm=$faqForm;
     }
 
     /**
      *  Inserisco una nuova faq nel db
+     *
      */
-    public function insertfaqAction(){
+    public function insertfaqAction()
+    {
 
         $dom=$this->getParam('domanda');
         $risp=$this->getParam('risposta');
@@ -124,8 +124,9 @@ class Livello3Controller extends Zend_Controller_Action
         $this->getHelper('Redirector')->gotoSimple('gestionefaq','livello3',$module=null);
         
     }
-    
-    public function eliminafaqAction(){
+
+    public function eliminafaqAction()
+    {
 
         $id=$this->getParam('id');
 
@@ -136,8 +137,29 @@ class Livello3Controller extends Zend_Controller_Action
         $this->getHelper('Redirector')->gotoSimple('gestionefaq','livello3',$module=null);
     }
 
+    public function creautenteAction()
+    {
+        //istanzio la form di registrazione di un nuovo utente
+        $registrazioneform = new Application_Form_Registratiform();
+
+
+        //imposto la action della form
+        $registrazioneform->setAction($this->view->url(
+            array(
+                'controller'    => 'livello3',
+                'action'        => '',
+            ),null,true
+        ));
+
+        //assegno la form alla view
+        $this->view->registrazioneform = $registrazioneform;
+        
+    }
+
 
 }
+
+
 
 
 

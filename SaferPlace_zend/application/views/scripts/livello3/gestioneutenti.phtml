@@ -4,6 +4,11 @@
 	<div class="container">
 		<h3 class="green-text center">Gestione Utenti</h3>
 		<!-- Ricerca -->
+		<!--
+
+		AL MOMENTO L'ABBIAMO RIMOSSA PERCHÈ NON È ESPLICITAMENTE CITATA NELLE SPECIFICHE
+
+
 		<div class="row" style="margin-top:50px;">
 			<form>
 				<div class="input-field col s12 m5">
@@ -26,18 +31,29 @@
 				</div>
 			</form>
 		</div>
+		-->
 
 		<!-- creazione nuovo user -->
 		<div class="row center">
 			<div style="margin-top: 30px;">
-				<a href="#nuovo" class="modal-trigger waves-effect waves-light btn green">
+				<a href="
+
+					<?php
+					echo $this->url(
+						array(
+							'controller'=> 'livello3',
+							'action' 	=> 'creautente',
+						),null,true);
+					?>
+
+				" class="modal-trigger waves-effect waves-light btn green">
 					<i class="material-icons left">add</i>Crea utente
 				</a>
 			</div>
 		</div>
 
 		<!-- modal per un nuovo utente -->
-		<div id="nuovo" class="modal">
+		<!--<div id="nuovo" class="modal">
 			<div class="modal-content s12 m6">
 				<h5 class="green-text">Crea nuovo utente</h5>
 				<form class="col s12 " action="actionph">
@@ -54,7 +70,7 @@
 					<input style="margin-bottom: 20px;" type="submit" class="btn green right" value="Crea">
 				</form>
 			</div>
-		</div>
+		</div>-->
 
 
 

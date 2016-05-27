@@ -1,6 +1,6 @@
 <?php
 
-class Application_Form_Loginform extends App_Form_Abstract
+class Application_Form_Loginform extends Zend_Form
 {
     public function init()
     {

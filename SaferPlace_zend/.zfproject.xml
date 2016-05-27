@@ -35,6 +35,7 @@
           <actionMethod actionName="gestioneutenti"/>
           <actionMethod actionName="modificafaq"/>
           <actionMethod actionName="creafaq"/>
+          <actionMethod actionName="creautente"/>
         </controllerFile>
         <controllerFile controllerName="FaqController">
           <actionMethod actionName="index"/>
@@ -53,6 +54,7 @@
         <formFile formName="Loginform"/>
         <formFile formName="Registratiform"/>
         <formFile formName="Segnalaform"/>
+        <formFile formName="ModificaFaq"/>
       </formsDirectory>
       <layoutsDirectory>
         <layoutScriptsDirectory>
@@ -139,12 +141,6 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Livello3">
             <viewScriptFile forActionName="creafaq"/>
-          </viewControllerScriptsDirectory>
-          <viewControllerScriptsDirectory forControllerName="Index">
-            <viewScriptFile forActionName="registrautente"/>
-          </viewControllerScriptsDirectory>
-          <viewControllerScriptsDirectory forControllerName="Index">
-            <viewScriptFile forActionName="loginutente"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>
