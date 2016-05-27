@@ -52,47 +52,6 @@
 			</div>
 		</div>
 
-		<!-- modal per un nuovo utente -->
-		<!--<div id="nuovo" class="modal">
-			<div class="modal-content s12 m6">
-				<h5 class="green-text">Crea nuovo utente</h5>
-				<form class="col s12 " action="actionph">
-					<div class="input-field"><input type="text"><label>Username</label></div>
-					<div class="row">
-						<div class="input-field col s12 m6"><input type="text"><label>Password</label></div>
-						<div class="input-field col s12 m6"><input type="text"><label>Conferma Password</label></div>
-					</div>
-					<div class="input-field"><input type="text"><label>Email</label></div>
-					<div class="row">
-						<div class="input-field col s12 m6"><input type="text"><label>Nome</label></div>
-						<div class="input-field col s12 m6"><input type="text"><label>Cognome</label></div>
-					</div>
-					<input style="margin-bottom: 20px;" type="submit" class="btn green right" value="Crea">
-				</form>
-			</div>
-		</div>-->
-
-
-
-		<!-- modal di modifica di un utente  -->
-		<div id="modifica" class="modal">
-			<div class="modal-content s12 m6">
-				<h5 class="green-text">Modifica utente</h5>
-				<form class="col s12 " action="mod">
-					<div class="input-field"><input type="text" value="Nicolasabboz"><label>Username</label></div>
-					<div class="input-field col s12 m6"><input type="text" value="123456"><label>Password</label></div>
-					<div class="input-field col s12 m6"><input type="text" value="nicola.sabino94@gmail.com"><label>Email</label></div>
-					<div class="input-field"><input type="text"><label>Email</label></div>
-					<div class="input-field col s12 m6"><input type="text" value="Nicola"><label>Nome</label></div>
-					<div class="input-field col s12 m6"><input type="text" value="Sabino"><label>Cognome</label></div>
-					<div class="input-field col s12 m6"><input type="text" value="3485216789"><label>Telefono</label></div>
-					<input style="margin-bottom: 20px;" type="submit" class="btn green right" value="Conferma">
-				</form>
-			</div>
-		</div>
-
-
-
 
 		<!-- tabella risultati -->
 		<table style="margin-top: 30px;" class="striped responsive-table">
@@ -118,12 +77,48 @@
 				echo "	<td>$utente->email</td>";
 				echo "	<td>$utente->password</td>";
 				echo "	<td>";
-				echo "		<a class=\"btn-floating btn-small waves-effect waves-light green white-text modal-trigger\" data-target=\"modifica\">
-											<i class=\"material-icons\">edit</i></a>
-										</a>
-										<a class=\"btn-floating btn-small waves-effect waves-light green white-text\" data-target=\"elimina\">
-											<i class=\"material-icons\">delete</i></a>
-										</a>";
+
+				//BOTTONE MODIFICA
+
+				echo " <a class=\"btn-floating btn-small waves-effect waves-light green white-text \" href=\"";
+
+						// con questa ancora richiamo l'azione per MODIFICARE un utente
+
+						echo $this->url(
+							array(
+								'controller'	=> 'livello3',
+								'action' 		=> 'modificautente',
+								'nome'			=> $utente->nome,
+								'cognome' 		=> $utente->cognome,
+								'genere'    	=> $utente->genere,
+								'eta'       	=> $utente->eta,
+								'telefono'  	=> $utente->telefono,
+								'username'  	=> $utente->username,
+								'password'  	=> $utente->password,
+								'email'     	=> $utente->email
+							));
+
+
+				echo"\">
+								<i class=\"material-icons\">edit</i></a>
+							</a>";
+
+				//BOTTONE ELIMINA
+
+				echo " <a class=\"btn-floating btn-small waves-effect waves-light green white-text\" href=\"";
+
+						// con questa anconcora richiamo l'azione per ELIMINARE un utente
+
+						echo $this->url(
+							array(
+								'controller'=> 'livello3',
+								'action' 	=> 'eliminautente',
+								'username'	=> $utente->username
+							));
+
+				echo"\">
+								<i class=\"material-icons\">delete</i></a>
+							</a>";
 				echo "	</td>";
 				echo "</tr>";
 			}

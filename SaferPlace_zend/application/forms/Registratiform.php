@@ -6,7 +6,7 @@ class Application_Form_Registratiform extends Zend_Form
     //attributi
         protected $_nome        = null;
         protected $_congome     = null;
-        protected $_sesso       = null;
+        protected $_genere       = null;
         protected $_eta         = null;
         protected $_telefono    = null;
         protected $_username    = null;
@@ -20,7 +20,7 @@ class Application_Form_Registratiform extends Zend_Form
      * Popolo la form tramite questo array associativo
      *
      * Nel caso di una form vuota il valore di default dell'array è NULL
-     * 
+     *
      * @param null $array
      */
     public function __construct($array = null
@@ -28,7 +28,7 @@ class Application_Form_Registratiform extends Zend_Form
     {
         $this->_nome        =$array['nome'];
         $this->_congome     =$array['cognome'];
-        $this->_sesso       =$array['sesso'];
+        $this->_genere      =$array['genere'];
         $this->_eta         =$array['eta'];
         $this->_telefono    =$array['telefono'];
         $this->_username    =$array['username'];

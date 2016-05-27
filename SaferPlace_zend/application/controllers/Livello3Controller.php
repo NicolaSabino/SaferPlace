@@ -160,7 +160,7 @@ class Livello3Controller extends Zend_Controller_Action
     public function nuovoutenteAction()
     {
 
-        
+
         $elementi = array(
             'nome'      =>  $this->getParam('Nome'),
             'cognome'   =>  $this->getParam('Cognome'),
@@ -171,6 +171,7 @@ class Livello3Controller extends Zend_Controller_Action
             'password'  =>  $this->getParam('password'),
             'email'     =>  $this->getParam('email')
         );
+
         
 
         //avvio la procedura di inserimento nel db tramite una chiamata ad un oggetto del model
@@ -187,7 +188,32 @@ class Livello3Controller extends Zend_Controller_Action
 
     public function modificautenteAction()
     {
-        //
+        $elementi = array(
+            'nome'      =>  $this->getParam('nome'),
+            'cognome'   =>  $this->getParam('cognome'),
+            'genere'    =>  $this->getParam('genere'),
+            'eta'       =>  $this->getParam('eta'),
+            'telefono'  =>  $this->getParam('telefono'),
+            'username'  =>  $this->getParam('username'),
+            'password'  =>  $this->getParam('password'),
+            'email'     =>  $this->getParam('email')
+        );
+
+        //istanzio la form di registrazione di un nuovo utente
+        $registrazioneform = new Application_Form_Registratiform($elementi);
+
+
+        //imposto la action della form
+        $registrazioneform->setAction($this->view->url(
+            array(
+                'controller'    => 'livello3',
+                'action'        => 'nuovoutente',
+            ),null,true
+        ));
+
+        //assegno la form alla view
+        $this->view->registrazioneform = $registrazioneform;
+
     }
 
 
