@@ -3,11 +3,13 @@
 class Livello1Controller extends Zend_Controller_Action
 {
 
-    protected $stanzaform = null;
+    protected $stanzaform;
+    protected $modificaform;
 
     public function init()
     {
         $this->_helper->layout->setLayout('layout1');
+        $this->view->modificaform=$this->getModificaform();
     }
 
     public function reinderizzaErroreAction($stanza, $edificio, $numPiano, $azione)
@@ -210,7 +212,7 @@ class Livello1Controller extends Zend_Controller_Action
     /**
      * controlla se vengono passati dei parametri e restituisce il parametro
      * passato per riferimento
-     * 
+     *
      * @param $param
      * @return int|mixed
      */
@@ -244,8 +246,72 @@ class Livello1Controller extends Zend_Controller_Action
 
     }
 
+    public function modificadatiutenteAction()
+    {
+        $user='Peppep94';
+
+        $usermodel=new Application_Model_Utenti();
+        $dati=$usermodel->getDatiUtenteByUserSet($user);
+        $this->modificaform= new Application_Form_Registratiform($dati);
+
+        $this->modificaform->setAction($this->view->url(
+            array(
+                'controller' => 'livello1',
+                'action' => '',
+            )
+        ));
+
+        $this->view->modificaform=$this->modificaform;
+    }
+
+
+  public function getModificaform()
+  {
+      $urlHelper = $this->_helper->getHelper('url');
+      $this->modificaform=new Application_Form_Loginform();
+
+      $this->modificaform->setAction($urlHelper->url(array(
+          'controller' => 'index',
+          'action' => 'verificaModifica'),
+          'default'
+      ));
+      return $this->modificaform;
+  }
+
+    public function verificaModificaAction()
+    {
+        $request = $this->getRequest();
+        if (!$request->isPost()) {
+            return $this->_helper->redirector('modificadatiutente');
+        }
+        $form = $this->modificaform;
+        if (!$form->isValid($request->getPost())) {
+            $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
+            return $this->render('modificadatiutente');
+        }
+        else
+        {
+            $datiform=$this->modificaform->getValues(); //datiform è un array
+
+            $utentimodel=new Application_Model_Utenti();
+
+            $username=$this->controllaParam('username'); //prendo l'username inserito nella form
+
+            if($utentimodel->existUsername($username)) //controllo se l'username inserito esiste già nel db
+            {
+                $form->setDescription('Attenzione: l\'username che hai scelto non è disponibile.');
+                return $this->render('modificadatiutente');
+            }
+            else{
+                $utentimodel->updateUtentiSet($datiform);
+                $this->getHelper('Redirector')->gotoSimple('index','livello1', $module = null);
+            }
+        }
+    }
 
 }
+
+
 
 
 

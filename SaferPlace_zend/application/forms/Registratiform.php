@@ -2,11 +2,39 @@
 
 class Application_Form_Registratiform extends App_Form_Abstract
 {
+    protected $_nome;
+    protected $_cognome;
+    protected $_username;
+    protected $_genere;
+    protected $_eta;
+    protected $_telefono;
+    protected $_password;
+    protected $_email;
+
+
+    public function __construct($dati=null)
+    {
+
+        if(!$dati==null){
+        $this->_nome = $dati->current()->nome;
+        $this->_cognome = $dati->current()->cognome;
+        $this->_username = $dati->current()->username;
+        $this->_genere = $dati->current()->genere;
+        $this->_eta = $dati->current()->eta;
+        $this->_telefono = $dati->current()->telefono;
+        $this->_password = $dati->current()->password;
+        $this->_email = $dati->current()->email;
+        }
+
+        $this->init();
+    }
+
+
+
     public function init()
     {
         $this->setMethod('post');
         $this->setName('registratiform'); //setta name e id del form
-
 
         
         $this->addElement('text', 'Nome', array(
@@ -14,6 +42,7 @@ class Application_Form_Registratiform extends App_Form_Abstract
             'required'   => true,
             'label'=> 'Nome',
             'class' =>'black-text',
+            'value'=>$this->_nome,
 
 
         ));
@@ -23,6 +52,8 @@ class Application_Form_Registratiform extends App_Form_Abstract
             'required'   => true,
             'label'=> 'Cognome',
             'class' =>'black-text',
+            'value'=>$this->_cognome,
+
 
 
         ));
@@ -33,6 +64,8 @@ class Application_Form_Registratiform extends App_Form_Abstract
             'required'   => true,
             'multiOptions' => array('m'=>'Uomo','f'=>'Donna'),
             'class' =>'black-text',
+            'value'=>$this->_genere,
+
 
         ));
 
@@ -44,6 +77,8 @@ class Application_Form_Registratiform extends App_Form_Abstract
             'required'         => true,
             'label'      => 'Età',
             'class' =>'black-text',
+            'value'=>$this->_eta,
+
 
 
         ));
@@ -56,6 +91,8 @@ class Application_Form_Registratiform extends App_Form_Abstract
             'required'         => true,
             'label'      => 'Telefono',
             'class' =>'black-text',
+            'value'=>$this->_telefono,
+
 
 
         ));
@@ -69,6 +106,8 @@ class Application_Form_Registratiform extends App_Form_Abstract
             'required'         => true,
             'label'      => 'Username',
             'class' =>'black-text',
+            'value'=>$this->_username,
+
         ));
 
         $this->addElement('password', 'password', array(
@@ -79,6 +118,8 @@ class Application_Form_Registratiform extends App_Form_Abstract
             'required'         => true,
             'label'      => 'Password',
             'class' =>'black-text',
+            'value'=>$this->_password,
+
 
 
         ));
@@ -88,12 +129,11 @@ class Application_Form_Registratiform extends App_Form_Abstract
             'required'         => true,
             'label'      => 'Email',
             'class' =>'black-text',
-            'validators' => array(
-                Zend_Validate_EmailAddress::INVALID => 'EmailAddress',
-            )
+            'validators' => array(Zend_Validate_EmailAddress::INVALID => 'EmailAddress',),
+            'value'=>$this->_email,
         ));
 
-        $this->addElement('submit', 'Registrati', array(
+        $this->addElement('submit', 'ok', array(
             'class' => 'btn waves-yellow green',
         ));
 
@@ -103,5 +143,24 @@ class Application_Form_Registratiform extends App_Form_Abstract
             array('Description', array('placement' => 'prepend', 'class' => 'formerror')),
             'Form'
         ));
+    }
+
+
+    /**
+     * Metodo per popolare la form
+     * @param array $data
+     * @return $this
+     */
+    public function populate($dati )
+    {
+        $this->Nome->setValue($dati->current()->nome);
+        $this->Cognome->setValue($dati->current()->cognome);
+        $this->username->setValue($dati->current()->username);
+        $this->genere->setValue($dati->current()->genere);
+        $this->eta->setValue($dati->current()->eta);
+        $this->telefono->setValue($dati->current()->telefono);
+        $this->password->setValue($dati->current()->password);
+        $this->email->setValue($dati->current()->emai);
+
     }
 }

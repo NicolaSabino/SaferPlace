@@ -51,4 +51,38 @@ class Application_Resource_Utenti extends  Zend_Db_Table_Abstract
         return $controllo;
     }
 
+    /**
+     * @return string
+     */
+    public function getDatiUtenteByUser($user)
+    {
+
+        $select=$this->select()
+            ->where('username= ? ',$user);
+        return $this->fetchAll($select);
+
+    
+
+    }
+
+    /**
+     * @return string
+     */
+    public function updateUtenti($dati)
+    {
+        $data = array(
+            'username'      => $dati->current()->username,
+            'nome'      => $dati->current()->nome,
+            'cognome'      => $dati->current()->cognome,
+            'password'      => $dati->current()->password,
+            'genere'      => $dati->current()->genere,
+            'eta'      => $dati->current()->eta,
+            'email'      => $dati->current()->email,
+            'telefono'      => $dati->current()->telefono,
+        );
+        $where = $this->getAdapter()->quoteInto('utente = ?', $dati->current()->username);
+
+        $this->update($data, $where);
+    }
+
 }

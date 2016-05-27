@@ -22,6 +22,7 @@
           <actionMethod actionName="segnalazione"/>
           <actionMethod actionName="caricamappasegnalazione"/>
           <actionMethod actionName="visualizzafuga"/>
+          <actionMethod actionName="modificadatiutente"/>
         </controllerFile>
         <controllerFile controllerName="Livello2">
           <actionMethod actionName="index"/>
@@ -118,6 +119,9 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Livello1">
             <viewScriptFile forActionName="visualizzafuga"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello1">
+            <viewScriptFile forActionName="modificadatiutente"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>
