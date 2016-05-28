@@ -17,5 +17,10 @@ class Application_Model_Utenza extends App_Model_Abstract
 
         $this->getResource('Utenza')->setUtente($elem);
     }
+
+    public function deleteUtente($username){
+        
+        $this->getResource('Utenza')->delUser($username);
+    }
     
 }

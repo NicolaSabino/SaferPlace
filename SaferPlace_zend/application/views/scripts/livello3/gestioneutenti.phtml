@@ -92,7 +92,7 @@
 
 				//BOTTONE MODIFICA
 
-				echo " <a class=\"btn-floating btn-small waves-effect waves-light green white-text \" href=\"";
+				echo " <a class=\"btn-floating btn-flat btn-small waves-effect waves-light green white-text \" href=\"";
 
 						// con questa ancora richiamo l'azione per MODIFICARE un utente
 
@@ -117,8 +117,8 @@
 							</a>";
 
 				//BOTTONE ELIMINA
-
-				echo " <a class=\"btn-floating btn-small waves-effect waves-light green white-text\" href=\"";
+				/*
+				echo " <a class=\"btn-floating btn-flat btn-small waves-effect waves-light green white-text\" href=\"";
 
 						// con questa anconcora richiamo l'azione per ELIMINARE un utente
 
@@ -132,6 +132,39 @@
 				echo"\">
 								<i class=\"material-icons\">delete</i></a>
 							</a>";
+				*/
+
+				//BOTTONE ASSEGNA EDIFICIO
+
+				if(($utente->livello > 1)){
+					echo "<a class=\"btn-floating btn-flat btn-small waves-effect waves-light green white-text \" href=\"";
+
+						// con questa ancora richiamo l'azione per MODIFICARE un utente
+
+						echo $this->url(
+							array(
+								'controller'	=> 'livello3',
+								'action' 		=> 'modificautente',
+								'nome'			=> $utente->nome,
+								'cognome' 		=> $utente->cognome,
+								'genere'    	=> $utente->genere,
+								'eta'       	=> $utente->eta,
+								'telefono'  	=> $utente->telefono,
+								'username'  	=> $utente->username,
+								'password'  	=> $utente->password,
+								'email'     	=> $utente->email,
+								'livello'		=> $utente->livello
+							));
+
+
+				echo"\">
+								<i class=\"material-icons\">business</i></a>
+							</a>";
+
+
+				}
+
+
 				echo "	</td>";
 				echo "</tr>";
 			}
