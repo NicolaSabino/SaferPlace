@@ -62,6 +62,7 @@
 				<th data-field="cognome">Cognome</th>
 				<th data-field="email">Email</th>
 				<th data-field="password">Password</th>
+				<th data-field="livello">Livello</th>
 				<th data-field="operazione">Operazione</th>
 			</tr>
 			</thead>
@@ -71,16 +72,27 @@
 			<?php
 			foreach ($this->arrayUtenti as $utente){
 				echo "<tr>";
-				echo "	<td>$utente->username</td>";
+
+				if(($utente->livello > 1)){
+					echo "	<td class='yellow-text text-darken-3'>$utente->username</td>";
+				}else{
+					echo "	<td>$utente->username</td>";
+				}
+
 				echo "	<td>$utente->nome</td>";
 				echo "	<td>$utente->cognome</td>";
 				echo "	<td>$utente->email</td>";
 				echo "	<td>$utente->password</td>";
+				if(($utente->livello > 1)){
+					echo "	<td>Staff</td>";
+				}else{
+					echo "	<td>Utente Semplice</td>";
+				}
 				echo "	<td>";
 
 				//BOTTONE MODIFICA
 
-				echo " <a class=\"btn-floating btn-small waves-effect waves-light green white-text \" href=\"";
+				echo " <a class=\"btn-floating btn-flat btn-small waves-effect waves-light green white-text \" href=\"";
 
 						// con questa ancora richiamo l'azione per MODIFICARE un utente
 
@@ -95,7 +107,8 @@
 								'telefono'  	=> $utente->telefono,
 								'username'  	=> $utente->username,
 								'password'  	=> $utente->password,
-								'email'     	=> $utente->email
+								'email'     	=> $utente->email,
+								'livello'		=> $utente->livello
 							));
 
 
@@ -104,8 +117,8 @@
 							</a>";
 
 				//BOTTONE ELIMINA
-
-				echo " <a class=\"btn-floating btn-small waves-effect waves-light green white-text\" href=\"";
+				/*
+				echo " <a class=\"btn-floating btn-flat btn-small waves-effect waves-light green white-text\" href=\"";
 
 						// con questa anconcora richiamo l'azione per ELIMINARE un utente
 
@@ -119,6 +132,39 @@
 				echo"\">
 								<i class=\"material-icons\">delete</i></a>
 							</a>";
+				*/
+
+				//BOTTONE ASSEGNA EDIFICIO
+
+				if(($utente->livello > 1)){
+					echo "<a class=\"btn-floating btn-flat btn-small waves-effect waves-light green white-text \" href=\"";
+
+						// con questa ancora richiamo l'azione per MODIFICARE un utente
+
+						echo $this->url(
+							array(
+								'controller'	=> 'livello3',
+								'action' 		=> 'modificautente',
+								'nome'			=> $utente->nome,
+								'cognome' 		=> $utente->cognome,
+								'genere'    	=> $utente->genere,
+								'eta'       	=> $utente->eta,
+								'telefono'  	=> $utente->telefono,
+								'username'  	=> $utente->username,
+								'password'  	=> $utente->password,
+								'email'     	=> $utente->email,
+								'livello'		=> $utente->livello
+							));
+
+
+				echo"\">
+								<i class=\"material-icons\">business</i></a>
+							</a>";
+
+
+				}
+
+
 				echo "	</td>";
 				echo "</tr>";
 			}
