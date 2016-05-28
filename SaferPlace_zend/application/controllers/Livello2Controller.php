@@ -5,7 +5,7 @@ class Livello2Controller extends Zend_Controller_Action
 
     public function init()
     {
-        $this->_helper->layout->setLayout('layout3');
+        $this->_helper->layout->setLayout('layout2');
     }
 
     public function indexAction()
@@ -16,8 +16,10 @@ class Livello2Controller extends Zend_Controller_Action
     public function notifyAction()
     {
 
-        $utente= new Application_Model_UtenteStaff();
-        $notifiche = $utente->getNotificheEmergenze();
+        $modelUtente= new Application_Model_UtenteStaff();
+       // $notifiche = new Application_Resource_Notifica();
+        print_r($modelUtente->getPersPiano('Univpm', 1)->current());
+        die;
         //estraggo i risultati dell'esecuzione della query e li stampo
         $this->view->assign("notifiche", $utente->getNotificheEmergenze());
 
@@ -29,38 +31,64 @@ class Livello2Controller extends Zend_Controller_Action
     public function dashboardAction()
     {
         $modelUtente = new Application_Model_UtenteStaff();
-     
 
-        $this->view->assign("edifici_e_piani",$modelUtente->getEdificiGestiti('nicolanabbo'));
-
-
-        /*
-         *  genero le notifiche
-         */
-
-
-
-        //genero un array di edifici gestiti
-
-       // $gestiti = array();
-
-        //$array=$edifici->getEdificiGestiti('nicolanabbo');
-
-       /* foreach ($array as $x=>$y){
-           foreach ($y as )
-            array_push($gestiti,$y);
+        if (($edificio = $this->controllaParam('edificio')) && ($piano = $this->controllaParam('piano'))) {
+            $persEdificio = $modelUtente->getPersEdificio($edificio);
+            $persPiano = $modelUtente->getPersPiano($edificio, $piano);
+            $this->view->assign('persedificio', $persEdificio);
+            $this->view->assign('perspiano', $persPiano);
+            $this->view->assign("pianta", $edificio . ' Piano ' . $piano . '.jpg');
         }
-*/
-        //print_r($array);
 
+            $this->view->assign("edifici_e_piani",$modelUtente->getEdificiGestiti('nicolanabbo'));
+
+        if ($notifiche = $modelUtente->getNotificheEmergenze())
+            $this->view->assign("notifiche", $notifiche);
+
+        if ($evacuazioni = $modelUtente->fetchEventi())
+            $this->view->assign("evacuazioni", $evacuazioni);
 
 
     }
 
-    
+    public function controllaParam($param)
+    {
+        $parametro=0;
+        if($this->hasParam("$param"))
+            $parametro=$this->getParam("$param");
+        return $parametro;
+    }
+
+    public function delnotifAction()
+    {
+        $modelUtente= new Application_Model_UtenteStaff();
+
+        if (($edificio = $this->controllaParam('edificio')) && ($piano = $this->controllaParam('piano')))
+            $this->view->assign("pianta", $edificio . ' Piano ' . $piano . '.jpg');
+        $modelUtente->deleteNotification($this->controllaParam('id'));
+        $this->getHelper('Redirector')->gotoRoute(array('controller'=>'livello2', 'action'=>'dashboard',
+                                                    'edificio'=> $edificio, 'piano'=>$piano));
+    }
+
+    public function interruptAction()
+    {
+        $modelUtente= new Application_Model_UtenteStaff();
+
+        if (($edificio = $this->controllaParam('edificio')) && ($piano = $this->controllaParam('piano')))
+            $this->view->assign("pianta", $edificio . ' Piano ' . $piano . '.jpg');
+        
+        if ($id = $this->controllaParam('interrupt'));
+            $modelUtente->delEvento($id);
+        $this->getHelper('Redirector')->gotoRoute(array('controller'=>'livello2', 'action'=>'dashboard',
+            'edificio'=> $edificio, 'piano'=>$piano));
+    }
 
 
 }
+
+
+
+
 
 
 
