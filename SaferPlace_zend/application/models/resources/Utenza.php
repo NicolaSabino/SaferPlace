@@ -21,7 +21,7 @@ class Application_Resource_Utenza extends  Zend_Db_Table_Abstract
         
 
         // se l'utente ha inserito una nuova password procedo ad aggiornare tutti i campi
-        if($elem['password']!=""){
+        if($elem['password']!= null){
 
             $data = array(
                 'nome'      =>  $elem['nome'],
@@ -31,21 +31,23 @@ class Application_Resource_Utenza extends  Zend_Db_Table_Abstract
                 'telefono'  =>  $elem['telefono'],
                 'username'  =>  $elem['username'],
                 'password'  =>  $elem['password'],
-                'email'     =>  $elem['email']
+                'email'     =>  $elem['email'],
+                'livello'   =>  $elem['livello']
             );
 
         }else {
 
             // altrimenti aggiorno tutti i campi ad eccezione della password*/
             $data = array(
-                'nome' => $elem['nome'],
-                'cognome' => $elem['cognome'],
-                'genere' => $elem['genere'],
-                'eta' => $elem['eta'],
-                'telefono' => $elem['telefono'],
-                'username' => $elem['username'],
-                'password' => $elem['password'],
-                'email' => $elem['email']
+                'nome'      => $elem['nome'],
+                'cognome'   => $elem['cognome'],
+                'genere'    => $elem['genere'],
+                'eta'       => $elem['eta'],
+                'telefono'  => $elem['telefono'],
+                'username'  => $elem['username'],
+                //'password'=> $elem['password'],    <-- Non aggiorno la password
+                'email'     => $elem['email'],
+                'livello'   => $elem['livello']
             );
         }
 
