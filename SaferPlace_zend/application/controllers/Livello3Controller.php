@@ -216,7 +216,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     }
 
-    public function updateutenteAction(){
+    public function updateutenteAction()
+    {
 
         $elementi = array(
             
@@ -240,7 +241,8 @@ class Livello3Controller extends Zend_Controller_Action
         $this->getHelper('Redirector')->gotoSimple('gestioneutenti','livello3',$module=null);
     }
 
-    public function eliminautenteAction(){
+    public function eliminautenteAction()
+    {
         
         $username=$this->getParam('username');
 
@@ -251,8 +253,15 @@ class Livello3Controller extends Zend_Controller_Action
         $this->getHelper('Redirector')->gotoSimple('gestioneutenti','livello3',$module=null);
     }
 
+    public function scegliedificioAction()
+    {
+        
+    }
+
 
 }
+
+
 
 
 
