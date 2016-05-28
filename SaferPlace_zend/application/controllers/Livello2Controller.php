@@ -18,7 +18,7 @@ class Livello2Controller extends Zend_Controller_Action
 
         $modelUtente= new Application_Model_UtenteStaff();
        // $notifiche = new Application_Resource_Notifica();
-        print_r($modelUtente->getPersPiano('Univpm', 1)->current());
+        print_r($modelUtente->getEdificiGestiti());
         die;
         //estraggo i risultati dell'esecuzione della query e li stampo
         $this->view->assign("notifiche", $utente->getNotificheEmergenze());
@@ -31,16 +31,23 @@ class Livello2Controller extends Zend_Controller_Action
     public function dashboardAction()
     {
         $modelUtente = new Application_Model_UtenteStaff();
+        $edificigestiti = $modelUtente->getEdificiGestiti('nicolanabbo');
+        $persEdificio = $modelUtente->getPersEdGest($edificigestiti);
+
+        $this->view->assign('persedificio', $persEdificio);
 
         if (($edificio = $this->controllaParam('edificio')) && ($piano = $this->controllaParam('piano'))) {
-            $persEdificio = $modelUtente->getPersEdificio($edificio);
+
             $persPiano = $modelUtente->getPersPiano($edificio, $piano);
-            $this->view->assign('persedificio', $persEdificio);
+            $persPerStanza = $modelUtente->getNumPersStanze($edificio, $piano );
+            
+
+            $this->view->assign('persperstanza', $persPerStanza);
             $this->view->assign('perspiano', $persPiano);
             $this->view->assign("pianta", $edificio . ' Piano ' . $piano . '.jpg');
         }
 
-            $this->view->assign("edifici_e_piani",$modelUtente->getEdificiGestiti('nicolanabbo'));
+            $this->view->assign("edifici_e_piani",$edificigestiti);
 
         if ($notifiche = $modelUtente->getNotificheEmergenze())
             $this->view->assign("notifiche", $notifiche);
