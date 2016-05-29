@@ -86,8 +86,7 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
         }
         // crea la query union per avere tutte le notifiche di tutti gli edifici gestiti in un unico rowset
         $allevents = $eventi->select()->union($queryArray);
-        /*     print_r($notifica->fetchAll($notifica->select()->union($queryArray)));
-         die;*/
+       
         return $eventi->fetchAll($allevents);
     }
 
@@ -122,8 +121,7 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
         $allevents = $eventi->fetchAll($eventsquery);
         foreach ($allevents as $item)
             $this->delEvento($item->id);
-        /*     print_r($notifica->fetchAll($notifica->select()->union($queryArray)));
-         die;*/
+        
         return;
     }
 
@@ -134,11 +132,23 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
         
         return $collocazioni->fetchAll($query)->current();
     }
-    
-    public function getPersPiano($edificio, $piano)
-    {
-        $collocazioni = new Application_Resource_Collocazioni();
-        
-        return $collocazioni->getNumByPiano($edificio,$piano);
+
+    public function getPersPiano($edificio, $piano){
+
+        return $this->getResource('Collocazioni')->getNumByPiano($edificio,$piano);
+    }
+
+    public function getNumPersStanze($edificio,$numPiano) {
+
+        return $this->getResource('Collocazioni')->getNumPerStanza($edificio,$numPiano);
+    }
+
+    public function getPersEdGest ($edifici) {
+
+        $edificigestiti = array();
+        foreach ($edifici as $edif => $item)
+            array_push($edificigestiti, $this->getPersEdificio($edif)->numPersone);
+
+        return $edificigestiti;
     }
 }

@@ -55,5 +55,18 @@ class Application_Resource_Collocazioni extends  Zend_Db_Table_Abstract
         return $this->fetchAll($bypiano)->current();
 
     }
+
+    public function getNumPerStanza($edificio,$piano){
+
+        $select =$this->select()
+                      ->setIntegrityCheck(false)
+                      ->from(array('c' => 'collocazione'), array('personeStanza' => 'COUNT(*)'))
+                      ->join(array('pos' => 'posizione'), 'c.idPosizione=pos.id','stanza')
+                      ->where('pos.edificio = ?', $edificio)
+                      ->where('pos.numPiano = ?', $piano)
+                      ->order('pos.stanza')
+                      ->group('pos.id');
+        return $this->fetchAll($select);
+    }
 }
 
