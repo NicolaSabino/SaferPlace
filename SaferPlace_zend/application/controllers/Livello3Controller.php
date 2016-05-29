@@ -199,15 +199,18 @@ class Livello3Controller extends Zend_Controller_Action
             'email'     =>  $this->getParam('email')
         );
 
+        $usermodel=new Application_Model_Utenti();
+        $dati=$usermodel->getDatiUtenteByUserSet($this->getParam('username'));
+
         //istanzio la form di registrazione di un nuovo utente
-        $registrazioneform = new Application_Form_Registratiform($elementi);
+        $registrazioneform = new Application_Form_Registratiform($dati);
 
 
         //imposto la action della form
         $registrazioneform->setAction($this->view->url(
             array(
                 'controller'    => 'livello3',
-                'action'        => 'nuovoutente',
+                'action'        => 'updateUtente',
             ),null,true
         ));
 

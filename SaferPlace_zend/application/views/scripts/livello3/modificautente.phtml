@@ -5,22 +5,58 @@
 		<div class="card grey lighten-5">
 			<div class="card-content">
 				<div class="container">
-					<?php echo $this->registrazioneform; ?>
+					<?php echo $this->form; ?>
 				</div>
 
 			</div>
 		</div>
-		<div class="center">
-			<a class="btn-floating btn-large red white-text z-depth-1" href="
-				<?php
+
+		<div class="row">
+
+
+			<div class="col s8 push-s2 center-align">
+
+				<p>
+					<a class=" btn-floating btn-large white-text red tooltipped modal-trigger" data-tooltip="Elimina Utente" data-position="left" href="#eliminautente">
+						<i class="material-icons">delete</i>
+					</a>
+				</p>
+				<p>
+					<a class=" btn-floating btn-large white-text red" href="
+					<?php
+					echo $this->url(
+						array(
+							'controller'=> 'livello3',
+							'action' 	=> 'gestioneutenti',
+						),null,true);
+					?>
+					"><i class="material-icons tooltipped" data-position="left" data-delay="50" data-tooltip="Torna Indietro">replay</i></a>
+				</p>
+
+
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal elimina utente -->
+	<div id="eliminautente" class="modal">
+		<div class="modal-content">
+			<h4 class="green-text">Attenzione!</h4>
+			<p>Sei sicuro di voler eliminare questo utente?</p>
+		</div>
+		<div class="modal-footer">
+			<a href="
+		<?php
 			echo $this->url(
 				array(
 					'controller'=> 'livello3',
-					'action' 	=> 'gestioneutenti',
-				),null,true);
+					'action' 	=> 'eliminautente',
+					'id'		=> $this->username
+				));
 			?>
-			"><i class="material-icons tooltipped" data-position="top" data-delay="50" data-tooltip="Torna Indietro">replay</i></a>
+		" class="modal-action modal-close waves-effect waves-green btn-flat green-text">Si</a>
+			<a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat red-text">No</a>
 		</div>
-		<br><br>
 	</div>
 </div>
