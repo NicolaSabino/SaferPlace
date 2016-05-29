@@ -115,7 +115,9 @@ class Livello1Controller extends Zend_Controller_Action
 
     public function indexAction()
     {
+
         $this->controlladatiAction();
+
         $this->view->arrayInformazioni = array('stanza'=>$this->_stanza,'numPiano'=>$this->_numPiano,'edificio'=>$this->_edificio);
 
     }

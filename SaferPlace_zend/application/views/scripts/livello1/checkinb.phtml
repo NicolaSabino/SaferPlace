@@ -61,12 +61,50 @@
 			<br>
 	</div>
 
+	<!-- prova mappatura
+	<div class="container">
+
+		<map id="mappaprova" name="mappaprova">
+			<area shape="rect" alt="stanza 1" title="1" coords="94,54,298,298" href="<?php echo $this->url(
+				array('controller' => 'livello1', 'action' => 'index', 'edificio'=> $edificio,
+					'numPiano'=>$piano,
+					'stanza'=>'1')) ?>"  target=""/>
+			<area shape="rect" alt="stanza 2" title="2" coords="310,54,510,300" href="<?php echo $this->url(
+				array('controller' => 'livello1', 'action' => 'index', 'edificio'=> $edificio,
+					'numPiano'=>$piano,
+					'stanza'=>'2')) ?>" target="" />
+			<area shape="rect" alt="stanza 3" title="3" coords="522,52,722,296" href="<?php echo $this->url(
+				array('controller' => 'livello1', 'action' => 'index', 'edificio'=> $edificio,
+					'numPiano'=>$piano,
+					'stanza'=>'3')) ?>" target="" />
+			<area shape="rect" alt="stanza 4" title="4" coords="736,54,934,302" href="<?php echo $this->url(
+				array('controller' => 'livello1', 'action' => 'index', 'edificio'=> $edificio,
+					'numPiano'=>$piano,
+					'stanza'=>'4')) ?>" target="" />
+			<area shape="rect" alt="stanza 5" title="5" coords="226,470,430,714" href="<?php echo $this->url(
+				array('controller' => 'livello1', 'action' => 'index', 'edificio'=> $edificio,
+					'numPiano'=>$piano,
+					'stanza'=>'5')) ?>" target="" />
+			<area shape="rect" alt="stanza 6" title="6" coords="444,472,588,714" href="<?php echo $this->url(
+				array('controller' => 'livello1', 'action' => 'index', 'edificio'=> $edificio,
+					'numPiano'=>$piano,
+					'stanza'=>'6')) ?>" target="" />
+			<area shape="rect" alt="stanza 7" title="7" coords="600,470,804,708" href="<?php echo $this->url(
+				array('controller' => 'livello1', 'action' => 'index', 'edificio'=> $edificio,
+					'numPiano'=>$piano,
+					'stanza'=>'7')) ?>" target="" />
+		</map>
+		<img alt="Esempio mappatura" src="<?php echo $this->baseUrl('image/piante/Uffici 3tech piano 1.jpg');?>" usemap="#mappaprova">
+
+	</div>
+
 	<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
 		<a class="btn-floating btn-large red tooltipped" data-delay="50" data-position="left" data-tooltip="Indietro" href="<?php echo $this->url(
 			array('controller' => 'livello1', 'action' => 'checkinint', 'edificio'=> $edificio)) ?>">
 			<i class="large material-icons">replay</i>
 		</a>
 	</div>
+
 
 </body>
 </html>
