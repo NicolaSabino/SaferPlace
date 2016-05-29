@@ -20,6 +20,15 @@ class Application_Resource_Posizioni extends  Zend_Db_Table_Abstract
 
     }
 
+    public function getStanzeBynumPianoEdificio($numPiano,$edificio){
+
+        $select=new Application_Resource_Piani_Item();
+        $select=$this->select('id')
+            ->where('numPiano='.$numPiano.' and edificio= \''. $edificio.'\'');
+        return  $this->fetchAll($select);
+
+    }
+
     public function getPosizioniById($id){
 
         $select=new Application_Resource_Piani_Item();
