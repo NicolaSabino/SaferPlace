@@ -81,31 +81,35 @@
     </a>
     <ul>
         <li>
-            <a class="btn-floating red tooltipped" data-position="left" data-delay="50" data-tooltip="Gestisci Edifici" href="<?php echo $this->url(
+            <a class="btn-floating yellow darken-1 tooltipped" data-position="left" data-delay="50" data-tooltip="Gestisci Edifici" href="<?php echo $this->url(
                 array(
                     'controller' => 'livello3',
                     'action' => 'gestioneedifici'
-                )
+                ),null,true
             );  ?>">
                 <i class="material-icons">business</i>
             </a>
         </li>
+
+        <!--
         <li>
-            <a class="btn-floating yellow darken-1 tooltipped" data-position="left" data-delay="50" data-tooltip="Gestisci Piani di Fuga" href="<?php echo $this->url(
+            <a class="btn-floating red tooltipped" data-position="left" data-delay="50" data-tooltip="Gestisci Piani di Fuga" href="<?php echo $this->url(
                 array(
                     'controller' => 'livello3',
                     'action' => 'gestionepianifuga'
-                )
+                ),null,true
             );  ?>">
                 <i class="material-icons">trending_up</i>
             </a>
         </li>
+
+        -->
         <li>
             <a class="btn-floating green tooltipped" data-position="left" data-delay="50" data-tooltip="Gestisci Utenti" href="<?php echo $this->url(
                 array(
                     'controller' => 'livello3',
                     'action' => 'gestioneutenti'
-                )
+                ),null,true
             );  ?>">
                 <i class="material-icons">person</i>
             </a>
@@ -115,7 +119,7 @@
                 array(
                     'controller' => 'livello3',
                     'action' => 'gestionefaq'
-                )
+                ),null,true
             );  ?>">
                 <i class="material-icons">live_help</i>
             </a>

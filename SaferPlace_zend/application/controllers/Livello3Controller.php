@@ -35,11 +35,6 @@ class Livello3Controller extends Zend_Controller_Action
         // action body
     }
 
-    public function gestionepianifugaAction()
-    {
-        // action body
-    }
-
     public function gestionefaqAction()
     {
         // action body
@@ -232,12 +227,22 @@ class Livello3Controller extends Zend_Controller_Action
             'email'     =>  $this->getParam('email'),
             'livello'   =>  $this->getParam('livello')
         );
+
+
         
 
         $utenza = new Application_Model_Utenza();
         $utenza->modificaUtente($elementi);
 
-        //reindirizzo a gestione faq
+        //se un utente viene degradato a utente semplice gli rimuovo la gestione degli edifici
+        if($elementi['livello']<2){
+
+            $edifici = new Application_Model_Edifici();
+            $edifici->eliminaAssegnazioneByUtente($elementi['username']);
+        }
+
+
+        //reindirizzo a gestione utenti
         $this->getHelper('Redirector')->gotoSimple('gestioneutenti','livello3',$module=null);
     }
 
@@ -249,14 +254,60 @@ class Livello3Controller extends Zend_Controller_Action
         $utenza = new Application_Model_Utenza();
         $utenza->deleteUtente($username);
 
-        //reindirizzo a gestione faq
+        //reindirizzo a gestione utenti
         $this->getHelper('Redirector')->gotoSimple('gestioneutenti','livello3',$module=null);
     }
 
     public function scegliedificioAction()
     {
+
+        $username=$this->getParam('username');
         
+        $edifici = new Application_Model_Edifici();
+        $edificiNonAssegnati=$edifici->nonAssegnati();
+
+        $edificiAssegnati = $edifici->getGestioni();
+
+        $this->view->assign('edificiNonAssegnati',$edificiNonAssegnati);
+        $this->view->assign('edificiAssegnati',$edificiAssegnati);
+        $this->view->assign('username',$username);
+        
+
+
     }
+
+    public function assegnaedificioautenteAction(){
+        $username=$this->getParam('username');
+        $edificio = $this->getParam('edificio');
+
+        $gestione = new Application_Model_Edifici();
+        $gestione->assegna($edificio,$username);
+        
+        //assegno l'username alla view
+        //$this->view->assign('username',$username);
+
+
+        //reindirizzo a gestione utenti
+        $this->getHelper('Redirector')->gotoSimple('gestioneutenti','livello3',$module=null);
+    }
+
+    public function eliminaeassegnaAction(){
+        
+        $edificio = $this->getParam('edificio');
+        $username = $this->getParam('username');
+
+        $gestione = new Application_Model_Edifici();
+        
+        $gestione->eliminaAssegnazione($edificio);
+
+        $gestione->assegna($edificio,$username);
+
+        //reindirizzo a gestione utenti
+        $this->getHelper('Redirector')->gotoSimple('gestioneutenti','livello3',$module=null);
+
+
+    }
+
 
 
 }
