@@ -18,8 +18,19 @@ var numstanza=e.options[e.selectedIndex].value;
 return numstanza;
 }
 
-//funzione che scrolla la pagina nel checkinb
+//funzione che scrolla la pagina
 $(function () {
   $('#selectPiano').change(function () {
     $('html,body').animate({ scrollTop: $("#" + $(this).val()).offset().top-200 }, 800);  });
 });
+
+function scrollToTop() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+}
+
+
+
+
+
+

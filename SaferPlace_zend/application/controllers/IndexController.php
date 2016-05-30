@@ -3,10 +3,12 @@
 class IndexController extends Zend_Controller_Action
 {
 
-    protected $registratiform ;
-    protected $loginform;
-    protected $authService;
-    
+    protected $registratiform = null;
+
+    protected $loginform = null;
+
+    protected $authService = null;
+
     public function init()
     {
         $this->view->loginform=$this->getLoginForm();
@@ -71,7 +73,8 @@ class IndexController extends Zend_Controller_Action
         }
     }
 
-    public function authenticateAction(){
+    public function authenticateAction()
+    {
         $request = $this->getRequest();
 
         $utentimodel=new Application_Model_Utenti();
@@ -100,7 +103,8 @@ class IndexController extends Zend_Controller_Action
         }
     }
 
-    public function getRegistratiForm(){
+    public function getRegistratiForm()
+    {
         $urlHelper = $this->_helper->getHelper('url');
         $this->registratiform=new Application_Form_Registratiform();
 
@@ -112,7 +116,8 @@ class IndexController extends Zend_Controller_Action
         return $this->registratiform;
     }
 
-    public function getLoginForm(){
+    public function getLoginForm()
+    {
         $urlHelper = $this->_helper->getHelper('url');
         $this->loginform=new Application_Form_Loginform();
 
@@ -123,9 +128,12 @@ class IndexController extends Zend_Controller_Action
         ));
         return $this->loginform;
     }
+    
 
 
 }
+
+
 
 
 

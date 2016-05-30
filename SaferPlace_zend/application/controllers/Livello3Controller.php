@@ -211,7 +211,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     }
 
-    public function updateutenteAction(){
+    public function updateutenteAction()
+    {
 
         $elementi = array(
             
@@ -243,7 +244,8 @@ class Livello3Controller extends Zend_Controller_Action
         $this->getHelper('Redirector')->gotoSimple('gestioneutenti','livello3',$module=null);
     }
 
-    public function eliminautenteAction(){
+    public function eliminautenteAction()
+    {
         
         $username=$this->getParam('username');
 
@@ -272,7 +274,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     }
 
-    public function assegnaedificioautenteAction(){
+    public function assegnaedificioautenteAction()
+    {
         $username=$this->getParam('username');
         $edificio = $this->getParam('edificio');
 
@@ -287,7 +290,8 @@ class Livello3Controller extends Zend_Controller_Action
         $this->getHelper('Redirector')->gotoSimple('gestioneutenti','livello3',$module=null);
     }
 
-    public function eliminaeassegnaAction(){
+    public function eliminaeassegnaAction()
+    {
         
         $edificio = $this->getParam('edificio');
         $username = $this->getParam('username');
@@ -304,9 +308,23 @@ class Livello3Controller extends Zend_Controller_Action
 
     }
 
+    public function modificaedificioAction()
+    {
+        $app = $this->getParam('edificio');
+        $modelEdifici = new Application_Model_Edifici();
+        $modelPiani = new Application_Model_Piani();
+        $edificio = $modelEdifici->getEdificio($app);
+        $piani = $modelPiani->getPianiByEdificio($app);
+
+        $this->view->assign('edificio',$edificio);
+        $this->view->assign('piani',$piani);
+
+    }
 
 
 }
+
+
 
 
 

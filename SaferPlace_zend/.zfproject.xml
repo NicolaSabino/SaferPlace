@@ -12,6 +12,7 @@
           <actionMethod actionName="checkinint"/>
           <actionMethod actionName="registrautente"/>
           <actionMethod actionName="loginutente"/>
+          <actionMethod actionName="modificaedifico"/>
         </controllerFile>
         <controllerFile controllerName="Error"/>
         <controllerFile controllerName="Livello1">
@@ -40,6 +41,7 @@
           <actionMethod actionName="creautente"/>
           <actionMethod actionName="modificautente"/>
           <actionMethod actionName="scegliedificio"/>
+          <actionMethod actionName="modificaedifico"/>
         </controllerFile>
         <controllerFile controllerName="FaqController">
           <actionMethod actionName="index"/>
@@ -149,6 +151,12 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Livello3">
             <viewScriptFile forActionName="modificautente"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Index">
+            <viewScriptFile forActionName="modificaedifico"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello3">
+            <viewScriptFile forActionName="modificaedifico"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>

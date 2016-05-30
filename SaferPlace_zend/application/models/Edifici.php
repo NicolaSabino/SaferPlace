@@ -31,4 +31,7 @@ class Application_Model_Edifici extends App_Model_Abstract
         $this->getResource('Gestione')->eliminaByUtente($utente);
     }
 
+    public function getEdificio($nome){
+        return $this->getResource('Edifici')->getByName($nome);
+    }
 }

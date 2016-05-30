@@ -46,5 +46,11 @@ class Application_Resource_Edifici extends  Zend_Db_Table_Abstract
         return $this->fetchAll($edifici);
     }
 
+    public function getByName($nome){
+
+        $edificio = $this->select()->where('nome = ?',$nome);
+        return $this->fetchAll($edificio);
+    }
+
    
 }
