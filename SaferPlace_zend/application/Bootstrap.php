@@ -21,9 +21,12 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $request = new Zend_Controller_Request_Http();
         $front->setRequest($request);
     }
+    
+    
 
 
-    //loader
+
+    //loader di cucchia
     protected function _initDefaultModuleAutoloader()
     {
         $loader = Zend_Loader_Autoloader::getInstance();
@@ -31,12 +34,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $this->getResourceLoader()
             ->addResourceType('modelResource','models/resources','Resource');
     }
-
-    protected function _initFrontControllerPlugin()
-    {
-        $front = Zend_Controller_Front::getInstance();
-        $front->registerPlugin(new App_Controller_Plugin_Acl());
-    }
+    
 
     //impostazioni db adapter
     protected function _initDbAdapter(){

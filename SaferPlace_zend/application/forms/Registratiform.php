@@ -152,7 +152,7 @@ class Application_Form_Registratiform extends App_Form_Abstract
      * @param array $data
      * @return $this
      */
-    public function populate($dati)
+    public function populate($dati )
     {
         $this->Nome->setValue($dati->current()->nome);
         $this->Cognome->setValue($dati->current()->cognome);
