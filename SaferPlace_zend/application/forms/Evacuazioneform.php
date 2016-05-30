@@ -1,6 +1,6 @@
 <?php
 
-class Application_Form_Segnalaform extends Zend_Form
+class Application_Form_Evacuazioneform extends Zend_Form
 {
 
     protected $_utenteModel;
@@ -11,9 +11,8 @@ class Application_Form_Segnalaform extends Zend_Form
      * Application_Form_Selezionastanza constructor.
      * @param mixed|null $numStanze
      */
-    public function __construct($numStanze)
+    public function __construct()
     {
-        $this->_numstanze = $numStanze;
         $this->init();
     }
 
@@ -24,7 +23,7 @@ class Application_Form_Segnalaform extends Zend_Form
         $this->setMethod('post');
         $this->setName('Evacuazione');
         $this->_utenteModel = new Application_Model_UtenteStaff();
-        $edifici[0] = 'Seleziona edificio'; // array che conterrà le opzioni della select
+        $edifici['default'] = 'Seleziona edificio'; // array che conterrà le opzioni della select
         $piani[0] = 'Seleziona piano'; // array che contiene i piani, per ora lo definisco manualmente in attesa di ajax
         $piani[1] = 'Piano 1';
         $piani[2] = 'Piano 2';
@@ -32,23 +31,24 @@ class Application_Form_Segnalaform extends Zend_Form
 
         $edgest = $this->_utenteModel->getEdificiGestiti(); // edifici gestiti dal membro staff
         foreach ($edgest as $nome => $piano)
-            array_push($edifici, $nome);
+            $edifici[$nome]=  $nome;
 
-        $this->addElement('select', 'scegliedificio', array(
+
+        $this->addElement('select', 'edificio', array(
             'required' => true,
-            'value'=>0,
-            'multiOptions' => $edifici,
-            'disable'=>array(0),
+            'value' =>'default',
+            'multioptions'=> $edifici,
+            'disable'=>array('default'),
         ));
 
-        $this->addElement('select', 'sceglistanza', array(
+        $this->addElement('select', 'stanza', array(
             'required' => true,
             'value'=>0,
             'multiOptions' => $piani,
             'disable'=>array(0),
         ));
 
-        $this->addElement("submit","Segnala",array(
+        $this->addElement("submit","Conferma",array(
             "class" => "green btn center",
             'required' => true,
 
@@ -63,3 +63,4 @@ class Application_Form_Segnalaform extends Zend_Form
     }
 
 }
+

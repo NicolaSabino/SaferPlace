@@ -3,9 +3,14 @@
 class Livello2Controller extends Zend_Controller_Action
 {
 
+    protected $evacuazioneform = null;
+
+    protected $pianodifugaform = null;
+
     public function init()
     {
         $this->_helper->layout->setLayout('layout2');
+        $this->view->evacuazioneform= $this->getEvacuazioneForm();
     }
 
     public function indexAction()
@@ -90,8 +95,37 @@ class Livello2Controller extends Zend_Controller_Action
             'edificio'=> $edificio, 'piano'=>$piano));
     }
 
+    public function getEvacuazioneForm()
+    {
+
+
+        $urlHelper = $this->_helper->getHelper('url');
+        $this->evacuazioneform= new Application_Form_Evacuazioneform;
+
+        $this->evacuazioneform->setAction($urlHelper->url(array(
+            'controller' => 'livello2',
+            'action' => 'sceglipdf'),
+            'default'
+        ));
+        
+        return $this->evacuazioneform;
+    }
+
+    public function evacuazioneAction()
+    {
+    }
+
+    public function sceglipdfAction()
+    {
+        print_r();
+        $this->getRequest()->getPost('edificio');
+        $this->getRequest()->getPost('edificio');
+    }
+
 
 }
+
+
 
 
 

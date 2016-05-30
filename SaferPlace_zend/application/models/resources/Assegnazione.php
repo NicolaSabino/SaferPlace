@@ -14,5 +14,16 @@ class Application_Resource_Assegnazione extends  Zend_Db_Table_Abstract
 
     }
 
+    public function getAssegnazioniByZonaStaff($zona){
+
+        $select=$this->select()
+                     ->from(array('a'=>'assegnazione'))
+                     ->join(array('z'=> 'zona'),'a.zona=z.id')
+                     ->join(array('pdf'=>'pianodifuga'),'pdf.id=a.idPianoFuga')
+                     ->where('zona= ? ',$zona);
+
+        return $this->fetchAll($select);
+    }
+
 
 }

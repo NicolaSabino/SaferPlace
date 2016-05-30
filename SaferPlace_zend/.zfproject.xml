@@ -58,6 +58,7 @@
         <formFile formName="Registratiform"/>
         <formFile formName="Segnalaform"/>
         <formFile formName="ModificaFaq"/>
+        <formFile formName="Evacuazioneform"/>
       </formsDirectory>
       <layoutsDirectory>
         <layoutScriptsDirectory>
