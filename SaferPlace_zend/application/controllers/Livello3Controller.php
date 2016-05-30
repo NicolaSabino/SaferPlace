@@ -321,8 +321,31 @@ class Livello3Controller extends Zend_Controller_Action
 
     }
 
+    public function modificadescrizioneAction()
+    {
+        //prendo le informazioni per popolare la form
+        $nomeEdificio = $this->getParam('edificio');
+        $edificiModel = new Application_Model_Edifici();
+        $edificio = $edificiModel->getEdificio($nomeEdificio);
+        
+        //istanzio la form
+        $nuovaForm = new Application_Form_Gestioneedificio($nomeEdificio,$edificio[0]->informazioni);
+
+        //assegno la form alla view
+        $this->view->assign('Form',$nuovaForm);
+    }
+
+    public function modificapianoAction()
+    {
+        // action body
+    }
+
 
 }
+
+
+
+
 
 
 

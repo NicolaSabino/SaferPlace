@@ -42,6 +42,8 @@
           <actionMethod actionName="modificautente"/>
           <actionMethod actionName="scegliedificio"/>
           <actionMethod actionName="modificaedifico"/>
+          <actionMethod actionName="modificadescrizione"/>
+          <actionMethod actionName="modificapiano"/>
         </controllerFile>
         <controllerFile controllerName="FaqController">
           <actionMethod actionName="index"/>
@@ -62,6 +64,8 @@
         <formFile formName="Segnalaform"/>
         <formFile formName="ModificaFaq"/>
         <formFile formName="Gestisciutente"/>
+        <formFile formName="Gestioneedificio"/>
+        <formFile formName="Gestionepiano"/>
       </formsDirectory>
       <layoutsDirectory>
         <layoutScriptsDirectory>
@@ -157,6 +161,12 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Livello3">
             <viewScriptFile forActionName="modificaedifico"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello3">
+            <viewScriptFile forActionName="modificadescrizione"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello3">
+            <viewScriptFile forActionName="modificapiano"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>

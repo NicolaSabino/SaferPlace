@@ -27,7 +27,18 @@
 						<div class="row">
 
 							<div class="col s6 center">
-								<a class="btn-floating btn-large green"><i class="material-icons">edit</i></a>
+								<a class="btn-floating btn-large green" href="
+									<?php
+										echo $this->url(
+											array(
+											'controller'=> 'livello3',
+											'action' 	=> 'modificadescrizione',
+											'edificio'	=> $this->edificio[0]->nome
+												
+										),null,true);
+									?>
+
+								"><i class="material-icons">edit</i></a>
 							</div>
 
 
