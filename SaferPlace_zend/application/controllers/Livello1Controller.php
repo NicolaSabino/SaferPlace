@@ -3,14 +3,45 @@
 class Livello1Controller extends Zend_Controller_Action
 {
 
-    protected $stanzaform = null;
+    protected $stanzaform;
+    protected $modificaform;
+    protected $_stanza;
+    protected $_numPiano;
+    protected $_edificio;
+    protected $user='Peppep94';
+
+    public function controlladatiAction(){
+
+        $collocazionemodel=new Application_Model_Collocazioni();
+        $collocazione=$collocazionemodel->getCollocazioneByUserSet($this->user);
+
+        if(!$collocazione->current()==null) {
+            
+            $posizionemodel = new Application_Model_Posizioni();
+            $posizioni = $posizionemodel->getPosizioniByIdSet($collocazione->current()->idPosizione);
+
+            $this->_stanza = $posizioni->current()->stanza;
+            $this->_numPiano = $posizioni->current()->numPiano;
+            $this->_edificio = $posizioni->current()->edificio;
+        }
+        else{
+
+            $this->getHelper('Redirector')->gotoSimple('checkin','livello1',$module=null);
+            }
+
+
+    }
 
     public function init()
     {
+
         $this->_helper->layout->setLayout('layout1');
+        $this->view->modificaform=$this->getModificaform();
+
+
     }
 
-    public function reinderizzaErroreAction($stanza,$edificio,$numPiano,$azione)
+    public function reinderizzaErroreAction($stanza, $edificio, $numPiano, $azione)
     {
         //controlla che la stanza sia stata scelta dalla select, se non viene scelta si ricarica la pagina
         if($stanza==0) {
@@ -27,7 +58,6 @@ class Livello1Controller extends Zend_Controller_Action
     public function inseriscidatiposizioneAction()
     {
 
-        $user="Peppep94";
         $numPiano=$this->controllaParam('numPiano');
         $edificio=$this->controllaParam('edificio');
         $stanza=$this->controllaParam('elencostanze');
@@ -38,33 +68,32 @@ class Livello1Controller extends Zend_Controller_Action
         $posizioni=$idposizione->getIdPosizioniByNumPianoStanzaEdificioSet($numPiano, $stanza,$edificio);
 
         $collocazionemodel=new Application_Model_Collocazioni();
-        $collocazione=$collocazionemodel->getCollocazioneByUserSet($user);
+        $collocazione=$collocazionemodel->getCollocazioneByUserSet($this->user);
 
-        if($collocazione===array() )
+
+        if($collocazione->current()===null )
         {
-            $collocazionemodel->insertCollocazioni($user,$posizioni->current()->id );
+            $collocazionemodel->insertCollocazioni($this->user,$posizioni->current()->id );
         }
         else
         {
-            $collocazionemodel->updateCollocazioni($posizioni->current()->id,$user);
+            $collocazionemodel->updateCollocazioni($posizioni->current()->id,$this->user);
         }
 
-        $this->getHelper('Redirector')->gotoSimple('index','livello1', $module = null, array('edificio'=>$edificio,
-            'numPiano'=>$numPiano,
-            'stanza'=>$stanza));
+        $this->getHelper('Redirector')->gotoSimple('index','livello1', $module = null);
 
     }
 
-    public function inseriscidatisegnalazioneAction(){
+    public function inseriscidatisegnalazioneAction()
+    {
 
-        $user="Peppep94";
         $numPiano=$this->controllaParam('numPiano');
         $edificio=$this->controllaParam('edificio');
         $evento=$this->controllaParam('evento');
         $stanzasegnalata=$this->controllaParam('segnalastanza');
 
         $collocazionemodel=new Application_Model_Collocazioni();
-        $collocazione=$collocazionemodel->getCollocazioneByUserSet($user);
+        $collocazione=$collocazionemodel->getCollocazioneByUserSet($this->user);
 
         $posizionemodel=new Application_Model_Posizioni();
         $posizioni=$posizionemodel->getPosizioniByIdSet($collocazione->current()->idPosizione);
@@ -76,7 +105,7 @@ class Livello1Controller extends Zend_Controller_Action
         $idPosizione = $posizionemodel->getIdPosizioniByNumPianoStanzaEdificioSet($numPiano,$stanzasegnalata,$edificio);
 
         $segnalazionemodel = new Application_Model_Segnalazioni();
-        $segnalazionemodel->insertSegnalazioni($user, $idPosizione->current()->id, $evento);
+        $segnalazionemodel->insertSegnalazioni($this->user, $idPosizione->current()->id, $evento);
 
         $this->getHelper('Redirector')->gotoSimple('index','livello1', $module = null, array('edificio'=>$edificio,
             'numPiano'=>$numPiano,
@@ -86,11 +115,10 @@ class Livello1Controller extends Zend_Controller_Action
 
     public function indexAction()
     {
-        $numPiano=$this->controllaParam('numPiano');
-        $edificio=$this->controllaParam('edificio');
-        $stanza=$this->controllaParam('stanza');
 
-        $this->view->arrayInformazioni = array('stanza'=>$stanza,'numPiano'=>$numPiano,'edificio'=>$edificio);
+        $this->controlladatiAction();
+
+        $this->view->arrayInformazioni = array('stanza'=>$this->_stanza,'numPiano'=>$this->_numPiano,'edificio'=>$this->_edificio);
 
     }
 
@@ -166,11 +194,10 @@ class Livello1Controller extends Zend_Controller_Action
         // action body
     }
 
-
     public function caricamappasegnalazioneAction()
     {
         $idPosizionemodel=new Application_Model_Collocazioni();
-        $idPosizione=$idPosizionemodel->getCollocazioneByUserSet('Peppep94');
+        $idPosizione=$idPosizionemodel->getCollocazioneByUserSet($this->user);
 
         $numPianoEdificiomodel=new Application_Model_Posizioni();
         $numPianoEdificio=$numPianoEdificiomodel->getPosizioniByIdSet($idPosizione->current()->idPosizione);
@@ -206,12 +233,11 @@ class Livello1Controller extends Zend_Controller_Action
 
 
     }
-    
 
     /**
      * controlla se vengono passati dei parametri e restituisce il parametro
      * passato per riferimento
-     * 
+     *
      * @param $param
      * @return int|mixed
      */
@@ -223,9 +249,78 @@ class Livello1Controller extends Zend_Controller_Action
         return $parametro;
     }
 
-    
+    public function visualizzafugaAction()
+    {
+
+
+        $collocazionemodel=new Application_Model_Collocazioni();
+        $collocazione=$collocazionemodel->getCollocazioneByUserSet($this->user);
+
+        $posizionemodel=new Application_Model_Posizioni();
+        $posizioni=$posizionemodel->getPosizioniByIdSet($collocazione->current()->idPosizione);
+
+        $assegnazionemodel=new Application_Model_Assegnazione();
+        $assegnazione=$assegnazionemodel->getAssegnazioneByZonaSet($posizioni->current()->zona);
+
+
+        $pianoDiFugamodel=new Application_Model_PianoDiFuga();
+        $pianoDiFuga=$pianoDiFugamodel->getPianoDiFugaByIdSet($assegnazione->current()->idPianoFuga);
+
+        $this->view->pianta=$pianoDiFuga->current()->pianta;
+        
+
+    }
+
+    public function modificadatiutenteAction()
+    {
+        
+    }
+
+
+  public function getModificaform()
+  {
+      $urlHelper = $this->_helper->getHelper('url');
+
+      $usermodel=new Application_Model_Utenti();
+      $dati=$usermodel->getDatiUtenteByUserSet($this->user);
+      $this->modificaform= new Application_Form_Registratiform($dati);
+
+      $this->modificaform->setAction($urlHelper->url(array(
+          'controller' => 'livello1',
+          'action' => 'verificamodifica'),
+          'default'
+      ));
+      return $this->modificaform;
+  }
+
+    public function verificamodificaAction()
+    {
+        $request = $this->getRequest();
+        if (!$request->isPost()) {
+            return $this->_helper->redirector('modificadatiutente');
+        }
+        $form = $this->modificaform;
+        if (!$form->isValid($request->getPost())) {
+            $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
+            return $this->render('modificadatiutente');
+        }
+        else
+        {
+            $datiform=$this->modificaform->getValues(); //datiform è un array
+
+            $utentimodel=new Application_Model_Utenti();
+
+            $utentimodel->updateUtentiSet($datiform);
+            $this->getHelper('Redirector')->gotoSimple('index','livello1', $module = null);
+
+        }
+    }
 
 }
+
+
+
+
 
 
 

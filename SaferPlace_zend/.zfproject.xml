@@ -21,6 +21,8 @@
           <actionMethod actionName="checkinint"/>
           <actionMethod actionName="segnalazione"/>
           <actionMethod actionName="caricamappasegnalazione"/>
+          <actionMethod actionName="visualizzafuga"/>
+          <actionMethod actionName="modificadatiutente"/>
         </controllerFile>
         <controllerFile controllerName="Livello2">
           <actionMethod actionName="index"/>
@@ -147,9 +149,6 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Livello3">
             <viewScriptFile forActionName="modificautente"/>
-          </viewControllerScriptsDirectory>
-          <viewControllerScriptsDirectory forControllerName="Livello3">
-            <viewScriptFile forActionName="scegliedificio"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>
