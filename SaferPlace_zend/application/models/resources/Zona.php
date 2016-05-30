@@ -1,16 +1,16 @@
 <?php
 
-class Application_Rescource_Zona extends Zend_Db_Table_Abstract {
+class Application_Resource_Zona extends Zend_Db_Table_Abstract {
     
     protected $_name= 'zona';
     
     public function getZoneByEdPiano($edificio,$piano) {
     
         $select = $this->select()
-                       ->from (array('z'=>'zona'), 'id')
-                       ->join (array('pos'=>'posizione'), 'pos.zona=z.id', array('edificio', 'numPiano'))
-                       ->where('p.edificio = ?', $edificio)
-                       ->where('p.numPiano = ?', $piano);
+                       ->setIntegrityCheck(false)
+                       ->from (array('z'=>'zona'))
+                       ->where('z.edificio = ?', $edificio)
+                       ->where('z.piano = ?', $piano);
     
         return $this->fetchAll($select);
     

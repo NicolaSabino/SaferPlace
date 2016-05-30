@@ -5,9 +5,9 @@ class Application_Resource_Eventi extends Zend_Db_Table_Abstract {
     protected $_rowClass = 'Application_Resource_Faq_Item';
 
 
-    public function addEvento($nome,$idSegnalazione, $idpiano)
+    public function addEvento($nome,$idSegnalazione, $idpiano, $zona)
     {
-        $data= array ('id'=> null,'nome'=>$nome,'idSegnalazione'=>$idSegnalazione, 'idPiano'=> $idpiano);
+        $data= array ('id'=> null,'nome'=>$nome,'idSegnalazione'=>$idSegnalazione, 'idPiano'=> $idpiano, 'zona' =>$zona);
         
         return (bool) $this->insert($data);
     }

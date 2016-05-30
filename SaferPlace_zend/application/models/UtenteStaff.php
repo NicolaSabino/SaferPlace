@@ -9,7 +9,8 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
         $this->_nomeUtente='nicolanabbo';
     }
     
-    //restituisce l'insieme degli edifici gestiti da un determinato utente
+    //restituisce l'insieme degli edifici gestiti da un determinato utente e i relativi piani in un array
+    // associativo di array, del tipo [edificio][arraypiani]
     public function getEdificiGestiti(){
         
        
@@ -86,7 +87,7 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
         }
         // crea la query union per avere tutte le notifiche di tutti gli edifici gestiti in un unico rowset
         $allevents = $eventi->select()->union($queryArray);
-       
+
         return $eventi->fetchAll($allevents);
     }
 
@@ -145,10 +146,39 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
 
     public function getPersEdGest ($edifici) {
 
-        $edificigestiti = array();
+        $persedificigestiti = array();
         foreach ($edifici as $edif => $item)
-            array_push($edificigestiti, $this->getPersEdificio($edif)->numPersone);
+            array_push($persedificigestiti, $this->getPersEdificio($edif)->numPersone);
 
-        return $edificigestiti;
+        return $persedificigestiti;
+    }
+    
+    //restituisce tutti i piani di fuga relativi a un piano di un edificio
+    public function getPianiFuga($edificio,$piano) {
+        $zonaResource = new Application_Resource_Zona();
+        $assegnazioniResource = new Application_Resource_Assegnazione();
+        $zone= $this->getResource('Zona')->getZoneByEdPiano($edificio,$piano);
+
+        foreach ($zone as $item)
+            $queryArray[] = $assegnazioniResource->getAssegnazioniByZonaStaff($item->id);
+
+        $allpianidifuga = $assegnazioniResource->select()->union($queryArray);
+        
+        return $assegnazioniResource->fetchAll($allpianidifuga);
+    }
+    
+    //restituisce le zone relative a un piano di un edificio
+    public function getZone($edificio, $piano) {
+        
+        return $this->getResource('Zona')->getZoneByEdPiano($edificio,$piano);
+    }
+    
+    public function avviaEvac($edificio,$tipo,$idSegnalazione, $piano, $zona, $idPianoFuga) {
+        $idpiano = $this->getResource('Piani')->getIdPiano($edificio,$piano);
+        $this->getResource('Eventi')->addEvento($tipo,$idSegnalazione, $idpiano[0]->id, $zona);
+        $this->getResource('Assegnazione')->disabilitaPianoFuga();
+        $this->getResource('Assegnazione')->abilitaPianoFuga($idPianoFuga);
+
+        return;
     }
 }

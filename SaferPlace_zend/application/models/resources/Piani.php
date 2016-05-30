@@ -47,5 +47,13 @@ class Application_Resource_Piani extends  Zend_Db_Table_Abstract
             ->where('numeroPiano= ? ',$numPiano);
         return $this->fetchAll($select);
     }
+
+    public function getIdPiano($edificio,$piano) {
+        $select=$this->select()
+                     ->from('piano', 'id')
+                     ->where('edificio = ?', $edificio)
+                     ->where('numeroPiano = ?', $piano);
+        return $this->fetchAll($select);
+    }
 }
 

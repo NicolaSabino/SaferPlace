@@ -116,6 +116,9 @@
 								if (isset($this->pianta)) {
 									echo '<img class="materialboxed" src="'.$this->baseUrl($pianta).'" width="100%"></img>';
 								}
+								else
+									echo '<h5 class="grey-text center"><br><br>Seleziona un piano<br> per ottenere 
+										      informazioni su di esso.</h5>';
 								?>
 
 					</div >
@@ -126,7 +129,7 @@
 							echo '
 						<ul class="collapsible">
 							<li>
-								<div class="collapsible-header green-text" style="font-size: 175%;">Persone su questo
+								<div class="collapsible-header green-text">Persone su questo
 									piano:&nbsp
 									<div class="right">';
 								echo $this->perspiano->numPersone.
@@ -137,13 +140,13 @@
 								</div>
 							</li>
 							<li>
-								<div class="collapsible-header green-text" style="font-size: 175%;">Persone per stanza:&nbsp
+								<div class="collapsible-header green-text">Persone per stanza:&nbsp
 								</div><div class="collapsible-body">
 							<?
 									foreach ($this->persperstanza as $item) {
-										echo '<div class="collection-item grey-text" style="font-size: 150%">';
+										echo '<div class="collection-item grey-text"><b>';
 										echo 	'&nbsp Stanza '. $item->stanza .
-													'<div class="right">' . $item->personeStanza .'</div>';
+													'<div class="right">' . $item->personeStanza .'</b></div>';
 										echo '</div>';
 									}
 								echo '</div>';
@@ -243,28 +246,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<div class="fixed-action-btn" >
-		<a class="btn-floating btn-large red">
-			<i class="large material-icons">mode_edit</i>
-		</a>
-		<ul>
-			<li><a class="btn-floating red tooltipped" data-tooltip="Impostazioni" data-delay="50" data-position="left">
-					<i class="material-icons">build</i></a>
-			</li>
-			<li>
-				<a class="btn-floating yellow darken-1 tooltipped" data-delay="50" data-position="left"
-				   data-tooltip="Avvia evacuazione" >
-						<i class="material-icons">warning</i>
-				</a>
-			</li>
-			<li>
-				<a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-			<li>
-				<a class="btn-floating blue"><i class="material-icons">attach_file</i></a>
-			</li>
-		</ul>
 	</div>
 
 </div>

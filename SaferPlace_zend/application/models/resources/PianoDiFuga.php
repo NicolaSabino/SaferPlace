@@ -16,8 +16,10 @@ class Application_Resource_PianoDiFuga extends  Zend_Db_Table_Abstract
     public function getPianiDiFugaByZona($zona){
         
         $select= $this->select()
-                      ->from('pianodifuga')
-        
-    }
+                      ->from(array('pdf'=>'pianodifuga'))
+                      ->join(array('a'=>'assegnazione'), 'a.zona=pdf.zona',array('zona'))
+                      ->where('zona = ?', $zona);
 
+        return $select;
+    }
 }

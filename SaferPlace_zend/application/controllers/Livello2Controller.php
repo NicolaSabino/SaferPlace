@@ -117,13 +117,46 @@ class Livello2Controller extends Zend_Controller_Action
 
     public function sceglipdfAction()
     {
-        print_r();
-        $this->getRequest()->getPost('edificio');
-        $this->getRequest()->getPost('edificio');
+        $utentemodel = new Application_Model_UtenteStaff();
+        $edificio = $this->getRequest()->getPost('edificio');
+        $piano = $this->getRequest()->getPost('piano');
+        
+        if ($zona  = $this->getRequest()->getPost('zona'))
+            $this->view->assign('zona', $zona);
+        if ($tipo  = $this->getRequest()->getPost('tipo'))
+            $this->view->assign('tipo', $tipo);
+
+        $this->view->assign('edificio', $edificio);
+        $this->view->assign('piano', $piano);
+        $this->view->assign('pianifuga', $utentemodel->getPianiFuga($edificio, $piano));
+        $this->view->assign('zone', $utentemodel->getZone($edificio, $piano));
+        
+    }
+
+    public function avviaevacuazioneAction()
+    {
+        $urlHelper = $this->_helper->getHelper('url');
+
+        $utenteModel = new Application_Model_UtenteStaff();
+        $idPianoFuga = $this->controllaParam('idPianoFuga');
+        $edificio =$this->controllaParam('edificio');
+        $piano    =$this->controllaParam('piano');
+        $zona     =$this->controllaParam('zona');
+        $idSegnalazione = $this->controllaParam('segnalazione') ? $this->controllaParam('segnalazione') : null;
+        $tipo = $this->controllaParam('tipo');
+        
+        $utenteModel->avviaEvac($edificio,$tipo,$idSegnalazione, $piano, $zona, $idPianoFuga);
+
+
+        $this->getHelper('Redirector')->gotoRoute(array('controller'=>'livello2', 'action'=>'dashboard'));
+            
+            
     }
 
 
 }
+
+
 
 
 

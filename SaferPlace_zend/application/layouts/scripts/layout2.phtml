@@ -48,5 +48,36 @@
     </nav>
 </div>
 <?php echo $this->layout()->content; ?>
+
+<!-- Pulsante azioni -->
+<div class="fixed-action-btn" >
+    <a class="btn-floating btn-large red">
+        <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+        <li><a class="btn-floating red tooltipped" data-tooltip="Impostazioni" data-delay="50" data-position="left">
+                <i class="material-icons">build</i></a>
+        </li>
+        <li>
+            <a class="btn-floating yellow darken-1 tooltipped" data-delay="50" data-position="left"
+               data-tooltip="Avvia evacuazione" href="<? echo $this->url(array(
+                                                                        'controller' => 'livello2',
+                                                                        'action'     => 'evacuazione'));?>
+            " >
+                <i class="material-icons">warning</i>
+            </a>
+        </li>
+        <li>
+            <a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+        <li>
+            <a class="btn-floating blue tooltipped" data-delay="50" data-position="left"
+                data-tooltip="Dashboard" href="<? echo $this->url(array(
+                                                                'controller' => 'livello2',
+                                                                'action'     => 'dashboard'));?>">
+                <i class="material-icons">home</i>
+            </a>
+        </li>
+    </ul>
+</div>
 </body>
 </html>
