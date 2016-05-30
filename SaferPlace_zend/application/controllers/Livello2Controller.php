@@ -4,7 +4,7 @@ class Livello2Controller extends Zend_Controller_Action
 {
 
     protected $evacuazioneform = null;
-
+    protected $profiloform     = null;
     protected $pianodifugaform = null;
 
     public function init()
@@ -152,7 +152,22 @@ class Livello2Controller extends Zend_Controller_Action
             
             
     }
+ 
+    public function getprofiloForm()
+    {
 
+
+        $urlHelper = $this->_helper->getHelper('url');
+        $this->profiloform= new Application_Form_Eform;
+
+        $this->evacuazioneform->setAction($urlHelper->url(array(
+            'controller' => 'livello2',
+            'action' => 'sceglipdf'),
+            'default'
+        ));
+
+        return $this->profiloform;
+    }
 
 }
 

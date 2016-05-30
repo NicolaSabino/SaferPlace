@@ -93,7 +93,7 @@
 								}
 
 								else
-										echo '<p class="grey-text center"><b>Non sono in corso procedure di evacuazione.</b></p>';
+										echo '<p class="grey-text center"><b><br>Non sono in corso procedure di evacuazione.<br><br></b></p>';
 								?>
 
 							</ul>
@@ -178,7 +178,7 @@
 											<div class="chip green darken-1 white-text">'.$item->utente.'</div>
 										</span>';
 									echo '<ul>
-										<li>';
+										<li>Tipo: ';
 
 									switch ($item->tipo) {
 
@@ -200,7 +200,7 @@
 
 									};
 
-									echo ' in <b>'.$item->edificio.'</b>';
+									echo ' <br>Edificio:  <b>'.$item->edificio.'</b>';
 									echo '</li>';
 									echo '	<li>
 													Piano:<b>'.$item->numPiano.'</b>
