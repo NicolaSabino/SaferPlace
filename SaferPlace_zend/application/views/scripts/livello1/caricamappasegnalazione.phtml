@@ -1,0 +1,71 @@
+<html>
+<head>
+	<div>
+		<?php
+		$edificio=$this->numPianoEdificio->current()->edificio;
+		$piano=$this->numPianoEdificio->current()->numPiano;
+		$errore=$this->errore;
+		?>
+	</div>
+</head>
+<body>
+
+
+<!-- barra fissa con nome edificio e box per scorrere i piani-->
+<div style="margin-bottom: 200px" >
+
+	<!-- Titolo -->
+	<div class="row navbar-fixed white center-align" style="position: fixed; width: 100%; height: auto;">
+
+		<div class="container">
+
+			<div class="col l12 s12 center-align white">
+				<h3 class="green-text text-darken-2 center-align white"><?php echo $edificio.' Piano '. $piano;?></h3>
+				<?php
+				if($errore==='errore')
+					echo '<h5 class="red-text text-darken-2 center-align white">Devi selezionare una stanza</h5>'
+				?>
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<!--elenco dei piani con immagini-->
+<div class="container" >
+	<!-- PIANO # + immagine -->
+
+	<?php $pianta="image/piante/".$edificio.' Piano '.$piano.'.jpg'; ?>
+
+
+	<!-- imposto l'id per il riferimento al piano ad uno spazio prima di ogni piano-->
+	<!--inizia l'elenco dei piani-->
+	<div class="row">
+
+		<div class="input-field col l3 m3 s3 offset-l4 " style="margin-top: -1%" >
+
+
+			<?php echo $this->segnalaform; ?>
+
+		</div>
+		<div class="col l12 s12 m12 center">
+			<img src="<?php echo $this->baseUrl($pianta); ?>" style="height:80%; width: 80%">
+		</div>
+	</div>
+
+	<br>
+	<br>
+	<br>
+</div>
+
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+	<a class="btn-floating btn-large red tooltipped" data-delay="50" data-position="left" data-tooltip="Indietro" href="<?php echo $this->url(
+		array('controller' => 'livello1', 'action' => 'segnalazione')) ?>">
+		<i class="large material-icons">replay</i>
+	</a>
+</div>
+
+</body>
+</html>

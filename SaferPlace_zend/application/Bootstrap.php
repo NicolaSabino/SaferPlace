@@ -2,12 +2,11 @@
 
 class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 {
-    //non so se va definito comunque il baseurl
 
     protected function _initSetupBaseUrl() {
-            $this->bootstrap('frontcontroller');
-            $controller = Zend_Controller_Front::getInstance();
-            $controller->setBaseUrl('/SaferPlace/SaferPlace_zend/public');
+        $this->bootstrap('frontcontroller');
+        $controller = Zend_Controller_Front::getInstance();
+        $controller->setBaseUrl('/SaferPlace/SaferPlace_zend/public');
     }
 
     protected function _initRequest()
@@ -21,12 +20,8 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $request = new Zend_Controller_Request_Http();
         $front->setRequest($request);
     }
-    
-    
 
-
-
-    //loader di cucchia
+    //loader
     protected function _initDefaultModuleAutoloader()
     {
         $loader = Zend_Loader_Autoloader::getInstance();
@@ -34,7 +29,23 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $this->getResourceLoader()
             ->addResourceType('modelResource','models/resources','Resource');
     }
-    
+
+    protected function _initFrontControllerPlugin()
+    {
+        $front = Zend_Controller_Front::getInstance();
+        $front->registerPlugin(new App_Controller_Plugin_Acl());
+    }
+
+    protected function _initViewSettings()
+    {
+        $this->bootstrap('view');
+        $this->_view = $this->getResource('view');
+        $this->_view->headMeta()->setCharset('UTF-8');
+        $this->_view->headMeta()->appendHttpEquiv('Content-Language', 'it-IT');
+        $this->_view->headLink()->appendStylesheet($this->_view->baseUrl('css/materialize.css'));
+        $this->_view->headTitle('Corso di Tecnologie Web - Zend Project - Versione 6');
+    }
+
 
     //impostazioni db adapter
     protected function _initDbAdapter(){
@@ -42,11 +53,34 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
             'host'     => 'localhost',
             'username' => 'root',
             'password' => '',
-            'dbname'   => 'sp_db'
+            'dbname'   => 'sp_db',
+            'charset'  => 'utf8'
         ));
         Zend_Db_Table::setDefaultAdapter($dbAdapter);
 
     }
+
+    //non so se va definito comunque il baseurl
+
+
+    /*
+
+    */
+
+
+    /*protected function _initViewSettings()
+    {
+        $this->bootstrap('view');
+        $this->_view = $this->getResource('view');
+        $this->_view->headMeta()->setCharset('UTF-8');
+        $this->_view->headMeta()->appendHttpEquiv('Content-Language', 'it-IT');
+        $this->_view->headLink()->appendStylesheet($this->_view->baseUrl('css/materialize.css'));
+        $this->_view->headTitle('Corso di Tecnologie Web - Zend Project - Versione 6');
+    }*/
+
+
+
+
 
 
 }

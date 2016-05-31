@@ -1,8 +1,9 @@
 <br /><br />
 <div id="view-content">
 	<div class="container">
+		<div class="row z-depth-1"><div class="col s9 push-s3"><h2 class="green-text">SaferPlace Dashboard</h2></div></div>
 		<div class="row">
-
+			<br>
 			
 			<!-- barra laterale degli edifici -->
 			<div class="col l3">
@@ -10,104 +11,260 @@
 				<div class="fixed left-align">
 					<ul class="collapsible">
 						<?php
+						$i=0;
+
 						foreach ($this->edifici_e_piani as $x=>$y){
 
-							echo "<li>";
-							echo 	"<div class=\"collapsible-header green-text\"><b>$x</b></div>";
-							echo 		"<div class=\"collapsible-body\">";
-							echo 			"<ul class=\"collection\">";
+						echo "<li>";
+						echo "<div class=\"collapsible-header green-text\"><b>$x</b>";
+						echo '<div class="right">'.$this->persedificio[$i];
+						echo "</div></div>";
+						echo "<div class=\"collapsible-body\">";
+						echo "<ul class=\"collection\">";
+						$i++; // serve da contatore per l'indice dell'array delle persone negli edifici
+						foreach ($y as $item){
+						?>
 
-							foreach ($y as $item){
-								echo "<li class=\"collection-item grey-text\">$item</li>";
-							}
+						<a class="grey-text" href=
 
-							echo "</ul></div></li>";
-						}
+						      <?
+						   echo '"' . $this->url(
+								   array(
+									   'controller' => 'livello2',
+									   'action' => 'dashboard',
+									   'edificio' => $x,
+									   'piano' => $item
+								   )
+							   ) . '">'.'<li class="collection-item">'.'Piano ' . $item .'</li></a>';
+						   } ?>
+
+						   <? echo '</ul></div></li>';
+					   }
 						?>
 
 					</ul>
-
 				</div>
-			</div>
 
-			<div class="col l6">
-					
-			</div>
-			<div class="col l3">
-				<div class="row"><h4 class="green-text text-darken-3">Notifiche<i class="small material-icons">sms_failed</i></h4></div>
-				<div class="row" style="overflow-y: scroll; height: 500px;width:auto;" >
-				<?php
-				foreach ($this->notifiche as $item) {
-					echo '<div class="card">
-						<div class="card-content ">
-							<span class="card-title">
-								<div class="chip green darken-1 white-text">'.$item->utente.'</div>
-							</span>
-								<ul>
-									<li>';
-					switch ($item->tipo) {
+				<!-- barra Emergenze -->
 
-						case 'Allagamento':
-							echo '<i class="blue-text">'.$item->tipo.'</i>';
-							break;
 
-						case 'Incendio':
-							echo '<i class="red-text">'.$item->tipo.'</i>';
-							break;
+						<h4 class="green-text text-darken-3"><i class="small material-icons">warning</i>Evacuazioni</h4>
+						<div class="fixed left-align">
+							<ul class="collapsible">
+								<?php
+								if (count($this->evacuazioni)) {
+									foreach ($this->evacuazioni as $item) {
 
-						case 'Fuga di gas':
-							echo '<i class="purple-text">'.$item->tipo.'</i>';
-							break;
+										echo "<li>";
+										echo "<div class=\"collapsible-header green-text\"><b>$item->edificio Piano $item->numeroPiano</b></div>";
+										echo "<div class=\"collapsible-body\">";
+										echo "<ul class=\"collection\">";
+										echo '<li class="collection-item grey-text">';
 
-						case 'Crollo':
-							echo '<i class="brown-text">'.$item->tipo.'</i>';
-							break;
+										switch ($item->nome) {
 
-					};
-					echo ' in <b>'.$item->edificio.'</b></li>';
-					echo '	<li>
-							Piano:<b>'.$item->numPiano.'</b>
-												</li>
-												<li>
-							Stanza:<b>'.$item->stanza.'</b>
-												</li>
-											</ul>
-				
-									</div>
-										<div class="card-action">
-											<a href="#" class="green-text">Apri la mappa</a>
-											<a href="#" class="red-text">Ignora</a>
-										</div>';
-				}
+											case 'Allagamento':
+												echo '<i class="blue-text">' . $item->nome . '</i>';
+												break;
 
-				?>
-				</div>
-<!--
-					<div class="card">
-					<div class="card-content ">
-						<span class="card-title">
-							<div class="chip green darken-1 white-text"></div>
-						</span>
-							<ul>
-								<li>
-									<i class="blue-text">Allagamento</i> in <b>Ospedale Torrette</b>
-								</li>
-								<li>
-									Piano:<b>1</b>
-								</li>
-								<li>
-									Zona:<b>A</b>
-								</li>
+											case 'Incendio':
+												echo '<i class="red-text">' . $item->nome . '</i>';
+												break;
+
+											case 'Fuga di gas':
+												echo '<i class="purple-text">' . $item->nome . '</i>';
+												break;
+
+											case 'Crollo':
+												echo '<i class="brown-text">' . $item->nome . '</i>';
+												break;
+
+										};
+
+										echo '<div><a class="orange-text right"href="' . $this->url(array('controller' => 'livello2',
+												'action' => 'interrupt',
+												'interrupt' => $item->id)) . '
+																									">
+												Interrompi</a>
+												 </div><br>';
+										echo '</li>
+											</div>';
+									}
+								}
+
+								else
+										echo '<p class="grey-text center"><b>Non sono in corso procedure di evacuazione.</b></p>';
+								?>
+
 							</ul>
 
+						</div>
+
+
+
+
+				</div>
+
+			<!-- pianta del piano selezionato -->
+			<div class="col l5">
+				<?php $pianta = "image/piante/".$this->pianta; ?>
+
+					<div class="row">
+
+								<?php
+
+								if (isset($this->pianta)) {
+									echo '<img class="materialboxed" src="'.$this->baseUrl($pianta).'" width="100%"></img>';
+								}
+								?>
+
+					</div >
+					<!-- informazioni su piano ed eficio selezionati -->
+					<div class="row">
+
+						<? if (isset($this->perspiano)) {
+							echo '
+						<ul class="collapsible">
+							<li>
+								<div class="collapsible-header green-text" style="font-size: 175%;">Persone su questo
+									piano:&nbsp
+									<div class="right">';
+								echo $this->perspiano->numPersone.
+									'</div>';
+
+	
+										?>
+								</div>
+							</li>
+							<li>
+								<div class="collapsible-header green-text" style="font-size: 175%;">Persone per stanza:&nbsp
+								</div><div class="collapsible-body">
+							<?
+									foreach ($this->persperstanza as $item) {
+										echo '<div class="collection-item grey-text" style="font-size: 150%">';
+										echo 	'&nbsp Stanza '. $item->stanza .
+													'<div class="right">' . $item->personeStanza .'</div>';
+										echo '</div>';
+									}
+								echo '</div>';
+								}
+							?>
+								</div>
+							</li>
+
+						</ul>
+
+
+				</div>
+
+
+
+			<!-- notifiche -->
+			<div class="col l4">
+				<h4 class="green-text text-darken-3">Notifiche<i class="small material-icons">sms_failed</i></h4>
+				<!-- sezione scrollabile -->
+				<div class="z-depth-1 " style="overflow-y: scroll; height: 575px;">
+					<div class="container">
+							<?php
+
+							if (count($this->notifiche)){
+								foreach ($this->notifiche as $item) {
+									echo '<p>';
+									echo '	<div class="card-content ">';
+									echo '	<span class="card-title">
+											<div class="chip green darken-1 white-text">'.$item->utente.'</div>
+										</span>';
+									echo '<ul>
+										<li>';
+
+									switch ($item->tipo) {
+
+										case 'Allagamento':
+											echo '<i class="blue-text">'.$item->tipo.'</i>';
+											break;
+
+										case 'Incendio':
+											echo '<i class="red-text">'.$item->tipo.'</i>';
+											break;
+
+										case 'Fuga di gas':
+											echo '<i class="purple-text">'.$item->tipo.'</i>';
+											break;
+
+										case 'Crollo':
+											echo '<i class="brown-text">'.$item->tipo.'</i>';
+											break;
+
+									};
+
+									echo ' in <b>'.$item->edificio.'</b>';
+									echo '</li>';
+									echo '	<li>
+													Piano:<b>'.$item->numPiano.'</b>
+																		</li>
+																		<li>
+													Stanza:<b>'.$item->stanza.'</b>
+																		</li>
+																	</ul>
+										
+															</div>
+																<div class="card-action">
+																	<a href="'.
+						   														 $this->url(
+																					   array(
+																						   'controller' => 'livello2',
+																						   'action' => 'dashboard',
+																						   'edificio' => $item->edificio,
+																						   'piano' => $item->numPiano
+																					   		)
+																						).
+																'" class="green-text">Apri la mappa</a>';
+
+									echo							'<a href="'.$this->url(
+																						array(
+																							'controller' => 'livello2',
+																							'action' => 'delnotif',
+																							'id' => $item->id,
+																						)
+																						). '" class="red-text"> &nbsp &nbsp Ignora</a>';
+									echo '<a class="orange-text"> &nbsp &nbsp Conferma</a></div>';
+									echo '</li></p><div class="divider"></div> ';
+
+						   		}
+
+
+							}
+							else
+								echo '<p class="grey-text center"><b>Attualmente non ci sono notifiche</b></p>';
+
+
+							?>
 					</div>
-						<div class="card-action">
-							<a href="#" class="green-text">Apri la mappa</a>
-							<a href="#" class="red-text">Ignora</a>
-						</div> -->
-				</>
+				</div>
 			</div>
 		</div>
+	</div>
+
+	<div class="fixed-action-btn" >
+		<a class="btn-floating btn-large red">
+			<i class="large material-icons">mode_edit</i>
+		</a>
+		<ul>
+			<li><a class="btn-floating red tooltipped" data-tooltip="Impostazioni" data-delay="50" data-position="left">
+					<i class="material-icons">build</i></a>
+			</li>
+			<li>
+				<a class="btn-floating yellow darken-1 tooltipped" data-delay="50" data-position="left"
+				   data-tooltip="Avvia evacuazione" >
+						<i class="material-icons">warning</i>
+				</a>
+			</li>
+			<li>
+				<a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+			<li>
+				<a class="btn-floating blue"><i class="material-icons">attach_file</i></a>
+			</li>
+		</ul>
 	</div>
 
 </div>

@@ -1,0 +1,61 @@
+<html>
+<head>
+</head>
+	<body>
+		<div class="container">
+			<br>
+			<div class="row center">
+				<div class="col l12">
+					<div class="center">
+						<h1 class="green-text center-align">Seleziona Evento</h1>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<div class="row center">
+				<div class="col l12">
+						<div class="center">
+							<a href= "<?php echo $this->url(
+								array(
+									'controller' => 'livello1',
+									'action' => 'caricamappasegnalazione',
+									'evento'=>'Incendio'
+								)
+							);  ?>"
+							   class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="segnala incendio"><img class="center-align"  src="<?php echo $this->baseUrl('image/incendio.png'); ?>"></a>
+							<a href = "<?php echo $this->url(
+								array(
+									'controller' => 'livello1',
+									'action' => 'caricamappasegnalazione',
+									'evento'=>'Allagamento'
+								)
+							);  ?>" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="segnala allagamento"><img class="center-align"  src="<?php echo $this->baseUrl('image/allagamento.png'); ?>"></a>
+							<a href = "<?php echo $this->url(
+								array(
+									'controller' => 'livello1',
+									'action' => 'caricamappasegnalazione',
+									'evento'=>'Crollo'
+								)
+							);  ?>" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="segnala crollo"><img class="center-align"  src="<?php echo $this->baseUrl('image/crollo.png'); ?>"></a>
+							<a href = "<?php echo $this->url(
+								array(
+									'controller' => 'livello1',
+									'action' => 'caricamappasegnalazione',
+									'evento'=>'Gas'
+								)
+							);  ?>" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="segnala fuga di gas"><img class="center-align"  src="<?php echo $this->baseUrl('image/gas.png'); ?>"></a>
+						</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+			<a class="btn-floating btn-large red tooltipped" data-delay="50" data-position="left" data-tooltip="Indietro" href="<?php echo $this->url(
+				array('controller' => 'livello1', 'action' => 'index')) ?>">
+				<i class="large material-icons">replay</i>
+			</a>
+		</div>
+</body>
+</html>

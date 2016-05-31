@@ -66,4 +66,89 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
 
         return $pianta->getPianta($edificio, $numeropiano);
     }
+    
+    public function deleteNotification($id){
+        
+        $notifica = new Application_Resource_Notifica();
+        
+        return $notifica->deleteOne($id);        
+    }
+    
+    public function fetchEventi() {
+        
+        $edificigest = $this->getResource('Edifici')->getGestByUtente($this->_nomeUtente);
+        $eventi = new Application_Resource_Eventi();
+
+
+        foreach ($edificigest as $item) {
+            $queryArray[] = $eventi->getAllByEd($item->edificio);
+
+        }
+        // crea la query union per avere tutte le notifiche di tutti gli edifici gestiti in un unico rowset
+        $allevents = $eventi->select()->union($queryArray);
+       
+        return $eventi->fetchAll($allevents);
+    }
+
+    
+    public function addEvento($nome,$idSegnalazione, $idpiano){
+
+        $evento = new Application_Resource_Eventi();
+
+        return (bool) $evento->addEvento($nome,$idSegnalazione, $idpiano);
+    }
+
+    public function delEvento($id) {
+
+        $evento = new Application_Resource_Eventi();
+
+        return $evento->deleteOne($id);
+    }
+    
+    public function delAllEventi() {
+
+
+        $edificigest = $this->getResource('Edifici')->getGestByUtente($this->_nomeUtente);
+        $eventi = new Application_Resource_Eventi();
+
+
+        foreach ($edificigest as $item) {
+            $queryArray[] = $eventi->getAllByEd($item->edificio);
+
+        }
+        // crea la query union per avere tutti gli eventi di tutti gli edifici gestiti in un unico rowset
+        $eventsquery = $eventi->select()->union($queryArray);
+        $allevents = $eventi->fetchAll($eventsquery);
+        foreach ($allevents as $item)
+            $this->delEvento($item->id);
+        
+        return;
+    }
+
+    public function getPersEdificio($edificio) {
+
+        $collocazioni = new Application_Resource_Collocazioni();
+        $query= $collocazioni->getNumCollocazioniByEdificio($edificio);
+        
+        return $collocazioni->fetchAll($query)->current();
+    }
+
+    public function getPersPiano($edificio, $piano){
+
+        return $this->getResource('Collocazioni')->getNumByPiano($edificio,$piano);
+    }
+
+    public function getNumPersStanze($edificio,$numPiano) {
+
+        return $this->getResource('Collocazioni')->getNumPerStanza($edificio,$numPiano);
+    }
+
+    public function getPersEdGest ($edifici) {
+
+        $edificigestiti = array();
+        foreach ($edifici as $edif => $item)
+            array_push($edificigestiti, $this->getPersEdificio($edif)->numPersone);
+
+        return $edificigestiti;
+    }
 }

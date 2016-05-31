@@ -2,6 +2,7 @@
 <head>
 </head>
 <body>
+
 <!-- CONTAINER CON EFFETTO PARALLASSE     GET STARTED-->
 <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
@@ -12,101 +13,17 @@
                 <h5 class="header col s12 light white-text"><b>Mettiti al sicuro!</b></h5>
             </div>
             <div class="row center">
-                <a href="#login" id="start" class="btn-large  yellow accent-3 modal-trigger" ><b>Get Started</b></a>
+                <a href="<?php echo $this->url(
+                    array(
+                        'controller' => 'index',
+                        'action' => 'loginutente',
+                    )
+                ); ?>" id="start" class="btn-large  yellow accent-3 modal-trigger" ><b>Effettua il Login</b></a>
             </div>
             <br><br>
         </div>
     </div>
     <div class="parallax"><img src="<?php echo $this->baseUrl('image/corridoi5.png');?>"  alt="uscita di sicurezza"></div>
-</div>
-
-
-<!-- Modal Accedi -->
-<div class="row">
-
-    <div id="login" class="modal s12 mm6 l6">
-        <div class="modal-content">
-            <div class="row">
-
-                <!-- blocco di login -->
-                <div class="col s12">
-                    <h5 class="green-text">Accedi</h5>
-                    <form method="post" class="">
-                        <div class="input-field">
-                            <input id="username" type="text" class="validate center-align">
-                            <label for="username" class="center-align center ">Username</label>
-                        </div>
-                        <div class="input-field">
-                            <input id="pwd" type="password" class="validate center-align">
-                            <label for="pwd" class="center-align center">Password</label>
-                        </div>
-                        <div class="row">
-                            <div class="col s12 m6">
-                                <div><a class="btn red white-text" href="<?php echo $this->url(
-                                        array('controller' => 'livello1', 'action' => 'checkin')
-                                    ); ?>">Accedi</a></div>
-                            </div>
-                            <div class="col s12 m6">
-                                Non sei registrato?
-                                <a href="#registrati" class="modal-trigger">Registrati</a>
-                            </div>
-                        </div>
-
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal registrati -->
-<div class="row">
-
-    <div id="registrati" class="modal s12 mm6 l6">
-        <div class="modal-content">
-            <div class="row">
-
-                <!-- blocco di registrazione -->
-                <h5 class="green-text">Registrati</h5>
-                <form method="post" >
-                    <div class="row">
-                        <div class="input-field col s6">
-                            <input id="first_name" type="text" class="validate">
-                            <label for="first_name">First Name</label>
-                        </div>
-
-                        <div class="input-field col s6">
-                            <input id="last_name" type="text" class="validate">
-                            <label for="last_name">Last Name</label>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="password" type="password" class="validate">
-                            <label for="password">Password</label>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="email" type="email" class="validate">
-                            <label for="email">Email</label>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="btn  waves-yellow green"> Registrati
-
-                        </div>
-                    </div>
-                </form>
-
-
-
-            </div>
-        </div>
-    </div>
 </div>
 
 
@@ -263,5 +180,27 @@
 
 
 </div>
+
+
+<!-- FOOTER -->
+<footer class="page-footer teal green">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h5 class="white-text">Safer Place</h5>
+                <p class="grey-text text-lighten-4">Siamo un'azienda leader nel settore che offre soluzioni personalizzate di sicurezza per le aziende.
+                    Gestiamo una gran varietà di edifici che vanno dal pubblico al privato, dalle piccole aziende alle multinazionali</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            Safer Place&copy; all rights reserved
+            <a class="grey-text lighten-4 right" href="https://twitter.com/makoframework">&nbsp;<i class="fa fa-twitter"></i></a>
+            <a class="grey-text lighten-4 right" href="https://github.com/mako-framework">&nbsp;<i class="fa fa-github-alt"></i></a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

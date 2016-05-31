@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+    <!-- cambia il colore della navbar nei dispositivi mobili -->
+    <meta name="theme-color" content="#4caf50" />
+
+    <title>Safer Place</title>
+
+    <!-- SETUP -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+    <!-- CONFIGURAZIONE DI MATERIALIZE -->
+    <link rel="stylesheet" href="<?php echo $this->baseUrl('css/materialize.min.css'); ?>">
+    <script src="<?php echo $this->baseUrl('js/materialize.min.js'); ?>"></script>
+    <script type="text/javascript" src="<?php echo $this->baseUrl('js/materialize.min.js');?>"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon"
+          type="imag/png"
+          href="<?php echo $this->baseUrl('image/logostilpiccolo.png');?>">
+
+    <!-- script per attivare i popup con jquery -->
+    <script type="text/javascript" src="<?php echo $this->baseUrl('js/modaljs.js');?>"></script>
+
+    <!--  Scripts-->
+    <script  src="<?php echo $this->baseUrl('js/jquery.min.js');?>"></script>
+    <script  src="<?php echo $this->baseUrl('js/materialize.js');?>"></script>
+    <script  src="<?php echo $this->baseUrl('js/index.js');?>"></script>
+
+</head>
+
+<body>
+<!-- NAV BAR -->
+<div class="navbar-fixed">
+
+
+    <nav class="green  white-text">
+        <div class="nav-wrapper container">
+            <a href="index" class="brand-logo" id="containerLogo" style="margin-top: 12px"><img src="<?php echo $this->baseUrl('image/logoM.png');?>" height="41.1" ></a>
+        </div>
+
+    </nav>
+</div>
+<?php echo $this->layout()->content; ?>
+</body>
+</html>

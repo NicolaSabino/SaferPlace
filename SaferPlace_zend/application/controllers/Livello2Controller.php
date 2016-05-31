@@ -3,9 +3,14 @@
 class Livello2Controller extends Zend_Controller_Action
 {
 
+    protected $evacuazioneform = null;
+
+    protected $pianodifugaform = null;
+
     public function init()
     {
-        $this->_helper->layout->setLayout('layout1');
+        $this->_helper->layout->setLayout('layout2');
+        $this->view->evacuazioneform= $this->getEvacuazioneForm();
     }
 
     public function indexAction()
@@ -16,9 +21,10 @@ class Livello2Controller extends Zend_Controller_Action
     public function notifyAction()
     {
 
-        $utente= new Application_Model_UtenteStaff();
-        $notifiche = new Application_Resource_Notifica();
-
+        $modelUtente= new Application_Model_UtenteStaff();
+       // $notifiche = new Application_Resource_Notifica();
+        print_r($modelUtente->getEdificiGestiti());
+        die;
         //estraggo i risultati dell'esecuzione della query e li stampo
         $this->view->assign("notifiche", $utente->getNotificheEmergenze());
 
@@ -30,38 +36,100 @@ class Livello2Controller extends Zend_Controller_Action
     public function dashboardAction()
     {
         $modelUtente = new Application_Model_UtenteStaff();
-      /*  print_r($modelUtente->getNotificheEmergenze());
-die;*/
-        $this->view->assign("edifici_e_piani",$modelUtente->getEdificiGestiti('nicolanabbo'));
-        $this->view->assign("notifiche", $modelUtente->getNotificheEmergenze());
+        $edificigestiti = $modelUtente->getEdificiGestiti('nicolanabbo');
+        $persEdificio = $modelUtente->getPersEdGest($edificigestiti);
 
-        /*
-         *  genero le notifiche
-         */
+        $this->view->assign('persedificio', $persEdificio);
 
+        if (($edificio = $this->controllaParam('edificio')) && ($piano = $this->controllaParam('piano'))) {
 
+            $persPiano = $modelUtente->getPersPiano($edificio, $piano);
+            $persPerStanza = $modelUtente->getNumPersStanze($edificio, $piano );
+            
 
-        //genero un array di edifici gestiti
-
-       // $gestiti = array();
-
-        //$array=$edifici->getEdificiGestiti('nicolanabbo');
-
-       /* foreach ($array as $x=>$y){
-           foreach ($y as )
-            array_push($gestiti,$y);
+            $this->view->assign('persperstanza', $persPerStanza);
+            $this->view->assign('perspiano', $persPiano);
+            $this->view->assign("pianta", $edificio . ' Piano ' . $piano . '.jpg');
         }
-*/
-        //print_r($array);
 
+            $this->view->assign("edifici_e_piani",$edificigestiti);
+
+        if ($notifiche = $modelUtente->getNotificheEmergenze())
+            $this->view->assign("notifiche", $notifiche);
+
+        if ($evacuazioni = $modelUtente->fetchEventi())
+            $this->view->assign("evacuazioni", $evacuazioni);
 
 
     }
 
-    
+    public function controllaParam($param)
+    {
+        $parametro=0;
+        if($this->hasParam("$param"))
+            $parametro=$this->getParam("$param");
+        return $parametro;
+    }
+
+    public function delnotifAction()
+    {
+        $modelUtente= new Application_Model_UtenteStaff();
+
+        if (($edificio = $this->controllaParam('edificio')) && ($piano = $this->controllaParam('piano')))
+            $this->view->assign("pianta", $edificio . ' Piano ' . $piano . '.jpg');
+        $modelUtente->deleteNotification($this->controllaParam('id'));
+        $this->getHelper('Redirector')->gotoRoute(array('controller'=>'livello2', 'action'=>'dashboard',
+                                                    'edificio'=> $edificio, 'piano'=>$piano));
+    }
+
+    public function interruptAction()
+    {
+        $modelUtente= new Application_Model_UtenteStaff();
+
+        if (($edificio = $this->controllaParam('edificio')) && ($piano = $this->controllaParam('piano')))
+            $this->view->assign("pianta", $edificio . ' Piano ' . $piano . '.jpg');
+        
+        if ($id = $this->controllaParam('interrupt'));
+            $modelUtente->delEvento($id);
+        $this->getHelper('Redirector')->gotoRoute(array('controller'=>'livello2', 'action'=>'dashboard',
+            'edificio'=> $edificio, 'piano'=>$piano));
+    }
+
+    public function getEvacuazioneForm()
+    {
+
+
+        $urlHelper = $this->_helper->getHelper('url');
+        $this->evacuazioneform= new Application_Form_Evacuazioneform;
+
+        $this->evacuazioneform->setAction($urlHelper->url(array(
+            'controller' => 'livello2',
+            'action' => 'sceglipdf'),
+            'default'
+        ));
+        
+        return $this->evacuazioneform;
+    }
+
+    public function evacuazioneAction()
+    {
+    }
+
+    public function sceglipdfAction()
+    {
+        print_r();
+        $this->getRequest()->getPost('edificio');
+        $this->getRequest()->getPost('edificio');
+    }
 
 
 }
+
+
+
+
+
+
 
 
 

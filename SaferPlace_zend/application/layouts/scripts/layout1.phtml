@@ -42,17 +42,23 @@
 
     <nav class="green  white-text">
         <div class="nav-wrapper container">
-            <a href="index" class="brand-logo" id="containerLogo" style="margin-top: 12px"><img src="<?php echo $this->baseUrl('image/logoM.png');?>" height="41.1"></a>
+            <a href="<?php echo $this->url(
+                array(
+                    'controller' => 'livello1',
+                    'action'=>'index',
+                )
+            ); ?>" class="brand-logo" id="containerLogo" style="margin-top: 12px"><img src="<?php echo $this->baseUrl('image/logoM.png');?>" height="41.1"></a>
 
             <ul class="right hide-on-med-and-down">
                 <li>
-                    <div class="chip green darken-2 white-text">
-                        <img src="<?php echo $this->baseUrl('image/profili/NicolaSabino_94.jpg');?>" alt="Contact Person">NicolaSabino_94
+                    <div class="chip green lighten-3">
+                        <img src="<?php echo $this->baseUrl('image/icone/account.png');?>" alt="Contact Person">
+                        <?php
+                        echo $this->authInfo('username');
+                        ?>
                     </div>
-                </li>
-                <li><a class="" href="#login">Impostazioni</a></li>
-                <li><a class="" href="#info">Logout</a></li>
 
+                </li>
             </ul>
         </div>
     </nav>
@@ -62,26 +68,7 @@
 <?php echo $this->layout()->content; ?>
 
 
-<!-- FOOTER -->
-<footer class="page-footer teal green">
-    <div class="container">
-        <div class="row">
-            <div class="col s12">
-                <h5 class="white-text">Safer Place</h5>
-                <p class="grey-text text-lighten-4">Siamo un'azienda leader nel settore che offre soluzioni personalizzate di sicurezza per le aziende.
-                    Gestiamo una gran varietà di edifici che vanno dal pubblico al privato, dalle piccole aziende alle multinazionali</p>
-            </div>
 
-        </div>
-    </div>
-    <div class="footer-copyright">
-        <div class="container">
-            Safer Place&copy; all rights reserved
-            <a class="grey-text lighten-4 right" href="https://twitter.com/makoframework">&nbsp;<i class="fa fa-twitter"></i></a>
-            <a class="grey-text lighten-4 right" href="https://github.com/mako-framework">&nbsp;<i class="fa fa-github-alt"></i></a>
-        </div>
-    </div>
-</footer>
 
 </body>
 </html>

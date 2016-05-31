@@ -1,0 +1,30 @@
+<html>
+<head>
+
+</head>
+<body>
+
+<!-- CONTAINER CON EFFETTO PARALLASSE     GET STARTED-->
+<div class="container">
+	<!-- Modal Accedi -->
+	<div class="row">
+		<br>
+		<br>
+			<!-- blocco di login -->
+			<div class="col s12 ">
+				<h5 class="green-text center-align">Registrati</h5>
+				<?php echo $this->registratiform; ?>
+			</div>
+	</div>
+
+</div>
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+	<a class="btn-floating btn-large red tooltipped" data-delay="50" data-position="left" data-tooltip="Indietro" href="<?php echo $this->url(
+		array('controller' => 'index', 'action' => 'loginutente'),null,true); ?>">
+		<i class="large material-icons">replay</i>
+	</a>
+</div>
+
+
+</body>
+</html>

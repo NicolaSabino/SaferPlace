@@ -3,8 +3,11 @@
 class Application_Resource_Edifici extends  Zend_Db_Table_Abstract
 {
     protected  $_name='edificio';
-    //protected $_rowClass='Application_Resource_Edifici_Item';
 
+    /**
+     * seleziona tutti gli edifici dal db
+     * @return Zend_Db_Table_Rowset_Abstract
+     */
     public function getEdifici(){
 
         $select=$this->select();
@@ -12,7 +15,11 @@ class Application_Resource_Edifici extends  Zend_Db_Table_Abstract
 
     }
 
-    //genero un insieme di edifici che sono gestiti dalla medesima persona
+    /**
+     * genero un insieme di edifici che sono gestiti dalla medesima persona
+     * @param $nomeUtente
+     * @return Zend_Db_Table_Rowset_Abstract
+     */
     public function getGestByUtente($nomeUtente){
 
         $select = $this->select()->setIntegrityCheck(false)->from('gestione')->where('utente = ?', $nomeUtente);
@@ -20,4 +27,30 @@ class Application_Resource_Edifici extends  Zend_Db_Table_Abstract
         return $this->fetchAll($select);
 
     }
+
+
+    /**
+     * @return Zend_Db_Statement_Interface
+     */
+    public function getEdificiNonGestiti(){
+
+        $edifici = $this
+            ->select()
+            ->setIntegrityCheck(false)
+            ->from(array('e'=>'edificio'))
+            ->joinLeft(array('g'=> 'gestione'),
+                'e.nome = g.edificio')
+            ->where('g.utente is null');
+        //eseguo la query notifiche e metto il risultato in una variabile
+        
+        return $this->fetchAll($edifici);
+    }
+
+    public function getByName($nome){
+
+        $edificio = $this->select()->where('nome = ?',$nome);
+        return $this->fetchAll($edificio);
+    }
+
+   
 }
