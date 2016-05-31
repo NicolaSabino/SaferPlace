@@ -230,7 +230,14 @@
 																							'id' => $item->id,
 																						)
 																						). '" class="red-text"> &nbsp &nbsp Ignora</a>';
-									echo '<a class="orange-text"> &nbsp &nbsp Conferma</a></div>';
+									echo '<a class="orange-text" href="'. $this->url(array(
+																					'controller' => 'livello2',
+																					'action'     => 'evacuazione',
+																					'tipo'		 => $item->tipo,
+																					'edificio'   => $item->edificio,
+																					'piano'      => $item->numPiano,
+																					'pos'        => $item->posizione));
+									echo  '"> &nbsp &nbsp Conferma</a></div>';
 									echo '</li></p><div class="divider"></div> ';
 
 						   		}

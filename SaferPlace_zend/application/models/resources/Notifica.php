@@ -12,7 +12,7 @@ public function getAllByEd($edificio) {
         ->setIntegrityCheck(false)
         ->from(array('s'=>'segnalazione'),array('id','utente','tipo'))
         ->join(array('pos'=> 'posizione'),
-            'pos.id = s.idPosizione', array('numPiano','edificio','stanza'))
+            'pos.id = s.idPosizione', array('posizione' => 'id','numPiano' => 'numPiano','edificio' => 'edificio','stanza' =>'stanza'))
         ->where('pos.edificio = ?', $edificio);
     
     //restituisco la query senza eseguirla perchè mi serve in una funzione che recupera tutte le notifiche di un edificio gestito

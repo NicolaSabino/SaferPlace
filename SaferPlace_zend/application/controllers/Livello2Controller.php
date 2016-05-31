@@ -2,15 +2,15 @@
 
 class Livello2Controller extends Zend_Controller_Action
 {
-
+    protected $user = 'nicolanabbo';
     protected $evacuazioneform = null;
-    protected $profiloform     = null;
+    protected $modificaform     = null;
     protected $pianodifugaform = null;
 
     public function init()
     {
         $this->_helper->layout->setLayout('layout2');
-        $this->view->evacuazioneform= $this->getEvacuazioneForm();
+        $this->view->profiloform= $this->getModificaForm();
     }
 
     public function indexAction()
@@ -95,13 +95,14 @@ class Livello2Controller extends Zend_Controller_Action
             'edificio'=> $edificio, 'piano'=>$piano));
     }
 
-    public function getEvacuazioneForm()
+    public function getEvacuazioneForm($edificio,$piano,$tipo)
     {
 
 
         $urlHelper = $this->_helper->getHelper('url');
-        $this->evacuazioneform= new Application_Form_Evacuazioneform;
-
+        $this->evacuazioneform= new Application_Form_Evacuazioneform($edificio,$piano,$tipo);
+        if ($edificio && $piano && $tipo)
+            $this->evacuazioneform->populate($edificio, $piano, $tipo);
         $this->evacuazioneform->setAction($urlHelper->url(array(
             'controller' => 'livello2',
             'action' => 'sceglipdf'),
@@ -113,6 +114,13 @@ class Livello2Controller extends Zend_Controller_Action
 
     public function evacuazioneAction()
     {
+        $edificio = $this->controllaParam('edificio');
+        $piano    = $this->controllaParam('piano');
+        $tipo     = $this->controllaParam('tipo');
+        
+        
+        $this->view->evacuazioneform= $this->getEvacuazioneForm($edificio,$piano,$tipo);
+        
     }
 
     public function sceglipdfAction()
@@ -135,8 +143,6 @@ class Livello2Controller extends Zend_Controller_Action
 
     public function avviaevacuazioneAction()
     {
-        $urlHelper = $this->_helper->getHelper('url');
-
         $utenteModel = new Application_Model_UtenteStaff();
         $idPianoFuga = $this->controllaParam('idPianoFuga');
         $edificio =$this->controllaParam('edificio');
@@ -152,22 +158,26 @@ class Livello2Controller extends Zend_Controller_Action
             
             
     }
- 
-    public function getprofiloForm()
+
+    public function getModificaform()
     {
-
-
         $urlHelper = $this->_helper->getHelper('url');
-        $this->profiloform= new Application_Form_Eform;
 
-        $this->evacuazioneform->setAction($urlHelper->url(array(
-            'controller' => 'livello2',
-            'action' => 'sceglipdf'),
+        $usermodel=new Application_Model_Utenti();
+        $dati=$usermodel->getDatiUtenteByUserSet($this->user);
+        $this->modificaform= new Application_Form_Registratiform($dati);
+
+        $this->modificaform->setAction($urlHelper->url(array(
+            'controller' => 'livello1',
+            'action' => 'verificamodifica'),
             'default'
         ));
-
-        return $this->profiloform;
+        return $this->modificaform;
     }
+    public function modificaAction(){
+        $this->getHelper('Redirector')->gotoRoute(array('controller'=>'livello1', 'action'=>'modificadatiutente'));;
+    }
+
 
 }
 
