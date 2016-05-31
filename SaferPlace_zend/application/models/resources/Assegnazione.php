@@ -10,6 +10,7 @@ class Application_Resource_Assegnazione extends  Zend_Db_Table_Abstract
         $select=$this->select()
             ->where('zona= ? ',$zona)
             ->where('abilitato=1');
+        
         return $this->fetchAll($select);
 
     }
