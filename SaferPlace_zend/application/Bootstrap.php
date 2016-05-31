@@ -38,6 +38,17 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $front->registerPlugin(new App_Controller_Plugin_Acl());
     }
 
+    protected function _initViewSettings()
+    {
+        $this->bootstrap('view');
+        $this->_view = $this->getResource('view');
+        $this->_view->headMeta()->setCharset('UTF-8');
+        $this->_view->headMeta()->appendHttpEquiv('Content-Language', 'it-IT');
+        $this->_view->headLink()->appendStylesheet($this->_view->baseUrl('css/materialize.css'));
+        $this->_view->headTitle('Corso di Tecnologie Web - Zend Project - Versione 6');
+    }
+
+
     //impostazioni db adapter
     protected function _initDbAdapter(){
         $dbAdapter = Zend_Db::factory('PDO_mysql', array(
