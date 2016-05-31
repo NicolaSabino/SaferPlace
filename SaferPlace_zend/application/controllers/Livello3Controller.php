@@ -331,6 +331,15 @@ class Livello3Controller extends Zend_Controller_Action
         //istanzio la form
         $nuovaForm = new Application_Form_Gestioneedificio($nomeEdificio,$edificio[0]->informazioni);
 
+        $nuovaForm->setAction($this->view->url(
+            array(
+                'controller'    => 'livello3',
+                'action'        => 'gestioneedifici',
+
+
+            ),null,true
+        ));
+
         //assegno la form alla view
         $this->view->assign('Form',$nuovaForm);
     }
