@@ -62,6 +62,8 @@
         <formFile formName="Segnalaform"/>
         <formFile formName="ModificaFaq"/>
         <formFile formName="Evacuazioneform"/>
+        <formFile formName="Gestioneedificio"/>
+        <formFile formName="Gestionepiano"/>
       </formsDirectory>
       <layoutsDirectory>
         <layoutScriptsDirectory>

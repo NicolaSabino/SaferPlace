@@ -8,11 +8,11 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
     public function __construct(){
         $this->_nomeUtente='nicolanabbo';
     }
-    
+
     //restituisce l'insieme degli edifici gestiti da un determinato utente
     public function getEdificiGestiti(){
-        
-       
+
+
         $pianiModel             = new Application_Model_Piani();
         $edifici_e_piani        = array();
 
@@ -39,7 +39,7 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
             }
         }
         return $edifici_e_piani;
-        
+
     }
 
     public function getNotificheEmergenze(){
@@ -55,8 +55,8 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
         }
         // crea la query union per avere tutte le notifiche di tutti gli edifici gestiti in un unico rowset
         $allnotif = $notifica->select()->union($queryArray);
-       /*     print_r($notifica->fetchAll($notifica->select()->union($queryArray)));
-        die;*/
+        /*     print_r($notifica->fetchAll($notifica->select()->union($queryArray)));
+         die;*/
         return $notifica->fetchAll($allnotif);
     }
 
@@ -66,16 +66,16 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
 
         return $pianta->getPianta($edificio, $numeropiano);
     }
-    
+
     public function deleteNotification($id){
-        
+
         $notifica = new Application_Resource_Notifica();
-        
-        return $notifica->deleteOne($id);        
+
+        return $notifica->deleteOne($id);
     }
-    
+
     public function fetchEventi() {
-        
+
         $edificigest = $this->getResource('Edifici')->getGestByUtente($this->_nomeUtente);
         $eventi = new Application_Resource_Eventi();
 
@@ -86,11 +86,11 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
         }
         // crea la query union per avere tutte le notifiche di tutti gli edifici gestiti in un unico rowset
         $allevents = $eventi->select()->union($queryArray);
-       
+
         return $eventi->fetchAll($allevents);
     }
 
-    
+
     public function addEvento($nome,$idSegnalazione, $idpiano){
 
         $evento = new Application_Resource_Eventi();
@@ -104,7 +104,7 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
 
         return $evento->deleteOne($id);
     }
-    
+
     public function delAllEventi() {
 
 
@@ -121,7 +121,7 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
         $allevents = $eventi->fetchAll($eventsquery);
         foreach ($allevents as $item)
             $this->delEvento($item->id);
-        
+
         return;
     }
 
@@ -129,7 +129,7 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
 
         $collocazioni = new Application_Resource_Collocazioni();
         $query= $collocazioni->getNumCollocazioniByEdificio($edificio);
-        
+
         return $collocazioni->fetchAll($query)->current();
     }
 

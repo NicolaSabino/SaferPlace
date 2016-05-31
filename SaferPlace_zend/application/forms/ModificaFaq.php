@@ -33,7 +33,8 @@ class Application_Form_ModificaFaq extends Zend_Form
             ),
             'required'   => true,
             'label'      => 'Domanda',
-            'value'      => $this->_domanda
+            'value'      => $this->_domanda,
+            'class'      => 'black-text'
 
         ));
         $this->addElement('text', 'risposta', array(
@@ -43,7 +44,8 @@ class Application_Form_ModificaFaq extends Zend_Form
             ),
             'required'         => true,
             'label'      => 'Risposta',
-            'value'      => $this->_risposta
+            'value'      => $this->_risposta,
+            'class'      => 'black-text'
         ));
         $this->addElement('submit', 'ok', array(
             'class' => 'btn green white-text'
