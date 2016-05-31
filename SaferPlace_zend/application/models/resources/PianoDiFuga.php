@@ -17,7 +17,7 @@ class Application_Resource_PianoDiFuga extends  Zend_Db_Table_Abstract
         
         $select= $this->select()
                       ->from(array('pdf'=>'pianodifuga'))
-                      ->join(array('a'=>'assegnazione'), 'a.zona=pdf.zona',array('zona'))
+                      ->join(array('a'=>'assegnazione'), 'a.zona=pdf.zona', 'abilitato')
                       ->where('zona = ?', $zona);
 
         return $select;

@@ -17,11 +17,11 @@ class Application_Resource_Assegnazione extends  Zend_Db_Table_Abstract
     public function getAssegnazioniByZonaStaff($zona){
 
         $select=$this->select()
-                     ->from(array('a'=>'assegnazione'), array('zona'))
+                     ->from(array('a'=>'assegnazione'), array())
                      ->setIntegrityCheck(false)
                      ->join(array('z'=> 'zona'),'a.zona=z.id', array('edificio', 'piano'))
                      ->join(array('pdf'=>'pianodifuga'),'pdf.id=a.idPianoFuga')
-                     ->where('a.zona= ? ',$zona);
+                     ->where('z.id= ? ',$zona);
         
         return $select;
     }
