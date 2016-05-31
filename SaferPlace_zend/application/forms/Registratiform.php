@@ -117,6 +117,7 @@ class Application_Form_Registratiform extends App_Form_Abstract
                 array('StringLength', true, array(2, 64))
             ),
             'required'         => true,
+            'placeholder' => 'Inserisci la password',
             'label'      => 'Password',
             'class' =>'black-text',
             'value'=>$this->_password,
@@ -152,7 +153,7 @@ class Application_Form_Registratiform extends App_Form_Abstract
      * @param array $data
      * @return $this
      */
-    public function populate($dati )
+    /*public function populate($dati)
     {
         $this->Nome->setValue($dati->current()->nome);
         $this->Cognome->setValue($dati->current()->cognome);
@@ -163,5 +164,5 @@ class Application_Form_Registratiform extends App_Form_Abstract
         $this->password->setValue($dati->current()->password);
         $this->email->setValue($dati->current()->emai);
 
-    }
+    }*/
 }

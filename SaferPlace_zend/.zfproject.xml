@@ -54,6 +54,9 @@
         <controllerFile controllerName="Dashboard">
           <actionMethod actionName="index"/>
         </controllerFile>
+        <controllerFile controllerName="Indirizza">
+          <actionMethod actionName="index"/>
+        </controllerFile>
       </controllersDirectory>
       <formsDirectory>
         <formFile formName="Selezionapiano"/>
@@ -79,6 +82,7 @@
           <dbTableFile dbTableName="Faq"/>
         </dbTableDirectory>
         <modelFile modelName="Faq"/>
+        <modelFile modelName="Acl"/>
       </modelsDirectory>
       <modulesDirectory enabled="false"/>
       <servicesDirectory enabled="false"/>
@@ -167,6 +171,9 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Livello3">
             <viewScriptFile forActionName="modificapiano"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Indirizza">
+            <viewScriptFile forActionName="index"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>
