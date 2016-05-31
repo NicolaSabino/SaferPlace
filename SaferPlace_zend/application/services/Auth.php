@@ -2,12 +2,20 @@
 
 class Application_Service_Auth
 {
+<<<<<<< HEAD
     protected $_utentimodel;
+=======
+    protected $userModel;
+>>>>>>> origin/Giù
     protected $_auth;
 
     public function __construct()
     {
+<<<<<<< HEAD
         $this->_utentimodel = new Application_Model_Utenti();
+=======
+        $this->userModel = new Application_Model_Utenti();
+>>>>>>> origin/Giù
     }
 
     public function authenticate($credentials)
@@ -15,11 +23,19 @@ class Application_Service_Auth
         $adapter = $this->getAuthAdapter($credentials);
         $auth    = $this->getAuth();
         $result  = $auth->authenticate($adapter);
+<<<<<<< HEAD
      
         if (!$result->isValid()) {
             return false;
         }
         $user = $this->_utentimodel->getDatiUtenteByUserSet($credentials['username']);
+=======
+
+        if (!$result->isValid()) {
+            return false;
+        }
+        $user = $this->userModel->getDatiUtenteByUserSet($credentials['username']);
+>>>>>>> origin/Giù
         $auth->getStorage()->write($user);
         return true;
     }
