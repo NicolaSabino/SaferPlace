@@ -94,7 +94,7 @@ class IndexController extends Zend_Controller_Action
             $form->setDescription('Autenticazione fallita. Riprova');
             return $this->render('loginutente');
         }
-        return $this->_helper->redirector('index','livello'.$this->_authService->getIdentity()->current()->role);
+        return $this->_helper->redirector('index','livello'.$this->_authService->getIdentity()->current()->livello);
 
 
     }
