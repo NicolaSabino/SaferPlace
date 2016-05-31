@@ -52,9 +52,19 @@
 <!-- Pulsante azioni -->
 <div class="fixed-action-btn" >
     <a class="btn-floating btn-large red">
-        <i class="large material-icons">mode_edit</i>
+        <i class="large material-icons">menu</i>
     </a>
     <ul>
+        <li><a class="btn-floating purple tooltipped" data-tooltip="Logout" data-delay="50" data-position="left"
+               href="<?php echo $this->url(array(
+                       'controller' => 'index',
+                       'action'     => 'index'
+                   )). '"
+            >';?>
+
+                <i class="material-icons">exit_to_app</i>
+            </a>
+        </li>
         <li>
             <a class="btn-floating blue tooltipped" data-delay="50" data-position="left"
                data-tooltip="Dashboard" href="<? echo $this->url(array(
@@ -72,7 +82,7 @@
                 <i class="material-icons">warning</i>
             </a>
         </li>
-        <li><a class="btn-floating red tooltipped" data-tooltip="Impostazioni" data-delay="50" data-position="left"
+        <li><a class="btn-floating green tooltipped" data-tooltip="Impostazioni" data-delay="50" data-position="left"
                 href="<?php echo $this->url(array(
                                             'controller' => 'livello2',
                                             'action'     => 'modifica'
@@ -82,6 +92,7 @@
                 <i class="material-icons">build</i></a>
             </a>
         </li>
+
     </ul>
 </div>
 </body>
