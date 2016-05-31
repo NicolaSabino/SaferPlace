@@ -89,6 +89,7 @@ class IndexController extends Zend_Controller_Action
         $form = $this->loginform;
         if (!$form->isValid($request->getPost())) {
             $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
+            return $this->render('loginutente');
         }
 
         else
