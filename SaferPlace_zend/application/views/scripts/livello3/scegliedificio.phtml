@@ -1,0 +1,145 @@
+<br /><br />
+<div id="view-content">
+	
+	
+	<div class="container">
+
+			<?php
+
+			 $check= count($this->edificiNonAssegnati);
+
+			if($check!=0){
+
+				echo '<ul class="collection">';
+
+					foreach($this->edificiNonAssegnati as $edificio){
+
+
+						$path ="image/edifici/".$edificio['mappa'];
+
+						echo "<li class=\"collection-item avatar\">";
+						echo '		<img src="' . $this->baseUrl($path) .'" class="circle">';
+						echo "		<span class=\"title\"> ". $edificio['nome']."</span>";
+						echo "		<p>".$edificio['informazioni']."</p>";
+						echo '		<a href="'.
+
+							$this->url(
+								array(
+									'controller' => 'livello3',
+									'action' => 'assegnaedificioautente',
+									'edificio'=>$edificio['nome']
+								)
+							)
+
+							.'" class="green btn-floating btn-flat btn-small secondary-content tooltipped"
+									data-position="left" data-delay="50" data-tooltip="Assegna">
+									<i class="material-icons">check</i>
+								</a>';
+						echo "</li>";
+					}
+
+				echo '</ul>';
+
+			}else{
+				echo '<h4 class="green-text center">Tutti gli edifici sono assegnati ad un membro dello staff!</h4>';
+			}
+			
+			?>
+		
+		<br>
+		<br>
+		
+		<!-- sezione contenente gli edifici già gestiti -->
+
+
+
+			<?php
+
+				$check2= count($this->edificiAssegnati);
+
+				if($check2!=0){
+
+					echo "
+							<table class=\"striped\">
+								<thead>
+									<tr>
+										<th data-field=\"id\">Edficio</th>
+										<th data-field=\"name\">Utente</th>
+										<th data-field=\"price\"></th>
+									</tr>
+								</thead>
+
+							<tbody>
+					
+					";
+
+					foreach ($this->edificiAssegnati as $item){
+
+						echo "<tr>";
+						echo 	"<td>$item->edificio</td>
+							<td>$item->utente</td>
+							<td>
+								<a class='btn-floating btn-flat red tooltipped' 
+									data-position=\"left\" data-delay=\"50\" data-tooltip=\"Riassegna a "
+										.$this->username."\"
+										 href=\"".
+
+							$this->url(
+								array(
+									'controller' => 'livello3',
+									'action' => 'eliminaeassegna',
+									'edificio' => $item->edificio,
+									'username' => $this->username
+								)
+							)
+
+							."\">
+									<i class='material-icons'>cached</i>
+								</a>
+							</td>";
+						echo "</tr>";
+					}
+
+					echo "</tbody>
+							</table>";
+
+
+				}else{
+
+					echo '<h4 class="green-text center">Nessuna associazione</h4>';
+				}
+
+
+
+
+			?>
+
+
+		<div class="row">
+
+
+			<div class="col s8 push-s2 center-align">
+
+				<p>
+					<a class=" btn-floating btn-large white-text red" href="
+					<?php
+					echo $this->url(
+						array(
+							'controller'=> 'livello3',
+							'action' 	=> 'gestioneutenti',
+						),null,true);
+					?>
+					"><i class="material-icons tooltipped" data-position="bottom" data-delay="50" data-tooltip="Torna Indietro">arrow_back </i></a>
+				</p>
+
+
+
+			</div>
+		</div>
+
+
+
+
+
+	</div>
+</div>

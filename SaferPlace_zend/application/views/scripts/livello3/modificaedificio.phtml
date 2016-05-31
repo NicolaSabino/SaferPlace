@@ -1,0 +1,143 @@
+<br /><br />
+<div id="view-content">
+
+	<div class="container">
+
+			<div class="row">
+				<!-- spalla sinistra contenete l'immagine dell'edificio e le informazioni -->
+				<div class="col s6 z-depth-2 push-s3 container">
+
+					<?php
+					$mappa="image/edifici/". $this->edificio['0']->mappa;
+					?>
+
+
+					<div class="center ">
+						<h3 class="green-text"><?php echo $this->edificio[0]->nome ?></h3>
+						<img class=""  src='<?php echo $this->baseUrl($mappa);?>' width="80%">
+						<br>
+						<br>
+						<div class="divider"></div>
+						<p>
+							<?php
+							echo $this->edificio[0]->informazioni;
+							?>
+						</p>
+
+						<div class="row">
+
+							<div class="col s6 center">
+								<a class="btn-floating btn-large green" href="
+									<?php
+										echo $this->url(
+											array(
+											'controller'=> 'livello3',
+											'action' 	=> 'modificadescrizione',
+											'edificio'	=> $this->edificio[0]->nome
+												
+										),null,true);
+									?>
+
+								"><i class="material-icons">edit</i></a>
+							</div>
+
+
+							<div class="col s6 center">
+
+								<a class=" btn-floating btn-large white-text red " href="
+										<?php
+											echo $this->url(
+												array(
+													'controller'=> 'livello3',
+													'action' 	=> 'gestioneedifici',
+												),null,true);
+										?>
+								"><i class="material-icons tooltipped" data-position="left" data-delay="50" data-tooltip="Torna Indietro">arrow_back </i></a>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+			</div>
+
+
+
+			<div class="row">
+				<!-- select piano -->
+				<div class="col s4 push-s4">
+					<div class="input-field">
+
+						<select id="selectPiano">
+							<option  disabled selected>Seleziona Piano</option>
+							<?php
+							foreach($this->piani as $piano):
+								?>
+								<option value="<?php echo $piano->numeroPiano;?>"><a href="#piano<?php echo $piano->numeroPiano;?>">piano <?php echo $piano->numeroPiano;?></a></option>
+								<?php
+							endforeach;
+							?>
+						</select>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="center">
+				<p>
+					<a class="btn-floating btn-large green white-text tooltipped"
+					   data-position="left" data-delay="50" data-tooltip="Aggiungi un nuovo piano">
+							<i class="material-icons">add</i>
+					</a>
+				</p>
+			</div>
+
+
+			<div class="row">
+
+				<!-- corpo contenente l'elenco dei piani con i relativi bozzetti delle piante -->
+
+
+
+						<?php
+
+							foreach ($this->piani as $piano){
+
+								$pianta = "image/piante/".$piano->pianta;
+
+								echo '<div class="col s12">';
+								echo "<div class='card' id='". $piano->numeroPiano ."'>";
+
+								echo 	"<div class=\"card-content green \">";
+      							echo		"<span class=\"card-title activator white-text \">
+											Piano ".$piano->numeroPiano."<a class='btn-floating btn-large white right'><i class=\"material-icons green-text text-darken-1 \">edit</i></a></span>";
+								echo 	'</div>';
+
+								echo 	"<div class='card-image'>";
+								echo 		'<img src="'. $this->baseUrl($pianta) . '">';
+								echo 	'</div>';
+								echo "</div>";
+							}
+						?>
+
+
+			</div>
+
+			<br>
+
+
+			<div class="center">
+
+				<p>
+					<a id='top'
+					   onclick="scrollToTop()"
+					   class="btn-floating btn-large blue darken-3 tooltipped"
+					   data-position="top" data-delay="50" data-tooltip="Torna su">
+						<i class="material-icons">keyboard_arrow_up</i></a>
+				</p>
+			</div>
+	</div>
+
+</div>

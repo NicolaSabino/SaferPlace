@@ -10,7 +10,7 @@ class Application_Form_Loginform extends Zend_Form
 
 
         $this->addElement('text', 'username', array(
-            'filters'    => array('StringTrim', 'StringToLower'),
+            'filters'    => array('StringTrim'),
             'validators' => array(
                 array('StringLength', true, array(2, 25))
             ),

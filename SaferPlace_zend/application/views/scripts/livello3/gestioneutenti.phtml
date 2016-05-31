@@ -139,21 +139,13 @@
 				if(($utente->livello > 1)){
 					echo "<a class=\"btn-floating btn-flat btn-small waves-effect waves-light green white-text \" href=\"";
 
-						// con questa ancora richiamo l'azione per MODIFICARE un utente
+						// con questa ancora richiamo l'azione per assegnare un edificio ad un Utente
 
 						echo $this->url(
 							array(
 								'controller'	=> 'livello3',
-								'action' 		=> 'modificautente',
-								'nome'			=> $utente->nome,
-								'cognome' 		=> $utente->cognome,
-								'genere'    	=> $utente->genere,
-								'eta'       	=> $utente->eta,
-								'telefono'  	=> $utente->telefono,
+								'action' 		=> 'scegliedificio',
 								'username'  	=> $utente->username,
-								'password'  	=> $utente->password,
-								'email'     	=> $utente->email,
-								'livello'		=> $utente->livello
 							));
 
 

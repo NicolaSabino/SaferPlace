@@ -27,4 +27,30 @@ class Application_Resource_Edifici extends  Zend_Db_Table_Abstract
         return $this->fetchAll($select);
 
     }
+
+
+    /**
+     * @return Zend_Db_Statement_Interface
+     */
+    public function getEdificiNonGestiti(){
+
+        $edifici = $this
+            ->select()
+            ->setIntegrityCheck(false)
+            ->from(array('e'=>'edificio'))
+            ->joinLeft(array('g'=> 'gestione'),
+                'e.nome = g.edificio')
+            ->where('g.utente is null');
+        //eseguo la query notifiche e metto il risultato in una variabile
+
+        return $this->fetchAll($edifici);
+    }
+
+    public function getByName($nome){
+
+        $edificio = $this->select()->where('nome = ?',$nome);
+        return $this->fetchAll($edificio);
+    }
+
+
 }

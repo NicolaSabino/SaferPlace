@@ -49,6 +49,9 @@
         <controllerFile controllerName="Dashboard">
           <actionMethod actionName="index"/>
         </controllerFile>
+        <controllerFile controllerName="Indirizza">
+          <actionMethod actionName="index"/>
+        </controllerFile>
       </controllersDirectory>
       <formsDirectory>
         <formFile formName="Selezionapiano"/>
@@ -59,6 +62,8 @@
         <formFile formName="Segnalaform"/>
         <formFile formName="ModificaFaq"/>
         <formFile formName="Evacuazioneform"/>
+        <formFile formName="Gestioneedificio"/>
+        <formFile formName="Gestionepiano"/>
       </formsDirectory>
       <layoutsDirectory>
         <layoutScriptsDirectory>
@@ -72,6 +77,7 @@
           <dbTableFile dbTableName="Faq"/>
         </dbTableDirectory>
         <modelFile modelName="Faq"/>
+        <modelFile modelName="Acl"/>
       </modelsDirectory>
       <modulesDirectory enabled="false"/>
       <servicesDirectory enabled="false"/>
@@ -154,6 +160,9 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Livello1">
             <viewScriptFile forActionName="modificadatiutente"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Indirizza">
+            <viewScriptFile forActionName="index"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>

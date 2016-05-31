@@ -9,6 +9,7 @@ class Livello1Controller extends Zend_Controller_Action
     protected $_numPiano;
     protected $_edificio;
     protected $user='Peppep94';
+    protected $_authService;
 
     public function controlladatiAction(){
 
@@ -33,8 +34,8 @@ class Livello1Controller extends Zend_Controller_Action
     }
 
     public function init()
-    {
-
+    {    
+        $this->_authService = new Application_Service_Auth();
         $this->_helper->layout->setLayout('layout1');
         $this->view->modificaform=$this->getModificaform();
 
