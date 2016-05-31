@@ -12,12 +12,4 @@ class Application_Resource_PianoDiFuga extends  Zend_Db_Table_Abstract
         return $this->fetchAll($select);
 
     }
-
-    public function getPianiDiFugaByZona($zona){
-        
-        $select= $this->select()
-                      ->from('pianodifuga')
-        
-    }
-
 }

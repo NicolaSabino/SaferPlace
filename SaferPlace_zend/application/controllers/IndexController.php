@@ -4,17 +4,15 @@ class IndexController extends Zend_Controller_Action
 {
 
     protected $registratiform ;
-    protected $loginform;
-    protected $authService;
+    protected $_loginform;
+    protected $_authService;
     
     public function init()
     {
+        $this ->_authService = new Application_Service_Auth();
         $this->view->loginform=$this->getLoginForm();
         $this->view->registratiform=$this->getRegistratiForm();
-        
-        
-        
-        
+
     }
 
     public function indexAction()
@@ -36,8 +34,6 @@ class IndexController extends Zend_Controller_Action
 
     public function loginutenteAction()
     {
-
-
     }
 
     public function verificaregistraAction()
@@ -72,33 +68,32 @@ class IndexController extends Zend_Controller_Action
     }
 
     public function authenticateAction(){
+
         $request = $this->getRequest();
 
-        $utentimodel=new Application_Model_Utenti();
+       /* $utentimodel=new Application_Model_Utenti();
 
         $username=$this->controllaParam('username');
-        $password=$this->controllaParam('password');
-        
+        $password=$this->controllaParam('password');*/
+
+
         if (!$request->isPost()) {
             return $this->_helper->redirector('loginutente');
         }
 
-        $form = $this->loginform;
-        if (!$form->isValid($request->getPost())) {
+        $form = $this->_loginform;
+
+        if(!$form->isValid($request->getPost())) {
             $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
             return $this->render('loginutente');
         }
-
-        else
-        {
-            if($utentimodel->isRightPassword($username,$password) === false){
-                $form->setDescription('Attenzione: l\'username e/o la password inseriti sono errati.');
-                return $this->render('loginutente');
-            }
-
-            else
-                $this->getHelper('Redirector')->gotoSimple('checkin','livello1', $module = null);
+        if (false === $this->_authService->authenticate($form->getValues())) {
+            $form->setDescription('Autenticazione fallita. Riprova');
+            return $this->render('loginutente');
         }
+        return $this->_helper->redirector('index','livello'.$this->_authService->getIdentity()->current()->role);
+        
+
     }
 
     public function getRegistratiForm(){
@@ -113,16 +108,15 @@ class IndexController extends Zend_Controller_Action
         return $this->registratiform;
     }
 
-    public function getLoginForm(){
+    private function getLoginForm(){
         $urlHelper = $this->_helper->getHelper('url');
-        $this->loginform=new Application_Form_Loginform();
-
-        $this->loginform->setAction($urlHelper->url(array(
+        $this->_loginform=new Application_Form_Loginform();
+        $this->_loginform->setAction($urlHelper->url(array(
             'controller' => 'index',
             'action' => 'authenticate'),
             'default'
         ));
-        return $this->loginform;
+        return $this->_loginform;
     }
 
 
