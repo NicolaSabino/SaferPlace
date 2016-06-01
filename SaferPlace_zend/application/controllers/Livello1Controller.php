@@ -40,6 +40,7 @@ class Livello1Controller extends Zend_Controller_Action
         $this->user=$this->_authService->getAuth()->getIdentity()->current()->username;
         $this->view->modificaform=$this->getModificaform();
 
+
     }
 
     public function reinderizzaErroreAction($stanza, $edificio, $numPiano, $azione)
