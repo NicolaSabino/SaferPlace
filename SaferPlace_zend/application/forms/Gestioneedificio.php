@@ -26,13 +26,13 @@ class Application_Form_Gestioneedificio extends Zend_Form
         $this->setAction(''); // definirò l'azione nel controller quando istanzio la form
         
 
-        $this->addElement('text','Nome', array(
+        $this->addElement('text','nome', array(
             'required'  => true,
             'value'     => $this->_nome,
             'label'     => 'Nome Edificio'
 
         ));
-        $this->addElement('text', 'Informazioni', array(
+        $this->addElement('text', 'informazioni', array(
             'filters'    => array('StringTrim'),
             'validators' => array(
                 array('StringLength', true, array(3, 100))

@@ -69,7 +69,7 @@ class Application_Resource_Edifici extends  Zend_Db_Table_Abstract
 
         $where = "nome = $oldname";
 
-        $this->getAdapter()->update('faq',$data,$where);
+        $this->getAdapter()->update('edificio',$data,$where);
 
 
     }

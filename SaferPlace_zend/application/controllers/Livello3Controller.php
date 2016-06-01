@@ -28,6 +28,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     /********************************************/
 
+
+
     // MENU
 
     public function indexAction()
@@ -85,7 +87,12 @@ class Livello3Controller extends Zend_Controller_Action
 
     }
 
+
+
+
     /**************************************************/
+
+
 
     // FORM
 
@@ -213,7 +220,8 @@ class Livello3Controller extends Zend_Controller_Action
         $this->_modificaEdificioForm->setAction($this->view->url(
             array(
                 'controller'    => 'livello3',
-                'action'        => ' submitmodificadescrizione',
+                'action'        => 'submitmodificadescrizione',
+                'oldname'       => $nomeEdificio
             ),null,true
         ));
 
@@ -413,25 +421,16 @@ class Livello3Controller extends Zend_Controller_Action
         //metodo che non deve renderizzare niente come view
         $this->_helper->getHelper('layout')->disableLayout();
         $this->_helper->viewRenderer->setNoRender();
-        
-        //istanzio il modello degli edifici
-        $modelEdifici = new Application_Model_Edifici();
 
-        if (!$this->getRequest()->isPost()) {
-            $this->_helper->redirector('index');
-        }
-        
-        $form=$this->_modificaEdificioForm;
-        
-        if (!$form->isValid($_POST)) {
-            $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
-            return $this->render('gestisciedifici');
-        }
-        
-        $values = $form->getValues();
-        print_r($values);
-        die();
-        $modelEdifici->saveProduct($values);
+        // prendo i paramtetri
+        $oldname        = $this->getParam('oldname');
+        $nome           = $this->getParam('nome');
+        $informazioni   = $this->getParam('informazioni');
+        //$path           = $this->getParam('img_path');
+
+
+        $modelEdifici = new Application_Model_Edifici();
+        $modelEdifici->updateEdificio($oldname,$nome,$informazioni,"qwerty");
         $this->_helper->redirector('index');
     }
 
