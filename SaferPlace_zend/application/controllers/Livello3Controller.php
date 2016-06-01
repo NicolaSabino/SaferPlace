@@ -426,12 +426,12 @@ class Livello3Controller extends Zend_Controller_Action
         $oldname        = $this->getParam('oldname');
         $nome           = $this->getParam('nome');
         $informazioni   = $this->getParam('informazioni');
-        //$path           = $this->getParam('img_path');
+        $path           = $this->getParam('img_path');
 
 
         $modelEdifici = new Application_Model_Edifici();
-        $modelEdifici->updateEdificio($oldname,$nome,$informazioni,"qwerty");
-        $this->_helper->redirector('index');
+        $modelEdifici->updateEdificio($oldname,$nome,$informazioni,$path);
+        $this->_helper->redirector('gestioneedifici'); //funziona
     }
 
 

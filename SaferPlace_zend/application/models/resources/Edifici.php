@@ -59,7 +59,7 @@ class Application_Resource_Edifici extends  Zend_Db_Table_Abstract
         $this->delete($where);
     }
 
-    public function updateByName($oldname,$nome,$mappa,$informazioni){
+    public function updateByName($oldname,$nome,$informazioni,$mappa){
 
         $data = array(
             'nome'          => $nome,
@@ -67,9 +67,10 @@ class Application_Resource_Edifici extends  Zend_Db_Table_Abstract
             'informazioni'  => $informazioni
         );
 
-        $where = "nome = $oldname";
 
-        $this->getAdapter()->update('edificio',$data,$where);
+        $where = $this->getAdapter()->quoteInto('nome = ?', $oldname);
+
+        $this->update($data,$where);
 
 
     }
