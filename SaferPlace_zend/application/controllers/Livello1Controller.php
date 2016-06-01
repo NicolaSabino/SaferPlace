@@ -138,7 +138,12 @@ class Livello1Controller extends Zend_Controller_Action
      */
     public function checkinintAction()
     {
+
         $edificio=$this->controllaParam('edificio');
+
+        if(is_null($edificio))
+            $this->getHelper('Redirector')->gotoSimple('checkin','livello1',$module=null);
+
 
 
         $edificimodel = new Application_Model_Edifici();
@@ -156,8 +161,15 @@ class Livello1Controller extends Zend_Controller_Action
      */
     public function checkinbAction()
     {
+
         $edificio=$this->controllaParam('edificio');
         $numPiano=$this->controllaParam('numPiano');
+
+        if(is_null($edificio))
+            $this->getHelper('Redirector')->gotoSimple('checkin','livello1',$module=null);
+
+        if ($numPiano==0)
+            $this->getHelper('Redirector')->gotoSimple('checkinint','livello1',$module=null,array('edificio'=>$edificio));
         $errore=$this->controllaParam('errore'); //variabile usata per mostrare a video un messaggio di errore 
  
         $this->view->insiemePiani = $numPiano;
