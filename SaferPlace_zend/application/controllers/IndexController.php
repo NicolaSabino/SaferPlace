@@ -122,6 +122,12 @@ class IndexController extends Zend_Controller_Action
         ));
         return $this->_loginform;
     }
+
+    public function logoutAction()
+    {
+        Zend_Auth::getInstance()->clearIdentity();
+        $this->_helper->redirector('index', 'index');
+    }
 }
 
 

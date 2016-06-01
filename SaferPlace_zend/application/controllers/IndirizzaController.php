@@ -22,11 +22,7 @@ class IndirizzaController extends Zend_Controller_Action
 
         $this->_helper->redirector('index', 'index');
     }
-    public function logoutAction()
-    {
-        Zend_Auth::getInstance()->clearIdentity();
-        $this->_helper->redirector('index', 'index');
-    }
+    
 
 
 }
