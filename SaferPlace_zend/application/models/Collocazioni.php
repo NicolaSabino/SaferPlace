@@ -16,6 +16,10 @@ class Application_Model_Collocazioni extends App_Model_Abstract
     }
     
     public function updateCollocazioni($idPosizione, $user){
-        return $this-->$this->getResource('Collocazioni')->updateCollocazione($idPosizione,$user);
+        return $this->getResource('Collocazioni')->updateCollocazione($idPosizione,$user);
+    }
+    
+    public function deletecollocazione($username){
+        return $this->getResource('Collocazioni')->deletecollocazione($username);
     }
 }

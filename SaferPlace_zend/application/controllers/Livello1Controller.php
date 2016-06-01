@@ -279,7 +279,7 @@ class Livello1Controller extends Zend_Controller_Action
     }
 
 
-  public function getModificaform()
+    public function getModificaform()
   {
       $urlHelper = $this->_helper->getHelper('url');
 
@@ -317,6 +317,13 @@ class Livello1Controller extends Zend_Controller_Action
             $this->getHelper('Redirector')->gotoSimple('index','livello1', $module = null);
 
         }
+    }
+
+    public function cancellaposizioneAction(){
+        $collocazionemodel=new Application_Model_Collocazioni();
+        $collocazione=$collocazionemodel->deletecollocazione($this->user);
+        $this->getHelper('Redirector')->gotoSimple('index','livello1', $module = null);
+
     }
 
 }

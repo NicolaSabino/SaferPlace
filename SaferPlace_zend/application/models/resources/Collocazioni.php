@@ -68,5 +68,10 @@ class Application_Resource_Collocazioni extends  Zend_Db_Table_Abstract
                       ->group('pos.id');
         return $this->fetchAll($select);
     }
+
+    public function deletecollocazione($username){
+        $row = $this->fetchRow($this->select()->where('utente = ?', $username));
+        $row->delete();
+    }
 }
 

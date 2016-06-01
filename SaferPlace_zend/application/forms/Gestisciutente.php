@@ -124,9 +124,7 @@ class Application_Form_Gestisciutente extends Zend_Form
             'label'         => 'Password',
             'class'         =>'black-text',
             'placeholder'   => 'Inserisci la password'
-
-
-
+            
         ));
 
         $this->addElement('text', 'email', array(
