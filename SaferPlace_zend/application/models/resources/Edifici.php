@@ -52,5 +52,17 @@ class Application_Resource_Edifici extends  Zend_Db_Table_Abstract
         return $this->fetchAll($edificio);
     }
 
+    public function updateEdificio($dati){
+        $data = array(
+            'nome'      => $dati['nome'],
+            'mappa'      => $dati['mappa'],
+            'informazioni'      => $dati['informazioni'],
+        );
+        $where = $this->getAdapter()->quoteInto('nome = ?', $dati['nome']);
+
+        $this->update($data, $where);
+
+    }
+
 
 }

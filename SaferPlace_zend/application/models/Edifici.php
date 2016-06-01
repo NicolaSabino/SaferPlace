@@ -32,4 +32,8 @@ class Application_Model_Edifici extends App_Model_Abstract
     public function getEdificio($nome){
         return $this->getResource('Edifici')->getByName($nome);
     }
+    
+    public function updateEdificio($dati){
+        return $this->getResource('Edifici')->updateEdificio($dati);
+    }
 }

@@ -22,6 +22,7 @@ class Application_Form_Gestioneedificio extends Zend_Form
     {
         $this->setMethod('post');
         $this->setName('gestioneedificio');
+        $this->setAttrib('enctype', 'multipart/form-data');
 
         $this->addElement('text','Nome', array(
             'required'  => true,
@@ -41,14 +42,14 @@ class Application_Form_Gestioneedificio extends Zend_Form
 
         ));
 
-        $this->addElement('file', 'img_path', array(
+        $this->addElement('file', 'mappa', array(
             'label' => 'Immagine del prodotto',
             'required' =>false,
             'destination' => APPLICATION_PATH.'/../public/image/edifici/',
             'validators' => array(
                 array('Count', false, 1),
                 array('Size', false, 3096000),
-                array('Extension', false, array('jpg','png'))
+                array('Extension', false, array('jpg','png','gif'))
             )
         ));
 

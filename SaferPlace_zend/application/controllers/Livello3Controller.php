@@ -321,6 +321,28 @@ class Livello3Controller extends Zend_Controller_Action
 
     }
 
+    public function verificamodificaedificioAction()
+    {
+
+        //prendo le informazioni per popolare la form
+        $nomeEdificio = $this->getParam('edificio');
+        $edificiModel = new Application_Model_Edifici();
+        $edificio = $edificiModel->getEdificio($nomeEdificio);
+
+        $request = $this->getRequest();
+        if (!$request->isPost()) {
+            return $this->_helper->redirector('modificadescrizione');
+        }
+        $form = new Application_Form_Gestioneedificio($nomeEdificio,$edificio[0]->informazioni);;
+        if (!$form->isValid($request->getPost())) {
+            $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
+            return $this->render('modificadescrizione');
+        }
+        $values = $form->getValues();
+        $edificiModel->updateEdificio($values);
+        $this->_helper->redirector('index');
+    }
+
     public function modificadescrizioneAction()
     {
         //prendo le informazioni per popolare la form
