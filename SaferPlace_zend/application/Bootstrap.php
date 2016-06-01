@@ -2,19 +2,18 @@
 
 class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 {
-    //non so se va definito comunque il baseurl
-
     protected function _initSetupBaseUrl() {
             $this->bootstrap('frontcontroller');
             $controller = Zend_Controller_Front::getInstance();
             $controller->setBaseUrl('/SaferPlace/SaferPlace_zend/public');
     }
 
+
+    // Aggiunge un'istanza di Zend_Controller_Request_Http nel Front_Controller
+    // che permette di utilizzare l'helper baseUrl() nel Bootstrap.php
+    // Necessario solo se la Document-root di Apache non è la cartella public/
+    //necessaria per far girare più di un progetto su una macchina server
     protected function _initRequest()
-        // Aggiunge un'istanza di Zend_Controller_Request_Http nel Front_Controller
-        // che permette di utilizzare l'helper baseUrl() nel Bootstrap.php
-        // Necessario solo se la Document-root di Apache non è la cartella public/
-        //necessaria per far girare più di un progetto su una macchina server
     {
         $this->bootstrap('FrontController');
         $front = $this->getResource('FrontController');
@@ -42,10 +41,12 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
     {
         $this->bootstrap('view');
         $this->_view = $this->getResource('view');
-        $this->_view->headMeta()->setCharset('UTF-8');
-        $this->_view->headMeta()->appendHttpEquiv('Content-Language', 'it-IT');
-        $this->_view->headLink()->appendStylesheet($this->_view->baseUrl('css/materialize.css'));
-        $this->_view->headTitle('Corso di Tecnologie Web - Zend Project - Versione 6');
+        $this->_view->headMeta()->setCharset('UTF-8'); //Charset
+        $this->_view->headMeta()->appendHttpEquiv('Content-Language', 'it-IT'); //Lingua
+        $this->_view->headLink()->appendStylesheet($this->_view->baseUrl('css/materialize.css')); //CSS Materialize
+        $this->_view->headLink()->appendStylesheet("https://fonts.googleapis.com/icon?family=Material+Icons"); //Google's Icons
+        $this->_view->headTitle('Safer Place'); //Titolo
+        
     }
 
 
