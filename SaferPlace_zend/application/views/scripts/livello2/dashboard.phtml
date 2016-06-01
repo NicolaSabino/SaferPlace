@@ -27,7 +27,7 @@
 
 						<a class="grey-text" href=
 
-						      <?
+						      <?php
 						   echo '"' . $this->url(
 								   array(
 									   'controller' => 'livello2',
@@ -38,7 +38,7 @@
 							   ) . '">'.'<li class="collection-item">'.'Piano ' . $item .'</li></a>';
 						   } ?>
 
-						   <? echo '</ul></div></li>';
+						   <?php echo '</ul></div></li>';
 					   }
 						?>
 
@@ -122,7 +122,7 @@
 					<!-- informazioni su piano ed eficio selezionati -->
 					<div class="row">
 
-						<? if (isset($this->perspiano)) {
+						<?php if (isset($this->perspiano)) {
 							echo '
 						<ul class="collapsible">
 							<li>
@@ -139,7 +139,7 @@
 							<li>
 								<div class="collapsible-header green-text" style="font-size: 175%;">Persone per stanza:&nbsp
 								</div><div class="collapsible-body">
-							<?
+							<?php
 									foreach ($this->persperstanza as $item) {
 										echo '<div class="collection-item grey-text" style="font-size: 150%">';
 										echo 	'&nbsp Stanza '. $item->stanza .
