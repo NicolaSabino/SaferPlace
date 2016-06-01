@@ -4,10 +4,9 @@ class Livello3Controller extends Zend_Controller_Action
 {
 
     protected $_edificiModel = null;
-
     protected $_utenzaModel = null;
-
     protected $_faqModel = null;
+    protected $_modificaEdificioForm = null;
 
     public function init()
     {
@@ -24,6 +23,12 @@ class Livello3Controller extends Zend_Controller_Action
         $this->_faqModel = new Application_Model_Faq();
         $this->view->assign("faqSet",$this->_faqModel->getFaqSet());
     }
+
+
+
+    /********************************************/
+
+    // MENU
 
     public function indexAction()
     {
@@ -45,6 +50,48 @@ class Livello3Controller extends Zend_Controller_Action
         // action body
     }
 
+    /**
+     *  Popola la schermata che permette all'admin di gestire le assegnazioni dello staff
+     */
+    public function scegliedificioAction()
+    {
+
+        $username=$this->getParam('username');
+
+        $edifici = new Application_Model_Edifici();
+        $edificiNonAssegnati=$edifici->nonAssegnati();
+
+        $edificiAssegnati = $edifici->getGestioni();
+
+        $this->view->assign('edificiNonAssegnati',$edificiNonAssegnati);
+        $this->view->assign('edificiAssegnati',$edificiAssegnati);
+        $this->view->assign('username',$username);
+
+    }
+
+    /**
+     * Popolo la schermata che permette di gestire un edificio
+     */
+    public function modificaedificioAction()
+    {
+        $app = $this->getParam('edificio');
+        $modelEdifici = new Application_Model_Edifici();
+        $modelPiani = new Application_Model_Piani();
+        $edificio = $modelEdifici->getEdificio($app);
+        $piani = $modelPiani->getPianiByEdificio($app);
+
+        $this->view->assign('edificio',$edificio);
+        $this->view->assign('piani',$piani);
+
+    }
+
+    /**************************************************/
+
+    // FORM
+
+    /**
+     * Predispone la form per modificare una faq
+     */
     public function modificafaqAction()
     {
 
@@ -70,21 +117,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     }
 
-    public function updatefaqAction()
-    {
-
-        $dom=$this->getParam('domanda');
-        $risp=$this->getParam('risposta');
-        $idFaq=$this->getParam("id");
-
-
-        $this->_faqModel = new Application_Model_Faq();
-        $this->_faqModel->setFaq($dom,$risp,$idFaq);
-
-        //reindirizzo a gestione faq
-        $this->getHelper('Redirector')->gotoSimple('gestionefaq','livello3',$module=null);
-    }
-
+    /**
+     * Predispongo la form per inserire una nuova faq
+     */
     public function creafaqAction()
     {
         //istanzio la form per modificare la faq
@@ -102,32 +137,9 @@ class Livello3Controller extends Zend_Controller_Action
         $this->view->faqForm=$faqForm;
     }
 
-    public function insertfaqAction()
-    {
-
-        $dom=$this->getParam('domanda');
-        $risp=$this->getParam('risposta');
-
-        $this->_faqModel = new Application_Model_Faq();
-        $this->_faqModel->newFaq($dom,$risp);
-
-        //reindirizzo a gestione faq
-        $this->getHelper('Redirector')->gotoSimple('gestionefaq','livello3',$module=null);
-
-    }
-
-    public function eliminafaqAction()
-    {
-
-        $id=$this->getParam('id');
-
-        $this->_faqModel = new Application_Model_Faq();
-        $this->_faqModel->deleteFaq($id);
-
-        //reindirizzo a gestione faq
-        $this->getHelper('Redirector')->gotoSimple('gestionefaq','livello3',$module=null);
-    }
-
+    /**
+     * Predispone la form per inserire un nuovo utente
+     */
     public function creautenteAction()
     {
         //istanzio la form di registrazione di un nuovo utente
@@ -147,35 +159,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     }
 
-    public function nuovoutenteAction()
-    {
-
-
-        $elementi = array(
-            'nome'      =>  $this->getParam('Nome'),
-            'cognome'   =>  $this->getParam('Cognome'),
-            'genere'    =>  $this->getParam('genere'),
-            'eta'       =>  $this->getParam('eta'),
-            'telefono'  =>  $this->getParam('telefono'),
-            'username'  =>  $this->getParam('username'),
-            'password'  =>  $this->getParam('password'),
-            'email'     =>  $this->getParam('email'),
-        );
-
-
-
-        //avvio la procedura di inserimento nel db tramite una chiamata ad un oggetto del model
-        $utenza = new Application_Model_Utenza();
-
-        $utenza->nuovoUtente($elementi);
-
-
-
-
-        //reindirizzo a gestione faq
-        $this->getHelper('Redirector')->gotoSimple('gestioneutenti','livello3',$module=null);
-    }
-
+    /**
+     * Procedura che predispone la form di aggiornamento delle informazioni di un utente
+     */
     public function modificautenteAction()
     {
         $elementi = array(
@@ -211,6 +197,124 @@ class Livello3Controller extends Zend_Controller_Action
 
     }
 
+    /**
+     *  Creo la view con relativa form che permette di modificare NOME INFORMAZIONI E IMMAGINE di un edificio
+     */
+    public function modificadescrizioneAction()
+    {
+        //prendo le informazioni per popolare la form
+        $nomeEdificio = $this->getParam('edificio');
+        $edificiModel = new Application_Model_Edifici();
+        $edificio = $edificiModel->getEdificio($nomeEdificio);
+
+        //istanzio la form
+        $this->_modificaEdificioForm = new Application_Form_Gestioneedificio($nomeEdificio,$edificio[0]->informazioni);
+
+        $this->_modificaEdificioForm->setAction($this->view->url(
+            array(
+                'controller'    => 'livello3',
+                'action'        => ' submitmodificadescrizione',
+            ),null,true
+        ));
+
+        //assegno la form alla view
+        $this->view->assign('Form',$this->_modificaEdificioForm);
+    }
+
+
+
+
+
+    /**************************************************/
+
+    //  INTERFACCIAMENTO CON IL MODEL
+
+    /**
+     * aggiorno una faq nel db
+     */
+    public function updatefaqAction()
+    {
+
+        $dom=$this->getParam('domanda');
+        $risp=$this->getParam('risposta');
+        $idFaq=$this->getParam("id");
+
+
+        $this->_faqModel = new Application_Model_Faq();
+        $this->_faqModel->setFaq($dom,$risp,$idFaq);
+
+        //reindirizzo a gestione faq
+        $this->getHelper('Redirector')->gotoSimple('gestionefaq','livello3',$module=null);
+    }
+
+    /**
+     * Metodo che inserisce una faq nel db
+     */
+    public function insertfaqAction()
+    {
+
+        $dom=$this->getParam('domanda');
+        $risp=$this->getParam('risposta');
+
+        $this->_faqModel = new Application_Model_Faq();
+        $this->_faqModel->newFaq($dom,$risp);
+
+        //reindirizzo a gestione faq
+        $this->getHelper('Redirector')->gotoSimple('gestionefaq','livello3',$module=null);
+
+    }
+
+    /**
+     * metodo che elimina una faq dal db
+     */
+    public function eliminafaqAction()
+    {
+
+        $id=$this->getParam('id');
+
+        $this->_faqModel = new Application_Model_Faq();
+        $this->_faqModel->deleteFaq($id);
+
+        //reindirizzo a gestione faq
+        $this->getHelper('Redirector')->gotoSimple('gestionefaq','livello3',$module=null);
+    }
+
+    /**
+     * Metodo che permette di inserire un utente nel db
+     */
+    public function nuovoutenteAction()
+    {
+
+
+        $elementi = array(
+            'nome'      =>  $this->getParam('Nome'),
+            'cognome'   =>  $this->getParam('Cognome'),
+            'genere'    =>  $this->getParam('genere'),
+            'eta'       =>  $this->getParam('eta'),
+            'telefono'  =>  $this->getParam('telefono'),
+            'username'  =>  $this->getParam('username'),
+            'password'  =>  $this->getParam('password'),
+            'email'     =>  $this->getParam('email'),
+        );
+
+
+
+        //avvio la procedura di inserimento nel db tramite una chiamata ad un oggetto del model
+        $utenza = new Application_Model_Utenza();
+
+        $utenza->nuovoUtente($elementi);
+
+
+
+
+        //reindirizzo a gestione faq
+        $this->getHelper('Redirector')->gotoSimple('gestioneutenti','livello3',$module=null);
+    }
+
+
+    /**
+     *  Procedura di aggiornamento delle informazioni di un utente
+     */
     public function updateutenteAction()
     {
 
@@ -244,6 +348,10 @@ class Livello3Controller extends Zend_Controller_Action
         $this->getHelper('Redirector')->gotoSimple('gestioneutenti','livello3',$module=null);
     }
 
+
+    /**
+     *  Procedura che permette di eliminare un utente
+     */
     public function eliminautenteAction()
     {
 
@@ -256,24 +364,9 @@ class Livello3Controller extends Zend_Controller_Action
         $this->getHelper('Redirector')->gotoSimple('gestioneutenti','livello3',$module=null);
     }
 
-    public function scegliedificioAction()
-    {
-
-        $username=$this->getParam('username');
-
-        $edifici = new Application_Model_Edifici();
-        $edificiNonAssegnati=$edifici->nonAssegnati();
-
-        $edificiAssegnati = $edifici->getGestioni();
-
-        $this->view->assign('edificiNonAssegnati',$edificiNonAssegnati);
-        $this->view->assign('edificiAssegnati',$edificiAssegnati);
-        $this->view->assign('username',$username);
-
-
-
-    }
-
+    /**
+     * Metodo per assegnare un edifcio non precedentemente assegnato ad un utente
+     */
     public function assegnaedificioautenteAction()
     {
         $username=$this->getParam('username');
@@ -290,6 +383,10 @@ class Livello3Controller extends Zend_Controller_Action
         $this->getHelper('Redirector')->gotoSimple('gestioneutenti','livello3',$module=null);
     }
 
+
+    /**
+     * Procedura di riassegnazione di un utente alla gestione di un edificio
+     */
     public function eliminaeassegnaAction()
     {
 
@@ -308,46 +405,36 @@ class Livello3Controller extends Zend_Controller_Action
 
     }
 
-    public function modificaedificioAction()
+    /**
+     * Modifica delle informazioni dell'edificio nel db
+     */
+    public function submitmodificadescrizioneAction()
     {
-        $app = $this->getParam('edificio');
+        //metodo che non deve renderizzare niente come view
+        $this->_helper->getHelper('layout')->disableLayout();
+        $this->_helper->viewRenderer->setNoRender();
+        
+        //istanzio il modello degli edifici
         $modelEdifici = new Application_Model_Edifici();
-        $modelPiani = new Application_Model_Piani();
-        $edificio = $modelEdifici->getEdificio($app);
-        $piani = $modelPiani->getPianiByEdificio($app);
 
-        $this->view->assign('edificio',$edificio);
-        $this->view->assign('piani',$piani);
-
+        if (!$this->getRequest()->isPost()) {
+            $this->_helper->redirector('index');
+        }
+        
+        $form=$this->_modificaEdificioForm;
+        
+        if (!$form->isValid($_POST)) {
+            $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
+            return $this->render('gestisciedifici');
+        }
+        
+        $values = $form->getValues();
+        print_r($values);
+        die();
+        $modelEdifici->saveProduct($values);
+        $this->_helper->redirector('index');
     }
 
-    public function modificadescrizioneAction()
-    {
-        //prendo le informazioni per popolare la form
-        $nomeEdificio = $this->getParam('edificio');
-        $edificiModel = new Application_Model_Edifici();
-        $edificio = $edificiModel->getEdificio($nomeEdificio);
-
-        //istanzio la form
-        $nuovaForm = new Application_Form_Gestioneedificio($nomeEdificio,$edificio[0]->informazioni);
-
-        $nuovaForm->setAction($this->view->url(
-            array(
-                'controller'    => 'livello3',
-                'action'        => 'gestioneedifici',
-
-
-            ),null,true
-        ));
-
-        //assegno la form alla view
-        $this->view->assign('Form',$nuovaForm);
-    }
-
-    public function modificapianoAction()
-    {
-        // action body
-    }
 
 
 }

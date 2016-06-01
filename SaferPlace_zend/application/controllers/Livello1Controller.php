@@ -320,6 +320,13 @@ class Livello1Controller extends Zend_Controller_Action
         }
     }
 
+    public function cancellaposizioneAction(){
+        $collocazionemodel=new Application_Model_Collocazioni();
+        $collocazione=$collocazionemodel->deletecollocazione($this->user);
+        $this->getHelper('Redirector')->gotoSimple('index','livello1', $module = null);
+
+    }
+
 }
 
 

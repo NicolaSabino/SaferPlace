@@ -22,6 +22,9 @@ class Application_Form_Gestioneedificio extends Zend_Form
     {
         $this->setMethod('post');
         $this->setName('gestioneedificio');
+        $this->setAttrib('enctype', 'multipart/form-data');
+        $this->setAction(''); // definirò l'azione nel controller quando istanzio la form
+        
 
         $this->addElement('text','Nome', array(
             'required'  => true,

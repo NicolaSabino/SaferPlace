@@ -52,5 +52,27 @@ class Application_Resource_Edifici extends  Zend_Db_Table_Abstract
         return $this->fetchAll($edificio);
     }
 
+    public function delByName($nome){
+
+        $where = $this->getAdapter()->quoteInto('nome = ?',$nome);
+
+        $this->delete($where);
+    }
+
+    public function updateByName($oldname,$nome,$mappa,$informazioni){
+
+        $data = array(
+            'nome'          => $nome,
+            'mappa'         => $mappa,
+            'informazioni'  => $informazioni
+        );
+
+        $where = "nome = $oldname";
+
+        $this->getAdapter()->update('faq',$data,$where);
+
+
+    }
+
 
 }
