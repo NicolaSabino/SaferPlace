@@ -11,8 +11,9 @@ class Application_Form_Evacuazioneform extends Zend_Form
      * Application_Form_Selezionastanza constructor.
      * @param mixed|null $numStanze
      */
-    public function __construct($edificio,$piano,$tipo)
+    public function __construct($user,$edificio,$piano,$tipo)
     {
+        $this->_utenteModel = new Application_Model_UtenteStaff($user);
         $this->init();
     }
 
@@ -22,7 +23,6 @@ class Application_Form_Evacuazioneform extends Zend_Form
 
         $this->setMethod('post');
         $this->setName('Evacuazione');
-        $this->_utenteModel = new Application_Model_UtenteStaff();
 
         $tipo['default'] = 'Seleziona tipo emergenza';
         $tipo['Incendio'] = 'Incendio';
