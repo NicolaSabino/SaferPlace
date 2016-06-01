@@ -9,6 +9,7 @@ class Livello1Controller extends Zend_Controller_Action
     protected $_numPiano;
     protected $_edificio;
     protected $user;
+    protected $livello;
     protected $_authService;
 
     public function controlladatiAction(){
@@ -38,8 +39,9 @@ class Livello1Controller extends Zend_Controller_Action
         $this->_authService = new Application_Service_Auth();
         $this->_helper->layout->setLayout('layout1');
         $this->user=$this->_authService->getAuth()->getIdentity()->current()->username;
-        $this->view->modificaform=$this->getModificaform();
-
+        $this->modificaform= $this->getModificaform();
+        $this->view->modificaform= $this->modificaform;
+        $this->livello=$this->_authService->getAuth()->getIdentity()->current()->livello;
 
     }
 
@@ -274,50 +276,24 @@ class Livello1Controller extends Zend_Controller_Action
 
     }
 
-    public function modificadatiutenteAction()
+    public function getModificaform()
     {
-        
+        return $this->getHelper('ModificaProfilo')->getForm($this->user, 1);
+
+
     }
+    public function modificadatiutenteAction(){
 
 
-  public function getModificaform()
-  {
-      $urlHelper = $this->_helper->getHelper('url');
-
-      $usermodel=new Application_Model_Utenti();
-      $dati=$usermodel->getDatiUtenteByUserSet($this->user);
-      $this->modificaform= new Application_Form_Registratiform($dati);
-
-      $this->modificaform->setAction($urlHelper->url(array(
-          'controller' => 'livello1',
-          'action' => 'verificamodifica'),
-          'default'
-      ));
-      return $this->modificaform;
-  }
+    }
 
     public function verificamodificaAction()
     {
         $request = $this->getRequest();
-        if (!$request->isPost()) {
-            return $this->_helper->redirector('modificadatiutente');
-        }
+        
         $form = $this->modificaform;
-        if (!$form->isValid($request->getPost())) {
-            $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
-            return $this->render('modificadatiutente');
-        }
-        else
-        {
-            $datiform=$this->modificaform->getValues(); //datiform è un array
-
-            $utentimodel=new Application_Model_Utenti();
-
-            $utentimodel->updateUtentiSet($datiform);
-            // TODO redirect condizionale a seconda del tipo di utente
-            $this->getHelper('Redirector')->gotoSimple('index','livello1', $module = null);
-
-        }
+        
+        $this->getHelper('ModificaProfilo')->verificaModifica($request,1,$form);
     }
 
 }

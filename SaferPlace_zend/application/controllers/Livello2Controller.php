@@ -15,7 +15,8 @@ class Livello2Controller extends Zend_Controller_Action
         $this->_helper->layout->setLayout('layout2');
         $this->user= $this->_authService->getIdentity()->current()->username;
         $this->modelUtente= new Application_Model_UtenteStaff($this->user);
-        $this->view->profiloform= $this->getModificaForm();
+        $this->modificaform = $this->getModificaForm();
+        $this->view->modificaform= $this->modificaform;
     }
 
     public function indexAction()
@@ -165,23 +166,21 @@ class Livello2Controller extends Zend_Controller_Action
 
     public function getModificaform()
     {
-        $urlHelper = $this->_helper->getHelper('url');
+        return $this->getHelper('ModificaProfilo')->getForm($this->user, 2);
 
-        $usermodel=new Application_Model_Utenti();
-        $dati=$usermodel->getDatiUtenteByUserSet($this->user);
-        $this->modificaform= new Application_Form_Registratiform($dati);
 
-        $this->modificaform->setAction($urlHelper->url(array(
-            'controller' => 'livello1',
-            'action' => 'verificamodifica'),
-            'default'
-        ));
-        return $this->modificaform;
     }
-    public function modificaAction(){
-        $this->getHelper('Redirector')->gotoRoute(array('controller'=>'livello1', 'action'=>'modificadatiutente'));;
+    public function modificadatiutenteAction(){
+
+       
     }
 
+    public function verificamodificaAction()
+    {
+        $request = $this->getRequest();
+        $form = $this->modificaform;
+        $this->getHelper('ModificaProfilo')->verificaModifica($request,2,$form);
+    }
 
 }
 

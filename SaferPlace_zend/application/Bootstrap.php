@@ -62,6 +62,14 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 
     }
 
+    protected function _initActionHelpers(){
+        //helper per rendere uniformi le procedur edi modifca dei dati degli utenti di livello 1 e 2
+        Zend_Controller_Action_HelperBroker::addHelper(
+            new App_Action_Helper_ModificaProfilo()
+
+        );
+    }
+
 
 
 }
