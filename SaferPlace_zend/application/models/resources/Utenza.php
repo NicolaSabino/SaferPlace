@@ -68,5 +68,5 @@ class Application_Resource_Utenza extends  Zend_Db_Table_Abstract
 
         $this->delete($where);
     }
-
+    
 }
