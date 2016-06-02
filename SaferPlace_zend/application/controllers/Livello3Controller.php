@@ -7,10 +7,14 @@ class Livello3Controller extends Zend_Controller_Action
     protected $_utenzaModel = null;
     protected $_faqModel = null;
     protected $_modificaEdificioForm = null;
+    protected $user;
+    protected $_authService;
 
     public function init()
     {
         $this->_helper->layout->setLayout('layout3');
+        $this->_authService = new Application_Service_Auth();
+        $this->user=$this->_authService->getAuth()->getIdentity()->current()->username;
 
         $this->_modificaEdificioForm = new Application_Form_Gestioneedificio();
 
@@ -30,6 +34,7 @@ class Livello3Controller extends Zend_Controller_Action
 
 
 
+
     /********************************************/
 
 
@@ -38,8 +43,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     public function indexAction()
     {
-        // action body
-    }
+        $this->_helper->redirector('gestioneedifici'); 
+}
 
     public function gestioneedificiAction()
     {
