@@ -12,6 +12,7 @@ class Livello3Controller extends Zend_Controller_Action
     {
         $this->_helper->layout->setLayout('layout3');
 
+        $this->_modificaEdificioForm = new Application_Form_Gestioneedificio();
 
         $this->_edificiModel = new Application_Model_Edifici();
         $this->view->arrayEdifici = $this->_edificiModel->getEdificiSet();
@@ -19,9 +20,12 @@ class Livello3Controller extends Zend_Controller_Action
         $utenzaModell = new Application_Model_Utenza();
         $this->view->arrayUtenti = $utenzaModell->getUtenza();
 
-
         $this->_faqModel = new Application_Model_Faq();
         $this->view->assign("faqSet",$this->_faqModel->getFaqSet());
+
+
+        //istanzio la form di modifica di un edificio
+        $this->_modificaEdificioForm = new Application_Form_Gestioneedificio();
     }
 
 
@@ -214,19 +218,29 @@ class Livello3Controller extends Zend_Controller_Action
         $edificiModel = new Application_Model_Edifici();
         $edificio = $edificiModel->getEdificio($nomeEdificio);
 
+
+        //valori per popolare la form
+        $data = array(
+            'nome'          => $nomeEdificio,
+            'mappa'         => $edificio->current()->mappa,
+            'informazioni'  => $edificio->current()->informazioni
+        );
+
         //istanzio la form
-        $this->_modificaEdificioForm = new Application_Form_Gestioneedificio($nomeEdificio,$edificio[0]->informazioni);
+        $this->_modificaEdificioForm->populate($data); // todo finire
 
         $this->_modificaEdificioForm->setAction($this->view->url(
             array(
                 'controller'    => 'livello3',
                 'action'        => 'submitmodificadescrizione',
                 'oldname'       => $nomeEdificio
-            ),null,true
+            )
         ));
 
         //assegno la form alla view
+
         $this->view->assign('Form',$this->_modificaEdificioForm);
+        return $this->_modificaEdificioForm;
     }
 
 
@@ -422,15 +436,34 @@ class Livello3Controller extends Zend_Controller_Action
         $this->_helper->getHelper('layout')->disableLayout();
         $this->_helper->viewRenderer->setNoRender();
 
-        // prendo i paramtetri
-        $oldname        = $this->getParam('oldname');
-        $nome           = $this->getParam('nome');
-        $informazioni   = $this->getParam('informazioni');
-        $path           = $this->getParam('img_path');
+        // prendo dall' object request l'informazione sul vecchio nome dell'edificio
+        // che corrisponde alla chiave d'accesso al db 
+        $oldname = $this->getParam('oldname');
 
+        if (!$this->getRequest()->isPost()) {
+            $this->_helper->redirector('error');
+        }
+        $post = $this->getRequest()->getPost();
+
+        if (!$this->_modificaEdificioForm->isValid($post)) {
+            $this->view->assign('msg', 'Inserimento dati errato! Controllare i campi');
+            $this->view->assign('form', $this->_modificaEdificioForm);
+            $this->render('error');
+            return;
+        }
+
+        if (!$this->_modificaEdificioForm->mappa->receive()) {
+            $this->view->assign('msg', 'Upload error');
+            $this->view->assign('form', $this->_modificaEdificioForm);
+            $this->render('error');
+            return;
+        }
+
+        $values = $this->_modificaEdificioForm->getValues();
+        
 
         $modelEdifici = new Application_Model_Edifici();
-        $modelEdifici->updateEdificio($oldname,$nome,$informazioni,$path);
+        $modelEdifici->updateEdificio($values,$oldname);
         $this->_helper->redirector('gestioneedifici'); //funziona
     }
 

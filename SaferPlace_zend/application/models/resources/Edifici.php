@@ -59,16 +59,16 @@ class Application_Resource_Edifici extends  Zend_Db_Table_Abstract
         $this->delete($where);
     }
 
-    public function updateByName($oldname,$nome,$informazioni,$mappa){
+    public function updateByName($data,$key){
 
-        $data = array(
-            'nome'          => $nome,
-            'mappa'         => $mappa,
-            'informazioni'  => $informazioni
-        );
+        if($data['mappa'] == null){
+            $data = array(
+                'nome'          => $data['nome'],
+                'informazioni'  => $data['informazioni']
+            );
+        }
 
-
-        $where = $this->getAdapter()->quoteInto('nome = ?', $oldname);
+        $where = $this->getAdapter()->quoteInto('nome = ?',$key);
 
         $this->update($data,$where);
 

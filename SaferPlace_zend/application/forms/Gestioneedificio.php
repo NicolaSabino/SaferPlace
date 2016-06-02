@@ -4,17 +4,10 @@ class Application_Form_Gestioneedificio extends Zend_Form
 {
 
 
-    //attributi
-    protected $_nome;
-    protected $_informazioni;
-    protected $_immagine;
+   
 
-    public function __construct($nome = null ,$informazioni=null)
+    public function __construct($info = null)
     {
-        //assegno le variabili
-        $this->_nome = $nome;
-        $this->_informazioni = $informazioni;
-
         $this->init();
     }
 
@@ -35,8 +28,9 @@ class Application_Form_Gestioneedificio extends Zend_Form
         $this->addElement('text', 'informazioni', array(
             'filters'    => array('StringTrim'),
             'validators' => array(
-                array('StringLength', true, array(3, 100))
+                array('StringLength', true, array(3, 2500))
             ),
+            'cols' => '60', 'rows' => '40',
             'required'   => true,
             'label'      => 'Informazioni',
             'value'      => $this->_informazioni,
@@ -44,13 +38,15 @@ class Application_Form_Gestioneedificio extends Zend_Form
 
         ));
 
-        $this->addElement('file', 'img_path', array(
+
+
+        $this->addElement('file', 'mappa', array(
             'label' => 'Immagine del prodotto',
             'required' =>false,
             'destination' => APPLICATION_PATH.'/../public/image/edifici/',
             'validators' => array(
                 array('Count', false, 1),
-                array('Size', false, 3096000),
+                array('Size', false, 30960000),
                 array('Extension', false, array('jpg','png'))
             )
         ));
