@@ -43,8 +43,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     public function indexAction()
     {
-        $this->_helper->redirector('gestioneedifici'); 
-}
+        
+    }
 
     public function gestioneedificiAction()
     {
