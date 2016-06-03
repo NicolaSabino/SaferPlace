@@ -40,6 +40,7 @@ class Livello1Controller extends Zend_Controller_Action
         $this->user=$this->_authService->getAuth()->getIdentity()->current()->username;
         $this->view->modificaform=$this->getModificaform();
 
+
     }
 
     public function reinderizzaErroreAction($stanza, $edificio, $numPiano, $azione)
@@ -298,6 +299,7 @@ class Livello1Controller extends Zend_Controller_Action
       $usermodel=new Application_Model_Utenti();
       $dati=$usermodel->getDatiUtenteByUserSet($this->user);
       $this->modificaform= new Application_Form_Registratiform($dati);
+      $this->modificaform->populate($dati);
 
       $this->modificaform->setAction($urlHelper->url(array(
           'controller' => 'livello1',

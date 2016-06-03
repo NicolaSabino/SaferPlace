@@ -52,6 +52,29 @@ class Application_Resource_Edifici extends  Zend_Db_Table_Abstract
         return $this->fetchAll($edificio);
     }
 
+    public function delByName($nome){
+
+        $where = $this->getAdapter()->quoteInto('nome = ?',$nome);
+
+        $this->delete($where);
+    }
+
+    public function updateByName($data,$key){
+
+        if($data['mappa'] == null){
+            $data = array(
+                'nome'          => $data['nome'],
+                'informazioni'  => $data['informazioni']
+            );
+        }
+
+        $where = $this->getAdapter()->quoteInto('nome = ?',$key);
+
+        $this->update($data,$where);
+
+
+    }
+    
     public function updateEdificio($dati){
         $data = array(
             'nome'      => $dati['nome'],
@@ -63,6 +86,5 @@ class Application_Resource_Edifici extends  Zend_Db_Table_Abstract
         $this->update($data, $where);
 
     }
-
 
 }

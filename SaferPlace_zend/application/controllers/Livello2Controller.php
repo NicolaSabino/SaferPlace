@@ -2,14 +2,19 @@
 
 class Livello2Controller extends Zend_Controller_Action
 {
-    protected $user = 'nicolanabbo';
+    protected $_authService;
+    protected $modelUtente;
+    protected $user;
     protected $evacuazioneform = null;
     protected $modificaform     = null;
     protected $pianodifugaform = null;
 
     public function init()
     {
+        $this->_authService = new Application_Service_Auth();
         $this->_helper->layout->setLayout('layout2');
+        $this->user= $this->_authService->getIdentity()->current()->username;
+        $this->modelUtente= new Application_Model_UtenteStaff($this->user);
         $this->view->profiloform= $this->getModificaForm();
     }
 
@@ -21,9 +26,9 @@ class Livello2Controller extends Zend_Controller_Action
     public function notifyAction()
     {
 
-        $modelUtente= new Application_Model_UtenteStaff();
+        
        // $notifiche = new Application_Resource_Notifica();
-        print_r($modelUtente->getEdificiGestiti());
+       // print_r($modelUtente->getEdificiGestiti());
         die;
         //estraggo i risultati dell'esecuzione della query e li stampo
         $this->view->assign("notifiche", $utente->getNotificheEmergenze());
@@ -35,16 +40,15 @@ class Livello2Controller extends Zend_Controller_Action
 
     public function dashboardAction()
     {
-        $modelUtente = new Application_Model_UtenteStaff();
-        $edificigestiti = $modelUtente->getEdificiGestiti('nicolanabbo');
-        $persEdificio = $modelUtente->getPersEdGest($edificigestiti);
+        $edificigestiti = $this->modelUtente->getEdificiGestiti($this->user);
+        $persEdificio = $this->modelUtente->getPersEdGest($edificigestiti);
 
         $this->view->assign('persedificio', $persEdificio);
 
         if (($edificio = $this->controllaParam('edificio')) && ($piano = $this->controllaParam('piano'))) {
 
-            $persPiano = $modelUtente->getPersPiano($edificio, $piano);
-            $persPerStanza = $modelUtente->getNumPersStanze($edificio, $piano );
+            $persPiano = $this->modelUtente->getPersPiano($edificio, $piano);
+            $persPerStanza = $this->modelUtente->getNumPersStanze($edificio, $piano );
             
 
             $this->view->assign('persperstanza', $persPerStanza);
@@ -54,10 +58,10 @@ class Livello2Controller extends Zend_Controller_Action
 
             $this->view->assign("edifici_e_piani",$edificigestiti);
 
-        if ($notifiche = $modelUtente->getNotificheEmergenze())
+        if ($notifiche = $this->modelUtente->getNotificheEmergenze())
             $this->view->assign("notifiche", $notifiche);
 
-        if ($evacuazioni = $modelUtente->fetchEventi())
+        if ($evacuazioni = $this->modelUtente->fetchEventi())
             $this->view->assign("evacuazioni", $evacuazioni);
 
 
@@ -73,24 +77,24 @@ class Livello2Controller extends Zend_Controller_Action
 
     public function delnotifAction()
     {
-        $modelUtente= new Application_Model_UtenteStaff();
+        
 
         if (($edificio = $this->controllaParam('edificio')) && ($piano = $this->controllaParam('piano')))
             $this->view->assign("pianta", $edificio . ' Piano ' . $piano . '.jpg');
-        $modelUtente->deleteNotification($this->controllaParam('id'));
+        $this->modelUtente->deleteNotification($this->controllaParam('id'));
         $this->getHelper('Redirector')->gotoRoute(array('controller'=>'livello2', 'action'=>'dashboard',
                                                     'edificio'=> $edificio, 'piano'=>$piano));
     }
 
     public function interruptAction()
     {
-        $modelUtente= new Application_Model_UtenteStaff();
+       
 
         if (($edificio = $this->controllaParam('edificio')) && ($piano = $this->controllaParam('piano')))
             $this->view->assign("pianta", $edificio . ' Piano ' . $piano . '.jpg');
         
         if ($id = $this->controllaParam('interrupt'));
-            $modelUtente->delEvento($id);
+            $this->modelUtente->delEvento($id);
         $this->getHelper('Redirector')->gotoRoute(array('controller'=>'livello2', 'action'=>'dashboard',
             'edificio'=> $edificio, 'piano'=>$piano));
     }
@@ -100,7 +104,7 @@ class Livello2Controller extends Zend_Controller_Action
 
 
         $urlHelper = $this->_helper->getHelper('url');
-        $this->evacuazioneform= new Application_Form_Evacuazioneform($edificio,$piano,$tipo);
+        $this->evacuazioneform= new Application_Form_Evacuazioneform($this->user,$edificio,$piano,$tipo);
         if ($edificio && $piano && $tipo)
             $this->evacuazioneform->populate($edificio, $piano, $tipo);
         $this->evacuazioneform->setAction($urlHelper->url(array(
@@ -125,7 +129,7 @@ class Livello2Controller extends Zend_Controller_Action
 
     public function sceglipdfAction()
     {
-        $utentemodel = new Application_Model_UtenteStaff();
+
         $edificio = $this->getRequest()->getPost('edificio');
         $piano = $this->getRequest()->getPost('piano');
         
@@ -136,8 +140,8 @@ class Livello2Controller extends Zend_Controller_Action
 
         $this->view->assign('edificio', $edificio);
         $this->view->assign('piano', $piano);
-        $this->view->assign('pianifuga', $utentemodel->getPianiFuga($edificio, $piano));
-        $this->view->assign('zone', $utentemodel->getZone($edificio, $piano));
+        $this->view->assign('pianifuga', $this->modelUtente->getPianiFuga($edificio, $piano));
+        $this->view->assign('zone', $this->modelUtente->getZone($edificio, $piano));
         
     }
 

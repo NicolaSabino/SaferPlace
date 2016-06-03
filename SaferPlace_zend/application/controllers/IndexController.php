@@ -3,12 +3,12 @@
 class IndexController extends Zend_Controller_Action
 {
 
-    protected $registratiform ;
+    protected $registratiform = null;
 
-    protected $_loginform;
+    protected $_loginform = null;
 
-    protected $_authService;
-    
+    protected $_authService = null;
+
     public function init()
     {
         $this ->_authService = new Application_Service_Auth();
@@ -19,7 +19,7 @@ class IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        
+       
     }
 
     public function controllaParam($param)
@@ -69,8 +69,8 @@ class IndexController extends Zend_Controller_Action
         }
     }
 
-
-    public function authenticateAction(){
+    public function authenticateAction()
+    {
 
         $request = $this->getRequest();
 
@@ -99,8 +99,8 @@ class IndexController extends Zend_Controller_Action
 
     }
 
-
-    public function getRegistratiForm(){
+    public function getRegistratiForm()
+    {
         $urlHelper = $this->_helper->getHelper('url');
         $this->registratiform=new Application_Form_Registratiform();
 
@@ -112,7 +112,8 @@ class IndexController extends Zend_Controller_Action
         return $this->registratiform;
     }
 
-    private function getLoginForm(){
+    private function getLoginForm()
+    {
         $urlHelper = $this->_helper->getHelper('url');
         $this->_loginform=new Application_Form_Loginform();
         $this->_loginform->setAction($urlHelper->url(array(
@@ -128,7 +129,22 @@ class IndexController extends Zend_Controller_Action
         Zend_Auth::getInstance()->clearIdentity();
         $this->_helper->redirector('index', 'index');
     }
+
+    public function faqAction()
+    {
+        //istanzio l'insieme delle faq estraendole dal model
+        $faqModel = new Application_Model_Faq();
+        //assegno alla view di faq la variabile FAQSET attraverso il metodo assign
+        $this->view->assign("faqSet",$faqModel->getFaqSet());
+        
+    }
+
+
 }
+
+
+
+
 
 
 

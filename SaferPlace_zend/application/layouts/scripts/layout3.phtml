@@ -2,36 +2,30 @@
 
 <html lang="it">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
 
-    <!-- cambia il colore della navbar nei dispositivi mobili -->
-    <meta name="theme-color" content="#4caf50" />
+    <!-- configurazioni da bootstrap -->
+    <?php echo $this->headMeta(); ?>
+    <?php echo $this->headLink(); ?>
+    <?php echo $this->headTitle(); ?>
+    <?php echo $this->headScript(); ?>
 
-    <title>Safer Place</title>
-
-    <!-- SETUP -->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-
-    <!-- CONFIGURAZIONE DI MATERIALIZE -->
-    <link rel="stylesheet" href="<?php echo $this->baseUrl('css/materialize.min.css'); ?>">
-    <script src="<?php echo $this->baseUrl('js/materialize.min.js'); ?>"></script>
-    <script type="text/javascript" src="<?php echo $this->baseUrl('js/materialize.min.js');?>"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- favicon -->
     <link rel="icon"
           type="imag/png"
           href="<?php echo $this->baseUrl('image/logostilpiccolo.png');?>">
 
-    <!-- script per attivare i popup con jquery -->
-    <script type="text/javascript" src="<?php echo $this->baseUrl('js/modaljs.js');?>"></script>
 
-    <!--  Scripts-->
+    <!-- Carico gli script e configuro materialize-->
     <script  src="<?php echo $this->baseUrl('js/jquery.min.js');?>"></script>
     <script  src="<?php echo $this->baseUrl('js/materialize.js');?>"></script>
     <script  src="<?php echo $this->baseUrl('js/index.js');?>"></script>
+    <script type="text/javascript" src="<?php echo $this->baseUrl('js/modaljs.js');?>"></script>
+
+    <!-- metatag materialize -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#4caf50" />
+
 
 </head>
 
@@ -42,46 +36,61 @@
 
     <nav class="green  white-text">
         <div class="nav-wrapper container">
-            <a href="index" class="brand-logo" id="containerLogo" style="margin-top: 12px"><img src="<?php echo $this->baseUrl('image/logoM.png');?>" height="41.1" ></a>
+            <a href="<?php echo $this->url(
+                array(
+                    'controller' => 'livello3',
+                    'action'=>'index',
+                )
+            ); ?>" class="brand-logo" id="containerLogo" style="margin-top: 12px"><img src="<?php echo $this->baseUrl('image/logoM.png');?>" height="41.1" ></a>
+
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <div class="chip green lighten-3">
+                        <img src="<?php echo $this->baseUrl('image/icone/account.png');?>" alt="Contact Person">
+                        <?php
+                        echo $this->authInfo('username');
+                        ?>
+                    </div>
+
+                </li>
+            </ul>
+
         </div>
 
     </nav>
 </div>
 
-<!-- menu ausiliario per l'admin -->
-<!--<div class="navbar-fixed">
-    <nav class ="white">
-
-
-        <div class="row">
-            <div class="col s12">
-                <ul class="tabs">
-                    <li class="tab col s3 spinner-green"><a class="active green-text" href="<?php echo $this->url(
-                            array(
-                                'controller' => 'livello3',
-                                'action' => 'gestioneedifici'
-                            )
-                        );  ?>" style="margin-left: -40px"><i class="material-icons left" style="margin-top: -10px; margin-left: 40px"><img src="<?php echo $this->baseUrl('image/icone/gestioneedificiiconv.png');?>" style="height: 24px; width: 24px"></i>Gestione edifici</a></li>
-                    <li class="tab col s3 "><a class="green-text" href="<?php echo $this->url(
-                            array(
-                                'controller' => 'livello3',
-                                'action' => 'gestionepianifuga'
-                            )
-                        );  ?>" style=" margin-left: -40px"><i class="material-icons left" style="margin-top: -10px; margin-left: 40px"><img src="<?php echo $this->baseUrl('image/icone/gestionepianifugaiconv.png');?>" style="height: 24px; width: 24px"></i>Gestione Piani di Fuga</a></li>
-                    <li class="tab col s3 "><a class="green-text" href="#gestUtenti" style=" margin-left: -40px"><i class="material-icons left" style="margin-top: -10px; margin-left: 40px"><img src="<?php echo $this->baseUrl('image/icone/gestioneutentiiconv.png');?>" style="height: 24px; width: 24px"></i>Gestione Utenti</a></li>
-                    <li class="tab col s3 "><a class="green-text" href="#gestFAQ" style=" margin-left: -40px"><i class="material-icons left" style="margin-top: -10px; margin-left: 40px"><img src="<?php echo $this->baseUrl('image/icone/gestioneFAQiconv.png');?>" style="height: 24px; width: 24px"></i>Gestione FAQ</a></li>
-                </ul>
-            </div>
-
-    </nav>-->
-
 <div class="fixed-action-btn vertical click-to-toggle" style="bottom: 45px; right: 24px;">
-    <a class="btn-floating btn-large red" href="#">
+    <a class="btn-floating btn-large red">
         <i class="material-icons">menu</i>
     </a>
     <ul>
         <li>
-            <a class="btn-floating yellow darken-1 tooltipped" data-position="left" data-delay="50" data-tooltip="Gestisci Edifici" href="<?php echo $this->url(
+            <a class="btn-floating purple lighten-1 tooltipped" data-position="left" data-delay="50" data-tooltip="Logout" href="<?php echo $this->url(
+                array(
+                    'controller' => 'index',
+                    'action' => 'index'
+                ),null,true
+            );
+
+            ?>">
+                <i class="material-icons">exit_to_app</i>
+            </a>
+        </li>
+
+        <li>
+            <a class="btn-floating yellow tooltipped" data-position="left" data-delay="50" data-tooltip="Home" href="<?php echo $this->url(
+                array(
+                    'controller' => 'livello3',
+                    'action' => 'index'
+                ),null,true
+            );  ?>">
+                <i class="material-icons">home</i>
+            </a>
+        </li>
+
+        <li>
+            <a class="btn-floating orange darken-1 tooltipped" data-position="left" data-delay="50" data-tooltip="Gestisci Edifici" href="<?php echo $this->url(
                 array(
                     'controller' => 'livello3',
                     'action' => 'gestioneedifici'
@@ -91,19 +100,7 @@
             </a>
         </li>
 
-        <!--
-        <li>
-            <a class="btn-floating red tooltipped" data-position="left" data-delay="50" data-tooltip="Gestisci Piani di Fuga" href="<?php echo $this->url(
-                array(
-                    'controller' => 'livello3',
-                    'action' => 'gestionepianifuga'
-                ),null,true
-            );  ?>">
-                <i class="material-icons">trending_up</i>
-            </a>
-        </li>
 
-        -->
         <li>
             <a class="btn-floating green tooltipped" data-position="left" data-delay="50" data-tooltip="Gestisci Utenti" href="<?php echo $this->url(
                 array(

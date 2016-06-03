@@ -12,6 +12,7 @@
           <actionMethod actionName="checkinint"/>
           <actionMethod actionName="registrautente"/>
           <actionMethod actionName="loginutente"/>
+          <actionMethod actionName="faq"/>
         </controllerFile>
         <controllerFile controllerName="Error"/>
         <controllerFile controllerName="Livello1">
@@ -163,6 +164,9 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Indirizza">
             <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Index">
+            <viewScriptFile forActionName="faq"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>

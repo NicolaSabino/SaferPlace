@@ -153,16 +153,17 @@ class Application_Form_Registratiform extends App_Form_Abstract
      * @param array $data
      * @return $this
      */
-    /*public function populate($dati)
+    public function populate($dati)
     {
         $this->Nome->setValue($dati->current()->nome);
         $this->Cognome->setValue($dati->current()->cognome);
         $this->username->setValue($dati->current()->username);
         $this->genere->setValue($dati->current()->genere);
         $this->eta->setValue($dati->current()->eta);
-        $this->telefono->setValue($dati->current()->telefono);
+        $this->telefono->setValue($dati->current()->telefono);        
+        $this->password->renderPassword = true;
         $this->password->setValue($dati->current()->password);
-        $this->email->setValue($dati->current()->emai);
+        $this->email->setValue($dati->current()->email);
 
-    }*/
+    }
 }

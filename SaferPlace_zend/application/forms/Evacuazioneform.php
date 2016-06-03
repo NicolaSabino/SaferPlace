@@ -11,8 +11,9 @@ class Application_Form_Evacuazioneform extends Zend_Form
      * Application_Form_Selezionastanza constructor.
      * @param mixed|null $numStanze
      */
-    public function __construct($edificio,$piano,$tipo)
+    public function __construct($user,$edificio,$piano,$tipo)
     {
+        $this->_utenteModel = new Application_Model_UtenteStaff($user);
         $this->init();
     }
 

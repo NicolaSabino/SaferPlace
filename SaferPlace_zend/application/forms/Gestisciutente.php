@@ -160,6 +160,25 @@ class Application_Form_Gestisciutente extends Zend_Form
         ));
     }
 
+    /**
+     * Metodo per popolare la form
+     * @param array $data
+     * @return $this
+     */
+    public function populate($dati)
+    {
+        $this->Nome->setValue($dati['nome']);
+        $this->Cognome->setValue($dati['cognome']);
+        $this->username->setValue($dati['username']);
+        $this->genere->setValue($dati['genere']);
+        $this->eta->setValue($dati['eta']);
+        $this->telefono->setValue($dati['telefono']);
+        $this->password->renderPassword = true;
+        $this->password->setValue($dati['password']);
+        $this->email->setValue($dati['email']);
+
+    }
+
 
 }
 
