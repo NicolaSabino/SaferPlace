@@ -145,6 +145,8 @@ class Application_Form_Registratiform extends App_Form_Abstract
             array('Description', array('placement' => 'prepend', 'class' => 'formerror')),
             'Form'
         ));
+
+        include_once ('Lingua.php');
     }
 
 
