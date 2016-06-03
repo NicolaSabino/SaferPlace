@@ -15,7 +15,8 @@
 					echo '<div class="collapsible-body grey lighten-5">'.
 						'<p>'.$faq->risposta.'</p>'.
 						'<p>
-						<a class="btn-floating btn-large green white-text" href="';
+						<a class="btn-floating btn-large green white-text tooltipped" data-position="left" data-delay="50" data-tooltip="Modifica" 
+						href="';
 					echo $this->url(
 						array(
 							'controller'=> 'livello3',
@@ -32,7 +33,7 @@
 			</ul>
 		</div>
 		<div class="center-align">
-			<a class="btn-floating btn-large green z-depth-1" href="
+			<a class="btn-floating btn-large green z-depth-1 tooltipped" data-position="bottom" data-delay="50" data-tooltip="Aggiungi una FAQ" href="
 
 				<?php
 					echo $this->url(
@@ -42,7 +43,7 @@
 						));
 				?>
 
-				"><i class="material-icons">add</i>
+				" ><i class="material-icons">add</i>
 			</a>
 		</div>
 
