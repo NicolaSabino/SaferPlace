@@ -12,15 +12,19 @@ class Application_Model_Utenza extends App_Model_Abstract
         $this->getResource('Utenza')->insertUser($parametri);
     }
     
-    public function modificaUtente($elem){
+    public function modificaUtente($elem,$key){
         
 
-        $this->getResource('Utenza')->setUtente($elem);
+        $this->getResource('Utenza')->setUtente($elem,$key);
     }
 
     public function deleteUtente($username){
         
         $this->getResource('Utenza')->delUser($username);
+    }
+    
+    public function getUsers(){
+        return $this->getResource('Utenza')->getUsers();
     }
     
 }

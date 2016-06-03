@@ -5,5 +5,20 @@
 		<?php echo $this->Form; ?>
 	</div>
 
+	<!-- MENU -->
+	<div class="fixed-action-btn vertical" style="bottom: 45px; right: 24px;">
+		<a class="btn-floating btn-large blue darken-2 tooltipped" data-position="left" data-delay="50" data-tooltip="Indietro" href="<?php echo $this->url(
+			array(
+				'controller' 	=> 'livello3',
+				'action' 		=> 'modificaedificio',
+				'edificio' 		=> $this->nomeEdificio
+
+			),null,true
+		);
+
+		?>">
+			<i class="material-icons">arrow_back</i>
+		</a>
+	</div>
 	
 </div>

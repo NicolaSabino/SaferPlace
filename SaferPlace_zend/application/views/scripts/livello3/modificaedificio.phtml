@@ -23,11 +23,9 @@
 							echo $this->edificio[0]->informazioni;
 							?>
 						</p>
-
 						<div class="row">
-
-							<div class="col s6 center">
-								<a class="btn-floating btn-large green tooltipped" href="
+							<div class="col s12 center">
+								<a class="btn-floating btn-large green" href="
 									<?php
 										echo $this->url(
 											array(
@@ -38,22 +36,7 @@
 										),null,true);
 									?>
 
-								" data-position="left" data-delay="50" data-tooltip="Modifica"><i class="material-icons">edit</i></a>
-							</div>
-
-
-							<div class="col s6 center">
-
-								<a class=" btn-floating btn-large white-text red tooltipped" href="
-										<?php
-											echo $this->url(
-												array(
-													'controller'=> 'livello3',
-													'action' 	=> 'gestioneedifici',
-												),null,true);
-										?>
-								" data-position="left" data-delay="50" data-tooltip="Torna Indietro"><i class="material-icons " >arrow_back </i></a>
-
+								"><i class="material-icons">edit</i></a>
 							</div>
 						</div>
 
@@ -138,6 +121,21 @@
 						<i class="material-icons">keyboard_arrow_up</i></a>
 				</p>
 			</div>
+	</div>
+
+
+	<!-- MENU -->
+	<div class="fixed-action-btn vertical" style="bottom: 45px; right: 24px;">
+		<a class="btn-floating btn-large blue darken-2 tooltipped" data-position="left" data-delay="50" data-tooltip="Indietro" href="<?php echo $this->url(
+			array(
+				'controller' => 'livello3',
+				'action' => 'gestioneedifici'
+			),null,true
+		);
+
+		?>">
+			<i class="material-icons">arrow_back</i>
+		</a>
 	</div>
 
 </div>

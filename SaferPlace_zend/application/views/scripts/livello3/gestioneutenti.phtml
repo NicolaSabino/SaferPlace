@@ -3,35 +3,6 @@
 
 	<div class="container">
 		<h3 class="green-text center">Gestione Utenti</h3>
-		<!-- Ricerca -->
-		<!--
-
-		AL MOMENTO L'ABBIAMO RIMOSSA PERCHÈ NON È ESPLICITAMENTE CITATA NELLE SPECIFICHE
-
-
-		<div class="row" style="margin-top:50px;">
-			<form>
-				<div class="input-field col s12 m5">
-					<input type="text">
-					<label >Ricerca</label>
-				</div>
-
-				<div class="input-field col s12 m5">
-					<select>
-						<option value="" disabled selected>Seleziona criterio di ricerca</option>
-						<option value="nome">Nome</option>
-						<option value="cognome">Cognome</option>
-						<option value="username">Username</option>
-					</select>
-					<label>Cerca per...</label>
-				</div>
-
-				<div class="input-field col s4 m2">
-					<input type="submit" class="btn green" action="search" value="Cerca">
-				</div>
-			</form>
-		</div>
-		-->
 
 		<!-- creazione nuovo user -->
 		<div class="row center">
@@ -116,24 +87,6 @@
 								<i class=\"material-icons\" title='Modifica Utente'>edit</i></a>
 							</a>";
 
-				//BOTTONE ELIMINA
-				/*
-				echo " <a class=\"btn-floating btn-flat btn-small waves-effect waves-light green white-text\" href=\"";
-
-						// con questa anconcora richiamo l'azione per ELIMINARE un utente
-
-						echo $this->url(
-							array(
-								'controller'=> 'livello3',
-								'action' 	=> 'eliminautente',
-								'username'	=> $utente->username
-							));
-
-				echo"\">
-								<i class=\"material-icons\">delete</i></a>
-							</a>";
-				*/
-
 				//BOTTONE ASSEGNA EDIFICIO
 
 				if(($utente->livello > 1)){
@@ -157,6 +110,7 @@
 				}
 
 
+
 				echo "	</td>";
 				echo "</tr>";
 			}
@@ -164,6 +118,74 @@
 
 			</tbody>
 		</table>
+
+	</div>
+
+
+	<!-- MENU -->
+	<div class="fixed-action-btn vertical click-to-toggle" style="bottom: 45px; right: 24px;">
+		<a class="btn-floating btn-large red" href="#">
+			<i class="material-icons">menu</i>
+		</a>
+		<ul>
+			<li>
+				<a class="btn-floating purple lighten-1 tooltipped" data-position="left" data-delay="50" data-tooltip="Logout" href="<?php echo $this->url(
+					array(
+						'controller' => 'index',
+						'action' => 'index'
+					),null,true
+				);
+
+				?>">
+					<i class="material-icons">exit_to_app</i>
+				</a>
+			</li>
+
+			<li>
+				<a class="btn-floating yellow darken-1 tooltipped" data-position="left" data-delay="50" data-tooltip="Gestisci Edifici" href="<?php echo $this->url(
+					array(
+						'controller' => 'livello3',
+						'action' => 'gestioneedifici'
+					),null,true
+				);  ?>">
+					<i class="material-icons">business</i>
+				</a>
+			</li>
+
+			<!--
+        <li>
+            <a class="btn-floating red tooltipped" data-position="left" data-delay="50" data-tooltip="Gestisci Piani di Fuga" href="<?php echo $this->url(
+				array(
+					'controller' => 'livello3',
+					'action' => 'gestionepianifuga'
+				),null,true
+			);  ?>">
+                <i class="material-icons">trending_up</i>
+            </a>
+        </li>
+
+        -->
+			<li>
+				<a class="btn-floating green tooltipped" data-position="left" data-delay="50" data-tooltip="Gestisci Utenti" href="<?php echo $this->url(
+					array(
+						'controller' => 'livello3',
+						'action' => 'gestioneutenti'
+					),null,true
+				);  ?>">
+					<i class="material-icons">person</i>
+				</a>
+			</li>
+			<li>
+				<a class="btn-floating blue tooltipped" data-position="left" data-delay="50" data-tooltip="Gestisci Faq" href="<?php echo $this->url(
+					array(
+						'controller' => 'livello3',
+						'action' => 'gestionefaq'
+					),null,true
+				);  ?>">
+					<i class="material-icons">live_help</i>
+				</a>
+			</li>
+		</ul>
 
 	</div>
 </div>

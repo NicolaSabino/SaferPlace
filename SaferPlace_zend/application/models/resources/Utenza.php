@@ -12,12 +12,21 @@ class Application_Resource_Utenza extends  Zend_Db_Table_Abstract
 
     }
 
+    public function getUsers(){
+
+        $select = $this->select()
+            ->where('livello != ?','3');
+
+        return $this->fetchAll($select);
+
+    }
+
     public function insertUser($param){
 
         $this->insert($param);
     }
 
-    public function setUtente($elem){
+    public function setUtente($elem,$key){
         
 
         // se l'utente ha inserito una nuova password procedo ad aggiornare tutti i campi
@@ -37,7 +46,7 @@ class Application_Resource_Utenza extends  Zend_Db_Table_Abstract
 
         }else {
 
-            // altrimenti aggiorno tutti i campi ad eccezione della password*/
+            // altrimenti aggiorno tutti i campi ad eccezione della password
             $data = array(
                 'nome'      => $elem['nome'],
                 'cognome'   => $elem['cognome'],
@@ -52,7 +61,7 @@ class Application_Resource_Utenza extends  Zend_Db_Table_Abstract
         }
 
         // la chiave che ci permettere di aggiornare la tupla nel db è l'username dell'utente prelevato prima delle modifiche
-        $where = $this->getAdapter()->quoteInto('username = ?', $elem['old']);
+        $where = $this->getAdapter()->quoteInto('username = ?', $key);
 
         //$where = 'username = ' . $elem['oldname'];
 

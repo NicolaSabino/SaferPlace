@@ -7,6 +7,7 @@ class Livello3Controller extends Zend_Controller_Action
     protected $_utenzaModel = null;
     protected $_faqModel = null;
     protected $_modificaEdificioForm = null;
+    protected $_aggiornaUtenteForm = null;
     protected $user;
     protected $_authService;
 
@@ -22,7 +23,7 @@ class Livello3Controller extends Zend_Controller_Action
         $this->view->arrayEdifici = $this->_edificiModel->getEdificiSet();
 
         $utenzaModell = new Application_Model_Utenza();
-        $this->view->arrayUtenti = $utenzaModell->getUtenza();
+        $this->view->arrayUtenti = $utenzaModell->getUsers();
 
         $this->_faqModel = new Application_Model_Faq();
         $this->view->assign("faqSet",$this->_faqModel->getFaqSet());
@@ -30,6 +31,9 @@ class Livello3Controller extends Zend_Controller_Action
 
         //istanzio la form di modifica di un edificio
         $this->_modificaEdificioForm = new Application_Form_Gestioneedificio();
+
+        //istanzio la form di aggiornamento di un utente
+        $this->_aggiornaUtenteForm = new Application_Form_Gestisciutente();
     }
 
 
@@ -194,13 +198,12 @@ class Livello3Controller extends Zend_Controller_Action
 
 
 
-        //istanzio la form di registrazione di un nuovo utente
-        $form = new Application_Form_Gestisciutente($elementi);
-        $form->populate($elementi);
+        //popolo la form con le informazioni dell'utente
+        $this->_aggiornaUtenteForm->populate($elementi);
 
 
         //imposto la action della form
-        $form->setAction($this->view->url(
+        $this->_aggiornaUtenteForm->setAction($this->view->url(
             array(
                 'controller'    => 'livello3',
                 'action'        => 'updateutente',
@@ -210,7 +213,10 @@ class Livello3Controller extends Zend_Controller_Action
         ));
 
         //assegno la form alla view
-        $this->view->form = $form;
+        $this->view->form = $this->_aggiornaUtenteForm;
+
+        //ritorno la form
+        return $this->_aggiornaUtenteForm;
 
     }
 
@@ -232,9 +238,10 @@ class Livello3Controller extends Zend_Controller_Action
             'informazioni'  => $edificio->current()->informazioni
         );
 
-        //istanzio la form
-        $this->_modificaEdificioForm->populate($data); // todo finire
+        //popolo la form
+        $this->_modificaEdificioForm->populate($data);
 
+        //imposto l'azione della form
         $this->_modificaEdificioForm->setAction($this->view->url(
             array(
                 'controller'    => 'livello3',
@@ -246,7 +253,13 @@ class Livello3Controller extends Zend_Controller_Action
         //assegno la form alla view
 
         $this->view->assign('Form',$this->_modificaEdificioForm);
+        //assegno il nome dell'edificio alla view per il bottone indietro
+        $this->view->assign('nomeEdificio',$nomeEdificio);
+        
+        
         return $this->_modificaEdificioForm;
+        
+        
     }
 
 

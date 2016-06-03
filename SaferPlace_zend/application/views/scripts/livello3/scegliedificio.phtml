@@ -115,31 +115,25 @@
 			?>
 
 
-		<div class="row">
-
-
-			<div class="col s8 push-s2 center-align">
-
-				<p>
-					<a class=" btn-floating btn-large white-text red" href="
-					<?php
-					echo $this->url(
-						array(
-							'controller'=> 'livello3',
-							'action' 	=> 'gestioneutenti',
-						),null,true);
-					?>
-					"><i class="material-icons tooltipped" data-position="bottom" data-delay="50" data-tooltip="Torna Indietro">arrow_back </i></a>
-				</p>
-
-
-
-			</div>
-		</div>
 
 
 
 
+	</div>
 
+
+	<!-- MENU -->
+	<!-- MENU -->
+	<div class="fixed-action-btn vertical" style="bottom: 45px; right: 24px;">
+		<a class="btn-floating btn-large blue darken-2 tooltipped" data-position="left" data-delay="50" data-tooltip="Indietro" href="<?php echo $this->url(
+			array(
+				'controller' 	=> 'livello3',
+				'action' 		=> 'gestioneutenti'
+			),null,true
+		);
+
+		?>">
+			<i class="material-icons">arrow_back</i>
+		</a>
 	</div>
 </div>

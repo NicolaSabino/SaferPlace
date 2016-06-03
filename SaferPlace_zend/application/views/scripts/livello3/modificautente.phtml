@@ -21,19 +21,6 @@
 						<i class="material-icons">delete</i>
 					</a>
 				</p>
-				<p>
-					<a class=" btn-floating btn-large white-text red" href="
-					<?php
-					echo $this->url(
-						array(
-							'controller'=> 'livello3',
-							'action' 	=> 'gestioneutenti',
-						),null,true);
-					?>
-					"><i class="material-icons tooltipped" data-position="left" data-delay="50" data-tooltip="Torna Indietro">arrow_back </i></a>
-				</p>
-
-
 
 			</div>
 		</div>
@@ -58,5 +45,21 @@
 		" class="modal-action modal-close waves-effect waves-green btn-flat green-text">Si</a>
 			<a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat red-text">No</a>
 		</div>
+	</div>
+
+
+	<!-- MENU -->
+	<!-- MENU -->
+	<div class="fixed-action-btn vertical" style="bottom: 45px; right: 24px;">
+		<a class="btn-floating btn-large blue darken-2 tooltipped" data-position="left" data-delay="50" data-tooltip="Indietro" href="<?php echo $this->url(
+			array(
+				'controller' 	=> 'livello3',
+				'action' 		=> 'gestioneutenti',
+			),null,true
+		);
+
+		?>">
+			<i class="material-icons">arrow_back</i>
+		</a>
 	</div>
 </div>
