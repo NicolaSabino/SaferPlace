@@ -122,7 +122,7 @@ class Livello2Controller extends Zend_Controller_Action
         $edificio = $this->controllaParam('edificio');
         $piano    = $this->controllaParam('piano');
         $tipo     = $this->controllaParam('tipo');
-        
+
         
         $this->view->evacuazioneform= $this->getEvacuazioneForm($edificio,$piano,$tipo);
         
@@ -182,6 +182,14 @@ class Livello2Controller extends Zend_Controller_Action
         $this->getHelper('ModificaProfilo')->verificaModifica($request,2,$form);
     }
 
+    public function validaevacAction(){
+
+        $this->_helper->getHelper('layout')->disableLayout();
+        $this->_helper->viewRenderer->setNoRender();
+        
+       // $form = new Application_Form_Evacuazioneform(, , , )
+        
+    }
 }
 
 
