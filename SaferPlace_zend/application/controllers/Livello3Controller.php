@@ -196,6 +196,7 @@ class Livello3Controller extends Zend_Controller_Action
 
         //istanzio la form di registrazione di un nuovo utente
         $form = new Application_Form_Gestisciutente($elementi);
+        $form->populate($elementi);
 
 
         //imposto la action della form
