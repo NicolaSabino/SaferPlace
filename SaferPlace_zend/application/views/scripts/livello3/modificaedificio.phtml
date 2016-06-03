@@ -27,7 +27,7 @@
 						<div class="row">
 
 							<div class="col s6 center">
-								<a class="btn-floating btn-large green" href="
+								<a class="btn-floating btn-large green tooltipped" href="
 									<?php
 										echo $this->url(
 											array(
@@ -38,7 +38,7 @@
 										),null,true);
 									?>
 
-								"><i class="material-icons">edit</i></a>
+								" data-position="left" data-delay="50" data-tooltip="Modifica"><i class="material-icons">edit</i></a>
 							</div>
 
 
@@ -112,7 +112,7 @@
 
 								echo 	"<div class=\"card-content green \">";
       							echo		"<span class=\"card-title activator white-text \">
-											Piano ".$piano->numeroPiano."<a class='btn-floating btn-large white right'><i class=\"material-icons green-text text-darken-1 \">edit</i></a></span>";
+											Piano ".$piano->numeroPiano."<a class='btn-floating btn-large white right tooltipped' data-position=\"left\" data-delay=\"50\" data-tooltip=\"Modifica\"><i class=\"material-icons green-text text-darken-1 \">edit</i></a></span>";
 								echo 	'</div>';
 
 								echo 	"<div class='card-image'>";
