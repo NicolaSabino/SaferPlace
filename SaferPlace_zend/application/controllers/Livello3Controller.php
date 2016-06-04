@@ -419,8 +419,8 @@ class Livello3Controller extends Zend_Controller_Action
         $elementi = array(
 
             'old'   =>  $this->getParam('old'),
-            'nome'      =>  $this->getParam('Nome'), //errore
-            'cognome'   =>  $this->getParam('Cognome'), //errore
+            'nome'      =>  $this->getParam('nome'),
+            'cognome'   =>  $this->getParam('cognome'), 
             'genere'    =>  $this->getParam('genere'),
             'eta'       =>  $this->getParam('eta'),
             'telefono'  =>  $this->getParam('telefono'),
@@ -431,8 +431,8 @@ class Livello3Controller extends Zend_Controller_Action
         );
 
 
-        $utenza = new Application_Model_Utenza();
-        $utenza->modificaUtente($elementi);
+        $utente = new Application_Model_Utenti();
+        $utente->updateUtentiAdmin($elementi);
 
         //se un utente viene degradato a utente semplice gli rimuovo la gestione degli edifici
         if($elementi['livello']<2){
