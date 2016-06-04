@@ -26,10 +26,18 @@ class Livello2Controller extends Zend_Controller_Action
 
     public function notifyAction()
     {
+        $pianires= new Application_Resource_Piani();
+        $this->getEvacuazioneForm(null,null,null);
+        $multipiani=$pianires->getPianiByEdificio($_GET['edificio']);
+        foreach ($multipiani as $item){
 
-        
+            $opzioni[$item->numeroPiano] = $item->numeroPiano;
+        }
+
+        $this->evacuazioneform->getElement('piano')->addMultiOptions($opzioni);
        // $notifiche = new Application_Resource_Notifica();
        // print_r($modelUtente->getEdificiGestiti());
+        print_r($this->evacuazioneform->getElement('piano')->getMultiOptions());
         die;
         //estraggo i risultati dell'esecuzione della query e li stampo
         $this->view->assign("notifiche", $utente->getNotificheEmergenze());
@@ -182,12 +190,18 @@ class Livello2Controller extends Zend_Controller_Action
         $this->getHelper('ModificaProfilo')->verificaModifica($request,2,$form);
     }
 
-    public function validaevacAction(){
+    public function ajaxevacAction(){
 
         $this->_helper->getHelper('layout')->disableLayout();
         $this->_helper->viewRenderer->setNoRender();
-        
-       // $form = new Application_Form_Evacuazioneform(, , , )
+
+        $opzioni = $this->modelUtente->pianiEdToArray($_POST['edificio']);
+        $response = $this->_helper->json($opzioni);
+
+        if ($response !== null) {
+            $this->getResponse()->setHeader('Content-type','application/json')->setBody($response);
+        }
+
         
     }
 }

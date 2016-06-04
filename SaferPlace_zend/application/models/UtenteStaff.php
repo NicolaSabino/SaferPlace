@@ -179,4 +179,18 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
 
         return;
     }
+
+    /**
+     * @return mixed
+     */
+    public function pianiEdToArray($edificio)
+    {
+        $dbpiani=$this->getResource('Piani')->getPianiByEdificio($edificio);
+        foreach ($dbpiani as $item){
+
+            $opzioni[$item->numeroPiano] = $item->numeroPiano;
+        }
+        
+        return $opzioni;
+    }
 }

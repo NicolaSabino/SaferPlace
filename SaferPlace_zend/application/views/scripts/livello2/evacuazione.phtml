@@ -11,30 +11,41 @@
 
 
         $(function(){  $("#edificio").on("change", function(){
-            $("dd#piano-element").find("ul").append('<li><span>Piano 4</span></li>') ;
-            $("dd#piano-element").find("select").append('<option value="4">Piano 4</option>');
+            pianiPopulate();
+            var actionUrl= '<?php echo $this->url(array(
+                                            'controller' => 'livello2',
+                                            'action'     => 'ajaxevac')
+                                            ); ?>';
+
+            $.ajax({
+                type : 'POST',
+                url : actionUrl,
+                data : $("#edificio").serialize(),
+                dataType : 'json',
+                success : pianiPopulate
+            });
+            
+
+            })});
+
+        function pianiPopulate(data){
+
+            $('dd#piano-element').find("ul").find("li").remove();
+            $('dd#piano-element').find("select").find("option").remove();
+            $.each(data, function(key, val){
+                $('dd#piano-element').find("ul").append('<li><span>Piano'+ val +'</span></li>');
+                $('dd#piano-element').find("select").append('<option value="'+ val +'">Piano '+ val +'</option>');
+
+            });
             $('select').material_select();
 
 
 
 
-
-
-            });
-
-        function piani(){
-            $("select#piano").append("<option>", {
-
-                value: 1,
-                text: "pirirpiri"
-
-
-            });
-
         }
 
 
-        });
+
 
 
 

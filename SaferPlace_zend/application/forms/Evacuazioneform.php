@@ -6,11 +6,7 @@ class Application_Form_Evacuazioneform extends Zend_Form
     protected $_utenteModel;
     protected $_numstanze;
 
-    /**
-     * costruttore dell classe
-     * Application_Form_Selezionastanza constructor.
-     * @param mixed|null $numStanze
-     */
+
     public function __construct($user,$edificio,$piano,$tipo)
     {
         $this->_utenteModel = new Application_Model_UtenteStaff($user);
@@ -31,13 +27,7 @@ class Application_Form_Evacuazioneform extends Zend_Form
         $tipo['Allagamento'] = 'Allagamento';
         $edifici['default'] = 'Seleziona edificio'; // array che conterrà le opzioni della select
         $piani[0] = 'Seleziona piano'; // array che contiene i piani, per ora lo definisco manualmente in attesa di ajax
-        $piani[1] = 'Piano 1';
-        $piani[2] = 'Piano 2';
-        $piani[3] = 'Piano 3';
         $zone[0] = 'Seleziona la zona dell\'emergenza';
-        $zone['A'] = 'A';
-        $zone['B'] = 'B';
-        $zone['C'] = 'C';
 
         $edgest = $this->_utenteModel->getEdificiGestiti(); // edifici gestiti dal membro staff
         foreach ($edgest as $nome => $piano)
@@ -94,6 +84,8 @@ class Application_Form_Evacuazioneform extends Zend_Form
         $this->getElement('edificio')->setValue($edificio);
         $this->getElement('piano')->setValue($piano);
     }
+
+    
 
 }
 
