@@ -166,8 +166,17 @@ class Livello1Controller extends Zend_Controller_Action
         $edificio=$this->controllaParam('edificio');
         $numPiano=$this->controllaParam('numPiano');
 
+        $pianimodel=new Application_Model_Piani();
+        $piani = $pianimodel->getPianiByEdificio($edificio);
+        $controllo=0;
+        foreach ($piani as $p){
+        $controllo=$p['numeroPiano'];
+           }
         if(is_null($edificio))
             $this->getHelper('Redirector')->gotoSimple('checkin','livello1',$module=null);
+
+        if($controllo<$numPiano)
+            $this->getHelper('Redirector')->gotoSimple('checkinint','livello1',$module=null,array('edificio'=>$edificio));
 
         if ($numPiano==0)
             $this->getHelper('Redirector')->gotoSimple('checkinint','livello1',$module=null,array('edificio'=>$edificio));
