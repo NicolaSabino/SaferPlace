@@ -40,4 +40,8 @@ class Application_Model_Edifici extends App_Model_Abstract
     public function updateEdificio($param,$key){
         $this->getResource('Edifici')->updateByName($param,$key);
     }
+    
+    public function nuovoEdifico($param){
+        $this->getResource('Edifici')->insertEdificio($param);
+    }
 }

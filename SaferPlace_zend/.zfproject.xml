@@ -40,6 +40,7 @@
           <actionMethod actionName="creafaq"/>
           <actionMethod actionName="creautente"/>
           <actionMethod actionName="modificautente"/>
+          <actionMethod actionName="inserisciedificio"/>
         </controllerFile>
         <controllerFile controllerName="FaqController">
           <actionMethod actionName="index"/>
@@ -167,6 +168,9 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Index">
             <viewScriptFile forActionName="faq"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello3">
+            <viewScriptFile forActionName="inserisciedificio"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>

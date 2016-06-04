@@ -8,7 +8,14 @@
 		<h3 class="center green-text">Gestione edifici</h3>
 
 		<p class="center">
-			<a class="btn-floating btn-large red tooltipped"
+			<a class="btn-floating btn-large red tooltipped" href="
+				<?php echo $this->url(
+				array(
+					'controller' => 'livello3',
+					'action' => 'inserisciedificio',
+				),null,true
+			); ?>
+			"
 			   data-position="left" data-delay="50" data-tooltip="Aggiungi un nuovo edificio">
 				<i class="material-icons">add</i>
 			</a>
@@ -47,9 +54,6 @@
 			endforeach;
 			?>
 
-
-			<!-- bottone per aggiungere un nuovo edificio -->
-			
 		</div>
 
 	</div>
