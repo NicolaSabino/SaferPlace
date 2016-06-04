@@ -313,11 +313,11 @@ class Livello1Controller extends Zend_Controller_Action
             $datiform=$this->modificaform->getValues(); //datiform è un array
 
             $utentimodel=new Application_Model_Utenti();
-
-            $utentimodel->updateUtentiSet($datiform);
-            // TODO redirect condizionale a seconda del tipo di utente
+            $username = $this->user;
+            $utentimodel->updateUtentiSet($datiform, $username);
+            //aggiorna l'username anche
+            $this->_authService->getAuth()->getIdentity()->current()->username = $datiform['username'];
             $this->getHelper('Redirector')->gotoSimple('index','livello1', $module = null);
-
         }
     }
 

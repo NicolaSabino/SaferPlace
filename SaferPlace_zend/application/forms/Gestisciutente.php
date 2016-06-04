@@ -106,7 +106,7 @@ class Application_Form_Gestisciutente extends Zend_Form
             'label'         => 'Livello',
             'filters'       => array('StringTrim'),
             'required'      => true,
-            'multiOptions'  => array('0'=>'Utente Semplice','1'=>'Staff'),
+            'multiOptions'  => array('1'=>'Utente Semplice','2'=>'Staff'),
             'class'         =>'black-text',
             'value'         => $this->_livello
 
@@ -141,6 +141,8 @@ class Application_Form_Gestisciutente extends Zend_Form
         $this->password->renderPassword = true;
         $this->password->setValue($dati['password']);
         $this->email->setValue($dati['email']);
+        $this->livello->setValue($dati['livello']);
+
 
     }
 

@@ -19,12 +19,12 @@ class Application_Model_Utenti extends App_Model_Abstract
         return $this->getResource('Utenti')->getDatiUtenteByUser($username);
     }
 
-    public function updateUtentiSet($dati){
-        return $this->getResource('Utenti')->updateUtenti($dati);
+    public function updateUtentiSet($dati, $username){
+        return $this->getResource('Utenti')->updateUtenti($dati, $username);
     }
     
-    public function updateUtentiAdmin($dati){
-        return $this->getResource('Utenti')->updateUtentiAdmin($dati);
+    public function updateUtentiAdmin($dati, $username){
+        return $this->getResource('Utenti')->updateUtentiAdmin($dati, $username);
     }
 
     

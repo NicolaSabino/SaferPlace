@@ -70,7 +70,7 @@ class Application_Resource_Utenti extends  Zend_Db_Table_Abstract
      * effettua l'update di un utente
      * @param $dati
      */
-    public function updateUtenti($dati)
+    public function updateUtenti($dati, $username)
     {
         $data = array(
             'username'      => $dati['username'],
@@ -82,7 +82,7 @@ class Application_Resource_Utenti extends  Zend_Db_Table_Abstract
             'email'      => $dati['email'],
             'telefono'      => $dati['telefono'],
         );
-        $where = $this->getAdapter()->quoteInto('username = ?', $dati['username']);
+        $where = $this->getAdapter()->quoteInto('username = ?', $username);
 
         $this->update($data, $where);
     }
@@ -91,7 +91,7 @@ class Application_Resource_Utenti extends  Zend_Db_Table_Abstract
      * effettua l'update di un utente da parte dell'admin, gestisce anche l'update del livello dell'utente
      * @param $dati
      */
-    public function updateUtentiAdmin($dati)
+    public function updateUtentiAdmin($dati, $username)
     {
         $data = array(
             'username'      => $dati['username'],
@@ -104,7 +104,7 @@ class Application_Resource_Utenti extends  Zend_Db_Table_Abstract
             'telefono'      => $dati['telefono'],
             'livello'       => $dati['lilvello'],
         );
-        $where = $this->getAdapter()->quoteInto('username = ?', $dati['username']);
+        $where = $this->getAdapter()->quoteInto('username = ?', $username);
 
         $this->update($data, $where);
     }
