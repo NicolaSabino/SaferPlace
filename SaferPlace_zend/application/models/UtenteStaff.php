@@ -186,11 +186,29 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
     public function pianiEdToArray($edificio)
     {
         $dbpiani=$this->getResource('Piani')->getPianiByEdificio($edificio);
-        foreach ($dbpiani as $item){
-
-            $opzioni[$item->numeroPiano] = $item->numeroPiano;
-        }
+        
+        $opzioni = $this->toXXArray($dbpiani, 'numeroPiano');
         
         return $opzioni;
+    }
+
+    public function zonePianoToArray($edificio,$piano) {
+        
+        $zone = $this->getResource('Zona')->getZoneByEdPiano($edificio,$piano);
+        $opzioni = $this->toXXArray($zone, 'alias');
+        
+        return $opzioni;
+    }
+    
+    /* prende un rowset e un campo della tabella da cui è stato estratto il rowset
+       per restituire un array associativo del tipo X => X */
+    protected function toXXArray($data, $field){
+
+        foreach ($data as $item){
+
+            $array[$item->$field] = $item->$field;
+        }
+        
+        return $array;
     }
 }

@@ -1,20 +1,12 @@
 <br /><br />
 <div class="container">
-    <!--$.ajax({
-    type : 'POST',
-    url : actionUrl,
-    data : $("#" + formName).serialize(),
-    dataType : 'json',
-    success : pianiPopulate
-    });-->
+
     <script>
-
-
         $(function(){  $("#edificio").on("change", function(){
-            pianiPopulate();
+
             var actionUrl= '<?php echo $this->url(array(
                                             'controller' => 'livello2',
-                                            'action'     => 'ajaxevac')
+                                            'action'     => 'ajaxedif')
                                             ); ?>';
 
             $.ajax({
@@ -24,7 +16,7 @@
                 dataType : 'json',
                 success : pianiPopulate
             });
-            
+
 
             })});
 
@@ -44,11 +36,38 @@
 
         }
 
+        $(function(){  $("#piano").on("change", function(){
+
+            var actionUrl= '<?php echo $this->url(array(
+                    'controller' => 'livello2',
+                    'action'     => 'ajaxpiano')
+            ); ?>';
+
+            var dati = [{name: 'edificio', value: $("#edificio").val()},
+                        {name: 'piano', value: $("#piano").val()}];
+
+            $.ajax({
+                type : 'POST',
+                url : actionUrl,
+                data : $.param(dati),
+                dataType : 'json',
+                success : zonePopulate
+            });
 
 
+        })});
 
+        function zonePopulate(data){
 
+            $('dd#zona-element').find("ul").find("li").remove();
+            $('dd#zona-element').find("select").find("option").remove();
+            $.each(data, function(key, val){
+                $('dd#zona-element').find("ul").append('<li><span>'+ val +'</span></li>');
+                $('dd#zona-element').find("select").append('<option value="'+ val +'">'+ val +'</option>');
 
+            });
+            $('select').material_select();
+        }
     </script>
 
     <?

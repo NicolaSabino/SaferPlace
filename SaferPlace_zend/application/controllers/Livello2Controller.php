@@ -190,7 +190,7 @@ class Livello2Controller extends Zend_Controller_Action
         $this->getHelper('ModificaProfilo')->verificaModifica($request,2,$form);
     }
 
-    public function ajaxevacAction(){
+    public function ajaxedifAction(){
 
         $this->_helper->getHelper('layout')->disableLayout();
         $this->_helper->viewRenderer->setNoRender();
@@ -203,6 +203,21 @@ class Livello2Controller extends Zend_Controller_Action
         }
 
         
+    }
+
+    public function ajaxpianoAction(){
+
+        $this->_helper->getHelper('layout')->disableLayout();
+        $this->_helper->viewRenderer->setNoRender();
+        
+        $opzioni = $this->modelUtente->zonePianoToArray($_POST["edificio"], $_POST['piano']);
+        $response = $this->_helper->json($opzioni);
+
+        if ($response !== null) {
+            $this->getResponse()->setHeader('Content-type','application/json')->setBody($response);
+        }
+
+
     }
 }
 
