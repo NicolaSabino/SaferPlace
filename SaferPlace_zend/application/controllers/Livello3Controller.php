@@ -30,7 +30,7 @@ class Livello3Controller extends Zend_Controller_Action
         $this->_edificiModel = new Application_Model_Edifici();
         $this->view->arrayEdifici = $this->_edificiModel->getEdificiSet();
 
-        $utenzaModell = new Application_Model_Utenza();
+        $utenzaModell = new Application_Model_Utenti();
         $this->view->arrayUtenti = $utenzaModell->getUsers();
 
         $this->_faqModel = new Application_Model_Faq();
@@ -40,11 +40,12 @@ class Livello3Controller extends Zend_Controller_Action
         //istanzio la form di modifica di un edificio
         $this->_edificioForm = new Application_Form_Gestioneedificio();
 
-        //istanzio la form di aggiornamento di un utente
-        $this->_aggiornaUtenteForm = new Application_Form_Gestisciutente();
+
 
         //assegno la form della creazione di un utente alla view
         $this->view->registratiform = $this->getCreaUtenteForm();
+
+        $this->_aggiornaUtenteForm = $this->getAggiornaUtenteform();
 
     }
 
@@ -211,6 +212,45 @@ class Livello3Controller extends Zend_Controller_Action
     {
     }
 
+    public function getAggiornaUtenteform()
+    {
+        $urlHelper = $this->_helper->getHelper('url');
+
+        $usermodel=new Application_Model_Utenti();
+        $username = $this->controllaParam('username');
+
+        $dati=$usermodel->getDatiUtenteByUserSet($username);
+        $this->_aggiornaUtenteForm= new Application_Form_Gestisciutente($dati);
+        $this->_aggiornaUtenteForm->populate($dati);
+
+        $this->_aggiornaUtenteForm->setAction($urlHelper->url(array(
+            'controller' => 'livello3',
+            'action' => 'verificamodificautente'),
+            'default'
+        ));
+
+        $this->view->form = $this->_aggiornaUtenteForm;
+
+        return $this->_aggiornaUtenteForm;
+    }
+
+    public function verificamodificautenteAction(){
+        $request = $this->getRequest();
+        if (!$request->isPost()) {
+            return $this->_helper->redirector('modificautente');
+        }
+        $form = $this->_aggiornaUtenteForm;
+        if (!$form->isValid($request->getPost())) {
+            $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
+            return $this->render('modificautente');
+        }
+        else
+        {
+            $this->updateutente();
+
+        }
+    }
+
     /**
      * Procedura che predispone la form di aggiornamento delle informazioni di un
      * utente
@@ -218,7 +258,8 @@ class Livello3Controller extends Zend_Controller_Action
      */
     public function modificautenteAction()
     {
-        $elementi = array(
+        //istanzio la form di aggiornamento di un utente
+        /*$elementi = array(
             'nome'      =>  $this->getParam('nome'),
             'cognome'   =>  $this->getParam('cognome'),
             'genere'    =>  $this->getParam('genere'),
@@ -250,7 +291,7 @@ class Livello3Controller extends Zend_Controller_Action
         $this->view->form = $this->_aggiornaUtenteForm;
 
         //ritorno la form
-        return $this->_aggiornaUtenteForm;
+        return $this->_aggiornaUtenteForm;*/
 
     }
 
@@ -398,9 +439,9 @@ class Livello3Controller extends Zend_Controller_Action
 
 
         //avvio la procedura di inserimento nel db tramite una chiamata ad un oggetto del model
-        $utenza = new Application_Model_Utenza();
+        $utenza = new Application_Model_Utenti();
 
-        $utenza->nuovoUtente($elementi);
+        $utenza->insertUtenti($elementi);
 
 
 
@@ -413,14 +454,14 @@ class Livello3Controller extends Zend_Controller_Action
      *  Procedura di aggiornamento delle informazioni di un utente
      *
      */
-    public function updateutenteAction()
+    public function updateutente()
     {
 
         $elementi = array(
 
             'old'   =>  $this->getParam('old'),
             'nome'      =>  $this->getParam('nome'),
-            'cognome'   =>  $this->getParam('cognome'), 
+            'cognome'   =>  $this->getParam('cognome'),
             'genere'    =>  $this->getParam('genere'),
             'eta'       =>  $this->getParam('eta'),
             'telefono'  =>  $this->getParam('telefono'),
@@ -430,15 +471,16 @@ class Livello3Controller extends Zend_Controller_Action
             'livello'   =>  $this->getParam('livello')
         );
 
+        $datiform=$this->_aggiornaUtenteForm->getValues();
 
         $utente = new Application_Model_Utenti();
-        $utente->updateUtentiAdmin($elementi);
+        $utente->updateUtentiAdmin($datiform, $this->getParam('username'));
 
         //se un utente viene degradato a utente semplice gli rimuovo la gestione degli edifici
-        if($elementi['livello']<2){
+        if($datiform['livello'] < 2){
 
             $edifici = new Application_Model_Edifici();
-            $edifici->eliminaAssegnazioneByUtente($elementi['username']);
+            $edifici->eliminaAssegnazioneByUtente($datiform['username']);
         }
 
 
@@ -455,7 +497,7 @@ class Livello3Controller extends Zend_Controller_Action
 
         $username=$this->getParam('username');
 
-        $utenza = new Application_Model_Utenza();
+        $utenza = new Application_Model_Utenti();
         $utenza->deleteUtente($username);
 
         //reindirizzo a gestione utenti

@@ -3,6 +3,36 @@
 class Application_Form_Gestisciutente extends Zend_Form
 {
 
+    protected $_nome;
+    protected $_cognome;
+    protected $_username;
+    protected $_genere;
+    protected $_eta;
+    protected $_telefono;
+    protected $_password;
+    protected $_email;
+    protected $_livello;
+
+
+    public function __construct($dati=null)
+    {
+
+        if(!$dati==null){
+            $this->_nome = $dati->current()->nome;
+            $this->_cognome = $dati->current()->cognome;
+            $this->_username = $dati->current()->username;
+            $this->_genere = $dati->current()->genere;
+            $this->_eta = $dati->current()->eta;
+            $this->_telefono = $dati->current()->telefono;
+            $this->_password = $dati->current()->password;
+            $this->_email = $dati->current()->email;
+            $this->_livello = $dati->current()->livello;
+
+        }
+
+        $this->init();
+    }
+    
     public function init()
     {
         $this->setMethod('post');
@@ -24,7 +54,7 @@ class Application_Form_Gestisciutente extends Zend_Form
             'required'      => true,
             'label'         => 'Cognome',
             'class'         =>'black-text',
-            'value'         => $this->_congome
+            'value'         => $this->_cognome
 
 
         ));
@@ -74,7 +104,8 @@ class Application_Form_Gestisciutente extends Zend_Form
             'required'      => true,
             'label'         => 'Username',
             'class'         =>'black-text',
-            'value'         => $this->_username
+            'value'         => $this->_username,
+            'Db_NoRecordExists' => true,
         ));
 
         $this->addElement('password', 'password', array(
@@ -85,9 +116,8 @@ class Application_Form_Gestisciutente extends Zend_Form
             'required'      => true,
             'label'         => 'Password',
             'class'         => 'black-text',
-            'placeholder'   => 'Inserisci la password'
-
-
+            'placeholder'   => 'Inserisci la password',
+            'value' => $this->_password,
 
         ));
 
@@ -132,17 +162,17 @@ class Application_Form_Gestisciutente extends Zend_Form
     public function populate($dati)
     {
         
-        $this->nome->setValue($dati['nome']);
-        $this->cognome->setValue($dati['cognome']);
-        $this->username->setValue($dati['username']);
-        $this->genere->setValue($dati['genere']);
-        $this->eta->setValue($dati['eta']);
-        $this->telefono->setValue($dati['telefono']);
+        $this->nome->setValue($dati->current()->nome);
+        $this->cognome->setValue($dati->current()->cognome);
+        $this->username->setValue($dati->current()->username);
+        $this->genere->setValue($dati->current()->genere);
+        $this->eta->setValue($dati->current()->eta);
+        $this->telefono->setValue($dati->current()->telefono);
         $this->password->renderPassword = true;
-        $this->password->setValue($dati['password']);
-        $this->email->setValue($dati['email']);
-        $this->livello->setValue($dati['livello']);
-
+        $this->password->setValue($dati->current()->password);
+        $this->email->setValue($dati->current()->email);
+        $this->livello->setValue($dati->current()->livello);
+        
 
     }
 

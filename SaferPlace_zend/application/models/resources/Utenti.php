@@ -95,18 +95,53 @@ class Application_Resource_Utenti extends  Zend_Db_Table_Abstract
     {
         $data = array(
             'username'      => $dati['username'],
-            'nome'      => $dati['Nome'],
-            'cognome'      => $dati['Cognome'],
+            'nome'      => $dati['nome'],
+            'cognome'      => $dati['cognome'],
             'password'      => $dati['password'],
             'genere'      => $dati['genere'],
             'eta'      => $dati['eta'],
             'email'      => $dati['email'],
             'telefono'      => $dati['telefono'],
-            'livello'       => $dati['lilvello'],
+            'livello'       => $dati['livello'],
         );
         $where = $this->getAdapter()->quoteInto('username = ?', $username);
 
         $this->update($data, $where);
+    }
+
+
+    /**
+     * stampa tutti gli utenti nel db
+     * @return mixed
+     */
+    public function getAll(){
+
+        $select = $this->select();
+        return $this->fetchAll($select);
+
+    }
+
+    /**
+     * stampa tutti gli utenti tranne l'admin
+     * @return mixed
+     */
+    public function getUsers(){
+
+        $select = $this->select()
+            ->where('livello != ?','3');
+
+        return $this->fetchAll($select);
+
+    }
+
+
+    
+
+    public function delUser($username){
+
+        $where = $this->getAdapter()->quoteInto('username = ?',$username);
+
+        $this->delete($where);
     }
 
 }

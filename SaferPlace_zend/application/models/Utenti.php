@@ -27,5 +27,33 @@ class Application_Model_Utenti extends App_Model_Abstract
         return $this->getResource('Utenti')->updateUtentiAdmin($dati, $username);
     }
 
+
+
+    public  function getUtenza(){
+
+        return $this->getResource('Utenza')->getAll();
+
+    }
+
+
+   /* public function modificaUtente($elem,$key){
+
+
+        $this->getResource('Utenza')->setUtente($elem,$key);
+    }*/
+
+    public function deleteUtente($username){
+
+        $this->getResource('Utenza')->delUser($username);
+    }
+
+    /**
+     * seleziona tutti gli utenti tranne l'admin
+     * @return mixed
+     */
+    public function getUsers(){
+        return $this->getResource('Utenza')->getUsers();
+    }
+
     
 }
