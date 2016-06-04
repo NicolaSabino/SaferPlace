@@ -79,7 +79,6 @@ class Application_Resource_Edifici extends  Zend_Db_Table_Abstract
 
     public function insertEdificio($data){
 
-        print_r($data);die();
         //se non inscerisco alcuna immagine assegno quella di default Defautl.jpg
         if($data['mappa'] == null){
             $data = array(
