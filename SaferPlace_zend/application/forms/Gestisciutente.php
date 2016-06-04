@@ -131,8 +131,9 @@ class Application_Form_Gestisciutente extends Zend_Form
      */
     public function populate($dati)
     {
-        $this->Nome->setValue($dati['nome']);
-        $this->Cognome->setValue($dati['cognome']);
+        
+        $this->nome->setValue($dati['nome']);
+        $this->cognome->setValue($dati['cognome']);
         $this->username->setValue($dati['username']);
         $this->genere->setValue($dati['genere']);
         $this->eta->setValue($dati['eta']);
