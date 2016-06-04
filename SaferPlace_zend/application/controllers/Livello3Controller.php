@@ -5,6 +5,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     protected $_edificiModel = null;
 
+    protected $_creautenteform = null;
+
     protected $_utenzaModel = null;
 
     protected $_faqModel = null;
@@ -40,6 +42,10 @@ class Livello3Controller extends Zend_Controller_Action
 
         //istanzio la form di aggiornamento di un utente
         $this->_aggiornaUtenteForm = new Application_Form_Gestisciutente();
+
+        //assegno la form della creazione di un utente alla view
+        $this->view->registratiform = $this->getCreaUtenteForm();
+
     }
 
     public function indexAction()
@@ -150,26 +156,52 @@ class Livello3Controller extends Zend_Controller_Action
         $this->view->faqForm=$faqForm;
     }
 
+    public function getCreaUtenteForm()
+    {
+        $urlHelper = $this->_helper->getHelper('url');
+        $this->_creautenteform=new Application_Form_Registratiform();
+
+        $this->_creautenteform->setAction($urlHelper->url(array(
+            'controller' => 'livello3',
+            'action' => 'verificacreautente'),
+            'default'
+        ));
+        return $this->_creautenteform;
+    }
+
+    public function verificacreautenteAction()
+    {
+        $request = $this->getRequest();
+        //istanzio la form di registrazione di un nuovo utente
+
+        if (!$request->isPost()) {
+            return $this->_helper->redirector('creautente');
+        }
+
+        $form = $this->_creautenteform;
+
+        if (!$form->isValid($request->getPost())) {
+            $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
+            return $this->render('creautente');
+        }
+        else
+        {
+            $datiform=$this->_creautenteform->getValues(); //datiform è un array
+
+            $utentimodel=new Application_Model_Utenti();
+
+            $utentimodel->insertUtenti($datiform);
+            $this->getHelper('Redirector')->gotoSimple('gestioneutenti','livello3', $module = null);
+
+        }
+    }
+
     /**
      * Predispone la form per inserire un nuovo utente
      *
      */
     public function creautenteAction()
     {
-        //istanzio la form di registrazione di un nuovo utente
-        $registrazioneform = new Application_Form_Registratiform();
-
-
-        //imposto la action della form
-        $registrazioneform->setAction($this->view->url(
-            array(
-                'controller'    => 'livello3',
-                'action'        => 'nuovoutente',
-            ),null,true
-        ));
-
-        //assegno la form alla view
-        $this->view->registrazioneform = $registrazioneform;
 
     }
 
