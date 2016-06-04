@@ -456,36 +456,29 @@ class Livello3Controller extends Zend_Controller_Action
      */
     public function updateutente()
     {
-
-        $elementi = array(
-
-            'old'   =>  $this->getParam('old'),
-            'nome'      =>  $this->getParam('nome'),
-            'cognome'   =>  $this->getParam('cognome'),
-            'genere'    =>  $this->getParam('genere'),
-            'eta'       =>  $this->getParam('eta'),
-            'telefono'  =>  $this->getParam('telefono'),
-            'username'  =>  $this->getParam('username'),
-            'password'  =>  $this->getParam('password'),
-            'email'     =>  $this->getParam('email'),
-            'livello'   =>  $this->getParam('livello')
-        );
-
         $datiform=$this->_aggiornaUtenteForm->getValues();
 
         $utente = new Application_Model_Utenti();
-        $utente->updateUtentiAdmin($datiform, $this->getParam('username'));
 
-        //se un utente viene degradato a utente semplice gli rimuovo la gestione degli edifici
-        if($datiform['livello'] < 2){
-
-            $edifici = new Application_Model_Edifici();
-            $edifici->eliminaAssegnazioneByUtente($datiform['username']);
+        if($utente->existUsername($datiform['username'] && $datiform['username'] != $this->getParam('username'))) //controllo se l'username inserito esiste già nel db
+        {
+            $this->_aggiornaUtenteForm->setDescription('Attenzione: l\'username che hai scelto non è disponibile.');
+            return $this->render('modificautente');
         }
+        else {
+            $utente->updateUtentiAdmin($datiform, $this->getParam('username'));
+
+            //se un utente viene degradato a utente semplice gli rimuovo la gestione degli edifici
+            if ($datiform['livello'] < 2) {
+
+                $edifici = new Application_Model_Edifici();
+                $edifici->eliminaAssegnazioneByUtente($datiform['username']);
+            }
 
 
-        //reindirizzo a gestione utenti
-        $this->getHelper('Redirector')->gotoSimple('gestioneutenti','livello3',$module=null);
+            //reindirizzo a gestione utenti
+            $this->getHelper('Redirector')->gotoSimple('gestioneutenti', 'livello3', $module = null);
+        }
     }
 
     /**
