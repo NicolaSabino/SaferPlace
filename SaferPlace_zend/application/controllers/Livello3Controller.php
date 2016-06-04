@@ -168,7 +168,8 @@ class Livello3Controller extends Zend_Controller_Action
         ));
         return $this->_creautenteform;
     }
-
+    
+ 
     public function verificacreautenteAction()
     {
         $request = $this->getRequest();
@@ -190,19 +191,24 @@ class Livello3Controller extends Zend_Controller_Action
 
             $utentimodel=new Application_Model_Utenti();
 
-            $utentimodel->insertUtenti($datiform);
-            $this->getHelper('Redirector')->gotoSimple('gestioneutenti','livello3', $module = null);
+            $username=$this->controllaParam('username'); //prendo l'username inserito nella form
+
+            if($utentimodel->existUsername($username)) //controllo se l'username inserito esiste già nel db
+            {
+                $form->setDescription('Attenzione: l\'username che hai scelto non è disponibile.');
+                return $this->render('creautente');
+            }
+            else{
+                $utentimodel->insertUtenti($datiform);
+                $this->getHelper('Redirector')->gotoSimple('gestioneutenti','livello3', $module = null);
+            }
 
         }
     }
 
-    /**
-     * Predispone la form per inserire un nuovo utente
-     *
-     */
+    
     public function creautenteAction()
     {
-
     }
 
     /**
@@ -574,7 +580,20 @@ class Livello3Controller extends Zend_Controller_Action
     }
 
 
-
+    /**
+     * controlla se vengono passati dei parametri e restituisce il parametro
+     * passato per riferimento
+     *
+     * @param $param
+     * @return int|mixed
+     */
+    public function controllaParam($param)
+    {
+        $parametro=0;
+        if($this->hasParam("$param"))
+            $parametro=$this->getParam("$param");
+        return $parametro;
+    }
 
 }
 
