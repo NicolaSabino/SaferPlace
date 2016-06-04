@@ -87,4 +87,26 @@ class Application_Resource_Utenti extends  Zend_Db_Table_Abstract
         $this->update($data, $where);
     }
 
+    /**
+     * effettua l'update di un utente da parte dell'admin, gestisce anche l'update del livello dell'utente
+     * @param $dati
+     */
+    public function updateUtentiAdmin($dati)
+    {
+        $data = array(
+            'username'      => $dati['username'],
+            'nome'      => $dati['Nome'],
+            'cognome'      => $dati['Cognome'],
+            'password'      => $dati['password'],
+            'genere'      => $dati['genere'],
+            'eta'      => $dati['eta'],
+            'email'      => $dati['email'],
+            'telefono'      => $dati['telefono'],
+            'livello'       => $dati['lilvello'],
+        );
+        $where = $this->getAdapter()->quoteInto('username = ?', $dati['username']);
+
+        $this->update($data, $where);
+    }
+
 }

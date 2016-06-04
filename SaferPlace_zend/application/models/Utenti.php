@@ -23,4 +23,9 @@ class Application_Model_Utenti extends App_Model_Abstract
         return $this->getResource('Utenti')->updateUtenti($dati);
     }
     
+    public function updateUtentiAdmin($dati){
+        return $this->getResource('Utenti')->updateUtentiAdmin($dati);
+    }
+
+    
 }
