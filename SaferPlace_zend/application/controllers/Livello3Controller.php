@@ -19,6 +19,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     protected $_authService = null;
 
+    protected $modificadatiform;
+
     public function init()
     {
         $this->_helper->layout->setLayout('layout3');
@@ -40,12 +42,12 @@ class Livello3Controller extends Zend_Controller_Action
         //istanzio la form di modifica di un edificio
         $this->_edificioForm = new Application_Form_Gestioneedificio();
 
-
-
         //assegno la form della creazione di un utente alla view
         $this->view->registratiform = $this->getCreaUtenteForm();
 
         $this->_aggiornaUtenteForm = $this->getAggiornaUtenteform();
+
+        $this->view->modificadatiform=$this->getModificaDatiform();
 
     }
 
@@ -72,7 +74,7 @@ class Livello3Controller extends Zend_Controller_Action
     /**
      *  Popola la schermata che permette all'admin di gestire le assegnazioni dello
      * staff
-     *
+     * 
      */
     public function scegliedificioAction()
     {
@@ -92,7 +94,7 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Popolo la schermata che permette di gestire un edificio
-     *
+     * 
      */
     public function modificaedificioAction()
     {
@@ -109,7 +111,7 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Predispone la form per modificare una faq
-     *
+     * 
      */
     public function modificafaqAction()
     {
@@ -138,7 +140,7 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Predispongo la form per inserire una nuova faq
-     *
+     * 
      */
     public function creafaqAction()
     {
@@ -170,8 +172,7 @@ class Livello3Controller extends Zend_Controller_Action
 
         return $this->_creautenteform;
     }
-    
- 
+
     public function verificacreautenteAction()
     {
 
@@ -209,7 +210,6 @@ class Livello3Controller extends Zend_Controller_Action
         }
     }
 
-    
     public function creautenteAction()
     {
     }
@@ -238,7 +238,8 @@ class Livello3Controller extends Zend_Controller_Action
         }
     }
 
-    public function verificamodificautenteAction(){
+    public function verificamodificautenteAction()
+    {
         $request = $this->getRequest();
         if (!$request->isPost()) {
             return $this->_helper->redirector('modificautente');
@@ -258,51 +259,16 @@ class Livello3Controller extends Zend_Controller_Action
     /**
      * Procedura che predispone la form di aggiornamento delle informazioni di un
      * utente
-     *
+     * 
      */
     public function modificautenteAction()
     {
-        //istanzio la form di aggiornamento di un utente
-        /*$elementi = array(
-            'nome'      =>  $this->getParam('nome'),
-            'cognome'   =>  $this->getParam('cognome'),
-            'genere'    =>  $this->getParam('genere'),
-            'eta'       =>  $this->getParam('eta'),
-            'telefono'  =>  $this->getParam('telefono'),
-            'username'  =>  $this->getParam('username'),
-            'password'  =>  $this->getParam('password'),
-            'email'     =>  $this->getParam('email'),
-            'livello'   =>  $this->getParam('livello')
-        );
-
-
-
-        //popolo la form con le informazioni dell'utente
-        $this->_aggiornaUtenteForm->populate($elementi);
-
-
-        //imposto la action della form
-        $this->_aggiornaUtenteForm->setAction($this->view->url(
-            array(
-                'controller'    => 'livello3',
-                'action'        => 'updateutente',
-                'old'       =>  $elementi['username'],
-
-            ),null,true
-        ));
-
-        //assegno la form alla view
-        $this->view->form = $this->_aggiornaUtenteForm;
-
-        //ritorno la form
-        return $this->_aggiornaUtenteForm;*/
-
     }
 
     /**
      *  Creo la view con relativa form che permette di modificare NOME INFORMAZIONI E
      * IMMAGINE di un edificio
-     *
+     * 
      */
     public function modificadescrizioneAction()
     {
@@ -363,14 +329,9 @@ class Livello3Controller extends Zend_Controller_Action
         return $this->_edificioForm;
     }
 
-
-    /************************************************/
-    /*********  AGGIORNAMENTI NEL DB    *************/
-    /************************************************/
-
     /**
      * aggiorno una faq nel db
-     *
+     * 
      */
     public function updatefaqAction()
     {
@@ -389,7 +350,7 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Metodo che inserisce una faq nel db
-     *
+     * 
      */
     public function insertfaqAction()
     {
@@ -407,7 +368,7 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * metodo che elimina una faq dal db
-     *
+     * 
      */
     public function eliminafaqAction()
     {
@@ -423,7 +384,7 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Metodo che permette di inserire un utente nel db
-     *
+     * 
      */
     public function nuovoutenteAction()
     {
@@ -456,7 +417,7 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      *  Procedura di aggiornamento delle informazioni di un utente
-     *
+     * 
      */
     public function updateutente()
     {
@@ -487,7 +448,7 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      *  Procedura che permette di eliminare un utente
-     *
+     * 
      */
     public function eliminautenteAction()
     {
@@ -503,7 +464,7 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Metodo per assegnare un edifcio non precedentemente assegnato ad un utente
-     *
+     * 
      */
     public function assegnaedificioautenteAction()
     {
@@ -523,7 +484,7 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Procedura di riassegnazione di un utente alla gestione di un edificio
-     *
+     * 
      */
     public function eliminaeassegnaAction()
     {
@@ -545,7 +506,7 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Modifica delle informazioni dell'edificio nel db
-     *
+     * 
      */
     public function submitmodificadescrizioneAction()
     {
@@ -587,7 +548,8 @@ class Livello3Controller extends Zend_Controller_Action
     /**
      * Inserisco un nuovo edificio nel database
      */
-    public function nuovoedificioAction(){
+    public function nuovoedificioAction()
+    {
 
         //metodo che non deve renderizzare niente come view
         $this->_helper->getHelper('layout')->disableLayout();
@@ -618,11 +580,10 @@ class Livello3Controller extends Zend_Controller_Action
 
     }
 
-
     /**
      * controlla se vengono passati dei parametri e restituisce il parametro
      * passato per riferimento
-     *
+     * 
      * @param $param
      * @return int|mixed
      */
@@ -634,7 +595,70 @@ class Livello3Controller extends Zend_Controller_Action
         return $parametro;
     }
 
+
+
+    public function modificadatipersonaliAction()
+    {
+    }
+
+
+    public function getModificaDatiform()
+    {
+        $urlHelper = $this->_helper->getHelper('url');
+
+        $usermodel=new Application_Model_Utenti();
+        $dati=$usermodel->getDatiUtenteByUserSet($this->user);
+        $this->modificadatiform= new Application_Form_Registratiform($dati);
+        $this->modificadatiform->populate($dati);
+
+        $this->modificadatiform->setAction($urlHelper->url(array(
+            'controller' => 'livello3',
+            'action' => 'verificamodificaDati'),
+            'default'
+        ));
+        $this->view->form = $this->modificadatiform;
+
+
+        return $this->modificadatiform;
+    }
+
+    public function verificamodificaDatiAction()
+    {
+        $request = $this->getRequest();
+        if (!$request->isPost()) {
+            return $this->_helper->redirector('modificadatipersonali');
+        }
+        $form = $this->modificadatiform;
+        if (!$form->isValid($request->getPost())) {
+            $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
+            return $this->render('modificadatipersonali');
+        }
+        else
+        {
+            $datiform=$this->modificadatiform->getValues(); //datiform è un array
+
+            $utentimodel=new Application_Model_Utenti();
+            $username = $this->user;
+
+            if($utentimodel->existUsername($datiform['username']) && $datiform['username'] != $this->getParam('username')) //controllo se l'username inserito esiste già nel db
+            {
+                $form->setDescription('Attenzione: l\'username che hai scelto non è disponibile.');
+                return $this->render('modificadatiutente');
+            }
+
+            else{
+                $utentimodel->updateUtentiSet($datiform, $username);
+                //aggiorna l'username alla sessione
+                $this->_authService->getAuth()->getIdentity()->current()->username = $datiform['username'];
+                $this->getHelper('Redirector')->gotoSimple('index','livello3', $module = null);
+            }
+        }
+    }
+
+
 }
+
+
 
 
 

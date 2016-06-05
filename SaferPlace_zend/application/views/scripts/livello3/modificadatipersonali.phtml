@@ -2,25 +2,25 @@
 <head>
 
 <body>
+<br /><br />
 <div id="view-content">
-
 	<div class="container">
-		<div class="row center-align">
-			<h1 class="green-text center-align">Modifica i tuoi dati</h1>
-			<div class="card grey lighten-5">
-				<div class="card-content">
-					<div class="container">
-						<?php echo $this->modificaform; ?>
-					</div>
+		<h3 class="green-text center">Modifica i tuoi dati</h3>
+		<div class="card grey lighten-5">
+			<div class="card-content">
+				<div class="container">
+					<?php echo $this->form; ?>
 				</div>
+
 			</div>
 		</div>
 	</div>
 </div>
+<br /><br />
 
 <div class="fixed-action-btn click-to-toggle vertical" style="bottom: 45px; right: 24px;">
 	<a class="btn-floating btn-large red tooltipped" data-delay="50" data-position="left" data-tooltip="Torna alla Home" href="<?php echo $this->url(
-		array('controller' => 'livello1', 'action' => 'index')) ?>">
+		array('controller' => 'livello3', 'action' => 'index')) ?>">
 		<i class="large material-icons">home</i>
 	</a>
 </div>
