@@ -19,6 +19,10 @@ class Livello3Controller extends Zend_Controller_Action
 
     protected $_authService = null;
 
+    protected $faqmodificaform;
+
+    protected $faqcreaform;
+
     protected $modificadatiform;
 
     public function init()
@@ -48,6 +52,12 @@ class Livello3Controller extends Zend_Controller_Action
         $this->_aggiornaUtenteForm = $this->getAggiornaUtenteform();
 
         $this->view->modificadatiform=$this->getModificaDatiform();
+
+        $this->faqmodificaform=$this->getModificaFaqForm();
+
+        $this->faqcreaform=$this->getCreaFaqForm();
+
+
 
     }
 
@@ -109,33 +119,98 @@ class Livello3Controller extends Zend_Controller_Action
 
     }
 
-    /**
-     * Predispone la form per modificare una faq
-     * 
-     */
-    public function modificafaqAction()
+    public function getModificaFaqForm()
     {
+        $urlHelper = $this->_helper->getHelper('url');
 
         $domanda=$this->getParam("domanda");
         $risposta=$this->getParam("risposta");
         $id=$this->getParam("id");
         $this->view->id = $id;
 
+        $this->faqmodificaform=new Application_Form_ModificaFaq($domanda,$risposta,$id);
+        $this->faqmodificaform->populate($domanda,$risposta);
 
-        //istanzio la form per modificare la faq
-        $this->_faqForm = new Application_Form_ModificaFaq($domanda,$risposta,$id);
-
-        //imposto la action della form
-        $this->_faqForm->setAction($this->view->url(
-            array(
-                'controller'    => 'livello3',
-                'action'        => 'updatefaq',
-            ),null,true
+        $this->faqmodificaform->setAction($urlHelper->url(array(
+            'controller' => 'livello3',
+            'action' => 'verificamodificafaq'),
+            'default'
         ));
 
-        //assegno la form alla view
-        $this->view->faqForm=$this->_faqForm;
+        $this->view->faqForm=$this->faqmodificaform;
 
+        return $this->faqmodificaform;
+    }
+
+    public function verificamodificafaqAction(){
+        $request = $this->getRequest();
+        //istanzio la form di registrazione di un nuovo utente
+
+        if (!$request->isPost()) {
+            return $this->_helper->redirector('modificafaq');
+        }
+
+        $form = $this->faqmodificaform;
+
+        if (!$form->isValid($request->getPost())) {
+            $form->setDescription('Attenzione: Compila tutti i campi.');
+            return $this->render('modificafaq');
+        }
+        else {
+            $this->updatefaq();
+        }
+    }
+
+    /**
+     * Predispone la form per modificare una faq
+     * 
+     */
+    public function modificafaqAction()
+    {
+    }
+
+
+    public function getCreaFaqForm()
+    {
+        $urlHelper = $this->_helper->getHelper('url');
+
+        //istanzio la form per modificare la faq
+        $this->faqcreaform = new Application_Form_ModificaFaq();
+
+        $this->_creautenteform->setAction($urlHelper->url(array(
+            'controller' => 'livello3',
+            'action' => 'verificacreaFAQ'),
+            'default'
+        ));
+
+        return $this->faqcreaform;
+    }
+
+    public function verificacreaFAQ(){
+        $request = $this->getRequest();
+        //istanzio la form di registrazione di un nuovo utente
+
+        if (!$request->isPost()) {
+            return $this->_helper->redirector('creafaq');
+        }
+
+        $form = $this->faqcreaform;
+        if (!$form->isValid($request->getPost())) {
+            $form->setDescription('Attenzione: Compila tutti i campi.');
+            return $this->render('creafaq');
+        }
+        else {
+            //imposto la action della form
+            $this->faqcreaform->setAction($this->view->url(
+                array(
+                    'controller' => 'livello3',
+                    'action' => 'insertfaq',
+                ), null, true
+            ));
+
+            $this->getHelper('Redirector')->gotoSimple('gestionefaq','livello3', $module = null);
+
+        }
     }
 
     /**
@@ -144,19 +219,9 @@ class Livello3Controller extends Zend_Controller_Action
      */
     public function creafaqAction()
     {
-        //istanzio la form per modificare la faq
-        $faqForm = new Application_Form_ModificaFaq();
-
-        //imposto la action della form
-        $faqForm->setAction($this->view->url(
-            array(
-                'controller'    => 'livello3',
-                'action'        => 'insertfaq',
-            ),null,true
-        ));
 
         //assegno la form alla view
-        $this->view->faqForm=$faqForm;
+        $this->view->faqForm=$this->faqcreaform;
     }
 
     public function getCreaUtenteForm()
@@ -333,9 +398,8 @@ class Livello3Controller extends Zend_Controller_Action
      * aggiorno una faq nel db
      * 
      */
-    public function updatefaqAction()
+    public function updatefaq()
     {
-
         $dom=$this->getParam('domanda');
         $risp=$this->getParam('risposta');
         $idFaq=$this->getParam("id");
