@@ -17,30 +17,25 @@ class Livello2Controller extends Zend_Controller_Action
         $this->modelUtente= new Application_Model_UtenteStaff($this->user);
         $this->modificaform = $this->getModificaForm();
         $this->view->modificaform= $this->modificaform;
+        $this->evacuazioneform = $this->getEvacuazioneForm(0,0,0);
+        $this->view->evacuazioneform= $this->evacuazioneform;
+
     }
 
     public function indexAction()
     {
-        // action body
+        $this->getHelper('Redirector')->gotoRoute(array('controller'=>'livello2', 'action'=>'dashboard'));
     }
 
     public function notifyAction()
     {
-        $pianires= new Application_Resource_Piani();
-        $this->getEvacuazioneForm(null,null,null);
-        $multipiani=$pianires->getPianiByEdificio($_GET['edificio']);
-        foreach ($multipiani as $item){
+        $array = array('aa' => 1, 'bb' => 1);
 
-            $opzioni[$item->numeroPiano] = $item->numeroPiano;
-        }
 
-        $this->evacuazioneform->getElement('piano')->addMultiOptions($opzioni);
-       // $notifiche = new Application_Resource_Notifica();
-       // print_r($modelUtente->getEdificiGestiti());
-        print_r($this->evacuazioneform->getElement('piano')->getMultiOptions());
+        echo array_key_exists('aa', $array );
         die;
         //estraggo i risultati dell'esecuzione della query e li stampo
-        $this->view->assign("notifiche", $utente->getNotificheEmergenze());
+
 
 
         //$this->view->assign('notifiche',$notifiche->fetchAll());
@@ -54,7 +49,11 @@ class Livello2Controller extends Zend_Controller_Action
 
         $this->view->assign('persedificio', $persEdificio);
 
-        if (($edificio = $this->controllaParam('edificio')) && ($piano = $this->controllaParam('piano'))) {
+        // controlla se i parametri sono stati passati, in caso affermativo controlla che siano corretti
+        if (($edificio = $this->controllaParam('edificio')) && ($piano = $this->controllaParam('piano')) &&
+            (array_key_exists($edificio, $edificigestiti )) && (in_array($piano, $edificigestiti[$edificio] )))
+        {
+
 
             $persPiano = $this->modelUtente->getPersPiano($edificio, $piano);
             $persPerStanza = $this->modelUtente->getNumPersStanze($edificio, $piano );
@@ -136,22 +135,34 @@ class Livello2Controller extends Zend_Controller_Action
         
     }
 
+
+
     public function sceglipdfAction()
     {
+        $request = $this->getRequest();
+        if (!$request->isPost()) {
+            $redirectorhelper = Zend_Controller_Action_HelperBroker::getStaticHelper('Redirector');
+            return $redirectorhelper->gotoRoute('livello2', 'evacuazione');
+        }
 
-        $edificio = $this->getRequest()->getPost('edificio');
-        $piano = $this->getRequest()->getPost('piano');
-        
-        if ($zona  = $this->getRequest()->getPost('zona'))
-            $this->view->assign('zona', $zona);
-        if ($tipo  = $this->getRequest()->getPost('tipo'))
-            $this->view->assign('tipo', $tipo);
+        if (!$this->evacuazioneform->isValid($request->getPost())) {
+            $this->evacuazioneform->setDescription('Attenzione: alcuni dati inseriti sono errati.');
+            return $this->render('evacuazione');
+        }
+        else {
+            $edificio = $this->getRequest()->getPost('edificio');
+            $piano = $this->getRequest()->getPost('piano');
 
-        $this->view->assign('edificio', $edificio);
-        $this->view->assign('piano', $piano);
-        $this->view->assign('pianifuga', $this->modelUtente->getPianiFuga($edificio, $piano));
-        $this->view->assign('zone', $this->modelUtente->getZone($edificio, $piano));
-        
+            if ($zona = $this->getRequest()->getPost('zona'))
+                $this->view->assign('zona', $zona);
+            if ($tipo = $this->getRequest()->getPost('tipo'))
+                $this->view->assign('tipo', $tipo);
+
+            $this->view->assign('edificio', $edificio);
+            $this->view->assign('piano', $piano);
+            $this->view->assign('pianifuga', $this->modelUtente->getPianiFuga($edificio, $piano));
+            $this->view->assign('zone', $this->modelUtente->getZone($edificio, $piano));
+        }
     }
 
     public function avviaevacuazioneAction()
@@ -167,7 +178,7 @@ class Livello2Controller extends Zend_Controller_Action
         $utenteModel->avviaEvac($edificio,$tipo,$idSegnalazione, $piano, $zona, $idPianoFuga);
 
 
-        $this->getHelper('Redirector')->gotoRoute(array('controller'=>'livello2', 'action'=>'dashboard'));
+        $this->getHelper('Redirector')->gotoRoute(array('controller'=>'livello2', 'action'=>'dashboard'), null, true);
             
             
     }
@@ -209,7 +220,7 @@ class Livello2Controller extends Zend_Controller_Action
 
         $this->_helper->getHelper('layout')->disableLayout();
         $this->_helper->viewRenderer->setNoRender();
-        
+
         $opzioni = $this->modelUtente->zonePianoToArray($_POST["edificio"], $_POST['piano']);
         $response = $this->_helper->json($opzioni);
 

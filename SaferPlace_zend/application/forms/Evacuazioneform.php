@@ -20,14 +20,14 @@ class Application_Form_Evacuazioneform extends Zend_Form
         $this->setMethod('post');
         $this->setName('Evacuazione');
 
-        $tipo['default'] = 'Seleziona tipo emergenza';
+        $tipo['0'] = 'Seleziona tipo emergenza';
         $tipo['Incendio'] = 'Incendio';
         $tipo['Crollo'] = 'Crollo';
         $tipo['Fuga di gas'] = 'Fuga di gas';
         $tipo['Allagamento'] = 'Allagamento';
         $edifici['default'] = 'Seleziona edificio'; // array che conterrà le opzioni della select
-        $piani[0] = 'Seleziona piano'; // array che contiene i piani, per ora lo definisco manualmente in attesa di ajax
-        $zone[0] = 'Seleziona la zona dell\'emergenza';
+        $piani['0'] = 'Seleziona piano'; // array che contiene i piani, per ora lo definisco manualmente in attesa di ajax
+        $zone['0'] = 'Seleziona la zona dell\'emergenza';
 
         $edgest = $this->_utenteModel->getEdificiGestiti(); // edifici gestiti dal membro staff
         foreach ($edgest as $nome => $piano)
@@ -35,9 +35,10 @@ class Application_Form_Evacuazioneform extends Zend_Form
 
         $this->addElement('select', 'tipo', array(
             'required' => true,
-            'value' => 'default',
+            'value' => '0',
+
             'multioptions' => $tipo,
-            'disable' => array('default'),
+            'disable' => array('0'),
         ));
 
         $this->addElement('select', 'edificio', array(
@@ -51,6 +52,7 @@ class Application_Form_Evacuazioneform extends Zend_Form
             'required' => true,
             'value' => 0,
             'multiOptions' => $piani,
+            'registerInArrayValidator' => false,
             'disable' => array(0),
         ));
 
@@ -63,8 +65,7 @@ class Application_Form_Evacuazioneform extends Zend_Form
 
         $this->addElement("submit", "Conferma", array(
             "class" => "green btn center",
-            'required' => true,
-
+            'required' => true
         ));
 
 

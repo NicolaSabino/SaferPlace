@@ -47,7 +47,7 @@ class App_Action_Helper_ModificaProfilo extends Zend_Controller_Action_Helper_Ab
         
         if (!$form->isValid($request->getPost())) {
             $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
-            return $this->render('modificadatiutente');
+            return $this->getActionController()->render('modificadatiutente');
         }
         else
         {

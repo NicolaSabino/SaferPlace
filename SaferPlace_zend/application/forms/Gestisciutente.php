@@ -80,8 +80,8 @@ class Application_Form_Gestisciutente extends Zend_Form
         $this->addElement('text', 'eta', array(
             'filters'           => array('StringTrim'),
             'validators'        => array(
-                array('StringLength', true, array(0, 3))
-            ),
+                'Digits')
+            ,
             'required'          => true,
             'label'             => 'Età',
             'class'             =>'black-text',

@@ -25,7 +25,8 @@
             $('dd#piano-element').find("ul").find("li").remove();
             $('dd#piano-element').find("select").find("option").remove();
             $.each(data, function(key, val){
-                $('dd#piano-element').find("ul").append('<li><span>Piano'+ val +'</span></li>');
+
+                $('dd#piano-element').find("ul."+"dropdown-content select-dropdown ").append('<li><span>Piano'+ val +'</span></li>');
                 $('dd#piano-element').find("select").append('<option value="'+ val +'">Piano '+ val +'</option>');
 
             });
@@ -68,9 +69,12 @@
             });
             $('select').material_select();
         }
+
+
     </script>
 
-    <?
+<h4 class="green-text center"><br>Procedura di evacuazione<br><br></h4>
+<?
 
     echo $this->evacuazioneform;
 ?>

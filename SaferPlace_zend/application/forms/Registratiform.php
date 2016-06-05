@@ -72,7 +72,7 @@ class Application_Form_Registratiform extends App_Form_Abstract
 
         $this->addElement('text', 'eta', array(
             'filters'    => array('StringTrim'),
-            'validators' => array(
+            'validators' => array(array('Digits'),
                 array('StringLength', true, array(0, 3))
             ),
             'required'         => true,
@@ -86,7 +86,7 @@ class Application_Form_Registratiform extends App_Form_Abstract
 
         $this->addElement('text', 'telefono', array(
             'filters'    => array('StringTrim'),
-            'validators' => array(
+            'validators' => array(array('Digits'),
                 array('StringLength', true, array(10, 10))
             ),
             'required'         => true,
