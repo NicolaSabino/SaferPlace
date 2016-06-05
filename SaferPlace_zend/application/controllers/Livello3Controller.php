@@ -167,12 +167,14 @@ class Livello3Controller extends Zend_Controller_Action
             'action' => 'verificacreautente'),
             'default'
         ));
+
         return $this->_creautenteform;
     }
     
  
     public function verificacreautenteAction()
     {
+
         $request = $this->getRequest();
         //istanzio la form di registrazione di un nuovo utente
 
@@ -219,19 +221,21 @@ class Livello3Controller extends Zend_Controller_Action
         $usermodel=new Application_Model_Utenti();
         $username = $this->controllaParam('username');
 
-        $dati=$usermodel->getDatiUtenteByUserSet($username);
-        $this->_aggiornaUtenteForm= new Application_Form_Gestisciutente($dati);
-        $this->_aggiornaUtenteForm->populate($dati);
+        if ($username!=null) {
+            $dati = $usermodel->getDatiUtenteByUserSet($username);
+            $this->_aggiornaUtenteForm = new Application_Form_Gestisciutente($dati);
+            $this->_aggiornaUtenteForm->populate($dati);
 
-        $this->_aggiornaUtenteForm->setAction($urlHelper->url(array(
-            'controller' => 'livello3',
-            'action' => 'verificamodificautente'),
-            'default'
-        ));
+            $this->_aggiornaUtenteForm->setAction($urlHelper->url(array(
+                'controller' => 'livello3',
+                'action' => 'verificamodificautente'),
+                'default'
+            ));
 
-        $this->view->form = $this->_aggiornaUtenteForm;
+            $this->view->form = $this->_aggiornaUtenteForm;
 
-        return $this->_aggiornaUtenteForm;
+            return $this->_aggiornaUtenteForm;
+        }
     }
 
     public function verificamodificautenteAction(){
