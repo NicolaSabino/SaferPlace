@@ -97,21 +97,13 @@
 		<img alt="Esempio mappatura" src="<?php echo $this->baseUrl('image/piante/Uffici 3tech piano 1.jpg');?>" usemap="#mappaprova">
 -->
 	</div>
-	
 
-	<div class="fixed-action-btn  click-to-toggle vertical" style="bottom: 45px; right: 24px;">
-		<a class="btn-floating btn-large red">
-			<i class="large material-icons">menu</i>
+
+	<div class="fixed-action-btn click-to-toggle vertical" style="bottom: 45px; right: 24px;">
+		<a class="btn-floating btn-large red tooltipped" data-delay="50" data-position="left" data-tooltip="Indietro" href="<?php echo $this->url(
+			array('controller' => 'livello1', 'action' => 'checkinint', 'edificio' => $edificio),null,true); ?>">
+			<i class="large material-icons">arrow_back</i>
 		</a>
-		<ul>
-			<li><a class="btn-floating purple lighten-1 tooltipped" data-position="left" data-delay="50" data-tooltip="Logout" href="<?php echo $this->url(
-					array('controller' => 'index', 'action' => 'logout'),null,true); ?>"><i class="material-icons">exit_to_app</i></a></li>
-
-			<li><a class="btn-floating yellow tooltipped" data-delay="50" data-position="left" data-tooltip="Indietro" href="<?php echo $this->url(
-					array('controller' => 'livello1', 'action' => 'checkin'),null,true); ?>">
-					<i class="large material-icons">arrow_back </i>
-				</a></li>
-		</ul>
 	</div>
 
 

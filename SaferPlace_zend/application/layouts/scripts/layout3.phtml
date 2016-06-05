@@ -30,6 +30,14 @@
 </head>
 
 <body>
+
+<ul id="menu" class="dropdown-content">
+    <li><a href="<?php echo $this->url(
+            array('controller' => 'livello3', 'action' => 'modificadatipersonali'),null,true); ?>">Modifica Profilo</a></li>
+    <li><a href="<?php echo $this->url(
+            array('controller' => 'index', 'action' => 'index'),null,true); ?>">Logout</a></li>
+</ul>
+
 <!-- NAV BAR -->
 <div class="navbar-fixed">
 
@@ -45,14 +53,14 @@
 
             <ul class="right hide-on-med-and-down">
                 <li>
-                    <div class="chip green lighten-3">
+                    <a class="dropdown-button" data-beloworigin="true" href="#" data-activates="menu"><div class="chip green lighten-3">
                         <img src="<?php echo $this->baseUrl('image/icone/account.png');?>" alt="Contact Person">
                         <?php
                         echo $this->authInfo('username');
                         ?>
-                    </div>
-
+                    </div><i class="material-icons right">arrow_drop_down</i></a>
                 </li>
+
             </ul>
 
         </div>

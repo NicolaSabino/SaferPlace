@@ -313,11 +313,20 @@ class Livello1Controller extends Zend_Controller_Action
             $datiform=$this->modificaform->getValues(); //datiform è un array
 
             $utentimodel=new Application_Model_Utenti();
-
-            $utentimodel->updateUtentiSet($datiform);
-            // TODO redirect condizionale a seconda del tipo di utente
-            $this->getHelper('Redirector')->gotoSimple('index','livello1', $module = null);
-
+            $username = $this->user;
+            
+            if($utentimodel->existUsername($datiform['username']) && $datiform['username'] != $this->getParam('username')) //controllo se l'username inserito esiste già nel db
+            {
+                $form->setDescription('Attenzione: l\'username che hai scelto non è disponibile.');
+                return $this->render('modificadatiutente');
+            }
+            
+            else{
+                $utentimodel->updateUtentiSet($datiform, $username);
+                //aggiorna l'username alla sessione
+                $this->_authService->getAuth()->getIdentity()->current()->username = $datiform['username'];
+                $this->getHelper('Redirector')->gotoSimple('index','livello1', $module = null);
+            }
         }
     }
 

@@ -121,9 +121,6 @@ class Application_Form_Registratiform extends App_Form_Abstract
             'label'      => 'Password',
             'class' =>'black-text',
             'value'=>$this->_password,
-
-
-
         ));
 
         $this->addElement('text', 'email', array(
