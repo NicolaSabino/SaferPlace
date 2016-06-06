@@ -143,13 +143,15 @@ class Livello1Controller extends Zend_Controller_Action
         $edificio=$this->controllaParam('edificio');
 
         if(is_null($edificio))
-            $this->getHelper('Redirector')->gotoSimple('checkin','livello1',$module=null);
+            $this->getHelper('Redirector')->gotoSimple('error','error',$module=null);
 
 
 
         $edificimodel = new Application_Model_Edifici();
-        $edifici = $edificimodel->getEdificiSet();
-        $this->view->insiemeEdifici = $edifici;
+        $controllaedificio = $edificimodel->getEdificio($edificio);
+
+        if($controllaedificio->current()==0)
+            $this->getHelper('Redirector')->gotoSimple('error','error',$module=null);
 
 
         $pianimodel=new Application_Model_Piani();
@@ -168,15 +170,15 @@ class Livello1Controller extends Zend_Controller_Action
 
         $pianimodel=new Application_Model_Piani();
         $piani = $pianimodel->getPianiByEdificio($edificio);
-        $controllo=0;
+        $controllo=array();
         foreach ($piani as $p){
-        $controllo=$p['numeroPiano'];
+        $controllo[]=$p->numeroPiano;
            }
         if(is_null($edificio))
-            $this->getHelper('Redirector')->gotoSimple('checkin','livello1',$module=null);
+            $this->getHelper('Redirector')->gotoSimple('error','error',$module=null);
 
-        if($controllo<$numPiano)
-            $this->getHelper('Redirector')->gotoSimple('checkinint','livello1',$module=null,array('edificio'=>$edificio));
+        if(!in_array($numPiano, $controllo))
+            $this->getHelper('Redirector')->gotoSimple('error','error',$module=null);
 
         if ($numPiano==0)
             $this->getHelper('Redirector')->gotoSimple('checkinint','livello1',$module=null,array('edificio'=>$edificio));
