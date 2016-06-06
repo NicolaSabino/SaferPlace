@@ -19,7 +19,7 @@ class Application_Form_Evacuazioneform extends Zend_Form
 
         $this->setMethod('post');
         $this->setName('Evacuazione');
-        $this->_utenteModel = new Application_Model_UtenteStaff();
+        
 
         $tipo['0'] = 'Seleziona tipo emergenza';
         $tipo['Incendio'] = 'Incendio';
