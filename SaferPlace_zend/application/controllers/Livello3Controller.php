@@ -941,6 +941,45 @@ class Livello3Controller extends Zend_Controller_Action
 
 
     }
+
+    public function eliminazoneAction()
+    {
+        $adminModel = new Application_Model_Admin();
+        $arrayedifici = $adminModel->getResource('Edifici')->getEdifici();
+
+        if (($edificio = $this->controllaParam('edificio')) && ($piano = $this->controllaParam('piano')) &&
+            (array_key_exists($edificio, $arrayedifici )) &&
+            (in_array($piano, $this->getResource('Piani')->getPianiByEdificio($edificio) ))) {
+
+
+            $adminModel->eliminaZonePiano($edificio,$piano);
+        }
+
+
+
+        $this->getHelper('Redirector')->gotoSimple('index', 'livello3', $module = null);
+    }
+
+    public function eliminadatizonaAction()
+    {
+
+        $adminModel = new Application_Model_Admin();
+        $zone= $adminModel->getResource('Zona')->getZone();
+
+        $arrayzone = array();
+        foreach ($zone as $item){
+            array_push($arrayzone, $item->id);
+        }
+
+
+        if (($zona = $this->controllaParam('zona')) && (in_array($zona, $arrayzone )) ) {
+
+            $adminModel->eliminaZona($zona);
+        }
+
+        $this->getHelper('Redirector')->gotoSimple('index', 'livello3', $module = null);
+    }
+
 }
 
 

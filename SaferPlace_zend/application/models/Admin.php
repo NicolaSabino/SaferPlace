@@ -4,14 +4,14 @@ class Application_Model_Admin extends App_Model_Abstract {
 
     //elimina tutte le zone di un piano e i dati a esse relative, prendendo in input nome edificio  e numero piano
     public function eliminaZonePiano($edificio,$piano){
-        
 
-      $zone = $this->getResource('Zona')->getZoneByEdPiano($edificio,$piano);
+
+        $zone = $this->getResource('Zona')->getZoneByEdPiano($edificio,$piano);
 
         foreach ($zone as $item){
             $this->eliminaZona($item)->id;
         }
-        
+
     }
 
 
