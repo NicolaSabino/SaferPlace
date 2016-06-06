@@ -14,18 +14,12 @@
 
 		}
 	</style>
-	
-
 		<?php
 		$edificio=$this->arrayInformazioni['edificio'];
 		$numPiano=$this->arrayInformazioni['numPiano'];
 		$stanza=$this->arrayInformazioni['stanza'];
 		$evacuare=$this->evacuare;
 		?>
-
-
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 </head>
 <body>
@@ -38,7 +32,7 @@
 		var myVar;
 		myVar = setInterval(alertFunc, 800);
 		function alertFunc() {
-			$( "body" ).effect("highlight",600);
+			$( "body" ).effect("highlight",{color: 'yellow'},600);
 		}
 	});
 </script>
