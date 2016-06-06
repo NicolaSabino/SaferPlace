@@ -4,25 +4,15 @@ class Livello3Controller extends Zend_Controller_Action
 {
 
     protected $_edificiModel = null;
-
     protected $_creautenteform = null;
-
     protected $_utenzaModel = null;
-
     protected $_faqModel = null;
-
     protected $_edificioForm = null;
-
     protected $_aggiornaUtenteForm = null;
-
     protected $user = null;
-
     protected $_authService = null;
-
     protected $faqmodificaform;
-
     protected $faqcreaform;
-
     protected $modificadatiform;
 
     public function init()
@@ -33,6 +23,8 @@ class Livello3Controller extends Zend_Controller_Action
 
         $this->_modificaEdificioForm = new Application_Form_Gestioneedificio();
 
+
+        // -- model  --
         $this->_edificiModel = new Application_Model_Edifici();
         $this->view->arrayEdifici = $this->_edificiModel->getEdificiSet();
 
@@ -43,11 +35,19 @@ class Livello3Controller extends Zend_Controller_Action
         $this->view->assign("faqSet",$this->_faqModel->getFaqSet());
 
 
-        //istanzio la form di modifica di un edificio
+        // -- form --
+
+        //istanzio la form di gestione di un edificio
         $this->_edificioForm = new Application_Form_Gestioneedificio();
+
+        //istanzio la form di aggiornamento di un utente
+        $this->_aggiornaUtenteForm = new Application_Form_Gestisciutente();
 
         //assegno la form della creazione di un utente alla view
         $this->view->registratiform = $this->getCreaUtenteForm();
+        
+        //assegno la form di gestione di un edificio alla view
+        $this->view->formGestioneEdificio = $this->_edificioForm;
 
         $this->_aggiornaUtenteForm = $this->getAggiornaUtenteform();
 
@@ -366,7 +366,7 @@ class Livello3Controller extends Zend_Controller_Action
     }
 
     /**
-     * popolo la form di inserimento di un nuovo edificio
+     * Creo la form di inserimento di un nuovo edificio
      */
     public function inserisciedificioAction()
     {
@@ -379,7 +379,7 @@ class Livello3Controller extends Zend_Controller_Action
         ));
 
         //passo l'occorrenza della form alla view
-        $this->view->assign('Form',$this->_edificioForm);
+        $this->view->assign('formNuovoEdifico',$this->_edificioForm);
 
 
         return $this->_edificioForm;
@@ -496,6 +496,8 @@ class Livello3Controller extends Zend_Controller_Action
                 $edifici = new Application_Model_Edifici();
                 $edifici->eliminaAssegnazioneByUtente($datiform['username']);
             }
+
+
             //reindirizzo a gestione utenti
             $this->getHelper('Redirector')->gotoSimple('gestioneutenti', 'livello3', $module = null);
         }
@@ -606,29 +608,22 @@ class Livello3Controller extends Zend_Controller_Action
     public function nuovoedificioAction()
     {
 
-        //metodo che non deve renderizzare niente come view
-        $this->_helper->getHelper('layout')->disableLayout();
-        $this->_helper->viewRenderer->setNoRender();
-
         if (!$this->getRequest()->isPost()) {
-            $this->_helper->redirector('error');
-        }
-        $post = $this->getRequest()->getPost();
-
-
-        if (!$this->_edificioForm->isValid($post)) {
-            $this->view->assign('msg', 'Inserimento dati errato! Controllare i campi');
-            $this->view->assign('form', $this->_edificioForm);
-            $this->render('error');
-            return;
+            $this->_helper->redirector('index');
         }
 
 
-        $values = $this->_edificioForm->getValues();
+        $form=$this->_edificioForm;
+        $model = new Application_Model_Edifici();
+
+        if (!$form->isValid($_POST)) {
+            return $this->render('inserisciedificio');
+        }
+
+        $values = $form->getValues();
 
 
-        $modelEdifici = new Application_Model_Edifici();
-        $modelEdifici->nuovoEdifico($values);
+        $model->nuovoEdifico($values);
 
         //reindirizzo a gestione utenti
         $this->getHelper('Redirector')->gotoSimple('gestioneedifici','livello3',$module=null);
@@ -668,7 +663,7 @@ class Livello3Controller extends Zend_Controller_Action
 
         $this->modificadatiform->setAction($urlHelper->url(array(
             'controller' => 'livello3',
-            'action' => 'verificamodificaDati'),
+            'action' => 'verificamodificadati'),
             'default'
         ));
         $this->view->form1 = $this->modificadatiform;
@@ -677,7 +672,7 @@ class Livello3Controller extends Zend_Controller_Action
         return $this->modificadatiform;
     }
 
-    public function verificamodificaDatiAction()
+    public function verificamodificadatiAction()
     {
         $request = $this->getRequest();
         if (!$request->isPost()) {
@@ -709,6 +704,9 @@ class Livello3Controller extends Zend_Controller_Action
             }
         }
     }
+    
+    
+    
 
 
 }

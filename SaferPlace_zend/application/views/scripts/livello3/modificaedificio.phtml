@@ -4,7 +4,7 @@
 	<div class="container">
 
 			<div class="row">
-				<!-- spalla sinistra contenete l'immagine dell'edificio e le informazioni -->
+
 				<div class="col s6 z-depth-2 push-s3 container">
 
 					<?php
@@ -24,8 +24,8 @@
 							?>
 						</p>
 						<div class="row">
-							<div class="col s12 center">
-								<a class="btn-floating btn-large green" href="
+							<div class="col s6 center ">
+								<a class="btn-floating btn-large green right tooltipped" href="
 									<?php
 										echo $this->url(
 											array(
@@ -36,8 +36,17 @@
 										),null,true);
 									?>
 
-								"><i class="material-icons">edit</i></a>
+								" data-tooltip="Modifica" data-position="left"><i class="material-icons">edit</i></a>
 							</div>
+                            <div class="col s6 center ">
+                                <a class="btn-floating btn-large red left tooltipped modal-trigger"
+
+                                   data-tooltip="Elimina edificio" data-position="right" href="#elimina">
+                                        <i class="material-icons">delete</i>
+
+                                </a>
+                            </div>
+
 						</div>
 
 					</div>
@@ -48,25 +57,27 @@
 
 
 
-			<div class="row">
-				<!-- select piano -->
-				<div class="col s4 push-s4">
-					<div class="input-field">
 
-						<select id="selectPiano">
-							<option  disabled selected>Seleziona Piano</option>
-							<?php
-							foreach($this->piani as $piano):
-								?>
-								<option value="<?php echo $piano->numeroPiano;?>"><a href="#piano<?php echo $piano->numeroPiano;?>">piano <?php echo $piano->numeroPiano;?></a></option>
-								<?php
-							endforeach;
-							?>
-						</select>
+            <div class="row">
+                <!-- select piano -->
+                <div class="col s4 push-s4">
+                    <div class="input-field">
 
-					</div>
-				</div>
-			</div>
+                        <select id="selectPiano">
+                            <option  disabled selected>Seleziona Piano</option>
+                            <?php
+                            foreach($this->piani as $piano):
+                                ?>
+                                <option value="<?php echo $piano->numeroPiano;?>"><a href="#piano<?php echo $piano->numeroPiano;?>">piano <?php echo $piano->numeroPiano;?></a></option>
+                                <?php
+                            endforeach;
+                            ?>
+                        </select>
+
+                    </div>
+                </div>
+            </div>
+
 
 			<div class="center">
 				<p>
@@ -138,4 +149,28 @@
 		</a>
 	</div>
 
+</div>
+
+
+
+
+<!-- Modal elimina faq -->
+<div id="elimina" class="modal">
+    <div class="modal-content">
+        <h4 class="green-text">Attenzione!</h4>
+        <p>Sei sicuro di voler eliminare questo edificio?</p>
+    </div>
+    <div class="modal-footer">
+        <a href="
+		<?php
+        echo $this->url(
+            array(
+                'controller'=> 'livello3',
+                'action' 	=> 'eliminaedificio',
+                'edificio'  => $this->edificio[0]->nome
+            ));
+        ?>
+		" class="modal-action modal-close waves-effect waves-green btn-flat green-text">Si</a>
+        <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat red-text">No</a>
+    </div>
 </div>

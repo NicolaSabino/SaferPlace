@@ -44,8 +44,8 @@ class Application_Form_Gestisciutente extends Zend_Form
             'filters'       => array('StringTrim'),
             'required'      => true,
             'label'         => 'Nome',
-            'class'         =>'black-text',
-            'value'         => $this->_nome
+            'class'         =>'black-text'
+
 
 
         ));

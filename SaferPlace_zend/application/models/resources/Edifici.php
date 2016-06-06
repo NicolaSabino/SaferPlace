@@ -87,6 +87,8 @@ class Application_Resource_Edifici extends  Zend_Db_Table_Abstract
                 'mappa'         => 'Default.jpg'
             );
         }
+        
+        $this->insert($data);
     }
 
 
