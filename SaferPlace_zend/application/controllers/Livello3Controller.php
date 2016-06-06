@@ -51,13 +51,11 @@ class Livello3Controller extends Zend_Controller_Action
 
         $this->_aggiornaUtenteForm = $this->getAggiornaUtenteform();
 
-        $this->view->modificadatiform=$this->getModificaDatiform();
+        $this->modificadatiform=$this->getModificaDatiform(); //modifica del profilo
 
         $this->faqmodificaform=$this->getModificaFaqForm();
 
         $this->faqcreaform=$this->getCreaFaqForm();
-
-
 
     }
 
@@ -177,16 +175,16 @@ class Livello3Controller extends Zend_Controller_Action
         //istanzio la form per modificare la faq
         $this->faqcreaform = new Application_Form_ModificaFaq();
 
-        $this->_creautenteform->setAction($urlHelper->url(array(
+        $this->faqcreaform->setAction($urlHelper->url(array(
             'controller' => 'livello3',
-            'action' => 'verificacreaFAQ'),
+            'action' => 'verificacreafaq'),
             'default'
         ));
 
         return $this->faqcreaform;
     }
 
-    public function verificacreaFAQ(){
+    public function verificacreafaqAction(){
         $request = $this->getRequest();
         //istanzio la form di registrazione di un nuovo utente
 
@@ -200,15 +198,8 @@ class Livello3Controller extends Zend_Controller_Action
             return $this->render('creafaq');
         }
         else {
-            //imposto la action della form
-            $this->faqcreaform->setAction($this->view->url(
-                array(
-                    'controller' => 'livello3',
-                    'action' => 'insertfaq',
-                ), null, true
-            ));
 
-            $this->getHelper('Redirector')->gotoSimple('gestionefaq','livello3', $module = null);
+            $this->insertfaq();
 
         }
     }
@@ -400,9 +391,10 @@ class Livello3Controller extends Zend_Controller_Action
      */
     public function updatefaq()
     {
-        $dom=$this->getParam('domanda');
-        $risp=$this->getParam('risposta');
-        $idFaq=$this->getParam("id");
+        $datiform = $this->faqmodificaform->getValues();
+        $dom=$datiform['domanda'];
+        $risp=$datiform['risposta'];
+        $idFaq=$datiform['id'];
 
 
         $this->_faqModel = new Application_Model_Faq();
@@ -416,11 +408,12 @@ class Livello3Controller extends Zend_Controller_Action
      * Metodo che inserisce una faq nel db
      * 
      */
-    public function insertfaqAction()
+    public function insertfaq()
     {
+        $datiform = $this->faqcreaform->getValues();
 
-        $dom=$this->getParam('domanda');
-        $risp=$this->getParam('risposta');
+        $dom=$datiform['domanda'];
+        $risp=$datiform['risposta'];
 
         $this->_faqModel = new Application_Model_Faq();
         $this->_faqModel->newFaq($dom,$risp);
@@ -503,8 +496,6 @@ class Livello3Controller extends Zend_Controller_Action
                 $edifici = new Application_Model_Edifici();
                 $edifici->eliminaAssegnazioneByUtente($datiform['username']);
             }
-
-
             //reindirizzo a gestione utenti
             $this->getHelper('Redirector')->gotoSimple('gestioneutenti', 'livello3', $module = null);
         }
@@ -680,7 +671,7 @@ class Livello3Controller extends Zend_Controller_Action
             'action' => 'verificamodificaDati'),
             'default'
         ));
-        $this->view->form = $this->modificadatiform;
+        $this->view->form1 = $this->modificadatiform;
 
 
         return $this->modificadatiform;

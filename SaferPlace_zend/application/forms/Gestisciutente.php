@@ -139,7 +139,6 @@ class Application_Form_Gestisciutente extends Zend_Form
             'multiOptions'  => array('1'=>'Utente Semplice','2'=>'Staff'),
             'class'         =>'black-text',
             'value'         => $this->_livello
-
         ));
 
         $this->addElement('submit', 'ok', array(
