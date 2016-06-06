@@ -482,7 +482,7 @@ class Livello3Controller extends Zend_Controller_Action
 
         $utente = new Application_Model_Utenti();
 
-        if($utente->existUsername($datiform['username'] && $datiform['username'] != $this->getParam('username'))) //controllo se l'username inserito esiste già nel db
+        if($utente->existUsername($datiform['username']) && $datiform['username'] != $this->getParam('username')) //controllo se l'username inserito esiste già nel db
         {
             $this->_aggiornaUtenteForm->setDescription('Attenzione: l\'username che hai scelto non è disponibile.');
             return $this->render('modificautente');
