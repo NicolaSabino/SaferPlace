@@ -99,6 +99,7 @@ class Livello3Controller extends Zend_Controller_Action
      * staff
      *
      *
+     *
      */
     public function scegliedificioAction()
     {
@@ -118,6 +119,7 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Popolo la schermata che permette di gestire un edificio
+     *
      *
      *
      */
@@ -181,6 +183,7 @@ class Livello3Controller extends Zend_Controller_Action
      * Predispone la form per modificare una faq
      *
      *
+     *
      */
     public function modificafaqAction()
     {
@@ -225,6 +228,7 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Predispongo la form per inserire una nuova faq
+     *
      *
      *
      */
@@ -337,6 +341,7 @@ class Livello3Controller extends Zend_Controller_Action
      * utente
      *
      *
+     *
      */
     public function modificautenteAction()
     {
@@ -345,6 +350,7 @@ class Livello3Controller extends Zend_Controller_Action
     /**
      *  Creo la view con relativa form che permette di modificare NOME INFORMAZIONI E
      * IMMAGINE di un edificio
+     *
      *
      *
      */
@@ -390,6 +396,7 @@ class Livello3Controller extends Zend_Controller_Action
     /**
      * Creo la form di inserimento di un nuovo edificio
      *
+     *
      */
     public function inserisciedificioAction()
     {
@@ -412,6 +419,7 @@ class Livello3Controller extends Zend_Controller_Action
      * aggiorno una faq nel db
      *
      *
+     *
      */
     public function updatefaq()
     {
@@ -430,6 +438,7 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Metodo che inserisce una faq nel db
+     *
      *
      *
      */
@@ -452,6 +461,7 @@ class Livello3Controller extends Zend_Controller_Action
      * metodo che elimina una faq dal db
      *
      *
+     *
      */
     public function eliminafaqAction()
     {
@@ -467,6 +477,7 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Metodo che permette di inserire un utente nel db
+     *
      *
      *
      */
@@ -503,6 +514,7 @@ class Livello3Controller extends Zend_Controller_Action
      *  Procedura di aggiornamento delle informazioni di un utente
      *
      *
+     *
      */
     public function updateutente()
     {
@@ -535,6 +547,7 @@ class Livello3Controller extends Zend_Controller_Action
      *  Procedura che permette di eliminare un utente
      *
      *
+     *
      */
     public function eliminautenteAction()
     {
@@ -550,6 +563,7 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Metodo per assegnare un edifcio non precedentemente assegnato ad un utente
+     *
      *
      *
      */
@@ -573,6 +587,7 @@ class Livello3Controller extends Zend_Controller_Action
      * Procedura di riassegnazione di un utente alla gestione di un edificio
      *
      *
+     *
      */
     public function eliminaeassegnaAction()
     {
@@ -594,6 +609,7 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Modifica delle informazioni dell'edificio nel db
+     *
      *
      *
      */
@@ -637,6 +653,7 @@ class Livello3Controller extends Zend_Controller_Action
     /**
      * Inserisco un nuovo edificio nel database
      *
+     *
      */
     public function nuovoedificioAction()
     {
@@ -669,6 +686,7 @@ class Livello3Controller extends Zend_Controller_Action
      *
      * @param $param
      * @return int|mixed
+     *
      *
      */
     public function controllaParam($param)
@@ -776,7 +794,8 @@ class Livello3Controller extends Zend_Controller_Action
         $this->view->edificio = $this->getParam('edificio');
     }
 
-    public function verificaiseriscipianoAction(){
+    public function verificaiseriscipianoAction()
+    {
         
         $request = $this->getRequest();
         if (!$request->isPost()) {
@@ -818,14 +837,21 @@ class Livello3Controller extends Zend_Controller_Action
 
             
             //reindirizzo a gestione utenti
-            $this->getHelper('Redirector')->gotoSimple('gestioneedifici', 'livello3', $module = null);
+            $this->getHelper('Redirector')->gotoSimple('modificaedificio', 'livello3',  $module = null, array( 'edificio'=>$edificio));
             
             
         }
     }
-    
+
+    public function modificapianoAction()
+    {
+        // action body
+    }
+
 
 }
+
+
 
 
 
