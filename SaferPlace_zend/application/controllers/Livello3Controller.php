@@ -51,13 +51,11 @@ class Livello3Controller extends Zend_Controller_Action
 
         $this->_aggiornaUtenteForm = $this->getAggiornaUtenteform();
 
-        $this->view->modificadatiform=$this->getModificaDatiform();
+        $this->modificadatiform=$this->getModificaDatiform(); //modifica del profilo
 
         $this->faqmodificaform=$this->getModificaFaqForm();
 
         $this->faqcreaform=$this->getCreaFaqForm();
-
-
 
     }
 
@@ -182,8 +180,6 @@ class Livello3Controller extends Zend_Controller_Action
             'action' => 'verificacreafaq'),
             'default'
         ));
-
-        $this->view->faqForm=$this->faqcreaform;
 
         return $this->faqcreaform;
     }
@@ -500,8 +496,6 @@ class Livello3Controller extends Zend_Controller_Action
                 $edifici = new Application_Model_Edifici();
                 $edifici->eliminaAssegnazioneByUtente($datiform['username']);
             }
-
-
             //reindirizzo a gestione utenti
             $this->getHelper('Redirector')->gotoSimple('gestioneutenti', 'livello3', $module = null);
         }
@@ -677,7 +671,7 @@ class Livello3Controller extends Zend_Controller_Action
             'action' => 'verificamodificaDati'),
             'default'
         ));
-        $this->view->form = $this->modificadatiform;
+        $this->view->form1 = $this->modificadatiform;
 
 
         return $this->modificadatiform;
