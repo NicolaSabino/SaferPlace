@@ -107,24 +107,30 @@
 
 						<?php
 
-							foreach ($this->piani as $piano){
+							foreach ($this->piani as $piano):
 
 								$pianta = "image/piante/".$piano->pianta;
-
-								echo '<div class="col s12">';
-								echo "<div class='card' id='". $piano->numeroPiano ."'>";
-
-								echo 	"<div class=\"card-content green \">";
-      							echo		"<span class=\"card-title activator white-text \">
-											Piano ".$piano->numeroPiano."<a class='btn-floating btn-large white right tooltipped' data-position=\"left\" data-delay=\"50\" data-tooltip=\"Modifica\"><i class=\"material-icons green-text text-darken-1 \">edit</i></a></span>";
-								echo 	'</div>';
-
-								echo 	"<div class='card-image'>";
-								echo 		'<img src="'. $this->baseUrl($pianta) . '">';
-								echo 	'</div>';
-								echo "</div>";
-							}
 						?>
+
+								<div class="col s12">
+								<div class="card" id="<?php echo $piano->numeroPiano ?>">
+
+								<div class="card-content green ">
+      							<span class="card-title activator white-text">
+											Piano <?php echo $piano->numeroPiano ?>
+
+										<a class="btn-large btn-flat transparent right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Elimina Piano"><i class="material-icons white-text">delete_forever</i></a>
+										<a class="btn-large btn-flat transparent right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Aggiungi Piano di Fuga"><i class="material-icons white-text">add_circle</i></a>
+										<a class="btn-large btn-flat transparent right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Modifica"><i class="material-icons white-text">edit</i></a>
+
+									</span>
+								</div>
+								<div class='card-image'>
+								<img src="<?php echo $this->baseUrl($pianta) ?>">
+								</div>
+								</div>
+
+						<?php endforeach; ?>
 
 
 			</div>
