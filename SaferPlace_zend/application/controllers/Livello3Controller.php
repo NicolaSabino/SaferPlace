@@ -845,7 +845,15 @@ class Livello3Controller extends Zend_Controller_Action
 
     public function modificapianoAction()
     {
-        // action body
+        $edificio       = $this->getParam('edificio');
+        $numeroPiano    = $this->getParam('numeroPiano');
+        
+        $modelPiani     = new Application_Model_Piani();
+        
+        $id = $modelPiani->getId($edificio,$numeroPiano);
+        $data = $modelPiani->getPianoById($id);
+            
+        $this->_gestisciPianoForm->populate($data);
     }
 
 

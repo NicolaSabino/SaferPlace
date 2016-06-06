@@ -60,7 +60,12 @@ class Application_Resource_Piani extends  Zend_Db_Table_Abstract
         
         $this->insert($data);
         
-        
+    }
+
+    public function getPiano($id){
+
+        $select = $this->select()->where('id = ?', $id);
+        return $this->fetchAll($select);
     }
 }
 
