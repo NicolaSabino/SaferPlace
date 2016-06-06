@@ -47,15 +47,17 @@ class Livello3Controller extends Zend_Controller_Action
         $this->_edificioForm = new Application_Form_Gestioneedificio();
 
         //assegno la form della creazione di un utente alla view
-        $this->view->registratiform = $this->getCreaUtenteForm();
+        $this->view->creautenteform = $this->getCreaUtenteForm(); //crea utente
 
-        $this->_aggiornaUtenteForm = $this->getAggiornaUtenteform();
+        if($this->controllaParam('username')!=null) {
+            $this->view->modificautenteform = $this->getAggiornaUtenteform(); //modifica di un utente
+        }
 
-        $this->modificadatiform=$this->getModificaDatiform(); //modifica del profilo
+        $this->view->modificaprofiloform=$this->getModificaDatiform(); //modifica del profilo
 
-        $this->faqmodificaform=$this->getModificaFaqForm();
+        $this->view->modificafaqform=$this->getModificaFaqForm(); //modifica delle faq
 
-        $this->faqcreaform=$this->getCreaFaqForm();
+        $this->view->creafaqform=$this->getCreaFaqForm(); //crea una nuova faq
 
     }
 
@@ -135,7 +137,7 @@ class Livello3Controller extends Zend_Controller_Action
             'default'
         ));
 
-        $this->view->faqForm=$this->faqmodificaform;
+        $this->view->modificafaqform=$this->faqmodificaform;
 
         return $this->faqmodificaform;
     }
@@ -210,9 +212,6 @@ class Livello3Controller extends Zend_Controller_Action
      */
     public function creafaqAction()
     {
-
-        //assegno la form alla view
-        $this->view->faqForm=$this->faqcreaform;
     }
 
     public function getCreaUtenteForm()
@@ -287,9 +286,6 @@ class Livello3Controller extends Zend_Controller_Action
                 'action' => 'verificamodificautente'),
                 'default'
             ));
-
-            $this->view->form = $this->_aggiornaUtenteForm;
-
             return $this->_aggiornaUtenteForm;
         }
     }
@@ -308,7 +304,6 @@ class Livello3Controller extends Zend_Controller_Action
         else
         {
             $this->updateutente();
-
         }
     }
 
@@ -319,6 +314,7 @@ class Livello3Controller extends Zend_Controller_Action
      */
     public function modificautenteAction()
     {
+        $this->view->modificautenteform = $this->getAggiornaUtenteform(); //modifica di un utente
     }
 
     /**
@@ -671,8 +667,6 @@ class Livello3Controller extends Zend_Controller_Action
             'action' => 'verificamodificaDati'),
             'default'
         ));
-        $this->view->form1 = $this->modificadatiform;
-
 
         return $this->modificadatiform;
     }
