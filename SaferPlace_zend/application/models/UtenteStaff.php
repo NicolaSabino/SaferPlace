@@ -3,8 +3,7 @@
 class Application_Model_UtenteStaff extends App_Model_Abstract
 {
     protected $_nomeUtente;
-
-    // TODO dobbiamo definire come passargli il nome utente
+    
     public function __construct($user){
         $this->_nomeUtente=$user;
     }
@@ -173,11 +172,50 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
     }
     
     public function avviaEvac($edificio,$tipo,$idSegnalazione, $piano, $zona, $idPianoFuga) {
+
         $idpiano = $this->getResource('Piani')->getIdPiano($edificio,$piano);
         $this->getResource('Eventi')->addEvento($tipo,$idSegnalazione, $idpiano[0]->id, $zona);
-        $this->getResource('Assegnazione')->disabilitaPianoFuga();
+
+        $zone = $this->getResource('Zona')->getZoneByEdPiano($edificio,$piano);
+        foreach ($zone as $item) {
+            $this->getResource('Assegnazione')->disabilitaPianoFuga($item->id);
+        }
+
+
         $this->getResource('Assegnazione')->abilitaPianoFuga($idPianoFuga);
 
         return;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function pianiEdToArray($edificio)
+    {
+        $dbpiani=$this->getResource('Piani')->getPianiByEdificio($edificio);
+        
+        $opzioni = $this->toXXArray($dbpiani, 'numeroPiano');
+        
+        return $opzioni;
+    }
+
+    public function zonePianoToArray($edificio,$piano) {
+        
+        $zone = $this->getResource('Zona')->getZoneByEdPiano($edificio,$piano);
+        $opzioni = $this->toXXArray($zone, 'alias');
+        
+        return $opzioni;
+    }
+    
+    /* prende un rowset e un campo della tabella da cui è stato estratto il rowset
+       per restituire un array associativo del tipo X => X */
+    protected function toXXArray($data, $field){
+
+        foreach ($data as $item){
+
+            $array[$item->$field] = $item->$field;
+        }
+        
+        return $array;
     }
 }

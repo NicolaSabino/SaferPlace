@@ -27,14 +27,14 @@ class Application_Resource_Assegnazione extends  Zend_Db_Table_Abstract
         return $select;
     }
 
-    public function disabilitaPianoFuga() {
+    public function disabilitaPianoFuga($zona) {
 
-        $this->update(array('abilitato'=> 0), 'abilitato = 1');
+        $this->update(array('abilitato'=> 0), 'abilitato = 1 AND zona = '.$zona);
     }
 
     public function abilitaPianoFuga($id){
 
-        $this->update(array('abilitato'=> 1), 'id = '.$id);
+        $this->update(array('abilitato'=> 1), 'idPianoFuga = '.$id);
     }
 
 }
