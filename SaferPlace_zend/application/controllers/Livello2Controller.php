@@ -167,15 +167,15 @@ class Livello2Controller extends Zend_Controller_Action
 
     public function avviaevacuazioneAction()
     {
-        $utenteModel = new Application_Model_UtenteStaff();
+
         $idPianoFuga = $this->controllaParam('idPianoFuga');
         $edificio =$this->controllaParam('edificio');
         $piano    =$this->controllaParam('piano');
         $zona     =$this->controllaParam('zona');
         $idSegnalazione = $this->controllaParam('segnalazione') ? $this->controllaParam('segnalazione') : null;
         $tipo = $this->controllaParam('tipo');
-        
-        $utenteModel->avviaEvac($edificio,$tipo,$idSegnalazione, $piano, $zona, $idPianoFuga);
+
+        $this->modelUtente->avviaEvac($edificio,$tipo,$idSegnalazione, $piano, $zona, $idPianoFuga);
 
 
         $this->getHelper('Redirector')->gotoRoute(array('controller'=>'livello2', 'action'=>'dashboard'), null, true);

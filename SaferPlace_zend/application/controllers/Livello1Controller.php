@@ -141,12 +141,20 @@ class Livello1Controller extends Zend_Controller_Action
      */
     public function checkinintAction()
     {
+
         $edificio=$this->controllaParam('edificio');
+
+        if(is_null($edificio))
+            $this->getHelper('Redirector')->gotoSimple('error','error',$module=null);
+
 
 
         $edificimodel = new Application_Model_Edifici();
-        $edifici = $edificimodel->getEdificiSet();
-        $this->view->insiemeEdifici = $edifici;
+        $controllaedificio = $edificimodel->getEdificio($edificio);
+
+        if($controllaedificio->current()==0)
+            $this->getHelper('Redirector')->gotoSimple('error','error',$module=null);
+
 
 
         $pianimodel=new Application_Model_Piani();
@@ -159,8 +167,24 @@ class Livello1Controller extends Zend_Controller_Action
      */
     public function checkinbAction()
     {
+
         $edificio=$this->controllaParam('edificio');
         $numPiano=$this->controllaParam('numPiano');
+
+        $pianimodel=new Application_Model_Piani();
+        $piani = $pianimodel->getPianiByEdificio($edificio);
+        $controllo=array();
+        foreach ($piani as $p){
+        $controllo[]=$p->numeroPiano;
+           }
+        if(is_null($edificio))
+            $this->getHelper('Redirector')->gotoSimple('error','error',$module=null);
+
+        if(!in_array($numPiano, $controllo))
+            $this->getHelper('Redirector')->gotoSimple('error','error',$module=null);
+
+        if ($numPiano==0)
+            $this->getHelper('Redirector')->gotoSimple('checkinint','livello1',$module=null,array('edificio'=>$edificio));
         $errore=$this->controllaParam('errore'); //variabile usata per mostrare a video un messaggio di errore 
  
         $this->view->insiemePiani = $numPiano;
@@ -276,24 +300,30 @@ class Livello1Controller extends Zend_Controller_Action
 
     }
 
-    public function getModificaform()
+    public function modificadatiutenteAction()
     {
-        return $this->getHelper('ModificaProfilo')->getForm($this->user, 1);
-
 
     }
-    public function modificadatiutenteAction(){
+    
+    
 
-
-    }
+   
+    
 
     public function verificamodificaAction()
-    {
-        $request = $this->getRequest();
-        
-        $form = $this->modificaform;
-        
-        $this->getHelper('ModificaProfilo')->verificaModifica($request,1,$form);
+        {
+            $request = $this->getRequest();
+
+            $form = $this->modificaform;
+
+            $this->getHelper('ModificaProfilo')->verificaModifica($request,1,$form);
+        }
+
+    public function cancellaposizioneAction(){
+        $collocazionemodel=new Application_Model_Collocazioni();
+        $collocazione=$collocazionemodel->deletecollocazione($this->user);
+        $this->getHelper('Redirector')->gotoSimple('index','livello1', $module = null);
+
     }
 
 }

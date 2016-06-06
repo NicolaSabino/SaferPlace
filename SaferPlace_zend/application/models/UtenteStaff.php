@@ -172,9 +172,16 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
     }
     
     public function avviaEvac($edificio,$tipo,$idSegnalazione, $piano, $zona, $idPianoFuga) {
+
         $idpiano = $this->getResource('Piani')->getIdPiano($edificio,$piano);
         $this->getResource('Eventi')->addEvento($tipo,$idSegnalazione, $idpiano[0]->id, $zona);
-        $this->getResource('Assegnazione')->disabilitaPianoFuga();
+
+        $zone = $this->getResource('Zona')->getZoneByEdPiano($edificio,$piano);
+        foreach ($zone as $item) {
+            $this->getResource('Assegnazione')->disabilitaPianoFuga($item->id);
+        }
+
+
         $this->getResource('Assegnazione')->abilitaPianoFuga($idPianoFuga);
 
         return;
