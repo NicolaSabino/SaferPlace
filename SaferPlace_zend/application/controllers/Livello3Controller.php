@@ -799,12 +799,18 @@ class Livello3Controller extends Zend_Controller_Action
 
             $modelPiani = new Application_Model_Piani();
 
+            $path1 = APPLICATION_PATH.'/../public/image/piante/'.$datiform['pianta'];
+            $path2 = APPLICATION_PATH.'/../public/image/piante/'.$edificio." Piano ". $datiform['numeroPiano'];
+
+            rename( $path1,$path2);
+
+
             $modelPiani->nuovoPiano(array(
 
                 'edificio'      => $edificio,
                 'numeroPiano'   => $datiform['numeroPiano'],
                 'nstanze'       => $datiform['nstanze'],
-                'pianta'        => $datiform['pianta']
+                'pianta'        => $edificio." Piano ". $datiform['numeroPiano']
 
             ));
 
