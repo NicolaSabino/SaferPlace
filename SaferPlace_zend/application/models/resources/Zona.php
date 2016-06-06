@@ -16,6 +16,21 @@ class Application_Resource_Zona extends Zend_Db_Table_Abstract {
     
     }
     
+    public function delById($id){
+
+        $del =$this->getAdapter()->quoteInto('id = ?', $id);
+
+        $this->delete($del);
+    }
+    
+    public function getZone(){
+        
+        $select = $this->select()
+                       ->from('zona', 'id');
+        
+        return $this->fetchAll($select);
+    }
+    
     
     
 }

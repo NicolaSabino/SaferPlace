@@ -22,4 +22,11 @@ class Application_Resource_PianoDiFuga extends  Zend_Db_Table_Abstract
 
         return $select;
     }
+
+    public function delById($id){
+
+        $del =$this->getAdapter()->quoteInto('id = ?', $id);
+        
+        $this->delete($del);
+    }
 }

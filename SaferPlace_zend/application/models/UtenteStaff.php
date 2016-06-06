@@ -4,7 +4,7 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
 {
     protected $_nomeUtente;
 
-    // TODO dobbiamo definire come passargli il nome utente
+    
     public function __construct($user){
         $this->_nomeUtente=$user;
     }
