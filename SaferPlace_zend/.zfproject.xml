@@ -42,6 +42,7 @@
           <actionMethod actionName="modificautente"/>
           <actionMethod actionName="inserisciedificio"/>
           <actionMethod actionName="modificadatipersonali"/>
+          <actionMethod actionName="inseriscipiano"/>
         </controllerFile>
         <controllerFile controllerName="FaqController">
           <actionMethod actionName="index"/>
@@ -175,6 +176,9 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Livello3">
             <viewScriptFile forActionName="modificadatipersonali"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello3">
+            <viewScriptFile forActionName="inseriscipiano"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>

@@ -20,6 +20,10 @@ class Application_Model_Piani extends  App_Model_Abstract
         return $this->getResource('Piani')->getNstanzebyPiano($edificio,$piano);
     }
     
+    public function nuovoPiano($value){
+        $this->getResource('Piani')->nuovoPiano($value);
+    }
+    
     
 
 }

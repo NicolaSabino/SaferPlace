@@ -4,16 +4,28 @@ class Livello3Controller extends Zend_Controller_Action
 {
 
     protected $_edificiModel = null;
+
     protected $_creautenteform = null;
+
     protected $_utenzaModel = null;
+
     protected $_faqModel = null;
+
     protected $_edificioForm = null;
+
     protected $_aggiornaUtenteForm = null;
+
     protected $user = null;
+
     protected $_authService = null;
-    protected $faqmodificaform;
-    protected $faqcreaform;
-    protected $modificadatiform;
+
+    protected $faqmodificaform = null;
+
+    protected $faqcreaform = null;
+
+    protected $modificadatiform = null;
+
+    protected $_gestisciPianoForm = null;
 
     public function init()
     {
@@ -57,6 +69,9 @@ class Livello3Controller extends Zend_Controller_Action
 
         $this->faqcreaform=$this->getCreaFaqForm();
 
+        $this->_gestisciPianoForm = $this->getInserisciPianoForm();
+        $this->view->formInserisciPiani = $this->_gestisciPianoForm;
+
     }
 
     public function indexAction()
@@ -82,7 +97,8 @@ class Livello3Controller extends Zend_Controller_Action
     /**
      *  Popola la schermata che permette all'admin di gestire le assegnazioni dello
      * staff
-     * 
+     *
+     *
      */
     public function scegliedificioAction()
     {
@@ -102,7 +118,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Popolo la schermata che permette di gestire un edificio
-     * 
+     *
+     *
      */
     public function modificaedificioAction()
     {
@@ -140,7 +157,8 @@ class Livello3Controller extends Zend_Controller_Action
         return $this->faqmodificaform;
     }
 
-    public function verificamodificafaqAction(){
+    public function verificamodificafaqAction()
+    {
         $request = $this->getRequest();
         //istanzio la form di registrazione di un nuovo utente
 
@@ -161,12 +179,12 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Predispone la form per modificare una faq
-     * 
+     *
+     *
      */
     public function modificafaqAction()
     {
     }
-
 
     public function getCreaFaqForm()
     {
@@ -184,7 +202,8 @@ class Livello3Controller extends Zend_Controller_Action
         return $this->faqcreaform;
     }
 
-    public function verificacreafaqAction(){
+    public function verificacreafaqAction()
+    {
         $request = $this->getRequest();
         //istanzio la form di registrazione di un nuovo utente
 
@@ -206,7 +225,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Predispongo la form per inserire una nuova faq
-     * 
+     *
+     *
      */
     public function creafaqAction()
     {
@@ -315,7 +335,8 @@ class Livello3Controller extends Zend_Controller_Action
     /**
      * Procedura che predispone la form di aggiornamento delle informazioni di un
      * utente
-     * 
+     *
+     *
      */
     public function modificautenteAction()
     {
@@ -324,7 +345,8 @@ class Livello3Controller extends Zend_Controller_Action
     /**
      *  Creo la view con relativa form che permette di modificare NOME INFORMAZIONI E
      * IMMAGINE di un edificio
-     * 
+     *
+     *
      */
     public function modificadescrizioneAction()
     {
@@ -367,6 +389,7 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Creo la form di inserimento di un nuovo edificio
+     *
      */
     public function inserisciedificioAction()
     {
@@ -387,7 +410,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * aggiorno una faq nel db
-     * 
+     *
+     *
      */
     public function updatefaq()
     {
@@ -406,7 +430,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Metodo che inserisce una faq nel db
-     * 
+     *
+     *
      */
     public function insertfaq()
     {
@@ -425,7 +450,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * metodo che elimina una faq dal db
-     * 
+     *
+     *
      */
     public function eliminafaqAction()
     {
@@ -441,7 +467,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Metodo che permette di inserire un utente nel db
-     * 
+     *
+     *
      */
     public function nuovoutenteAction()
     {
@@ -474,7 +501,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      *  Procedura di aggiornamento delle informazioni di un utente
-     * 
+     *
+     *
      */
     public function updateutente()
     {
@@ -505,7 +533,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      *  Procedura che permette di eliminare un utente
-     * 
+     *
+     *
      */
     public function eliminautenteAction()
     {
@@ -521,7 +550,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Metodo per assegnare un edifcio non precedentemente assegnato ad un utente
-     * 
+     *
+     *
      */
     public function assegnaedificioautenteAction()
     {
@@ -541,7 +571,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Procedura di riassegnazione di un utente alla gestione di un edificio
-     * 
+     *
+     *
      */
     public function eliminaeassegnaAction()
     {
@@ -563,7 +594,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Modifica delle informazioni dell'edificio nel db
-     * 
+     *
+     *
      */
     public function submitmodificadescrizioneAction()
     {
@@ -604,6 +636,7 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Inserisco un nuovo edificio nel database
+     *
      */
     public function nuovoedificioAction()
     {
@@ -633,9 +666,10 @@ class Livello3Controller extends Zend_Controller_Action
     /**
      * controlla se vengono passati dei parametri e restituisce il parametro
      * passato per riferimento
-     * 
+     *
      * @param $param
      * @return int|mixed
+     *
      */
     public function controllaParam($param)
     {
@@ -645,12 +679,9 @@ class Livello3Controller extends Zend_Controller_Action
         return $parametro;
     }
 
-
-
     public function modificadatipersonaliAction()
     {
     }
-
 
     public function getModificaDatiform()
     {
@@ -704,12 +735,91 @@ class Livello3Controller extends Zend_Controller_Action
             }
         }
     }
-    
-    
-    
 
+    public function eliminaedificioAction()
+    {
+
+        $edificio = $this->getParam('edificio');
+
+        $model = new Application_Model_Edifici();
+
+        $model->deleteEdifico($edificio);
+
+        //redireziono la view
+        $this->_helper->redirector('gestioneedifici');
+    }
+
+    public function getInserisciPianoForm()
+    {
+
+        $urlHelper = $this->_helper->getHelper('url');
+
+        $this->_gestisciPianoForm = new Application_Form_Gestionepiano();
+
+        $this->_gestisciPianoForm->setAction(
+            $urlHelper->url(array(
+
+                'controller'    =>  'livello3',
+                'action'        =>  'verificaiseriscipiano'),
+                'default'
+            )
+        );
+
+
+
+        return $this->_gestisciPianoForm;
+
+    }
+
+    public function inseriscipianoAction()
+    {
+        $this->view->edificio = $this->getParam('edificio');
+    }
+
+    public function verificaiseriscipianoAction(){
+        
+        $request = $this->getRequest();
+        if (!$request->isPost()) {
+            return $this->_helper->redirector('gestioneedifici');
+        }
+        
+        $form = $this->_gestisciPianoForm;
+        
+        if (!$form->isValid($request->getPost())) {
+            $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
+            return $this->render('inseriscipiano');
+        }
+        else
+        {
+            //inserisco nel db il piano
+
+            $datiform=$this->_gestisciPianoForm->getValues();
+
+            $edificio=$this->controllaParam('edificio');
+
+            $modelPiani = new Application_Model_Piani();
+
+            $modelPiani->nuovoPiano(array(
+
+                'edificio'      => $edificio,
+                'numeroPiano'   => $datiform['numeroPiano'],
+                'nstanze'       => $datiform['nstanze'],
+                'pianta'        => $datiform['pianta']
+
+            ));
+
+            
+            //reindirizzo a gestione utenti
+            $this->getHelper('Redirector')->gotoSimple('gestioneutenti', 'livello3', $module = null);
+            
+            
+        }
+    }
+    
 
 }
+
+
 
 
 

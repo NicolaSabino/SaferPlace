@@ -6,7 +6,7 @@ class Application_Form_Gestioneedificio extends Zend_Form
 
    
 
-    public function __construct($info = null)
+    public function __construct()
     {
         $this->init();
     }
@@ -25,6 +25,7 @@ class Application_Form_Gestioneedificio extends Zend_Form
             'label'     => 'Nome Edificio'
 
         ));
+        
         $this->addElement('text', 'informazioni', array(
             'filters'    => array('StringTrim'),
             'validators' => array(

@@ -55,5 +55,12 @@ class Application_Resource_Piani extends  Zend_Db_Table_Abstract
                      ->where('numeroPiano = ?', $piano);
         return $this->fetchAll($select);
     }
+    
+    public function nuovoPiano($data){
+        
+        $this->insert($data);
+        
+        
+    }
 }
 

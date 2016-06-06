@@ -82,7 +82,17 @@
 			<div class="center">
 				<p>
 					<a class="btn-floating btn-large green white-text tooltipped"
-					   data-position="left" data-delay="50" data-tooltip="Aggiungi un nuovo piano">
+					   data-position="left" data-delay="50" data-tooltip="Aggiungi un nuovo piano"
+					href="
+						<?php
+						echo $this->url(
+							array(
+								'controller'=> 'livello3',
+								'action' 	=> 'inseriscipiano',
+								'edificio'  => $this->edificio[0]->nome
+							));
+						?>
+					">
 							<i class="material-icons">add</i>
 					</a>
 				</p>
