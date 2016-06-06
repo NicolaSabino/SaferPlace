@@ -799,8 +799,10 @@ class Livello3Controller extends Zend_Controller_Action
 
             $modelPiani = new Application_Model_Piani();
 
+            $file = explode(".",$datiform['pianta']);
+
             $path1 = APPLICATION_PATH.'/../public/image/piante/'.$datiform['pianta'];
-            $path2 = APPLICATION_PATH.'/../public/image/piante/'.$edificio." Piano ". $datiform['numeroPiano'];
+            $path2 = APPLICATION_PATH.'/../public/image/piante/'.$edificio." Piano ". $datiform['numeroPiano'].".".end($file);
 
             rename( $path1,$path2);
 
@@ -810,13 +812,13 @@ class Livello3Controller extends Zend_Controller_Action
                 'edificio'      => $edificio,
                 'numeroPiano'   => $datiform['numeroPiano'],
                 'nstanze'       => $datiform['nstanze'],
-                'pianta'        => $edificio." Piano ". $datiform['numeroPiano']
+                'pianta'        => $edificio." Piano ". $datiform['numeroPiano'].".".end($file)
 
             ));
 
             
             //reindirizzo a gestione utenti
-            $this->getHelper('Redirector')->gotoSimple('gestioneutenti', 'livello3', $module = null);
+            $this->getHelper('Redirector')->gotoSimple('gestioneedifici', 'livello3', $module = null);
             
             
         }
