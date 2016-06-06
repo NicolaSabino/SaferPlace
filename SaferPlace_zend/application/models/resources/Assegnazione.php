@@ -45,7 +45,6 @@ class Application_Resource_Assegnazione extends  Zend_Db_Table_Abstract
 
     //recupero le occorrenze di assegnazione in base all'id di un piano di fuga
     public function getAssegnazioneByPdf($idPdf){
-        die;
         $select = $this->select()
                        ->from('assegnazione')
                        ->where('idPianoFuga = ?', $idPdf);

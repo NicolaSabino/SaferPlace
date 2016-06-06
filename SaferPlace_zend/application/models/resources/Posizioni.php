@@ -60,7 +60,6 @@ class Application_Resource_Posizioni extends  Zend_Db_Table_Abstract
         $del =$this->getAdapter()->quoteInto('zona = ?', $idzona);
 
         $this->delete($del);
-
     }
 
 }
