@@ -117,11 +117,25 @@ class Livello1Controller extends Zend_Controller_Action
 
     }
 
+    public function controllaeventoAction(){
+        
+        $eventomodel=new Application_Model_Eventi();
+        $evento=$eventomodel->getEventi();
+
+        $pianomodel=new Application_Model_Piani();
+        $piano=$pianomodel->getPianiById($evento->current()->idPiano);
+
+        if($this->_edificio==$piano->current()->edificio && $this->_numPiano==$piano->current()->numeroPiano){
+            return true;
+        }
+        return false;
+    }
     public function indexAction()
     {
 
         $this->controlladatiAction();
-
+        $evacuare=$this->controllaeventoAction();
+        $this->view->evacuare=$evacuare;
         $this->view->arrayInformazioni = array('stanza'=>$this->_stanza,'numPiano'=>$this->_numPiano,'edificio'=>$this->_edificio);
 
     }

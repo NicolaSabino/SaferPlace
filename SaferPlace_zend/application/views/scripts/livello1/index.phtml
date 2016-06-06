@@ -15,15 +15,50 @@
 		}
 	</style>
 	
-	<div>
+
 		<?php
 		$edificio=$this->arrayInformazioni['edificio'];
 		$numPiano=$this->arrayInformazioni['numPiano'];
 		$stanza=$this->arrayInformazioni['stanza'];
+		$evacuare=$this->evacuare;
 		?>
-	</div>
+
+
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 </head>
 <body>
+<br>
+<br>
+<br>
+<?php if($evacuare): ?>
+<script>
+	$( document ).ready(function() {
+		var myVar;
+		myVar = setInterval(alertFunc, 800);
+		function alertFunc() {
+			$( "body" ).effect("highlight",600);
+		}
+	});
+</script>
+<?php
+endif;
+?>
+<?php if($evacuare): ?>
+	<div id="toggle" class=" row center">
+		<h1 class="red-text accent-3">Pericolo sul tuo piano, mettiti in salvo </h1>
+		<div class="col s12 ">
+	<a href="<?php echo $this->url(
+		array(
+			'controller' => 'livello1',
+			'action' => 'visualizzafuga',
+		)
+	); ?>" id="start" class="btn-large   red accent-3 modal-trigger"><b>Scappa</b></a>
+
+		</div>
+	</div>
+<?php endif; ?>
 		<div class="row">
 			<!-- parte sinistra -->
 			<div id="sx" class="col s12 m4 center">
