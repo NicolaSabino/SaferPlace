@@ -62,10 +62,35 @@ class Application_Resource_Piani extends  Zend_Db_Table_Abstract
         
     }
 
-    public function getPiano($id){
+    public function getPiano($edificio, $numeroPiano){
 
-        $select = $this->select()->where('id = ?', $id);
+        $select = $this->select()
+            ->where('edificio = ?', $edificio)
+            ->where('numeroPiano = ?', $numeroPiano);
         return $this->fetchAll($select);
     }
+
+    public function updatePiano($dati,$id){
+
+
+        if($dati['pianta']==null){
+            $data = array(
+                'numeroPiano'      => $dati['numeroPiano'],
+                'nstanze'      => $dati['nstanze'],
+            );
+        }
+        else{
+            $data = array(
+                'numeroPiano'      => $dati['numeroPiano'],
+                'nstanze'      => $dati['nstanze'],
+                'pianta'        => $dati['pianta']
+            );
+        }
+        $where = $this->getAdapter()->quoteInto('id = ?', $id);
+
+        $this->update($data, $where);
+
+    }
+    
 }
 

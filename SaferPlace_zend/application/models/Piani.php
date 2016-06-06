@@ -28,8 +28,12 @@ class Application_Model_Piani extends  App_Model_Abstract
         return $this->getResource('Piani')->getIdPiano($edificio,$piano);
     }
     
-    public function getPianoById($id){
-        return $this->getResource('Piani')->getPiano($id);
+    public function getPiano($edificio, $piano){
+        return $this->getResource('Piani')->getPiano($edificio,$piano);
+    }
+
+    public function updatePiano($data,$id){
+        return $this->getResource('Piani')->updatePiano($data,$id);
     }
 
 }

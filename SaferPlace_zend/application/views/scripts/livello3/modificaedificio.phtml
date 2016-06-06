@@ -119,9 +119,25 @@
       							<span class="card-title activator white-text">
 											Piano <?php echo $piano->numeroPiano ?>
 
-										<a class="btn-large btn-flat transparent right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Elimina Piano"><i class="material-icons white-text">delete_forever</i></a>
+										<a class="btn-large btn-flat transparent right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Elimina Piano"
+										   href="<?php echo $this->url(
+											   array(
+												   'controller' => 'livello3',
+												   'action'=>'',
+											   )
+										   ); ?>
+										"><i class="material-icons white-text">delete_forever</i></a>
 										<a class="btn-large btn-flat transparent right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Aggiungi Piano di Fuga"><i class="material-icons white-text">add_circle</i></a>
-										<a class="btn-large btn-flat transparent right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Modifica"><i class="material-icons white-text">edit</i></a>
+										<a class="btn-large btn-flat transparent right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Modifica"
+										   href="<?php echo $this->url(
+											   array(
+												   'controller' => 'livello3',
+												   'action'=>'modificapiano',
+												   'edificio' => $this->edificio[0]->nome,
+												   'numeroPiano' => $piano->numeroPiano
+											   )
+										   ); ?>"
+										><i class="material-icons white-text">edit</i></a>
 
 									</span>
 								</div>

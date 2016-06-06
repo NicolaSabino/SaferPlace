@@ -13,20 +13,22 @@ class Application_Form_Gestionepiano extends Zend_Form
 
         $this->addElement('text','numeroPiano', array(
             'required'  => true,
-            'label'     => 'Numero Piano'
+            'label'     => 'Numero Piano',
+            'validators' => array(array('Digits'))
 
         ));
 
 
         $this->addElement('text','nstanze', array(
             'required'  => true,
-            'label'     => 'Numero delle stanze'
+            'label'     => 'Numero delle stanze',
+            'validators' => array(array('Digits'))
+
 
         ));
 
         $this->addElement('file', 'pianta', array(
             'label' => 'Pianta',
-            'required' => true,
             'destination' => APPLICATION_PATH.'/../public/image/piante/',
             'validators' => array(
                 array('Count', false, 1),
@@ -46,6 +48,14 @@ class Application_Form_Gestionepiano extends Zend_Form
             'Form'
         ));
     }
+
+    public function populate($data)
+    {
+        $this->numeroPiano->setValue($data->current()->numeroPiano);
+        $this->nstanze->setValue($data->current()->nstanze);
+        $this->pianta->setValue($data->current()->pianta);
+    }
+
 
 
 }
