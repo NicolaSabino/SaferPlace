@@ -54,7 +54,7 @@ class Livello3Controller extends Zend_Controller_Action
         //assegno la form di gestione di un edificio alla view
         $this->view->formGestioneEdificio = $this->_edificioForm;
 
-        $this->_aggiornaUtenteForm = $this->getAggiornaUtenteform();
+        $this->view->modificautenteform = $this->getAggiornaUtenteform();
 
         $this->view->modificaprofiloform=$this->getModificaDatiform(); //modifica del profilo
 
@@ -299,7 +299,7 @@ class Livello3Controller extends Zend_Controller_Action
 
         if ($username!=null) {
             $dati = $usermodel->getDatiUtenteByUserSet($username);
-            $this->_aggiornaUtenteForm = new Application_Form_Gestisciutente($dati);
+            ///$this->_aggiornaUtenteForm = new Application_Form_Gestisciutente($dati);
             $this->_aggiornaUtenteForm->populate($dati);
 
             $this->_aggiornaUtenteForm->setAction($urlHelper->url(array(
@@ -307,8 +307,6 @@ class Livello3Controller extends Zend_Controller_Action
                 'action' => 'verificamodificautente'),
                 'default'
             ));
-
-            $this->view->form = $this->_aggiornaUtenteForm;
 
             return $this->_aggiornaUtenteForm;
         }
