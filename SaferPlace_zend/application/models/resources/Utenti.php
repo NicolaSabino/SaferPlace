@@ -133,8 +133,6 @@ class Application_Resource_Utenti extends  Zend_Db_Table_Abstract
         return $this->fetchAll($select);
 
     }
-
-
     
 
     public function delUser($username){

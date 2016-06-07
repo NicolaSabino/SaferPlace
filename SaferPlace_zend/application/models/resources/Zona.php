@@ -31,6 +31,34 @@ class Application_Resource_Zona extends Zend_Db_Table_Abstract {
         return $this->fetchAll($select);
     }
     
+    public function getZonabyId($id){
+        $select = $this->select()
+            ->where('id = ?', $id);
+
+        return $this->fetchAll($select);
+    }
+    
+    public function getIdZona($edificio, $piano, $alias){
+        
+        $select = $this->select()
+            ->where('edificio = ?', $edificio)
+            ->where('piano = ?', $piano)
+            ->where('alias = ?', $alias);
+        
+        return $this->fetchAll($select);
+    }
+
+    public function getZoneByEdPianoIdasAlias($edificio, $numPiano){
+        $select = $this->select()
+                        ->setIntegrityCheck(false)
+                        ->from(array('p' => 'posizione' ), array('edificio', 'numPiano','stanza'))
+                        ->join(array('z' => 'zona'), 'p.zona = z.id', array('alias'))
+                        ->where('p.edificio = ?', $edificio)
+                        ->where('p.numPiano = ?', $numPiano);
+        return $this->fetchAll($select);
+
+    }
+    
     
     
 }

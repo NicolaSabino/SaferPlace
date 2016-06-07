@@ -1,0 +1,93 @@
+<html>
+<body>
+
+<div>
+	<?php
+	$edificio=$this->edificio;
+	$numPiano=$this->numeroPiano;
+	?>
+</div>
+
+<div class="row navbar-fixed white center-align" style="position: fixed; width: 100%; height: auto;">
+
+	<div class="container">
+
+		<div class="center-align white">
+			<h2 class="green-text"> <?php echo $edificio ?> Piano <?php echo $numPiano ?> - Gestione Zone </h2>
+		</div>
+	</div>
+</div>
+
+<div class="row" style="margin-top: 120px">
+	<!-- container sinistra-->
+	<div class="col l6 s6 m6 fixed left  fixed" style="position: fixed; width: 900px; height: 1000px;">
+		<div class="card-image"><img class="responsive-img" width="100%" src="<?php echo $this->baseUrl('image/piante/zone/'.$edificio.' Piano '.$numPiano.'.jpg'); ?>" </img></div>
+		<br>
+		<br>
+
+		<div class="container">
+			<?php echo $this->zoneform; ?>
+		</div>
+
+		<br>
+		<br>
+		<br>
+
+
+
+	</div>
+
+	<!-- container destra-->
+	<div class="col l6 s6 m6 push-l6 push-s6 push-m6">
+		<div class="container">
+			<table style="margin-top: 30px;" class="striped responsive-table z-depth-1">
+			<thead>
+			<tr>
+				<th class="center-align" data-field="zona">Zona</th>
+				<th class="center-align" data-field="stanza">Stanza</th>
+				<th class="center-align" data-field="numPiano">Numero Piano</th>
+				<th class="center-align" data-field="edificio">Edificio</th>
+			</tr>
+			</thead>
+
+			<tbody>
+
+				<?php
+					foreach ($this->arrayPosizioni as $posizione): ?>
+						<tr>
+
+							<td class="center-align" ><?php echo $posizione->alias ?></td>
+							<td class="center-align" ><?php echo $posizione->stanza ?></td>
+							<td class="center-align" ><?php echo $posizione->numPiano ?></td>
+							<td class="center-align" ><?php echo $posizione->edificio ?></td>
+
+						<!--Bottone ELIMINA-->
+							<td>
+							<a class="btn-floating btn-flat btn-small waves-effect waves-light red white-text tooltipped" data-position="right" data-delay="50" data-tooltip="Elimina Posizione"
+							   href="
+
+
+						<?php echo $this->url(
+								array(
+									'controller'	=> 'livello3',
+									'action' 		=> 'eliminaposizione',
+									'stanza' 		=> $posizione->stanza,
+									'numPiano'    	=> $posizione->numPiano,
+									'edificio'      => $posizione->edificio,
+
+								)); ?>">
+							<i class="material-icons" >delete</i></a>
+							</td>
+						</tr>
+					<?php endforeach; ?>
+
+			</tbody>
+		</table>
+		</div>
+</div>
+</div>
+
+
+
+</body>
+</html>

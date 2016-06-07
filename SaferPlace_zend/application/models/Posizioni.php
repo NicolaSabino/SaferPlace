@@ -14,4 +14,13 @@ class Application_Model_Posizioni extends App_Model_Abstract
     public function getPosizioniByIdSet($id){
         return $this->getResource('Posizioni')->getPosizioniById($id);
     }
+
+    public function insertPosizione($zona,$stanza,$numPiano, $edificio){
+        return $this->getResource('Posizioni')->insertPosizione($zona,$stanza,$numPiano, $edificio);
+    }
+    
+    public function getPosizioniBynumPianoEdificio($numPiano,$edificio){
+        return $this->getResource('Posizioni')->getPosizioniBynumPianoEdificio($numPiano,$edificio);
+    }
+
 }

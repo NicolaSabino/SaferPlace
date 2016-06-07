@@ -27,6 +27,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     protected $_gestisciPianoForm = null;
 
+    protected $gestionezoneform;
+
     public function init()
     {
         $this->_helper->layout->setLayout('layout3');
@@ -78,11 +80,12 @@ class Livello3Controller extends Zend_Controller_Action
                 $this->view->formmodificapiano = $this->getModificaPianoForm();
             }
         }
+
+        $this->view->zoneform = $this->getGestioneZonaForm();
     }
 
     public function indexAction()
     {
-
     }
 
     public function gestioneedificiAction()
@@ -103,9 +106,9 @@ class Livello3Controller extends Zend_Controller_Action
     /**
      *  Popola la schermata che permette all'admin di gestire le assegnazioni dello
      * staff
-     *
-     *
-     *
+     * 
+     * 
+     * 
      */
     public function scegliedificioAction()
     {
@@ -125,9 +128,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Popolo la schermata che permette di gestire un edificio
-     *
-     *
-     *
+     * 
+     * 
+     * 
      */
     public function modificaedificioAction()
     {
@@ -186,9 +189,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Predispone la form per modificare una faq
-     *
-     *
-     *
+     * 
+     * 
+     * 
      */
     public function modificafaqAction()
     {
@@ -232,9 +235,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Predispongo la form per inserire una nuova faq
-     *
-     *
-     *
+     * 
+     * 
+     * 
      */
     public function creafaqAction()
     {
@@ -338,9 +341,9 @@ class Livello3Controller extends Zend_Controller_Action
     /**
      * Procedura che predispone la form di aggiornamento delle informazioni di un
      * utente
-     *
-     *
-     *
+     * 
+     * 
+     * 
      */
     public function modificautenteAction()
     {
@@ -349,9 +352,9 @@ class Livello3Controller extends Zend_Controller_Action
     /**
      *  Creo la view con relativa form che permette di modificare NOME INFORMAZIONI E
      * IMMAGINE di un edificio
-     *
-     *
-     *
+     * 
+     * 
+     * 
      */
     public function modificadescrizioneAction()
     {
@@ -394,8 +397,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Creo la form di inserimento di un nuovo edificio
-     *
-     *
+     * 
+     * 
      */
     public function inserisciedificioAction()
     {
@@ -416,9 +419,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * aggiorno una faq nel db
-     *
-     *
-     *
+     * 
+     * 
+     * 
      */
     public function updatefaq()
     {
@@ -437,9 +440,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Metodo che inserisce una faq nel db
-     *
-     *
-     *
+     * 
+     * 
+     * 
      */
     public function insertfaq()
     {
@@ -458,9 +461,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * metodo che elimina una faq dal db
-     *
-     *
-     *
+     * 
+     * 
+     * 
      */
     public function eliminafaqAction()
     {
@@ -476,9 +479,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Metodo che permette di inserire un utente nel db
-     *
-     *
-     *
+     * 
+     * 
+     * 
      */
     public function nuovoutenteAction()
     {
@@ -508,9 +511,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      *  Procedura di aggiornamento delle informazioni di un utente
-     *
-     *
-     *
+     * 
+     * 
+     * 
      */
     public function updateutente()
     {
@@ -540,9 +543,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      *  Procedura che permette di eliminare un utente
-     *
-     *
-     *
+     * 
+     * 
+     * 
      */
     public function eliminautenteAction()
     {
@@ -558,9 +561,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Metodo per assegnare un edifcio non precedentemente assegnato ad un utente
-     *
-     *
-     *
+     * 
+     * 
+     * 
      */
     public function assegnaedificioautenteAction()
     {
@@ -580,9 +583,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Procedura di riassegnazione di un utente alla gestione di un edificio
-     *
-     *
-     *
+     * 
+     * 
+     * 
      */
     public function eliminaeassegnaAction()
     {
@@ -604,9 +607,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Modifica delle informazioni dell'edificio nel db
-     *
-     *
-     *
+     * 
+     * 
+     * 
      */
     public function submitmodificadescrizioneAction()
     {
@@ -647,8 +650,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Inserisco un nuovo edificio nel database
-     *
-     *
+     * 
+     * 
      */
     public function nuovoedificioAction()
     {
@@ -678,11 +681,11 @@ class Livello3Controller extends Zend_Controller_Action
     /**
      * controlla se vengono passati dei parametri e restituisce il parametro
      * passato per riferimento
-     *
+     * 
      * @param $param
      * @return int|mixed
-     *
-     *
+     * 
+     * 
      */
     public function controllaParam($param)
     {
@@ -846,7 +849,6 @@ class Livello3Controller extends Zend_Controller_Action
         }
     }
 
-
     public function modificapianoAction()
     {
         $this->view->numeroPiano = $this->getParam('numeroPiano');
@@ -980,7 +982,68 @@ class Livello3Controller extends Zend_Controller_Action
         $this->getHelper('Redirector')->gotoSimple('index', 'livello3', $module = null);
     }
 
+    public function getGestioneZonaForm(){
+        $urlHelper = $this->_helper->getHelper('url');
+
+        //istanzio la form per modificare la faq
+        $this->gestionezoneform = new Application_Form_Gestionezone();
+
+        $this->gestionezoneform->setAction($urlHelper->url(array(
+            'controller' => 'livello3',
+            'action' => 'verificagestionezone'),
+            'default'
+        ));
+
+        return $this->gestionezoneform;
+    }
+
+    public function verificagestionezoneAction(){
+        $request = $this->getRequest();
+        if (!$request->isPost()) {
+            return $this->_helper->redirector('gestionezone');
+        }
+        $form = $this->gestionezoneform;
+        if (!$form->isValid($request->getPost())) {
+            $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
+            return $this->render('gestionezone');
+        } else {
+            $datiform = $this->gestionezoneform->getValues(); //datiform è un array
+            $edificio = $this->controllaParam('edificio');
+            $numPiano = $this->controllaParam('numeroPiano');
+            $utentimodel = new Application_Model_Utenti();
+            $username = $this->user;
+
+            if ($utentimodel->existUsername($datiform['username']) && $datiform['username'] != $this->getParam('username')) //controllo se l'username inserito esiste già nel db
+            {
+                $form->setDescription('Attenzione: l\'username che hai scelto non è disponibile.');
+                return $this->render('modificadatiutente');
+            } else {
+                $utentimodel->updateUtentiSet($datiform, $username);
+                //aggiorna l'username alla sessione
+                $this->_authService->getAuth()->getIdentity()->current()->username = $datiform['username'];
+                $this->getHelper('Redirector')->gotoSimple('index', 'livello3', $module = null);
+            }
+        }
+    }
+
+    public function gestionezoneAction()
+    {
+
+
+        $edificio = $this->controllaParam('edificio');
+        $numPiano = $this->controllaParam('numeroPiano');
+        $modelAdmin = new Application_Model_Admin();
+        $arrayPosizioni = $modelAdmin->getZoneByEdPianoIdasAlias($edificio,$numPiano);
+
+        $this->view->assign('edificio', $edificio);
+        $this->view->assign('numeroPiano', $numPiano);
+        $this->view->assign('arrayPosizioni', $arrayPosizioni);
+    }
+
+
 }
+
+
 
 
 

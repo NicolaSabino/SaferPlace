@@ -34,4 +34,17 @@ class Application_Model_Admin extends App_Model_Abstract {
         $this->getResource('Zona')->delById($id);
 
     }
+
+    public function getIdZona($edificio, $piano, $alias){
+        return $this->getResource('Zona')->getIdZona($edificio, $piano, $alias);
+    }
+    
+    public function getZonabyId($id){
+        return $this->getResource('Zona')->getZonabyId($id);
+
+    }
+    
+    public function getZoneByEdPianoIdasAlias($edificio, $numPiano){
+        return $this->getResource('Zona')->getZoneByEdPianoIdasAlias($edificio, $numPiano);
+    }
 }

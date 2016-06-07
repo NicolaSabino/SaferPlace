@@ -43,13 +43,15 @@ class Application_Resource_Posizioni extends  Zend_Db_Table_Abstract
      * @param $zona
      * @param $stanza
      * @param $numPiano
+     * @param  $edificio
      */
-    public function insertPosizione($zona,$stanza,$numPiano)
+    public function insertPosizione($zona,$stanza,$numPiano, $edificio)
     {
         $posizioni = array(
             'zona'      => $zona,
             'stanza' => $stanza,
-            'numPiano'      => $numPiano
+            'numPiano'      => $numPiano,
+            'edificio'      => $edificio
         );
 
         $this->insert($posizioni);
@@ -60,6 +62,14 @@ class Application_Resource_Posizioni extends  Zend_Db_Table_Abstract
         $del =$this->getAdapter()->quoteInto('zona = ?', $idzona);
 
         $this->delete($del);
+    }
+
+    public function getPosizioniBynumPianoEdificio($numPiano,$edificio){
+
+        $select=$this->select()
+            ->where('numPiano='.$numPiano.' and edificio= \''. $edificio.'\'');
+        return  $this->fetchAll($select);
+
     }
 
 }
