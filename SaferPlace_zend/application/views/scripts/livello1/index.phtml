@@ -29,8 +29,7 @@
 <?php if($evacuare): ?>
 <script>
 	$( document ).ready(function() {
-		var myVar;
-		myVar = setInterval(alertFunc, 800);
+		setInterval(alertFunc, 800);
 		function alertFunc() {
 			$( "body" ).effect("highlight",{color: 'yellow'},600);
 		}
