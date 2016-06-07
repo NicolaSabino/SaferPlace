@@ -299,7 +299,6 @@ class Livello3Controller extends Zend_Controller_Action
 
         if ($username!=null) {
             $dati = $usermodel->getDatiUtenteByUserSet($username);
-            ///$this->_aggiornaUtenteForm = new Application_Form_Gestisciutente($dati);
             $this->_aggiornaUtenteForm->populate($dati);
 
             $this->_aggiornaUtenteForm->setAction($urlHelper->url(array(
