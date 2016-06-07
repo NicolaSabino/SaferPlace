@@ -20,6 +20,20 @@ class Application_Resource_Posizioni extends  Zend_Db_Table_Abstract
 
     }
 
+    public function existsPosizione($numPiano,$stanza,$edificio)
+    {
+        $select=new Application_Resource_Piani_Item();
+        $select=$this->select('id')
+            ->where('numPiano='.$numPiano.' and stanza='. $stanza.' and edificio= \''. $edificio.'\'');
+
+        $risultato = $this->getAdapter()->query($select);
+
+        if($risultato->rowCount()==0)
+            $controllo = false;
+        else $controllo = true;
+        return $controllo;
+    }
+
     public function getStanzeBynumPianoEdificio($numPiano,$edificio){
 
         $select=new Application_Resource_Piani_Item();
@@ -53,7 +67,7 @@ class Application_Resource_Posizioni extends  Zend_Db_Table_Abstract
             'numPiano'      => $numPiano,
             'edificio'      => $edificio
         );
-
+        
         $this->insert($posizioni);
     }
 

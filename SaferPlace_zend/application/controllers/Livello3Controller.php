@@ -1036,37 +1036,27 @@ class Livello3Controller extends Zend_Controller_Action
 
     public function verificagestionezoneAction(){
         $request = $this->getRequest();
+        $edificio       = $this->controllaParam('edificio');
+        $numeroPiano    = $this->controllaParam('numeroPiano');
         if (!$request->isPost()) {
             return $this->_helper->redirector('gestionezone');
         }
         $form = $this->gestionezoneform;
         if (!$form->isValid($request->getPost())) {
             $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
+            $modelAdmin = new Application_Model_Admin();
+            $arrayPosizioni = $modelAdmin->getZoneByEdPianoIdasAlias($edificio,$numeroPiano);
+            $this->view->assign('edificio', $edificio);
+            $this->view->assign('numeroPiano', $numeroPiano);
+            $this->view->assign('arrayPosizioni', $arrayPosizioni);
             return $this->render('gestionezone');
         } else {
-            $datiform = $this->gestionezoneform->getValues(); //datiform è un array
-            $edificio = $this->controllaParam('edificio');
-            $numPiano = $this->controllaParam('numeroPiano');
-            $utentimodel = new Application_Model_Utenti();
-            $username = $this->user;
-
-            if ($utentimodel->existUsername($datiform['username']) && $datiform['username'] != $this->getParam('username')) //controllo se l'username inserito esiste già nel db
-            {
-                $form->setDescription('Attenzione: l\'username che hai scelto non è disponibile.');
-                return $this->render('modificadatiutente');
-            } else {
-                $utentimodel->updateUtentiSet($datiform, $username);
-                //aggiorna l'username alla sessione
-                $this->_authService->getAuth()->getIdentity()->current()->username = $datiform['username'];
-                $this->getHelper('Redirector')->gotoSimple('index', 'livello3', $module = null);
-            }
+            $this->insertPosizione();
         }
     }
 
     public function gestionezoneAction()
     {
-
-
         $edificio = $this->controllaParam('edificio');
         $numPiano = $this->controllaParam('numeroPiano');
         $modelAdmin = new Application_Model_Admin();
@@ -1077,7 +1067,36 @@ class Livello3Controller extends Zend_Controller_Action
         $this->view->assign('arrayPosizioni', $arrayPosizioni);
     }
 
+    public function insertPosizione(){
+        $edificio       = $this->controllaParam('edificio');
+        $numeroPiano    = $this->controllaParam('numeroPiano');
 
+        $datiform = $this->gestionezoneform->getValues();
+        $stanza = $datiform['stanza'];
+        $alias = $datiform['zona'];
+        $adminmodel = new Application_Model_Admin();
+
+        $zona = $adminmodel->getIdZona($edificio, $numeroPiano,$alias)->current()->id;
+
+        $posizionimodel = new Application_Model_Posizioni();
+        $controllo = $posizionimodel->existsPosizione($numeroPiano, $stanza,$edificio);
+
+        if($controllo){
+            $modelAdmin = new Application_Model_Admin();
+            $arrayPosizioni = $modelAdmin->getZoneByEdPianoIdasAlias($edificio,$numeroPiano);
+
+            $this->gestionezoneform->setDescription('Attenzione: la posizione inserita è già esistente.');
+            $this->view->assign('edificio', $edificio);
+            $this->view->assign('numeroPiano', $numeroPiano);
+            $this->view->assign('arrayPosizioni', $arrayPosizioni);
+            return $this->render('gestionezone');
+
+        }else{
+
+            $posizionimodel->insertPosizione($zona,$stanza,$numeroPiano,$edificio);
+            $this->getHelper('Redirector')->gotoSimple('gestionezone', 'livello3', $module = null, array('edificio' => $edificio, 'numeroPiano' => $numeroPiano));
+        }
+    }
 }
 
 
