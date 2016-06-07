@@ -29,4 +29,16 @@ class Application_Resource_PianoDiFuga extends  Zend_Db_Table_Abstract
         
         $this->delete($del);
     }
+
+
+    public function getPDF_edificio_piano($edificio,$piano){
+
+        //stringa che serve a selezionare tutte le piante che sono del tipo EDIFICIO_PIANO_%
+        $app = $edificio . " Piano " . $piano . "%";
+
+        $select = $this->select()
+            ->where (' pianta like ?', $app);
+
+        return $this->fetchAll($select);
+    }
 }

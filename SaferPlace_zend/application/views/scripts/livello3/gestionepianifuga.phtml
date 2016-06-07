@@ -1,72 +1,69 @@
 <br /><br />
 <div id="view-content">
-	<p>View script for controller <b>Livello3</b> and script/action name <b>gestionepianifuga</b></p>
+	
+	<div class="container">
+		
+		<div class="row">
+			
+			<!-- titolo -->
+			<div class="col s12 center">
+				<h3 class="green-text">
+					<?php echo $this->edificio?> - Piano<?php echo $this->numeroPiano?>
+				</h3>
+			</div>
+			<!-- bottone aggiungi-->
+			<div class="col s12 center">
+				<a class="btn-large btn-floating green"><i class="material-icons">add</i></a>
+			</div>
+			
+			<!-- blocco dei piani di fuga -->
+			<?php foreach ($this->pianiDiFuga as $pdf): ?>
+
+			<?php $immagine = "image/piante/piani di fuga/".$pdf->pianta;
+				$app = explode(".",$pdf->pianta)
+			?>
+			
+			<div class="col s12">
+				
+				<div class="card">
+
+					<div class="card-content green ">
+      							<span class="card-title activator white-text">
+									<?php echo $app[0] ?>
+									<a class="btn-large btn-flat transparent right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Elimina piano di fuga"
+									   href="<?php echo $this->url(
+										   array(
+											   'controller' => 'livello3',
+											   'action'=>'',
+										   )
+									   ); ?>
+									"><i class="material-icons white-text">delete</i></a>
+
+								</span>
+					</div>
+					<div class='card-image'>
+						<img src="<?php echo $this->baseUrl($immagine) ?>">
+					</div>
+				</div>
+			<?php endforeach; ?>
+		</div>
+	</div>
+
 
 
 	<!-- MENU -->
-	<div class="fixed-action-btn vertical click-to-toggle" style="bottom: 45px; right: 24px;">
-		<a class="btn-floating btn-large red" href="#">
-			<i class="material-icons">menu</i>
+	<div class="fixed-action-btn vertical" style="bottom: 45px; right: 24px;">
+		<a class="btn-floating btn-large blue darken-2 tooltipped" data-position="left" data-delay="50" data-tooltip="Indietro" href="<?php echo $this->url(
+			array(
+				'controller' 	=> 'livello3',
+				'action' 		=> 'modificaedificio',
+				'edificio'		=> $this->edificio,
+				'numeroPiano'	=> $this->numeroPiano
+			),null,true
+		);
+
+		?>">
+			<i class="material-icons">arrow_back</i>
 		</a>
-		<ul>
-			<li>
-				<a class="btn-floating purple lighten-1 tooltipped" data-position="left" data-delay="50" data-tooltip="Logout" href="<?php echo $this->url(
-					array(
-						'controller' => 'index',
-						'action' => 'index'
-					),null,true
-				);
-
-				?>">
-					<i class="material-icons">exit_to_app</i>
-				</a>
-			</li>
-
-			<li>
-				<a class="btn-floating yellow darken-1 tooltipped" data-position="left" data-delay="50" data-tooltip="Gestisci Edifici" href="<?php echo $this->url(
-					array(
-						'controller' => 'livello3',
-						'action' => 'gestioneedifici'
-					),null,true
-				);  ?>">
-					<i class="material-icons">business</i>
-				</a>
-			</li>
-
-			<!--
-        <li>
-            <a class="btn-floating red tooltipped" data-position="left" data-delay="50" data-tooltip="Gestisci Piani di Fuga" href="<?php echo $this->url(
-				array(
-					'controller' => 'livello3',
-					'action' => 'gestionepianifuga'
-				),null,true
-			);  ?>">
-                <i class="material-icons">trending_up</i>
-            </a>
-        </li>
-
-        -->
-			<li>
-				<a class="btn-floating green tooltipped" data-position="left" data-delay="50" data-tooltip="Gestisci Utenti" href="<?php echo $this->url(
-					array(
-						'controller' => 'livello3',
-						'action' => 'gestioneutenti'
-					),null,true
-				);  ?>">
-					<i class="material-icons">person</i>
-				</a>
-			</li>
-			<li>
-				<a class="btn-floating blue tooltipped" data-position="left" data-delay="50" data-tooltip="Gestisci Faq" href="<?php echo $this->url(
-					array(
-						'controller' => 'livello3',
-						'action' => 'gestionefaq'
-					),null,true
-				);  ?>">
-					<i class="material-icons">live_help</i>
-				</a>
-			</li>
-		</ul>
-
 	</div>
 </div>
