@@ -979,6 +979,23 @@ class Livello3Controller extends Zend_Controller_Action
 
         $this->getHelper('Redirector')->gotoSimple('index', 'livello3', $module = null);
     }
+    
+
+    public function eliminapianoAction()
+    {
+        $adminModel = new Application_Model_Admin();
+        $arrayedifici = $adminModel->getResource('Edifici')->getEdifici();
+
+        if (($edificio = $this->controllaParam('edificio')) && ($piano = $this->controllaParam('piano')) &&
+            (array_key_exists($edificio, $arrayedifici )) &&
+            (in_array($piano, $this->getResource('Piani')->getPianiByEdificio($edificio) ))) {
+
+            $adminModel->eliminaPiano($edificio, $piano);
+        }
+
+        $this->getHelper('Redirector')->gotoSimple('modificaedificio', 'livello3', $module = null);
+
+    }
 
     public function gestionepianifugaAction(){
         $edificio       = $this->controllaParam('edificio');
@@ -987,12 +1004,12 @@ class Livello3Controller extends Zend_Controller_Action
         //assegno le variabili alla view
         $this->view->edificio       = $edificio;
         $this->view->numeroPiano    = $numeroPiano;
-        
+
         //calcolo i piani di fuga di questo piano
         $modelPianoDiFuga = new Application_Model_PianoDiFuga();
 
         $pianiDiFuga = $modelPianoDiFuga->getByEdificioPiano($edificio,$numeroPiano);
-        
+
         //assegno i piani di fuga alla view
         $this->view->pianiDiFuga = $pianiDiFuga;
     }
