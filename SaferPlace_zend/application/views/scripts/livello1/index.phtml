@@ -14,16 +14,63 @@
 
 		}
 	</style>
-	
-	<div>
 		<?php
 		$edificio=$this->arrayInformazioni['edificio'];
 		$numPiano=$this->arrayInformazioni['numPiano'];
 		$stanza=$this->arrayInformazioni['stanza'];
+		$evacuare=$this->evacuare;
 		?>
-	</div>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 </head>
 <body>
+<br>
+<br>
+<br>
+<audio id="myAudio">
+	<source src="<?php echo $this->baseUrl('suoni/allarme2.mp3');?>">
+</audio>
+<script>
+	$( document ).ready(function() {
+		setInterval(poll, 45000);
+		function poll() {
+			location.reload();
+		}
+
+	});
+</script>
+<?php if($evacuare): ?>
+<script>
+	$( document ).ready(function() {
+			setInterval(alertFunc, 800);
+		function alertFunc() {
+			$( "body" ).effect("highlight",{color: 'yellow'},600);
+		}
+	});
+	$( document ).ready(function() {
+		var x = document.getElementById("myAudio");
+		setInterval(alertFunc2);
+		function alertFunc2() {
+			x.play();
+		}
+	});
+</script>
+<?php
+endif;
+?>
+<?php if($evacuare): ?>
+	<div id="toggle" class=" row center">
+		<h1 class="red-text accent-3">Pericolo sul tuo piano, mettiti in salvo </h1>
+		<div class="col s12 ">
+	<a href="<?php echo $this->url(
+		array(
+			'controller' => 'livello1',
+			'action' => 'visualizzafuga',
+		)
+	); ?>" id="start" class="btn-large   red accent-3 modal-trigger"><b>Scappa</b></a>
+
+		</div>
+	</div>
+<?php endif; ?>
 		<div class="row">
 			<!-- parte sinistra -->
 			<div id="sx" class="col s12 m4 center">
@@ -50,9 +97,11 @@
 							</table>
 
 						</div>
+
 					</div>
+
 				</div>
-				<a class="btn-floating btn-large red tooltipped " data-position="bottom" data-delay="50" data-tooltip="Check-out"
+				<a class="btn-floating btn-large red tooltipped" data-position="bottom" data-delay="50" data-tooltip="Check-out"  
 				   href="<?php echo $this->url(array('controller' => 'livello1', 'action' => 'cancellaposizione'),null,true); ?>">
 					<i class="material-icons">delete_forever</i></a>
 

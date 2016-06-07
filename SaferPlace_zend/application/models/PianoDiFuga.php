@@ -14,6 +14,9 @@ class Application_Model_PianoDiFuga extends  App_Model_Abstract
     }
     
 
+    public function newPiano($data){
+        $this->getResource('PianoDiFuga')->newPdf($data);
+    }
 
 }
 

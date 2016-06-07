@@ -9,6 +9,7 @@ class Livello1Controller extends Zend_Controller_Action
     protected $_numPiano;
     protected $_edificio;
     protected $user;
+    protected $livello;
     protected $_authService;
 
     public function controlladatiAction(){
@@ -38,8 +39,9 @@ class Livello1Controller extends Zend_Controller_Action
         $this->_authService = new Application_Service_Auth();
         $this->_helper->layout->setLayout('layout1');
         $this->user=$this->_authService->getAuth()->getIdentity()->current()->username;
-        $this->view->modificaform=$this->getModificaform();
-
+        $this->modificaform= $this->getModificaform();
+        $this->view->modificaform= $this->modificaform;
+        $this->livello=$this->_authService->getAuth()->getIdentity()->current()->livello;
 
     }
 
@@ -115,11 +117,27 @@ class Livello1Controller extends Zend_Controller_Action
 
     }
 
+    public function controllaeventoAction(){
+        
+        $eventomodel=new Application_Model_Eventi();
+        $evento=$eventomodel->getEventi();
+        if($evento->current()==array())
+            return false;
+
+        $pianomodel=new Application_Model_Piani();
+        $piano=$pianomodel->getPianiById($evento->current()->idPiano);
+
+        if($this->_edificio==$piano->current()->edificio && $this->_numPiano==$piano->current()->numeroPiano){
+            return true;
+        }
+        return false;
+    }
     public function indexAction()
     {
 
         $this->controlladatiAction();
-
+        $evacuare=$this->controllaeventoAction();
+        $this->view->evacuare=$evacuare;
         $this->view->arrayInformazioni = array('stanza'=>$this->_stanza,'numPiano'=>$this->_numPiano,'edificio'=>$this->_edificio);
 
     }
@@ -141,10 +159,17 @@ class Livello1Controller extends Zend_Controller_Action
     {
         $edificio=$this->controllaParam('edificio');
 
+        if(is_null($edificio))
+            $this->getHelper('Redirector')->gotoSimple('error','error',$module=null);
+
+
 
         $edificimodel = new Application_Model_Edifici();
-        $edifici = $edificimodel->getEdificiSet();
-        $this->view->insiemeEdifici = $edifici;
+        $controllaedificio = $edificimodel->getEdificio($edificio);
+
+        if($controllaedificio->current()==0)
+            $this->getHelper('Redirector')->gotoSimple('error','error',$module=null);
+
 
 
         $pianimodel=new Application_Model_Piani();
@@ -157,9 +182,26 @@ class Livello1Controller extends Zend_Controller_Action
      */
     public function checkinbAction()
     {
+
         $utenteModel = new Application_Model_Utenti();
+
         $edificio=$this->controllaParam('edificio');
         $numPiano=$this->controllaParam('numPiano');
+
+        $pianimodel=new Application_Model_Piani();
+        $piani = $pianimodel->getPianiByEdificio($edificio);
+        $controllo=array();
+        foreach ($piani as $p){
+        $controllo[]=$p->numeroPiano;
+           }
+        if(is_null($edificio))
+            $this->getHelper('Redirector')->gotoSimple('error','error',$module=null);
+
+        if(!in_array($numPiano, $controllo))
+            $this->getHelper('Redirector')->gotoSimple('error','error',$module=null);
+
+        if ($numPiano==0)
+            $this->getHelper('Redirector')->gotoSimple('checkinint','livello1',$module=null,array('edificio'=>$edificio));
         $errore=$this->controllaParam('errore'); //variabile usata per mostrare a video un messaggio di errore 
         //echo $edificio;die;
         $this->view->insiemePiani = $numPiano;
@@ -272,61 +314,29 @@ class Livello1Controller extends Zend_Controller_Action
 
     }
 
+    public function getModificaform()
+    {
+        return $this->getHelper('ModificaProfilo')->getForm($this->user, 1);
+
+
+    }
+
     public function modificadatiutenteAction()
     {
         
     }
 
-
-    public function getModificaform()
-  {
-      $urlHelper = $this->_helper->getHelper('url');
-
-      $usermodel=new Application_Model_Utenti();
-      $dati=$usermodel->getDatiUtenteByUserSet($this->user);
-      $this->modificaform= new Application_Form_Registratiform($dati);
-      $this->modificaform->populate($dati);
-
-      $this->modificaform->setAction($urlHelper->url(array(
-          'controller' => 'livello1',
-          'action' => 'verificamodifica'),
-          'default'
-      ));
-      return $this->modificaform;
-  }
+    
 
     public function verificamodificaAction()
-    {
-        $request = $this->getRequest();
-        if (!$request->isPost()) {
-            return $this->_helper->redirector('modificadatiutente');
-        }
-        $form = $this->modificaform;
-        if (!$form->isValid($request->getPost())) {
-            $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
-            return $this->render('modificadatiutente');
-        }
-        else
         {
-            $datiform=$this->modificaform->getValues(); //datiform è un array
+            $request = $this->getRequest();
 
-            $utentimodel=new Application_Model_Utenti();
-            $username = $this->user;
-            
-            if($utentimodel->existUsername($datiform['username']) && $datiform['username'] != $this->getParam('username')) //controllo se l'username inserito esiste già nel db
-            {
-                $form->setDescription('Attenzione: l\'username che hai scelto non è disponibile.');
-                return $this->render('modificadatiutente');
-            }
-            
-            else{
-                $utentimodel->updateUtentiSet($datiform, $username);
-                //aggiorna l'username alla sessione
-                $this->_authService->getAuth()->getIdentity()->current()->username = $datiform['username'];
-                $this->getHelper('Redirector')->gotoSimple('index','livello1', $module = null);
-            }
+            $form = $this->modificaform;
+
+            $this->getHelper('ModificaProfilo')->verificaModifica($request,1,$form);
         }
-    }
+
 
     public function cancellaposizioneAction(){
         $collocazionemodel=new Application_Model_Collocazioni();

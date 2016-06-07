@@ -15,23 +15,27 @@ class Livello2Controller extends Zend_Controller_Action
         $this->_helper->layout->setLayout('layout2');
         $this->user= $this->_authService->getIdentity()->current()->username;
         $this->modelUtente= new Application_Model_UtenteStaff($this->user);
-        $this->view->profiloform= $this->getModificaForm();
+        $this->modificaform = $this->getModificaForm();
+        $this->view->modificaform= $this->modificaform;
+        $this->evacuazioneform = $this->getEvacuazioneForm(0,0,0);
+        $this->view->evacuazioneform= $this->evacuazioneform;
+
     }
 
     public function indexAction()
     {
-        // action body
+        $this->getHelper('Redirector')->gotoRoute(array('controller'=>'livello2', 'action'=>'dashboard'));
     }
 
     public function notifyAction()
     {
+        $array = array('aa' => 1, 'bb' => 1);
 
-        
-       // $notifiche = new Application_Resource_Notifica();
-       // print_r($modelUtente->getEdificiGestiti());
+
+        echo array_key_exists('aa', $array );
         die;
         //estraggo i risultati dell'esecuzione della query e li stampo
-        $this->view->assign("notifiche", $utente->getNotificheEmergenze());
+
 
 
         //$this->view->assign('notifiche',$notifiche->fetchAll());
@@ -45,7 +49,11 @@ class Livello2Controller extends Zend_Controller_Action
 
         $this->view->assign('persedificio', $persEdificio);
 
-        if (($edificio = $this->controllaParam('edificio')) && ($piano = $this->controllaParam('piano'))) {
+        // controlla se i parametri sono stati passati, in caso affermativo controlla che siano corretti
+        if (($edificio = $this->controllaParam('edificio')) && ($piano = $this->controllaParam('piano')) &&
+            (array_key_exists($edificio, $edificigestiti )) && (in_array($piano, $edificigestiti[$edificio] )))
+        {
+
 
             $persPiano = $this->modelUtente->getPersPiano($edificio, $piano);
             $persPerStanza = $this->modelUtente->getNumPersStanze($edificio, $piano );
@@ -121,68 +129,107 @@ class Livello2Controller extends Zend_Controller_Action
         $edificio = $this->controllaParam('edificio');
         $piano    = $this->controllaParam('piano');
         $tipo     = $this->controllaParam('tipo');
-        
+
         
         $this->view->evacuazioneform= $this->getEvacuazioneForm($edificio,$piano,$tipo);
         
     }
 
+
+
     public function sceglipdfAction()
     {
+        $request = $this->getRequest();
+        if (!$request->isPost()) {
+            $redirectorhelper = Zend_Controller_Action_HelperBroker::getStaticHelper('Redirector');
+            return $redirectorhelper->gotoRoute('livello2', 'evacuazione');
+        }
 
-        $edificio = $this->getRequest()->getPost('edificio');
-        $piano = $this->getRequest()->getPost('piano');
-        
-        if ($zona  = $this->getRequest()->getPost('zona'))
-            $this->view->assign('zona', $zona);
-        if ($tipo  = $this->getRequest()->getPost('tipo'))
-            $this->view->assign('tipo', $tipo);
+        if (!$this->evacuazioneform->isValid($request->getPost())) {
+            $this->evacuazioneform->setDescription('Attenzione: alcuni dati inseriti sono errati.');
+            return $this->render('evacuazione');
+        }
+        else {
+            $edificio = $this->getRequest()->getPost('edificio');
+            $piano = $this->getRequest()->getPost('piano');
 
-        $this->view->assign('edificio', $edificio);
-        $this->view->assign('piano', $piano);
-        $this->view->assign('pianifuga', $this->modelUtente->getPianiFuga($edificio, $piano));
-        $this->view->assign('zone', $this->modelUtente->getZone($edificio, $piano));
-        
+            if ($zona = $this->getRequest()->getPost('zona'))
+                $this->view->assign('zona', $zona);
+            if ($tipo = $this->getRequest()->getPost('tipo'))
+                $this->view->assign('tipo', $tipo);
+
+            $this->view->assign('edificio', $edificio);
+            $this->view->assign('piano', $piano);
+            $this->view->assign('pianifuga', $this->modelUtente->getPianiFuga($edificio, $piano));
+            $this->view->assign('zone', $this->modelUtente->getZone($edificio, $piano));
+        }
     }
 
     public function avviaevacuazioneAction()
     {
-        $utenteModel = new Application_Model_UtenteStaff();
+
         $idPianoFuga = $this->controllaParam('idPianoFuga');
         $edificio =$this->controllaParam('edificio');
         $piano    =$this->controllaParam('piano');
         $zona     =$this->controllaParam('zona');
         $idSegnalazione = $this->controllaParam('segnalazione') ? $this->controllaParam('segnalazione') : null;
         $tipo = $this->controllaParam('tipo');
-        
-        $utenteModel->avviaEvac($edificio,$tipo,$idSegnalazione, $piano, $zona, $idPianoFuga);
+
+        $this->modelUtente->avviaEvac($edificio,$tipo,$idSegnalazione, $piano, $zona, $idPianoFuga);
 
 
-        $this->getHelper('Redirector')->gotoRoute(array('controller'=>'livello2', 'action'=>'dashboard'));
+        $this->getHelper('Redirector')->gotoRoute(array('controller'=>'livello2', 'action'=>'dashboard'), null, true);
             
             
     }
 
     public function getModificaform()
     {
-        $urlHelper = $this->_helper->getHelper('url');
+        return $this->getHelper('ModificaProfilo')->getForm($this->user, 2);
 
-        $usermodel=new Application_Model_Utenti();
-        $dati=$usermodel->getDatiUtenteByUserSet($this->user);
-        $this->modificaform= new Application_Form_Registratiform($dati);
 
-        $this->modificaform->setAction($urlHelper->url(array(
-            'controller' => 'livello1',
-            'action' => 'verificamodifica'),
-            'default'
-        ));
-        return $this->modificaform;
     }
-    public function modificaAction(){
-        $this->getHelper('Redirector')->gotoRoute(array('controller'=>'livello1', 'action'=>'modificadatiutente'));;
+    public function modificadatiutenteAction(){
+
+       
     }
 
+    public function verificamodificaAction()
+    {
+        $request = $this->getRequest();
+        $form = $this->modificaform;
+        $this->getHelper('ModificaProfilo')->verificaModifica($request,2,$form);
+    }
 
+    public function ajaxedifAction(){
+
+        $this->_helper->getHelper('layout')->disableLayout();
+        $this->_helper->viewRenderer->setNoRender();
+
+        $opzioni = $this->modelUtente->pianiEdToArray($_POST['edificio']);
+        $response = $this->_helper->json($opzioni);
+
+        if ($response !== null) {
+            $this->getResponse()->setHeader('Content-type','application/json')->setBody($response);
+        }
+
+        
+    }
+
+    public function ajaxpianoAction(){
+
+        $this->_helper->getHelper('layout')->disableLayout();
+        $this->_helper->viewRenderer->setNoRender();
+
+        $opzioni = $this->modelUtente->zonePianoToArray($_POST["edificio"], $_POST['piano']);
+        $response = $this->_helper->json($opzioni);
+
+        if ($response !== null) {
+            $this->getResponse()->setHeader('Content-type','application/json')->setBody($response);
+        }
+
+
+    }
 }
 
 

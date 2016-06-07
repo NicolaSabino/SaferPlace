@@ -24,10 +24,19 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
     }
     
     
+	  protected function _initViewSettings()
+    {
+        $this->bootstrap('view');
+        $this->_view = $this->getResource('view');
+        $this->_view->headMeta()->setCharset('UTF-8');
+        $this->_view->headMeta()->appendHttpEquiv('Content-Language', 'it-IT');
+        $this->_view->headLink()->appendStylesheet($this->_view->baseUrl('css/materialize.css'));
+        $this->_view->headTitle('Corso di Tecnologie Web - Zend Project - Versione 6');
+    }
 
 
 
-    //loader di cucchia
+    //loader
     protected function _initDefaultModuleAutoloader()
     {
         $loader = Zend_Loader_Autoloader::getInstance();
@@ -36,6 +45,14 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
             ->addResourceType('modelResource','models/resources','Resource');
     }
     
+    protected function _initActionHelpers(){
+		//helper per rendere uniformi le procedur edi modifca dei dati degli 				utenti di livello 1 e 2
+		Zend_Controller_Action_HelperBroker::addHelper(
+		    new App_Action_Helper_ModificaProfilo()
+
+		);
+	
+    }
 
     //impostazioni db adapter
     protected function _initDbParms()
@@ -49,6 +66,9 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         ));
         Zend_Db_Table_Abstract::setDefaultAdapter($db);
     }
+
+
+    
 
 
 }

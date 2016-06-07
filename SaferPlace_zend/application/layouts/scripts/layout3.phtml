@@ -35,7 +35,7 @@
     <li><a href="<?php echo $this->url(
             array('controller' => 'livello3', 'action' => 'modificadatipersonali'),null,true); ?>">Modifica Profilo</a></li>
     <li><a href="<?php echo $this->url(
-            array('controller' => 'index', 'action' => 'index'),null,true); ?>">Logout</a></li>
+            array('controller' => 'index', 'action' => 'logout'),null,true); ?>">Logout</a></li>
 </ul>
 
 <!-- NAV BAR -->
@@ -48,8 +48,8 @@
                 array(
                     'controller' => 'livello3',
                     'action'=>'index',
-                )
-            ); ?>" class="brand-logo" id="containerLogo" style="margin-top: 12px"><img src="<?php echo $this->baseUrl('image/logoM.png');?>" height="41.1" ></a>
+                ),null,true
+            )?>" class="brand-logo" id="containerLogo" style="margin-top: 12px"><img src="<?php echo $this->baseUrl('image/logoM.png');?>" height="41.1" ></a>
 
             <ul class="right">
                 <li>

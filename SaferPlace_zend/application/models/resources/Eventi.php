@@ -28,10 +28,18 @@ class Application_Resource_Eventi extends Zend_Db_Table_Abstract {
             ->from(array('e'=>'evento'),array('id','nome','idPiano'))
             ->join(array('p'=> 'piano'),
                 'e.idPiano = p.id', array('numeroPiano','edificio'))
-            ->where('p.edificio = ?', $edificio);
+            ->where('p.edificio = ?', $edificio)
+            ->order('e.id DESC');
 
         //restituisco solo la query perchè mi serve in una funzione che fa una union
         return $select;
+    }
+    
+    public function getEventi(){
+        $select=$this->select();
+        return $this->fetchAll($select);
+        
+        
     }
     
 

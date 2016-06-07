@@ -76,8 +76,8 @@
 						<?php
 								$file = APPLICATION_PATH .'/../public/image/piante/map/'.$this->insiemeEdifici. ' Piano '.$this->insiemePiani;
 
-								$handler = fopen($file, "r");
-								echo fread($handler, filesize($file)); ?>
+								if ($handler = fopen($file, "r"))
+									echo fread($handler, filesize($file)); ?>
 					</map>
 				</div>
 			</div>

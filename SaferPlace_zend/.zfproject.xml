@@ -71,6 +71,7 @@
         <formFile formName="Gestioneedificio"/>
         <formFile formName="Gestionepiano"/>
         <formFile formName="Gestionezone"/>
+        <formFile formName="Nuovopdf"/>
       </formsDirectory>
       <layoutsDirectory>
         <layoutScriptsDirectory>

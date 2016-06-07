@@ -103,8 +103,6 @@
 
 				<!-- corpo contenente l'elenco dei piani con i relativi bozzetti delle piante -->
 
-
-
 						<?php
 
 							foreach ($this->piani as $piano):
@@ -119,6 +117,7 @@
       							<span class="card-title activator white-text">
 											Piano <?php echo $piano->numeroPiano ?>
 
+										<!-- elimina -->
 										<a class="btn-large btn-flat transparent right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Elimina Piano"
 										   href="<?php echo $this->url(
 											   array(
@@ -126,8 +125,10 @@
 												   'action'=>'eliminapiano',
 											   )
 										   ); ?>
-										"><i class="material-icons white-text">delete_forever</i></a>
-										<a class="btn-large btn-flat transparent right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Aggiungi Piano di Fuga"
+										"><i class="material-icons white-text">delete</i></a>
+
+										<!-- piani di fuga -->
+										<a class="btn-large btn-flat transparent right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Piani di Fuga"
 										   href="<?php echo $this->url(
 											   array(
 												   'controller' => 'livello3',
@@ -136,8 +137,20 @@
 												   'numeroPiano' => $piano->numeroPiano
 											   )
 										   ); ?>"
-										><i class="material-icons white-text">add_circle</i></a>
-									    <a class="btn-large btn-flat transparent right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Gestisci Zone"><i class="material-icons white-text">border_clear</i></a>										<a class="btn-large btn-flat transparent right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Modifica"
+										><i class="material-icons white-text">trending_up</i></a>
+
+										<!-- zone -->
+									    <a class="btn-large btn-flat transparent right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Gestisci Zone" href="<?php echo $this->url(
+											array(
+												'controller' => 'livello3',
+												'action'=>'gestionezone',
+												'edificio' => $this->edificio[0]->nome,
+												'numeroPiano' => $piano->numeroPiano
+											)
+										); ?>"><i class="material-icons white-text" >border_clear</i></a>
+									
+										<!-- modifica -->
+										<a class="btn-large btn-flat transparent right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Modifica"
 										   href="<?php echo $this->url(
 											   array(
 												   'controller' => 'livello3',
@@ -145,8 +158,7 @@
 												   'edificio' => $this->edificio[0]->nome,
 												   'numeroPiano' => $piano->numeroPiano
 											   )
-										   ); ?>"
-										><i class="material-icons white-text">edit</i></a>
+										   ); ?>"><i class="material-icons white-text">edit</i></a>
 
 									</span>
 								</div>
@@ -195,7 +207,7 @@
 
 
 
-<!-- Modal elimina faq -->
+<!-- Modal elimina edificio -->
 <div id="elimina" class="modal">
     <div class="modal-content">
         <h4 class="green-text">Attenzione!</h4>

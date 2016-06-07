@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+
+    <!-- configurazioni da bootstrap -->
+    <?php echo $this->headMeta(); ?>
+    <?php echo $this->headLink(); ?>
+    <?php echo $this->headTitle(); ?>
+    <?php echo $this->headScript(); ?>
+
+    <?php $home=$this->authInfo('livello');?>
+    <!-- favicon -->
+    <link rel="icon"
+          type="imag/png"
+          href="<?php echo $this->baseUrl('image/logostilpiccolo.png');?>">
+
+
+    <!-- Carico gli script e configuro materialize-->
+    <script  src="<?php echo $this->baseUrl('js/jquery.min.js');?>"></script>
+    <script  src="<?php echo $this->baseUrl('js/materialize.js');?>"></script>
+    <script  src="<?php echo $this->baseUrl('js/index.js');?>"></script>
+    <script type="text/javascript" src="<?php echo $this->baseUrl('js/modaljs.js');?>"></script>
+
+    <!-- metatag materialize -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#4caf50" />
+
+
+</head>
+
+<body>
+<!-- NAV BAR -->
+<div class="navbar-fixed">
+
+
+    <nav class="green  white-text">
+        <div class="nav-wrapper container">
+            <a href="<?php if($home==0){
+                echo $this->url(
+                array(
+                    'controller' =>'index',
+                    'action'=>'index',
+                ),null,true
+            );}
+            else
+            {
+                echo $this->url(
+                    array(
+                        'controller' =>'livello'.$home,
+                        'action'=>'index',
+                    ),null,true
+                );}?>" class="brand-logo" id="containerLogo" style="margin-top: 12px"><img src="<?php echo $this->baseUrl('image/logoM.png');?>" height="41.1"></a>
+            
+        </div>
+    </nav>
+
+</div>
+
+<?php echo $this->layout()->content; ?>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+            <div class="row center">
+
+                <a href="<?php if($home==0){
+                    echo $this->url(
+                        array(
+                            'controller' =>'index',
+                            'action'=>'index',
+                        ),null,true
+                    );}
+                else
+                {
+                    echo $this->url(
+                        array(
+                            'controller' =>'livello'.$home,
+                            'action'=>'index',
+                        ),null,true
+                    );}?>" id="start" class="btn-large red" ><b>Torna alla home</b></a>
+            </div>
+
+</body>
+</html>
