@@ -3,15 +3,16 @@
 class Application_Form_Gestisciutente extends Zend_Form
 {
 
-    protected $_nome;
-    protected $_cognome;
-    protected $_username;
-    protected $_genere;
-    protected $_eta;
-    protected $_telefono;
-    protected $_password;
-    protected $_email;
-    protected $_livello;
+    //attributi
+    protected $_nome        = null;
+    protected $_congome     = null;
+    protected $_genere       = null;
+    protected $_eta         = null;
+    protected $_telefono    = null;
+    protected $_username    = null;
+    protected $_password    = null;
+    protected $_email       = null;
+    protected $_livello     = null;
 
 
     public function __construct($dati=null)
@@ -31,8 +32,10 @@ class Application_Form_Gestisciutente extends Zend_Form
         }
 
         $this->init();
+
     }
-    
+
+
     public function init()
     {
         $this->setMethod('post');
@@ -44,8 +47,8 @@ class Application_Form_Gestisciutente extends Zend_Form
             'filters'       => array('StringTrim'),
             'required'      => true,
             'label'         => 'Nome',
-            'class'         =>'black-text'
-
+            'class'         =>'black-text',
+            'value'         => $this->_nome
 
 
         ));
@@ -76,8 +79,8 @@ class Application_Form_Gestisciutente extends Zend_Form
             ),
             'required'          => true,
             'label'             => 'Età',
-            'class'             => 'black-text',
-            'value'             =>  $this->_eta
+            'class'             =>'black-text',
+            'value'             =>$this->_eta
 
 
         ));
@@ -85,11 +88,11 @@ class Application_Form_Gestisciutente extends Zend_Form
         $this->addElement('text', 'telefono', array(
             'filters'       => array('StringTrim'),
             'validators'    => array(
-                array('StringLength', true, array(10, 10)),array('Digits')
+                array('StringLength', true, array(10, 10))
             ),
             'required'      => true,
             'label'         => 'Telefono',
-            'class'         => 'black-text',
+            'class'         =>'black-text',
             'value'         => $this->_telefono
 
 
@@ -104,8 +107,7 @@ class Application_Form_Gestisciutente extends Zend_Form
             'required'      => true,
             'label'         => 'Username',
             'class'         =>'black-text',
-            'value'         => $this->_username,
-            'Db_NoRecordExists' => true,
+            'value'         => $this->_username
         ));
 
         $this->addElement('password', 'password', array(
@@ -139,6 +141,7 @@ class Application_Form_Gestisciutente extends Zend_Form
             'multiOptions'  => array('1'=>'Utente Semplice','2'=>'Staff'),
             'class'         =>'black-text',
             'value'         => $this->_livello
+
         ));
 
         $this->addElement('submit', 'ok', array(

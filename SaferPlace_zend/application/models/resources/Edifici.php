@@ -60,9 +60,7 @@ class Application_Resource_Edifici extends  Zend_Db_Table_Abstract
     }
 
     public function updateByName($data,$key){
-        
-        
-        //se non inserisco alcuna immagine non sovrascivo il campo mappa
+
         if($data['mappa'] == null){
             $data = array(
                 'nome'          => $data['nome'],
@@ -77,6 +75,17 @@ class Application_Resource_Edifici extends  Zend_Db_Table_Abstract
 
     }
 
+    public function updateEdificio($dati){
+        $data = array(
+            'nome'      => $dati['nome'],
+            'mappa'      => $dati['mappa'],
+            'informazioni'      => $dati['informazioni'],
+        );
+        $where = $this->getAdapter()->quoteInto('nome = ?', $dati['nome']);
+
+        $this->update($data, $where);
+
+    }
     public function insertEdificio($data){
 
         //se non inscerisco alcuna immagine assegno quella di default Defautl.jpg

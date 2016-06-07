@@ -41,5 +41,7 @@ class Application_Form_Loginform extends Zend_Form
             array('Description', array('placement' => 'prepend', 'class' => 'formerror')),
             'Form'
         ));
+
+        include_once ('Lingua.php');
     }
 }
