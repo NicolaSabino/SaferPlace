@@ -26,16 +26,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <meta name="theme-color" content="#4caf50" />
 
+
 </head>
 
 <body>
 
 
 <ul id="menu" class="dropdown-content">
-    <li><a <!--href="<?php echo $this->url(
-            array('controller' => 'livello2', 'action' => 'modificadatipersonali'),null,true); ?>"-->>Modifica Profilo</a></li>
     <li><a href="<?php echo $this->url(
-            array('controller' => 'index', 'action' => 'index'),null,true); ?>">Logout</a></li>
+            array('controller' => 'livello1', 'action' => 'modificadatiutente'),null,true); ?>">Modifica Profilo</a></li>
+    <li><a href="<?php echo $this->url(
+            array('controller' => 'index', 'action' => 'logout'),null,true); ?>">Logout</a></li>
 </ul>
 
 <!-- NAV BAR -->
@@ -44,22 +45,26 @@
 
     <nav class="green  white-text">
         <div class="nav-wrapper container">
-            <a href="index" class="brand-logo" id="containerLogo" style="margin-top: 12px"><img src="<?php echo $this->baseUrl('image/logoM.png');?>" height="41.1" ></a>
+            <a href="<?php echo $this->url(
+                array(
+                    'controller' => 'livello2',
+                    'action'=>'index',
+                )
+            ); ?>" class="brand-logo" id="containerLogo" style="margin-top: 12px"><img src="<?php echo $this->baseUrl('image/logoM.png');?>" height="41.1"></a>
+
+            <ul class="right">
+                <li>
+                    <a class="dropdown-button" data-beloworigin="true" href="#" data-activates="menu"><div class="chip green lighten-3">
+                            <img src="<?php echo $this->baseUrl('image/icone/account.png');?>" alt="Contact Person">
+                            <?php
+                            echo $this->authInfo('username');
+                            ?>
+                        </div><i class="material-icons right">arrow_drop_down</i></a>
+                </li>
+            </ul>
         </div>
-
-        <ul class="right">
-            <li>
-                <a class="dropdown-button" data-beloworigin="true" href="#" data-activates="menu"><div class="chip green lighten-3">
-                        <img src="<?php echo $this->baseUrl('image/icone/account.png');?>" alt="Contact Person">
-                        <?php
-                        echo $this->authInfo('username');
-                        ?>
-                    </div><i class="material-icons right">arrow_drop_down</i></a>
-            </li>
-
-        </ul>
-
     </nav>
+
 </div>
 <?php echo $this->layout()->content; ?>
 
@@ -73,8 +78,7 @@
                href="<?php echo $this->url(array(
                        'controller' => 'index',
                        'action'     => 'index'
-                   )). '"
-            >';?>
+                   ));?>
 
                 <i class="material-icons">exit_to_app</i>
             </a>
