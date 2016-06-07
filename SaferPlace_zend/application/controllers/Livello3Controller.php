@@ -26,6 +26,8 @@ class Livello3Controller extends Zend_Controller_Action
     protected $modificadatiform = null;
 
     protected $_gestisciPianoForm = null;
+    
+    protected $_nuovoPdfForm;
 
     public function init()
     {
@@ -78,6 +80,9 @@ class Livello3Controller extends Zend_Controller_Action
                 $this->view->formmodificapiano = $this->getModificaPianoForm();
             }
         }
+        
+        $this->_nuovoPdfForm = $this->getNewPdfForm();
+        $this->view->nuovoPdfForm = $this->_nuovoPdfForm;
     }
 
     public function indexAction()
@@ -1012,8 +1017,130 @@ class Livello3Controller extends Zend_Controller_Action
 
         //assegno i piani di fuga alla view
         $this->view->pianiDiFuga = $pianiDiFuga;
+        
     }
 
+    public function verificanuovopdfAction(){
+        $request = $this->getRequest();
+
+        $edificio = $this->controllaParam('edificio');
+        $numeroPiano = $this->controllaParam('numeroPiano');
+
+        if (!$request->isPost()) {
+            return $this->_helper->redirector('index');
+        }
+
+        $form = $this->_nuovoPdfForm;
+
+        if (!$form->isValid($request->getPost())) {
+
+            $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
+
+            $this->ripopolapdf($edificio,$numeroPiano);
+
+            $this->render('gestionepianifuga');
+
+        } else {
+
+            $datiform = $this->_nuovoPdfForm->getValues();
+
+            $modelPianoDiFuga = new Application_Model_PianoDiFuga();
+
+          
+            //stacco l'estensione dal file per recuperarla all'atto della rinominazione
+            $file = explode(".", $datiform['pianta']);
+
+            $nomeFile = $edificio . " Piano " . $numeroPiano . " Uscite ". $datiform['nomePdf'];
+
+            $path1 = APPLICATION_PATH . '/../public/image/piante/piani di fuga/' . $datiform['pianta'];
+            $path2 = APPLICATION_PATH . '/../public/image/piante/piani di fuga/' . $nomeFile . "." . end($file); // l'ultimo pezzo è per l'estensione del file
+
+
+            rename($path1, $path2);
+
+            //controllo che non ci siano piani di fuga con lo stesso nome
+            $pianiDiFuga = $modelPianoDiFuga->getByEdificioPiano($edificio,$numeroPiano);
+            $check = 0;
+
+            foreach ($pianiDiFuga as $pdf) {
+
+                //stacco l'estensione dalla stringa
+                $app = explode(".",$pdf->pianta);
+
+                if ($nomeFile == $app[0]) {
+                    $check++; //se i nomi corrispondono devo impedire l'inserimento
+                }
+            }
+
+            if ($check) {
+                $form->setDescription('Attenzione: Il piano di fuga inserito già esiste.');
+                $this->ripopolapdf($edificio,$numeroPiano);
+                return $this->render('gestionepianifuga'); //fine controllo sui piani
+
+            } else {
+
+
+                $modelPianoDiFuga->newPiano($nomeFile.".". end($file));
+
+
+                //reindirizzo a gestione piani di fuga
+                $this->getHelper('Redirector')->gotoSimple('gestionepianifuga', 'livello3', $module = null,
+                    array(
+                        'edificio'      => $edificio,
+                        'numeroPiano'   => $numeroPiano
+                    ));
+
+            }
+
+            $this->getHelper('Redirector')->gotoSimple('index', 'livello3', $module = null);
+        }
+
+
+    }
+
+    protected function getNewPdfForm(){
+
+        $this->_nuovoPdfForm = new Application_Form_Nuovopdf();
+
+        $urlHelper = $this->_helper->getHelper('url');
+
+        $this->_nuovoPdfForm->setAction(
+            $urlHelper->url(array(
+
+                'controller' => 'livello3',
+                'action' => 'verificanuovopdf'),
+                'default'
+            )
+        );
+
+        return $this->_nuovoPdfForm;
+    }
+
+    protected function ripopolapdf($edificio,$numeroPiano){
+
+        $modelPianoDiFuga = new Application_Model_PianoDiFuga();
+        $pianiDiFuga = $modelPianoDiFuga->getByEdificioPiano($edificio,$numeroPiano);
+
+        //assegno i piani di fuga alla view
+        $this->view->pianiDiFuga = $pianiDiFuga;
+        $this->view->assign('edificio',$edificio);
+        $this->view->assign('numeroPiano',$numeroPiano);
+    }
+
+
+    public function eliminapdfAction(){
+        $modelAdmin = new Application_Model_Admin();
+        $edificio = $this->getParam('edificio');
+        $numeroPiano = $this->getParam('numeroPiano');
+        $pianoDiFuga = $this->getParam('pdf');
+            
+        $modelAdmin->eliminaPianoFugaByNome($pianoDiFuga);
+        $this->getHelper('Redirector')->gotoSimple('gestionepianifuga', 'livello3', $module = null, array(
+            'edificio'      => $edificio,
+            'numeroPiano'   => $numeroPiano
+        ));
+        
+    }
 
 }
 

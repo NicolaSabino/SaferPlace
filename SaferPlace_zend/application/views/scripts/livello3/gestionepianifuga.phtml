@@ -8,13 +8,23 @@
 			<!-- titolo -->
 			<div class="col s12 center">
 				<h3 class="green-text">
-					<?php echo $this->edificio?> - Piano<?php echo $this->numeroPiano?>
+					<?php echo $this->edificio?> - Piano <?php echo $this->numeroPiano?>
 				</h3>
 			</div>
-			<!-- bottone aggiungi-->
-			<div class="col s12 center">
-				<a class="btn-large btn-floating green"><i class="material-icons">add</i></a>
+			<!-- card aggiungi-->
+			<div class="col s6 push-l3">
+				<div class="card">
+					<div class="card-content green white-text">
+						<span class="card-title white-text">Aggiungi un nuovo piano di fuga</span>
+					</div>
+					<div class="card-content">
+						<?php
+							echo $this->nuovoPdfForm
+						?>
+					</div>
+				</div>
 			</div>
+
 			
 			<!-- blocco dei piani di fuga -->
 			<?php foreach ($this->pianiDiFuga as $pdf): ?>
@@ -25,21 +35,45 @@
 			
 			<div class="col s12">
 				
-				<div class="card">
+				<div class="card ">
 
-					<div class="card-content green ">
-      							<span class="card-title activator white-text">
+					<div id="<?php echo $app[0]; ?>" class="card-content green ">
+      							<span class="card-title white-text">
 									<?php echo $app[0] ?>
-									<a class="btn-large btn-flat transparent right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Elimina piano di fuga"
-									   href="<?php echo $this->url(
-										   array(
-											   'controller' => 'livello3',
-											   'action'=>'',
-										   )
-									   ); ?>
-									"><i class="material-icons white-text">delete</i></a>
+									<a class="btn-large activator btn-flat transparent right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Elimina piano di fuga"
+									   >
+									<i class="material-icons white-text">delete</i></a>
 
 								</span>
+					</div>
+
+					<!-- elimina pdf -->
+					<div class="card-reveal ">
+						<div style="margin: 15%">
+							<h2 class="green-text center-align">Attenzione!</h2>
+							<h5 class="center-align">Sei sicuro di voler eliminare<br><?php echo $app[0]?>?</h5>
+
+							<div class="row center-align">
+								<div class="col l2 push-l4 push-m4">
+									<a class=" btn-large green white-text card-title" href="
+							<?php
+									echo $this->url(
+										array(
+											'controller'=> 'livello3',
+											'action' 	=> 'eliminapdf',
+											'edificio'  => $this->edificio,
+											'numeroPiano'  => $this->numeroPiano,
+											'pdf'       => $app[0]
+										));
+									?>">Si</a><br>
+								</div>
+								<div class="col l2 push-l4 push-m4">
+									<a class="btn-large red white-text card-title activator center">No</a>
+								</div>
+							</div>
+						</div>
+
+
 					</div>
 					<div class='card-image'>
 						<img src="<?php echo $this->baseUrl($immagine) ?>">
@@ -58,7 +92,6 @@
 				'controller' 	=> 'livello3',
 				'action' 		=> 'modificaedificio',
 				'edificio'		=> $this->edificio,
-				'numeroPiano'	=> $this->numeroPiano
 			),null,true
 		);
 
@@ -66,4 +99,9 @@
 			<i class="material-icons">arrow_back</i>
 		</a>
 	</div>
+	</div>
+
+
+
 </div>
+

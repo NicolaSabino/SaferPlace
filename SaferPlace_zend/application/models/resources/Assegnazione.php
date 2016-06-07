@@ -52,5 +52,11 @@ class Application_Resource_Assegnazione extends  Zend_Db_Table_Abstract
         
         return $this->fetchAll($select);
     }
+
+    public function delByPdf($idpdf) {
+
+        $where = $this->getAdapter()->quoteInto('idPianoFuga = ?', $idpdf);
+        $this->delete($where);
+    }
     
 }

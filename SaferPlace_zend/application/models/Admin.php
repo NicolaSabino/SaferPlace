@@ -52,6 +52,15 @@ class Application_Model_Admin extends App_Model_Abstract {
             $this->eliminaPiano($edificio, $item->numeroPiano);
         }
 
-        $this->$this->getResource('Edifici')->delByName($edificio);
+        $this->getResource('Edifici')->delByName($edificio);
+    }
+    
+    public function eliminaPianoFugaByNome($nomepianta) {
+
+        $var = $this->getResource('PianoDiFuga')->getByPianta($nomepianta);
+        //print_r($id); die();
+        $this->getResource('PianoDiFuga')->delByNome($nomepianta);
+        $this->getResource('Assegnazione')->delByPdf($var->id);
+        
     }
 }

@@ -69,6 +69,7 @@
         <formFile formName="Evacuazioneform"/>
         <formFile formName="Gestioneedificio"/>
         <formFile formName="Gestionepiano"/>
+        <formFile formName="Nuovopdf"/>
       </formsDirectory>
       <layoutsDirectory>
         <layoutScriptsDirectory>

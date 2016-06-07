@@ -41,4 +41,27 @@ class Application_Resource_PianoDiFuga extends  Zend_Db_Table_Abstract
 
         return $this->fetchAll($select);
     }
+    
+    public function newPdf($nomeFile){
+        
+        $data = array( 'pianta' => $nomeFile);
+        
+        $this->insert($data);
+    }
+
+    public function getByPianta($nomepianta){
+        
+        $select = $this->select()
+                       ->from('pianodifuga', 'id')
+                       ->where('pianta like ?', $nomepianta.'%');
+        return $this->fetchAll($select);
+    }
+    
+    public function delByNome($nomepianta){
+
+        
+        $where = $this->getAdapter()->quoteInto('pianta like ?', $nomepianta.'%');
+        $this->delete($where);
+
+    }
 }
