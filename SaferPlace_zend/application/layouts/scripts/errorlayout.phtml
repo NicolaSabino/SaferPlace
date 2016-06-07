@@ -9,7 +9,7 @@
     <?php echo $this->headTitle(); ?>
     <?php echo $this->headScript(); ?>
 
-
+    <?php $home=$this->authInfo('livello');?>
     <!-- favicon -->
     <link rel="icon"
           type="imag/png"
@@ -30,47 +30,58 @@
 </head>
 
 <body>
-
-
-<ul id="menu" class="dropdown-content">
-    <li><a href="<?php echo $this->url(
-            array('controller' => 'livello1', 'action' => 'modificadatiutente'),null,true); ?>">Modifica Profilo</a></li>
-    <li><a href="<?php echo $this->url(
-            array('controller' => 'index', 'action' => 'logout'),null,true); ?>">Logout</a></li>
-</ul>
-
 <!-- NAV BAR -->
 <div class="navbar-fixed">
 
 
     <nav class="green  white-text">
         <div class="nav-wrapper container">
-            <a href="<?php echo $this->url(
+            <a href="<?php if($home==0){
+                echo $this->url(
                 array(
-                    'controller' => 'livello1',
+                    'controller' =>'index',
                     'action'=>'index',
                 )
-            ); ?>" class="brand-logo" id="containerLogo" style="margin-top: 12px"><img src="<?php echo $this->baseUrl('image/logoM.png');?>" height="41.1"></a>
-
-            <ul class="right">
-                <li>
-                    <a class="dropdown-button" data-beloworigin="true" href="#" data-activates="menu"><div class="chip green lighten-3">
-                            <img src="<?php echo $this->baseUrl('image/icone/account.png');?>" alt="Contact Person">
-                            <?php
-                            echo $this->authInfo('username');
-                            ?>
-                        </div><i class="material-icons right">arrow_drop_down</i></a>
-                </li>
-            </ul>
+            );}
+            else
+            {
+                echo $this->url(
+                    array(
+                        'controller' =>'livello'.$home,
+                        'action'=>'index',
+                    )
+                );}?>" class="brand-logo" id="containerLogo" style="margin-top: 12px"><img src="<?php echo $this->baseUrl('image/logoM.png');?>" height="41.1"></a>
+            
         </div>
     </nav>
 
 </div>
 
 <?php echo $this->layout()->content; ?>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+            <div class="row center">
 
-
-
+                <a href="<?php if($home==0){
+                    echo $this->url(
+                        array(
+                            'controller' =>'index',
+                            'action'=>'index',
+                        )
+                    );}
+                else
+                {
+                    echo $this->url(
+                        array(
+                            'controller' =>'livello'.$home,
+                            'action'=>'index',
+                        )
+                    );}?>" id="start" class="btn-large red" ><b>Torna alla home</b></a>
+            </div>
 
 </body>
 </html>

@@ -1,6 +1,81 @@
 <br /><br />
 <div class="container">
+
+    <script>
+        $(function(){  $("#edificio").on("change", function(){
+
+            var actionUrl= '<?php echo $this->url(array(
+                                            'controller' => 'livello2',
+                                            'action'     => 'ajaxedif')
+                                            ); ?>';
+
+            $.ajax({
+                type : 'POST',
+                url : actionUrl,
+                data : $("#edificio").serialize(),
+                dataType : 'json',
+                success : pianiPopulate
+            });
+
+
+            })});
+
+        function pianiPopulate(data){
+
+            $('dd#piano-element').find("ul").find("li").remove();
+            $('dd#piano-element').find("select").find("option").remove();
+            $.each(data, function(key, val){
+
+                $('dd#piano-element').find("ul."+"dropdown-content select-dropdown ").append('<li><span>Piano'+ val +'</span></li>');
+                $('dd#piano-element').find("select").append('<option value="'+ val +'">Piano '+ val +'</option>');
+
+            });
+            $('select').material_select();
+
+
+
+
+        }
+
+        $(function(){  $("#piano").on("change", function(){
+
+            var actionUrl= '<?php echo $this->url(array(
+                    'controller' => 'livello2',
+                    'action'     => 'ajaxpiano')
+            ); ?>';
+
+            var dati = [{name: 'edificio', value: $("#edificio").val()},
+                        {name: 'piano', value: $("#piano").val()}];
+
+            $.ajax({
+                type : 'POST',
+                url : actionUrl,
+                data : $.param(dati),
+                dataType : 'json',
+                success : zonePopulate
+            });
+
+
+        })});
+
+        function zonePopulate(data){
+
+            $('dd#zona-element').find("ul").find("li").remove();
+            $('dd#zona-element').find("select").find("option").remove();
+            $.each(data, function(key, val){
+                $('dd#zona-element').find("ul").append('<li><span>'+ val +'</span></li>');
+                $('dd#zona-element').find("select").append('<option value="'+ val +'">'+ val +'</option>');
+
+            });
+            $('select').material_select();
+        }
+
+
+    </script>
+
+<h4 class="green-text center"><br>Procedura di evacuazione<br><br></h4>
 <?php
+
     echo $this->evacuazioneform;
 ?>
 </div>

@@ -12,6 +12,10 @@ class Application_Model_Eventi extends App_Model_Abstract {
         return $this->getResource('Eventi')->delEvento($id);
     }
 
+    public function getEventi(){
+
+        return $this->getResource('Eventi')->getEventi();
+    }
    
 
 
