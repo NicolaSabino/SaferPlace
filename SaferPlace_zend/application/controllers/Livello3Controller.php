@@ -71,7 +71,10 @@ class Livello3Controller extends Zend_Controller_Action
                 $this->view->formmodificapiano = $this->getModificaPianoForm();
             }
         }
-        
+
+        $this->view->zoneform = $this->getGestioneZonaForm();
+
+
         $this->_nuovoPdfForm = $this->getNewPdfForm();
         $this->view->nuovoPdfForm = $this->_nuovoPdfForm;
     }
