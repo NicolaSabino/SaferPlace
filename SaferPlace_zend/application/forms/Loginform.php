@@ -42,6 +42,6 @@ class Application_Form_Loginform extends Zend_Form
             'Form'
         ));
 
-        include_once ('Lingua.php');
+        //include_once ('Lingua.php');
     }
 }

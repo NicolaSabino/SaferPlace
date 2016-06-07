@@ -9,7 +9,7 @@
     <?php echo $this->headTitle(); ?>
     <?php echo $this->headScript(); ?>
 
-    <?php $home=$this->authInfo('livello') ?>
+    <?php $home=$this->authInfo('livello');?>
     <!-- favicon -->
     <link rel="icon"
           type="imag/png"
@@ -36,24 +36,22 @@
 
     <nav class="green  white-text">
         <div class="nav-wrapper container">
-            <a href="<?php echo $this->url(
+            <a href="<?php if($home==0){
+                echo $this->url(
                 array(
-                    'controller' =>'livello'.$home,
+                    'controller' =>'index',
                     'action'=>'index',
                 )
-            ); ?>" class="brand-logo" id="containerLogo" style="margin-top: 12px"><img src="<?php echo $this->baseUrl('image/logoM.png');?>" height="41.1"></a>
-
-            <ul class="right hide-on-med-and-down">
-                <li>
-                    <div class="chip green lighten-3">
-                        <img src="<?php echo $this->baseUrl('image/icone/account.png');?>" alt="Contact Person">
-                        <?php
-                        echo $this->authInfo('username');
-                        ?>
-                    </div>
-
-                </li>
-            </ul>
+            );}
+            else
+            {
+                echo $this->url(
+                    array(
+                        'controller' =>'livello'.$home,
+                        'action'=>'index',
+                    )
+                );}?>" class="brand-logo" id="containerLogo" style="margin-top: 12px"><img src="<?php echo $this->baseUrl('image/logoM.png');?>" height="41.1"></a>
+            
         </div>
     </nav>
 
@@ -68,12 +66,21 @@
 <br>
             <div class="row center">
 
-                <a href="<?php echo $this->url(
-                    array(
-                        'controller' => 'livello'.$home,
-                        'action' => 'index',
-                    )
-                ); ?>" id="start" class="btn-large red" ><b>Torna alla home</b></a>
+                <a href="<?php if($home==0){
+                    echo $this->url(
+                        array(
+                            'controller' =>'index',
+                            'action'=>'index',
+                        )
+                    );}
+                else
+                {
+                    echo $this->url(
+                        array(
+                            'controller' =>'livello'.$home,
+                            'action'=>'index',
+                        )
+                    );}?>" id="start" class="btn-large red" ><b>Torna alla home</b></a>
             </div>
 
 </body>
