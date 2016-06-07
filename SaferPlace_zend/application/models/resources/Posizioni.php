@@ -63,7 +63,7 @@ class Application_Resource_Posizioni extends  Zend_Db_Table_Abstract
     {
         $posizioni = array(
             'zona'      => $zona,
-            'stanza' => $stanza,
+            'stanza'    => $stanza,
             'numPiano'      => $numPiano,
             'edificio'      => $edificio
         );
@@ -86,5 +86,9 @@ class Application_Resource_Posizioni extends  Zend_Db_Table_Abstract
 
     }
 
+    public function delPosizioni($id){
+        $del =$this->getAdapter()->quoteInto('id = ?', $id);
+        $this->delete($del);
+    }
 }
 

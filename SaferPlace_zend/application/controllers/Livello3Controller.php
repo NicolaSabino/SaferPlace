@@ -1080,10 +1080,11 @@ class Livello3Controller extends Zend_Controller_Action
 
         $posizionimodel = new Application_Model_Posizioni();
         $controllo = $posizionimodel->existsPosizione($numeroPiano, $stanza,$edificio);
+        $modelAdmin = new Application_Model_Admin();
+        $arrayPosizioni = $modelAdmin->getZoneByEdPianoIdasAlias($edificio,$numeroPiano);
 
         if($controllo){
-            $modelAdmin = new Application_Model_Admin();
-            $arrayPosizioni = $modelAdmin->getZoneByEdPianoIdasAlias($edificio,$numeroPiano);
+
 
             $this->gestionezoneform->setDescription('Attenzione: la posizione inserita è già esistente.');
             $this->view->assign('edificio', $edificio);
@@ -1094,8 +1095,23 @@ class Livello3Controller extends Zend_Controller_Action
         }else{
 
             $posizionimodel->insertPosizione($zona,$stanza,$numeroPiano,$edificio);
-            $this->getHelper('Redirector')->gotoSimple('gestionezone', 'livello3', $module = null, array('edificio' => $edificio, 'numeroPiano' => $numeroPiano));
+            $this->getHelper('Redirector')->gotoSimple('gestionezone', 'livello3', $module = null, array('edificio' => $edificio, 'numeroPiano' => $numeroPiano,'arrayPosizioni' => $arrayPosizioni));
         }
+    }
+    
+    public function eliminaposizioneAction(){
+        $stanza= $this->getParam('stanza');
+        $numPiano= $this->getParam('numPiano');
+        $edificio= $this->getParam('edificio');
+
+        $posizionemodel = new Application_Model_Posizioni();
+        $id = $posizionemodel->getIdPosizioniByNumPianoStanzaEdificioSet($numPiano,$stanza,$edificio)->current()->id;
+
+        $posizionemodel->delPosizioni($id);
+        $modelAdmin = new Application_Model_Admin();
+        $arrayPosizioni = $modelAdmin->getZoneByEdPianoIdasAlias($edificio,$numPiano);
+        //reindirizzo a gestione utenti
+        $this->getHelper('Redirector')->gotoSimple('gestionezone', 'livello3', $module = null, array('edificio' => $edificio, 'numeroPiano' => $numPiano, 'arrayPosizioni' => $arrayPosizioni));
     }
 }
 

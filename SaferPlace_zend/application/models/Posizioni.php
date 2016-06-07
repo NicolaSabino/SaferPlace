@@ -26,5 +26,10 @@ class Application_Model_Posizioni extends App_Model_Abstract
     public function existsPosizione($numPiano,$stanza,$edificio){
         return $this->getResource('Posizioni')->existsPosizione($numPiano,$stanza,$edificio);
     }
+    
+    public function delPosizioni($id){
+        return $this->getResource('Posizioni')->delPosizioni($id);
+
+    }
 
 }

@@ -26,7 +26,8 @@
 		<br>
 		<br>
 
-		<div class="container" >
+		<div class="container center-align" >
+			<h5 class="green-text center-align">Inserisci una nuova posizione</h5>
 			<?php echo $this->zoneform; ?>
 		</div>
 
@@ -83,7 +84,12 @@
 </div>
 </div>
 
-
+<div class="fixed-action-btn click-to-toggle vertical" style="bottom: 45px; right: 24px;">
+	<a class="btn-floating btn-large blue darken-2 tooltipped" data-delay="50" data-position="left" data-tooltip="Indietro" href="<?php echo $this->url(
+		array('controller' => 'livello3', 'action' => 'modificaedificio')) ?>">
+		<i class="large material-icons">arrow_back</i>
+	</a>
+</div>
 
 </body>
 </html>
