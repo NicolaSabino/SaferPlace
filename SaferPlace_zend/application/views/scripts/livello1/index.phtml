@@ -26,10 +26,22 @@
 <br>
 <br>
 <br>
+<script>
+	$( document ).ready(function() {
+		setInterval(poll, 10000);
+		function poll() {
+			location.reload();
+		}
+	});
+</script>
 <?php if($evacuare): ?>
 <script>
 	$( document ).ready(function() {
-		setInterval(alertFunc, 800);
+		setInterval(poll, 10000);
+		function poll() {
+			location.reload();
+		}
+			setInterval(alertFunc, 800);
 		function alertFunc() {
 			$( "body" ).effect("highlight",{color: 'yellow'},600);
 		}
