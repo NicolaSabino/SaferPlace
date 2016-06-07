@@ -121,7 +121,7 @@ class Livello1Controller extends Zend_Controller_Action
         
         $eventomodel=new Application_Model_Eventi();
         $evento=$eventomodel->getEventi();
-        if($evento->current()==0)
+        if($evento->current()==array())
             return false;
 
         $pianomodel=new Application_Model_Piani();
