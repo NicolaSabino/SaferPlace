@@ -9,7 +9,7 @@ class Application_Resource_Assegnazione extends  Zend_Db_Table_Abstract
 
         $select=$this->select()
             ->where('zona= ? ',$zona)
-            ->where('abilitato=1');
+            ;
         
         return $this->fetchAll($select);
 
@@ -37,4 +37,20 @@ class Application_Resource_Assegnazione extends  Zend_Db_Table_Abstract
         $this->update(array('abilitato'=> 1), 'id = '.$id);
     }
 
+    public function delAssegnazioneByZona($zona) {
+
+        $del = $this->getAdapter()->quoteInto('zona = ?', $zona);
+        $this->delete($del);
+    }
+
+    //recupero le occorrenze di assegnazione in base all'id di un piano di fuga
+    public function getAssegnazioneByPdf($idPdf){
+        
+        $select = $this->select()
+                       ->from('assegnazione')
+                       ->where('idPianoFuga = ?', $idPdf);
+        
+        return $this->fetchAll($select);
+    }
+    
 }

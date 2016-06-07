@@ -42,6 +42,9 @@
           <actionMethod actionName="modificautente"/>
           <actionMethod actionName="inserisciedificio"/>
           <actionMethod actionName="modificadatipersonali"/>
+          <actionMethod actionName="inseriscipiano"/>
+          <actionMethod actionName="modificapiano"/>
+          <actionMethod actionName="gestionezone"/>
         </controllerFile>
         <controllerFile controllerName="FaqController">
           <actionMethod actionName="index"/>
@@ -67,6 +70,7 @@
         <formFile formName="Evacuazioneform"/>
         <formFile formName="Gestioneedificio"/>
         <formFile formName="Gestionepiano"/>
+        <formFile formName="Gestionezone"/>
       </formsDirectory>
       <layoutsDirectory>
         <layoutScriptsDirectory>
@@ -175,6 +179,15 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Livello3">
             <viewScriptFile forActionName="modificadatipersonali"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello3">
+            <viewScriptFile forActionName="inseriscipiano"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello3">
+            <viewScriptFile forActionName="modificapiano"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Livello3">
+            <viewScriptFile forActionName="gestionezone"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>

@@ -20,6 +20,20 @@ class Application_Resource_Posizioni extends  Zend_Db_Table_Abstract
 
     }
 
+    public function existsPosizione($numPiano,$stanza,$edificio)
+    {
+        $select=new Application_Resource_Piani_Item();
+        $select=$this->select('id')
+            ->where('numPiano='.$numPiano.' and stanza='. $stanza.' and edificio= \''. $edificio.'\'');
+
+        $risultato = $this->getAdapter()->query($select);
+
+        if($risultato->rowCount()==0)
+            $controllo = false;
+        else $controllo = true;
+        return $controllo;
+    }
+
     public function getStanzeBynumPianoEdificio($numPiano,$edificio){
 
         $select=new Application_Resource_Piani_Item();
@@ -43,17 +57,38 @@ class Application_Resource_Posizioni extends  Zend_Db_Table_Abstract
      * @param $zona
      * @param $stanza
      * @param $numPiano
+     * @param  $edificio
      */
-    public function insertPosizione($zona,$stanza,$numPiano)
+    public function insertPosizione($zona,$stanza,$numPiano, $edificio)
     {
         $posizioni = array(
             'zona'      => $zona,
-            'stanza' => $stanza,
-            'numPiano'      => $numPiano
+            'stanza'    => $stanza,
+            'numPiano'      => $numPiano,
+            'edificio'      => $edificio
         );
-
+        
         $this->insert($posizioni);
     }
 
+    public function delByZona($idzona){
+
+        $del =$this->getAdapter()->quoteInto('zona = ?', $idzona);
+
+        $this->delete($del);
+    }
+
+    public function getPosizioniBynumPianoEdificio($numPiano,$edificio){
+
+        $select=$this->select()
+            ->where('numPiano='.$numPiano.' and edificio= \''. $edificio.'\'');
+        return  $this->fetchAll($select);
+
+    }
+
+    public function delPosizioni($id){
+        $del =$this->getAdapter()->quoteInto('id = ?', $id);
+        $this->delete($del);
+    }
 }
 
