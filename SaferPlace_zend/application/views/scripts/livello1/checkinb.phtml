@@ -10,7 +10,25 @@
 	</div>
 </head>
 <body>
+	<script>
 
+		$(document).ready(function(){
+			$("area").addClass('areaim');
+
+			$(".areaim").on('click', function(){
+				var stanza = Number(this.alt) + 1 ; //voglio l' n+1esimo elemento della select, perchè il primo
+													// è quello di default
+
+				$("#elencostanze-element").find('.active').removeClass('active selected');
+				$("#elencostanze-element").find("ul li:nth-child(" +stanza +")").addClass('active selected');
+				$("select#elencostanze").find('option').removeAttr('selected');
+				$("#elencostanze-element").find("select#elencostanze option:nth-child(" +stanza +")").attr('selected', 'selected');
+				$('select').material_select();
+			});
+
+		});
+
+	</script>
 
 	<!-- barra fissa con nome edificio e box per scorrere i piani-->
 		<div style="margin-bottom: 200px" >
@@ -52,7 +70,15 @@
 					
 				</div>
 				<div class="col l12 s12 m12 center">
-					<img src="<?php echo $this->baseUrl($pianta); ?>" style="height:80%; width: 80%">
+					<img id="pianta" src="<?php echo $this->baseUrl($pianta); ?>" usemap="#piantamap" style="height:80%; width: 80%">
+
+					<map name="piantamap" class="mappa">
+						<?php
+								$file = APPLICATION_PATH .'/../public/image/piante/map/'.$this->insiemeEdifici. ' Piano '.$this->insiemePiani;
+
+								$handler = fopen($file, "r");
+								echo fread($handler, filesize($file)); ?>
+					</map>
 				</div>
 			</div>
 	

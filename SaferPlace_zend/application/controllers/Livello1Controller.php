@@ -157,16 +157,14 @@ class Livello1Controller extends Zend_Controller_Action
      */
     public function checkinbAction()
     {
+        $utenteModel = new Application_Model_Utenti();
         $edificio=$this->controllaParam('edificio');
         $numPiano=$this->controllaParam('numPiano');
         $errore=$this->controllaParam('errore'); //variabile usata per mostrare a video un messaggio di errore 
- 
+        //echo $edificio;die;
         $this->view->insiemePiani = $numPiano;
         $this->view->insiemeEdifici = $edificio;
         $this->view->errore = $errore;
-
-
-
 
         $_stanzeModel = new Application_Model_Piani();
 

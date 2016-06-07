@@ -92,6 +92,8 @@ class Application_Resource_Piani extends  Zend_Db_Table_Abstract
         
         $this->delete('piano', $del);
     }
+
+    
     
 }
 

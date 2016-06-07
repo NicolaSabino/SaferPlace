@@ -54,6 +54,7 @@ class Application_Model_Utenti extends App_Model_Abstract
     public function getUsers(){
         return $this->getResource('Utenza')->getUsers();
     }
-
+    
+    
     
 }
