@@ -103,8 +103,6 @@
 
 				<!-- corpo contenente l'elenco dei piani con i relativi bozzetti delle piante -->
 
-
-
 						<?php
 
 							foreach ($this->piani as $piano):
@@ -119,6 +117,7 @@
       							<span class="card-title activator white-text">
 											Piano <?php echo $piano->numeroPiano ?>
 
+										<!-- elimina -->
 										<a class="btn-large btn-flat transparent right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Elimina Piano"
 										   href="<?php echo $this->url(
 											   array(
@@ -127,6 +126,8 @@
 											   )
 										   ); ?>
 										"><i class="material-icons white-text">delete</i></a>
+
+										<!-- piani di fuga -->
 										<a class="btn-large btn-flat transparent right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Piani di Fuga"
 										   href="<?php echo $this->url(
 											   array(
@@ -136,7 +137,9 @@
 												   'numeroPiano' => $piano->numeroPiano
 											   )
 										   ); ?>"
-										><i class="material-icons white-text">treding_up</i></a>
+										><i class="material-icons white-text">trending_up</i></a>
+
+										<!-- zone -->
 									    <a class="btn-large btn-flat transparent right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Gestisci Zone" href="<?php echo $this->url(
 											array(
 												'controller' => 'livello3',
@@ -146,7 +149,7 @@
 											)
 										); ?>"><i class="material-icons white-text" >border_clear</i></a>
 									
-									
+										<!-- modifica -->
 										<a class="btn-large btn-flat transparent right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Modifica"
 										   href="<?php echo $this->url(
 											   array(
