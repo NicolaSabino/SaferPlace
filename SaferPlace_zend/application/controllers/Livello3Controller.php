@@ -86,6 +86,7 @@ class Livello3Controller extends Zend_Controller_Action
 
     public function indexAction()
     {
+
     }
 
     public function gestioneedificiAction()
@@ -106,9 +107,9 @@ class Livello3Controller extends Zend_Controller_Action
     /**
      *  Popola la schermata che permette all'admin di gestire le assegnazioni dello
      * staff
-     * 
-     * 
-     * 
+     *
+     *
+     *
      */
     public function scegliedificioAction()
     {
@@ -128,9 +129,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Popolo la schermata che permette di gestire un edificio
-     * 
-     * 
-     * 
+     *
+     *
+     *
      */
     public function modificaedificioAction()
     {
@@ -189,9 +190,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Predispone la form per modificare una faq
-     * 
-     * 
-     * 
+     *
+     *
+     *
      */
     public function modificafaqAction()
     {
@@ -235,9 +236,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Predispongo la form per inserire una nuova faq
-     * 
-     * 
-     * 
+     *
+     *
+     *
      */
     public function creafaqAction()
     {
@@ -341,9 +342,9 @@ class Livello3Controller extends Zend_Controller_Action
     /**
      * Procedura che predispone la form di aggiornamento delle informazioni di un
      * utente
-     * 
-     * 
-     * 
+     *
+     *
+     *
      */
     public function modificautenteAction()
     {
@@ -352,9 +353,9 @@ class Livello3Controller extends Zend_Controller_Action
     /**
      *  Creo la view con relativa form che permette di modificare NOME INFORMAZIONI E
      * IMMAGINE di un edificio
-     * 
-     * 
-     * 
+     *
+     *
+     *
      */
     public function modificadescrizioneAction()
     {
@@ -397,8 +398,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Creo la form di inserimento di un nuovo edificio
-     * 
-     * 
+     *
+     *
      */
     public function inserisciedificioAction()
     {
@@ -419,9 +420,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * aggiorno una faq nel db
-     * 
-     * 
-     * 
+     *
+     *
+     *
      */
     public function updatefaq()
     {
@@ -440,9 +441,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Metodo che inserisce una faq nel db
-     * 
-     * 
-     * 
+     *
+     *
+     *
      */
     public function insertfaq()
     {
@@ -461,9 +462,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * metodo che elimina una faq dal db
-     * 
-     * 
-     * 
+     *
+     *
+     *
      */
     public function eliminafaqAction()
     {
@@ -479,9 +480,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Metodo che permette di inserire un utente nel db
-     * 
-     * 
-     * 
+     *
+     *
+     *
      */
     public function nuovoutenteAction()
     {
@@ -511,9 +512,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      *  Procedura di aggiornamento delle informazioni di un utente
-     * 
-     * 
-     * 
+     *
+     *
+     *
      */
     public function updateutente()
     {
@@ -543,9 +544,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      *  Procedura che permette di eliminare un utente
-     * 
-     * 
-     * 
+     *
+     *
+     *
      */
     public function eliminautenteAction()
     {
@@ -561,9 +562,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Metodo per assegnare un edifcio non precedentemente assegnato ad un utente
-     * 
-     * 
-     * 
+     *
+     *
+     *
      */
     public function assegnaedificioautenteAction()
     {
@@ -583,9 +584,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Procedura di riassegnazione di un utente alla gestione di un edificio
-     * 
-     * 
-     * 
+     *
+     *
+     *
      */
     public function eliminaeassegnaAction()
     {
@@ -607,9 +608,9 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Modifica delle informazioni dell'edificio nel db
-     * 
-     * 
-     * 
+     *
+     *
+     *
      */
     public function submitmodificadescrizioneAction()
     {
@@ -650,8 +651,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     /**
      * Inserisco un nuovo edificio nel database
-     * 
-     * 
+     *
+     *
      */
     public function nuovoedificioAction()
     {
@@ -681,11 +682,11 @@ class Livello3Controller extends Zend_Controller_Action
     /**
      * controlla se vengono passati dei parametri e restituisce il parametro
      * passato per riferimento
-     * 
+     *
      * @param $param
      * @return int|mixed
-     * 
-     * 
+     *
+     *
      */
     public function controllaParam($param)
     {
@@ -849,6 +850,7 @@ class Livello3Controller extends Zend_Controller_Action
         }
     }
 
+
     public function modificapianoAction()
     {
         $this->view->numeroPiano = $this->getParam('numeroPiano');
@@ -981,6 +983,41 @@ class Livello3Controller extends Zend_Controller_Action
 
         $this->getHelper('Redirector')->gotoSimple('index', 'livello3', $module = null);
     }
+    
+
+    public function eliminapianoAction()
+    {
+        $adminModel = new Application_Model_Admin();
+        $arrayedifici = $adminModel->getResource('Edifici')->getEdifici();
+
+        if (($edificio = $this->controllaParam('edificio')) && ($piano = $this->controllaParam('piano')) &&
+            (array_key_exists($edificio, $arrayedifici )) &&
+            (in_array($piano, $this->getResource('Piani')->getPianiByEdificio($edificio) ))) {
+
+            $adminModel->eliminaPiano($edificio, $piano);
+        }
+
+        $this->getHelper('Redirector')->gotoSimple('modificaedificio', 'livello3', $module = null);
+
+    }
+
+    public function gestionepianifugaAction(){
+        $edificio       = $this->controllaParam('edificio');
+        $numeroPiano    = $this->controllaParam('numeroPiano');
+
+        //assegno le variabili alla view
+        $this->view->edificio       = $edificio;
+        $this->view->numeroPiano    = $numeroPiano;
+
+        //calcolo i piani di fuga di questo piano
+        $modelPianoDiFuga = new Application_Model_PianoDiFuga();
+
+        $pianiDiFuga = $modelPianoDiFuga->getByEdificioPiano($edificio,$numeroPiano);
+
+        //assegno i piani di fuga alla view
+        $this->view->pianiDiFuga = $pianiDiFuga;
+    }
+
 
     public function getGestioneZonaForm(){
         $urlHelper = $this->_helper->getHelper('url');

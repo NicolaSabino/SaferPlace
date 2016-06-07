@@ -34,16 +34,36 @@ class Application_Model_Admin extends App_Model_Abstract {
         $this->getResource('Zona')->delById($id);
 
     }
+    
+    public function eliminaPiano($edificio, $piano){
+
+        $this->eliminaZonePiano($edificio,$piano);
+        $this->getResource('Piani')->delByEdPiano($edificio,$piano);
+        
+    }
+
+    public function eliminaEdificio($edificio){
+
+
+       $piani= $this->getResource('Piani')->getPianiByEdificio($edificio);
+
+        foreach ($piani as $item){
+
+            $this->eliminaPiano($edificio, $item->numeroPiano);
+        }
+
+        $this->$this->getResource('Edifici')->delByName($edificio);
+    }
 
     public function getIdZona($edificio, $piano, $alias){
         return $this->getResource('Zona')->getIdZona($edificio, $piano, $alias);
     }
-    
+
     public function getZonabyId($id){
         return $this->getResource('Zona')->getZonabyId($id);
 
     }
-    
+
     public function getZoneByEdPianoIdasAlias($edificio, $numPiano){
         return $this->getResource('Zona')->getZoneByEdPianoIdasAlias($edificio, $numPiano);
     }

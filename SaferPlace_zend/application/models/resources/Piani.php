@@ -82,6 +82,16 @@ class Application_Resource_Piani extends  Zend_Db_Table_Abstract
         $this->update($data, $where);
 
     }
+
+    public function delByEdPiano($edificio,$piano){
+
+        $del = array(
+                    'edificio = ' => $edificio,
+                    'numeroPiano = ' => $piano
+                    );
+        
+        $this->delete('piano', $del);
+    }
     
 }
 

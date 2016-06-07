@@ -9,6 +9,10 @@ class Application_Model_PianoDiFuga extends  App_Model_Abstract
 
     }
     
+    public function getByEdificioPiano($edificio,$piano){
+        return $this->getResource('PianoDiFuga')->getPDF_edificio_piano($edificio,$piano);
+    }
+    
 
 
 }
