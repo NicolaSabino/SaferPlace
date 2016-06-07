@@ -136,7 +136,17 @@
 												   'numeroPiano' => $piano->numeroPiano
 											   )
 										   ); ?>"
-										><i class="material-icons white-text">trending_up</i></a>
+										><i class="material-icons white-text">treding_up</i></a>
+									    <a class="btn-large btn-flat transparent right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Gestisci Zone" href="<?php echo $this->url(
+											array(
+												'controller' => 'livello3',
+												'action'=>'gestionezone',
+												'edificio' => $this->edificio[0]->nome,
+												'numeroPiano' => $piano->numeroPiano
+											)
+										); ?>"><i class="material-icons white-text" >border_clear</i></a>
+									
+									
 										<a class="btn-large btn-flat transparent right tooltipped" data-position="bottom" data-delay="50" data-tooltip="Modifica"
 										   href="<?php echo $this->url(
 											   array(
@@ -145,8 +155,7 @@
 												   'edificio' => $this->edificio[0]->nome,
 												   'numeroPiano' => $piano->numeroPiano
 											   )
-										   ); ?>"
-										><i class="material-icons white-text">edit</i></a>
+										   ); ?>"><i class="material-icons white-text">edit</i></a>
 
 									</span>
 								</div>
