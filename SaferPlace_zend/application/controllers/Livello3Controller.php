@@ -579,6 +579,8 @@ class Livello3Controller extends Zend_Controller_Action
      */
     public function submitmodificadescrizioneAction()
     {
+        $edificio = $this->getParam('edificio');
+
         //metodo che non deve renderizzare niente come view
         $this->_helper->getHelper('layout')->disableLayout();
         $this->_helper->viewRenderer->setNoRender();
@@ -611,7 +613,7 @@ class Livello3Controller extends Zend_Controller_Action
 
         $modelEdifici = new Application_Model_Edifici();
         $modelEdifici->updateEdificio($values,$oldname);
-        $this->_helper->redirector('gestioneedifici'); //funziona
+        $this->getHelper('Redirector')->gotoSimple('modificaedificio','livello3',$module=null,array('edificio'=>$edificio));
     }
 
     /**
