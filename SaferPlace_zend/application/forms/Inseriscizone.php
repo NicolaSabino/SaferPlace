@@ -24,7 +24,8 @@ class Application_Form_Inseriscizone extends Zend_Form
                 array('Count', false, 1),
                 array('Size', false, 30960000),
                 array('Extension', false, array('jpg','png'))
-            )
+            ),
+            'required' => true
         ));
 
         $this->addElement('submit', 'ok', array(
