@@ -54,7 +54,7 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
 
         }
         // crea la query union per avere tutte le notifiche di tutti gli edifici gestiti in un unico rowset
-        $allnotif = $notifica->select()->union($queryArray);
+        $allnotif = $notifica->select()->union($queryArray)->order('id DESC');
       
         return $notifica->fetchAll($allnotif);
     }
