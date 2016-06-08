@@ -17,7 +17,6 @@ class Livello3Controller extends Zend_Controller_Action
     protected $_gestisciPianoForm = null;
     protected $_nuovoEdificioForm = null;
     protected $_modificaEdificioForm = null;
-    protected $_nomeEd2 = null;
     protected $_nuovoPdfForm = null;
 
     protected $gestionezoneform;
@@ -397,14 +396,7 @@ class Livello3Controller extends Zend_Controller_Action
 
 
         if ($nomeEdificio) {
-
-            if (strcasecmp($nomeEdificio,$this->_nomeEd2)){
                 $infoEdificio = $edificiModel->getEdificio($nomeEdificio)->current();
-            }
-            else {
-                    $infoEdificio = $edificiModel->getEdificio($this->_nomeEd2)->current;
-            }
-
                 $data = array(
 
                     'nome' =>        $infoEdificio->nome,
