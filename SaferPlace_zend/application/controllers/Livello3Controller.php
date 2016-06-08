@@ -11,13 +11,13 @@ class Livello3Controller extends Zend_Controller_Action
     protected $_aggiornaUtenteForm = null;
     protected $user = null;
     protected $_authService = null;
-    protected $faqmodificaform;
-    protected $faqcreaform;
-    protected $modificadatiform;
+    protected $faqmodificaform = null;
+    protected $faqcreaform = null;
+    protected $modificadatiform = null;
     protected $_gestisciPianoForm = null;
-    protected $_nuovoEdificioForm =null;
-    
-    protected $_nuovoPdfForm;
+    protected $_nuovoEdificioForm = null;
+    protected $_modificaEdificioForm = null;
+    protected $_nuovoPdfForm = null;
 
     protected $gestionezoneform;
 
@@ -43,8 +43,12 @@ class Livello3Controller extends Zend_Controller_Action
 
         // -- form --
 
-        //istanzio la form di gestione di un edificio
+        //istanzio la form per l'inserimento di un edificio
         $this->_nuovoEdificioForm = $this->getNuovoEdificioForm();
+
+        //istanzio la form per la modifica di un edificio
+        $this->_nomeEd2 = $this->getParam('edificio2');
+        $this->_modificaEdificioForm = $this->getModificaEdificioForm();
 
         //istanzio la form di aggiornamento di un utente
         $this->_aggiornaUtenteForm = new Application_Form_Gestisciutente();
@@ -344,7 +348,7 @@ class Livello3Controller extends Zend_Controller_Action
      */
     public function modificadescrizioneAction()
     {
-        //prendo le informazioni per popolare la form
+       /* //prendo le informazioni per popolare la form
         $nomeEdificio = $this->getParam('edificio');
         $edificiModel = new Application_Model_Edifici();
         $edificio = $edificiModel->getEdificio($nomeEdificio);
@@ -376,9 +380,99 @@ class Livello3Controller extends Zend_Controller_Action
         $this->view->assign('nomeEdificio',$nomeEdificio);
         
         
-        return $this->_edificioForm;
+        return $this->_edificioForm;*/
         
         
+    }
+
+    protected function getModificaEdificioForm(){
+
+        $urlHelper = $this->_helper->getHelper('url');
+
+        $edificiModel                   = new Application_Model_Edifici();
+        $this->_modificaEdificioForm    = new Application_Form_Gestioneedificio();
+
+        $nomeEdificio       = $this->controllaParam('edificio');
+
+
+        if ($nomeEdificio) {
+                $infoEdificio = $edificiModel->getEdificio($nomeEdificio)->current();
+                $data = array(
+
+                    'nome' =>        $infoEdificio->nome,
+                    'informazioni' => $infoEdificio->informazioni,
+                    'mappa' => $infoEdificio->mappa,
+
+                );
+
+                $this->_modificaEdificioForm->populate($data);
+
+                $this->_modificaEdificioForm->setAction($urlHelper->url(array(
+                    'controller' => 'livello3',
+                    'action' => 'verificamodificaedificio',
+                    ),
+                    'default'
+                ));
+
+
+                $this->view->formModificaEdificio = $this->_modificaEdificioForm;
+
+                return $this->_modificaEdificioForm;
+            }
+        }
+
+
+    public function verificamodificaedificioAction(){
+
+        $edificio = $this->getParam('edificio');
+
+        $request = $this->getRequest();
+        if (!$request->isPost()) {
+            return $this->_helper->redirector('gestioneedifici');
+        }
+
+        $form = $this->_modificaEdificioForm;
+
+/*
+        if (!$this->_modificaEdificioForm->mappa->receive()) {
+            $this->view->assign('msg', 'Errore di upload');
+            $this->view->assign('form', $this->_modificaEdificioForm);
+            $this->view->assign('edificio',$edificio);
+            $this->render('modificadescrizione');
+            return;
+        }
+*/
+        if (!$form->isValid($request->getPost())) {
+            $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
+            $this->view->assign('edificio',$edificio);
+            return $this->render('modificadescrizione');
+        } else {
+
+            $datiform=$this->_modificaEdificioForm->getValues();
+            $edficiModel = new Application_Model_Edifici();
+            $edifici = $edficiModel->getEdificiSet(); //prelevo l'insieme degli edifici presenti nel db per un controllo
+            $check = 0;
+
+            foreach ($edifici as $item){
+
+                if($datiform['nome']!=$edificio && 0 == strcasecmp($item->nome,$datiform['nome'])  ) $check++;
+            }
+
+            if($check!=0) // se il nome è già resente nel db faccio partire l'errore
+            {
+                $form->setDescription('Attenzione: Nome edificio non disponibile.');
+                $this->view->assign('edificio',$edificio);
+                return $this->render('modificadescrizione');
+            }
+            else{
+
+                $edficiModel->updateEdificio($datiform, $edificio);
+
+                //reindirizzo a gestione edifici
+                $this->getHelper('Redirector')
+                    ->gotoSimple('modificaedificio','livello3',$module=null,array('edificio' => $datiform['nome']));
+            }
+        }
     }
 
     
@@ -569,11 +663,7 @@ class Livello3Controller extends Zend_Controller_Action
     public function submitmodificadescrizioneAction()
     {
         $edificio = $this->getParam('edificio');
-
-        //metodo che non deve renderizzare niente come view
-        $this->_helper->getHelper('layout')->disableLayout();
-        $this->_helper->viewRenderer->setNoRender();
-
+        
         // prendo dall' object request l'informazione sul vecchio nome dell'edificio
         // che corrisponde alla chiave d'accesso al db 
         $oldname = $this->getParam('oldname');
@@ -649,7 +739,7 @@ class Livello3Controller extends Zend_Controller_Action
             $check = 0;
 
             foreach ($edifici as $edificio){
-                if($edificio->nome == $datiform['nome']) $check++;
+                if(0 == strcasecmp($edificio->nome,$datiform['nome'])) $check++;
             }
 
             if($check!=0) // se il nome è già resente nel db faccio partire l'errore
