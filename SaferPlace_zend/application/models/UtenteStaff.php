@@ -181,7 +181,7 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
             $this->getResource('Assegnazione')->disabilitaPianoFuga($item->id);
         }
 
-
+        
         $this->getResource('Assegnazione')->abilitaPianoFuga($idPianoFuga);
 
         return;
