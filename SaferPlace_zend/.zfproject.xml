@@ -41,7 +41,7 @@
           <actionMethod actionName="creautente"/>
           <actionMethod actionName="modificautente"/>
           <actionMethod actionName="inserisciedificio"/>
-          <actionMethod actionName="modificadatipersonali"/>
+          <actionMethod actionName="modificadatiutente"/>
           <actionMethod actionName="inseriscipiano"/>
           <actionMethod actionName="modificapiano"/>
           <actionMethod actionName="gestionezone"/>
@@ -180,7 +180,7 @@
             <viewScriptFile forActionName="inserisciedificio"/>
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Livello3">
-            <viewScriptFile forActionName="modificadatipersonali"/>
+            <viewScriptFile forActionName="modificadatiutente"/>
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Livello3">
             <viewScriptFile forActionName="inseriscipiano"/>

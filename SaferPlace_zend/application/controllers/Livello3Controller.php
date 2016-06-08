@@ -485,6 +485,7 @@ class Livello3Controller extends Zend_Controller_Action
     {
         $datiform=$this->_aggiornaUtenteForm->getValues();
 
+
         $utente = new Application_Model_Utenti();
 
         if($utente->existUsername($datiform['username']) && $datiform['username'] != $this->getParam('username')) //controllo se l'username inserito esiste già nel db
@@ -688,7 +689,7 @@ class Livello3Controller extends Zend_Controller_Action
 
 
 
-    public function modificadatipersonaliAction()
+    public function modificadatiutenteAction()
     {
     }
 
@@ -717,13 +718,15 @@ class Livello3Controller extends Zend_Controller_Action
     public function verificamodificadatiAction()
     {
         $request = $this->getRequest();
-        if (!$request->isPost()) {
-            return $this->_helper->redirector('modificadatipersonali');
-        }
+        /*if (!$request->isPost()) {
+            return $this->_helper->redirector('modificadatiutente');
+        }*/
         $form = $this->modificadatiform;
-        if (!$form->isValid($request->getPost())) {
+        $this->getHelper('ModificaProfilo')->verificaModifica($request,3,$form,$this->user);
+
+        /*if (!$form->isValid($request->getPost())) {
             $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
-            return $this->render('modificadatipersonali');
+            return $this->render('modificadatiutente');
         }
         else
         {
@@ -732,7 +735,7 @@ class Livello3Controller extends Zend_Controller_Action
             $utentimodel=new Application_Model_Utenti();
             $username = $this->user;
 
-            if($utentimodel->existUsername($datiform['username']) && $datiform['username'] != $this->getParam('username')) //controllo se l'username inserito esiste già nel db
+            if($utentimodel->existUsername($datiform['username']) && $datiform['username'] != $username) //controllo se l'username inserito esiste già nel db
             {
                 $form->setDescription('Attenzione: l\'username che hai scelto non è disponibile.');
                 return $this->render('modificadatiutente');
@@ -744,7 +747,7 @@ class Livello3Controller extends Zend_Controller_Action
                 $this->_authService->getAuth()->getIdentity()->current()->username = $datiform['username'];
                 $this->getHelper('Redirector')->gotoSimple('index','livello3', $module = null);
             }
-        }
+        }*/
     }
 
     public function eliminaedificioAction()

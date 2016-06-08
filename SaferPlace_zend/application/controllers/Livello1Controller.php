@@ -331,7 +331,7 @@ class Livello1Controller extends Zend_Controller_Action
 
             $form = $this->modificaform;
 
-            $this->getHelper('ModificaProfilo')->verificaModifica($request,1,$form);
+            $this->getHelper('ModificaProfilo')->verificaModifica($request,1,$form,$this->user);
         }
 
 

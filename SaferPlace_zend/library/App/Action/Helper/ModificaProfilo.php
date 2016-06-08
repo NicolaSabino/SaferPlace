@@ -38,7 +38,7 @@ class App_Action_Helper_ModificaProfilo extends Zend_Controller_Action_Helper_Ab
         return $modificaform;
     }
 
-    public function verificaModifica($request,$level,$form)
+    public function verificaModifica($request,$level,$form,$username)
     {
         
         if (!$request->isPost()) {
@@ -56,6 +56,11 @@ class App_Action_Helper_ModificaProfilo extends Zend_Controller_Action_Helper_Ab
 
             $utentimodel=new Application_Model_Utenti();
 
+            if($utentimodel->existUsername($datiform['username']) && $datiform['username'] != $username) //controllo se l'username inserito esiste già nel db
+            {
+                $form->setDescription('Attenzione: l\'username che hai scelto non è disponibile.');
+                return $this->getActionController()->render('modificadatiutente');
+            }
             $utentimodel->updateUtentiSet($datiform);
             $urlarray = $this->getUrlArray($level,'home');
             $redirectorhelper = Zend_Controller_Action_HelperBroker::getStaticHelper('Redirector');
