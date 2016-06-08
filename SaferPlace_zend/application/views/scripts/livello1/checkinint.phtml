@@ -10,10 +10,10 @@
 
 
 <!-- barra fissa con nome edificio e box per scorrere i piani-->
-<div style="margin-bottom: 200px" >
+<div>
 
 	<!-- Titolo -->
-	<div class="row navbar-fixed white center-align z-depth-1" style="position: fixed; width: 100%; height: auto;">
+	<div class="row white center-align">
 
 		<div class="container">
 
@@ -41,6 +41,10 @@
 	</div>
 
 </div>
+
+<br>
+<br>
+<br>
 
 
 
@@ -88,6 +92,17 @@
 		array('controller' => 'livello1', 'action' => 'checkin'),null,true); ?>">
 		<i class="large material-icons">arrow_back</i>
 	</a>
+</div>
+
+<div class="center">
+
+	<p>
+		<a id='top'
+		   onclick="scrollToTop()"
+		   class="btn-floating btn-large blue darken-3 tooltipped"
+		   data-position="top" data-delay="50" data-tooltip="Torna su">
+			<i class="material-icons">keyboard_arrow_up</i></a>
+	</p>
 </div>
 
 

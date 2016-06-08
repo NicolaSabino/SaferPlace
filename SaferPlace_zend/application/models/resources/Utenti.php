@@ -61,7 +61,6 @@ class Application_Resource_Utenti extends  Zend_Db_Table_Abstract
 
         $select=$this->select()
             ->where('username= ? ',$user);
-        
         return $this->fetchAll($select);
     }
 

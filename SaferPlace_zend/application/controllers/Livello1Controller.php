@@ -167,7 +167,7 @@ class Livello1Controller extends Zend_Controller_Action
         $edificimodel = new Application_Model_Edifici();
         $controllaedificio = $edificimodel->getEdificio($edificio);
 
-        if($controllaedificio->current()==0)
+        if(is_null($controllaedificio->current()))
             $this->getHelper('Redirector')->gotoSimple('error','error',$module=null);
 
 
@@ -182,8 +182,6 @@ class Livello1Controller extends Zend_Controller_Action
      */
     public function checkinbAction()
     {
-
-        $utenteModel = new Application_Model_Utenti();
 
         $edificio=$this->controllaParam('edificio');
         $numPiano=$this->controllaParam('numPiano');
@@ -203,10 +201,13 @@ class Livello1Controller extends Zend_Controller_Action
         if ($numPiano==0)
             $this->getHelper('Redirector')->gotoSimple('checkinint','livello1',$module=null,array('edificio'=>$edificio));
         $errore=$this->controllaParam('errore'); //variabile usata per mostrare a video un messaggio di errore 
-        //echo $edificio;die;
+ 
         $this->view->insiemePiani = $numPiano;
         $this->view->insiemeEdifici = $edificio;
         $this->view->errore = $errore;
+
+
+
 
         $_stanzeModel = new Application_Model_Piani();
 
@@ -317,16 +318,12 @@ class Livello1Controller extends Zend_Controller_Action
     public function getModificaform()
     {
         return $this->getHelper('ModificaProfilo')->getForm($this->user, 1);
-
-
     }
 
     public function modificadatiutenteAction()
     {
         
     }
-
-    
 
     public function verificamodificaAction()
         {

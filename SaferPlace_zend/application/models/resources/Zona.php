@@ -48,6 +48,27 @@ class Application_Resource_Zona extends Zend_Db_Table_Abstract {
         return $this->fetchAll($select);
     }
 
+    /**
+     * true se esiste altrimenti false
+     * @param $edificio
+     * @param $piano
+     * @return bool
+     */
+    public function existsZone($edificio, $piano){
+
+        $select=$this->select()
+            ->where('edificio=?',$edificio)
+            ->where('piano=?',$piano);
+
+        $risultato = $this->getAdapter()->query($select);
+
+        if($risultato->rowCount()==0)
+            $controllo = false;
+        else $controllo = true;
+        return $controllo;
+    }
+    
+
     public function getZoneByEdPianoIdasAlias($edificio, $numPiano){
         $select = $this->select()
                         ->setIntegrityCheck(false)
@@ -57,6 +78,10 @@ class Application_Resource_Zona extends Zend_Db_Table_Abstract {
                         ->where('p.numPiano = ?', $numPiano);
         return $this->fetchAll($select);
 
+    }
+
+    public function insertZona($dati){
+        $this->insert($dati);
     }
     
     
