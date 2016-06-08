@@ -37,6 +37,17 @@ class Application_Form_Gestionepiano extends Zend_Form
             )
         ));
 
+        /*$this->addElement('file', 'mappa', array(
+            'label' => 'Mappa della pianta',
+            'destination' => APPLICATION_PATH.'/../public/image/piante/map/',
+            'validators' => array(
+                array('Count', false, 1),
+                array('Size', false, 30960000),
+                array('Extension', false, array('txt'))
+            )
+        ));*/
+
+
         $this->addElement('submit', 'ok', array(
             'class' => 'btn green white-text'
         ));
@@ -54,6 +65,7 @@ class Application_Form_Gestionepiano extends Zend_Form
         $this->numeroPiano->setValue($data->current()->numeroPiano);
         $this->nstanze->setValue($data->current()->nstanze);
         $this->pianta->setValue($data->current()->pianta);
+        //$this->mappa->setValue($data->current()->mappa);
     }
 
 

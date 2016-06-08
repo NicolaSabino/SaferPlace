@@ -5,8 +5,36 @@
 	<?php
 	$edificio=$this->edificio;
 	$numPiano=$this->numeroPiano;
+	$controllo = $this->controllo;
 	?>
 </div>
+
+<?php
+	if(!$controllo): //se non trovo i dati della zona nel database parte la view per crearli
+
+?>
+
+		<br /><br />
+		<div id="view-content">
+			<div class="container">
+				<h3 class="green-text center">Inserisci le Zone</h3>
+				<div class="card grey lighten-5">
+					<div class="card-content">
+						<div class="container">
+							<?php echo $this->inseriscizoneform; ?>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<br /><br />
+
+
+<?php else:
+
+?>
+
 
 <div class="row navbar-fixed white center-align" style="position: fixed; width: 100%; height: auto;">
 
@@ -83,6 +111,12 @@
 		</table>
 </div>
 </div>
+
+
+<?php endif;
+
+?>
+
 
 <div class="fixed-action-btn click-to-toggle vertical" style="bottom: 45px; right: 24px;">
 	<a class="btn-floating btn-large blue darken-2 tooltipped" data-delay="50" data-position="left" data-tooltip="Indietro" href="<?php echo $this->url(
