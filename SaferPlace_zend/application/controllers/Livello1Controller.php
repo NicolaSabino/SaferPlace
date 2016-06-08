@@ -308,7 +308,6 @@ class Livello1Controller extends Zend_Controller_Action
 
 
         $pianoDiFugamodel=new Application_Model_PianoDiFuga();
-        
         $pianoDiFuga=$pianoDiFugamodel->getPianoDiFugaByIdSet($assegnazione->current()->idPianoFuga);
 
         $this->view->pianta=$pianoDiFuga->current()->pianta;
