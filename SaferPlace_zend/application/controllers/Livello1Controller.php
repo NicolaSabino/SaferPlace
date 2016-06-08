@@ -167,7 +167,7 @@ class Livello1Controller extends Zend_Controller_Action
         $edificimodel = new Application_Model_Edifici();
         $controllaedificio = $edificimodel->getEdificio($edificio);
 
-        if($controllaedificio->current()==0)
+        if(is_null($controllaedificio->current()))
             $this->getHelper('Redirector')->gotoSimple('error','error',$module=null);
 
 

@@ -699,8 +699,9 @@ class Livello3Controller extends Zend_Controller_Action
         $urlHelper = $this->_helper->getHelper('url');
 
         $usermodel=new Application_Model_Utenti();
+
         $dati=$usermodel->getDatiUtenteByUserSet($this->user);
-        $this->modificadatiform= new Application_Form_Registratiform($dati);
+        $this->modificadatiform= new Application_Form_Registratiform();
         $this->modificadatiform->populate($dati);
 
         $this->modificadatiform->setAction($urlHelper->url(array(
@@ -1271,10 +1272,12 @@ class Livello3Controller extends Zend_Controller_Action
         $datiform = $this->inseriscizoneform->getValues();
         $zone = explode(" ", $datiform['zone']);
         $adminmodel = new Application_Model_Admin();
-
-        print_r($zone); die;
-
-
+        $i=0;
+        foreach ($zone as $z){
+            $dati[]=array('alias'=>$z,'edificio'=>$edificio,'Piano'=>$numeroPiano);
+            $adminmodel->insertZona($dati[$i]);
+            $i++;
+        }
         $arrayPosizioni = $adminmodel->getZoneByEdPianoIdasAlias($edificio,$numeroPiano);
         $this->getHelper('Redirector')->gotoSimple('gestionezone', 'livello3', $module = null, array('edificio' => $edificio, 'numeroPiano' => $numeroPiano,'arrayPosizioni' => $arrayPosizioni));
         
