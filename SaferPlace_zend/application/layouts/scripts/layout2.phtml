@@ -74,15 +74,6 @@
         <i class="large material-icons">menu</i>
     </a>
     <ul>
-        <li><a class="btn-floating purple tooltipped" data-tooltip="Logout" data-delay="50" data-position="left"
-               href="<?php echo $this->url(array(
-                       'controller' => 'index',
-                       'action'     => 'index'
-                   ));?>
-
-                <i class="material-icons">exit_to_app</i>
-            </a>
-        </li>
         <li>
             <a class="btn-floating blue tooltipped" data-delay="50" data-position="left"
                data-tooltip="Dashboard" href="<?php echo $this->url(array(
@@ -95,7 +86,7 @@
             <a class="btn-floating yellow darken-1 tooltipped" data-delay="50" data-position="left"
                data-tooltip="Avvia evacuazione" href="<?php echo $this->url(array(
                                                                         'controller' => 'livello2',
-                                                                        'action'     => 'evacuazione'));?>
+                                                                        'action'     => 'evacuazione'), null, true);?>
             " >
                 <i class="material-icons">warning</i>
             </a>

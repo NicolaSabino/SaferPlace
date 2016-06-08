@@ -112,7 +112,7 @@ class Livello2Controller extends Zend_Controller_Action
 
 
         $urlHelper = $this->_helper->getHelper('url');
-        $this->evacuazioneform= new Application_Form_Evacuazioneform($this->user,$edificio,$piano,$tipo);
+        $this->evacuazioneform= new Application_Form_Evacuazioneform($this->user);
         if ($edificio && $piano && $tipo)
             $this->evacuazioneform->populate($edificio, $piano, $tipo);
         $this->evacuazioneform->setAction($urlHelper->url(array(
@@ -130,7 +130,8 @@ class Livello2Controller extends Zend_Controller_Action
         $piano    = $this->controllaParam('piano');
         $tipo     = $this->controllaParam('tipo');
 
-        
+        if ($piano)
+            $this->view->assign('piano', $piano);
         $this->view->evacuazioneform= $this->getEvacuazioneForm($edificio,$piano,$tipo);
         
     }

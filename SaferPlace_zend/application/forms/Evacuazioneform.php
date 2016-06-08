@@ -7,7 +7,7 @@ class Application_Form_Evacuazioneform extends Zend_Form
     protected $_numstanze;
 
 
-    public function __construct($user,$edificio,$piano,$tipo)
+    public function __construct($user)
     {
         $this->_utenteModel = new Application_Model_UtenteStaff($user);
         $this->init();
@@ -24,7 +24,7 @@ class Application_Form_Evacuazioneform extends Zend_Form
         $tipo['0'] = 'Seleziona tipo emergenza';
         $tipo['Incendio'] = 'Incendio';
         $tipo['Crollo'] = 'Crollo';
-        $tipo['Fuga di gas'] = 'Fuga di gas';
+        $tipo['Gas'] = 'Gas';
         $tipo['Allagamento'] = 'Allagamento';
         $edifici['default'] = 'Seleziona edificio'; // array che conterrà le opzioni della select
         $piani['0'] = 'Seleziona piano'; // array che contiene i piani, per ora lo definisco manualmente in attesa di ajax
