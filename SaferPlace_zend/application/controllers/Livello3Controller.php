@@ -20,7 +20,6 @@ class Livello3Controller extends Zend_Controller_Action
     protected $_nuovoPdfForm = null;
 
     protected $gestionezoneform;
-    protected $inseriscizoneform;
 
     public function init()
     {
@@ -48,7 +47,7 @@ class Livello3Controller extends Zend_Controller_Action
         $this->_nuovoEdificioForm = $this->getNuovoEdificioForm();
 
         //istanzio la form per la modifica di un edificio
-        
+        $this->_nomeEd2 = $this->getParam('edificio2');
         $this->_modificaEdificioForm = $this->getModificaEdificioForm();
 
         //istanzio la form di aggiornamento di un utente
@@ -71,8 +70,6 @@ class Livello3Controller extends Zend_Controller_Action
         $this->_gestisciPianoForm = $this->getInserisciPianoForm();
 
         $this->view->formInserisciPiani = $this->_gestisciPianoForm;
-
-        $this->view->inseriscizoneform = $this->getInserisciZoneForm();
 
         if ($this->controllaParam('edificio') != null) {
             if ($this->controllaParam('numeroPiano') != null) {
@@ -138,6 +135,7 @@ class Livello3Controller extends Zend_Controller_Action
      */
     public function modificaedificioAction()
     {
+        echo 'porco dio';
         $app = $this->getParam('edificio');
         $modelEdifici = new Application_Model_Edifici();
         $modelPiani = new Application_Model_Piani();
@@ -351,7 +349,41 @@ class Livello3Controller extends Zend_Controller_Action
      */
     public function modificadescrizioneAction()
     {
-       $this->view->assign('nomeEdificio', $this->controllaParam('edificio'));
+       /* //prendo le informazioni per popolare la form
+        $nomeEdificio = $this->getParam('edificio');
+        $edificiModel = new Application_Model_Edifici();
+        $edificio = $edificiModel->getEdificio($nomeEdificio);
+
+
+        //valori per popolare la form
+        $data = array(
+            'nome'          => $nomeEdificio,
+            'mappa'         => $edificio->current()->mappa,
+            'informazioni'  => $edificio->current()->informazioni
+        );
+
+        //popolo la form
+        $this->_edificioForm->populate($data);
+
+        //imposto l'azione della form
+        $this->_edificioForm->setAction($this->view->url(
+            array(
+                'controller'    => 'livello3',
+                'action'        => 'submitmodificadescrizione',
+                'oldname'       => $nomeEdificio
+            )
+        ));
+
+        //assegno la form alla view
+
+        $this->view->assign('Form',$this->_edificioForm);
+        //assegno il nome dell'edificio alla view per il bottone indietro
+        $this->view->assign('nomeEdificio',$nomeEdificio);
+        
+        
+        return $this->_edificioForm;*/
+        
+        
     }
 
     protected function getModificaEdificioForm(){
@@ -444,9 +476,7 @@ class Livello3Controller extends Zend_Controller_Action
         }
     }
 
-    /**
-     * Creo la form di inserimento di un nuovo edificio
-     */
+    
     public function inserisciedificioAction()
     {
     }
@@ -631,14 +661,10 @@ class Livello3Controller extends Zend_Controller_Action
      * Modifica delle informazioni dell'edificio nel db
      * 
      */
-  /*  public function submitmodificadescrizioneAction()
+    public function submitmodificadescrizioneAction()
     {
         $edificio = $this->getParam('edificio');
-
-        //metodo che non deve renderizzare niente come view
-        $this->_helper->getHelper('layout')->disableLayout();
-        $this->_helper->viewRenderer->setNoRender();
-
+        
         // prendo dall' object request l'informazione sul vecchio nome dell'edificio
         // che corrisponde alla chiave d'accesso al db 
         $oldname = $this->getParam('oldname');
@@ -670,7 +696,7 @@ class Livello3Controller extends Zend_Controller_Action
         $this->getHelper('Redirector')->gotoSimple('modificaedificio','livello3',$module=null,array('edificio'=>$edificio));
     }
 
-*/
+
     protected function getNuovoEdificioForm(){
 
         $this->_nuovoEdificioForm = new Application_Form_Gestioneedificio();
@@ -922,30 +948,11 @@ class Livello3Controller extends Zend_Controller_Action
 
         $this->modificapianoform = new Application_Form_Gestionepiano();
 
-        $datiform = $this->modificapianoform->getValues();
+        $edificio = $this->getParam('edificio');
+        $numeroPiano = $this->getParam('numeroPiano');
 
-        $edificio = $this->controllaParam('edificio');
-        $numeroPiano = $this->controllaParam('numeroPiano');
 
-        if(is_null($edificio))
-            $this->getHelper('Redirector')->gotoSimple('error','error',$module=null);
-
-        $controlloedificiomodel=new Application_Model_Edifici();
-        $controlloedificio=$controlloedificiomodel->getEdificio($edificio);
-
-        if($controlloedificio->current()==array())
-            $this->getHelper('Redirector')->gotoSimple('error', 'error', $module = null);
-
-        $modelPiani=new Application_Model_Piani();
-        $piani = $modelPiani->getPianiByEdificio($edificio);
-
-        $controllo=array();
-        foreach ($piani as $p){
-            $controllo[]=$p->numeroPiano;
-        }
-
-        if(!in_array($numeroPiano, $controllo))
-            $this->getHelper('Redirector')->gotoSimple('error','error',$module=null);
+        $modelPiani = new Application_Model_Piani();
 
         $data = $modelPiani->getPiano($edificio, $numeroPiano);
 
@@ -981,15 +988,6 @@ class Livello3Controller extends Zend_Controller_Action
 
             $edificio = $this->controllaParam('edificio');
             $numeroPiano = $this->controllaParam('numeroPiano');
-
-            $controlloedificiomodel=new Application_Model_Edifici();
-            $controlloedificio=$controlloedificiomodel->getEdificio($edificio);
-
-            print_r($controlloedificio);die;
-            if($controlloedificio==array())
-                $this->getHelper('Redirector')->gotoSimple('error', 'error', $module = null);
-
-
 
             $modelPiani = new Application_Model_Piani();
 
@@ -1242,47 +1240,6 @@ class Livello3Controller extends Zend_Controller_Action
         return $this->gestionezoneform;
     }
 
-    public function getInserisciZoneForm(){
-
-        $urlHelper = $this->_helper->getHelper('url');
-
-        //istanzio la form per modificare la faq
-        $this->inseriscizoneform = new Application_Form_Inseriscizone();
-
-        $this->inseriscizoneform->setAction($urlHelper->url(array(
-            'controller' => 'livello3',
-            'action' => 'verificainseriscizone'),
-            'default'
-        ));
-
-        return $this->inseriscizoneform;
-    }
-
-    public function verificainseriscizoneAction(){
-        $request = $this->getRequest();
-        $edificio       = $this->controllaParam('edificio');
-        $numeroPiano    = $this->controllaParam('numeroPiano');
-
-        if (!$request->isPost()) {
-            return $this->_helper->redirector('gestionezone');
-        }
-        $form = $this->inseriscizoneform;
-        
-        if (!$form->isValid($request->getPost())) {
-            $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
-            $modelAdmin = new Application_Model_Admin();
-            $controllo = $modelAdmin->existsZone($edificio,$numeroPiano);
-            $this->view->assign('edificio', $edificio);
-            $this->view->assign('numeroPiano', $numeroPiano);
-            $this->view->assign('controllo', $controllo);
-            return $this->render('gestionezone');
-        } else {
-            $this->insertZone();
-        }
-    }
-
-
-
     public function verificagestionezoneAction(){
         $request = $this->getRequest();
         $edificio       = $this->controllaParam('edificio');
@@ -1298,8 +1255,6 @@ class Livello3Controller extends Zend_Controller_Action
             $this->view->assign('edificio', $edificio);
             $this->view->assign('numeroPiano', $numeroPiano);
             $this->view->assign('arrayPosizioni', $arrayPosizioni);
-            $this->view->assign('controllo', true);
-
             return $this->render('gestionezone');
         } else {
             $this->insertPosizione();
@@ -1310,16 +1265,12 @@ class Livello3Controller extends Zend_Controller_Action
     {
         $edificio = $this->controllaParam('edificio');
         $numPiano = $this->controllaParam('numeroPiano');
-
         $modelAdmin = new Application_Model_Admin();
         $arrayPosizioni = $modelAdmin->getZoneByEdPianoIdasAlias($edificio,$numPiano);
-
-        $controllo = $modelAdmin->existsZone($edificio,$numPiano); //controllo se nel database esiste già una suddivisione in zone del piano
 
         $this->view->assign('edificio', $edificio);
         $this->view->assign('numeroPiano', $numPiano);
         $this->view->assign('arrayPosizioni', $arrayPosizioni);
-        $this->view->assign('controllo', $controllo);
     }
 
     public function insertPosizione(){
@@ -1334,46 +1285,24 @@ class Livello3Controller extends Zend_Controller_Action
         $zona = $adminmodel->getIdZona($edificio, $numeroPiano,$alias)->current()->id;
 
         $posizionimodel = new Application_Model_Posizioni();
-        $esisteposizione = $posizionimodel->existsPosizione($numeroPiano, $stanza,$edificio);
+        $controllo = $posizionimodel->existsPosizione($numeroPiano, $stanza,$edificio);
         $modelAdmin = new Application_Model_Admin();
         $arrayPosizioni = $modelAdmin->getZoneByEdPianoIdasAlias($edificio,$numeroPiano);
 
-        if($esisteposizione){
+        if($controllo){
+
+
             $this->gestionezoneform->setDescription('Attenzione: la posizione inserita è già esistente.');
             $this->view->assign('edificio', $edificio);
             $this->view->assign('numeroPiano', $numeroPiano);
             $this->view->assign('arrayPosizioni', $arrayPosizioni);
-            $this->view->assign('controllo', true);
-
             return $this->render('gestionezone');
 
         }else{
 
             $posizionimodel->insertPosizione($zona,$stanza,$numeroPiano,$edificio);
-            $this->getHelper('Redirector')->gotoSimple('gestionezone', 'livello3', $module = null, array('edificio' => $edificio, 'numeroPiano' => $numeroPiano,'arrayPosizioni' => $arrayPosizioni, 'controllo' => true));
+            $this->getHelper('Redirector')->gotoSimple('gestionezone', 'livello3', $module = null, array('edificio' => $edificio, 'numeroPiano' => $numeroPiano,'arrayPosizioni' => $arrayPosizioni));
         }
-    }
-    
-    public function insertZone(){
-        $edificio       = $this->controllaParam('edificio');
-        $numeroPiano    = $this->controllaParam('numeroPiano');
-
-        $datiform = $this->inseriscizoneform->getValues();
-        $zone = explode(" ", $datiform['zone']);
-        $adminmodel = new Application_Model_Admin();
-        $i=0;
-
-        foreach ($zone as $z){
-            if($zone[$i] != null) {
-                $dati[] = array('alias' => $z, 'edificio' => $edificio, 'Piano' => $numeroPiano);
-                $adminmodel->insertZona($dati[$i]);
-            }
-            $i++;
-
-        }
-        $arrayPosizioni = $adminmodel->getZoneByEdPianoIdasAlias($edificio,$numeroPiano);
-        $this->getHelper('Redirector')->gotoSimple('gestionezone', 'livello3', $module = null, array('edificio' => $edificio, 'numeroPiano' => $numeroPiano,'arrayPosizioni' => $arrayPosizioni));
-        
     }
     
     public function eliminaposizioneAction(){
