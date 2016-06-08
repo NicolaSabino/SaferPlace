@@ -15,6 +15,7 @@ class ErrorController extends Zend_Controller_Action
 
         if (!$errors || !$errors instanceof ArrayObject) {
             $this->view->message = 'I parametri dell\'url non sono corretti';
+            $this->view->img= 'image/Errori/erroreurl.jpg';
             return;
         }
         
@@ -26,12 +27,14 @@ class ErrorController extends Zend_Controller_Action
                 $this->getResponse()->setHttpResponseCode(404);
                 $priority = Zend_Log::NOTICE;
                 $this->view->message = 'Pagina non trovata';
+                $this->view->img= 'image/Errori/404.jpg';
                 break;
             default:
                 // application error
                 $this->getResponse()->setHttpResponseCode(500);
                 $priority = Zend_Log::CRIT;
                 $this->view->message = 'Errore generico';
+                $this->view->img= 'image/Errori/genericerror.jpg';
                 break;
         }
         

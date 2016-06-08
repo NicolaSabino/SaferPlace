@@ -9,11 +9,13 @@ class Application_Form_Inseriscizone extends Zend_Form
         $this->setName('inseriscizone');
         $this->setAttrib('enctype', 'multipart/form-data');
         $this->setAction(''); // definirò l'azione nel controller quando istanzio la form
+        $myValidator = new App_Validate_ValidatoreZona();
 
 
         $this->addElement('text','zone', array(
             'required'  => true,
-            'label'     => 'Zone',
+            'label'     => 'Zone (inserisci le zone separate da uno spazio)',
+            'validators'=>array($myValidator)
         ));
         
 

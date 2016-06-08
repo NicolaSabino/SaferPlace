@@ -188,6 +188,7 @@ class Livello1Controller extends Zend_Controller_Action
 
         $pianimodel=new Application_Model_Piani();
         $piani = $pianimodel->getPianiByEdificio($edificio);
+        
         $controllo=array();
         foreach ($piani as $p){
         $controllo[]=$p->numeroPiano;

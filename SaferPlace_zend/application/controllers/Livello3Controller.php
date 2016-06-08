@@ -359,7 +359,6 @@ class Livello3Controller extends Zend_Controller_Action
             'mappa'         => $edificio->current()->mappa,
             'informazioni'  => $edificio->current()->informazioni
         );
-
         //popolo la form
         $this->_edificioForm->populate($data);
 
@@ -863,11 +862,30 @@ class Livello3Controller extends Zend_Controller_Action
 
         $this->modificapianoform = new Application_Form_Gestionepiano();
 
-        $edificio = $this->getParam('edificio');
-        $numeroPiano = $this->getParam('numeroPiano');
+        $datiform = $this->modificapianoform->getValues();
 
+        $edificio = $this->controllaParam('edificio');
+        $numeroPiano = $this->controllaParam('numeroPiano');
 
-        $modelPiani = new Application_Model_Piani();
+        if(is_null($edificio))
+            $this->getHelper('Redirector')->gotoSimple('error','error',$module=null);
+
+        $controlloedificiomodel=new Application_Model_Edifici();
+        $controlloedificio=$controlloedificiomodel->getEdificio($edificio);
+
+        if($controlloedificio->current()==array())
+            $this->getHelper('Redirector')->gotoSimple('error', 'error', $module = null);
+
+        $modelPiani=new Application_Model_Piani();
+        $piani = $modelPiani->getPianiByEdificio($edificio);
+
+        $controllo=array();
+        foreach ($piani as $p){
+            $controllo[]=$p->numeroPiano;
+        }
+
+        if(!in_array($numeroPiano, $controllo))
+            $this->getHelper('Redirector')->gotoSimple('error','error',$module=null);
 
         $data = $modelPiani->getPiano($edificio, $numeroPiano);
 
@@ -903,6 +921,15 @@ class Livello3Controller extends Zend_Controller_Action
 
             $edificio = $this->controllaParam('edificio');
             $numeroPiano = $this->controllaParam('numeroPiano');
+
+            $controlloedificiomodel=new Application_Model_Edifici();
+            $controlloedificio=$controlloedificiomodel->getEdificio($edificio);
+
+            print_r($controlloedificio);die;
+            if($controlloedificio==array())
+                $this->getHelper('Redirector')->gotoSimple('error', 'error', $module = null);
+
+
 
             $modelPiani = new Application_Model_Piani();
 
@@ -1211,6 +1238,8 @@ class Livello3Controller extends Zend_Controller_Action
             $this->view->assign('edificio', $edificio);
             $this->view->assign('numeroPiano', $numeroPiano);
             $this->view->assign('arrayPosizioni', $arrayPosizioni);
+            $this->view->assign('controllo', true);
+
             return $this->render('gestionezone');
         } else {
             $this->insertPosizione();
@@ -1261,7 +1290,7 @@ class Livello3Controller extends Zend_Controller_Action
         }else{
 
             $posizionimodel->insertPosizione($zona,$stanza,$numeroPiano,$edificio);
-            $this->getHelper('Redirector')->gotoSimple('gestionezone', 'livello3', $module = null, array('edificio' => $edificio, 'numeroPiano' => $numeroPiano,'arrayPosizioni' => $arrayPosizioni));
+            $this->getHelper('Redirector')->gotoSimple('gestionezone', 'livello3', $module = null, array('edificio' => $edificio, 'numeroPiano' => $numeroPiano,'arrayPosizioni' => $arrayPosizioni, 'controllo' => true));
         }
     }
     
@@ -1273,10 +1302,14 @@ class Livello3Controller extends Zend_Controller_Action
         $zone = explode(" ", $datiform['zone']);
         $adminmodel = new Application_Model_Admin();
         $i=0;
+
         foreach ($zone as $z){
-            $dati[]=array('alias'=>$z,'edificio'=>$edificio,'Piano'=>$numeroPiano);
-            $adminmodel->insertZona($dati[$i]);
+            if($zone[$i] != null) {
+                $dati[] = array('alias' => $z, 'edificio' => $edificio, 'Piano' => $numeroPiano);
+                $adminmodel->insertZona($dati[$i]);
+            }
             $i++;
+
         }
         $arrayPosizioni = $adminmodel->getZoneByEdPianoIdasAlias($edificio,$numeroPiano);
         $this->getHelper('Redirector')->gotoSimple('gestionezone', 'livello3', $module = null, array('edificio' => $edificio, 'numeroPiano' => $numeroPiano,'arrayPosizioni' => $arrayPosizioni));
