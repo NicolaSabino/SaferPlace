@@ -13,27 +13,7 @@ class Application_Form_Gestisciutente extends Zend_Form
     protected $_password    = null;
     protected $_email       = null;
     protected $_livello     = null;
-
-
-    public function __construct($dati=null)
-    {
-
-        if(!$dati==null){
-            $this->_nome = $dati->current()->nome;
-            $this->_cognome = $dati->current()->cognome;
-            $this->_username = $dati->current()->username;
-            $this->_genere = $dati->current()->genere;
-            $this->_eta = $dati->current()->eta;
-            $this->_telefono = $dati->current()->telefono;
-            $this->_password = $dati->current()->password;
-            $this->_email = $dati->current()->email;
-            $this->_livello = $dati->current()->livello;
-
-        }
-
-        $this->init();
-
-    }
+    
 
 
     public function init()

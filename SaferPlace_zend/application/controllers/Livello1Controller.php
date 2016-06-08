@@ -318,8 +318,6 @@ class Livello1Controller extends Zend_Controller_Action
     public function getModificaform()
     {
         return $this->getHelper('ModificaProfilo')->getForm($this->user, 1);
-
-
     }
 
     public function modificadatiutenteAction()

@@ -26,7 +26,8 @@ class App_Action_Helper_ModificaProfilo extends Zend_Controller_Action_Helper_Ab
         $urlHelper = Zend_Controller_Action_HelperBroker::getStaticHelper('url');
         $usermodel=new Application_Model_Utenti();
         $dati=$usermodel->getDatiUtenteByUserSet($user);
-        $modificaform= new Application_Form_Registratiform($dati);
+        $modificaform= new Application_Form_Registratiform();
+        $modificaform->populate($dati);
         
         $modificaform->setAction($urlHelper->url(array(
             'controller' => 'livello'.$level,
