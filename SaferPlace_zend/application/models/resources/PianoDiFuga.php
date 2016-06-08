@@ -64,4 +64,9 @@ class Application_Resource_PianoDiFuga extends  Zend_Db_Table_Abstract
         $this->delete($where);
 
     }
+
+    public function updateByPiante($pianta,$data){
+        $where = "pianta like '%$pianta%'";
+        $this->getAdapter()->update('pianodifuga',$data,$where);
+    }
 }

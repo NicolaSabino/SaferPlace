@@ -42,5 +42,9 @@ class Application_Model_Piani extends  App_Model_Abstract
         return $this->getResource('Piani')->updatePiano($data,$id);
     }
 
+    public function updatePianiByPianta($pianta,$data){
+        return $this->getResource('Piani')->updatePianiByPianta($pianta,$data);
+    }    
+
 }
 

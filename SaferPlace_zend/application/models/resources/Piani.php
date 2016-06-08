@@ -100,6 +100,17 @@ class Application_Resource_Piani extends  Zend_Db_Table_Abstract
         return $this->fetchAll($select);
 
     }
+
+    public function updatePianiByPianta($pianta,$data){
+
+        $where = "pianta ='$pianta'";
+        $this->getAdapter()->update('piano',$data,$where);
+    }
+
+    public function getPianiSet(){
+        $select = $this->select();
+        return $this->fetchAll($select);
+    }
     
 }
 

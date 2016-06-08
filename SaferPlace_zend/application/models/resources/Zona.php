@@ -83,7 +83,13 @@ class Application_Resource_Zona extends Zend_Db_Table_Abstract {
     public function insertZona($dati){
         $this->insert($dati);
     }
-    
-    
+
+    public function updateZoneByEdificio($data,$edificio) {
+
+        $where = "edificio = '$edificio'";
+
+        $this->getAdapter()->update('zona',$data,$where);
+
+    }
     
 }

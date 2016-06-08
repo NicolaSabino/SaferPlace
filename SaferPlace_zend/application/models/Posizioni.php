@@ -32,4 +32,7 @@ class Application_Model_Posizioni extends App_Model_Abstract
 
     }
 
+    public function updateByEdificio($nomeEdificio,$data){
+        return $this->getResource('Posizioni')->agiornaPosizioniByEdificio($nomeEdificio,$data);
+    }
 }

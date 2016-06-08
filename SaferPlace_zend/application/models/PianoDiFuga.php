@@ -18,5 +18,10 @@ class Application_Model_PianoDiFuga extends  App_Model_Abstract
         $this->getResource('PianoDiFuga')->newPdf($data);
     }
 
+    public function updateByPianta($pianta,$data){
+        $this->getResource('PianoDiFuga')->updateByPiante($pianta,$data);
+    }
+    
+
 }
 

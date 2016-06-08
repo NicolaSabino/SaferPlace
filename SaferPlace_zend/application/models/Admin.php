@@ -95,4 +95,8 @@ class Application_Model_Admin extends App_Model_Abstract
     public function insertZona($dati){
         return $this->getResource('Zona')->insertZona($dati);
     }
+
+    public function updateZoneByEdificio($edificio,$data){
+        return $this->getResource('Zona')->updateZoneByEdificio($data,$edificio);
+    }
 }

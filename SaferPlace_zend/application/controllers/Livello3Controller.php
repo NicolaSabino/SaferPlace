@@ -469,6 +469,11 @@ class Livello3Controller extends Zend_Controller_Action
 
                 $edficiModel->updateEdificio($datiform, $edificio);
 
+                $vecchionome = $edificio;
+                $nuovoNome   = $datiform['nome'];
+
+                $this->rinominaEdificio($vecchionome,$nuovoNome);
+
                 //reindirizzo a gestione edifici
                 $this->getHelper('Redirector')
                     ->gotoSimple('modificaedificio','livello3',$module=null,array('edificio' => $datiform['nome']));
@@ -1386,6 +1391,141 @@ class Livello3Controller extends Zend_Controller_Action
     }
 
 
+    /**
+     * Rinomino tutti i file e le occorrenze del db collegate ad un deerminato edificio
+     * @param $nome_vecchio_edificio
+     * @param $nome_nuovo_edificio
+     */
+    protected function rinominaEdificio($nome_vecchio_edificio,$nome_nuovo_edificio){
+
+        //model
+        $edificioModel  = new Application_Model_Edifici();
+        $posizioniModel = new Application_Model_Posizioni();
+        $pianiModel     = new Application_Model_Piani();
+        $pdfModel       = new Application_Model_PianoDiFuga();
+        $adminModel      = new Application_Model_Admin();
+        $stringa_esplosa = null;
+
+        //edificio
+
+        $set = $edificioModel->getEdificio($nome_nuovo_edificio); //attenzione  [0]
+        $mappa_vecchio_edificio = $set[0]->mappa;
+        $stringa_esplosa = explode(".", $mappa_vecchio_edificio);
+
+        //rinomino il file corrispondente
+        $file1 = APPLICATION_PATH . '/../public/image/edifici/' . $mappa_vecchio_edificio;
+        $nuovoNomeFile = $nome_nuovo_edificio . "." . end($stringa_esplosa);
+        $file2 = APPLICATION_PATH . '/../public/image/edifici/' . $nuovoNomeFile;
+        rename($file1, $file2);
+
+
+        $edificioModel->updateEdificio(array('mappa' => $nuovoNomeFile), $nome_nuovo_edificio);
+
+        //aggiorno le posizioni nel db
+        $posizioniModel->updateByEdificio($nome_vecchio_edificio,array(
+            'edificio' => $nome_nuovo_edificio
+        ));
+
+        //aggiorno la zona nel db
+        $adminModel->updateZoneByEdificio($nome_vecchio_edificio,array(
+            "edificio"  => $nome_nuovo_edificio
+        ));
+
+        //pianta
+
+        $pianiset = $pianiModel->getPianiByEdificio($nome_nuovo_edificio);
+
+        foreach ($pianiset as $item){
+
+            //prelevo la pianta vecchia
+            $vecchiaPianta = $item->pianta;
+            $pianta_esplosa = explode("Piano",$vecchiaPianta);
+
+            $nuovaPianta = $nome_nuovo_edificio . " Piano".end($pianta_esplosa);
+
+            //aggiorno nel db
+            $pianiModel->updatePianiByPianta($vecchiaPianta,array(
+                "pianta" => $nuovaPianta
+            ));
+
+            //rinomino il file
+            $file1 = APPLICATION_PATH . '/../public/image/piante/' . $vecchiaPianta;
+            $file2 = APPLICATION_PATH . '/../public/image/piante/' . $nuovaPianta;
+            rename($file1, $file2);
+
+            //mappature
+            $file_vecchia_mappa = $nome_vecchio_edificio . " Piano " .$item->numeroPiano . ".txt";
+            $file_nuova_mappa = $nome_nuovo_edificio . " Piano " . $item->numeroPiano . ".txt";
+            $path1 = APPLICATION_PATH . '/../public/image/piante/map/' . $file_vecchia_mappa;
+            $path2 = APPLICATION_PATH . '/../public/image/piante/map/' . $file_nuova_mappa;
+            if(file_exists($path1)){
+                rename($path1,$path2);
+            }
+
+            //piani di fuga
+            print_r($item->numeroPiano.'<br>');
+
+            $setpdf = $pdfModel->getByEdificioPiano($nome_vecchio_edificio,$item->numeroPiano);
+
+            //per ogni piano di fuga colledato ad un determinato piano
+            foreach ($setpdf as $pdf){
+
+                //modifico l'occorenza nel db
+                $vecchiaPiantaPdf   = $pdf->pianta;
+                $vecchiaPiantaEsplosa = explode("Piano",$vecchiaPiantaPdf);
+                $nuovaPiantaPdf     = $nome_nuovo_edificio . " Piano" .end($vecchiaPiantaEsplosa);
+
+                $pdfModel->updateByPianta($vecchiaPiantaPdf,array(
+                    'pianta' => $nuovaPiantaPdf
+                ));
+
+                //aggiorno il file
+
+                $path1 = APPLICATION_PATH . '/../public/image/piante/piani di fuga/' . $vecchiaPiantaPdf;
+                $path2 = APPLICATION_PATH . '/../public/image/piante/piani di fuga/' . $nuovaPiantaPdf;
+
+                if(file_exists($path1)){
+                    rename($path1,$path2);
+                }
+            }
+
+
+            //zone
+
+            $file_vecchia_zona_jpg = $nome_vecchio_edificio . " Piano " . $item->numeroPiano . ".jpg";
+            $file_vecchia_zona_png = $nome_vecchio_edificio . " Piano " . $item->numeroPiano . ".png";
+            $file_nuova_zona_jpg = $nome_nuovo_edificio. " Piano " . $item->numeroPiano . ".jpg";
+            $file_nuova_zona_png = $nome_nuovo_edificio . " Piano " . $item->numeroPiano . ".png";
+
+            $path_old_jpg = APPLICATION_PATH . '/../public/image/piante/zone/' . $file_vecchia_zona_jpg;
+            $path_old_png = APPLICATION_PATH . '/../public/image/piante/zone/' . $file_vecchia_zona_png;
+            $path_new_jpg = APPLICATION_PATH . '/../public/image/piante/zone/' . $file_nuova_zona_jpg;
+            $path_new_png = APPLICATION_PATH . '/../public/image/piante/zone/' . $file_nuova_zona_png;
+
+
+            //controllo se ho un file in jpg
+            if(file_exists($path_old_jpg)){
+                //aggiorno in jpg
+                rename($path_old_jpg,$path_new_jpg);
+            }
+
+            //controllo se ho un file in png
+            if(file_exists($path_old_png)){
+                //aggiorno in png
+                rename($path_old_png,$path_new_png);
+            }
+
+
+
+        }
+
+
+
+
+
+
+
+    }
 
 }
 

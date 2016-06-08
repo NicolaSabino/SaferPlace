@@ -86,9 +86,18 @@ class Application_Resource_Posizioni extends  Zend_Db_Table_Abstract
 
     }
 
-    public function delPosizioni($id){
-        $del =$this->getAdapter()->quoteInto('id = ?', $id);
+    public function delPosizioni($id)
+    {
+        $del = $this->getAdapter()->quoteInto('id = ?', $id);
         $this->delete($del);
     }
+
+    public function agiornaPosizioniByEdificio($nomeEdificio,$data){
+
+        $where = "edificio ='$nomeEdificio'";
+        $this->getAdapter()->update('posizione',$data,$where);
+
+    }
+    
 }
 
