@@ -348,41 +348,7 @@ class Livello3Controller extends Zend_Controller_Action
      */
     public function modificadescrizioneAction()
     {
-       /* //prendo le informazioni per popolare la form
-        $nomeEdificio = $this->getParam('edificio');
-        $edificiModel = new Application_Model_Edifici();
-        $edificio = $edificiModel->getEdificio($nomeEdificio);
-
-
-        //valori per popolare la form
-        $data = array(
-            'nome'          => $nomeEdificio,
-            'mappa'         => $edificio->current()->mappa,
-            'informazioni'  => $edificio->current()->informazioni
-        );
-
-        //popolo la form
-        $this->_edificioForm->populate($data);
-
-        //imposto l'azione della form
-        $this->_edificioForm->setAction($this->view->url(
-            array(
-                'controller'    => 'livello3',
-                'action'        => 'submitmodificadescrizione',
-                'oldname'       => $nomeEdificio
-            )
-        ));
-
-        //assegno la form alla view
-
-        $this->view->assign('Form',$this->_edificioForm);
-        //assegno il nome dell'edificio alla view per il bottone indietro
-        $this->view->assign('nomeEdificio',$nomeEdificio);
-        
-        
-        return $this->_edificioForm;*/
-        
-        
+       $this->view->assign('nomeEdificio', $this->controllaParam('edificio'));
     }
 
     protected function getModificaEdificioForm(){
