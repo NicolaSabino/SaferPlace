@@ -57,16 +57,7 @@ class Application_Form_Gestioneedificio extends Zend_Form
         ));
     }
 
-    public function populate($dati)
-    {
-
-        $this->nome->setValue($dati->current()->nome);
-        $this->informazioni->setValue($dati->current()->informazioni);
-        $this->mappa->setValue($dati->current()->mappa);
-
-
-
-    }
+  
 
 
 }
