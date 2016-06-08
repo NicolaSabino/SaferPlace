@@ -13,7 +13,7 @@ class Application_Form_Gestisciutente extends Zend_Form
     protected $_password    = null;
     protected $_email       = null;
     protected $_livello     = null;
-    
+
 
 
     public function init()
