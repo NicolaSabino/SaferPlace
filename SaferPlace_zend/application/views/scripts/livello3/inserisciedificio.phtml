@@ -2,7 +2,7 @@
 <div id="view-content">
 	<h4 class="green-text center">Nuovo edificio</h4>
 	<div class="container">
-		<?php echo $this->formGestioneEdificio; ?>
+		<?php echo $this->nuovoEdificioForm; ?>
 	</div>
 
 	<!-- MENU -->
@@ -10,7 +10,7 @@
 		<a class="btn-floating btn-large blue darken-2 tooltipped" data-position="left" data-delay="50" data-tooltip="Indietro" href="<?php echo $this->url(
 			array(
 				'controller' 	=> 'livello3',
-				'action' 		=> 'gestioneedifici',
+				'action' 		=> 'verificanuovoedificio',
 			),null,true
 		);
 

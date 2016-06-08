@@ -15,7 +15,10 @@ class Livello3Controller extends Zend_Controller_Action
     protected $faqcreaform;
     protected $modificadatiform;
     protected $_gestisciPianoForm = null;
+    protected $_nuovoEdificioForm =null;
+    
     protected $_nuovoPdfForm;
+
     protected $gestionezoneform;
     protected $inseriscizoneform;
 
@@ -42,7 +45,7 @@ class Livello3Controller extends Zend_Controller_Action
         // -- form --
 
         //istanzio la form di gestione di un edificio
-        $this->_edificioForm = new Application_Form_Gestioneedificio();
+        $this->_nuovoEdificioForm = $this->getNuovoEdificioForm();
 
         //istanzio la form di aggiornamento di un utente
         $this->_aggiornaUtenteForm = new Application_Form_Gestisciutente();
@@ -386,19 +389,6 @@ class Livello3Controller extends Zend_Controller_Action
      */
     public function inserisciedificioAction()
     {
-        //imposto l'azione della form
-        $this->_edificioForm->setAction($this->view->url(
-            array(
-                'controller'    => 'livello3',
-                'action'        => 'nuovoedificio',
-            )
-        ));
-
-        //passo l'occorrenza della form alla view
-        $this->view->assign('formNuovoEdifico',$this->_edificioForm);
-
-
-        return $this->_edificioForm;
     }
 
     /**
@@ -620,32 +610,66 @@ class Livello3Controller extends Zend_Controller_Action
         $this->getHelper('Redirector')->gotoSimple('modificaedificio','livello3',$module=null,array('edificio'=>$edificio));
     }
 
-    /**
-     * Inserisco un nuovo edificio nel database
-     */
-    public function nuovoedificioAction()
-    {
 
-        if (!$this->getRequest()->isPost()) {
-            $this->_helper->redirector('index');
+    protected function getNuovoEdificioForm(){
+
+        $this->_nuovoEdificioForm = new Application_Form_Gestioneedificio();
+
+        $urlHelper = $this->_helper->getHelper('url');
+
+        $this->_nuovoEdificioForm->setAction($urlHelper->url(array(
+            'controller' => 'livello3',
+            'action' => 'verificanuovoedificio'),
+            'default'
+        ));
+
+        $this->view->nuovoEdificioForm = $this->_nuovoEdificioForm;
+
+
+        return $this->_nuovoEdificioForm;
+
+
+    }
+
+
+    public function verificanuovoedificioAction(){
+
+        $request = $this->getRequest();
+        $urlHelper = $this->_helper->getHelper('url');
+        if (!$request->isPost()) {
+            return $this->_helper->redirector('gestioneedifici');
         }
 
-
-        $form=$this->_edificioForm;
-        $model = new Application_Model_Edifici();
-
-        if (!$form->isValid($_POST)) {
+        $form = $this->_nuovoEdificioForm;
+        if (!$form->isValid($request->getPost())) {
+            $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
             return $this->render('inserisciedificio');
         }
+        else
+        {
+            $datiform=$this->_nuovoEdificioForm->getValues(); //datiform è un array
 
-        $values = $form->getValues();
+            $edficiModel = new Application_Model_Edifici();
+            $edifici = $edficiModel->getEdificiSet(); //prelevo l'insieme degli edifici presenti nel db per un controllo
+            $check = 0;
 
+            foreach ($edifici as $edificio){
+                if($edificio->nome == $datiform['nome']) $check++;
+            }
 
-        $model->nuovoEdifico($values);
+            if($check!=0) // se il nome è già resente nel db faccio partire l'errore
+            {
+                $form->setDescription('Attenzione: Nome edificio non disponibile.');
+                return $this->render('inserisciedificio');
+            }
+            else{
 
-        //reindirizzo a gestione utenti
-        $this->getHelper('Redirector')->gotoSimple('gestioneedifici','livello3',$module=null);
+                $edficiModel->nuovoEdifico($datiform);
 
+                //reindirizzo a gestione utenti
+                $this->getHelper('Redirector')->gotoSimple('gestioneedifici','livello3',$module=null);
+            }
+        }
     }
 
     /**
