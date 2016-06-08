@@ -53,7 +53,7 @@ class Application_Form_Gestioneedificio extends Zend_Form
         ));
 
         $this->addElement('submit', 'ok', array(
-            'class' => 'btn green white-text'
+            'class' => 'btn btn-large green white-text'
         ));
 
         $this->setDecorators(array(
