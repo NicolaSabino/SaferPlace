@@ -26,6 +26,11 @@ class Application_Form_Inseriscizone extends Zend_Form
                 array('Extension', false, array('jpg','png'))
             )
         ));
+
+        $this->addElement('submit', 'ok', array(
+            'class'         => 'btn waves-yellow green',
+        ));
+
     }
 
 
