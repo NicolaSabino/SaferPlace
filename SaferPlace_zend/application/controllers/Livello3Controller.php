@@ -1245,17 +1245,17 @@ class Livello3Controller extends Zend_Controller_Action
         $zona = $adminmodel->getIdZona($edificio, $numeroPiano,$alias)->current()->id;
 
         $posizionimodel = new Application_Model_Posizioni();
-        $controllo = $posizionimodel->existsPosizione($numeroPiano, $stanza,$edificio);
+        $esisteposizione = $posizionimodel->existsPosizione($numeroPiano, $stanza,$edificio);
         $modelAdmin = new Application_Model_Admin();
         $arrayPosizioni = $modelAdmin->getZoneByEdPianoIdasAlias($edificio,$numeroPiano);
 
-        if($controllo){
-
-
+        if($esisteposizione){
             $this->gestionezoneform->setDescription('Attenzione: la posizione inserita è già esistente.');
             $this->view->assign('edificio', $edificio);
             $this->view->assign('numeroPiano', $numeroPiano);
             $this->view->assign('arrayPosizioni', $arrayPosizioni);
+            $this->view->assign('controllo', true);
+
             return $this->render('gestionezone');
 
         }else{
