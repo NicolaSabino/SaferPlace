@@ -61,7 +61,8 @@ class App_Action_Helper_ModificaProfilo extends Zend_Controller_Action_Helper_Ab
                 $form->setDescription('Attenzione: l\'username che hai scelto non è disponibile.');
                 return $this->getActionController()->render('modificadatiutente');
             }
-            $utentimodel->updateUtentiSet($datiform);
+            $utentimodel->updateUtentiSet($datiform,$username);
+            $this->_authService->getAuth()->getIdentity()->current()->username = $datiform['username'];
             $urlarray = $this->getUrlArray($level,'home');
             $redirectorhelper = Zend_Controller_Action_HelperBroker::getStaticHelper('Redirector');
 
