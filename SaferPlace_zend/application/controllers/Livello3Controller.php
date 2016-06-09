@@ -858,11 +858,11 @@ class Livello3Controller extends Zend_Controller_Action
             $modelPiani = new Application_Model_Piani();
 
             $file = explode(".", $datiform['pianta']);
-
+            
+            //rinomino il file appena inserito 
             $path1 = APPLICATION_PATH . '/../public/image/piante/' . $datiform['pianta'];
             $path2 = APPLICATION_PATH . '/../public/image/piante/' . $edificio . " Piano " . $datiform['numeroPiano'] . "." . end($file);
-
-            
+  
 
             //controllo sui piani
             $piani = $modelPiani->getPianiByEdificio($edificio);
@@ -874,7 +874,7 @@ class Livello3Controller extends Zend_Controller_Action
             }
 
             if ($check != 0) {
-                $form->setDescription('Attenzione: Il piano inserito già esiste.');
+                $form->setDescription('Attenzione: Il piano inserito esiste già.');
                 return $this->render('inseriscipiano'); //fine controllo sui piani
 
             } else {
@@ -888,8 +888,16 @@ class Livello3Controller extends Zend_Controller_Action
                     'pianta' => $edificio . " Piano " . $datiform['numeroPiano'] . "." . end($file)
 
                 ));
-
-
+                
+                
+                $file_vecchia_mappa = $datiform['mappa'];
+                $file_nuova_mappa = $edificio . " Piano " . $datiform['numeroPiano'] . ".txt";
+                $path1 = APPLICATION_PATH . '/../public/image/piante/map/' . $file_vecchia_mappa;
+                $path2 = APPLICATION_PATH . '/../public/image/piante/map/' . $file_nuova_mappa;
+                if(file_exists($path1)){
+                    rename($path1,$path2);
+                }
+                
                 //reindirizzo a gestione utenti
                 $this->getHelper('Redirector')->gotoSimple('modificaedificio', 'livello3', $module = null, array('edificio' => $edificio));
             }
@@ -918,8 +926,8 @@ class Livello3Controller extends Zend_Controller_Action
         $modelPiani = new Application_Model_Piani();
 
         $data = $modelPiani->getPiano($edificio, $numeroPiano);
-
-        $this->modificapianoform->populate($data);
+        if($data->toArray()!=array()){
+            $this->modificapianoform->populate($data);
 
         $this->modificapianoform->setAction(
             $urlHelper->url(array(
@@ -928,7 +936,8 @@ class Livello3Controller extends Zend_Controller_Action
                 'action' => 'verificamodificapiano'),
                 'default'
             )
-        );
+
+        );}
 
         return $this->modificapianoform;
     }
@@ -976,7 +985,7 @@ class Livello3Controller extends Zend_Controller_Action
             }
 
             if ($check != 0 && $datiform['numeroPiano'] != $numeroPiano) {
-                $form->setDescription('Attenzione: Il piano inserito già esiste.');
+                $form->setDescription('Attenzione: Il piano inserito esiste già.');
                 return $this->render('modificapiano'); //fine controllo sui piani
 
             } else {
@@ -985,6 +994,14 @@ class Livello3Controller extends Zend_Controller_Action
                 $id = $modelPiani->getId($edificio, $numeroPiano)->current()->id;
                 $modelPiani->updatePiano($datiform, $id);
 
+                if ($datiform['mappa'] != null)
+                    $file_vecchia_mappa = $datiform['mappa'];
+                    $file_nuova_mappa = $edificio . " Piano " . $datiform['numeroPiano'] . ".txt";
+                    $path1 = APPLICATION_PATH . '/../public/image/piante/map/' . $file_vecchia_mappa;
+                    $path2 = APPLICATION_PATH . '/../public/image/piante/map/' . $file_nuova_mappa;
+                    if(file_exists($path1)){
+                        rename($path1,$path2);
+                    }
 
                 //reindirizzo a gestione utenti
                 $this->getHelper('Redirector')->gotoSimple('modificaedificio', 'livello3', $module = null, array('edificio' => $edificio));

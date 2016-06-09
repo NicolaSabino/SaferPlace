@@ -24,9 +24,7 @@
 <br>
 <br>
 <br>
-<audio id="myAudio">
-	<source src="<?php echo $this->baseUrl('suoni/allarme2.mp3');?>">
-</audio>
+
 <script>
 	$( document ).ready(function() {
 		setInterval(poll, 45000);
@@ -42,13 +40,6 @@
 			setInterval(alertFunc, 800);
 		function alertFunc() {
 			$( "body" ).effect("highlight",{color: 'yellow'},600);
-		}
-	});
-	$( document ).ready(function() {
-		var x = document.getElementById("myAudio");
-		setInterval(alertFunc2);
-		function alertFunc2() {
-			x.play();
 		}
 	});
 </script>
