@@ -1078,7 +1078,7 @@ class Livello3Controller extends Zend_Controller_Action
 
         $this->getHelper('Redirector')->gotoSimple('modificaedificio', 'livello3', $module = null,
             array('edificio' => $edificio));
-        
+
     }
 
     public function gestionepianifugaAction(){
@@ -1314,8 +1314,16 @@ class Livello3Controller extends Zend_Controller_Action
 
         $controllo = $modelAdmin->existsZone($edificio,$numPiano); //controllo se nel database esiste già una suddivisione in zone del piano
 
+        if (file_exists(APPLICATION_PATH . '/../public/image/piante/zone/' . $edificio . " Piano " . $numPiano.".jpg")) {
+          $ext =  ".jpg";
+        }
+        else{
+            $ext= ".png";
+        }
+
         $this->view->assign('edificio', $edificio);
         $this->view->assign('numeroPiano', $numPiano);
+        $this->view->assign('ext', $ext);
         $this->view->assign('arrayPosizioni', $arrayPosizioni);
         $this->view->assign('controllo', $controllo);
     }
@@ -1367,8 +1375,12 @@ class Livello3Controller extends Zend_Controller_Action
                 $adminmodel->insertZona($dati[$i]);
             }
             $i++;
-
         }
+        $file = explode(".", $datiform['pianta']);
+        $path1 = APPLICATION_PATH . '/../public/image/piante/zone/' . $datiform['pianta'];
+        $path2 = APPLICATION_PATH . '/../public/image/piante/zone/' . $edificio . " Piano " . $numeroPiano . "." .$file[1];
+        rename($path1, $path2);
+
         $arrayPosizioni = $adminmodel->getZoneByEdPianoIdasAlias($edificio,$numeroPiano);
         $this->getHelper('Redirector')->gotoSimple('gestionezone', 'livello3', $module = null, array('edificio' => $edificio, 'numeroPiano' => $numeroPiano,'arrayPosizioni' => $arrayPosizioni));
 
@@ -1528,6 +1540,11 @@ class Livello3Controller extends Zend_Controller_Action
         $numeroPiano    = $this->controllaParam('numeroPiano');
         $modelAdmin = new Application_Model_Admin();
         $modelAdmin->eliminaZonePiano($edificio,$numeroPiano);
+
+        $nomeImmagine = ''.$edificio.' Piano '.$numeroPiano.'';
+        $file = glob(APPLICATION_PATH . '/../public/image/piante/zone/'.$nomeImmagine.'.*');
+
+        unlink($file[0]);
 
         $controllo = $modelAdmin->existsZone($edificio,$numeroPiano);
 
