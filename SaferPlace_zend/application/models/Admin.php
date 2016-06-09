@@ -28,9 +28,9 @@ class Application_Model_Admin extends App_Model_Abstract
         foreach ($pianiFuga as $item) {
 
             if (count
-                ($this->getResource('Assegnazione')->getAssegnazioneByPdf($item->idPianoFuga)) == 0
+                ($this->getResource('Assegnazione')->getAssegnazioneByPdf($item->idPianoFuga)) != 0
             ) {
-
+                
                 $this->getResource('PianoDiFuga')->delById($item->idPianoFuga);
             }
         }

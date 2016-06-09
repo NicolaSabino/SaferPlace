@@ -817,14 +817,20 @@ class Livello3Controller extends Zend_Controller_Action
 
     public function eliminaedificioAction()
     {
-
         $edificio = $this->getParam('edificio');
 
         $model = new Application_Model_Edifici();
-
+        $pianimodel = new Application_Model_Piani();
         $model->deleteEdifico($edificio);
+        $piani = $pianimodel->getPianiByEdificio($edificio);
+        foreach($piani as $item) {
+        pianoDelFiles($edificio, $item->numeroPiano);
+        }
 
-        //redireziono la view
+        $fileEdificio = glob(APPLICATION_PATH."/../public/image/edifici/".$edificio.".*" );
+
+        unlink($fileEdificio);
+        //redireziono
         $this->_helper->redirector('gestioneedifici');
     }
 
@@ -1056,25 +1062,9 @@ class Livello3Controller extends Zend_Controller_Action
         $adminModel = new Application_Model_Admin();
         $edificio = $this->controllaParam('edificio');
         $numeroPiano = $this->controllaParam('numeroPiano');
-
         $adminModel->eliminaPiano($edificio, $numeroPiano);
+        $this->pianoDelFiles($edificio, $numeroPiano);
 
-        $filesPdf  = glob(APPLICATION_PATH . '/../public/image/piante/piani di fuga/'.$edificio . ' Piano ' . $numeroPiano.'*');
-        $filesZone  = glob(APPLICATION_PATH . '/../public/image/piante/zone/'.$edificio . ' Piano ' . $numeroPiano.'*');
-        $filesPiano  = glob(APPLICATION_PATH . '/../public/image/piante/'.$edificio . ' Piano ' . $numeroPiano.'*');
-
-        //elimino i files
-        foreach ($filesPdf as $item){
-            unlink($item);
-        }
-
-        foreach ($filesZone as $item){
-            unlink($item);
-        }
-
-        foreach ($filesPiano as $item){
-            unlink($item);
-        }
 
         $this->getHelper('Redirector')->gotoSimple('modificaedificio', 'livello3', $module = null,
             array('edificio' => $edificio));
@@ -1556,7 +1546,26 @@ class Livello3Controller extends Zend_Controller_Action
     }
 
 
+    private function pianoDelFiles($edificio,$numeroPiano){
+        $filesPdf  = glob(APPLICATION_PATH . '/../public/image/piante/piani di fuga/'.$edificio . ' Piano ' . $numeroPiano.'*');
+        $filesZone  = glob(APPLICATION_PATH . '/../public/image/piante/zone/'.$edificio . ' Piano ' . $numeroPiano.'*');
+        $filesPiano  = glob(APPLICATION_PATH . '/../public/image/piante/'.$edificio . ' Piano ' . $numeroPiano.'*');
 
+        //elimino i files
+        foreach ($filesPdf as $item){
+            unlink($item);
+        }
+
+        foreach ($filesZone as $item){
+            unlink($item);
+        }
+
+        foreach ($filesPiano as $item){
+            unlink($item);
+        }
+
+
+    }
 
 
 

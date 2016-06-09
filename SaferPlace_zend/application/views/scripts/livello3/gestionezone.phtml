@@ -10,119 +10,134 @@
 </div>
 
 <?php
-	if(!$controllo): //se non trovo i dati della zona nel database parte la view per crearli
+if(!$controllo): //se non trovo i dati della zona nel database parte la view per crearli
 
-?>
+	?>
 
-		<br /><br />
-		<div id="view-content">
-			<div class="container">
-				<h3 class="green-text center"><?php echo $edificio ?> Piano <?php echo $numPiano ?> - Inserisci le Zone</h3>
-				<div class="card grey lighten-5">
-					<div class="card-content">
-						<div class="container">
-							<?php echo $this->inseriscizoneform; ?>
-						</div>
-
+	<br /><br />
+	<div id="view-content">
+		<div class="container">
+			<h3 class="green-text center"><?php echo $edificio ?> Piano <?php echo $numPiano ?> - Inserisci le Zone</h3>
+			<div class="card grey lighten-5">
+				<div class="card-content">
+					<div class="container">
+						<?php echo $this->inseriscizoneform; ?>
 					</div>
+
 				</div>
 			</div>
 		</div>
-		<br /><br />
+	</div>
+	<br /><br />
 
 
 <?php else:
 
-?>
+	?>
 
 
-<div class="row white center-align">
+	<div class="row white center-align">
 
-	<div class="container">
+		<div class="container">
 
-		<div class="center-align white">
-			<h2 class="green-text"> <?php echo $edificio ?> Piano <?php echo $numPiano ?> - Gestione Zone </h2>
+			<div class="center-align white">
+				<h2 id="titolo" class="green-text"> <?php echo $edificio ?> Piano <?php echo $numPiano ?> - Gestione Zone </h2>
+			</div>
 		</div>
 	</div>
-</div>
-		<div class=" row center ">
-			<a class="btn-floating btn-large red tooltipped" data-position="bottom" data-delay="50" data-tooltip="Elimina zone"
-			   href="<?php echo $this->url(array('controller' => 'livello3', 'action' => 'cancellazona')); ?>">
-				<i class="material-icons">delete_forever</i></a>
-		</div>
-<div class="row">
-	<br>
-	<br>
-	<!-- container sinistra-->
-	<div class="col l6 s6 m6 left container ">
-		<img class="responsive-img" src="<?php echo $this->baseUrl('image/piante/zone/'.$edificio.' Piano '.$numPiano.$this->ext); ?>" </img>
-
-		<br>
-		<br>
-
-		<div class="container center-align" >
-			<h5 class="green-text center-align">Inserisci una nuova posizione</h5>
-			<?php echo $this->zoneform; ?>
-		</div>
-
-		<br>
-		<br>
-
+	<div class=" row center ">
+		<a data-target="confermamodal" class="btn-floating btn-large red tooltipped modal-trigger" data-position="bottom" data-delay="50" data-tooltip="Elimina zone">
+			<i class="material-icons">delete_forever</i></a>
 	</div>
+	<div class="row">
+		<br>
+		<br>
+		<!-- container sinistra-->
+		<div class="col l6 s6 m6 left container ">
+			<img class="responsive-img" src="<?php echo $this->baseUrl('image/piante/zone/'.$edificio.' Piano '.$numPiano.$this->ext); ?>" </img>
 
-	<!-- container destra-->
-	<div class="col l6 s6 m6 container center-align">
+			<br>
+			<br>
+
+			<div class="container center-align" >
+				<h5 class="green-text center-align">Inserisci una nuova posizione</h5>
+				<?php echo $this->zoneform; ?>
+			</div>
+
+			<br>
+			<br>
+
+		</div>
+
+		<!-- container destra-->
+		<div class="col l6 s6 m6 container center-align">
 			<table  class="striped responsive-table z-depth-1">
-			<thead>
-			<tr>
-				<th class="center-align" data-field="zona">Zona</th>
-				<th class="center-align" data-field="stanza">Stanza</th>
-				<th class="center-align" data-field="numPiano">Numero Piano</th>
-				<th class="center-align" data-field="edificio">Edificio</th>
-			</tr>
-			</thead>
+				<thead>
+				<tr>
+					<th class="center-align" data-field="zona">Zona</th>
+					<th class="center-align" data-field="stanza">Stanza</th>
+					<th class="center-align" data-field="numPiano">Numero Piano</th>
+					<th class="center-align" data-field="edificio">Edificio</th>
+				</tr>
+				</thead>
 
-			<tbody>
+				<tbody>
 
 				<?php
-					foreach ($this->arrayPosizioni as $posizione): ?>
-						<tr>
+				foreach ($this->arrayPosizioni as $posizione): ?>
+					<tr>
 
-							<td class="center-align" ><?php echo $posizione->alias ?></td>
-							<td class="center-align" ><?php echo $posizione->stanza ?></td>
-							<td class="center-align" ><?php echo $posizione->numPiano ?></td>
-							<td class="center-align" ><?php echo $posizione->edificio ?></td>
+						<td class="center-align" ><?php echo $posizione->alias ?></td>
+						<td class="center-align" ><?php echo $posizione->stanza ?></td>
+						<td class="center-align" ><?php echo $posizione->numPiano ?></td>
+						<td class="center-align" ><?php echo $posizione->edificio ?></td>
 
 						<!--Bottone ELIMINA-->
-							<td>
+						<td>
 							<a class="btn-floating btn-flat btn-small waves-effect waves-light red white-text tooltipped" data-position="right" data-delay="50" data-tooltip="Elimina Posizione"
 							   href="
 
 
 						<?php echo $this->url(
-								array(
-									'controller'	=> 'livello3',
-									'action' 		=> 'eliminaposizione',
-									'stanza' 		=> $posizione->stanza,
-									'numPiano'    	=> $posizione->numPiano,
-									'edificio'      => $posizione->edificio,
+								   array(
+									   'controller'	=> 'livello3',
+									   'action' 		=> 'eliminaposizione',
+									   'stanza' 		=> $posizione->stanza,
+									   'numPiano'    	=> $posizione->numPiano,
+									   'edificio'      => $posizione->edificio,
 
-								)); ?>">
-							<i class="material-icons" >delete</i></a>
-							</td>
-						</tr>
-					<?php endforeach; ?>
+								   )); ?>">
+								<i class="material-icons" >delete</i></a>
+						</td>
+					</tr>
+				<?php endforeach; ?>
 
-			</tbody>
-		</table>
-</div>
-</div>
+				</tbody>
+			</table>
+		</div>
+	</div>
 
 
 <?php endif;
 
 ?>
 
+<div id="confermamodal" class="modal">
+	<div class="modal-content">
+		<div class="row ">
+			<div class="container center center-align valign">
+				<h2 class="red-text center-align">Attenzione!</h2>
+				<h6 class="center-align black-text">Sei sicuro di voler eliminare le zone di questo piano con le relative posizioni?</h6>
+			</div>
+		</div>
+		<div class="row center-align">
+			<a class="waves-effect modal-action modal-close waves-light btn red"
+			   href="<?php echo $this->url(array('controller' => 'livello3', 'action' => 'cancellazona')); ?>">SI</a>
+			<a class="waves-effect modal-action modal-close waves-light btn red" href="">NO</a>
+
+		</div>
+	</div>
+</div>
 
 <div class="fixed-action-btn click-to-toggle vertical" style="bottom: 45px; right: 24px;">
 	<a class="btn-floating btn-large blue darken-2 tooltipped" data-delay="50" data-position="left" data-tooltip="Indietro" href="<?php echo $this->url(
