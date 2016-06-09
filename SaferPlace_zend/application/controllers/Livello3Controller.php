@@ -718,36 +718,8 @@ class Livello3Controller extends Zend_Controller_Action
     public function verificamodificadatiAction()
     {
         $request = $this->getRequest();
-        /*if (!$request->isPost()) {
-            return $this->_helper->redirector('modificadatiutente');
-        }*/
         $form = $this->modificadatiform;
         $this->getHelper('ModificaProfilo')->verificaModifica($request,3,$form,$this->user);
-
-        /*if (!$form->isValid($request->getPost())) {
-            $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
-            return $this->render('modificadatiutente');
-        }
-        else
-        {
-            $datiform=$this->modificadatiform->getValues(); //datiform è un array
-
-            $utentimodel=new Application_Model_Utenti();
-            $username = $this->user;
-
-            if($utentimodel->existUsername($datiform['username']) && $datiform['username'] != $username) //controllo se l'username inserito esiste già nel db
-            {
-                $form->setDescription('Attenzione: l\'username che hai scelto non è disponibile.');
-                return $this->render('modificadatiutente');
-            }
-
-            else{
-                $utentimodel->updateUtentiSet($datiform, $username);
-                //aggiorna l'username alla sessione
-                $this->_authService->getAuth()->getIdentity()->current()->username = $datiform['username'];
-                $this->getHelper('Redirector')->gotoSimple('index','livello3', $module = null);
-            }
-        }*/
     }
 
     public function eliminaedificioAction()
