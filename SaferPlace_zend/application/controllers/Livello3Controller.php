@@ -1157,6 +1157,23 @@ class Livello3Controller extends Zend_Controller_Action
         return $this->gestionezoneform;
     }
 
+    public function cancellazonaAction(){
+        $edificio       = $this->controllaParam('edificio');
+        $numeroPiano    = $this->controllaParam('numeroPiano');
+        $modelAdmin = new Application_Model_Admin();
+        $modelAdmin->eliminaZonePiano($edificio,$numeroPiano);
+
+        $controllo = $modelAdmin->existsZone($edificio,$numeroPiano);
+        
+        $this->view->assign('edificio', $edificio);
+        $this->view->assign('numeroPiano', $numeroPiano);
+        $this->view->assign('controllo', $controllo);
+
+        return $this->render('gestionezone');
+    }
+
+
+
     public function getInserisciZoneForm(){
 
         $urlHelper = $this->_helper->getHelper('url');
