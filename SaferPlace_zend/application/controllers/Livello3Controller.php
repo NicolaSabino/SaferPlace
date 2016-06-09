@@ -978,7 +978,7 @@ class Livello3Controller extends Zend_Controller_Action
             $numeroPiano = $this->controllaParam('numeroPiano');
 
             $modelPiani = new Application_Model_Piani();
-
+            // rinomino il file della pianta per dargli un nome standard
             if ($datiform['pianta'] != null) {
                 $file = explode(".", $datiform['pianta']);
 
@@ -986,6 +986,15 @@ class Livello3Controller extends Zend_Controller_Action
                 $path2 = APPLICATION_PATH . '/../public/image/piante/' . $edificio . " Piano " . $datiform['numeroPiano'] . "." . end($file);
 
                 rename($path1, $path2);
+            }
+
+            if ($datiform['mappa'] != null) {
+
+
+                $path1 = APPLICATION_PATH . '/../public/image/piante/map/' . $datiform['mappa'];
+                $path2 = APPLICATION_PATH . '/../public/image/piante/map/' . $edificio . " Piano " . $datiform['numeroPiano'] . ".txt";
+
+                print_r(rename($path1, $path2));die;
             }
 
             //controllo sui piani
@@ -1008,7 +1017,7 @@ class Livello3Controller extends Zend_Controller_Action
                 $modelPiani->updatePiano($datiform, $id);
 
 
-                //reindirizzo a gestione utenti
+                //reindirizzo a gestione edificio
                 $this->getHelper('Redirector')->gotoSimple('modificaedificio', 'livello3', $module = null, array('edificio' => $edificio));
             }
 

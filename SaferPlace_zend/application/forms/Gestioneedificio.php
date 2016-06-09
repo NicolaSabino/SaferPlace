@@ -35,7 +35,7 @@ class Application_Form_Gestioneedificio extends Zend_Form
 
 
         $this->addElement('file', 'mappa', array(
-            'label' => 'Immagine del prodotto',
+            'label' => 'Immagine dell\' edificio',
             'required' =>false,
             'destination' => APPLICATION_PATH.'/../public/image/edifici/',
             'validators' => array(

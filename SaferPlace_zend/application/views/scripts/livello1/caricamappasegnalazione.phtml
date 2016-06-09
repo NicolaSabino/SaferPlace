@@ -1,14 +1,34 @@
 <html>
-<head>
-	<div>
+<body>
+
+
 		<?php
 		$edificio=$this->numPianoEdificio->current()->edificio;
 		$piano=$this->numPianoEdificio->current()->numPiano;
 		$errore=$this->errore;
 		?>
-	</div>
-</head>
-<body>
+
+	<script>
+
+		$(document).ready(function(){
+			$("area").addClass('areaim');
+
+			$(".areaim").on('click', function(){
+				var stanza = Number(this.alt) + 1 ; //voglio l' n+1esimo elemento della select, perchè il primo
+													// è quello di default
+
+
+				$("dd#segnalastanza-element").find("li.active").removeClass('active selected');
+				$("#segnalastanza-element").find("ul li:nth-child(" +stanza +")").addClass('active selected');
+				$("select#segnalastanza-element").find('option').removeAttr('selected');
+				$("#segnalastanza-element").find("select#segnalastanza option:nth-child(" +stanza +")").attr('selected', 'selected');
+				$('select').material_select();
+			});
+
+		});
+
+	</script>
+
 
 
 <!-- barra fissa con nome edificio e box per scorrere i piani-->
@@ -33,7 +53,7 @@
 
 </div>
 
-<!--elenco dei piani con immagini-->
+<!--mappa e form-->
 <div class="container" >
 	<!-- PIANO # + immagine -->
 
@@ -51,7 +71,16 @@
 
 		</div>
 		<div class="col l12 s12 m12 center">
-			<img src="<?php echo $this->baseUrl($pianta); ?>" style="height:80%; width: 80%">
+			<img src="<?php echo $this->baseUrl($pianta); ?>" usemap="#piantamap" style="height:80%; width: 80%">
+
+				<map name="piantamap" class="mappa">
+					<?php
+					$file = APPLICATION_PATH .'/../public/image/piante/map/'.$edificio. ' Piano '.$piano.".txt";
+
+					if ($handler = fopen($file, "r"))
+						echo fread($handler, filesize($file)); ?>
+				</map>
+
 		</div>
 	</div>
 

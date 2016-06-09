@@ -1,15 +1,13 @@
 <html>
-<head>
-	<div>
+<body>
+
 		<?php
 		$edificio=$this->insiemeEdifici;
 		$piano=$this->insiemePiani;
 		$errore=$this->errore;
 		$option=0;
 		?>
-	</div>
-</head>
-<body>
+
 	<script>
 
 		$(document).ready(function(){
@@ -74,11 +72,12 @@
 
 					<map name="piantamap" class="mappa">
 						<?php
-								$file = APPLICATION_PATH .'/../public/image/piante/map/'.$this->insiemeEdifici. ' Piano '.$this->insiemePiani;
+								$file = APPLICATION_PATH .'/../public/image/piante/map/'.$this->insiemeEdifici. ' Piano '.$this->insiemePiani.".txt";
 
 								if ($handler = fopen($file, "r"))
 									echo fread($handler, filesize($file)); ?>
 					</map>
+					
 				</div>
 			</div>
 	

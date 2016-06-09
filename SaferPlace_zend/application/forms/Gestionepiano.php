@@ -37,7 +37,7 @@ class Application_Form_Gestionepiano extends Zend_Form
             )
         ));
 
-        /*$this->addElement('file', 'mappa', array(
+        $this->addElement('file', 'mappa', array(
             'label' => 'Mappa della pianta',
             'destination' => APPLICATION_PATH.'/../public/image/piante/map/',
             'validators' => array(
@@ -45,7 +45,7 @@ class Application_Form_Gestionepiano extends Zend_Form
                 array('Size', false, 30960000),
                 array('Extension', false, array('txt'))
             )
-        ));*/
+        ));
 
 
         $this->addElement('submit', 'ok', array(
