@@ -862,7 +862,7 @@ class Livello3Controller extends Zend_Controller_Action
             $path1 = APPLICATION_PATH . '/../public/image/piante/' . $datiform['pianta'];
             $path2 = APPLICATION_PATH . '/../public/image/piante/' . $edificio . " Piano " . $datiform['numeroPiano'] . "." . end($file);
 
-            rename($path1, $path2);
+            
 
             //controllo sui piani
             $piani = $modelPiani->getPianiByEdificio($edificio);
@@ -879,7 +879,7 @@ class Livello3Controller extends Zend_Controller_Action
 
             } else {
 
-
+                rename($path1, $path2);
                 $modelPiani->nuovoPiano(array(
 
                     'edificio' => $edificio,

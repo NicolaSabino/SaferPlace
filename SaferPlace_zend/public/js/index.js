@@ -1,11 +1,17 @@
 (function($){
   $(function(){
-    
+    // chiamate jQuery per materialize
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
     $('.modal-trigger').leanModal();
     $(document).ready(function() {
       $('select').material_select();
+
+      //append per cambiare lo stile dei bottoni dei tasti sfoglia
+      $('#mappa').wrap('<div class="file-field input-field"><div class="btn green white-text" id="mappaFileText"><span>File</span></div></div>');
+      $('#mappaFileText').after('<div class="file-path-wrapper"><input tyep="text" class="file-path validate" placeholder="Scegli file"></div>');
+      $('#pianta').wrap('<div class="file-field input-field"><div class="btn green white-text" id="piantaFileText"><span>File</span></div></div>');
+      $('#piantaFileText').after('<div class="file-path-wrapper"><input tyep="text" class="file-path validate" placeholder="Scegli file"></div>');
     });
   }); // end of document ready
 })(jQuery); // end of jQuery name space

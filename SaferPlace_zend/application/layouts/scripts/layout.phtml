@@ -26,6 +26,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <meta name="theme-color" content="#4caf50" />
 
+    <!-- acquisisce il livello dell'utente -->
+    <?php $home=$this->authInfo('livello');?>
 </head>
 
 <body>
@@ -35,7 +37,27 @@
 
     <nav class="green  white-text">
         <div class="nav-wrapper container">
-            <a href="index" class="brand-logo" id="containerLogo" style="margin-top: 12px"><img src="<?php echo $this->baseUrl('image/logoM.png');?>" height="41.1" ></a>
+            <a href="<?php if($home==0){
+                            echo $this->url(
+                                array(
+                                    'controller' =>'index',
+                                    'action'=>'index',
+                                ),null,true
+                            );}
+                        else
+                        {
+                            echo $this->url(
+                                array(
+                                    'controller' =>'livello'.$home,
+                                    'action'=>'index',
+                                ),null,true
+                            );}?>" 
+               class="brand-logo" id="containerLogo" style="margin-top: 12px">
+                <img src="<?php echo $this->baseUrl('image/logoM.png');?>" height="41.1" >
+            </a>
+        
+        
+        
         </div>
 
     </nav>
