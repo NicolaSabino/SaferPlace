@@ -77,8 +77,11 @@
 					<?php
 					$file = APPLICATION_PATH .'/../public/image/piante/map/'.$edificio. ' Piano '.$piano.".txt";
 
-					if ($handler = fopen($file, "r"))
-						echo fread($handler, filesize($file)); ?>
+					if (file_exists($file)) {
+						$handler = fopen($file, "r");
+						echo fread($handler, filesize($file));
+					}
+					?>
 				</map>
 
 		</div>
