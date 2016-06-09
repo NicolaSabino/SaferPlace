@@ -64,7 +64,7 @@ class IndexController extends Zend_Controller_Action
             }
             else{
                 $utentimodel->insertUtenti($datiform);
-                $this->getHelper('Redirector')->gotoSimple('checkin','livello1', $module = null);
+                $this->getHelper('Redirector')->gotoSimple('index','index', $module = null);
             }
         }
     }
