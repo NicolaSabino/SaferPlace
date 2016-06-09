@@ -17,7 +17,7 @@
 		<br /><br />
 		<div id="view-content">
 			<div class="container">
-				<h3 class="green-text center">Inserisci le Zone</h3>
+				<h3 class="green-text center"><?php echo $edificio ?> Piano <?php echo $numPiano ?> - Inserisci le Zone</h3>
 				<div class="card grey lighten-5">
 					<div class="card-content">
 						<div class="container">
@@ -45,7 +45,11 @@
 		</div>
 	</div>
 </div>
-
+		<div class=" row center ">
+			<a class="btn-floating btn-large red tooltipped" data-position="bottom" data-delay="50" data-tooltip="Elimina zone"
+			   href="<?php echo $this->url(array('controller' => 'livello3', 'action' => 'cancellazona')); ?>">
+				<i class="material-icons">delete_forever</i></a>
+		</div>
 <div class="row">
 	<br>
 	<br>

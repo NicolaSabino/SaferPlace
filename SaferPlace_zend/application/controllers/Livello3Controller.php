@@ -20,6 +20,7 @@ class Livello3Controller extends Zend_Controller_Action
     protected $_nuovoPdfForm = null;
 
     protected $gestionezoneform;
+    protected $inseriscizoneform;
 
     public function init()
     {
@@ -70,6 +71,8 @@ class Livello3Controller extends Zend_Controller_Action
         $this->_gestisciPianoForm = $this->getInserisciPianoForm();
 
         $this->view->formInserisciPiani = $this->_gestisciPianoForm;
+
+        $this->view->inseriscizoneform = $this->getInserisciZoneForm();
 
         if ($this->controllaParam('edificio') != null) {
             if ($this->controllaParam('numeroPiano') != null) {
@@ -135,7 +138,7 @@ class Livello3Controller extends Zend_Controller_Action
      */
     public function modificaedificioAction()
     {
-        echo 'porco dio';
+
         $app = $this->getParam('edificio');
         $modelEdifici = new Application_Model_Edifici();
         $modelPiani = new Application_Model_Piani();
@@ -1499,12 +1502,25 @@ class Livello3Controller extends Zend_Controller_Action
     }
 
 
-        public function modificadatiutenteAction()
-        {
-        }
+    public function modificadatiutenteAction()
+    {
+    }
 
 
+    public function cancellazonaAction(){
+        $edificio       = $this->controllaParam('edificio');
+        $numeroPiano    = $this->controllaParam('numeroPiano');
+        $modelAdmin = new Application_Model_Admin();
+        $modelAdmin->eliminaZonePiano($edificio,$numeroPiano);
 
+        $controllo = $modelAdmin->existsZone($edificio,$numeroPiano);
+
+        $this->view->assign('edificio', $edificio);
+        $this->view->assign('numeroPiano', $numeroPiano);
+        $this->view->assign('controllo', $controllo);
+
+        return $this->render('gestionezone');
+    }
 
 
 

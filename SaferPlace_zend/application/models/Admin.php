@@ -11,7 +11,7 @@ class Application_Model_Admin extends App_Model_Abstract
         $zone = $this->getResource('Zona')->getZoneByEdPiano($edificio, $piano);
 
         foreach ($zone as $item) {
-            $this->eliminaZona($item)->id;
+            $this->eliminaZona($item->id);
         }
 
     }
