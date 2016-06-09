@@ -86,7 +86,7 @@ class Livello3Controller extends Zend_Controller_Action
 
     public function indexAction()
     {
-        
+
     }
 
     public function gestioneedificiAction()
@@ -1193,13 +1193,19 @@ class Livello3Controller extends Zend_Controller_Action
         $edificio = $this->getParam('edificio');
         $numeroPiano = $this->getParam('numeroPiano');
         $pianoDiFuga = $this->getParam('pdf');
-            
+
         $modelAdmin->eliminaPianoFugaByNome($pianoDiFuga);
+
+        //eliminafile
+        $file = glob(APPLICATION_PATH . '/../public/image/piante/piani di fuga/' . $pianoDiFuga.".*");
+
+        print_r(unlink($file[0]));
+
         $this->getHelper('Redirector')->gotoSimple('gestionepianifuga', 'livello3', $module = null, array(
             'edificio'      => $edificio,
             'numeroPiano'   => $numeroPiano
         ));
-        
+
     }
 
     public function getGestioneZonaForm(){

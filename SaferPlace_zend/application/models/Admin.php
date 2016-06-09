@@ -67,7 +67,7 @@ class Application_Model_Admin extends App_Model_Abstract
         $var = $this->getResource('PianoDiFuga')->getByPianta($nomepianta);
         //print_r($id); die();
         $this->getResource('PianoDiFuga')->delByNome($nomepianta);
-        $this->getResource('Assegnazione')->delByPdf($var->id);
+        $this->getResource('Assegnazione')->delByPdf($var[0]->id);
 
     }
 
