@@ -23,14 +23,14 @@ class Application_Model_Admin extends App_Model_Abstract
         $assegnazioneResource = new Application_Resource_Assegnazione();
 
         $pianiFuga = $this->getResource('Assegnazione')->getAssegnazioniByZona($id);
+
         $assegnazioneResource->delAssegnazioneByZona($id);
 
         foreach ($pianiFuga as $item) {
 
             if (count
-                ($this->getResource('Assegnazione')->getAssegnazioneByPdf($item->idPianoFuga)) != 0
+                ($this->getResource('Assegnazione')->getAssegnazioneByPdf($item->idPianoFuga)) == 0
             ) {
-
                 $this->getResource('PianoDiFuga')->delById($item->idPianoFuga);
             }
         }
@@ -43,6 +43,7 @@ class Application_Model_Admin extends App_Model_Abstract
     {
 
         $this->eliminaZonePiano($edificio, $piano);
+
         $this->getResource('Piani')->delByEdPiano($edificio, $piano);
 
     }

@@ -1042,7 +1042,7 @@ class Livello3Controller extends Zend_Controller_Action
         $numeroPiano = $this->controllaParam('numeroPiano');
         $adminModel->eliminaPiano($edificio, $numeroPiano);
         $this->pianoDelFiles($edificio, $numeroPiano);
-
+        
 
         $this->getHelper('Redirector')->gotoSimple('modificaedificio', 'livello3', $module = null,
             array('edificio' => $edificio));
