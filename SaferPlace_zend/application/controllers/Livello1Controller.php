@@ -326,14 +326,13 @@ class Livello1Controller extends Zend_Controller_Action
     }
 
     public function verificamodificaAction()
-        {
-            $request = $this->getRequest();
+    {
+        $request = $this->getRequest();
 
-            $form = $this->modificaform;
+        $form = $this->modificaform;
 
-            $this->getHelper('ModificaProfilo')->verificaModifica($request,1,$form);
-        }
-
+        $this->getHelper('ModificaProfilo')->verificaModifica($request,1,$form,$this->user);
+    }
 
     public function cancellaposizioneAction(){
         $collocazionemodel=new Application_Model_Collocazioni();
