@@ -54,4 +54,19 @@ public function getAllByEd($edificio) {
 
         return $this->fetchAll($select);
     }
+
+
+    public function getNumPerStanza($edificio, $piano) {
+
+        $select =$this->select()
+            ->setIntegrityCheck(false)
+            ->from(array('s' => 'segnalazione'), array('segnalazionitanza' => 'COUNT(*)'))
+            ->join(array('pos' => 'posizione'), 's.idPosizione=pos.id','stanza')
+            ->where('pos.edificio = ?', $edificio)
+            ->where('pos.numPiano = ?', $piano)
+            ->order('pos.stanza')
+            ->group('pos.id');
+        return $this->fetchAll($select);
+
+    }
 }

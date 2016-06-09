@@ -41,5 +41,6 @@ class Application_Resource_Eventi extends Zend_Db_Table_Abstract {
         
     }
     
+    
 
 }

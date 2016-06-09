@@ -218,4 +218,11 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
         
         return $array;
     }
+
+
+    public function getSegnalazioniStanze($edificio,$piano){
+
+       return $this->getResource('Notifica')->getNumPerStanza($edificio, $piano);
+        
+    }
 }

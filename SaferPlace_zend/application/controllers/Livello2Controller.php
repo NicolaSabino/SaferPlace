@@ -27,12 +27,12 @@ class Livello2Controller extends Zend_Controller_Action
         $this->getHelper('Redirector')->gotoRoute(array('controller'=>'livello2', 'action'=>'dashboard'));
     }
 
+    //Azione di test
     public function notifyAction()
     {
-        $array = array('aa' => 1, 'bb' => 1);
-        
 
-        echo array_key_exists('aa', $array );
+        $this->modelUtente->getSegnalazioniStanze('Univpm',1);
+        
         die;
         //estraggo i risultati dell'esecuzione della query e li stampo
 
@@ -57,8 +57,9 @@ class Livello2Controller extends Zend_Controller_Action
 
             $persPiano = $this->modelUtente->getPersPiano($edificio, $piano);
             $persPerStanza = $this->modelUtente->getNumPersStanze($edificio, $piano );
-            
+            $segnalazionistanze = $this->modelUtente->getSegnalazioniStanze($edificio,$piano);
 
+            $this->view->assign('segnalazionistanze', $segnalazionistanze);
             $this->view->assign('persperstanza', $persPerStanza);
             $this->view->assign('perspiano', $persPiano);
             $this->view->assign("pianta", $edificio . ' Piano ' . $piano . '.jpg');
@@ -231,6 +232,9 @@ class Livello2Controller extends Zend_Controller_Action
 
 
     }
+    
+
+
 }
 
 

@@ -160,9 +160,24 @@
 													'<div class="right">' . $item->personeStanza .'</b></div>';
 										echo '</div>';
 									}
-								echo '</div>';
-								}
+								//echo '</div>';
+
 							?>
+								</div>
+							</li>
+							<li>
+								<div class="collapsible-header green-text">Segnalazioni per stanza:&nbsp
+								</div><div class="collapsible-body">
+									<?php
+									foreach ($this->segnalazionistanze as $item) {
+										echo '<div class="collection-item grey-text"><b>';
+										echo 	'&nbsp Stanza '. $item->stanza .
+											'<div class="right">' . $item->segnalazionitanza .'</b></div>';
+										echo '</div>';
+									}
+									echo '</div>';
+									}
+									?>
 								</div>
 							</li>
 
