@@ -23,7 +23,7 @@ class App_Validate_ValidatoreZona extends Zend_Validate_Abstract
                 $arrayappoggio[$cont2]=$controllo[$cont2+1];
             }
 
-
+            echo $varappoggio ,print_r($arrayappoggio);
             if(in_array($varappoggio, $arrayappoggio))
             {
                 $this->_error(self::errore);

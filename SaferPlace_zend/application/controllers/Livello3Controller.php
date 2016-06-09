@@ -966,7 +966,7 @@ class Livello3Controller extends Zend_Controller_Action
 
             $modelPiani = new Application_Model_Piani();
 
-            if ($datiform['pianta'] != null) {
+            if ($datiform['pianta'] !== null) {
                 $file = explode(".", $datiform['pianta']);
 
                 $path1 = APPLICATION_PATH . '/../public/image/piante/' . $datiform['pianta'];
