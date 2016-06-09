@@ -30,7 +30,7 @@ class Livello2Controller extends Zend_Controller_Action
     public function notifyAction()
     {
         $array = array('aa' => 1, 'bb' => 1);
-
+        
 
         echo array_key_exists('aa', $array );
         die;

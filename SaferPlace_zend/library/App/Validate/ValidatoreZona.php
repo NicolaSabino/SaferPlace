@@ -5,7 +5,7 @@ class App_Validate_ValidatoreZona extends Zend_Validate_Abstract
     const errore=null;
 
     protected $_messageTemplates = array(
-        self::errore => "Le zone devono essere separate da uno spazio e lunghe massimo un carattere"
+        self::errore => "Le zone devono essere del tipo [A-Z], separate da uno spazio e lunghe massimo un carattere"
     );
 
     public function isValid($value)

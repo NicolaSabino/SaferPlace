@@ -1059,10 +1059,26 @@ class Livello3Controller extends Zend_Controller_Action
 
         $adminModel->eliminaPiano($edificio, $numeroPiano);
 
+        $filesPdf  = glob(APPLICATION_PATH . '/../public/image/piante/piani di fuga/'.$edificio . ' Piano ' . $numeroPiano.'*');
+        $filesZone  = glob(APPLICATION_PATH . '/../public/image/piante/zone/'.$edificio . ' Piano ' . $numeroPiano.'*');
+        $filesPiano  = glob(APPLICATION_PATH . '/../public/image/piante/'.$edificio . ' Piano ' . $numeroPiano.'*');
+
+        //elimino i files
+        foreach ($filesPdf as $item){
+            unlink($item);
+        }
+
+        foreach ($filesZone as $item){
+            unlink($item);
+        }
+
+        foreach ($filesPiano as $item){
+            unlink($item);
+        }
 
         $this->getHelper('Redirector')->gotoSimple('modificaedificio', 'livello3', $module = null,
             array('edificio' => $edificio));
-
+        
     }
 
     public function gestionepianifugaAction(){
@@ -1202,7 +1218,7 @@ class Livello3Controller extends Zend_Controller_Action
         //eliminafile
         $file = glob(APPLICATION_PATH . '/../public/image/piante/piani di fuga/' . $pianoDiFuga.".*");
 
-        print_r(unlink($file[0]));
+        unlink($file[0]);
 
         $this->getHelper('Redirector')->gotoSimple('gestionepianifuga', 'livello3', $module = null, array(
             'edificio'      => $edificio,
