@@ -69,4 +69,12 @@ class Application_Resource_PianoDiFuga extends  Zend_Db_Table_Abstract
         $where = "pianta like '%$pianta%'";
         $this->getAdapter()->update('pianodifuga',$data,$where);
     }
+
+    public function getPDF_desc(){
+
+        $select = $this->select()
+            ->order ('id desc');
+
+        return $this->fetchAll($select);
+    }
 }

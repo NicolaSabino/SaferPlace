@@ -30,7 +30,7 @@ class Application_Model_Admin extends App_Model_Abstract
             if (count
                 ($this->getResource('Assegnazione')->getAssegnazioneByPdf($item->idPianoFuga)) != 0
             ) {
-                
+
                 $this->getResource('PianoDiFuga')->delById($item->idPianoFuga);
             }
         }
@@ -98,5 +98,15 @@ class Application_Model_Admin extends App_Model_Abstract
 
     public function updateZoneByEdificio($edificio,$data){
         return $this->getResource('Zona')->updateZoneByEdificio($data,$edificio);
+    }
+
+    public function getZoneByEdPiano($edificio,$piano){
+        return $this->getResource('Zona')->getZoneByEdPiano($edificio,$piano);
+
+    }
+
+    public function insertAssegnazione($dati){
+        return $this->getResource('Assegnazione')->insertAssegnazione($dati);
+
     }
 }

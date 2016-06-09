@@ -6,6 +6,7 @@
 	$edificio=$this->edificio;
 	$numPiano=$this->numeroPiano;
 	$controllo = $this->controllo;
+	$descrizione = $this->descrizione
 	?>
 </div>
 
@@ -18,6 +19,7 @@ if(!$controllo): //se non trovo i dati della zona nel database parte la view per
 	<div id="view-content">
 		<div class="container">
 			<h3 class="green-text center"><?php echo $edificio ?> Piano <?php echo $numPiano ?> - Inserisci le Zone</h3>
+			<h4 class="red-text center"><?php echo $descrizione ?> </h4>
 			<div class="card grey lighten-5">
 				<div class="card-content">
 					<div class="container">

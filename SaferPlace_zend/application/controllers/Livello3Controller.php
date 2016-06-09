@@ -352,41 +352,8 @@ class Livello3Controller extends Zend_Controller_Action
      */
     public function modificadescrizioneAction()
     {
-       /* //prendo le informazioni per popolare la form
-        $nomeEdificio = $this->getParam('edificio');
-        $edificiModel = new Application_Model_Edifici();
-        $edificio = $edificiModel->getEdificio($nomeEdificio);
-
-
-        //valori per popolare la form
-        $data = array(
-            'nome'          => $nomeEdificio,
-            'mappa'         => $edificio->current()->mappa,
-            'informazioni'  => $edificio->current()->informazioni
-        );
-
-        //popolo la form
-        $this->_edificioForm->populate($data);
-
-        //imposto l'azione della form
-        $this->_edificioForm->setAction($this->view->url(
-            array(
-                'controller'    => 'livello3',
-                'action'        => 'submitmodificadescrizione',
-                'oldname'       => $nomeEdificio
-            )
-        ));
-
-        //assegno la form alla view
-
-        $this->view->assign('Form',$this->_edificioForm);
-        //assegno il nome dell'edificio alla view per il bottone indietro
-        $this->view->assign('nomeEdificio',$nomeEdificio);
-        
-        
-        return $this->_edificioForm;*/
-        
-        
+        $edificio = $this->controllaParam('edificio');
+        $this->view->assign('edificio',$edificio);
     }
 
     protected function getModificaEdificioForm(){
@@ -726,7 +693,8 @@ class Livello3Controller extends Zend_Controller_Action
     }
 
 
-    public function verificanuovoedificioAction(){
+    public function verificanuovoedificioAction()
+    {
 
         $request = $this->getRequest();
         $urlHelper = $this->_helper->getHelper('url');
@@ -758,6 +726,13 @@ class Livello3Controller extends Zend_Controller_Action
             }
             else{
 
+                $file = explode(".", $datiform['mappa']);
+                $edificio = $datiform['nome'];
+                $path1 = APPLICATION_PATH . '/../public/image/edifici/' . $datiform['mappa'];
+                $path2 = APPLICATION_PATH . '/../public/image/edifici/' . $edificio ."." . end($file);
+                rename($path1, $path2);
+
+                $datiform['mappa'] = $edificio ."." . end($file);
                 $edficiModel->nuovoEdifico($datiform);
 
                 //reindirizzo a gestione utenti
@@ -824,12 +799,12 @@ class Livello3Controller extends Zend_Controller_Action
         $model->deleteEdifico($edificio);
         $piani = $pianimodel->getPianiByEdificio($edificio);
         foreach($piani as $item) {
-        pianoDelFiles($edificio, $item->numeroPiano);
+            $this->pianoDelFiles($edificio, $item->numeroPiano);
         }
 
         $fileEdificio = glob(APPLICATION_PATH."/../public/image/edifici/".$edificio.".*" );
+        unlink($fileEdificio[0]);
 
-        unlink($fileEdificio);
         //redireziono
         $this->_helper->redirector('gestioneedifici');
     }
@@ -960,6 +935,8 @@ class Livello3Controller extends Zend_Controller_Action
 
     public function verificamodificapianoAction()
     {
+        $edificio = $this->getParam('edificio');
+
 
         $request = $this->getRequest();
 
@@ -970,6 +947,7 @@ class Livello3Controller extends Zend_Controller_Action
         $form = $this->modificapianoform;
         if (!$form->isValid($request->getPost())) {
             $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
+            $this->view->assign('edificio', $edificio);
             return $this->render('modificapiano');
         } else {
             $datiform = $this->modificapianoform->getValues();
@@ -978,7 +956,7 @@ class Livello3Controller extends Zend_Controller_Action
             $numeroPiano = $this->controllaParam('numeroPiano');
 
             $modelPiani = new Application_Model_Piani();
-            // rinomino il file della pianta per dargli un nome standard
+
             if ($datiform['pianta'] != null) {
                 $file = explode(".", $datiform['pianta']);
 
@@ -986,15 +964,6 @@ class Livello3Controller extends Zend_Controller_Action
                 $path2 = APPLICATION_PATH . '/../public/image/piante/' . $edificio . " Piano " . $datiform['numeroPiano'] . "." . end($file);
 
                 rename($path1, $path2);
-            }
-
-            if ($datiform['mappa'] != null) {
-
-
-                $path1 = APPLICATION_PATH . '/../public/image/piante/map/' . $datiform['mappa'];
-                $path2 = APPLICATION_PATH . '/../public/image/piante/map/' . $edificio . " Piano " . $datiform['numeroPiano'] . ".txt";
-
-                print_r(rename($path1, $path2));die;
             }
 
             //controllo sui piani
@@ -1017,7 +986,7 @@ class Livello3Controller extends Zend_Controller_Action
                 $modelPiani->updatePiano($datiform, $id);
 
 
-                //reindirizzo a gestione edificio
+                //reindirizzo a gestione utenti
                 $this->getHelper('Redirector')->gotoSimple('modificaedificio', 'livello3', $module = null, array('edificio' => $edificio));
             }
 
@@ -1080,13 +1049,18 @@ class Livello3Controller extends Zend_Controller_Action
 
     }
 
-    public function gestionepianifugaAction(){
+    public function gestionepianifugaAction()
+    {
         $edificio       = $this->controllaParam('edificio');
         $numeroPiano    = $this->controllaParam('numeroPiano');
+
+        $modelAdmin = new Application_Model_Admin();
+        $controllo = $modelAdmin->existsZone($edificio,$numeroPiano);
 
         //assegno le variabili alla view
         $this->view->edificio       = $edificio;
         $this->view->numeroPiano    = $numeroPiano;
+        $this->view->controllo      = $controllo;
 
         //calcolo i piani di fuga di questo piano
         $modelPianoDiFuga = new Application_Model_PianoDiFuga();
@@ -1095,14 +1069,30 @@ class Livello3Controller extends Zend_Controller_Action
 
         //assegno i piani di fuga alla view
         $this->view->pianiDiFuga = $pianiDiFuga;
-        
+
     }
 
-    public function verificanuovopdfAction(){
+    public function verificanuovopdfAction()
+    {
         $request = $this->getRequest();
 
         $edificio = $this->controllaParam('edificio');
         $numeroPiano = $this->controllaParam('numeroPiano');
+
+        //controllo che nel database siano già state inserite le zone
+        $modelAdmin = new Application_Model_Admin();
+        $controllo = $modelAdmin->existsZone($edificio,$numeroPiano);
+        if(!$controllo){
+            $this->view->assign('edificio', $edificio);
+            $this->view->assign('numeroPiano', $numeroPiano);
+            $this->view->assign('controllo', $controllo);
+            $this->getHelper('Redirector')->gotoSimple('gestionezone', 'livello3', $module = null, array(
+                'edificio' => $edificio,
+                'numeroPiano' => $numeroPiano,
+                'controllo' => $controllo,
+                'descrizione' => '0',
+            ));
+        }
 
         if (!$request->isPost()) {
             return $this->_helper->redirector('index');
@@ -1124,7 +1114,7 @@ class Livello3Controller extends Zend_Controller_Action
 
             $modelPianoDiFuga = new Application_Model_PianoDiFuga();
 
-          
+
             //stacco l'estensione dal file per recuperarla all'atto della rinominazione
             $file = explode(".", $datiform['pianta']);
 
@@ -1159,6 +1149,20 @@ class Livello3Controller extends Zend_Controller_Action
 
 
                 $modelPianoDiFuga->newPiano($nomeFile.".". end($file));
+                //inserisco anche le assegnazioni
+                $zone = $modelAdmin->getZoneByEdPiano($edificio,$numeroPiano);
+                $pdfmodel = new Application_Model_PianoDiFuga();
+                $idpdf = $pdfmodel->getPDF_desc();
+                $datiassegnazione = null;
+                $i = 0;
+                foreach ($zone as $z){
+                    $datiassegnazione[$i] = array(
+                        'idPianoFuga' => $idpdf->current()->id,
+                        'zona' => $zone->current()->id
+                    );
+                    $modelAdmin->insertAssegnazione($datiassegnazione[$i]);
+                    $i++;
+                }
 
 
                 //reindirizzo a gestione piani di fuga
@@ -1280,7 +1284,8 @@ class Livello3Controller extends Zend_Controller_Action
         }
     }
 
-    public function verificagestionezoneAction(){
+    public function verificagestionezoneAction()
+    {
         $request = $this->getRequest();
         $edificio       = $this->controllaParam('edificio');
         $numeroPiano    = $this->controllaParam('numeroPiano');
@@ -1307,6 +1312,13 @@ class Livello3Controller extends Zend_Controller_Action
     {
         $edificio = $this->controllaParam('edificio');
         $numPiano = $this->controllaParam('numeroPiano');
+        $descrizione=$this->controllaParam('descrizione');
+        if($descrizione==0)
+        {
+            $descrizione='Devi prima inserire le zone al piano';
+        }
+        else
+            $descrizione="";
 
         $modelAdmin = new Application_Model_Admin();
         $arrayPosizioni = $modelAdmin->getZoneByEdPianoIdasAlias($edificio,$numPiano);
@@ -1314,12 +1326,12 @@ class Livello3Controller extends Zend_Controller_Action
         $controllo = $modelAdmin->existsZone($edificio,$numPiano); //controllo se nel database esiste già una suddivisione in zone del piano
 
         if (file_exists(APPLICATION_PATH . '/../public/image/piante/zone/' . $edificio . " Piano " . $numPiano.".jpg")) {
-          $ext =  ".jpg";
+            $ext =  ".jpg";
         }
         else{
             $ext= ".png";
         }
-
+        $this->view->assign('descrizione',$descrizione);
         $this->view->assign('edificio', $edificio);
         $this->view->assign('numeroPiano', $numPiano);
         $this->view->assign('ext', $ext);

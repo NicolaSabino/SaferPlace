@@ -9,6 +9,9 @@ class Application_Model_Assegnazione extends  App_Model_Abstract
 
     }
 
+    public function getAssegnazioneByPdf($idPdf){
+        return $this->getResource('Assegnazione')->getAssegnazioneByPdf($idPdf);
+    }
 
 
 }

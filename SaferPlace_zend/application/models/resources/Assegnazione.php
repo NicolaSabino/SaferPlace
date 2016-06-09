@@ -59,5 +59,10 @@ class Application_Resource_Assegnazione extends  Zend_Db_Table_Abstract
         $where = $this->getAdapter()->quoteInto('idPianoFuga = ?', $idpdf);
         $this->delete($where);
     }
+
+    public function insertAssegnazione($dati){
+        $this->insert($dati);
+
+    }
     
 }
