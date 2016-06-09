@@ -11,9 +11,7 @@ class Application_Resource_Zona extends Zend_Db_Table_Abstract {
                        ->from (array('z'=>'zona'))
                        ->where('z.edificio = ?', $edificio)
                        ->where('z.piano = ?', $piano);
-    
         return $this->fetchAll($select);
-    
     }
     
     public function delById($id){
