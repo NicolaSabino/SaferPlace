@@ -143,7 +143,7 @@ if(!$controllo): //se non trovo i dati della zona nel database parte la view per
 
 <div class="fixed-action-btn click-to-toggle vertical" style="bottom: 45px; right: 24px;">
 	<a class="btn-floating btn-large blue darken-2 tooltipped" data-delay="50" data-position="left" data-tooltip="Indietro" href="<?php echo $this->url(
-		array('controller' => 'livello3', 'action' => 'modificaedificio')) ?>">
+		array('controller' => 'livello3', 'action' => 'modificaedificio', 'edificio' => $edificio), null, true) ?>">
 		<i class="large material-icons">arrow_back</i>
 	</a>
 </div>

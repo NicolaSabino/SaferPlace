@@ -1042,7 +1042,7 @@ class Livello3Controller extends Zend_Controller_Action
         $numeroPiano = $this->controllaParam('numeroPiano');
         $adminModel->eliminaPiano($edificio, $numeroPiano);
         $this->pianoDelFiles($edificio, $numeroPiano);
-        
+
 
         $this->getHelper('Redirector')->gotoSimple('modificaedificio', 'livello3', $module = null,
             array('edificio' => $edificio));
@@ -1090,7 +1090,7 @@ class Livello3Controller extends Zend_Controller_Action
                 'edificio' => $edificio,
                 'numeroPiano' => $numeroPiano,
                 'controllo' => $controllo,
-                'descrizione' => '0',
+                'descrizione' => 'error',
             ));
         }
 
@@ -1313,12 +1313,12 @@ class Livello3Controller extends Zend_Controller_Action
         $edificio = $this->controllaParam('edificio');
         $numPiano = $this->controllaParam('numeroPiano');
         $descrizione=$this->controllaParam('descrizione');
-        if($descrizione==0)
+        if($descrizione==='error')
         {
-            $descrizione='Devi prima inserire le zone al piano';
+            $messaggio='Devi prima inserire le zone al piano';
         }
         else
-            $descrizione="";
+            $messaggio="";
 
         $modelAdmin = new Application_Model_Admin();
         $arrayPosizioni = $modelAdmin->getZoneByEdPianoIdasAlias($edificio,$numPiano);
@@ -1331,7 +1331,7 @@ class Livello3Controller extends Zend_Controller_Action
         else{
             $ext= ".png";
         }
-        $this->view->assign('descrizione',$descrizione);
+        $this->view->assign('descrizione',$messaggio);
         $this->view->assign('edificio', $edificio);
         $this->view->assign('numeroPiano', $numPiano);
         $this->view->assign('ext', $ext);
