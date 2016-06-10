@@ -59,6 +59,8 @@ class Livello2Controller extends Zend_Controller_Action
             $persPerStanza = $this->modelUtente->getNumPersStanze($edificio, $piano );
             $segnalazionistanze = $this->modelUtente->getSegnalazioniStanze($edificio,$piano);
 
+            $this->view->assign('edificio', $edificio);
+            $this->view->assign('piano', $piano);
             $this->view->assign('segnalazionistanze', $segnalazionistanze);
             $this->view->assign('persperstanza', $persPerStanza);
             $this->view->assign('perspiano', $persPiano);
@@ -233,6 +235,37 @@ class Livello2Controller extends Zend_Controller_Action
 
     }
     
+    public function gestionepdfAction(){
+
+        if ( ($edificio = $this->controllaParam('edificio')) && ($piano = $this->controllaParam('piano')) ) {
+            
+            $pianifuga = $this->modelUtente->getPianiFuga($edificio,$piano);
+            
+            $this->view->assign('edificio', $edificio);
+            $this->view->assign('piano', $piano);
+            $this->view->assign('pianifuga', $pianifuga);
+        }
+        else {
+            $this->getHelper('Redirector')->gotoRoute(array('controller'=>'error', 'action0'=>'error'));
+        }
+        
+    }
+    
+    public function abilitapdfAction(){
+
+        if ( ($edificio = $this->controllaParam('edificio')) && ($piano = $this->controllaParam('piano'))
+        && ($idPianoFuga = $this->controllaParam('idPianoFuga'))) {
+
+            $this->modelUtente->sceltaPdf($edificio, $piano, $idPianoFuga);
+
+            $this->getHelper('Redirector')->gotoRoute(array('controller'=>'livello2', 'action'=>'dashboard',
+                                                      'edificio'=> $edificio, 'piano'=> $piano));
+        }
+
+        else {
+            $this->getHelper('Redirector')->gotoRoute(array('controller'=>'error', 'action0'=>'error'));
+        }
+    }
 
 
 }

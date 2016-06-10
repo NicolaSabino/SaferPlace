@@ -1,3 +1,5 @@
+<br> <br>
+
 <br /><br />
 
 
@@ -12,35 +14,33 @@
     }
 
     echo '      <div class="row center green-text">';
-    echo '      <h4 class="z-depth-1"><br>Procedura di evacuazione '.$this->edificio .' - Piano '.$this->piano.'<br><br></h4>';
+    echo '      <h4 class="z-depth-1"><br>Gestione piani di fuga '.$this->edificio .' - Piano '.$this->piano.'<br><br></h4>';
     echo '      <img src="'.$this->baseUrl($piantalogistica).'">';
-    echo '      <h5 class="red-text"><b>Tipo di emergenza: '.$this->tipo . '</b></h5>    ';
-    echo '      <h5 class="red-text"><b>Zona interessata dall\'emergenza: ';
-                echo isset($this->zona) ? $this->zona : 'Non definita';
-    echo '      </b></h5>    ';
+
+   
     echo '      <div class="divider"></div>';
     echo '      <h5 class="z-depth-1"><br>Scegli un piano di fuga:<br><br></h5>';
     echo '      </div>';
-    
+
     foreach($this->pianifuga as $item){
         $pianta= '/image/piante/piani di fuga/'.$item->pianta;
         echo '<div class="row">';
         //pianta piano di fuga
         echo '   <div class="col l6">';
-                      echo '<img style="width:100%;" src="'.$this->baseUrl($pianta).'">';
+        echo '<img style="width:100%;" src="'.$this->baseUrl($pianta).'">';
         echo '    </div>';
         echo '    <div class="col s6 center"  > ';
         echo '         <a class=" btn red " style="margin-top: 20%;" href="'.
             $this->url(array(
-                    'controller' => 'livello2',
-                    'action'     => 'avviaevacuazione',
-                    'idPianoFuga'=> $item->id,
-                    'edificio'   => $this->edificio,
-                    'piano'      => $this->piano,
-                    'tipo'       => $this->tipo),
-                    null, true
-                    ).'"'.
-                       '><b>Avvia evacuazione<b></a>';
+                'controller' => 'livello2',
+                'action'     => 'abilitapdf',
+                'idPianoFuga'=> $item->id,
+                'edificio'   => $this->edificio,
+                'piano'      => $this->piano,
+                'tipo'       => $this->tipo),
+                null, true
+            ).'"'.
+            '><b>Abilita piano di fuga<b></a>';
 
         echo '    </div>';
         echo '</div>';

@@ -176,14 +176,8 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
         $idpiano = $this->getResource('Piani')->getIdPiano($edificio,$piano);
         $this->getResource('Eventi')->addEvento($tipo,$idSegnalazione, $idpiano[0]->id, $zona);
 
-        $zone = $this->getResource('Zona')->getZoneByEdPiano($edificio,$piano);
-        foreach ($zone as $item) {
-            $this->getResource('Assegnazione')->disabilitaPianoFuga($item->id);
-        }
-
+        $this->sceltaPdf($edificio, $piano, $idPianoFuga);
         
-        $this->getResource('Assegnazione')->abilitaPianoFuga($idPianoFuga);
-
         return;
     }
 
@@ -224,5 +218,16 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
 
        return $this->getResource('Notifica')->getNumPerStanza($edificio, $piano);
         
+    }
+
+    public function sceltaPdf($edificio,$piano,$idPianoFuga){
+
+        $zone = $this->getResource('Zona')->getZoneByEdPiano($edificio,$piano);
+        foreach ($zone as $item) {
+            $this->getResource('Assegnazione')->disabilitaPianoFuga($item->id);
+        }
+
+
+        $this->getResource('Assegnazione')->abilitaPianoFuga($idPianoFuga);
     }
 }

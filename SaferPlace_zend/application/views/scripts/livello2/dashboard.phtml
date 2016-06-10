@@ -183,6 +183,19 @@
 
 						</ul>
 
+						<?php
+						if((isset($this->edificio)) && (isset($this->piano))){
+							echo '<div class="row"><div class="col s12 center">';
+								echo '<a class="btn green white-text center" 
+										href="'.$this->url(array('controller'=>'livello2',
+																	 'action'=>'gestionepdf',
+																	 'edificio'=>$this->edificio,
+																	 'piano'=>$this->piano)).'">
+									      Gestisci piani di fuga		 
+									  </a>';
+
+							echo '</div></div>';
+						}?>
 
 				</div>
 
