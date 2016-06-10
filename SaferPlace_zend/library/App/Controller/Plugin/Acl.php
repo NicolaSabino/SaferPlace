@@ -9,8 +9,9 @@ class App_Controller_Plugin_Acl extends Zend_Controller_Plugin_Abstract
     public function __construct()
     {
         $this->_auth = Zend_Auth::getInstance();
-
+        
         $this->_role = !$this->_auth->hasIdentity() ? '0' : $this->_auth->getIdentity()->current()->livello;
+        
         $this->_acl = new Application_Model_Acl();
     }
 
@@ -25,6 +26,7 @@ class App_Controller_Plugin_Acl extends Zend_Controller_Plugin_Abstract
 
     public function denyAccess()
     {
+        
         $this->_request->setModuleName('default')
                     ->setControllerName('index')
                     ->setActionName('index');

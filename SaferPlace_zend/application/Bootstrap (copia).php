@@ -67,6 +67,12 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         Zend_Db_Table_Abstract::setDefaultAdapter($db);
     }
 
+    //configurazione ACL
+    protected function _initFrontControllerPlugin()
+    {
+      $front = Zend_Controller_Front::getInstance();
+      $front->registerPlugin(new App_Controller_Plugin_Acl());
+    }
 
     
 
