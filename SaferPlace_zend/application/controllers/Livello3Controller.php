@@ -184,6 +184,7 @@ class Livello3Controller extends Zend_Controller_Action
 
         if (!$form->isValid($request->getPost())) {
             $form->setDescription('Attenzione: Compila tutti i campi.');
+
             return $this->render('modificafaq');
         }
         else {
@@ -1318,6 +1319,14 @@ class Livello3Controller extends Zend_Controller_Action
             $this->view->assign('numeroPiano', $numeroPiano);
             $this->view->assign('arrayPosizioni', $arrayPosizioni);
             $this->view->assign('controllo', true);
+
+            if (file_exists(APPLICATION_PATH . '/../public/image/piante/zone/' . $edificio . " Piano " . $numeroPiano.".jpg")) {
+                $ext =  ".jpg";
+            }
+            else{
+                $ext= ".png";
+            }
+            $this->view->assign('ext', $ext);
 
             return $this->render('gestionezone');
         } else {
