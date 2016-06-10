@@ -205,7 +205,7 @@ class Livello2Controller extends Zend_Controller_Action
     {
         $request = $this->getRequest();
         $form = $this->modificaform;
-        $this->getHelper('ModificaProfilo')->verificaModifica($request,2,$form);
+        $this->getHelper('ModificaProfilo')->verificaModifica($request,2,$form,$this->user);
     }
 
     public function ajaxedifAction(){
