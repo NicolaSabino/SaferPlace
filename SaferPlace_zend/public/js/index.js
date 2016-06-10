@@ -107,3 +107,10 @@ function scrollToTop() {
   }
     
 }
+
+function removebuttons(){
+  $('div.fixed-action-btn').find('ul li:nth-child(2)').remove();
+  $('div.fixed-action-btn').find('ul li:nth-child(2)').remove();
+
+
+}

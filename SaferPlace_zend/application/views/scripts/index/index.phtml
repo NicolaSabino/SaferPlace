@@ -182,7 +182,7 @@
 </div>
 
 
-<!-- FOOTER -->
+<!— FOOTER —>
 <footer class="page-footer teal green">
     <div class="container">
         <div class="row">
@@ -196,7 +196,11 @@
                         <i class="material-icons green-text">code</i>
                     </a>
                     &nbsp;
-                    <a class="btn-floating btn-large btn-flat white darken-2 tooltipped" data-position="top" data-delay="50" data-tooltip="Documentazione" href="https://github.com/NicolaSabino/SaferPlace">
+                    <a class="btn-floating btn-large btn-flat white darken-2 tooltipped" data-position="top" data-delay="50" data-tooltip="Documentazione" href="
+                        <?php
+                    echo $this->baseUrl('/../docs/documentazioneProgetto.pdf');
+                    ?>
+                    ">
                         <i class="material-icons green-text">picture_as_pdf</i>
                     </a>
                 </p>
@@ -207,8 +211,6 @@
     <div class="footer-copyright">
         <div class="container">
             Safer Place&copy; all rights reserved
-            <a class="grey-text lighten-4 right" href="https://twitter.com/makoframework">&nbsp;<i class="fa fa-twitter"></i></a>
-            <a class="grey-text lighten-4 right" href="https://github.com/mako-framework">&nbsp;<i class="fa fa-github-alt"></i></a>
         </div>
     </div>
 </footer>

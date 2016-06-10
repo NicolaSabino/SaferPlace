@@ -44,6 +44,7 @@ class Livello2Controller extends Zend_Controller_Action
 
     public function dashboardAction()
     {
+        
         $edificigestiti = $this->modelUtente->getEdificiGestiti($this->user);
         $persEdificio = $this->modelUtente->getPersEdGest($edificigestiti);
 
@@ -69,7 +70,9 @@ class Livello2Controller extends Zend_Controller_Action
 
             $this->view->assign("edifici_e_piani",$edificigestiti);
 
-        if ($notifiche = $this->modelUtente->getNotificheEmergenze())
+        if ($notifiche = $this->modelUtente->getNotificheEmergenze() == null)
+            $this->getHelper('Redirector')->gotoRoute(array('controller'=>'livello2', 'action'=>'nogestione'));
+        else
             $this->view->assign("notifiche", $notifiche);
 
         if ($evacuazioni = $this->modelUtente->fetchEventi())
@@ -267,6 +270,9 @@ class Livello2Controller extends Zend_Controller_Action
         }
     }
 
+    public function nogestioneAction(){
+        
+    }
 
 }
 
