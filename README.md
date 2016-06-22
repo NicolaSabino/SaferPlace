@@ -5,6 +5,9 @@
 
 ![alt text](https://github.com/NicolaSabino/SaferPlace/blob/master/screen.png)
 
+***
+![news](http://www.calcoloimu.org/novita.png)
+Consulta la nostra wiki per ulteriori informazioni sul progetto a questo [indirizzo](https://github.com/NicolaSabino/SaferPlace/wiki)
 
 
 ***
