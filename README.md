@@ -12,7 +12,7 @@ Consulta la nostra wiki per ulteriori informazioni sul progetto a questo [indiri
 
 ***
 
-Per ulteriori informazioni sul progetto
+Realizzato da
 
 **Nicola Sabino**       nicola.sabino94@gmail.com
 
