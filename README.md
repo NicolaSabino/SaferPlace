@@ -7,7 +7,7 @@
 
 ***
 ![news](http://www.pasuto.com/img/new30px.png)
-Consulta la nostra wiki per ulteriori informazioni sul progetto a questo [indirizzo](https://github.com/NicolaSabino/SaferPlace/wiki)
+Consulta la nostra [wiki](https://github.com/NicolaSabino/SaferPlace/wiki) per ulteriori informazioni sul progetto e il [manuale utente](https://github.com/NicolaSabino/SaferPlace/wiki/Manuale-utente) dell'applicazione
 
 
 ***
