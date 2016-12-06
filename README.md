@@ -5,11 +5,14 @@
 
 ![alt text](https://github.com/NicolaSabino/SaferPlace/blob/master/screen.png)
 
+***
+![news](http://www.pasuto.com/img/new30px.png)
+Consulta la nostra [wiki](https://github.com/NicolaSabino/SaferPlace/wiki) per ulteriori informazioni sul progetto e il [manuale utente](https://github.com/NicolaSabino/SaferPlace/wiki/Manuale-utente) dell'applicazione
 
 
 ***
 
-Per ulteriori informazioni sul progetto
+Realizzato da
 
 **Nicola Sabino**       nicola.sabino94@gmail.com
 
