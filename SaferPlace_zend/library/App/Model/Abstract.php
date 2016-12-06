@@ -3,7 +3,13 @@
 abstract class App_Model_Abstract
 {	
 	protected $_resources = array();
-    
+
+    /**
+     * definizione di model generico
+     * evito di scrivere tutte le volte il perorso con l'underscore.
+     * @param $name
+     * @return mixed
+     */
 	public function getResource($name) 
 	{
 		if (!isset($this->_resources[$name])) {

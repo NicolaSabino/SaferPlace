@@ -839,6 +839,8 @@ class Livello3Controller extends Zend_Controller_Action
     public function verificaiseriscipianoAction()
     {
 
+        $edificio = $this->controllaParam('edificio');
+
         $request = $this->getRequest();
         if (!$request->isPost()) {
             return $this->_helper->redirector('inseriscipiano');
@@ -848,6 +850,8 @@ class Livello3Controller extends Zend_Controller_Action
 
         if (!$form->isValid($request->getPost())) {
             $form->setDescription('Attenzione: alcuni dati inseriti sono errati.');
+            $this->view->assign('edificio', $edificio);
+
             return $this->render('inseriscipiano');
         } else {
             //inserisco nel db il piano

@@ -45,8 +45,8 @@ class Application_Model_UtenteStaff extends App_Model_Abstract
     public function getNotificheEmergenze(){
 
         $ed= new Application_Resource_Edifici();
-        if($edificigest = $ed->getGestByUtente($this->_nomeUtente) == null);
-            return null;
+        $edificigest = $ed->getGestByUtente($this->_nomeUtente);
+
         
         $notifica = new Application_Resource_Notifica();
 

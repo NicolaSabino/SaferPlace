@@ -10,9 +10,9 @@ class App_Validate_ValidatoreZona extends Zend_Validate_Abstract
 
     public function isValid($value)
     {
-        $this->_setValue($value);
-        $controllo=str_replace(" ", "", $value);
-        $nespressioneregolare=strlen($controllo)-1;
+        $this->_setValue($value); //prende il valore inserito nella text area
+        $controllo=str_replace(" ", "", $value); //toglie gli spazi
+        $nespressioneregolare=strlen($controllo)-1; 
         $n=strlen($controllo)-1;
 
         for($cont=0;$cont<$n+1;$cont++){

@@ -27,21 +27,6 @@ class Livello2Controller extends Zend_Controller_Action
         $this->getHelper('Redirector')->gotoRoute(array('controller'=>'livello2', 'action'=>'dashboard'));
     }
 
-    //Azione di test
-    public function notifyAction()
-    {
-
-        $this->modelUtente->getSegnalazioniStanze('Univpm',1);
-        
-        die;
-        //estraggo i risultati dell'esecuzione della query e li stampo
-
-
-
-        //$this->view->assign('notifiche',$notifiche->fetchAll());
-
-    }
-
     public function dashboardAction()
     {
         
@@ -69,10 +54,7 @@ class Livello2Controller extends Zend_Controller_Action
         }
 
             $this->view->assign("edifici_e_piani",$edificigestiti);
-
-        if ($notifiche = $this->modelUtente->getNotificheEmergenze() == null)
-            $this->getHelper('Redirector')->gotoRoute(array('controller'=>'livello2', 'action'=>'nogestione'));
-        else
+            $notifiche = $this->modelUtente->getNotificheEmergenze();
             $this->view->assign("notifiche", $notifiche);
 
         if ($evacuazioni = $this->modelUtente->fetchEventi())
@@ -91,8 +73,6 @@ class Livello2Controller extends Zend_Controller_Action
 
     public function delnotifAction()
     {
-        
-
         if (($edificio = $this->controllaParam('edificio')) && ($piano = $this->controllaParam('piano')))
             $this->view->assign("pianta", $edificio . ' Piano ' . $piano . '.jpg');
         $this->modelUtente->deleteNotification($this->controllaParam('id'));
@@ -174,7 +154,6 @@ class Livello2Controller extends Zend_Controller_Action
 
     public function avviaevacuazioneAction()
     {
-
         $idPianoFuga = $this->controllaParam('idPianoFuga');
         $edificio =$this->controllaParam('edificio');
         $piano    =$this->controllaParam('piano');
@@ -186,7 +165,6 @@ class Livello2Controller extends Zend_Controller_Action
 
 
         $this->getHelper('Redirector')->gotoRoute(array('controller'=>'livello2', 'action'=>'dashboard'), null, true);
-            
             
     }
 
